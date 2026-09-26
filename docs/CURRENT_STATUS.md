@@ -6,6 +6,8 @@
 
 ## 1. 阶段判断
 
+当前为实验前方向论证，字段修复停止开发，新负例训练尚未启动。后验同保护beam8为81.74%，不属于新的独立测试。总路线、具体方法门槛和雷达数据规范分别见[整体路线](THESIS_ROUTE_REVIEW.md)、[方法论证](research/METHOD_FEASIBILITY_BRIEF.md)、[标注规范](research/RADAR_DATA_ANNOTATION.md)。
+
 已有知识构建、固定策略问答、类型化组合执行器和演示。公开实验已完成一个BART-base生成器的5000题训练、首轮排序探针，以及两轮查询修复开发与完整official val评估。
 
 在同一执行条件下，11,797题的beam4 first-valid为79.90%，v2普通保守修复81.25%，v2局部保守修复81.39%，beam8 first-valid为81.44%。局部保守修复纠正178题、改错2题，相对beam4净增176题；尚未证明优于beam8，局部约束的额外收益较小。详见[最新报告](QUERY_REPAIR_VALIDATION.md)。这些数字来自单个生成器种子，官方val有旧项目使用历史，不能声称hidden test成绩或多次训练稳定性。

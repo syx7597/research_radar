@@ -1,0 +1,1 @@
+fact_id,entity_id,entity_name,variant,attribute,event_type,value_raw,value_kind,value_status,value,min_value,max_value,unit_raw,unit_std,condition_status,condition_raw,conditions_json,doc_id,source_uri,source_file,source_sha256,locator,evidence_text,review_status,reviewer,review_notes

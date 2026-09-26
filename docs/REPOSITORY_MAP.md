@@ -26,7 +26,7 @@
 
 ## 文档优先级
 
-1. `MINIMAL_VALIDATION.md`：最新实测与决策；`RESEARCH_DIRECTION.md`、`ROADMAP.md`：方法边界与后续计划。
+1. `THESIS_ROUTE_REVIEW.md`：论文总路线；`research/METHOD_FEASIBILITY_BRIEF.md`：当前具体方法论证；`ROADMAP.md`：当前任务；`RESEARCH_DIRECTION.md`：范围摘要。`MINIMAL_VALIDATION.md`和`QUERY_REPAIR_VALIDATION.md`保留已结束阶段的真实结果。
 2. `CURRENT_STATUS.md`、`TRAINING_READINESS.md`：实测事实和实现问题。
 3. `research/proposal.md`：开题原稿，不能覆盖新的新颖性审查。
 4. `archive/proposals/`：被替代的AFR-RAG、置信度奖励等路线。

@@ -1,0 +1,31 @@
+{
+  "status": "needs_review",
+  "reviewer": "AI source-chain inspection; not independently human verified",
+  "sampling": "One preselected source-chain example from at most five attributes; not a prevalence estimate",
+  "extracted_entity": "AN/MPQ-65",
+  "extracted_attribute": "service_entry",
+  "extracted_value_raw": "Since 1981; initial operational capacity 1984",
+  "extracted_normalized_value": 1981,
+  "extracted_unit": "year",
+  "entity_file": "kg_v3/entities.json",
+  "entity_json_pointer": "/0/attributes/2",
+  "entity_file_sha256": "7418795ee4c082c00454f8158cad7e911bf4dfff49020d334834a7caf541a896",
+  "source_file": "radar_corpus/raw/an_mpq-65.json",
+  "source_file_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+  "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+  "source_locator": "/infobox/In service",
+  "chunk_file": "pipeline/v3/work/chunks.jsonl",
+  "chunk_id": "an_mpq-65#ibx",
+  "chunk_matches": [
+    {
+      "line": 5,
+      "sha256": "656b9b61d4eefdc6cf78ff94b738550d0984a1d5e63b7e361438bc7514596851"
+    }
+  ],
+  "issues": [
+    "The source page concerns the Patriot system; it does not by itself establish a service date for the radar model.",
+    "The raw value contains two event dates; reducing it to 1981 discards the event distinction."
+  ],
+  "action": "Exclude from accepted gold until source subject and event semantics are independently reviewed. Preserve old source and extraction unchanged.",
+  "replacement_fact": null
+}

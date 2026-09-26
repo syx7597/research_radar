@@ -1,25 +1,28 @@
 # 复杂知识问答：公开基准验证与雷达知识应用
 
-**当前工作边界：** 按用户要求，暂停新算法实验，先明确整体论文路线。请先阅读[论文整体路线审查（讨论稿）](docs/THESIS_ROUTE_REVIEW.md)。此前的负例训练建议仅为候选，尚未确认为论文主方法。
+**当前阶段：实验前方向论证。** 已完成开发错误复核、近邻核验与雷达来源追踪，尚未启动新训练。先阅读[论文整体路线](docs/THESIS_ROUTE_REVIEW.md)和[具体方法论证](docs/research/METHOD_FEASIBILITY_BRIEF.md)；负例训练仍为未通过开训门槛的候选。
 
-硕士毕业设计研究工作区。当前主线：**公开知识库问答 → 有界字段修复与原查询保护 → 公开对照 → 雷达知识应用**。复用已有BART生成器，研究推理阶段的小改进；自建图谱承担后续应用验证。
+硕士毕业设计研究工作区，预计六个月后提交。当前主线：**雷达知识资源构建 → 可执行复杂问答 → 公开方法验证 → 独立雷达应用评价**。研究问题与算法试验分开，复用现有数据、BART、执行器和系统。
 
 **已完成两轮开发和KQA Pro完整官方validation的11,797题评测。** 同一5,000题训练的BART下，4候选执行筛选79.90%，普通保守字段修复81.25%，局部保守修复81.39%，8候选执行筛选81.44%。局部保守修复相对4候选纠正178题、改错2题，但未证明优于8候选；局部约束相对普通修复的额外增量很小。
 
-当前证据支持继续研究保守修复与误修改控制，不宣称局部约束已形成稳定独立优势。完整正负结果、单种子和数据使用边界见[最新验证报告](docs/QUERY_REPAIR_VALIDATION.md)；本轮已停止调参。历史首轮排序负结果保留在[最小验证报告](docs/MINIMAL_VALIDATION.md)。
+后验补算相同保护的beam8为81.74%，进一步削弱当前字段修复的必要性；字段修复已停止开发。完整正负结果、单种子和数据使用边界见[修复验证报告](docs/QUERY_REPAIR_VALIDATION.md)。历史首轮排序负结果保留在[最小验证报告](docs/MINIMAL_VALIDATION.md)。
 
 ## 阅读入口
 
-最新方向决策见[下一步实验建议](docs/research/NEXT_EXPERIMENT_DECISION.md)：补齐同保护beam8的后验对照后，暂停字段修复扩展，下一轮优先检验生成器训练干预；尚未启动或宣称新方法成立。
+总路线和当前队列以以下前三份文件为准；[此前训练建议](docs/research/NEXT_EXPERIMENT_DECISION.md)保留为历史候选，不自动触发实验。
 
 | 文档 | 用途 |
 |---|---|
+| [论文整体路线](docs/THESIS_ROUTE_REVIEW.md) | 从知识构建到问答与三层验证的完整范围 |
+| [实验前方法论证](docs/research/METHOD_FEASIBILITY_BRIEF.md) | 真实瓶颈、近邻区别、基础对照与开训/停止门槛 |
+| [执行计划](docs/ROADMAP.md) | 当前任务队列与六个月里程碑 |
+| [雷达标注规范与模板](docs/research/RADAR_DATA_ANNOTATION.md) | 事实核验与独立问答分离、来源追踪待复核样例 |
 | [查询修复完整验证](docs/QUERY_REPAIR_VALIDATION.md) | 两轮开发、完整官方val、强对照、误修改与成本 |
 | [首轮最小验证结果](docs/MINIMAL_VALIDATION.md) | 历史排序实验与负结果 |
 | [研究方向与近邻工作](docs/RESEARCH_DIRECTION.md) | 主线、价值、贡献边界与风险 |
 | [公开基准专项调研](docs/research/PUBLIC_BENCHMARK_REVIEW.md) | 数据协议、近邻方法、源码核验和公平比较 |
 | [当前状态](docs/CURRENT_STATUS.md) | 实际数据规模、已实现内容及证据限制 |
-| [执行计划](docs/ROADMAP.md) | 分阶段交付、验收门槛与调整路线 |
 | [训练就绪检查](docs/TRAINING_READINESS.md) | 已修复环境问题与开训前阻断项 |
 | [仓库地图](docs/REPOSITORY_MAP.md) | 当前模块、历史成果和本地数据位置 |
 | [数据与产物政策](docs/ARTIFACT_POLICY.md) | 公开范围、数据恢复和清理重建 |
