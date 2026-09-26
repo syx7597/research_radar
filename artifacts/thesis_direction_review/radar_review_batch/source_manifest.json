@@ -1,0 +1,620 @@
+{
+  "accepted_gold_records": 0,
+  "categories": [
+    "component_scoped_range",
+    "context_scoped_numeric",
+    "event_attribution",
+    "event_type",
+    "model_system_attribution",
+    "numeric_range",
+    "unit_dimension",
+    "unit_dimension_and_range",
+    "unknown_numeric_text"
+  ],
+  "entity_labels": [
+    "AN/APY-9",
+    "AN/MPQ-65",
+    "AN/SPG-51",
+    "AN/SPG-59",
+    "AN/SPN-35",
+    "EL/M-2080"
+  ],
+  "facts": 12,
+  "human_verified": false,
+  "inputs": [
+    {
+      "bytes": 5137140,
+      "path": "kg_v3/entities.json",
+      "sha256": "7418795ee4c082c00454f8158cad7e911bf4dfff49020d334834a7caf541a896"
+    },
+    {
+      "bytes": 5295087,
+      "path": "pipeline/v3/work/chunks.jsonl",
+      "sha256": "961bb12cd16fdaaa2289a181e14123075b655fd5bf4f9b92d2383a567228ab60"
+    },
+    {
+      "bytes": 286,
+      "path": "templates/radar_review/facts.csv",
+      "sha256": "52116318178196bbd0cf3cb23cb9086f429d76c39eb96ebd8b4e6f2fed0fed7a"
+    },
+    {
+      "bytes": 3884,
+      "path": "docs/research/RADAR_DATA_ANNOTATION.md",
+      "sha256": "276bafbf34315ec018d45a18b469d74f7f8f36a9e24632fe67f2137a1d966386"
+    },
+    {
+      "bytes": 23326,
+      "path": "scripts/prepare_radar_review_packet.py",
+      "sha256": "8f60d7bd72391bda2d6d45d0551661b2d36e3a98cb8abde2846528a37f466b26"
+    },
+    {
+      "bytes": 1388,
+      "path": "radar_corpus/raw/an_apy-9.json",
+      "sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef"
+    },
+    {
+      "bytes": 30651,
+      "path": "radar_corpus/raw/an_mpq-65.json",
+      "sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c"
+    },
+    {
+      "bytes": 2482,
+      "path": "radar_corpus/raw/an_spg-51.json",
+      "sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95"
+    },
+    {
+      "bytes": 1621,
+      "path": "radar_corpus/raw/an_spg-59.json",
+      "sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde"
+    },
+    {
+      "bytes": 1562,
+      "path": "radar_corpus/raw/an_spn-35.json",
+      "sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150"
+    },
+    {
+      "bytes": 1798,
+      "path": "radar_corpus/raw/el_m-2080.json",
+      "sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db"
+    }
+  ],
+  "outputs": {
+    "README.md": {
+      "bytes": 2570,
+      "sha256": "c72044e548d9646aa629620d4c4fdac1ff1601a93671d074878386fd578b403d"
+    },
+    "facts.csv": {
+      "bytes": 10962,
+      "sha256": "4f7b0b1a2b05c6bd17e19e66cb4761de014924b2bb901bf88ead99b7287d63f9"
+    }
+  },
+  "packet_version": "radar_review_batch_001",
+  "prepared_by": "AI_initial_screening_not_human_verified",
+  "records": [
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/0/attributes/0",
+      "category": "model_system_attribution",
+      "chunk_locator": {
+        "chunk_id": "an_mpq-65#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Type",
+        "line": 5,
+        "line_sha256": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "value_excerpt": "Mobile surface-to-air missile / anti-ballistic missile system",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/0",
+      "extracted_entity_name": "AN/MPQ-65",
+      "fact_id": "radar-review-001-01",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "type_description",
+        "doc_id": "an_mpq-65",
+        "evidence": "Mobile surface-to-air missile / anti-ballistic missile system",
+        "tier": "v3_struct",
+        "unmapped": true,
+        "value_raw": "Mobile surface-to-air missile / anti-ballistic missile system"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_mpq-65.json",
+      "source_locator": {
+        "char_end": 65,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_mpq-65#ibx",
+        "chunk_line": 5,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Type",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "Mobile; surface-to-air missile; /; anti-ballistic missile; system",
+      "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/0/attributes/2",
+      "category": "event_attribution",
+      "chunk_locator": {
+        "chunk_id": "an_mpq-65#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/In service",
+        "line": 5,
+        "line_sha256": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "value_excerpt": "Since 1981; initial operational capacity 1984",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/0",
+      "extracted_entity_name": "AN/MPQ-65",
+      "fact_id": "radar-review-001-02",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "service_entry",
+        "doc_id": "an_mpq-65",
+        "evidence": "Since 1981; initial operational capacity 1984",
+        "tier": "v3_struct",
+        "unit": "year",
+        "unmapped": false,
+        "value": 1981,
+        "value_raw": "Since 1981; initial operational capacity 1984"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_mpq-65.json",
+      "source_locator": {
+        "char_end": 10,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_mpq-65#ibx",
+        "chunk_line": 5,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/In service",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "Since 1981",
+      "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/0/attributes/2",
+      "category": "event_attribution",
+      "chunk_locator": {
+        "chunk_id": "an_mpq-65#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/In service",
+        "line": 5,
+        "line_sha256": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "value_excerpt": "Since 1981; initial operational capacity 1984",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/0",
+      "extracted_entity_name": "AN/MPQ-65",
+      "fact_id": "radar-review-001-03",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "service_entry",
+        "doc_id": "an_mpq-65",
+        "evidence": "Since 1981; initial operational capacity 1984",
+        "tier": "v3_struct",
+        "unit": "year",
+        "unmapped": false,
+        "value": 1981,
+        "value_raw": "Since 1981; initial operational capacity 1984"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_mpq-65.json",
+      "source_locator": {
+        "char_end": 45,
+        "char_start": 12,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_mpq-65#ibx",
+        "chunk_line": 5,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/In service",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "initial operational capacity 1984",
+      "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/2/attributes/2",
+      "category": "numeric_range",
+      "chunk_locator": {
+        "chunk_id": "an_apy-9#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Frequency",
+        "line": 31,
+        "line_sha256": "e8ad45daf61031edfb6dfcaf40d32045be7924aa721aec780d939f12bb3e6d1b",
+        "value_excerpt": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/2",
+      "extracted_entity_name": "AN/APY-9",
+      "fact_id": "radar-review-001-04",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "frequency",
+        "doc_id": "an_apy-9",
+        "evidence": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+        "tier": "v3_struct",
+        "unit": "GHz",
+        "unmapped": false,
+        "value": 3.0,
+        "value_raw": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_apy-9.json",
+      "source_locator": {
+        "char_end": 36,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_apy-9#ibx",
+        "chunk_line": 31,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Frequency",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+      "source_sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/APY-9"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/17/attributes/2",
+      "category": "component_scoped_range",
+      "chunk_locator": {
+        "chunk_id": "an_spg-51#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Frequency",
+        "line": 112,
+        "line_sha256": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "value_excerpt": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/17",
+      "extracted_entity_name": "AN/SPG-51",
+      "fact_id": "radar-review-001-05",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "frequency",
+        "doc_id": "an_spg-51",
+        "evidence": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+        "tier": "v3_struct",
+        "unit": "GHz",
+        "unmapped": false,
+        "value": 10.5,
+        "value_raw": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_spg-51.json",
+      "source_locator": {
+        "char_end": 27,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_spg-51#ibx",
+        "chunk_line": 112,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Frequency",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "Illuminator: 10.25-10.5 GHz",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/17/attributes/2",
+      "category": "component_scoped_range",
+      "chunk_locator": {
+        "chunk_id": "an_spg-51#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Frequency",
+        "line": 112,
+        "line_sha256": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "value_excerpt": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/17",
+      "extracted_entity_name": "AN/SPG-51",
+      "fact_id": "radar-review-001-06",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "frequency",
+        "doc_id": "an_spg-51",
+        "evidence": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+        "tier": "v3_struct",
+        "unit": "GHz",
+        "unmapped": false,
+        "value": 10.5,
+        "value_raw": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_spg-51.json",
+      "source_locator": {
+        "char_end": 74,
+        "char_start": 38,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_spg-51#ibx",
+        "chunk_line": 112,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Frequency",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "Tracking Radar: 5.45 GHz - 5.825 GHz",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/17/attributes/3",
+      "category": "context_scoped_numeric",
+      "chunk_locator": {
+        "chunk_id": "an_spg-51#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/PRF",
+        "line": 112,
+        "line_sha256": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "value_excerpt": "4100 pps (surface); 9600-16700 pps (air)",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/17",
+      "extracted_entity_name": "AN/SPG-51",
+      "fact_id": "radar-review-001-07",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "prf",
+        "doc_id": "an_spg-51",
+        "evidence": "4100 pps (surface); 9600-16700 pps (air)",
+        "tier": "v3_struct",
+        "unit": "pps",
+        "unmapped": false,
+        "value": 4100.0,
+        "value_raw": "4100 pps (surface); 9600-16700 pps (air)"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_spg-51.json",
+      "source_locator": {
+        "char_end": 18,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_spg-51#ibx",
+        "chunk_line": 112,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/PRF",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "4100 pps (surface)",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/17/attributes/3",
+      "category": "context_scoped_numeric",
+      "chunk_locator": {
+        "chunk_id": "an_spg-51#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/PRF",
+        "line": 112,
+        "line_sha256": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "value_excerpt": "4100 pps (surface); 9600-16700 pps (air)",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/17",
+      "extracted_entity_name": "AN/SPG-51",
+      "fact_id": "radar-review-001-08",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "prf",
+        "doc_id": "an_spg-51",
+        "evidence": "4100 pps (surface); 9600-16700 pps (air)",
+        "tier": "v3_struct",
+        "unit": "pps",
+        "unmapped": false,
+        "value": 4100.0,
+        "value_raw": "4100 pps (surface); 9600-16700 pps (air)"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_spg-51.json",
+      "source_locator": {
+        "char_end": 40,
+        "char_start": 20,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_spg-51#ibx",
+        "chunk_line": 112,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/PRF",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "9600-16700 pps (air)",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/21/attributes/1",
+      "category": "unit_dimension_and_range",
+      "chunk_locator": {
+        "chunk_id": "an_spn-35#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Frequency",
+        "line": 135,
+        "line_sha256": "cbca9ddcf8231c8d7d71379ba81ec3afa4f4ee2940e717657c54928a7a6b9d1b",
+        "value_excerpt": "9.0 to 9.2 GHz band",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/21",
+      "extracted_entity_name": "AN/SPN-35",
+      "fact_id": "radar-review-001-09",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "frequency",
+        "doc_id": "an_spn-35",
+        "evidence": "9.0 to 9.2 GHz band",
+        "tier": "v3_struct",
+        "unit": "kg",
+        "unmapped": false,
+        "value": 9000.0,
+        "value_raw": "9.0 to 9.2 GHz band"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_spn-35.json",
+      "source_locator": {
+        "char_end": 19,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_spn-35#ibx",
+        "chunk_line": 135,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Frequency",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "9.0 to 9.2 GHz band",
+      "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPN-35"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/21/attributes/3",
+      "category": "unit_dimension",
+      "chunk_locator": {
+        "chunk_id": "an_spn-35#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Pulsewidth",
+        "line": 135,
+        "line_sha256": "cbca9ddcf8231c8d7d71379ba81ec3afa4f4ee2940e717657c54928a7a6b9d1b",
+        "value_excerpt": "0.2 microseconds",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/21",
+      "extracted_entity_name": "AN/SPN-35",
+      "fact_id": "radar-review-001-10",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "pulse_width",
+        "doc_id": "an_spn-35",
+        "evidence": "0.2 microseconds",
+        "tier": "v3_struct",
+        "unit": "km",
+        "unmapped": false,
+        "value": 0.3218,
+        "value_raw": "0.2 microseconds"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_spn-35.json",
+      "source_locator": {
+        "char_end": 16,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_spn-35#ibx",
+        "chunk_line": 135,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Pulsewidth",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "0.2 microseconds",
+      "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPN-35"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/19/attributes/0",
+      "category": "event_type",
+      "chunk_locator": {
+        "chunk_id": "an_spg-59#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Introduced",
+        "line": 125,
+        "line_sha256": "4c99078f5aadb299ba9448939f74e276d3efffe673ea039797995b86e61a5416",
+        "value_excerpt": "Canceled 1963",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/19",
+      "extracted_entity_name": "AN/SPG-59",
+      "fact_id": "radar-review-001-11",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "service_entry",
+        "doc_id": "an_spg-59",
+        "evidence": "Canceled 1963",
+        "tier": "v3_struct",
+        "unit": "year",
+        "unmapped": false,
+        "value": 1963,
+        "value_raw": "Canceled 1963"
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/an_spg-59.json",
+      "source_locator": {
+        "char_end": 13,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "an_spg-59#ibx",
+        "chunk_line": 125,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Introduced",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "Canceled 1963",
+      "source_sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-59"
+    },
+    {
+      "annotation_status": "AI proposed reading for review; not an accepted replacement or gold",
+      "attribute_json_pointer": "/15/attributes/6",
+      "category": "unknown_numeric_text",
+      "chunk_locator": {
+        "chunk_id": "el_m-2080#ibx",
+        "file": "pipeline/v3/work/chunks.jsonl",
+        "json_pointer": "/struct/Power",
+        "line": 61,
+        "line_sha256": "5b53aa5b8467da9d22ae91606281d25d6869ef200e1b1d7de71fa7198c9a8a06",
+        "value_excerpt": "Classified, but could be used as a directed-energy device.",
+        "value_excerpt_truncated": false
+      },
+      "entity_json_pointer": "/15",
+      "extracted_entity_name": "EL/M-2080",
+      "fact_id": "radar-review-001-12",
+      "human_verified": false,
+      "original_attribute": {
+        "attr": "power",
+        "doc_id": "el_m-2080",
+        "evidence": "Classified, but could be used as a directed-energy device.",
+        "tier": "v3_struct",
+        "unmapped": false,
+        "value_raw": "Classified, but could be used as a directed-energy device."
+      },
+      "source_excerpt_only": true,
+      "source_file": "radar_corpus/raw/el_m-2080.json",
+      "source_locator": {
+        "char_end": 10,
+        "char_start": 0,
+        "chunk_file": "pipeline/v3/work/chunks.jsonl",
+        "chunk_id": "el_m-2080#ibx",
+        "chunk_line": 61,
+        "end_exclusive": true,
+        "json_pointer": "/infobox/Power",
+        "offset_unit": "unicode_codepoint"
+      },
+      "source_quote": "Classified",
+      "source_sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+      "source_uri": "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine"
+    }
+  ],
+  "selected_existing_attributes": 9,
+  "selection": "Fixed purposive sample; not random; not a prevalence estimate",
+  "status": "needs_review",
+  "validation": {
+    "all_excerpts_exact": true,
+    "all_source_pointers_resolve": true,
+    "chunk_links_available": 12,
+    "no_accepted_records": true,
+    "numeric_truth_verified": false,
+    "source_hashes_checked": true,
+    "template_columns_match": true,
+    "unique_fact_ids": true
+  }
+}
