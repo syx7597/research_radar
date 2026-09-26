@@ -1,0 +1,153 @@
+{
+  "description": "雷达知识图谱 QA 评测数据集 v1.0",
+  "note": "answer_aliases 填写同义表达，命中任意一个即算正确",
+  "questions": [
+    {
+      "id": "sq_001",
+      "type": "single_hop",
+      "question": "AN/TPY-2的工作频段是什么？",
+      "answer": "X",
+      "answer_aliases": ["X-band", "X波段", "X band", "8.55-10 GHz"]
+    },
+    {
+      "id": "sq_002",
+      "type": "single_hop",
+      "question": "AN/TPY-2由哪家公司研制？",
+      "answer": "Raytheon",
+      "answer_aliases": ["雷神", "Raytheon Technologies", "RTX"]
+    },
+    {
+      "id": "sq_003",
+      "type": "single_hop",
+      "question": "AN/APY-9雷达部署在哪种飞机上？",
+      "answer": "E-2D Advanced Hawkeye",
+      "answer_aliases": ["E-2D", "E-2", "Hawkeye"]
+    },
+    {
+      "id": "sq_004",
+      "type": "single_hop",
+      "question": "AN/APY-9的工作频段是什么？",
+      "answer": "UHF",
+      "answer_aliases": ["UHF-band", "UHF波段"]
+    },
+    {
+      "id": "sq_005",
+      "type": "single_hop",
+      "question": "AN/APY-9由哪家公司研制？",
+      "answer": "Lockheed Martin",
+      "answer_aliases": ["洛克希德·马丁", "洛马"]
+    },
+    {
+      "id": "sq_006",
+      "type": "single_hop",
+      "question": "FCS-3雷达装备在哪个国家的海军？",
+      "answer": "日本",
+      "answer_aliases": ["Japan", "日本海上自卫队", "JMSDF"]
+    },
+    {
+      "id": "sq_007",
+      "type": "single_hop",
+      "question": "FCS-3使用哪些频段？",
+      "answer": "C",
+      "answer_aliases": ["C-band", "C波段", "X", "X-band"]
+    },
+    {
+      "id": "sq_008",
+      "type": "single_hop",
+      "question": "AN/MPQ-65是哪个系统的升级版本？",
+      "answer": "Patriot",
+      "answer_aliases": ["AN/MPQ-53", "爱国者"]
+    },
+    {
+      "id": "sq_009",
+      "type": "single_hop",
+      "question": "AN/MPQ-65由哪家公司研制？",
+      "answer": "Raytheon",
+      "answer_aliases": ["雷神"]
+    },
+    {
+      "id": "sq_010",
+      "type": "single_hop",
+      "question": "SCANFAR雷达装备在哪个国家？",
+      "answer": "法国",
+      "answer_aliases": ["France", "法兰西"]
+    },
+    {
+      "id": "sq_011",
+      "type": "single_hop",
+      "question": "Type 997 Artisan雷达的主要功能是什么？",
+      "answer": "防空",
+      "answer_aliases": ["air defense", "air defence", "surveillance", "对空搜索"]
+    },
+    {
+      "id": "sq_012",
+      "type": "single_hop",
+      "question": "Selex RAN-40L工作在哪个频段？",
+      "answer": "L",
+      "answer_aliases": ["L-band", "L波段"]
+    },
+    {
+      "id": "mq_001",
+      "type": "multi_hop",
+      "question": "装备了THAAD系统的雷达由哪家公司研制？",
+      "answer": "Raytheon",
+      "answer_aliases": ["雷神", "RTX"]
+    },
+    {
+      "id": "mq_002",
+      "type": "multi_hop",
+      "question": "FCS-3雷达部署在哪些舰艇上？",
+      "answer": "JS Hyūga",
+      "answer_aliases": ["Akizuki", "Asahi", "Izumo", "JS Asuka", "DDH-181"]
+    },
+    {
+      "id": "mq_003",
+      "type": "multi_hop",
+      "question": "Lockheed Martin研制的机载雷达有哪些？",
+      "answer": "AN/APY-9",
+      "answer_aliases": ["APY-9"]
+    },
+    {
+      "id": "mq_004",
+      "type": "multi_hop",
+      "question": "美国装备的弹道导弹防御雷达有哪些？",
+      "answer": "AN/TPY-2",
+      "answer_aliases": ["TPY-2", "THAAD"]
+    },
+    {
+      "id": "mq_005",
+      "type": "multi_hop",
+      "question": "有哪些雷达是从Patriot系统衍生出来的？",
+      "answer": "AN/MPQ-65",
+      "answer_aliases": ["MPQ-65"]
+    },
+    {
+      "id": "mq_006",
+      "type": "multi_hop",
+      "question": "日本自研的舰载多功能雷达装备在哪类驱逐舰上？",
+      "answer": "Akizuki",
+      "answer_aliases": ["Asahi", "Izumo", "秋月", "朝日"]
+    },
+    {
+      "id": "cq_001",
+      "type": "comparison",
+      "question": "AN/TPY-2和AN/APY-9哪个工作在更高频段？",
+      "answer": "AN/TPY-2",
+      "answer_aliases": ["TPY-2", "X波段更高"]
+    },
+    {
+      "id": "cq_002",
+      "type": "comparison",
+      "question": "FCS-3和AN/TPY-2都工作在X波段吗？",
+      "answer": "是",
+      "answer_aliases": ["都是", "两者都", "yes", "correct"]
+    },
+    {
+      "id": "cq_003",
+      "type": "comparison",
+      "question": "Raytheon和Lockheed Martin哪家公司研制的雷达更多？",
+      "answer": "Raytheon",
+      "answer_aliases": ["雷神"]
+    }
+  ]
+}

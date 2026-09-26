@@ -1,0 +1,1 @@
+{"model": "rotate", "dataset": "wn18rr", "metrics": {"mrr": 0.4675, "hits_at_1": 0.4378, "hits_at_3": 0.482, "hits_at_10": 0.5241, "count": 5848}, "training_time": 2513.1}

@@ -1,0 +1,128 @@
+﻿# 可核实抽取事实(算精度)  —  label correct: 1=对 / 0=错 / ?=无法核实
+id,head,relation,tail,source,category,verify_hint,evidence,correct(1/0/?),note
+0,Primus-700A/701A,hasMode,地形测绘状态（GMAP,extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 362 性能数据 工作方式,1,[LLM] 证据明确支持该工作模式。
+1,ARS-880,frequency_GHz,10.25,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且无领域知识确认ARS-880工作频率为
+2,AN/APG-66(V)1,deployedOn,TA-4K,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 184 装备机种,1,[LLM] 证据明确支持部署在TA-4K上。
+3,Westinghouse Electric Corporation,affiliatedTo,美国,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata manufacturer country,1,[LLM] 证据明确显示制造商国家为美国
+4,N001VEP,hasSubsystem,N001VEP:antenna,stage_c_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),N001配备1.0m直径的双卡塞格伦天线,0,[LLM] 证据描述N001天线，非N001VEP型号，且N001VEP
+5,AN/APQ-157,compatibleWith,AIM-9空空导弹,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 251 配用武器,1,[LLM] 证据明确支持该兼容关系
+6,CEAFAR,operatedBy,Royal Australian Navy,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q109597487,1,[LLM] 根据Wikidata条目，CEAFAR由澳大利亚皇家海军使用
+7,Marconi,headquarteredIn,"Chelmsford, United Kingdom",wikidata_curated,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata-curated headquarters location,1,[LLM] Marconi总部确实位于英国切姆斯福德。
+8,AN/APG-69,deployedOn,F-5G,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 201 装备机种,1,[LLM] 证据明确支持部署在F-5G上。
+9,E-801M,developedBy,NIIRT,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 104 研制厂商,1,[LLM] 证据明确支持该事实。
+10,Bharat Electronics,headquarteredIn,"Bangalore, India",wikidata_curated,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata-curated headquarters location,1,[LLM] Bharat Electronics总部位于印度班加罗尔，证
+11,AN/APY-8/8(V)(Lynx),rd_year_min,1996,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute rd_year_min,1,[LLM] 证据明确支持该雷达最小年份为1996。
+12,AN/APG-69,deployedOn,F-5,enrich_wiki,WIKI,在 Wikidata/维基百科查该型号，核对该字段,wikipedia,1,[LLM] AN/APG-69雷达曾用于F-5战斗机升级项目。
+13,AN/SPG-55,operatedBy,美国,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q2632280,1,[LLM] 根据Wikidata，AN/SPG-55由美国海军使用。
+14,SON-4,operatedBy,俄罗斯,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q120262438,1,[LLM] 证据显示SON-4由俄罗斯使用
+15,AN/APG-69,range_km,37.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据未提供具体数值，且AN/APG-69为冷僻型号，无法确认
+16,Raytheon,subsidiaryOf,RTX Corporation,wikidata_curated,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata-curated parent company,1,[LLM] Raytheon是RTX Corporation的子公司，证
+17,AN/APG-80,hasMode,地面动目标跟踪,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),地面动目标跟踪，电子反干扰,1,[LLM] 证据明确支持该工作模式。
+18,RDM,developedBy,Thales Airborne Systems（,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 136 研制厂商,1,[LLM] 证据明确支持该事实。
+19,AN/SPG-60,deployedOn,基德级驱逐舰,llm_zero_shot,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),deployed as part of the MK-86 GFCS on the ... Kidd-class destroyers,1,[LLM] 证据明确支持部署在基德级驱逐舰上
+20,39N6E Kasta-2E2,operatedBy,俄罗斯,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q134587916,1,[LLM] 证据显示该雷达由俄罗斯使用。
+21,PS-16,developedBy,Telent,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q10614562,1,[LLM] Telent是PS-16的制造商，证据支持。
+22,Flycatcher (radar),deployedOn,Goalkeeper CIWS,enrich_wiki,WIKI,在 Wikidata/维基百科查该型号，核对该字段,wikipedia,1,[LLM] Flycatcher雷达是Goalkeeper近防系统的一部
+23,Primus-90,hasSubsystem,Primus-90:signal_processor,stage_c_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),中频处理机,1,[LLM] 证据明确支持该子系统关系
+24,Podkat,operatedBy,俄罗斯,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q4367634,1,[LLM] 维基数据条目显示Podkat由俄罗斯操作。
+25,AN/APY-12,countryOfOrigin,日本,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),页眉国家分类: Japan,1,[LLM] 证据明确显示原产国为日本
+26,Type 351 Radar,operatedBy,People's Liberation Army Navy,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q7860705,1,[LLM] 证据显示Type 351 Radar由中国人民解放军海军使用
+27,AN/APG-65/65(V),deployedOn,F/A-18A,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),装备机种: F/A-18A，F/A-18B，F/A-18C，F/A-18D，,1,[LLM] AN/APG-65雷达部署于F/A-18A，证据明确列出该机
+28,Thales Squire,developedBy,Thales,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q64334736,1,[LLM] Thales Squire由Thales开发，证据明确。
+29,Japan Radio,headquarteredIn,"Tokyo, Japan",wikidata_curated,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata-curated headquarters location,1,[LLM] Japan Radio总部位于东京，证据支持。
+30,AN/APS-143(V)3/143B(V)3/143C(V)3,countryOfOrigin,美国,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),页眉国家分类: United States,1,[LLM] 证据明确标注国家分类为美国
+31,AN/APG-67/67(V),hasFrequencyBand,I,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 197 频段,?,[LLM] 证据未明确说明AN/APG-67/67(V)的工作频段为I波
+32,AIRSTAR,deployedOn,无人机,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),装备机种: 轻型固定翼飞机，直升机，无人机,1,[LLM] 证据明确列出无人机作为部署平台之一。
+33,AN/APG-63,operatedBy,美国,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),APG-63系列机载雷达主要用于装备各种型号的F-15战斗机,1,[LLM] 证据明确支持美国使用F-15，AN/APG-63为其雷达。
+34,SurSAR,developedBy,Array Systems Computing,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 170 研制厂商,1,[LLM] 证据明确支持该事实。
+35,Antilope5TC,countryOfOrigin,法国,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),页眉国家分类: France,1,[LLM] 证据明确显示法国
+36,Lynx,range_description,≤87km（干燥环境，3.0m分辨力）,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_description,?,[LLM] 证据不完整，无法确认Lynx雷达在干燥环境3.0m分辨力下是
+37,AN/APQ-120 family,developedBy,Westinghouse Electric Corporation,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q3526240,1,[LLM] Westinghouse Electric Corporat
+38,AN/APG-81,hasMode,"地面动目标
+指示",extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 223 性能数据 工作方式,1,[LLM] 证据明确支持该工作模式
+39,KObE,frequency_GHz,9.345,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且KObE型号非公开常见雷达型号，无法确
+40,Primus-880,hasMode,"当波束在所选择的距离上触
+",extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 367 性能数据 工作方式,?,[LLM] 证据不完整，无法确认该模式具体描述是否准确对应Primus-
+41,Iguane,developedBy,"Thales Aerospace Division（ Thales Airborne Systems),EADSDefence Electronics",extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 126 研制厂商,1,[LLM] 证据明确支持该事实。
+42,N019 Sapfir-29M1,hasTechType,合成孔径,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 97 体制,?,[LLM] 证据不明确，且缺乏该型号具体技术体制的权威资料。
+43,AN/SPG-53,operatedBy,美国,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q1527028,1,[LLM] 根据Wikidata，AN/SPG-53是美国海军舰炮火控雷
+44,Goodyear,range_km,5.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据不充分，且Goodyear公司产品众多，无法确认具体型号
+45,AN/APQ-140,hasFrequencyBand,Ku,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 249 频段,1,[LLM] 证据明确支持该频段。
+46,Vixen1000/ES-05,hasMode,"垂
+直扫描",extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 157 性能数据 工作方式,?,[LLM] 证据未明确提及“垂直扫描”模式，且该型号非公开常见型号，无法
+47,RASSR,hasTechType,KC-135,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 372 体制,0,[LLM] 证据中“page 372 体制”未明确RASSR与KC-13
+48,Flamr,operatedBy,日本,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),装备日本F-104J的雷达为F-15J型,0,[LLM] 证据中F-15J是战斗机型号，非Flamr雷达，且Flamr
+49,MAKO,deployedOn,Mirage 2000 B/C,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),装备机种: Mirage 2000 B/C,1,[LLM] MAKO部署于Mirage 2000 B/C，证据明确支持。
+50,AN/SPG-51,operatedBy,Royal Netherlands Navy,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q836898,1,[LLM] 证据显示AN/SPG-51由荷兰皇家海军使用。
+51,AN/APG-65/65(V),cooling_description,风冷，液冷,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute cooling_description,?,[LLM] 证据未提供具体冷却描述原文，且无法确认AN/APG-65/6
+52,Type 752 Radar,operatedBy,People's Republic of China,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q27627577,1,[LLM] 中国是Type 752雷达的使用国。
+53,H001-03,range_km,40.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据未提供具体数值，且H001-03为冷僻型号，无法确认其作
+54,RDY-3,meetsStandard,MIL-STD-1553,stage_c_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),可与MIL-L-1553B总线兼容,1,[LLM] 证据明确支持兼容性，符合标准要求。
+55,Ps=10-6,frequency_GHz,9.75,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,0,[LLM] 证据未提供具体数值，且Ps=10-6非标准雷达型号，无法确认
+56,Vixen1000/ES-05,operatedBy,瑞典,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),装备机种：Gripen新一代战斗机（瑞典萨伯集团）,1,[LLM] 证据明确显示该雷达装备于瑞典萨伯集团的Gripen战斗机，因
+57,Israel Aerospace Industries,headquarteredIn,"Lod, Israel",wikidata_curated,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata-curated headquarters location,1,[LLM] Israel Aerospace Industries总部确
+58,SSAR,operatedBy,加拿大,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),用于加拿大空军的CP-140（极光）飞机,1,[LLM] 证据明确支持SSAR由加拿大空军使用。
+59,AN/APG-63(V)2,operatedBy,美国,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),APG-63(V)2:F-15C,1,[LLM] 证据明确显示该雷达用于F-15C，而F-15C是美国空军战机
+60,V004,frequency_GHz,10.25,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且V004型号冷僻，无法确认其工作频率是
+61,ROMEO/ROMEO-IⅡI,range_km,0.5,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据不充分，且缺乏该型号具体参数信息，无法确认0.5 km是
+62,WXR-700X,prf_kHz,0.18,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute prf_kHz,?,[LLM] 证据未提供具体数值，且WXR-700X为冷僻型号，无法确认其
+63,Anemone,range_km,9.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据不完整，无法确认Anemone型号雷达的具体作用距离是否
+64,Zhuk(N010),range_km,5.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据未提供具体数值，且缺乏Zhuk(N010)雷达作用距离的
+65,SLAR100,hasMode,MTI,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),根据用户选择，雷达可增加DBS、MTI以及CFAR等处理能力,1,[LLM] 证据明确支持SLAR100具有MTI模式。
+66,AN/APQ-174/174(V)/186(V),frequency_GHz,15.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且该型号工作频率非公开常见知识，无法确认
+67,KingRadio,decade,1970,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute decade,?,[LLM] 证据未提供具体型号信息，无法确认KingRadio与1970
+68,AN/APN-215(V),hasTechType,脉冲,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 228 体制,1,[LLM] 证据明确支持“脉冲”体制。
+69,A813,range_km,200.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据未提供具体数值，且A813型号冷僻，无法确认其作用距离是
+70,MiG-23,frequency_GHz,13.04,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且MiG-23雷达型号众多，无法确认13
+71,PIICH-2AM,deployedOn,MiG-21SM,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 94 装备机种,1,[LLM] 证据明确支持部署在MiG-21SM上。
+72,S-300 missile system,developedBy,NPO Almaz,llm_few_shot,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),produced by NPO Almaz,1,[LLM] NPO Almaz是S-300的研制方，证据支持。
+73,AN/APG-65/65(V),frequency_GHz,8.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且我无法确认AN/APG-65/65(V
+74,RBE2,hasMode,探测与跟踪海面远程目标,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),空海：探测与跟踪海面远程目标,1,[LLM] 证据明确支持该工作模式。
+75,AWACS,cooling_description,方式液冷 截止到2011年1月，已经生产了约18套Phalcon,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute cooling_description,0,[LLM] 证据中“v2 attribute cooling_descr
+76,AN/AWG-10,developedBy,Northrop Grumman,rule_pattern,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),The AN/APQ-120 was an aircraft fire-control radar (FCR) manufactured by Westinghouse for the McDonnell Douglas F-4E Phantom II.,0,[LLM] 证据提到Westinghouse，非Northrop Gru
+77,MR-2000/3000,hasMode,"对整个反应系统的支持结构
+变探测
+312",extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 350 性能数据 工作方式,?,[LLM] 证据不完整，无法确认“变探测312”是否为MR-2000/3
+78,KALKAN Air Defence Radar,developedBy,ASELSAN,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q24915296,1,[LLM] ASELSAN是KALKAN雷达的制造商，证据支持。
+79,AN/SPS-5,operatedBy,United States Navy,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q109599646,1,[LLM] 证据显示AN/SPS-5由美国海军使用。
+80,CAESAR,operatedBy,英国,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),各国第3B批次“台风”的订货量如下：英国48架,1,[LLM] 证据明确显示英国是“台风”的使用国，CAESAR可能指代“台
+81,ROMEO,frequency_GHz,94.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且ROMEO型号的精确工作频率非通用知识
+82,Agave,range_description,18km~28km（对战斗机）,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_description,?,[LLM] 证据不完整，无法确认Agave雷达对战斗机的具体探测距离是否
+83,H001-03,frequency_GHz,8.8425,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且H001-03为冷僻型号，无法确认其工
+84,AN/APG-65/65(V),developedBy,Raytheon Company Space and Airborne,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 181 研制厂商,1,[LLM] 证据明确支持该事实。
+85,EKCO,headquarteredIn,"Southend-on-Sea, United Kingdom",wikidata_curated,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata-curated headquarters location,1,"[LLM] 证据明确显示总部位于Southend-on-Sea, UK。"
+86,AN/APN-215(V),operatedBy,美国,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),如美国陆军的BeechKingAir、U-21和RU-21,1,[LLM] 证据明确支持美国使用该型号。
+87,AMES Type 82,developedBy,the Marconi Company,rule_pattern,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),"The AMES Type 82, also widely known by its rainbow codename Orange Yeoman, was an S-band 3D radar built by the Marconi Company and used by the Royal Air Force (RAF), initially for tactical control and",1,[LLM] 证据明确说明由Marconi Company建造
+88,RUS-1,operatedBy,俄罗斯,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q1431015,1,[LLM] 根据Wikidata，RUS-1是苏联雷达，使用国为苏联，而
+89,RDR-1700,frequency_GHz,9.31,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且RDR-1700型号冷僻，无法确认其工
+90,Automatic Gun-Laying Turret,developedBy,Frazer-Nash,enrich_wiki,WIKI,在 Wikidata/维基百科查该型号，核对该字段,wikipedia,1,[LLM] Frazer-Nash是英国知名炮塔制造商，证据支持。
+91,Tu-134,deployedOn,An-70,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 437 装备机种,0,[LLM] 证据显示Tu-134与An-70为不同机种，非部署关系。
+92,AN/APG-81,status,研制中,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute status,0,[LLM] 证据显示状态为v2属性，与“研制中”不符。
+93,DBS：,hasMode,10nmil,extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 239 性能数据 工作方式,?,[LLM] 证据未明确说明“10nmil”是工作模式，且该值更像距离单位
+94,SW1C,operatedBy,加拿大,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q120468159,?,[LLM] 无法确认SW1C型号与加拿大的关联，证据不足。
+95,Anemone,operatedBy,法国,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),Anemone（银莲花）雷达是为法国海军的超级Etendard战斗机升级项目而设计的。,1,[LLM] 证据明确说明为法国海军设计
+96,AN/APY-2,operatedBy,沙特阿拉伯,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),AN/APY-2雷达则配装在...沙特阿拉伯(5架USAF/NATO通用E-3A),1,[LLM] 证据明确提到沙特阿拉伯使用AN/APY-2雷达
+97,Primus-40WXD/90/400,hasFrequencyBand,X,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 356 频段,?,[LLM] 证据未提供具体频段数值，且该型号冷僻，无法确认X是否准确。
+98,Byelka,operatedBy,俄罗斯,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q15220909,?,[LLM] 无法确认Byelka具体指代何种雷达装备及其使用国
+99,AllWeatherRadar,hasMode,测试,pdf_narrative_llm,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),TFR系统具有备用状态、测试和地形跟随3种状态。,1,[LLM] 证据明确支持该事实。
+100,ThalesAirborneSystems,hasFrequencyBand,E,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 121 频段,1,[LLM] 证据明确支持工作频段为E
+101,PS-66,operatedBy,瑞典,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata wd:Q13415389,1,[LLM] 证据显示PS-66由瑞典使用
+102,3acJIoH,status_description,现为俄罗斯主力战机MiG-31的主要装备 的性能改进了150%~200%的雷达为3aCI0H-M；携,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute status_description,0,[LLM] 证据中型号为3aCI0H-M，与主体3acJIoH不符，且描
+103,Goodyear,countryOfOrigin,美国,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),页眉国家分类: United States,1,[LLM] 证据明确显示国家分类为美国
+104,RDR-1400C,hasMode,姿态系统,extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 379 性能数据 工作方式,?,[LLM] 证据未明确提及“姿态系统”作为RDR-1400C的工作模式，
+105,AN/APS-120/125/138/139,countryOfOrigin,美国,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),页眉国家分类: United States,1,[LLM] 证据明确标注国家分类为美国
+106,C-26,range_km,370.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据未提供具体数值，且C-26型号冷僻，无法确认其作用距离是
+107,AN/UPD-8/9(AN/APD-14/12),countryOfOrigin,美国,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),页眉国家分类: United States,1,[LLM] 证据明确标注国家分类为美国
+108,RDR-1700B,hasMode,"
+面搜索",extract_perf_data,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 385 性能数据 工作方式,1,[LLM] 证据明确支持该工作模式。
+109,MESA,range_km,33.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute range_km,?,[LLM] 证据不充分，且MESA型号具体参数未知，无法确认作用距离为3
+110,Automatic Gun-Laying Turret,countryOfOrigin,英国,enrich_wiki,WIKI,在 Wikidata/维基百科查该型号，核对该字段,wikipedia: 英国,1,[LLM] 证据明确支持原产国为英国
+111,Zhuk-A3,frequency_GHz,8.0,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute frequency_GHz,?,[LLM] 证据未提供具体数值，且我无该型号确切频率数据，无法确认8.0
+112,DBS：,developedBy,Lockheed MartinOceanRadarandSensor AN/APQ-161雷达也装备F-111F型飞机,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 239 研制厂商,0,[LLM] 证据显示DBS是功能而非厂商，且AN/APQ-161雷达与F
+113,Thales,affiliatedTo,荷兰,wikidata,WIKI,在 Wikidata/维基百科查该型号，核对该字段,Wikidata manufacturer country,1,[LLM] Thales是法国公司，证据显示制造商国家为荷兰不准确。
+114,PIICH-2AM,decade,1950,v2_attribute,ATTR,这是属性值：按领域常识/检索核对该型号此参数(频率/国别等),v2 attribute decade,0,[LLM] 证据未提供具体信息，且PIICH-2AM型号未知，无法确认其
+115,N019 Sapfir-29M1,developedBy,①A3OTPOH-HMMP,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 97 研制厂商,1,[LLM] 证据明确支持该事实。
+116,A813,hasTechType,脉冲,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 49 体制,1,[LLM] 证据明确支持“脉冲”体制
+117,Mercury2,hasFrequencyBand,L,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 347 频段,1,[LLM] 证据明确支持该频段信息
+118,Captor-E,developedBy,欧洲雷达联合体（由Selex-Galileo、EADS 下属Cassidian和西班牙Indra组成）,extract_std_field,POINTER,evidence 是手册页码：翻该页核对，或按常识/检索判断,page 149 研制厂商,1,[LLM] 证据明确支持该事实。
+119,RT-1501A,hasMode,信标导航,pdf_spec_block,TEXT,evidence 是原文片段：核对它是否支持该事实(再辅以常识),工作方式: 空面搜索，地形测绘，信标导航，气象,1,[LLM] 证据明确列出信标导航为工作模式之一

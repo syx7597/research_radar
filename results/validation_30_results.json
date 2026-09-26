@@ -1,0 +1,330 @@
+{
+  "results": [
+    {
+      "id": "agg_count_01",
+      "type": "agg_count",
+      "question": "美国一共使用了多少款雷达？",
+      "gold_count": 237,
+      "baseline_count": 9,
+      "baseline_recall": 0.0379746835443038,
+      "strategy_recall": 1.0,
+      "baseline_count_correct": 0.0,
+      "strategy_count_correct": 1.0,
+      "gold_set_size": 237
+    },
+    {
+      "id": "agg_count_02",
+      "type": "agg_count",
+      "question": "Raytheon 一共研制了多少款雷达？",
+      "gold_count": 36,
+      "baseline_count": 5,
+      "baseline_recall": 0.1388888888888889,
+      "strategy_recall": 1.0,
+      "baseline_count_correct": 0.0,
+      "strategy_count_correct": 1.0,
+      "gold_set_size": 36
+    },
+    {
+      "id": "agg_count_03",
+      "type": "agg_count",
+      "question": "工作在 S 波段的雷达共有多少款？",
+      "gold_count": 46,
+      "baseline_count": 7,
+      "baseline_recall": 0.15217391304347827,
+      "strategy_recall": 1.0,
+      "baseline_count_correct": 0.0,
+      "strategy_count_correct": 1.0,
+      "gold_set_size": 46
+    },
+    {
+      "id": "agg_count_04",
+      "type": "agg_count",
+      "question": "VHF 波段的雷达有多少款？",
+      "gold_count": 14,
+      "baseline_count": 4,
+      "baseline_recall": 0.2857142857142857,
+      "strategy_recall": 1.0,
+      "baseline_count_correct": 0.0,
+      "strategy_count_correct": 1.0,
+      "gold_set_size": 14
+    },
+    {
+      "id": "agg_count_05",
+      "type": "agg_count",
+      "question": "中国一共使用了多少款雷达？",
+      "gold_count": 48,
+      "baseline_count": 11,
+      "baseline_recall": 0.22916666666666666,
+      "strategy_recall": 1.0,
+      "baseline_count_correct": 0.0,
+      "strategy_count_correct": 1.0,
+      "gold_set_size": 48
+    },
+    {
+      "id": "agg_enum_01",
+      "type": "agg_enum",
+      "question": "Lockheed Martin 研制的雷达有哪些？请列出全部。",
+      "gold_set_size": 12,
+      "baseline_recall": 0.75,
+      "strategy_recall": 1.0,
+      "baseline_matches": 9
+    },
+    {
+      "id": "agg_enum_02",
+      "type": "agg_enum",
+      "question": "采用合成孔径技术的雷达有哪些？",
+      "gold_set_size": 33,
+      "baseline_recall": 0.0,
+      "strategy_recall": 1.0,
+      "baseline_matches": 0
+    },
+    {
+      "id": "agg_enum_03",
+      "type": "agg_enum",
+      "question": "请列出所有部署在战斗机上的雷达。",
+      "gold_set_size": 44,
+      "baseline_recall": 0.29545454545454547,
+      "strategy_recall": 1.0,
+      "baseline_matches": 13
+    },
+    {
+      "id": "agg_enum_04",
+      "type": "agg_enum",
+      "question": "有源相控阵体制的所有雷达？",
+      "gold_set_size": 10,
+      "baseline_recall": 0.8,
+      "strategy_recall": 1.0,
+      "baseline_matches": 8
+    },
+    {
+      "id": "agg_enum_05",
+      "type": "agg_enum",
+      "question": "工作在 X 波段的所有雷达列表。",
+      "gold_set_size": 34,
+      "baseline_recall": 0.35294117647058826,
+      "strategy_recall": 1.0,
+      "baseline_matches": 12
+    },
+    {
+      "id": "neg_01",
+      "type": "negation",
+      "question": "AN/TPY-2 出口到了哪些国家？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 0,
+      "baseline_has_grounding_evidence": false
+    },
+    {
+      "id": "neg_02",
+      "type": "negation",
+      "question": "AN/TPY-2 是否被中国使用？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [
+        "美国"
+      ],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 1,
+      "baseline_has_grounding_evidence": true
+    },
+    {
+      "id": "neg_03",
+      "type": "negation",
+      "question": "AN/TPS-59 是由 Raytheon 研制的吗？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [
+        "General Electric",
+        "Lockheed Martin"
+      ],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 0,
+      "baseline_has_grounding_evidence": false
+    },
+    {
+      "id": "neg_04",
+      "type": "negation",
+      "question": "AN/APY-9 是否出口到日本？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 0,
+      "baseline_has_grounding_evidence": false
+    },
+    {
+      "id": "neg_05",
+      "type": "negation",
+      "question": "Voronezh radar 是否被美国使用？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [
+        "俄罗斯"
+      ],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 1,
+      "baseline_has_grounding_evidence": true
+    },
+    {
+      "id": "neg_06",
+      "type": "negation",
+      "question": "AN/MPQ-65 是否升级自 AN/SPY-1？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [
+        "AN/MPQ-53"
+      ],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 1,
+      "baseline_has_grounding_evidence": true
+    },
+    {
+      "id": "neg_07",
+      "type": "negation",
+      "question": "AN/TPS-70 是否由 Lockheed Martin 研制？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [
+        "Northrop Grumman"
+      ],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 0,
+      "baseline_has_grounding_evidence": false
+    },
+    {
+      "id": "neg_08",
+      "type": "negation",
+      "question": "AN/APG-77 是否兼容 R-77 导弹？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 0,
+      "baseline_has_grounding_evidence": false
+    },
+    {
+      "id": "neg_09",
+      "type": "negation",
+      "question": "AN/SPY-6 是否部署在直升机上？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [
+        "Flight III Arleigh Burke-class destroyer",
+        "护卫舰",
+        "航空母舰",
+        "阿利·伯克级驱逐舰",
+        "驱逐舰"
+      ],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 0,
+      "baseline_has_grounding_evidence": false
+    },
+    {
+      "id": "neg_10",
+      "type": "negation",
+      "question": "EL/M-2080 是否由美国研制？",
+      "gold_should_say_no": true,
+      "strategy_known_tails": [
+        "Israel Aerospace Industries"
+      ],
+      "strategy_correct": true,
+      "baseline_retrieved_relevant_facts": 1,
+      "baseline_has_grounding_evidence": true
+    },
+    {
+      "id": "mh_01",
+      "type": "two_hop_bridge",
+      "question": "AN/TPY-2 的研制公司属于哪个国家？",
+      "path_entities": [
+        "AN/TPY-2",
+        "Raytheon",
+        "美国"
+      ],
+      "baseline_recall": 1.0,
+      "strategy_recall": 1.0
+    },
+    {
+      "id": "mh_02",
+      "type": "two_hop_bridge",
+      "question": "AN/MPQ-65 的研制公司还研制了哪些雷达？",
+      "path_entities": [
+        "AN/MPQ-65",
+        "Raytheon",
+        "{?}"
+      ],
+      "baseline_recall": 0.6666666666666666,
+      "strategy_recall": 1.0
+    },
+    {
+      "id": "mh_03",
+      "type": "two_hop_bridge",
+      "question": "EL/M-2080 的研制方所在国是？",
+      "skip": "no_gold_path"
+    },
+    {
+      "id": "mh_04",
+      "type": "three_hop_chain",
+      "question": "AN/TPS-70 的前代型号由哪家公司研制？属于哪个国家？",
+      "path_entities": [
+        "AN/TPS-43",
+        "AN/TPS-70",
+        "Northrop Grumman",
+        "美国"
+      ],
+      "baseline_recall": 1.0,
+      "strategy_recall": 1.0
+    },
+    {
+      "id": "mh_05",
+      "type": "two_hop_bridge",
+      "question": "AN/APG-68 升级自哪款雷达？该雷达由谁研制？",
+      "skip": "no_gold_path"
+    },
+    {
+      "id": "mh_06",
+      "type": "attr_filter",
+      "question": "由 Raytheon 研制且部署在战斗机上的雷达？",
+      "gold_set_size": 14,
+      "gold_set": [
+        "AN/APG-63 radar family",
+        "AN/APG-64",
+        "AN/APG-65 radar family",
+        "AN/APG-70",
+        "AN/APG-71",
+        "AN/APG-73",
+        "AN/APG-77",
+        "AN/APG-81",
+        "AN/APG-82",
+        "AN/APG-83",
+        "AN/APQ-180",
+        "AN/AWG-20",
+        "AN/AWG-27",
+        "AN/AWG-9"
+      ],
+      "baseline_recall": 1.0,
+      "strategy_recall": 1.0
+    },
+    {
+      "id": "mh_07",
+      "type": "attr_filter",
+      "question": "美国研制且工作在 S 波段的雷达？",
+      "gold_set_size": 0,
+      "gold_set": [],
+      "baseline_recall": 0.0,
+      "strategy_recall": 1.0
+    },
+    {
+      "id": "mh_08",
+      "type": "two_hop_bridge",
+      "question": "AN/TPY-4 的研制公司属于哪个国家？该公司还研制了哪些雷达？",
+      "skip": "no_gold_path"
+    },
+    {
+      "id": "mh_09",
+      "type": "set_compare",
+      "question": "AN/TPY-2 和 AN/MPQ-65 是同一家公司研制的吗？",
+      "note": "set_compare requires post-hoc LLM evaluation; retrieval-only score not meaningful",
+      "skip": "qualitative"
+    },
+    {
+      "id": "mh_10",
+      "type": "set_compare",
+      "question": "AN/TPS-59 和 AN/TPY-2 的研制公司是否相同？",
+      "note": "set_compare requires post-hoc LLM evaluation; retrieval-only score not meaningful",
+      "skip": "qualitative"
+    }
+  ]
+}

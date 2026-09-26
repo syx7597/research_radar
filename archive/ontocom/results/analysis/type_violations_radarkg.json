@@ -1,0 +1,20 @@
+{
+  "RotatE backbone": {
+    "violation_rate": 0.3036,
+    "head_violations": 0,
+    "tail_violations": 595,
+    "total_predictions": 980
+  },
+  "+ TCNS": {
+    "violation_rate": 0.349,
+    "head_violations": 0,
+    "tail_violations": 684,
+    "total_predictions": 980
+  },
+  "OntoCom (full)": {
+    "violation_rate": 0.3388,
+    "head_violations": 0,
+    "tail_violations": 664,
+    "total_predictions": 980
+  }
+}

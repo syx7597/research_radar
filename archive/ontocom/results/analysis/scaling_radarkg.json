@@ -1,0 +1,66 @@
+{
+  "RotatE backbone": [
+    {
+      "fraction": 0.2,
+      "num_triples": 154,
+      "mrr": 0.0568,
+      "hits_at_10": 0.0969
+    },
+    {
+      "fraction": 0.4,
+      "num_triples": 309,
+      "mrr": 0.097,
+      "hits_at_10": 0.1378
+    },
+    {
+      "fraction": 0.6,
+      "num_triples": 464,
+      "mrr": 0.1528,
+      "hits_at_10": 0.2449
+    },
+    {
+      "fraction": 0.8,
+      "num_triples": 619,
+      "mrr": 0.2068,
+      "hits_at_10": 0.3061
+    },
+    {
+      "fraction": 1.0,
+      "num_triples": 774,
+      "mrr": 0.291,
+      "hits_at_10": 0.4694
+    }
+  ],
+  "OntoCom (full)": [
+    {
+      "fraction": 0.2,
+      "num_triples": 154,
+      "mrr": 0.0665,
+      "hits_at_10": 0.102
+    },
+    {
+      "fraction": 0.4,
+      "num_triples": 309,
+      "mrr": 0.1195,
+      "hits_at_10": 0.1939
+    },
+    {
+      "fraction": 0.6,
+      "num_triples": 464,
+      "mrr": 0.1234,
+      "hits_at_10": 0.2143
+    },
+    {
+      "fraction": 0.8,
+      "num_triples": 619,
+      "mrr": 0.194,
+      "hits_at_10": 0.3316
+    },
+    {
+      "fraction": 1.0,
+      "num_triples": 774,
+      "mrr": 0.2269,
+      "hits_at_10": 0.3878
+    }
+  ]
+}

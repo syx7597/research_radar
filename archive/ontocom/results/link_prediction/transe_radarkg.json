@@ -1,0 +1,65 @@
+{
+  "model": "transe",
+  "dataset": "radarkg",
+  "metrics": {
+    "mrr": 0.2029,
+    "hits_at_1": 0.0816,
+    "hits_at_3": 0.2857,
+    "hits_at_10": 0.4592,
+    "count": 196
+  },
+  "per_relation": {
+    "deployedOn": {
+      "mrr": 0.1834,
+      "hits_at_1": 0.08,
+      "hits_at_3": 0.22,
+      "hits_at_10": 0.42,
+      "count": 50
+    },
+    "hasFrequencyBand": {
+      "mrr": 0.1821,
+      "hits_at_1": 0.0556,
+      "hits_at_3": 0.25,
+      "hits_at_10": 0.5,
+      "count": 36
+    },
+    "operatedBy": {
+      "mrr": 0.1806,
+      "hits_at_1": 0.0185,
+      "hits_at_3": 0.3333,
+      "hits_at_10": 0.5,
+      "count": 54
+    },
+    "developedBy": {
+      "mrr": 0.1825,
+      "hits_at_1": 0.1053,
+      "hits_at_3": 0.2368,
+      "hits_at_10": 0.3421,
+      "count": 38
+    },
+    "affiliatedTo": {
+      "mrr": 0.3809,
+      "hits_at_1": 0.2,
+      "hits_at_3": 0.5,
+      "hits_at_10": 0.7,
+      "count": 10
+    },
+    "upgradeOf": {
+      "mrr": 0.34,
+      "hits_at_1": 0.3333,
+      "hits_at_3": 0.3333,
+      "hits_at_10": 0.3333,
+      "count": 6
+    },
+    "exportedTo": {
+      "mrr": 0.75,
+      "hits_at_1": 0.5,
+      "hits_at_3": 1.0,
+      "hits_at_10": 1.0,
+      "count": 2
+    }
+  },
+  "training_time": 185.6,
+  "eval_time": 0.1,
+  "final_loss": 0.1445
+}

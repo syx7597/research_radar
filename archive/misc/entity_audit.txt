@@ -1,0 +1,264 @@
+=== Country: 110 unique ===
+  [ 432] 美国
+  [ 109] 俄罗斯
+  [  67] 法国
+  [  61] 中国
+  [  52] 英国
+  [  29] 日本
+  [  24] 德国
+  [  20] 意大利
+  [  18] 印度
+  [  18] 加拿大
+  [  16] 以色列
+  [  16] 荷兰
+  [  14] 瑞典
+  [  13] 澳大利亚
+  [   9] 伊朗
+  [   9] 西班牙
+  [   9] United States Navy
+  [   8] 土耳其
+  [   7] 韩国
+  [   7] United States Air Force
+  [   6] 希腊
+  [   5] 芬兰
+  [   5] People's Republic of China
+  [   5] 波兰
+  [   5] 沙特阿拉伯
+  [   5] 埃及
+  [   4] 乌克兰
+  [   4] 挪威
+  [   4] Royal Navy
+  [   4] People's Liberation Army Navy
+
+=== RadarMode: 867 unique ===
+  [  86] 地形测绘
+  [  41] 地形回避
+  [  32] 气象探测
+  [  29] 地形跟随
+  [  29] 空地测距
+  [  24] 边扫边跟
+  [  24] 边扫描边跟踪
+  [  21] 边搜索边测距
+  [  21] 导航
+  [  20] 合成孔径
+  [  20] 多普勒波束锐化
+  [  19] 地面动目标指示
+  [  19] 搜索
+  [  18] 信标
+  [  17] 气象
+  [  16] 单目标跟踪
+  [  13] 速度搜索
+  [  13] 真波束地形测绘
+  [  13] 动目标指示
+  [  11] 脉冲多普勒
+  [  11] 地面动目标跟踪
+  [  11] 空空
+  [  11] 跟踪
+  [  10] 空地
+  [   9] 海面搜索
+  [   9] 空中格斗
+  [   9] 平显搜索
+  [   8] ISAR
+  [   8] 边测距边搜索
+  [   8] 垂直扫描
+
+=== TechType: 21 unique ===
+  [  35] 脉冲波形
+  [  33] 合成孔径
+  [  25] 脉冲多普勒
+  [  25] 单脉冲
+  [  14] 动目标指示
+  [  10] 有源相控阵
+  [   8] 无源相控阵
+  [   7] 逆合成孔径
+  [   5] 地面动目标指示
+  [   3] 相控阵
+  [   3] 机载动目标指示
+  [   2] 调频连续波
+  [   1] 间断/连续波
+  [   1] 非相参动目标指示
+  [   1] MTI
+  [   1] 无源/有源相控阵
+  [   1] 1单脉冲
+  [   1] 连续波
+  [   1] 地面动目标指
+  [   1] 全固态有源相控阵
+  [   1] 逆合成
+
+=== FrequencyBand: 28 unique ===
+  [  46] S
+  [  34] X
+  [  18] L
+  [  14] VHF
+  [  13] KU
+  [   9] UHF
+  [   9] C
+  [   9] I/J
+  [   5] Ka
+  [   2] IJ
+  [   1] W
+  [   1] I
+  [   1] J
+  [   1] X，L
+  [   1] Ka，L
+  [   1] 试验，1978年2月15日第一次探测并同时跟踪到
+  [   1] 标，并在显示器上显示对导航有危险的潮湿气象目
+  [   1] ，Su-27)
+  [   1] X，VHF
+  [   1] I，J
+  [   1] E，F
+  [   1] /J
+  [   1] MTI信息并与中分辨力的SAR图像叠加。
+  [   1] I/J，G
+  [   1] I/低J
+  [   1] E/F
+  [   1] 扫描范围
+  [   1] 1，X
+
+=== Function: 17 unique ===
+  [   6] air-to-air combat
+  [   3] air-to-ground attack
+  [   2] fire control
+  [   2] air-to-surface attack
+  [   1] synthetic aperture radar mapping
+  [   1] air-to-ground targeting
+  [   1] reconnaissance
+  [   1] target detection
+  [   1] target identification
+  [   1] gun control
+  [   1] missile tracking
+  [   1] air defense
+  [   1] long-range search
+  [   1] altitude-finding
+  [   1] Identification Friend or Foe
+  [   1] long range search
+  [   1] warning
+
+=== Weapon: 32 unique ===
+  [   3] AIM-9
+  [   3] AGM-12
+  [   3] AGM-62A
+  [   2] R-73
+  [   2] AIM-9L
+  [   2] AIM-7F/M
+  [   2] AIM-7
+  [   2] AGM-45
+  [   1] R-77
+  [   1] R-27R1
+  [   1] R-27T1
+  [   1] R-27ER1
+  [   1] RVV-AE
+  [   1] K-100
+  [   1] R-27R1/T1
+  [   1] P-27T1
+  [   1] R27R1
+  [   1] R27ER1
+  [   1] R27T1
+  [   1] R27ET1
+  [   1] ASMP
+  [   1] AIM-7F
+  [   1] AIM-120
+  [   1] AMRAAM
+  [   1] AIM-7F/MS
+  [   1] AIM-120A/B
+  [   1] AIM-120C/D
+  [   1] AGM-86M
+  [   1] M-61A1
+  [   1] AGM83A
+
+=== NavalVessel: 76 unique ===
+  [   4] escort ship
+  [   2] naval ships
+  [   2] Charles F. Adams-class destroyer
+  [   2] Tarawa-class amphibious assault ship
+  [   1] Belknap-class cruisers
+  [   1] Mitscher class
+  [   1] Forrest Sherman class
+  [   1] Farragut class
+  [   1] Charles F. Adams-class destroyers
+  [   1] Knox-class frigates
+  [   1] 查尔斯·F·亚当斯级驱逐舰
+  [   1] 斯普鲁恩斯级驱逐舰
+  [   1] 基德级驱逐舰
+  [   1] 塔拉瓦级两栖攻击舰
+  [   1] 加利福尼亚级巡洋舰
+  [   1] 弗吉尼亚级巡洋舰
+  [   1] warships equipped with the Aegis Combat System
+  [   1] Tarawa-class amphibious assault ships
+  [   1] America-class amphibious assault ships
+  [   1] 阿利·伯克级驱逐舰
+  [   1] NavalVessel
+  [   1] JS Asuka
+  [   1] JS Hyūga (DDH-181)
+  [   1] Akizuki-class destroyers
+  [   1] Izumo-class helicopter destroyers
+  [   1] Asahi-class destroyer
+  [   1] FREMM multipurpose frigates
+  [   1] Formidable-class frigates
+  [   1] Admiral Kuznetsov
+  [   1] Kirov-class battlecruiser
+
+=== Platform: 188 unique ===
+  [  44] 战斗机
+  [  28] 车载机动
+  [  25] 舰载（通用）
+  [  19] 固定站
+  [  15] 直升机
+  [  13] 驱逐舰
+  [  11] 巡洋舰
+  [  10] 护卫舰
+  [   9] 无人机
+  [   5] 预警机
+  [   4] 航空母舰
+  [   4] 潜艇
+  [   4] C-130
+  [   3] F-15E
+  [   3] 固定翼飞机
+  [   2] F-15C
+  [   2] F-15D
+  [   2] F-15I
+  [   2] F-15S
+  [   2] MiG-23
+  [   2] C-17
+  [   2] F-111A
+  [   1] the cruiser USS Ticonderoga
+  [   1] the Guardian-class radar picket ship
+  [   1] Steregushchiy-class corvettes
+  [   1] the Murasame and Takanami-class destroyers
+  [   1] the light cruiser HMS Dido in October 1940
+  [   1] a number of early PLA-N frigates and destroyers
+  [   1] many varying aircraft types including the U
+  [   1] the F-22 Raptor fighter aircraft
+
+=== Manufacturer: 189 unique ===
+  [  41] Northrop Grumman
+  [  39] Raytheon
+  [  19] the same company
+  [  14] Lockheed Martin
+  [  12] Thales
+  [  10] General Electric
+  [   9] Marconi
+  [   6] Israel Aerospace Industries
+  [   5] Mitsubishi Electric
+  [   5] Japan Radio
+  [   5] Westinghouse Electric Corporation
+  [   5] Bharat Electronics
+  [   5] ThalesAerospaceDivision（原研制厂商
+  [   4] Leonardo
+  [   4] Bell Laboratories
+  [   4] Metropolitan-Vickers
+  [   4] ASELSAN
+  [   4] TexasInstruments
+  [   3] ITT Gilfillan
+  [   3] Hughes Aircraft Company
+  [   3] Almaz-Antey
+  [   3] Oki Electric Industry
+  [   3] Fujitsu
+  [   3] BAE Systems
+  [   3] Boeing
+  [   3] EKCO
+  [   3] Saab
+  [   3] Telefunken
+  [   3] Aselsan
+  [   3] Decca
+

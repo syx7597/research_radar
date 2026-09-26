@@ -1,0 +1,121 @@
+{
+  "kg_quality": {
+    "total_annotated": 252,
+    "correct": 191,
+    "partial": 14,
+    "wrong": 47,
+    "strict_precision": 0.758,
+    "loose_precision": 0.786,
+    "per_relation": {
+      "affiliatedTo": {
+        "precision": 0.917,
+        "correct": 33,
+        "partial": 0,
+        "wrong": 3,
+        "total": 36
+      },
+      "exportedTo": {
+        "precision": 0.895,
+        "correct": 17,
+        "partial": 1,
+        "wrong": 1,
+        "total": 19
+      },
+      "deployedOn": {
+        "precision": 0.821,
+        "correct": 46,
+        "partial": 8,
+        "wrong": 2,
+        "total": 56
+      },
+      "developedBy": {
+        "precision": 0.814,
+        "correct": 35,
+        "partial": 4,
+        "wrong": 4,
+        "total": 43
+      },
+      "hasFrequencyBand": {
+        "precision": 0.812,
+        "correct": 13,
+        "partial": 0,
+        "wrong": 3,
+        "total": 16
+      },
+      "operatedBy": {
+        "precision": 0.796,
+        "correct": 43,
+        "partial": 1,
+        "wrong": 10,
+        "total": 54
+      },
+      "upgradeOf": {
+        "precision": 0.143,
+        "correct": 4,
+        "partial": 0,
+        "wrong": 24,
+        "total": 28
+      }
+    }
+  },
+  "qa_evaluation_21q": {
+    "baseline": {
+      "single_hop": 0.833,
+      "multi_hop": 0.667,
+      "comparison": 0.333,
+      "overall": 0.714,
+      "note": "before graph expansion fix, no type-aware scoring"
+    },
+    "improved": {
+      "single_hop": 0.833,
+      "multi_hop": 0.833,
+      "comparison": 0.333,
+      "overall": 0.762,
+      "note": "graph expansion bug fix (head+tail seeds) + multiplicative type boost"
+    }
+  },
+  "ablation_21q": {
+    "BM25-only": {
+      "single_hop": 0.833,
+      "multi_hop": 0.333,
+      "comparison": 0.333,
+      "overall": 0.619
+    },
+    "Vector-only": {
+      "single_hop": 0.75,
+      "multi_hop": 0.167,
+      "comparison": 0.333,
+      "overall": 0.524
+    },
+    "BM25+Vector(RRF)": {
+      "single_hop": 0.833,
+      "multi_hop": 0.5,
+      "comparison": 0.333,
+      "overall": 0.667
+    },
+    "Full(+Graph)": {
+      "single_hop": 1.0,
+      "multi_hop": 1.0,
+      "comparison": 0.667,
+      "overall": 0.952
+    }
+  },
+  "qa_benchmark_v2": {
+    "total": 101,
+    "by_type": {
+      "single_hop": 44,
+      "multi_hop": 24,
+      "comparison": 10,
+      "aggregation": 18,
+      "negation": 5
+    },
+    "recall_structural_only": {
+      "single_hop": 0.977,
+      "multi_hop": 1.0,
+      "comparison": 1.0,
+      "aggregation": 1.0,
+      "negation": 0.6,
+      "overall": 0.97
+    }
+  }
+}

@@ -1,0 +1,140 @@
+hasMode (n=1737)
+  head_types: {'Radar': 1737}
+  tail_types: {'RadarMode': 1737}
+  examples: [('ARS-400', '海上监视'), ('ARS-400', '地形测绘'), ('ARS-400', '气象通道'), ('ARS-400', '石油污染通道'), ('ARS-400', '海面目标探测')]
+
+operatedBy (n=625)
+  head_types: {'RadarSystem': 249, 'Radar': 376}
+  tail_types: {'Country': 625}
+  examples: [('AN/TPY-2', '美国'), ('AN/MPQ-65', '美国'), ('AN/APY-9', '美国'), ('AN/TPS-70', '美国'), ('S-300 missile system', '俄罗斯')]
+
+deployedOn (n=463)
+  head_types: {'RadarSystem': 276, 'Radar': 187}
+  tail_types: {'Platform': 377, 'GroundPlatform': 1, 'AircraftPlatform': 1, 'NavalVessel': 82, 'Aircraft': 2}
+  examples: [('AN/MPQ-65', '直升机'), ('AN/MPQ-65', '车载机动'), ('AN/TPS-70', '车载机动'), ('EL/M-2080', '固定站'), ('Aegis Combat System', '舰载（通用）')]
+
+developedBy (n=388)
+  head_types: {'RadarSystem': 237, 'Radar': 151}
+  tail_types: {'Manufacturer': 381, 'Country': 3, 'Organization': 4}
+  examples: [('AN/TPY-2', 'Raytheon'), ('AN/MPQ-65', 'Raytheon'), ('AN/MPQ-65', 'the U'), ('AN/MPQ-65', 'which had previously'), ('AN/APY-9', 'Lockheed Martin')]
+
+countryOfOrigin (n=283)
+  head_types: {'Radar': 283}
+  tail_types: {'Country': 283}
+  examples: [('DSTO', '澳大利亚'), ('ARS-400', '澳大利亚'), ('ARS-800', '澳大利亚'), ('ARS-880', '澳大利亚'), ('Terma', '澳大利亚')]
+
+hasTechType (n=179)
+  head_types: {'Radar': 179}
+  tail_types: {'TechType': 179}
+  examples: [('DSTO', '合成孔径'), ('HiVision', '调频连续波'), ('A813', '脉冲波形'), ('APBAJIET', '脉冲波形'), ('APBAJIET', '动目标指示')]
+
+hasFrequencyBand (n=177)
+  head_types: {'RadarSystem': 132, 'Radar': 45}
+  tail_types: {'FrequencyBand': 177}
+  examples: [('AN/TPY-2', 'L'), ('AN/TPY-2', 'X'), ('AN/APY-9', 'UHF'), ('AN/TPS-70', 'S'), ('Voronezh radar', 'UHF')]
+
+hasRange (n=170)
+  head_types: {'Radar': 170}
+  tail_types: {'Literal': 167, 'Range': 3}
+  examples: [('ARS-400', '20km（RCS1m²夏船，海态3）'), ('ARS-800', '10km（RCS1m²小船，海态3)'), ('ARS-880', '10km（RCS1m²小目标，海态3）'), ('Terma', '37km~46km（海面石油污染）'), ('HiVision', '3000m')]
+
+hasWeight (n=161)
+  head_types: {'Radar': 161}
+  tail_types: {'Literal': 161}
+  examples: [('Technik', '约50kg'), ('A813', '20.95kg（彩显），15.95kg（黑白）'), ('AJIIMA3-23', '5kg（天线）'), ('AJIIMA3-23', '220kg'), ('HMMII', '50kg～60kg，约是原来Bapc天线质量的一半。')]
+
+upgradeOf (n=128)
+  head_types: {'RadarSystem': 29, 'Radar': 99}
+  tail_types: {'RadarSystem': 29, 'Radar': 99}
+  examples: [('AN/TPS-70', 'AN/TPS-43'), ('AN/SPN-35', 'AN/SPN-35'), ('AN/APG-68', 'AN/APG-66'), ('AN/APG-69', 'AN/APQ-159'), ('AN/FPQ-6', 'AN/FPS-16')]
+
+derivedFrom (n=122)
+  head_types: {'Radar': 122}
+  tail_types: {'Radar': 122}
+  examples: [('AN/APG-82', 'AN/APG-79'), ('Bapc(N011M)', 'N011M Bars'), ('N011 BarsMbapc', 'N011M Bars'), ('Zhuk(N010)', 'XyK'), ('Zhuk-27', 'Zhuk-27')]
+
+hasFrequency (n=120)
+  head_types: {'Radar': 120}
+  tail_types: {'Literal': 120}
+  examples: [('ARS-400', '9.2GHz~9.5GHz'), ('ARS-800', '9.2GHz~9.5GHz'), ('ARS-880', '8GHz~12.5GHz'), ('Terma', '（9.375±0.039)GHz'), ('HiVision', '33.7GHz~35.5GHz')]
+
+hasPeakPower (n=120)
+  head_types: {'Radar': 120}
+  tail_types: {'Literal': 120}
+  examples: [('Terma', '25kW±1dB'), ('Technik', '500mW'), ('A813', '3.5kW'), ('AJIIMA3-23', '120kW~220kW'), ('HMMII', '7kW（Chelnok行波管）')]
+
+hasLRUCount (n=119)
+  head_types: {'Radar': 119}
+  tail_types: {'Literal': 119}
+  examples: [('HiVision', '4个'), ('Technik', '4个（机顶罩内部件）'), ('A813', '3个'), ('AJIIMA3-23', '主要部件有10余个'), ('Zhuk(N010)', '7个')]
+
+exportedTo (n=114)
+  head_types: {'RadarSystem': 20, 'Radar': 94}
+  tail_types: {'Country': 114}
+  examples: [('EL/M-2080', '印度'), ('EL/M-2080 Green Pine', '印度'), ('EL/M-2080', '韩国'), ('EL/M-2080', '阿塞拜疆'), ('AN/SPS-6', 'allies')]
+
+hasPower (n=86)
+  head_types: {'Radar': 86}
+  tail_types: {'Literal': 86}
+  examples: [('Terma', 'DC28V15A（最大)'), ('Technik', 'AC50Hz~400Hz115V~220V200W'), ('A813', 'AC125VA，DC120W'), ('AJIIMA3-23', 'AC三相400Hz208V4kVA'), ('MTBF120h', 'AC400Hz200V8.5kVA，DC27V1.5kW')]
+
+hasMTBF (n=85)
+  head_types: {'Radar': 85}
+  tail_types: {'Literal': 85}
+  examples: [('Bapc(N011M)', '150h(Ka频段），220h（L频段）'), ('Zhuk(N010)', '1000h'), ('MTBF120h', '120h'), ('FC-1', '150h'), ('FC-1', '3000h(宣称)')]
+
+status (n=81)
+  head_types: {'Radar': 81}
+  tail_types: {'Literal': 81}
+  examples: [('DSTO', '签署了生产协议备忘录，研制中'), ('ARS-400', '生产、使用中'), ('Terma', '正在服役'), ('HiVision', '据SPIEConference onEnhanced and'), ('A813', '据1992年资料报道，当时正在使用')]
+
+affiliatedTo (n=78)
+  head_types: {'Manufacturer': 78}
+  tail_types: {'Country': 78}
+  examples: [('Raytheon', '美国'), ('Lockheed Martin', '美国'), ('Northrop Grumman', '美国'), ('MZiK', '俄罗斯'), ('Mints Radiotechnical Institute', '俄罗斯')]
+
+hasAntennaGain (n=66)
+  head_types: {'Radar': 66}
+  tail_types: {'Literal': 66}
+  examples: [('ARS-800', '32dB'), ('ARS-880', '32dB'), ('Terma', '>33dB±1dB'), ('Technik', '37dB'), ('A813', '27dB')]
+
+researchedIn (n=63)
+  head_types: {'Radar': 63}
+  tail_types: {'Literal': 63}
+  examples: [('HiVision', '1994年～2000年'), ('APBAJIET', '20世纪90年代中期'), ('Zhuk-AE', '20世纪90年代'), ('Zhuk-Φ', '20世纪70年代中期'), ('OBOI', '20世纪70年代初期')]
+
+deployedIn (n=55)
+  head_types: {'Radar': 55}
+  tail_types: {'Literal': 55}
+  examples: [('Terma', '2001年'), ('Zhuk-Φ', '1981年'), ('JIyy', '20世纪90年代初'), ('OBOI', '20世纪80年代中期'), ('MiG-23', '1965年')]
+
+hasCooling (n=53)
+  head_types: {'Radar': 53}
+  tail_types: {'Literal': 53}
+  examples: [('AJIIMA3-23', '自然冷却，风量165kg/h~200kg/h：磁控'), ('MTBF120h', '风冷，液冷'), ('Zhuk-Φ', '风冷，液冷'), ('MPEMC(N135)', '风冷，液冷'), ('N011M Bars', '风冷，液冷')]
+
+hasECCM (n=44)
+  head_types: {'Radar': 44}
+  tail_types: {'Literal': 44}
+  examples: [('AJIIMA3-23', '抗阻塞式、回答式多种积极干扰，抗消'), ('RLS-35', '有较强抗干扰能力(能跳频)，具备有限的'), ('CAⅡIPMP', '按密码判别是否友机，防异步干扰'), ('A-50M', '设有电子方位系统，该系统包括雷达报'), ('Agave', '频率捷变，脉宽和波束宽度可变')]
+
+compatibleWith (n=43)
+  head_types: {'Radar': 43}
+  tail_types: {'Weapon': 43}
+  examples: [('Zhuk-A3(“3”', 'R-77'), ('Zhuk-A3(“3”', 'R-73'), ('Zhuk-AE', 'R-27R1'), ('Zhuk-AE', 'R-27T1'), ('Zhuk-AE', 'R-27ER1')]
+
+hasFunction (n=26)
+  head_types: {'Radar': 26}
+  tail_types: {'Function': 26}
+  examples: [('AN/SPG-62', 'fire control'), ('AN/APG-77', 'air-to-air combat'), ('AN/APG-77', 'synthetic aperture radar mapping'), ('AN/APG-77', 'air-to-ground targeting'), ('AN/APG-66', 'air-to-air combat')]
+
+price (n=23)
+  head_types: {'Radar': 23}
+  tail_types: {'Literal': 23}
+  examples: [('AMSAR', '300万美元'), ('AN/APG-65/65(V)', '120万美元'), ('AN/APG-66(V)1', '73万美元'), ('APG-66', ')。WX雷达族中，WX-200是具有中等能力的'), ('AN/APG-70/70(V)', '320万美元')]
+
+similarTo (n=1)
+  head_types: {'Radar': 1}
+  tail_types: {'Radar': 1}
+  examples: [('AN/APQ-174(V)', 'APQ-170(V)多功能雷达')]
+

@@ -1,0 +1,12 @@
+{
+  "RotatE backbone": {
+    "mrr": 0.2652,
+    "h10": 0.4133,
+    "violation_rate": 0.3214
+  },
+  "OntoCom (full)": {
+    "mrr": 0.2383,
+    "h10": 0.4082,
+    "violation_rate": 0.3439
+  }
+}

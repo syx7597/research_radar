@@ -1,0 +1,1538 @@
+[
+ {
+  "id": "aggregate_06",
+  "category": "aggregate",
+  "question": "法国研制的雷达的最大探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "max",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "法国"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_39",
+  "category": "multi_enum",
+  "question": "列出日本研制且工作在L波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "日本"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "L"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_12",
+  "category": "hop2_count",
+  "question": "Emerson Electric 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Emerson Electric",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_21",
+  "category": "multi_count",
+  "question": "法国研制且工作在Ku波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "法国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "Ku"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_16",
+  "category": "multi_enum",
+  "question": "列出俄罗斯研制且工作在Ka波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "俄罗斯"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "Ka"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_02",
+  "category": "aggregate",
+  "question": "美国研制的雷达的最大探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "max",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "美国"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_07",
+  "category": "aggregate",
+  "question": "英国研制的雷达的平均探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "avg",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "英国"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_15",
+  "category": "compare",
+  "question": "Hp6uc 和 AN/APS-143(V)3/143B(V)3/143C(V)3 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "Hp6uc",
+   "b": "AN/APS-143(V)3/143B(V)3/143C(V)3",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_43",
+  "category": "multi_enum",
+  "question": "列出瑞典研制且工作在S波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "瑞典"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "S"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_15",
+  "category": "hop2_count",
+  "question": "Thales Airborne Systems 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Thales Airborne Systems",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_06",
+  "category": "compare",
+  "question": "P-12 radar 和 AN/APQ-157 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "P-12 radar",
+   "b": "AN/APQ-157",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_30",
+  "category": "multi_count",
+  "question": "中国研制且工作在S波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "中国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "S"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_13",
+  "category": "hop2_count",
+  "question": "Thales Aerospace Division（ 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Thales Aerospace Division",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": false
+ },
+ {
+  "id": "difference_13",
+  "category": "difference",
+  "question": "俄罗斯研制但不工作在Ku波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "俄罗斯"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "Ku"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_15",
+  "category": "aggregate",
+  "question": "瑞典研制的雷达的平均探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "avg",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "瑞典"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_20",
+  "category": "multi_count",
+  "question": "法国研制且工作在S波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "法国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "S"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_05",
+  "category": "aggregate",
+  "question": "法国研制的雷达的平均探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "avg",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "法国"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_14",
+  "category": "hop2_count",
+  "question": "Telephonics Corporation 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Telephonics Corporation",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_18",
+  "category": "compare",
+  "question": "AN/CPS-4 Radar 和 Seaspray 3000 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "AN/CPS-4 Radar",
+   "b": "Seaspray 3000",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_32",
+  "category": "multi_count",
+  "question": "德国研制且工作在X波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "德国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "X"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_16",
+  "category": "aggregate",
+  "question": "瑞典研制的雷达的最大探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "max",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "瑞典"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_11",
+  "category": "compare",
+  "question": "PS-15 和 N011 BarsMbapc 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "PS-15",
+   "b": "N011 BarsMbapc",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_32",
+  "category": "multi_enum",
+  "question": "列出德国研制且工作在X波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "德国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "X"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_47",
+  "category": "difference",
+  "question": "德国研制但不工作在VHF波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "德国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "VHF"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_02",
+  "category": "multi_count",
+  "question": "美国研制且工作在I波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "美国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "I"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_23",
+  "category": "multi_enum",
+  "question": "列出英国研制且工作在I波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "英国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "I"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_19",
+  "category": "compare",
+  "question": "ASR-11 和 Zhuk-27 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "ASR-11",
+   "b": "Zhuk-27",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_03",
+  "category": "aggregate",
+  "question": "俄罗斯研制的雷达的平均探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "avg",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "俄罗斯"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_36",
+  "category": "multi_count",
+  "question": "德国研制且工作在Ka波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "德国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "Ka"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_42",
+  "category": "multi_count",
+  "question": "瑞典研制且工作在J波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "瑞典"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "J"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_17",
+  "category": "compare",
+  "question": "Närspaningsradar 和 AN/AVQ-56 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "Närspaningsradar",
+   "b": "AN/AVQ-56",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_02",
+  "category": "difference",
+  "question": "美国研制但不工作在I波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "美国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "I"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_04",
+  "category": "hop2_count",
+  "question": "Thales 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Thales",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_16",
+  "category": "hop2_count",
+  "question": "TexasInstruments 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "TexasInstruments",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_03",
+  "category": "multi_count",
+  "question": "美国研制且工作在J波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "美国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "J"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_14",
+  "category": "aggregate",
+  "question": "日本研制的雷达的最大探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "max",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "日本"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_58",
+  "category": "difference",
+  "question": "瑞典研制但不工作在I波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "瑞典"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "I"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_10",
+  "category": "hop2_count",
+  "question": "Honeywell 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Honeywell",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_04",
+  "category": "aggregate",
+  "question": "俄罗斯研制的雷达的最大探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "max",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "俄罗斯"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_37",
+  "category": "multi_count",
+  "question": "日本研制且工作在X波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "日本"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "X"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_04",
+  "category": "compare",
+  "question": "RDR-4B 和 AN/APQ-92/112/148/156/173 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "RDR-4B",
+   "b": "AN/APQ-92/112/148/156/173",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_08",
+  "category": "compare",
+  "question": "AN/APQ-158 和 APN-59E(V) 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "AN/APQ-158",
+   "b": "APN-59E(V)",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_54",
+  "category": "difference",
+  "question": "日本研制但不工作在L波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "日本"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "L"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_27",
+  "category": "multi_count",
+  "question": "英国研制且工作在VHF波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "英国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "VHF"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_10",
+  "category": "aggregate",
+  "question": "中国研制的雷达的最大探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "max",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "中国"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_10",
+  "category": "difference",
+  "question": "俄罗斯研制但不工作在I波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "俄罗斯"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "I"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_03",
+  "category": "compare",
+  "question": "AN/APQ-126V/158 和 Type 281B 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "AN/APQ-126V/158",
+   "b": "Type 281B",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_01",
+  "category": "difference",
+  "question": "美国研制但不工作在X波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "美国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "X"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_44",
+  "category": "difference",
+  "question": "德国研制但不工作在S波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "德国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "S"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_38",
+  "category": "multi_enum",
+  "question": "列出日本研制且工作在S波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "日本"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "S"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_09",
+  "category": "aggregate",
+  "question": "中国研制的雷达的平均探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "avg",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "中国"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_31",
+  "category": "multi_enum",
+  "question": "列出中国研制且工作在VHF波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "中国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "VHF"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_06",
+  "category": "multi_enum",
+  "question": "列出美国研制且工作在L波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "美国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "L"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_40",
+  "category": "difference",
+  "question": "中国研制但不工作在Ka波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "中国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "Ka"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_30",
+  "category": "multi_enum",
+  "question": "列出中国研制且工作在S波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "中国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "S"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_55",
+  "category": "difference",
+  "question": "日本研制但不工作在VHF波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "日本"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "VHF"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_20",
+  "category": "compare",
+  "question": "RDR-1300 和 AN/FPS-24 radar 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "RDR-1300",
+   "b": "AN/FPS-24 radar",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_11",
+  "category": "multi_count",
+  "question": "俄罗斯研制且工作在J波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "俄罗斯"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "J"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_06",
+  "category": "hop2_count",
+  "question": "Marconi 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Marconi",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_09",
+  "category": "compare",
+  "question": "Zhuk-AC3 和 PII-31(RP-31) 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "Zhuk-AC3",
+   "b": "PII-31(RP-31)",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_17",
+  "category": "hop2_count",
+  "question": "Westinghouse Electric 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Westinghouse Electric",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_02",
+  "category": "hop2_count",
+  "question": "Northrop Grumman 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Northrop Grumman",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_07",
+  "category": "hop2_count",
+  "question": "中国电子科技集团 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "中国电子科技集团",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_12",
+  "category": "difference",
+  "question": "俄罗斯研制但不工作在S波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "俄罗斯"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "S"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "aggregate_12",
+  "category": "aggregate",
+  "question": "德国研制的雷达的最大探测距离是多少？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "aggregate",
+   "func": "max",
+   "attribute": "range_km",
+   "over": {
+    "op": "constraint",
+    "relation": "countryOfOrigin",
+    "value": "德国"
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_count_28",
+  "category": "multi_count",
+  "question": "英国研制且工作在Ka波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "英国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "Ka"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_36",
+  "category": "multi_enum",
+  "question": "列出德国研制且工作在Ka波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "德国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "Ka"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_03",
+  "category": "multi_enum",
+  "question": "列出美国研制且工作在J波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "美国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "J"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "compare_16",
+  "category": "compare",
+  "question": "AN/APY-2 和 AN/APG-67/67(V) 的研制方相同吗？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "compare",
+   "a": "AN/APY-2",
+   "b": "AN/APG-67/67(V)",
+   "relation": "developedBy"
+  },
+  "correct": true
+ },
+ {
+  "id": "hop2_count_01",
+  "category": "hop2_count",
+  "question": "Raytheon 一共研制了多少款雷达？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "path",
+    "start": "Raytheon",
+    "chain": [
+     "developedBy^-1"
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "difference_23",
+  "category": "difference",
+  "question": "法国研制但不工作在VHF波段的雷达有多少款？",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "count",
+   "arg": {
+    "op": "difference",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "法国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "VHF"
+     }
+    ]
+   }
+  },
+  "correct": true
+ },
+ {
+  "id": "multi_enum_29",
+  "category": "multi_enum",
+  "question": "列出中国研制且工作在X波段的雷达。",
+  "plan_valid": true,
+  "exec_ok": true,
+  "pred_plan": {
+   "op": "enumerate",
+   "arg": {
+    "op": "intersect",
+    "args": [
+     {
+      "op": "constraint",
+      "relation": "countryOfOrigin",
+      "value": "中国"
+     },
+     {
+      "op": "constraint",
+      "relation": "hasFrequencyBand",
+      "value": "X"
+     }
+    ]
+   }
+  },
+  "correct": true
+ }
+]

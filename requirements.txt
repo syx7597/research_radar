@@ -1,0 +1,28 @@
+# Core runtime for KG-QA / agent / EW pipeline
+# (pinning intentionally loose — capture exact versions with `pip freeze` if needed)
+
+# LLM clients
+openai>=1.0
+python-dotenv
+
+# Retrieval / embeddings / ML
+torch
+transformers
+sentence-transformers
+peft
+datasets
+numpy
+faiss-cpu
+
+# Web extraction
+requests
+beautifulsoup4
+
+# Reporting / figures / demo
+matplotlib
+python-pptx
+streamlit
+tqdm
+
+# --- OntoCom (archived KGE line; optional) ---
+# pykeen

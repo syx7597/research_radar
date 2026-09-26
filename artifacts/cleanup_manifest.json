@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-26",
+  "applied": true,
+  "sources": {
+    "manuals/机载雷达手册  第4版=AIRBORNE RADAR HANDBOOK_13872580.pdf": "3e6d61cb9a281abefb72a9eb8c98a25eec35f173224e232d332401cb8374a3f6",
+    "manuals/世界海用雷达手册.pdf": "f5d34b1b09a08231886cf268c937a895e14dec0e9ab7c360ec71348a74ddf266"
+  },
+  "targets": [
+    {
+      "path": "pipeline/v3/manual/manual_split",
+      "files": 1088,
+      "bytes": 533254833,
+      "source": "manuals/机载雷达手册  第4版=AIRBORNE RADAR HANDBOOK_13872580.pdf",
+      "rebuild": "python pipeline/v3/manual/split_by_radar.py"
+    },
+    {
+      "path": "pipeline/v3/manual/manual_body_pages",
+      "files": 472,
+      "bytes": 330346703,
+      "source": "manuals/机载雷达手册  第4版=AIRBORNE RADAR HANDBOOK_13872580.pdf",
+      "rebuild": "python pipeline/v3/manual/split_by_radar.py --flat"
+    },
+    {
+      "path": "pipeline/v3/manual/manual_appendix_ab_pages",
+      "files": 38,
+      "bytes": 18025605,
+      "source": "manuals/机载雷达手册  第4版=AIRBORNE RADAR HANDBOOK_13872580.pdf",
+      "rebuild": "python pipeline/v3/manual/split_by_radar.py --appendix-ab"
+    },
+    {
+      "path": "pipeline/v3/manual/pages",
+      "files": 23,
+      "bytes": 10109587,
+      "source": "manuals/机载雷达手册  第4版=AIRBORNE RADAR HANDBOOK_13872580.pdf",
+      "rebuild": "python pipeline/v3/manual/render_manual.py 494 516"
+    },
+    {
+      "path": "data/v3/naval_appendix_pages",
+      "files": 85,
+      "bytes": 55363063,
+      "source": "manuals/世界海用雷达手册.pdf",
+      "rebuild": "python pipeline/v3/manual/naval_transcribe.py --render-only 643 727"
+    }
+  ],
+  "total_bytes": 947099791
+}

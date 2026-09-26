@@ -1,0 +1,1392 @@
+{
+  "per_question": [
+    {
+      "id": "agg_count_01",
+      "type": "agg_count",
+      "question": "美国一共使用了多少款雷达？",
+      "gold_answer": 237,
+      "baseline": {
+        "answer": "根据检索证据，美国使用的雷达型号包括：AN/APS-124、AN/APS-125、AN/APQ-140、AN/APQ-126(V)、AN/AVQ-56、APG-78(V)Longbow、AN/APQ-99、Altair，共8款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 237,
+          "pred": 8,
+          "correct": false,
+          "rel_err": 0.9662447257383966
+        }
+      },
+      "strategy": {
+        "qtype": "agg_count",
+        "strategy": "exhaustive",
+        "answer": "237款。根据检索证据，美国共使用了237款雷达。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 237,
+          "pred": 237,
+          "correct": true,
+          "rel_err": 0.0
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "operatedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "operatedBy",
+              "tail": "美国"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "count",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"operatedBy\"],\n  \"constraints\": [\n    {\"relation\": \"operatedBy\", \"tail\": \"美国\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"count\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_count_02",
+      "type": "agg_count",
+      "question": "Raytheon 一共研制了多少款雷达？",
+      "gold_answer": 36,
+      "baseline": {
+        "answer": "根据检索证据，Raytheon 共研制了 13 款雷达系统（包括 ASR-11、AN/GPN-30、AN/SPS-10、AN/TPY-2、AN/MPQ-65、AN/SPG-51、AN/SPG-62、AN/SPY-3、AN/SPY-6、Inverse monopulse seeker、AN/APG-63 radar family、AN/APG-64，以及 MR-2000 和 MR-3000 两款衍生雷达）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 36,
+          "pred": 13,
+          "correct": false,
+          "rel_err": 0.6388888888888888
+        }
+      },
+      "strategy": {
+        "qtype": "agg_count",
+        "strategy": "exhaustive",
+        "answer": "Raytheon一共研制了36款雷达。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 36,
+          "pred": 36,
+          "correct": true,
+          "rel_err": 0.0
+        },
+        "args": {
+          "primary_entity": "Raytheon",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "developedBy",
+              "tail": "Raytheon"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "count",
+          "_raw": "{\n  \"primary_entity\": \"Raytheon\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\"],\n  \"constraints\": [\n    {\"relation\": \"developedBy\", \"tail\": \"Raytheon\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"count\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_count_03",
+      "type": "agg_count",
+      "question": "工作在 S 波段的雷达共有多少款？",
+      "gold_answer": 46,
+      "baseline": {
+        "answer": "根据检索证据，工作在S波段的雷达共有5款：Raphael-TH/SLAR2000、AN/FPS-27、ASR-9、OPS-12、SAMPSON。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 46,
+          "pred": 5,
+          "correct": false,
+          "rel_err": 0.8913043478260869
+        }
+      },
+      "strategy": {
+        "qtype": "agg_count",
+        "strategy": "exhaustive",
+        "answer": "根据检索证据，工作在S波段的雷达共有46款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 46,
+          "pred": 46,
+          "correct": true,
+          "rel_err": 0.0
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "hasFrequencyBand"
+          ],
+          "constraints": [
+            {
+              "relation": "hasFrequencyBand",
+              "tail": "S"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "count",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"hasFrequencyBand\"],\n  \"constraints\": [\n    {\"relation\": \"hasFrequencyBand\", \"tail\": \"S\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"count\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_count_04",
+      "type": "agg_count",
+      "question": "VHF 波段的雷达有多少款？",
+      "gold_answer": 14,
+      "baseline": {
+        "answer": "根据检索证据，VHF波段的雷达共有3款：Zhur-40、AN/SPS-29和Matla-ul-fajr。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 14,
+          "pred": 3,
+          "correct": false,
+          "rel_err": 0.7857142857142857
+        }
+      },
+      "strategy": {
+        "qtype": "agg_count",
+        "strategy": "exhaustive",
+        "answer": "根据检索证据，VHF波段的雷达共有14款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 14,
+          "pred": 14,
+          "correct": true,
+          "rel_err": 0.0
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "hasFrequencyBand"
+          ],
+          "constraints": [
+            {
+              "relation": "hasFrequencyBand",
+              "tail": "VHF"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "count",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"hasFrequencyBand\"],\n  \"constraints\": [\n    {\"relation\": \"hasFrequencyBand\", \"tail\": \"VHF\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"count\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_count_05",
+      "type": "agg_count",
+      "question": "中国一共使用了多少款雷达？",
+      "gold_answer": 48,
+      "baseline": {
+        "answer": "未知（KG中无相关记录）。证据中仅提到Agrion雷达可能被中国海军Z-9C直升机配装，但未提供中国使用的雷达总数。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 48,
+          "pred": 9,
+          "correct": false,
+          "rel_err": 0.8125
+        }
+      },
+      "strategy": {
+        "qtype": "agg_count",
+        "strategy": "exhaustive",
+        "answer": "中国一共使用了48款雷达。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 48,
+          "pred": 48,
+          "correct": true,
+          "rel_err": 0.0
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "operatedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "operatedBy",
+              "tail": "中国"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "count",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"operatedBy\"],\n  \"constraints\": [\n    {\"relation\": \"operatedBy\", \"tail\": \"中国\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"count\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_enum_01",
+      "type": "agg_enum",
+      "question": "Lockheed Martin 研制的雷达有哪些？请列出全部。",
+      "gold_answer": [
+        "AN/APG-67",
+        "AN/APG-78 Longbow",
+        "AN/APG-80",
+        "AN/APG-85",
+        "AN/APY-9",
+        "AN/FPS-117",
+        "AN/TPQ-53 Quick Reaction Capability Radar",
+        "AN/TPS-59",
+        "AN/TPY-4",
+        "Aegis Combat System",
+        "ASR-23SS",
+        "Cobra Judy"
+      ],
+      "baseline": {
+        "answer": "Lockheed Martin 研制的雷达包括：AN/TPS-59、AN/APG-80、AN/APY-9、AN/APG-78 Longbow、AN/APG-85、COBRA (radar)、AN/APG-67、AN/TPY-4、Aegis Combat System、AN/FPS-117、AN/TPQ-53 Quick Reaction Capability Radar，以及一个未命名的雷达（Q24298099）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 12,
+          "hit": 10,
+          "recall": 0.8333333333333334,
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "agg_enum",
+        "strategy": "exhaustive",
+        "answer": "Lockheed Martin 研制的雷达共有 12 个，包括：AN/APG-67、AN/APG-78 Longbow、AN/APG-80、AN/APG-85、AN/APY-9、AN/FPS-117、AN/TPQ-53 Quick Reaction Capability Radar、AN/TPS-59、AN/TPY-4、Aegis Combat System、COBRA (radar)、Q24298099。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 12,
+          "hit": 10,
+          "recall": 0.8333333333333334,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "developedBy",
+              "tail": "Lockheed Martin"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\"],\n  \"constraints\": [\n    {\"relation\": \"developedBy\", \"tail\": \"Lockheed Martin\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_enum_02",
+      "type": "agg_enum",
+      "question": "采用合成孔径技术的雷达有哪些？",
+      "gold_answer": null,
+      "baseline": {
+        "answer": "根据检索证据，采用合成孔径技术的雷达包括：SWIFT、HMMII、AN/APS-94、Raphael-TH/SLAR2000、AN/APG-80、AN/APS-144、TeSAR。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 33,
+          "hit": 2,
+          "recall": 0.06060606060606061,
+          "correct": false
+        }
+      },
+      "strategy": {
+        "qtype": "agg_enum",
+        "strategy": "exhaustive",
+        "answer": "采用合成孔径技术的雷达包括：AN/APG-70/70(V)、AN/APN-241、AN/APQ-164、AN/APQ-92/112/148/156/173、AN/APS-137V、AN/APS-143(V)3/143B(V)3/143C(V)3、AN/APS-143/143(V)1/2、AN/APS-144、AN/APY-12、AN/APY-8/8(V)(Lynx)、AN/ZPQ-1TeSAR、Antilope5TC、DSTO、HiSAR、IRIS、KOMSAR、MAKO、MFAS、Raphael-TH/SLAR2000、SLAR300、SOSTAR-XSAR/MTI、SWORD(AWARDS",
+        "score": {
+          "metric": "recall",
+          "gold_size": 33,
+          "hit": 26,
+          "recall": 0.7878787878787878,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "hasTechType"
+          ],
+          "constraints": [
+            {
+              "relation": "hasTechType",
+              "tail": "合成孔径"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"hasTechType\"],\n  \"constraints\": [\n    {\"relation\": \"hasTechType\", \"tail\": \"合成孔径\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_enum_03",
+      "type": "agg_enum",
+      "question": "请列出所有部署在战斗机上的雷达。",
+      "gold_answer": null,
+      "baseline": {
+        "answer": "根据检索证据，部署在战斗机上的雷达有：SCR-720、AN/APG-64、AN/ASG-18、EL/M-2052、AN/APQ-159、AN/AWG-9、AN/APG-77、AN/AWG-27。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 44,
+          "hit": 8,
+          "recall": 0.18181818181818182,
+          "correct": false
+        }
+      },
+      "strategy": {
+        "qtype": "agg_enum",
+        "strategy": "exhaustive",
+        "answer": "根据检索证据，部署在战斗机上的雷达完整列表如下：AI Mark IV radar、ALP 100-G、AN/APG-63 radar family、AN/APG-64、AN/APG-65 radar family、AN/APG-66、AN/APG-67、AN/APG-68、AN/APG-69、AN/APG-70、AN/APG-71、AN/APG-73、AN/APG-77、AN/APG-80、AN/APG-81、AN/APG-82、AN/APG-83、AN/APG-85、AN/APQ-153、AN/APQ-159、AN/APQ-180、AN/ASG-18、AN/AWG-20、AN/AWG-27、",
+        "score": {
+          "metric": "recall",
+          "gold_size": 44,
+          "hit": 35,
+          "recall": 0.7954545454545454,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "deployedOn"
+          ],
+          "constraints": [
+            {
+              "relation": "deployedOn",
+              "tail": "战斗机"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"deployedOn\"],\n  \"constraints\": [\n    {\"relation\": \"deployedOn\", \"tail\": \"战斗机\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_enum_04",
+      "type": "agg_enum",
+      "question": "有源相控阵体制的所有雷达？",
+      "gold_answer": null,
+      "baseline": {
+        "answer": "根据检索证据，有源相控阵体制的雷达包括：RACR、RASSR、AN/APQ-181、AN/APY-9、SOSTAR-XSAR/MTI、AN/APG-82/82(V)、NorthropGrumman、Zhuk-A3、AN/APG-63(V)2、AN/APG-63(V)3、AN/APG-63(V)4、AN/APG-81、MFAS。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 10,
+          "hit": 8,
+          "recall": 0.8,
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "agg_enum",
+        "strategy": "exhaustive",
+        "answer": "有源相控阵体制的雷达包括：AN/APG-81、AN/APG-82/82(V)、AN/APQ-181、AN/APY-9、MFAS、RACR、RASSR、SOSTAR-X SAR/MTI、Zhuk-A3。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 10,
+          "hit": 6,
+          "recall": 0.6,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "hasTechType"
+          ],
+          "constraints": [
+            {
+              "relation": "hasTechType",
+              "tail": "有源相控阵"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"hasTechType\"],\n  \"constraints\": [\n    {\"relation\": \"hasTechType\", \"tail\": \"有源相控阵\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "agg_enum_05",
+      "type": "agg_enum",
+      "question": "工作在 X 波段的所有雷达列表。",
+      "gold_answer": null,
+      "baseline": {
+        "answer": "工作在 X 波段的雷达列表包括：DSTO、AN/APG-64、AN/AWG-27、AN/AWG-9、JL-10A、AN/AWG-20、Zhur-40、H2S (radar)、AN/TPY-2、AN/SPG-62、AN/SPN-46、AN/SPY-3、FCS-3、MM/SPQ-2、OPS-4、OPS-9、OPS-20、AI.20 radar、AN/APG-63 radar family、AN/APG-66。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 34,
+          "hit": 18,
+          "recall": 0.5294117647058824,
+          "correct": false
+        }
+      },
+      "strategy": {
+        "qtype": "agg_enum",
+        "strategy": "exhaustive",
+        "answer": "工作在 X 波段的所有雷达列表如下：AI.20 radar、AN/APG-63 radar family、AN/APG-64、AN/APG-66、AN/APG-67、AN/APG-68、AN/APG-69、AN/APG-70、AN/APG-71、AN/APG-77、AN/APG-82、AN/APQ-180、AN/APS-4 search radar、AN/AWG-20、AN/AWG-27、AN/AWG-9、AN/FPS-4 radar、AN/MPQ-64 Sentinel、AN/SPG-62、AN/SPN-46、AN/SPY-3、AN/TPY-2、APY-016K、EL/M-2052、FCS-",
+        "score": {
+          "metric": "recall",
+          "gold_size": 34,
+          "hit": 34,
+          "recall": 1.0,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [
+            "hasFrequencyBand"
+          ],
+          "constraints": [
+            {
+              "relation": "hasFrequencyBand",
+              "tail": "X"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"hasFrequencyBand\"],\n  \"constraints\": [\n    {\"relation\": \"hasFrequencyBand\", \"tail\": \"X\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_01",
+      "type": "negation",
+      "question": "AN/TPY-2 出口到了哪些国家？",
+      "gold_answer": "未知/无相关三元组",
+      "baseline": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "agg_enum",
+        "strategy": "exhaustive",
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPY-2",
+          "secondary_entity": "",
+          "relation_chain": [
+            "exportedTo"
+          ],
+          "constraints": [
+            {
+              "relation": "exportedTo",
+              "tail": "AN/TPY-2"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPY-2\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"exportedTo\"],\n  \"constraints\": [\n    {\"relation\": \"exportedTo\", \"tail\": \"AN/TPY-2\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_02",
+      "type": "negation",
+      "question": "AN/TPY-2 是否被中国使用？",
+      "gold_answer": "否",
+      "baseline": {
+        "answer": "否。证据显示AN/TPY-2由美国操作（operatedBy），没有记录表明被中国使用。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否（KG中无相关记录）。证据显示AN/TPY-2的operatedBy关系取值仅为美国，不包含中国。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPY-2",
+          "secondary_entity": "",
+          "relation_chain": [
+            "operatedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "operatedBy",
+              "tail": "中国"
+            }
+          ],
+          "forbidden_tail": "中国",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPY-2\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"operatedBy\"],\n  \"constraints\": [\n    {\"relation\": \"operatedBy\", \"tail\": \"中国\"}\n  ],\n  \"forbidden_tail\": \"中国\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_03",
+      "type": "negation",
+      "question": "AN/TPS-59 是由 Raytheon 研制的吗？",
+      "gold_answer": "否（由 Lockheed Martin 研制）",
+      "baseline": {
+        "answer": "否（KG中无相关记录）。检索证据中未包含AN/TPS-59与Raytheon之间的开发关系。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否。根据知识图谱，AN/TPS-59 的研制方是 General Electric 和 Lockheed Martin，而非 Raytheon。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPS-59",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "developedBy",
+              "tail": "Raytheon"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPS-59\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\"],\n  \"constraints\": [\n    {\"relation\": \"developedBy\", \"tail\": \"Raytheon\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_04",
+      "type": "negation",
+      "question": "AN/APY-9 是否出口到日本？",
+      "gold_answer": "否（KG 中无 AN/APY-9 exportedTo 三元组）",
+      "baseline": {
+        "answer": "否（KG中无相关记录）。检索证据中未发现AN/APY-9雷达出口到日本的记录，仅涉及其他雷达型号如AN/APQ-99、AN/APS-125等。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否（KG中无相关记录）。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/APY-9",
+          "secondary_entity": "",
+          "relation_chain": [
+            "exportedTo"
+          ],
+          "constraints": [
+            {
+              "relation": "exportedTo",
+              "tail": "日本"
+            }
+          ],
+          "forbidden_tail": "日本",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/APY-9\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"exportedTo\"],\n  \"constraints\": [\n    {\"relation\": \"exportedTo\", \"tail\": \"日本\"}\n  ],\n  \"forbidden_tail\": \"日本\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_05",
+      "type": "negation",
+      "question": "Voronezh radar 是否被美国使用？",
+      "gold_answer": "否（仅由俄罗斯使用）",
+      "baseline": {
+        "answer": "否。证据显示Voronezh radar由俄罗斯运营（operatedBy: 俄罗斯），没有记录表明被美国使用。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否（KG中无相关记录）。证据显示，Voronezh radar 的 operatedBy 为俄罗斯，未被美国使用。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "Voronezh radar",
+          "secondary_entity": "",
+          "relation_chain": [
+            "operatedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "operatedBy",
+              "tail": "美国"
+            }
+          ],
+          "forbidden_tail": "美国",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"Voronezh radar\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"operatedBy\"],\n  \"constraints\": [\n    {\"relation\": \"operatedBy\", \"tail\": \"美国\"}\n  ],\n  \"forbidden_tail\": \"美国\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_06",
+      "type": "negation",
+      "question": "AN/MPQ-65 是否升级自 AN/SPY-1？",
+      "gold_answer": "否",
+      "baseline": {
+        "answer": "否。根据证据，AN/MPQ-65 升级自 AN/MPQ-53，而非 AN/SPY-1。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否。根据知识图谱，AN/MPQ-65 的升级来源是 AN/MPQ-53，而非 AN/SPY-1。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/MPQ-65",
+          "secondary_entity": "",
+          "relation_chain": [
+            "upgradeOf"
+          ],
+          "constraints": [
+            {
+              "relation": "upgradeOf",
+              "tail": "AN/SPY-1"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/MPQ-65\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"upgradeOf\"],\n  \"constraints\": [\n    {\"relation\": \"upgradeOf\", \"tail\": \"AN/SPY-1\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_07",
+      "type": "negation",
+      "question": "AN/TPS-70 是否由 Lockheed Martin 研制？",
+      "gold_answer": "否（由 Northrop Grumman 研制）",
+      "baseline": {
+        "answer": "否（KG中无相关记录）。检索证据中未发现AN/TPS-70与Lockheed Martin之间存在任何开发关系。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否。根据知识图谱，AN/TPS-70 的研制方是 Northrop Grumman，而非 Lockheed Martin。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPS-70",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "developedBy",
+              "tail": "Lockheed Martin"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPS-70\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\"],\n  \"constraints\": [\n    {\"relation\": \"developedBy\", \"tail\": \"Lockheed Martin\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_08",
+      "type": "negation",
+      "question": "AN/APG-77 是否兼容 R-77 导弹？",
+      "gold_answer": "否（KG 中无此 compatibleWith 三元组）",
+      "baseline": {
+        "answer": "否（KG中无相关记录）。证据中仅显示Zhuk-A3雷达兼容R-77导弹，未提及AN/APG-77与R-77的兼容关系。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "unanswerable",
+        "strategy": "complement",
+        "answer": "否（KG中无相关记录）。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/APG-77",
+          "secondary_entity": "",
+          "relation_chain": [
+            "compatibleWith"
+          ],
+          "constraints": [
+            {
+              "relation": "compatibleWith",
+              "tail": "R-77"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/APG-77\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"compatibleWith\"],\n  \"constraints\": [\n    {\"relation\": \"compatibleWith\", \"tail\": \"R-77\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_09",
+      "type": "negation",
+      "question": "AN/SPY-6 是否部署在直升机上？",
+      "gold_answer": "否",
+      "baseline": {
+        "answer": "否（KG中无相关记录）。检索证据中未发现AN/SPY-6部署在直升机上的信息。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否（KG中无相关记录）。证据显示AN/SPY-6部署在驱逐舰、护卫舰、航空母舰等舰艇上，未提及直升机。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/SPY-6",
+          "secondary_entity": "",
+          "relation_chain": [
+            "deployedOn"
+          ],
+          "constraints": [
+            {
+              "relation": "deployedOn",
+              "tail": "直升机"
+            }
+          ],
+          "forbidden_tail": "直升机",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/SPY-6\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"deployedOn\"],\n  \"constraints\": [\n    {\"relation\": \"deployedOn\", \"tail\": \"直升机\"}\n  ],\n  \"forbidden_tail\": \"直升机\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "neg_10",
+      "type": "negation",
+      "question": "EL/M-2080 是否由美国研制？",
+      "gold_answer": "否（由以色列 IAI/Elta 研制）",
+      "baseline": {
+        "answer": "否。证据显示EL/M-2080由以色列航空工业公司（Israel Aerospace Industries）研制，而非美国。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "negation",
+        "strategy": "complement",
+        "answer": "否。EL/M-2080 由 Israel Aerospace Industries 研制，而非美国。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "EL/M-2080",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy"
+          ],
+          "constraints": [],
+          "forbidden_tail": "美国",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"EL/M-2080\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"美国\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_01",
+      "type": "two_hop_bridge",
+      "question": "AN/TPY-2 的研制公司属于哪个国家？",
+      "gold_answer": "美国",
+      "baseline": {
+        "answer": "美国。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "美国"
+          ],
+          "hits": 1,
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "two_hop_bridge",
+        "strategy": "path_plan",
+        "answer": "根据证据，AN/TPY-2 的研制公司 Raytheon 隶属于美国、法国和意大利，但未明确指定唯一国家，因此答案未知。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "美国"
+          ],
+          "hits": 1,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPY-2",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy",
+            "affiliatedTo"
+          ],
+          "constraints": [],
+          "forbidden_tail": "",
+          "answer_target": "entity",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPY-2\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\", \"affiliatedTo\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"entity\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_02",
+      "type": "two_hop_bridge",
+      "question": "AN/MPQ-65 的研制公司还研制了哪些雷达？",
+      "gold_answer": null,
+      "baseline": {
+        "answer": "根据检索证据，AN/MPQ-65的研制公司是雷神公司（Raytheon）。证据中未列出雷神公司研制的其他雷达型号，因此无法提供其他雷达列表。",
+        "score": {
+          "metric": "substring",
+          "skip": "no_gold"
+        }
+      },
+      "strategy": {
+        "qtype": "two_hop_bridge",
+        "strategy": "path_plan",
+        "answer": "根据检索证据，AN/MPQ-65的研制公司包括the U、Raytheon等，但证据中未提供这些公司研制的其他雷达列表，因此无法回答。",
+        "score": {
+          "metric": "substring",
+          "skip": "no_gold"
+        },
+        "args": {
+          "primary_entity": "AN/MPQ-65",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy",
+            "developedBy"
+          ],
+          "constraints": [
+            {
+              "relation": "developedBy",
+              "tail": "AN/MPQ-65"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"AN/MPQ-65\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\", \"developedBy\"],\n  \"constraints\": [\n    {\"relation\": \"developedBy\", \"tail\": \"AN/MPQ-65\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_03",
+      "type": "two_hop_bridge",
+      "question": "EL/M-2080 的研制方所在国是？",
+      "gold_answer": "以色列",
+      "baseline": {
+        "answer": "以色列。证据显示EL/M-2080由以色列航空工业公司（Israel Aerospace Industries）研制，其子公司埃尔塔系统（Elta Systems）生产。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "以色列"
+          ],
+          "hits": 1,
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "two_hop_bridge",
+        "strategy": "path_plan",
+        "answer": "EL/M-2080的研制方是以色列航空航天工业公司，其所在国是以色列。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "以色列"
+          ],
+          "hits": 1,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "EL/M-2080",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy",
+            "affiliatedTo"
+          ],
+          "constraints": [],
+          "forbidden_tail": "",
+          "answer_target": "entity",
+          "_raw": "{\n  \"primary_entity\": \"EL/M-2080\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\", \"affiliatedTo\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"entity\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_04",
+      "type": "three_hop_chain",
+      "question": "AN/TPS-70 的前代型号由哪家公司研制？属于哪个国家？",
+      "gold_answer": "Northrop Grumman, 美国",
+      "baseline": {
+        "answer": "根据检索证据，AN/TPS-70的前代型号信息未直接给出，但证据[01]显示AN/TPS-70由Westinghouse（现为Northrop Grumman）研制，且证据[03]和[09]表明其属于美国。因此，前代型号的研制公司和国家未知。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "Northrop Grumman",
+            "美国"
+          ],
+          "hits": 2,
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "three_hop_chain",
+        "strategy": "path_plan",
+        "answer": "AN/TPS-70的前代型号AN/TPS-43由Northrop Grumman公司研制，属于美国。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "Northrop Grumman",
+            "美国"
+          ],
+          "hits": 2,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPS-70",
+          "secondary_entity": "",
+          "relation_chain": [
+            "upgradeOf",
+            "developedBy",
+            "affiliatedTo"
+          ],
+          "constraints": [],
+          "forbidden_tail": "",
+          "answer_target": "entity",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPS-70\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"upgradeOf\", \"developedBy\", \"affiliatedTo\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"entity\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_05",
+      "type": "two_hop_bridge",
+      "question": "AN/APG-68 升级自哪款雷达？该雷达由谁研制？",
+      "gold_answer": "AN/APG-66, Northrop Grumman",
+      "baseline": {
+        "answer": "根据检索证据，AN/APG-68 升级自哪款雷达以及该雷达的研制方均未知（KG中无相关记录）。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "AN/APG-66",
+            "Northrop Grumman"
+          ],
+          "hits": 0,
+          "correct": false
+        }
+      },
+      "strategy": {
+        "qtype": "two_hop_bridge",
+        "strategy": "path_plan",
+        "answer": "AN/APG-68 升级自 AN/APG-66 雷达，该雷达由 Northrop Grumman 研制。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "AN/APG-66",
+            "Northrop Grumman"
+          ],
+          "hits": 2,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/APG-68",
+          "secondary_entity": "",
+          "relation_chain": [
+            "upgradeOf",
+            "developedBy"
+          ],
+          "constraints": [],
+          "forbidden_tail": "",
+          "answer_target": "entity",
+          "_raw": "{\n  \"primary_entity\": \"AN/APG-68\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"upgradeOf\", \"developedBy\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"entity\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_06",
+      "type": "attr_filter",
+      "question": "由 Raytheon 研制且部署在战斗机上的雷达？",
+      "gold_answer": null,
+      "baseline": {
+        "answer": "根据检索证据，由Raytheon研制且部署在战斗机上的雷达是AN/APG-70。证据显示AN/APG-70由Raytheon开发（[11]），并部署在F-15E、F-15C、F-15D、F-15I、F-15S等战斗机上（[13][17][18][19][20]）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 14,
+          "hit": 1,
+          "recall": 0.07142857142857142,
+          "correct": false
+        }
+      },
+      "strategy": {
+        "qtype": "attr_filter",
+        "strategy": "constrained_join",
+        "answer": "由 Raytheon 研制且部署在战斗机上的雷达共有14种，包括：AN/APG-63 radar family、AN/APG-64、AN/APG-65 radar family、AN/APG-70、AN/APG-71、AN/APG-73、AN/APG-77、AN/APG-81、AN/APG-82、AN/APG-83、AN/APQ-180、AN/AWG-20、AN/AWG-27、AN/AWG-9。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 14,
+          "hit": 14,
+          "recall": 1.0,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [],
+          "constraints": [
+            {
+              "relation": "developedBy",
+              "tail": "Raytheon"
+            },
+            {
+              "relation": "deployedOn",
+              "tail": "战斗机"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [],\n  \"constraints\": [\n    {\"relation\": \"developedBy\", \"tail\": \"Raytheon\"},\n    {\"relation\": \"deployedOn\", \"tail\": \"战斗机\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_07",
+      "type": "attr_filter",
+      "question": "美国研制且工作在 S 波段的雷达？",
+      "gold_answer": null,
+      "baseline": {
+        "answer": "根据检索证据，美国研制且工作在S波段的雷达包括：AN/AVQ-56（美国研制，但证据未明确其频段）、AN/FPS-27、AN/SPS-8、AN/MPS-19、AN/SPS-39、SCR-720。其中，AN/AVQ-56由美国研制，但频段信息缺失；其余雷达均工作在S波段，但未明确是否由美国研制。因此，无法完全确认符合所有条件的雷达。",
+        "score": {
+          "metric": "recall",
+          "skip": "no_gold_set"
+        }
+      },
+      "strategy": {
+        "qtype": "attr_filter",
+        "strategy": "constrained_join",
+        "answer": "根据检索证据，美国研制且工作在S波段的雷达共有22个，包括：AN/APS-4 search radar、AN/CPS-4 Radar、AN/CPS-6 Radar、AN/FPS-14 Radar、AN/FPS-18 Radar、AN/FPS-27、AN/FPS-6 Radar、AN/GPN-27、AN/GPN-30、AN/MPS-19、AN/SPS-39、AN/SPS-8、AN/SPY-6、AN/TPQ-53 Quick Reaction Capability Radar、AN/TPS-32、AN/TPS-70、AN/TPS-80 Ground/Air Task Oriented Radar、",
+        "score": {
+          "metric": "recall",
+          "skip": "no_gold_set"
+        },
+        "args": {
+          "primary_entity": "",
+          "secondary_entity": "",
+          "relation_chain": [],
+          "constraints": [
+            {
+              "relation": "countryOfOrigin",
+              "tail": "美国"
+            },
+            {
+              "relation": "hasFrequencyBand",
+              "tail": "S"
+            }
+          ],
+          "forbidden_tail": "",
+          "answer_target": "enum",
+          "_raw": "{\n  \"primary_entity\": \"\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [],\n  \"constraints\": [\n    {\"relation\": \"countryOfOrigin\", \"tail\": \"美国\"},\n    {\"relation\": \"hasFrequencyBand\", \"tail\": \"S\"}\n  ],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"enum\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_08",
+      "type": "two_hop_bridge",
+      "question": "AN/TPY-4 的研制公司属于哪个国家？该公司还研制了哪些雷达？",
+      "gold_answer": "美国; (Lockheed Martin 研制的所有雷达)",
+      "baseline": {
+        "answer": "AN/TPY-4的研制公司是Lockheed Martin，属于美国。该公司还研制了AN/APG-66、AN/APG-68等雷达（基于MR-3000的衍生证据）。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "美国",
+            "(Lockheed Martin 研制的所有雷达)"
+          ],
+          "hits": 1,
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "two_hop_bridge",
+        "strategy": "path_plan",
+        "answer": "AN/TPY-4的研制公司Lockheed Martin属于美国。该公司还研制了其他雷达，但证据中未列出具体型号，因此未知。",
+        "score": {
+          "metric": "substring",
+          "gold": [
+            "美国",
+            "(Lockheed Martin 研制的所有雷达)"
+          ],
+          "hits": 1,
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPY-4",
+          "secondary_entity": "",
+          "relation_chain": [
+            "developedBy",
+            "affiliatedTo"
+          ],
+          "constraints": [],
+          "forbidden_tail": "",
+          "answer_target": "entity",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPY-4\",\n  \"secondary_entity\": \"\",\n  \"relation_chain\": [\"developedBy\", \"affiliatedTo\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"entity\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_09",
+      "type": "set_compare",
+      "question": "AN/TPY-2 和 AN/MPQ-65 是同一家公司研制的吗？",
+      "gold_answer": "是 (Raytheon)",
+      "baseline": {
+        "answer": "是。证据显示AN/TPY-2由Raytheon研制，AN/MPQ-65也由Raytheon研制，因此是同一家公司。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "yes",
+          "pred_polarity": "yes",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "set_compare",
+        "strategy": "dual_subgraph",
+        "answer": "是，AN/TPY-2和AN/MPQ-65均由雷神公司（Raytheon）研制。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "yes",
+          "pred_polarity": "yes",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPY-2",
+          "secondary_entity": "AN/MPQ-65",
+          "relation_chain": [
+            "developedBy"
+          ],
+          "constraints": [],
+          "forbidden_tail": "",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPY-2\",\n  \"secondary_entity\": \"AN/MPQ-65\",\n  \"relation_chain\": [\"developedBy\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    },
+    {
+      "id": "mh_10",
+      "type": "set_compare",
+      "question": "AN/TPS-59 和 AN/TPY-2 的研制公司是否相同？",
+      "gold_answer": "否 (Lockheed Martin vs Raytheon)",
+      "baseline": {
+        "answer": "否。AN/TPS-59的研制公司是General Electric和Lockheed Martin，而AN/TPY-2的研制公司是Raytheon，两者不同。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "strategy": {
+        "qtype": "set_compare",
+        "strategy": "dual_subgraph",
+        "answer": "否。AN/TPS-59由General Electric和Lockheed Martin研制，而AN/TPY-2由Raytheon研制，研制公司不同。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        },
+        "args": {
+          "primary_entity": "AN/TPS-59",
+          "secondary_entity": "AN/TPY-2",
+          "relation_chain": [
+            "developedBy"
+          ],
+          "constraints": [],
+          "forbidden_tail": "",
+          "answer_target": "yesno",
+          "_raw": "{\n  \"primary_entity\": \"AN/TPS-59\",\n  \"secondary_entity\": \"AN/TPY-2\",\n  \"relation_chain\": [\"developedBy\"],\n  \"constraints\": [],\n  \"forbidden_tail\": \"\",\n  \"answer_target\": \"yesno\"\n}"
+        }
+      }
+    }
+  ],
+  "by_type": {
+    "agg_count": {
+      "baseline": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "strategy": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "agg_enum": {
+      "baseline": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "strategy": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "negation": {
+      "baseline": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "strategy": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "two_hop_bridge": {
+      "baseline": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "strategy": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    "three_hop_chain": {
+      "baseline": [
+        true
+      ],
+      "strategy": [
+        true
+      ]
+    },
+    "attr_filter": {
+      "baseline": [
+        false,
+        false
+      ],
+      "strategy": [
+        true,
+        false
+      ]
+    },
+    "set_compare": {
+      "baseline": [
+        true,
+        true
+      ],
+      "strategy": [
+        true,
+        true
+      ]
+    }
+  }
+}

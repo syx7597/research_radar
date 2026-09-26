@@ -1,0 +1,22 @@
+Total changed: 180
+Top 20 radar names after normalization:
+  RLPK-27: 25
+  Zhur-40: 24
+  RP-25: 23
+  ARINC-429: 22
+  RLS-35: 20
+  V004: 20
+  KNT-23: 18
+  Cyrano-IV: 18
+  SVU-16: 17
+  SeaDragon: 17
+  Anemone: 16
+  RP-11: 15
+  Aida-II: 15
+  Cyrano-II: 15
+  Mosquito: 14
+  Osa: 14
+  Zhuk-AE: 12
+  Kopyo-A: 12
+  Luch: 11
+  Agave: 11

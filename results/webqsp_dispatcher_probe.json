@@ -1,0 +1,5966 @@
+{
+  "n_questions": 246,
+  "qtype_distribution": {
+    "single_hop": 217,
+    "unanswerable": 20,
+    "agg_enum": 8,
+    "agg_count": 1
+  },
+  "strategy_distribution": {
+    "lookup": 217,
+    "complement": 20,
+    "exhaustive": 9
+  },
+  "per_question": [
+    {
+      "id": "WebQTrn-9",
+      "question": "how old is sacha baron cohen",
+      "answer": [
+        "1971-10-13"
+      ],
+      "q_entity": [
+        "Sacha Baron Cohen"
+      ],
+      "n_subgraph_edges": 6293,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-11",
+      "question": "what time zone am i in cleveland ohio",
+      "answer": [
+        "Eastern Time Zone"
+      ],
+      "q_entity": [
+        "Cleveland"
+      ],
+      "n_subgraph_edges": 5332,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-15",
+      "question": "what is nina dobrev nationality",
+      "answer": [
+        "Bulgaria",
+        "Canada"
+      ],
+      "q_entity": [
+        "Nina Dobrev"
+      ],
+      "n_subgraph_edges": 2086,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-47",
+      "question": "what county is heathrow airport in",
+      "answer": [
+        "Hillingdon"
+      ],
+      "q_entity": [
+        "London Heathrow Airport"
+      ],
+      "n_subgraph_edges": 4914,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-73",
+      "question": "what form of government was practiced in sparta",
+      "answer": [
+        "Monarchy",
+        "Aristocracy",
+        "Diarchy",
+        "Republic"
+      ],
+      "q_entity": [
+        "Sparta"
+      ],
+      "n_subgraph_edges": 1933,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-104",
+      "question": "who was the president after jfk died",
+      "answer": [
+        "Lyndon B. Johnson"
+      ],
+      "q_entity": [
+        "John F. Kennedy"
+      ],
+      "n_subgraph_edges": 5871,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-126",
+      "question": "where to visit near bangkok",
+      "answer": [
+        "Bangkok International Trade and Exhibition Centre",
+        "Dusit Zoo",
+        "Wat Arun",
+        "Magic Land",
+        "Wat Ratchanatdaram",
+        "Erawan Shrine",
+        "Wat Pho",
+        "Khaosan Road",
+        "Wat Saket",
+        "Grand Palace",
+        "Wat Benchamabophit",
+        "Golden Buddha",
+        "Vimanmek Mansion",
+        "Samutprakarn Crocodile Farm and Zoo",
+        "Chatuchak Park",
+        "Ananta Samakhom Throne Hall",
+        "Democracy Monument",
+        "Thonburi",
+        "Rajamangala Stadium",
+        "Wat Suthat",
+        "Jim Thompson House",
+        "Bangkok Aquarium",
+        "Siam Park City",
+        "Safari World",
+        "Lumphini Park",
+        "Wat Phra Kaew",
+        "Bangkok National Museum"
+      ],
+      "q_entity": [
+        "Bangkok"
+      ],
+      "n_subgraph_edges": 3942,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-143",
+      "question": "what did nick clegg study at university",
+      "answer": [
+        "Social anthropology",
+        "Political philosophy"
+      ],
+      "q_entity": [
+        "Nick Clegg"
+      ],
+      "n_subgraph_edges": 1113,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-152",
+      "question": "what is henry clay known for",
+      "answer": [
+        "Lawyer",
+        "Politician",
+        "Statesman"
+      ],
+      "q_entity": [
+        "Henry Clay"
+      ],
+      "n_subgraph_edges": 4489,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-164",
+      "question": "where was kennedy when he got shot",
+      "answer": [
+        "Dallas"
+      ],
+      "q_entity": [
+        "John F. Kennedy"
+      ],
+      "n_subgraph_edges": 5871,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-196",
+      "question": "who did ben stiller play in megamind",
+      "answer": [
+        "Bernard"
+      ],
+      "q_entity": [
+        "Ben Stiller",
+        "MegaMind"
+      ],
+      "n_subgraph_edges": 7101,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-206",
+      "question": "who won golden boot",
+      "answer": [
+        "Robin van Persie",
+        "Cristiano Ronaldo"
+      ],
+      "q_entity": [
+        "Premier League Golden Boot"
+      ],
+      "n_subgraph_edges": 68,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-218",
+      "question": "what are all the names of harry potter",
+      "answer": [
+        "Harry Potter and the Chamber of Secrets",
+        "Harry Potter and the Philosopher's Stone",
+        "Harry Potter and the Deathly Hallows",
+        "Harry Potter and the Order of the Phoenix",
+        "Harry Potter and the Half-Blood Prince",
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Prisoner of Azkaban"
+      ],
+      "q_entity": [
+        "Harry Potter"
+      ],
+      "n_subgraph_edges": 5156,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-249",
+      "question": "who is tia and tamera mowry parents",
+      "answer": [
+        "Darlene Mowry",
+        "Tim Mowry"
+      ],
+      "q_entity": [
+        "Tia Mowry"
+      ],
+      "n_subgraph_edges": 2193,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-255",
+      "question": "what year was the new york blackout",
+      "answer": [
+        "1977-07-13"
+      ],
+      "q_entity": [
+        "New York City blackout of 1977"
+      ],
+      "n_subgraph_edges": 1667,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-258",
+      "question": "what are major exports of the usa",
+      "answer": [
+        "Pharmaceutical Preparation",
+        "Automotive industry",
+        "Food Manufacturing",
+        "Industrial Organic Chemicals, NEC"
+      ],
+      "q_entity": [
+        "United States of America"
+      ],
+      "n_subgraph_edges": 6540,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-267",
+      "question": "what other countries does canada trade with",
+      "answer": [
+        "Japan",
+        "United States of America",
+        "United Kingdom"
+      ],
+      "q_entity": [
+        "Canada"
+      ],
+      "n_subgraph_edges": 6836,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-279",
+      "question": "what language they speak in the philippines",
+      "answer": [
+        "Filipino language",
+        "English Language"
+      ],
+      "q_entity": [
+        "Philippines"
+      ],
+      "n_subgraph_edges": 4920,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-297",
+      "question": "who was real housewives brandi married to",
+      "answer": [
+        "Eddie Cibrian"
+      ],
+      "q_entity": [
+        "Brandi Glanville"
+      ],
+      "n_subgraph_edges": 1622,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-326",
+      "question": "what time zone is new york under",
+      "answer": [
+        "UTC−05:00",
+        "Eastern Time Zone"
+      ],
+      "q_entity": [
+        "New York"
+      ],
+      "n_subgraph_edges": 8209,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-339",
+      "question": "when was the musical annie written",
+      "answer": [
+        "1976-08-10"
+      ],
+      "q_entity": [
+        "Annie"
+      ],
+      "n_subgraph_edges": 2900,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-349",
+      "question": "what kind of government did benito mussolini have",
+      "answer": [
+        "Republican Fascist Party",
+        "National Fascist Party",
+        "Italian Socialist Party"
+      ],
+      "q_entity": [
+        "Benito Mussolini"
+      ],
+      "n_subgraph_edges": 2872,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-351",
+      "question": "who is chelsea kane",
+      "answer": [
+        "Voice Actor",
+        "Actor",
+        "Singer",
+        "Dancer"
+      ],
+      "q_entity": [
+        "Chelsea Kane"
+      ],
+      "n_subgraph_edges": 1921,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-353",
+      "question": "what did obama study in school",
+      "answer": [
+        "Political Science"
+      ],
+      "q_entity": [
+        "Barack Obama"
+      ],
+      "n_subgraph_edges": 7509,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-358",
+      "question": "what movies has taylor lautner been in 2011",
+      "answer": [
+        "Field of Dreams 2: Lockout",
+        "Abduction",
+        "The Ridiculous Six",
+        "Northern Lights",
+        "He's a Bully, Charlie Brown",
+        "The Twilight Saga: Breaking Dawn - Part 1",
+        "Run the Tide"
+      ],
+      "q_entity": [
+        "Taylor Lautner"
+      ],
+      "n_subgraph_edges": 1664,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-361",
+      "question": "what company did henry ford work for",
+      "answer": [
+        "James F. Flower & Bros",
+        "Ford Motor Company",
+        "Detroit Dry Dock Co",
+        "Henry Ford Company",
+        "Edison Illuminating Company"
+      ],
+      "q_entity": [
+        "Henry Ford"
+      ],
+      "n_subgraph_edges": 2614,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-376",
+      "question": "who speaks farsi",
+      "answer": [
+        "Tajikistan",
+        "Seljuk Empire",
+        "Canada",
+        "Oman",
+        "Uzbekistan",
+        "Bahrain",
+        "Iraq",
+        "Iran"
+      ],
+      "q_entity": [
+        "Persian Language"
+      ],
+      "n_subgraph_edges": 5527,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-398",
+      "question": "what states does the missouri river touch",
+      "answer": [
+        "South Dakota",
+        "Montana",
+        "North Dakota",
+        "Kansas",
+        "Missouri",
+        "Nebraska",
+        "Iowa"
+      ],
+      "q_entity": [
+        "Missouri River"
+      ],
+      "n_subgraph_edges": 6221,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-414",
+      "question": "what countries around the world speak french",
+      "answer": [
+        "Equatorial Guinea",
+        "South Vietnam",
+        "Congo",
+        "Cameroon",
+        "Qatar",
+        "Djibouti",
+        "Seychelles",
+        "Cambodia",
+        "Switzerland",
+        "Senegal",
+        "Gabon",
+        "Vatican City",
+        "Laos",
+        "France",
+        "Chad",
+        "Guinea",
+        "Habsburg Netherlands",
+        "Mauritius",
+        "Comoros",
+        "Mali",
+        "Rwanda",
+        "Niger",
+        "Algeria",
+        "Cyprus",
+        "Luxembourg",
+        "Belgium",
+        "Haiti",
+        "Burkina Faso",
+        "Dominica",
+        "Martinique",
+        "Tunisia",
+        "Ivory Coast",
+        "Holy Roman Empire",
+        "Jersey",
+        "Benin",
+        "Vanuatu",
+        "Lebanon",
+        "Barbados",
+        "Monaco",
+        "Madagascar",
+        "Burundi",
+        "Central African Republic",
+        "Morocco"
+      ],
+      "q_entity": [
+        "French"
+      ],
+      "n_subgraph_edges": 3789,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-418",
+      "question": "where was john lennon standing when he was shot",
+      "answer": [
+        "New York City"
+      ],
+      "q_entity": [
+        "John Lennon"
+      ],
+      "n_subgraph_edges": 8137,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-428",
+      "question": "who was judy garland married to",
+      "answer": [
+        "Sidney Luft",
+        "Mickey Deans",
+        "Mark Herron",
+        "Vincente Minnelli",
+        "David Rose"
+      ],
+      "q_entity": [
+        "Judy Garland"
+      ],
+      "n_subgraph_edges": 4910,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-429",
+      "question": "where is abraham lincoln hometown",
+      "answer": [
+        "Hodgenville"
+      ],
+      "q_entity": [
+        "Abraham Lincoln"
+      ],
+      "n_subgraph_edges": 5417,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-430",
+      "question": "what disease did helen keller",
+      "answer": [
+        "Hearing loss"
+      ],
+      "q_entity": [
+        "Helen Keller"
+      ],
+      "n_subgraph_edges": 4555,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-442",
+      "question": "who was the first leader of the afl",
+      "answer": [
+        "Bud Adams",
+        "Lamar Hunt"
+      ],
+      "q_entity": [
+        "American Football League"
+      ],
+      "n_subgraph_edges": 769,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-443",
+      "question": "who is the arizona cardinals football coach",
+      "answer": [
+        "Bruce Arians"
+      ],
+      "q_entity": [
+        "Arizona Cardinals"
+      ],
+      "n_subgraph_edges": 4595,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-457",
+      "question": "who did ayrton senna drive for",
+      "answer": [
+        "McLaren",
+        "Williams F1",
+        "Team Lotus",
+        "Toleman"
+      ],
+      "q_entity": [
+        "Ayrton Senna"
+      ],
+      "n_subgraph_edges": 2444,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-459",
+      "question": "where is the best place to vacation in the dominican republic",
+      "answer": [
+        "Playa Fronton",
+        "National Palace",
+        "Columbus Lighthouse",
+        "Macao Beach",
+        "Damajaqua Cascades",
+        "Punta Espada Golf Course",
+        "Samaná Bay",
+        "Haitian Batey",
+        "Los Haitises National Park",
+        "Pico Duarte"
+      ],
+      "q_entity": [
+        "Dominican Republic"
+      ],
+      "n_subgraph_edges": 5091,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-483",
+      "question": "what type of music did richard wagner play",
+      "answer": [
+        "Opera",
+        "Classical music",
+        "Romantic music"
+      ],
+      "q_entity": [
+        "Richard Wagner"
+      ],
+      "n_subgraph_edges": 6481,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-497",
+      "question": "in what country is amsterdam",
+      "answer": [
+        "Netherlands"
+      ],
+      "q_entity": [
+        "Amsterdam"
+      ],
+      "n_subgraph_edges": 5356,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-534",
+      "question": "who does michael vick play for",
+      "answer": [
+        "New York Jets"
+      ],
+      "q_entity": [
+        "Michael Vick"
+      ],
+      "n_subgraph_edges": 1347,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-536",
+      "question": "what is anderson silva trained in",
+      "answer": [
+        "Mixed Martial Artist",
+        "Actor"
+      ],
+      "q_entity": [
+        "Anderson Silva"
+      ],
+      "n_subgraph_edges": 892,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-557",
+      "question": "who played dorothy in the wizard of oz movie",
+      "answer": [
+        "Judy Garland"
+      ],
+      "q_entity": [
+        "Dorothy Gale",
+        "The Wizard of Oz"
+      ],
+      "n_subgraph_edges": 7763,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-566",
+      "question": "what style of art does andy warhol do",
+      "answer": [
+        "Modern art",
+        "Pop art"
+      ],
+      "q_entity": [
+        "Andy Warhol"
+      ],
+      "n_subgraph_edges": 6594,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-579",
+      "question": "who played luke skywalker in star wars episode 4",
+      "answer": [
+        "Mark Hamill"
+      ],
+      "q_entity": [
+        "Luke Skywalker"
+      ],
+      "n_subgraph_edges": 3370,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-608",
+      "question": "what is shakira 's nationality",
+      "answer": [
+        "Colombia"
+      ],
+      "q_entity": [
+        "Shakira"
+      ],
+      "n_subgraph_edges": 7581,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-611",
+      "question": "what position did george washington serve in the constitutional convention",
+      "answer": [
+        "Delegate to the Continental Congress"
+      ],
+      "q_entity": [
+        "George Washington"
+      ],
+      "n_subgraph_edges": 5422,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-639",
+      "question": "where do audi come from",
+      "answer": [
+        "Ingolstadt"
+      ],
+      "q_entity": [
+        "Audi"
+      ],
+      "n_subgraph_edges": 2066,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-700",
+      "question": "who played juni in spy kids 4",
+      "answer": [
+        "Daryl Sabara"
+      ],
+      "q_entity": [
+        "Spy Kids: All the Time in the World"
+      ],
+      "n_subgraph_edges": 4457,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-701",
+      "question": "what year did the new york mets start",
+      "answer": [
+        "1962"
+      ],
+      "q_entity": [
+        "New York Mets"
+      ],
+      "n_subgraph_edges": 1843,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-722",
+      "question": "what is the current government system in france",
+      "answer": [
+        "Semi-presidential system",
+        "Unitary state",
+        "Constitutional republic"
+      ],
+      "q_entity": [
+        "France"
+      ],
+      "n_subgraph_edges": 6744,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-724",
+      "question": "what is calabria italy",
+      "answer": [
+        "Italian region"
+      ],
+      "q_entity": [
+        "Calabria"
+      ],
+      "n_subgraph_edges": 2211,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-733",
+      "question": "who did heinrich himmler marry",
+      "answer": [
+        "Margarete Boden"
+      ],
+      "q_entity": [
+        "Heinrich Himmler"
+      ],
+      "n_subgraph_edges": 2714,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-741",
+      "question": "who was carrie underwood in soul surfer",
+      "answer": [
+        "Sarah Hill"
+      ],
+      "q_entity": [
+        "Carrie Underwood",
+        "Soul Surfer"
+      ],
+      "n_subgraph_edges": 8474,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-747",
+      "question": "what is venus named for",
+      "answer": [
+        "Venus"
+      ],
+      "q_entity": [
+        "Venus"
+      ],
+      "n_subgraph_edges": 1625,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-788",
+      "question": "what clubs has peter crouch played for",
+      "answer": [
+        "Aston Villa F.C.",
+        "Queens Park Rangers F.C. in European football",
+        "Tottenham Hotspur F.C.",
+        "Portsmouth F.C.",
+        "Stoke City F.C.",
+        "Liverpool F.C.",
+        "Southampton F.C."
+      ],
+      "q_entity": [
+        "Peter Crouch"
+      ],
+      "n_subgraph_edges": 915,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-793",
+      "question": "who did michael jordan marry",
+      "answer": [
+        "Yvette Prieto",
+        "Juanita Vanoy"
+      ],
+      "q_entity": [
+        "Michael Jordan"
+      ],
+      "n_subgraph_edges": 2227,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-810",
+      "question": "what date did the san francisco giants win the world series",
+      "answer": [
+        "2014 World Series"
+      ],
+      "q_entity": [
+        "San Francisco Giants"
+      ],
+      "n_subgraph_edges": 2366,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-844",
+      "question": "what 3 states border the pacific ocean",
+      "answer": [
+        "Oregon",
+        "California",
+        "Washington"
+      ],
+      "q_entity": [
+        "Pacific Ocean"
+      ],
+      "n_subgraph_edges": 7327,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-846",
+      "question": "where was avril lavigne born",
+      "answer": [
+        "Belleville"
+      ],
+      "q_entity": [
+        "Avril Lavigne"
+      ],
+      "n_subgraph_edges": 9496,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-858",
+      "question": "which countries does south africa export to",
+      "answer": [
+        "Angola",
+        "Tanzania"
+      ],
+      "q_entity": [
+        "South Africa"
+      ],
+      "n_subgraph_edges": 4766,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-868",
+      "question": "what a city in montana",
+      "answer": [
+        "Three Forks",
+        "Cohagen, Montana",
+        "St. Ignatius",
+        "Windham",
+        "Kevin",
+        "Luther, Montana",
+        "Lolo Hot Springs",
+        "Kingsbury Colony",
+        "Hunters Hot Springs",
+        "Loring, Montana",
+        "Grantsdale, Montana",
+        "Elkhorn",
+        "Alpine Mobile Manor",
+        "Gunsight",
+        "Santa Rita",
+        "Bison",
+        "Savoy",
+        "Roundup",
+        "Bridger View Trailer Court",
+        "Sylvanite, Montana",
+        "Drexel",
+        "Park City",
+        "Norris",
+        "Montaqua",
+        "Holiday Trailer Court",
+        "Ninemile",
+        "Fort Peck",
+        "Rexford",
+        "Yakt",
+        "Johnson",
+        "Reistad Trailer Court",
+        "Shigley Mobile Home Park",
+        "Elkhorn Hot Springs",
+        "Tobacco",
+        "Beaverton",
+        "Chadborn",
+        "Apgar Village",
+        "Angela, Montana",
+        "Green Acres",
+        "Fishtail",
+        "Calais",
+        "Forest Grove, Montana",
+        "Livingston",
+        "Murphys Trailer Court",
+        "Hunters Trailer Court",
+        "Fox, Montana",
+        "Patterson",
+        "Big Sky Mobile Home Park",
+        "Allentown",
+        "Henderson",
+        "Sourdough, Montana",
+        "Ant Flat",
+        "Polaris, Montana",
+        "Billings",
+        "Sohon",
+        "Flatwillow Colony",
+        "Waterloo, Montana",
+        "Ayers Ranch Colony",
+        "Sidney",
+        "Mill Creek",
+        "Harrison Mill",
+        "Hidden Valley Mobile Estates",
+        "Grannis",
+        "East Evergreen Mobile Home Park",
+        "Fairfield",
+        "Gallatin Gateway Inn Park",
+        "Sheridan Trailer Court",
+        "Grayling",
+        "Hanover",
+        "Troy",
+        "Hillside",
+        "Freds Trailer Court",
+        "Dunkirk",
+        "Meltons",
+        "Aloe",
+        "Brenna Trailer Court",
+        "Clasoil",
+        "Piche",
+        "Lodge Grass",
+        "Tiber",
+        "Thompson Falls",
+        "Hoffmanville",
+        "Craig, Montana",
+        "Westmore",
+        "Sawyers Trailer Park",
+        "Cozy Court",
+        "Birdseye",
+        "Broadus",
+        "Maudlow",
+        "Forest Acres Mobile Home Park",
+        "Busteed",
+        "Melrose, Montana",
+        "Lakeside Plaza Mobile Home Park",
+        "Goldstone",
+        "Flynn",
+        "Cherry Ridge Ranch",
+        "Dillon",
+        "Mine Creek",
+        "Amherst",
+        "Pats Trailer Park",
+        "Highview",
+        "Lohman",
+        "Wooley",
+        "Bighorn",
+        "Star",
+        "Pioneer",
+        "Rose Crossing",
+        "Pleasant Park Mobile Home Court",
+        "Greenland Park Trailer Court",
+        "Anaconda Trailer Court",
+        "Washoe, Montana",
+        "Eden",
+        "Lombard",
+        "Daleview",
+        "Alhambra, Montana",
+        "Laredo",
+        "Volborg",
+        "Nagos",
+        "Colgate",
+        "Lanark",
+        "Kiowa",
+        "Verona",
+        "Whitetail, Montana",
+        "White",
+        "Woods Place",
+        "Argenta",
+        "Chelsea",
+        "Story",
+        "Summit",
+        "Cleveland",
+        "Newlon Junction",
+        "Childs",
+        "Polson",
+        "Unionville, Montana",
+        "Giltedge",
+        "Pappas Place",
+        "Blair Crossing",
+        "Volmer",
+        "High Ground Addition",
+        "Star Mobile Home Park",
+        "Fergus",
+        "Old Banks Place",
+        "Mill Iron, Montana",
+        "Iliad",
+        "Polebridge",
+        "Wolf Point",
+        "Straw",
+        "Redstone, Montana",
+        "Blackleaf",
+        "Woodworth",
+        "Park Addition",
+        "Dodson",
+        "Walker Mobile Home Park",
+        "Tyman Place",
+        "Beebe",
+        "Shepherd Crossing",
+        "Lux",
+        "Deer Lodge",
+        "Bozeman",
+        "Bond",
+        "Donlan",
+        "Burns",
+        "Dutton",
+        "McMullan",
+        "Swan Lake, Montana",
+        "Benteen",
+        "Chapman",
+        "Hillside Trailer Court",
+        "Dutton",
+        "Flaxville",
+        "Thoeny",
+        "Cut Bank",
+        "Springdale, Montana",
+        "Summit",
+        "Louisville",
+        "Jessup",
+        "Camas Prairie",
+        "Alberton",
+        "Frigon Trailer Court",
+        "Westlake",
+        "Haxby",
+        "Arnold",
+        "Kenilworth",
+        "Wilborn",
+        "Red Rock Point",
+        "Brandon",
+        "Geyser Trailer Park",
+        "Arrow Creek",
+        "Gilroy",
+        "Eightmile Saddle",
+        "Belle Creek, Montana",
+        "Eastham Junction",
+        "Hinsdale, Montana",
+        "Schley",
+        "Sieben",
+        "Shonkin",
+        "Eddy",
+        "Rockport Colony",
+        "Ashuelot",
+        "Ozan",
+        "Ford",
+        "Romsett Summer Home Area",
+        "Rochester",
+        "Cameron Park",
+        "Seville Colony",
+        "Queen",
+        "Stipes Trailer Court",
+        "Morgan, Montana",
+        "York",
+        "Brockway",
+        "Cordova",
+        "Skyland Trailer Park",
+        "Blossburg",
+        "Pipestone Hot Springs",
+        "Potts Trailer Court",
+        "Fee",
+        "Country Estates Mobile Home Park",
+        "Sanders, Montana",
+        "Fischer Park",
+        "Williams",
+        "Lewistown",
+        "Springhill Park",
+        "Jimtown",
+        "Lowry",
+        "Hilldale Colony",
+        "Richey",
+        "Elton",
+        "Singleshot",
+        "Wagner, Montana",
+        "Wheelers Trailer Court",
+        "A and B Trailer Court Number One",
+        "Gallup City",
+        "Blair",
+        "Three Forks Junction",
+        "Prairie Mobile Village",
+        "Fairmont Hot Springs",
+        "Simpson",
+        "Lozeau",
+        "McElroy",
+        "Sundance",
+        "St. Mary, Montana",
+        "East Helena",
+        "Conner",
+        "Tunis",
+        "Muir",
+        "Woodward Place",
+        "Poplars Trailer Court",
+        "Larslan",
+        "Westview Park",
+        "Laurin",
+        "Quinns",
+        "Loring Colony",
+        "Berts Trailer Court",
+        "Raynesford",
+        "Vivs Trailer Court",
+        "Lake McDonald, Montana",
+        "Ashfield",
+        "Dry Lake",
+        "Willow Crossing",
+        "Watkins",
+        "Ollie",
+        "Kyle",
+        "Rocks Trailer Court",
+        "Nickwall",
+        "Great Falls",
+        "Heads Trailer Court",
+        "Ahles",
+        "Sand Springs, Montana",
+        "Tungsten",
+        "Staton",
+        "Kens Trailer Court",
+        "Perma",
+        "Alzada",
+        "Whites City",
+        "Wolf Creek, Montana",
+        "Belltower",
+        "Rowley",
+        "Glentana, Montana",
+        "Girard",
+        "Vista",
+        "Anaconda",
+        "Landusky",
+        "False Summit",
+        "Marsh",
+        "Rock Crossing",
+        "Agawam",
+        "Winifred",
+        "Roosville, Montana",
+        "Navy",
+        "Gibson Flats, Montana",
+        "Hoosac",
+        "Nashua",
+        "Weeksville",
+        "Castner Falls",
+        "Bear Creek Village",
+        "Joliet",
+        "Branding Iron Addition",
+        "Twin Creeks",
+        "Colstrip",
+        "McCabe",
+        "Sage Creek Colony",
+        "Number Seven",
+        "Becket",
+        "Roy-Winifred Junction",
+        "Springdale Colony",
+        "Leonard Place",
+        "Bruce Place",
+        "Springtown",
+        "Lakeview, Montana",
+        "Ware",
+        "University Heights",
+        "Lothair, Montana",
+        "Chimney Rock",
+        "Wood Place",
+        "Ruby",
+        "Milford Colony",
+        "Doak Trailer Court",
+        "Pownal",
+        "Hingham",
+        "Blackwood",
+        "Spring Creek Junction",
+        "Torens Trailer Park",
+        "Kelley",
+        "Chestnut",
+        "Big Timber",
+        "Copper Cliff",
+        "Sayle",
+        "Fort Lazy Y Trailer Park",
+        "Murray Trailer Park",
+        "Barker",
+        "Weed",
+        "Baxter",
+        "Kerns",
+        "Canyon Ferry",
+        "Frenchie Place",
+        "Plevna",
+        "Coloma, Montana",
+        "Edith Nelson Trailer Court",
+        "Stoner Place",
+        "Ross Hall",
+        "Garnet",
+        "Westfall",
+        "Peterson Place",
+        "Cottonwood",
+        "Crain Place",
+        "Cole",
+        "Weldon",
+        "Spartan Manor Trailer Park",
+        "Vananda",
+        "Caldwell",
+        "Carr Trailer Court",
+        "Castle Town",
+        "Ronan",
+        "Moose Town",
+        "Sixteen",
+        "East End Colony",
+        "McCloud",
+        "Wall City",
+        "Coffee Creek, Montana",
+        "Barretts",
+        "Big Sky Meadow Village",
+        "Diamond Valley",
+        "Stipek",
+        "Glendale Colony",
+        "Waco, Montana",
+        "Chimney Crossing",
+        "Sheffield",
+        "Orinoco",
+        "Old Weiss and French Place",
+        "Crystal Point",
+        "Giffen",
+        "Salem",
+        "Shaws",
+        "Thurlow",
+        "Carols Court",
+        "Tusler",
+        "Pacific Junction",
+        "Kalispell",
+        "Ridge",
+        "Broadwater",
+        "Durham",
+        "Beaver Creek",
+        "Moyne",
+        "Upper Ellis Place",
+        "Fox Crossing",
+        "Kingrey Place",
+        "Rocker, Butte",
+        "Utica, Montana",
+        "Spear",
+        "Melville, Montana",
+        "Frontier Town",
+        "Roberts, Montana",
+        "Simko Trailer Court",
+        "Lost Creek",
+        "Drummond",
+        "Capitol, Montana",
+        "Beacon Point",
+        "Gloss Place",
+        "Lipske Trailer Court",
+        "Galata, Montana",
+        "Feely",
+        "Belgrade Trailer Court",
+        "Pony",
+        "Trego, Montana",
+        "Smiths Trailer Court",
+        "Meaderville",
+        "Dewey",
+        "Donald",
+        "Trask",
+        "Ball Place",
+        "Forest Hill Village, Montana",
+        "Cline",
+        "Crane, Montana",
+        "Spring Grove Trailer Court",
+        "Tampico",
+        "Reynolds City",
+        "Big Sag",
+        "Garneill, Montana",
+        "Hammond",
+        "Menard",
+        "Warm Springs, Montana",
+        "Trident",
+        "Centerville",
+        "Edwards",
+        "Milltown, Montana",
+        "Ford Place",
+        "Sperry Chalets",
+        "Anita",
+        "Meriwether",
+        "Meyers Creek",
+        "Watson",
+        "Brooks",
+        "Hilger, Montana",
+        "Vincent",
+        "Richland, Montana",
+        "Peerless, Montana",
+        "Park Road Trailer Court",
+        "Greenwood",
+        "Miles Crossing",
+        "Cartersville",
+        "Scholtztown",
+        "Ulmer",
+        "Quast",
+        "Duffy Trailer Court",
+        "Moes Trailer Court",
+        "Proctor, Montana",
+        "Ripley",
+        "Nelson",
+        "Reeder Place",
+        "Biddle",
+        "Hillside Colony",
+        "Crow Rock",
+        "Kirby, Montana",
+        "Big Arm Mobile Home Park",
+        "Indian Arrow",
+        "Armington Junction",
+        "Brady, Montana",
+        "Tiber Dam Camp",
+        "Living Springs",
+        "White Haven",
+        "Hagans Crossing",
+        "Bruno",
+        "Whitewater, Montana",
+        "Travellers Rest Trailer Court",
+        "Green Field Mobile Home Park",
+        "Medicine Hot Springs",
+        "Moore",
+        "Stacey",
+        "Spring Gulch",
+        "Guntner Place",
+        "Lazy Day Court",
+        "Bradman",
+        "Bitterroot Gateway Trailer Court",
+        "Burns Trailer Court",
+        "Dodge Summit",
+        "Leroy",
+        "Phillips",
+        "Cliff Lake",
+        "West Acres Trailer Park",
+        "Old Hellgate Village Trailer Park",
+        "Springtime, Montana",
+        "Cowboys Heaven",
+        "Jefferson Island",
+        "Hauck",
+        "Bear Dance, Montana",
+        "Skones",
+        "Woodville",
+        "La Bree Mobile Homes Incorporated",
+        "Barker",
+        "Outlook",
+        "Saco",
+        "Buelow",
+        "Wise River",
+        "Riverdale",
+        "Nine-mile",
+        "Emerson Junction",
+        "Waltham",
+        "Tate Place",
+        "Ross Fork",
+        "West Lewistown",
+        "Horton",
+        "Jackson, Montana",
+        "Steve Forks",
+        "Geraldine",
+        "Leary Place",
+        "Bitterroot Court",
+        "Bisel",
+        "Maiden",
+        "Riceville",
+        "Shields Crossing",
+        "Big Sky Mobile Home Court",
+        "Warrick",
+        "Riders Trailer Court",
+        "Hamen",
+        "Yates, Montana",
+        "Apple Blossom Court",
+        "Alta",
+        "Meadow Manor Incorporated",
+        "Jeffers",
+        "Froid",
+        "Bryson",
+        "Old Ford Place",
+        "McQueen",
+        "Woods Place",
+        "Old Town",
+        "Yegen",
+        "Medicine Lake",
+        "MJB Trailer Court",
+        "Calamity Janes Trailer Court",
+        "Nyack",
+        "Jordan Crossing",
+        "Zero, Montana",
+        "Toole",
+        "Blacktail",
+        "Cowan",
+        "Hecla, Montana",
+        "Midale",
+        "Cold Spring",
+        "Culbertson",
+        "Lakeview",
+        "Monarch, Montana",
+        "Spurling",
+        "Morel",
+        "Pierce Crossing",
+        "Marysville",
+        "McClain",
+        "Minden",
+        "Samples Crossing",
+        "La Hood Park",
+        "Mission Meadows Trailer Park",
+        "Shady Lane Mobile Home Park",
+        "Brusett, Montana",
+        "Belmont",
+        "Sunburst",
+        "Stranahan",
+        "Watkins",
+        "Mountain View",
+        "Peaceful Haven Mobile Home Park",
+        "George Place",
+        "Wickes, Montana",
+        "Jens",
+        "Hiland Trailer Court",
+        "Vandalia, Montana",
+        "Shambo Springs",
+        "Warren, Montana",
+        "Sappington",
+        "Huletts Trailer Court",
+        "Mountain View Mobile Home Park",
+        "Pondera Colony",
+        "Sunlight",
+        "Butte Creek",
+        "Mossmain, Montana",
+        "Rice Motel and Trailer Court",
+        "Cabin City",
+        "Oilmont, Montana",
+        "Clear Creek Terrace Trailer Court",
+        "Hill",
+        "Pendroy, Montana",
+        "Happy Haven",
+        "Bitterroot Pines",
+        "Mann",
+        "Fairview",
+        "Sunset Trailer Court",
+        "A and B Trailer Court Number Two",
+        "Conkelley",
+        "Hobson",
+        "Hodges",
+        "Gearing",
+        "Brockton",
+        "Stark",
+        "Pleasant Prairie",
+        "AA Westside Mobile Estates",
+        "Pinegrove Trailer Park",
+        "La Chapelle Place",
+        "Fries Place",
+        "Opheim",
+        "Green Star Trailer Court",
+        "Roy, Montana",
+        "Ridgewood Terrace",
+        "Kenspur",
+        "McLeod, Montana",
+        "Salmon Prairie",
+        "Glacier Colony",
+        "Travois Village",
+        "Rothiemay",
+        "Chance",
+        "Riverview",
+        "Five Acre Tracts/Acreville Addition",
+        "Coal Banks Landing",
+        "Old Whitcomb Place",
+        "Ringling",
+        "Beals",
+        "Quartz",
+        "Riverside Trailer Court",
+        "Hackney",
+        "Clyde Park",
+        "Centerville",
+        "North West Mobile Home Park",
+        "McDonald",
+        "Rock Springs",
+        "Manchester",
+        "I-94 Trailer Park",
+        "Lothrop, Montana",
+        "Sciuchetti Place",
+        "Belgrade Village Mobile Home Park",
+        "Gird Point",
+        "Del Bonita, Montana",
+        "Cope Trailer Park",
+        "Jellison Place",
+        "Jerry Mallo Trailer Court",
+        "Top O'Deep",
+        "Opportunity",
+        "Montague",
+        "Iverness",
+        "Tucker",
+        "Finn",
+        "Philipsburg",
+        "Bundy",
+        "Glendive",
+        "Richey Trailer Court",
+        "Hillman",
+        "Riverview Trailer Park",
+        "Larchwood",
+        "Biem",
+        "Hidden Lake Colony",
+        "Content",
+        "Greenough",
+        "Sumner",
+        "Countryside Village",
+        "Outback Mobile Home Settlement",
+        "Wagon Wheel Trailer Court",
+        "Piltzville",
+        "Jennings",
+        "Riverview Colony",
+        "Boyes, Montana",
+        "Bredette",
+        "Saint Johns",
+        "Homestake",
+        "Baylor",
+        "Ferndale",
+        "Leiterville",
+        "Boyd, Montana",
+        "Danielsville",
+        "Corbin, Montana",
+        "McClave",
+        "Hamblin Heights Mobile Village",
+        "Lower Ellis Place",
+        "Rim Rock Colony",
+        "East Community",
+        "Flatwillow, Montana",
+        "Farmington",
+        "Stones Trailer Park",
+        "Diamond City",
+        "Richards Trailer Court",
+        "Turner Colony",
+        "Moulton",
+        "Rieder",
+        "Snowslip",
+        "Wagon Wheel Trailer Court",
+        "Saypo",
+        "Cameron",
+        "Vendome",
+        "Camona",
+        "Buell",
+        "Bald Butte",
+        "Mount Jumbo Trailer Court",
+        "Harveys Mobile Home Court",
+        "Riebeling",
+        "Country Court",
+        "Blackfoot",
+        "Curdys Cove",
+        "Apex",
+        "Hedgesville",
+        "Ferndale Mobile Court",
+        "Mountain Acres Mobile Home Park",
+        "Idlewise Court",
+        "Valentine",
+        "Orchard Hills Mobile Home Park",
+        "Allard",
+        "Korner Kourt",
+        "Hysham",
+        "Molt, Montana",
+        "Cyr",
+        "Hamilton Mobile Home Park",
+        "Rainbows End Mobile Home Park",
+        "Hall, Montana",
+        "Cooper",
+        "West End",
+        "Williamsburg",
+        "Accola",
+        "Skyline Trailer Court",
+        "Sixmile Crossing",
+        "King Colony Ranch",
+        "Rumsey",
+        "Shelby",
+        "Eustis",
+        "Lindsay, Montana",
+        "Palace Addition",
+        "Dryer Place",
+        "Lehigh",
+        "Oswego, Montana",
+        "Big Pines Mobile Court",
+        "Spion Kop",
+        "Whitehall",
+        "Neihart",
+        "Intake",
+        "Carbella",
+        "Miles Crossing",
+        "Taft, Montana",
+        "Forest Heights",
+        "Casitas Del Rio East Mobile Home Park",
+        "Finlen",
+        "Carlyle, Montana",
+        "Coughlin",
+        "Westwood Estates",
+        "Pipestone",
+        "Noble",
+        "Blanchards Corner",
+        "Anceney",
+        "Ridgeway",
+        "Miles City",
+        "X Crossing",
+        "Christina",
+        "Swiftcurrent",
+        "Lonesome Hurst Summer Home Area",
+        "Independence",
+        "White Sulphur Springs",
+        "Buxton",
+        "Bay Horse",
+        "Princeton",
+        "Armstead",
+        "Libby",
+        "Posts Trailer Court",
+        "Chico, Montana",
+        "Leibrands Trailer Court",
+        "Cavetown",
+        "Lloyd, Montana",
+        "Cobb",
+        "Yarnell",
+        "Knox",
+        "New Miami Colony",
+        "Jardine, Montana",
+        "Kippen",
+        "Friendly Trailer Court",
+        "Comanche, Montana",
+        "Lima",
+        "Sunnyside",
+        "Pompey's Pillar",
+        "Glengarry",
+        "Soudan",
+        "Pine Grove Trailer Court",
+        "Geary",
+        "Springwater Colony",
+        "Monida, Montana",
+        "Piedmont",
+        "West Valley",
+        "Mobile City Home Park",
+        "Newton",
+        "Stockett, Montana",
+        "Valley Vista Mobile Home Community",
+        "Urback Place",
+        "Leisure Village Mobile Home Park",
+        "Yogo Crossing",
+        "Austin",
+        "Hoffman",
+        "Benchland",
+        "Wagon Wheel Trailer Court",
+        "Busch",
+        "Kilby Butte Colony",
+        "Kingley",
+        "Otter, Montana",
+        "Maus Trailer Court",
+        "Brewer",
+        "Gold Butte",
+        "Garrett Mobile Home Park",
+        "Archer",
+        "Belgrade Junction",
+        "Bainville",
+        "Sunset Trailer Court",
+        "Stephensons Trailer Court",
+        "Nichols",
+        "Janney",
+        "Silver Bow Park",
+        "Blythe",
+        "Creston",
+        "Moorhead, Montana",
+        "Porters Corner",
+        "Mannix",
+        "Ingomar",
+        "Georgetown",
+        "Hiline Trailer Park",
+        "Nelsons Trailer Court",
+        "Campbell Place",
+        "Byrne",
+        "Quigley",
+        "Mikesell Trailer Court",
+        "White Pine",
+        "Dalys",
+        "Fields",
+        "Webster",
+        "Helmville, Montana",
+        "Rosebud, Montana",
+        "Acton, Montana",
+        "Portage",
+        "Springhill",
+        "Fresno",
+        "Red Bluff",
+        "Gloster",
+        "Bynum",
+        "Newtown",
+        "McGillvary",
+        "Packers",
+        "Selmes",
+        "La Casa Trailer Park",
+        "Ravenna",
+        "Hollyhock Trailer Court",
+        "Red Rock",
+        "Bowdoin",
+        "Bone Crossing",
+        "Vida",
+        "Merriman",
+        "Lakeside",
+        "Bole",
+        "Raymond, Montana",
+        "Lolo Peak Trailer Court",
+        "Van Norman",
+        "Wayne",
+        "Billings Heights",
+        "Gordon",
+        "West Yellowstone",
+        "Strom",
+        "Iron",
+        "Northeast Annexation Trailer Court",
+        "Countryside Court Mobile Home Park",
+        "Welch",
+        "Queens Point",
+        "Pleasant Valley Colony",
+        "Calypso",
+        "Clearwater",
+        "Rhodes",
+        "New Year",
+        "Conrad",
+        "Dunmore",
+        "Piegan",
+        "Galbraith",
+        "Tattnall",
+        "Catron",
+        "Four Seasons Trailer Court",
+        "Mildred, Montana",
+        "Post Creek",
+        "French Town",
+        "Cat Creek, Montana",
+        "Big Mountain Trailer Park",
+        "Shepherds Trailer Court",
+        "Fort Piegan",
+        "Decker, Montana",
+        "Fishtrap",
+        "Kootenai Falls",
+        "Navajo",
+        "Park Grove",
+        "Ramsey, Montana",
+        "Faith Mobile Home Court",
+        "Buckingham",
+        "New Chicago",
+        "Benzien",
+        "Woodside",
+        "Craver",
+        "Corvallis Mobile Home Park",
+        "Big Sky Colonial Manor",
+        "Dover",
+        "Woodside Crossing",
+        "Nohly",
+        "Bend",
+        "Rainbow",
+        "Limestone, Montana",
+        "North Fork",
+        "Ennis",
+        "Ricci Trailer Terraces",
+        "Holden Place",
+        "Macon",
+        "Potomac",
+        "Sweet Grass",
+        "Parker",
+        "Wheeler",
+        "Delano Place",
+        "Fairview Terrace Trailer Court",
+        "Sonnette, Montana",
+        "Hopkins",
+        "Bernice",
+        "Woodin",
+        "Mar-Le Villa",
+        "Whately",
+        "Hale Place",
+        "Chinatown",
+        "Surprise Creek Colony",
+        "Riverside",
+        "Bannack",
+        "Covered Wagon Mobile Home Park",
+        "Hollingshead Trailer Court",
+        "Plains",
+        "Rockvale, Montana",
+        "Wade",
+        "Ponderosa Mobile Home Park",
+        "Eagleton",
+        "Sleeping Buffalo",
+        "Groveland",
+        "Yreka",
+        "Higgins",
+        "Sodak Mill",
+        "Riverside Addition",
+        "Prison Farm",
+        "Town and Country Trailer Park",
+        "Manson",
+        "Hamilton",
+        "Columbia Falls",
+        "Kidd",
+        "Pray, Montana",
+        "Twin Bridges",
+        "Northridge Heights",
+        "Andes",
+        "Valley Vista Trailer Park",
+        "Anderson",
+        "Melstone",
+        "Sprinkle Trailer Court",
+        "Agency",
+        "Grant",
+        "Happys Inn",
+        "Coalwood",
+        "New Rockport Colony",
+        "Whitefish",
+        "Hildreth",
+        "Rocky Crossing",
+        "Cree Crossing",
+        "Bellevue Manor Trailer Park",
+        "Eddies Corner",
+        "Pine Creek",
+        "Terry",
+        "Rocky Mountain Pipe Mobile Home Court",
+        "Robinson",
+        "Choteau Junction",
+        "Brenchley Mobile Home Park",
+        "Leisure Village",
+        "Four Buttes, Montana",
+        "H and H Trailer Court",
+        "Cedric",
+        "Darby",
+        "Adel",
+        "Kershaw",
+        "Garland",
+        "Bowler, Montana",
+        "Comertown",
+        "Comet",
+        "Olive, Montana",
+        "Big Sky Mountain Village",
+        "Emigrant",
+        "Ohio Camp",
+        "Myers, Montana",
+        "Siyeh Bend",
+        "Belt Creek",
+        "Chinook",
+        "Schusters Place",
+        "Quigley",
+        "Albion",
+        "Aberdeen",
+        "Powers",
+        "Ismay",
+        "Big Stone Colony",
+        "Delphia",
+        "Round Butte",
+        "Collins",
+        "Schubring Trailer Court",
+        "Junction",
+        "Eureka",
+        "Deer Park",
+        "Haugan, Montana",
+        "Bascom, Montana",
+        "Yukon Saddle",
+        "Elso",
+        "Epsie",
+        "Bitterroot Trailer Court",
+        "Twin Acres Mobile Home Park",
+        "Malone",
+        "Crackerville",
+        "Hoppers",
+        "Ludington",
+        "Babb",
+        "Lexley Acres Mobile Home Park",
+        "Forest Green",
+        "Peaks and Pines Park",
+        "Scobey",
+        "Halfmoon",
+        "Aubrey Crossing",
+        "Valier",
+        "Millegan",
+        "Snowden",
+        "Ward",
+        "Huson, Montana",
+        "Tippet Place",
+        "Lander Crossing",
+        "Mobile City Trailer Park",
+        "Bull Mountain",
+        "Robinsons Trailer Park",
+        "Borax",
+        "Sunset",
+        "Truly",
+        "Big Sky Canyon Village",
+        "Red Lodge",
+        "Bill Bracket Place",
+        "Forest Park",
+        "Martinsdale Colony",
+        "Lebo",
+        "La Salle",
+        "Superior",
+        "Mountain Valley Trailer Court",
+        "Roanwood",
+        "Stevensville",
+        "Devon",
+        "Canton, Montana",
+        "West Gallatin",
+        "Ekalaka",
+        "Fort Benton",
+        "Holtet Court",
+        "McAllister, Montana",
+        "Gilman",
+        "Loweth",
+        "Bueno Vista Acres Trailer Court",
+        "Harlowton",
+        "Crystal Ford",
+        "Hot Springs",
+        "Amazon",
+        "Pine Grove",
+        "Lavina",
+        "Murray Place",
+        "Canyon Creek Boat Landing",
+        "Lindisfarne, Montana",
+        "Talc",
+        "Chicory",
+        "Soda Springs",
+        "Harlem",
+        "McHugh Trailer Court",
+        "Manger",
+        "Blatchford",
+        "Stanford",
+        "Riverside, Montana",
+        "Cameron Crossing",
+        "Schilling",
+        "Whitlash",
+        "Como",
+        "Highwoods Mobile Home Park",
+        "Duncan Ranch Colony",
+        "Zurich, Montana",
+        "Pine Prairie",
+        "West College Park",
+        "Denton",
+        "Pleasant View",
+        "Gage",
+        "Portal",
+        "Eagle Creek Colony",
+        "Bearmouth, Montana",
+        "Lupfer",
+        "Pinnacle",
+        "Foraker",
+        "Ledger, Montana",
+        "Dean, Montana",
+        "Reynolds Trailer Court",
+        "Ponderosa Trailer Court",
+        "Rocky Creek Trailer Court",
+        "Celander Trailer Court",
+        "Dooley",
+        "Pinesdale",
+        "Mountain View Trailer Court",
+        "Coalridge",
+        "East Glacier Park",
+        "Barber",
+        "Circle 'J' Mobile Park",
+        "Lennep, Montana",
+        "Burdick Place",
+        "Round Prairie",
+        "Essex, Montana",
+        "Split Rock Junction",
+        "Bluffport",
+        "West Glacier",
+        "Carlton",
+        "Sheridan",
+        "Star Addition",
+        "Hughesville",
+        "Big Sandy",
+        "Shennum Trailer Court",
+        "Moccasin, Montana",
+        "Big Sky Colony",
+        "Stryker, Montana",
+        "Townsend",
+        "Valley Drive Mobile Home Park",
+        "Smelter Hill",
+        "Three Forks",
+        "Sloan",
+        "Copper City",
+        "Varney",
+        "Patterson Corner",
+        "Missouri Meadows Trailer Park",
+        "Knowles",
+        "Cascade",
+        "Sioux Pass",
+        "Big Sandy Trailer Court",
+        "Maddux",
+        "Rankin Place",
+        "Hirsch",
+        "Corette",
+        "Poplar",
+        "Miller Colony",
+        "Belle-Vue Court",
+        "Valleytown",
+        "Elkhorn",
+        "Rivershore Mobile Home Park",
+        "Mount Aqua Trailer Court",
+        "Riverside Trailer Court",
+        "DY Junction",
+        "Naismith, Montana",
+        "Nimrod",
+        "Shields",
+        "Geyser, Montana",
+        "Danvers",
+        "Clarkston",
+        "Ermont Mill",
+        "Saugus",
+        "Holland",
+        "Deerfield Colony",
+        "Keystone",
+        "Mid Canon",
+        "Thiels West Trailer Court",
+        "Turah, Montana",
+        "Lingenpolter",
+        "Savage, Montana",
+        "Fromberg",
+        "Hesper, Montana",
+        "West Fork",
+        "Truchot Hill",
+        "Mosby, Montana",
+        "Hogeland, Montana",
+        "Barite",
+        "Armington, Montana",
+        "Church Hill",
+        "Buffalo, Montana",
+        "Bridger",
+        "Knowlton",
+        "Checkerboard",
+        "Forty Mile Colony",
+        "Farralltown",
+        "Sheffels",
+        "Bearcreek",
+        "Sipple",
+        "Minnesota Addition",
+        "Westby",
+        "Haley Subdivision Trailer Court",
+        "Hillsboro",
+        "Mountain View Trailer Court",
+        "Willow Creek Mobile Home Park",
+        "Carbon Hill Trailer Court",
+        "Chester",
+        "Stumps Subdivision",
+        "Beartown",
+        "Alpine",
+        "Roscoe, Montana",
+        "Simpkins Place",
+        "Malta",
+        "Virden",
+        "Cleiv",
+        "Lake Mary Ronan, Montana",
+        "Holker",
+        "Kila, Montana",
+        "Columbia Gardens",
+        "North Harlem Colony",
+        "Lippard",
+        "Durant",
+        "Green Acres Addition",
+        "Gregson",
+        "Nimrod",
+        "Golden Ridge",
+        "Kingston",
+        "Mountain Shadows Estates",
+        "Mountain View Trailer Court",
+        "Corwin Springs",
+        "Highland Mobile Home Park",
+        "Merino",
+        "Dagmar, Montana",
+        "Grace",
+        "Riverside Trailer Court",
+        "Teigen, Montana",
+        "Alex Boggio Place",
+        "Red Top",
+        "Radnor",
+        "Belgrade",
+        "Bishop Place",
+        "Cassidy Curve",
+        "Reed Trailer Court",
+        "Rimrock, Montana",
+        "Electric",
+        "Goldcreek",
+        "Enid",
+        "Gallatin Gateway",
+        "Bonfield",
+        "Sunrise Trailer Court",
+        "Wibaux",
+        "J and M Trailer Court",
+        "Shawmut, Montana",
+        "Westana Mobile Home Park",
+        "Maiden Rock",
+        "Grass Range",
+        "Floweree, Montana",
+        "Riverside",
+        "Brandenberg",
+        "Wurtz Hill",
+        "Granite",
+        "McNamara",
+        "Nissler",
+        "Keiley",
+        "Shaw Place",
+        "Minnie Rahn Place",
+        "Circle Trailer Court",
+        "Four Range",
+        "Valley View Castle Mobile Home Park",
+        "Meadowlark Mobile Home Park",
+        "Rattlesnake",
+        "East Portal",
+        "Tuscor",
+        "Condon, Montana",
+        "King Arthur Park, Montana",
+        "Pack and Lacey Crossing",
+        "Silver Star, Montana",
+        "Silver City",
+        "Skyline",
+        "Two River Trailer Park",
+        "Baker",
+        "Virgelle",
+        "Lewistown Junction",
+        "Hollywood Trailer Court",
+        "Gorus",
+        "Finnicum Mobile Home Park",
+        "Carney, Montana",
+        "Gildford Colony",
+        "Ford",
+        "Olson Place",
+        "Laurel",
+        "Volt",
+        "Central Avenue Trailer Court",
+        "Sioux Crossing",
+        "Foleys Trailer Court",
+        "Tee Pee Trailer Court",
+        "Galen",
+        "Helena",
+        "Bedford",
+        "Pinegrove",
+        "Marion, Montana",
+        "Gibbtown",
+        "Ridgelawn",
+        "Rogers",
+        "Missoula",
+        "Rivers Edge Mobile Home Park",
+        "Hardin",
+        "Nye",
+        "Foster Mobile Home Park",
+        "Canyon View Trailer Court",
+        "Browning",
+        "Fort Kipp",
+        "Suffolk",
+        "Speer Trailer Park",
+        "Huckleberry Trailer Court",
+        "Baseline",
+        "Broadview",
+        "Grass Valley",
+        "Fife",
+        "Kuka Crossing",
+        "Snider",
+        "Virginia City",
+        "Kolin",
+        "Corral",
+        "Slab Crossing",
+        "Boulder",
+        "Aldridge, Montana",
+        "Cinnabar Court",
+        "Ahern Trailer Court",
+        "Voegeles Trailer Court",
+        "Edgar, Montana",
+        "Dunham",
+        "Alpine Trailer Court",
+        "Blazing Place",
+        "Matthews",
+        "Evergreen Court",
+        "Victor Crossing",
+        "Carpenter",
+        "Brisbin",
+        "Woods Crossing",
+        "Bell Crossing",
+        "Edwards Crossing",
+        "Sumatra",
+        "Pine Park",
+        "Racetrack",
+        "Evans",
+        "Saint Peter",
+        "Lakeshore Summer Home Area",
+        "Eldridge Trailer Court",
+        "Piper",
+        "Snowberg Court",
+        "Grayling",
+        "Martinsdale",
+        "Leadville",
+        "Kinsey, Montana",
+        "B and R Subdivision",
+        "Tobin",
+        "Rapelje",
+        "Walkerville",
+        "Circle",
+        "Glasgow",
+        "Sula, Montana",
+        "Winnett",
+        "Plentywood",
+        "Olney, Montana",
+        "Three Forks",
+        "Foster",
+        "Trails End Trailer Court",
+        "Hartmann Mobile Home Parks",
+        "Quebec, Montana",
+        "White City",
+        "Miller",
+        "Birch Creek Colony",
+        "Menard Wye",
+        "Fowler",
+        "Mountain View Court",
+        "Divide, Montana",
+        "Francis",
+        "Beehive, Montana",
+        "Greenfield",
+        "Eagle Lake Ranch",
+        "Finch",
+        "Rocky Mountain Trailer Park",
+        "Kotke",
+        "Lingshire",
+        "Tracy",
+        "Mammoth",
+        "Sapphire Village",
+        "Golden Valley Colony",
+        "Saint Phillip",
+        "Moss Agate",
+        "Bing",
+        "Preston",
+        "Wolsey",
+        "Shirley",
+        "Garryowen",
+        "Stuart",
+        "McDonald",
+        "Cascade Colony",
+        "Richel Lodge",
+        "Burnham",
+        "Forest Park Mobile Home and RV Park",
+        "Valley West Trailer Court",
+        "Miner",
+        "Ryegate",
+        "Choteau",
+        "Toluca",
+        "Tarkio, Montana",
+        "Cotton Trailer Court",
+        "Hoyt",
+        "Sherryl",
+        "Quintonkon",
+        "Stump Town",
+        "Homestead, Montana",
+        "Heath",
+        "Hacienda Trailer Court",
+        "Fort Logan",
+        "Railroad Summer Home Area",
+        "Bowman Place",
+        "Logan",
+        "Bell Ranch Colony",
+        "Midway",
+        "East Butte",
+        "Glen, Montana",
+        "Sipes",
+        "Maxville",
+        "Staley Place",
+        "Hathaway, Montana",
+        "Holt",
+        "Hoffman Place",
+        "Elk Park",
+        "Quinn",
+        "Jordan",
+        "Benz",
+        "Half Moon Mobile Home Park",
+        "Pioneer",
+        "Mizpah",
+        "Contact",
+        "Oliverville",
+        "Two Dot",
+        "Moiese",
+        "Fuller",
+        "Franklin",
+        "Primrose",
+        "Brock Creek",
+        "Summit Valley",
+        "Madoc",
+        "Golden Age Village Trailer Park",
+        "Atkins",
+        "Iris",
+        "Vista",
+        "Horse Butte Acres Trailer Court",
+        "Square Butte, Montana",
+        "Winnecook",
+        "Butte",
+        "Ethridge, Montana",
+        "Fair Haven Colony",
+        "Lakeside",
+        "Saltese, Montana",
+        "Canyon Creek, Montana",
+        "Gerber",
+        "Dell, Montana",
+        "Willow Wynn Trailer Park",
+        "Paragon",
+        "Balmont",
+        "Hall Trailer Court",
+        "Bonner Junction",
+        "De Smet",
+        "Willard, Montana",
+        "Bloomfield, Montana",
+        "Kountz Trailer Park",
+        "Sprole",
+        "Floral Park",
+        "Newcomb",
+        "Belt",
+        "Cushman",
+        "Rimini, Montana",
+        "Judith Gap",
+        "Stone",
+        "George Norman Trailer Court",
+        "Hassel",
+        "Paul Place",
+        "Edilou",
+        "Columbus",
+        "Renova",
+        "Calvert",
+        "Mountain View Mobile Home Park",
+        "Powderville, Montana",
+        "Curry",
+        "Wisner Crossing",
+        "Dahl Place",
+        "Birney Day School",
+        "Packers Roost",
+        "Sphinx",
+        "Trailcreek",
+        "Corinth, Montana",
+        "Glendale",
+        "Forsyth",
+        "Koyl",
+        "Grahams Place",
+        "Lustre",
+        "East Malta Colony",
+        "Wetzel",
+        "Ferdig",
+        "Manhattan",
+        "Coburg",
+        "Quietus, Montana",
+        "Cabin Creek",
+        "Carbert",
+        "Blue Mountain Trailer Park",
+        "Sterling"
+      ],
+      "q_entity": [
+        "Montana"
+      ],
+      "n_subgraph_edges": 6102,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-889",
+      "question": "who play luke skywalker",
+      "answer": [
+        "Bob Bergen",
+        "Mark Hamill"
+      ],
+      "q_entity": [
+        "Luke Skywalker"
+      ],
+      "n_subgraph_edges": 3370,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-891",
+      "question": "where did john howard live",
+      "answer": [
+        "Sydney"
+      ],
+      "q_entity": [
+        "John Howard"
+      ],
+      "n_subgraph_edges": 928,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-901",
+      "question": "who was judy collins married to",
+      "answer": [
+        "Louis Nelson",
+        "Peter Taylor"
+      ],
+      "q_entity": [
+        "Judy Collins"
+      ],
+      "n_subgraph_edges": 3426,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-907",
+      "question": "what did nick carter sister died of",
+      "answer": [
+        "Drug overdose"
+      ],
+      "q_entity": [
+        "Nick Carter"
+      ],
+      "n_subgraph_edges": 4356,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-931",
+      "question": "where did emily murphy go to school",
+      "answer": [
+        "Bishop Strachan School"
+      ],
+      "q_entity": [
+        "Emily Murphy"
+      ],
+      "n_subgraph_edges": 1519,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-938",
+      "question": "what else did eli whitney invent",
+      "answer": [
+        "Milling",
+        "Interchangeable parts",
+        "Cotton gin"
+      ],
+      "q_entity": [
+        "Eli Whitney"
+      ],
+      "n_subgraph_edges": 1928,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-942",
+      "question": "where to travel around sydney",
+      "answer": [
+        "Sydney Markets",
+        "Kamay Botany Bay National Park",
+        "Australian National Maritime Museum",
+        "City2Surf",
+        "Oatley Park, New South Wales",
+        "Luna Park Sydney",
+        "Sydney Film Festival",
+        "Sydney Harbour Bridge",
+        "Featherdale Wildlife Park",
+        "Powerhouse Museum",
+        "Darling Harbour",
+        "Hillsong Church",
+        "Port Jackson",
+        "Rose Seidler House",
+        "St Mary's Cathedral, Sydney",
+        "Bondi Beach",
+        "North Head Quarantine Station",
+        "Wild Life Sydney",
+        "Sydney Opera House",
+        "The Rocks"
+      ],
+      "q_entity": [
+        "Sydney"
+      ],
+      "n_subgraph_edges": 5531,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-947",
+      "question": "where is the head office of hsbc bank",
+      "answer": [
+        "8 Canada Square",
+        "London"
+      ],
+      "q_entity": [
+        "HSBC"
+      ],
+      "n_subgraph_edges": 1129,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-956",
+      "question": "what year did florida marlins win the world series",
+      "answer": [
+        "2003 World Series"
+      ],
+      "q_entity": [
+        "Miami Marlins"
+      ],
+      "n_subgraph_edges": 2652,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-957",
+      "question": "what movie did marlee matlin won an academy award for",
+      "answer": [
+        "Children of a Lesser God"
+      ],
+      "q_entity": [
+        "Marlee Matlin"
+      ],
+      "n_subgraph_edges": 2399,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-969",
+      "question": "who is the head coach of the tennessee titans",
+      "answer": [
+        "Ken Whisenhunt"
+      ],
+      "q_entity": [
+        "Tennessee Titans"
+      ],
+      "n_subgraph_edges": 4367,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1019",
+      "question": "where is the mozambique located",
+      "answer": [
+        "Africa",
+        "Southern Sun Hotel Group"
+      ],
+      "q_entity": [
+        "Mozambique"
+      ],
+      "n_subgraph_edges": 4154,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1023",
+      "question": "what is the money of argentina called",
+      "answer": [
+        "Argentine peso"
+      ],
+      "q_entity": [
+        "Argentina"
+      ],
+      "n_subgraph_edges": 5498,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1025",
+      "question": "what did bella abzug do",
+      "answer": [
+        "Lawyer",
+        "Actor",
+        "Politician",
+        "Social activist"
+      ],
+      "q_entity": [
+        "Bella Abzug"
+      ],
+      "n_subgraph_edges": 3777,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1026",
+      "question": "what sights to see in madrid",
+      "answer": [
+        "Madrid Arena",
+        "Festimad",
+        "Parque Warner Madrid",
+        "Plaza de Cibeles",
+        "Puerta del Sol",
+        "Summercase",
+        "Thyssen-Bornemisza Museum",
+        "Madrid Marathon",
+        "Museum of Lázaro Galdiano",
+        "Gran Vía",
+        "Paseo del Prado",
+        "El Escorial",
+        "Temple of Debod",
+        "Palace of la Bolsa de Madrid",
+        "Royal Palace of Madrid",
+        "Plaza Mayor, Madrid",
+        "Museo Nacional Del Prado",
+        "Almudena Cathedral",
+        "La Vaguada",
+        "Museo Nacional Centro de Arte Reina Sofía",
+        "Buen Retiro Park",
+        "Sorolla Museum"
+      ],
+      "q_entity": [
+        "Madrid"
+      ],
+      "n_subgraph_edges": 4598,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1041",
+      "question": "what money is used in the maldives",
+      "answer": [
+        "Maldivian rufiyaa"
+      ],
+      "q_entity": [
+        "Maldives"
+      ],
+      "n_subgraph_edges": 3627,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1053",
+      "question": "what was liam neeson 's character in star wars",
+      "answer": [
+        "Qui-Gon Jinn"
+      ],
+      "q_entity": [
+        "Liam Neeson"
+      ],
+      "n_subgraph_edges": 2778,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1054",
+      "question": "who plays the voice of lois griffin",
+      "answer": [
+        "Alex Borstein"
+      ],
+      "q_entity": [
+        "Lois Griffin"
+      ],
+      "n_subgraph_edges": 2584,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1067",
+      "question": "who are senators from new jersey",
+      "answer": [
+        "Bob Menendez",
+        "Cory Booker"
+      ],
+      "q_entity": [
+        "New Jersey"
+      ],
+      "n_subgraph_edges": 7128,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1069",
+      "question": "what language do denmark",
+      "answer": [
+        "Danish Language",
+        "German Language",
+        "Faroese",
+        "Greenlandic language"
+      ],
+      "q_entity": [
+        "Denmark"
+      ],
+      "n_subgraph_edges": 6487,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1084",
+      "question": "what timezone is texas san antonio in",
+      "answer": [
+        "Central Time Zone"
+      ],
+      "q_entity": [
+        "San Antonio"
+      ],
+      "n_subgraph_edges": 4659,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1091",
+      "question": "when did the raiders win the superbowl",
+      "answer": [
+        "2003 AFC Championship Game",
+        "1967 American Football League Championship Game",
+        "Super Bowl XVIII",
+        "Super Bowl XI",
+        "Super Bowl XV"
+      ],
+      "q_entity": [
+        "Oakland Raiders"
+      ],
+      "n_subgraph_edges": 4087,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1109",
+      "question": "what is the currency used in tunisia",
+      "answer": [
+        "Tunisian dinar"
+      ],
+      "q_entity": [
+        "Tunisia"
+      ],
+      "n_subgraph_edges": 4509,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1110",
+      "question": "what language group does polish belong to",
+      "answer": [
+        "Lechitic languages"
+      ],
+      "q_entity": [
+        "Polish Language"
+      ],
+      "n_subgraph_edges": 2299,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1111",
+      "question": "what is the name of the new orleans saints football stadium",
+      "answer": [
+        "Mercedes-Benz Superdome"
+      ],
+      "q_entity": [
+        "New Orleans Saints"
+      ],
+      "n_subgraph_edges": 4449,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1144",
+      "question": "what team does drogba play for 2013",
+      "answer": [
+        "Galatasaray S.K.",
+        "Shanghai Greenland Shenhua F.C.",
+        "Ivory Coast national football team"
+      ],
+      "q_entity": [
+        "Didier Drogba"
+      ],
+      "n_subgraph_edges": 831,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1148",
+      "question": "what is the northeast of the united states",
+      "answer": [
+        "New Hampshire",
+        "Mason",
+        "New England",
+        "Milford",
+        "Maine",
+        "Hillsborough County",
+        "Merrimack",
+        "Waltham",
+        "Rhode Island"
+      ],
+      "q_entity": [
+        "Northeastern United States"
+      ],
+      "n_subgraph_edges": 4416,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1150",
+      "question": "what currency does brazil use",
+      "answer": [
+        "Brazilian real"
+      ],
+      "q_entity": [
+        "Brazil"
+      ],
+      "n_subgraph_edges": 4415,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1170",
+      "question": "what state did woodrow wilson represent",
+      "answer": [
+        "New Jersey"
+      ],
+      "q_entity": [
+        "Woodrow Wilson"
+      ],
+      "n_subgraph_edges": 3826,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1183",
+      "question": "where did galileo go to school",
+      "answer": [
+        "University of Pisa"
+      ],
+      "q_entity": [
+        "Galileo Galilei"
+      ],
+      "n_subgraph_edges": 5333,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1201",
+      "question": "what state was hillary clinton a senator for",
+      "answer": [
+        "New York"
+      ],
+      "q_entity": [
+        "Hillary Rodham Clinton"
+      ],
+      "n_subgraph_edges": 3674,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1215",
+      "question": "what language is mainly spoken in england",
+      "answer": [
+        "Old English"
+      ],
+      "q_entity": [
+        "England"
+      ],
+      "n_subgraph_edges": 9094,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1221",
+      "question": "what is the braves mascot",
+      "answer": [
+        "Homer",
+        "Chief Noc-A-Homa",
+        "Rally"
+      ],
+      "q_entity": [
+        "Atlanta Braves"
+      ],
+      "n_subgraph_edges": 1857,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1232",
+      "question": "where was the roman empire centered",
+      "answer": [
+        "Ravenna",
+        "Constantinople",
+        "Rome"
+      ],
+      "q_entity": [
+        "Roman Empire"
+      ],
+      "n_subgraph_edges": 2920,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1239",
+      "question": "who became president when jfk was killed",
+      "answer": [
+        "Lyndon B. Johnson"
+      ],
+      "q_entity": [
+        "John F. Kennedy"
+      ],
+      "n_subgraph_edges": 5871,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1254",
+      "question": "where was the gallipoli campaign waged",
+      "answer": [
+        "Gallipoli"
+      ],
+      "q_entity": [
+        "Gallipoli Campaign"
+      ],
+      "n_subgraph_edges": 6541,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1257",
+      "question": "what did king george vi die of",
+      "answer": [
+        "Lung cancer"
+      ],
+      "q_entity": [
+        "George VI"
+      ],
+      "n_subgraph_edges": 5291,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1259",
+      "question": "where did brad paisley graduate from college",
+      "answer": [
+        "Belmont University"
+      ],
+      "q_entity": [
+        "Brad Paisley"
+      ],
+      "n_subgraph_edges": 8218,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1271",
+      "question": "what type of music is tchaikovsky",
+      "answer": [
+        "Ballet",
+        "Art song",
+        "Opera",
+        "Classical music"
+      ],
+      "q_entity": [
+        "Pyotr Ilyich Tchaikovsky"
+      ],
+      "n_subgraph_edges": 6018,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1277",
+      "question": "what language do you speak in iran",
+      "answer": [
+        "Pashto language",
+        "Luri language",
+        "Azerbaijani language",
+        "Arabic Language",
+        "Assyrian Neo-Aramaic Language",
+        "Mazanderani Language",
+        "Qashqa'i Language",
+        "Kumzari Language",
+        "Gilaki Language",
+        "Balochi language",
+        "Armenian Language",
+        "Khalaj, Turkic Language",
+        "Kurdish languages",
+        "Talysh language",
+        "Persian Language",
+        "Khorasani Turkish Language",
+        "Afshar language",
+        "Turkmen Language"
+      ],
+      "q_entity": [
+        "Iran"
+      ],
+      "n_subgraph_edges": 4088,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1307",
+      "question": "who is prime minister of japan 2011",
+      "answer": [
+        "Yoshihiko Noda",
+        "Naoto Kan"
+      ],
+      "q_entity": [
+        "Japan"
+      ],
+      "n_subgraph_edges": 5819,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1321",
+      "question": "what city is the university of maryland university college in",
+      "answer": [
+        "Adelphi",
+        "United States of America",
+        "Maryland"
+      ],
+      "q_entity": [
+        "University of Maryland University College"
+      ],
+      "n_subgraph_edges": 423,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1340",
+      "question": "what all does google have",
+      "answer": [
+        "Google AdWords",
+        "Google Apps for Work",
+        "Google Maps API for Business",
+        "Google Earth Enterprise",
+        "Google Chrome",
+        "Google Maps Engine"
+      ],
+      "q_entity": [
+        "Google"
+      ],
+      "n_subgraph_edges": 5543,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-1372",
+      "question": "what is the zip code for trenton ga",
+      "answer": [
+        "08607",
+        "08650",
+        "08611",
+        "08691",
+        "08628",
+        "08641",
+        "08690",
+        "08608",
+        "08645",
+        "08646",
+        "08605",
+        "08629",
+        "08695",
+        "08638",
+        "08610",
+        "08647",
+        "08606",
+        "08666",
+        "08609",
+        "08604",
+        "08625",
+        "08619",
+        "08603",
+        "08601",
+        "08620",
+        "08602",
+        "08618"
+      ],
+      "q_entity": [
+        "Trenton"
+      ],
+      "n_subgraph_edges": 3446,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1407",
+      "question": "what happened at fukushima daiichi nuclear plant",
+      "answer": [
+        "Disaster-affected structure"
+      ],
+      "q_entity": [
+        "Fukushima Daiichi Nuclear Power Plant"
+      ],
+      "n_subgraph_edges": 509,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1424",
+      "question": "where is oceania on a map",
+      "answer": [
+        "Pacific Ocean",
+        "DVD Region 4"
+      ],
+      "q_entity": [
+        "Oceania"
+      ],
+      "n_subgraph_edges": 6363,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1428",
+      "question": "when was the last time the ny giants played in the superbowl",
+      "answer": [
+        "Super Bowl XLVI"
+      ],
+      "q_entity": [
+        "New York Giants"
+      ],
+      "n_subgraph_edges": 4338,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1430",
+      "question": "who was the president of pakistan in 1980",
+      "answer": [
+        "Muhammad Zia-ul-Haq"
+      ],
+      "q_entity": [
+        "Pakistan"
+      ],
+      "n_subgraph_edges": 5011,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1433",
+      "question": "what does the adriatic sea border",
+      "answer": [
+        "Albania"
+      ],
+      "q_entity": [
+        "Adriatic Sea"
+      ],
+      "n_subgraph_edges": 1916,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1449",
+      "question": "what to do when traveling to london",
+      "answer": [
+        "Whetstone, London",
+        "London Zoo",
+        "National Maritime Museum",
+        "London Palladium",
+        "Apsley House",
+        "London Marathon",
+        "Polish Institute and Sikorski Museum",
+        "Barbican Centre",
+        "G-A-Y",
+        "Madame Tussauds London",
+        "Chessington World of Adventures",
+        "Hippodrome, London",
+        "Jewish Museum London",
+        "Science Museum, London",
+        "London Underground",
+        "Design Museum",
+        "Sutcliffe Park",
+        "Natural History Museum, London",
+        "Diana, Princess of Wales Memorial Fountain",
+        "University of London",
+        "Euston railway station",
+        "Chokushi-Mon",
+        "New London Architecture",
+        "Imperial College London",
+        "Strand, London",
+        "Victoria and Albert Museum",
+        "Serpentine Galleries",
+        "London School of Economics and Political Science",
+        "Royal Institution",
+        "Royal Albert Hall, London",
+        "William Wilkins's Building",
+        "Sainsbury Wing",
+        "St Paul's Cathedral",
+        "Wallace Collection",
+        "National Portrait Gallery, London",
+        "Tate Gallery, Britain",
+        "Wallington, London",
+        "Tate Modern, London",
+        "Holloway",
+        "Newington, London",
+        "London Paddington station",
+        "Big Ben",
+        "Duke of York's Headquarters",
+        "Sir John Soane's Museum",
+        "Henman Hill",
+        "Wimbledon",
+        "Liverpool Street station",
+        "Horniman Museum",
+        "Selfridges, Oxford Street",
+        "Regent's Park",
+        "Tramp",
+        "Waterlily House",
+        "Imperial War Museum London",
+        "Bank of England Museum",
+        "The Clink",
+        "London Victoria station",
+        "Churchill War Rooms",
+        "St. James's Park",
+        "Trafalgar Square",
+        "Hyde Park",
+        "University College London",
+        "British Museum",
+        "The Building Centre",
+        "Museum of London",
+        "Victoria and Albert Museum",
+        "London Charterhouse",
+        "Travefy",
+        "Palace of Westminster",
+        "Tower of London",
+        "London Bridge",
+        "Central London",
+        "Olympia",
+        "National Police Memorial",
+        "British Museum Reading Room",
+        "Smithfield, London",
+        "Queen's House",
+        "City University London",
+        "Crystal Palace Park",
+        "Museum of London Docklands",
+        "Wasps RFC",
+        "Wellcome Collection",
+        "Chinawhite",
+        "RAF Bomber Command Memorial",
+        "Buckingham Palace",
+        "V&A Museum of Childhood",
+        "The Nash Conservatory",
+        "Westminster Abbey",
+        "Earls Court Exhibition Centre",
+        "Leighton House Museum",
+        "Southgate, London",
+        "Tower Bridge",
+        "London Eye"
+      ],
+      "q_entity": [
+        "London"
+      ],
+      "n_subgraph_edges": 7721,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1466",
+      "question": "what does the letters eu stand for",
+      "answer": [
+        "European Union",
+        "Europa Universalis",
+        "Experience Unlimited"
+      ],
+      "q_entity": [],
+      "n_subgraph_edges": 0,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1474",
+      "question": "what countries do they speak italian",
+      "answer": [
+        "Gozo",
+        "Italy",
+        "San Marino",
+        "Mexico",
+        "Argentina",
+        "Brazil",
+        "Slovenia",
+        "Switzerland",
+        "Vatican City",
+        "Croatia",
+        "Republic of Genoa"
+      ],
+      "q_entity": [
+        "Italian Language"
+      ],
+      "n_subgraph_edges": 2946,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1485",
+      "question": "what was francisco vasquez de coronado known for",
+      "answer": [
+        "Conquistador"
+      ],
+      "q_entity": [
+        "Francisco Vázquez de Coronado"
+      ],
+      "n_subgraph_edges": 2099,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1515",
+      "question": "where was lance armstrong born and in what year",
+      "answer": [
+        "Plano"
+      ],
+      "q_entity": [
+        "Lance Armstrong"
+      ],
+      "n_subgraph_edges": 2398,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1525",
+      "question": "where did phil mickelson go to college",
+      "answer": [
+        "Arizona State University"
+      ],
+      "q_entity": [
+        "Phil Mickelson"
+      ],
+      "n_subgraph_edges": 1310,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1537",
+      "question": "what other languages does switzerland speak",
+      "answer": [
+        "French",
+        "Romansh language",
+        "Italian Language",
+        "German Language"
+      ],
+      "q_entity": [
+        "Switzerland"
+      ],
+      "n_subgraph_edges": 6346,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1574",
+      "question": "what timezone is toronto gmt",
+      "answer": [
+        "Eastern Time Zone"
+      ],
+      "q_entity": [
+        "Toronto"
+      ],
+      "n_subgraph_edges": 5741,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1597",
+      "question": "what characters does seth macfarlane voice",
+      "answer": [
+        "Giodano Bruno",
+        "Tom Tucker",
+        "Brian Griffin",
+        "Dr. Elmer Hartman",
+        "God",
+        "Roger: American Dad!",
+        "Glenn Quagmire",
+        "Stan Smith",
+        "Jasper",
+        "Jake Tucker",
+        "Nate Griffin",
+        "Carter Pewterschmidt",
+        "Lion-O",
+        "Peter Griffin",
+        "Stewie Griffin",
+        "Jeff McGarland",
+        "Tim the Bear",
+        "Kevin Swanson",
+        "Mickey McFinnegan",
+        "Seamus",
+        "Kool-aid Guy"
+      ],
+      "q_entity": [
+        "Seth MacFarlane"
+      ],
+      "n_subgraph_edges": 6491,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1599",
+      "question": "what has ian somerhalder played in",
+      "answer": [
+        "Pulse",
+        "Time Framed",
+        "The Tournament",
+        "Changing Hearts",
+        "Lost City Raiders",
+        "The Sensation of Sight",
+        "The Lost Samaritan",
+        "Celebrity",
+        "National Lampoon's TV: The Movie",
+        "In Enemy Hands",
+        "Life as a House",
+        "Caught on Tape",
+        "How to Make Love to a Woman",
+        "Marco Polo",
+        "Fearless",
+        "Recess",
+        "Anatomy of a Hate Crime",
+        "The Old Man and the Studio",
+        "Wake",
+        "The Rules of Attraction",
+        "The Anomaly",
+        "Fireball"
+      ],
+      "q_entity": [
+        "Ian Somerhalder"
+      ],
+      "n_subgraph_edges": 1798,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1603",
+      "question": "what form of government exists in china",
+      "answer": [
+        "Single-party state",
+        "Communist state",
+        "Socialist state"
+      ],
+      "q_entity": [
+        "China"
+      ],
+      "n_subgraph_edges": 6293,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1618",
+      "question": "what type of music does ella fitzgerald sing",
+      "answer": [
+        "Swing music",
+        "Vocal jazz",
+        "Ballad",
+        "Bebop",
+        "Traditional pop music",
+        "Blues",
+        "Jazz"
+      ],
+      "q_entity": [
+        "Ella Fitzgerald"
+      ],
+      "n_subgraph_edges": 5245,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1629",
+      "question": "who the voice of jack skellington",
+      "answer": [
+        "Danny Elfman",
+        "Chris Sarandon"
+      ],
+      "q_entity": [
+        "Jack Skellington"
+      ],
+      "n_subgraph_edges": 1092,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1653",
+      "question": "who played andy in toy story 3",
+      "answer": [
+        "John Morris",
+        "Charlie Bright"
+      ],
+      "q_entity": [
+        "Toy Story 3"
+      ],
+      "n_subgraph_edges": 5053,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1662",
+      "question": "what years did jackie robinson play baseball",
+      "answer": [
+        "1955 Major League Baseball season",
+        "1951 Major League Baseball season",
+        "1947 Major League Baseball season",
+        "1954 Major League Baseball season",
+        "1952 Major League Baseball season",
+        "1948 Major League Baseball season",
+        "1956 Major League Baseball Season",
+        "1950 Major League Baseball season",
+        "1949 Major League Baseball Season",
+        "1953 Major League Baseball season"
+      ],
+      "q_entity": [
+        "Jackie Robinson"
+      ],
+      "n_subgraph_edges": 2309,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1679",
+      "question": "where is washington d.c. at",
+      "answer": [
+        "Mid-Atlantic states",
+        "South Atlantic States"
+      ],
+      "q_entity": [
+        "Washington, D.C."
+      ],
+      "n_subgraph_edges": 6856,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1682",
+      "question": "when did aldi originate",
+      "answer": [
+        "Essen"
+      ],
+      "q_entity": [
+        "ALDI"
+      ],
+      "n_subgraph_edges": 919,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1706",
+      "question": "who controls panama",
+      "answer": [
+        "Juan Carlos Varela"
+      ],
+      "q_entity": [
+        "Panama"
+      ],
+      "n_subgraph_edges": 3995,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1711",
+      "question": "what movies did chris farley do",
+      "answer": [
+        "Beverly Hills Ninja",
+        "Black Sheep",
+        "Wayne's World 2",
+        "Wayne's World",
+        "Almost Heroes",
+        "Coneheads",
+        "Dirty Work",
+        "Tommy Boy",
+        "Billy Madison",
+        "Airheads"
+      ],
+      "q_entity": [
+        "Chris Farley"
+      ],
+      "n_subgraph_edges": 4190,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1728",
+      "question": "what kind of money do you use in costa rica",
+      "answer": [
+        "Costa Rican colón"
+      ],
+      "q_entity": [
+        "Costa Rica"
+      ],
+      "n_subgraph_edges": 3866,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1741",
+      "question": "who played carlton banks",
+      "answer": [
+        "Alfonso Ribeiro"
+      ],
+      "q_entity": [
+        "Carlton Banks"
+      ],
+      "n_subgraph_edges": 241,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1754",
+      "question": "what influenced andy warhol 's work",
+      "answer": [
+        "John Cage",
+        "Jasper Johns",
+        "Jack Smith",
+        "Marcel Duchamp",
+        "Jean-Michel Basquiat",
+        "Ben Shahn",
+        "Robert Rauschenberg",
+        "Frank Stella",
+        "Man Ray",
+        "Truman Capote",
+        "Tom of Finland"
+      ],
+      "q_entity": [
+        "Andy Warhol"
+      ],
+      "n_subgraph_edges": 6594,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1756",
+      "question": "who is angelina jolie husband name",
+      "answer": [
+        "Brad Pitt"
+      ],
+      "q_entity": [
+        "Angelina Jolie"
+      ],
+      "n_subgraph_edges": 4891,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1758",
+      "question": "what is the present form of government in iran",
+      "answer": [
+        "Parliamentary system",
+        "Theocracy",
+        "Presidential system",
+        "Unitary state",
+        "Islamic republic"
+      ],
+      "q_entity": [
+        "Iran"
+      ],
+      "n_subgraph_edges": 4088,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1770",
+      "question": "what is beyonce 's daughters name",
+      "answer": [
+        "Blue Ivy"
+      ],
+      "q_entity": [
+        "Beyoncé Knowles"
+      ],
+      "n_subgraph_edges": 9495,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1771",
+      "question": "when did the colts last win the superbowl",
+      "answer": [
+        "Super Bowl XLI"
+      ],
+      "q_entity": [
+        "Indianapolis Colts"
+      ],
+      "n_subgraph_edges": 4577,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1772",
+      "question": "what college did michael jordan play basketball for",
+      "answer": [
+        "University of North Carolina at Chapel Hill"
+      ],
+      "q_entity": [
+        "Michael Jordan"
+      ],
+      "n_subgraph_edges": 2227,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1774",
+      "question": "what countries are located in the netherlands",
+      "answer": [
+        "Limburg",
+        "Flevoland",
+        "Friesland",
+        "Utrecht",
+        "North Brabant",
+        "North Holland",
+        "Overijssel",
+        "Groningen",
+        "Drenthe",
+        "Gelderland",
+        "Zeeland",
+        "South Holland"
+      ],
+      "q_entity": [
+        "Netherlands"
+      ],
+      "n_subgraph_edges": 7068,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1791",
+      "question": "who is golfer dustin johnson dating",
+      "answer": [
+        "Paulina Gretzky"
+      ],
+      "q_entity": [
+        "Dustin Johnson"
+      ],
+      "n_subgraph_edges": 1247,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1799",
+      "question": "who played danielle rousseau on lost",
+      "answer": [
+        "Danielle Rousseau"
+      ],
+      "q_entity": [
+        "Lost"
+      ],
+      "n_subgraph_edges": 4219,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1816",
+      "question": "what part does seth macfarlane play in family guy",
+      "answer": [
+        "Glenn Quagmire",
+        "Kevin Swanson",
+        "Jasper",
+        "Mickey McFinnegan",
+        "Peter Griffin",
+        "Tom Tucker",
+        "Brian Griffin",
+        "Stewie Griffin",
+        "God",
+        "Seamus",
+        "Dr. Elmer Hartman",
+        "Jake Tucker",
+        "Nate Griffin",
+        "Carter Pewterschmidt",
+        "Kool-aid Guy"
+      ],
+      "q_entity": [
+        "Family Guy"
+      ],
+      "n_subgraph_edges": 3780,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1818",
+      "question": "what did ben hall do",
+      "answer": [
+        "Bushranger"
+      ],
+      "q_entity": [
+        "Ben Hall"
+      ],
+      "n_subgraph_edges": 3693,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1824",
+      "question": "who played cruella deville in 102 dalmatians",
+      "answer": [
+        "Glenn Close"
+      ],
+      "q_entity": [
+        "Cruella de Vil",
+        "102 Dalmatians"
+      ],
+      "n_subgraph_edges": 5219,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1830",
+      "question": "what ethnicity are people from iran",
+      "answer": [
+        "Irani",
+        "Tajiks",
+        "Pashtun",
+        "Baloch people",
+        "Hazaras",
+        "Parsi"
+      ],
+      "q_entity": [
+        "Iranian peoples"
+      ],
+      "n_subgraph_edges": 5000,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1843",
+      "question": "who is the publisher of the wall street journal",
+      "answer": [
+        "News Corporation",
+        "Dow Jones & Company"
+      ],
+      "q_entity": [
+        "The Wall Street Journal"
+      ],
+      "n_subgraph_edges": 5378,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1846",
+      "question": "what form of government does afghanistan have",
+      "answer": [
+        "Islamic republic"
+      ],
+      "q_entity": [
+        "Afghanistan"
+      ],
+      "n_subgraph_edges": 5229,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1873",
+      "question": "what happened to nagasaki",
+      "answer": [
+        "Shinee World 2014",
+        "Miss International 1986",
+        "Atomic bombings of Hiroshima and Nagasaki"
+      ],
+      "q_entity": [
+        "Nagasaki"
+      ],
+      "n_subgraph_edges": 899,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-1875",
+      "question": "what movies did james franco play in",
+      "answer": [
+        "The Car Kid",
+        "1973",
+        "Rebel",
+        "Oz the Great and Powerful",
+        "Homefront",
+        "Annapolis",
+        "Some Body",
+        "127 Hours",
+        "The Green Hornet",
+        "The Sound and the Fury",
+        "The Adderall Diaries",
+        "Tar",
+        "As I Lay Dying",
+        "The Garden of Last Days",
+        "Grasshopper",
+        "Blind Spot",
+        "The Ten O'Clock People",
+        "The Long Home",
+        "Finishing the Game",
+        "Spider-Man 3",
+        "Fool's Gold",
+        "Dawn of the Planet of the Apes",
+        "Never Been Kissed",
+        "Mother Ghost",
+        "Eat Pray Love",
+        "Date Night",
+        "Zeroville",
+        "The Broken Tower",
+        "If Tomorrow Comes",
+        "James Dean",
+        "Nights in Rodanthe",
+        "City by the Sea",
+        "Good People",
+        "Sonny",
+        "About Cherry",
+        "Shadows and Lies",
+        "Every Thing Will Be Fine",
+        "True Story",
+        "Wild Horses",
+        "Interview",
+        "In Dubious Battle",
+        "Celebrating AFI",
+        "The Holiday",
+        "At Any Cost",
+        "Child of God",
+        "In the Valley of Elah",
+        "Spring Breakers",
+        "An American Crime",
+        "Camille",
+        "Love & Distrust",
+        "Maladies",
+        "This Is the End",
+        "Spider-Man 2",
+        "The Ape",
+        "The Interview",
+        "Knocked Up",
+        "Milk",
+        "The Third Person",
+        "The Great Raid",
+        "Sal",
+        "Sausage Party",
+        "Flyboys",
+        "Pineapple Express",
+        "Your Highness",
+        "The Wicker Man",
+        "Deuces Wild",
+        "Tristan & Isolde",
+        "The Letter",
+        "To Serve and Protect",
+        "Charles & Ray Eames: The Architect and the Painter",
+        "Masculinity & Me",
+        "Interior. Leather Bar.",
+        "Howl",
+        "Wholphin: Issue 8",
+        "The Dead Girl",
+        "Rise of the Planet of the Apes",
+        "Palo Alto",
+        "The Iceman",
+        "The Company",
+        "Mean People Suck",
+        "Whatever It Takes",
+        "Queen of the Desert",
+        "Lovelace",
+        "Spider-Man",
+        "Good Time Max",
+        "Veronica Mars"
+      ],
+      "q_entity": [
+        "James Franco"
+      ],
+      "n_subgraph_edges": 6201,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-1897",
+      "question": "what club team does ronaldinho play for",
+      "answer": [
+        "Brazil national football team",
+        "Querétaro F.C."
+      ],
+      "q_entity": [
+        "Ronaldinho"
+      ],
+      "n_subgraph_edges": 1435,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1913",
+      "question": "where does luke skywalker live in star wars",
+      "answer": [
+        "Tatooine"
+      ],
+      "q_entity": [
+        "Luke Skywalker"
+      ],
+      "n_subgraph_edges": 3370,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1931",
+      "question": "what films has morgan freeman narrated",
+      "answer": [
+        "High Crimes",
+        "Batman Begins",
+        "Hard Rain",
+        "Along Came a Spider",
+        "Clinton and Nadine",
+        "The Lego Movie",
+        "Olympus Has Fallen",
+        "Outbreak",
+        "The Love Guru",
+        "A Raisin in the Sun",
+        "Million Dollar Baby",
+        "Evan Almighty",
+        "Cosmic Voyage",
+        "The Contract",
+        "America Beyond the Color Line",
+        "Driving Miss Daisy",
+        "Dolphin Tale 2",
+        "Conan the Barbarian",
+        "Thick as Thieves",
+        "The Execution of Raymond Graham",
+        "London Has Fallen",
+        "We the People",
+        "The Dark Knight Rises",
+        "Johnny Handsome",
+        "The Shawshank Redemption",
+        "Last Knights",
+        "Chain Reaction",
+        "Feast of Love",
+        "Lean on Me",
+        "National Geographic: Inside the White House",
+        "The Dark Knight",
+        "Death of a Prophet",
+        "Transcendence",
+        "Street Smart",
+        "That Was Then... This Is Now",
+        "Dolphin Tale",
+        "Wish Wizard",
+        "RED",
+        "Under Suspicion",
+        "The Maiden Heist",
+        "Seven",
+        "War of the Worlds",
+        "Heart Stopper",
+        "Resting Place",
+        "m.0h0zs8c",
+        "Magnificent Desolation: Walking On The Moon 3D",
+        "Soul Brothas and Sistas: Vol. 4: Quadruple Feature",
+        "The Pawnbroker",
+        "Kiss the Girls",
+        "Eyewitness",
+        "Harry & Son",
+        "A Man Called Adam",
+        "The Magic of Belle Isle",
+        "Moll Flanders",
+        "For Love of Liberty: The Story of America's Black Patriots",
+        "Deep Impact",
+        "The Sum of All Fears",
+        "The Bucket List",
+        "Lucky Number Slevin",
+        "Glory",
+        "Island of Lemurs: Madagascar 3D",
+        "Bruce Almighty",
+        "Lucy",
+        "Guilty by Association",
+        "The Big Bounce",
+        "The Long Way Home",
+        "Now You See Me",
+        "Where Were You When the Lights Went Out?",
+        "Nurse Betty",
+        "Marie",
+        "The Hunting of the President",
+        "The Bonfire of the Vanities",
+        "Unleashed",
+        "Fight for Life",
+        "Attica",
+        "Robin Hood: Prince of Thieves",
+        "An Unfinished Life",
+        "Ted 2",
+        "Invictus",
+        "Amistad",
+        "Levity",
+        "5 Flights Up",
+        "Clean and Sober",
+        "Dreamcatcher",
+        "Teachers",
+        "All About Us",
+        "Edison",
+        "The Art of Romare Bearden",
+        "Gone Baby Gone",
+        "Ben-Hur",
+        "m.0h0_gsx",
+        "Unforgiven",
+        "Roll Of Thunder, Hear My Cry",
+        "The Power of One",
+        "Last Vegas",
+        "Now You See Me: The Second Act",
+        "Brubaker",
+        "10 Items or Less",
+        "Wanted",
+        "The Civil War",
+        "Oblivion"
+      ],
+      "q_entity": [
+        "Morgan Freeman"
+      ],
+      "n_subgraph_edges": 3903,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-1935",
+      "question": "where was tommy emmanuel born",
+      "answer": [
+        "Muswellbrook"
+      ],
+      "q_entity": [
+        "Tommy Emmanuel"
+      ],
+      "n_subgraph_edges": 2871,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1936",
+      "question": "what techniques did frida kahlo use in her paintings",
+      "answer": [
+        "Modern art",
+        "Magic realism",
+        "Surrealism"
+      ],
+      "q_entity": [
+        "Frida Kahlo"
+      ],
+      "n_subgraph_edges": 3967,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1946",
+      "question": "what countries include western europe",
+      "answer": [
+        "France",
+        "Belgium",
+        "Germany",
+        "Switzerland",
+        "Spain",
+        "Portugal",
+        "United Kingdom",
+        "West Germany",
+        "Austria",
+        "Luxembourg",
+        "Liechtenstein",
+        "Ireland"
+      ],
+      "q_entity": [
+        "Western Europe"
+      ],
+      "n_subgraph_edges": 7568,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1962",
+      "question": "who played carl fredricksen in up",
+      "answer": [
+        "Jeremy Leary",
+        "Ed Asner"
+      ],
+      "q_entity": [
+        "Up"
+      ],
+      "n_subgraph_edges": 5452,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1976",
+      "question": "what did robert koch do",
+      "answer": [
+        "Physician"
+      ],
+      "q_entity": [
+        "Robert Koch"
+      ],
+      "n_subgraph_edges": 1944,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1981",
+      "question": "who is lleyton hewitt",
+      "answer": [
+        "Tennis player"
+      ],
+      "q_entity": [
+        "Lleyton Hewitt"
+      ],
+      "n_subgraph_edges": 988,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1990",
+      "question": "what is st mary mascot",
+      "answer": [
+        "Saint Mary's College of California Gael"
+      ],
+      "q_entity": [
+        "Saint Mary's College of California"
+      ],
+      "n_subgraph_edges": 841,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-1992",
+      "question": "who shot j lennon",
+      "answer": [
+        "Mark David Chapman"
+      ],
+      "q_entity": [
+        "John Lennon"
+      ],
+      "n_subgraph_edges": 8137,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2014",
+      "question": "what county is stockton ca located in",
+      "answer": [
+        "San Joaquin County"
+      ],
+      "q_entity": [
+        "Stockton"
+      ],
+      "n_subgraph_edges": 1784,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2018",
+      "question": "what form of government does czech republic have",
+      "answer": [
+        "Parliamentary republic"
+      ],
+      "q_entity": [
+        "Czech Republic"
+      ],
+      "n_subgraph_edges": 7240,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2034",
+      "question": "what language do iraqi people speak",
+      "answer": [
+        "South Azeri language",
+        "Assyrian Neo-Aramaic Language",
+        "Syriac language",
+        "Armenian Language",
+        "Kurdish languages",
+        "Persian Language",
+        "Arabic Language",
+        "Turkmen Language"
+      ],
+      "q_entity": [
+        "Iraq"
+      ],
+      "n_subgraph_edges": 5171,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2037",
+      "question": "what was abe lincoln shot with",
+      "answer": [
+        "Firearm"
+      ],
+      "q_entity": [
+        "Abraham Lincoln"
+      ],
+      "n_subgraph_edges": 5417,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2056",
+      "question": "what was the name of martin luther king jr parents",
+      "answer": [
+        "Alberta Williams King",
+        "Martin Luther King, Sr."
+      ],
+      "q_entity": [
+        "Martin Luther King, Jr."
+      ],
+      "n_subgraph_edges": 6642,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2057",
+      "question": "what money does guatemala use",
+      "answer": [
+        "Guatemalan quetzal"
+      ],
+      "q_entity": [
+        "Guatemala"
+      ],
+      "n_subgraph_edges": 4275,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2059",
+      "question": "what year magic johnson retired",
+      "answer": [
+        "1996"
+      ],
+      "q_entity": [
+        "Magic Johnson"
+      ],
+      "n_subgraph_edges": 3223,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2080",
+      "question": "what art movement was vincent van gogh apart of",
+      "answer": [
+        "Post-Impressionism"
+      ],
+      "q_entity": [
+        "Vincent van Gogh"
+      ],
+      "n_subgraph_edges": 6171,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2097",
+      "question": "what party was winston churchill in politics",
+      "answer": [
+        "Liberal Party",
+        "Conservative Party"
+      ],
+      "q_entity": [
+        "Winston Churchill"
+      ],
+      "n_subgraph_edges": 5020,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2117",
+      "question": "what types of government does china have",
+      "answer": [
+        "Single-party state",
+        "Communist state",
+        "Socialist state"
+      ],
+      "q_entity": [
+        "China"
+      ],
+      "n_subgraph_edges": 6293,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2172",
+      "question": "what school does bart simpson go to",
+      "answer": [
+        "Springfield Elementary School",
+        "Springfield High School"
+      ],
+      "q_entity": [
+        "Bart Simpson"
+      ],
+      "n_subgraph_edges": 3744,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2182",
+      "question": "what college did ron jaworski go to",
+      "answer": [
+        "Youngstown State University"
+      ],
+      "q_entity": [
+        "Ron Jaworski"
+      ],
+      "n_subgraph_edges": 1434,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2190",
+      "question": "where does sam shepard live",
+      "answer": [
+        "Manhattan",
+        "Guam",
+        "South Dakota",
+        "Fort Sheridan",
+        "South Pasadena",
+        "Stillwater",
+        "Florida",
+        "Duarte",
+        "Utah"
+      ],
+      "q_entity": [
+        "Sam Shepard"
+      ],
+      "n_subgraph_edges": 5358,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2203",
+      "question": "where is port charlotte florida located",
+      "answer": [
+        "United States of America",
+        "Charlotte County",
+        "Florida"
+      ],
+      "q_entity": [
+        "Port Charlotte"
+      ],
+      "n_subgraph_edges": 3090,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2206",
+      "question": "who helped form the american federation of labor",
+      "answer": [
+        "Samuel Gompers"
+      ],
+      "q_entity": [
+        "American Federation of Labor"
+      ],
+      "n_subgraph_edges": 4639,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2215",
+      "question": "where was brad paisley born and raised",
+      "answer": [
+        "Glen Dale"
+      ],
+      "q_entity": [
+        "Brad Paisley"
+      ],
+      "n_subgraph_edges": 8218,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2226",
+      "question": "what are all songs by taylor swift",
+      "answer": [
+        "Enchanted",
+        "Clean",
+        "Mine (live 2011)",
+        "State of Grace (acoustic version)",
+        "Ours (Live)",
+        "Should've Said No",
+        "Love Story",
+        "The Story of Us",
+        "Back to December (acoustic version)",
+        "If This Was a Movie",
+        "When Love and Hate Collide",
+        "Mean",
+        "Sad Beautiful Tragic",
+        "The Last Time",
+        "Better Than Revenge (live 2011)",
+        "On The Set\\\": Behind the Scenes \\\"Mine\\\" Music Video (part 1)",
+        "22",
+        "Change",
+        "Invisible",
+        "Fearless",
+        "Bette Davis Eyes",
+        "Fearless/I'm Yours/Hey, Soul Sister",
+        "Umbrella (live iTunes SoHo Sessions)",
+        "I Want You Back (live 2011)",
+        "Begin Again",
+        "White Horse",
+        "On The Set\\\": Behind the Scenes \\\"Mine\\\" Music Video (part 2)",
+        "Picture to Burn",
+        "22",
+        "Should’ve Said No (alternate version)",
+        "Haunted (acoustic version)",
+        "Cold as You",
+        "The Outside",
+        "Haunted",
+        "Hysteria",
+        "We Are Never Ever Getting Back Together",
+        "I Wish You Would",
+        "Home Movies",
+        "Forever & Always",
+        "Mine",
+        "Safe & Sound",
+        "A Place in This World",
+        "Shake It Off",
+        "Fifteen",
+        "You Are In Love",
+        "Bette Davis Eyes",
+        "Style",
+        "Teardrops on My Guitar (radio single remix)",
+        "Beautiful Eyes",
+        "Both of Us",
+        "Two Steps Behind",
+        "Better Than Revenge",
+        "Shake it Off (Neon NiteClub Remix)",
+        "Our Song",
+        "Last Christmas",
+        "Teardrops on My Guitar (acoustic version)",
+        "The Other Side of the Door",
+        "Last Kiss (live 2011)",
+        "Back to December/Apologize/You're Not Sorry",
+        "I Know Places",
+        "Tim McGraw",
+        "I Knew You Were Trouble",
+        "I Almost Do",
+        "Behind the Scenes \\\"Mine\\\" Music Video",
+        "Jump Then Fall",
+        "I Wish You Would (Voice Memo)",
+        "Blank Space (Music Video)",
+        "Pour Some Sugar on Me",
+        "Our Song (radio single version)",
+        "Pour Some Sugar on Me",
+        "Starlight",
+        "Love Story",
+        "Wildest Dreams",
+        "Story of Us",
+        "Everything Has Changed",
+        "Half of My Heart (pop mix)",
+        "Change",
+        "Love Story (Digital Dog radio mix)",
+        "State of Grace",
+        "Everything Has Changed",
+        "Medley: Back to December / Apologize / You're Not Sorry (live 2011)",
+        "Forever & Always",
+        "Eyes Open",
+        "You Belong With Me (Behind the Scenes)",
+        "SuperStar",
+        "Drops of Jupiter",
+        "Breathless",
+        "Innocent",
+        "Stay Stay Stay",
+        "Begin Again",
+        "Both of Us",
+        "I Almost Do",
+        "The Outside",
+        "Fifteen",
+        "I'm Only Me When I'm With You",
+        "Love",
+        "Sparks Fly",
+        "Picture to Burn",
+        "Never Grow Up",
+        "Red (demo)",
+        "Long Live",
+        "On The Set\\\": Behind the Scenes \\\"Mine\\\" Music Video",
+        "Superman",
+        "Speak Now",
+        "Love Story Oooh Baby Just Say Yes",
+        "Half of My Heart",
+        "Speak Now",
+        "Long Live",
+        "Girl at Home",
+        "White Horse (Behind the Scenes)",
+        "You're Not Sorry",
+        "Back to December/Apologize/You're Not Sorry",
+        "Photograph",
+        "We Are Never Ever Getting Back Together",
+        "Sweeter Than Fiction",
+        "Love Story (Stripped)",
+        "Bad Blood",
+        "Starlight",
+        "I Heart ?",
+        "State of Grace",
+        "I Want You Back",
+        "The Lucky One",
+        "Tell Me Why",
+        "Teardrops on My Guitar",
+        "Come Back... Be Here",
+        "Breathe",
+        "Treacherous",
+        "Bette Davis Eyes (live 2011)",
+        "Taylor Swift - Love Story (Aviators remix)",
+        "Cold as You",
+        "Enchanted",
+        "Teardrops on My Guitar (radio single version)",
+        "Fearless",
+        "Mine",
+        "Long Live (live 2011)",
+        "Ours",
+        "Ronan",
+        "Safe & Sound (NEW Broadcast Version Of \\\"The Hunger Games: Songs From District 12 And Beyond\\\")",
+        "The Story of Us",
+        "Dear John",
+        "Speak Now - World Tour Live Concert (live 2011)",
+        "Crazier",
+        "Welcome To New York",
+        "Speak Now (live 2011)",
+        "Blank Space",
+        "All Too Well",
+        "I Know Places (Voice Memo)",
+        "Teardrops on My Guitar",
+        "Style",
+        "Mine",
+        "The Story of Us",
+        "Christmas Must Be Something More",
+        "Long Live",
+        "The Last Time",
+        "White Christmas",
+        "Untouchable",
+        "Tell Me Why",
+        "Out Of The Woods",
+        "Sparks Fly (live 2011)",
+        "You Belong With Me",
+        "Better Than Revenge",
+        "Shake It Off",
+        "Mine",
+        "Bad Blood",
+        "Jungles of Jupiter",
+        "The Way I Loved You",
+        "Today Was a Fairytale",
+        "I Knew You Were Trouble",
+        "Fearless Tour 2009 First Show Behind the Scenes",
+        "Teardrops on My Guitar",
+        "All Too Well",
+        "The Moment I Knew",
+        "The Best Day",
+        "Santa Baby",
+        "Tied Together With a Smile",
+        "Dear John",
+        "Last Kiss",
+        "Safe & Sound",
+        "Mary's Song (Oh My My My) [live iTunes SoHo Sessions]",
+        "Stay Stay Stay",
+        "Stay Beautiful",
+        "Back to December",
+        "Shake It Off (Music Video)",
+        "Style",
+        "Silent Night",
+        "Love Story",
+        "Treacherous",
+        "Sparks Fly",
+        "Ours",
+        "Tim McGraw",
+        "Audio Interview Piece",
+        "Bad Blood",
+        "Breathe",
+        "Wonderland",
+        "Change",
+        "Holy Ground",
+        "Mean",
+        "Everything Has Changed",
+        "A Place in This World",
+        "CMT Awards \\\"Thug Story\\\"",
+        "The Way I Loved You",
+        "American Girl",
+        "Everything Has Changed (Remix)",
+        "Teardrops on My Guitar",
+        "Sad Beautiful Tragic",
+        "You Belong With Me",
+        "All You Had To Do Was Stay",
+        "Story of Us",
+        "Teardrops on My Guitar",
+        "Stay Beautiful",
+        "Blank Space",
+        "We Are Never Ever Getting Back Together (Neon NiteClub Remix)",
+        "Bad Blood",
+        "Haunted",
+        "Umbrella",
+        "Style (Neon NiteClub Remix)",
+        "You're Not Sorry (CSI Remix)",
+        "Treacherous (original demo recording)",
+        "Taylor's 1st Phone Call With Tim McGraw",
+        "Mine",
+        "White Horse",
+        "Love Story (Behind the Scenes)",
+        "The Story of Us (live 2011)",
+        "The Best Day",
+        "Love Story (Digital Dog mix)",
+        "I'm Only Me When I'm With You",
+        "Red",
+        "We Are Never Ever Getting Back Together",
+        "Red",
+        "Our Song",
+        "Hey Stephen",
+        "You're Not Sorry",
+        "Picture to Burn",
+        "New Romantics",
+        "Mine",
+        "Holy Ground",
+        "The Lucky One",
+        "This Love",
+        "Our Song",
+        "Christmases When You Were Mine",
+        "A Perfectly Good Heart",
+        "How You Get The Girl",
+        "You Belong With Me",
+        "Red (2013 CMA Awards Performance)",
+        "I Want You Back",
+        "Hey Stephen",
+        "Mary's Song (Oh My My My)",
+        "Rehearsals of the Speak Now World Tour",
+        "22",
+        "Enchanted (live 2011)",
+        "Forever & Always (piano version)",
+        "Should've Said No",
+        "The Best Day",
+        "Come in With the Rain",
+        "Perfectly Good Heart",
+        "Love Story (U.S. Pop mix)",
+        "On The Set\\\": Behind the Scenes \\\"Mine\\\" Music Video (part 3)",
+        "Blank Space (Voice Memo)",
+        "Sparks Fly"
+      ],
+      "q_entity": [
+        "Taylor Swift"
+      ],
+      "n_subgraph_edges": 8048,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-2228",
+      "question": "who was francis drake married to",
+      "answer": [
+        "Elizabeth Sydenham",
+        "Mary Newman"
+      ],
+      "q_entity": [
+        "Francis Drake"
+      ],
+      "n_subgraph_edges": 1912,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2245",
+      "question": "who invented facebook wikipedia",
+      "answer": [
+        "Andrew McCollum",
+        "Mark Zuckerberg",
+        "Eduardo Saverin",
+        "Dustin Moskovitz",
+        "Chris Hughes"
+      ],
+      "q_entity": [
+        "Facebook, Inc."
+      ],
+      "n_subgraph_edges": 2209,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2263",
+      "question": "what did sammy davis jr die of",
+      "answer": [
+        "Laryngeal cancer",
+        "Complication"
+      ],
+      "q_entity": [
+        "Sammy Davis, Jr."
+      ],
+      "n_subgraph_edges": 3719,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-2267",
+      "question": "what year did dwayne wade came to the nba",
+      "answer": [
+        "2003 NBA draft"
+      ],
+      "q_entity": [
+        "Dwyane Wade"
+      ],
+      "n_subgraph_edges": 1282,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2298",
+      "question": "what do michelle obama do for a living",
+      "answer": [
+        "Lawyer",
+        "Writer"
+      ],
+      "q_entity": [
+        "Michelle Obama"
+      ],
+      "n_subgraph_edges": 2367,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2311",
+      "question": "what killed sammy davis jr",
+      "answer": [
+        "Laryngeal cancer",
+        "Complication"
+      ],
+      "q_entity": [
+        "Sammy Davis, Jr."
+      ],
+      "n_subgraph_edges": 3719,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-2328",
+      "question": "who won the presidential race in venezuela",
+      "answer": [
+        "Rafael Caldera",
+        "Luis Herrera Campins",
+        "Nicolás Maduro",
+        "Carlos Andrés Pérez",
+        "Hugo Chávez",
+        "Jaime Lusinchi"
+      ],
+      "q_entity": [
+        "Venezuela"
+      ],
+      "n_subgraph_edges": 4995,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2340",
+      "question": "what was eli whitney job",
+      "answer": [
+        "Teacher",
+        "Inventor",
+        "Engineer"
+      ],
+      "q_entity": [
+        "Eli Whitney"
+      ],
+      "n_subgraph_edges": 1928,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2343",
+      "question": "who did hermione granger marry",
+      "answer": [
+        "Ronald Weasley"
+      ],
+      "q_entity": [
+        "Hermione Granger"
+      ],
+      "n_subgraph_edges": 4157,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2358",
+      "question": "where did newt gingrich attend college",
+      "answer": [
+        "Tulane University",
+        "Emory University"
+      ],
+      "q_entity": [
+        "Newt Gingrich"
+      ],
+      "n_subgraph_edges": 3326,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2370",
+      "question": "who is playing bilbo in the hobbit movie",
+      "answer": [
+        "Mikhail Danilov"
+      ],
+      "q_entity": [
+        "Old Bilbo"
+      ],
+      "n_subgraph_edges": 4194,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-2378",
+      "question": "who does jodelle ferland play in eclipse",
+      "answer": [
+        "Bree Tanner"
+      ],
+      "q_entity": [
+        "Eclipse",
+        "Jodelle Ferland"
+      ],
+      "n_subgraph_edges": 6625,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2388",
+      "question": "what films have taylor lautner starred in",
+      "answer": [
+        "Field of Dreams 2: Lockout",
+        "The Twilight Saga: Breaking Dawn - Part 1",
+        "Grown Ups 2",
+        "The Twilight Saga: Breaking Dawn - Part 2",
+        "Abduction",
+        "Valentine's Day",
+        "The Nick and Jessica Variety Hour",
+        "Northern Lights",
+        "Tracers",
+        "Shadow Fury",
+        "The Adventures of Sharkboy and Lavagirl",
+        "He's a Bully, Charlie Brown",
+        "Cheaper by the Dozen 2",
+        "Run the Tide",
+        "The Twilight Saga: New Moon",
+        "Twilight",
+        "The Ridiculous Six",
+        "Eclipse",
+        "Incarceron"
+      ],
+      "q_entity": [
+        "Taylor Lautner"
+      ],
+      "n_subgraph_edges": 1664,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-2392",
+      "question": "what airport does southwest fly to in denver",
+      "answer": [
+        "Denver International Airport"
+      ],
+      "q_entity": [
+        "Denver"
+      ],
+      "n_subgraph_edges": 3905,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2395",
+      "question": "where kurdish people from",
+      "answer": [
+        "Asia"
+      ],
+      "q_entity": [
+        "Kurds"
+      ],
+      "n_subgraph_edges": 3251,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2403",
+      "question": "what is the buddhist holy book",
+      "answer": [
+        "Gangōji Garan Engi",
+        "Longchen Nyingthig",
+        "Chinese Buddhist canon",
+        "Nīlakaṇṭha Dhāraṇī",
+        "Mahāvastu",
+        "Pāli Canon",
+        "Dhammapada",
+        "Āgama",
+        "Amitabha Sutra",
+        "Uṣṇīṣa Vijaya Dhāraṇī Sūtra",
+        "Vimalakirti Sutra",
+        "Śrīmālādevī Siṃhanāda Sūtra",
+        "Mahāyāna sūtras",
+        "Tibetan Buddhist canon"
+      ],
+      "q_entity": [
+        "Buddhism"
+      ],
+      "n_subgraph_edges": 4396,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2424",
+      "question": "what college did kris humphries play for",
+      "answer": [
+        "University of Minnesota"
+      ],
+      "q_entity": [
+        "Kris Humphries"
+      ],
+      "n_subgraph_edges": 2623,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2429",
+      "question": "what type of government does japan currently have",
+      "answer": [
+        "Parliamentary system",
+        "Unitary state",
+        "Constitutional monarchy"
+      ],
+      "q_entity": [
+        "Japan"
+      ],
+      "n_subgraph_edges": 5819,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2454",
+      "question": "what airlines fly into ontario international airport",
+      "answer": [
+        "UPS Airlines",
+        "Great Lakes Airlines",
+        "Ameriflight",
+        "West Air"
+      ],
+      "q_entity": [
+        "Ontario International Airport"
+      ],
+      "n_subgraph_edges": 1163,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2465",
+      "question": "what do you speak in singapore",
+      "answer": [
+        "Chinese language",
+        "Standard Chinese",
+        "English Language",
+        "Tamil Language",
+        "Malay Language"
+      ],
+      "q_entity": [
+        "Singapore"
+      ],
+      "n_subgraph_edges": 4234,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2478",
+      "question": "what is the syracuse university mascot",
+      "answer": [
+        "Syracuse University Otto the Orange"
+      ],
+      "q_entity": [
+        "Syracuse University"
+      ],
+      "n_subgraph_edges": 1335,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2482",
+      "question": "what government did japan have",
+      "answer": [
+        "Parliamentary system",
+        "Unitary state",
+        "Constitutional monarchy"
+      ],
+      "q_entity": [
+        "Japan"
+      ],
+      "n_subgraph_edges": 5819,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2485",
+      "question": "what countries does china border",
+      "answer": [
+        "Vietnam",
+        "Japan",
+        "Laos",
+        "Russia",
+        "Mongolia",
+        "Pakistan",
+        "Tajikistan",
+        "Taiwan",
+        "Kyrgyzstan",
+        "Nepal",
+        "India",
+        "North Korea",
+        "Kazakhstan",
+        "Afghanistan",
+        "Bhutan",
+        "Myanmar"
+      ],
+      "q_entity": [
+        "China"
+      ],
+      "n_subgraph_edges": 6293,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2487",
+      "question": "what drug did mitch hedberg overdose on",
+      "answer": [
+        "Heroin overdose"
+      ],
+      "q_entity": [
+        "Mitch Hedberg"
+      ],
+      "n_subgraph_edges": 5160,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2491",
+      "question": "what language do you speak in austria",
+      "answer": [
+        "Bosnian language",
+        "Slovene language",
+        "Croatian language",
+        "Hungarian language",
+        "Serbian language",
+        "German Language",
+        "Austrian German",
+        "Bavarian Language",
+        "Turkish Language"
+      ],
+      "q_entity": [
+        "Austria"
+      ],
+      "n_subgraph_edges": 6892,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2499",
+      "question": "who did plaxico burress sign with 2012",
+      "answer": [
+        "Pittsburgh Steelers"
+      ],
+      "q_entity": [
+        "Plaxico Burress"
+      ],
+      "n_subgraph_edges": 1751,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2505",
+      "question": "what is vanderbilt university mascot",
+      "answer": [
+        "Vanderbilt University Mr. Commodore"
+      ],
+      "q_entity": [
+        "Vanderbilt University"
+      ],
+      "n_subgraph_edges": 1674,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2510",
+      "question": "what country did truman lead",
+      "answer": [
+        "United States of America"
+      ],
+      "q_entity": [
+        "Harry S. Truman"
+      ],
+      "n_subgraph_edges": 4272,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2539",
+      "question": "what team did albert pujols play for",
+      "answer": [
+        "Scottsdale Scorpions",
+        "St. Louis Cardinals",
+        "Los Angeles Angels of Anaheim"
+      ],
+      "q_entity": [
+        "Albert Pujols"
+      ],
+      "n_subgraph_edges": 1021,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2555",
+      "question": "what do do in new york",
+      "answer": [
+        "Museum of Sex",
+        "Museum of Mathematics",
+        "Frick Collection",
+        "Theodore Roosevelt Birthplace National Historic Site",
+        "Morgan Library & Museum",
+        "Gavin Brown's Enterprise",
+        "Freedomland U.S.A.",
+        "Brooklyn Bridge",
+        "Andrew Carnegie Mansion",
+        "New York Aquarium",
+        "Grand Central Terminal",
+        "Museum of Modern Art Department of Film",
+        "Wave Hill",
+        "New York Mini 10K",
+        "Museum of Arts and Design",
+        "Peking",
+        "Henry Clay Frick House",
+        "Imagination Playground at Burling Slip",
+        "Headless Horseman Hayrides",
+        "International Center of Photography",
+        "New York City Half Marathon",
+        "St. Patrick's Cathedral",
+        "George Gustav Heye Center",
+        "National Academy Museum and School",
+        "Times Square",
+        "New York International Fringe Festival",
+        "United Nations Headquarters",
+        "American Museum of Natural History",
+        "High Line",
+        "Battery Park",
+        "Felix M. Warburg House",
+        "American Folk Art Museum",
+        "Flatiron Building",
+        "Tesla Science Center at Wardenclyffe",
+        "Rockefeller Center",
+        "Brooklyn Botanic Garden",
+        "The Cloisters",
+        "Louis Armstrong House",
+        "Broadway Theatre",
+        "Metropolitan Museum of Art",
+        "FusionArts Museum",
+        "Central Park",
+        "Madison Square Garden",
+        "Chinatown",
+        "A.I.R. Gallery",
+        "Central Park Zoo",
+        "Museum of Modern Art",
+        "Japan Society of New York",
+        "Solomon R. Guggenheim Museum",
+        "Staten Island Ferry",
+        "Solomon R. Guggenheim Museum",
+        "Empire State Building",
+        "New York Public Library for the Performing Arts",
+        "Darien Lake",
+        "UAE Healthy Kidney 10K",
+        "Little Italy",
+        "Statue of Liberty",
+        "Crocheron Park",
+        "Chelsea Art Museum",
+        "Statue of Liberty National Monument",
+        "Chrysler Building",
+        "Travefy",
+        "Franklin D. Roosevelt Presidential Library and Museum"
+      ],
+      "q_entity": [
+        "New York City"
+      ],
+      "n_subgraph_edges": 5748,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-2588",
+      "question": "where do navajo indians live",
+      "answer": [
+        "New Mexico",
+        "Arizona",
+        "California",
+        "Utah",
+        "Southwestern United States",
+        "Navajo Nation"
+      ],
+      "q_entity": [
+        "Navajo people"
+      ],
+      "n_subgraph_edges": 6551,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2603",
+      "question": "what do hungarian people speak",
+      "answer": [
+        "Hungarian language"
+      ],
+      "q_entity": [
+        "Hungary"
+      ],
+      "n_subgraph_edges": 6241,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2609",
+      "question": "who speaks stewie on family guy",
+      "answer": [
+        "Seth MacFarlane"
+      ],
+      "q_entity": [
+        "Family Guy"
+      ],
+      "n_subgraph_edges": 3780,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2631",
+      "question": "what countries are the mediterranean",
+      "answer": [
+        "France",
+        "Monaco",
+        "Spain",
+        "Turkey"
+      ],
+      "q_entity": [
+        "Mediterranean Sea"
+      ],
+      "n_subgraph_edges": 6344,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2639",
+      "question": "what is time zone in new orleans",
+      "answer": [
+        "Central Time Zone"
+      ],
+      "q_entity": [
+        "New Orleans"
+      ],
+      "n_subgraph_edges": 5234,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2651",
+      "question": "what do they speak iceland",
+      "answer": [
+        "Icelandic Language"
+      ],
+      "q_entity": [
+        "Iceland"
+      ],
+      "n_subgraph_edges": 5990,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2655",
+      "question": "when did joe mcelderry won x factor",
+      "answer": [
+        "The X Factor (UK) - Season 6"
+      ],
+      "q_entity": [
+        "Joseph McElderry"
+      ],
+      "n_subgraph_edges": 2717,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2660",
+      "question": "what does a american rottweiler look like",
+      "answer": [
+        "Black",
+        "Tan",
+        "Mahogany"
+      ],
+      "q_entity": [
+        "Rottweiler"
+      ],
+      "n_subgraph_edges": 3453,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-2685",
+      "question": "who inspired antonio vivaldi",
+      "answer": [
+        "Johann Sebastian Bach"
+      ],
+      "q_entity": [
+        "Antonio Vivaldi"
+      ],
+      "n_subgraph_edges": 5977,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2693",
+      "question": "what state was ronald reagan governor of",
+      "answer": [
+        "California"
+      ],
+      "q_entity": [
+        "Ronald Reagan"
+      ],
+      "n_subgraph_edges": 5175,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2726",
+      "question": "who owns the new england patriots football team",
+      "answer": [
+        "Robert Kraft"
+      ],
+      "q_entity": [
+        "New England Patriots"
+      ],
+      "n_subgraph_edges": 4674,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2730",
+      "question": "what has lucy hale played in",
+      "answer": [
+        "The Sisterhood of the Traveling Pants 2",
+        "Killer in the Family",
+        "A Cinderella Story: Once Upon a Song",
+        "Sorority Wars",
+        "Fear Island",
+        "Scream 4",
+        "Tinker Bell: Secret of the Wings"
+      ],
+      "q_entity": [
+        "Lucy Hale"
+      ],
+      "n_subgraph_edges": 1613,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2734",
+      "question": "what language do argentina use",
+      "answer": [
+        "Yiddish Language",
+        "Spanish Language",
+        "Quechuan languages",
+        "Italian Language",
+        "Guaraní language"
+      ],
+      "q_entity": [
+        "Argentina"
+      ],
+      "n_subgraph_edges": 5498,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2754",
+      "question": "who played as barney",
+      "answer": [
+        "David Joyner",
+        "Dean Wendt",
+        "Bob West",
+        "Carey Stinson"
+      ],
+      "q_entity": [
+        "Barney & Friends"
+      ],
+      "n_subgraph_edges": 1827,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2767",
+      "question": "what language does greece use",
+      "answer": [
+        "Albanian language",
+        "Greek Language"
+      ],
+      "q_entity": [
+        "Greece"
+      ],
+      "n_subgraph_edges": 6869,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2777",
+      "question": "where the queen of denmark lives",
+      "answer": [
+        "Copenhagen"
+      ],
+      "q_entity": [
+        "Margrethe II of Denmark"
+      ],
+      "n_subgraph_edges": 1749,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2786",
+      "question": "where does the appalachian trail run through",
+      "answer": [
+        "Eastern United States",
+        "International Appalachian Trail",
+        "Appalachian Mountains"
+      ],
+      "q_entity": [
+        "Appalachian National Scenic Trail"
+      ],
+      "n_subgraph_edges": 6268,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2822",
+      "question": "what was the political system in libya",
+      "answer": [
+        "Parliamentary republic",
+        "Provisional government"
+      ],
+      "q_entity": [
+        "Libya"
+      ],
+      "n_subgraph_edges": 4755,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2828",
+      "question": "where does sally pearson live",
+      "answer": [
+        "Gold Coast"
+      ],
+      "q_entity": [
+        "Sally Pearson"
+      ],
+      "n_subgraph_edges": 836,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2830",
+      "question": "where is madeira",
+      "answer": [
+        "Azores Canaries Madeira",
+        "Portugal",
+        "Atlantic Ocean",
+        "Madeira Islands archipelago"
+      ],
+      "q_entity": [
+        "Madeira"
+      ],
+      "n_subgraph_edges": 4479,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2835",
+      "question": "what things did thomas edison invent",
+      "answer": [
+        "Carbon microphone",
+        "Incandescent light bulb",
+        "Electric Power Distribution",
+        "Quadruplex telegraph",
+        "Mimeograph",
+        "Movie camera",
+        "Phonograph",
+        "Phonograph cylinder"
+      ],
+      "q_entity": [
+        "Thomas Edison"
+      ],
+      "n_subgraph_edges": 4886,
+      "pred_qtype": "agg_enum",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-2850",
+      "question": "on what continent is canada found",
+      "answer": [
+        "Americas",
+        "North America"
+      ],
+      "q_entity": [
+        "Canada"
+      ],
+      "n_subgraph_edges": 6836,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2860",
+      "question": "what is the dominant language of jamaica",
+      "answer": [
+        "Jamaican English"
+      ],
+      "q_entity": [
+        "Jamaica"
+      ],
+      "n_subgraph_edges": 5444,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2891",
+      "question": "what art movement was pablo picasso part of",
+      "answer": [
+        "Picasso's African Period",
+        "Modern art",
+        "Picasso's Rose Period",
+        "Analytic cubism",
+        "Synthetic cubism",
+        "Cubism",
+        "Picasso's Blue Period",
+        "Surrealism"
+      ],
+      "q_entity": [
+        "Pablo Picasso"
+      ],
+      "n_subgraph_edges": 7083,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2903",
+      "question": "what country columbus was born",
+      "answer": [
+        "Italy"
+      ],
+      "q_entity": [
+        "Christopher Columbus"
+      ],
+      "n_subgraph_edges": 4394,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2914",
+      "question": "how much indiana jones movies are there",
+      "answer": [
+        "Indiana Jones and the Raiders of the Lost Ark",
+        "Indiana Jones and the Temple of Doom",
+        "Indiana Jones and the Kingdom of the Crystal Skull",
+        "Indiana Jones and the Last Crusade"
+      ],
+      "q_entity": [
+        "Indiana Jones"
+      ],
+      "n_subgraph_edges": 2816,
+      "pred_qtype": "agg_count",
+      "pred_strategy": "exhaustive"
+    },
+    {
+      "id": "WebQTrn-2915",
+      "question": "what does george soros own",
+      "answer": [
+        "International Crisis Group",
+        "Open Society Archives",
+        "Soros Fund Management",
+        "Stefan Batory Foundation",
+        "J Street",
+        "Secretary of State Project",
+        "MoveOn.org",
+        "Soros Foundation",
+        "Open Society Initiative for Southern Africa",
+        "Central European University",
+        "Soros Foundations Network",
+        "Institute for New Economic Thinking",
+        "Democracy Alliance",
+        "Open Society Foundations",
+        "Drug Policy Alliance",
+        "Scholar Rescue Fund",
+        "Alliance for Open Society International"
+      ],
+      "q_entity": [
+        "George Soros"
+      ],
+      "n_subgraph_edges": 3427,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2921",
+      "question": "who started the federal reserve board",
+      "answer": [
+        "Woodrow Wilson",
+        "Franklin D. Roosevelt",
+        "Paul Warburg",
+        "Carter Glass"
+      ],
+      "q_entity": [
+        "Federal Reserve System"
+      ],
+      "n_subgraph_edges": 2835,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2922",
+      "question": "where did marco rubio go to college",
+      "answer": [
+        "Santa Fe College",
+        "University of Florida",
+        "University of Miami",
+        "Tarkio College",
+        "University of Miami School of Law"
+      ],
+      "q_entity": [
+        "Marco Rubio"
+      ],
+      "n_subgraph_edges": 3289,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2949",
+      "question": "when did romney first run for president",
+      "answer": [
+        "Mitt Romney presidential campaign, 2008"
+      ],
+      "q_entity": [
+        "Mitt Romney"
+      ],
+      "n_subgraph_edges": 1951,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2965",
+      "question": "what is the main language spoken in switzerland",
+      "answer": [
+        "French",
+        "Romansh language",
+        "Italian Language",
+        "German Language"
+      ],
+      "q_entity": [
+        "Switzerland"
+      ],
+      "n_subgraph_edges": 6346,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2975",
+      "question": "what movies does johnny depp play in",
+      "answer": [
+        "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "Happily Ever After",
+        "Platoon",
+        "Public Enemies",
+        "Divine Rapture",
+        "Black Mass",
+        "Edward Scissorhands",
+        "Benny & Joon",
+        "Freddy's Dead: The Final Nightmare",
+        "Deep Sea 3D",
+        "The Ninth Gate",
+        "London Fields",
+        "Secret Window",
+        "Yoga Hosers",
+        "Charlie and the Chocolate Factory",
+        "Don Juan DeMarco",
+        "The Man Who Cried",
+        "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "L.A. Without a Map",
+        "Finding Neverland",
+        "Sonic the Hedgehog",
+        "Tusk",
+        "A Nightmare on Elm Street",
+        "Fear and Loathing in Las Vegas",
+        "Alice in Wonderland: Through the Looking Glass",
+        "Arizona Dream",
+        "Chocolat",
+        "The Brave",
+        "Transcendence",
+        "Nick of Time",
+        "The Rum Diary",
+        "Dark Shadows",
+        "Sleepy Hollow",
+        "21 Jump Street",
+        "Corpse Bride",
+        "The Tourist",
+        "Dead Man",
+        "Pirates of the Caribbean: At World's End",
+        "Blow",
+        "Cannes Man",
+        "Rango",
+        "Shantaram",
+        "Donnie Brasco",
+        "Mortdecai",
+        "Ed Wood",
+        "Into the Woods",
+        "The Astronaut's Wife",
+        "When You're Strange",
+        "Once Upon a Time in Mexico",
+        "Before Night Falls",
+        "Pirates of the Caribbean: Dead Man's Chest",
+        "Cry-Baby",
+        "Alice in Wonderland",
+        "The Libertine",
+        "Jack and Jill",
+        "What's Eating Gilbert Grape",
+        "The Imaginarium of Doctor Parnassus",
+        "Sweeney Todd: The Demon Barber of Fleet Street",
+        "The Source",
+        "The Devil, the Sinner, and His Journey",
+        "Pirates of the Caribbean: On Stranger Tides",
+        "Private Resort",
+        "Wild Roses, Tender Roses",
+        "The Lone Ranger",
+        "Slow Burn",
+        "From Hell"
+      ],
+      "q_entity": [
+        "Johnny Depp"
+      ],
+      "n_subgraph_edges": 5138,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2991",
+      "question": "where did nick clegg go to prep school",
+      "answer": [
+        "Caldicott School"
+      ],
+      "q_entity": [
+        "Nick Clegg"
+      ],
+      "n_subgraph_edges": 1113,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-2993",
+      "question": "what currency should i take to mauritius",
+      "answer": [
+        "Mauritian rupee"
+      ],
+      "q_entity": [
+        "Mauritius"
+      ],
+      "n_subgraph_edges": 3450,
+      "pred_qtype": "unanswerable",
+      "pred_strategy": "complement"
+    },
+    {
+      "id": "WebQTrn-2998",
+      "question": "who is ellen albertini dow",
+      "answer": [
+        "Choreographer",
+        "Actor",
+        "Teacher"
+      ],
+      "q_entity": [
+        "Ellen Dow"
+      ],
+      "n_subgraph_edges": 1784,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-3034",
+      "question": "where did dr martin luther king get his doctorate",
+      "answer": [
+        "Boston University"
+      ],
+      "q_entity": [
+        "Martin Luther King, Jr."
+      ],
+      "n_subgraph_edges": 6642,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-3036",
+      "question": "who was the president of indian national congress",
+      "answer": [
+        "Sonia Gandhi"
+      ],
+      "q_entity": [
+        "Indian National Congress"
+      ],
+      "n_subgraph_edges": 763,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-3037",
+      "question": "where do most of the people in egypt live",
+      "answer": [
+        "Greater Cairo"
+      ],
+      "q_entity": [
+        "Egypt"
+      ],
+      "n_subgraph_edges": 4590,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-3087",
+      "question": "what does united church of christ believe",
+      "answer": [
+        "Christianity"
+      ],
+      "q_entity": [
+        "United Church of Christ"
+      ],
+      "n_subgraph_edges": 1000,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    },
+    {
+      "id": "WebQTrn-3093",
+      "question": "where is the capital city of assyrians",
+      "answer": [
+        "Assur",
+        "Nineveh"
+      ],
+      "q_entity": [
+        "Assyria"
+      ],
+      "n_subgraph_edges": 1395,
+      "pred_qtype": "single_hop",
+      "pred_strategy": "lookup"
+    }
+  ]
+}

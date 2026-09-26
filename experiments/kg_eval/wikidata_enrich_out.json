@@ -1,0 +1,134 @@
+{
+ "queried": 847,
+ "matched": 198,
+ "add_candidates": [
+  {
+   "head": "5n87",
+   "relation": "replaces",
+   "tail": "P-80",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "amber1800",
+   "relation": "countryOfOrigin",
+   "tail": "Lithuania",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "byelka",
+   "relation": "derivedFrom",
+   "tail": "Irbis-E",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "chainhomelowradar",
+   "relation": "derivedFrom",
+   "tail": "Chain Home radar system",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "chainhomeextralowradar",
+   "relation": "derivedFrom",
+   "tail": "Chain Home Low radar",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "haukåsenradar",
+   "relation": "countryOfOrigin",
+   "tail": "Norway",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "irbise",
+   "relation": "derivedFrom",
+   "tail": "Bars radar",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "lähivalvontatutkaradar",
+   "relation": "countryOfOrigin",
+   "tail": "Finland",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "multifunctionarrayradar",
+   "relation": "developedBy",
+   "tail": "Bell Labs",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "multifunctionarrayradar",
+   "relation": "countryOfOrigin",
+   "tail": "United States",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "nebo",
+   "relation": "derivedFrom",
+   "tail": "When You Believe",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "p80",
+   "relation": "replacedBy",
+   "tail": "5N87",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "rus1",
+   "relation": "countryOfOrigin",
+   "tail": "Soviet Union",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "son2",
+   "relation": "derivedFrom",
+   "tail": "GL Mk. I radar",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "sw1c",
+   "relation": "countryOfOrigin",
+   "tail": "Canada",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "signaltrackingandilluminatingradar",
+   "relation": "countryOfOrigin",
+   "tail": "Netherlands",
+   "source": "wikidata_enrich"
+  },
+  {
+   "head": "trs4d",
+   "relation": "derivedFrom",
+   "tail": "TRS-3D radar",
+   "source": "wikidata_enrich"
+  }
+ ],
+ "validation": {
+  "agree": 147,
+  "conflict": 34,
+  "conflict_examples": [
+   "arthur developedBy: KG=['Saab AB'] vs WD='Saab Surveillance'",
+   "arash countryOfOrigin: KG=['伊朗'] vs WD='Tanzania'",
+   "arash developedBy: KG=['Iranian Ministry of Defense'] vs WD='Defense Industries Organization'",
+   "flycatcher developedBy: KG=['Thales'] vs WD='Fairey Aviation Company'",
+   "flycatcher countryOfOrigin: KG=['荷兰'] vs WD='United Kingdom'",
+   "groundmaster400 countryOfOrigin: KG=['美国'] vs WD='France'",
+   "globusiii countryOfOrigin: KG=['俄罗斯'] vs WD='Norway'",
+   "groundmaster200multimission countryOfOrigin: KG=['荷兰'] vs WD='France'",
+   "h1moko countryOfOrigin: KG=['俄罗斯'] vs WD='Ukraine'",
+   "jlens countryOfOrigin: KG=['中国'] vs WD='United States'",
+   "kopáčpassivesensor countryOfOrigin: KG=['捷克'] vs WD='Czechoslovakia'",
+   "monolit countryOfOrigin: KG=['俄罗斯'] vs WD='Ukraine'",
+   "nostradamus countryOfOrigin: KG=['法国'] vs WD='Germany'",
+   "nostradamus countryOfOrigin: KG=['法国'] vs WD='Romania'",
+   "nostradamus countryOfOrigin: KG=['法国'] vs WD='Japan'",
+   "nostradamus countryOfOrigin: KG=['法国'] vs WD='Italy'",
+   "nostradamus countryOfOrigin: KG=['法国'] vs WD='United Kingdom'",
+   "nebo countryOfOrigin: KG=['俄罗斯'] vs WD='Palestine'",
+   "nebo countryOfOrigin: KG=['俄罗斯'] vs WD='Netherlands'",
+   "nebo countryOfOrigin: KG=['俄罗斯'] vs WD='United Kingdom'"
+  ]
+ }
+}

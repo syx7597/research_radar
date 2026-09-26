@@ -1,0 +1,829 @@
+{
+  "hits_by_type": {
+    "single_hop": {
+      "hits": 43,
+      "total": 44,
+      "recall": 0.977
+    },
+    "multi_hop": {
+      "hits": 24,
+      "total": 24,
+      "recall": 1.0
+    },
+    "comparison": {
+      "hits": 10,
+      "total": 10,
+      "recall": 1.0
+    },
+    "aggregation": {
+      "hits": 18,
+      "total": 18,
+      "recall": 1.0
+    },
+    "negation": {
+      "hits": 3,
+      "total": 5,
+      "recall": 0.6
+    }
+  },
+  "details": [
+    {
+      "id": "sq_001",
+      "type": "single_hop",
+      "question": "AN/SPN-46是由哪家公司研制的？",
+      "answer": "Bell Textron",
+      "hit": true
+    },
+    {
+      "id": "sq_002",
+      "type": "single_hop",
+      "question": "AN/TPS-70是由哪家公司研制的？",
+      "answer": "Northrop Grumman",
+      "hit": true
+    },
+    {
+      "id": "sq_003",
+      "type": "single_hop",
+      "question": "AN/SPS-6是由哪家公司研制的？",
+      "answer": "Bendix",
+      "hit": true
+    },
+    {
+      "id": "sq_004",
+      "type": "single_hop",
+      "question": "S1850M是由哪家公司研制的？",
+      "answer": "Thales",
+      "hit": true
+    },
+    {
+      "id": "sq_005",
+      "type": "single_hop",
+      "question": "Integrated Coastal Surveillance System是由哪家公司研制的？",
+      "answer": "Bharat Electronics",
+      "hit": true
+    },
+    {
+      "id": "sq_006",
+      "type": "single_hop",
+      "question": "OPS-14是由哪家公司研制的？",
+      "answer": "Mitsubishi Electric",
+      "hit": true
+    },
+    {
+      "id": "sq_007",
+      "type": "single_hop",
+      "question": "S-300 missile system是由哪家公司研制的？",
+      "answer": "NPO Almaz",
+      "hit": true
+    },
+    {
+      "id": "sq_008",
+      "type": "single_hop",
+      "question": "OPS-20是由哪家公司研制的？",
+      "answer": "Japan Radio",
+      "hit": true
+    },
+    {
+      "id": "sq_009",
+      "type": "single_hop",
+      "question": "AN/FPS-23被哪个国家装备使用？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "sq_010",
+      "type": "single_hop",
+      "question": "OPS-14被哪个国家装备使用？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "sq_011",
+      "type": "single_hop",
+      "question": "Red Steer被哪个国家装备使用？",
+      "answer": "中国",
+      "hit": true
+    },
+    {
+      "id": "sq_012",
+      "type": "single_hop",
+      "question": "AN/APG-85被哪个国家装备使用？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "sq_013",
+      "type": "single_hop",
+      "question": "EMPAR被哪个国家装备使用？",
+      "answer": "意大利",
+      "hit": true
+    },
+    {
+      "id": "sq_014",
+      "type": "single_hop",
+      "question": "AN/AWG-9被哪个国家装备使用？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "sq_015",
+      "type": "single_hop",
+      "question": "Herakles (radar)被哪个国家装备使用？",
+      "answer": "法国",
+      "hit": true
+    },
+    {
+      "id": "sq_016",
+      "type": "single_hop",
+      "question": "Ground Master 200 Multi Mission被哪个国家装备使用？",
+      "answer": "荷兰",
+      "hit": true
+    },
+    {
+      "id": "sq_017",
+      "type": "single_hop",
+      "question": "AN/APG-65 radar family被哪个国家装备使用？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "sq_018",
+      "type": "single_hop",
+      "question": "AN/APG-71被哪个国家装备使用？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "sq_019",
+      "type": "single_hop",
+      "question": "ARTHUR的工作频段是什么？",
+      "answer": "C",
+      "hit": true
+    },
+    {
+      "id": "sq_020",
+      "type": "single_hop",
+      "question": "AN/MPQ-64 Sentinel的工作频段是什么？",
+      "answer": "X",
+      "hit": true
+    },
+    {
+      "id": "sq_021",
+      "type": "single_hop",
+      "question": "AI.20 radar的工作频段是什么？",
+      "answer": "X",
+      "hit": true
+    },
+    {
+      "id": "sq_022",
+      "type": "single_hop",
+      "question": "AN/TPS-65的工作频段是什么？",
+      "answer": "L",
+      "hit": true
+    },
+    {
+      "id": "sq_023",
+      "type": "single_hop",
+      "question": "OPS-24的工作频段是什么？",
+      "answer": "L",
+      "hit": true
+    },
+    {
+      "id": "sq_024",
+      "type": "single_hop",
+      "question": "OPS-4的工作频段是什么？",
+      "answer": "S",
+      "hit": true
+    },
+    {
+      "id": "sq_025",
+      "type": "single_hop",
+      "question": "AN/APG-64的工作频段是什么？",
+      "answer": "X",
+      "hit": true
+    },
+    {
+      "id": "sq_026",
+      "type": "single_hop",
+      "question": "AN/APG-71的工作频段是什么？",
+      "answer": "X",
+      "hit": true
+    },
+    {
+      "id": "sq_027",
+      "type": "single_hop",
+      "question": "AN/SPS-39的工作频段是什么？",
+      "answer": "S",
+      "hit": true
+    },
+    {
+      "id": "sq_028",
+      "type": "single_hop",
+      "question": "AMES Type 84的工作频段是什么？",
+      "answer": "L",
+      "hit": true
+    },
+    {
+      "id": "sq_029",
+      "type": "single_hop",
+      "question": "AN/SPN-35部署在哪种平台上？",
+      "answer": "America-class amphibious assault ship",
+      "hit": true
+    },
+    {
+      "id": "sq_030",
+      "type": "single_hop",
+      "question": "EMPAR部署在哪种平台上？",
+      "answer": "naval vessels of medium and large sizes",
+      "hit": true
+    },
+    {
+      "id": "sq_031",
+      "type": "single_hop",
+      "question": "Kortik CIWS部署在哪种平台上？",
+      "answer": "Sovremenny-class destroyer",
+      "hit": true
+    },
+    {
+      "id": "sq_032",
+      "type": "single_hop",
+      "question": "AN/SPG-60部署在哪种平台上？",
+      "answer": "California-class cruiser",
+      "hit": false
+    },
+    {
+      "id": "sq_033",
+      "type": "single_hop",
+      "question": "Type 79 radar部署在哪种平台上？",
+      "answer": "HMS Sheffield",
+      "hit": true
+    },
+    {
+      "id": "sq_034",
+      "type": "single_hop",
+      "question": "Herakles (radar)部署在哪种平台上？",
+      "answer": "FREMM multipurpose frigate",
+      "hit": true
+    },
+    {
+      "id": "sq_035",
+      "type": "single_hop",
+      "question": "SCANFAR部署在哪种平台上？",
+      "answer": "USS Enterprise (CVN-65)",
+      "hit": true
+    },
+    {
+      "id": "sq_036",
+      "type": "single_hop",
+      "question": "MM/SPQ-2是哪个型号的升级版？",
+      "answer": "MM/SPQ-2",
+      "hit": true
+    },
+    {
+      "id": "sq_037",
+      "type": "single_hop",
+      "question": "EL/M-2080是哪个型号的升级版？",
+      "answer": "EL/M-2080",
+      "hit": true
+    },
+    {
+      "id": "sq_038",
+      "type": "single_hop",
+      "question": "AN/TPS-70是哪个型号的升级版？",
+      "answer": "AN/TPS-43",
+      "hit": true
+    },
+    {
+      "id": "sq_039",
+      "type": "single_hop",
+      "question": "S1850M是哪个型号的升级版？",
+      "answer": "SMART-L",
+      "hit": true
+    },
+    {
+      "id": "sq_040",
+      "type": "single_hop",
+      "question": "Type 277 radar是哪个型号的升级版？",
+      "answer": "Type 271 radar",
+      "hit": true
+    },
+    {
+      "id": "sq_041",
+      "type": "single_hop",
+      "question": "AN/SPS-39是哪个型号的升级版？",
+      "answer": "AN/SPS-26",
+      "hit": true
+    },
+    {
+      "id": "sq_042",
+      "type": "single_hop",
+      "question": "FCS-3是哪个型号的升级版？",
+      "answer": "FCS-3",
+      "hit": true
+    },
+    {
+      "id": "sq_043",
+      "type": "single_hop",
+      "question": "S-300 missile system是哪个型号的升级版？",
+      "answer": "S-300 missile system",
+      "hit": true
+    },
+    {
+      "id": "sq_044",
+      "type": "single_hop",
+      "question": "AN/SPS-29是哪个型号的升级版？",
+      "answer": "AN/SPS-29",
+      "hit": true
+    },
+    {
+      "id": "mq_045",
+      "type": "multi_hop",
+      "question": "EMPAR部署在naval vessels of medium and large sizes上，该雷达属于哪个国家的海军装备？",
+      "answer": "意大利",
+      "hit": true
+    },
+    {
+      "id": "mq_046",
+      "type": "multi_hop",
+      "question": "Herakles (radar)部署在FREMM multipurpose frigate上，该雷达属于哪个国家的海军装备？",
+      "answer": "法国",
+      "hit": true
+    },
+    {
+      "id": "mq_047",
+      "type": "multi_hop",
+      "question": "OPS-24部署在Murasame-class destroyer上，该雷达属于哪个国家的海军装备？",
+      "answer": "日本",
+      "hit": true
+    },
+    {
+      "id": "mq_048",
+      "type": "multi_hop",
+      "question": "OPS-9部署在escort ship上，该雷达属于哪个国家的海军装备？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "mq_049",
+      "type": "multi_hop",
+      "question": "Herakles (radar)部署在Formidable-class frigate上，该雷达属于哪个国家的海军装备？",
+      "answer": "法国",
+      "hit": true
+    },
+    {
+      "id": "mq_050",
+      "type": "multi_hop",
+      "question": "OPS-18部署在escort ship上，该雷达属于哪个国家的海军装备？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "mq_051",
+      "type": "multi_hop",
+      "question": "OPS-14部署在self-defense ship上，该雷达属于哪个国家的海军装备？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "mq_052",
+      "type": "multi_hop",
+      "question": "AN/TPY-2部署在THAAD发射车上，该雷达属于哪个国家的海军装备？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "mq_053",
+      "type": "multi_hop",
+      "question": "AN/APY-9部署在E-2D Advanced Hawkeye上，该雷达属于哪个国家的海军装备？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "mq_054",
+      "type": "multi_hop",
+      "question": "OPS-24部署在Takanami-class destroyer上，该雷达属于哪个国家的海军装备？",
+      "answer": "日本",
+      "hit": true
+    },
+    {
+      "id": "mq_055",
+      "type": "multi_hop",
+      "question": "Type 281 radar部署在HMS Prince of Wales上，该雷达属于哪个国家的海军装备？",
+      "answer": "中国",
+      "hit": true
+    },
+    {
+      "id": "mq_056",
+      "type": "multi_hop",
+      "question": "OPS-20部署在escort ship上，该雷达属于哪个国家的海军装备？",
+      "answer": "美国",
+      "hit": true
+    },
+    {
+      "id": "mq_057",
+      "type": "multi_hop",
+      "question": "SJ radar部署在American submarine上，该雷达属于哪个国家的海军装备？",
+      "answer": "日本",
+      "hit": true
+    },
+    {
+      "id": "mq_058",
+      "type": "multi_hop",
+      "question": "Type 281 radar部署在HMS Dido上，该雷达属于哪个国家的海军装备？",
+      "answer": "中国",
+      "hit": true
+    },
+    {
+      "id": "mq_059",
+      "type": "multi_hop",
+      "question": "OPS-24部署在Asagiri-class destroyer上，该雷达属于哪个国家的海军装备？",
+      "answer": "日本",
+      "hit": true
+    },
+    {
+      "id": "mq_060",
+      "type": "multi_hop",
+      "question": "MM/SPQ-2的前身型号MM/SPQ-2是由哪家公司研制的？",
+      "answer": "SMA",
+      "hit": true
+    },
+    {
+      "id": "mq_061",
+      "type": "multi_hop",
+      "question": "EL/M-2080的前身型号EL/M-2080是由哪家公司研制的？",
+      "answer": "Israel Aerospace Industries",
+      "hit": true
+    },
+    {
+      "id": "mq_062",
+      "type": "multi_hop",
+      "question": "AN/TPS-70的前身型号AN/TPS-43是由哪家公司研制的？",
+      "answer": "Northrop Grumman",
+      "hit": true
+    },
+    {
+      "id": "mq_063",
+      "type": "multi_hop",
+      "question": "S1850M的前身型号SMART-L是由哪家公司研制的？",
+      "answer": "Thales",
+      "hit": true
+    },
+    {
+      "id": "mq_064",
+      "type": "multi_hop",
+      "question": "AN/SPS-39的前身型号AN/SPS-26是由哪家公司研制的？",
+      "answer": "Hughes Aircraft Company",
+      "hit": true
+    },
+    {
+      "id": "mq_065",
+      "type": "multi_hop",
+      "question": "FCS-3的前身型号FCS-3是由哪家公司研制的？",
+      "answer": "Japanese Defense Ministry",
+      "hit": true
+    },
+    {
+      "id": "mq_066",
+      "type": "multi_hop",
+      "question": "AN/SPS-39的前身型号AN/SPS-39是由哪家公司研制的？",
+      "answer": "Hughes Aircraft Company",
+      "hit": true
+    },
+    {
+      "id": "mq_067",
+      "type": "multi_hop",
+      "question": "S-300 missile system的前身型号S-300 missile system是由哪家公司研制的？",
+      "answer": "NPO Almaz",
+      "hit": true
+    },
+    {
+      "id": "mq_068",
+      "type": "multi_hop",
+      "question": "AN/SPS-29的前身型号AN/SPS-29是由哪家公司研制的？",
+      "answer": "General Electric",
+      "hit": true
+    },
+    {
+      "id": "cq_001",
+      "type": "comparison",
+      "question": "AN/FPS-23和OPS-14分别工作在什么频段？",
+      "answer": "AN/FPS-23工作在UHF波段；OPS-14工作在L波段",
+      "hit": true
+    },
+    {
+      "id": "cq_002",
+      "type": "comparison",
+      "question": "Red Steer和AMES Type 7分别工作在什么频段？",
+      "answer": "Red Steer工作在X波段；AMES Type 7工作在VHF波段",
+      "hit": true
+    },
+    {
+      "id": "cq_003",
+      "type": "comparison",
+      "question": "EMPAR和Selex RAN-40L分别工作在什么频段？",
+      "answer": "EMPAR工作在C波段；Selex RAN-40L工作在L波段",
+      "hit": true
+    },
+    {
+      "id": "cq_004",
+      "type": "comparison",
+      "question": "Herakles (radar)和Ground Master 200分别工作在什么频段？",
+      "answer": "Herakles (radar)工作在S波段；Ground Master 200工作在S波段",
+      "hit": true
+    },
+    {
+      "id": "cq_005",
+      "type": "comparison",
+      "question": "Lichtenstein radar和Neptun (radar)分别工作在什么频段？",
+      "answer": "Lichtenstein radar工作在VHF波段；Neptun (radar)工作在VHF波段",
+      "hit": true
+    },
+    {
+      "id": "cq_006",
+      "type": "comparison",
+      "question": "SAMPSON和Type 965 radar分别工作在什么频段？",
+      "answer": "SAMPSON工作在S波段；Type 965 radar工作在VHF波段",
+      "hit": true
+    },
+    {
+      "id": "cq_007",
+      "type": "comparison",
+      "question": "EL/M-2080 Green Pine和EL/M-2090分别工作在什么频段？",
+      "answer": "EL/M-2080 Green Pine工作在L, UHF波段；EL/M-2090工作在S, UHF波段",
+      "hit": true
+    },
+    {
+      "id": "cq_008",
+      "type": "comparison",
+      "question": "Giraffe radar和ARTHUR分别工作在什么频段？",
+      "answer": "Giraffe radar工作在C, S, X波段；ARTHUR工作在C波段",
+      "hit": true
+    },
+    {
+      "id": "cq_009",
+      "type": "comparison",
+      "question": "OPS-24和SJ radar分别工作在什么频段？",
+      "answer": "OPS-24工作在L波段；SJ radar工作在S波段",
+      "hit": true
+    },
+    {
+      "id": "cq_010",
+      "type": "comparison",
+      "question": "Mitsubishi Electric同时研制了OPS-14和OPS-24吗？这两款雷达分别部署在哪类平台上？",
+      "answer": "是，OPS-14部署在self-defense ship；OPS-24部署在Asagiri-class destroyer",
+      "hit": true
+    },
+    {
+      "id": "aq_001",
+      "type": "aggregation",
+      "question": "有哪些S波段的雷达系统？",
+      "answer": [
+        "OPS-4",
+        "AN/SPS-39",
+        "Giraffe radar",
+        "AN/TPS-32",
+        "Erieye"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_002",
+      "type": "aggregation",
+      "question": "有哪些X波段的雷达系统？",
+      "answer": [
+        "AN/MPQ-64 Sentinel",
+        "AI.20 radar",
+        "AN/APG-64",
+        "AN/APG-71",
+        "JL-10A"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_003",
+      "type": "aggregation",
+      "question": "有哪些L波段的雷达系统？",
+      "answer": [
+        "AN/TPS-65",
+        "OPS-24",
+        "AMES Type 84",
+        "AN/TPY-4",
+        "AN/SPS-6"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_004",
+      "type": "aggregation",
+      "question": "有哪些VHF波段的雷达系统？",
+      "answer": [
+        "AN/FPS-24 radar",
+        "AI Mark IV radar",
+        "Integrated Coastal Surveillance System",
+        "Type 517 radar",
+        "AMES Type 7"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_005",
+      "type": "aggregation",
+      "question": "有哪些C波段的雷达系统？",
+      "answer": [
+        "ARTHUR",
+        "Giraffe radar",
+        "OPS-18",
+        "AN/SPS-10",
+        "AN/FPQ-6"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_006",
+      "type": "aggregation",
+      "question": "Raytheon研制了哪些雷达型号？",
+      "answer": [
+        "AN/SPS-10",
+        "AN/SPY-3",
+        "AN/TPY-2",
+        "AN/SPY-6",
+        "AN/MPQ-65"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_007",
+      "type": "aggregation",
+      "question": "Mitsubishi Electric研制了哪些雷达型号？",
+      "answer": [
+        "OPS-14",
+        "OPS-24",
+        "OPS-11"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_008",
+      "type": "aggregation",
+      "question": "Japan Radio研制了哪些雷达型号？",
+      "answer": [
+        "OPS-20",
+        "OPS-28",
+        "OPS-18"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_009",
+      "type": "aggregation",
+      "question": "Northrop Grumman研制了哪些雷达型号？",
+      "answer": [
+        "AN/TPS-70",
+        "AN/SPS-6"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_010",
+      "type": "aggregation",
+      "question": "Thales研制了哪些雷达型号？",
+      "answer": [
+        "S1850M",
+        "Herakles (radar)"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_011",
+      "type": "aggregation",
+      "question": "美国装备了哪些雷达系统？",
+      "answer": [
+        "AN/FPS-23",
+        "OPS-14",
+        "AN/APG-85",
+        "AN/AWG-9",
+        "AN/APG-65 radar family"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_012",
+      "type": "aggregation",
+      "question": "中国装备了哪些雷达系统？",
+      "answer": [
+        "Red Steer",
+        "AN/GPN-20",
+        "AMES Type 7",
+        "Type 354 radar",
+        "Type 382 radar"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_013",
+      "type": "aggregation",
+      "question": "英国装备了哪些雷达系统？",
+      "answer": [
+        "Fire-control radar",
+        "Automatic Gun-Laying Turret",
+        "Klein Heidelberg",
+        "SAMPSON",
+        "Type 965 radar"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_014",
+      "type": "aggregation",
+      "question": "法国装备了哪些雷达系统？",
+      "answer": [
+        "Herakles (radar)",
+        "COBRA (radar)",
+        "Ground Master 400",
+        "Radar Doppler Multifunction",
+        "BOR-A 550"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_015",
+      "type": "aggregation",
+      "question": "德国装备了哪些雷达系统？",
+      "answer": [
+        "Chain Home",
+        "Lichtenstein radar",
+        "Neptun (radar)",
+        "Luftwaffe and Kriegsmarine radar equipment of World War II",
+        "FuG 240 Berlin"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_016",
+      "type": "aggregation",
+      "question": "部署在escort ship上的雷达有哪些型号？",
+      "answer": [
+        "OPS-9",
+        "OPS-18",
+        "OPS-20",
+        "OPS-11"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_017",
+      "type": "aggregation",
+      "question": "部署在Tarawa-class amphibious assault ship上的雷达有哪些型号？",
+      "answer": [
+        "AN/SPG-60",
+        "AN/SPN-35"
+      ],
+      "hit": true
+    },
+    {
+      "id": "aq_018",
+      "type": "aggregation",
+      "question": "部署在Charles F. Adams-class destroyer上的雷达有哪些型号？",
+      "answer": [
+        "AN/SPG-60",
+        "AN/SPG-53"
+      ],
+      "hit": true
+    },
+    {
+      "id": "neg_001",
+      "type": "negation",
+      "question": "AN/SPY-1雷达工作在Ka波段吗？",
+      "answer": "否",
+      "hit": true
+    },
+    {
+      "id": "neg_002",
+      "type": "negation",
+      "question": "Type 346雷达是由Raytheon公司研制的吗？",
+      "answer": "否",
+      "hit": true
+    },
+    {
+      "id": "neg_003",
+      "type": "negation",
+      "question": "SMART-L雷达的制造商是哪个美国公司？",
+      "answer": "根据现有知识库无法确定",
+      "hit": false
+    },
+    {
+      "id": "neg_004",
+      "type": "negation",
+      "question": "AN/TPY-2雷达被部署在驱逐舰上吗？",
+      "answer": "否",
+      "hit": true
+    },
+    {
+      "id": "neg_005",
+      "type": "negation",
+      "question": "目前哪款中国雷达装备在美国海军驱逐舰上？",
+      "answer": "根据现有知识库无法确定",
+      "hit": false
+    }
+  ]
+}

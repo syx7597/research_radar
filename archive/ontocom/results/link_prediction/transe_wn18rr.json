@@ -1,0 +1,1 @@
+{"model": "transe", "dataset": "wn18rr", "metrics": {"mrr": 0.2056, "hits_at_1": 0.0142, "hits_at_3": 0.3651, "hits_at_10": 0.4933, "count": 5848}, "training_time": 1537.0}

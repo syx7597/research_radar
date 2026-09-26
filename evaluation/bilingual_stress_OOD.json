@@ -1,0 +1,625 @@
+{
+  "version": "ood-v1",
+  "description": "Hand-crafted OOD bilingual stress set; substitutions are aggressive (less common English/abbrev forms).",
+  "questions": [
+    {
+      "id": "ood_ac_039",
+      "type": "agg_count",
+      "question_zh": "工作在 L band的雷达共有多少款？",
+      "question_zh_original": "工作在 L 波段的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "L 波段",
+          "L band"
+        ]
+      ],
+      "gold_answer": 27,
+      "gold_constraint": {
+        "relation": "hasFrequencyBand",
+        "tail": "L"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ac_048",
+      "type": "agg_count",
+      "question_zh": "工作在 Ku band的雷达共有多少款？",
+      "question_zh_original": "工作在 Ku 波段的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "Ku 波段",
+          "Ku band"
+        ]
+      ],
+      "gold_answer": 29,
+      "gold_constraint": {
+        "relation": "hasFrequencyBand",
+        "tail": "Ku"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ac_020",
+      "type": "agg_count",
+      "question_zh": "支持 单目标track mode 模式的雷达共有多少款？",
+      "question_zh_original": "支持 单目标跟踪 模式的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "跟踪",
+          "track mode"
+        ]
+      ],
+      "gold_answer": 17,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "单目标跟踪"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ac_005",
+      "type": "agg_count",
+      "question_zh": "支持 track mode 模式的雷达共有多少款？",
+      "question_zh_original": "支持 跟踪 模式的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "跟踪",
+          "track mode"
+        ]
+      ],
+      "gold_answer": 13,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "跟踪"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ac_012",
+      "type": "agg_count",
+      "question_zh": "采用 phased array 技术的雷达共有多少款？",
+      "question_zh_original": "采用 相控阵 技术的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "相控阵",
+          "phased array"
+        ]
+      ],
+      "gold_answer": 15,
+      "gold_constraint": {
+        "relation": "hasTechType",
+        "tail": "相控阵"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ac_025",
+      "type": "agg_count",
+      "question_zh": "USA 一共装备了多少款雷达？",
+      "question_zh_original": "美国 一共装备了多少款雷达？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": 228,
+      "gold_constraint": {
+        "relation": "operatedBy",
+        "tail": "美国"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ae_034",
+      "type": "agg_enum",
+      "question_zh": "列出所有支持 track mode 模式的雷达。",
+      "question_zh_original": "列出所有支持 跟踪 模式的雷达。",
+      "bilingual_subs": [
+        [
+          "跟踪",
+          "track mode"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-55",
+        "AN/APG-63",
+        "AN/APG-70/70(V)",
+        "AN/APG-77/77V",
+        "AN/APQ-137",
+        "AN/AWG-9",
+        "Anemone",
+        "DPN-53(1959",
+        "Flamr",
+        "H001-03",
+        "Horizon",
+        "PS-05/A",
+        "RDR-1700"
+      ],
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "跟踪"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ae_033",
+      "type": "agg_enum",
+      "question_zh": "列出所有支持 自动track mode 模式的雷达。",
+      "question_zh_original": "列出所有支持 自动跟踪 模式的雷达。",
+      "bilingual_subs": [
+        [
+          "跟踪",
+          "track mode"
+        ]
+      ],
+      "gold_answer": [
+        "AJIIMA3-23",
+        "AN/APQ-100",
+        "AN/APQ-72",
+        "AN/APQ-72/100/109",
+        "Agave"
+      ],
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "自动跟踪"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ae_022",
+      "type": "agg_enum",
+      "question_zh": "列出工作在 Ku band的所有雷达。",
+      "question_zh_original": "列出工作在 Ku 波段的所有雷达。",
+      "bilingual_subs": [
+        [
+          "Ku 波段",
+          "Ku band"
+        ]
+      ],
+      "gold_answer": [
+        "AJIIMA3-23",
+        "AN/APG-73",
+        "AN/APG-76/76(V",
+        "AN/APQ-110",
+        "AN/APQ-110/128",
+        "AN/APQ-122(V)",
+        "AN/APQ-126V/158",
+        "AN/APQ-134/146/171",
+        "AN/APQ-140",
+        "AN/APQ-170(V)/425(V)",
+        "AN/APQ-174",
+        "AN/APQ-181",
+        "AN/APQ-92/112/148/156/173",
+        "AN/APS-130",
+        "AN/APY-8/8(V)(Lynx)",
+        "AN/AWG-9",
+        "Aisbery-Razrez",
+        "AllWeatherRadar",
+        "ENR",
+        "F-15A/R-14A",
+        "F/A-18",
+        "Flamr",
+        "LynxII",
+        "MFAS",
+        "Martin",
+        "Master",
+        "Maxson",
+        "MiG-23",
+        "NorthropGrumman"
+      ],
+      "gold_constraint": {
+        "relation": "hasFrequencyBand",
+        "tail": "Ku"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ae_040",
+      "type": "agg_enum",
+      "question_zh": "请列出 China电子科技集团 研制的所有雷达。",
+      "question_zh_original": "请列出 中国电子科技集团 研制的所有雷达。",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ],
+      "gold_answer": [
+        "CS/SPG-6",
+        "FLORAKO",
+        "GL-1002",
+        "JY-14 Radar",
+        "JY-8 Radar",
+        "JY-9 Radar",
+        "KLC-1",
+        "Type 341 radar",
+        "Type 345 Radar",
+        "Type 346 radar",
+        "Type 351 Radar",
+        "Type 354 radar",
+        "Type 362 Radar",
+        "Type 382 radar",
+        "Type 517 radar",
+        "Type 752 Radar",
+        "WX-200",
+        "WX-300",
+        "WX-400"
+      ],
+      "gold_constraint": {
+        "relation": "developedBy",
+        "tail": "中国电子科技集团"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ae_027",
+      "type": "agg_enum",
+      "question_zh": "列出所有采用 MTI 技术的雷达。",
+      "question_zh_original": "列出所有采用 动目标指示 技术的雷达。",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ],
+      "gold_answer": [
+        "AIRSTAR",
+        "AN/APG-68/68(V)",
+        "AN/APG-70/70(V)",
+        "AN/APQ-126",
+        "AN/APQ-126(V)",
+        "AN/APQ-137",
+        "AN/APQ-137/137B",
+        "AN/APQ-181",
+        "AN/APS-119",
+        "AN/APS-120/125/138/139",
+        "AN/APS-143(V)3",
+        "AN/APS-143(V)3/143B(V)3/143C(V)3",
+        "AN/APS-143B(V)3",
+        "AN/APS-144",
+        "AN/APS-145",
+        "AN/APS-147",
+        "AN/APS-149",
+        "AN/APS-94",
+        "AN/APS-95",
+        "AN/APY-1",
+        "AN/APY-12",
+        "AN/ZPQ-1TeSAR",
+        "AN/ZPQ-1TeSAR(",
+        "APBAJIET",
+        "APS-784",
+        "ASSR-1000",
+        "Aisbery-Razrez",
+        "Electric",
+        "FlatJack",
+        "HiSAR",
+        "Horizon",
+        "IMEJIb",
+        "Kvant",
+        "Martin",
+        "Master",
+        "Multi-Mode",
+        "Norden(Talons)",
+        "NorthropGrumman",
+        "Orchidee",
+        "Pharaon",
+        "RC-121",
+        "RDM",
+        "RDY",
+        "Raphael-TH/SLAR2000",
+        "SLAR300",
+        "SOSTAR-XSAR/MTI",
+        "SWORD(AWARDS)",
+        "TARGET",
+        "ThalesAirborneSystems",
+        "Thomson-CSF)",
+        "Zhuk-AE"
+      ],
+      "gold_constraint": {
+        "relation": "hasTechType",
+        "tail": "动目标指示"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ae_020",
+      "type": "agg_enum",
+      "question_zh": "列出工作在 Ka band的所有雷达。",
+      "question_zh_original": "列出工作在 Ka 波段的所有雷达。",
+      "bilingual_subs": [
+        [
+          "Ka 波段",
+          "Ka band"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-77",
+        "AN/APG-78 Longbow",
+        "AN/APQ-122(V)",
+        "AN/APQ-137",
+        "AN/APQ-137/137B",
+        "AN/SPN-46",
+        "APBAJIET",
+        "Electric",
+        "HMMII",
+        "HiVision",
+        "IRIS",
+        "MISAR",
+        "OASys",
+        "OBOI",
+        "Su-30MKA"
+      ],
+      "gold_constraint": {
+        "relation": "hasFrequencyBand",
+        "tail": "Ka"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ri_035",
+      "type": "relation_inverse",
+      "question_zh": "支持 信标navigation 模式的雷达有哪些？",
+      "question_zh_original": "支持 信标导航 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "导航",
+          "navigation"
+        ]
+      ],
+      "gold_answer": null,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "信标导航"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ri_007",
+      "type": "relation_inverse",
+      "question_zh": "支持 search mode与营救 模式的雷达有哪些？",
+      "question_zh_original": "支持 搜索与营救 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "搜索",
+          "search mode"
+        ]
+      ],
+      "gold_answer": null,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "搜索与营救"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ri_017",
+      "type": "relation_inverse",
+      "question_zh": "工作在 S band的雷达有哪些？",
+      "question_zh_original": "工作在 S 波段的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "S 波段",
+          "S band"
+        ]
+      ],
+      "gold_answer": null,
+      "gold_constraint": {
+        "relation": "hasFrequencyBand",
+        "tail": "S"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ri_006",
+      "type": "relation_inverse",
+      "question_zh": "支持 SAR 模式的雷达有哪些？",
+      "question_zh_original": "支持 合成孔径 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "合成孔径",
+          "SAR"
+        ]
+      ],
+      "gold_answer": null,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "合成孔径"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ri_004",
+      "type": "relation_inverse",
+      "question_zh": "采用 monopulse 技术的雷达有哪些？",
+      "question_zh_original": "采用 单脉冲 技术的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "单脉冲",
+          "monopulse"
+        ]
+      ],
+      "gold_answer": null,
+      "gold_constraint": {
+        "relation": "hasTechType",
+        "tail": "单脉冲"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_ri_032",
+      "type": "relation_inverse",
+      "question_zh": "支持 目标track mode 模式的雷达有哪些？",
+      "question_zh_original": "支持 目标跟踪 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "跟踪",
+          "track mode"
+        ]
+      ],
+      "gold_answer": null,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "目标跟踪"
+      },
+      "expected_strategy": "exhaustive"
+    },
+    {
+      "id": "ood_af_020",
+      "type": "attr_filter",
+      "question_zh": "原产于 USA 的且支持 navigation 模式的雷达有哪些？",
+      "question_zh_original": "原产于 美国 的且支持 导航 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ],
+        [
+          "导航",
+          "navigation"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-73",
+        "AN/APN-215(V)",
+        "AN/APN-242/59",
+        "AN/APQ-140",
+        "AN/APQ-148",
+        "AN/APS-119",
+        "AN/APS-124",
+        "Flamr",
+        "MR-4000",
+        "MSAR",
+        "Maxson",
+        "RDR-1400C"
+      ],
+      "gold_constraint": null,
+      "expected_strategy": "constrained_join"
+    },
+    {
+      "id": "ood_af_040",
+      "type": "attr_filter",
+      "question_zh": "原产于 USA 的且支持 平显search mode 模式的雷达有哪些？",
+      "question_zh_original": "原产于 美国 的且支持 平显搜索 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ],
+        [
+          "搜索",
+          "search mode"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-65/65(V)",
+        "AN/APG-70/70(V)"
+      ],
+      "gold_constraint": null,
+      "expected_strategy": "constrained_join"
+    },
+    {
+      "id": "ood_af_046",
+      "type": "attr_filter",
+      "question_zh": "原产于 澳大利亚 的且支持 ground mapping 模式的雷达有哪些？",
+      "question_zh_original": "原产于 澳大利亚 的且支持 地形测绘 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "地形测绘",
+          "ground mapping"
+        ]
+      ],
+      "gold_answer": [
+        "ARS-400",
+        "ARS-800",
+        "ARS-880"
+      ],
+      "gold_constraint": null,
+      "expected_strategy": "constrained_join"
+    },
+    {
+      "id": "ood_af_010",
+      "type": "attr_filter",
+      "question_zh": "China 装备的且部署在车载机动上的雷达有哪些？",
+      "question_zh_original": "中国 装备的且部署在车载机动上的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ],
+      "gold_answer": [
+        "JY-8 Radar",
+        "JY-9 Radar",
+        "Plessey AR-320"
+      ],
+      "gold_constraint": null,
+      "expected_strategy": "constrained_join"
+    },
+    {
+      "id": "ood_af_023",
+      "type": "attr_filter",
+      "question_zh": "原产于 USA 的且支持 信标询问 模式的雷达有哪些？",
+      "question_zh_original": "原产于 美国 的且支持 信标询问 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APN-242/59",
+        "AN/APQ-126V/158",
+        "AN/APQ-170(V)/425(V)",
+        "AN/APQ-174"
+      ],
+      "gold_constraint": null,
+      "expected_strategy": "constrained_join"
+    },
+    {
+      "id": "ood_neg_001",
+      "type": "negation",
+      "question_zh": "EL/M-2080 Green Pine 是否工作在 C band？",
+      "question_zh_original": "EL/M-2080 Green Pine 是否工作在 C 波段？",
+      "bilingual_subs": [
+        [
+          "C 波段",
+          "C band"
+        ]
+      ],
+      "gold_answer": "否",
+      "gold_constraint": null,
+      "expected_strategy": "complement"
+    },
+    {
+      "id": "ood_neg_039",
+      "type": "negation",
+      "question_zh": "Thomson-CSF 是否工作在 S band？",
+      "question_zh_original": "Thomson-CSF 是否工作在 S 波段？",
+      "bilingual_subs": [
+        [
+          "S 波段",
+          "S band"
+        ]
+      ],
+      "gold_answer": "否",
+      "gold_constraint": null,
+      "expected_strategy": "complement"
+    },
+    {
+      "id": "ood_neg_027",
+      "type": "negation",
+      "question_zh": "AN/AWG-20 是否被 Sweden 装备使用？",
+      "question_zh_original": "AN/AWG-20 是否被 瑞典 装备使用？",
+      "bilingual_subs": [
+        [
+          "瑞典",
+          "Sweden"
+        ]
+      ],
+      "gold_answer": "否",
+      "gold_constraint": null,
+      "expected_strategy": "complement"
+    }
+  ]
+}

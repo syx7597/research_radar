@@ -1,0 +1,795 @@
+{
+  "per_question": [
+    {
+      "id": "bs_ac_010",
+      "type": "agg_count",
+      "question": "采用 地面MTI 技术的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ],
+      "gold_answer": 29,
+      "on": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 29,
+          "pred": null,
+          "correct": false,
+          "rel_err": 1.0
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 29,
+          "pred": null,
+          "correct": false,
+          "rel_err": 1.0
+        }
+      }
+    },
+    {
+      "id": "bs_ac_038",
+      "type": "agg_count",
+      "question": "工作在 X band的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "X 波段",
+          "X band"
+        ]
+      ],
+      "gold_answer": 149,
+      "on": {
+        "answer": "工作在X band的雷达共有155款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 149,
+          "pred": 155,
+          "correct": false,
+          "rel_err": 0.040268456375838924
+        }
+      },
+      "off": {
+        "answer": "工作在X band的雷达共有155款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 149,
+          "pred": 155,
+          "correct": false,
+          "rel_err": 0.040268456375838924
+        }
+      }
+    },
+    {
+      "id": "bs_ac_025",
+      "type": "agg_count",
+      "question": "USA 一共装备了多少款雷达？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": 228,
+      "on": {
+        "answer": "根据检索证据，美国共装备了229款雷达。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 228,
+          "pred": 229,
+          "correct": false,
+          "rel_err": 0.0043859649122807015
+        }
+      },
+      "off": {
+        "answer": "根据检索证据，美国共装备了229款雷达。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 228,
+          "pred": 229,
+          "correct": false,
+          "rel_err": 0.0043859649122807015
+        }
+      }
+    },
+    {
+      "id": "bs_ac_030",
+      "type": "agg_count",
+      "question": "China 一共装备了多少款雷达？",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ],
+      "gold_answer": 50,
+      "on": {
+        "answer": "根据检索证据，中国共装备了48款雷达。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 50,
+          "pred": 48,
+          "correct": false,
+          "rel_err": 0.04
+        }
+      },
+      "off": {
+        "answer": "根据检索证据，中国共装备了48款雷达。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 50,
+          "pred": 48,
+          "correct": false,
+          "rel_err": 0.04
+        }
+      }
+    },
+    {
+      "id": "bs_ae_035",
+      "type": "agg_enum",
+      "question": "列出工作在 S band的所有雷达。",
+      "bilingual_subs": [
+        [
+          "S 波段",
+          "S band"
+        ]
+      ],
+      "gold_answer": [
+        "ALP 100-G",
+        "AMES Type 80",
+        "AMES Type 82",
+        "AMES Type 84",
+        "AMES Type 85",
+        "AN/APS-4 search radar",
+        "AN/CPS-4 Radar",
+        "AN/CPS-6 Radar",
+        "AN/FPS-14 Radar",
+        "AN/FPS-18 Radar",
+        "AN/FPS-27",
+        "AN/FPS-6 Radar",
+        "AN/GPN-27",
+        "AN/GPN-30",
+        "AN/MPS-19",
+        "AN/SPS-39",
+        "AN/SPS-8",
+        "AN/SPY-6",
+        "AN/TPQ-53 Quick Reaction Capability Radar",
+        "AN/TPS-32",
+        "AN/TPS-70",
+        "AN/TPS-80 Ground/Air Task Oriented Radar",
+        "ASR-11",
+        "ASR-9",
+        "ASV Mark III radar",
+        "Aselsan EIRS",
+        "EL/M-2090",
+        "Erieye",
+        "Giraffe radar",
+        "Green Garlic",
+        "Ground Master 200",
+        "Ground Master 200 Multi Mission",
+        "Herakles (radar)",
+        "IMEJIb",
+        "JY-9 Radar",
+        "Kashef",
+        "N001VE",
+        "OBOI",
+        "OPS-12",
+        "OPS-4",
+        "Orange Yeoman",
+        "Plessey AR-320",
+        "Plessey AR-3D",
+        "Raphael-TH/SLAR2000",
+        "SAMPSON",
+        "SCR-720",
+        "SJ radar",
+        "ThalesAirborneSystems",
+        "Type 277 radar",
+        "Type 346 radar"
+      ],
+      "on": {
+        "answer": "工作在 S band 的雷达共有 50 个，包括：ALP 100-G、AMES Type 80、AMES Type 82、AMES Type 84、AMES Type 85、AN/APS-4 search radar、AN/CPS-4 Radar、AN/CPS-6 Radar、AN/FPS-14 Radar、AN/FPS-18 Radar、AN/FPS-27、AN/FPS-6 Radar、AN/GPN-27、AN/GPN-30、AN/MPS-19、AN/SPS-39、AN/SPS-8、AN/SPY-6、AN/TPQ-53 Quick Reaction Capability Radar、AN/T",
+        "score": {
+          "metric": "recall",
+          "gold_size": 50,
+          "hit": 50,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "工作在 S band 的雷达共有 50 个，包括：ALP 100-G、AMES Type 80、AMES Type 82、AMES Type 84、AMES Type 85、AN/APS-4 search radar、AN/CPS-4 Radar、AN/CPS-6 Radar、AN/FPS-14 Radar、AN/FPS-18 Radar、AN/FPS-27、AN/FPS-6 Radar、AN/GPN-27、AN/GPN-30、AN/MPS-19、AN/SPS-39、AN/SPS-8、AN/SPY-6、AN/TPQ-53 Quick Reaction Capability Radar、AN/T",
+        "score": {
+          "metric": "recall",
+          "gold_size": 50,
+          "hit": 50,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_ae_027",
+      "type": "agg_enum",
+      "question": "列出所有采用 MTI 技术的雷达。",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ],
+      "gold_answer": [
+        "AIRSTAR",
+        "AN/APG-68/68(V)",
+        "AN/APG-70/70(V)",
+        "AN/APQ-126",
+        "AN/APQ-126(V)",
+        "AN/APQ-137",
+        "AN/APQ-137/137B",
+        "AN/APQ-181",
+        "AN/APS-119",
+        "AN/APS-120/125/138/139",
+        "AN/APS-143(V)3",
+        "AN/APS-143(V)3/143B(V)3/143C(V)3",
+        "AN/APS-143B(V)3",
+        "AN/APS-144",
+        "AN/APS-145",
+        "AN/APS-147",
+        "AN/APS-149",
+        "AN/APS-94",
+        "AN/APS-95",
+        "AN/APY-1",
+        "AN/APY-12",
+        "AN/ZPQ-1TeSAR",
+        "AN/ZPQ-1TeSAR(",
+        "APBAJIET",
+        "APS-784",
+        "ASSR-1000",
+        "Aisbery-Razrez",
+        "Electric",
+        "FlatJack",
+        "HiSAR",
+        "Horizon",
+        "IMEJIb",
+        "Kvant",
+        "Martin",
+        "Master",
+        "Multi-Mode",
+        "Norden(Talons)",
+        "NorthropGrumman",
+        "Orchidee",
+        "Pharaon",
+        "RC-121",
+        "RDM",
+        "RDY",
+        "Raphael-TH/SLAR2000",
+        "SLAR300",
+        "SOSTAR-XSAR/MTI",
+        "SWORD(AWARDS)",
+        "TARGET",
+        "ThalesAirborneSystems",
+        "Thomson-CSF)",
+        "Zhuk-AE"
+      ],
+      "on": {
+        "answer": "采用 MTI 技术的雷达有：Raphael-TH/SLAR2000 和 ThalesAirborneSystems。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 51,
+          "hit": 2,
+          "recall": 0.0392156862745098,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "采用 MTI 技术的雷达有：Raphael-TH/SLAR2000 和 ThalesAirborneSystems。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 51,
+          "hit": 2,
+          "recall": 0.0392156862745098,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ae_037",
+      "type": "agg_enum",
+      "question": "列出所有支持 地面MTI 模式的雷达。",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-66 SASS",
+        "AN/APG-70/70(V)",
+        "AN/APG-77/77V",
+        "AN/APG-80",
+        "AN/APG-81",
+        "AN/APS-137B(V)5",
+        "AN/APY-6",
+        "ASARS-2A",
+        "Bapc(N011M)",
+        "Captor-E",
+        "FC-1",
+        "HMMII",
+        "KObE",
+        "Lynx",
+        "MC2A",
+        "NorthropGrumman",
+        "Osa",
+        "RACR",
+        "RDY",
+        "Thomson-CSF",
+        "Vixen1000/ES-05",
+        "Zhuk-A3",
+        "Zhuk-A3FGA29",
+        "Zhuk-A3FGA35",
+        "Zhuk-MC3"
+      ],
+      "on": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 25,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 25,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ae_040",
+      "type": "agg_enum",
+      "question": "请列出 China电子科技集团 研制的所有雷达。",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ],
+      "gold_answer": [
+        "CS/SPG-6",
+        "FLORAKO",
+        "GL-1002",
+        "JY-14 Radar",
+        "JY-8 Radar",
+        "JY-9 Radar",
+        "KLC-1",
+        "Type 341 radar",
+        "Type 345 Radar",
+        "Type 346 radar",
+        "Type 351 Radar",
+        "Type 354 radar",
+        "Type 362 Radar",
+        "Type 382 radar",
+        "Type 517 radar",
+        "Type 752 Radar",
+        "WX-200",
+        "WX-300",
+        "WX-400"
+      ],
+      "on": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 19,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 19,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_af_037",
+      "type": "attr_filter",
+      "question": "原产于 France 的且支持 等高线测绘 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ]
+      ],
+      "gold_answer": [
+        "Agave",
+        "RDI"
+      ],
+      "on": {
+        "answer": "根据检索证据，原产于法国且支持等高线测绘模式的雷达有：**Agave** 和 **RDI**。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 2,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "根据检索证据，原产于法国且支持等高线测绘模式的雷达有：**Agave** 和 **RDI**。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 2,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_af_005",
+      "type": "attr_filter",
+      "question": "USA 装备的且采用 地面 技术的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-68/68(V)",
+        "AN/APG-70/70(V)"
+      ],
+      "on": {
+        "answer": "否（KG中无相关记录）。证据显示，美国装备的雷达有229个，但采用地面技术的雷达数量为0，因此没有符合条件的雷达。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "否（KG中无相关记录）。证据显示，美国装备的雷达有229个，采用地面技术的雷达有1个（AMES Type 7 radar），但两者交集为空，因此没有同时满足两个条件的雷达。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_af_004",
+      "type": "attr_filter",
+      "question": "France 装备的且部署在固定站上的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ]
+      ],
+      "gold_answer": [
+        "Ground Master 200 Multi Mission",
+        "Ground Master 400"
+      ],
+      "on": {
+        "answer": "法国装备且部署在固定站上的雷达有：Ground Master 200 Multi Mission 和 Ground Master 400。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 2,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "法国装备且部署在固定站上的雷达有：Ground Master 200 Multi Mission 和 Ground Master 400。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 2,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_af_008",
+      "type": "attr_filter",
+      "question": "USA 装备的且采用 单脉冲 技术的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-63",
+        "AN/APG-66",
+        "AN/APG-66(V)1",
+        "AN/APG-67/67(V)",
+        "AN/APG-68/68(V)",
+        "AN/APG-69",
+        "AN/APG-70/70(V)",
+        "AN/APG-71",
+        "AN/APG-73",
+        "AN/APG-79",
+        "AN/APG-81",
+        "AN/APQ-122(V)",
+        "AN/APQ-134/146/171",
+        "AN/APQ-140",
+        "AN/APQ-174",
+        "AN/APQ-180",
+        "AN/APQ-181",
+        "AN/APQ-99",
+        "AN/APS-119",
+        "Altair",
+        "F-15A/R-14A"
+      ],
+      "on": {
+        "answer": "USA 装备且采用单脉冲技术的雷达共有21种，包括：AN/APG-63、AN/APG-66、AN/APG-66(V)1、AN/APG-67/67(V)、AN/APG-68/68(V)、AN/APG-69、AN/APG-70/70(V)、AN/APG-71、AN/APG-73、AN/APG-79、AN/APG-81、AN/APQ-122(V)、AN/APQ-134/146/171、AN/APQ-140、AN/APQ-174、AN/APQ-180、AN/APQ-181、AN/APQ-99、AN/APS-119、Altair、F-15A/R-14A。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 21,
+          "hit": 21,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "USA 装备且采用单脉冲技术的雷达共有21种，包括：AN/APG-63、AN/APG-66、AN/APG-66(V)1、AN/APG-67/67(V)、AN/APG-68/68(V)、AN/APG-69、AN/APG-70/70(V)、AN/APG-71、AN/APG-73、AN/APG-79、AN/APG-81、AN/APQ-122(V)、AN/APQ-134/146/171、AN/APQ-140、AN/APQ-174、AN/APQ-180、AN/APQ-181、AN/APQ-99、AN/APS-119、Altair、F-15A/R-14A。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 21,
+          "hit": 21,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_af_018",
+      "type": "attr_filter",
+      "question": "原产于 USA 的且支持 速度搜索 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-65/65(V)",
+        "AN/APG-67/67(V)",
+        "AN/APG-70/70(V)",
+        "APG-63(V)3",
+        "Avionics 2002-2003. 581.",
+        "Helicopter"
+      ],
+      "on": {
+        "answer": "原产于美国且支持速度搜索模式的雷达有：AN/APG-65/65(V)、AN/APG-67/67(V)、AN/APG-70/70(V)、APG-63(V)3、Avionics 2002-2003. 581.、Helicopter。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 6,
+          "hit": 6,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "原产于美国且支持速度搜索模式的雷达有：AN/APG-65/65(V)、AN/APG-67/67(V)、AN/APG-70/70(V)、APG-63(V)3、Avionics 2002-2003. 581.、Helicopter。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 6,
+          "hit": 6,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_ri_013",
+      "type": "relation_inverse",
+      "question": "支持 地面MTI 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 20,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 20,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ri_017",
+      "type": "relation_inverse",
+      "question": "工作在 S band的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "S 波段",
+          "S band"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "工作在 S band 的雷达共有 50 个，包括：ALP 100-G、AMES Type 80、AMES Type 82、AMES Type 84、AMES Type 85、AN/APS-4 search radar、AN/CPS-4 Radar、AN/CPS-6 Radar、AN/FPS-14 Radar、AN/FPS-18 Radar、AN/FPS-27、AN/FPS-6 Radar、AN/GPN-27、AN/GPN-30、AN/MPS-19、AN/SPS-39、AN/SPS-8、AN/SPY-6、AN/TPQ-53 Quick Reaction Capability Radar、AN/T",
+        "score": {
+          "metric": "recall",
+          "gold_size": 50,
+          "hit": 50,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "工作在 S band 的雷达共有 50 个，包括：ALP 100-G、AMES Type 80、AMES Type 82、AMES Type 84、AMES Type 85、AN/APS-4 search radar、AN/CPS-4 Radar、AN/CPS-6 Radar、AN/FPS-14 Radar、AN/FPS-18 Radar、AN/FPS-27、AN/FPS-6 Radar、AN/GPN-27、AN/GPN-30、AN/MPS-19、AN/SPS-39、AN/SPS-8、AN/SPY-6、AN/TPQ-53 Quick Reaction Capability Radar、AN/T",
+        "score": {
+          "metric": "recall",
+          "gold_size": 50,
+          "hit": 50,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_ri_006",
+      "type": "relation_inverse",
+      "question": "支持 SAR 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "合成孔径",
+          "SAR"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "支持 SAR 模式的雷达有：AN/APS-143(V)3、AN/APY-6、MC2A、Master、NorthropGrumman。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 21,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "支持 SAR 模式的雷达有：AN/APS-143(V)3、AN/APY-6、MC2A、Master、NorthropGrumman。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 21,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ri_020",
+      "type": "relation_inverse",
+      "question": "采用 AESA 技术的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "有源相控阵",
+          "AESA"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "采用 AESA 技术的雷达有：F/A-18、RACR、RBE2。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 32,
+          "hit": 3,
+          "recall": 0.09375,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "采用 AESA 技术的雷达有：F/A-18、RACR、RBE2。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 32,
+          "hit": 3,
+          "recall": 0.09375,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_neg_039",
+      "type": "negation",
+      "question": "Thomson-CSF 是否工作在 S band？",
+      "bilingual_subs": [
+        [
+          "S 波段",
+          "S band"
+        ]
+      ],
+      "gold_answer": "否",
+      "on": {
+        "answer": "否（KG中无相关记录）。Thomson-CSF在知识图谱中的工作频段为I和J，未包含S band。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "否（KG中无相关记录）。Thomson-CSF在知识图谱中的工作频段为I和J，未包含S band。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_neg_035",
+      "type": "negation",
+      "question": "AN/APQ-153 是否被 Germany 装备使用？",
+      "bilingual_subs": [
+        [
+          "德国",
+          "Germany"
+        ]
+      ],
+      "gold_answer": "否",
+      "on": {
+        "answer": "否（KG中无相关记录）。证据显示AN/APQ-153仅被美国装备使用，未提及Germany。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "否。根据知识图谱，AN/APQ-153 的 operatedBy 关系仅指向美国，没有记录显示被 Germany 装备使用。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      }
+    }
+  ]
+}

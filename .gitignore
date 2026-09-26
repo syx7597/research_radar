@@ -1,0 +1,103 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Caches / logs / runtime artifacts
+cache/
+logs/
+checkpoints/
+.vscode/
+.claude/
+.codex/
+.agents/
+
+# Large binary indices (regenerable)
+*.faiss
+graphrag_index/faiss.index
+graphrag_index/faiss_meta.pkl
+
+# External cloned repo (has its own .git; not part of this project's history)
+external/rog/
+
+# Secrets — never commit API keys
+apikey.txt
+apikey*.txt
+*.key
+.env
+.env.*
+!.env.example
+
+# LaTeX build artifacts (regenerable)
+*.aux
+*.log
+*.out
+*.toc
+
+# OS
+.DS_Store
+Thumbs.db
+graphrag_index/merged_triples.pre_schema_expand.bak.json
+graphrag_index/merged_triples.pre_v2clean.bak.json
+graphrag_index/merged_triples.pre_v2repair.bak.json
+
+# Scraper HTML caches & crawl logs (refetchable)
+radar_corpus/globalsecurity_cache/
+radar_corpus/radartutorial_cache/
+radar_corpus/crawl.log
+
+# v3 pipeline intermediate work + LLM cache (regenerable)
+pipeline/v3/work/
+pipeline/v3/cache/
+kg_v3/
+
+# manual rendered page images (regenerable from PDF)
+pipeline/v3/manual/pages/
+pipeline/v3/manual/manual_split/
+pipeline/v3/manual/manual_body_pages/
+pipeline/v3/manual/manual_appendix_ab_pages/
+kg_v3/narrative.faiss
+kg_v3/narrative_meta.pkl
+data/v3/naval_manual/
+data/v3/naval_appendix_pages/
+kg_v3/retrieval_index/
+
+# Public repository: local research data are recorded in artifacts/data_manifest.json.
+# Keep files on disk; never add originals, full-text transcripts or downloaded datasets.
+/manuals/
+/data/
+/radar_corpus/
+/graphrag_index/
+/kg_v3/
+/extraction_results/
+/ca_agraphrag/data/
+/ca_agraphrag/ckpt_*/
+/datasets/kqa_pro/
+/datasets/webqsp/
+/datasets/mintaka/
+/datasets/lc_quad/
+/external/
+/example/
+/files/
+/artifacts/local_*.json
+/archive/local_backups/
+/experiments/ragas_eval_input.json
+/reports/neo4j_import/
+
+# Generated presentations/previews and local design assets; keep scripts and Markdown.
+*.pptx
+/reports/*_preview/
+/reports/academic_figures/
+/reports/ChatGPT Image*.png
+/reports/*.pdf
+/paper/*.pdf
+/thesis/*.pdf
+/cdb5337dddbb3224847ee8bf65ea0fa.jpg
+*.err
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bbl
+*.blg

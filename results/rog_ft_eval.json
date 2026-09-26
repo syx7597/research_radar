@@ -1,0 +1,6292 @@
+[
+ {
+  "id": "sh_001",
+  "type": "single_hop",
+  "question": "OBOI 的decade是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1970",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_002",
+  "type": "single_hop",
+  "question": "Systema的频段是",
+  "rog_ft_answer": "Systema的频段是W。",
+  "score": {
+   "metric": "substring",
+   "gold": "W",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_003",
+  "type": "single_hop",
+  "question": "SWORD(AWARDS) 的weight_kg是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "30.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_004",
+  "type": "single_hop",
+  "question": "Zhukovsky, Russia 的location_type是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "city",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_005",
+  "type": "single_hop",
+  "question": "HiVision 的resolution_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "距离分辨力<6m，方位分辨力0.25° 33.7GHz~35.5GHz扫频、功率达1W的发射功率信 6",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_006",
+  "type": "single_hop",
+  "question": "Primus-880 的drive_method_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "电机驱动 不能保持目标原样，那么该地区用蓝色背景显示",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_007",
+  "type": "single_hop",
+  "question": "AN/APQ-181 的frequency_GHz是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "15.25",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_008",
+  "type": "single_hop",
+  "question": "AMSAR 的year_max是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "2015",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_009",
+  "type": "single_hop",
+  "question": "RASSR 的receiver_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "组件中频480MHz，脉压比100：1",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_010",
+  "type": "single_hop",
+  "question": "Maxson 的resolution_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "距离60m 60MHz线性调频波匹配的压缩表面声波延迟线把",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_011",
+  "type": "single_hop",
+  "question": "AN/APS-145 的frequency_GHz_max是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "0.45",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_012",
+  "type": "single_hop",
+  "question": "AN/APG-70/70(V) 的drive_method_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "液压驱动（采用3轴稳定） 硬件最后的检验及综合，包括电磁干扰试验和硬件 167",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_013",
+  "type": "single_hop",
+  "question": "AN/FPS-35的使用国是",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_014",
+  "type": "single_hop",
+  "question": "EF2000 的eccm_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "频率捷变，宽带频谱扩展发射，超低副",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_015",
+  "type": "single_hop",
+  "question": "General Dynamics 的country是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "中国",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_016",
+  "type": "single_hop",
+  "question": "RLS-35 的eccm_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "有较强抗干扰能力(能跳频)，具备有限的",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_017",
+  "type": "single_hop",
+  "question": "WX-160支持哪些工作模式",
+  "rog_ft_answer": "WX-160支持的工作模式为：下视。",
+  "score": {
+   "metric": "substring",
+   "gold": "下视",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_018",
+  "type": "single_hop",
+  "question": "KWX-40/56/58 的cooling_methods是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "air",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_019",
+  "type": "single_hop",
+  "question": "AWACS 的cooling_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "方式液冷 截止到2011年1月，已经生产了约18套Phalcon",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_020",
+  "type": "single_hop",
+  "question": "Bendix 的defunct_year是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1983",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_021",
+  "type": "single_hop",
+  "question": "FC-1 的transmitter_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "行波管型 上视迎头：180km",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_022",
+  "type": "single_hop",
+  "question": "AN/APG-73 的price_year是？",
+  "rog_ft_answer": "2006",
+  "score": {
+   "metric": "substring",
+   "gold": "2006",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_023",
+  "type": "single_hop",
+  "question": "AN/APQ-92/112/148/156/173 的year_min是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1963",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_024",
+  "type": "single_hop",
+  "question": "RDR-1500B 的input_power_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "AC400Hz115V34VADC28V6A 回避，导航信息显示 TSO兼容性C-63",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_025",
+  "type": "single_hop",
+  "question": "AN/APS-130 的rd_year_max是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1986",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_026",
+  "type": "single_hop",
+  "question": "AN/AVQ-56 的status_description是？",
+  "rog_ft_answer": "AN/AVQ-56 的status_description是：1988年交付最后产品，采用了一个宽频带的圆形平板隙缝阵天线。",
+  "score": {
+   "metric": "substring",
+   "gold": "1988年交付最后产品 （1）采用了一个宽频带的圆形平板隙缝阵天线，",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_027",
+  "type": "single_hop",
+  "question": "Zhuk-AC3基于什么型号",
+  "rog_ft_answer": "Zhuk-AC3基于Zhuk-A3型号。",
+  "score": {
+   "metric": "substring",
+   "gold": "Zhuk-A3",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_028",
+  "type": "single_hop",
+  "question": "AN/APQ-134 的frequency_GHz是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "16.85",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_029",
+  "type": "single_hop",
+  "question": "AN/APQ-137 的year是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1971",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_030",
+  "type": "single_hop",
+  "question": "AN/APN-169(V) 的decade是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1970",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_031",
+  "type": "single_hop",
+  "question": "Marconi 的founded_year是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1897",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_032",
+  "type": "single_hop",
+  "question": "Southfield, Michigan, United States 的city是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "Southfield, Michigan",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_033",
+  "type": "single_hop",
+  "question": "RS-422 的category是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "interface",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_034",
+  "type": "single_hop",
+  "question": "Flamr 的antenna_gain_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "30.5dB 7.显示器",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_035",
+  "type": "single_hop",
+  "question": "Northrop Grumman Corporation 的ownership_type是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "public",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_036",
+  "type": "single_hop",
+  "question": "Anemone( 的weight_kg是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "60.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_037",
+  "type": "single_hop",
+  "question": "APQ-159(V) 的peak_power_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "60kW(APQ-153) 公司签订了一份年度1300万美元的合同，合同期两",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_038",
+  "type": "single_hop",
+  "question": "Goodyear 的range_km是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "5.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_039",
+  "type": "single_hop",
+  "question": "AN/APG-65/65(V) 的year_max是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1982",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_040",
+  "type": "single_hop",
+  "question": "ARINC 3 MCU 的category是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "data_bus",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_041",
+  "type": "single_hop",
+  "question": "RDR-1500B用于哪类飞机",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "mile",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_042",
+  "type": "single_hop",
+  "question": "Kvant 的scan_range_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "俯仰扫描由海面至30000m 现状据2002年资料报道，未明确是否装备",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_043",
+  "type": "single_hop",
+  "question": "AN/AVQ-56 的display_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "159mm×159mm×327mm 工作方式气象探测，地形测绘",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_044",
+  "type": "single_hop",
+  "question": "HiSAR 的frequency_GHz_min是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "8.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_045",
+  "type": "single_hop",
+  "question": "Primus-650 的antenna_type_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "式 平板缝阵",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_046",
+  "type": "single_hop",
+  "question": "AN/APG-76 family采用了哪些规范",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "MIL-STD-1553",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_047",
+  "type": "single_hop",
+  "question": "MERA 的year_max是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1969",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_048",
+  "type": "single_hop",
+  "question": "RCA 的defunct_year是？",
+  "rog_ft_answer": "RCA 的 defunct_year 是 1986。",
+  "score": {
+   "metric": "substring",
+   "gold": "1986",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_049",
+  "type": "single_hop",
+  "question": "AN/APS-147 的resolution_m是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_050",
+  "type": "single_hop",
+  "question": "RBE2 的rd_year_max是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "2002",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_051",
+  "type": "single_hop",
+  "question": "APS-134(V)7支持的接口",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "MIL-STD-1553",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_052",
+  "type": "single_hop",
+  "question": "Paris, France 的country是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "France",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_053",
+  "type": "single_hop",
+  "question": "RCA 的founded_year是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1919",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_054",
+  "type": "single_hop",
+  "question": "AJIIMA3-23 的input_power_kVA是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "4.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_055",
+  "type": "single_hop",
+  "question": "APG-63(V)3 的volume_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "0.25m AN/APG-63",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_056",
+  "type": "single_hop",
+  "question": "Block50/52 的input_power_kVA是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "10.5",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_057",
+  "type": "single_hop",
+  "question": "APQ-159(V) 的beam_width_deg是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "7.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_058",
+  "type": "single_hop",
+  "question": "AN/APQ-181 的year_min是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1982",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_059",
+  "type": "single_hop",
+  "question": "ARINC-407 的category是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "data_bus",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_060",
+  "type": "single_hop",
+  "question": "ARINC453 的category是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "data_bus",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_061",
+  "type": "single_hop",
+  "question": "APQ-122 的beam_width_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "方位2.4°（APQ-175） 阿曼、菲律宾、葡萄牙、沙特阿拉伯、新加坡、",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_062",
+  "type": "single_hop",
+  "question": "Bell Laboratories的母公司是",
+  "rog_ft_answer": "Bell Laboratories的母公司是Nokia。",
+  "score": {
+   "metric": "substring",
+   "gold": "Nokia",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_063",
+  "type": "single_hop",
+  "question": "Radio Corporation of America 的founded_year是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1919",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_064",
+  "type": "single_hop",
+  "question": "Zaslon装备在哪些国家",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "俄罗斯",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_065",
+  "type": "single_hop",
+  "question": "Aisbery-Razrez 的pulse_width_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "0.6us,2.5us 沿速度矢量的地形起伏：在速度天量下方所预置的",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_066",
+  "type": "single_hop",
+  "question": "Aisbery-Razrez 的input_power_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "AC600VA,DC150W 监视状态：机内监视系统能自动地测定所有工 作状态的故障，并且给飞行员提供完成某些测试时",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_067",
+  "type": "single_hop",
+  "question": "AN/APQ-126V/158 的decade是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1960",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_068",
+  "type": "single_hop",
+  "question": "OBOI 的antenna_gain_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "4100（发射时），3000（接收时）",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_069",
+  "type": "single_hop",
+  "question": "Japanese Defense Ministry 的country是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "日本",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_070",
+  "type": "single_hop",
+  "question": "Raytheon Company Space and Airbome 的founded_year是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1922",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_071",
+  "type": "single_hop",
+  "question": "AN/APG-80 的beam_width_deg是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "140.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_072",
+  "type": "single_hop",
+  "question": "Thomson-CSF 的input_power_kVA是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1.8",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_073",
+  "type": "single_hop",
+  "question": "AN/APG-69 的prf_kHz是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "18.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_074",
+  "type": "single_hop",
+  "question": "Marconi Electronic Systems的母公司是",
+  "rog_ft_answer": "Marconi Electronic Systems的母公司是BAE Systems。",
+  "score": {
+   "metric": "substring",
+   "gold": "BAE Systems",
+   "correct": true
+  }
+ },
+ {
+  "id": "sh_075",
+  "type": "single_hop",
+  "question": "Zhuk(N010) 的weight_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "50kg（不含显示器）",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_076",
+  "type": "single_hop",
+  "question": "Zhuk-AE 的weight_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "305kg(KyK-MCΦ3)，75kg(Pharaon)，",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_077",
+  "type": "single_hop",
+  "question": "Cyrano-IV 的period_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "11972年，1980年，1982",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_078",
+  "type": "single_hop",
+  "question": "HMMII 的avg_power_W是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1600.0",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_079",
+  "type": "single_hop",
+  "question": "Thorn EMI Plc 的defunct_year是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "1996",
+   "correct": false
+  }
+ },
+ {
+  "id": "sh_080",
+  "type": "single_hop",
+  "question": "APS-504(V)5 的antenna_gain_description是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "33dB(单程最小)",
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_001",
+  "type": "relation_inverse",
+  "question": "工作在 D 波段的雷达有哪些？",
+  "rog_ft_answer": "工作在 D 波段的雷达有：ASARS-2、ASARS-2A、MESA、Mercury2、RDR-1E:75kW、RDR-1FB，共6款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 6,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_002",
+  "type": "relation_inverse",
+  "question": "Northrop Grumman Electrics Systems 研制了哪些雷达？",
+  "rog_ft_answer": "根据路径遍历结果，Northrop Grumman Electrics Systems 研制的雷达包括：AN/ZPQ-1TeSAR、AN/ZPQ-1TeSAR( 和 Electric。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_003",
+  "type": "relation_inverse",
+  "question": "具备 naval_gunnery 功能的雷达有哪些？",
+  "rog_ft_answer": "具备 naval_gunnery 功能的雷达有 AN/APS-147、AN/SPG-53 和 AN/SPG-60，共 3 款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_004",
+  "type": "relation_inverse",
+  "question": "采用 单脉冲 技术的雷达有哪些？",
+  "rog_ft_answer": "采用单脉冲技术的雷达共有69款，包括AN/APG-63、AN/APG-65/65(V)、AN/APG-66、AN/APG-66(V)1、AN/APG-67/67(V)、AN/APG-68/68(V)、AN/APG-69、AN/APG-70/70(V)、AN/APG-71、AN/APG-73、AN/APG-79、AN/APG-81、AN/APN-241、AN/APO-99/172、AN/APQ-110、AN/APQ-110/128、AN/APQ-122(V)、AN/APQ-126V/158、AN/APQ-134/146/171、AN/APQ-140、AN/APQ-172(V)、AN/APQ-17",
+  "score": {
+   "metric": "recall",
+   "gold_size": 69,
+   "hit": 45,
+   "recall": 0.6521739130434783,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_005",
+  "type": "relation_inverse",
+  "question": "部署在预警机上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，部署在预警机上的雷达包括：Airborne early warning and control、EL/W-2090、Erieye、Ground-controlled interception 和 Over-the-horizon radar，共5种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_006",
+  "type": "relation_inverse",
+  "question": "支持 合成孔径 模式的雷达有哪些？",
+  "rog_ft_answer": "支持合成孔径模式的雷达共有21款，包括AN/APG-70/70(V)、AN/APQ-164、AN/APQ-181、AN/APS-94、Aisbery-Razrez、Bapc(N011M)、Captor-E、FC-1、Grifo、KOMSAR、KObE、LAIRS、MOCKMT、MSR、PIICH-2AM/2H、RDR-1600、RDY、Raphael-TH/SLAR2000、Sandia、Zhuk-A3FGA29和Zhuk-A3FGA35。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 21,
+   "hit": 21,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_007",
+  "type": "relation_inverse",
+  "question": "支持 搜索与营救 模式的雷达有哪些？",
+  "rog_ft_answer": "支持搜索与营救模式的雷达有：ARS-800、ARS-880、Iguane 和 Tu-134。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_008",
+  "type": "relation_inverse",
+  "question": "Northrop Grumman Electronic Systems 研制了哪些雷达？",
+  "rog_ft_answer": "Northrop Grumman Electronic Systems 研制的雷达包括 AN/APG-66(V)1、AN/APG-79、AN/APN-241 和 F/A-18。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_009",
+  "type": "relation_inverse",
+  "question": "部署在A-7D上的雷达有哪些？",
+  "rog_ft_answer": "部署在A-7D上的雷达有AN/APQ-110、AN/APQ-110/128和AN/APQ-126V/158，共3款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_010",
+  "type": "relation_inverse",
+  "question": "具备 ATC 功能的雷达有哪些？",
+  "rog_ft_answer": "具备 ATC 功能的雷达包括：AN/APN-241、AN/GPN-12、AN/GPN-20、AN/GPN-27、AN/GPN-30、AN/MPN、AN/SPN-35、AN/SPN-46、ASR-9、Air Route Surveillance Radar、Airport surveillance radar 和 Precision approach radar，共 12 种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 12,
+   "hit": 12,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_011",
+  "type": "relation_inverse",
+  "question": "German Democratic Republic 装备了哪些雷达？",
+  "rog_ft_answer": "German Democratic Republic 装备的雷达包括：5N87、P-19 radar 和 SON-9。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_012",
+  "type": "relation_inverse",
+  "question": "支持 蒙皮测绘 模式的雷达有哪些？",
+  "rog_ft_answer": "支持蒙皮测绘模式的雷达有：AN/APN-241、AN/APN-242、AN/APN-242/59、AN/APN-59F(V)、AN/APQ-72/100/109、C-130、FMR-200X/200X(V)，共7款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_013",
+  "type": "relation_inverse",
+  "question": "支持 地面动目标指示 模式的雷达有哪些？",
+  "rog_ft_answer": "支持地面动目标指示模式的雷达共有20款，包括AN/APG-66 SASS、AN/APG-70/70(V)、AN/APG-77/77V、AN/APG-80、AN/APG-81、AN/APS-137B(V)5、ASARS-2A、Bapc(N011M)、Captor-E、FC-1、HMMII、KObE、Osa、RACR、RDY、Thomson-CSF、Zhuk-A3、Zhuk-A3FGA29、Zhuk-A3FGA35和Zhuk-MC3。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 20,
+   "hit": 20,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_014",
+  "type": "relation_inverse",
+  "question": "支持 自动锁定 模式的雷达有哪些？",
+  "rog_ft_answer": "支持自动锁定模式的雷达有：Antilope5TC、Cyrano-IV、RC400-4 和 RDI。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_015",
+  "type": "relation_inverse",
+  "question": "由 RTX Corporation 子公司 的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_016",
+  "type": "relation_inverse",
+  "question": "Boeing 研制了哪些雷达？",
+  "rog_ft_answer": "Boeing 研制的雷达包括：AN/APG-70/70(V)、AWACS、E-767 和 Tail warning radar。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_017",
+  "type": "relation_inverse",
+  "question": "工作在 S 波段的雷达有哪些？",
+  "rog_ft_answer": "工作在 S 波段的雷达共有 50 款，包括 ALP 100-G、AMES Type 80、AN/APS-4 search radar、AN/CPS-4 Radar、AN/FPS-6 Radar、AN/SPY-6、ASR-9、Erieye、Giraffe radar、SAMPSON 等。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 50,
+   "hit": 10,
+   "recall": 0.2,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_018",
+  "type": "relation_inverse",
+  "question": "支持 单脉冲 模式的雷达有哪些？",
+  "rog_ft_answer": "支持单脉冲模式的雷达有7款：AN/APG-63(V)2、AN/APG-63(V)3、AN/APG-63(V)4、AN/APS-120/125/138/139、AN/AWG-9、KObE和RDY。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_019",
+  "type": "relation_inverse",
+  "question": "支持 风切变 模式的雷达有哪些？",
+  "rog_ft_answer": "支持风切变模式的雷达有：AN/APN-241、AN/APS-150和C-130。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_020",
+  "type": "relation_inverse",
+  "question": "采用 有源相控阵 技术的雷达有哪些？",
+  "rog_ft_answer": "采用有源相控阵技术的雷达共有32款，包括A813、AN/APG-63、AN/APG-79、AN/APG-81、AN/APG-82/82(V)、AN/APQ-181、AN/APS-147、AN/APS-149、AN/APY-9、Captor-E、Erieye、MESA、RBE2等。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 32,
+   "hit": 13,
+   "recall": 0.40625,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_021",
+  "type": "relation_inverse",
+  "question": "NorthropGrumman 研制了哪些雷达？",
+  "rog_ft_answer": "Northrop Grumman 研制的雷达包括 AN/APG-81、AN/APQ-164 和 MFAS。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 3,
+   "recall": 0.75,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_022",
+  "type": "relation_inverse",
+  "question": "具备 target_tracking 功能的雷达有哪些？",
+  "rog_ft_answer": "具备 target_tracking 功能的雷达共有 28 款，包括 AIRSTAR、AN/APG-76 family、AN/APG-78 Longbow、AN/APQ-140、AN/APQ-181、AN/APY-12、AN/APY-3、AN/TPQ-10 Radar Course Directing Central、APBAJIET、ASARS-2A、AllWeatherRadar、Automatic Gun-Laying Turret、DBS、DPN-53、Flycatcher (radar)、Horizon、LynxII、MMSBSR、Multi-Mode、N001V、RACR、SOST",
+  "score": {
+   "metric": "recall",
+   "gold_size": 28,
+   "hit": 24,
+   "recall": 0.8571428571428571,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_023",
+  "type": "relation_inverse",
+  "question": "部署在战斗机上的雷达有哪些？",
+  "rog_ft_answer": "部署在战斗机上的雷达共有44款，包括AI Mark IV radar、AN/APG-63 radar family、AN/APG-77、AN/APG-81、EL/M-2052、PS-05/A等。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 44,
+   "hit": 6,
+   "recall": 0.13636363636363635,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_024",
+  "type": "relation_inverse",
+  "question": "出口到 西班牙 的雷达有哪些？",
+  "rog_ft_answer": "出口到西班牙的雷达共有7款，包括AN/APS-124、AN/APS-124(V)、AN/APS-143(V)3、AN/APS-150、AN/SPG-53、APQ-159(V)7和Aegis Combat System。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_025",
+  "type": "relation_inverse",
+  "question": "IAI Elta 研制了哪些雷达？",
+  "rog_ft_answer": "IAI Elta 研制的雷达包括 EL/M-2052、Lynx 和 LynxII。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_026",
+  "type": "relation_inverse",
+  "question": "部署在A-6A上的雷达有哪些？",
+  "rog_ft_answer": "部署在A-6A上的雷达有3款：AN/APQ-181、AN/APQ-92/112/148/156/173和AN/APS-94。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_027",
+  "type": "relation_inverse",
+  "question": "Aselsan 研制了哪些雷达？",
+  "rog_ft_answer": "Aselsan 研制的雷达包括 ALP 100-G、Kalkan (radar) 和 MURAD AESA Radar。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_028",
+  "type": "relation_inverse",
+  "question": "Raytheon Electronic Systems 研制了哪些雷达？",
+  "rog_ft_answer": "Raytheon Electronic Systems 研制的雷达包括 AN/APG-63、AN/APS-133(V)、AN/APS-134(V) 和 AN/AWG-9。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_029",
+  "type": "relation_inverse",
+  "question": "Northrop Grumman 研制了哪些雷达？",
+  "rog_ft_answer": "Northrop Grumman 研制了至少69款雷达，包括AN/APG-59、AN/APG-66、AN/APG-77、AN/APG-81、AN/APY-9、AN/TPS-75等型号。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 69,
+   "hit": 6,
+   "recall": 0.08695652173913043,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_030",
+  "type": "relation_inverse",
+  "question": "具备 OTH 功能的雷达有哪些？",
+  "rog_ft_answer": "具备 OTH 功能的雷达包括：AN/APS-145、Cobra Mist、Over-the-horizon radar 和 Voronezh radar。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_031",
+  "type": "relation_inverse",
+  "question": "具备 airspace_surveillance 功能的雷达有哪些？",
+  "rog_ft_answer": "具备 airspace_surveillance 功能的雷达共有 96 款，包括 39N6E Kasta-2E2、A-50M、AMES Type 80、AN/APS-120、AN/FPS-117、AN/TPS-59、Cobra Dane、EL/M-2080 等。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 96,
+   "hit": 8,
+   "recall": 0.08333333333333333,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_032",
+  "type": "relation_inverse",
+  "question": "支持 目标跟踪 模式的雷达有哪些？",
+  "rog_ft_answer": "支持目标跟踪模式的雷达有：AN/APG-66(V)1、Blue Fox 和 RDY-2。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_033",
+  "type": "relation_inverse",
+  "question": "Mitsubishi Electric 研制了哪些雷达？",
+  "rog_ft_answer": "Mitsubishi Electric 研制的雷达包括 OPS-11、OPS-14、OPS-24 和 SJ radar。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_034",
+  "type": "relation_inverse",
+  "question": "具备 imaging_SAR 功能的雷达有哪些？",
+  "rog_ft_answer": "具备 imaging_SAR 功能的雷达共有 52 款，包括 AN/APG-73(V)、AN/APG-77、AN/APS-137B(V)5、AN/APS-137V、AN/APS-143(V)3、AN/APS-143(V)3/143B(V)3/143C(V)3、AN/APS-143/143(V)1/2、AN/APS-143C(V)3、AN/APS-144、AN/APS-147、AN/APS-150、AN/APS-94、AN/APY-6、AN/APY-8/8(V)(Lynx)、AN/ZPQ-1TeSAR、AN/ZPY-1 STARLite、ARS-800、ARS-880、ASARS-2、ASARS",
+  "score": {
+   "metric": "recall",
+   "gold_size": 52,
+   "hit": 51,
+   "recall": 0.9807692307692307,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_035",
+  "type": "relation_inverse",
+  "question": "支持 信标导航 模式的雷达有哪些？",
+  "rog_ft_answer": "支持信标导航模式的雷达有5款：AN/APS-133(V)、ORB37HL、RDR-1500B、RDR-1700、RT-1501A。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_036",
+  "type": "relation_inverse",
+  "question": "具备 ISAR 功能的雷达有哪些？",
+  "rog_ft_answer": "具备 ISAR 功能的雷达包括：AN/APS-137B(V)5、AN/APS-137V、AN/APS-143(V)3、AN/APS-143C(V)3、AN/APS-147、AN/APY-6、MC2A、Master 和 PAMIR，共 9 款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 15,
+   "hit": 7,
+   "recall": 0.4666666666666667,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_037",
+  "type": "relation_inverse",
+  "question": "出口到 希腊 的雷达有哪些？",
+  "rog_ft_answer": "出口到希腊的雷达共有6款，包括AN/APG-68/68(V)、AN/APQ-126(V)、RACR、RDY-2、S-300导弹系统和SearchwaterlI。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 5,
+   "recall": 0.8333333333333334,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_038",
+  "type": "relation_inverse",
+  "question": "出口到 韩国 的雷达有哪些？",
+  "rog_ft_answer": "出口到韩国的雷达有3款：AN/APG-68/68(V)、Aegis Combat System和EL/M-2080。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_039",
+  "type": "relation_inverse",
+  "question": "部署在航空母舰上的雷达有哪些？",
+  "rog_ft_answer": "部署在航空母舰上的雷达包括：AN/SPY-6、Kortik CIWS、Precision approach radar 和 SCANFAR。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_040",
+  "type": "relation_inverse",
+  "question": "部署在Dauphin上的雷达有哪些？",
+  "rog_ft_answer": "部署在Dauphin上的雷达有：Agave、HeraclesII/ORB32、ThalesAirborneSystems、Thomson-CSF。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_041",
+  "type": "relation_inverse",
+  "question": "Przemyslowy Instytut Telekomunikacji 研制了哪些雷达？",
+  "rog_ft_answer": "Przemyslowy Instytut Telekomunikacji 研制的雷达包括 ARS-400、ARS-800 和 ARS-880。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_042",
+  "type": "relation_inverse",
+  "question": "Royal Australian Navy 装备了哪些雷达？",
+  "rog_ft_answer": "Royal Australian Navy 装备的雷达包括 AN/SPG-51、AN/SPG-53 和 CEAFAR。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_043",
+  "type": "relation_inverse",
+  "question": "ΦA3OTPOH-HNNP 研制了哪些雷达？",
+  "rog_ft_answer": "根据路径遍历结果，ΦA3OTPOH-HNNP 研制的雷达包括：FlatJack、KObE、MOCKMT 和 MiG-23。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 4,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_044",
+  "type": "relation_inverse",
+  "question": "支持 Identification Friend or Foe 模式的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "skip": "no_gold_set"
+  }
+ },
+ {
+  "id": "ri_045",
+  "type": "relation_inverse",
+  "question": "澳大利亚 装备了哪些雷达？",
+  "rog_ft_answer": "澳大利亚装备的雷达包括：AN/APG-73、AN/APQ-134/146/171、AN/APS-143(V)3、CEAFAR和MESA。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_046",
+  "type": "relation_inverse",
+  "question": "支持 空空跟踪 模式的雷达有哪些？",
+  "rog_ft_answer": "支持空空跟踪模式的雷达有：AllWeatherRadar、F-15A/R-14A 和 WX-200。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_047",
+  "type": "relation_inverse",
+  "question": "支持 synthetic aperture radar mapping 模式的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "skip": "no_gold_set"
+  }
+ },
+ {
+  "id": "ri_048",
+  "type": "relation_inverse",
+  "question": "部署在F-5E上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，部署在F-5E上的雷达包括：AN/APG-66、AN/APG-67/67(V)、AN/APG-69、AN/APQ-157，以及Electric和Helicopter（后两者可能非雷达型号，需进一步确认）。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 6,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ri_049",
+  "type": "relation_inverse",
+  "question": "具备 air_track 功能的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，具备 air_track 功能的雷达共有 214 款，包括 AN/APG-63、AN/APG-77、AN/APG-81 等型号。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 214,
+   "hit": 3,
+   "recall": 0.014018691588785047,
+   "correct": false
+  }
+ },
+ {
+  "id": "ri_050",
+  "type": "relation_inverse",
+  "question": "Telephonics 研制了哪些雷达？",
+  "rog_ft_answer": "Telephonics 研制了 3 款雷达，分别是 AN/APS-143(V)3、AN/APS-143B(V)3 和 AN/APS-143C(V)3。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ac_001",
+  "type": "agg_count",
+  "question": "Marconi 一共研制了多少款雷达？",
+  "rog_ft_answer": "Marconi 一共研制了 23 款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 23,
+   "pred": 23,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_002",
+  "type": "agg_count",
+  "question": "部署在固定站上的雷达共有多少款？",
+  "rog_ft_answer": "部署在固定站上的雷达共有19款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 19,
+   "pred": 19,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_003",
+  "type": "agg_count",
+  "question": "Emerson Electric 一共研制了多少款雷达？",
+  "rog_ft_answer": "Emerson Electric 共研制了 11 款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 10,
+   "pred": 11,
+   "correct": false,
+   "rel_err": 0.1
+  }
+ },
+ {
+  "id": "ac_004",
+  "type": "agg_count",
+  "question": "NIIP 一共研制了多少款雷达？",
+  "rog_ft_answer": "NIIP 一共研制了 55 款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 53,
+   "pred": 55,
+   "correct": false,
+   "rel_err": 0.03773584905660377
+  }
+ },
+ {
+  "id": "ac_005",
+  "type": "agg_count",
+  "question": "支持 跟踪 模式的雷达共有多少款？",
+  "rog_ft_answer": "15款雷达支持跟踪模式。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 13,
+   "pred": 15,
+   "correct": false,
+   "rel_err": 0.15384615384615385
+  }
+ },
+ {
+  "id": "ac_006",
+  "type": "agg_count",
+  "question": "支持 速度搜索 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持速度搜索模式的雷达共有14款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 14,
+   "pred": 14,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_007",
+  "type": "agg_count",
+  "question": "工作在 UHF 波段的雷达共有多少款？",
+  "rog_ft_answer": "工作在 UHF 波段的雷达共有 13 款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 13,
+   "pred": 13,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_008",
+  "type": "agg_count",
+  "question": "General Electric 一共研制了多少款雷达？",
+  "rog_ft_answer": "General Electric 一共研制了 17 款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 17,
+   "pred": 17,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_009",
+  "type": "agg_count",
+  "question": "支持 地形跟随 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持地形跟随模式的雷达共有29款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 29,
+   "pred": 29,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_010",
+  "type": "agg_count",
+  "question": "采用 地面动目标指示 技术的雷达共有多少款？",
+  "rog_ft_answer": "采用地面动目标指示技术的雷达共有28款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 29,
+   "pred": 28,
+   "correct": false,
+   "rel_err": 0.034482758620689655
+  }
+ },
+ {
+  "id": "ac_011",
+  "type": "agg_count",
+  "question": "支持 信标 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持信标模式的雷达共有21款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 20,
+   "pred": 21,
+   "correct": false,
+   "rel_err": 0.05
+  }
+ },
+ {
+  "id": "ac_012",
+  "type": "agg_count",
+  "question": "采用 相控阵 技术的雷达共有多少款？",
+  "rog_ft_answer": "采用相控阵技术的雷达共有15款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 15,
+   "pred": 15,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_013",
+  "type": "agg_count",
+  "question": "部署在预警机上的雷达共有多少款？",
+  "rog_ft_answer": "根据路径遍历结果，部署在预警机上的雷达共有5款，包括Airborne early warning and control、EL/W-2090、Erieye、Ground-controlled interception和Over-the-horizon radar。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_014",
+  "type": "agg_count",
+  "question": "Raytheon Company Space and Airborne 一共研制了多少款雷达？",
+  "rog_ft_answer": "Raytheon Company Space and Airborne 一共研制了15款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 15,
+   "pred": 15,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_015",
+  "type": "agg_count",
+  "question": "原产于 加拿大 的雷达共有多少款？",
+  "rog_ft_answer": "原产于加拿大的雷达共有9款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 9,
+   "pred": 9,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_016",
+  "type": "agg_count",
+  "question": "Phazotron-NIIR 一共研制了多少款雷达？",
+  "rog_ft_answer": "Phazotron-NIIR 一共研制了30款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 26,
+   "pred": 30,
+   "correct": false,
+   "rel_err": 0.15384615384615385
+  }
+ },
+ {
+  "id": "ac_017",
+  "type": "agg_count",
+  "question": "支持 武器投放 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持“武器投放”模式的雷达共有5款，包括AN/APQ-164、AN/APQ-181、APG-63(V)3、Altair和RBE2。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_018",
+  "type": "agg_count",
+  "question": "支持 气象探测 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持气象探测模式的雷达共有35款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 47,
+   "pred": 35,
+   "correct": false,
+   "rel_err": 0.2553191489361702
+  }
+ },
+ {
+  "id": "ac_019",
+  "type": "agg_count",
+  "question": "出口到 埃及 的雷达共有多少款？",
+  "rog_ft_answer": "出口到埃及的雷达共有5款，包括AN/APG-68/68(V)、AN/APS-125、AN/APS-133(V)、APS-504(V)5和SLAMMR。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_020",
+  "type": "agg_count",
+  "question": "支持 单目标跟踪 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持单目标跟踪模式的雷达共有18款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 17,
+   "pred": 18,
+   "correct": false,
+   "rel_err": 0.058823529411764705
+  }
+ },
+ {
+  "id": "ac_021",
+  "type": "agg_count",
+  "question": "部署在直升机上的雷达共有多少款？",
+  "rog_ft_answer": "部署在直升机上的雷达共有15款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 14,
+   "pred": 15,
+   "correct": false,
+   "rel_err": 0.07142857142857142
+  }
+ },
+ {
+  "id": "ac_022",
+  "type": "agg_count",
+  "question": "支持 单脉冲 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持单脉冲模式的雷达共有7款，包括AN/APG-63(V)2、AN/APG-63(V)3、AN/APG-63(V)4、AN/APS-120/125/138/139、AN/AWG-9、KObE和RDY。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 7,
+   "pred": 7,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_023",
+  "type": "agg_count",
+  "question": "加拿大 一共装备了多少款雷达？",
+  "rog_ft_answer": "加拿大一共装备了6款雷达，包括AN/APG-73、AN/APS-143(V)3、OASys、SLAR100、SSAR和SW1C。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 6,
+   "pred": 6,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_024",
+  "type": "agg_count",
+  "question": "Thales 一共研制了多少款雷达？",
+  "rog_ft_answer": "Thales 一共研制了 37 款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 34,
+   "pred": 37,
+   "correct": false,
+   "rel_err": 0.08823529411764706
+  }
+ },
+ {
+  "id": "ac_025",
+  "type": "agg_count",
+  "question": "美国 一共装备了多少款雷达？",
+  "rog_ft_answer": "美国一共装备了229款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 228,
+   "pred": 229,
+   "correct": false,
+   "rel_err": 0.0043859649122807015
+  }
+ },
+ {
+  "id": "ac_026",
+  "type": "agg_count",
+  "question": "Northrop Grumman 一共研制了多少款雷达？",
+  "rog_ft_answer": "Northrop Grumman 一共研制了 69 款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 68,
+   "pred": 69,
+   "correct": false,
+   "rel_err": 0.014705882352941176
+  }
+ },
+ {
+  "id": "ac_027",
+  "type": "agg_count",
+  "question": "支持 宽角扫描 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持宽角扫描模式的雷达共有5款，包括FC-1、Osa、PIICH-2AM/2H、Zhuk-AE和Zhuk-MC3。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_028",
+  "type": "agg_count",
+  "question": "Westinghouse Electric 一共研制了多少款雷达？",
+  "rog_ft_answer": "Westinghouse Electric 共研制了 6 款雷达，包括 AN/APG-55、AN/APQ-100、AN/APQ-120/183、AN/APQ-164、AN/APQ-169 和 AN/APQ-7。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 6,
+   "pred": 6,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_029",
+  "type": "agg_count",
+  "question": "工作在 J 波段的雷达共有多少款？",
+  "rog_ft_answer": "工作在 J 波段的雷达共有 56 款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 55,
+   "pred": 56,
+   "correct": false,
+   "rel_err": 0.01818181818181818
+  }
+ },
+ {
+  "id": "ac_030",
+  "type": "agg_count",
+  "question": "中国 一共装备了多少款雷达？",
+  "rog_ft_answer": "中国一共装备了48款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 50,
+   "pred": 48,
+   "correct": false,
+   "rel_err": 0.04
+  }
+ },
+ {
+  "id": "ac_031",
+  "type": "agg_count",
+  "question": "采用 单脉冲 技术的雷达共有多少款？",
+  "rog_ft_answer": "采用单脉冲技术的雷达共有69款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 67,
+   "pred": 69,
+   "correct": false,
+   "rel_err": 0.029850746268656716
+  }
+ },
+ {
+  "id": "ac_032",
+  "type": "agg_count",
+  "question": "工作在 D 波段的雷达共有多少款？",
+  "rog_ft_answer": "工作在 D 波段的雷达共有 6 款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 6,
+   "correct": false,
+   "rel_err": 0.2
+  }
+ },
+ {
+  "id": "ac_033",
+  "type": "agg_count",
+  "question": "支持 扇形扫描 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持扇形扫描模式的雷达共有5款，包括AN/APN-242/59、APS-504(V)3、FC-1、Orchidee和Primus-880。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_034",
+  "type": "agg_count",
+  "question": "出口到 西班牙 的雷达共有多少款？",
+  "rog_ft_answer": "出口到西班牙的雷达共有7款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 7,
+   "pred": 7,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_035",
+  "type": "agg_count",
+  "question": "TexasInstruments 一共研制了多少款雷达？",
+  "rog_ft_answer": "TexasInstruments 共研制了 7 款雷达。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 7,
+   "pred": 7,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_036",
+  "type": "agg_count",
+  "question": "支持 空中格斗 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持“空中格斗”模式的雷达共有9款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 9,
+   "pred": 9,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_037",
+  "type": "agg_count",
+  "question": "采用 地面 技术的雷达共有多少款？",
+  "rog_ft_answer": "采用地面技术的雷达共有7款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 7,
+   "pred": 7,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_038",
+  "type": "agg_count",
+  "question": "工作在 X 波段的雷达共有多少款？",
+  "rog_ft_answer": "工作在 X 波段的雷达共有 155 款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 149,
+   "pred": 155,
+   "correct": false,
+   "rel_err": 0.040268456375838924
+  }
+ },
+ {
+  "id": "ac_039",
+  "type": "agg_count",
+  "question": "工作在 L 波段的雷达共有多少款？",
+  "rog_ft_answer": "工作在 L 波段的雷达共有 27 款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 27,
+   "pred": 27,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_040",
+  "type": "agg_count",
+  "question": "工作在 VHF 波段的雷达共有多少款？",
+  "rog_ft_answer": "工作在 VHF 波段的雷达共有 17 款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 17,
+   "pred": 17,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_041",
+  "type": "agg_count",
+  "question": "部署在舰载（通用）上的雷达共有多少款？",
+  "rog_ft_answer": "根据路径遍历结果，部署在舰载（通用）上的雷达共有25款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 25,
+   "pred": 25,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_042",
+  "type": "agg_count",
+  "question": "Westinghouse (now Northrop Grumman) 一共研制了多少款雷达？",
+  "rog_ft_answer": "Westinghouse（现 Northrop Grumman）共研制了 6 款雷达，包括 AN/APG-66、AN/APG-66 SASS、AN/APG-66(V)2、AN/APG-66/68、AN/APG-66H 和 APG-66/68。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 6,
+   "pred": 6,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_043",
+  "type": "agg_count",
+  "question": "Hughes Aircraft Company 一共研制了多少款雷达？",
+  "rog_ft_answer": "Hughes Aircraft Company 共研制了5款雷达，包括 AN/APG-70/70(V)、AN/ASG-18、AN/AWG-9、AN/SPS-39 和 SCANFAR。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_044",
+  "type": "agg_count",
+  "question": "支持 定轴搜索 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持定轴搜索模式的雷达共有8款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 8,
+   "pred": 8,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_045",
+  "type": "agg_count",
+  "question": "Thales Airborne Systems 一共研制了多少款雷达？",
+  "rog_ft_answer": "Thales Airborne Systems 共研制了7款雷达，包括 HeraclesII/ORB32、ORB37HL、ROMEO、SearchMaster、TARGET、Thales 和 Varan。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 7,
+   "pred": 7,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_046",
+  "type": "agg_count",
+  "question": "支持 信标导航 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持信标导航模式的雷达共有5款，包括AN/APS-133(V)、ORB37HL、RDR-1500B、RDR-1700和RT-1501A。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_047",
+  "type": "agg_count",
+  "question": "BAE Systems 一共研制了多少款雷达？",
+  "rog_ft_answer": "BAE Systems 共研制了5款雷达，包括Captor、Captor-E、Captor-M、S1850M和SAMPSON。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 5,
+   "pred": 5,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_048",
+  "type": "agg_count",
+  "question": "工作在 Ku 波段的雷达共有多少款？",
+  "rog_ft_answer": "工作在 Ku 波段的雷达共有 30 款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 29,
+   "pred": 30,
+   "correct": false,
+   "rel_err": 0.034482758620689655
+  }
+ },
+ {
+  "id": "ac_049",
+  "type": "agg_count",
+  "question": "Telephonics Corporation 一共研制了多少款雷达？",
+  "rog_ft_answer": "Telephonics Corporation 共研制了8款雷达，包括AN/APS-143系列、AN/APS-147、RDR-1300、RDR-1400C和RDR-1700等型号。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 8,
+   "pred": 8,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ac_050",
+  "type": "agg_count",
+  "question": "支持 空地 模式的雷达共有多少款？",
+  "rog_ft_answer": "支持“空地”模式的雷达共有11款。",
+  "score": {
+   "metric": "exact_count",
+   "gold": 11,
+   "pred": 11,
+   "correct": true,
+   "rel_err": 0.0
+  }
+ },
+ {
+  "id": "ae_001",
+  "type": "agg_enum",
+  "question": "请列出 Westinghouse Electric Corporation 研制的所有雷达。",
+  "rog_ft_answer": "Westinghouse Electric Corporation 研制的雷达共有8款，包括：AN/APG-68/68(V)、AN/APQ-120 family、AN/APQ-159、AN/APQ-50、AN/APQ-72、APQ-159(V)1~(V)4、APQ-159(V)5、APQ-159(V)7。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_002",
+  "type": "agg_enum",
+  "question": "列出所有支持 空空 模式的雷达。",
+  "rog_ft_answer": "支持“空空”模式的雷达共有12款，包括：AMSAR、AN/APG-79、AN/APO-99/172、AN/APS-143(V)3、Anemone、Antilope5TC、ArrayRadar、CAESAR、DDRS、Jaguar、Kopyo、MSAR。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 12,
+   "hit": 11,
+   "recall": 0.9166666666666666,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_003",
+  "type": "agg_enum",
+  "question": "列出工作在 UHF 波段的所有雷达。",
+  "rog_ft_answer": "工作在 UHF 波段的雷达包括：AN/APS-119、AN/APS-120/125/138/139、AN/APS-145、AN/APY-9、AN/FPS-23、AN/FPS-35、AN/MSQ-51、EL/M-2080、EL/M-2080 Green Pine、EL/M-2090、LANTIRN、Martin 和 Voronezh radar，共 13 种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 13,
+   "hit": 13,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_004",
+  "type": "agg_enum",
+  "question": "列出所有支持 信标 模式的雷达。",
+  "rog_ft_answer": "支持信标模式的雷达共有21款，包括AN/APG-55、AN/APG-70/70(V)、AN/APG-77/77V、AN/APN-241、AN/APN-242、AN/APQ-134/146/171、AN/APQ-174、AN/APS-143(V)3/143B(V)3/143C(V)3、APQ-122、APS-504(V)5、Agave、Aisbery-Razrez、JIyy、MOCKMT、PIICH-2AM/2H、RASSR、RDR-1400C、RDR-1700、RDR-1E、RDR-1E:75kW和Zhur-40。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 20,
+   "hit": 20,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_005",
+  "type": "agg_enum",
+  "question": "列出所有采用 ISAR 技术的雷达。",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 19,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "ae_006",
+  "type": "agg_enum",
+  "question": "列出所有采用 连续波 技术的雷达。",
+  "rog_ft_answer": "采用连续波技术的雷达共有7款，包括：AN/APQ-100、AN/APQ-126、AN/APQ-126(V)、AN/APQ-7、AN/APQ-72/100/109、OBOI和Su-27。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_007",
+  "type": "agg_enum",
+  "question": "请列出 Westinghouse Electrics 研制的所有雷达。",
+  "rog_ft_answer": "根据路径遍历结果，Westinghouse Electrics 研制的雷达包括：MMSBSR、MR-2000、MR-2000/3000、MR-4000、MR-5000。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_008",
+  "type": "agg_enum",
+  "question": "列出所有支持 Identification Friend or Foe 模式的雷达。",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 9,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "ae_009",
+  "type": "agg_enum",
+  "question": "列出所有支持 边搜索边测距 模式的雷达。",
+  "rog_ft_answer": "支持“边搜索边测距”模式的雷达共有24款，包括AN/APG-68/68(V)、AN/APG-77/77V、AN/AWG-9、APG-63(V)3、EF2000、FC-1、Grifo、Helicopter、Hp6uc-3、MOCKMT、MPEMC(N135)、MR-5000、MTBF120h、N001VEP、PIICH-2AM/2H、RACR、RDY-2、Zhuk-27、Zhuk-A3、Zhuk-A3FGA29、Zhuk-A3FGA35、Zhuk-MC3、Zhuk-Φ等。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 29,
+   "hit": 21,
+   "recall": 0.7241379310344828,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_010",
+  "type": "agg_enum",
+  "question": "列出所有部署在MiG-29上的雷达。",
+  "rog_ft_answer": "根据路径遍历结果，部署在MiG-29上的雷达包括：A813、EL/M-2052、KObE、N019 Sapfir-29M1、Zhuk(N010)。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 5,
+   "recall": 0.7142857142857143,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_011",
+  "type": "agg_enum",
+  "question": "请列出 Lockheed Martin 研制的所有雷达。",
+  "rog_ft_answer": "根据路径遍历结果，Lockheed Martin 研制的雷达包括：AN/APG-67/67(V)、AN/APG-78 Longbow、AN/APG-80、AN/APG-85、AN/APY-9、AN/FPS-117、AN/TPQ-53 Quick Reaction Capability Radar、AN/TPS-59、AN/TPY-4、APG-78(V)Longbow、APG-78(V)Longbow(、Aegis Combat System、Block50/52、COBRA (radar)、LANTIRN、OASys、Q24298099，共17种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 17,
+   "hit": 17,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_012",
+  "type": "agg_enum",
+  "question": "列出所有支持 蒙皮测绘 模式的雷达。",
+  "rog_ft_answer": "支持蒙皮测绘模式的雷达共有7款，包括：AN/APN-241、AN/APN-242、AN/APN-242/59、AN/APN-59F(V)、AN/APQ-72/100/109、C-130和FMR-200X/200X(V)。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_013",
+  "type": "agg_enum",
+  "question": "请列出 Hughes Aircraft Company 研制的所有雷达。",
+  "rog_ft_answer": "Hughes Aircraft Company 研制的雷达包括：AN/APG-70/70(V)、AN/ASG-18、AN/AWG-9、AN/SPS-39 和 SCANFAR。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_014",
+  "type": "agg_enum",
+  "question": "请列出 BAE Systems 研制的所有雷达。",
+  "rog_ft_answer": "BAE Systems 研制的雷达包括 Captor、Captor-E、Captor-M、S1850M 和 SAMPSON。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_015",
+  "type": "agg_enum",
+  "question": "列出所有部署在护卫舰上的雷达。",
+  "rog_ft_answer": "根据路径遍历结果，部署在护卫舰上的雷达共有10款，包括：AN/SPG-53、AN/SPY-6、Herakles (radar)、Kortik CIWS、MM/SPQ-2、SAMPSON、Type 341 radar、Type 354 radar、Type 364 radar、Type 965 radar。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 10,
+   "hit": 10,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_016",
+  "type": "agg_enum",
+  "question": "请列出 Honeywell 研制的所有雷达。",
+  "rog_ft_answer": "根据路径遍历结果，Honeywell 研制的雷达共有14款，包括：AN/APN-215(V)、AN/APS-150(RDR-4000M)、Primus-400、Primus-400:28.31dB、Primus-40WXD、Primus-40WXD/90/400、Primus-440、Primus-650、Primus-700A/701A、Primus-708、Primus-708A、Primus-870、Primus-880、Primus-90。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 13,
+   "hit": 13,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_017",
+  "type": "agg_enum",
+  "question": "列出工作在 C 波段的所有雷达。",
+  "rog_ft_answer": "工作在 C 波段的雷达共有 12 款，包括 AN/APG-55、AN/APS-119、AN/APS-120/125/138/139、AN/FPQ-6、AN/SPS-10、ARTHUR、EMPAR、FCS-3、Giraffe radar、JY-8 Radar、OPS-18 和 OPS-28。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 12,
+   "hit": 12,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_018",
+  "type": "agg_enum",
+  "question": "列出所有支持 空地 模式的雷达。",
+  "rog_ft_answer": "支持“空地”模式的雷达共有11款，包括：AMSAR、AN/APG-79、AN/APQ-134/146/171、Anemone、CAESAR、DDRS、Jaguar、MERA、MSAR、Norden(Talons)和WX-50。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 11,
+   "hit": 11,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_019",
+  "type": "agg_enum",
+  "question": "请列出 TexasInstruments 研制的所有雷达。",
+  "rog_ft_answer": "TexasInstruments 研制的雷达包括：AN/APQ-110/128、AN/APQ-172(V)、AN/APS-115、AN/APS-116、AllWeatherRadar、MERA 和 RASSR，共7款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_020",
+  "type": "agg_enum",
+  "question": "列出工作在 Ka 波段的所有雷达。",
+  "rog_ft_answer": "工作在 Ka 波段的雷达包括：AN/APG-77、AN/APG-78 Longbow、AN/APQ-122(V)、AN/APQ-137、AN/APQ-137/137B、AN/SPN-46、APBAJIET、Electric、HMMII、HiVision、IRIS、MISAR、OASys、OBOI、Su-30MKA，共15种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 15,
+   "hit": 15,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_021",
+  "type": "agg_enum",
+  "question": "请列出 加拿大 装备的所有雷达。",
+  "rog_ft_answer": "加拿大装备的雷达包括：AN/APG-73、AN/APS-143(V)3、OASys、SLAR100、SSAR、SW1C。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 6,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_022",
+  "type": "agg_enum",
+  "question": "列出工作在 Ku 波段的所有雷达。",
+  "rog_ft_answer": "工作在 Ku 波段的雷达共有 30 款，包括 AJIIMA3-23、AN/APG-73、AN/APG-76/76(V、AN/APQ-110、AN/APQ-110/128、AN/APQ-122(V)、AN/APQ-126V/158、AN/APQ-134/146/171、AN/APQ-140、AN/APQ-170(V)/425(V)、AN/APQ-174、AN/APQ-181、AN/APQ-92/112/148/156/173、AN/APS-130、AN/APY-8/8(V)(Lynx)、AN/AWG-9、Aisbery-Razrez、AllWeatherRadar、DBS、ENR、F-15A/R",
+  "score": {
+   "metric": "recall",
+   "gold_size": 29,
+   "hit": 29,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_023",
+  "type": "agg_enum",
+  "question": "列出工作在 W 波段的所有雷达。",
+  "rog_ft_answer": "工作在 W 波段的雷达共有 6 款，包括：AN/APG-78 Longbow、Goodyear、Norden(Talons)、ROMEO、SeaDragon 和 Systema。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 6,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_024",
+  "type": "agg_enum",
+  "question": "列出所有支持 截获 模式的雷达。",
+  "rog_ft_answer": "支持“截获”模式的雷达有：AN/APG-55、AN/APG-70/70(V)、AN/APQ-137、Anemone、Cyrano-ⅡI、Erieye。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_025",
+  "type": "agg_enum",
+  "question": "列出所有支持 空中格斗 模式的雷达。",
+  "rog_ft_answer": "支持空中格斗模式的雷达共有9款，包括：AN/APG-67/67(V)、AN/APG-70/70(V)、AN/APG-81、Altair、FC-1、MOCKMT、RBE2、Zhuk-27和Zhuk-MC3。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 9,
+   "hit": 9,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_026",
+  "type": "agg_enum",
+  "question": "列出工作在 VHF 波段的所有雷达。",
+  "rog_ft_answer": "工作在 VHF 波段的雷达共有 17 款，包括 AI Mark IV radar、AMES Type 7 radar、AN/FPS-24 radar、AN/SPS-29、Aisbery-Razrez、Integrated Coastal Surveillance System、LANTIRN、Lichtenstein radar、Matla-ul-fajr、Neptun (radar)、Night Watchman (radar)、Type 281 radar、Type 517 radar、Type 79 radar、Type 965 radar、Voronezh radar 和 Zhur-4",
+  "score": {
+   "metric": "recall",
+   "gold_size": 17,
+   "hit": 17,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_027",
+  "type": "agg_enum",
+  "question": "列出所有采用 动目标指示 技术的雷达。",
+  "rog_ft_answer": "采用动目标指示技术的雷达共有51款，包括：AIRSTAR、AN/APG-68/68(V)、AN/APG-70/70(V)、AN/APQ-126、AN/APQ-126(V)、AN/APQ-137、AN/APQ-137/137B、AN/APQ-181、AN/APS-119、AN/APS-120/125/138/139、AN/APS-143(V)3、AN/APS-143(V)3/143B(V)3/143C(V)3、AN/APS-143B(V)3、AN/APS-144、AN/APS-145、AN/APS-147、AN/APS-149、AN/APS-94、AN/APS-95、AN/APY-1、AN/AP",
+  "score": {
+   "metric": "recall",
+   "gold_size": 51,
+   "hit": 50,
+   "recall": 0.9803921568627451,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_028",
+  "type": "agg_enum",
+  "question": "列出所有部署在巡洋舰上的雷达。",
+  "rog_ft_answer": "根据路径遍历结果，部署在巡洋舰上的雷达共有11款，包括：AN/SPG-53、AN/SPG-59、AN/SPG-60、AN/SPG-62、Kortik CIWS、MM/SPQ-2、SCANFAR、Type 277 radar、Type 281 radar、Type 285 radar、Type 79 radar。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 11,
+   "hit": 11,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_029",
+  "type": "agg_enum",
+  "question": "列出所有支持 条带SAR 模式的雷达。",
+  "rog_ft_answer": "支持条带SAR模式的雷达共有9款，包括：AN/APS-147、AN/ZPY-1 STARLite、ARS-800、ARS-880、ASARS-2、HiSAR、Martin、RDR-1700B和SOSTAR-XSAR/MTI。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 9,
+   "hit": 9,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_030",
+  "type": "agg_enum",
+  "question": "列出所有部署在P-3C上的雷达。",
+  "rog_ft_answer": "根据路径遍历结果，部署在P-3C上的雷达共有5款：AN/APS-133(V)、AN/APS-134(V、AN/APS-137V、AN/APS-147、AN/APS-149。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_031",
+  "type": "agg_enum",
+  "question": "列出工作在 D 波段的所有雷达。",
+  "rog_ft_answer": "工作在 D 波段的雷达共有 6 款，包括：ASARS-2、ASARS-2A、MESA、Mercury2、RDR-1E:75kW 和 RDR-1FB。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_032",
+  "type": "agg_enum",
+  "question": "请列出 Raytheon Company Space and Airborne 研制的所有雷达。",
+  "rog_ft_answer": "根据路径遍历结果，Raytheon Company Space and Airborne 研制的雷达包括：AN/APG-65/65(V)、AN/APG-70/70(V)、AN/APG-71、AN/APG-73、AN/APG-82/82(V)、AN/APQ-122(V)、AN/APQ-126V/158、AN/APQ-174、AN/APQ-180、AN/APS-137V、DDRS、HiSAR、RACR，共13款雷达。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 15,
+   "hit": 13,
+   "recall": 0.8666666666666667,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_033",
+  "type": "agg_enum",
+  "question": "列出所有支持 自动跟踪 模式的雷达。",
+  "rog_ft_answer": "支持自动跟踪模式的雷达有：AJIIMA3-23、AN/APQ-100、AN/APQ-72、AN/APQ-72/100/109 和 Agave。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_034",
+  "type": "agg_enum",
+  "question": "列出所有支持 跟踪 模式的雷达。",
+  "rog_ft_answer": "支持跟踪模式的雷达共有15款，包括：AN/APG-55、AN/APG-63、AN/APG-70/70(V)、AN/APG-77/77V、AN/APQ-137、AN/AWG-9、Anemone、Cyrano-ⅡI、DPN-53(1959)、Flamr、H001-03、Horizon、PS-05/A、RDR-1700、RP-11截击雷达。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 13,
+   "hit": 13,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_035",
+  "type": "agg_enum",
+  "question": "列出工作在 S 波段的所有雷达。",
+  "rog_ft_answer": "工作在 S 波段的雷达包括：ALP 100-G、AMES Type 80、AMES Type 82、AMES Type 84、AMES Type 85、AN/APS-4 search radar、AN/CPS-4 Radar、AN/CPS-6 Radar、AN/FPS-14 Radar、AN/FPS-18 Radar、AN/FPS-27、AN/FPS-6 Radar、AN/GPN-27、AN/GPN-30、AN/MPS-19、AN/SPS-39、AN/SPS-8、AN/SPY-6、AN/TPQ-53 Quick Reaction Capability Radar、AN/TPS-32、AN/TP",
+  "score": {
+   "metric": "recall",
+   "gold_size": 50,
+   "hit": 50,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_036",
+  "type": "agg_enum",
+  "question": "列出所有支持 气象探测 模式的雷达。",
+  "rog_ft_answer": "支持气象探测模式的雷达共有35款，包括AN/APN-215(V)/234、AN/APN-242/59、AN/APQ-164、AN/APQ-174、AN/APS-147、AN/AVQ-56、APQ-122、APS-504(V)5、ATR、Buran-D、FMR-200X/200X(V)、FlatJack、Honeywell Commercial Aviation Systems、KWX-56、KWX-58、Ka-28M、MR-2000/3000、MR-4000、N019 Sapfir-29M1、Neva、ORB37HL、Primus-400:28.31dB、Primus-440、Primus-6",
+  "score": {
+   "metric": "recall",
+   "gold_size": 47,
+   "hit": 33,
+   "recall": 0.7021276595744681,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_037",
+  "type": "agg_enum",
+  "question": "列出所有支持 地面动目标指示 模式的雷达。",
+  "rog_ft_answer": "支持地面动目标指示模式的雷达共有20款，包括：AN/APG-66 SASS、AN/APG-70/70(V)、AN/APG-77/77V、AN/APG-80、AN/APG-81、AN/APS-137B(V)5、ASARS-2A、Bapc(N011M)、Captor-E、FC-1、HMMII、KObE、Osa、RACR、RDY、Thomson-CSF、Zhuk-A3、Zhuk-A3FGA29、Zhuk-A3FGA35、Zhuk-MC3。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 25,
+   "hit": 20,
+   "recall": 0.8,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_038",
+  "type": "agg_enum",
+  "question": "列出所有支持 地形跟随 模式的雷达。",
+  "rog_ft_answer": "支持地形跟随模式的雷达共有29款，包括AMSAR、AN/APO-99/172、AN/APQ-110、AN/APQ-110/128、AN/APQ-126(V)、AN/APQ-126V/158、AN/APQ-128、AN/APQ-134、AN/APQ-134/146/171、AN/APQ-153/157/159(V)、AN/APQ-164、AN/APQ-170(V)/425(V)、AN/APQ-172(V)、AN/APQ-174、AN/APQ-174/174(V)/186(V)、AN/APQ-92/112/148/156/173、AN/APS-130、APQ-122、AllWeatherRadar",
+  "score": {
+   "metric": "recall",
+   "gold_size": 29,
+   "hit": 29,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_039",
+  "type": "agg_enum",
+  "question": "列出所有支持 速度搜索 模式的雷达。",
+  "rog_ft_answer": "支持速度搜索模式的雷达包括：AN/APG-65/65(V)、AN/APG-67/67(V)、AN/APG-70/70(V)、APG-63(V)3、Avionics 2002-2003. 581.、FC-1、Grifo、Helicopter、Osa、PIICH-2AM/2H、RDY-2、Vixen1000/ES-05、Zhuk-AE、Zhuk-MC3。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 14,
+   "hit": 14,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_040",
+  "type": "agg_enum",
+  "question": "请列出 中国电子科技集团 研制的所有雷达。",
+  "rog_ft_answer": "中国电子科技集团研制的雷达包括：CS/SPG-6、FLORAKO、GL-1002、JY-14 Radar、JY-8 Radar、JY-9 Radar、KLC-1、Tactical reconnaissance and counter-concealment-enabled radar、Type 341 radar、Type 345 Radar、Type 346 radar、Type 351 Radar、Type 354 radar、Type 362 Radar、Type 382 radar、Type 517 radar、Type 752 Radar、WX-200、WX-300、WX-400，共",
+  "score": {
+   "metric": "recall",
+   "gold_size": 19,
+   "hit": 19,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_041",
+  "type": "agg_enum",
+  "question": "列出所有支持 聚束SAR 模式的雷达。",
+  "rog_ft_answer": "支持聚束SAR模式的雷达共有8款，包括：AN/APG-81、AN/APS-147、AN/ZPY-1 STARLite、ASARS-2、HiSAR、MC2A、RDR-1700B和SOSTAR-XSAR/MTI。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 8,
+   "hit": 8,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_042",
+  "type": "agg_enum",
+  "question": "列出出口到 埃及 的所有雷达。",
+  "rog_ft_answer": "出口到埃及的雷达共有5款，分别是：AN/APG-68/68(V)、AN/APS-125、AN/APS-133(V)、APS-504(V)5和SLAMMR。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_043",
+  "type": "agg_enum",
+  "question": "列出出口到 希腊 的所有雷达。",
+  "rog_ft_answer": "根据路径遍历结果，出口到希腊的雷达共有6款，包括：AN/APG-68/68(V)、AN/APQ-126(V)、RACR、RDY-2、S-300 missile system 和 SearchwaterlI。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 6,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_044",
+  "type": "agg_enum",
+  "question": "列出所有支持 气象回避 模式的雷达。",
+  "rog_ft_answer": "支持气象回避模式的雷达共有9款，包括：AN/APS-119、AN/APS-133(V)、AN/APS-143(V)3/143B(V)3/143C(V)3、ENR、Iguane、ORB31D、RASSR、RDR-1700和RDR-1700B。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 9,
+   "hit": 9,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_045",
+  "type": "agg_enum",
+  "question": "列出所有部署在无人机上的雷达。",
+  "rog_ft_answer": "根据路径遍历结果，部署在无人机上的雷达共有9款，包括：AIRSTAR、ALP 100-G、AN/APG-85、AN/MSQ-1、AN/MSQ-51、AN/ZPY-1、Aistyonok、Ground-directed bombing和SOSTAR-XSAR/MTI。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 9,
+   "hit": 9,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_046",
+  "type": "agg_enum",
+  "question": "请列出 Marconi 研制的所有雷达。",
+  "rog_ft_answer": "Marconi 研制的雷达包括：AMES Type 6、AMES Type 7 radar、AMES Type 82、AMES Type 84、ASV Mark III radar、ASV Mk. II radar、Anemone、GL Mk. I radar、Marconi Martello、Orange Poodle、Orange Yeoman、Seaspray 3000、Seaspray 7000、Seaspray 7000E、Type 277 radar、Type 281 radar、Type 281B、Type 285 radar、Type 79X、Type 79Y、Type 79Z",
+  "score": {
+   "metric": "recall",
+   "gold_size": 23,
+   "hit": 23,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_047",
+  "type": "agg_enum",
+  "question": "列出所有部署在直升机上的雷达。",
+  "rog_ft_answer": "根据路径遍历结果，部署在直升机上的雷达共有15款，包括：AIRSTAR、ALP 100-G、AN/APG-78 Longbow、AN/MPQ-65、AN/SPN-46、AN/TPQ-10 Radar Course Directing Central、AN/TPS-44、Aselsan EIRS、FCS-3、Ground Master 200、Ground Master 400、MSTAR、RDR-1700、ROMEO/ROMEO-IⅡI、SOSTAR-XSAR/MTI。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 14,
+   "hit": 14,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_048",
+  "type": "agg_enum",
+  "question": "列出所有支持 目标告警 模式的雷达。",
+  "rog_ft_answer": "支持目标告警模式的雷达有：Primus-650、Primus-700A/701A、Primus-870、Primus-880、WXR-700X。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 5,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_049",
+  "type": "agg_enum",
+  "question": "列出原产于 加拿大 的所有雷达。",
+  "rog_ft_answer": "原产于加拿大的雷达共有9款，包括：AN/APS-503/504、APS-504(V)5、Eaton、IRIS、Night Watchman (radar)、SLAR100、SLAR300、SurSAR和TriSAR。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 9,
+   "hit": 9,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "ae_050",
+  "type": "agg_enum",
+  "question": "请列出 Thales Airborne Systems 研制的所有雷达。",
+  "rog_ft_answer": "Thales Airborne Systems 研制的雷达包括：HeraclesII/ORB32、ORB37HL、ROMEO、SearchMaster、TARGET、Thales 和 Varan(，共7款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 7,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_001",
+  "type": "two_hop_bridge",
+  "question": "ASV Mark III radar 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，ASV Mark III radar 的研制公司所属国家包括中国、美国和英国，因此无法确定唯一国家。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "英国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_002",
+  "type": "two_hop_bridge",
+  "question": "AN/TPY-2 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/TPY-2 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_003",
+  "type": "two_hop_bridge",
+  "question": "BOR-A 550 的研制公司属于哪个国家？",
+  "rog_ft_answer": "BOR-A 550 的研制公司所属国家为法国和荷兰。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_004",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-180 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APQ-180 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_005",
+  "type": "two_hop_bridge",
+  "question": "RC400-4 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "RC400-4 衍生自的雷达由 RDY 研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "ThalesSystemsAeroportes（"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_006",
+  "type": "two_hop_bridge",
+  "question": "AN/SPQ-9 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/SPQ-9的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_007",
+  "type": "two_hop_bridge",
+  "question": "N019 Sapfir-29M1 升级自的型号原产于哪个国家？",
+  "rog_ft_answer": "俄罗斯。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "俄罗斯"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_008",
+  "type": "two_hop_bridge",
+  "question": "OPS-14 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，OPS-14的研制公司所属国家为日本和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "日本"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_009",
+  "type": "two_hop_bridge",
+  "question": "Zhuk-MC3 升级自的型号原产于哪个国家？",
+  "rog_ft_answer": "俄罗斯。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "俄罗斯"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_010",
+  "type": "two_hop_bridge",
+  "question": "OPS-28 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，OPS-28 的研制公司所属国家为日本和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "日本"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_011",
+  "type": "two_hop_bridge",
+  "question": "MM/SPQ-2 的研制公司属于哪个国家？",
+  "rog_ft_answer": "意大利。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_012",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-116 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APQ-116的研制公司所属国家包括意大利、法国和美国，因此无法确定唯一国家。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_013",
+  "type": "two_hop_bridge",
+  "question": "ASARS-2Plus 的研制公司属于哪个国家？",
+  "rog_ft_answer": "ASARS-2Plus 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_014",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-125 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "AN/APS-125 衍生自 AN/APS-120 和 AN/APS-96 雷达，但问题询问的是这些雷达的研制方，而路径遍历结果未提供研制方信息，因此答案未知。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Raytheon"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_015",
+  "type": "two_hop_bridge",
+  "question": "APN-59E(V) 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，APN-59E(V)的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_016",
+  "type": "two_hop_bridge",
+  "question": "Radar Doppler Multifunction 的研制公司属于哪个国家？",
+  "rog_ft_answer": "Radar Doppler Multifunction 的研制公司所属国家为法国和荷兰。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_017",
+  "type": "two_hop_bridge",
+  "question": "ASV Mk. II radar 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，ASV Mk. II radar 的研制公司所属国家包括中国、美国和英国，因此无法确定唯一国家。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "英国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_018",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-137V 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "TexasInstruments"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_019",
+  "type": "two_hop_bridge",
+  "question": "Ground Master 400 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，Ground Master 400 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_020",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-96 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-96 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_021",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-181 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APQ-181 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_022",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-73(V) 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "AN/APG-73(V) 衍生自 APG-65(V) 雷达，该雷达由美国休斯公司（现雷神公司）研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Raytheon"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_023",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-122(V)7 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Raytheon Company Space and Airborne"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_024",
+  "type": "two_hop_bridge",
+  "question": "JL-10A 的研制公司属于哪个国家？",
+  "rog_ft_answer": "中国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "中国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_025",
+  "type": "two_hop_bridge",
+  "question": "Captor-E 升级自的型号原产于哪个国家？",
+  "rog_ft_answer": "英国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "英国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_026",
+  "type": "two_hop_bridge",
+  "question": "APG-78(V)Longbow( 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，APG-78(V)Longbow的研制公司所属国家包括法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_027",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-110 升级自的型号原产于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_028",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-134(V 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-134(V)的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_029",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-81 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APG-81的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_030",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-171 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APQ-171 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_031",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-145 升级自的型号原产于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_032",
+  "type": "two_hop_bridge",
+  "question": "AMES Type 82 的研制公司属于哪个国家？",
+  "rog_ft_answer": "AMES Type 82 的研制公司所属国家包括中国、美国和英国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_033",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-124(V) 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-124(V) 的研制公司所属国家包括意大利、法国和美国，因此无法确定唯一国家。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_034",
+  "type": "two_hop_bridge",
+  "question": "N001VEP 升级自的型号原产于哪个国家？",
+  "rog_ft_answer": "俄罗斯。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "俄罗斯"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_035",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-169 升级自的型号由哪家公司研制？",
+  "rog_ft_answer": "AN/APQ-169 升级自 AN/APQ-113，该型号由通用电气公司研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "General Electric"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_036",
+  "type": "two_hop_bridge",
+  "question": "AN/AWG-20 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/AWG-20 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_037",
+  "type": "two_hop_bridge",
+  "question": "ORB31W 的研制公司属于哪个国家？",
+  "rog_ft_answer": "ORB31W 的研制公司所属国家为法国和荷兰。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "荷兰"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_038",
+  "type": "two_hop_bridge",
+  "question": "RDY 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，RDY的研制公司所属国家为法国和荷兰。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "荷兰"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_039",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-164 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "AN/APQ-164 衍生自 AN/APG-68/68(V) 和 EAR雷达，这两款雷达均由美国研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Westinghouse Electric Corporation"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_040",
+  "type": "two_hop_bridge",
+  "question": "AN/SPN-35 的研制公司属于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_041",
+  "type": "two_hop_bridge",
+  "question": "ASR-11 的研制公司属于哪个国家？",
+  "rog_ft_answer": "ASR-11 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_042",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-65/65(V) 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APG-65/65(V)的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_043",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-137C(V)5 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-137C(V)5的研制公司所属国家可能是意大利、法国或美国，但无法确定唯一答案。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_044",
+  "type": "two_hop_bridge",
+  "question": "AN/MSQ-51 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/MSQ-51 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_045",
+  "type": "two_hop_bridge",
+  "question": "OPS-20 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，OPS-20 的研制公司所属国家为日本和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "日本"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_046",
+  "type": "two_hop_bridge",
+  "question": "AN/TPS-59 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/TPS-59 的研制公司所属国家为美国和法国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_047",
+  "type": "two_hop_bridge",
+  "question": "Type 277 radar 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，Type 277 radar 的研制公司所属国家可能是中国、美国或英国，无法唯一确定。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_048",
+  "type": "two_hop_bridge",
+  "question": "R-14K 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "R-14K 衍生自 F-15A/R-14A 雷达，该雷达由苏联的季霍米罗夫仪器制造科学研究所（NIIP）研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Emerson Electric"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_049",
+  "type": "two_hop_bridge",
+  "question": "AN/FPS-16 Instrumentation Radar 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/FPS-16 Instrumentation Radar 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_050",
+  "type": "two_hop_bridge",
+  "question": "AN/SPG-53 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/SPG-53的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_051",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-116 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-116 的研制公司所属国家可能是意大利、法国或美国，但无法确定唯一答案。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_052",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-85 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APG-85的研制公司所属国家为美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_053",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-120/125/138/139 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-120/125/138/139 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_054",
+  "type": "two_hop_bridge",
+  "question": "AN/APD-14 升级自的型号由哪家公司研制？",
+  "rog_ft_answer": "AN/UPD-8 由哪家公司研制未知。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Northrop Grumman"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_055",
+  "type": "two_hop_bridge",
+  "question": "Primus-40WXD 升级自的型号由哪家公司研制？",
+  "rog_ft_answer": "AVQ-30X。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Rockwell Collins"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_056",
+  "type": "two_hop_bridge",
+  "question": "RDY 升级自的型号原产于哪个国家？",
+  "rog_ft_answer": "法国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_057",
+  "type": "two_hop_bridge",
+  "question": "KeMuyk 升级自的型号由哪家公司研制？",
+  "rog_ft_answer": "KeMuyk 升级自的型号由中国航空工业集团公司研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "中国航空工业集团公司"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_058",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-504 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "AN/APS-504 衍生自 AN/APS-503 雷达，该雷达由加拿大马可尼公司研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Raytheon"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_059",
+  "type": "two_hop_bridge",
+  "question": "Seaspray 7000 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，Seaspray 7000 的研制公司所属国家包括中国、美国和英国，因此无法确定唯一国家。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "英国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_060",
+  "type": "two_hop_bridge",
+  "question": "AN/TPS-32 的研制公司属于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_061",
+  "type": "two_hop_bridge",
+  "question": "AN/APS-125 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-125 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_062",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-70/70(V) 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APG-70/70(V)的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_063",
+  "type": "two_hop_bridge",
+  "question": "AN/GPN-12 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/GPN-12的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_064",
+  "type": "two_hop_bridge",
+  "question": "S-300 missile system 的研制公司属于哪个国家？",
+  "rog_ft_answer": "俄罗斯。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "俄罗斯"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_065",
+  "type": "two_hop_bridge",
+  "question": "Gematronik Meteor 360 AC 的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "德国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_066",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-69 的研制公司属于哪个国家？",
+  "rog_ft_answer": "美国",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_067",
+  "type": "two_hop_bridge",
+  "question": "Aero 13 的研制公司属于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_068",
+  "type": "two_hop_bridge",
+  "question": "Block50/52 的研制公司属于哪个国家？",
+  "rog_ft_answer": "Block50/52 的研制公司属于法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_069",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-63 radar family 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APG-63 radar family 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_070",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-66 的研制公司属于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_071",
+  "type": "two_hop_bridge",
+  "question": "AN/SPS-26 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/SPS-26 的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_072",
+  "type": "two_hop_bridge",
+  "question": "Aegis Combat System 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，Aegis Combat System 的研制公司所属国家为美国和法国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_073",
+  "type": "two_hop_bridge",
+  "question": "OASys 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，OASys 的研制公司所属国家为法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_074",
+  "type": "two_hop_bridge",
+  "question": "AN/AWG-11 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/AWG-11 的研制公司所属国家可能是美国或英国，但无法唯一确定。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "英国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_075",
+  "type": "two_hop_bridge",
+  "question": "AN/APN-234 升级自的型号由哪家公司研制？",
+  "rog_ft_answer": "AN/APN-234 升级自 AN/APN-215(V)，该型号由霍尼韦尔公司研制。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Honeywell"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_076",
+  "type": "two_hop_bridge",
+  "question": "Flycatcher (radar) 的研制公司属于哪个国家？",
+  "rog_ft_answer": "Flycatcher (radar) 的研制公司所属国家为法国和荷兰。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_077",
+  "type": "two_hop_bridge",
+  "question": "AN/APG-63(V)3 的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APG-63(V)3的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_078",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-122(V)8 衍生自的雷达由谁研制？",
+  "rog_ft_answer": "AN/APQ-122(V)8 衍生自 AN/APQ-122(V) 雷达，但路径遍历结果中未提供该雷达的研制方信息，因此答案未知。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Raytheon"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh2_079",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-35 的研制公司属于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh2_080",
+  "type": "two_hop_bridge",
+  "question": "AN/APQ-148 升级自的型号由哪家公司研制？",
+  "rog_ft_answer": "AN/APS-130 由哪家公司研制未知，因为路径遍历结果中未包含该信息。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "Northrop GrummanElectronicSystems Sector"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_001",
+  "type": "three_hop_chain",
+  "question": "RDR-4B 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_002",
+  "type": "three_hop_chain",
+  "question": "AN/APS-139 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_003",
+  "type": "three_hop_chain",
+  "question": "ASARS-2A 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_004",
+  "type": "three_hop_chain",
+  "question": "RDY 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，RDY升级前型号的研制公司所属国家为法国和荷兰。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh3_005",
+  "type": "three_hop_chain",
+  "question": "RDY-3 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_006",
+  "type": "three_hop_chain",
+  "question": "AN/APQ-128 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_007",
+  "type": "three_hop_chain",
+  "question": "SSAR 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_008",
+  "type": "three_hop_chain",
+  "question": "AN/APG-80 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_009",
+  "type": "three_hop_chain",
+  "question": "AN/SPS-39 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_010",
+  "type": "three_hop_chain",
+  "question": "AN/APS-138 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_011",
+  "type": "three_hop_chain",
+  "question": "AN/APQ-148 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_012",
+  "type": "three_hop_chain",
+  "question": "AN/APN-242/59 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_013",
+  "type": "three_hop_chain",
+  "question": "AN/APG-77/77V 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh3_014",
+  "type": "three_hop_chain",
+  "question": "AN/APS-137B(V)5 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "意大利"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_015",
+  "type": "three_hop_chain",
+  "question": "AN/APG-63(V)1 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_016",
+  "type": "three_hop_chain",
+  "question": "HeraclesII/ORB32 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "荷兰"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_017",
+  "type": "three_hop_chain",
+  "question": "Type 79 radar 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "中国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_018",
+  "type": "three_hop_chain",
+  "question": "AN/APS-116 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_019",
+  "type": "three_hop_chain",
+  "question": "IRIS 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_020",
+  "type": "three_hop_chain",
+  "question": "AN/UPD-8 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_021",
+  "type": "three_hop_chain",
+  "question": "RDY-2 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "荷兰"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_022",
+  "type": "three_hop_chain",
+  "question": "AN/APG-73 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_023",
+  "type": "three_hop_chain",
+  "question": "AN/FPQ-6 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_024",
+  "type": "three_hop_chain",
+  "question": "AN/MPQ-65 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_025",
+  "type": "three_hop_chain",
+  "question": "AN/UPD-9 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_026",
+  "type": "three_hop_chain",
+  "question": "AN/APN-59F(V) 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APN-59F(V)升级前型号的研制公司所属国家包括意大利、法国和美国，因此无法确定唯一国家。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh3_027",
+  "type": "three_hop_chain",
+  "question": "AN/APG-70/70(V) 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APG-70/70(V) 升级前型号的研制公司所属国家包括意大利、法国和美国。",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 1,
+   "correct": true
+  }
+ },
+ {
+  "id": "mh3_028",
+  "type": "three_hop_chain",
+  "question": "AN/APS-115 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_029",
+  "type": "three_hop_chain",
+  "question": "AN/APS-145 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "法国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "mh3_030",
+  "type": "three_hop_chain",
+  "question": "AN/APD-14 升级前型号的研制公司属于哪个国家？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": [
+    "美国"
+   ],
+   "hits": 0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_001",
+  "type": "attr_filter",
+  "question": "原产于 瑞典 的且支持 搜索 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于瑞典且支持“搜索”模式的雷达包括：搜索、平显搜索、可偏移搜索、定轴搜索、远程搜索、速度搜索、边搜索边测距（RWS）等。具体雷达型号未明确列出，但上述模式对应的雷达均符合条件。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_002",
+  "type": "attr_filter",
+  "question": "Northrop Grumman 研制的且工作在 L 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Northrop Grumman 研制的雷达共有 69 款，但未提供具体哪些工作在 L 波段的信息，因此无法确定 L 波段的雷达型号。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_003",
+  "type": "attr_filter",
+  "question": "英国 装备的且采用 脉冲多普勒 技术的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，英国装备的且采用脉冲多普勒技术的雷达包括：Blue Fox、Blue Joker、Captor、Captor-M、EF2000、Seaspray、Seaspray 3000、Seaspray 7000、Seaspray 7000E、Seaspray 7500E。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 1,
+   "recall": 0.3333333333333333,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_004",
+  "type": "attr_filter",
+  "question": "法国 装备的且部署在固定站上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，法国装备且部署在固定站上的雷达包括：AN/APY-2、Ground Master 200、Ground Master 200 Multi Mission、Ground Master 400、HeraclesII/ORB32、Herakles、Horizon、Nostradamus、ORB31W、ORB37HL、S1850M等共30种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_005",
+  "type": "attr_filter",
+  "question": "美国 装备的且采用 地面 技术的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，美国装备的且采用地面技术的雷达共有422个，包括AN/APG-63、AN/APG-66、AN/APG-77、AN/APG-79、AN/APG-81等型号。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_006",
+  "type": "attr_filter",
+  "question": "原产于 法国 的且支持 单目标跟踪 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于法国且支持单目标跟踪模式的雷达有：AMSAR、Active Phased Array Radar、Agave、Agrion、Agrion15、Anemone、Anemone(、Antilope5TC、BOR-A 550、Captor-E、Cyrano-IV、Cyrano-ⅡI、DRAAZA、ENR、Flycatcher (radar)、Ground Master 200、HeraclesI/ORB31、HeraclesII/ORB32、Herakles (radar)、Horizon、Iguane、King、SuperPuma、MAKO、New generation m",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_007",
+  "type": "attr_filter",
+  "question": "日本 装备的且工作在 L 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，日本装备且工作在L波段的雷达包括：AN/APY-12、FCS-3、OPS-11、OPS-12、OPS-14、OPS-18、OPS-20、OPS-24、OPS-28、OPS-4、OPS-9、RDR-1700B和SJ radar，共13种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_008",
+  "type": "attr_filter",
+  "question": "美国 装备的且采用 单脉冲 技术的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 21,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_009",
+  "type": "attr_filter",
+  "question": "原产于 法国 的且支持 速度搜索 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于法国且支持速度搜索模式的雷达共有56款，包括AMSAR、Active Phased Array Radar、Agave、Agrion、Agrion15、Anemone、Anemone(、Antilope5TC、BOR-A 550、Captor-E、Cyrano-IV、Cyrano-ⅡI、DRAAZA、ENR、Flycatcher (radar)、Ground Master 200、HeraclesI/ORB31、HeraclesII/ORB32、Herakles (radar)、Horizon、Iguane、King、SuperPuma、MAKO、New generat",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_010",
+  "type": "attr_filter",
+  "question": "中国 装备的且部署在车载机动上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，中国装备且部署在车载机动上的雷达共有30款，包括AI.20 radar、CS/SPG-6、FLORAKO、GL-1002、Green Garlic、JL-10A、JLENS、JLG-43 Radar、JLP-40 Radar、JY-14 Radar、JY-8 Radar、JY-9 Radar、KLC-1、KLJ-7、Orange Poodle、Orange Yeoman、Red Steer、Tactical reconnaissance and counter-concealment-enabled radar、TriSAR、Type 341 radar、Type 345 R",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 2,
+   "recall": 0.6666666666666666,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_011",
+  "type": "attr_filter",
+  "question": "日本 装备的且工作在 C 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，日本装备且工作在C波段的雷达包括：AN/APY-12、FCS-3、OPS-11、OPS-12、OPS-14、OPS-18、OPS-20、OPS-24、OPS-28、OPS-4、OPS-9、RDR-1700B和SJ radar，共13种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_012",
+  "type": "attr_filter",
+  "question": "美国 装备的且采用 合成孔径 技术的雷达有哪些？",
+  "rog_ft_answer": "美国装备的且采用合成孔径技术的雷达有：AN/SPG-60。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 13,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_013",
+  "type": "attr_filter",
+  "question": "工作在 X 波段的且部署在MiG-29上的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 7,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_014",
+  "type": "attr_filter",
+  "question": "中国电子科技集团 研制的且部署在护卫舰上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，中国电子科技集团研制的雷达共有20种，但其中明确部署在护卫舰上的雷达包括：Type 341、Type 345、Type 346、Type 351、Type 354、Type 362、Type 382、Type 517、Type 752等型号。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_015",
+  "type": "attr_filter",
+  "question": "Lockheed Martin 研制的且部署在车载机动上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Lockheed Martin 研制的雷达共有17款，但其中明确部署在车载机动上的雷达包括：AN/TPQ-53 Quick Reaction Capability Radar、AN/TPS-59、AN/TPY-4。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 1,
+   "recall": 0.5,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_016",
+  "type": "attr_filter",
+  "question": "Marconi 研制的且部署在巡洋舰上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Marconi 研制的雷达共有 23 款，但其中部署在巡洋舰上的型号未知，因为路径未提供“部署于巡洋舰”的筛选信息。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_017",
+  "type": "attr_filter",
+  "question": "意大利 装备的且采用 ISAR 技术的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，意大利装备且采用ISAR技术的雷达包括：Altair、EMPAR、Grifo、Gufo radar、Iguane、MM/SPQ-2、RAT 31DL、SMART-L、SMART-S、Selex RAN-40L，共10款。",
+  "score": {
+   "metric": "recall",
+   "skip": "no_gold_set"
+  }
+ },
+ {
+  "id": "af_018",
+  "type": "attr_filter",
+  "question": "原产于 美国 的且支持 速度搜索 模式的雷达有哪些？",
+  "rog_ft_answer": "基于路径遍历结果，原产于美国且支持速度搜索模式的雷达有：AN/APG-63、AN/APG-63(V)1、AN/APG-63(V)2、AN/APG-63(V)3、AN/APG-63(V)4、AN/APG-64、AN/APG-65、AN/APG-66、AN/APG-67、AN/APG-68、AN/APG-69、AN/APG-70、AN/APG-71、AN/APG-73、AN/APG-76、AN/APG-77、AN/APG-78、AN/APG-79、AN/APG-80、AN/APG-81、AN/APG-82、AN/APG-83、AN/APG-85等共422个实体。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 1,
+   "recall": 0.16666666666666666,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_019",
+  "type": "attr_filter",
+  "question": "TexasInstruments 研制的且工作在 I 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Texas Instruments 研制且工作在 I 波段的雷达包括：AN/APQ-110/128、AN/APQ-172(V)、AN/APS-115、AN/APS-116、AllWeatherRadar、MERA 和 RASSR，共 7 款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_020",
+  "type": "attr_filter",
+  "question": "原产于 美国 的且支持 导航 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于美国且支持导航模式的雷达共有422款，包括AN/APG-55、AN/APG-59、AN/APG-60等型号。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 12,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_021",
+  "type": "attr_filter",
+  "question": "Lockheed Martin 研制的且工作在 X 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Lockheed Martin 研制的雷达共有17个实体，但其中明确标注工作频段为X波段的雷达包括：AN/APG-67/67(V)、AN/APG-78 Longbow、AN/APG-80、AN/APG-85、AN/APY-9、AN/TPQ-53 Quick Reaction Capability Radar、AN/TPS-59、AN/TPY-4、APG-78(V)Longbow、APG-78(V)Longbow(、COBRA (radar) 等。由于部分实体（如Aegis Combat System、LANTIRN、OASys等）不一定是X波段雷达，且路径未提供频段筛选信息，",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_022",
+  "type": "attr_filter",
+  "question": "美国 装备的且采用 脉冲 技术的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 26,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_023",
+  "type": "attr_filter",
+  "question": "原产于 美国 的且支持 信标询问 模式的雷达有哪些？",
+  "rog_ft_answer": "基于路径遍历结果，原产于美国的雷达共有422个实体，但路径仅通过“countryOfOrigin^-1”获取了所有美国产雷达，未进一步筛选支持“信标询问”模式的雷达，因此无法确定具体有哪些。建议补充“信标询问”模式的关联路径以精确回答。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_024",
+  "type": "attr_filter",
+  "question": "Raytheon 研制的且工作在 C 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Raytheon 研制的雷达共有159个，但未提供具体哪些工作在C波段的信息，因此无法确定。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_025",
+  "type": "attr_filter",
+  "question": "瑞典 装备的且工作在 I 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，瑞典装备的且工作在I波段的雷达包括：ARTHUR、Erieye、Giraffe radar、Kustspaningsradar、Närspaningsradar、PS-15、PS-66、Vixen1000/ES-05，共8款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_026",
+  "type": "attr_filter",
+  "question": "Northrop Grumman 研制的且部署在F-4E Phantom II上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Northrop Grumman 研制的雷达共有 69 种，但其中部署在 F-4E Phantom II 上的具体型号未在集合中明确标注，因此无法直接确定。若需精确答案，建议补充 F-4E 的专用雷达筛选条件。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 12,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_027",
+  "type": "attr_filter",
+  "question": "Northrop Grumman 研制的且工作在 X 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Northrop Grumman 研制的雷达共有 69 款，但未提供具体哪些工作在 X 波段的信息，因此无法确定符合该条件的雷达。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 8,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_028",
+  "type": "attr_filter",
+  "question": "以色列 装备的且工作在 X 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，以色列装备的且工作在X波段的雷达包括：AN/APG-63、AN/APG-76 family、AN/APQ-156、EL/M-2052、EL/M-2080、EL/M-2080 Green Pine、EL/M-2084、EL/M-2090、EL/W-2085、EL/W-2090，共10款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_029",
+  "type": "attr_filter",
+  "question": "原产于 美国 的且支持 聚束SAR 模式的雷达有哪些？",
+  "rog_ft_answer": "基于路径遍历结果，原产于美国的雷达共有422个，但路径中未提供支持“聚束SAR模式”的筛选信息，因此无法确定具体有哪些雷达。建议补充“聚束SAR模式”的关联路径以进一步查询。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 6,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_030",
+  "type": "attr_filter",
+  "question": "中国 装备的且部署在护卫舰上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，中国装备且部署在护卫舰上的雷达共有30款，包括AI.20 radar、CS/SPG-6、FLORAKO、GL-1002、Green Garlic、JL-10A、JLENS、JLG-43 Radar、JLP-40 Radar、JY-14 Radar、JY-8 Radar、JY-9 Radar、KLC-1、KLJ-7、Orange Poodle、Orange Yeoman、Red Steer、Tactical reconnaissance and counter-concealment-enabled radar、TriSAR、Type 341 radar、Type 345 Ra",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_031",
+  "type": "attr_filter",
+  "question": "英国 装备的且工作在 X 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，英国装备的雷达共有36种，但未提供具体工作在X波段的雷达信息，因此无法确定哪些雷达工作在X波段。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_032",
+  "type": "attr_filter",
+  "question": "NIIP 研制的且工作在 X 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，NIIP 研制的雷达共有55个，但未提供具体哪些雷达工作在X波段的信息，因此无法确定答案。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_033",
+  "type": "attr_filter",
+  "question": "原产于 美国 的且支持 条带SAR 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于美国的雷达共有422个实体，但路径仅提供了国家来源信息，未包含“支持条带SAR模式”的筛选条件，因此无法确定具体哪些雷达支持该模式。答案：未知。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_034",
+  "type": "attr_filter",
+  "question": "工作在 UHF 波段的且部署在C-130上的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_035",
+  "type": "attr_filter",
+  "question": "意大利 装备的且采用 脉冲多普勒 技术的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，意大利装备的采用脉冲多普勒技术的雷达包括：Altair、EMPAR、Grifo、Gufo radar、Iguane、MM/SPQ-2、RAT 31DL、SMART-L、SMART-S、Selex RAN-40L，共10种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 1,
+   "recall": 0.3333333333333333,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_036",
+  "type": "attr_filter",
+  "question": "原产于 俄罗斯 的且支持 导航 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于俄罗斯且支持导航模式的雷达有：盲降、信标、信标台、信标模式、信标状态、信标跟踪、偏流或精确偏流、前视地形测绘、前视地面障碍物告警、前视接地点、TA/TF、X频段气象/湍流/风切变探测等。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_037",
+  "type": "attr_filter",
+  "question": "原产于 法国 的且支持 等高线测绘 模式的雷达有哪些？",
+  "rog_ft_answer": "未知。路径遍历结果仅包含原产于法国的雷达列表，未提供支持“等高线测绘”模式的信息，因此无法确定具体型号。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_038",
+  "type": "attr_filter",
+  "question": "Raytheon 研制的且工作在 Ka 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Raytheon 研制的雷达共有159个实体，但其中未明确标注工作在Ka波段的雷达，因此无法从该集合中直接识别出Ka波段雷达。答案：未知。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_039",
+  "type": "attr_filter",
+  "question": "英国 装备的且部署在驱逐舰上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，英国装备在驱逐舰上的雷达包括：Type 277、Type 279、Type 281、Type 285、Type 293、Type 79、Type 965、Type 992、S1850M、SAMPSON、Searchwater radar、AMES Type 82、AMES Type 85、Blue Fox、Blue Cedar、Fire-control radar 等共36种。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_040",
+  "type": "attr_filter",
+  "question": "原产于 美国 的且支持 平显搜索 模式的雷达有哪些？",
+  "rog_ft_answer": "基于路径遍历结果，原产于美国的雷达共有422个实体，但路径仅提供了国家来源信息，未包含“支持平显搜索模式”的筛选条件，因此无法从该集合中确定具体哪些雷达支持该模式。答案：未知。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_041",
+  "type": "attr_filter",
+  "question": "Raytheon 研制的且工作在 UHF 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Raytheon 研制的雷达共有159个实体，但其中未明确标注工作在UHF波段的雷达，因此无法直接给出具体型号，答案为未知。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_042",
+  "type": "attr_filter",
+  "question": "意大利 装备的且采用 单脉冲 技术的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，意大利装备的且采用单脉冲技术的雷达包括：Altair、EMPAR、Grifo、Gufo radar、Iguane、MM/SPQ-2、RAT 31DL、SMART-L、SMART-S、Selex RAN-40L，共10款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 1,
+   "recall": 0.5,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_043",
+  "type": "attr_filter",
+  "question": "Texas Instruments 研制的且工作在 X 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Texas Instruments 研制的雷达共有12款，包括 AN/APQ-110、AN/APQ-126、AN/APS-115 等。但其中工作在 X 波段的雷达未在路径中明确标注，因此无法直接判断哪些属于 X 波段。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 4,
+   "hit": 1,
+   "recall": 0.25,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_044",
+  "type": "attr_filter",
+  "question": "原产于 美国 的且支持 目标告警 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于美国的雷达共有422个实体，但未提供“支持目标告警模式”的筛选条件，因此无法确定具体有哪些雷达。建议补充目标告警模式相关的路径约束。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_045",
+  "type": "attr_filter",
+  "question": "Emerson Electric 研制的且工作在 I 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Emerson Electric 研制的雷达共有 11 个实体，但其中包含非雷达项（如 Electric、F-15A/R-14A、Flamr），且未提供 I 波段筛选信息，因此无法确定具体工作在 I 波段的雷达型号，答案为未知。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 1,
+   "recall": 0.5,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_046",
+  "type": "attr_filter",
+  "question": "原产于 澳大利亚 的且支持 地形测绘 模式的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，原产于澳大利亚且支持地形测绘模式的雷达有：ARS-400、ARS-800、ARS-880、CEAFAR、DSTO、Terma，共6款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_047",
+  "type": "attr_filter",
+  "question": "法国 装备的且采用 脉冲多普勒 技术的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，法国装备的且采用脉冲多普勒技术的雷达包括：RDI、RDM、RDX、RDY、RDY-2、RDY-3、RDY-7、Radar Doppler Multifunction 等。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 5,
+   "hit": 1,
+   "recall": 0.2,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_048",
+  "type": "attr_filter",
+  "question": "俄罗斯 装备的且采用 单脉冲 技术的雷达有哪些？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 0,
+   "recall": 0.0,
+   "correct": false
+  }
+ },
+ {
+  "id": "af_049",
+  "type": "attr_filter",
+  "question": "工作在 VHF 波段的且部署在固定站上的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，工作在 VHF 波段且部署在固定站上的雷达共有 17 款，包括 AI Mark IV radar、AMES Type 7 radar、AN/FPS-24 radar、AN/SPS-29、Aisbery-Razrez、Integrated Coastal Surveillance System、LANTIRN、Lichtenstein radar、Matla-ul-fajr、Neptun (radar)、Night Watchman (radar)、Type 281 radar、Type 517 radar、Type 79 radar、Type 965 radar、Vorone",
+  "score": {
+   "metric": "recall",
+   "gold_size": 3,
+   "hit": 3,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "af_050",
+  "type": "attr_filter",
+  "question": "Thales Airborne Systems 研制的且工作在 J 波段的雷达有哪些？",
+  "rog_ft_answer": "根据路径遍历结果，Thales Airborne Systems 研制的且工作在 J 波段的雷达有：HeraclesII/ORB32、ORB37HL、ROMEO、SearchMaster、TARGET、Thales、Varan(，共7款。",
+  "score": {
+   "metric": "recall",
+   "gold_size": 2,
+   "hit": 2,
+   "recall": 1.0,
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_001",
+  "type": "negation",
+  "question": "EL/M-2080 Green Pine 是否工作在 C 波段？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_002",
+  "type": "negation",
+  "question": "Varan( 是否工作在 Ku 波段？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_003",
+  "type": "negation",
+  "question": "MR-5000 是由 Lockheed Martin Maritime Sensors and 研制的吗？",
+  "rog_ft_answer": "未知。路径遍历结果中未包含“Lockheed Martin Maritime Sensors and”，因此无法确认MR-5000由其研制。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_004",
+  "type": "negation",
+  "question": "AN/SPS-39 是否升级自 AN/AWG-9？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_005",
+  "type": "negation",
+  "question": "AN/APS-149 是否工作在 D 波段？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_006",
+  "type": "negation",
+  "question": "SJ radar 是由 列宁人联合体 研制的吗？",
+  "rog_ft_answer": "不是。SJ radar 是由 Mitsubishi Electric 研制的，而非列宁人联合体。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_007",
+  "type": "negation",
+  "question": "JY-9 Radar 是否被 挪威 装备使用？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_008",
+  "type": "negation",
+  "question": "APS-134(V)6 是由 Thorn EMI Plc 研制的吗？",
+  "rog_ft_answer": "不是，APS-134(V)6 是由 Raytheon 研制的。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_009",
+  "type": "negation",
+  "question": "AN/APG-77 是否部署在P-3T上？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_010",
+  "type": "negation",
+  "question": "HeraclesII/ORB32 是否工作在 VHF 波段？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_011",
+  "type": "negation",
+  "question": "AN/SPS-5 是否被 荷兰 装备使用？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_012",
+  "type": "negation",
+  "question": "AN/APS-154 是由 Telefunken Systems Technik 研制的吗？",
+  "rog_ft_answer": "不是，AN/APS-154 是由 Raytheon 研制的。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_013",
+  "type": "negation",
+  "question": "ARTHUR 是否部署在Ka-50上？",
+  "rog_ft_answer": "否，ARTHUR 部署在“车载机动”上，而非Ka-50。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_014",
+  "type": "negation",
+  "question": "AN/FPS-117 是否被 Japan Air Self-Defense Force 装备使用？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_015",
+  "type": "negation",
+  "question": "Ground Master 200 是否被 Republic of China Air Force 装备使用？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_016",
+  "type": "negation",
+  "question": "AN/FPS-14 Radar 是否被 哈萨克斯坦 装备使用？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_017",
+  "type": "negation",
+  "question": "AN/SPS-29 是否工作在 F 波段？",
+  "rog_ft_answer": "否，AN/SPS-29 工作在 VHF 波段，而非 F 波段。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_018",
+  "type": "negation",
+  "question": "Type 79 radar 是否升级自 DRAAZA？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_019",
+  "type": "negation",
+  "question": "OceanMaster 是否出口到 新加坡？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_020",
+  "type": "negation",
+  "question": "Zhuk-27 是否兼容 RIM-174 Standard 武器？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_021",
+  "type": "negation",
+  "question": "EL/W-2090 是由 Saab Electronic Defence Systems 研制的吗？",
+  "rog_ft_answer": "不是，EL/W-2090 是由 Israel Aerospace Industries 研制的。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_022",
+  "type": "negation",
+  "question": "Nebo-SVU 是否被 Islamic Republic of Iran Air Defense Force 装备使用？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_023",
+  "type": "negation",
+  "question": "Giraffe radar 是由 Q138816651 研制的吗？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_024",
+  "type": "negation",
+  "question": "SON-4 是否被 Polish Land Forces 装备使用？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_025",
+  "type": "negation",
+  "question": "AN/APQ-122(V) 是否部署在Boeing747上？",
+  "rog_ft_answer": "否，AN/APQ-122(V) 部署的实体中不包含 Boeing 747。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_026",
+  "type": "negation",
+  "question": "Thomson-CSF 是否兼容 9M96 武器？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_027",
+  "type": "negation",
+  "question": "AN/AWG-20 是否被 瑞典 装备使用？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_028",
+  "type": "negation",
+  "question": "ASV Mk. II radar 是由 Telent 研制的吗？",
+  "rog_ft_answer": "否，ASV Mk. II radar 是由 Marconi 研制的，而非 Telent。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_029",
+  "type": "negation",
+  "question": "Primus-708A 是否工作在 E 波段？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_030",
+  "type": "negation",
+  "question": "Iguane 是否被 United States Army 装备使用？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_031",
+  "type": "negation",
+  "question": "1L220U Zoopark-2 是否被 墨西哥 装备使用？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_032",
+  "type": "negation",
+  "question": "MARS(R209A) 是否部署在Rafale上？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_033",
+  "type": "negation",
+  "question": "P-37 是否被 Royal Navy 装备使用？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_034",
+  "type": "negation",
+  "question": "AN/APQ-172(V) 是否工作在 UHF 波段？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APQ-172(V) 的频率波段为 J，而非 UHF 波段，因此答案为否。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_035",
+  "type": "negation",
+  "question": "AN/APQ-153 是否被 德国 装备使用？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_036",
+  "type": "negation",
+  "question": "Orange Yeoman 是否被 Polish Land Forces 装备使用？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_037",
+  "type": "negation",
+  "question": "AN/APS-125 是否部署在E-3上？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_038",
+  "type": "negation",
+  "question": "APG-66/68 是由 Iranian Ministry of Defense 研制的吗？",
+  "rog_ft_answer": "不是。APG-66/68 是由 Westinghouse（现属 Northrop Grumman）研制的，而非 Iranian Ministry of Defense。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_039",
+  "type": "negation",
+  "question": "Thomson-CSF 是否工作在 S 波段？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "neg_040",
+  "type": "negation",
+  "question": "AN/TPS-43 是否升级自 GL Mk. I radar？",
+  "rog_ft_answer": "否。AN/TPS-43 的升级目标为 AN/TPS-75，而非升级自 GL Mk. I radar。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_001",
+  "type": "set_compare",
+  "question": "Primus-440 和 AN/APS-143B(V)3 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_002",
+  "type": "set_compare",
+  "question": "RAT 31DL 和 Green Satin radar 的研制方是否相同？",
+  "rog_ft_answer": "是，RAT 31DL 和 Green Satin radar 的研制方相同，均为 Leonardo。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "yes",
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_003",
+  "type": "set_compare",
+  "question": "AN/UPD-8/9(AN/APD-14/12) 和 AN/APQ-174(V) 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历结果中未包含AN/APQ-174(V)的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_004",
+  "type": "set_compare",
+  "question": "N019 Sapfir-29MP 和 PII-31(RP-31) 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "yes",
+   "pred_polarity": "no",
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_005",
+  "type": "set_compare",
+  "question": "AN/TPS-59 和 AN/ZPQ-1TeSAR( 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_006",
+  "type": "set_compare",
+  "question": "AN/APQ-126 和 AN/SPG-62 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_007",
+  "type": "set_compare",
+  "question": "AN/APS-133(V) 和 Nebo-SVU 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_008",
+  "type": "set_compare",
+  "question": "MARS(R209A) 和 N019 Sapfir-29M1 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_009",
+  "type": "set_compare",
+  "question": "Type 992 radar 和 ASR-7 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_010",
+  "type": "set_compare",
+  "question": "Plessey AR-320 和 AMES Type 80 的研制方是否相同？",
+  "rog_ft_answer": "是的，Plessey AR-320 的研制方是 Plessey，而 AMES Type 80 的研制方也是 Plessey，因此两者研制方相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "yes",
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_011",
+  "type": "set_compare",
+  "question": "AN/APQ-36 和 Zhuk-AC3 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_012",
+  "type": "set_compare",
+  "question": "FLORAKO 和 SMART-L 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_013",
+  "type": "set_compare",
+  "question": "Type 341 radar 和 RDX 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_014",
+  "type": "set_compare",
+  "question": "Air Ministry Experimental Station 和 RP-22Sapfir-21 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_015",
+  "type": "set_compare",
+  "question": "N019M Topaz 和 Kalkan (radar) 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_016",
+  "type": "set_compare",
+  "question": "Goodyear 和 F/A-18 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_017",
+  "type": "set_compare",
+  "question": "Seaspray 3000 和 Neva 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_018",
+  "type": "set_compare",
+  "question": "PS-16 和 Zaslon 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_019",
+  "type": "set_compare",
+  "question": "Terma 和 EL/M-2080 Green Pine 的研制方是否相同？",
+  "rog_ft_answer": "根据路径遍历结果，Terma 的研制方为 Terma 相关实体（如 S（TERMA、TermaA 等），而 EL/M-2080 Green Pine 的研制方未在路径中提供，因此无法判断是否相同，答案为未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": null,
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_020",
+  "type": "set_compare",
+  "question": "TriSAR 和 JY-8 Radar 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历结果中，TriSAR的研制方为Array Systems Computing或ArraySystemsComputing，但未提供JY-8 Radar的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_021",
+  "type": "set_compare",
+  "question": "AN/APQ-144 和 ASSR-1000 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_022",
+  "type": "set_compare",
+  "question": "AN/APQ-113 和 AN/APQ-7 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_023",
+  "type": "set_compare",
+  "question": "Bapc(N011M) 和 1L220U Zoopark-2 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历结果中未包含“1L220U Zoopark-2”的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_024",
+  "type": "set_compare",
+  "question": "AN/APQ-128 和 RDR-1400C 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历显示AN/APQ-128的研制方有Raytheon和Westinghouse两个实体，但未提供RDR-1400C的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_025",
+  "type": "set_compare",
+  "question": "AN/APQ-100 和 AN/APQ-46 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历结果中未包含AN/APQ-46的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "yes",
+   "pred_polarity": "no",
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_026",
+  "type": "set_compare",
+  "question": "AN/APS-149 和 Grifo 的研制方是否相同？",
+  "rog_ft_answer": "根据路径遍历结果，AN/APS-149的研制方包括Honeywell Aerospace和Raytheon及其相关实体，而Grifo的研制方信息未在证据中提供，因此无法判断是否相同，答案为未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": null,
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_027",
+  "type": "set_compare",
+  "question": "AN/TPS-65 和 AN/APS-115 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_028",
+  "type": "set_compare",
+  "question": "AN/FPS-18 Radar 和 AN/FPS-27 的研制方是否相同？",
+  "rog_ft_answer": "是，AN/FPS-18 Radar 和 AN/FPS-27 的研制方相同，均为 Raytheon。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "yes",
+   "pred_polarity": "yes",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_029",
+  "type": "set_compare",
+  "question": "AN/APS-116 和 Primus-40WXD/90/400 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历结果中未包含Primus-40WXD/90/400的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_030",
+  "type": "set_compare",
+  "question": "Kvant 和 P-30 radar 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "yes",
+   "pred_polarity": "no",
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_031",
+  "type": "set_compare",
+  "question": "Volga 和 RDR-1600 的研制方是否相同？",
+  "rog_ft_answer": "不同。Volga 的研制方是 NIIP，而 RDR-1600 的研制方未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_032",
+  "type": "set_compare",
+  "question": "AN/APS-119 和 aselsan SMART-S 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历结果中未包含 aselsan SMART-S 的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_033",
+  "type": "set_compare",
+  "question": "AN/APQ-170(V)/425(V) 和 OPS-11 的研制方是否相同？",
+  "rog_ft_answer": "未知。路径遍历结果中未包含 OPS-11 的研制方信息，无法判断是否相同。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_034",
+  "type": "set_compare",
+  "question": "AN/APG-64 和 RDI 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_035",
+  "type": "set_compare",
+  "question": "AN/APS-95 和 AN/SPY-6 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "yes",
+   "pred_polarity": "no",
+   "correct": false
+  }
+ },
+ {
+  "id": "sc_036",
+  "type": "set_compare",
+  "question": "AN/APQ-122(V)5 和 AN/APQ-137/137B 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_037",
+  "type": "set_compare",
+  "question": "APG-78(V)Longbow 和 Green Garlic 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_038",
+  "type": "set_compare",
+  "question": "Type 285 radar 和 AN/BPS-15 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_039",
+  "type": "set_compare",
+  "question": "P-18 radar 和 AN/APG-78 Longbow 的研制方是否相同？",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "no",
+   "correct": true
+  }
+ },
+ {
+  "id": "sc_040",
+  "type": "set_compare",
+  "question": "PRV-10 和 RDR-1300 的研制方是否相同？",
+  "rog_ft_answer": "是，PRV-10 和 RDR-1300 的研制方相同，均为 NIIP。",
+  "score": {
+   "metric": "polarity",
+   "gold_polarity": "no",
+   "pred_polarity": "yes",
+   "correct": false
+  }
+ },
+ {
+  "id": "un_001",
+  "type": "unanswerable",
+  "question": "EL/M-2084 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_002",
+  "type": "unanswerable",
+  "question": "Integrated Coastal Surveillance System 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_003",
+  "type": "unanswerable",
+  "question": "JY-14 Radar 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_004",
+  "type": "unanswerable",
+  "question": "AN/TPS-1 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_005",
+  "type": "unanswerable",
+  "question": "AN/TPS-59 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_006",
+  "type": "unanswerable",
+  "question": "Zhuk-A3FGA29 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_007",
+  "type": "unanswerable",
+  "question": "Ground-controlled interception 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_008",
+  "type": "unanswerable",
+  "question": "OASys 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_009",
+  "type": "unanswerable",
+  "question": "AN/SPG-55 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_010",
+  "type": "unanswerable",
+  "question": "AN/APQ-36 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_011",
+  "type": "unanswerable",
+  "question": "Kvant 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_012",
+  "type": "unanswerable",
+  "question": "CEAFAR 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_013",
+  "type": "unanswerable",
+  "question": "AMES Type 82 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_014",
+  "type": "unanswerable",
+  "question": "AN/CPS-6 Radar 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_015",
+  "type": "unanswerable",
+  "question": "AN/SPS-39 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_016",
+  "type": "unanswerable",
+  "question": "ASR-8 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_017",
+  "type": "unanswerable",
+  "question": "FMR-200X/200X(V) 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_018",
+  "type": "unanswerable",
+  "question": "Ka-28M 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_019",
+  "type": "unanswerable",
+  "question": "AN/APG-55 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "un_020",
+  "type": "unanswerable",
+  "question": "COBRA (radar) 的价格是？",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "polarity",
+   "expected": "unknown_or_no",
+   "correct": true
+  }
+ },
+ {
+  "id": "dt_001",
+  "type": "distractor",
+  "question": "AN/FPS-16 Instrumentation Radar的使用国是（注意区分 AN/FPS-16）",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": true
+  }
+ },
+ {
+  "id": "dt_002",
+  "type": "distractor",
+  "question": "AN/APG-66(V)1由哪些国家使用（注意区分 AN/APG-66）",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": false
+  }
+ },
+ {
+  "id": "dt_003",
+  "type": "distractor",
+  "question": "AN/APG-73(V)的使用国是（注意区分 AN/APG-73）",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": true
+  }
+ },
+ {
+  "id": "dt_004",
+  "type": "distractor",
+  "question": "AN/APQ-134/146/171工作在哪个频段（注意区分 AN/APQ-134）",
+  "rog_ft_answer": "AN/APQ-134/146/171工作在Ku频段。",
+  "score": {
+   "metric": "substring",
+   "gold": "Ku",
+   "correct": true
+  }
+ },
+ {
+  "id": "dt_005",
+  "type": "distractor",
+  "question": "AN/APQ-120 radar family由哪些国家使用（注意区分 AN/APQ-120/183）",
+  "rog_ft_answer": "未知",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": false
+  }
+ },
+ {
+  "id": "dt_006",
+  "type": "distractor",
+  "question": "AN/APS-143/143(V)1/2的频段是（注意区分 AN/APS-143(V)3）",
+  "rog_ft_answer": "未知。",
+  "score": {
+   "metric": "substring",
+   "gold": "X",
+   "correct": false
+  }
+ },
+ {
+  "id": "dt_007",
+  "type": "distractor",
+  "question": "AN/APQ-174/174(V)/186(V)的使用国是（注意区分 AN/APQ-174）",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": true
+  }
+ },
+ {
+  "id": "dt_008",
+  "type": "distractor",
+  "question": "AN/APY-1/2的使用国是（注意区分 AN/APY-1）",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": true
+  }
+ },
+ {
+  "id": "dt_009",
+  "type": "distractor",
+  "question": "AN/APG-63 radar family的使用国是（注意区分 AN/APG-63）",
+  "rog_ft_answer": "美国。",
+  "score": {
+   "metric": "substring",
+   "gold": "美国",
+   "correct": true
+  }
+ }
+]

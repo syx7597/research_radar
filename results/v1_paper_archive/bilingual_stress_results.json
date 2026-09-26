@@ -1,0 +1,860 @@
+{
+  "per_question": [
+    {
+      "id": "bs_ac_045",
+      "type": "agg_count",
+      "question": "采用 PD 技术的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "脉冲多普勒",
+          "PD"
+        ]
+      ],
+      "gold_answer": 22,
+      "on": {
+        "answer": "25款。根据检索证据，采用PD（脉冲多普勒）技术的雷达共有25个实体。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 22,
+          "pred": 25,
+          "correct": false,
+          "rel_err": 0.13636363636363635
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 22,
+          "pred": null,
+          "correct": false,
+          "rel_err": 1.0
+        }
+      }
+    },
+    {
+      "id": "bs_ac_008",
+      "type": "agg_count",
+      "question": "原产于 UK 的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "英国",
+          "UK"
+        ]
+      ],
+      "gold_answer": 5,
+      "on": {
+        "answer": "5款（EF2000、Master、OASys、Seaspray、Warfare Systems 2001-2002. 238-239.）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 5,
+          "pred": 5,
+          "correct": true,
+          "rel_err": 0.0
+        }
+      },
+      "off": {
+        "answer": "5款（EF2000、Master、OASys、Seaspray、Warfare Systems 2001-2002. 238-239.）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 5,
+          "pred": 5,
+          "correct": true,
+          "rel_err": 0.0
+        }
+      }
+    },
+    {
+      "id": "bs_ac_004",
+      "type": "agg_count",
+      "question": "原产于 Russia 的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "俄罗斯",
+          "Russia"
+        ]
+      ],
+      "gold_answer": 43,
+      "on": {
+        "answer": "根据检索证据，原产于俄罗斯的雷达共有49款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 43,
+          "pred": 49,
+          "correct": false,
+          "rel_err": 0.13953488372093023
+        }
+      },
+      "off": {
+        "answer": "根据检索证据，原产于俄罗斯的雷达共有49款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 43,
+          "pred": 49,
+          "correct": false,
+          "rel_err": 0.13953488372093023
+        }
+      }
+    },
+    {
+      "id": "bs_ac_021",
+      "type": "agg_count",
+      "question": "支持 PD 模式的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "脉冲多普勒",
+          "PD"
+        ]
+      ],
+      "gold_answer": 10,
+      "on": {
+        "answer": "支持 PD 模式的雷达共有 11 款。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 10,
+          "pred": 11,
+          "correct": false,
+          "rel_err": 0.1
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 10,
+          "pred": null,
+          "correct": false,
+          "rel_err": 1.0
+        }
+      }
+    },
+    {
+      "id": "bs_ac_017",
+      "type": "agg_count",
+      "question": "支持 地面MTI 模式的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ],
+      "gold_answer": 23,
+      "on": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 23,
+          "pred": null,
+          "correct": false,
+          "rel_err": 1.0
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "exact_count",
+          "gold": 23,
+          "pred": null,
+          "correct": false,
+          "rel_err": 1.0
+        }
+      }
+    },
+    {
+      "id": "bs_ae_009",
+      "type": "agg_enum",
+      "question": "列出所有采用 PESA 技术的雷达。",
+      "bilingual_subs": [
+        [
+          "无源相控阵",
+          "PESA"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APQ-164",
+        "AN/APQ-181",
+        "AN/APY-1/2",
+        "ESAIRA",
+        "Hp6uc(",
+        "Maxson",
+        "V004"
+      ],
+      "on": {
+        "answer": "采用 PESA 技术的雷达包括：AN/APQ-164、AN/APQ-181、AN/APY-1/2、ESAIRA、Hp6uc(、Maxson、V004、Zhuk-Φ。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 7,
+          "hit": 7,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 7,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ae_008",
+      "type": "agg_enum",
+      "question": "请列出 Germany 装备的所有雷达。",
+      "bilingual_subs": [
+        [
+          "德国",
+          "Germany"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APS-143(V)3",
+        "AN/UPD-8/9(AN/APD-14/12)",
+        "CAESAR",
+        "Chain Home",
+        "FuG 240 Berlin",
+        "Hensoldt TRML-4D",
+        "Lichtenstein radar",
+        "Luftwaffe and Kriegsmarine radar equipment of World War II",
+        "Neptun (radar)",
+        "Raphael-TH/SLAR2000"
+      ],
+      "on": {
+        "answer": "根据检索证据，Germany装备的所有雷达包括：AN/APS-143(V)3、AN/UPD-8/9(AN/APD-14/12)、CAESAR、Chain Home、FuG 240 Berlin、Hensoldt TRML-4D、Lichtenstein radar、Luftwaffe and Kriegsmarine radar equipment of World War II、Neptun (radar)、Raphael-TH/SLAR2000。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 10,
+          "hit": 10,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 10,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ae_006",
+      "type": "agg_enum",
+      "question": "列出所有支持 TWS 模式的雷达。",
+      "bilingual_subs": [
+        [
+          "边扫边跟",
+          "TWS"
+        ]
+      ],
+      "gold_answer": [
+        "A813",
+        "AN/APG-65/65(V)",
+        "AN/APG-67/67(V)",
+        "AN/APG-68/68(V)",
+        "AN/APG-70/70(V)",
+        "AN/APG-73",
+        "AN/APG-79",
+        "AN/APG-80",
+        "AN/APG-81",
+        "AN/APS-130",
+        "AN/APS-143(V)3",
+        "AN/APS-143/143(V)1/2",
+        "APBAJIET",
+        "APG-63(V)3",
+        "APS-504(V)5",
+        "Anemone",
+        "FC-1",
+        "HMMII",
+        "Hp6uc-3",
+        "Iguane",
+        "MAKO",
+        "MOCKMT",
+        "MPEMC(N135)",
+        "MR-5000",
+        "MTBF120h",
+        "Master",
+        "Mercury2",
+        "Osa",
+        "PIICH-2AM/2H",
+        "RACR",
+        "RACR(",
+        "RBE2",
+        "RDI",
+        "SearchwaterlI",
+        "ThalesAirborneSystems",
+        "Thomson-CSF",
+        "Thomson-CSF)",
+        "V004",
+        "Zhuk-27",
+        "Zhuk-A3FGA29",
+        "Zhuk-A3FGA35",
+        "Zhuk-AE",
+        "Zhuk-MC3"
+      ],
+      "on": {
+        "answer": "支持 TWS 模式（边扫边跟）的雷达共有 24 个，包括：A813、AN/APG-65/65(V)、AN/APG-67/67(V)、AN/APG-73、AN/APG-81、AN/APS-130、AN/APS-143(V)3、AN/APS-143/143(V)1/2、APBAJIET、APG-63(V)3、APS-504(V)5、Anemone、Kh31A/Kh35A、MAKO、MR-5000、Master、Mercury2、PIICH-2AM/2H、RDI、SearchwaterlI、ThalesAirborneSystems、Thomson-CSF、Thomson-CSF)、Zhuk-AE。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 43,
+          "hit": 23,
+          "recall": 0.5348837209302325,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 43,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ae_035",
+      "type": "agg_enum",
+      "question": "列出原产于 UK 的所有雷达。",
+      "bilingual_subs": [
+        [
+          "英国",
+          "UK"
+        ]
+      ],
+      "gold_answer": [
+        "EF2000",
+        "Master",
+        "OASys",
+        "Seaspray",
+        "Warfare Systems 2001-2002. 238-239."
+      ],
+      "on": {
+        "answer": "原产于英国的所有雷达包括：EF2000、Master、OASys、Seaspray、Warfare Systems 2001-2002. 238-239。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 5,
+          "hit": 4,
+          "recall": 0.8,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "原产于英国的所有雷达包括：EF2000、Master、OASys、Seaspray、Warfare Systems 2001-2002. 238-239。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 5,
+          "hit": 4,
+          "recall": 0.8,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_ae_036",
+      "type": "agg_enum",
+      "question": "列出原产于 France 的所有雷达。",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ]
+      ],
+      "gold_answer": [
+        "AMSAR",
+        "Agave",
+        "Anemone",
+        "Anemone(",
+        "Antilope5TC",
+        "Captor-E",
+        "Cyrano-IV",
+        "HeraclesII/ORB32",
+        "Horizon",
+        "Iguane",
+        "MAKO",
+        "ORB31D",
+        "ORB37",
+        "ORB37HL",
+        "Orchidee",
+        "RACAAS",
+        "RBE2",
+        "RDY-2",
+        "Raphael-TH/SLAR2000",
+        "SearchMaster",
+        "TARGET",
+        "Thales",
+        "ThalesAirborneSystems",
+        "Thomson-CSF)",
+        "Varan(",
+        "Vixen1000/ES-05"
+      ],
+      "on": {
+        "answer": "根据检索证据，原产于法国的雷达完整列表如下：AMSAR、Agave、Anemone、Anemone(、Antilope5TC、Captor-E、Cyrano-IV、Cyrano-ⅡI、HeraclesII/ORB32、Horizon、Iguane、King、SuperPuma、MAKO、ORB31D、ORB37、ORB37HL、Orchidee、RACAAS、RBE2、RDY-2、RDY-3: Mirage F1/5/2000, MiG-29、ROMEO/ROMEO-IⅡI、Raphael-TH/SLAR2000、SearchMaster、TARGET、Thales、ThalesAirborn",
+        "score": {
+          "metric": "recall",
+          "gold_size": 26,
+          "hit": 26,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "根据检索证据，原产于法国的雷达完整列表如下：AMSAR、Agave、Anemone、Anemone(、Antilope5TC、Captor-E、Cyrano-IV、Cyrano-ⅡI、HeraclesII/ORB32、Horizon、Iguane、King、SuperPuma、MAKO、ORB31D、ORB37、ORB37HL、Orchidee、RACAAS、RBE2、RDY-2、RDY-3: Mirage F1/5/2000, MiG-29、ROMEO/ROMEO-IⅡI、Raphael-TH/SLAR2000、SearchMaster、TARGET、Thales、ThalesAirborn",
+        "score": {
+          "metric": "recall",
+          "gold_size": 26,
+          "hit": 26,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_af_045",
+      "type": "attr_filter",
+      "question": "China 装备的且部署在固定站上的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ],
+      "gold_answer": [
+        "AI Mark IV radar",
+        "AMES Type 7",
+        "AMES Type 80",
+        "Green Garlic",
+        "Over-the-horizon radar",
+        "RP-21 Sapfir"
+      ],
+      "on": {
+        "answer": "根据检索证据，中国装备且部署在固定站上的雷达共有6种，包括：AI Mark IV radar、AMES Type 7、AMES Type 80、Green Garlic、Over-the-horizon radar、RP-21 Sapfir。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 6,
+          "hit": 6,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "根据检索证据，中国装备且部署在固定站上的雷达共有6种，包括：AI Mark IV radar、AMES Type 7、AMES Type 80、Green Garlic、Over-the-horizon radar、RP-21 Sapfir。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 6,
+          "hit": 6,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_af_031",
+      "type": "attr_filter",
+      "question": "原产于 USA 的且支持 地面动目标跟踪 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-70/70(V)",
+        "AN/APG-77/77V",
+        "AN/APG-80",
+        "AN/APG-81",
+        "RACR"
+      ],
+      "on": {
+        "answer": "原产于美国且支持地面动目标跟踪模式的雷达有：AN/APG-70/70(V)、AN/APG-77/77V、AN/APG-80、AN/APG-81、RACR。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 5,
+          "hit": 5,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "原产于美国且支持地面动目标跟踪模式的雷达有：AN/APG-70/70(V)、AN/APG-77/77V、AN/APG-80、AN/APG-81、RACR。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 5,
+          "hit": 5,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_af_003",
+      "type": "attr_filter",
+      "question": "原产于 France 的且支持 SAR 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ],
+        [
+          "合成孔径",
+          "SAR"
+        ]
+      ],
+      "gold_answer": [
+        "Captor-E",
+        "Raphael-TH/SLAR2000"
+      ],
+      "on": {
+        "answer": "否（KG中无相关记录）。证据显示，原产于法国的雷达有30个，支持SAR模式的雷达有3个，但两者交集为空，没有同时满足两个条件的雷达。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "否（KG中无相关记录）。证据显示，原产于法国的雷达有30个，支持SAR模式的雷达有3个，但两者交集为空，没有同时满足两个条件的雷达。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_af_002",
+      "type": "attr_filter",
+      "question": "Germany 装备的且工作在 VHF 波段的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "德国",
+          "Germany"
+        ]
+      ],
+      "gold_answer": [
+        "Lichtenstein radar",
+        "Neptun (radar)"
+      ],
+      "on": {
+        "answer": "根据检索证据，德国装备且工作在VHF波段的雷达有：Lichtenstein radar 和 Neptun (radar)。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 2,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "否（KG中无相关记录）。证据显示，同时满足“Germany 装备”和“工作在 VHF 波段”的雷达交集为空。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 2,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_af_006",
+      "type": "attr_filter",
+      "question": "原产于 USA 的且支持 速度搜索 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": [
+        "AN/APG-65/65(V)",
+        "AN/APG-67/67(V)",
+        "AN/APG-70/70(V)",
+        "APG-63(V)3",
+        "Avionics 2002-2003. 581.",
+        "Helicopter"
+      ],
+      "on": {
+        "answer": "原产于美国且支持速度搜索模式的雷达有：AN/APG-65/65(V)、AN/APG-67/67(V)、AN/APG-70/70(V)、APG-63(V)3、Avionics 2002-2003. 581.、Helicopter。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 6,
+          "hit": 6,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "原产于美国且支持速度搜索模式的雷达有：AN/APG-65/65(V)、AN/APG-67/67(V)、AN/APG-70/70(V)、APG-63(V)3、Avionics 2002-2003. 581.、Helicopter。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 6,
+          "hit": 6,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_ri_021",
+      "type": "relation_inverse",
+      "question": "由 Germany 所属国 的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "德国",
+          "Germany"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "根据检索证据，属于德国（Germany）的雷达相关实体有：Hensoldt AG、Metropolitan-Vickers、Q138816651、Telefunken。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 4,
+          "hit": 4,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 4,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ri_046",
+      "type": "relation_inverse",
+      "question": "支持 地面MTI 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 19,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 19,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ri_036",
+      "type": "relation_inverse",
+      "question": "采用 PESA 技术的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "无源相控阵",
+          "PESA"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "采用 PESA 技术（无源相控阵）的雷达有：AN/APQ-164、AN/APQ-181、AN/APY-1/2、ESAIRA、Hp6uc(、Maxson、V004、Zhuk-Φ。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 8,
+          "hit": 8,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 8,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_ri_001",
+      "type": "relation_inverse",
+      "question": "China 装备了哪些雷达？",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "根据检索证据，中国装备的雷达共有48种，包括AI Mark IV radar、AMES Type 7、AMES Type 80、AMES Type 84、AN/FPS-30、AN/GPN-12、AN/GPN-20、AN/TPS-72、ASR-7、ASR-8、ASV Mark III radar、Agrion、Airport surveillance radar、Aselsan EIRS、CS/SPG-6、Chain Home Low、Counter-battery radar、FLORAKO、Green Garlic、Green Satin radar、Ground-controlled in",
+        "score": {
+          "metric": "recall",
+          "gold_size": 48,
+          "hit": 48,
+          "recall": 1.0,
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "根据检索证据，中国装备的雷达共有48种，包括AI Mark IV radar、AMES Type 7、AMES Type 80、AMES Type 84、AN/FPS-30、AN/GPN-12、AN/GPN-20、AN/TPS-72、ASR-7、ASR-8、ASV Mark III radar、Agrion、Airport surveillance radar、Aselsan EIRS、CS/SPG-6、Chain Home Low、Counter-battery radar、FLORAKO、Green Garlic、Green Satin radar、Ground-controlled in",
+        "score": {
+          "metric": "recall",
+          "gold_size": 48,
+          "hit": 48,
+          "recall": 1.0,
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_ri_023",
+      "type": "relation_inverse",
+      "question": "支持 SAR雷达成像 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "合成孔径",
+          "SAR"
+        ]
+      ],
+      "gold_answer": null,
+      "on": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 3,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      },
+      "off": {
+        "answer": "未知（KG中无相关记录）。",
+        "score": {
+          "metric": "recall",
+          "gold_size": 3,
+          "hit": 0,
+          "recall": 0.0,
+          "correct": false
+        }
+      }
+    },
+    {
+      "id": "bs_neg_010",
+      "type": "negation",
+      "question": "AN/SPN-46 是否被 India尼西亚 装备使用？",
+      "bilingual_subs": [
+        [
+          "印度",
+          "India"
+        ]
+      ],
+      "gold_answer": "否",
+      "on": {
+        "answer": "否（KG中无相关记录）。证据显示AN/SPN-46仅被美国装备使用，印度尼西亚不在其operatedBy关系取值集合中。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "否（KG中无相关记录）。证据显示AN/SPN-46仅被美国装备使用，印度尼西亚不在其operatedBy关系取值集合中。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_neg_029",
+      "type": "negation",
+      "question": "NUR-22 是否被 France 装备使用？",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ]
+      ],
+      "gold_answer": "否",
+      "on": {
+        "answer": "否（KG中无相关记录）。证据显示NUR-22的装备使用方为Polish Land Forces和波兰，不包括France。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "否（KG中无相关记录）。证据显示NUR-22的装备使用方为Polish Land Forces和波兰，不包括France。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "bs_neg_037",
+      "type": "negation",
+      "question": "Flamr 是否被 USA空军 装备使用？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ],
+      "gold_answer": "否",
+      "on": {
+        "answer": "否。根据知识图谱，Flamr的operatedBy关系指向“日本”和“美国”，而非“USA空军”。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      },
+      "off": {
+        "answer": "否。根据知识图谱，Flamr的operatedBy关系取值为“日本”和“美国”，但未明确指向“USA空军”。",
+        "score": {
+          "metric": "polarity",
+          "gold_polarity": "no",
+          "pred_polarity": "no",
+          "correct": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1267 @@
+{
+ "n_triples": 19540,
+ "n_questions": 157,
+ "rows": [
+  {
+   "type": "agg_count",
+   "q": "How many films did Louis Feuillade direct?",
+   "gold_n": 47,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Louis Feuillade.",
+   "gold_n": 47,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Sam Newfield direct?",
+   "gold_n": 199,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Sam Newfield.",
+   "gold_n": 199,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did William Beaudine direct?",
+   "gold_n": 186,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by William Beaudine.",
+   "gold_n": 186,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Richard Thorpe direct?",
+   "gold_n": 177,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Richard Thorpe.",
+   "gold_n": 177,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Michael Curtiz direct?",
+   "gold_n": 172,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Michael Curtiz.",
+   "gold_n": 172,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Maurice Elvey direct?",
+   "gold_n": 150,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Maurice Elvey.",
+   "gold_n": 150,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Lambert Hillyer direct?",
+   "gold_n": 141,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Lambert Hillyer.",
+   "gold_n": 141,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Lesley Selander direct?",
+   "gold_n": 138,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Lesley Selander.",
+   "gold_n": 138,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Allan Dwan direct?",
+   "gold_n": 137,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Allan Dwan.",
+   "gold_n": 137,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did J. Sasikumar direct?",
+   "gold_n": 130,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by J. Sasikumar.",
+   "gold_n": 130,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Raoul Walsh direct?",
+   "gold_n": 132,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Raoul Walsh.",
+   "gold_n": 132,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Lew Landers direct?",
+   "gold_n": 132,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Lew Landers.",
+   "gold_n": 132,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Phil Rosen direct?",
+   "gold_n": 125,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Phil Rosen.",
+   "gold_n": 125,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Ray Taylor direct?",
+   "gold_n": 130,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Ray Taylor.",
+   "gold_n": 130,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Frank Lloyd direct?",
+   "gold_n": 127,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Frank Lloyd.",
+   "gold_n": 127,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Joe D'Amato direct?",
+   "gold_n": 106,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Joe D'Amato.",
+   "gold_n": 106,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did John Ford direct?",
+   "gold_n": 124,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by John Ford.",
+   "gold_n": 124,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Jesús Franco direct?",
+   "gold_n": 119,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Jesús Franco.",
+   "gold_n": 119,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Carl Boese direct?",
+   "gold_n": 101,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Carl Boese.",
+   "gold_n": 101,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did George Archainbaud direct?",
+   "gold_n": 122,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by George Archainbaud.",
+   "gold_n": 122,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Christy Cabanne direct?",
+   "gold_n": 117,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Christy Cabanne.",
+   "gold_n": 117,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Georg Jacoby direct?",
+   "gold_n": 96,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Georg Jacoby.",
+   "gold_n": 96,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Chano Urueta direct?",
+   "gold_n": 116,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Chano Urueta.",
+   "gold_n": 116,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Joseph Kane direct?",
+   "gold_n": 117,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Joseph Kane.",
+   "gold_n": 117,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Jules White direct?",
+   "gold_n": 114,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Jules White.",
+   "gold_n": 114,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did I. V. Sasi direct?",
+   "gold_n": 112,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by I. V. Sasi.",
+   "gold_n": 112,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Léonce Perret direct?",
+   "gold_n": 54,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Léonce Perret.",
+   "gold_n": 54,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Jean Durand direct?",
+   "gold_n": 37,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Jean Durand.",
+   "gold_n": 37,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Francis Ford direct?",
+   "gold_n": 110,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Francis Ford.",
+   "gold_n": 110,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did William A. Seiter direct?",
+   "gold_n": 111,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by William A. Seiter.",
+   "gold_n": 111,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did William Nigh direct?",
+   "gold_n": 111,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by William Nigh.",
+   "gold_n": 111,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Henry King direct?",
+   "gold_n": 110,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Henry King.",
+   "gold_n": 110,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did George Sherman direct?",
+   "gold_n": 110,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by George Sherman.",
+   "gold_n": 110,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Alfred Edward Green direct?",
+   "gold_n": 108,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Alfred Edward Green.",
+   "gold_n": 108,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Robert Z. Leonard direct?",
+   "gold_n": 104,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Robert Z. Leonard.",
+   "gold_n": 104,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Frank Borzage direct?",
+   "gold_n": 104,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Frank Borzage.",
+   "gold_n": 104,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_count",
+   "q": "How many films did Richard Oswald direct?",
+   "gold_n": 76,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "agg_enum",
+   "q": "List the films directed by Richard Oswald.",
+   "gold_n": 76,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre drama film?",
+   "gold_n": 39,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre silent film?",
+   "gold_n": 35,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre crime film?",
+   "gold_n": 33,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre Western film?",
+   "gold_n": 28,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre action film?",
+   "gold_n": 25,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre adventure film?",
+   "gold_n": 29,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre comedy film?",
+   "gold_n": 33,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre horror film?",
+   "gold_n": 17,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre comedy drama?",
+   "gold_n": 20,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre romantic comedy?",
+   "gold_n": 21,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre romance film?",
+   "gold_n": 28,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre musical film?",
+   "gold_n": 26,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre war film?",
+   "gold_n": 25,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre thriller film?",
+   "gold_n": 21,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre mystery film?",
+   "gold_n": 26,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre fantasy film?",
+   "gold_n": 19,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre science fiction film?",
+   "gold_n": 20,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre film noir?",
+   "gold_n": 16,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "relation_inverse",
+   "q": "Which directors directed a film of genre biographical film?",
+   "gold_n": 15,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Louis Feuillade AND of genre crime film?",
+   "gold_n": 7,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Lau Lauritzen Sr. AND of genre comedy film?",
+   "gold_n": 10,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Sam Newfield AND of genre Western film?",
+   "gold_n": 74,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by William Beaudine AND of genre drama film?",
+   "gold_n": 37,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Richard Thorpe AND of genre drama film?",
+   "gold_n": 44,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Georges Monca AND of genre silent film?",
+   "gold_n": 16,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Michael Curtiz AND of genre science fiction film?",
+   "gold_n": 3,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Viggo Larsen AND of genre silent film?",
+   "gold_n": 18,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Maurice Elvey AND of genre crime film?",
+   "gold_n": 24,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Lambert Hillyer AND of genre drama film?",
+   "gold_n": 23,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Lesley Selander AND of genre adventure film?",
+   "gold_n": 5,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Allan Dwan AND of genre drama film?",
+   "gold_n": 68,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by J. Sasikumar AND of genre historical film?",
+   "gold_n": 3,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Raoul Walsh AND of genre film noir?",
+   "gold_n": 8,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Lew Landers AND of genre war film?",
+   "gold_n": 7,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Phil Rosen AND of genre drama film?",
+   "gold_n": 61,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Ray Taylor AND of genre adventure film?",
+   "gold_n": 17,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Frank Lloyd AND of genre Western film?",
+   "gold_n": 5,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Joe D'Amato AND of genre pornographic film?",
+   "gold_n": 33,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by John Ford AND of genre drama film?",
+   "gold_n": 57,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Jesús Franco AND of genre horror film?",
+   "gold_n": 46,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Carl Boese AND of genre silent film?",
+   "gold_n": 30,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by George Archainbaud AND of genre Western film?",
+   "gold_n": 32,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Christy Cabanne AND of genre silent film?",
+   "gold_n": 52,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "attr_filter",
+   "q": "Which films are directed by Georg Jacoby AND of genre comedy film?",
+   "gold_n": 31,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 0,
+   "baseline_k20_ok": 0
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Silver Lode from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Hard to Get from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Forgotten Prayer from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Bitter Sex from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film China and Sex from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Woman of the North Country from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Diamonds of Kilimanjaro from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Big Show from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Boy Crazy from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Two Girls and a Sailor from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Bad Man from Red Butte from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Dangerous Number from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Monster Maker from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Law of the Range from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Charlie Chan in the Secret Service from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Money's Merciless Might from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Den glemsomme Professor from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Love Story of Aliette Brunton from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Brewster's Millions from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Flame of Barbary Coast from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Lulu's Nights from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Bánk Bán from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Garden Murder Case from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Black Magic from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Love's Wilderness from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Billy Jim from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Frisco Sally Levy from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Rangam from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Life of Riley from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Good and Evil from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Young Mr. Lincoln from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film False Paradise from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Sally in Our Alley from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film It's a Big Country from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Dunked in the Deep from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Joy and the Dragon from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film The Carousel of Life from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Doctor Bull from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  },
+  {
+   "type": "single_hop",
+   "q": "What decade is the film Calamity Jane and Sam Bass from?",
+   "gold_n": 1,
+   "strategy_ok": 1,
+   "baseline_k8_ok": 1,
+   "baseline_k20_ok": 1
+  }
+ ],
+ "overall": {
+  "baseline_k8": 24.840764331210192,
+  "baseline_k20": 25.477707006369428,
+  "strategy": 100.0
+ }
+}

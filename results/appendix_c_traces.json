@@ -1,0 +1,262 @@
+{
+  "traces": [
+    {
+      "target_strategy": "lookup",
+      "question": "AN/TPY-2 是由哪家公司研制的？",
+      "router_output": {
+        "qtype": "single_hop",
+        "strategy": "lookup"
+      },
+      "parser_args": {
+        "primary_entity": "AN/TPY-2",
+        "secondary_entity": "",
+        "relation_chain": [
+          "developedBy"
+        ],
+        "constraints": [],
+        "forbidden_tail": "",
+        "answer_target": "entity"
+      },
+      "executor_evidence": {
+        "reranked_count": 8,
+        "kg_fallback_count": 1
+      },
+      "rendered_context": "【检索到的图谱证据】\n\n[01] (RadarSystem) AN/TPY-2 --[developedBy]--> (Manufacturer) Raytheon  [相关度:0.043]\n      证据: Manufactured by Raytheon\n[02] (RadarSystem) AN/TPY-2 --[operatedBy]--> (Country) 美国  [相关度:0.028]\n      证据: country inferred: 美国\n[03] (Radar) AN/APY-1/2 --[developedBy]--> (Manufacturer) NorthropGrumman ElectronicSystems  [相关度:0.021]\n      证据: 研制厂商: NorthropGrumman ElectronicSystems\n[04] (RadarSystem) AN/SPY-6 --[developedBy]--> (Manufacturer) Raytheon  [相关度:0.021]\n      证据: developed and built by RTX Corporation\n[05] (RadarSystem) AN/TPY-4 --[developedBy]--> (Manufacturer) Lockheed Martin ...",
+      "final_answer": "AN/TPY-2 是由 Raytheon 公司研制的。"
+    },
+    {
+      "target_strategy": "exhaustive",
+      "question": "工作在 X 波段的雷达共有多少款？",
+      "router_output": {
+        "qtype": "agg_count",
+        "strategy": "exhaustive"
+      },
+      "parser_args": {
+        "primary_entity": "",
+        "secondary_entity": "",
+        "relation_chain": [
+          "hasFrequencyBand"
+        ],
+        "constraints": [
+          {
+            "relation": "hasFrequencyBand",
+            "tail": "X"
+          }
+        ],
+        "forbidden_tail": "",
+        "answer_target": "count"
+      },
+      "executor_evidence": {
+        "relation": "hasFrequencyBand",
+        "tail": "X",
+        "n_heads": 34,
+        "sample_heads": [
+          "AI.20 radar",
+          "AN/APG-63 radar family",
+          "AN/APG-64",
+          "AN/APG-66",
+          "AN/APG-67",
+          "AN/APG-68",
+          "AN/APG-69",
+          "AN/APG-70"
+        ]
+      },
+      "rendered_context": "【穷举检索结果】\n约束：(?, hasFrequencyBand, X)  共匹配 34 个实体\n完整列表：\n  - AI.20 radar\n  - AN/APG-63 radar family\n  - AN/APG-64\n  - AN/APG-66\n  - AN/APG-67\n  - AN/APG-68\n  - AN/APG-69\n  - AN/APG-70\n  - AN/APG-71\n  - AN/APG-77\n  - AN/APG-82\n  - AN/APQ-180\n  - AN/APS-4 search radar\n  - AN/AWG-20\n  - AN/AWG-27\n  - AN/AWG-9\n  - AN/FPS-4 radar\n  - AN/MPQ-64 Sentinel\n  - AN/SPG-62\n  - AN/SPN-46\n  - AN/SPY-3\n  - AN/TPY-2\n  - APY-016K\n  - EL/M-2052\n  - FCS-3\n  - Giraffe radar\n  - H2S (radar)\n  - JL-10A\n  - KLJ-7\n  - MM/SPQ-2\n  - OPS-20\n  - OPS-4\n  - OPS-9\n  - Red Steer",
+      "final_answer": "34款。根据检索证据，工作在X波段的雷达共有34个实体。"
+    },
+    {
+      "target_strategy": "complement",
+      "question": "AN/TPY-2 是否被中国使用？",
+      "router_output": {
+        "qtype": "negation",
+        "strategy": "complement"
+      },
+      "parser_args": {
+        "primary_entity": "AN/TPY-2",
+        "secondary_entity": "",
+        "relation_chain": [
+          "operatedBy"
+        ],
+        "constraints": [
+          {
+            "relation": "operatedBy",
+            "tail": "中国"
+          }
+        ],
+        "forbidden_tail": "中国",
+        "answer_target": "yesno"
+      },
+      "executor_evidence": {
+        "head": "AN/TPY-2",
+        "relation": "operatedBy",
+        "known_tails": [
+          "美国"
+        ],
+        "forbidden": "中国",
+        "is_empty": false
+      },
+      "rendered_context": "【补全检验结果】\n主实体：AN/TPY-2    关系：operatedBy\nKG 中已知的所有 operatedBy 取值：\n  - 美国\n\n被询问对象：中国\n该对象是否在已知集合中：否",
+      "final_answer": "否（KG中无相关记录）。证据显示AN/TPY-2的operatedBy关系取值仅为美国，不包含中国。"
+    },
+    {
+      "target_strategy": "path_plan",
+      "question": "AN/TPY-2 的研制公司属于哪个国家？",
+      "router_output": {
+        "qtype": "two_hop_bridge",
+        "strategy": "path_plan"
+      },
+      "parser_args": {
+        "primary_entity": "AN/TPY-2",
+        "secondary_entity": "",
+        "relation_chain": [
+          "developedBy",
+          "affiliatedTo"
+        ],
+        "constraints": [],
+        "forbidden_tail": "",
+        "answer_target": "entity"
+      },
+      "executor_evidence": {
+        "path_steps": [
+          {
+            "rel": "developedBy",
+            "in": [
+              "AN/TPY-2"
+            ],
+            "out": [
+              "Raytheon"
+            ]
+          },
+          {
+            "rel": "affiliatedTo",
+            "in": [
+              "Raytheon"
+            ],
+            "out": [
+              "意大利",
+              "法国",
+              "美国"
+            ]
+          }
+        ],
+        "final": [
+          "意大利",
+          "法国",
+          "美国"
+        ]
+      },
+      "rendered_context": "【路径执行轨迹】\n步骤1：关系 developedBy\n  AN/TPY-2 -[developedBy]-> Raytheon\n步骤2：关系 affiliatedTo\n  Raytheon -[affiliatedTo]-> 意大利\n  Raytheon -[affiliatedTo]-> 美国\n  Raytheon -[affiliatedTo]-> 法国\n\n终态实体集（3）：\n  - 意大利\n  - 法国\n  - 美国",
+      "final_answer": "根据证据，AN/TPY-2的研制公司Raytheon隶属于美国、意大利和法国，但Raytheon总部位于美国，因此属于美国。"
+    },
+    {
+      "target_strategy": "constrained_join",
+      "question": "由 Raytheon 研制且部署在战斗机上的雷达？",
+      "router_output": {
+        "qtype": "attr_filter",
+        "strategy": "constrained_join"
+      },
+      "parser_args": {
+        "primary_entity": "",
+        "secondary_entity": "",
+        "relation_chain": [],
+        "constraints": [
+          {
+            "relation": "developedBy",
+            "tail": "Raytheon"
+          },
+          {
+            "relation": "deployedOn",
+            "tail": "战斗机"
+          }
+        ],
+        "forbidden_tail": "",
+        "answer_target": "enum"
+      },
+      "executor_evidence": {
+        "breakdown": [
+          {
+            "relation": "developedBy",
+            "tail": "Raytheon",
+            "n": 36,
+            "sample": [
+              "AN/APG-63 radar family",
+              "AN/APG-64",
+              "AN/APG-65 radar family",
+              "AN/APG-70",
+              "AN/APG-71"
+            ],
+            "fallback_to": null
+          },
+          {
+            "relation": "deployedOn",
+            "tail": "战斗机",
+            "n": 44,
+            "sample": [
+              "AI Mark IV radar",
+              "ALP 100-G",
+              "AMES Type 7",
+              "AMES Type 80",
+              "AMES Type 85"
+            ],
+            "fallback_to": null
+          }
+        ],
+        "intersection_n": 14,
+        "intersection_sample": [
+          "AN/APG-63 radar family",
+          "AN/APG-64",
+          "AN/APG-65 radar family",
+          "AN/APG-70",
+          "AN/APG-71",
+          "AN/APG-73",
+          "AN/APG-77",
+          "AN/APG-81"
+        ],
+        "equiv_fallback_used": false
+      },
+      "rendered_context": "【多约束交集结果】\n约束 (developedBy=Raytheon)：36 个匹配，例如 ['AN/APG-63 radar family', 'AN/APG-64', 'AN/APG-65 radar family', 'AN/APG-70', 'AN/APG-71']\n约束 (deployedOn=战斗机)：44 个匹配，例如 ['AI Mark IV radar', 'ALP 100-G', 'AMES Type 7', 'AMES Type 80', 'AMES Type 85']\n\n交集（14）：\n  - AN/APG-63 radar family\n  - AN/APG-64\n  - AN/APG-65 radar family\n  - AN/APG-70\n  - AN/APG-71\n  - AN/APG-73\n  - AN/APG-77\n  - AN/APG-81\n  - AN/APG-82\n  - AN/APG-83\n  - AN/APQ-180\n  - AN/AWG-20\n  - AN/AWG-27\n  - AN/AWG-9",
+      "final_answer": "由 Raytheon 研制且部署在战斗机上的雷达共有14个，包括：AN/APG-63 radar family、AN/APG-64、AN/APG-65 radar family、AN/APG-70、AN/APG-71、AN/APG-73、AN/APG-77、AN/APG-81、AN/APG-82、AN/APG-83、AN/APQ-180、AN/AWG-20、AN/AWG-27、AN/AWG-9。"
+    },
+    {
+      "target_strategy": "dual_subgraph",
+      "question": "AN/TPY-2 和 AN/MPQ-65 的研制公司是否相同？",
+      "router_output": {
+        "qtype": "set_compare",
+        "strategy": "dual_subgraph"
+      },
+      "parser_args": {
+        "primary_entity": "AN/TPY-2",
+        "secondary_entity": "AN/MPQ-65",
+        "relation_chain": [
+          "developedBy"
+        ],
+        "constraints": [],
+        "forbidden_tail": "",
+        "answer_target": "yesno"
+      },
+      "executor_evidence": {
+        "entity_a": "AN/TPY-2",
+        "entity_b": "AN/MPQ-65",
+        "a_tails": {
+          "developedBy": [
+            "Raytheon"
+          ]
+        },
+        "b_tails": {
+          "developedBy": [
+            "Raytheon",
+            "the U",
+            "which had previously"
+          ]
+        },
+        "same": {
+          "developedBy": [
+            "Raytheon"
+          ]
+        }
+      },
+      "rendered_context": "【对比检索结果】实体A=AN/TPY-2 vs 实体B=AN/MPQ-65\n\n关系 developedBy:\n  A 的取值：['Raytheon']\n  B 的取值：['Raytheon', 'the U', 'which had previously']\n  共同：['Raytheon']    A独有：[]    B独有：['the U', 'which had previously']",
+      "final_answer": "是，AN/TPY-2和AN/MPQ-65的研制公司相同，均为Raytheon。"
+    }
+  ]
+}

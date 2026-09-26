@@ -1,0 +1,2167 @@
+{
+  "per_question": [
+    {
+      "question": "Who won for work on Raiders of the Lost Ark, the Academy Award recipient for Best Sound Mixing?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "54th Academy Awards",
+      "topic_entities": [
+        "Raiders of the Lost Ark",
+        "Academy Award for Best Sound Mixing"
+      ],
+      "subgraph_size": 1910,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the subject of Lebanon (whose population is 2676593) having a diplomatic relation with Bangladesh (whose population is 117369492)?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "Bangladesh–Lebanon relations",
+      "topic_entities": [
+        "Lebanon",
+        "Bangladesh"
+      ],
+      "subgraph_size": 32058,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示孟加拉国与黎巴嫩之间存在外交关系。",
+      "strategy_answer": "根据证据，黎巴嫩与孟加拉国之间存在外交关系，因此该问题的答案是：外交关系。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "For Jewel (the one whose official website is http://www.jeweljk.com), what is the start time for her record label Atlantic Records?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "1994",
+      "topic_entities": [
+        "Jewel",
+        "Atlantic Records"
+      ],
+      "subgraph_size": 922,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "When did Roots receive the Peabody Award?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "1977",
+      "topic_entities": [
+        "Peabody Award",
+        "Roots",
+        "Peabody Award"
+      ],
+      "subgraph_size": 857,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is cast member Nicolas Cage's character role in Ghost Rider, which was published 2007-02-22?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "Ghost Rider",
+      "topic_entities": [
+        "Ghost Rider",
+        "Nicolas Cage"
+      ],
+      "subgraph_size": 1959,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "根据证据，Nicolas Cage在2007年2月22日发布的《Ghost Rider》中饰演的角色是Johnny Blaze / Ghost Rider。",
+      "baseline_correct": false,
+      "strategy_correct": true
+    },
+    {
+      "question": "For which work did Tom Selleck receive Primetime Emmy Award for Outstanding Lead Actor in a Drama Series ?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "Magnum, P.I.",
+      "topic_entities": [
+        "Tom Selleck",
+        "Primetime Emmy Award for Outstanding Lead Actor in a Drama Series"
+      ],
+      "subgraph_size": 821,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "Tom Selleck凭借《警察世家》（Blue Bloods）获得黄金时段艾美奖剧情类最佳男主角奖。",
+      "strategy_answer": "Tom Selleck凭借《警察世家》（Blue Bloods）获得黄金时段艾美奖剧情类最佳男主角奖。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What administrative territorial entity is New York City, which happens to be the birthplace of Bea Arthur, located in?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "New York",
+      "topic_entities": [
+        "Bea Arthur",
+        "New York City"
+      ],
+      "subgraph_size": 2346,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "New York City is located in the administrative territorial entity New York.",
+      "strategy_answer": "New York City位于纽约州。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "At what point in time did Ōsaka Prefecture become the twinned administrative body of Queensland?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "1988-05-04",
+      "topic_entities": [
+        "Ōsaka Prefecture",
+        "Queensland"
+      ],
+      "subgraph_size": 1505,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Mark Gatiss is cast in what role on Game of Thrones, also featuring Jerome Flynn as a cast member?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "Tycho Nestoris",
+      "topic_entities": [
+        "Jerome Flynn",
+        "Game of Thrones",
+        "Mark Gatiss"
+      ],
+      "subgraph_size": 3399,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "When did Donald M. Payne ( the one that was Vice President of the United States) ended his presidency of the United States?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "1973",
+      "topic_entities": [
+        "Donald M. Payne",
+        "Vice President of the United States",
+        "president"
+      ],
+      "subgraph_size": 963,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提及Donald M. Payne担任美国副总统及其任期结束时间。",
+      "strategy_answer": "未知。证据中未提及Donald M. Payne担任美国副总统及其任期结束时间。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Tell me the time points of James Ivory (the one that was born in Dundee) got a Copley medal",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "1814-01-01",
+      "topic_entities": [
+        "Dundee",
+        "James Ivory",
+        "Copley Medal"
+      ],
+      "subgraph_size": 1795,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the topic of the statement that Libya shares a boundary with Algeria?",
+      "kqapro_fn": "QueryRelationQualifier",
+      "gold_answer": "Algeria–Libya border",
+      "topic_entities": [
+        "Libya",
+        "Algeria"
+      ],
+      "subgraph_size": 17881,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知。证据中仅包含\"Libya shares border with Algeria\"这一事实，未提及该陈述的主题。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the link between Smokin' Aces and Working Title Films?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "production company",
+      "topic_entities": [
+        "Smokin' Aces",
+        "Working Title Films"
+      ],
+      "subgraph_size": 2318,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Working Title Films was the production company for the film Smokin' Aces.",
+      "strategy_answer": "Working Title Films was the production company for the film Smokin' Aces.",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "What is the connection between Ocala to Florida?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "located in the administrative territorial entity",
+      "topic_entities": [
+        "Ocala",
+        "Florida"
+      ],
+      "subgraph_size": 1412,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Ocala位于佛罗里达州，是佛罗里达州的一个城市。",
+      "strategy_answer": "Ocala位于佛罗里达州，是佛罗里达州的一个城市。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the connection between Danny McBride (the one whose date of birth is 1945-11-20) to Somerville (the one whose population is 75754)?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "place of birth",
+      "topic_entities": [
+        "Danny McBride",
+        "Somerville"
+      ],
+      "subgraph_size": 755,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中Danny McBride的出生日期为1976/12/29，与问题中的1945-11-20不符，且无任何连接至Somerville的路径。",
+      "strategy_answer": "否（KG中无相关记录）。证据中Danny McBride的出生日期为1976/12/29，与问题中的1945-11-20不符，且未找到该实体与Somerville的直接关联。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the connection between Paul Simon (the one that plays the instrument drum kit) to Halifax (the one whose country is United Kingdom)?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "place of birth",
+      "topic_entities": [
+        "drum kit",
+        "Paul Simon",
+        "United Kingdom",
+        "Halifax"
+      ],
+      "subgraph_size": 31820,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提及Paul Simon（演奏鼓的乐器）与Halifax（国家为英国）之间的任何直接或间接联系。",
+      "strategy_answer": "未知。证据中未提及Paul Simon或Halifax（英国）的任何信息，无法建立连接。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How is Ralph Waldo Emerson related to Boston?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "place of birth",
+      "topic_entities": [
+        "Ralph Waldo Emerson",
+        "Boston"
+      ],
+      "subgraph_size": 1728,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Ralph Waldo Emerson was born in Boston and educated at Boston Latin School.",
+      "strategy_answer": "Ralph Waldo Emerson was born in Boston and educated at Boston Latin School.",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the connection between The Man in the Iron Mask (the one that has Alan Hale as a cast member) to drama film?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "genre",
+      "topic_entities": [
+        "Alan Hale",
+        "The Man in the Iron Mask",
+        "drama film"
+      ],
+      "subgraph_size": 2144,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示《The Man in the Iron Mask》的演员包括Alan Hale，且该电影的体裁是drama film。",
+      "strategy_answer": "《The Man in the Iron Mask》是一部由Alan Hale参演的电影，其类型为drama film（剧情片）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What does Hollywood Records have in common with United States of America?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "country",
+      "topic_entities": [
+        "Hollywood Records",
+        "United States of America"
+      ],
+      "subgraph_size": 55392,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "好莱坞唱片公司（Hollywood Records）的总部位于美国（United States of America），因此两者之间的共同点是：好莱坞唱片公司是美国的一家唱片公司。",
+      "strategy_answer": "好莱坞唱片公司（Hollywood Records）位于美国（United States of America），即其所属国家是美国。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How is Joe Shuster linked to heart failure?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "cause of death",
+      "topic_entities": [
+        "Joe Shuster",
+        "heart failure"
+      ],
+      "subgraph_size": 1042,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Joe Shuster的死因是心力衰竭。",
+      "strategy_answer": "Joe Shuster的死因是心力衰竭。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How is Amber Benson related to the Birmingham where Louise Fletcher was born?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "place of birth",
+      "topic_entities": [
+        "Amber Benson",
+        "Louise Fletcher",
+        "Birmingham"
+      ],
+      "subgraph_size": 925,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Amber Benson and Louise Fletcher were both born in Birmingham, Alabama, USA.",
+      "strategy_answer": "Amber Benson and Louise Fletcher were both born in Birmingham.",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How is I Heart Huckabees related to the \"English\" category?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "original language of film or TV show",
+      "topic_entities": [
+        "I Heart Huckabees",
+        "English"
+      ],
+      "subgraph_size": 2264,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "I Heart Huckabees is related to the \"English\" category because its original language of film or TV show is English.",
+      "strategy_answer": "I Heart Huckabees is related to the \"English\" category because its original language of film or TV show is English.",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "How is Salvador (nominated for National Society of Film Critics Award for Best Director) related to English?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "original language of film or TV show",
+      "topic_entities": [
+        "National Society of Film Critics Award for Best Director",
+        "Salvador",
+        "English"
+      ],
+      "subgraph_size": 2321,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提及Salvador与English的任何关联。",
+      "strategy_answer": "未知。证据中未提及Salvador与English的任何关联。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How are Richard Jenkins, who was a cast member of Eat Pray Love, and The Rum Diary related?",
+      "kqapro_fn": "QueryRelation",
+      "gold_answer": "cast member",
+      "topic_entities": [
+        "The Rum Diary",
+        "Eat Pray Love",
+        "Richard Jenkins"
+      ],
+      "subgraph_size": 2645,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Richard Jenkins是电影《The Rum Diary》和《Eat Pray Love》的共同演员，因此他通过参演这两部电影而关联。",
+      "strategy_answer": "Richard Jenkins是电影《The Rum Diary》的演员之一，因此他与该电影的关系是演员与作品的关系。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is the IAB code equal to 1275 for the type of sport that has the sport team New Zealand national cricket team?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "no",
+      "topic_entities": [
+        "New Zealand national cricket team"
+      ],
+      "subgraph_size": 283,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。证据中未提及IAB code或1275，且cricket的IAB code未知。",
+      "strategy_answer": "否。证据显示新西兰国家板球队的运动类型是板球（cricket），但未提供板球的IAB代码，因此无法确认IAB代码是否为1275。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "For Taxi Driver (that has a narrative location of Mumbai), is the title exactly Anger Management?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Mumbai",
+        "Taxi Driver"
+      ],
+      "subgraph_size": 2804,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。证据显示《Taxi Driver》的叙事地点是纽约市，而非孟买，且没有信息表明其标题为《Anger Management》。",
+      "strategy_answer": "否。证据显示《Taxi Driver》的叙事地点是纽约市，而非孟买，且其标题并非《Anger Management》。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is https://www.braunschweig.de/politik_verwaltung/statistik the official website of Jaime Pressly?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Jaime Pressly"
+      ],
+      "subgraph_size": 725,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。证据显示Jaime Pressly的官方网站是http://www.jaimepressly.com/，而非https://www.braunschweig.de/politik_verwaltung/statistik。",
+      "strategy_answer": "否。证据显示 Jaime Pressly 的官方网站是 http://www.jaimepressly.com/，而非 https://www.braunschweig.de/politik_verwaltung/statistik。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Does the individual who is the chairperson of the Liberal Party of Canada (the start time of this statement is 1968-04-06), have a birth name equal to Joseph Philippe Pierre Yves Elliott Trudeau?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Liberal Party of Canada"
+      ],
+      "subgraph_size": 541,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示，自由党主席皮埃尔·特鲁多的出生名为Joseph Philippe Pierre Yves Elliott Trudeau。",
+      "strategy_answer": "是。证据显示，自由党主席皮埃尔·特鲁多的出生名为Joseph Philippe Pierre Yves Elliott Trudeau。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is the official website of Tarzan (featuring Lance Henriksen as a voice actor) http://www.sonypictures.com/movies/deucebigaloweuropeangigolo/index.html?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Lance Henriksen",
+        "Tarzan"
+      ],
+      "subgraph_size": 1251,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。根据证据，Tarzan的官方网站是 http://movies.disney.com/tarzan，而非所问的网址。",
+      "strategy_answer": "否。根据证据，Tarzan（由Lance Henriksen配音）的官方网站是 http://movies.disney.com/tarzan，而非问题中给出的网址。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is the website affiliated with My Neighbor Totoro movies.disney.com/my-neighbor-totoro ?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "My Neighbor Totoro"
+      ],
+      "subgraph_size": 2499,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示“My Neighbor Totoro”的官方网站是http://movies.disney.com/my-neighbor-totoro，且其制作公司包括Walt Disney Pictures，因此该网站与电影相关。",
+      "strategy_answer": "是。证据显示该网站是《My Neighbor Totoro》的官方网站（http://movies.disney.com/my-neighbor-totoro），因此与该电影关联。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Does the website www.brendonsmall.com represent someone known for melodic death metal?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "melodic death metal"
+      ],
+      "subgraph_size": 412,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示Brendon Small是旋律死亡金属的知名人物，且其官方网站为www.brendonsmall.com。",
+      "strategy_answer": "是。证据显示Brendon Small是旋律死亡金属的知名人物，且其官方网站为www.brendonsmall.com。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is the exploitation visa number of Tarzan, which lasts 88 minutes, 37355?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Tarzan"
+      ],
+      "subgraph_size": 1033,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。根据证据，Tarzan的exploitation visa number是97917，而非37355。",
+      "strategy_answer": "否。证据显示Tarzan的exploitation visa number是97917，而非37355。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is https://www.canterbury.gov.uk/ Peter Facinelli's official website?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Peter Facinelli"
+      ],
+      "subgraph_size": 782,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。根据证据，Peter Facinelli的官方网站是http://www.peter-facinelli.com/，而非https://www.canterbury.gov.uk/。",
+      "strategy_answer": "否。Peter Facinelli的官方网站是http://www.peter-facinelli.com/，而非https://www.canterbury.gov.uk/。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is johndenvermusic John Denver's Instagram username?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "John Denver"
+      ],
+      "subgraph_size": 1050,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示John Denver的Instagram用户名为johndenvermusic。",
+      "strategy_answer": "是，John Denver的Instagram用户名是johndenvermusic。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is 00000021023 the Munzinger IBA of Michael Ballhaus?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Michael Ballhaus"
+      ],
+      "subgraph_size": 733,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是，00000021023是Michael Ballhaus的Munzinger IBA。",
+      "strategy_answer": "是，00000021023是Michael Ballhaus的Munzinger IBA。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is the Bristol Rovers football club nicknamed Οι πειρατές ?",
+      "kqapro_fn": "VerifyStr",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Bristol Rovers F.C."
+      ],
+      "subgraph_size": 531,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示Bristol Rovers F.C.的昵称包含\"Οι πειρατές\"。",
+      "strategy_answer": "是。证据显示Bristol Rovers F.C.的昵称包括\"Οι πειρατές\"。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which movie is longer, Barcelona (the one whose duration is 2396 second) or Bon Jovi (the one that uses the language English)?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Barcelona",
+      "topic_entities": [
+        "Barcelona",
+        "English",
+        "Bon Jovi"
+      ],
+      "subgraph_size": 3317,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（证据中未提供两部电影的时长信息，无法比较）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which university has fewer students, Tennessee State University or University of Minnesota?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Tennessee State University",
+      "topic_entities": [
+        "Tennessee State University",
+        "University of Minnesota"
+      ],
+      "subgraph_size": 808,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "Tennessee State University has fewer students, with 10,389 compared to the University of Minnesota.",
+      "strategy_answer": "Tennessee State University has fewer students, with 10,389 compared to the University of Minnesota's 52,281 (based on evidence; University of Minnesota's student count is not provided in the evidence, but it is known to be larger).",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Does Harare or Calgary have less area?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Calgary",
+      "topic_entities": [
+        "Harare",
+        "Calgary"
+      ],
+      "subgraph_size": 1112,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "Calgary has less area. 证据显示Harare面积为960,600,000平方米，Calgary面积为825,290,000平方米，因此Calgary更小。",
+      "strategy_answer": "Calgary has less area. 证据显示Harare面积为960,600,000平方米，Calgary面积为825,290,000平方米。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Which one, Alachua County or Indian River County, has less area?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Indian River County",
+      "topic_entities": [
+        "Alachua County",
+        "Indian River County"
+      ],
+      "subgraph_size": 882,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "Indian River County（1598平方公里）比Alachua County（2510平方公里）面积更小。",
+      "strategy_answer": "Indian River County（1598平方公里）比Alachua County（2510平方公里）面积更小。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Who has a greater mass, Mark Bresciano or Jean-Claude Van Damme?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Jean-Claude Van Damme",
+      "topic_entities": [
+        "Mark Bresciano",
+        "Jean-Claude Van Damme"
+      ],
+      "subgraph_size": 1917,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提供Mark Bresciano的质量信息，无法比较。",
+      "strategy_answer": "未知。证据中只提供了Jean-Claude Van Damme的质量（78千克），没有Mark Bresciano的质量信息，无法比较。",
+      "baseline_correct": false,
+      "strategy_correct": true
+    },
+    {
+      "question": "Which one, Nickelodeon (the one whose script is written by Peter Bogdanovich) or Wonder Boys, has less duration?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Wonder Boys",
+      "topic_entities": [
+        "Peter Bogdanovich",
+        "Nickelodeon",
+        "Wonder Boys"
+      ],
+      "subgraph_size": 2901,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "Wonder Boys has a duration of 107 minutes, while Nickelodeon's duration is not provided in the evidence. 因此，无法比较。",
+      "strategy_answer": "未知。证据中未提供Nickelodeon（由Peter Bogdanovich编剧）的时长信息，无法比较。",
+      "baseline_correct": true,
+      "strategy_correct": false
+    },
+    {
+      "question": "Who is heavier:  University of California, Berkeley alumnus Ryan Murphy, or actor Mark Harmon?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Ryan Murphy",
+      "topic_entities": [
+        "University of California, Berkeley",
+        "Ryan Murphy",
+        "actor",
+        "Mark Harmon"
+      ],
+      "subgraph_size": 1157,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提供Ryan Murphy和Mark Harmon的体重信息。",
+      "strategy_answer": "未知。证据中未提供Ryan Murphy和Mark Harmon的体重信息。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Who is worth more: Ellen DeGeneres or Bill Cosby?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Bill Cosby",
+      "topic_entities": [
+        "Ellen DeGeneres",
+        "Bill Cosby"
+      ],
+      "subgraph_size": 1302,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "Bill Cosby的净资产（3.5亿美元）高于Ellen DeGeneres（3.3亿美元），因此Bill Cosby更富有。",
+      "strategy_answer": "Bill Cosby的净资产（3.5亿美元）高于Ellen DeGeneres（3.3亿美元），因此Bill Cosby更富有。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Which has higher elevation above sea level, Kentucky (the one that shares border with Indiana) or Wyoming (the one whose demonym is Wyomingian)?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Wyoming",
+      "topic_entities": [
+        "Indiana",
+        "Kentucky",
+        "Wyoming"
+      ],
+      "subgraph_size": 2313,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "Wyoming（海拔2040米）高于Kentucky（海拔230米）。",
+      "strategy_answer": "Wyoming（海拔2040米）高于Kentucky（海拔230米）。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is Russell Brand or Salma Hayek shorter?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Salma Hayek",
+      "topic_entities": [
+        "Russell Brand",
+        "Salma Hayek"
+      ],
+      "subgraph_size": 1957,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which is shorter, An Inconvenient Truth or Crazy Heart?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "An Inconvenient Truth",
+      "topic_entities": [
+        "An Inconvenient Truth",
+        "Crazy Heart"
+      ],
+      "subgraph_size": 12417,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提供《An Inconvenient Truth》和《Crazy Heart》的时长信息，无法比较。",
+      "strategy_answer": "未知。证据中未提供《An Inconvenient Truth》和《Crazy Heart》的时长信息，无法比较长短。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Who is shorter, Robert De Niro (the one whose work period (start) is 1963) or Ed Lauter?",
+      "kqapro_fn": "SelectBetween",
+      "gold_answer": "Robert De Niro",
+      "topic_entities": [
+        "Robert De Niro",
+        "Ed Lauter"
+      ],
+      "subgraph_size": 1580,
+      "strategy_used": "dual_subgraph",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提供Robert De Niro和Ed Lauter的身高信息。",
+      "strategy_answer": "未知。证据中未提供Robert De Niro和Ed Lauter的身高信息。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "What is the ISNI of the university located in Bath",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "0000 0001 2162 1699",
+      "topic_entities": [
+        "Bath"
+      ],
+      "subgraph_size": 657,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the title of Speed 2: Cruise Control?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "Speed 2: Cruise Control",
+      "topic_entities": [
+        "Speed 2: Cruise Control"
+      ],
+      "subgraph_size": 1527,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "根据证据，Speed 2: Cruise Control 的标题就是 \"Speed 2: Cruise Control\"。",
+      "strategy_answer": "Speed 2: Cruise Control。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "When was Maurice LaMarche born?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "1958-03-30",
+      "topic_entities": [
+        "Maurice LaMarche"
+      ],
+      "subgraph_size": 591,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is John Malkovich's Twitter username?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "johnmalkovich",
+      "topic_entities": [
+        "John Malkovich"
+      ],
+      "subgraph_size": 912,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "John Malkovich的Twitter用户名是johnmalkovich。",
+      "strategy_answer": "John Malkovich的Twitter用户名是johnmalkovich。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "How much did the movie that was a derivative work of Harry Potter and the Order of the Phoenix (the one that is a notable work of J. K. Rowling) cost?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "150000000 United States dollar",
+      "topic_entities": [
+        "J. K. Rowling",
+        "Harry Potter and the Order of the Phoenix"
+      ],
+      "subgraph_size": 2924,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "When was the death of Edgar Allan Poe, born on 1871-09-15?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "1961-11-29",
+      "topic_entities": [
+        "Edgar Allan Poe"
+      ],
+      "subgraph_size": 850,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Edgar Allan Poe的死亡日期是1849年10月7日。",
+      "strategy_answer": "Edgar Allan Poe的死亡日期是1849年10月7日。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is Roberto Benigni's ISNI designation?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "0000 0001 1450 1541",
+      "topic_entities": [
+        "Roberto Benigni"
+      ],
+      "subgraph_size": 642,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Roberto Benigni的ISNI编号是0000 0001 1450 1541。",
+      "strategy_answer": "Roberto Benigni的ISNI编号是0000 0001 1450 1541。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "What is the height of Green Bay Packers member Brad Jones?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "191 centimetre",
+      "topic_entities": [
+        "Green Bay Packers",
+        "Brad Jones"
+      ],
+      "subgraph_size": 1539,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How much did the Godzilla released on 1998-09-16 make at the box office?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "379014294 United States dollar",
+      "topic_entities": [
+        "Godzilla"
+      ],
+      "subgraph_size": 1665,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "379014294美元（该片票房为379,014,294美元）。",
+      "strategy_answer": "379,014,294美元（根据证据，该片票房为379,014,294美元）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the title for the Charlie's Angels which has Drew Barrymore as an executive producer?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "Charlie's Angels",
+      "topic_entities": [
+        "Drew Barrymore",
+        "Charlie's Angels"
+      ],
+      "subgraph_size": 1345,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "根据证据，Drew Barrymore担任执行制片人的《Charlie's Angels》有两个版本：Charlie's Angels 和 Charlie's Angels: Full Throttle。因此，标题为\"Charlie's Angels\"和\"Charlie's Angels: Full Throttle\"。",
+      "strategy_answer": "根据证据，Drew Barrymore担任执行制片人的《Charlie's Angels》有两个：**Charlie's Angels** 和 **Charlie's Angels: Full Throttle**。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "When was Paul Dooley born?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "1928-02-22",
+      "topic_entities": [
+        "Paul Dooley"
+      ],
+      "subgraph_size": 753,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the unemployment rate of Romania (the one whose maritime identification digits is 264)?",
+      "kqapro_fn": "QueryAttr",
+      "gold_answer": "7 percentage",
+      "topic_entities": [
+        "Romania"
+      ],
+      "subgraph_size": 16223,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "根据证据，罗马尼亚（maritime identification digits为264）的失业率为7%。",
+      "strategy_answer": "7%。根据证据，罗马尼亚的失业率为7个百分点。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Did the New Jersey city bordering Teaneck have a population of 260000000 in the year 1910?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Teaneck"
+      ],
+      "subgraph_size": 782,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及任何与Teaneck接壤的新泽西城市在1910年的人口数据。",
+      "strategy_answer": "否（KG中无相关记录）。证据中未提及任何与Teaneck接壤的新泽西城市在1910年的人口数据。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Was the box office earned by the visual artwork based on suspense-genre The Green Mile not equivalent to 32000000 in Hong Kong dollars ?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "no",
+      "topic_entities": [
+        "suspense",
+        "The Green Mile"
+      ],
+      "subgraph_size": 1666,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（证据显示《绿里奇迹》的票房为290700000美元，未提及32000000港币，因此无法确认该数值是否不等）。",
+      "strategy_answer": "是。证据显示《The Green Mile》的票房为290,700,000美元，而非32,000,000港元。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is the population of New Haven County under 3600, according to census?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "no",
+      "topic_entities": [
+        "New Haven County"
+      ],
+      "subgraph_size": 878,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。根据证据，New Haven County的人口为862,477至863,761之间，远高于3600。",
+      "strategy_answer": "否。根据证据，纽黑文县的人口为862,477至863,761之间，远高于3600。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Does Coming Home, represented online at www.sonyclassics.com/cominghome, have a run-time other than 2.9 years ?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Coming Home"
+      ],
+      "subgraph_size": 1395,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及Coming Home的片长信息。",
+      "strategy_answer": "否（KG中无相关记录）。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Did San Marino (the one whose demonym is sammarinesi) in 2004 have a number of population diferent to 26000000?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "San Marino"
+      ],
+      "subgraph_size": 3072,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提供San Marino在2004年的人口数据。",
+      "strategy_answer": "否（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Does Libya have less than 6100000000 people (the point in time of this statement is 2010)?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Libya"
+      ],
+      "subgraph_size": 12207,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未包含利比亚2010年的人口数据。",
+      "strategy_answer": "否（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is Lakeland larger that 0 square km in area?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Lakeland"
+      ],
+      "subgraph_size": 739,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是，Lakeland的面积为194.056082平方公里，大于0平方公里。",
+      "strategy_answer": "是，Lakeland的面积为194.056082平方公里，大于0平方公里。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is the box office for the visual artwork that succeeds Flags of Our Fathers more than 470000000 United States dollars?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Flags of Our Fathers"
+      ],
+      "subgraph_size": 2213,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及任何关于“Flags of Our Fathers”后续视觉艺术作品的票房信息。",
+      "strategy_answer": "否（KG中无相关记录）。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Was the cost of an album soundtrack for Star Wars Episode V: The Empire Strikes Back (the one that origins from United Kingdom) more or less than 4400000 USD?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "United Kingdom",
+        "Star Wars Episode V: The Empire Strikes Back"
+      ],
+      "subgraph_size": 28842,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（证据中未提供该原声带专辑的成本信息，仅提及电影成本为18000000美元）。",
+      "strategy_answer": "未知（证据中未提及该原声带专辑的成本，仅提到电影成本为18000000美元）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Does the higher education institution in Tuscaloosa employ fewer than 22000 reserve staff ?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Tuscaloosa"
+      ],
+      "subgraph_size": 784,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及任何高等教育机构或储备人员数量。",
+      "strategy_answer": "否（KG中无相关记录）。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is the inflation rate from 1st January 1999, of a sovereign state that is the country of Djibouti (the one whose detail map is Updated Map Of Djibouti City and Balbala.png), less than 1,600 %?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Djibouti"
+      ],
+      "subgraph_size": 4698,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。根据证据，吉布提的通货膨胀率为3.0%，远低于1,600%。",
+      "strategy_answer": "是。根据证据，吉布提的通货膨胀率为3.0%，远低于1,600%。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which US city in Washoe County occupies over 100 square km ?",
+      "kqapro_fn": "VerifyNum",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Washoe County"
+      ],
+      "subgraph_size": 829,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知。证据中未列出Washoe County内任何城市的面积信息。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Was Frank Marshall (the one whose ISNI is 0000 0000 3012 489X) not born in 1922?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Frank Marshall"
+      ],
+      "subgraph_size": 807,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（证据中未提及Frank Marshall的出生年份，因此无法确认其是否生于1922年）。",
+      "strategy_answer": "否（KG中无相关记录）。证据中未提及Frank Marshall（ISNI 0000 0000 3012 489X）的出生年份。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is Emile Kuri's date of birth not in the year 1991?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Emile Kuri"
+      ],
+      "subgraph_size": 434,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示Emile Kuri的出生日期是1907年6月11日，并非1991年。",
+      "strategy_answer": "是。证据显示Emile Kuri的出生日期是1907年6月11日，并非1991年。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What was the inception time before 1655 of Club Olimpia Deportivo?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Club Olimpia Deportivo"
+      ],
+      "subgraph_size": 283,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中Club Olimpia Deportivo的成立时间是1912年，晚于1655年，且无1655年之前的记录。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Was Robbie Williams (the one whose position is defender) born after 1969?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "defender",
+        "Robbie Williams"
+      ],
+      "subgraph_size": 804,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及Robbie Williams的出生年份或足球运动员身份。",
+      "strategy_answer": "否（KG中无相关记录）。证据中未提及Robbie Williams的出生年份或具体位置信息。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is Malcolm Arnold's date of death before 1994?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Malcolm Arnold"
+      ],
+      "subgraph_size": 567,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。Malcolm Arnold的死亡日期是2006年9月23日，晚于1994年。",
+      "strategy_answer": "是。Malcolm Arnold的死亡日期是2006年9月23日，晚于1994年，因此他的死亡日期不在1994年之前。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Was Lamar Odom born before 1980?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Lamar Odom"
+      ],
+      "subgraph_size": 818,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（证据中未包含出生年份信息，无法判断是否早于1980年）。",
+      "strategy_answer": "否（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Was Ve Neill born more recently than 1858 ?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Ve Neill"
+      ],
+      "subgraph_size": 759,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。Ve Neill是当代人，出生于20世纪，远晚于1858年。",
+      "strategy_answer": "是。Ve Neill出生于1951年，晚于1858年。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is 1984 not the year that Providence County was established?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Providence County"
+      ],
+      "subgraph_size": 906,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及Providence County的建立年份。",
+      "strategy_answer": "否（KG中无相关记录）。证据中未提及Providence County的建立年份。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Does the legislative term that follows the 6th United States Congress, have its start time after 1206?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "6th United States Congress"
+      ],
+      "subgraph_size": 730,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。根据证据，第6届美国国会之后是第7届美国国会，但证据中未提供第7届美国国会的开始时间，因此无法判断其开始时间是否晚于1206年。",
+      "strategy_answer": "否。7th United States Congress 的 start time 未在证据中给出，无法判断是否在1206之后。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Was Coming Home (the one whose original language is Mandarin Chinese) published afrer 2000?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Mandarin Chinese",
+        "Coming Home"
+      ],
+      "subgraph_size": 1404,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据显示Coming Home的原语言是英语，而非普通话。",
+      "strategy_answer": "否（KG中无相关记录）。证据显示Coming Home的原语言是英语，而非普通话。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Is the publication date of the visual artwork whose production company is Will Ferrell prior to the year 2016 in the publication region Germany?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Will Ferrell"
+      ],
+      "subgraph_size": 861,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示，Will Ferrell作为制作公司的视觉作品《Anchorman: The Legend of Ron Burgundy》和《Step Brothers》的出版日期均在2016年之前（如2004年、2008年）。",
+      "strategy_answer": "否。证据显示，Will Ferrell作为制作公司的视觉作品《Anchorman: The Legend of Ron Burgundy》和《Step Brothers》的出版日期均在2016年之前，但问题要求的是“出版地区德国”的日期，而证据中未提供任何作品的出版地区信息，因此无法确认。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Was Jim Cummings (the one that has the occupation of screenwriter) born before 1988?",
+      "kqapro_fn": "VerifyYear",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "screenwriter",
+        "Jim Cummings"
+      ],
+      "subgraph_size": 729,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及Jim Cummings的出生年份，无法判断其是否在1988年前出生。",
+      "strategy_answer": "否（KG中无相关记录）。证据中未提及Jim Cummings的出生年份，无法判断其是否在1988年前出生。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Of which class is subpop, the Instagram username of the record label of Flight of the Conchords (whose genre is folk rock), a special example?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "verified account",
+      "topic_entities": [
+        "folk rock",
+        "Flight of the Conchords"
+      ],
+      "subgraph_size": 947,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "Sub Pop的Instagram用户名是subpop，它是Sub Pop唱片公司的一个特殊示例，而Sub Pop是Flight of the Conchords的唱片公司。根据证据，Sub Pop是一个唱片公司，因此subpop是唱片公司类的一个特殊示例。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the language one can hear in Pl-Laura.ogg, the pronunciation audio for Laura Carmichael, a name given to females ?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "Polish",
+      "topic_entities": [
+        "Laura Carmichael"
+      ],
+      "subgraph_size": 519,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "Polish",
+      "strategy_answer": "意大利语、波兰语和荷兰语。",
+      "baseline_correct": true,
+      "strategy_correct": false
+    },
+    {
+      "question": "30 Rock is represented in which language on its official website, www.nbc.com/30-rock?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "English",
+      "topic_entities": [
+        "30 Rock"
+      ],
+      "subgraph_size": 1344,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Where was released television film produced by PBSand released at 1999-12-25?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "United Kingdom",
+      "topic_entities": [
+        "PBS"
+      ],
+      "subgraph_size": 775,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "For the first-level administrative country subdivision that shares a border with Ireland (the one whose population is 3412800), its demonym of Nordire applies to which part?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "masculine",
+      "topic_entities": [
+        "Ireland"
+      ],
+      "subgraph_size": 11881,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Where was The Mirror Has Two Faces published on 1997-02-06?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "Germany",
+      "topic_entities": [
+        "The Mirror Has Two Faces"
+      ],
+      "subgraph_size": 1202,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提及《The Mirror Has Two Faces》在1997年2月6日的出版地点。",
+      "strategy_answer": "未知。证据中未提及《The Mirror Has Two Faces》在1997年2月6日的出版地点。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Devon, population 1135700, is the setting of the movie released in which location on 2012-02-16?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "Germany",
+      "topic_entities": [
+        "Devon"
+      ],
+      "subgraph_size": 618,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the official website of the feature film whose distributor is United Artists and whose publication date is 1971-12-15?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "http://www.svenskfilmdatabas.se/sv/item/?type=film&itemid=13936#release-dates",
+      "topic_entities": [
+        "United Artists"
+      ],
+      "subgraph_size": 911,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the language associated with http://www.emmys.com, the official website for an award won byPeter Falk ?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "English",
+      "topic_entities": [
+        "Peter Falk"
+      ],
+      "subgraph_size": 1030,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知。证据中未包含http://www.emmys.com的相关信息，也未提及Peter Falk所获奖项及其官方网址的语言。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What language is associated with the official website http://www.morgan.edu of Morgan State University ?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "English",
+      "topic_entities": [
+        "Morgan State University"
+      ],
+      "subgraph_size": 746,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Into the West, with Colm Meaney as a cast member, was released on 1993-04-01 in what location?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "Germany",
+      "topic_entities": [
+        "Colm Meaney",
+        "Into the West"
+      ],
+      "subgraph_size": 1119,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "For Stardust (the one whose publication date is 2007-10-18), what is the start time for its exploitation visa number of 118697?",
+      "kqapro_fn": "QueryAttrQualifier",
+      "gold_answer": "2007-09-17",
+      "topic_entities": [
+        "Stardust"
+      ],
+      "subgraph_size": 1969,
+      "strategy_used": "path_plan",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How many airline corporations are the legal form of United Airlines?",
+      "kqapro_fn": "Count",
+      "gold_answer": "2",
+      "topic_entities": [
+        "United Airlines"
+      ],
+      "subgraph_size": 790,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "1（United Airlines的legal form是limited company，仅此一个）。",
+      "strategy_answer": "0（KG中无相关记录）。证据中未提及任何“airline corporation”作为United Airlines的legal form。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What are the number of occupations whose Iconclass notation is 13H2 or that is the saint domain of Allen Leech ?",
+      "kqapro_fn": "Count",
+      "gold_answer": "1",
+      "topic_entities": [
+        "Allen Leech"
+      ],
+      "subgraph_size": 352,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How many jazz entities fall within the genre of Bravo (genre of ska) and were established before 1943 ?",
+      "kqapro_fn": "Count",
+      "gold_answer": "0",
+      "topic_entities": [
+        "ska",
+        "Bravo"
+      ],
+      "subgraph_size": 1955,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未列出任何同时属于爵士（jazz）和Bravo（ska）流派且在1943年前成立的实体。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How many musical instruments are the instrument used by Ry Cooder or have the Hornbostel-Sachs classification 111.242.111?",
+      "kqapro_fn": "Count",
+      "gold_answer": "2",
+      "topic_entities": [
+        "Ry Cooder"
+      ],
+      "subgraph_size": 1193,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "2个（guitar和mandolin）。",
+      "strategy_answer": "2个（guitar和mandolin）。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "How many ice hockey teams whose parent club is the Providence Bruins or whose country is the U.S.?",
+      "kqapro_fn": "Count",
+      "gold_answer": "37",
+      "topic_entities": [
+        "Providence Bruins",
+        "United States of America"
+      ],
+      "subgraph_size": 55325,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "1个（Providence Bruins本身是冰球队，且其国家为美国）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How many in punk rock are influenced by crossover thrash or have origins from Canada?",
+      "kqapro_fn": "Count",
+      "gold_answer": "3",
+      "topic_entities": [
+        "crossover thrash",
+        "Canada"
+      ],
+      "subgraph_size": 28950,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What is the number of saxophones that are instruments used by John Coltrane or Ray Charles (who is famous for the keyboard instrument)?",
+      "kqapro_fn": "Count",
+      "gold_answer": "3",
+      "topic_entities": [
+        "John Coltrane",
+        "keyboard instrument",
+        "Ray Charles"
+      ],
+      "subgraph_size": 1250,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "2个（John Coltrane使用的tenor saxophone、baritone saxophone、alto saxophone、saxophone中，saxophone为泛称，实际具体型号为3种；Ray Charles使用alto saxophone，但两者交集为alto saxophone，故共有2种具体型号的萨克斯）。",
+      "strategy_answer": "2个（John Coltrane使用的tenor saxophone、baritone saxophone、alto saxophone、saxophone中，saxophone为泛称，实际具体型号为3种；Ray Charles使用的alto saxophone为1种，但两者交集为alto saxophone，故总数为2种具体型号）。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "How many Texas counties share a border with Brazoria County and are located in Texas (the narrative location of W.)?",
+      "kqapro_fn": "Count",
+      "gold_answer": "3",
+      "topic_entities": [
+        "Brazoria County",
+        "W.",
+        "Texas"
+      ],
+      "subgraph_size": 1908,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "2个（Brazoria County与Harris County、Galveston County、Fort Bend County接壤，且这些县均位于Texas）。",
+      "strategy_answer": "4个（Brazoria County与Harris County、Galveston County、Fort Bend County接壤，且这些县均位于Texas）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How many forms of hip hop music have roots in the USA or a creation year other than 1997?",
+      "kqapro_fn": "Count",
+      "gold_answer": "12",
+      "topic_entities": [
+        "United States of America"
+      ],
+      "subgraph_size": 55314,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "The USA has how many Maine counties?",
+      "kqapro_fn": "Count",
+      "gold_answer": "10",
+      "topic_entities": [
+        "United States of America"
+      ],
+      "subgraph_size": 55314,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "16个（缅因州共有16个县）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "How many musicians have the ROME Occupation Code (v3) of L1101 and have the occupation of Dannii Minogue?",
+      "kqapro_fn": "Count",
+      "gold_answer": "1",
+      "topic_entities": [
+        "Dannii Minogue"
+      ],
+      "subgraph_size": 700,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。证据中未列出任何同时满足“ROME Occupation Code (v3)为L1101”且“职业与Dannii Minogue相同”的实体。",
+      "baseline_correct": false,
+      "strategy_correct": true
+    },
+    {
+      "question": "How many public education institutions in the US are located in a sovereign state counting Don Johnson, the actor, as one of its citizens ?",
+      "kqapro_fn": "Count",
+      "gold_answer": "4",
+      "topic_entities": [
+        "actor",
+        "Don Johnson"
+      ],
+      "subgraph_size": 758,
+      "strategy_used": "exhaustive",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。证据未提供美国境内公立教育机构的完整列表，无法计算数量。",
+      "strategy_answer": "未知（KG中无相关记录）。证据未提供任何关于“美国公立教育机构”及其所在主权国家的信息。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Of all chemical elements with the UK as their place of discovery, which possesses the highest atomic number?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "magnesium",
+      "topic_entities": [
+        "United Kingdom"
+      ],
+      "subgraph_size": 28428,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Among the films that received a Los Angeles Film Critics Association Award for Best Actress, which has the largest duration?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Coming Home",
+      "topic_entities": [
+        "Los Angeles Film Critics Association Award for Best Actress"
+      ],
+      "subgraph_size": 734,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which natural language that is the original language of Iron Man (that received a Saturn Award for Best Director) has the most speakers?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Persian",
+      "topic_entities": [
+        "Saturn Award for Best Director",
+        "Iron Man"
+      ],
+      "subgraph_size": 2049,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知。证据中未提及《钢铁侠》的原始语言及其使用人数。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Of US cities in or next to Lake Michigan, which occupies the least area?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Racine",
+      "topic_entities": [
+        "Lake Michigan"
+      ],
+      "subgraph_size": 1036,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。证据中未列出任何US cities的具体面积信息。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Among the sovereign states that is an administrative division of European Union,which one has the largest mains voltage ?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Cyprus",
+      "topic_entities": [
+        "European Union"
+      ],
+      "subgraph_size": 30134,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提供任何主权国家的 mains voltage 数据，无法比较。",
+      "strategy_answer": "未知。证据中未提供任何主权国家的 mains voltage 信息。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which has the smallest area among the Texas counties that contain Dallas whose Dewey Decimal Classification is 2--7642812?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Collin County",
+      "topic_entities": [
+        "Dallas"
+      ],
+      "subgraph_size": 1281,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which television program whose genre is reality TV has the least number of seasons?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Monster House",
+      "topic_entities": [
+        "reality television"
+      ],
+      "subgraph_size": 2,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which county of Alabama that is located in Alabama (which contains Mobile County) has the smallest area?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Montgomery County",
+      "topic_entities": [
+        "Mobile County",
+        "Alabama"
+      ],
+      "subgraph_size": 1349,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "tell me the one with the biggest area within the city that has a basin country Croatia",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Mediterranean Sea",
+      "topic_entities": [
+        "Croatia"
+      ],
+      "subgraph_size": 13336,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中未提及任何城市具有盆地国家克罗地亚，也未提供面积信息。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which New Jersey city in Passaic County covers the least area?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Passaic",
+      "topic_entities": [
+        "Passaic County"
+      ],
+      "subgraph_size": 984,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Among the rivers that are the tributary of Mississippi River,which one has the largest watershed area ?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Missouri River",
+      "topic_entities": [
+        "Mississippi River"
+      ],
+      "subgraph_size": 1316,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "密苏里河（Missouri River），其流域面积为1,371,010平方公里。",
+      "strategy_answer": "Missouri River，其流域面积为1,371,010平方公里，是密西西比河支流中最大的。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Which Manhattan (the one that is the residence of Groucho Marx) museum has the smallest total revenue?",
+      "kqapro_fn": "SelectAmong",
+      "gold_answer": "Museum of Modern Art",
+      "topic_entities": [
+        "Groucho Marx",
+        "Manhattan"
+      ],
+      "subgraph_size": 1457,
+      "strategy_used": "constrained_join",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which written work was the basis of Charlie and the Chocolate Factory, nominated for an Academy Award for Best Costume Design?",
+      "kqapro_fn": "What",
+      "gold_answer": "Charlie and the Chocolate Factory",
+      "topic_entities": [
+        "Academy Award for Best Costume Design",
+        "Charlie and the Chocolate Factory"
+      ],
+      "subgraph_size": 15755,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What television series is filmed in Macau (this statement's retrieval is in 2018) and has less than 390 episodes?",
+      "kqapro_fn": "What",
+      "gold_answer": "Around the World in 80 Days",
+      "topic_entities": [
+        "Macau"
+      ],
+      "subgraph_size": 1773,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which person executive produced the visual artwork featuring Betty White as a cast member?",
+      "kqapro_fn": "What",
+      "gold_answer": "Alex Kurtzman",
+      "topic_entities": [
+        "Betty White"
+      ],
+      "subgraph_size": 900,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Michael Lerner of the Judaic faith has which job?",
+      "kqapro_fn": "What",
+      "gold_answer": "rabbi",
+      "topic_entities": [
+        "Judaism",
+        "Michael Lerner"
+      ],
+      "subgraph_size": 1217,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "根据证据，Michael Lerner的职业是演员（actor）和性格演员（character actor）。",
+      "strategy_answer": "根据证据，Michael Lerner的职业是演员（actor）和性格演员（character actor）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Which person created Law & Order, featuring cast member Sam Waterston?",
+      "kqapro_fn": "What",
+      "gold_answer": "Dick Wolf",
+      "topic_entities": [
+        "Sam Waterston",
+        "Law & Order"
+      ],
+      "subgraph_size": 1643,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Star Trek: The Animated Series is based on which TV series?",
+      "kqapro_fn": "What",
+      "gold_answer": "Star Trek: The Original Series",
+      "topic_entities": [
+        "Star Trek: The Animated Series"
+      ],
+      "subgraph_size": 885,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Star Trek: The Animated Series 基于《星际迷航：原初系列》。",
+      "strategy_answer": "Star Trek: The Animated Series 是基于《星际迷航：原初系列》（Star Trek: The Original Series）。",
+      "baseline_correct": false,
+      "strategy_correct": true
+    },
+    {
+      "question": "In the year 1968, who received a Tony Award nomination in the category of Best Play?",
+      "kqapro_fn": "What",
+      "gold_answer": "Arthur Miller",
+      "topic_entities": [
+        "Tony Award for Best Play"
+      ],
+      "subgraph_size": 710,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What movie was the director of She's Having a Baby a cast member of?",
+      "kqapro_fn": "What",
+      "gold_answer": "Ferris Bueller's Day Off",
+      "topic_entities": [
+        "She's Having a Baby"
+      ],
+      "subgraph_size": 1243,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Who resides in the town where David Thewlis was born?",
+      "kqapro_fn": "What",
+      "gold_answer": "Sabrina",
+      "topic_entities": [
+        "David Thewlis"
+      ],
+      "subgraph_size": 523,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知。证据中仅提到David Thewlis出生于Blackpool，但未列出该城镇的其他居民。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What film has a script written by Walter F. Parkes?",
+      "kqapro_fn": "What",
+      "gold_answer": "WarGames",
+      "topic_entities": [
+        "Walter F. Parkes"
+      ],
+      "subgraph_size": 775,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "What art movement has a movement by Marcel Duchamp and the Dewey Decimal Classification 759.0663?",
+      "kqapro_fn": "What",
+      "gold_answer": "Surrealism",
+      "topic_entities": [
+        "Marcel Duchamp"
+      ],
+      "subgraph_size": 1735,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "Surrealism",
+      "strategy_answer": "Surrealism",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Which psychosis is a kind of health specialty of the medicine that is the main subject of One Flew Over the Cuckoo's Nest (which is in the prison film genre)?",
+      "kqapro_fn": "What",
+      "gold_answer": "schizophrenia",
+      "topic_entities": [
+        "prison film",
+        "One Flew Over the Cuckoo's Nest"
+      ],
+      "subgraph_size": 1420,
+      "strategy_used": "lookup",
+      "lookup_fallback": true,
+      "baseline_answer": "未知（KG中无相关记录）。",
+      "strategy_answer": "未知（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Was the person born in Germany born on 1878-10-28?",
+      "kqapro_fn": "VerifyDate",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Germany"
+      ],
+      "subgraph_size": 53430,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。证据中未提及任何人物出生信息或日期。",
+      "strategy_answer": "否（KG中无相关记录）。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Was the dissolution date of the agent that had the military conflicts with North Vietnam 1970-04-10?",
+      "kqapro_fn": "VerifyDate",
+      "gold_answer": "no",
+      "topic_entities": [
+        "North Vietnam"
+      ],
+      "subgraph_size": 704,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。证据中未提及任何与北越发生军事冲突的实体的解散日期，因此无法确认是否为1970-04-10。",
+      "strategy_answer": "否。证据中未提及任何与北越有军事冲突的代理人的解散日期，因此无法确认是否为1970-04-10。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Was the band formed in Bradford (postal code BD1-BD99) established on 1975-11-25 ?",
+      "kqapro_fn": "VerifyDate",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Bradford"
+      ],
+      "subgraph_size": 577,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。",
+      "strategy_answer": "否（KG中无相关记录）。证据中未提及任何乐队在Bradford（邮政编码BD1-BD99）成立，也未涉及1975-11-25的成立日期。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Is the date of birth of the human that is the member of Duran Duran (beginning in 2001) on 1907-02-03?",
+      "kqapro_fn": "VerifyDate",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Duran Duran"
+      ],
+      "subgraph_size": 591,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否（KG中无相关记录）。",
+      "strategy_answer": "否（KG中无相关记录）。证据中未提及任何人类的出生日期，也未显示Duran Duran成员（如Roger Taylor）的出生日期为1907-02-03。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Did Lifetime receive their award on 2006-04-01?",
+      "kqapro_fn": "VerifyDate",
+      "gold_answer": "no",
+      "topic_entities": [
+        "Lifetime"
+      ],
+      "subgraph_size": 892,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。证据显示Lifetime获得了Satellite Awards 2006，但该奖项的point in time仅为2006年，未明确具体日期为2006-04-01。",
+      "strategy_answer": "否（KG中无相关记录）。证据显示Lifetime获得的是\"Satellite Awards 2006\"，但该奖项的时间仅为年份2006，未具体到2006-04-01这一日期。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    },
+    {
+      "question": "Was the Taliban established on 1994-01-01 ?",
+      "kqapro_fn": "VerifyDate",
+      "gold_answer": "yes",
+      "topic_entities": [
+        "Taliban"
+      ],
+      "subgraph_size": 711,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "是。证据显示塔利班的成立日期（inception）为1994年1月1日。",
+      "strategy_answer": "是。证据显示塔利班（Taliban）的成立日期（inception）为1994年1月1日。",
+      "baseline_correct": false,
+      "strategy_correct": false
+    },
+    {
+      "question": "Was the US Forest Service founded on 1800-07-10 ?",
+      "kqapro_fn": "VerifyDate",
+      "gold_answer": "no",
+      "topic_entities": [
+        "United States Forest Service"
+      ],
+      "subgraph_size": 761,
+      "strategy_used": "complement",
+      "lookup_fallback": true,
+      "baseline_answer": "否。证据显示美国林务局（United States Forest Service）的成立日期（inception）是1905年，而非1800-07-10。",
+      "strategy_answer": "否。证据显示美国林务局（United States Forest Service）成立于1905年，而非1800年7月10日。",
+      "baseline_correct": true,
+      "strategy_correct": true
+    }
+  ]
+}

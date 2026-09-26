@@ -1,0 +1,48 @@
+{
+  "dataset": "radarkg",
+  "target_relation": "operatedBy",
+  "results": {
+    "OntoCom (full)": {
+      "precision_at_5": 0.1723,
+      "recall_at_5": 0.8103,
+      "f1_at_5": 0.2841,
+      "precision_at_10": 0.095,
+      "recall_at_10": 0.8933,
+      "f1_at_10": 0.1717,
+      "precision_at_20": 0.0517,
+      "recall_at_20": 0.9723,
+      "f1_at_20": 0.0981,
+      "num_removed": 253,
+      "num_heads": 238,
+      "num_candidates": 24
+    },
+    "OntoCom (no SAPC)": {
+      "precision_at_5": 0.1697,
+      "recall_at_5": 0.7984,
+      "f1_at_5": 0.28,
+      "precision_at_10": 0.0933,
+      "recall_at_10": 0.8775,
+      "f1_at_10": 0.1686,
+      "precision_at_20": 0.0517,
+      "recall_at_20": 0.9723,
+      "f1_at_20": 0.0981,
+      "num_removed": 253,
+      "num_heads": 238,
+      "num_candidates": 24
+    },
+    "RotatE backbone": {
+      "precision_at_5": 0.1504,
+      "recall_at_5": 0.7075,
+      "f1_at_5": 0.2481,
+      "precision_at_10": 0.092,
+      "recall_at_10": 0.8656,
+      "f1_at_10": 0.1664,
+      "precision_at_20": 0.0513,
+      "recall_at_20": 0.9644,
+      "f1_at_20": 0.0973,
+      "num_removed": 253,
+      "num_heads": 238,
+      "num_candidates": 24
+    }
+  }
+}

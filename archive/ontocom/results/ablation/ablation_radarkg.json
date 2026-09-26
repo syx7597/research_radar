@@ -1,0 +1,77 @@
+{
+  "dataset": "radarkg",
+  "variants": [
+    {
+      "name": "RotatE (backbone)",
+      "tcns": false,
+      "ore": false,
+      "sapc": false,
+      "mrr": 0.2718,
+      "hits_at_1": 0.1888,
+      "hits_at_3": 0.3061,
+      "hits_at_10": 0.4133,
+      "training_time": 105.4,
+      "final_loss": 1.0170179697183461
+    },
+    {
+      "name": "+ TCNS",
+      "tcns": true,
+      "ore": false,
+      "sapc": false,
+      "mrr": 0.2446,
+      "hits_at_1": 0.1582,
+      "hits_at_3": 0.2653,
+      "hits_at_10": 0.4439,
+      "training_time": 109.1,
+      "final_loss": 1.189257053228525
+    },
+    {
+      "name": "+ ORE",
+      "tcns": false,
+      "ore": true,
+      "sapc": false,
+      "mrr": 0.2574,
+      "hits_at_1": 0.1684,
+      "hits_at_3": 0.301,
+      "hits_at_10": 0.4235,
+      "training_time": 126.0,
+      "final_loss": 0.9830108880996704
+    },
+    {
+      "name": "+ SAPC",
+      "tcns": false,
+      "ore": false,
+      "sapc": true,
+      "mrr": 0.2614,
+      "hits_at_1": 0.1786,
+      "hits_at_3": 0.2857,
+      "hits_at_10": 0.4235,
+      "training_time": 118.7,
+      "final_loss": 1.0970482780383184
+    },
+    {
+      "name": "+ TCNS + ORE",
+      "tcns": true,
+      "ore": true,
+      "sapc": false,
+      "mrr": 0.2372,
+      "hits_at_1": 0.1531,
+      "hits_at_3": 0.2857,
+      "hits_at_10": 0.3878,
+      "training_time": 131.4,
+      "final_loss": 1.2106450245930598
+    },
+    {
+      "name": "OntoCom (full)",
+      "tcns": true,
+      "ore": true,
+      "sapc": true,
+      "mrr": 0.2539,
+      "hits_at_1": 0.1735,
+      "hits_at_3": 0.2755,
+      "hits_at_10": 0.4082,
+      "training_time": 134.0,
+      "final_loss": 1.2816963012401874
+    }
+  ]
+}

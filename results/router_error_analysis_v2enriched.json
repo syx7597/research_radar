@@ -1,0 +1,946 @@
+{
+  "summary": {
+    "n": 6,
+    "router_strategy_accuracy": 15.5,
+    "answer_accuracy": 15.666666666666666,
+    "A_matched_correct": 88,
+    "B_matched_wrong": 5,
+    "C_misroute_correct": 6,
+    "D_misroute_wrong": 1,
+    "graceful_when_misroute": 0.8571428571428571
+  },
+  "records": [
+    {
+      "id": "sh_042",
+      "type": "single_hop",
+      "question": "Multi-Mode怎么散热",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sh_020",
+      "type": "single_hop",
+      "question": "Electric有多少LRU",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": false,
+      "matched": true
+    },
+    {
+      "id": "sh_051",
+      "type": "single_hop",
+      "question": "Northrop Grumman Corporation是哪个国家的公司",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sh_007",
+      "type": "single_hop",
+      "question": "MESA的ECCM",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sh_010",
+      "type": "single_hop",
+      "question": "MM/SPQ-2的频段是",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sh_069",
+      "type": "single_hop",
+      "question": "KObE的峰值功率",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sh_013",
+      "type": "single_hop",
+      "question": "Electric的冷却方式",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sh_047",
+      "type": "single_hop",
+      "question": "Terma的服役时间",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sh_008",
+      "type": "single_hop",
+      "question": "IRIS的功耗",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": false,
+      "matched": true
+    },
+    {
+      "id": "sh_065",
+      "type": "single_hop",
+      "question": "Primus-660是由哪家公司研制的",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_014",
+      "type": "relation_inverse",
+      "question": "部署在固定站上的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_003",
+      "type": "relation_inverse",
+      "question": "出口到 法国 的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_006",
+      "type": "relation_inverse",
+      "question": "支持 宽角扫描 模式的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_028",
+      "type": "relation_inverse",
+      "question": "Raytheon Company Space and Airborne 研制了哪些雷达？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_027",
+      "type": "relation_inverse",
+      "question": "芬兰 装备了哪些雷达？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_005",
+      "type": "relation_inverse",
+      "question": "采用 脉冲波形 技术的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_016",
+      "type": "relation_inverse",
+      "question": "支持 边搜索边测距 模式的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "constrained_join",
+      "correct": false,
+      "matched": false
+    },
+    {
+      "id": "ri_048",
+      "type": "relation_inverse",
+      "question": "出口到 土耳其 的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_036",
+      "type": "relation_inverse",
+      "question": "采用 无源相控阵 技术的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ri_047",
+      "type": "relation_inverse",
+      "question": "支持 空空搜索 模式的雷达有哪些？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ac_004",
+      "type": "agg_count",
+      "question": "原产于 俄罗斯 的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": false,
+      "matched": true
+    },
+    {
+      "id": "ac_037",
+      "type": "agg_count",
+      "question": "工作在 UHF 波段的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ac_008",
+      "type": "agg_count",
+      "question": "原产于 英国 的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ac_015",
+      "type": "agg_count",
+      "question": "支持 气象回避 模式的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ac_041",
+      "type": "agg_count",
+      "question": "采用 动目标指示 技术的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ac_046",
+      "type": "agg_count",
+      "question": "Lockheed Martin 一共研制了多少款雷达？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ac_038",
+      "type": "agg_count",
+      "question": "支持 高分辨力地形测绘 模式的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ac_050",
+      "type": "agg_count",
+      "question": "支持 合成孔径 模式的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": false,
+      "matched": true
+    },
+    {
+      "id": "ac_049",
+      "type": "agg_count",
+      "question": "原产于 美国 的雷达共有多少款？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": false,
+      "matched": true
+    },
+    {
+      "id": "ac_044",
+      "type": "agg_count",
+      "question": "Israel Aerospace Industries 一共研制了多少款雷达？",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_026",
+      "type": "agg_enum",
+      "question": "列出所有支持 合成孔径 模式的雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_004",
+      "type": "agg_enum",
+      "question": "请列出 Israel Aerospace Industries 研制的所有雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_015",
+      "type": "agg_enum",
+      "question": "列出所有支持 蒙皮测绘 模式的雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_003",
+      "type": "agg_enum",
+      "question": "列出原产于 澳大利亚 的所有雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_036",
+      "type": "agg_enum",
+      "question": "列出原产于 法国 的所有雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_009",
+      "type": "agg_enum",
+      "question": "列出所有采用 无源相控阵 技术的雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_019",
+      "type": "agg_enum",
+      "question": "列出所有支持 搜索 模式的雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_027",
+      "type": "agg_enum",
+      "question": "列出工作在 UHF 波段的所有雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_010",
+      "type": "agg_enum",
+      "question": "列出所有部署在预警机上的雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "ae_035",
+      "type": "agg_enum",
+      "question": "列出原产于 英国 的所有雷达。",
+      "gold_strategy": "exhaustive",
+      "pred_strategy": "exhaustive",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_016",
+      "type": "two_hop_bridge",
+      "question": "AN/TPS-63 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_074",
+      "type": "two_hop_bridge",
+      "question": "Red Steer 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_040",
+      "type": "two_hop_bridge",
+      "question": "AN/SPN-35 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_072",
+      "type": "two_hop_bridge",
+      "question": "AN/TPS-1 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_024",
+      "type": "two_hop_bridge",
+      "question": "MR-2000 衍生自的雷达由谁研制？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_014",
+      "type": "two_hop_bridge",
+      "question": "KALKAN Air Defence Radar 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_079",
+      "type": "two_hop_bridge",
+      "question": "Q24298099 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_025",
+      "type": "two_hop_bridge",
+      "question": "AN/APG-73(V) 升级自的型号原产于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_048",
+      "type": "two_hop_bridge",
+      "question": "NorthropGrumman 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_013",
+      "type": "two_hop_bridge",
+      "question": "MM/SPQ-2 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_009",
+      "type": "two_hop_bridge",
+      "question": "Orange Yeoman 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh2_008",
+      "type": "two_hop_bridge",
+      "question": "ARTHUR 的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_004",
+      "type": "three_hop_chain",
+      "question": "AN/TPS-43 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_008",
+      "type": "three_hop_chain",
+      "question": "AN/APQ-100 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_006",
+      "type": "three_hop_chain",
+      "question": "AN/TPS-70 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_005",
+      "type": "three_hop_chain",
+      "question": "AN/APG-66(V)2 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_007",
+      "type": "three_hop_chain",
+      "question": "AN/APG-68 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_002",
+      "type": "three_hop_chain",
+      "question": "AN/APG-79 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_003",
+      "type": "three_hop_chain",
+      "question": "AN/APQ-109 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "mh3_001",
+      "type": "three_hop_chain",
+      "question": "ASARS-2A 升级前型号的研制公司属于哪个国家？",
+      "gold_strategy": "path_plan",
+      "pred_strategy": "path_plan",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_024",
+      "type": "attr_filter",
+      "question": "原产于 俄罗斯 的且支持 气象探测 模式的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_020",
+      "type": "attr_filter",
+      "question": "英国 装备的且部署在舰载（通用）上的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_016",
+      "type": "attr_filter",
+      "question": "原产于 法国 的且支持 气象回避 模式的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_012",
+      "type": "attr_filter",
+      "question": "原产于 美国 的且支持 合成孔径 模式的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_045",
+      "type": "attr_filter",
+      "question": "中国 装备的且部署在固定站上的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_048",
+      "type": "attr_filter",
+      "question": "原产于 美国 的且支持 地形跟随 模式的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_006",
+      "type": "attr_filter",
+      "question": "原产于 法国 的且支持 速度搜索 模式的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_037",
+      "type": "attr_filter",
+      "question": "Raytheon 研制的且部署在直升机上的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_049",
+      "type": "attr_filter",
+      "question": "工作在 VHF 波段的且部署在巡洋舰上的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "af_034",
+      "type": "attr_filter",
+      "question": "德国 装备的且工作在 VHF 波段的雷达有哪些？",
+      "gold_strategy": "constrained_join",
+      "pred_strategy": "constrained_join",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_032",
+      "type": "negation",
+      "question": "OPS-20 是否部署在HMS Sheffield上？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_022",
+      "type": "negation",
+      "question": "Aistyonok 是否部署在Mitscher class destroyer上？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_029",
+      "type": "negation",
+      "question": "Master 是否工作在 E/F 波段？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_019",
+      "type": "negation",
+      "question": "AN/SPY-3 是否被 美国陆军 装备使用？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_005",
+      "type": "negation",
+      "question": "HeraclesII/ORB32 是否升级自 AN/UPD-8？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_008",
+      "type": "negation",
+      "question": "BEL Weapon Locating Radar 是由 HughesAircraft 研制的吗？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_033",
+      "type": "negation",
+      "question": "AN/APS-139 是否升级自 AN/MPQ-53？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_027",
+      "type": "negation",
+      "question": "SurSAR 是否部署在Formidable-class frigate上？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_011",
+      "type": "negation",
+      "question": "DDRS 是否被 美国空军 装备使用？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "neg_025",
+      "type": "negation",
+      "question": "AN/APY-8/8(V)(Lynx) 是否部署在空客上？",
+      "gold_strategy": "complement",
+      "pred_strategy": "complement",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_022",
+      "type": "set_compare",
+      "question": "AN/ZPQ-1TeSAR( 和 KOMSAR 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_010",
+      "type": "set_compare",
+      "question": "AN/APQ-100 和 EL/M-2090 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_032",
+      "type": "set_compare",
+      "question": "AN/APY-12 和 AN/AWG-14 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_027",
+      "type": "set_compare",
+      "question": "EL/M-2080 和 MiG-23 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_003",
+      "type": "set_compare",
+      "question": "Sandia 和 OPS-14 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_005",
+      "type": "set_compare",
+      "question": "Ka-28M 和 ORB37HL 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_021",
+      "type": "set_compare",
+      "question": "JLENS 和 AN/APS-147 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_040",
+      "type": "set_compare",
+      "question": "Kashef 和 PS-05/A 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_023",
+      "type": "set_compare",
+      "question": "Norden(Talons) 和 AN/APG-78 Longbow 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "sc_020",
+      "type": "set_compare",
+      "question": "AN/ZPY-1 和 MSR 的研制方是否相同？",
+      "gold_strategy": "dual_subgraph",
+      "pred_strategy": "dual_subgraph",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "un_016",
+      "type": "unanswerable",
+      "question": "Selex RAN-40L 的价格是？",
+      "gold_strategy": "complement",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": false
+    },
+    {
+      "id": "un_019",
+      "type": "unanswerable",
+      "question": "1L260-E 的价格是？",
+      "gold_strategy": "complement",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": false
+    },
+    {
+      "id": "un_015",
+      "type": "unanswerable",
+      "question": "Indian Doppler Radar 的价格是？",
+      "gold_strategy": "complement",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": false
+    },
+    {
+      "id": "un_003",
+      "type": "unanswerable",
+      "question": "Q24298099 的价格是？",
+      "gold_strategy": "complement",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": false
+    },
+    {
+      "id": "un_017",
+      "type": "unanswerable",
+      "question": "Kustspaningsradar 的价格是？",
+      "gold_strategy": "complement",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": false
+    },
+    {
+      "id": "un_005",
+      "type": "unanswerable",
+      "question": "Monolit-B 的价格是？",
+      "gold_strategy": "complement",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": false
+    },
+    {
+      "id": "dt_008",
+      "type": "distractor",
+      "question": "AN/APY-1/2的使用国是（注意区分 AN/APY-1）",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "dt_002",
+      "type": "distractor",
+      "question": "AN/FPS-4 radar的使用国是（注意区分 AN/FPS-4）",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "dt_001",
+      "type": "distractor",
+      "question": "哪些国家使用AN/APG-63 radar family（注意区分 AN/APG-63）",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    },
+    {
+      "id": "dt_006",
+      "type": "distractor",
+      "question": "哪些国家使用AN/FPS-16 Instrumentation Radar（注意区分 AN/FPS-16）",
+      "gold_strategy": "lookup",
+      "pred_strategy": "lookup",
+      "correct": true,
+      "matched": true
+    }
+  ],
+  "misroute_buckets": {
+    "exhaustive → constrained_join": {
+      "graceful": 0,
+      "catastrophic": 1,
+      "examples": [
+        {
+          "id": "ri_016",
+          "type": "relation_inverse",
+          "question": "支持 边搜索边测距 模式的雷达有哪些？",
+          "outcome": "catastrophic"
+        }
+      ]
+    },
+    "complement → lookup": {
+      "graceful": 6,
+      "catastrophic": 0,
+      "examples": [
+        {
+          "id": "un_016",
+          "type": "unanswerable",
+          "question": "Selex RAN-40L 的价格是？",
+          "outcome": "graceful"
+        },
+        {
+          "id": "un_019",
+          "type": "unanswerable",
+          "question": "1L260-E 的价格是？",
+          "outcome": "graceful"
+        }
+      ]
+    }
+  }
+}

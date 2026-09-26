@@ -1,0 +1,190 @@
+{
+  "summary": {
+    "single_hop": {
+      "recall": 0.833,
+      "count": 12
+    },
+    "multi_hop": {
+      "recall": 0.5,
+      "count": 6
+    },
+    "comparison": {
+      "recall": 0.333,
+      "count": 3
+    },
+    "overall": {
+      "recall": 0.667,
+      "count": 21
+    }
+  },
+  "details": [
+    {
+      "id": "sq_001",
+      "type": "single_hop",
+      "question": "AN/TPY-2的工作频段是什么？",
+      "answer": "X",
+      "hit": true,
+      "generated": "AN/TPY-2的工作频段是L波段和X波段。\n\n关键证据：\n1. 证据[01]：AN/TPY-2具有L波段频率。\n2. 证据[02]：AN/TPY-2是一种X波段有源电子扫描阵列雷达，工作在8.55–10 GHz X波段。"
+    },
+    {
+      "id": "sq_002",
+      "type": "single_hop",
+      "question": "AN/TPY-2由哪家公司研制？",
+      "answer": "Raytheon",
+      "hit": true,
+      "generated": "AN/TPY-2由雷神公司（Raytheon）研制。\n\n关键证据：证据[01]明确指出AN/TPY-2由制造商雷神公司（Raytheon）研制。"
+    },
+    {
+      "id": "sq_003",
+      "type": "single_hop",
+      "question": "AN/APY-9雷达部署在哪种飞机上？",
+      "answer": "E-2D Advanced Hawkeye",
+      "hit": true,
+      "generated": "AN/APY-9雷达部署在E-2D Advanced Hawkeye（先进鹰眼）飞机上。  \n关键证据：AN/APY-9 --[deployedOn]--> E-2D Advanced Hawkeye（证据[01]）。"
+    },
+    {
+      "id": "sq_004",
+      "type": "single_hop",
+      "question": "AN/APY-9的工作频段是什么？",
+      "answer": "UHF",
+      "hit": true,
+      "generated": "AN/APY-9的工作频段是UHF频段。\n\n关键证据：AN/APY-9具有UHF频段属性（证据01：UHF-band multi-mode radar）。"
+    },
+    {
+      "id": "sq_005",
+      "type": "single_hop",
+      "question": "AN/APY-9由哪家公司研制？",
+      "answer": "Lockheed Martin",
+      "hit": true,
+      "generated": "AN/APY-9由洛克希德·马丁公司研制。\n\n关键证据：AN/APY-9雷达由洛克希德·马丁公司开发和制造（证据[01]）。"
+    },
+    {
+      "id": "sq_006",
+      "type": "single_hop",
+      "question": "FCS-3雷达装备在哪个国家的海军？",
+      "answer": "日本",
+      "hit": true,
+      "generated": "FCS-3雷达装备在日本海军。\n\n关键证据：\n1. FCS-3由日本防卫省开发，用于日本海上自卫队（证据[01]、[02]）。\n2. FCS-3部署于朝日级驱逐舰（证据[04]），且平台类型为驱逐舰（证据[09]）。"
+    },
+    {
+      "id": "sq_007",
+      "type": "single_hop",
+      "question": "FCS-3使用哪些频段？",
+      "answer": "C",
+      "hit": true,
+      "generated": "FCS-3使用X频段和C频段。\n\n关键证据：\n1. FCS-3具有X频段，作为火控雷达（证据[01]）。\n2. FCS-3具有C频段，用于监视和跟踪（证据[02]）。"
+    },
+    {
+      "id": "sq_008",
+      "type": "single_hop",
+      "question": "AN/MPQ-65是哪个系统的升级版本？",
+      "answer": "Patriot",
+      "hit": true,
+      "generated": "AN/MPQ-65是AN/MPQ-53雷达系统的升级版本。\n\n关键证据：证据[01]明确指出“AN/MPQ-65 is the upgraded radar component of the Patriot missile system, replacing the AN/MPQ-53”。"
+    },
+    {
+      "id": "sq_009",
+      "type": "single_hop",
+      "question": "AN/MPQ-65由哪家公司研制？",
+      "answer": "Raytheon",
+      "hit": true,
+      "generated": "AN/MPQ-65由雷神公司（Raytheon）研制。\n\n关键证据：\n- 证据[01]明确指出AN/MPQ-65由美国国防承包商雷神公司（Raytheon）制造。"
+    },
+    {
+      "id": "sq_010",
+      "type": "single_hop",
+      "question": "SCANFAR雷达装备在哪个国家？",
+      "answer": "法国",
+      "hit": false,
+      "generated": "SCANFAR雷达装备在美国。\n\n关键证据：SCANFAR雷达由美国海军部署（证据[01]: deployed by the US Navy）。"
+    },
+    {
+      "id": "sq_011",
+      "type": "single_hop",
+      "question": "Type 997 Artisan雷达的主要功能是什么？",
+      "answer": "防空",
+      "hit": false,
+      "generated": "根据现有知识库无法确定。  \n检索到的证据均未提及Type 997 Artisan雷达的功能信息。"
+    },
+    {
+      "id": "sq_012",
+      "type": "single_hop",
+      "question": "Selex RAN-40L工作在哪个频段？",
+      "answer": "L",
+      "hit": true,
+      "generated": "Selex RAN-40L工作在L频段。\n\n关键证据：根据证据[01]，Selex RAN-40L与L频段存在“hasFrequencyBand”关系，证据描述为“naval 3D L band search radar”。"
+    },
+    {
+      "id": "mq_001",
+      "type": "multi_hop",
+      "question": "装备了THAAD系统的雷达由哪家公司研制？",
+      "answer": "Raytheon",
+      "hit": true,
+      "generated": "装备了THAAD系统的雷达由雷神公司（Raytheon）研制。\n\n关键证据：\n- AN/TPY-2雷达是THAAD导弹系统的主要雷达（证据04）。\n- AN/TPY-2雷达由雷神公司（Raytheon）研制（证据16）。"
+    },
+    {
+      "id": "mq_002",
+      "type": "multi_hop",
+      "question": "FCS-3雷达部署在哪些舰艇上？",
+      "answer": "JS Hyūga",
+      "hit": true,
+      "generated": "FCS-3雷达部署在以下舰艇上：\n1. 日向级直升机驱逐舰（JS Hyūga， DDH-181）——证据[03]显示其于2007年在该舰上引入。\n2. 出云级直升机驱逐舰——证据[05]显示其为该级舰交付。\n3. 朝日级驱逐舰——证据[04]显示该级舰配备FCS-3A雷达。\n\n此外，证据[01]和[02]表明FCS-3雷达的部署平台为“驱逐舰”和“舰载（通用）”，进一步支持其舰载属性。"
+    },
+    {
+      "id": "mq_003",
+      "type": "multi_hop",
+      "question": "Lockheed Martin研制的机载雷达有哪些？",
+      "answer": "AN/APY-9",
+      "hit": false,
+      "generated": "根据现有知识库无法确定。\n\n**简要说明：**\n证据中列出了多个由Lockheed Martin研制的雷达系统，如AN/APG-67[05]、AN/APG-80[14]、AN/FPS-117[01]、AN/TPQ-53[02]、AN/TPS-59[03]、AN/TPY-4[04]和Aegis Combat System[10]。但证据仅明确提及AN/APG-80部署于“战斗机”[15]，Aegis Combat System部署于“舰载（通用）”[11]，其他雷达的平台信息未在提供的证据中明确。因此，无法从证据中筛选出所有“机载雷达”。"
+    },
+    {
+      "id": "mq_004",
+      "type": "multi_hop",
+      "question": "美国装备的弹道导弹防御雷达有哪些？",
+      "answer": "AN/TPY-2",
+      "hit": false,
+      "generated": "根据现有知识库无法确定。  \n检索到的证据仅涉及美国装备的多种雷达（如AN/TPQ-37、AN/APG-80等），但未明确提及这些雷达属于“弹道导弹防御雷达”类别。"
+    },
+    {
+      "id": "mq_005",
+      "type": "multi_hop",
+      "question": "有哪些雷达是从Patriot系统衍生出来的？",
+      "answer": "AN/MPQ-65",
+      "hit": true,
+      "generated": "根据现有知识库无法确定。  \n检索到的证据仅说明AN/MPQ-65是AN/MPQ-53的升级版（证据02），未提及其他从Patriot系统衍生的雷达型号。"
+    },
+    {
+      "id": "mq_006",
+      "type": "multi_hop",
+      "question": "日本自研的舰载多功能雷达装备在哪类驱逐舰上？",
+      "answer": "Akizuki",
+      "hit": false,
+      "generated": "根据现有知识库无法确定。  \n检索到的证据中仅提及日本雷达FCS-3和OPS-24部署于驱逐舰，但未明确是否为日本自研的多功能雷达。"
+    },
+    {
+      "id": "cq_001",
+      "type": "comparison",
+      "question": "AN/TPY-2和AN/APY-9哪个工作在更高频段？",
+      "answer": "AN/TPY-2",
+      "hit": true,
+      "generated": "根据现有知识库无法确定。  \n证据仅显示AN/TPY-2工作在X波段（8.55–10 GHz）和L波段，未检索到AN/APY-9的频率信息。"
+    },
+    {
+      "id": "cq_002",
+      "type": "comparison",
+      "question": "FCS-3和AN/TPY-2都工作在X波段吗？",
+      "answer": "是",
+      "hit": false,
+      "generated": "根据现有知识库无法确定。  \n**关键证据**：  \n- FCS-3确实包含X波段雷达（证据[02]：X-band radar as a fire-control radar）。  \n- 但知识库中未检索到AN/TPY-2的任何频率波段信息，无法判断其工作波段。"
+    },
+    {
+      "id": "cq_003",
+      "type": "comparison",
+      "question": "Raytheon和Lockheed Martin哪家公司研制的雷达更多？",
+      "answer": "Raytheon",
+      "hit": false,
+      "generated": "根据现有知识库无法确定。\n\n**简要说明**：  \n提供的证据仅列出了由Lockheed Martin参与研制的雷达型号（如AN/TPS-59、AN/APG-85等），但未包含Raytheon研制雷达的任何信息，无法进行数量比较。"
+    }
+  ]
+}

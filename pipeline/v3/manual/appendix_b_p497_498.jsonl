@@ -1,0 +1,81 @@
+{"tails": ["C-130E"], "models": ["AN/APQ-122(V)/175"], "page": 497}
+{"tails": ["C-130H"], "models": ["AN/APN-241", "AN/APN-243(V)", "AN/APS-137(V)"], "page": 497}
+{"tails": ["C-130HS"], "models": ["AN/APN-169(V)"], "page": 497}
+{"tails": ["C-130J"], "models": ["AN/APN-241", "AN/APN-243(V)"], "page": 497}
+{"tails": ["C-130MP"], "models": ["AN/APS-128D"], "page": 497}
+{"tails": ["C-135"], "models": ["AN/APN-242/59 系列", "FMR-200X/200X(V)", "RDR-1FB", "WXR-700X/701X"], "page": 497}
+{"tails": ["C-141"], "models": ["AN/APN-169C", "AN/APS-133(V)1", "RDR-1400C", "RDR-1E/1F/1FB"], "page": 497}
+{"tails": ["C-141B"], "models": ["AN/APN-169(V)/243(V)"], "page": 497}
+{"tails": ["C-160"], "models": ["EL/M-2160/2160(V)1", "ORB37"], "page": 497}
+{"tails": ["C-17"], "models": ["AN/APN-169(V)/243(V)", "AN/APN-241B", "AN/APS-133(V)1", "AN/APS-150 (RDR4000M)", "RDR-4000"], "page": 497}
+{"tails": ["C-1A"], "models": ["AN/APN-243(V)"], "page": 497}
+{"tails": ["C-212"], "models": ["AN/APS-128D", "AN/APS-128V"], "page": 497}
+{"tails": ["C-26"], "models": ["AN/APS-143B(V)3"], "page": 497}
+{"tails": ["C-27J"], "models": ["AN/APN-241"], "page": 497}
+{"tails": ["C-295"], "models": ["AN/APN-241", "EL/M-2022A"], "page": 497}
+{"tails": ["C-2A"], "models": ["AN/APN-234"], "page": 497}
+{"tails": ["C-47TP"], "models": ["EL/M-2022A"], "page": 497}
+{"tails": ["C-5"], "models": ["AN/APS-133(V)1"], "page": 497}
+{"tails": ["C-5A"], "models": ["RDR-1E/1F/1FB"], "page": 497}
+{"tails": ["CAC F-7"], "models": ["Grifo 7"], "page": 497}
+{"tails": ["CAC F-7M"], "models": ["Scipio"], "page": 497}
+{"tails": ["CAC F-7PG"], "models": ["Grifo-7PG"], "page": 497}
+{"tails": ["CASA 212"], "models": ["Ericsson SLAR", "RDR-1500B"], "page": 497}
+{"tails": ["CASA C-212"], "models": ["RDR-1400C"], "page": 497}
+{"tails": ["CASA C-212-200"], "models": ["Sea Vue"], "page": 497}
+{"tails": ["CASA C-295"], "models": ["RDR-1400C"], "page": 497}
+{"tails": ["CASA CN-235"], "models": ["RDR-1400C"], "page": 497}
+{"tails": ["CATPASS 250"], "models": ["APS-143(V)3"], "page": 497}
+{"tails": ["CE-550"], "models": ["Vixen500E"], "page": 497}
+{"tails": ["Cessna 337 Skymaster"], "models": ["ASR 360"], "page": 497}
+{"tails": ["Cessna Caravan II"], "models": ["Seaspray 2000"], "page": 497}
+{"tails": ["CH-148"], "models": ["AN/APS-143B(V)3"], "page": 497}
+{"tails": ["CH-47"], "models": ["AN/APQ-174", "Primus-700A/701A"], "page": 497}
+{"tails": ["CH-47 Super D"], "models": ["Primus-700A/701A"], "page": 497}
+{"tails": ["Challenger"], "models": ["EL/M-2022A"], "page": 497}
+{"tails": ["CL-289"], "models": ["SWORD (AWARDS)"], "page": 497}
+{"tails": ["CL-600 Challenger 604"], "models": ["Terma"], "page": 497}
+{"tails": ["CL-604"], "models": ["AN/APS-143B(V)3"], "page": 497}
+{"tails": ["CN-235"], "models": ["AN/APS-143C(V)3"], "page": 497}
+{"tails": ["CN-235 MP"], "models": ["APS-504(V)5", "Ocean Master"], "page": 497}
+{"tails": ["CN-235 MPA"], "models": ["AN/APS-143C(V)3", "Ocean Master"], "page": 498}
+{"tails": ["Convair 580"], "models": ["SurSAR"], "page": 498}
+{"tails": ["Convair T-29"], "models": ["RDR-1500B"], "page": 498}
+{"tails": ["Corporate"], "models": ["Primus-880"], "page": 498}
+{"tails": ["Cost-guarder"], "models": ["Varan"], "page": 498}
+{"tails": ["CP-140"], "models": ["AN/APS-143B(V)3", "SSAR", "AN/APS-137(V)"], "page": 498}
+{"tails": ["CV-22"], "models": ["AN/APQ-186(V)"], "page": 498}
+{"tails": ["CV-22 BLOCK 30"], "models": ["Silent Knight"], "page": 498}
+{"tails": ["C-X"], "models": ["AN/APS-150 (RDR-4000M)", "RDR-4000"], "page": 498}
+{"tails": ["Dash 7"], "models": ["SLAR 100", "SurSAR"], "page": 498}
+{"tails": ["Dash 8"], "models": ["Ocean Master", "Sea Vue (SV-1022)", "SurSAR"], "page": 498}
+{"tails": ["Dash 8-Q300"], "models": ["EL/M-2022A"], "page": 498}
+{"tails": ["Dauphin"], "models": ["Heracles II /ORB32", "RDR-1500B"], "page": 498}
+{"tails": ["Dauphin 2"], "models": ["Agrion"], "page": 498}
+{"tails": ["DC-10"], "models": ["RDR-4A"], "page": 498}
+{"tails": ["Defender"], "models": ["Skymaster"], "page": 498}
+{"tails": ["DH-8"], "models": ["Primus-700A/701A"], "page": 498}
+{"tails": ["DHC-7"], "models": ["RDR-1500B"], "page": 498}
+{"tails": ["DHC-7 Dash 7"], "models": ["HiSAR"], "page": 498}
+{"tails": ["DHC-8"], "models": ["Sea Vue (SV XMC)"], "page": 498}
+{"tails": ["DHC-8 Dash 8"], "models": ["HiSAR"], "page": 498}
+{"tails": ["DHC-8 (Q300)"], "models": ["AN/APS-143(V)1"], "page": 498}
+{"tails": ["Do.128"], "models": ["Marec II/Super Marec"], "page": 498}
+{"tails": ["Do.228"], "models": ["EL/M-2022A", "Marec II/Super Marec", "RDR-1400C", "RDR-1500B", "RDS-81/82/84/86", "Seaspray 2000"], "page": 498}
+{"tails": ["Do.228-212"], "models": ["Terma"], "page": 498}
+{"tails": ["Dominie"], "models": ["Super Searcher"], "page": 498}
+{"tails": ["E-2A"], "models": ["AN/APS-96"], "page": 498}
+{"tails": ["E-2B"], "models": ["AN/APS-96"], "page": 498}
+{"tails": ["E-2C"], "models": ["AN/APS-119"], "page": 498}
+{"tails": ["E-2C Group 0"], "models": ["AN/APS-125/138"], "page": 498}
+{"tails": ["E-2C Group I"], "models": ["AN/APS-139"], "page": 498}
+{"tails": ["E-2C Hawkeye/Hawkeye 2000"], "models": ["AN/APS-145"], "page": 498}
+{"tails": ["E-2D"], "models": ["AN/APY-9"], "page": 498}
+{"tails": ["E-2T"], "models": ["AN/APS-138"], "page": 498}
+{"tails": ["E-3"], "models": ["AN/APS-133(V)1"], "page": 498}
+{"tails": ["E-3A"], "models": ["AN/APY-1/2"], "page": 498}
+{"tails": ["E-3B"], "models": ["AN/APY-1/2"], "page": 498}
+{"tails": ["E-3C"], "models": ["AN/APY-1/2"], "page": 498}
+{"tails": ["E-3D"], "models": ["AN/APY-1/2"], "page": 498}
+{"tails": ["E-3F"], "models": ["AN/APY-1/2"], "page": 498}
+{"tails": ["E-4"], "models": ["AN/APS-133(V)2"], "page": 498}

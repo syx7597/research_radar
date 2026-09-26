@@ -1,0 +1,299 @@
+{
+ "Foxhunter": [
+  "AI 24"
+ ],
+ "AN/UPD-4": [
+  "AN/APD-10"
+ ],
+ "AN/UPD-8": [
+  "AN/APD-12",
+  "AN/APD-14",
+  "AN/UPD-9"
+ ],
+ "AN/APN-242": [
+  "AN/APN-59"
+ ],
+ "AN/APN-215(V)": [
+  "AN/APN-234"
+ ],
+ "AN/APN-169(V)": [
+  "AN/APN-243(V)"
+ ],
+ "AN/APQ-92": [
+  "AN/APQ-88",
+  "AN/APQ-112",
+  "AN/APQ-148",
+  "AN/APQ-156",
+  "AN/APQ-156(C)",
+  "AN/APQ-173"
+ ],
+ "AN/APQ-72": [
+  "AN/APQ-100",
+  "AN/APQ-109"
+ ],
+ "AN/APQ-113": [
+  "AN/APQ-114",
+  "AN/APQ-144",
+  "AN/APQ-161",
+  "AN/APQ-163",
+  "AN/APQ-165",
+  "AN/APQ-169"
+ ],
+ "AN/APQ-110": [
+  "AN/APQ-128"
+ ],
+ "AN/APQ-137": [
+  "AN/APQ-137B"
+ ],
+ "AN/APQ-134": [
+  "AN/APQ-146",
+  "AN/APQ-171"
+ ],
+ "AN/APQ-153": [
+  "AN/APQ-157",
+  "AN/APQ-159(V)"
+ ],
+ "AN/APQ-126(V)": [
+  "AN/APQ-158"
+ ],
+ "AN/APQ-99": [
+  "AN/APQ-172"
+ ],
+ "AN/APQ-174": [
+  "AN/APQ-174(V)",
+  "AN/APQ-186(V)"
+ ],
+ "AN/APQ-122(V)": [
+  "AN/APQ-175"
+ ],
+ "AN/APG-70": [
+  "AN/APQ-180",
+  "AN/APQ-180(V)"
+ ],
+ "AN/APQ-120": [
+  "AN/APQ-183"
+ ],
+ "AN/APQ-170": [
+  "AN/APQ-425(V)"
+ ],
+ "AN/APS-124": [
+  "AN/APS-124(V)"
+ ],
+ "AN/APS-120": [
+  "AN/APS-125",
+  "AN/APS-138",
+  "AN/APS-139"
+ ],
+ "AN/APS-128": [
+  "AN/APS-128D",
+  "AN/APS-128V"
+ ],
+ "AN/APS-131": [
+  "AN/APS-135",
+  "AN/APS-135(V)",
+  "SLAMMR"
+ ],
+ "APS-504(V)": [
+  "AN/APS-140(V)"
+ ],
+ "AN/APS-143": [
+  "AN/APS-143(V)1/2"
+ ],
+ "AN/APS-143(V)": [
+  "AN/APS-143B(V)3",
+  "AN/APS-143C(V)3"
+ ],
+ "AN/APS-503": [
+  "AN/APS-504"
+ ],
+ "AN/APY-6": [
+  "AN/APY-6(V)"
+ ],
+ "AN/APY-3": [
+  "AN/APY-7"
+ ],
+ "APS-705": [
+  "APS-705A",
+  "APS-707"
+ ],
+ "APS-717": [
+  "APS-717(V)"
+ ],
+ "APS-784 ASV": [
+  "APS-784 ASW"
+ ],
+ "Seaspray": [
+  "ARI 5979"
+ ],
+ "Searchwater": [
+  "ARI 5980"
+ ],
+ "Sea Searcher": [
+  "ARI 5991",
+  "Super Searcher"
+ ],
+ "AN/APG-65": [
+  "Atlas"
+ ],
+ "SWORD": [
+  "AWARDS"
+ ],
+ "Blue Kestrel 5000": [
+  "Blue Kestrel 6000",
+  "Blue Kestrel 7000"
+ ],
+ "ECR 90": [
+  "Captor"
+ ],
+ "E-160": [
+  "E-190",
+  "E-290",
+  "E-290M",
+  "E-390",
+  "E-564"
+ ],
+ "AN/APQ-164": [
+  "EAR"
+ ],
+ "AN/APG-69": [
+  "EC-153"
+ ],
+ "EL/M-2160": [
+  "EL/M-2160(V) 1"
+ ],
+ "EL/M2060": [
+  "ELMSAR"
+ ],
+ "Vixen 1000": [
+  "ES-05"
+ ],
+ "F-15A": [
+  "F-15J",
+  "R-14A/K",
+  "R-14A/K",
+  "RB-1A"
+ ],
+ "FMR-200X": [
+  "FMR-200X(V)"
+ ],
+ "TFR": [
+  "GMR"
+ ],
+ "KWX-40": [
+  "KWX-56",
+  "KWX-58"
+ ],
+ "MR-2000": [
+  "MR-3000"
+ ],
+ "MMSBSR": [
+  "MSR"
+ ],
+ "E-801M": [
+  "Oko"
+ ],
+ "Heracles I": [
+  "ORB31"
+ ],
+ "Heracles": [
+  "ORB32"
+ ],
+ "EL/M-2075": [
+  "Phalcon"
+ ],
+ "Primus-40WXD": [
+  "Primus-90",
+  "Primus-400"
+ ],
+ "Primus-700A": [
+  "Primus-701A"
+ ],
+ "Erieye": [
+  "PS-890"
+ ],
+ "AMARS": [
+  "R-87A/E",
+  "R187S"
+ ],
+ "MARS": [
+  "R209A"
+ ],
+ "RBE2": [
+  "RBE2 有源"
+ ],
+ "RDR-1E": [
+  "RDR-1F",
+  "RDR-1FB"
+ ],
+ "RDR-4A": [
+  "RDR-4B"
+ ],
+ "RDR-2100": [
+  "RDR-2100VP"
+ ],
+ "AN/APS-150": [
+  "RDR-4000M"
+ ],
+ "RDS-81": [
+  "RDS-82",
+  "RDS-84",
+  "RDS-86"
+ ],
+ "Blue Fox": [
+  "Red Fox"
+ ],
+ "ROMEO": [
+  "ROMEO-Ⅱ"
+ ],
+ "Scipio": [
+  "SCP-01"
+ ],
+ "ASTAR": [
+  "SLAM-R"
+ ],
+ "Rapha": [
+  "SLAR 2000"
+ ],
+ "AN/ZPY-1": [
+  "STARLite"
+ ],
+ "Marec": [
+  "Super Marec"
+ ],
+ "Skyranger": [
+  "Super Skyranger"
+ ],
+ "Norden": [
+  "Talons"
+ ],
+ "AN/ZPQ-1": [
+  "TeSAR"
+ ],
+ "PS-03/A": [
+  "UAP12"
+ ],
+ "PS-01/A": [
+  "UAP13"
+ ],
+ "PS-37/A": [
+  "UAP1011"
+ ],
+ "PS-46/A": [
+  "UAP1023"
+ ],
+ "AN/APG-66": [
+  "WX-50/60/100/160/200/300/400",
+  "WX-50/60/100/160/200/300/400",
+  "WX-50/60/100/160/200/300/400",
+  "WX-50/60/100/160/200/300/400",
+  "WX-50/60/100/160/200/300/400",
+  "WX-50/60/100/160/200/300/400",
+  "WX-50/60/100/160/200/300/400"
+ ],
+ "WXR-700X": [
+  "WXR-701X"
+ ],
+ "XR-45": [
+  "XR-47"
+ ]
+}

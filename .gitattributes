@@ -1,0 +1,16 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.csv text eol=lf
+*.tsv text eol=lf
+*.txt text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.sh text eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.pptx binary
+*.parquet binary

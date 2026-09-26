@@ -1,0 +1,212 @@
+[
+ {
+  "entity": "Martin",
+  "n_facts": 41,
+  "cited": 41,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Eaton",
+  "n_facts": 10,
+  "cited": 10,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "DSTO",
+  "n_facts": 6,
+  "cited": 6,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Electric",
+  "n_facts": 43,
+  "cited": 43,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "SWIFT",
+  "n_facts": 6,
+  "cited": 6,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Flycatcher (radar)",
+  "n_facts": 10,
+  "cited": 10,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Type 752 Radar",
+  "n_facts": 6,
+  "cited": 6,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "APN-243(V)",
+  "n_facts": 8,
+  "cited": 8,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "3acJIoH",
+  "n_facts": 8,
+  "cited": 8,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Zhuk-A3FGA29",
+  "n_facts": 21,
+  "cited": 21,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Type 992 radar",
+  "n_facts": 7,
+  "cited": 7,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/TPS-75",
+  "n_facts": 13,
+  "cited": 13,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "SeaDragon",
+  "n_facts": 17,
+  "cited": 17,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/APQ-122(V)",
+  "n_facts": 28,
+  "cited": 28,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/MPQ-64 Sentinel",
+  "n_facts": 13,
+  "cited": 13,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/APY-9",
+  "n_facts": 29,
+  "cited": 29,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AMSAR",
+  "n_facts": 18,
+  "cited": 18,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Primus-708",
+  "n_facts": 6,
+  "cited": 6,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/APN-242",
+  "n_facts": 19,
+  "cited": 19,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Grifo",
+  "n_facts": 17,
+  "cited": 17,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "PIICH-2AM/2H",
+  "n_facts": 16,
+  "cited": 16,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "PIICH-2AM",
+  "n_facts": 30,
+  "cited": 30,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Green Satin radar",
+  "n_facts": 5,
+  "cited": 5,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "DPN-53(1959",
+  "n_facts": 9,
+  "cited": 9,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/APS-20",
+  "n_facts": 7,
+  "cited": 7,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/APQ-109",
+  "n_facts": 6,
+  "cited": 6,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Plessey AR-3D",
+  "n_facts": 8,
+  "cited": 8,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "AN/APQ-140",
+  "n_facts": 20,
+  "cited": 20,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "Herakles (radar)",
+  "n_facts": 13,
+  "cited": 13,
+  "summary_support": 1.0,
+  "unsupported": []
+ },
+ {
+  "entity": "ASARS-2A",
+  "n_facts": 18,
+  "cited": 18,
+  "summary_support": 1.0,
+  "unsupported": []
+ }
+]

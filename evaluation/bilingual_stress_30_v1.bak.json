@@ -1,0 +1,619 @@
+{
+  "version": "0.1-bilingual-stress",
+  "description": "Stress test built by substituting English/abbrev aliases (USA/AESA/SAR/...) into Chinese qa_500 questions. Tests whether the bilingual alias layer recovers KG canonical forms.",
+  "stats": {
+    "agg_count": 5,
+    "agg_enum": 5,
+    "attr_filter": 5,
+    "relation_inverse": 5,
+    "negation": 3
+  },
+  "questions": [
+    {
+      "id": "bs_ac_045",
+      "type": "agg_count",
+      "question_zh": "采用 PD 技术的雷达共有多少款？",
+      "question_en": "How many radars use 脉冲多普勒 technology?",
+      "gold_answer": 22,
+      "gold_constraint": {
+        "relation": "hasTechType",
+        "tail": "脉冲多普勒"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "采用 脉冲多普勒 技术的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "脉冲多普勒",
+          "PD"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ac_008",
+      "type": "agg_count",
+      "question_zh": "原产于 UK 的雷达共有多少款？",
+      "question_en": "How many radars originate from United Kingdom?",
+      "gold_answer": 5,
+      "gold_constraint": {
+        "relation": "countryOfOrigin",
+        "tail": "英国"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "原产于 英国 的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "英国",
+          "UK"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ac_004",
+      "type": "agg_count",
+      "question_zh": "原产于 Russia 的雷达共有多少款？",
+      "question_en": "How many radars originate from Russia?",
+      "gold_answer": 43,
+      "gold_constraint": {
+        "relation": "countryOfOrigin",
+        "tail": "俄罗斯"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "原产于 俄罗斯 的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "俄罗斯",
+          "Russia"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ac_021",
+      "type": "agg_count",
+      "question_zh": "支持 PD 模式的雷达共有多少款？",
+      "question_en": "How many radars support 脉冲多普勒 mode?",
+      "gold_answer": 10,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "脉冲多普勒"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "支持 脉冲多普勒 模式的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "脉冲多普勒",
+          "PD"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ac_017",
+      "type": "agg_count",
+      "question_zh": "支持 地面MTI 模式的雷达共有多少款？",
+      "question_en": "How many radars support 地面动目标指示 mode?",
+      "gold_answer": 23,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "地面动目标指示"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "支持 地面动目标指示 模式的雷达共有多少款？",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ae_009",
+      "type": "agg_enum",
+      "question_zh": "列出所有采用 PESA 技术的雷达。",
+      "question_en": "List all radars using 无源相控阵 technology.",
+      "gold_answer": [
+        "AN/APQ-164",
+        "AN/APQ-181",
+        "AN/APY-1/2",
+        "ESAIRA",
+        "Hp6uc(",
+        "Maxson",
+        "V004"
+      ],
+      "gold_answer_size": 7,
+      "gold_constraint": {
+        "relation": "hasTechType",
+        "tail": "无源相控阵"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "列出所有采用 无源相控阵 技术的雷达。",
+      "bilingual_subs": [
+        [
+          "无源相控阵",
+          "PESA"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ae_008",
+      "type": "agg_enum",
+      "question_zh": "请列出 Germany 装备的所有雷达。",
+      "question_en": "List all radars operated by Germany.",
+      "gold_answer": [
+        "AN/APS-143(V)3",
+        "AN/UPD-8/9(AN/APD-14/12)",
+        "CAESAR",
+        "Chain Home",
+        "FuG 240 Berlin",
+        "Hensoldt TRML-4D",
+        "Lichtenstein radar",
+        "Luftwaffe and Kriegsmarine radar equipment of World War II",
+        "Neptun (radar)",
+        "Raphael-TH/SLAR2000"
+      ],
+      "gold_answer_size": 10,
+      "gold_constraint": {
+        "relation": "operatedBy",
+        "tail": "德国"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "请列出 德国 装备的所有雷达。",
+      "bilingual_subs": [
+        [
+          "德国",
+          "Germany"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ae_006",
+      "type": "agg_enum",
+      "question_zh": "列出所有支持 TWS 模式的雷达。",
+      "question_en": "List all radars supporting 边扫边跟 mode.",
+      "gold_answer": [
+        "A813",
+        "AN/APG-65/65(V)",
+        "AN/APG-67/67(V)",
+        "AN/APG-68/68(V)",
+        "AN/APG-70/70(V)",
+        "AN/APG-73",
+        "AN/APG-79",
+        "AN/APG-80",
+        "AN/APG-81",
+        "AN/APS-130",
+        "AN/APS-143(V)3",
+        "AN/APS-143/143(V)1/2",
+        "APBAJIET",
+        "APG-63(V)3",
+        "APS-504(V)5",
+        "Anemone",
+        "FC-1",
+        "HMMII",
+        "Hp6uc-3",
+        "Iguane",
+        "MAKO",
+        "MOCKMT",
+        "MPEMC(N135)",
+        "MR-5000",
+        "MTBF120h",
+        "Master",
+        "Mercury2",
+        "Osa",
+        "PIICH-2AM/2H",
+        "RACR",
+        "RACR(",
+        "RBE2",
+        "RDI",
+        "SearchwaterlI",
+        "ThalesAirborneSystems",
+        "Thomson-CSF",
+        "Thomson-CSF)",
+        "V004",
+        "Zhuk-27",
+        "Zhuk-A3FGA29",
+        "Zhuk-A3FGA35",
+        "Zhuk-AE",
+        "Zhuk-MC3"
+      ],
+      "gold_answer_size": 43,
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "边扫边跟"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "列出所有支持 边扫边跟 模式的雷达。",
+      "bilingual_subs": [
+        [
+          "边扫边跟",
+          "TWS"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ae_035",
+      "type": "agg_enum",
+      "question_zh": "列出原产于 UK 的所有雷达。",
+      "question_en": "List all radars originating from United Kingdom.",
+      "gold_answer": [
+        "EF2000",
+        "Master",
+        "OASys",
+        "Seaspray",
+        "Warfare Systems 2001-2002. 238-239."
+      ],
+      "gold_answer_size": 5,
+      "gold_constraint": {
+        "relation": "countryOfOrigin",
+        "tail": "英国"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "列出原产于 英国 的所有雷达。",
+      "bilingual_subs": [
+        [
+          "英国",
+          "UK"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ae_036",
+      "type": "agg_enum",
+      "question_zh": "列出原产于 France 的所有雷达。",
+      "question_en": "List all radars originating from France.",
+      "gold_answer": [
+        "AMSAR",
+        "Agave",
+        "Anemone",
+        "Anemone(",
+        "Antilope5TC",
+        "Captor-E",
+        "Cyrano-IV",
+        "HeraclesII/ORB32",
+        "Horizon",
+        "Iguane",
+        "MAKO",
+        "ORB31D",
+        "ORB37",
+        "ORB37HL",
+        "Orchidee",
+        "RACAAS",
+        "RBE2",
+        "RDY-2",
+        "Raphael-TH/SLAR2000",
+        "SearchMaster",
+        "TARGET",
+        "Thales",
+        "ThalesAirborneSystems",
+        "Thomson-CSF)",
+        "Varan(",
+        "Vixen1000/ES-05"
+      ],
+      "gold_answer_size": 26,
+      "gold_constraint": {
+        "relation": "countryOfOrigin",
+        "tail": "法国"
+      },
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "列出原产于 法国 的所有雷达。",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ]
+      ]
+    },
+    {
+      "id": "bs_af_045",
+      "type": "attr_filter",
+      "question_zh": "China 装备的且部署在固定站上的雷达有哪些？",
+      "question_en": "Which radars satisfy both operatedBy=中国 AND deployedOn=固定站?",
+      "gold_constraints": [
+        {
+          "relation": "operatedBy",
+          "tail": "中国"
+        },
+        {
+          "relation": "deployedOn",
+          "tail": "固定站"
+        }
+      ],
+      "gold_answer": [
+        "AI Mark IV radar",
+        "AMES Type 7",
+        "AMES Type 80",
+        "Green Garlic",
+        "Over-the-horizon radar",
+        "RP-21 Sapfir"
+      ],
+      "gold_answer_size": 6,
+      "expected_strategy": "constrained_join",
+      "question_zh_original": "中国 装备的且部署在固定站上的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ]
+    },
+    {
+      "id": "bs_af_031",
+      "type": "attr_filter",
+      "question_zh": "原产于 USA 的且支持 地面动目标跟踪 模式的雷达有哪些？",
+      "question_en": "Which radars satisfy both countryOfOrigin=美国 AND hasMode=地面动目标跟踪?",
+      "gold_constraints": [
+        {
+          "relation": "countryOfOrigin",
+          "tail": "美国"
+        },
+        {
+          "relation": "hasMode",
+          "tail": "地面动目标跟踪"
+        }
+      ],
+      "gold_answer": [
+        "AN/APG-70/70(V)",
+        "AN/APG-77/77V",
+        "AN/APG-80",
+        "AN/APG-81",
+        "RACR"
+      ],
+      "gold_answer_size": 5,
+      "expected_strategy": "constrained_join",
+      "question_zh_original": "原产于 美国 的且支持 地面动目标跟踪 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ]
+    },
+    {
+      "id": "bs_af_003",
+      "type": "attr_filter",
+      "question_zh": "原产于 France 的且支持 SAR 模式的雷达有哪些？",
+      "question_en": "Which radars satisfy both countryOfOrigin=法国 AND hasMode=合成孔径?",
+      "gold_constraints": [
+        {
+          "relation": "countryOfOrigin",
+          "tail": "法国"
+        },
+        {
+          "relation": "hasMode",
+          "tail": "合成孔径"
+        }
+      ],
+      "gold_answer": [
+        "Captor-E",
+        "Raphael-TH/SLAR2000"
+      ],
+      "gold_answer_size": 2,
+      "expected_strategy": "constrained_join",
+      "question_zh_original": "原产于 法国 的且支持 合成孔径 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ],
+        [
+          "合成孔径",
+          "SAR"
+        ]
+      ]
+    },
+    {
+      "id": "bs_af_002",
+      "type": "attr_filter",
+      "question_zh": "Germany 装备的且工作在 VHF 波段的雷达有哪些？",
+      "question_en": "Which radars satisfy both operatedBy=德国 AND hasFrequencyBand=VHF?",
+      "gold_constraints": [
+        {
+          "relation": "operatedBy",
+          "tail": "德国"
+        },
+        {
+          "relation": "hasFrequencyBand",
+          "tail": "VHF"
+        }
+      ],
+      "gold_answer": [
+        "Lichtenstein radar",
+        "Neptun (radar)"
+      ],
+      "gold_answer_size": 2,
+      "expected_strategy": "constrained_join",
+      "question_zh_original": "德国 装备的且工作在 VHF 波段的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "德国",
+          "Germany"
+        ]
+      ]
+    },
+    {
+      "id": "bs_af_006",
+      "type": "attr_filter",
+      "question_zh": "原产于 USA 的且支持 速度搜索 模式的雷达有哪些？",
+      "question_en": "Which radars satisfy both countryOfOrigin=美国 AND hasMode=速度搜索?",
+      "gold_constraints": [
+        {
+          "relation": "countryOfOrigin",
+          "tail": "美国"
+        },
+        {
+          "relation": "hasMode",
+          "tail": "速度搜索"
+        }
+      ],
+      "gold_answer": [
+        "AN/APG-65/65(V)",
+        "AN/APG-67/67(V)",
+        "AN/APG-70/70(V)",
+        "APG-63(V)3",
+        "Avionics 2002-2003. 581.",
+        "Helicopter"
+      ],
+      "gold_answer_size": 6,
+      "expected_strategy": "constrained_join",
+      "question_zh_original": "原产于 美国 的且支持 速度搜索 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ri_021",
+      "type": "relation_inverse",
+      "question_zh": "由 Germany 所属国 的雷达有哪些？",
+      "question_en": "Which radars stand in affiliated to relation with 德国?",
+      "gold_constraint": {
+        "relation": "affiliatedTo",
+        "tail": "德国"
+      },
+      "gold_answer_size": 4,
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "由 德国 所属国 的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "德国",
+          "Germany"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ri_046",
+      "type": "relation_inverse",
+      "question_zh": "支持 地面MTI 模式的雷达有哪些？",
+      "question_en": "Which radars support 地面动目标指示 mode?",
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "地面动目标指示"
+      },
+      "gold_answer_size": 23,
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "支持 地面动目标指示 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "动目标指示",
+          "MTI"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ri_036",
+      "type": "relation_inverse",
+      "question_zh": "采用 PESA 技术的雷达有哪些？",
+      "question_en": "Which radars use 无源相控阵 technology?",
+      "gold_constraint": {
+        "relation": "hasTechType",
+        "tail": "无源相控阵"
+      },
+      "gold_answer_size": 7,
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "采用 无源相控阵 技术的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "无源相控阵",
+          "PESA"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ri_001",
+      "type": "relation_inverse",
+      "question_zh": "China 装备了哪些雷达？",
+      "question_en": "Which radars are operated by China?",
+      "gold_constraint": {
+        "relation": "operatedBy",
+        "tail": "中国"
+      },
+      "gold_answer_size": 50,
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "中国 装备了哪些雷达？",
+      "bilingual_subs": [
+        [
+          "中国",
+          "China"
+        ]
+      ]
+    },
+    {
+      "id": "bs_ri_023",
+      "type": "relation_inverse",
+      "question_zh": "支持 SAR雷达成像 模式的雷达有哪些？",
+      "question_en": "Which radars support 合成孔径雷达成像 mode?",
+      "gold_constraint": {
+        "relation": "hasMode",
+        "tail": "合成孔径雷达成像"
+      },
+      "gold_answer_size": 3,
+      "expected_strategy": "exhaustive",
+      "question_zh_original": "支持 合成孔径雷达成像 模式的雷达有哪些？",
+      "bilingual_subs": [
+        [
+          "合成孔径",
+          "SAR"
+        ]
+      ]
+    },
+    {
+      "id": "bs_neg_010",
+      "type": "negation",
+      "question_zh": "AN/SPN-46 是否被 India尼西亚 装备使用？",
+      "question_en": "Is AN/SPN-46 operated by Indonesia?",
+      "gold_answer": "否",
+      "gold_evidence_check": {
+        "head": "AN/SPN-46",
+        "relation": "operatedBy",
+        "tail_must_not_be": "印度尼西亚"
+      },
+      "expected_strategy": "complement",
+      "question_zh_original": "AN/SPN-46 是否被 印度尼西亚 装备使用？",
+      "bilingual_subs": [
+        [
+          "印度",
+          "India"
+        ]
+      ]
+    },
+    {
+      "id": "bs_neg_029",
+      "type": "negation",
+      "question_zh": "NUR-22 是否被 France 装备使用？",
+      "question_en": "Is NUR-22 operated by France?",
+      "gold_answer": "否",
+      "gold_evidence_check": {
+        "head": "NUR-22",
+        "relation": "operatedBy",
+        "tail_must_not_be": "法国"
+      },
+      "expected_strategy": "complement",
+      "question_zh_original": "NUR-22 是否被 法国 装备使用？",
+      "bilingual_subs": [
+        [
+          "法国",
+          "France"
+        ]
+      ]
+    },
+    {
+      "id": "bs_neg_037",
+      "type": "negation",
+      "question_zh": "Flamr 是否被 USA空军 装备使用？",
+      "question_en": "Is Flamr operated by 美国空军?",
+      "gold_answer": "否",
+      "gold_evidence_check": {
+        "head": "Flamr",
+        "relation": "operatedBy",
+        "tail_must_not_be": "美国空军"
+      },
+      "expected_strategy": "complement",
+      "question_zh_original": "Flamr 是否被 美国空军 装备使用？",
+      "bilingual_subs": [
+        [
+          "美国",
+          "USA"
+        ]
+      ]
+    }
+  ]
+}

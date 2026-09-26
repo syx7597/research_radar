@@ -1,0 +1,58 @@
+{
+  "n_val": 400,
+  "n_test": 1000,
+  "test_hits_at_1": 0.184,
+  "optimal_aurc": 0.5045207705034589,
+  "val_type_compat_rate": 0.91,
+  "test_type_compat_rate": 0.866,
+  "val_hits_at_1_type_compat": 0.21703296703296704,
+  "val_hits_at_1_type_incompat": 0.05555555555555555,
+  "test_hits_at_1_type_compat": 0.20323325635103925,
+  "test_hits_at_1_type_incompat": 0.05970149253731343,
+  "results": {
+    "KGE-margin only": {
+      "AURC": 0.6332,
+      "cov@risk=0.10": 0.004,
+      "cov@risk=0.20": 0.068,
+      "cov@risk=0.30": 0.097,
+      "coef": [
+        1.009
+      ],
+      "intercept": -1.5256
+    },
+    "KGE+Type": {
+      "AURC": 0.6223,
+      "cov@risk=0.10": 0.004,
+      "cov@risk=0.20": 0.08,
+      "cov@risk=0.30": 0.115,
+      "coef": [
+        0.9924,
+        0.8045
+      ],
+      "intercept": -2.2755
+    },
+    "KGE+Ret": {
+      "AURC": 0.6323,
+      "cov@risk=0.10": 0.004,
+      "cov@risk=0.20": 0.067,
+      "cov@risk=0.30": 0.112,
+      "coef": [
+        1.0282,
+        -0.0825
+      ],
+      "intercept": -1.5254
+    },
+    "KGE+Type+Ret": {
+      "AURC": 0.6224,
+      "cov@risk=0.10": 0.004,
+      "cov@risk=0.20": 0.082,
+      "cov@risk=0.30": 0.115,
+      "coef": [
+        1.0071,
+        0.7869,
+        -0.0598
+      ],
+      "intercept": -2.259
+    }
+  }
+}

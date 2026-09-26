@@ -1,0 +1,71 @@
+{
+  "model": "ontocom",
+  "dataset": "radarkg",
+  "metrics": {
+    "mrr": 0.2269,
+    "hits_at_1": 0.1378,
+    "hits_at_3": 0.2806,
+    "hits_at_10": 0.3724,
+    "count": 196
+  },
+  "per_relation": {
+    "deployedOn": {
+      "mrr": 0.1202,
+      "hits_at_1": 0.02,
+      "hits_at_3": 0.16,
+      "hits_at_10": 0.34,
+      "count": 50
+    },
+    "hasFrequencyBand": {
+      "mrr": 0.0905,
+      "hits_at_1": 0.0,
+      "hits_at_3": 0.1389,
+      "hits_at_10": 0.1944,
+      "count": 36
+    },
+    "operatedBy": {
+      "mrr": 0.3823,
+      "hits_at_1": 0.2963,
+      "hits_at_3": 0.4444,
+      "hits_at_10": 0.4815,
+      "count": 54
+    },
+    "developedBy": {
+      "mrr": 0.2419,
+      "hits_at_1": 0.1579,
+      "hits_at_3": 0.2895,
+      "hits_at_10": 0.4211,
+      "count": 38
+    },
+    "affiliatedTo": {
+      "mrr": 0.2754,
+      "hits_at_1": 0.2,
+      "hits_at_3": 0.4,
+      "hits_at_10": 0.4,
+      "count": 10
+    },
+    "upgradeOf": {
+      "mrr": 0.3377,
+      "hits_at_1": 0.3333,
+      "hits_at_3": 0.3333,
+      "hits_at_10": 0.3333,
+      "count": 6
+    },
+    "exportedTo": {
+      "mrr": 0.2917,
+      "hits_at_1": 0.0,
+      "hits_at_3": 0.5,
+      "hits_at_10": 0.5,
+      "count": 2
+    }
+  },
+  "training_time": 2473.9,
+  "final_loss": 1.2688592397249663,
+  "config": {
+    "epochs": 1000,
+    "dim": 128,
+    "tcns": true,
+    "ore": true,
+    "sapc": true
+  }
+}

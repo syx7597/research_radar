@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "description": "Bilingual entity alias table. Hand-curated for high-frequency Country/RadarMode/TechType/Function/FrequencyBand/NavalVessel; manufacturer aliases live in entity_normalizer.COMPANY_ALIASES.",
+  "conventions": {
+    "primary": "Canonical surface form used as the entity ID in the KG.",
+    "zh": "Chinese display form (preferred for user-facing answers in Chinese).",
+    "en": "English display form (preferred for radar/manufacturer schema convention).",
+    "aliases": "Other surface forms that should retrieve the same entity."
+  },
+
+  "countries": {
+    "美国": {"zh": "美国", "en": "United States", "aliases": ["USA", "US", "U.S.", "U.S.A.", "America", "United States of America", "the United States", "the U.S.", "the U", "United States Navy", "United States Air Force", "United States Army", "U.S. Navy", "U.S. Air Force", "USAF", "USN"]},
+    "俄罗斯": {"zh": "俄罗斯", "en": "Russia", "aliases": ["Russian Federation", "Russia (Soviet Union)", "Soviet Union", "USSR", "苏联", "前苏联", "Russian"]},
+    "中国": {"zh": "中国", "en": "China", "aliases": ["People's Republic of China", "PRC", "P.R.C.", "Chinese", "People's Liberation Army Navy", "PLA", "PLAN", "中华人民共和国"]},
+    "法国": {"zh": "法国", "en": "France", "aliases": ["French Republic", "French", "République française"]},
+    "英国": {"zh": "英国", "en": "United Kingdom", "aliases": ["UK", "U.K.", "Britain", "Great Britain", "British", "Royal Navy", "Royal Air Force", "RAF", "RN", "England"]},
+    "日本": {"zh": "日本", "en": "Japan", "aliases": ["Japanese", "JMSDF", "Japan Maritime Self-Defense Force"]},
+    "德国": {"zh": "德国", "en": "Germany", "aliases": ["Federal Republic of Germany", "FRG", "West Germany", "East Germany", "German"]},
+    "意大利": {"zh": "意大利", "en": "Italy", "aliases": ["Italian Republic", "Italian"]},
+    "印度": {"zh": "印度", "en": "India", "aliases": ["Republic of India", "Indian"]},
+    "加拿大": {"zh": "加拿大", "en": "Canada", "aliases": ["Canadian"]},
+    "以色列": {"zh": "以色列", "en": "Israel", "aliases": ["Israeli", "State of Israel"]},
+    "荷兰": {"zh": "荷兰", "en": "Netherlands", "aliases": ["the Netherlands", "Holland", "Dutch"]},
+    "瑞典": {"zh": "瑞典", "en": "Sweden", "aliases": ["Swedish"]},
+    "澳大利亚": {"zh": "澳大利亚", "en": "Australia", "aliases": ["Australian", "Commonwealth of Australia"]},
+    "韩国": {"zh": "韩国", "en": "South Korea", "aliases": ["Republic of Korea", "ROK", "Korea", "Korean"]},
+    "土耳其": {"zh": "土耳其", "en": "Turkey", "aliases": ["Turkish", "Türkiye"]},
+    "西班牙": {"zh": "西班牙", "en": "Spain", "aliases": ["Spanish", "Kingdom of Spain"]},
+    "伊朗": {"zh": "伊朗", "en": "Iran", "aliases": ["Iranian", "Islamic Republic of Iran"]},
+    "希腊": {"zh": "希腊", "en": "Greece", "aliases": ["Greek", "Hellenic Republic"]},
+    "波兰": {"zh": "波兰", "en": "Poland", "aliases": ["Polish", "Republic of Poland"]},
+    "沙特阿拉伯": {"zh": "沙特阿拉伯", "en": "Saudi Arabia", "aliases": ["Saudi", "Kingdom of Saudi Arabia"]},
+    "埃及": {"zh": "埃及", "en": "Egypt", "aliases": ["Egyptian"]},
+    "乌克兰": {"zh": "乌克兰", "en": "Ukraine", "aliases": ["Ukrainian"]},
+    "挪威": {"zh": "挪威", "en": "Norway", "aliases": ["Norwegian"]},
+    "芬兰": {"zh": "芬兰", "en": "Finland", "aliases": ["Finnish"]},
+    "巴西": {"zh": "巴西", "en": "Brazil", "aliases": ["Brazilian"]},
+    "巴基斯坦": {"zh": "巴基斯坦", "en": "Pakistan", "aliases": ["Pakistani"]},
+    "阿塞拜疆": {"zh": "阿塞拜疆", "en": "Azerbaijan", "aliases": []},
+    "新加坡": {"zh": "新加坡", "en": "Singapore", "aliases": ["Singaporean"]},
+    "南非": {"zh": "南非", "en": "South Africa", "aliases": ["South African"]},
+    "瑞士": {"zh": "瑞士", "en": "Switzerland", "aliases": ["Swiss"]},
+    "丹麦": {"zh": "丹麦", "en": "Denmark", "aliases": ["Danish"]},
+    "葡萄牙": {"zh": "葡萄牙", "en": "Portugal", "aliases": ["Portuguese"]},
+    "比利时": {"zh": "比利时", "en": "Belgium", "aliases": ["Belgian"]},
+    "马来西亚": {"zh": "马来西亚", "en": "Malaysia", "aliases": ["Malaysian"]},
+    "泰国": {"zh": "泰国", "en": "Thailand", "aliases": ["Thai"]},
+    "印度尼西亚": {"zh": "印度尼西亚", "en": "Indonesia", "aliases": ["印尼", "Indonesian"]},
+    "罗马尼亚": {"zh": "罗马尼亚", "en": "Romania", "aliases": ["Romanian"]},
+    "捷克": {"zh": "捷克", "en": "Czech Republic", "aliases": ["Czech", "Czechia"]},
+    "奥地利": {"zh": "奥地利", "en": "Austria", "aliases": ["Austrian"]}
+  },
+
+  "radar_modes": {
+    "地形测绘": {"zh": "地形测绘", "en": "Terrain Mapping", "aliases": ["真波束地形测绘", "Real Beam Mapping", "RBM", "Ground Mapping"]},
+    "地形跟随": {"zh": "地形跟随", "en": "Terrain Following", "aliases": ["TF", "Terrain Following Mode"]},
+    "地形回避": {"zh": "地形回避", "en": "Terrain Avoidance", "aliases": ["TA"]},
+    "气象探测": {"zh": "气象探测", "en": "Weather Detection", "aliases": ["气象", "Weather Mode", "Weather"]},
+    "空地测距": {"zh": "空地测距", "en": "Air-to-Ground Ranging", "aliases": ["AGR", "Air-to-Ground Range"]},
+    "边扫边跟": {"zh": "边扫描边跟踪", "en": "Track-While-Scan", "aliases": ["边扫描边跟踪", "TWS", "Track While Scan"]},
+    "边搜索边测距": {"zh": "边搜索边测距", "en": "Range-While-Search", "aliases": ["RWS", "边测距边搜索"]},
+    "导航": {"zh": "导航", "en": "Navigation", "aliases": ["NAV", "Navigation Mode"]},
+    "合成孔径": {"zh": "合成孔径", "en": "Synthetic Aperture Radar", "aliases": ["SAR", "合成孔径模式"]},
+    "多普勒波束锐化": {"zh": "多普勒波束锐化", "en": "Doppler Beam Sharpening", "aliases": ["DBS"]},
+    "地面动目标指示": {"zh": "地面动目标指示", "en": "Ground Moving Target Indication", "aliases": ["GMTI"]},
+    "搜索": {"zh": "搜索", "en": "Search", "aliases": ["Search Mode"]},
+    "信标": {"zh": "信标", "en": "Beacon", "aliases": ["Beacon Mode"]},
+    "单目标跟踪": {"zh": "单目标跟踪", "en": "Single Target Track", "aliases": ["STT"]},
+    "速度搜索": {"zh": "速度搜索", "en": "Velocity Search", "aliases": ["VS"]},
+    "动目标指示": {"zh": "动目标指示", "en": "Moving Target Indication", "aliases": ["MTI"]},
+    "脉冲多普勒": {"zh": "脉冲多普勒", "en": "Pulse Doppler", "aliases": ["PD"]},
+    "地面动目标跟踪": {"zh": "地面动目标跟踪", "en": "Ground Moving Target Tracking", "aliases": ["GMTT"]},
+    "空空": {"zh": "空空", "en": "Air-to-Air", "aliases": ["A/A", "AA"]},
+    "空地": {"zh": "空地", "en": "Air-to-Ground", "aliases": ["A/G", "AG"]},
+    "海面搜索": {"zh": "海面搜索", "en": "Sea Surface Search", "aliases": ["Sea Search", "海上搜索", "海上监视"]},
+    "空中格斗": {"zh": "空中格斗", "en": "Air Combat Maneuvering", "aliases": ["ACM", "Dogfight"]},
+    "ISAR": {"zh": "逆合成孔径", "en": "Inverse SAR", "aliases": ["逆合成孔径", "Inverse Synthetic Aperture"]},
+    "跟踪": {"zh": "跟踪", "en": "Track", "aliases": ["Track Mode"]},
+    "目标识别": {"zh": "目标识别", "en": "Target Identification", "aliases": ["NCTR", "Non-Cooperative Target Recognition"]}
+  },
+
+  "tech_types": {
+    "脉冲多普勒": {"zh": "脉冲多普勒", "en": "Pulse Doppler", "aliases": ["PD", "脉冲多普勒体制"]},
+    "合成孔径": {"zh": "合成孔径", "en": "Synthetic Aperture Radar", "aliases": ["SAR"]},
+    "单脉冲": {"zh": "单脉冲", "en": "Monopulse", "aliases": ["1单脉冲"]},
+    "动目标指示": {"zh": "动目标指示", "en": "Moving Target Indication", "aliases": ["MTI"]},
+    "有源相控阵": {"zh": "有源相控阵", "en": "Active Electronically Scanned Array", "aliases": ["AESA", "全固态有源相控阵", "有源电扫阵列"]},
+    "无源相控阵": {"zh": "无源相控阵", "en": "Passive Electronically Scanned Array", "aliases": ["PESA"]},
+    "逆合成孔径": {"zh": "逆合成孔径", "en": "Inverse Synthetic Aperture Radar", "aliases": ["ISAR", "逆合成"]},
+    "地面动目标指示": {"zh": "地面动目标指示", "en": "Ground Moving Target Indication", "aliases": ["GMTI", "地面动目标指"]},
+    "相控阵": {"zh": "相控阵", "en": "Phased Array", "aliases": ["相控阵列", "无源/有源相控阵"]},
+    "机载动目标指示": {"zh": "机载动目标指示", "en": "Airborne MTI", "aliases": ["AMTI"]},
+    "脉冲波形": {"zh": "脉冲波形", "en": "Pulse Waveform", "aliases": []},
+    "调频连续波": {"zh": "调频连续波", "en": "Frequency-Modulated Continuous Wave", "aliases": ["FMCW", "间断/连续波"]},
+    "连续波": {"zh": "连续波", "en": "Continuous Wave", "aliases": ["CW"]},
+    "非相参动目标指示": {"zh": "非相参动目标指示", "en": "Non-Coherent MTI", "aliases": []}
+  },
+
+  "frequency_bands": {
+    "valid": ["L", "S", "C", "X", "Ku", "K", "Ka", "VHF", "UHF", "I", "J", "I/J", "E", "F", "G", "E/F", "W", "Ku/X"],
+    "normalize": {
+      "KU": "Ku", "IJ": "I/J", "/J": "I/J", "I/低J": "I/J",
+      "X，L": ["X", "L"], "Ka，L": ["Ka", "L"], "X，VHF": ["X", "VHF"],
+      "I，J": "I/J", "E，F": "E/F", "I/J，G": ["I/J", "G"], "1，X": ["L", "X"]
+    },
+    "noise_to_drop": [
+      "试验，1978年2月15日第一次探测并同时跟踪到",
+      "标，并在显示器上显示对导航有危险的潮湿气象目",
+      "，Su-27)",
+      "MTI信息并与中分辨力的SAR图像叠加。",
+      "扫描范围"
+    ],
+    "labels_zh": {
+      "L": "L波段", "S": "S波段", "C": "C波段", "X": "X波段",
+      "Ku": "Ku波段", "K": "K波段", "Ka": "Ka波段",
+      "VHF": "甚高频", "UHF": "特高频",
+      "I": "I波段", "J": "J波段", "I/J": "I/J波段",
+      "E": "E波段", "F": "F波段", "G": "G波段", "E/F": "E/F波段",
+      "W": "W波段"
+    }
+  },
+
+  "functions": {
+    "air-to-air combat": {"zh": "空战", "en": "air-to-air combat", "aliases": ["空空作战", "空中格斗"]},
+    "air-to-ground attack": {"zh": "对地攻击", "en": "air-to-ground attack", "aliases": ["对地打击", "空地攻击"]},
+    "air-to-surface attack": {"zh": "对面攻击", "en": "air-to-surface attack", "aliases": ["对地攻击"]},
+    "fire control": {"zh": "火控", "en": "fire control", "aliases": ["火力控制"]},
+    "synthetic aperture radar mapping": {"zh": "合成孔径成像", "en": "SAR mapping", "aliases": ["SAR成像"]},
+    "air-to-ground targeting": {"zh": "对地目标指示", "en": "air-to-ground targeting", "aliases": []},
+    "reconnaissance": {"zh": "侦察", "en": "reconnaissance", "aliases": ["RECCE"]},
+    "target detection": {"zh": "目标探测", "en": "target detection", "aliases": []},
+    "target identification": {"zh": "目标识别", "en": "target identification", "aliases": ["NCTR"]},
+    "gun control": {"zh": "火炮控制", "en": "gun control", "aliases": []},
+    "missile tracking": {"zh": "导弹跟踪", "en": "missile tracking", "aliases": []},
+    "air defense": {"zh": "防空", "en": "air defense", "aliases": ["AD"]},
+    "long-range search": {"zh": "远程搜索", "en": "long-range search", "aliases": ["long range search"]},
+    "altitude-finding": {"zh": "测高", "en": "altitude finding", "aliases": ["height finding"]},
+    "Identification Friend or Foe": {"zh": "敌我识别", "en": "IFF", "aliases": ["IFF"]},
+    "warning": {"zh": "预警", "en": "warning", "aliases": ["告警"]}
+  },
+
+  "naval_vessel_classes": {
+    "Arleigh Burke-class destroyer": {"zh": "阿利·伯克级驱逐舰", "aliases": ["Arleigh Burke", "Arleigh Burke class", "阿利伯克级", "阿利·伯克级"]},
+    "Charles F. Adams-class destroyer": {"zh": "查尔斯·F·亚当斯级驱逐舰", "aliases": ["Charles F. Adams class", "Charles F. Adams-class destroyers", "Adams-class destroyer"]},
+    "Spruance-class destroyer": {"zh": "斯普鲁恩斯级驱逐舰", "aliases": ["Spruance class"]},
+    "Kidd-class destroyer": {"zh": "基德级驱逐舰", "aliases": ["Kidd class"]},
+    "Tarawa-class amphibious assault ship": {"zh": "塔拉瓦级两栖攻击舰", "aliases": ["Tarawa class", "Tarawa-class amphibious assault ships"]},
+    "California-class cruiser": {"zh": "加利福尼亚级巡洋舰", "aliases": ["California class"]},
+    "Virginia-class cruiser": {"zh": "弗吉尼亚级巡洋舰", "aliases": ["Virginia class"]}
+  },
+
+  "weapons_canonical": {
+    "R-77": ["R-77", "RVV-AE"],
+    "AIM-120": ["AIM-120", "AIM-120A/B", "AIM-120C/D", "AMRAAM"],
+    "AIM-9": ["AIM-9", "AIM-9L"],
+    "AIM-7": ["AIM-7", "AIM-7F", "AIM-7F/M", "AIM-7F/MS"],
+    "R-27": ["R-27R1", "R-27T1", "R-27ER1", "R27R1", "R27ER1", "R27T1", "R27ET1", "R-27R1/T1", "P-27T1"]
+  }
+}

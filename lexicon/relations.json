@@ -1,0 +1,1217 @@
+{
+ "schema_version": "1.0",
+ "description": "Bilingual relation lexicon for RadarKG. Each entry drives: (1) bilingual triple text for BM25/vector indexing, (2) Chinese-question keyword matching to relation, (3) LLM context rendering, (4) aggregation strategy selection.",
+ "tail_kinds": {
+  "entity": "tail is a discrete typed entity (e.g., Country, Manufacturer)",
+  "literal": "tail is free-text Literal (numeric values, status descriptions, dates)"
+ },
+ "relations": {
+  "operatedBy": {
+   "zh_label": "使用国",
+   "en_label": "operated by",
+   "head_types": [
+    "RadarSystem",
+    "Radar"
+   ],
+   "tail_types": [
+    "Country"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "使用",
+    "装备",
+    "服役于",
+    "使用者",
+    "运作",
+    "操作"
+   ],
+   "inverse_zh": "装备了",
+   "question_templates_zh": [
+    "{head}由哪些国家使用",
+    "{head}装备在哪些国家",
+    "哪些国家使用{head}",
+    "{head}的使用国是"
+   ],
+   "answer_template_zh": "{head}由{tail}使用",
+   "triple_text_zh": "{head}由{tail}使用",
+   "triple_text_en": "{head} is operated by {tail}"
+  },
+  "developedBy": {
+   "zh_label": "研制方",
+   "en_label": "developed by",
+   "head_types": [
+    "RadarSystem",
+    "Radar",
+    "WeaponSystem"
+   ],
+   "tail_types": [
+    "Manufacturer",
+    "Organization",
+    "Country"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "研制",
+    "制造",
+    "设计",
+    "开发",
+    "厂商",
+    "生产",
+    "研发",
+    "制造商"
+   ],
+   "inverse_zh": "研制了",
+   "question_templates_zh": [
+    "{head}是由哪家公司研制的",
+    "{head}的研制单位",
+    "{head}由谁研制",
+    "{head}是哪家厂商生产的"
+   ],
+   "answer_template_zh": "{head}由{tail}研制",
+   "triple_text_zh": "{head}由{tail}研制",
+   "triple_text_en": "{head} is developed by {tail}"
+  },
+  "affiliatedTo": {
+   "zh_label": "所属国",
+   "en_label": "affiliated to",
+   "head_types": [
+    "Manufacturer"
+   ],
+   "tail_types": [
+    "Country"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "所属",
+    "归属",
+    "总部位于",
+    "国籍",
+    "属于"
+   ],
+   "inverse_zh": "拥有",
+   "question_templates_zh": [
+    "{head}是哪个国家的公司",
+    "{head}属于哪个国家",
+    "{head}的所在国"
+   ],
+   "answer_template_zh": "{head}属于{tail}",
+   "triple_text_zh": "{head}属于{tail}",
+   "triple_text_en": "{head} is affiliated to {tail}"
+  },
+  "countryOfOrigin": {
+   "zh_label": "原产国",
+   "en_label": "country of origin",
+   "head_types": [
+    "Radar",
+    "RadarSystem",
+    "WeaponSystem"
+   ],
+   "tail_types": [
+    "Country"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "原产",
+    "原产地",
+    "产地",
+    "国籍",
+    "出身"
+   ],
+   "inverse_zh": "原产",
+   "question_templates_zh": [
+    "{head}的原产国是",
+    "{head}产自哪个国家"
+   ],
+   "answer_template_zh": "{head}原产于{tail}",
+   "triple_text_zh": "{head}原产于{tail}",
+   "triple_text_en": "{head} originates from {tail}"
+  },
+  "exportedTo": {
+   "zh_label": "出口至",
+   "en_label": "exported to",
+   "head_types": [
+    "RadarSystem",
+    "Radar"
+   ],
+   "tail_types": [
+    "Country"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "出口",
+    "外销",
+    "出售",
+    "卖给",
+    "援助"
+   ],
+   "inverse_zh": "进口了",
+   "question_templates_zh": [
+    "{head}出口到哪些国家",
+    "{head}的出口对象",
+    "哪些国家进口了{head}"
+   ],
+   "answer_template_zh": "{head}出口至{tail}",
+   "triple_text_zh": "{head}出口至{tail}",
+   "triple_text_en": "{head} is exported to {tail}"
+  },
+  "deployedOn": {
+   "zh_label": "部署平台",
+   "en_label": "deployed on",
+   "head_types": [
+    "RadarSystem",
+    "Radar"
+   ],
+   "tail_types": [
+    "Platform",
+    "NavalVessel",
+    "AircraftPlatform",
+    "GroundPlatform",
+    "Aircraft"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "部署",
+    "装载",
+    "搭载",
+    "安装在",
+    "配备",
+    "用于",
+    "装在"
+   ],
+   "inverse_zh": "搭载了",
+   "question_templates_zh": [
+    "{head}部署在哪些平台",
+    "{head}装载在哪种舰艇上",
+    "{head}用于哪类飞机",
+    "哪些平台搭载了{head}"
+   ],
+   "answer_template_zh": "{head}部署在{tail}",
+   "triple_text_zh": "{head}部署在{tail}",
+   "triple_text_en": "{head} is deployed on {tail}"
+  },
+  "upgradeOf": {
+   "zh_label": "升级自",
+   "en_label": "upgrade of",
+   "head_types": [
+    "RadarSystem",
+    "Radar"
+   ],
+   "tail_types": [
+    "RadarSystem",
+    "Radar"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "升级",
+    "改进",
+    "改型",
+    "升级版",
+    "新版本"
+   ],
+   "inverse_zh": "的升级型号是",
+   "question_templates_zh": [
+    "{head}是哪款雷达的升级",
+    "{head}的前代型号",
+    "{head}是从哪个型号升级而来"
+   ],
+   "answer_template_zh": "{head}是{tail}的升级型号",
+   "triple_text_zh": "{head}是{tail}的升级型号",
+   "triple_text_en": "{head} is an upgrade of {tail}"
+  },
+  "derivedFrom": {
+   "zh_label": "衍生自",
+   "en_label": "derived from",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Radar"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "衍生",
+    "派生",
+    "基于",
+    "源自"
+   ],
+   "inverse_zh": "衍生出",
+   "question_templates_zh": [
+    "{head}衍生自哪款雷达",
+    "{head}的母型号",
+    "{head}基于什么型号"
+   ],
+   "answer_template_zh": "{head}衍生自{tail}",
+   "triple_text_zh": "{head}衍生自{tail}",
+   "triple_text_en": "{head} is derived from {tail}"
+  },
+  "similarTo": {
+   "zh_label": "类似于",
+   "en_label": "similar to",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Radar"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "类似",
+    "相似",
+    "相近",
+    "可比",
+    "对标"
+   ],
+   "inverse_zh": "类似",
+   "question_templates_zh": [
+    "{head}和哪些雷达类似",
+    "{head}的对标型号"
+   ],
+   "answer_template_zh": "{head}类似于{tail}",
+   "triple_text_zh": "{head}类似于{tail}",
+   "triple_text_en": "{head} is similar to {tail}"
+  },
+  "hasFrequencyBand": {
+   "zh_label": "频段",
+   "en_label": "frequency band",
+   "head_types": [
+    "RadarSystem",
+    "Radar"
+   ],
+   "tail_types": [
+    "FrequencyBand"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "频段",
+    "波段",
+    "工作频段",
+    "工作波段"
+   ],
+   "inverse_zh": "工作的雷达包括",
+   "question_templates_zh": [
+    "{head}工作在哪个频段",
+    "{head}的频段是",
+    "哪些雷达工作在{tail}波段"
+   ],
+   "answer_template_zh": "{head}工作在{tail}波段",
+   "triple_text_zh": "{head}工作在{tail}波段",
+   "triple_text_en": "{head} operates in the {tail} band"
+  },
+  "hasTechType": {
+   "zh_label": "体制",
+   "en_label": "technology type",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "TechType"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "体制",
+    "技术体制",
+    "技术类型",
+    "类型",
+    "工作体制"
+   ],
+   "inverse_zh": "包括",
+   "question_templates_zh": [
+    "{head}是什么体制的雷达",
+    "{head}采用什么技术",
+    "{head}的技术体制"
+   ],
+   "answer_template_zh": "{head}采用{tail}体制",
+   "triple_text_zh": "{head}采用{tail}体制",
+   "triple_text_en": "{head} uses {tail} technology"
+  },
+  "hasMode": {
+   "zh_label": "工作模式",
+   "en_label": "operating mode",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "RadarMode"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "模式",
+    "工作模式",
+    "功能",
+    "支持的模式"
+   ],
+   "inverse_zh": "支持的雷达包括",
+   "question_templates_zh": [
+    "{head}支持哪些工作模式",
+    "{head}有哪些功能",
+    "{head}的模式列表"
+   ],
+   "answer_template_zh": "{head}支持{tail}模式",
+   "triple_text_zh": "{head}支持{tail}工作模式",
+   "triple_text_en": "{head} supports the {tail} mode"
+  },
+  "hasFunction": {
+   "zh_label": "功能",
+   "en_label": "function",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Function"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "功能",
+    "用途",
+    "作用"
+   ],
+   "inverse_zh": "对应的雷达",
+   "question_templates_zh": [
+    "{head}的功能",
+    "{head}用于做什么"
+   ],
+   "answer_template_zh": "{head}用于{tail}",
+   "triple_text_zh": "{head}用于{tail}",
+   "triple_text_en": "{head} is used for {tail}"
+  },
+  "compatibleWith": {
+   "zh_label": "兼容武器",
+   "en_label": "compatible with",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Weapon"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "兼容",
+    "配套",
+    "支持",
+    "可制导"
+   ],
+   "inverse_zh": "可由",
+   "question_templates_zh": [
+    "{head}可制导哪些武器",
+    "{head}和哪些导弹兼容",
+    "{head}支持哪些武器"
+   ],
+   "answer_template_zh": "{head}兼容{tail}",
+   "triple_text_zh": "{head}兼容{tail}武器",
+   "triple_text_en": "{head} is compatible with {tail}"
+  },
+  "status": {
+   "zh_label": "服役状态",
+   "en_label": "status",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "状态",
+    "服役",
+    "现状",
+    "服役状态",
+    "在役"
+   ],
+   "question_templates_zh": [
+    "{head}的服役状态",
+    "{head}还在使用吗"
+   ],
+   "answer_template_zh": "{head}的服役状态：{tail}",
+   "triple_text_zh": "{head}的服役状态为{tail}",
+   "triple_text_en": "{head} status: {tail}"
+  },
+  "hasFrequency": {
+   "zh_label": "工作频率",
+   "en_label": "frequency",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "频率",
+    "工作频率",
+    "中心频率"
+   ],
+   "question_templates_zh": [
+    "{head}的工作频率",
+    "{head}的频率是多少"
+   ],
+   "answer_template_zh": "{head}的工作频率为{tail}",
+   "triple_text_zh": "{head}的工作频率为{tail}",
+   "triple_text_en": "{head} frequency: {tail}"
+  },
+  "hasRange": {
+   "zh_label": "作用距离",
+   "en_label": "range",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal",
+    "Range"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "作用距离",
+    "探测距离",
+    "射程",
+    "距离"
+   ],
+   "question_templates_zh": [
+    "{head}的作用距离",
+    "{head}能探测多远"
+   ],
+   "answer_template_zh": "{head}的作用距离为{tail}",
+   "triple_text_zh": "{head}的作用距离为{tail}",
+   "triple_text_en": "{head} range: {tail}"
+  },
+  "hasAntennaGain": {
+   "zh_label": "天线增益",
+   "en_label": "antenna gain",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "天线增益",
+    "增益"
+   ],
+   "question_templates_zh": [
+    "{head}的天线增益",
+    "{head}增益多少"
+   ],
+   "answer_template_zh": "{head}的天线增益为{tail}",
+   "triple_text_zh": "{head}的天线增益为{tail}",
+   "triple_text_en": "{head} antenna gain: {tail}"
+  },
+  "hasPeakPower": {
+   "zh_label": "峰值功率",
+   "en_label": "peak power",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "峰值功率",
+    "脉冲功率"
+   ],
+   "question_templates_zh": [
+    "{head}的峰值功率"
+   ],
+   "answer_template_zh": "{head}的峰值功率为{tail}",
+   "triple_text_zh": "{head}的峰值功率为{tail}",
+   "triple_text_en": "{head} peak power: {tail}"
+  },
+  "hasPower": {
+   "zh_label": "功耗",
+   "en_label": "power consumption",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "功耗",
+    "电源",
+    "供电",
+    "用电"
+   ],
+   "question_templates_zh": [
+    "{head}的功耗",
+    "{head}的供电"
+   ],
+   "answer_template_zh": "{head}的功耗：{tail}",
+   "triple_text_zh": "{head}的功耗为{tail}",
+   "triple_text_en": "{head} power: {tail}"
+  },
+  "hasWeight": {
+   "zh_label": "重量",
+   "en_label": "weight",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "重量",
+    "质量",
+    "重"
+   ],
+   "question_templates_zh": [
+    "{head}的重量",
+    "{head}多重"
+   ],
+   "answer_template_zh": "{head}的重量为{tail}",
+   "triple_text_zh": "{head}的重量为{tail}",
+   "triple_text_en": "{head} weight: {tail}"
+  },
+  "hasMTBF": {
+   "zh_label": "平均无故障时间",
+   "en_label": "MTBF",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "MTBF",
+    "平均无故障时间",
+    "可靠性"
+   ],
+   "question_templates_zh": [
+    "{head}的MTBF",
+    "{head}的平均无故障时间"
+   ],
+   "answer_template_zh": "{head}的MTBF为{tail}",
+   "triple_text_zh": "{head}的平均无故障时间为{tail}",
+   "triple_text_en": "{head} MTBF: {tail}"
+  },
+  "hasLRUCount": {
+   "zh_label": "外场可更换单元数",
+   "en_label": "LRU count",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "LRU",
+    "外场可更换单元",
+    "组成单元",
+    "组成"
+   ],
+   "question_templates_zh": [
+    "{head}有多少LRU",
+    "{head}的组成单元数"
+   ],
+   "answer_template_zh": "{head}的LRU数：{tail}",
+   "triple_text_zh": "{head}由{tail}个外场可更换单元组成",
+   "triple_text_en": "{head} has {tail} LRUs"
+  },
+  "hasECCM": {
+   "zh_label": "电子反对抗能力",
+   "en_label": "ECCM",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "ECCM",
+    "抗干扰",
+    "电子反对抗",
+    "反干扰"
+   ],
+   "question_templates_zh": [
+    "{head}的抗干扰能力",
+    "{head}的ECCM"
+   ],
+   "answer_template_zh": "{head}的抗干扰能力：{tail}",
+   "triple_text_zh": "{head}的抗干扰能力为{tail}",
+   "triple_text_en": "{head} ECCM: {tail}"
+  },
+  "hasCooling": {
+   "zh_label": "冷却方式",
+   "en_label": "cooling",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "冷却",
+    "散热",
+    "冷却方式"
+   ],
+   "question_templates_zh": [
+    "{head}的冷却方式",
+    "{head}怎么散热"
+   ],
+   "answer_template_zh": "{head}的冷却方式：{tail}",
+   "triple_text_zh": "{head}的冷却方式为{tail}",
+   "triple_text_en": "{head} cooling: {tail}"
+  },
+  "researchedIn": {
+   "zh_label": "研制时间",
+   "en_label": "researched in",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "研制时间",
+    "研发时间",
+    "研制于",
+    "研制年代"
+   ],
+   "question_templates_zh": [
+    "{head}什么时候研制的",
+    "{head}的研制时间"
+   ],
+   "answer_template_zh": "{head}研制于{tail}",
+   "triple_text_zh": "{head}研制于{tail}",
+   "triple_text_en": "{head} researched in {tail}"
+  },
+  "deployedIn": {
+   "zh_label": "服役时间",
+   "en_label": "deployed in",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "服役时间",
+    "投入使用",
+    "列装",
+    "部署时间"
+   ],
+   "question_templates_zh": [
+    "{head}什么时候列装",
+    "{head}的服役时间"
+   ],
+   "answer_template_zh": "{head}于{tail}列装",
+   "triple_text_zh": "{head}于{tail}列装",
+   "triple_text_en": "{head} deployed in {tail}"
+  },
+  "price": {
+   "zh_label": "价格",
+   "en_label": "price",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "价格",
+    "造价",
+    "单价",
+    "成本"
+   ],
+   "question_templates_zh": [
+    "{head}多少钱",
+    "{head}的价格"
+   ],
+   "answer_template_zh": "{head}的价格：{tail}",
+   "triple_text_zh": "{head}的价格为{tail}",
+   "triple_text_en": "{head} price: {tail}"
+  },
+  "hasSubsystem": {
+   "zh_label": "子系统",
+   "en_label": "has subsystem",
+   "head_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_types": [
+    "Subsystem"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "子系统",
+    "组成",
+    "包含子系统",
+    "由...构成",
+    "分系统"
+   ],
+   "inverse_zh": "属于",
+   "question_templates_zh": [
+    "{head}由哪些子系统组成",
+    "{head}的子系统有哪些",
+    "{head}包含哪些分系统"
+   ],
+   "answer_template_zh": "{head}的子系统包括：{tail}",
+   "triple_text_zh": "{head}包含子系统{tail}",
+   "triple_text_en": "{head} contains subsystem {tail}",
+   "data_source_v2": "Stage C LLM extraction from manuals; PDF prose mentions transmitter/receiver/antenna/signal_processor/cooling subsystems"
+  },
+  "hasComponent": {
+   "zh_label": "部件",
+   "en_label": "has component",
+   "head_types": [
+    "Subsystem",
+    "Radar"
+   ],
+   "tail_types": [
+    "Component"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "部件",
+    "组件",
+    "零件",
+    "元件",
+    "由...构成"
+   ],
+   "inverse_zh": "是...的部件",
+   "question_templates_zh": [
+    "{head}有哪些部件",
+    "{head}由哪些组件构成"
+   ],
+   "answer_template_zh": "{head}的部件包括：{tail}",
+   "triple_text_zh": "{head}包含部件{tail}",
+   "triple_text_en": "{head} contains component {tail}",
+   "data_source_v2": "Stage C LLM extraction (T/R modules, MMIC, traveling-wave tubes, etc.)"
+  },
+  "subsidiaryOf": {
+   "zh_label": "子公司",
+   "en_label": "subsidiary of",
+   "head_types": [
+    "Manufacturer"
+   ],
+   "tail_types": [
+    "Manufacturer"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "子公司",
+    "隶属于",
+    "下属公司",
+    "归属",
+    "属于"
+   ],
+   "inverse_zh": "拥有子公司",
+   "question_templates_zh": [
+    "{head}属于哪家母公司",
+    "{head}的母公司是"
+   ],
+   "answer_template_zh": "{head}是{tail}的子公司",
+   "triple_text_zh": "{head}隶属于{tail}",
+   "triple_text_en": "{head} is a subsidiary of {tail}",
+   "data_source_v2": "Stage B Wikidata enrichment (Hughes Aircraft → Raytheon, Westinghouse Defense → Northrop Grumman, etc.)"
+  },
+  "headquarteredIn": {
+   "zh_label": "总部所在地",
+   "en_label": "headquartered in",
+   "head_types": [
+    "Manufacturer"
+   ],
+   "tail_types": [
+    "Location"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "总部",
+    "总部位于",
+    "总部设在",
+    "总部所在地"
+   ],
+   "inverse_zh": "...的总部位于这里",
+   "question_templates_zh": [
+    "{head}的总部在哪里",
+    "{head}总部位于哪个城市"
+   ],
+   "answer_template_zh": "{head}的总部位于{tail}",
+   "triple_text_zh": "{head}总部位于{tail}",
+   "triple_text_en": "{head} is headquartered in {tail}",
+   "data_source_v2": "Stage B Wikidata enrichment"
+  },
+  "usedIn": {
+   "zh_label": "实战使用",
+   "en_label": "used in",
+   "head_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_types": [
+    "Conflict"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "实战",
+    "用于",
+    "参战",
+    "在...中使用",
+    "战时使用"
+   ],
+   "inverse_zh": "使用过的雷达包括",
+   "question_templates_zh": [
+    "{head}在哪些战争中使用过",
+    "{head}的实战记录",
+    "{head}参加过哪些冲突"
+   ],
+   "answer_template_zh": "{head}在{tail}中使用过",
+   "triple_text_zh": "{head}在{tail}中使用",
+   "triple_text_en": "{head} was used in {tail}",
+   "data_source_v2": "Stage C LLM extraction from manual prose (Gulf War, Vietnam, etc.)"
+  },
+  "meetsStandard": {
+   "zh_label": "符合标准",
+   "en_label": "meets standard",
+   "head_types": [
+    "Radar",
+    "RadarSystem",
+    "Subsystem"
+   ],
+   "tail_types": [
+    "Standard"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "符合",
+    "兼容",
+    "支持",
+    "采用标准",
+    "遵循"
+   ],
+   "inverse_zh": "兼容的设备包括",
+   "question_templates_zh": [
+    "{head}符合哪些标准",
+    "{head}支持的接口",
+    "{head}采用了哪些规范"
+   ],
+   "answer_template_zh": "{head}符合{tail}标准",
+   "triple_text_zh": "{head}符合{tail}标准",
+   "triple_text_en": "{head} meets the {tail} standard",
+   "data_source_v2": "Stage B Wikidata + manual extraction (MIL-STD-1553 data bus, ARINC-429 avionics interface, etc.)"
+  },
+  "hasVariant": {
+   "zh_label": "变体型号",
+   "en_label": "has variant",
+   "head_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "变体",
+    "变型",
+    "改型",
+    "型号变体",
+    "子型号",
+    "衍生型号"
+   ],
+   "inverse_zh": "是...的变体",
+   "question_templates_zh": [
+    "{head}有哪些变体型号",
+    "{head}的子型号有哪些",
+    "{head}衍生出哪些型号"
+   ],
+   "answer_template_zh": "{head}的变体包括：{tail}",
+   "triple_text_zh": "{head}的变体型号是{tail}",
+   "triple_text_en": "{head} has variant {tail}",
+   "data_source_v2": "Stage D controlled schema expansion (schema_expand.py): 11x in 60-doc probe, top structural gap"
+  },
+  "replaces": {
+   "zh_label": "替代",
+   "en_label": "replaces",
+   "head_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "替代",
+    "取代",
+    "接替",
+    "替换",
+    "更替"
+   ],
+   "inverse_zh": "被...替代",
+   "question_templates_zh": [
+    "{head}替代了哪款雷达",
+    "{head}取代了什么型号",
+    "哪款雷达被{head}替代"
+   ],
+   "answer_template_zh": "{head}替代了{tail}",
+   "triple_text_zh": "{head}替代了{tail}",
+   "triple_text_en": "{head} replaces {tail}",
+   "data_source_v2": "Stage D controlled schema expansion: service succession (replaces/replacedBy/successorOf) 11x combined; distinct from upgradeOf (cross-family in-service replacement)"
+  },
+  "replacedBy": {
+   "zh_label": "被替代",
+   "en_label": "replaced by",
+   "head_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "被替代",
+    "被取代",
+    "由...接替",
+    "后继型号"
+   ],
+   "inverse_zh": "替代了",
+   "question_templates_zh": [
+    "{head}被哪款雷达替代",
+    "{head}的后继型号是",
+    "什么型号接替了{head}"
+   ],
+   "answer_template_zh": "{head}被{tail}替代",
+   "triple_text_zh": "{head}被{tail}替代",
+   "triple_text_en": "{head} is replaced by {tail}",
+   "data_source_v2": "Stage D controlled schema expansion: inverse of replaces; folds successorOf"
+  },
+  "installedAt": {
+   "zh_label": "部署地点",
+   "en_label": "installed at",
+   "head_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_types": [
+    "Location"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "部署地点",
+    "装备地点",
+    "安装于",
+    "部署于",
+    "驻地",
+    "基地"
+   ],
+   "inverse_zh": "部署有",
+   "question_templates_zh": [
+    "{head}部署在哪里",
+    "{head}安装在哪个基地",
+    "{head}的驻地"
+   ],
+   "answer_template_zh": "{head}部署在{tail}",
+   "triple_text_zh": "{head}部署在{tail}",
+   "triple_text_en": "{head} is installed at {tail}",
+   "data_source_v2": "Stage D controlled schema expansion: 5x; fixed geographic deployment SITE, complements deployedOn (mobile PLATFORM)"
+  },
+  "hasMaxTrackTargets": {
+   "zh_label": "最大跟踪目标数",
+   "en_label": "max tracked targets",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "low_confidence": true,
+   "zh_synonyms": [
+    "跟踪目标数",
+    "最大跟踪",
+    "可跟踪目标",
+    "同时跟踪"
+   ],
+   "question_templates_zh": [
+    "{head}能同时跟踪多少目标",
+    "{head}的最大跟踪目标数"
+   ],
+   "answer_template_zh": "{head}最多可跟踪{tail}个目标",
+   "triple_text_zh": "{head}最多可跟踪{tail}个目标",
+   "triple_text_en": "{head} tracks up to {tail} targets"
+  },
+  "hasAntennaType": {
+   "zh_label": "天线类型",
+   "en_label": "antenna type",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "天线类型",
+    "天线形式",
+    "天线",
+    "天线体制"
+   ],
+   "question_templates_zh": [
+    "{head}用什么天线",
+    "{head}的天线类型"
+   ],
+   "answer_template_zh": "{head}的天线类型：{tail}",
+   "triple_text_zh": "{head}采用{tail}天线",
+   "triple_text_en": "{head} antenna type: {tail}"
+  },
+  "hasTransportMode": {
+   "zh_label": "机动方式",
+   "en_label": "transport mode",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": true,
+   "zh_synonyms": [
+    "机动方式",
+    "运输方式",
+    "机动",
+    "运输"
+   ],
+   "question_templates_zh": [
+    "{head}如何机动",
+    "{head}的运输方式"
+   ],
+   "answer_template_zh": "{head}的机动方式：{tail}",
+   "triple_text_zh": "{head}可通过{tail}机动",
+   "triple_text_en": "{head} transport mode: {tail}"
+  },
+  "hasPulseWidth": {
+   "zh_label": "脉冲宽度",
+   "en_label": "pulse width",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "low_confidence": true,
+   "zh_synonyms": [
+    "脉冲宽度",
+    "脉宽",
+    "脉冲"
+   ],
+   "question_templates_zh": [
+    "{head}的脉冲宽度",
+    "{head}的脉宽"
+   ],
+   "answer_template_zh": "{head}的脉冲宽度为{tail}",
+   "triple_text_zh": "{head}的脉冲宽度为{tail}",
+   "triple_text_en": "{head} pulse width: {tail}"
+  },
+  "hasAccuracy": {
+   "zh_label": "测量精度",
+   "en_label": "accuracy",
+   "head_types": [
+    "Radar"
+   ],
+   "tail_types": [
+    "Literal"
+   ],
+   "tail_kind": "literal",
+   "is_multi_valued": false,
+   "low_confidence": true,
+   "zh_synonyms": [
+    "精度",
+    "测量精度",
+    "分辨率",
+    "误差"
+   ],
+   "question_templates_zh": [
+    "{head}的测量精度",
+    "{head}的精度是多少"
+   ],
+   "answer_template_zh": "{head}的测量精度：{tail}",
+   "triple_text_zh": "{head}的测量精度为{tail}",
+   "triple_text_en": "{head} accuracy: {tail}"
+  },
+  "partOfSystem": {
+   "zh_label": "隶属系统",
+   "en_label": "part of system",
+   "head_types": [
+    "Radar",
+    "RadarSystem"
+   ],
+   "tail_types": [
+    "WeaponSystem"
+   ],
+   "tail_kind": "entity",
+   "is_multi_valued": false,
+   "zh_synonyms": [
+    "隶属于",
+    "配属",
+    "属于系统",
+    "配套",
+    "配用于",
+    "是...的雷达"
+   ],
+   "inverse_zh": "配用雷达",
+   "question_templates_zh": [
+    "{head}属于哪个武器系统",
+    "{head}配属于哪个防空系统",
+    "哪个系统使用{head}"
+   ],
+   "answer_template_zh": "{head}隶属于{tail}系统",
+   "triple_text_zh": "{head}隶属于{tail}系统",
+   "triple_text_en": "{head} is part of the {tail} system"
+  }
+ }
+}

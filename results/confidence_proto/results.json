@@ -1,0 +1,33 @@
+{
+  "best_alpha": 0.0,
+  "n_val_directions": 400,
+  "n_test_directions": 1000,
+  "test_hits_at_1": 0.184,
+  "optimal_aurc": 0.5045207705034589,
+  "results": {
+    "KGE-score": {
+      "AURC": 0.8735,
+      "cov@risk=0.10": 0.0,
+      "cov@risk=0.20": 0.0,
+      "cov@risk=0.30": 0.0
+    },
+    "KGE-margin": {
+      "AURC": 0.6332,
+      "cov@risk=0.10": 0.004,
+      "cov@risk=0.20": 0.068,
+      "cov@risk=0.30": 0.097
+    },
+    "Retrieval-margin": {
+      "AURC": 0.7902,
+      "cov@risk=0.10": 0.002,
+      "cov@risk=0.20": 0.002,
+      "cov@risk=0.30": 0.002
+    },
+    "Fused(\u03b1=0.0)": {
+      "AURC": 0.6332,
+      "cov@risk=0.10": 0.004,
+      "cov@risk=0.20": 0.068,
+      "cov@risk=0.30": 0.097
+    }
+  }
+}

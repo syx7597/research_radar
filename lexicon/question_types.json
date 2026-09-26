@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "description": "Question type taxonomy for Strategy-Routed GraphRAG. Each type maps to: (1) router detection rules, (2) generation template for autogen QA, (3) preferred retrieval strategy, (4) gold answer format.",
+  "strategies": {
+    "lookup":     "BM25+Vector+RRF (current pipeline) — fastest path, for 1-hop factoid",
+    "path_plan":  "Relation-path planning (RoG-style) — multi-hop chains, planner emits relation sequence",
+    "exhaustive": "Type-pool exhaustive retrieval — pull ALL triples matching (?, relation, constraint) without top-k cutoff",
+    "complement": "Complement / closed-world check — verify absence by enumerating positive evidence then explicit gap report",
+    "dual_subgraph": "Two parallel exhaustive retrievals on two entities, then set-aligned compare",
+    "constrained_join": "Multi-relation joint constraint — first narrow by most-selective constraint, then validate others"
+  },
+
+  "types": {
+    "single_hop": {
+      "description": "Direct (head, relation, ?) or (?, relation, tail) factoid. Tail can be entity or literal.",
+      "router_signals_zh": ["谁研制", "由谁", "的频段", "什么时候", "多少", "属于哪个国家", "原产", "服役状态"],
+      "strategy": "lookup",
+      "answer_format": "single string or short phrase",
+      "gen_template": "{head_entity} {relation_question} ?",
+      "examples": [
+        {"q_zh": "AN/TPY-2是由哪家公司研制的？", "q_en": "Who developed AN/TPY-2?", "a": "Raytheon"},
+        {"q_zh": "AN/SPY-1的工作频段是？", "q_en": "What is the frequency band of AN/SPY-1?", "a": "S"}
+      ]
+    },
+
+    "two_hop_bridge": {
+      "description": "Bridge over a middle entity: (head, r1, m) ∧ (m, r2, ?). Common pattern: deployed-on platform → operated-by country.",
+      "router_signals_zh": ["所部署在的", "装备的雷达由", "X平台上的雷达", "厂商所属国"],
+      "strategy": "path_plan",
+      "answer_format": "single entity",
+      "gen_template": "(head, r1, m), (m, r2, ?)  — emit question that requires traversing m",
+      "relation_path_examples": [
+        ["deployedOn", "operatedBy"],
+        ["developedBy", "affiliatedTo"],
+        ["upgradeOf", "developedBy"]
+      ],
+      "examples": [
+        {"q_zh": "AN/TPY-2的研制厂商所属于哪个国家？", "a": "美国", "path": ["AN/TPY-2 -[developedBy]-> Raytheon", "Raytheon -[affiliatedTo]-> 美国"]}
+      ]
+    },
+
+    "three_hop_chain": {
+      "description": "Three-relation chain. Rare in radar domain but useful for stress-testing planner.",
+      "strategy": "path_plan",
+      "relation_path_examples": [
+        ["upgradeOf", "developedBy", "affiliatedTo"]
+      ],
+      "examples": [
+        {"q_zh": "AN/APG-82的前代型号由哪个国家的公司研制？", "a": "美国"}
+      ]
+    },
+
+    "relation_inverse": {
+      "description": "Question asks for the subject: (?, relation, tail). Multi-valued by nature.",
+      "router_signals_zh": ["哪些雷达", "都有哪些型号", "哪些是", "由X研制的型号"],
+      "strategy": "exhaustive",
+      "answer_format": "list of entities",
+      "gen_template": "Which {head_type} stand in <relation> with {tail_entity}?",
+      "examples": [
+        {"q_zh": "Raytheon研制了哪些雷达？", "a": ["AN/TPY-2", "AN/MPQ-65", "..."]},
+        {"q_zh": "工作在S波段的雷达有哪些？", "a": ["AN/TPS-70", "..."]}
+      ]
+    },
+
+    "agg_count": {
+      "description": "Count: how many entities satisfy a condition. Strategy MUST be exhaustive — top-k truncation is fatal.",
+      "router_signals_zh": ["共有多少", "几款", "几种", "数量", "有多少款"],
+      "strategy": "exhaustive",
+      "answer_format": "integer",
+      "gen_template": "How many {target_type} satisfy {constraint}?",
+      "examples": [
+        {"q_zh": "美国共有多少款X波段雷达？", "a": "12 (整数)"},
+        {"q_zh": "Lockheed Martin研制了多少型雷达？", "a": "n"}
+      ]
+    },
+
+    "agg_enum": {
+      "description": "List-all: enumerate all entities satisfying a condition. Recall-critical, top-k must be removed.",
+      "router_signals_zh": ["列出所有", "都有哪些", "全部", "请列举"],
+      "strategy": "exhaustive",
+      "answer_format": "list of entities",
+      "examples": [
+        {"q_zh": "列出所有部署在阿利·伯克级驱逐舰上的雷达。", "a": ["AN/SPY-1", "AN/SPG-62", "..."]},
+        {"q_zh": "美国所有能兼容AIM-120的雷达？", "a": ["..."]}
+      ]
+    },
+
+    "set_compare": {
+      "description": "Compare two entities along a relation: intersection / difference / common attribute.",
+      "router_signals_zh": ["X和Y的共同", "X和Y都", "比较", "差异", "区别"],
+      "strategy": "dual_subgraph",
+      "answer_format": "list or yes/no",
+      "examples": [
+        {"q_zh": "AN/SPY-1和AN/SPY-6的共同部署平台？", "a": ["..."]},
+        {"q_zh": "AN/TPY-2和AN/MPQ-65的研制公司是同一家吗？", "a": "是 (Raytheon)"}
+      ]
+    },
+
+    "negation": {
+      "description": "Find entities NOT satisfying a condition, or verify absence of a relation. Most failure-prone in factoid-only RAG.",
+      "router_signals_zh": ["不部署在", "没有", "不是由", "除了", "排除", "不属于"],
+      "strategy": "complement",
+      "answer_format": "list of entities OR yes/no with justification",
+      "gen_template": "Find {target_type} NOT satisfying ({constraint}); answer must be grounded by enumerating positive evidence first.",
+      "examples": [
+        {"q_zh": "AN/SPY-6不部署在哪些平台上？", "a": "(among the platforms in KG, list those without deployedOn link to AN/SPY-6)"},
+        {"q_zh": "AN/TPY-2有没有出口到中国？", "a": "否（KG中无AN/TPY-2 exportedTo 中国 三元组）"}
+      ]
+    },
+
+    "attr_filter": {
+      "description": "Multi-relation joint constraint: filter by 2+ attributes simultaneously. The planner must do AND-join across relations.",
+      "router_signals_zh": ["且", "并且", "同时", "既...又..."],
+      "strategy": "constrained_join",
+      "answer_format": "list of entities",
+      "examples": [
+        {"q_zh": "工作在S波段且由日本研制的舰载雷达？", "a": ["..."]},
+        {"q_zh": "美国研制的且部署在阿利·伯克级上的雷达？", "a": ["AN/SPY-1", "..."]}
+      ]
+    },
+
+    "unanswerable": {
+      "description": "KG does not contain the answer. The system MUST refuse rather than hallucinate.",
+      "router_signals_zh": ["?(any question)", "trick: include radar names not in KG"],
+      "strategy": "complement",
+      "answer_format": "I_DONT_KNOW + reason",
+      "examples": [
+        {"q_zh": "AN/SPY-99的研制单位？", "a": "未知（KG中无此型号）"},
+        {"q_zh": "AN/TPY-2的造价是多少？", "a": "未知（KG中无AN/TPY-2 price 三元组）"}
+      ]
+    },
+
+    "distractor": {
+      "description": "Surface-similar entities that confuse retrieval (AN/SPY-1 vs AN/SPY-1A vs AN/SPY-1D). Tests entity disambiguation.",
+      "router_signals_zh": ["any single_hop format"],
+      "strategy": "lookup",
+      "answer_format": "exact entity match",
+      "examples": [
+        {"q_zh": "AN/SPY-1A的频段是？(注意：和AN/SPY-1区分)", "a": "S"},
+        {"q_zh": "AN/APG-68(V)9的部署平台？(注意：和AN/APG-68区分)", "a": "..."}
+      ]
+    }
+  },
+
+  "router_prompt_template": "你是一个雷达知识图谱问答系统的查询分类器。给定一个中文或英文问题，输出最匹配的题型ID（必须从以下列表选一个）：\n- single_hop: 直接事实查询\n- two_hop_bridge: 需要桥接中间实体的两跳查询\n- three_hop_chain: 三跳链式查询\n- relation_inverse: 反向查询（已知客体找主体）\n- agg_count: 计数题\n- agg_enum: 列举题\n- set_compare: 比较两个实体\n- negation: 否定/排除题\n- attr_filter: 多约束筛选题\n- unanswerable: KG无法回答\n- distractor: 易混淆实体题\n\n问题：{question}\n\n仅输出题型ID，不要其他内容。",
+
+  "type_to_strategy": {
+    "single_hop": "lookup",
+    "two_hop_bridge": "path_plan",
+    "three_hop_chain": "path_plan",
+    "relation_inverse": "exhaustive",
+    "agg_count": "exhaustive",
+    "agg_enum": "exhaustive",
+    "set_compare": "dual_subgraph",
+    "negation": "complement",
+    "attr_filter": "constrained_join",
+    "unanswerable": "complement",
+    "distractor": "lookup"
+  },
+
+  "validation_priorities": {
+    "decision_gate": "If after the 30-question minimal validation, agg_count + agg_enum + negation strategies do NOT show >=15% absolute improvement over current pipeline, reconsider before scaling to 500-question benchmark.",
+    "must_test_first": ["agg_enum", "agg_count", "negation"],
+    "rationale": "These three are where the strategy-routing thesis lives or dies. single_hop and two_hop_bridge are not differentiators (existing GraphRAG already strong on them)."
+  }
+}

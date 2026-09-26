@@ -1,0 +1,42 @@
+{
+ "src_size": {
+  "llm_few_shot": 194,
+  "wikidata": 240,
+  "rule_pattern": 89,
+  "llm_zero_shot": 45,
+  "globalsecurity": 65,
+  "manual_expert": 1,
+  "pdf_spec_block": 1255,
+  "pdf_narrative_llm": 1736,
+  "wikidata_curated": 61,
+  "wikidata_curated_merger": 2,
+  "stage_c_llm": 1699,
+  "enrich_wiki": 90,
+  "extract_std_field": 1968,
+  "extract_perf_data": 496,
+  "normalize_attrs": 2,
+  "v2_attribute": 4402,
+  "schema_expand_llm": 583
+ },
+ "n_sampled_per_source": {
+  "llm_few_shot": 12,
+  "wikidata": 12,
+  "rule_pattern": 12,
+  "llm_zero_shot": 12,
+  "globalsecurity": 12,
+  "manual_expert": 1,
+  "pdf_spec_block": 12,
+  "pdf_narrative_llm": 12,
+  "wikidata_curated": 12,
+  "wikidata_curated_merger": 2,
+  "stage_c_llm": 12,
+  "enrich_wiki": 12,
+  "extract_std_field": 12,
+  "extract_perf_data": 12,
+  "normalize_attrs": 2,
+  "v2_attribute": 12,
+  "schema_expand_llm": 12
+ },
+ "seed": 20,
+ "total_rows": 173
+}
