@@ -1,0 +1,45 @@
+{
+  "path": "results/condition_consistency/pilot_bart5k_seed20260926/generator/final",
+  "files": {
+    "added_tokens.json": {
+      "bytes": 40,
+      "sha256": "0cf7fca3546cdf159638535e02af92662303d2ae6f5e82128904ab2d5d417592"
+    },
+    "config.json": {
+      "bytes": 1715,
+      "sha256": "3af518a0c148ee9ac1567a66a7510a36e985aa1c6bc2f5250920551aa421728f"
+    },
+    "generation_config.json": {
+      "bytes": 292,
+      "sha256": "1c424bd5cd1fd254e4cbeffac032c3825ccac268f3e398606daa3b18092c5f13"
+    },
+    "merges.txt": {
+      "bytes": 456318,
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+    },
+    "model.safetensors": {
+      "bytes": 557918772,
+      "sha256": "298d44bc144e3e39c74e6a31a271692e1031265163f4bfe5bd2530fc775d8ee1"
+    },
+    "special_tokens_map.json": {
+      "bytes": 279,
+      "sha256": "d5469a60db23249c7f8945013d78df30b44b6bf686c6bb4740f4223f77b1b535"
+    },
+    "tokenizer.json": {
+      "bytes": 3559005,
+      "sha256": "e3f02b0cf04d0c9229efd939cb0f31bf121143c8d3038417cb1bcc49e8f36d85"
+    },
+    "tokenizer_config.json": {
+      "bytes": 1613,
+      "sha256": "de08939a2dac7e45618dad9e99cd8fa176c4a516b59299ddf40bb02d3453259d"
+    },
+    "training_args.bin": {
+      "bytes": 5560,
+      "sha256": "95ffa6e25fbbf0d60d467eab3aff2a8e020c16085f28800ceb7ce060f6078073"
+    },
+    "vocab.json": {
+      "bytes": 798293,
+      "sha256": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "python": "3.10.12",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.48.3",
+  "cuda_runtime": "12.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_bytes": 50875924480
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_bytes": 50875924480
+    },
+    {
+      "index": 2,
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_bytes": 50875924480
+    },
+    {
+      "index": 3,
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_bytes": 50875924480
+    }
+  ],
+  "source_sha256": {
+    "experiments/condition_consistency/BASELINE.md": "52559ee7142f2e7de489d1739960c00280448d025acb65ca1e4e0e94b93e12f7",
+    "experiments/condition_consistency/DATA.md": "f499b1b293117d0cebff7224c4621342f862d869a80c8aaf6d1ad6935137c845",
+    "experiments/condition_consistency/MINIMAL_PROTOCOL.md": "32043a2c2c70462e4649f7efb6c82126aaf41cd338f21ad242dc10e299fd6934",
+    "experiments/condition_consistency/README.md": "d156bb7195c31d769b1785faa2fc03b139cd01ce6344e9afa668b75cca810b30",
+    "experiments/condition_consistency/baseline.py": "0debd0ef6939759487450150201326d488210c89384fec1933f1b43e7e4e6716",
+    "experiments/condition_consistency/evaluate.py": "d1380067c1cf8a37bff436dc4d72c20590efbc0b0910904d4d41d1e90a8ff326",
+    "experiments/condition_consistency/execute_predictions.py": "dff3f12c9f02b3a49ebd3d19b1700946012c6d33af01a67b1c8b204343d5824b",
+    "experiments/condition_consistency/executor.py": "63d1771a7716e345cbd8133120e035c1029ce732ead809074427ba2d78d4910b",
+    "experiments/condition_consistency/mutations.py": "7c8e171a5c0d632a9f2ad3fba1e9c34f34f2ec2468c32aa00d32956608647a41",
+    "experiments/condition_consistency/prepare_data.py": "b23acbc3c68638543fe23328e7f67874e6b24e5f24b4da7272f14ce30fa6f95a",
+    "experiments/condition_consistency/record_environment.py": "d274a2f914c5e0e36a6201ee62cf621c1c941c78aef024096ab48638a7ccc256",
+    "experiments/condition_consistency/requirements.txt": "8abd1888e68ae8efce1c67c3d6e1834837988ad02a582f3a0be22a8e9f913133",
+    "experiments/condition_consistency/rerank.py": "2267191198c270c2e6dcefac4a6d994b41122e784c62ae1aff56abbded222928",
+    "experiments/condition_consistency/run_pilot.sh": "720626bd06c00d2d2b1af4feea00b504c5bc727000533138bc36bf203e1d0206",
+    "experiments/condition_consistency/summarize_pilot.py": "b041469588d07c72c5f4d82eb3297966d172ee4113979a6c673884fe942b36b7",
+    "experiments/condition_consistency/test_ranking.py": "e0f318b9e485cf02ef5b3133a46a241bac470fc7d1813b3f554d42ac41c08341"
+  },
+  "model_files_sha256": {
+    "config.json": "c4022c931216afcb778991477332e5312aca8be478027ee3a8bf34b7004c44e2",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model.safetensors": "1bd3ac8e5b3ac71c77cf18fbcd8b113e0bfceced94c5cfbbb9a2b4bb4781190b",
+    "source.json": "ee19851825a849925c9cbd8d9dd83afe06d626d0e0998f85a525b155826943f7",
+    "tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+    "vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655"
+  },
+  "model_source": {
+    "model": "facebook/bart-base",
+    "revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+    "license": "Apache-2.0",
+    "model_safetensors_sha256": "1bd3ac8e5b3ac71c77cf18fbcd8b113e0bfceced94c5cfbbb9a2b4bb4781190b",
+    "source": "https://huggingface.co/facebook/bart-base",
+    "verified_against": "official repository LFS SHA256"
+  }
+}

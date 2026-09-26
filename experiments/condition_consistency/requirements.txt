@@ -1,0 +1,7 @@
+# Verified environment versions are additionally recorded per run using pip freeze.
+torch==2.6.0
+transformers==4.48.3
+accelerate==1.3.0
+datasets==3.3.2
+sentencepiece==0.2.0
+scikit-learn==1.6.1

@@ -1,0 +1,97 @@
+{
+  "purpose": "Infrastructure semantics comparison, not model evaluation",
+  "records": [
+    {
+      "id": "train:2522",
+      "gold": "12",
+      "default_adapter": {
+        "valid": true,
+        "prediction": "9",
+        "error": null,
+        "answers": [
+          "9"
+        ],
+        "empty_result": false
+      },
+      "official_forward": "9",
+      "modern_adapter": {
+        "valid": true,
+        "prediction": "12",
+        "error": null,
+        "answers": [
+          "12"
+        ],
+        "empty_result": false
+      }
+    },
+    {
+      "id": "train:40416",
+      "gold": "Batman & Robin",
+      "default_adapter": {
+        "valid": true,
+        "prediction": "None",
+        "error": null,
+        "answers": [],
+        "empty_result": true
+      },
+      "official_forward": "None",
+      "modern_adapter": {
+        "valid": true,
+        "prediction": "Batman & Robin",
+        "error": null,
+        "answers": [
+          "Batman & Robin"
+        ],
+        "empty_result": false
+      }
+    },
+    {
+      "id": "train:19931",
+      "gold": "4",
+      "default_adapter": {
+        "valid": true,
+        "prediction": "4",
+        "error": null,
+        "answers": [
+          "4"
+        ],
+        "empty_result": false
+      },
+      "official_forward": "4",
+      "modern_adapter": {
+        "valid": true,
+        "prediction": "5",
+        "error": null,
+        "answers": [
+          "5"
+        ],
+        "empty_result": false
+      }
+    },
+    {
+      "id": "train:90526",
+      "gold": "correspondent",
+      "default_adapter": {
+        "valid": true,
+        "prediction": "correspondent",
+        "error": null,
+        "answers": [
+          "correspondent"
+        ],
+        "empty_result": false
+      },
+      "official_forward": "correspondent",
+      "modern_adapter": {
+        "valid": true,
+        "prediction": "teacher",
+        "error": null,
+        "answers": [
+          "teacher",
+          "politician",
+          "correspondent"
+        ],
+        "empty_result": false
+      }
+    }
+  ]
+}

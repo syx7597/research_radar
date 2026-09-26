@@ -16,7 +16,7 @@
   },
   "kqa_pro": {
     "validation_questions": 11797,
-    "local_train_present": false,
+    "local_train_present": true,
     "family_definition": {
       "qualifier": [
         "QFilterDate",

@@ -1,0 +1,85 @@
+{
+  "seed": 17,
+  "split": "train",
+  "targeted_pairs": 166,
+  "natural_pairs": 166,
+  "counts": {
+    "questions_considered": 1000,
+    "no_natural_negative": 677,
+    "attempted": 2734,
+    "accepted": 2214,
+    "accepted_comparison_operator": 196,
+    "invalid_execution": 427,
+    "same_answer_excluded": 93,
+    "accepted_qualifier_key": 2009,
+    "accepted_empty_prediction": 2010,
+    "no_output_length_matched_targeted_negative": 26,
+    "accepted_omit_qualifier_filter": 9
+  },
+  "max_attempts_per_question": 24,
+  "per_candidate_timeout_seconds": 5.0,
+  "timeout_count": 0,
+  "natural_cache_sha256": "c194027bb03dba5400d534611501353763b82036f31a6c5e17d31a81f6e4ecb7",
+  "natural_execution_policy": "Reuse only valid=True observations from hash-verified execution cache; no re-execution",
+  "proposal_sampling": "seeded round-robin over single-edit families",
+  "data_sha256": "3bc7ec1222b195f6d1efe2505da97bcac6535195a2ec9ad93078b0867c0c052c",
+  "matched_output_kind": true,
+  "max_negative_length_difference": 2,
+  "negative_distributions": {
+    "targeted": {
+      "output_kind": {
+        "text_or_quantity": 33,
+        "empty": 81,
+        "date": 9,
+        "boolean": 13,
+        "number": 30
+      },
+      "program_length": {
+        "4": 58,
+        "5": 10,
+        "3": 42,
+        "7": 5,
+        "8": 16,
+        "2": 8,
+        "6": 26,
+        "9": 1
+      },
+      "answer_count": {
+        "1": 85,
+        "0": 81
+      },
+      "edit_kind": {
+        "comparison_operator": 79,
+        "qualifier_key": 83,
+        "omit_qualifier_filter": 4
+      }
+    },
+    "natural": {
+      "output_kind": {
+        "text_or_quantity": 33,
+        "empty": 81,
+        "date": 9,
+        "boolean": 13,
+        "number": 30
+      },
+      "program_length": {
+        "4": 54,
+        "2": 11,
+        "5": 12,
+        "3": 40,
+        "7": 5,
+        "8": 16,
+        "6": 27,
+        "9": 1
+      },
+      "answer_count": {
+        "1": 85,
+        "0": 81
+      },
+      "edit_kind": {
+        "natural": 166
+      }
+    }
+  },
+  "warning": "Synthetic diagnostic/training pairs, NOT natural QA candidate evaluation. Output kind is matched when natural cache is supplied; length matching has a bounded tolerance and does not remove all source shortcuts."
+}

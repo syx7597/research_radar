@@ -1,0 +1,293 @@
+{
+  "purpose": "gold program infrastructure replay, not model accuracy",
+  "splits": {
+    "generator_train": {
+      "total": 5000,
+      "valid": 5000,
+      "correct": 4980,
+      "serialization_execution_agreement": 5000,
+      "accuracy": 0.996,
+      "mismatches": [
+        {
+          "id": "train:19931",
+          "expected": "4",
+          "valid": true,
+          "prediction": "5",
+          "error": null,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": "train:7803",
+          "expected": "2",
+          "valid": true,
+          "prediction": "3",
+          "error": null,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": "train:29418",
+          "expected": "11",
+          "valid": true,
+          "prediction": "13",
+          "error": null,
+          "answers": [
+            "13"
+          ]
+        },
+        {
+          "id": "train:90526",
+          "expected": "correspondent",
+          "valid": true,
+          "prediction": "politician",
+          "error": null,
+          "answers": [
+            "politician",
+            "correspondent",
+            "teacher"
+          ]
+        },
+        {
+          "id": "train:28973",
+          "expected": "1",
+          "valid": true,
+          "prediction": "2",
+          "error": null,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": "train:17219",
+          "expected": "1",
+          "valid": true,
+          "prediction": "2",
+          "error": null,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": "train:88720",
+          "expected": "2",
+          "valid": true,
+          "prediction": "3",
+          "error": null,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": "train:111",
+          "expected": "4",
+          "valid": true,
+          "prediction": "5",
+          "error": null,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": "train:72128",
+          "expected": "4",
+          "valid": true,
+          "prediction": "5",
+          "error": null,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": "train:61351",
+          "expected": "15",
+          "valid": true,
+          "prediction": "16",
+          "error": null,
+          "answers": [
+            "16"
+          ]
+        },
+        {
+          "id": "train:47333",
+          "expected": "1",
+          "valid": true,
+          "prediction": "2",
+          "error": null,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": "train:60840",
+          "expected": "3",
+          "valid": true,
+          "prediction": "5",
+          "error": null,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": "train:24511",
+          "expected": "1",
+          "valid": true,
+          "prediction": "2",
+          "error": null,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": "train:47101",
+          "expected": "2",
+          "valid": true,
+          "prediction": "3",
+          "error": null,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": "train:57094",
+          "expected": "14",
+          "valid": true,
+          "prediction": "19",
+          "error": null,
+          "answers": [
+            "19"
+          ]
+        },
+        {
+          "id": "train:14931",
+          "expected": "131",
+          "valid": true,
+          "prediction": "134",
+          "error": null,
+          "answers": [
+            "134"
+          ]
+        },
+        {
+          "id": "train:42656",
+          "expected": "3",
+          "valid": true,
+          "prediction": "4",
+          "error": null,
+          "answers": [
+            "4"
+          ]
+        },
+        {
+          "id": "train:39578",
+          "expected": "4",
+          "valid": true,
+          "prediction": "5",
+          "error": null,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": "train:24740",
+          "expected": "2",
+          "valid": true,
+          "prediction": "3",
+          "error": null,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": "train:34750",
+          "expected": "5",
+          "valid": true,
+          "prediction": "6",
+          "error": null,
+          "answers": [
+            "6"
+          ]
+        }
+      ]
+    },
+    "reranker_train": {
+      "total": 1000,
+      "valid": 1000,
+      "correct": 997,
+      "serialization_execution_agreement": 1000,
+      "accuracy": 0.997,
+      "mismatches": [
+        {
+          "id": "train:93098",
+          "expected": "swing music",
+          "valid": true,
+          "prediction": "rhythm and blues",
+          "error": null,
+          "answers": [
+            "rhythm and blues",
+            "swing music",
+            "rock and roll",
+            "rock music",
+            "blues rock"
+          ]
+        },
+        {
+          "id": "train:2266",
+          "expected": "5",
+          "valid": true,
+          "prediction": "8",
+          "error": null,
+          "answers": [
+            "8"
+          ]
+        },
+        {
+          "id": "train:81451",
+          "expected": "2",
+          "valid": true,
+          "prediction": "3",
+          "error": null,
+          "answers": [
+            "3"
+          ]
+        }
+      ]
+    },
+    "dev": {
+      "total": 500,
+      "valid": 500,
+      "correct": 498,
+      "serialization_execution_agreement": 500,
+      "accuracy": 0.996,
+      "mismatches": [
+        {
+          "id": "train:76510",
+          "expected": "5",
+          "valid": true,
+          "prediction": "6",
+          "error": null,
+          "answers": [
+            "6"
+          ]
+        },
+        {
+          "id": "train:87675",
+          "expected": "3",
+          "valid": true,
+          "prediction": "4",
+          "error": null,
+          "answers": [
+            "4"
+          ]
+        }
+      ]
+    }
+  },
+  "seconds": 19.291066249992582,
+  "backend": "modern",
+  "source_commit": "486c07bd83ea32268ff90fa6942cc9f7e1574ae5",
+  "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "split_manifest_sha256": "2b20ba5a1eddaf20a24315310d5e1b67a2076d32066f33755842a5a366044633"
+}

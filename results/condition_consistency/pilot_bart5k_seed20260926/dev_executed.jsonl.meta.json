@@ -1,0 +1,40 @@
+{
+  "predictions_path": "results/condition_consistency/pilot_bart5k_seed20260926/dev_generated.jsonl",
+  "predictions_sha256": "a437fd0381e85ffb04dc58f264775c129e6ab6c44a2b027521c346ac6c8414ed",
+  "gold_path": "data/condition_consistency/splits/dev.jsonl",
+  "gold_sha256": "c3a3e1c8950a9bbe2e529dd986bb8fb55ce26fd0547171735c60daac31f43168",
+  "kb_path": "datasets/kqa_pro/kb.json",
+  "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "executor_backend": "baseline",
+  "executor_source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+  "executor_source_path": "/home/syx/research_radar_minval/external/kqa_pro_baselines",
+  "executor_source_file_sha256": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+  "gold_usage": "offline join for evaluation only; no candidate insertion or reordering",
+  "limits": {
+    "per_candidate_timeout_seconds": 5.0,
+    "program_max_steps": 64,
+    "program_max_characters": 65536,
+    "argument_max_characters": 2048
+  },
+  "questions": 500,
+  "executor_initialization_seconds": 3.312625401013065,
+  "output_path": "results/condition_consistency/pilot_bart5k_seed20260926/dev_executed.jsonl",
+  "output_sha256": "502c449e4c8c902e544781c1fdd1ef1e0e30d4b136547c0675c65ab3f3990ecf",
+  "candidate_count_distribution": {
+    "4": 500
+  },
+  "total_candidates": 2000,
+  "valid_candidates": 830,
+  "candidate_valid_ratio": 0.415,
+  "questions_with_valid_candidates": 448,
+  "question_any_valid_ratio": 0.896,
+  "error_types": {
+    "IndexError": 517,
+    "ValueError": 567,
+    "UnboundLocalError": 69,
+    "KeyError": 16,
+    "AssertionError": 1
+  },
+  "candidate_execution_seconds": 15.652330015000189,
+  "elapsed_seconds": 19.062979195005028
+}

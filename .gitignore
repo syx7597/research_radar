@@ -101,3 +101,15 @@ kg_v3/retrieval_index/
 *.xdv
 *.bbl
 *.blg
+
+# Public-benchmark runs: publish protocols/metrics; keep model and per-example data local.
+/results/condition_consistency/**/*.jsonl
+/results/condition_consistency/**/*.jsonl.tmp
+/results/condition_consistency/**/checkpoint-*/
+/results/condition_consistency/**/model/
+/results/condition_consistency/**/final/
+/results/condition_consistency/**/tokenized/
+/results/condition_consistency/**/runs/
+*.safetensors
+*.pt
+*.pth

@@ -1,0 +1,23 @@
+{
+  "train_runtime": 78.2454,
+  "train_samples_per_second": 639.015,
+  "train_steps_per_second": 10.096,
+  "train_loss": 0.570810937655123,
+  "epoch": 10.0,
+  "num_input_tokens_seen": 2201088,
+  "invocation_elapsed_seconds": 78.83091330798925,
+  "total_global_optimizer_steps": 790,
+  "dataset_tokens_per_epoch": {
+    "examples": 5000,
+    "source_tokens": 113230,
+    "target_tokens": 222718,
+    "source_truncations": 0,
+    "target_truncations": 0
+  },
+  "trainer_input_token_positions_seen": 2201088,
+  "token_accounting_note": "Dataset token counts are exact; repeated sampled/processed tokens are not separately instrumented.",
+  "eval_loss": 0.07813843339681625,
+  "eval_runtime": 0.0577,
+  "eval_samples_per_second": 8672.045,
+  "eval_steps_per_second": 69.376
+}

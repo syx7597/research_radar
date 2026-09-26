@@ -1,0 +1,40 @@
+{
+  "predictions_path": "results/condition_consistency/pilot_bart5k_seed20260926/reranker_train_generated.jsonl",
+  "predictions_sha256": "3710c9aff56f7941e7ab467c0dc2d81c04d1dd1f5074c2ec5dcdee01c0b2c370",
+  "gold_path": "data/condition_consistency/splits/reranker_train.jsonl",
+  "gold_sha256": "3bc7ec1222b195f6d1efe2505da97bcac6535195a2ec9ad93078b0867c0c052c",
+  "kb_path": "datasets/kqa_pro/kb.json",
+  "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "executor_backend": "baseline",
+  "executor_source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+  "executor_source_path": "/home/syx/research_radar_minval/external/kqa_pro_baselines",
+  "executor_source_file_sha256": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+  "gold_usage": "offline join for evaluation only; no candidate insertion or reordering",
+  "limits": {
+    "per_candidate_timeout_seconds": 5.0,
+    "program_max_steps": 64,
+    "program_max_characters": 65536,
+    "argument_max_characters": 2048
+  },
+  "questions": 1000,
+  "executor_initialization_seconds": 3.2504927839909215,
+  "output_path": "results/condition_consistency/pilot_bart5k_seed20260926/reranker_train_executed.jsonl",
+  "output_sha256": "c194027bb03dba5400d534611501353763b82036f31a6c5e17d31a81f6e4ecb7",
+  "candidate_count_distribution": {
+    "4": 1000
+  },
+  "total_candidates": 4000,
+  "valid_candidates": 1592,
+  "candidate_valid_ratio": 0.398,
+  "questions_with_valid_candidates": 901,
+  "question_any_valid_ratio": 0.901,
+  "error_types": {
+    "ValueError": 1214,
+    "IndexError": 1045,
+    "UnboundLocalError": 128,
+    "AssertionError": 2,
+    "KeyError": 19
+  },
+  "candidate_execution_seconds": 32.61404719698476,
+  "elapsed_seconds": 35.96398207900347
+}

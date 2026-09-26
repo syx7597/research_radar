@@ -1,0 +1,46 @@
+{
+  "dataset": "KQA Pro",
+  "original_repository": "https://github.com/shijx12/KQAPro_Baselines",
+  "original_download": "https://cloud.tsinghua.edu.cn/f/04ce81541e704a648b03/?dl=1",
+  "original_download_status": "Link does not exist when checked on 2026-09-26",
+  "mirror": "https://huggingface.co/datasets/drt/kqa_pro",
+  "mirror_revision": "0b26da66cec9a4d1e42bde3560aeae9f89f6433b",
+  "mirror_status": "third-party mirror, not verified as author-owned",
+  "verification": "KB and val match existing local files byte-for-byte; train SHA256 matches mirror LFS object. No accessible original train archive was available for independent byte comparison.",
+  "dataset_license": "CC-BY-SA-4.0, per original authors' README; mirror card MIT label is not used",
+  "code_license": "MIT (official Baselines and KoPL checkouts)",
+  "baselines_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+  "kopl_commit": "486c07bd83ea32268ff90fa6942cc9f7e1574ae5",
+  "files": {
+    "train.json": {
+      "path": "datasets/kqa_pro/train.json",
+      "sha256": "e9fbe4c1cdf207aac83ae0d5e4a1a53a9965a2b13b403de699ca6d5dae6e4510",
+      "bytes": 88119411
+    },
+    "val.json": {
+      "path": "datasets/kqa_pro/val.json",
+      "sha256": "b4aed6ab3d7ad071722064fe3bb02bc028cfbeb15da5f7115d57a1e2d198f3bb",
+      "bytes": 11047970
+    },
+    "kb.json": {
+      "path": "datasets/kqa_pro/kb.json",
+      "sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+      "bytes": 79341787
+    }
+  },
+  "source_file_sha256": {
+    "kqa_pro_baselines": {
+      "Program/executor_rule.py": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+      "utils/value_class.py": "83dcc227b5028dcc8835b68cc88ebc23d8a47c2c5b0259a5ce4adfd3451631a6",
+      "evaluate.py": "94eb964ea460663cef58f91ce2e75caca418ec49aae76d58c6268d685130242e",
+      "LICENSE": "5ee474ee6c375296524e35cc43c271b28d5c0cc69cdb73ccabe20957f979cfd6"
+    },
+    "kopl": {
+      "src/kopl/kopl.py": "95141bc689fd060233013da4fd603e45eb624c4d42ccc8ab6e20f3a621f546ce",
+      "src/kopl/data.py": "a36fb98747b6066bde4c1048ba340b6dec30a014ce04ae4bfd3d620bbc9eda1b",
+      "src/kopl/util.py": "88d2514a17685122ae0178684656289752d0bf3ac8b86c3a8fce0c3e30693e6c",
+      "LICENSE": "4576e5fc6bafbdae22290430f5347127bb929c854b9c4f09a45dfa0a7d4c95f0"
+    }
+  },
+  "train_download": "https://huggingface.co/datasets/drt/kqa_pro/resolve/0b26da66cec9a4d1e42bde3560aeae9f89f6433b/train.json"
+}

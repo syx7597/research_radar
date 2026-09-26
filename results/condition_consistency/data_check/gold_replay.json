@@ -1,0 +1,56 @@
+{
+  "purpose": "gold program infrastructure replay, not model accuracy",
+  "splits": {
+    "generator_train": {
+      "total": 5000,
+      "valid": 5000,
+      "correct": 4999,
+      "serialization_execution_agreement": 5000,
+      "accuracy": 0.9998,
+      "mismatches": [
+        {
+          "id": "train:2522",
+          "expected": "12",
+          "valid": true,
+          "prediction": "9",
+          "error": null,
+          "answers": [
+            "9"
+          ]
+        }
+      ]
+    },
+    "reranker_train": {
+      "total": 1000,
+      "valid": 1000,
+      "correct": 1000,
+      "serialization_execution_agreement": 1000,
+      "accuracy": 1.0,
+      "mismatches": []
+    },
+    "dev": {
+      "total": 500,
+      "valid": 500,
+      "correct": 499,
+      "serialization_execution_agreement": 500,
+      "accuracy": 0.998,
+      "mismatches": [
+        {
+          "id": "train:40416",
+          "expected": "Batman & Robin",
+          "valid": true,
+          "prediction": "None",
+          "error": null,
+          "answers": [
+            "None"
+          ]
+        }
+      ]
+    }
+  },
+  "seconds": 84.18766895899898,
+  "backend": "baseline",
+  "source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+  "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "split_manifest_sha256": "2b20ba5a1eddaf20a24315310d5e1b67a2076d32066f33755842a5a366044633"
+}
