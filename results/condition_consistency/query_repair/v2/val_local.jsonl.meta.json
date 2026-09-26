@@ -1,0 +1,65 @@
+{
+  "config": {
+    "version": "single_field_v1",
+    "mode": "local",
+    "max_original": 4,
+    "max_repairs": 4,
+    "timeout_seconds": 5.0,
+    "min_similarity": 0.0,
+    "score": "0.85*old_new_sequence_ratio+0.15*question_new_token_recall",
+    "allocation": "round_robin_parent_rank_then_match_score",
+    "trigger": "global_role_illegal_or_explicit_function_type_mismatch",
+    "empty_result_triggers": false,
+    "local_missing_field_triggers": false,
+    "gold_usage": "none",
+    "rounds": 1
+  },
+  "config_sha256": "c266c49fdaa71ef6ab1e4e31e3393041a649a5ddd54775700fc64f5167df0b74",
+  "python_hash_seed": "20260926",
+  "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "repair_source_sha256": "7be23d6f6ef9a419b430af9bf7a33cba946eda0ddb3ff2469ec60a60bbe193f3",
+  "adapter_source_sha256": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+  "executor_source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+  "executor_source_sha256": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+  "counts": {
+    "questions": 11797,
+    "original_candidates": 47188,
+    "repair_candidates": 6199,
+    "questions_with_repairs": 2044,
+    "questions_triggered": 3344
+  },
+  "triggers": {
+    "globally_illegal_role_field": 5515,
+    "explicit_function_type_mismatch": 216
+  },
+  "rejections": {
+    "unparseable_program": 13943,
+    "untrusted_local_context": 1676,
+    "no_compatible_replacement": 435
+  },
+  "cost": {
+    "prefix_calls": 5731,
+    "prefix_executed_steps": 7870,
+    "prefix_seconds": 45.12363951772568,
+    "field_score_calls": 338145,
+    "field_scoring_seconds": 15.182844821247272,
+    "original_execution_calls": 47188,
+    "repair_execution_calls": 6199,
+    "original_execution_seconds": 613.9805669529305,
+    "repair_execution_seconds": 183.17077305036946,
+    "row_seconds": 981.5183161179884
+  },
+  "output_sha256": "a88ce9d9d848350f3348372e923c23dd3a6df5e574a10096501653d207835ecb",
+  "predictions_sha256": "ff28a0c4c487b9ca2215b1625d49ef0a196cce2251f1ccb6f04bbef186c8e7cc",
+  "input_sha256": "ff28a0c4c487b9ca2215b1625d49ef0a196cce2251f1ccb6f04bbef186c8e7cc",
+  "elapsed_seconds": 262.8433867400163,
+  "sum_shard_elapsed_seconds": 1000.4852048250032,
+  "shard_metadata_sha256": {
+    "val_local_part0.jsonl": "3271890c74c7125a2b76651b3c252015fffc6f45cdd5df2068c36a5668a4af68",
+    "val_local_part1.jsonl": "d39220bb6b762e0752e0710fb37be4ddd7c35b3ff7771757d720b70267329adf",
+    "val_local_part2.jsonl": "339aee2a9d05dace8146a63bd398eccc9844eeb9c021465aaa668c0155c24ff0",
+    "val_local_part3.jsonl": "c778e302e68a8fc862d07d94048565ff697829e27a74e62b91d591156d8c1b49"
+  },
+  "gold_usage": "none",
+  "timing": "elapsed is entire concurrent CPU stage, not isolated method latency"
+}

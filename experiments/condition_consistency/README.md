@@ -1,6 +1,8 @@
 # 公开 KGQA 最小验证
 
-用于毕业论文的首轮可复现实验。先确认公开数据、执行语义、模型训练和同候选对照可运行，再判断条件一致性机制是否值得扩大。
+用于毕业论文的公开实验入口，包含首轮排序探针和后续两轮查询修复。最新完整官方val结果见[查询修复验证](../../docs/QUERY_REPAIR_VALIDATION.md)，实际复现命令见[运行说明](../../docs/research/QUERY_REPAIR_RUNBOOK.md)。修复算法、v1/v2冻结策略、完整正负对照及代码/数据身份均保留；本轮已停止调参。
+
+`repair.py`生成单字段候选，`score_repairs.py`调用固定BART评分，`evaluate_repairs.py`实施v1接受策略，`evaluate_repair_v2.py`增加合法原查询保护。v2沿用一个5000题训练的生成器，没有新增网络架构或修复模型训练。以下保留首轮流程。
 
 - [首轮协议](MINIMAL_PROTOCOL.md)：训练预算、比较对象和结论范围。
 - [数据准备](DATA.md)：固定镜像、哈希、去重划分、官方执行器及残余差异。
@@ -34,7 +36,7 @@ bash experiments/condition_consistency/run_pilot.sh
 ## 无GPU协议检查
 
 ```bash
-python3 -B -m unittest experiments.condition_consistency.test_ranking -v
+python3 -B -m unittest experiments.condition_consistency.test_ranking experiments.condition_consistency.test_repair experiments.condition_consistency.test_repair_selection experiments.condition_consistency.test_executor_state experiments.condition_consistency.test_repair_guard -v
 ```
 
 这些检查验证金标隔离、评测分母、负例匹配及执行时限，不验证模型准确率。

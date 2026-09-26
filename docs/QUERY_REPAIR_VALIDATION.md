@@ -1,6 +1,10 @@
 # 查询修复验证记录
 
-更新：2026-09-26。v1已完成首次冻结的2,000题检查集评估；v2按[第二轮有界协议](research/QUERY_REPAIR_V2_PROTOCOL.md)执行中，尚未在本文报告其完整官方validation成绩。下文保留v1结果，后续v2不得覆盖这次首次评估。
+更新：2026-09-26。v1首次2,000题检查集评估和v2完整official val的11,797题评估均已完成；按[第二轮有界协议](research/QUERY_REPAIR_V2_PROTOCOL.md)，本轮停止调参。第1–5节保留v1历史结果，第6节起记录完整官方validation结果。
+
+**最新结论：保守修复在完整官方validation上相对beam4纠正178题、改错2题，准确率从79.9017%升至81.3936%；但没有超过beam8的81.4360%，也没有稳健证明局部约束优于同样保护的全局修复。** 当前方法价值更适合定位为降低误修改的保守查询修复，不能把局部约束包装为已经成立的核心创新。结果来自一个生成器种子；official val是旧项目使用过的公开validation，不是hidden test。
+
+以下为v1阶段结论，保留当时的结果与判断：
 
 **v1获得了原四候选之外的正确答案，相对beam4执行筛选净增加18题；但局部修复尚未证明优于普通全局修复，准确率也低于beam8执行筛选。** 因而结果支持继续检查误修改机制，尚不足以宣布拟议的局部约束方法成立。
 
@@ -98,10 +102,82 @@ beam4返回候选的token总数为348,806，beam8为694,473；两者输入问题
 
 来源为各`holdout_*_part*.jsonl.meta.json`、[global修复meta](../results/condition_consistency/query_repair/holdout_global.jsonl.meta.json)、[local修复meta](../results/condition_consistency/query_repair/holdout_local.jsonl.meta.json)、[global评分meta](../results/condition_consistency/query_repair/holdout_global_scored.jsonl.meta.json)、[local评分meta](../results/condition_consistency/query_repair/holdout_local_scored.jsonl.meta.json)及[beam8执行meta](../results/condition_consistency/query_repair/holdout_beam8_executed.jsonl.meta.json)。
 
-## 6. 第二轮的边界与当前可主张结论
+## 6. v2完整官方validation结果
 
-由v1事后错误启发，v2只增加一个保护规则：如果原first-valid已经执行合法且schema干净，就直接保留；否则沿用原修复评分与接受策略。global/local应用同一规则，并只在原500题calibration上重新选择同一73项网格的参数。该规则也可能放弃可纠正的合法错误，效果必须重新验证。
+由v1事后错误启发，v2增加一个保护规则：如果原first-valid已经执行合法且schema干净，就直接保留；否则沿用原修复评分与接受策略。global/local应用同一规则，并仅在原500题calibration上重新选择同一73项网格的参数。两者最终均选择`alpha=0.5, min_match=0.0, margin=-0.25`；策略在完整val评分前冻结，未依据val结果调参。
 
-**v2已经受到旧2,000题观察的启发，因此旧2,000题从此只作已见诊断，不能再次作为独立有效性证据。** v1首次holdout结果原样保留；v2在新冻结协议下对全部official val的11,797题评估。official val是公开validation，旧项目曾使用它，不能称为hidden test或项目从未见过的数据。第二轮完整评估一次后停止调参，无论结果是否积极。
+**旧2,000题已用于提出v2假设，因此后续只作已见诊断，不能再作为独立有效性证据。** official val的11,797题完整保留，生成与修复只接收问题；源文件、模型权重、执行器、代码、缓存及策略均进行身份核验。official val是公开validation，旧项目曾使用它，不能称为hidden test或项目从未见过的数据。
 
-本轮只有一个生成器训练种子，尚无多种子稳定性结论，也没有雷达自建数据上的方法有效性证据。当前能主张的是完成了可复现的字段修复实验、获得少量新增正确答案并定位了误修改问题；不能提前主张新算法稳定超过强基线、改善了单位/条件推理，或已证明雷达迁移有效。第二轮完整结果和最终研究决策将在完成后另行补充。
+同一份候选与执行缓存同时应用已冻结的v1/v2选择策略。下面的v1数值是在完整official val上的对照，不覆盖第3节的首次2,000题历史结果。
+
+| 方法 | 正确 / 11,797 | 准确率 | 相对beam4纠正 / 改错 |
+|---|---:|---:|---:|
+| BART top1 | 8,662 | 73.4254% | 不作为修复增量对照 |
+| beam4 first-valid | 9,426 | 79.9017% | 基准 |
+| beam8 first-valid | **9,607** | **81.4360%** | 273 / 92 |
+| v1 global repair | 9,459 | 80.1814% | 48 / 15 |
+| v1 local repair | 9,534 | 80.8172% | 173 / 65 |
+| v2 global repair | 9,585 | 81.2495% | 160 / 1 |
+| v2 local repair | 9,602 | 81.3936% | 178 / 2 |
+| global候选答案覆盖上限 | 9,993 | 84.7080% | 不可部署的金标诊断 |
+| local候选答案覆盖上限 | 10,028 | 85.0047% | 不可部署的金标诊断 |
+
+配对区间仍为2,000次问题级bootstrap，种子20260926，单位为百分点：
+
+| 比较 | 差值 | 95%配对区间 |
+|---|---:|---:|
+| beam8 − beam4 | +1.5343 | [+1.2206, +1.8564] |
+| v2 global − beam4 | +1.3478 | [+1.1444, +1.5682] |
+| v2 local − beam4 | +1.4919 | [+1.2715, +1.7123] |
+| v2 local − v1 local | +0.5764 | [+0.3899, +0.7714] |
+| v2 local − v2 global | +0.1441 | [0.0000, +0.2882] |
+| v2 local − beam8 | −0.0424 | [−0.4238, +0.3306] |
+
+v2 local相对beam4净增加176题，且只改错2个原本正确答案。beam8净增加181题，准确率仍高5题，但其相对beam4改错92题。这里描述的是不同方法对固定基线的保留/纠正取舍，不意味着v2的所有答案在语义上更可靠。
+
+v2 local相对同样保护的global只净增加17题，区间下界包含0，不能稳健宣称局部约束优势。它与beam8差值区间跨0；“没有确认差异”既不是等效证明，也不是非劣证明，本实验没有预先设定等效/非劣界值。
+
+完整结果、逐题判定和全部对照见[官方val首次评估](../results/condition_consistency/query_repair/v2/official_val_metrics.json)，策略见[v2冻结策略](../results/condition_consistency/query_repair/v2/frozen_policy.json)，数据来源及交叠检查见[official val清单](../results/condition_consistency/query_repair/v2/official_val_manifest.json)。
+
+## 7. v2实际支持的观察与归因边界
+
+保护规则在10,371题上保留schema干净的first-valid，占完整val的87.9122%；其中可能包含原答案错误的问题。规则并不知道这些答案是否正确，它只是按可观测schema/执行条件限制覆盖。其代价是可能放弃已有合法查询上的语义纠正。
+
+在相同完整val上，local相对beam4的改错从v1的65题降至v2的2题，纠正从173题变为178题；global也从48纠正/15改错变为160纠正/1改错。结果支持进一步研究保守接受与误修改控制，但**v2同时加入保护并重新校准阈值，不能将全部变化因果归为单个guard**。同样，不能将global也获得的收益归因于局部事实约束。
+
+v1/v2使用相同字段修复算法、生成器、候选预算与执行器，未训练新模型。这一结果更适合将方法贡献表述为“在固定生成器之上的保守查询修复及可靠性分析”，并把局部约束作为待进一步核验的设计因素。当前未证明它比扩大到beam8更准确，也未证明具有跨种子稳定性或更低总推理开销。
+
+事后核查178个纠正中148个程序精确匹配金标，177题的原四候选均无正确答案。两次改错均来自不同于基线的父候选，其中一例保留了父程序原有的错误人口阈值，说明单字段编辑不能保证符合题意。全部变化的机械诊断及固定案例AI阅读见[v2案例审计](research/QUERY_REPAIR_V2_CASE_AUDIT.md)，仍需独立人工语义核验。
+
+## 8. 完整val的计算记录
+
+v1/v2共享本次完整val候选执行和重评分缓存。保护只发生在最终选择阶段，所有预算内候选仍已生成、执行并评分，因此**当前v2没有通过guard实际节省这些计算**；不能用保留的10,371题推算已经省去的GPU或执行器开销。
+
+| 完整val计数 | global | local | beam8 |
+|---|---:|---:|---:|
+| 原生成候选数 | 47,188 | 47,188 | 94,376 |
+| 新修复候选数 | 12,138 | 6,199 | 0 |
+| 有新增候选的问题数 | 3,344 | 2,044 | 不适用 |
+| 全程序执行次数 | 59,326 | 53,387 | 94,376 |
+| 额外局部前缀调用 / 步骤 | 0 / 0 | 5,731 / 7,870 | 0 / 0 |
+| 字段匹配打分次数 | 2,117,109 | 338,145 | 不适用 |
+| 教师强制目标token数 | 2,652,042 | 2,364,869 | 不使用重评分 |
+| 教师强制输入token数 | 1,346,130 | 1,198,309 | 不使用重评分 |
+
+beam4/beam8返回候选token数分别为2,078,335和4,129,547，输入问题token数均264,938；仍不包括全部未保留搜索分支的计算。local减少了匹配范围和新增候选，同时增加前缀查询；这是工作量构成变化，不能直接等同于总耗时优势。
+
+四GPU生成完整beam4与beam8的合并阶段墙钟时间为390.95秒。12个CPU分片任务的整个并行执行阶段为262.84秒，global/local/beam8合并meta记录的是同一段时间，不能当成三种方法各自的独立延迟。global/local各自所有CPU分片耗时之和为998.60/1,000.49秒，beam8为1,028.65秒；这些和不是墙钟时间。
+
+随后两个GPU评分任务并行运行，global/local记录75.25/68.80秒；包含合并和评分的整个`execute`阶段墙钟时间为353.26秒。没有进行相同负载下的串行端到端延迟比较，本报告不宣称修复比beam8更快。
+
+来源：[生成阶段](../results/condition_consistency/query_repair/v2/generate_stage.json)、[执行阶段](../results/condition_consistency/query_repair/v2/execute_stage.json)、[global执行meta](../results/condition_consistency/query_repair/v2/val_global.jsonl.meta.json)、[local执行meta](../results/condition_consistency/query_repair/v2/val_local.jsonl.meta.json)、[beam8执行meta](../results/condition_consistency/query_repair/v2/val_beam8_executed.jsonl.meta.json)、[global评分meta](../results/condition_consistency/query_repair/v2/val_global_scored.jsonl.meta.json)和[local评分meta](../results/condition_consistency/query_repair/v2/val_local_scored.jsonl.meta.json)。
+
+## 9. 本轮结束与仍需补足的证据
+
+完整official val首次计分完成后，本轮已停止调参，未根据其错误追加规则或修改阈值。v1首次holdout和v2首次公开validation结果均保留，失败对照不删。
+
+所有阶段指标、冻结文件哈希和完整val成本集中在[机器可读汇总](../results/condition_consistency/query_repair/summary.json)；复现入口见[运行说明](research/QUERY_REPAIR_RUNBOOK.md)。本轮任务已结束，四张GPU均无实验进程占用；模型与原始缓存保留在授权主机，公开仓库仅保存代码、指标和来源记录。
+
+目前只有一个BART生成器训练种子。问题级bootstrap描述这一个固定模型的题目变化，不能证明重新训练后的稳定收益。v2假设受旧2,000题结果启发，official val也有旧项目访问历史，这些开发过程必须在论文披露。BF16、硬件、内核和批次/填充形状可能造成微小浮点差异，跨环境复现须记录差异，不应声称逐数值完全一致。
+
+人工语义抽查、多生成器种子、雷达数据和中文查询适配均尚未完成。当前不能主张已改善单位/条件推理或证明雷达迁移有效。若后续继续，应以保守修复的收益与误修改取舍为可检验问题，另冻结稳定性验证协议；局部约束是否有必要保留，须由更完整对照决定。

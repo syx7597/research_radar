@@ -1,0 +1,24 @@
+{
+  "python_hash_seed": "20260926",
+  "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "adapter_source_sha256": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+  "executor_source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+  "source_sha256": "c13ecf92105086b82453a36e35f0653626ba66cc3826d9b832bbe3a4aacac2d6",
+  "timeout_seconds": 5.0,
+  "questions": 11797,
+  "total_candidates": 94376,
+  "valid_candidates": 26697,
+  "output_sha256": "50e0990f69ff751dd2fd6d1fb886c36b9bcb62bc0dda51d5a4eb339bf8e67e9b",
+  "predictions_sha256": "2dcc56acce2428b610a91a84c0154a25d1dc4a4d04fd17e38729cf0e11381a0c",
+  "input_sha256": "2dcc56acce2428b610a91a84c0154a25d1dc4a4d04fd17e38729cf0e11381a0c",
+  "elapsed_seconds": 262.8433867400163,
+  "sum_shard_elapsed_seconds": 1028.6541677090281,
+  "shard_metadata_sha256": {
+    "val_beam8_part0_executed.jsonl": "68daf34b674cbac532441c3106a578f18ce999766bf4a89374a6254575ebab34",
+    "val_beam8_part1_executed.jsonl": "6de0ba442c41d389ca79a32045b022932d9be6164d755b5dba66ddf7f08f9b44",
+    "val_beam8_part2_executed.jsonl": "8ffb08f73adacd6c5fac7523250303ad37c61f19f9b02259a855b1398092af3a",
+    "val_beam8_part3_executed.jsonl": "217360ce94473b1bf27c1bfba495fce59313e6763fdca9b9d78dd3f967409613"
+  },
+  "gold_usage": "none",
+  "timing": "elapsed is entire concurrent CPU stage, not isolated method latency"
+}
