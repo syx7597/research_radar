@@ -1,0 +1,43 @@
+{
+  "status": "posthoc_diagnostic",
+  "source": "results/condition_consistency/query_repair/v2/official_val_metrics.json",
+  "source_sha256": "245589115905d8ddc0757ae29c9838b5835e538b08b6afe4b0700d1036361831",
+  "rule": "Keep beam4 first-valid when it exists and schema_clean is true; otherwise use cached beam8 first-valid. No gold is used for selection.",
+  "questions": 11797,
+  "protected_questions": 10371,
+  "correct": 9643,
+  "accuracy": 0.8174112062388743,
+  "comparisons": {
+    "first_valid": {
+      "corrected": 217,
+      "regressed": 0,
+      "net_corrected": 217,
+      "accuracy_delta": 0.018394507078070697
+    },
+    "v2_global_repair": {
+      "corrected": 179,
+      "regressed": 121,
+      "net_corrected": 58,
+      "accuracy_delta": 0.00491650419598203
+    },
+    "v2_local_repair": {
+      "corrected": 183,
+      "regressed": 142,
+      "net_corrected": 41,
+      "accuracy_delta": 0.0034754598626769518
+    },
+    "beam8_first_valid": {
+      "corrected": 92,
+      "regressed": 56,
+      "net_corrected": 36,
+      "accuracy_delta": 0.0030516232940578114
+    }
+  },
+  "limits": [
+    "Designed after inspecting official val; not a new independent or preregistered validation.",
+    "No model training or generation was performed.",
+    "Zero observed regressions is not a guarantee of zero risk.",
+    "Online beam4 followed by conditional beam8 runtime was not measured; equal compute, lower cost or higher speed is not claimed.",
+    "Old frozen methods, policies and metrics are unchanged."
+  ]
+}

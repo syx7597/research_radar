@@ -8,6 +8,8 @@
 
 ## 阅读入口
 
+最新方向决策见[下一步实验建议](docs/research/NEXT_EXPERIMENT_DECISION.md)：补齐同保护beam8的后验对照后，暂停字段修复扩展，下一轮优先检验生成器训练干预；尚未启动或宣称新方法成立。
+
 | 文档 | 用途 |
 |---|---|
 | [查询修复完整验证](docs/QUERY_REPAIR_VALIDATION.md) | 两轮开发、完整官方val、强对照、误修改与成本 |
