@@ -1,16 +1,17 @@
-# 复杂雷达情报问答：可执行图检索策略学习
+# 复杂知识问答：公开基准验证与雷达知识应用
 
-硕士毕业设计研究工作区。当前主线：**类型化检索程序 → 确定性执行 → 可验证反馈 → 组合泛化评测**。
-知识图谱、固定策略 GraphRAG、分析 Agent 和电子战演示是已有基础；新策略学习仍处于训练前验证阶段。
+硕士毕业设计研究工作区。当前顺序：**公开KGQA基准 → 错误诊断 → 条件一致性小改进 → 公开评测 → 雷达迁移**。
+优先研究“程序可执行但漏掉或错绑问题条件”；这是待验证切口，不是已证实的新方法。自建图谱承担应用验证，主要有效性证据来自公开数据。
 
-**当前判断：工程可行，应用有价值，算法新意和 RL 收益需要验证。**
-类型化动作、SFT/RL 或过程奖励本身均已有近邻研究，下一步先验证变量化程序和组合隔离任务。
+**当前判断：公开基准优先的流程可行，具体算法收益尚未证明。**
+类型化动作、RL、执行纠错及语义重排都有近邻研究。先以KQA Pro、强程序基线和同预算对照检验一个机制，首轮不依赖RL。
 
 ## 阅读入口
 
 | 文档 | 用途 |
 |---|---|
 | [研究方向与近邻工作](docs/RESEARCH_DIRECTION.md) | 主线、价值、贡献边界与风险 |
+| [公开基准专项调研](docs/research/PUBLIC_BENCHMARK_REVIEW.md) | 数据协议、近邻方法、源码核验和公平比较 |
 | [当前状态](docs/CURRENT_STATUS.md) | 实际数据规模、已实现内容及证据限制 |
 | [执行计划](docs/ROADMAP.md) | 分阶段交付、验收门槛与调整路线 |
 | [训练就绪检查](docs/TRAINING_READINESS.md) | 已修复环境问题与开训前阻断项 |
@@ -30,7 +31,7 @@
 
 ```text
 docs/                 当前方向、状态、计划；archive/ 为旧路线资料
-ca_agraphrag/          当前训练环境与策略原型
+ca_agraphrag/          既有RL环境与策略原型，暂不作为新实验主入口
 agent/                旧类型化组合执行器、分析Agent与演示
 pipeline/v3/          知识构建、手册处理与v3图文检索
 qa_*.py               旧固定策略问答与RoG风格基线
@@ -67,7 +68,7 @@ python3 -B -m ca_agraphrag.eval_policy --split dev --policy oracle
 不带参数运行`audit_workspace.py`可只检查当前训练所需图谱和题集。
 只有确认建立新数据版本后才用`--write`更新清单，不能用它掩盖意外变化。
 
-历史`requirements.txt`不是锁定并完整验证过的环境。需要API的旧脚本从环境变量取密钥，参见[.env.example](.env.example)。正式训练先通过[训练就绪门槛](docs/TRAINING_READINESS.md)。
+历史`requirements.txt`不是锁定并完整验证过的环境。需要API的旧脚本从环境变量取密钥，参见[.env.example](.env.example)。旧SFT/RL原型恢复训练前需通过[训练就绪门槛](docs/TRAINING_READINESS.md)；新公开实验按[执行计划](docs/ROADMAP.md)建立环境与基线。
 
 ## 发布与历史
 

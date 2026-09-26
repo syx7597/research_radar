@@ -3,7 +3,7 @@
 ## 当前入口
 
 - `README.md`：总入口；`CURRENT_STATUS.md`：完成度；`RESEARCH_DIRECTION.md`：研究边界；`ROADMAP.md`：执行顺序。
-- `ca_agraphrag/`：当前策略学习原型，先修协议、数据和训练就绪项。
+- `ca_agraphrag/`：已有策略学习原型；保留复用，暂不启动RL。新主实验先走公开KGQA与条件一致性诊断。
 - `agent/composition.py`：可复用类型化执行器；`agent/planner.py`：现有提示式计划器。
 - `pipeline/v3/retrieve_v3.py`：独立v3图文检索；同目录其他模块负责知识构建。
 - `tests/`：不需数据或模型的边界测试。
@@ -30,6 +30,8 @@
 3. `research/proposal.md`：开题原稿，不能覆盖新的新颖性审查。
 4. `archive/proposals/`：被替代的AFR-RAG、置信度奖励等路线。
 5. `archive/PROJECT_REPORT_2026-06.md`、paper/thesis：历史成果。
+
+本轮替代的RL中心方向和计划保留在`archive/RESEARCH_DIRECTION_before_public_first.md`与`archive/ROADMAP_before_public_first.md`。
 
 ## 数据与新实验
 
