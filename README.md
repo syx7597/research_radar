@@ -1,6 +1,6 @@
 # 复杂知识问答：公开基准验证与雷达知识应用
 
-**当前阶段：基线准备与数据核验。** 已完成字段约束接口及原分词器覆盖检查，5,500条训练/开发金标均未被误挡；准备了12条雷达待审事实。尚未生成新候选或启动新训练。先阅读[论文整体路线](docs/THESIS_ROUTE_REVIEW.md)和[具体方法论证](docs/research/METHOD_FEASIBILITY_BRIEF.md)；负例训练仍为未通过开训门槛的候选。
+**当前阶段：基础对照已完成，训练假设尚未成立。** 最新500题开发比较：普通beam4为80.2%，字段约束beam4为80.4%，普通beam8为79.8%。约束净增1题、未显示可靠优势，本次实现明显更慢；不继续调这个模块或立即开训。见[完整结果](docs/research/SCHEMA_PILOT_RESULTS.md)。论文范围仍以[整体路线](docs/THESIS_ROUTE_REVIEW.md)和[具体方法论证](docs/research/METHOD_FEASIBILITY_BRIEF.md)为准；另有12条雷达待审事实。
 
 硕士毕业设计研究工作区，预计六个月后提交。当前主线：**雷达知识资源构建 → 可执行复杂问答 → 公开方法验证 → 独立雷达应用评价**。研究问题与算法试验分开，复用现有数据、BART、执行器和系统。
 
@@ -17,7 +17,8 @@
 | [论文整体路线](docs/THESIS_ROUTE_REVIEW.md) | 从知识构建到问答与三层验证的完整范围 |
 | [实验前方法论证](docs/research/METHOD_FEASIBILITY_BRIEF.md) | 真实瓶颈、近邻区别、基础对照与开训/停止门槛 |
 | [执行计划](docs/ROADMAP.md) | 当前任务队列与六个月里程碑 |
-| [字段约束接口与覆盖检查](docs/research/SCHEMA_CONSTRAINT_BASELINE.md) | 已有技术基线C的范围、真实分词器核验和下一阶段小试 |
+| [字段约束接口与覆盖检查](docs/research/SCHEMA_CONSTRAINT_BASELINE.md) | 已有技术基线C的范围、分词器核验与接入边界 |
+| [字段约束500题对照](docs/research/SCHEMA_PILOT_RESULTS.md) | 实际收益、改错、成本与停止决定 |
 | [雷达标注规范与模板](docs/research/RADAR_DATA_ANNOTATION.md) | 事实核验与独立问答分离、来源追踪待复核样例 |
 | [查询修复完整验证](docs/QUERY_REPAIR_VALIDATION.md) | 两轮开发、完整官方val、强对照、误修改与成本 |
 | [首轮最小验证结果](docs/MINIMAL_VALIDATION.md) | 历史排序实验与负结果 |

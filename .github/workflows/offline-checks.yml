@@ -12,6 +12,6 @@ jobs:
           python-version: '3.11'
       - run: python -B -m unittest discover -s tests -v
       - run: python -B -m unittest experiments.condition_consistency.test_ranking -v
-      - run: python -B -m unittest experiments.condition_consistency.test_schema_constraints -v
+      - run: python -B -m unittest experiments.condition_consistency.test_schema_constraints experiments.condition_consistency.test_schema_pilot -v
       - run: python -B -m unittest experiments.condition_consistency.test_repair experiments.condition_consistency.test_repair_selection experiments.condition_consistency.test_executor_state experiments.condition_consistency.test_repair_guard -v
       - run: python -B scripts/check_public_tree.py

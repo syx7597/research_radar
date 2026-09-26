@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+  "reason": "All three generations/executions complete, fixed candidate counts, finite scores, zero constrained token/field violations",
+  "phase_gpu_process_seconds": 40.5748857659928
+}

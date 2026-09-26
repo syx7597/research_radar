@@ -1,0 +1,90 @@
+{
+  "scope": "All GPU generation invocations, including failed smoke and diagnostic replay; sum of each process measured wall time, not hardware-active GPU time",
+  "total_gpu_process_seconds": 650.2134338979959,
+  "total_gpu_process_minutes": 10.836890564966598,
+  "budget_seconds": 3600,
+  "remaining_seconds": 2949.786566102004,
+  "new_training_runs": 0,
+  "records": [
+    {
+      "metadata_path": "attempt1/diagnosis/smoke20/constrained4_generated.jsonl.meta.json",
+      "metadata_sha256": "f49d26d5c6942d4c21173b08619a136ce94e8e9497026852704d347339ebd6b0",
+      "status": "failed",
+      "arm": "constrained4",
+      "phase": "smoke20",
+      "gpu_process_seconds": 22.603284279990476
+    },
+    {
+      "metadata_path": "attempt1/smoke20/constrained4_generated.jsonl.meta.json",
+      "metadata_sha256": "27974cef776e59ff9497a1c723d8db3a8613900c93d0483babaa8f7830a8fce7",
+      "status": "failed",
+      "arm": "constrained4",
+      "phase": "smoke20",
+      "gpu_process_seconds": 23.063670580013422
+    },
+    {
+      "metadata_path": "attempt1/smoke20/plain4_generated.jsonl.meta.json",
+      "metadata_sha256": "9d79679ea8b717f8f3ffe5281a20e179802b24045a124c10101ca6a339d25430",
+      "status": "complete",
+      "arm": "plain4",
+      "phase": "smoke20",
+      "gpu_process_seconds": 7.4839085759886075
+    },
+    {
+      "metadata_path": "attempt1/smoke20/plain8_generated.jsonl.meta.json",
+      "metadata_sha256": "1baca7b1867c30cf87361213f61538c775e7cd1223920238f77865db1bb24cff",
+      "status": "complete",
+      "arm": "plain8",
+      "phase": "smoke20",
+      "gpu_process_seconds": 8.010117256024387
+    },
+    {
+      "metadata_path": "dev500/constrained4_generated.jsonl.meta.json",
+      "metadata_sha256": "658883087a648cd789e5099a857f037a0833412bd7a3a905fc1136f4aae50f9f",
+      "status": "complete",
+      "arm": "constrained4",
+      "phase": "dev500",
+      "gpu_process_seconds": 470.7281029250007
+    },
+    {
+      "metadata_path": "dev500/plain4_generated.jsonl.meta.json",
+      "metadata_sha256": "1f2061602e292ca383becebef872c24558e7bb8cf8e41076a163c858427f9d91",
+      "status": "complete",
+      "arm": "plain4",
+      "phase": "dev500",
+      "gpu_process_seconds": 35.325157711980864
+    },
+    {
+      "metadata_path": "dev500/plain8_generated.jsonl.meta.json",
+      "metadata_sha256": "c313855b9e8d591e09d3f35a0d72e58d21c243c3083a84984848280737184fb4",
+      "status": "complete",
+      "arm": "plain8",
+      "phase": "dev500",
+      "gpu_process_seconds": 42.42430680300458
+    },
+    {
+      "metadata_path": "smoke20/constrained4_generated.jsonl.meta.json",
+      "metadata_sha256": "f6a4466120093c56d5c043e0b81f73093974eb1f7ad5c7ec07397e47fb50010f",
+      "status": "complete",
+      "arm": "constrained4",
+      "phase": "smoke20",
+      "gpu_process_seconds": 24.947183600976132
+    },
+    {
+      "metadata_path": "smoke20/plain4_generated.jsonl.meta.json",
+      "metadata_sha256": "fc9a1b090d9bd7caf4d932e31ec471a55b34a0f6273f9153f7266f3742d174c0",
+      "status": "complete",
+      "arm": "plain4",
+      "phase": "smoke20",
+      "gpu_process_seconds": 7.736455381003907
+    },
+    {
+      "metadata_path": "smoke20/plain8_generated.jsonl.meta.json",
+      "metadata_sha256": "54652e27027d69d3b8c6a8a80a9c209c607dabc733334d050314f1bc0220e411",
+      "status": "complete",
+      "arm": "plain8",
+      "phase": "smoke20",
+      "gpu_process_seconds": 7.891246784012765
+    }
+  ]
+}

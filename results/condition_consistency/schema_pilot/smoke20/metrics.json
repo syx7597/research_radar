@@ -1,0 +1,805 @@
+{
+  "phase": "smoke20",
+  "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+  "scope": "Previously inspected development set; no independent generalization claim",
+  "summaries": {
+    "plain4": {
+      "questions": 20,
+      "correct": 14,
+      "top1_correct": 13,
+      "oracle_correct": 14,
+      "no_valid_candidate": 3,
+      "selected_empty": 1,
+      "candidates": 80,
+      "valid_candidates": 39,
+      "syntax_failures": 16,
+      "candidates_with_schema_violations": 19,
+      "schema_violation_fields": 19,
+      "field_occurrences": 137,
+      "no_eos": 0,
+      "hit_generation_limit": 0,
+      "empty_results": 4,
+      "accuracy": 0.7,
+      "generation_seconds": 1.4848845600208733,
+      "gpu_process_wall_seconds": 7.736455381003907,
+      "trace_validation_seconds": 0.0031128390110097826,
+      "execution_seconds": 4.825259197008563
+    },
+    "constrained4": {
+      "questions": 20,
+      "correct": 16,
+      "top1_correct": 14,
+      "oracle_correct": 16,
+      "no_valid_candidate": 2,
+      "selected_empty": 0,
+      "candidates": 80,
+      "valid_candidates": 40,
+      "syntax_failures": 21,
+      "candidates_with_schema_violations": 0,
+      "schema_violation_fields": 0,
+      "field_occurrences": 135,
+      "no_eos": 0,
+      "hit_generation_limit": 0,
+      "empty_results": 2,
+      "accuracy": 0.8,
+      "generation_seconds": 18.220288671029266,
+      "gpu_process_wall_seconds": 24.947183600976132,
+      "trace_validation_seconds": 0.35757027100771666,
+      "execution_seconds": 4.388454486004775
+    },
+    "plain8": {
+      "questions": 20,
+      "correct": 13,
+      "top1_correct": 12,
+      "oracle_correct": 14,
+      "no_valid_candidate": 3,
+      "selected_empty": 2,
+      "candidates": 160,
+      "valid_candidates": 57,
+      "syntax_failures": 56,
+      "candidates_with_schema_violations": 40,
+      "schema_violation_fields": 40,
+      "field_occurrences": 265,
+      "no_eos": 0,
+      "hit_generation_limit": 0,
+      "empty_results": 9,
+      "accuracy": 0.65,
+      "generation_seconds": 1.8076756599766668,
+      "gpu_process_wall_seconds": 7.891246784012765,
+      "trace_validation_seconds": 0.007316605013329536,
+      "execution_seconds": 5.164490583003499
+    }
+  },
+  "comparisons": {
+    "constrained4_vs_plain4": {
+      "questions": 20,
+      "corrected": 2,
+      "regressed": 0,
+      "net_corrected": 2,
+      "accuracy_delta": 0.1,
+      "accuracy_delta_95pct_paired_percentile_ci": [
+        0.0,
+        0.25
+      ],
+      "bootstrap_samples": 2000,
+      "bootstrap_seed": 20260926,
+      "originally_correct": 14,
+      "correct_to_wrong_rate": 0.0
+    },
+    "constrained4_vs_plain8": {
+      "questions": 20,
+      "corrected": 3,
+      "regressed": 0,
+      "net_corrected": 3,
+      "accuracy_delta": 0.15,
+      "accuracy_delta_95pct_paired_percentile_ci": [
+        0.0,
+        0.3
+      ],
+      "bootstrap_samples": 2000,
+      "bootstrap_seed": 20260926,
+      "originally_correct": 13,
+      "correct_to_wrong_rate": 0.0
+    },
+    "plain8_vs_plain4": {
+      "questions": 20,
+      "corrected": 0,
+      "regressed": 1,
+      "net_corrected": -1,
+      "accuracy_delta": -0.05,
+      "accuracy_delta_95pct_paired_percentile_ci": [
+        -0.15,
+        0.0
+      ],
+      "bootstrap_samples": 2000,
+      "bootstrap_seed": 20260926,
+      "originally_correct": 14,
+      "correct_to_wrong_rate": 0.07142857142857142
+    }
+  },
+  "per_question": {
+    "plain4": [
+      {
+        "id": "train:4475",
+        "selected": 1,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:74006",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:62453",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:43547",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:21332",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:86062",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:75060",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:73091",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:1668",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:56295",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:78288",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:6102",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:52215",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:56455",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:26016",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:76264",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:35090",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:49112",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:25029",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:60712",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      }
+    ],
+    "constrained4": [
+      {
+        "id": "train:4475",
+        "selected": 1,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:74006",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:62453",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:43547",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:21332",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:86062",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:75060",
+        "selected": 2,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:73091",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:1668",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:56295",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:78288",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:6102",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:52215",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:56455",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:26016",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:76264",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:35090",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:49112",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:25029",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:60712",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      }
+    ],
+    "plain8": [
+      {
+        "id": "train:4475",
+        "selected": 1,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:74006",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:62453",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:43547",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:21332",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:86062",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:75060",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:73091",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:1668",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:56295",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:78288",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:6102",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:52215",
+        "selected": null,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:56455",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:26016",
+        "selected": 2,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:76264",
+        "selected": 0,
+        "correct": false,
+        "oracle_correct": false
+      },
+      {
+        "id": "train:35090",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:49112",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:25029",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      },
+      {
+        "id": "train:60712",
+        "selected": 0,
+        "correct": true,
+        "oracle_correct": true
+      }
+    ]
+  },
+  "provenance": {
+    "plain4": {
+      "executed_sha256": "e6d8769f6430ab0a2e43a3eec1ba1d073a629f59c2e88a1c83dfe94fa3e6394c",
+      "generation_meta": {
+        "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+        "arm": "plain4",
+        "phase": "smoke20",
+        "status": "complete",
+        "completed_rows": 20,
+        "cuda_visible_devices": "0",
+        "started_at_utc": "2026-09-26T08:56:30.413031+00:00",
+        "model_inputs": [
+          "question"
+        ],
+        "torch": "2.6.0+cu124",
+        "transformers": "4.48.3",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 256,
+          "min_length": 0,
+          "min_new_tokens": 0,
+          "early_stopping": true,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 4,
+          "num_beam_groups": 1,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "return_legacy_cache": null,
+          "temperature": 1.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "diversity_penalty": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "force_words_ids": null,
+          "renormalize_logits": false,
+          "constraints": null,
+          "forced_bos_token_id": 0,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "forced_decoder_ids": null,
+          "sequence_bias": null,
+          "token_healing": false,
+          "guidance_scale": null,
+          "low_memory": null,
+          "watermarking_config": null,
+          "num_return_sequences": 4,
+          "output_attentions": false,
+          "output_hidden_states": false,
+          "output_scores": true,
+          "output_logits": null,
+          "return_dict_in_generate": true,
+          "pad_token_id": 1,
+          "bos_token_id": 0,
+          "eos_token_id": 2,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": 2,
+          "is_assistant": false,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "generation_kwargs": {},
+          "_from_model_config": false,
+          "transformers_version": "4.48.3"
+        },
+        "generation_seconds": 1.4848845600208733,
+        "returned_trace_validation_seconds": 0.0031128390110097826,
+        "padding_sink_callback_calls": 0,
+        "elapsed_seconds": 7.736455381003907,
+        "peak_cuda_allocated_bytes": 2616303616,
+        "output_sha256": "ede344b2c13f87f38596766f6582de0ff4a9b25d94914f073f0715c49ab51219"
+      },
+      "execution_meta": {
+        "status": "complete",
+        "questions": 20,
+        "output_sha256": "e6d8769f6430ab0a2e43a3eec1ba1d073a629f59c2e88a1c83dfe94fa3e6394c",
+        "input_sha256": "ede344b2c13f87f38596766f6582de0ff4a9b25d94914f073f0715c49ab51219",
+        "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+        "elapsed_seconds": 4.825259197008563,
+        "gold_used": false,
+        "python_hash_seed": "20260926"
+      }
+    },
+    "constrained4": {
+      "executed_sha256": "7228fdf6aa09b10127ec225e47de07eb44712acc315cc349f02abb48256037f4",
+      "generation_meta": {
+        "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+        "arm": "constrained4",
+        "phase": "smoke20",
+        "status": "complete",
+        "completed_rows": 20,
+        "cuda_visible_devices": "1",
+        "started_at_utc": "2026-09-26T08:56:33.969306+00:00",
+        "model_inputs": [
+          "question"
+        ],
+        "torch": "2.6.0+cu124",
+        "transformers": "4.48.3",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 256,
+          "min_length": 0,
+          "min_new_tokens": 0,
+          "early_stopping": true,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 4,
+          "num_beam_groups": 1,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "return_legacy_cache": null,
+          "temperature": 1.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "diversity_penalty": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "force_words_ids": null,
+          "renormalize_logits": false,
+          "constraints": null,
+          "forced_bos_token_id": 0,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "forced_decoder_ids": null,
+          "sequence_bias": null,
+          "token_healing": false,
+          "guidance_scale": null,
+          "low_memory": null,
+          "watermarking_config": null,
+          "num_return_sequences": 4,
+          "output_attentions": false,
+          "output_hidden_states": false,
+          "output_scores": true,
+          "output_logits": null,
+          "return_dict_in_generate": true,
+          "pad_token_id": 1,
+          "bos_token_id": 0,
+          "eos_token_id": 2,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": 2,
+          "is_assistant": false,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "generation_kwargs": {},
+          "_from_model_config": false,
+          "transformers_version": "4.48.3"
+        },
+        "generation_seconds": 18.220288671029266,
+        "returned_trace_validation_seconds": 0.35757027100771666,
+        "padding_sink_callback_calls": 2116,
+        "elapsed_seconds": 24.947183600976132,
+        "peak_cuda_allocated_bytes": 2612126208,
+        "output_sha256": "5dd9230b8588ec30413f39642e0e1eb1daca3589fa832cf038ee7a3625438651"
+      },
+      "execution_meta": {
+        "status": "complete",
+        "questions": 20,
+        "output_sha256": "7228fdf6aa09b10127ec225e47de07eb44712acc315cc349f02abb48256037f4",
+        "input_sha256": "5dd9230b8588ec30413f39642e0e1eb1daca3589fa832cf038ee7a3625438651",
+        "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+        "elapsed_seconds": 4.388454486004775,
+        "gold_used": false,
+        "python_hash_seed": "20260926"
+      }
+    },
+    "plain8": {
+      "executed_sha256": "32a1c7b676bb666d6a65f2d851ad91061e8b59560872d63d2269ec8fad457216",
+      "generation_meta": {
+        "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+        "arm": "plain8",
+        "phase": "smoke20",
+        "status": "complete",
+        "completed_rows": 20,
+        "cuda_visible_devices": "2",
+        "started_at_utc": "2026-09-26T08:56:38.526204+00:00",
+        "model_inputs": [
+          "question"
+        ],
+        "torch": "2.6.0+cu124",
+        "transformers": "4.48.3",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 256,
+          "min_length": 0,
+          "min_new_tokens": 0,
+          "early_stopping": true,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 8,
+          "num_beam_groups": 1,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "return_legacy_cache": null,
+          "temperature": 1.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "diversity_penalty": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "force_words_ids": null,
+          "renormalize_logits": false,
+          "constraints": null,
+          "forced_bos_token_id": 0,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "forced_decoder_ids": null,
+          "sequence_bias": null,
+          "token_healing": false,
+          "guidance_scale": null,
+          "low_memory": null,
+          "watermarking_config": null,
+          "num_return_sequences": 8,
+          "output_attentions": false,
+          "output_hidden_states": false,
+          "output_scores": true,
+          "output_logits": null,
+          "return_dict_in_generate": true,
+          "pad_token_id": 1,
+          "bos_token_id": 0,
+          "eos_token_id": 2,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": 2,
+          "is_assistant": false,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "generation_kwargs": {},
+          "_from_model_config": false,
+          "transformers_version": "4.48.3"
+        },
+        "generation_seconds": 1.8076756599766668,
+        "returned_trace_validation_seconds": 0.007316605013329536,
+        "padding_sink_callback_calls": 0,
+        "elapsed_seconds": 7.891246784012765,
+        "peak_cuda_allocated_bytes": 5085654528,
+        "output_sha256": "ca9cd584b7dbb0f29b31b4fd7e5a5fea7adf3b124e550ead43a1d188659621e4"
+      },
+      "execution_meta": {
+        "status": "complete",
+        "questions": 20,
+        "output_sha256": "32a1c7b676bb666d6a65f2d851ad91061e8b59560872d63d2269ec8fad457216",
+        "input_sha256": "ca9cd584b7dbb0f29b31b4fd7e5a5fea7adf3b124e550ead43a1d188659621e4",
+        "protocol_sha256": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+        "elapsed_seconds": 5.164490583003499,
+        "gold_used": false,
+        "python_hash_seed": "20260926"
+      }
+    }
+  },
+  "phase_gpu_process_seconds": 40.5748857659928,
+  "limits": [
+    "Single checkpoint/seed on previously seen development questions",
+    "Constraint is an established baseline, not a novelty claim",
+    "Wall times include concurrent host load; no isolated latency benchmark"
+  ]
+}

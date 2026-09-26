@@ -1,0 +1,1470 @@
+{
+  "scope": "Post-hoc mechanical inventory on previously seen development data; not human error attribution or training evidence",
+  "inputs_sha256": {
+    "metrics": "ee6c00ff4e5e0893b8a20f263291e8305dad1620df74505a3ab6d88a7e20e674",
+    "protocol": "9f2f89965515d87ae1660bae79e26d1a584b2d019e75f3311f17e2281b8f1c23",
+    "generated": "2b3439324c035c90dd16de62e0bed5168ea5cac7815645dea1abd81e43fee5d4",
+    "executed": "c4652b4408e37e8a087c36de382d35bc54c1bc0b0634f14d0416bac9a19ffb56",
+    "gold": "c3a3e1c8950a9bbe2e529dd986bb8fb55ce26fd0547171735c60daac31f43168",
+    "schema": "a37a9c5d398dfa97061c6bfb643eb73ead859949e64c31a761266f638d823a10"
+  },
+  "script_sha256": "915907b115c2ef457fc19b30042ff0e0f691d131650c5915e06f50d881194568",
+  "counts": {
+    "remaining_errors": 98,
+    "errors_with_correct_candidate": 16,
+    "errors_without_correct_candidate": 82,
+    "single_legal_predicate_reference_difference": 12
+  },
+  "selected_error_categories": {
+    "single_field": 14,
+    "no_executable_output": 46,
+    "single_numeric_date_or_identifier_literal": 3,
+    "structure_function_sequence": 22,
+    "multiple_entities_or_entity_order": 2,
+    "multiple_fields": 2,
+    "single_other_literal": 1,
+    "mixed_arguments": 5,
+    "single_direction": 2,
+    "single_entity": 1
+  },
+  "single_field_roles": {
+    "attribute": 1,
+    "relation": 9,
+    "qualifier": 2,
+    "concept": 2
+  },
+  "errors": [
+    {
+      "id": "train:74006",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "FilterYear",
+            "role": "attribute",
+            "predicted": "end time",
+            "gold": "discontinued date"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:21332",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:1668",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "winner",
+            "gold": "award received"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:52215",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:82184",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_numeric_date_or_identifier_literal",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 1,
+            "function": "FilterYear",
+            "role": "numeric_date_or_identifier_literal",
+            "predicted": "1935",
+            "gold": "1835"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:32253",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:30739",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:94364",
+      "selected": 1,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "QueryAttr",
+          "VerifyStr"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "QueryAttrQualifier"
+        ]
+      }
+    },
+    {
+      "id": "train:78511",
+      "selected": 2,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Find",
+          "SelectBetween"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Find",
+          "SelectBetween"
+        ]
+      }
+    },
+    {
+      "id": "train:29890",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:11247",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "multiple_entities_or_entity_order",
+        "differences": [
+          {
+            "step": 0,
+            "argument": 0,
+            "function": "Find",
+            "role": "entity",
+            "predicted": "Cleveland",
+            "gold": "Cleveland Browns"
+          },
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Find",
+            "role": "entity",
+            "predicted": "Cleveland Browns",
+            "gold": "Cleveland"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:79319",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "What"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    {
+      "id": "train:52512",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 1,
+            "function": "QueryRelationQualifier",
+            "role": "qualifier",
+            "predicted": "statement is subject of",
+            "gold": "nominee"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:25233",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:19732",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:5086",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "followed by",
+            "gold": "follows"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:36144",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:3132",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "multiple_fields",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "land",
+            "gold": "estate in land"
+          },
+          {
+            "step": 5,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "estate",
+            "gold": "estate in land"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:35187",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:75418",
+      "selected": 1,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Relate",
+          "FilterConcept",
+          "What"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Find",
+          "QueryRelationQualifier"
+        ]
+      }
+    },
+    {
+      "id": "train:55315",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:82954",
+      "selected": 2,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Find",
+          "QueryRelationQualifier"
+        ],
+        "gold_functions": [
+          "Find",
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "QueryRelationQualifier"
+        ]
+      }
+    },
+    {
+      "id": "train:58505",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:32567",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "multiple_entities_or_entity_order",
+        "differences": [
+          {
+            "step": 0,
+            "argument": 0,
+            "function": "Find",
+            "role": "entity",
+            "predicted": "New York City",
+            "gold": "Edward R. Pressman"
+          },
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Find",
+            "role": "entity",
+            "predicted": "Edward R. Pressman",
+            "gold": "New York City"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:30043",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:27560",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:50724",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_other_literal",
+        "differences": [
+          {
+            "step": 7,
+            "argument": 1,
+            "function": "QueryAttrQualifier",
+            "role": "other_literal",
+            "predicted": "https://www.motherwellfc.co.uk",
+            "gold": "https://www.motherwellfc.co.uk/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:40416",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:87706",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "QueryRelationQualifier",
+            "role": "relation",
+            "predicted": "award received",
+            "gold": "winner"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:38966",
+      "selected": 2,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "FilterStr",
+          "Relate",
+          "FilterConcept",
+          "What"
+        ],
+        "gold_functions": [
+          "Find",
+          "FilterStr",
+          "Relate",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    {
+      "id": "train:77317",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:26763",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:92881",
+      "selected": 3,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_numeric_date_or_identifier_literal",
+        "differences": [
+          {
+            "step": 4,
+            "argument": 1,
+            "function": "QueryAttrQualifier",
+            "role": "numeric_date_or_identifier_literal",
+            "predicted": "120000006516138.7538 United States dollar",
+            "gold": "12065138272.7538 United States dollar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:36956",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "And",
+          "What"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttrQualifier"
+        ]
+      }
+    },
+    {
+      "id": "train:62510",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:73915",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 4,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "participant",
+            "gold": "participant of"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:37226",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "language used",
+            "gold": "languages spoken, written or signed"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:86887",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:82310",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Relate",
+          "FilterConcept",
+          "Count"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterYear",
+          "FilterConcept",
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Relate",
+          "FilterConcept",
+          "And",
+          "Count"
+        ]
+      }
+    },
+    {
+      "id": "train:65333",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:53265",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "And",
+          "Count"
+        ]
+      }
+    },
+    {
+      "id": "train:27217",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "What"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    {
+      "id": "train:93430",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 4,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "based on",
+            "gold": "characters"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:47815",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "multiple_fields",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "FilterStr",
+            "role": "attribute",
+            "predicted": "title",
+            "gold": "Hornbostel-Sachs classification"
+          },
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "instrument category",
+            "gold": "class of instruments"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:32754",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Count"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "And",
+          "Count"
+        ]
+      }
+    },
+    {
+      "id": "train:9442",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "founded by",
+            "gold": "found"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:83510",
+      "selected": 1,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "mixed_arguments",
+        "differences": [
+          {
+            "step": 3,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "located in the administrative territorial entity",
+            "gold": "country"
+          },
+          {
+            "step": 3,
+            "argument": 1,
+            "function": "Relate",
+            "role": "direction",
+            "predicted": "forward",
+            "gold": "backward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:32424",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "mixed_arguments",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "FilterStr",
+            "role": "attribute",
+            "predicted": "birth name",
+            "gold": "Soundex"
+          },
+          {
+            "step": 1,
+            "argument": 1,
+            "function": "FilterStr",
+            "role": "numeric_date_or_identifier_literal",
+            "predicted": "Soundex R000",
+            "gold": "R000"
+          },
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "male",
+            "gold": "male given name"
+          },
+          {
+            "step": 5,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "male",
+            "gold": "male given name"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:38871",
+      "selected": 1,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_direction",
+        "differences": [
+          {
+            "step": 4,
+            "argument": 1,
+            "function": "Relate",
+            "role": "direction",
+            "predicted": "backward",
+            "gold": "forward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:90072",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:82094",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Relate",
+          "FilterConcept",
+          "Count"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    {
+      "id": "train:41731",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ]
+      }
+    },
+    {
+      "id": "train:52524",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:1915",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:91402",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Find",
+          "QueryRelationQualifier"
+        ],
+        "gold_functions": [
+          "Find",
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "QueryRelationQualifier"
+        ]
+      }
+    },
+    {
+      "id": "train:9382",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "QueryRelationQualifier",
+            "role": "relation",
+            "predicted": "cast member",
+            "gold": "voice actor"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:12509",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:39013",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttr",
+          "VerifyStr"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "QueryAttr",
+          "VerifyStr"
+        ]
+      }
+    },
+    {
+      "id": "train:39864",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "mixed_arguments",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "part of",
+            "gold": "has edition"
+          },
+          {
+            "step": 1,
+            "argument": 1,
+            "function": "Relate",
+            "role": "direction",
+            "predicted": "backward",
+            "gold": "forward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:85553",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Find",
+          "FilterStr",
+          "QueryRelationQualifier"
+        ],
+        "gold_functions": [
+          "Find",
+          "FilterStr",
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "QueryRelationQualifier"
+        ]
+      }
+    },
+    {
+      "id": "train:42584",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:29626",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:51372",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:33771",
+      "selected": 2,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "military conflict",
+            "gold": "war"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": false
+    },
+    {
+      "id": "train:61699",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_entity",
+        "differences": [
+          {
+            "step": 0,
+            "argument": 0,
+            "function": "Find",
+            "role": "entity",
+            "predicted": "University of London",
+            "gold": "SOAS, University of London"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:70687",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:81201",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:79688",
+      "selected": 3,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterYear",
+          "FilterConcept",
+          "What"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterYear",
+          "FilterConcept",
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "And",
+          "What"
+        ]
+      }
+    },
+    {
+      "id": "train:63745",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:51363",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Relate",
+          "FilterConcept",
+          "Count"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    {
+      "id": "train:22873",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:76510",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Or",
+          "What"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Find",
+          "Relate",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ]
+      }
+    },
+    {
+      "id": "train:87675",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 5,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "EDM",
+            "gold": "electronic dance music"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": false
+    },
+    {
+      "id": "train:42943",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 5,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "distributor",
+            "gold": "distribution"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:73789",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:33963",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:72982",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:45544",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:93374",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "mixed_arguments",
+        "differences": [
+          {
+            "step": 0,
+            "argument": 0,
+            "function": "Find",
+            "role": "entity",
+            "predicted": "Sandra Oh",
+            "gold": "Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series"
+          },
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "Find",
+            "role": "entity",
+            "predicted": "Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series",
+            "gold": "Sandra Oh"
+          },
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "QueryRelationQualifier",
+            "role": "relation",
+            "predicted": "award received",
+            "gold": "winner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:62392",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:17793",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:36499",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:23391",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:67548",
+      "selected": 0,
+      "oracle_correct": true,
+      "difference_from_reference_gold": {
+        "category": "single_direction",
+        "differences": [
+          {
+            "step": 4,
+            "argument": 1,
+            "function": "Relate",
+            "role": "direction",
+            "predicted": "forward",
+            "gold": "backward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:76902",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:17305",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterYear",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ]
+      }
+    },
+    {
+      "id": "train:74310",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Find",
+          "QueryRelationQualifier"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "QFilterStr",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    {
+      "id": "train:55637",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:1021",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:30041",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 2,
+            "function": "QueryAttrQualifier",
+            "role": "qualifier",
+            "predicted": "valid in place",
+            "gold": "valid in period"
+          }
+        ]
+      },
+      "predicted_field_globally_legal": true
+    },
+    {
+      "id": "train:41980",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:90102",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:1048",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:36021",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:29218",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "mixed_arguments",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "Relate",
+            "role": "relation",
+            "predicted": "award received",
+            "gold": "winner"
+          },
+          {
+            "step": 2,
+            "argument": 1,
+            "function": "Relate",
+            "role": "direction",
+            "predicted": "forward",
+            "gold": "backward"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:70548",
+      "selected": 0,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "single_numeric_date_or_identifier_literal",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 1,
+            "function": "FilterNum",
+            "role": "numeric_date_or_identifier_literal",
+            "predicted": "350000",
+            "gold": "350000 workforce"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train:45885",
+      "selected": null,
+      "oracle_correct": false
+    },
+    {
+      "id": "train:77314",
+      "selected": 3,
+      "oracle_correct": false,
+      "difference_from_reference_gold": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "What"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Relate",
+          "FilterConcept",
+          "What"
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Differences from one reference program do not prove semantic causes or recoverable gains",
+    "No synthetic negatives, training, new predictions or gold execution",
+    "All failed questions remain; missing outputs are not assigned a fabricated program"
+  ]
+}
