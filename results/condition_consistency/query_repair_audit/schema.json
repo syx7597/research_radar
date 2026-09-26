@@ -1,0 +1,4868 @@
+{
+  "source_kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "field_argument_roles": {
+    "FilterConcept": {
+      "0": "concept"
+    },
+    "FilterStr": {
+      "0": "attribute"
+    },
+    "FilterNum": {
+      "0": "attribute"
+    },
+    "FilterYear": {
+      "0": "attribute"
+    },
+    "FilterDate": {
+      "0": "attribute"
+    },
+    "QFilterStr": {
+      "0": "qualifier"
+    },
+    "QFilterNum": {
+      "0": "qualifier"
+    },
+    "QFilterYear": {
+      "0": "qualifier"
+    },
+    "QFilterDate": {
+      "0": "qualifier"
+    },
+    "Relate": {
+      "0": "relation"
+    },
+    "SelectBetween": {
+      "0": "attribute"
+    },
+    "SelectAmong": {
+      "0": "attribute"
+    },
+    "QueryAttr": {
+      "0": "attribute"
+    },
+    "QueryAttrUnderCondition": {
+      "0": "attribute",
+      "1": "qualifier"
+    },
+    "QueryAttrQualifier": {
+      "0": "attribute",
+      "2": "qualifier"
+    },
+    "QueryRelationQualifier": {
+      "0": "relation",
+      "1": "qualifier"
+    }
+  },
+  "names_by_role": {
+    "attribute": [
+      "ABS ASCL code",
+      "ACM Classification Code (2012)",
+      "AISHE code",
+      "ARCHON code",
+      "ASIN",
+      "ATC code",
+      "Academia.edu profile URL",
+      "Alexa rank",
+      "Amazon author page",
+      "Ameblo username",
+      "Amsterdam code",
+      "Amtrak station code",
+      "Arch Linux package",
+      "Artists in Canada record number",
+      "Artsy gene",
+      "Australian Business Number",
+      "Australian Company Number",
+      "Austrian municipality key",
+      "BMLO",
+      "Biografisch Portaal number",
+      "Biographical Dictionary of Swedish Women",
+      "Brazilian municipality code",
+      "British Museum bioID",
+      "British Museum person-institution",
+      "Bulbapedia article",
+      "CANTIC-ID",
+      "CAS Registry Number",
+      "CBS municipality code",
+      "CIVICUS Monitor country entry",
+      "CLARA-ID",
+      "CRICOS Provider Code",
+      "CVR number",
+      "Catalogus Professorum Halensis",
+      "Caverphone",
+      "Central Index Key",
+      "Charity Commission no.",
+      "China administrative division code",
+      "Classification of Instructional Programs code",
+      "Code of Household Registration and Conscription Information System (Taiwan)",
+      "Cologne phonetics",
+      "Common Procurement Vocabulary",
+      "Consolidated code of the electronic catalog of libraries of Belarus",
+      "Corporate Number (Japan)",
+      "CosIng number",
+      "Cullum number",
+      "DBU playerprofile",
+      "DNB editions",
+      "DOI",
+      "DOI prefix",
+      "DSM-5 classification",
+      "Danish urban area code",
+      "Debian stable package",
+      "Deutsche Synchronkartei actor-ID",
+      "Dewey Decimal Classification",
+      "DfE URN",
+      "Dictionary of Medieval Names from European Sources entry",
+      "Dictionary of New Zealand Biography",
+      "Dictionary of Swedish National Biography",
+      "DiseasesDB",
+      "Dreadnought Project page",
+      "E number",
+      "EC number",
+      "EDRPOU code",
+      "ELSTAT geographical code",
+      "EPPO Code",
+      "EU VAT number",
+      "Education Institution Identification Number",
+      "Enterprise number (Belgium)",
+      "Erdős number",
+      "Ethnologue.com language code",
+      "FAA airport code",
+      "FIFA country code",
+      "FIPS 10-4 (countries and regions)",
+      "FIPS 5-2 alpha code (US states)",
+      "FIPS 5-2 numeric code (US states)",
+      "FIPS 6-4 (US counties)",
+      "Fedora package",
+      "Finnish municipality number",
+      "GDP (PPP)",
+      "GEMS Code",
+      "GOST 7.67 cyrillic",
+      "GOST 7.75–97 code",
+      "GRIN URL",
+      "GS1 Global Product Classification brick code",
+      "GS1 Manufacturer code",
+      "GS1 country code",
+      "GSS code (2011)",
+      "Gentoo package",
+      "GeoNames feature code",
+      "German district key",
+      "German municipality key",
+      "German regional key",
+      "Gini coefficient",
+      "Giphy username",
+      "GitHub username",
+      "Glottolog code",
+      "Gmelin number",
+      "Google Doodle",
+      "HTML entity",
+      "Harmonized System Code",
+      "Hornbostel-Sachs classification",
+      "Human Development Index",
+      "IAB code",
+      "IATA airline designator",
+      "IATA airport code",
+      "ICAO airline designator",
+      "ICAO airport code",
+      "ICD-10",
+      "ICD-10-CM",
+      "ICD-9",
+      "ICD-9-CM",
+      "ICD-O",
+      "IDESCAT territorial code in Catalonia",
+      "IDLH",
+      "IETF language tag",
+      "IIIF manifest",
+      "IMO ship number",
+      "INE municipality code",
+      "INSEE countries and foreign territories code",
+      "INSEE department code",
+      "INSEE municipality code",
+      "INSEE region code",
+      "IOC country code",
+      "IPI base code",
+      "IPI name number",
+      "IPTC Newscode",
+      "IPv4 routing prefix",
+      "IPv6 routing prefix",
+      "IRC channel",
+      "IRS Employer Identification Number",
+      "ISBN publisher prefix",
+      "ISBN-10",
+      "ISBN-13",
+      "ISCO occupation code",
+      "ISIN",
+      "ISNI",
+      "ISO 15924 alpha-4 code",
+      "ISO 15924 numeric code",
+      "ISO 3166-1 alpha-2 code",
+      "ISO 3166-1 alpha-3 code",
+      "ISO 3166-1 numeric code",
+      "ISO 3166-2 code",
+      "ISO 3166-3",
+      "ISO 4217 code",
+      "ISO 639-1 code",
+      "ISO 639-2 code",
+      "ISO 639-3 code",
+      "ISO 639-5 code",
+      "ISO 9362 SWIFT/BIC code",
+      "ISO standard",
+      "ISSN",
+      "ISWC",
+      "ITIS TSN",
+      "ITU letter code",
+      "Iconclass notation",
+      "InChI",
+      "InChIKey",
+      "Index Herbariorum code",
+      "Indian census area code (1991)",
+      "Indian census area code (2001)",
+      "Indian census area code (2011)",
+      "Instagram username",
+      "International Standard Industrial Classification code Rev.4",
+      "Iranian National Heritage registration number",
+      "Irish Grid Reference",
+      "Italian cadastre code",
+      "KLG Kritisches Lexikon der Gegenwartsliteratur",
+      "KLfG Critical Dictionary of foreign contemporary literature",
+      "KSH code",
+      "Kemler code",
+      "KldB-2010 occupation code",
+      "KulturNav-id",
+      "LAU",
+      "LIBRIS editions",
+      "Library of Congress Classification",
+      "Library of Congress Cultural Heritage Organizations",
+      "Libris-URI",
+      "Linguasphere code",
+      "LinkedIn personal profile URL",
+      "M.49 code",
+      "MAME ROM name",
+      "MCN code",
+      "MIL-STD-2525 Symbol Identification Code",
+      "Mastodon address",
+      "McCune-Reischauer romanization",
+      "MeSH Code",
+      "Medium username",
+      "Merchant Category Code",
+      "Minitel code",
+      "Minor Planet Center observatory code",
+      "Munzinger IBA",
+      "Munzinger Sport number",
+      "Museofile",
+      "NACE code",
+      "NBN System Key",
+      "NIS/INS code",
+      "NLC authorities",
+      "NOC Occupation Code",
+      "NRHP reference number",
+      "NSDAP membership number (1925–1945)",
+      "NUTS code",
+      "Name Assigning Authority Number",
+      "National Bridge Inventory Number",
+      "National Heritage List for England number",
+      "Nintendo GameID",
+      "Norway Import Service and Registration Authority publisher code",
+      "Norwegian municipality number",
+      "Norwegian organisation number",
+      "Nupill Literatura Digital - Author",
+      "OCLC control number",
+      "OKPD code of the good or service",
+      "OKPD2 code of the good or service",
+      "OLAC video game genre vocabulary",
+      "OS grid reference",
+      "OSM tag or key",
+      "OpenCorporates corporate grouping",
+      "PCP reference number",
+      "PO Box",
+      "PPP GDP per capita",
+      "Parsons code",
+      "Party Number (Taiwan)",
+      "PermID",
+      "PhilPapers topic",
+      "Philippine Standard Geographic Code",
+      "PictoRight ID-Droit de suite",
+      "Pinterest username",
+      "PlantList-ID",
+      "Politika topic",
+      "Portable Game Notation",
+      "Portuguese Job Code CPP-2010",
+      "PubChem CID",
+      "PubMed Health",
+      "Quebec municipalities geographical code",
+      "Quora username",
+      "RIA Novosti reference",
+      "ROME Occupation Code (v3)",
+      "RTECS number",
+      "RePEc Short-ID",
+      "Reaxys registry number",
+      "Reddit username",
+      "Regensburg Classification",
+      "ResearcherID",
+      "Revised Hepburn romanization",
+      "Revised Romanization",
+      "RxNorm CUI",
+      "SBC-2010 occupation code",
+      "SIC code",
+      "SIREN number",
+      "SIRET number",
+      "SIRUTA code",
+      "SOC Code (2010)",
+      "SPLASH",
+      "SSR place name number",
+      "SWB editions",
+      "Scottish Charity number",
+      "SlideShare username",
+      "Snapchat username",
+      "Soundex",
+      "Stack Exchange tag",
+      "Statistics Canada Geographic code",
+      "Statistics Indonesia ethnicity code",
+      "Swedish Anbytarforum",
+      "Swedish Literature Bank AuthorID",
+      "Swedish Organization Number",
+      "Swedish municipality code",
+      "Swedish urban area code",
+      "Swiss Football Association Club Number",
+      "Swiss municipality code",
+      "Sächsische Biografie",
+      "TA98 Latin term",
+      "TERYT municipality code",
+      "TOID",
+      "TeX string",
+      "Telegram username",
+      "Thailand central administrative unit code",
+      "Twitter hashtag",
+      "Twitter username",
+      "UAI code",
+      "UIC alphabetical country code",
+      "UIC numerical country code",
+      "UK Provider Reference Number",
+      "UMLS CUI",
+      "UN class",
+      "UN number",
+      "UN packaging group",
+      "UN/LOCODE",
+      "UNDP country code",
+      "UNESCO Biosphere Reserve url",
+      "UNII",
+      "UNSPSC Code",
+      "USDA NDB number",
+      "Ubuntu package",
+      "United States Armed Forces service number",
+      "Universal Decimal Classification",
+      "VAT-rate",
+      "Vimeo username",
+      "WALS family code",
+      "WALS lect code",
+      "WOEID",
+      "Wikimedia language code",
+      "Wikimedia username",
+      "Wikitribune category",
+      "Wine AppDB-ID",
+      "WoRMS-ID",
+      "World Health Organisation International Nonproprietary Name",
+      "Yahoo Answers category",
+      "ZVG number",
+      "absolute magnitude",
+      "administrative code of Indonesia",
+      "admission rate",
+      "age of candidacy",
+      "age of consent",
+      "age of majority",
+      "aircraft registration prefix",
+      "airline accounting code",
+      "albedo",
+      "amateur radio callsign",
+      "angular diameter",
+      "annual number of weddings",
+      "apoapsis",
+      "apparent magnitude",
+      "archival creator authority record at the Archives nationales",
+      "area",
+      "argument of periapsis",
+      "atomic number",
+      "attendance",
+      "audio recording of the subject's spoken voice",
+      "author citation (zoology)",
+      "autoignition temperature",
+      "autonomous system number",
+      "average shot length",
+      "awarded for period",
+      "base salary",
+      "beam",
+      "beats per minute",
+      "birth name",
+      "boiling point",
+      "botanist author abbreviation",
+      "box office",
+      "budget",
+      "bug tracking system",
+      "call sign",
+      "callsign of airline",
+      "canonical SMILES",
+      "cash",
+      "catalog code",
+      "catchphrase",
+      "ceiling exposure limit",
+      "central government debt as a percent of GDP",
+      "channel number",
+      "charter URL",
+      "chemical formula",
+      "chemical structure",
+      "clearance",
+      "codename",
+      "collection or exhibition size",
+      "combustion enthalpy",
+      "compressive modulus of elasticity",
+      "compulsory education (maximum age)",
+      "compulsory education (minimum age)",
+      "consumption rate",
+      "consumption rate per capita",
+      "cost",
+      "country calling code",
+      "dantai code",
+      "date depicted",
+      "date of baptism in early childhood",
+      "date of birth",
+      "date of burial or cremation",
+      "date of death",
+      "date of first performance",
+      "date of official opening",
+      "decomposition point",
+      "defined daily dose",
+      "demonym",
+      "density",
+      "depicts Iconclass notation",
+      "detail map",
+      "diameter",
+      "discharge",
+      "discontinued date",
+      "disease burden",
+      "dissolved, abolished or demolished",
+      "distance from Earth",
+      "distribution map",
+      "doubles record",
+      "draft",
+      "duration",
+      "dynamic viscosity",
+      "e-mail address",
+      "eMedicine",
+      "earliest date",
+      "edition number",
+      "electorate",
+      "electrical conductivity",
+      "electronegativity",
+      "element symbol",
+      "elevation above sea level",
+      "eligible voters",
+      "embodied energy",
+      "employees",
+      "end time",
+      "event distance",
+      "exploitation visa number",
+      "external data available at",
+      "fax number",
+      "fee",
+      "female population",
+      "file extension",
+      "film poster",
+      "first flight",
+      "first line",
+      "fiscal/tax revenue",
+      "flash point",
+      "flattening",
+      "fleet or registration number",
+      "floors above ground",
+      "floors below ground",
+      "floruit",
+      "foreign direct investment net inflow",
+      "foreign direct investment net outflow",
+      "format as a regular expression",
+      "frequency of event",
+      "full work available at",
+      "heart rate",
+      "height",
+      "illiterate population",
+      "inception",
+      "incidence",
+      "individual tax rate",
+      "inflation rate",
+      "inscription",
+      "inventory number",
+      "ionization energy",
+      "last line",
+      "last words",
+      "length",
+      "licence plate code",
+      "life expectancy",
+      "literate population",
+      "local dialing code",
+      "located at street address",
+      "located at street address (DEPRECATED)",
+      "longest span",
+      "longitude of ascending node",
+      "lower flammable limit",
+      "luminosity",
+      "magnetic moment",
+      "mains voltage",
+      "male population",
+      "maritime identification digits",
+      "market capitalization",
+      "marriageable age",
+      "married name",
+      "mass",
+      "maximal incubation period in humans",
+      "maximum capacity",
+      "maximum frequency of audible sound",
+      "maximum number of players",
+      "mean age",
+      "mean anomaly",
+      "media type",
+      "median income",
+      "median lethal dose",
+      "melting point",
+      "member count",
+      "metallicity",
+      "minimal incubation period in humans",
+      "minimum age",
+      "minimum explosive concentration",
+      "minimum frequency of audible sound",
+      "minimum number of players",
+      "mobile country code",
+      "monogram",
+      "motto text",
+      "name",
+      "name in kana",
+      "name in native language",
+      "native label",
+      "net profit",
+      "net worth",
+      "nickname",
+      "nighttime view",
+      "nominal GDP",
+      "nominal GDP per capita",
+      "number of cases",
+      "number of children",
+      "number of constituencies",
+      "number of deaths",
+      "number of elevators",
+      "number of episodes",
+      "number of graves",
+      "number of households",
+      "number of houses",
+      "number of out-of-school children",
+      "number of pages",
+      "number of participants",
+      "number of parts of this work of art",
+      "number of representatives in an organization/legislature",
+      "number of seasons",
+      "number of seats",
+      "number of spans",
+      "number of speakers",
+      "number of subscribers",
+      "official blog",
+      "official name",
+      "official website",
+      "operating income",
+      "orbital eccentricity",
+      "orbital inclination",
+      "orbital period",
+      "oxidation state",
+      "pKa",
+      "page(s)",
+      "parliament.uk biography pages",
+      "patronage",
+      "periapsis",
+      "perimeter",
+      "personal best",
+      "phone number",
+      "place name sign",
+      "point in time",
+      "population",
+      "post town",
+      "postal code",
+      "prevalence",
+      "price",
+      "prize money",
+      "production code",
+      "production date",
+      "pronunciation audio",
+      "pseudonym",
+      "public domain date",
+      "public key fingerprint",
+      "publication date",
+      "publication interval",
+      "quantity",
+      "quantity buried",
+      "radius",
+      "ranking",
+      "real gross domestic product growth rate",
+      "refractive index",
+      "relative permeability",
+      "relief location map",
+      "religious name",
+      "residence time of water",
+      "retirement age",
+      "review score",
+      "road number",
+      "rotation period",
+      "runway",
+      "rural population",
+      "sRGB color hex triplet",
+      "salinity",
+      "schematic",
+      "sectional view",
+      "semi-major axis",
+      "series ordinal",
+      "service entry",
+      "short name",
+      "short-term exposure limit",
+      "singles record",
+      "snap package",
+      "solubility",
+      "spectral class",
+      "speed",
+      "speed limit",
+      "speed of sound",
+      "spoken text audio",
+      "sport number",
+      "sports league level",
+      "stall speed",
+      "standard enthalpy of formation",
+      "standard molar entropy",
+      "start time",
+      "streaming media URL",
+      "students count",
+      "subreddit",
+      "subtitle",
+      "suicide rate",
+      "synodic period",
+      "tabular population",
+      "taxon common name",
+      "taxon name",
+      "temperature",
+      "term length of office",
+      "thermal conductivity",
+      "time in space",
+      "time index",
+      "time of discovery or invention",
+      "time of earliest written record",
+      "time-weighted average exposure limit",
+      "timezone offset",
+      "title",
+      "total assets",
+      "total equity",
+      "total expenditure",
+      "total exports",
+      "total fertility rate",
+      "total goals in career",
+      "total liabilities",
+      "total produced",
+      "total reserves",
+      "total revenue",
+      "transliteration",
+      "trunk prefix",
+      "tuition fee",
+      "unemployment rate",
+      "units sold",
+      "upper flammable limit",
+      "urban population",
+      "vapor pressure",
+      "vehicles per capita (1000)",
+      "vertical depth",
+      "video",
+      "visitors per year",
+      "vocalized name",
+      "voltage",
+      "volume",
+      "volume as quantity",
+      "water as percent of area",
+      "water footprint",
+      "watershed area",
+      "weather history",
+      "webcam page URL",
+      "width",
+      "work period (end)",
+      "work period (start)",
+      "yard number"
+    ],
+    "relation": [
+      "Wikidata property",
+      "academic degree",
+      "affiliation",
+      "afflicts",
+      "after a work by",
+      "airline alliance",
+      "airline hub",
+      "allegiance",
+      "ancestral home",
+      "appears in the form of",
+      "applies to jurisdiction",
+      "appointed by",
+      "approved by",
+      "architect",
+      "architectural style",
+      "archives at",
+      "art director",
+      "author",
+      "award disciplines or subjects",
+      "award received",
+      "based on",
+      "basic form of government",
+      "basin country",
+      "board member",
+      "broadcast by",
+      "business division",
+      "candidacy in election",
+      "candidate",
+      "capital",
+      "capital of",
+      "captain",
+      "cast member",
+      "cause of death",
+      "chairperson",
+      "characters",
+      "chief executive officer",
+      "child",
+      "child astronomical body",
+      "cites",
+      "coextensive with",
+      "collection",
+      "color",
+      "commander of",
+      "commissioned by",
+      "composer",
+      "conferred by",
+      "conflict",
+      "connects with",
+      "contains administrative territorial entity",
+      "contains settlement",
+      "continent",
+      "contributing factor of",
+      "contributor(s) to the creative work",
+      "convicted of",
+      "copyright holder",
+      "copyright representative",
+      "costume designer",
+      "country",
+      "country for sport",
+      "country of citizenship",
+      "country of origin",
+      "creator",
+      "culture",
+      "currency",
+      "dedicated to",
+      "depicted by",
+      "depicts",
+      "derivative work",
+      "designated as terrorist by",
+      "designed by",
+      "designed to carry",
+      "destination point",
+      "developer",
+      "dialect of",
+      "diaspora",
+      "different from",
+      "diplomatic relation",
+      "director",
+      "director of photography",
+      "director/manager",
+      "discoverer or inventor",
+      "dissertation submitted to",
+      "distribution",
+      "distributor",
+      "doctoral advisor",
+      "doctoral student",
+      "does not have part",
+      "domain of saint or deity",
+      "donated by",
+      "draft pick from school",
+      "drafted by",
+      "drug used for treatment",
+      "edition or translation of",
+      "editor",
+      "educated at",
+      "employer",
+      "enclave within",
+      "ethnic group",
+      "exclave of",
+      "executive producer",
+      "exported to",
+      "eye color",
+      "fabrication method",
+      "facet of",
+      "family",
+      "family name",
+      "famous people",
+      "father",
+      "feast day",
+      "fictional universe described in",
+      "field of this occupation",
+      "field of work",
+      "film crew member",
+      "film distribute region",
+      "film editor",
+      "film regional debut venue",
+      "film release region",
+      "filming location",
+      "filmography",
+      "followed by",
+      "follows",
+      "found",
+      "foundational text",
+      "founded by",
+      "from fictional universe",
+      "game mode",
+      "general manager",
+      "genre",
+      "geographic distribution",
+      "geography of topic",
+      "given name",
+      "godparent",
+      "grants",
+      "had as last meal",
+      "hair color",
+      "has cause",
+      "has contributing factor",
+      "has dialect (DEPRECATED)",
+      "has edition",
+      "has effect",
+      "has immediate cause",
+      "has part",
+      "has parts of the class",
+      "has quality",
+      "head coach",
+      "head of government",
+      "head of state",
+      "headquarters location",
+      "health specialty",
+      "heritage designation",
+      "highest judicial authority",
+      "history of topic",
+      "home port",
+      "home venue",
+      "home world",
+      "honorific prefix",
+      "honorific suffix",
+      "illustrator",
+      "indigenous to",
+      "industry",
+      "influenced by",
+      "inspired by",
+      "instrument",
+      "instrumentation",
+      "interested in",
+      "interests",
+      "is a list of",
+      "item operated",
+      "killed by",
+      "kit supplier",
+      "language of work or name",
+      "language used",
+      "languages spoken, written or signed",
+      "league",
+      "legal form",
+      "legislative body",
+      "librettist",
+      "license",
+      "licensed to broadcast to",
+      "lifestyle",
+      "located in or next to body of water",
+      "located in the administrative territorial entity",
+      "located in time zone",
+      "located on astronomical location",
+      "located on terrain feature",
+      "location",
+      "location of discovery",
+      "location of final assembly",
+      "location of formation",
+      "lowest point",
+      "lyrics by",
+      "main food source",
+      "main subject",
+      "maintained by",
+      "make-up artist",
+      "manner of death",
+      "manufacturer",
+      "mascot",
+      "material used",
+      "medical condition",
+      "medical treatment",
+      "member of",
+      "member of political party",
+      "member of sports team",
+      "military branch",
+      "military casualty classification",
+      "military conflicts",
+      "military rank",
+      "model item",
+      "month of the year",
+      "mother",
+      "mountain range",
+      "mouth of the watercourse",
+      "movement",
+      "musical conductor",
+      "named after",
+      "narrative location",
+      "narrative role",
+      "narrator",
+      "native language",
+      "natural product of taxon",
+      "newspaper format",
+      "next higher rank",
+      "next lower rank",
+      "noble title",
+      "nominated for",
+      "notable people with this condition",
+      "notable work",
+      "nutrient",
+      "occupant",
+      "occupation",
+      "office contested",
+      "office held by head of government",
+      "office held by head of state",
+      "office held by head of the organisation",
+      "officeholder",
+      "official color",
+      "official language",
+      "official religion",
+      "official residence",
+      "official symbol",
+      "officially opened by",
+      "operating area",
+      "operating system",
+      "operator",
+      "opposite of",
+      "organisation directed from the office or person",
+      "organizer",
+      "original film format",
+      "original language of film or TV show",
+      "original network",
+      "owned by",
+      "owner of",
+      "parent astronomical body",
+      "parent club",
+      "parent organization",
+      "part of",
+      "part of the series",
+      "partially contains",
+      "participant",
+      "participant of",
+      "partner",
+      "patron saint",
+      "penalty",
+      "performer",
+      "permanent resident of",
+      "place of birth",
+      "place of burial",
+      "place of death",
+      "place of origin (Switzerland)",
+      "place of publication",
+      "place served by transport hub",
+      "platform",
+      "political alignment",
+      "political ideology",
+      "position held",
+      "position played on team / speciality",
+      "practiced by",
+      "present in work",
+      "presenter",
+      "producer",
+      "product or material produced",
+      "production company",
+      "production designer",
+      "professional or sports partner",
+      "professorship",
+      "programming language",
+      "programming paradigm",
+      "properties for this type",
+      "public holiday",
+      "published in",
+      "publisher",
+      "quotes work",
+      "record label",
+      "rector",
+      "registered with",
+      "relative",
+      "religion",
+      "religious order",
+      "replaced by",
+      "replaces",
+      "residence",
+      "risk factor",
+      "said to be the same as",
+      "screenwriter",
+      "season starts",
+      "seed team",
+      "separated from",
+      "series spin-off",
+      "set in period",
+      "sex or gender",
+      "sexual orientation",
+      "shares border with",
+      "sibling",
+      "sidekick of",
+      "signatory",
+      "significant event",
+      "significant person",
+      "software engine",
+      "soundtrack album",
+      "source of income",
+      "source of material",
+      "sponsor",
+      "sport",
+      "sports season of league or competition",
+      "spouse",
+      "start point",
+      "stated in",
+      "statistical leader",
+      "student",
+      "student of",
+      "studied by",
+      "studies",
+      "subject has role",
+      "subsidiary",
+      "substitute/deputy/replacement of office/officeholder",
+      "successful candidate",
+      "superhuman feature or ability",
+      "symptom of",
+      "symptoms",
+      "takes place in fictional universe",
+      "talk show guest",
+      "taxon rank",
+      "terminus",
+      "territory claimed by",
+      "territory overlaps",
+      "theme music",
+      "this taxon is source of",
+      "time period",
+      "tributary",
+      "twinned administrative body",
+      "update method",
+      "use",
+      "used by",
+      "uses",
+      "vehicle normally used",
+      "voice actor",
+      "voice type",
+      "winner",
+      "work location",
+      "works in collection",
+      "worshipped by",
+      "writing system"
+    ],
+    "qualifier": [
+      "Brazilian municipality code",
+      "DOI",
+      "EThOS thesis ID",
+      "ISO standard",
+      "McCune-Reischauer romanization",
+      "Möllendorff transliteration",
+      "OSM tag or key",
+      "Revised Hepburn romanization",
+      "Revised Romanization",
+      "academic degree",
+      "academic major",
+      "acquisition transaction",
+      "addressee",
+      "affiliation",
+      "alternate names",
+      "applies to jurisdiction",
+      "applies to name",
+      "applies to part",
+      "applies to people",
+      "applies to taxon",
+      "appointed by",
+      "approved by",
+      "archive date",
+      "author",
+      "author name string",
+      "award rationale",
+      "award received",
+      "based on heuristic",
+      "basic form of government",
+      "burial plot reference",
+      "cabinet",
+      "capital",
+      "captain",
+      "catalog",
+      "catalog code",
+      "cause of death",
+      "central bank/issuer",
+      "character role",
+      "collection",
+      "composer",
+      "conferred by",
+      "conflict",
+      "conscription number",
+      "contains administrative territorial entity",
+      "conversion to standard unit",
+      "country",
+      "country calling code",
+      "country of citizenship",
+      "court",
+      "creator",
+      "criterion used",
+      "currency",
+      "date of birth",
+      "date of death",
+      "day in year for periodic occurrence",
+      "described by source",
+      "destination point",
+      "determination method",
+      "different from",
+      "diplomatic mission sent",
+      "direction",
+      "direction relative to location",
+      "directions",
+      "discontinued date",
+      "dissolved, abolished or demolished",
+      "distribution",
+      "doctoral advisor",
+      "doctoral thesis",
+      "donated by",
+      "draft pick number",
+      "drafted by",
+      "duration",
+      "earliest date",
+      "editor",
+      "educated at",
+      "elected in",
+      "elevation above sea level",
+      "employer",
+      "end cause",
+      "end time",
+      "excluding",
+      "external data available at",
+      "female population",
+      "field of work",
+      "filming location",
+      "followed by",
+      "follows",
+      "for work",
+      "format as a regular expression",
+      "foundational text",
+      "frequency",
+      "genre",
+      "grammatical gender",
+      "has cause",
+      "has edition",
+      "has effect",
+      "has immediate cause",
+      "has part",
+      "has quality",
+      "head of state",
+      "headquarters location",
+      "heritage designation",
+      "highest income threshold",
+      "highest point",
+      "identity of object in context",
+      "identity of subject in context",
+      "image",
+      "inception",
+      "influenced by",
+      "instance of",
+      "instrument",
+      "intended public",
+      "inventory number",
+      "item operated",
+      "killed by",
+      "language of work or name",
+      "languages spoken, written or signed",
+      "last update",
+      "latest date",
+      "legislative body",
+      "length",
+      "licence plate code",
+      "license",
+      "literal translation",
+      "located at street address",
+      "located at street address (DEPRECATED)",
+      "located in or next to body of water",
+      "located in the administrative territorial entity",
+      "located in time zone",
+      "located on street",
+      "located on terrain feature",
+      "location",
+      "location of formation",
+      "lower limit",
+      "lowest income threshold",
+      "lowest point",
+      "lyrics by",
+      "main regulatory text",
+      "main subject",
+      "male population",
+      "manufacturer",
+      "mapping relation type",
+      "married name",
+      "material used",
+      "maximum age",
+      "maximum value",
+      "medical condition",
+      "member of",
+      "member of political party",
+      "member of sports team",
+      "memory capacity",
+      "military branch",
+      "military rank",
+      "minimum quantity",
+      "mother",
+      "name",
+      "name in kana",
+      "name in native language",
+      "name of the character role",
+      "named after",
+      "named as",
+      "named by",
+      "native language",
+      "nature of statement",
+      "nickname",
+      "nominee",
+      "number confirmed",
+      "number of episodes",
+      "number of households",
+      "number of matches played/races/starts",
+      "number of points/goals/set scored",
+      "number of speakers",
+      "number of subscribers",
+      "object has role",
+      "occupation",
+      "of",
+      "official name",
+      "official website",
+      "operating area",
+      "operating system",
+      "operator",
+      "organizer",
+      "original network",
+      "page(s)",
+      "parliamentary term",
+      "part of",
+      "part of the series",
+      "penalty",
+      "performer",
+      "phase of matter",
+      "pinyin transliteration",
+      "place of marriage",
+      "place of publication",
+      "platform",
+      "point in time",
+      "points for",
+      "population",
+      "position held",
+      "position played on team / speciality",
+      "postal code",
+      "present in work",
+      "pressure",
+      "prize money",
+      "pronunciation variety",
+      "proportion",
+      "proxy",
+      "pseudonym",
+      "publication date",
+      "published in",
+      "publisher",
+      "quantity",
+      "quote",
+      "ranking",
+      "rating",
+      "reason for deprecation",
+      "refine date",
+      "regular expression syntax",
+      "relative to",
+      "religion",
+      "religious order",
+      "replaced by",
+      "replaces",
+      "represented by",
+      "retrieved",
+      "review score by",
+      "route of administration",
+      "running mate",
+      "sRGB color hex triplet",
+      "said to be the same as",
+      "separated from",
+      "series ordinal",
+      "sex or gender",
+      "short name",
+      "significant event",
+      "solvent",
+      "sourcing circumstances",
+      "sport",
+      "sport number",
+      "spouse",
+      "start period",
+      "start point",
+      "start time",
+      "stated age at event",
+      "stated as",
+      "stated in",
+      "statement disputed by",
+      "statement is subject of",
+      "statement supported by",
+      "street number",
+      "subclass of",
+      "subject has role",
+      "subject item of this property",
+      "subtitle",
+      "taxon author",
+      "temperature",
+      "time period",
+      "timezone offset",
+      "title",
+      "together with",
+      "transliteration",
+      "tributary orientation",
+      "twinned administrative body",
+      "type of kinship",
+      "upper limit",
+      "use",
+      "used by",
+      "valid in period",
+      "valid in place",
+      "voice actor",
+      "voice type",
+      "votes received",
+      "width",
+      "winner",
+      "writing system",
+      "year of taxon name publication"
+    ],
+    "concept": [
+      "3D film",
+      "Academy Awards",
+      "Academy Awards ceremony",
+      "American football position",
+      "American football team",
+      "Asian American",
+      "British Academy Film Awards",
+      "Calvinism",
+      "ChEBI Ontology term",
+      "Chinese",
+      "Christian holy day",
+      "Christian music",
+      "Christianity",
+      "Continental Congress",
+      "Critics' Choice Movie Award",
+      "Eastern Orthodox Church",
+      "English",
+      "First Lady",
+      "Golden Globe Award ceremony",
+      "Golden Raspberry Awards",
+      "Grammy Award",
+      "Hispanic",
+      "Indian classical music",
+      "Indian people",
+      "Indigenous peoples of the Americas",
+      "Indo-European languages",
+      "Iranian musical instrument",
+      "Islam",
+      "Jewish people",
+      "LGBT",
+      "Latin American music",
+      "MTV Movie Awards",
+      "MTV Video Music Award",
+      "Major League Baseball draft",
+      "Malay",
+      "Mormonism",
+      "National Basketball Association Draft",
+      "National Football League Draft",
+      "Nazism",
+      "Power Rangers",
+      "Primetime Emmy Award",
+      "Primetime Emmy Award annual ceremony",
+      "Private Hochschule",
+      "Protestantism",
+      "Renaissance",
+      "Roman deity",
+      "Screen Actors Guild Award",
+      "Serbo-Croatian",
+      "Southern rock",
+      "Summer Olympic Games",
+      "TV production company",
+      "Tagalog",
+      "Tour de France",
+      "UK garage",
+      "United States Congress",
+      "United States presidential election",
+      "Unix-like operating system",
+      "Wikimedia list article",
+      "Winter Olympic Games",
+      "abjad",
+      "academic degree",
+      "academic discipline",
+      "academic institution",
+      "academic major",
+      "action film",
+      "action game",
+      "activity",
+      "actor",
+      "administrative territorial entity",
+      "administrative territorial entity of Canada",
+      "adventure film",
+      "agent",
+      "aircraft functional class",
+      "airline",
+      "airliner",
+      "album",
+      "alphabet",
+      "alphabetic script",
+      "alternative metal",
+      "alternative rock",
+      "amino acid",
+      "anarcho-punk",
+      "ancient civilization",
+      "animal",
+      "animated character",
+      "animated feature film",
+      "animated film",
+      "animated series",
+      "animation",
+      "anime",
+      "anime television series",
+      "announcer",
+      "anthology",
+      "anthology series",
+      "aptitude",
+      "architectural style",
+      "area of London",
+      "army",
+      "art",
+      "art exhibition",
+      "art form",
+      "art movement",
+      "art school",
+      "artist",
+      "arts festival",
+      "association",
+      "association football club",
+      "astronomical object type",
+      "athlete",
+      "audio engineer",
+      "author",
+      "autobiography",
+      "automobile marque",
+      "avant-garde",
+      "award",
+      "award ceremony",
+      "ball",
+      "band",
+      "baroque music",
+      "base material",
+      "baseball position",
+      "baseball team",
+      "basketball",
+      "basketball team",
+      "bass",
+      "bass guitar",
+      "bay",
+      "beauty contest",
+      "bebop",
+      "belief system",
+      "big city",
+      "biographical film",
+      "biography",
+      "biological process",
+      "biology",
+      "bluegrass music",
+      "blues",
+      "blues rock",
+      "board game",
+      "boarding school",
+      "bobsleigh",
+      "body fluid",
+      "borough in the United Kingdom",
+      "borough of Alaska",
+      "bowed string instrument",
+      "boy band",
+      "brass instrument",
+      "bridge by structural type",
+      "broadcasting",
+      "business",
+      "business school",
+      "businessperson",
+      "cable channel",
+      "calendar month",
+      "campus",
+      "capital",
+      "cardiovascular disease",
+      "cathedral",
+      "cause of death",
+      "cemetery",
+      "census area of Alaska",
+      "census-designated place",
+      "ceremonial county of England",
+      "chemical compound",
+      "chemical element",
+      "chemical substance",
+      "chemist",
+      "chess piece",
+      "chief executive officer",
+      "church building",
+      "cinema film format",
+      "circumstellar disk",
+      "city",
+      "city in New Jersey",
+      "city of New York",
+      "city of Pennsylvania",
+      "city of the United States",
+      "city with millions of inhabitants",
+      "city/town",
+      "civil and political rights",
+      "civil war",
+      "clarinet",
+      "class of award",
+      "class of chemical compounds with similar source or occurence",
+      "class of instruments",
+      "climate change",
+      "clinical sign",
+      "coach",
+      "college",
+      "college of the University of Cambridge",
+      "college of the University of Oxford",
+      "college town",
+      "colleges and universities in the United States",
+      "color",
+      "comedy",
+      "comics character",
+      "commune of France",
+      "communication medium",
+      "community college",
+      "competition",
+      "composer",
+      "computer programming",
+      "computer science",
+      "comune of Italy",
+      "concept",
+      "conservatory",
+      "constituency of the Rajya Sabha",
+      "constitutional monarchy",
+      "contemporary R&B",
+      "contemporary folk music",
+      "corporate title",
+      "corporation",
+      "country",
+      "country music",
+      "county of Alabama",
+      "county of Arizona",
+      "county of California",
+      "county of Florida",
+      "county of Illinois",
+      "county of Indiana",
+      "county of Ireland",
+      "county of Maine",
+      "county of Maryland",
+      "county of Massachusetts",
+      "county of Michigan",
+      "county of New Jersey",
+      "county of New York",
+      "county of North Carolina",
+      "county of Ohio",
+      "county of Oregon",
+      "county of Pennsylvania",
+      "county of Texas",
+      "county of Virginia",
+      "county of Washington",
+      "county of Wisconsin",
+      "county seat",
+      "county town",
+      "creative work",
+      "crematory",
+      "crime",
+      "crime fiction",
+      "critic",
+      "cruise ship",
+      "cult film",
+      "currency",
+      "data stream",
+      "dead language",
+      "death",
+      "death metal",
+      "decimal currency",
+      "declaration of independence",
+      "democracy",
+      "departments of France",
+      "designation for an administrative territorial entity",
+      "designer",
+      "detective fiction",
+      "diabetes mellitus",
+      "diaspora",
+      "disco",
+      "disease",
+      "displacement",
+      "district with city status",
+      "division",
+      "doctrine",
+      "documentary film",
+      "dog",
+      "double act",
+      "drama",
+      "drama film",
+      "drawing",
+      "drug",
+      "drum",
+      "duo",
+      "dynasty",
+      "economic branch",
+      "editorial collection",
+      "education",
+      "educational institution",
+      "educational year",
+      "electric piano",
+      "electronic dance music",
+      "electronic device",
+      "electronic music",
+      "electronic musical instrument",
+      "emotion",
+      "empire",
+      "energy",
+      "engineering",
+      "enterprise",
+      "entertainment",
+      "entrepreneur",
+      "environmentalism",
+      "episode",
+      "equity",
+      "estate in land",
+      "ethnic community",
+      "ethnic group",
+      "execution method",
+      "experience",
+      "experimental music",
+      "extracellular fluid",
+      "eye color",
+      "facility",
+      "family",
+      "family name",
+      "family of isomeric compounds",
+      "fantasy",
+      "fat",
+      "feature film",
+      "female given name",
+      "fiction",
+      "fictional character",
+      "fictional duck",
+      "fictional energy",
+      "fictional extraterrestrial",
+      "fictional government",
+      "fictional human",
+      "fictional profession",
+      "fictional species",
+      "fictional universe",
+      "fighting game",
+      "film",
+      "film award",
+      "film character",
+      "film festival",
+      "film festival edition",
+      "film format",
+      "film gauge",
+      "film genre",
+      "film noir",
+      "film production company",
+      "film series",
+      "filmmaking",
+      "filmmaking occupation",
+      "final",
+      "finance minister",
+      "financial services",
+      "first-level administrative country subdivision",
+      "first-person shooter",
+      "folk rock",
+      "folklore",
+      "food",
+      "food ingredient",
+      "forest",
+      "form of government",
+      "former French region",
+      "formula",
+      "forward",
+      "foundation",
+      "free software copyleft license",
+      "free software license",
+      "front",
+      "functional programming",
+      "funk",
+      "game show",
+      "garage rock",
+      "general officer",
+      "genetic disease",
+      "genre",
+      "geographic region",
+      "glacial lake",
+      "gospel music",
+      "government",
+      "governor",
+      "group",
+      "group action",
+      "group of fictional characters",
+      "group of organisms known by one particular common name",
+      "group or class of chemical substances",
+      "guitar",
+      "guitarist",
+      "hardcore",
+      "hardcore punk",
+      "has part",
+      "head of government",
+      "health care",
+      "heavy metal",
+      "heritage designation",
+      "high school",
+      "higher education institution",
+      "hip hop music",
+      "historic county of England",
+      "historical country",
+      "historical fiction",
+      "historical period",
+      "historical period drama",
+      "history",
+      "homicide",
+      "horse",
+      "house cat",
+      "house music",
+      "human",
+      "human biblical figure",
+      "human rights",
+      "human settlement",
+      "humor magazine",
+      "humour",
+      "ice hockey team",
+      "imperative programming",
+      "impresario",
+      "improvised explosive device",
+      "independent city",
+      "independent city of Germany",
+      "independent music",
+      "independent record label",
+      "independent school",
+      "industrial music",
+      "industry",
+      "infectious disease",
+      "initialism",
+      "inner planet",
+      "interdisciplinarity",
+      "interstellar cloud",
+      "island",
+      "island group",
+      "island nation",
+      "jam band",
+      "jazz",
+      "journalist",
+      "judge",
+      "jump blues",
+      "keyboard instrument",
+      "keyboardist",
+      "killing",
+      "knowledge",
+      "lake",
+      "land vehicle",
+      "land-grant university",
+      "landform",
+      "language",
+      "language family",
+      "law",
+      "law degree",
+      "law school",
+      "lawyer",
+      "learned society",
+      "legal institution",
+      "legislative term",
+      "legislator",
+      "liberal arts college",
+      "liberal arts college in the United States",
+      "literary award",
+      "literary genre",
+      "literary work",
+      "literature",
+      "lyricist",
+      "magnet school",
+      "male given name",
+      "male organism",
+      "management",
+      "manga",
+      "manifestation",
+      "manner of death",
+      "marine propulsion",
+      "market town",
+      "marketing",
+      "marriage",
+      "martial arts",
+      "master's degree",
+      "mathematician",
+      "mathematics",
+      "mechanical wave",
+      "medal",
+      "media franchise",
+      "medical specialty",
+      "medication",
+      "medicine",
+      "melodrama",
+      "member of parliament",
+      "mental disorder",
+      "mercenary",
+      "merchant",
+      "metalcore",
+      "method",
+      "metropolis",
+      "metropolitan area",
+      "metropolitan borough",
+      "military branch",
+      "military officer",
+      "military rank",
+      "miniseries",
+      "minister",
+      "model",
+      "modern language",
+      "monarch",
+      "monster",
+      "motor vehicle",
+      "mountain range",
+      "municipality of Germany",
+      "municipality of Portugal",
+      "municipality of the Netherlands",
+      "museum",
+      "music",
+      "music genre",
+      "music scene",
+      "musical",
+      "musical composition",
+      "musical instrument",
+      "musical instrument part",
+      "musician",
+      "mythical creature",
+      "mythology",
+      "national association football team",
+      "national cuisine",
+      "national park",
+      "national university",
+      "nationality",
+      "natural disaster",
+      "natural language",
+      "natural satellite",
+      "neighborhood",
+      "new wave",
+      "news",
+      "newscast",
+      "newspaper",
+      "non-metropolitan county",
+      "non-metropolitan district",
+      "nonprofit organization",
+      "novel",
+      "occupation",
+      "official",
+      "opera",
+      "operating system",
+      "optical illusion",
+      "orange",
+      "organization",
+      "outfielder",
+      "pain",
+      "painting",
+      "palace",
+      "paranormal",
+      "parish of Louisiana",
+      "pathogen",
+      "pattern of behaviour",
+      "peninsula",
+      "performing arts",
+      "permissive free software licence",
+      "phase of life",
+      "phenomenon",
+      "philosophical movement",
+      "philosophy",
+      "photograph",
+      "physician",
+      "physics engine",
+      "physiological condition",
+      "piano",
+      "pitcher",
+      "planetary system",
+      "play",
+      "plucked string instrument",
+      "poetry",
+      "political cinema",
+      "political ideology",
+      "political party",
+      "political philosophy",
+      "politician",
+      "politics",
+      "pome",
+      "pop music",
+      "pop rock",
+      "popular music",
+      "port city",
+      "position",
+      "post-hardcore",
+      "post-industrial music",
+      "postmodernism",
+      "power pop",
+      "prefecture of Japan",
+      "president",
+      "presidential system",
+      "prime minister",
+      "print",
+      "private not-for-profit educational institution",
+      "private school",
+      "private university",
+      "privately held company",
+      "problem",
+      "process",
+      "product",
+      "profession",
+      "professional sports team",
+      "programming language",
+      "programming paradigm",
+      "progressive rock",
+      "property",
+      "proprietary software",
+      "province of Canada",
+      "province of China",
+      "province of Italy",
+      "province of Spain",
+      "province of the Netherlands",
+      "province of the Philippines",
+      "provincial or territorial capital city in Canada",
+      "psychedelic rock",
+      "psychosis",
+      "public company",
+      "public educational institution of the United States",
+      "public office",
+      "public university",
+      "punk rock",
+      "radio format",
+      "railway station",
+      "ranking",
+      "real property",
+      "record label",
+      "recurring event",
+      "red",
+      "reggae",
+      "region of France",
+      "region of Italy",
+      "religion",
+      "religious building",
+      "religious denomination",
+      "religious identity",
+      "republic",
+      "research",
+      "research institute",
+      "research university",
+      "researcher",
+      "reserve currency",
+      "residue",
+      "respiratory system disease",
+      "restaurant",
+      "return specialist",
+      "rhythm and blues",
+      "rights",
+      "river",
+      "road",
+      "rock",
+      "rock and roll",
+      "rock band",
+      "rock music",
+      "rockabilly",
+      "role",
+      "role-playing game",
+      "role-playing video game",
+      "romance film",
+      "running back",
+      "satire",
+      "saxophone",
+      "scene",
+      "school",
+      "school district",
+      "science",
+      "science award",
+      "science fiction",
+      "scientist",
+      "screenwriter",
+      "sea",
+      "second largest city",
+      "secondary school",
+      "secretary of state",
+      "sectarian violence",
+      "seminary",
+      "sex",
+      "shoegazing",
+      "shooter game",
+      "short film",
+      "short gun",
+      "silent film",
+      "single",
+      "single-tier municipality",
+      "situation comedy",
+      "social group",
+      "social issue",
+      "social movement",
+      "social science",
+      "software",
+      "software engineering",
+      "software license",
+      "song",
+      "songwriter",
+      "sorority",
+      "soul music",
+      "sound",
+      "soundtrack",
+      "soundtrack album",
+      "sovereign state",
+      "speaker",
+      "special administrative region of China",
+      "special effects",
+      "special ward of Japan",
+      "specialty channel",
+      "speed metal",
+      "speed skating",
+      "spirit",
+      "sport",
+      "sport discipline",
+      "sports season",
+      "star",
+      "state",
+      "state of Germany",
+      "state of India",
+      "state of the United States",
+      "state or insular area capital in the United States",
+      "state school",
+      "steel guitar",
+      "stop-motion",
+      "strait",
+      "strategy video game",
+      "string",
+      "string instrument",
+      "stroke",
+      "structured programming",
+      "student society",
+      "studio album",
+      "subject of international law",
+      "subsidiary company",
+      "suicide",
+      "superhero",
+      "superpower",
+      "suspension bridge",
+      "symphonic metal",
+      "symphonic rock",
+      "symptom",
+      "synth-pop",
+      "synthesizer",
+      "tabletop game",
+      "taxon",
+      "taxonomic rank",
+      "teacher",
+      "techno",
+      "technology",
+      "television",
+      "television channel",
+      "television character",
+      "television comedy",
+      "television film",
+      "television genre",
+      "television network",
+      "television presenter",
+      "television program",
+      "television series",
+      "television series episode",
+      "television special",
+      "television station",
+      "tennis court",
+      "term",
+      "theater",
+      "theatre award",
+      "theatrical genre",
+      "therapy",
+      "thrash metal",
+      "thriller",
+      "time zone",
+      "title of Mary",
+      "tool",
+      "topology",
+      "town",
+      "town of the United States",
+      "trademark",
+      "tragedy",
+      "trance",
+      "transport accident",
+      "travel",
+      "type of business entity",
+      "type of business entity in the USA",
+      "type of food or dish",
+      "type of sport",
+      "unisex given name",
+      "unitary authority of England",
+      "unitary state",
+      "university",
+      "university-preparatory school",
+      "unsaturated fat",
+      "urban area of Sweden",
+      "urban rail transit",
+      "vegetarianism",
+      "version, edition, or translation",
+      "vice president",
+      "video game",
+      "video game console model",
+      "video game developer",
+      "video game genre",
+      "video game publisher",
+      "village",
+      "village in the United States",
+      "violin",
+      "visual artwork",
+      "vocal music",
+      "voice actor",
+      "volleyball",
+      "war",
+      "water area",
+      "wind instrument",
+      "winger",
+      "woodwind instrument",
+      "writer",
+      "written work",
+      "zither",
+      "zone of Nepal"
+    ]
+  },
+  "observed_value_types_by_role": {
+    "attribute": {
+      "ABS ASCL code": [
+        "string"
+      ],
+      "ACM Classification Code (2012)": [
+        "string"
+      ],
+      "AISHE code": [
+        "string"
+      ],
+      "ARCHON code": [
+        "string"
+      ],
+      "ASIN": [
+        "string"
+      ],
+      "ATC code": [
+        "string"
+      ],
+      "Academia.edu profile URL": [
+        "string"
+      ],
+      "Alexa rank": [
+        "quantity"
+      ],
+      "Amazon author page": [
+        "string"
+      ],
+      "Ameblo username": [
+        "string"
+      ],
+      "Amsterdam code": [
+        "string"
+      ],
+      "Amtrak station code": [
+        "string"
+      ],
+      "Arch Linux package": [
+        "string"
+      ],
+      "Artists in Canada record number": [
+        "string"
+      ],
+      "Artsy gene": [
+        "string"
+      ],
+      "Australian Business Number": [
+        "string"
+      ],
+      "Australian Company Number": [
+        "string"
+      ],
+      "Austrian municipality key": [
+        "string"
+      ],
+      "BMLO": [
+        "string"
+      ],
+      "Biografisch Portaal number": [
+        "string"
+      ],
+      "Biographical Dictionary of Swedish Women": [
+        "string"
+      ],
+      "Brazilian municipality code": [
+        "string"
+      ],
+      "British Museum bioID": [
+        "string"
+      ],
+      "British Museum person-institution": [
+        "string"
+      ],
+      "Bulbapedia article": [
+        "string"
+      ],
+      "CANTIC-ID": [
+        "string"
+      ],
+      "CAS Registry Number": [
+        "string"
+      ],
+      "CBS municipality code": [
+        "string"
+      ],
+      "CIVICUS Monitor country entry": [
+        "string"
+      ],
+      "CLARA-ID": [
+        "string"
+      ],
+      "CRICOS Provider Code": [
+        "string"
+      ],
+      "CVR number": [
+        "string"
+      ],
+      "Catalogus Professorum Halensis": [
+        "string"
+      ],
+      "Caverphone": [
+        "string"
+      ],
+      "Central Index Key": [
+        "string"
+      ],
+      "Charity Commission no.": [
+        "string"
+      ],
+      "China administrative division code": [
+        "string"
+      ],
+      "Classification of Instructional Programs code": [
+        "string"
+      ],
+      "Code of Household Registration and Conscription Information System (Taiwan)": [
+        "string"
+      ],
+      "Cologne phonetics": [
+        "string"
+      ],
+      "Common Procurement Vocabulary": [
+        "string"
+      ],
+      "Consolidated code of the electronic catalog of libraries of Belarus": [
+        "string"
+      ],
+      "Corporate Number (Japan)": [
+        "string"
+      ],
+      "CosIng number": [
+        "string"
+      ],
+      "Cullum number": [
+        "string"
+      ],
+      "DBU playerprofile": [
+        "string"
+      ],
+      "DNB editions": [
+        "string"
+      ],
+      "DOI": [
+        "string"
+      ],
+      "DOI prefix": [
+        "string"
+      ],
+      "DSM-5 classification": [
+        "string"
+      ],
+      "Danish urban area code": [
+        "string"
+      ],
+      "Debian stable package": [
+        "string"
+      ],
+      "Deutsche Synchronkartei actor-ID": [
+        "string"
+      ],
+      "Dewey Decimal Classification": [
+        "string"
+      ],
+      "DfE URN": [
+        "string"
+      ],
+      "Dictionary of Medieval Names from European Sources entry": [
+        "string"
+      ],
+      "Dictionary of New Zealand Biography": [
+        "string"
+      ],
+      "Dictionary of Swedish National Biography": [
+        "string"
+      ],
+      "DiseasesDB": [
+        "string"
+      ],
+      "Dreadnought Project page": [
+        "string"
+      ],
+      "E number": [
+        "string"
+      ],
+      "EC number": [
+        "string"
+      ],
+      "EDRPOU code": [
+        "string"
+      ],
+      "ELSTAT geographical code": [
+        "string"
+      ],
+      "EPPO Code": [
+        "string"
+      ],
+      "EU VAT number": [
+        "string"
+      ],
+      "Education Institution Identification Number": [
+        "string"
+      ],
+      "Enterprise number (Belgium)": [
+        "string"
+      ],
+      "Erdős number": [
+        "quantity"
+      ],
+      "Ethnologue.com language code": [
+        "string"
+      ],
+      "FAA airport code": [
+        "string"
+      ],
+      "FIFA country code": [
+        "string"
+      ],
+      "FIPS 10-4 (countries and regions)": [
+        "string"
+      ],
+      "FIPS 5-2 alpha code (US states)": [
+        "string"
+      ],
+      "FIPS 5-2 numeric code (US states)": [
+        "string"
+      ],
+      "FIPS 6-4 (US counties)": [
+        "string"
+      ],
+      "Fedora package": [
+        "string"
+      ],
+      "Finnish municipality number": [
+        "string"
+      ],
+      "GDP (PPP)": [
+        "quantity"
+      ],
+      "GEMS Code": [
+        "string"
+      ],
+      "GOST 7.67 cyrillic": [
+        "string"
+      ],
+      "GOST 7.75–97 code": [
+        "string"
+      ],
+      "GRIN URL": [
+        "string"
+      ],
+      "GS1 Global Product Classification brick code": [
+        "string"
+      ],
+      "GS1 Manufacturer code": [
+        "string"
+      ],
+      "GS1 country code": [
+        "string"
+      ],
+      "GSS code (2011)": [
+        "string"
+      ],
+      "Gentoo package": [
+        "string"
+      ],
+      "GeoNames feature code": [
+        "string"
+      ],
+      "German district key": [
+        "string"
+      ],
+      "German municipality key": [
+        "string"
+      ],
+      "German regional key": [
+        "string"
+      ],
+      "Gini coefficient": [
+        "quantity"
+      ],
+      "Giphy username": [
+        "string"
+      ],
+      "GitHub username": [
+        "string"
+      ],
+      "Glottolog code": [
+        "string"
+      ],
+      "Gmelin number": [
+        "string"
+      ],
+      "Google Doodle": [
+        "string"
+      ],
+      "HTML entity": [
+        "string"
+      ],
+      "Harmonized System Code": [
+        "string"
+      ],
+      "Hornbostel-Sachs classification": [
+        "string"
+      ],
+      "Human Development Index": [
+        "quantity"
+      ],
+      "IAB code": [
+        "string"
+      ],
+      "IATA airline designator": [
+        "string"
+      ],
+      "IATA airport code": [
+        "string"
+      ],
+      "ICAO airline designator": [
+        "string"
+      ],
+      "ICAO airport code": [
+        "string"
+      ],
+      "ICD-10": [
+        "string"
+      ],
+      "ICD-10-CM": [
+        "string"
+      ],
+      "ICD-9": [
+        "string"
+      ],
+      "ICD-9-CM": [
+        "string"
+      ],
+      "ICD-O": [
+        "string"
+      ],
+      "IDESCAT territorial code in Catalonia": [
+        "string"
+      ],
+      "IDLH": [
+        "quantity"
+      ],
+      "IETF language tag": [
+        "string"
+      ],
+      "IIIF manifest": [
+        "string"
+      ],
+      "IMO ship number": [
+        "string"
+      ],
+      "INE municipality code": [
+        "string"
+      ],
+      "INSEE countries and foreign territories code": [
+        "string"
+      ],
+      "INSEE department code": [
+        "string"
+      ],
+      "INSEE municipality code": [
+        "string"
+      ],
+      "INSEE region code": [
+        "string"
+      ],
+      "IOC country code": [
+        "string"
+      ],
+      "IPI base code": [
+        "string"
+      ],
+      "IPI name number": [
+        "string"
+      ],
+      "IPTC Newscode": [
+        "string"
+      ],
+      "IPv4 routing prefix": [
+        "string"
+      ],
+      "IPv6 routing prefix": [
+        "string"
+      ],
+      "IRC channel": [
+        "string"
+      ],
+      "IRS Employer Identification Number": [
+        "string"
+      ],
+      "ISBN publisher prefix": [
+        "string"
+      ],
+      "ISBN-10": [
+        "string"
+      ],
+      "ISBN-13": [
+        "string"
+      ],
+      "ISCO occupation code": [
+        "string"
+      ],
+      "ISIN": [
+        "string"
+      ],
+      "ISNI": [
+        "string"
+      ],
+      "ISO 15924 alpha-4 code": [
+        "string"
+      ],
+      "ISO 15924 numeric code": [
+        "string"
+      ],
+      "ISO 3166-1 alpha-2 code": [
+        "string"
+      ],
+      "ISO 3166-1 alpha-3 code": [
+        "string"
+      ],
+      "ISO 3166-1 numeric code": [
+        "string"
+      ],
+      "ISO 3166-2 code": [
+        "string"
+      ],
+      "ISO 3166-3": [
+        "string"
+      ],
+      "ISO 4217 code": [
+        "string"
+      ],
+      "ISO 639-1 code": [
+        "string"
+      ],
+      "ISO 639-2 code": [
+        "string"
+      ],
+      "ISO 639-3 code": [
+        "string"
+      ],
+      "ISO 639-5 code": [
+        "string"
+      ],
+      "ISO 9362 SWIFT/BIC code": [
+        "string"
+      ],
+      "ISO standard": [
+        "string"
+      ],
+      "ISSN": [
+        "string"
+      ],
+      "ISWC": [
+        "string"
+      ],
+      "ITIS TSN": [
+        "string"
+      ],
+      "ITU letter code": [
+        "string"
+      ],
+      "Iconclass notation": [
+        "string"
+      ],
+      "InChI": [
+        "string"
+      ],
+      "InChIKey": [
+        "string"
+      ],
+      "Index Herbariorum code": [
+        "string"
+      ],
+      "Indian census area code (1991)": [
+        "string"
+      ],
+      "Indian census area code (2001)": [
+        "string"
+      ],
+      "Indian census area code (2011)": [
+        "string"
+      ],
+      "Instagram username": [
+        "string"
+      ],
+      "International Standard Industrial Classification code Rev.4": [
+        "string"
+      ],
+      "Iranian National Heritage registration number": [
+        "string"
+      ],
+      "Irish Grid Reference": [
+        "string"
+      ],
+      "Italian cadastre code": [
+        "string"
+      ],
+      "KLG Kritisches Lexikon der Gegenwartsliteratur": [
+        "string"
+      ],
+      "KLfG Critical Dictionary of foreign contemporary literature": [
+        "string"
+      ],
+      "KSH code": [
+        "string"
+      ],
+      "Kemler code": [
+        "string"
+      ],
+      "KldB-2010 occupation code": [
+        "string"
+      ],
+      "KulturNav-id": [
+        "string"
+      ],
+      "LAU": [
+        "string"
+      ],
+      "LIBRIS editions": [
+        "string"
+      ],
+      "Library of Congress Classification": [
+        "string"
+      ],
+      "Library of Congress Cultural Heritage Organizations": [
+        "string"
+      ],
+      "Libris-URI": [
+        "string"
+      ],
+      "Linguasphere code": [
+        "string"
+      ],
+      "LinkedIn personal profile URL": [
+        "string"
+      ],
+      "M.49 code": [
+        "string"
+      ],
+      "MAME ROM name": [
+        "string"
+      ],
+      "MCN code": [
+        "string"
+      ],
+      "MIL-STD-2525 Symbol Identification Code": [
+        "string"
+      ],
+      "Mastodon address": [
+        "string"
+      ],
+      "McCune-Reischauer romanization": [
+        "string"
+      ],
+      "MeSH Code": [
+        "string"
+      ],
+      "Medium username": [
+        "string"
+      ],
+      "Merchant Category Code": [
+        "string"
+      ],
+      "Minitel code": [
+        "string"
+      ],
+      "Minor Planet Center observatory code": [
+        "string"
+      ],
+      "Munzinger IBA": [
+        "string"
+      ],
+      "Munzinger Sport number": [
+        "string"
+      ],
+      "Museofile": [
+        "string"
+      ],
+      "NACE code": [
+        "string"
+      ],
+      "NBN System Key": [
+        "string"
+      ],
+      "NIS/INS code": [
+        "string"
+      ],
+      "NLC authorities": [
+        "string"
+      ],
+      "NOC Occupation Code": [
+        "string"
+      ],
+      "NRHP reference number": [
+        "string"
+      ],
+      "NSDAP membership number (1925–1945)": [
+        "string"
+      ],
+      "NUTS code": [
+        "string"
+      ],
+      "Name Assigning Authority Number": [
+        "string"
+      ],
+      "National Bridge Inventory Number": [
+        "string"
+      ],
+      "National Heritage List for England number": [
+        "string"
+      ],
+      "Nintendo GameID": [
+        "string"
+      ],
+      "Norway Import Service and Registration Authority publisher code": [
+        "string"
+      ],
+      "Norwegian municipality number": [
+        "string"
+      ],
+      "Norwegian organisation number": [
+        "string"
+      ],
+      "Nupill Literatura Digital - Author": [
+        "string"
+      ],
+      "OCLC control number": [
+        "string"
+      ],
+      "OKPD code of the good or service": [
+        "string"
+      ],
+      "OKPD2 code of the good or service": [
+        "string"
+      ],
+      "OLAC video game genre vocabulary": [
+        "string"
+      ],
+      "OS grid reference": [
+        "string"
+      ],
+      "OSM tag or key": [
+        "string"
+      ],
+      "OpenCorporates corporate grouping": [
+        "string"
+      ],
+      "PCP reference number": [
+        "string"
+      ],
+      "PO Box": [
+        "string"
+      ],
+      "PPP GDP per capita": [
+        "quantity"
+      ],
+      "Parsons code": [
+        "string"
+      ],
+      "Party Number (Taiwan)": [
+        "string"
+      ],
+      "PermID": [
+        "string"
+      ],
+      "PhilPapers topic": [
+        "string"
+      ],
+      "Philippine Standard Geographic Code": [
+        "string"
+      ],
+      "PictoRight ID-Droit de suite": [
+        "string"
+      ],
+      "Pinterest username": [
+        "string"
+      ],
+      "PlantList-ID": [
+        "string"
+      ],
+      "Politika topic": [
+        "string"
+      ],
+      "Portable Game Notation": [
+        "string"
+      ],
+      "Portuguese Job Code CPP-2010": [
+        "string"
+      ],
+      "PubChem CID": [
+        "string"
+      ],
+      "PubMed Health": [
+        "string"
+      ],
+      "Quebec municipalities geographical code": [
+        "string"
+      ],
+      "Quora username": [
+        "string"
+      ],
+      "RIA Novosti reference": [
+        "string"
+      ],
+      "ROME Occupation Code (v3)": [
+        "string"
+      ],
+      "RTECS number": [
+        "string"
+      ],
+      "RePEc Short-ID": [
+        "string"
+      ],
+      "Reaxys registry number": [
+        "string"
+      ],
+      "Reddit username": [
+        "string"
+      ],
+      "Regensburg Classification": [
+        "string"
+      ],
+      "ResearcherID": [
+        "string"
+      ],
+      "Revised Hepburn romanization": [
+        "string"
+      ],
+      "Revised Romanization": [
+        "string"
+      ],
+      "RxNorm CUI": [
+        "string"
+      ],
+      "SBC-2010 occupation code": [
+        "string"
+      ],
+      "SIC code": [
+        "string"
+      ],
+      "SIREN number": [
+        "string"
+      ],
+      "SIRET number": [
+        "string"
+      ],
+      "SIRUTA code": [
+        "string"
+      ],
+      "SOC Code (2010)": [
+        "string"
+      ],
+      "SPLASH": [
+        "string"
+      ],
+      "SSR place name number": [
+        "string"
+      ],
+      "SWB editions": [
+        "string"
+      ],
+      "Scottish Charity number": [
+        "string"
+      ],
+      "SlideShare username": [
+        "string"
+      ],
+      "Snapchat username": [
+        "string"
+      ],
+      "Soundex": [
+        "string"
+      ],
+      "Stack Exchange tag": [
+        "string"
+      ],
+      "Statistics Canada Geographic code": [
+        "string"
+      ],
+      "Statistics Indonesia ethnicity code": [
+        "string"
+      ],
+      "Swedish Anbytarforum": [
+        "string"
+      ],
+      "Swedish Literature Bank AuthorID": [
+        "string"
+      ],
+      "Swedish Organization Number": [
+        "string"
+      ],
+      "Swedish municipality code": [
+        "string"
+      ],
+      "Swedish urban area code": [
+        "string"
+      ],
+      "Swiss Football Association Club Number": [
+        "string"
+      ],
+      "Swiss municipality code": [
+        "string"
+      ],
+      "Sächsische Biografie": [
+        "string"
+      ],
+      "TA98 Latin term": [
+        "string"
+      ],
+      "TERYT municipality code": [
+        "string"
+      ],
+      "TOID": [
+        "string"
+      ],
+      "TeX string": [
+        "string"
+      ],
+      "Telegram username": [
+        "string"
+      ],
+      "Thailand central administrative unit code": [
+        "string"
+      ],
+      "Twitter hashtag": [
+        "string"
+      ],
+      "Twitter username": [
+        "string"
+      ],
+      "UAI code": [
+        "string"
+      ],
+      "UIC alphabetical country code": [
+        "string"
+      ],
+      "UIC numerical country code": [
+        "string"
+      ],
+      "UK Provider Reference Number": [
+        "string"
+      ],
+      "UMLS CUI": [
+        "string"
+      ],
+      "UN class": [
+        "string"
+      ],
+      "UN number": [
+        "string"
+      ],
+      "UN packaging group": [
+        "string"
+      ],
+      "UN/LOCODE": [
+        "string"
+      ],
+      "UNDP country code": [
+        "string"
+      ],
+      "UNESCO Biosphere Reserve url": [
+        "string"
+      ],
+      "UNII": [
+        "string"
+      ],
+      "UNSPSC Code": [
+        "string"
+      ],
+      "USDA NDB number": [
+        "string"
+      ],
+      "Ubuntu package": [
+        "string"
+      ],
+      "United States Armed Forces service number": [
+        "string"
+      ],
+      "Universal Decimal Classification": [
+        "string"
+      ],
+      "VAT-rate": [
+        "quantity"
+      ],
+      "Vimeo username": [
+        "string"
+      ],
+      "WALS family code": [
+        "string"
+      ],
+      "WALS lect code": [
+        "string"
+      ],
+      "WOEID": [
+        "string"
+      ],
+      "Wikimedia language code": [
+        "string"
+      ],
+      "Wikimedia username": [
+        "string"
+      ],
+      "Wikitribune category": [
+        "string"
+      ],
+      "Wine AppDB-ID": [
+        "string"
+      ],
+      "WoRMS-ID": [
+        "string"
+      ],
+      "World Health Organisation International Nonproprietary Name": [
+        "string"
+      ],
+      "Yahoo Answers category": [
+        "string"
+      ],
+      "ZVG number": [
+        "string"
+      ],
+      "absolute magnitude": [
+        "quantity"
+      ],
+      "administrative code of Indonesia": [
+        "string"
+      ],
+      "admission rate": [
+        "quantity"
+      ],
+      "age of candidacy": [
+        "quantity"
+      ],
+      "age of consent": [
+        "quantity"
+      ],
+      "age of majority": [
+        "quantity"
+      ],
+      "aircraft registration prefix": [
+        "string"
+      ],
+      "airline accounting code": [
+        "string"
+      ],
+      "albedo": [
+        "quantity"
+      ],
+      "amateur radio callsign": [
+        "string"
+      ],
+      "angular diameter": [
+        "quantity"
+      ],
+      "annual number of weddings": [
+        "quantity"
+      ],
+      "apoapsis": [
+        "quantity"
+      ],
+      "apparent magnitude": [
+        "quantity"
+      ],
+      "archival creator authority record at the Archives nationales": [
+        "string"
+      ],
+      "area": [
+        "quantity"
+      ],
+      "argument of periapsis": [
+        "quantity"
+      ],
+      "atomic number": [
+        "quantity"
+      ],
+      "attendance": [
+        "quantity"
+      ],
+      "audio recording of the subject's spoken voice": [
+        "string"
+      ],
+      "author citation (zoology)": [
+        "string"
+      ],
+      "autoignition temperature": [
+        "quantity"
+      ],
+      "autonomous system number": [
+        "string"
+      ],
+      "average shot length": [
+        "quantity"
+      ],
+      "awarded for period": [
+        "year"
+      ],
+      "base salary": [
+        "quantity"
+      ],
+      "beam": [
+        "quantity"
+      ],
+      "beats per minute": [
+        "quantity"
+      ],
+      "birth name": [
+        "string"
+      ],
+      "boiling point": [
+        "quantity"
+      ],
+      "botanist author abbreviation": [
+        "string"
+      ],
+      "box office": [
+        "quantity"
+      ],
+      "budget": [
+        "quantity"
+      ],
+      "bug tracking system": [
+        "string"
+      ],
+      "call sign": [
+        "string"
+      ],
+      "callsign of airline": [
+        "string"
+      ],
+      "canonical SMILES": [
+        "string"
+      ],
+      "cash": [
+        "quantity"
+      ],
+      "catalog code": [
+        "string"
+      ],
+      "catchphrase": [
+        "string"
+      ],
+      "ceiling exposure limit": [
+        "quantity"
+      ],
+      "central government debt as a percent of GDP": [
+        "quantity"
+      ],
+      "channel number": [
+        "string"
+      ],
+      "charter URL": [
+        "string"
+      ],
+      "chemical formula": [
+        "string"
+      ],
+      "chemical structure": [
+        "string"
+      ],
+      "clearance": [
+        "quantity"
+      ],
+      "codename": [
+        "string"
+      ],
+      "collection or exhibition size": [
+        "quantity"
+      ],
+      "combustion enthalpy": [
+        "quantity"
+      ],
+      "compressive modulus of elasticity": [
+        "quantity"
+      ],
+      "compulsory education (maximum age)": [
+        "quantity"
+      ],
+      "compulsory education (minimum age)": [
+        "quantity"
+      ],
+      "consumption rate": [
+        "quantity"
+      ],
+      "consumption rate per capita": [
+        "quantity"
+      ],
+      "cost": [
+        "quantity"
+      ],
+      "country calling code": [
+        "string"
+      ],
+      "dantai code": [
+        "string"
+      ],
+      "date depicted": [
+        "year"
+      ],
+      "date of baptism in early childhood": [
+        "date"
+      ],
+      "date of birth": [
+        "date",
+        "year"
+      ],
+      "date of burial or cremation": [
+        "date"
+      ],
+      "date of death": [
+        "date",
+        "year"
+      ],
+      "date of first performance": [
+        "date",
+        "year"
+      ],
+      "date of official opening": [
+        "date",
+        "year"
+      ],
+      "decomposition point": [
+        "quantity"
+      ],
+      "defined daily dose": [
+        "quantity"
+      ],
+      "demonym": [
+        "string"
+      ],
+      "density": [
+        "quantity"
+      ],
+      "depicts Iconclass notation": [
+        "string"
+      ],
+      "detail map": [
+        "string"
+      ],
+      "diameter": [
+        "quantity"
+      ],
+      "discharge": [
+        "quantity"
+      ],
+      "discontinued date": [
+        "date",
+        "year"
+      ],
+      "disease burden": [
+        "quantity"
+      ],
+      "dissolved, abolished or demolished": [
+        "date",
+        "year"
+      ],
+      "distance from Earth": [
+        "quantity"
+      ],
+      "distribution map": [
+        "string"
+      ],
+      "doubles record": [
+        "string"
+      ],
+      "draft": [
+        "quantity"
+      ],
+      "duration": [
+        "quantity"
+      ],
+      "dynamic viscosity": [
+        "quantity"
+      ],
+      "e-mail address": [
+        "string"
+      ],
+      "eMedicine": [
+        "string"
+      ],
+      "earliest date": [
+        "year"
+      ],
+      "edition number": [
+        "string"
+      ],
+      "electorate": [
+        "quantity"
+      ],
+      "electrical conductivity": [
+        "quantity"
+      ],
+      "electronegativity": [
+        "quantity"
+      ],
+      "element symbol": [
+        "string"
+      ],
+      "elevation above sea level": [
+        "quantity"
+      ],
+      "eligible voters": [
+        "quantity"
+      ],
+      "embodied energy": [
+        "quantity"
+      ],
+      "employees": [
+        "quantity"
+      ],
+      "end time": [
+        "date",
+        "year"
+      ],
+      "event distance": [
+        "quantity"
+      ],
+      "exploitation visa number": [
+        "string"
+      ],
+      "external data available at": [
+        "string"
+      ],
+      "fax number": [
+        "string"
+      ],
+      "fee": [
+        "quantity"
+      ],
+      "female population": [
+        "quantity"
+      ],
+      "file extension": [
+        "string"
+      ],
+      "film poster": [
+        "string"
+      ],
+      "first flight": [
+        "date"
+      ],
+      "first line": [
+        "string"
+      ],
+      "fiscal/tax revenue": [
+        "quantity"
+      ],
+      "flash point": [
+        "quantity"
+      ],
+      "flattening": [
+        "quantity"
+      ],
+      "fleet or registration number": [
+        "string"
+      ],
+      "floors above ground": [
+        "quantity"
+      ],
+      "floors below ground": [
+        "quantity"
+      ],
+      "floruit": [
+        "year"
+      ],
+      "foreign direct investment net inflow": [
+        "quantity"
+      ],
+      "foreign direct investment net outflow": [
+        "quantity"
+      ],
+      "format as a regular expression": [
+        "string"
+      ],
+      "frequency of event": [
+        "quantity"
+      ],
+      "full work available at": [
+        "string"
+      ],
+      "heart rate": [
+        "quantity"
+      ],
+      "height": [
+        "quantity"
+      ],
+      "illiterate population": [
+        "quantity"
+      ],
+      "inception": [
+        "date",
+        "year"
+      ],
+      "incidence": [
+        "quantity"
+      ],
+      "individual tax rate": [
+        "quantity"
+      ],
+      "inflation rate": [
+        "quantity"
+      ],
+      "inscription": [
+        "string"
+      ],
+      "inventory number": [
+        "string"
+      ],
+      "ionization energy": [
+        "quantity"
+      ],
+      "last line": [
+        "string"
+      ],
+      "last words": [
+        "string"
+      ],
+      "length": [
+        "quantity"
+      ],
+      "licence plate code": [
+        "string"
+      ],
+      "life expectancy": [
+        "quantity"
+      ],
+      "literate population": [
+        "quantity"
+      ],
+      "local dialing code": [
+        "string"
+      ],
+      "located at street address": [
+        "string"
+      ],
+      "located at street address (DEPRECATED)": [
+        "string"
+      ],
+      "longest span": [
+        "quantity"
+      ],
+      "longitude of ascending node": [
+        "quantity"
+      ],
+      "lower flammable limit": [
+        "quantity"
+      ],
+      "luminosity": [
+        "quantity"
+      ],
+      "magnetic moment": [
+        "quantity"
+      ],
+      "mains voltage": [
+        "quantity"
+      ],
+      "male population": [
+        "quantity"
+      ],
+      "maritime identification digits": [
+        "string"
+      ],
+      "market capitalization": [
+        "quantity"
+      ],
+      "marriageable age": [
+        "quantity"
+      ],
+      "married name": [
+        "string"
+      ],
+      "mass": [
+        "quantity"
+      ],
+      "maximal incubation period in humans": [
+        "quantity"
+      ],
+      "maximum capacity": [
+        "quantity"
+      ],
+      "maximum frequency of audible sound": [
+        "quantity"
+      ],
+      "maximum number of players": [
+        "quantity"
+      ],
+      "mean age": [
+        "quantity"
+      ],
+      "mean anomaly": [
+        "quantity"
+      ],
+      "media type": [
+        "string"
+      ],
+      "median income": [
+        "quantity"
+      ],
+      "median lethal dose": [
+        "quantity"
+      ],
+      "melting point": [
+        "quantity"
+      ],
+      "member count": [
+        "quantity"
+      ],
+      "metallicity": [
+        "quantity"
+      ],
+      "minimal incubation period in humans": [
+        "quantity"
+      ],
+      "minimum age": [
+        "quantity"
+      ],
+      "minimum explosive concentration": [
+        "quantity"
+      ],
+      "minimum frequency of audible sound": [
+        "quantity"
+      ],
+      "minimum number of players": [
+        "quantity"
+      ],
+      "mobile country code": [
+        "string"
+      ],
+      "monogram": [
+        "string"
+      ],
+      "motto text": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "name in kana": [
+        "string"
+      ],
+      "name in native language": [
+        "string"
+      ],
+      "native label": [
+        "string"
+      ],
+      "net profit": [
+        "quantity"
+      ],
+      "net worth": [
+        "quantity"
+      ],
+      "nickname": [
+        "string"
+      ],
+      "nighttime view": [
+        "string"
+      ],
+      "nominal GDP": [
+        "quantity"
+      ],
+      "nominal GDP per capita": [
+        "quantity"
+      ],
+      "number of cases": [
+        "quantity"
+      ],
+      "number of children": [
+        "quantity"
+      ],
+      "number of constituencies": [
+        "quantity"
+      ],
+      "number of deaths": [
+        "quantity"
+      ],
+      "number of elevators": [
+        "quantity"
+      ],
+      "number of episodes": [
+        "quantity"
+      ],
+      "number of graves": [
+        "quantity"
+      ],
+      "number of households": [
+        "quantity"
+      ],
+      "number of houses": [
+        "quantity"
+      ],
+      "number of out-of-school children": [
+        "quantity"
+      ],
+      "number of pages": [
+        "quantity"
+      ],
+      "number of participants": [
+        "quantity"
+      ],
+      "number of parts of this work of art": [
+        "quantity"
+      ],
+      "number of representatives in an organization/legislature": [
+        "quantity"
+      ],
+      "number of seasons": [
+        "quantity"
+      ],
+      "number of seats": [
+        "quantity"
+      ],
+      "number of spans": [
+        "quantity"
+      ],
+      "number of speakers": [
+        "quantity"
+      ],
+      "number of subscribers": [
+        "quantity"
+      ],
+      "official blog": [
+        "string"
+      ],
+      "official name": [
+        "string"
+      ],
+      "official website": [
+        "string"
+      ],
+      "operating income": [
+        "quantity"
+      ],
+      "orbital eccentricity": [
+        "quantity"
+      ],
+      "orbital inclination": [
+        "quantity"
+      ],
+      "orbital period": [
+        "quantity"
+      ],
+      "oxidation state": [
+        "quantity"
+      ],
+      "pKa": [
+        "quantity"
+      ],
+      "page(s)": [
+        "string"
+      ],
+      "parliament.uk biography pages": [
+        "string"
+      ],
+      "patronage": [
+        "quantity"
+      ],
+      "periapsis": [
+        "quantity"
+      ],
+      "perimeter": [
+        "quantity"
+      ],
+      "personal best": [
+        "quantity"
+      ],
+      "phone number": [
+        "string"
+      ],
+      "place name sign": [
+        "string"
+      ],
+      "point in time": [
+        "date",
+        "year"
+      ],
+      "population": [
+        "quantity"
+      ],
+      "post town": [
+        "string"
+      ],
+      "postal code": [
+        "string"
+      ],
+      "prevalence": [
+        "quantity"
+      ],
+      "price": [
+        "quantity"
+      ],
+      "prize money": [
+        "quantity"
+      ],
+      "production code": [
+        "string"
+      ],
+      "production date": [
+        "year"
+      ],
+      "pronunciation audio": [
+        "string"
+      ],
+      "pseudonym": [
+        "string"
+      ],
+      "public domain date": [
+        "date",
+        "year"
+      ],
+      "public key fingerprint": [
+        "string"
+      ],
+      "publication date": [
+        "date",
+        "year"
+      ],
+      "publication interval": [
+        "quantity"
+      ],
+      "quantity": [
+        "quantity"
+      ],
+      "quantity buried": [
+        "quantity"
+      ],
+      "radius": [
+        "quantity"
+      ],
+      "ranking": [
+        "quantity"
+      ],
+      "real gross domestic product growth rate": [
+        "quantity"
+      ],
+      "refractive index": [
+        "quantity"
+      ],
+      "relative permeability": [
+        "quantity"
+      ],
+      "relief location map": [
+        "string"
+      ],
+      "religious name": [
+        "string"
+      ],
+      "residence time of water": [
+        "quantity"
+      ],
+      "retirement age": [
+        "quantity"
+      ],
+      "review score": [
+        "string"
+      ],
+      "road number": [
+        "string"
+      ],
+      "rotation period": [
+        "quantity"
+      ],
+      "runway": [
+        "string"
+      ],
+      "rural population": [
+        "quantity"
+      ],
+      "sRGB color hex triplet": [
+        "string"
+      ],
+      "salinity": [
+        "quantity"
+      ],
+      "schematic": [
+        "string"
+      ],
+      "sectional view": [
+        "string"
+      ],
+      "semi-major axis": [
+        "quantity"
+      ],
+      "series ordinal": [
+        "string"
+      ],
+      "service entry": [
+        "date"
+      ],
+      "short name": [
+        "string"
+      ],
+      "short-term exposure limit": [
+        "quantity"
+      ],
+      "singles record": [
+        "string"
+      ],
+      "snap package": [
+        "string"
+      ],
+      "solubility": [
+        "quantity"
+      ],
+      "spectral class": [
+        "string"
+      ],
+      "speed": [
+        "quantity"
+      ],
+      "speed limit": [
+        "quantity"
+      ],
+      "speed of sound": [
+        "quantity"
+      ],
+      "spoken text audio": [
+        "string"
+      ],
+      "sport number": [
+        "string"
+      ],
+      "sports league level": [
+        "quantity"
+      ],
+      "stall speed": [
+        "quantity"
+      ],
+      "standard enthalpy of formation": [
+        "quantity"
+      ],
+      "standard molar entropy": [
+        "quantity"
+      ],
+      "start time": [
+        "date",
+        "year"
+      ],
+      "streaming media URL": [
+        "string"
+      ],
+      "students count": [
+        "quantity"
+      ],
+      "subreddit": [
+        "string"
+      ],
+      "subtitle": [
+        "string"
+      ],
+      "suicide rate": [
+        "quantity"
+      ],
+      "synodic period": [
+        "quantity"
+      ],
+      "tabular population": [
+        "string"
+      ],
+      "taxon common name": [
+        "string"
+      ],
+      "taxon name": [
+        "string"
+      ],
+      "temperature": [
+        "quantity"
+      ],
+      "term length of office": [
+        "quantity"
+      ],
+      "thermal conductivity": [
+        "quantity"
+      ],
+      "time in space": [
+        "quantity"
+      ],
+      "time index": [
+        "quantity"
+      ],
+      "time of discovery or invention": [
+        "date",
+        "year"
+      ],
+      "time of earliest written record": [
+        "date",
+        "year"
+      ],
+      "time-weighted average exposure limit": [
+        "quantity"
+      ],
+      "timezone offset": [
+        "quantity"
+      ],
+      "title": [
+        "string"
+      ],
+      "total assets": [
+        "quantity"
+      ],
+      "total equity": [
+        "quantity"
+      ],
+      "total expenditure": [
+        "quantity"
+      ],
+      "total exports": [
+        "quantity"
+      ],
+      "total fertility rate": [
+        "quantity"
+      ],
+      "total goals in career": [
+        "quantity"
+      ],
+      "total liabilities": [
+        "quantity"
+      ],
+      "total produced": [
+        "quantity"
+      ],
+      "total reserves": [
+        "quantity"
+      ],
+      "total revenue": [
+        "quantity"
+      ],
+      "transliteration": [
+        "string"
+      ],
+      "trunk prefix": [
+        "string"
+      ],
+      "tuition fee": [
+        "quantity"
+      ],
+      "unemployment rate": [
+        "quantity"
+      ],
+      "units sold": [
+        "quantity"
+      ],
+      "upper flammable limit": [
+        "quantity"
+      ],
+      "urban population": [
+        "quantity"
+      ],
+      "vapor pressure": [
+        "quantity"
+      ],
+      "vehicles per capita (1000)": [
+        "quantity"
+      ],
+      "vertical depth": [
+        "quantity"
+      ],
+      "video": [
+        "string"
+      ],
+      "visitors per year": [
+        "quantity"
+      ],
+      "vocalized name": [
+        "string"
+      ],
+      "voltage": [
+        "quantity"
+      ],
+      "volume": [
+        "string"
+      ],
+      "volume as quantity": [
+        "quantity"
+      ],
+      "water as percent of area": [
+        "quantity"
+      ],
+      "water footprint": [
+        "quantity"
+      ],
+      "watershed area": [
+        "quantity"
+      ],
+      "weather history": [
+        "string"
+      ],
+      "webcam page URL": [
+        "string"
+      ],
+      "width": [
+        "quantity"
+      ],
+      "work period (end)": [
+        "date",
+        "year"
+      ],
+      "work period (start)": [
+        "date",
+        "year"
+      ],
+      "yard number": [
+        "string"
+      ]
+    },
+    "qualifier": {
+      "Brazilian municipality code": [
+        "string"
+      ],
+      "DOI": [
+        "string"
+      ],
+      "EThOS thesis ID": [
+        "string"
+      ],
+      "ISO standard": [
+        "string"
+      ],
+      "McCune-Reischauer romanization": [
+        "string"
+      ],
+      "Möllendorff transliteration": [
+        "string"
+      ],
+      "OSM tag or key": [
+        "string"
+      ],
+      "Revised Hepburn romanization": [
+        "string"
+      ],
+      "Revised Romanization": [
+        "string"
+      ],
+      "academic degree": [
+        "string"
+      ],
+      "academic major": [
+        "string"
+      ],
+      "acquisition transaction": [
+        "string"
+      ],
+      "addressee": [
+        "string"
+      ],
+      "affiliation": [
+        "string"
+      ],
+      "alternate names": [
+        "string"
+      ],
+      "applies to jurisdiction": [
+        "string"
+      ],
+      "applies to name": [
+        "string"
+      ],
+      "applies to part": [
+        "string"
+      ],
+      "applies to people": [
+        "string"
+      ],
+      "applies to taxon": [
+        "string"
+      ],
+      "appointed by": [
+        "string"
+      ],
+      "approved by": [
+        "string"
+      ],
+      "archive date": [
+        "date"
+      ],
+      "author": [
+        "string"
+      ],
+      "author name string": [
+        "string"
+      ],
+      "award rationale": [
+        "string"
+      ],
+      "award received": [
+        "string"
+      ],
+      "based on heuristic": [
+        "string"
+      ],
+      "basic form of government": [
+        "string"
+      ],
+      "burial plot reference": [
+        "string"
+      ],
+      "cabinet": [
+        "string"
+      ],
+      "capital": [
+        "string"
+      ],
+      "captain": [
+        "string"
+      ],
+      "catalog": [
+        "string"
+      ],
+      "catalog code": [
+        "string"
+      ],
+      "cause of death": [
+        "string"
+      ],
+      "central bank/issuer": [
+        "string"
+      ],
+      "character role": [
+        "string"
+      ],
+      "collection": [
+        "string"
+      ],
+      "composer": [
+        "string"
+      ],
+      "conferred by": [
+        "string"
+      ],
+      "conflict": [
+        "string"
+      ],
+      "conscription number": [
+        "string"
+      ],
+      "contains administrative territorial entity": [
+        "string"
+      ],
+      "conversion to standard unit": [
+        "quantity"
+      ],
+      "country": [
+        "string"
+      ],
+      "country calling code": [
+        "string"
+      ],
+      "country of citizenship": [
+        "string"
+      ],
+      "court": [
+        "string"
+      ],
+      "creator": [
+        "string"
+      ],
+      "criterion used": [
+        "string"
+      ],
+      "currency": [
+        "string"
+      ],
+      "date of birth": [
+        "date"
+      ],
+      "date of death": [
+        "date"
+      ],
+      "day in year for periodic occurrence": [
+        "string"
+      ],
+      "described by source": [
+        "string"
+      ],
+      "destination point": [
+        "string"
+      ],
+      "determination method": [
+        "string"
+      ],
+      "different from": [
+        "string"
+      ],
+      "diplomatic mission sent": [
+        "string"
+      ],
+      "direction": [
+        "string"
+      ],
+      "direction relative to location": [
+        "string"
+      ],
+      "directions": [
+        "string"
+      ],
+      "discontinued date": [
+        "year"
+      ],
+      "dissolved, abolished or demolished": [
+        "date"
+      ],
+      "distribution": [
+        "string"
+      ],
+      "doctoral advisor": [
+        "string"
+      ],
+      "doctoral thesis": [
+        "string"
+      ],
+      "donated by": [
+        "string"
+      ],
+      "draft pick number": [
+        "string"
+      ],
+      "drafted by": [
+        "string"
+      ],
+      "duration": [
+        "quantity"
+      ],
+      "earliest date": [
+        "date",
+        "year"
+      ],
+      "editor": [
+        "string"
+      ],
+      "educated at": [
+        "string"
+      ],
+      "elected in": [
+        "string"
+      ],
+      "elevation above sea level": [
+        "quantity"
+      ],
+      "employer": [
+        "string"
+      ],
+      "end cause": [
+        "string"
+      ],
+      "end time": [
+        "date",
+        "year"
+      ],
+      "excluding": [
+        "string"
+      ],
+      "external data available at": [
+        "string"
+      ],
+      "female population": [
+        "quantity"
+      ],
+      "field of work": [
+        "string"
+      ],
+      "filming location": [
+        "string"
+      ],
+      "followed by": [
+        "string"
+      ],
+      "follows": [
+        "string"
+      ],
+      "for work": [
+        "string"
+      ],
+      "format as a regular expression": [
+        "string"
+      ],
+      "foundational text": [
+        "string"
+      ],
+      "frequency": [
+        "quantity"
+      ],
+      "genre": [
+        "string"
+      ],
+      "grammatical gender": [
+        "string"
+      ],
+      "has cause": [
+        "string"
+      ],
+      "has edition": [
+        "string"
+      ],
+      "has effect": [
+        "string"
+      ],
+      "has immediate cause": [
+        "string"
+      ],
+      "has part": [
+        "string"
+      ],
+      "has quality": [
+        "string"
+      ],
+      "head of state": [
+        "string"
+      ],
+      "headquarters location": [
+        "string"
+      ],
+      "heritage designation": [
+        "string"
+      ],
+      "highest income threshold": [
+        "quantity"
+      ],
+      "highest point": [
+        "string"
+      ],
+      "identity of object in context": [
+        "string"
+      ],
+      "identity of subject in context": [
+        "string"
+      ],
+      "image": [
+        "string"
+      ],
+      "inception": [
+        "date",
+        "year"
+      ],
+      "influenced by": [
+        "string"
+      ],
+      "instance of": [
+        "string"
+      ],
+      "instrument": [
+        "string"
+      ],
+      "intended public": [
+        "string"
+      ],
+      "inventory number": [
+        "string"
+      ],
+      "item operated": [
+        "string"
+      ],
+      "killed by": [
+        "string"
+      ],
+      "language of work or name": [
+        "string"
+      ],
+      "languages spoken, written or signed": [
+        "string"
+      ],
+      "last update": [
+        "date"
+      ],
+      "latest date": [
+        "date",
+        "year"
+      ],
+      "legislative body": [
+        "string"
+      ],
+      "length": [
+        "quantity"
+      ],
+      "licence plate code": [
+        "string"
+      ],
+      "license": [
+        "string"
+      ],
+      "literal translation": [
+        "string"
+      ],
+      "located at street address": [
+        "string"
+      ],
+      "located at street address (DEPRECATED)": [
+        "string"
+      ],
+      "located in or next to body of water": [
+        "string"
+      ],
+      "located in the administrative territorial entity": [
+        "string"
+      ],
+      "located in time zone": [
+        "string"
+      ],
+      "located on street": [
+        "string"
+      ],
+      "located on terrain feature": [
+        "string"
+      ],
+      "location": [
+        "string"
+      ],
+      "location of formation": [
+        "string"
+      ],
+      "lower limit": [
+        "quantity"
+      ],
+      "lowest income threshold": [
+        "quantity"
+      ],
+      "lowest point": [
+        "string"
+      ],
+      "lyrics by": [
+        "string"
+      ],
+      "main regulatory text": [
+        "string"
+      ],
+      "main subject": [
+        "string"
+      ],
+      "male population": [
+        "quantity"
+      ],
+      "manufacturer": [
+        "string"
+      ],
+      "mapping relation type": [
+        "string"
+      ],
+      "married name": [
+        "string"
+      ],
+      "material used": [
+        "string"
+      ],
+      "maximum age": [
+        "quantity"
+      ],
+      "maximum value": [
+        "quantity"
+      ],
+      "medical condition": [
+        "string"
+      ],
+      "member of": [
+        "string"
+      ],
+      "member of political party": [
+        "string"
+      ],
+      "member of sports team": [
+        "string"
+      ],
+      "memory capacity": [
+        "quantity"
+      ],
+      "military branch": [
+        "string"
+      ],
+      "military rank": [
+        "string"
+      ],
+      "minimum quantity": [
+        "quantity"
+      ],
+      "mother": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "name in kana": [
+        "string"
+      ],
+      "name in native language": [
+        "string"
+      ],
+      "name of the character role": [
+        "string"
+      ],
+      "named after": [
+        "string"
+      ],
+      "named as": [
+        "string"
+      ],
+      "named by": [
+        "string"
+      ],
+      "native language": [
+        "string"
+      ],
+      "nature of statement": [
+        "string"
+      ],
+      "nickname": [
+        "string"
+      ],
+      "nominee": [
+        "string"
+      ],
+      "number confirmed": [
+        "quantity"
+      ],
+      "number of episodes": [
+        "quantity"
+      ],
+      "number of households": [
+        "quantity"
+      ],
+      "number of matches played/races/starts": [
+        "quantity"
+      ],
+      "number of points/goals/set scored": [
+        "quantity"
+      ],
+      "number of speakers": [
+        "quantity"
+      ],
+      "number of subscribers": [
+        "quantity"
+      ],
+      "object has role": [
+        "string"
+      ],
+      "occupation": [
+        "string"
+      ],
+      "of": [
+        "string"
+      ],
+      "official name": [
+        "string"
+      ],
+      "official website": [
+        "string"
+      ],
+      "operating area": [
+        "string"
+      ],
+      "operating system": [
+        "string"
+      ],
+      "operator": [
+        "string"
+      ],
+      "organizer": [
+        "string"
+      ],
+      "original network": [
+        "string"
+      ],
+      "page(s)": [
+        "string"
+      ],
+      "parliamentary term": [
+        "string"
+      ],
+      "part of": [
+        "string"
+      ],
+      "part of the series": [
+        "string"
+      ],
+      "penalty": [
+        "string"
+      ],
+      "performer": [
+        "string"
+      ],
+      "phase of matter": [
+        "string"
+      ],
+      "pinyin transliteration": [
+        "string"
+      ],
+      "place of marriage": [
+        "string"
+      ],
+      "place of publication": [
+        "string"
+      ],
+      "platform": [
+        "string"
+      ],
+      "point in time": [
+        "date",
+        "year"
+      ],
+      "points for": [
+        "quantity"
+      ],
+      "population": [
+        "quantity"
+      ],
+      "position held": [
+        "string"
+      ],
+      "position played on team / speciality": [
+        "string"
+      ],
+      "postal code": [
+        "string"
+      ],
+      "present in work": [
+        "string"
+      ],
+      "pressure": [
+        "quantity"
+      ],
+      "prize money": [
+        "quantity"
+      ],
+      "pronunciation variety": [
+        "string"
+      ],
+      "proportion": [
+        "quantity"
+      ],
+      "proxy": [
+        "string"
+      ],
+      "pseudonym": [
+        "string"
+      ],
+      "publication date": [
+        "date",
+        "year"
+      ],
+      "published in": [
+        "string"
+      ],
+      "publisher": [
+        "string"
+      ],
+      "quantity": [
+        "quantity"
+      ],
+      "quote": [
+        "string"
+      ],
+      "ranking": [
+        "quantity"
+      ],
+      "rating": [
+        "string"
+      ],
+      "reason for deprecation": [
+        "string"
+      ],
+      "refine date": [
+        "string"
+      ],
+      "regular expression syntax": [
+        "string"
+      ],
+      "relative to": [
+        "string"
+      ],
+      "religion": [
+        "string"
+      ],
+      "religious order": [
+        "string"
+      ],
+      "replaced by": [
+        "string"
+      ],
+      "replaces": [
+        "string"
+      ],
+      "represented by": [
+        "string"
+      ],
+      "retrieved": [
+        "date",
+        "year"
+      ],
+      "review score by": [
+        "string"
+      ],
+      "route of administration": [
+        "string"
+      ],
+      "running mate": [
+        "string"
+      ],
+      "sRGB color hex triplet": [
+        "string"
+      ],
+      "said to be the same as": [
+        "string"
+      ],
+      "separated from": [
+        "string"
+      ],
+      "series ordinal": [
+        "string"
+      ],
+      "sex or gender": [
+        "string"
+      ],
+      "short name": [
+        "string"
+      ],
+      "significant event": [
+        "string"
+      ],
+      "solvent": [
+        "string"
+      ],
+      "sourcing circumstances": [
+        "string"
+      ],
+      "sport": [
+        "string"
+      ],
+      "sport number": [
+        "string"
+      ],
+      "spouse": [
+        "string"
+      ],
+      "start period": [
+        "string"
+      ],
+      "start point": [
+        "string"
+      ],
+      "start time": [
+        "date",
+        "year"
+      ],
+      "stated age at event": [
+        "quantity"
+      ],
+      "stated as": [
+        "string"
+      ],
+      "stated in": [
+        "string"
+      ],
+      "statement disputed by": [
+        "string"
+      ],
+      "statement is subject of": [
+        "string"
+      ],
+      "statement supported by": [
+        "string"
+      ],
+      "street number": [
+        "string"
+      ],
+      "subclass of": [
+        "string"
+      ],
+      "subject has role": [
+        "string"
+      ],
+      "subject item of this property": [
+        "string"
+      ],
+      "subtitle": [
+        "string"
+      ],
+      "taxon author": [
+        "string"
+      ],
+      "temperature": [
+        "quantity"
+      ],
+      "time period": [
+        "string"
+      ],
+      "timezone offset": [
+        "quantity"
+      ],
+      "title": [
+        "string"
+      ],
+      "together with": [
+        "string"
+      ],
+      "transliteration": [
+        "string"
+      ],
+      "tributary orientation": [
+        "string"
+      ],
+      "twinned administrative body": [
+        "string"
+      ],
+      "type of kinship": [
+        "string"
+      ],
+      "upper limit": [
+        "quantity"
+      ],
+      "use": [
+        "string"
+      ],
+      "used by": [
+        "string"
+      ],
+      "valid in period": [
+        "string"
+      ],
+      "valid in place": [
+        "string"
+      ],
+      "voice actor": [
+        "string"
+      ],
+      "voice type": [
+        "string"
+      ],
+      "votes received": [
+        "quantity"
+      ],
+      "width": [
+        "quantity"
+      ],
+      "winner": [
+        "string"
+      ],
+      "writing system": [
+        "string"
+      ],
+      "year of taxon name publication": [
+        "date",
+        "year"
+      ]
+    }
+  },
+  "warning": "KB-derived schema only. Observed local absence is not a trigger. No question/gold-derived aliases."
+}

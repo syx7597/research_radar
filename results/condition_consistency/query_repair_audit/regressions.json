@@ -1,0 +1,670 @@
+[
+  {
+    "id": "train:78288",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 1,
+      "29": 1,
+      "43": 1
+    },
+    "first_valid_diff_to_gold": {
+      "category": "structure_function_sequence",
+      "differences": [],
+      "predicted_functions": [
+        "FindAll",
+        "FilterStr",
+        "FilterConcept",
+        "QueryAttrQualifier"
+      ],
+      "gold_functions": [
+        "FindAll",
+        "FilterStr",
+        "QFilterStr",
+        "FilterConcept",
+        "QueryAttrQualifier"
+      ]
+    },
+    "ranker_diff_to_first_valid": {
+      "1": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "QFilterStr",
+          "FilterConcept",
+          "QueryAttr",
+          "VerifyStr"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttrQualifier"
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "1": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "QFilterStr",
+          "FilterConcept",
+          "QueryAttr",
+          "VerifyStr"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "QFilterStr",
+          "FilterConcept",
+          "QueryAttrQualifier"
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "1": []
+    }
+  },
+  {
+    "id": "train:16356",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 1,
+      "29": 1,
+      "43": 1
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "1": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 1,
+            "function": "QueryRelationQualifier",
+            "role": "qualifier",
+            "predicted": "for work",
+            "gold": "statement is subject of"
+          }
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "1": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 1,
+            "function": "QueryRelationQualifier",
+            "role": "qualifier",
+            "predicted": "for work",
+            "gold": "statement is subject of"
+          }
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "1": []
+    }
+  },
+  {
+    "id": "train:52489",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 2,
+      "29": 2,
+      "43": 2
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "2": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "languages",
+            "gold": "language"
+          }
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "2": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "languages",
+            "gold": "language"
+          }
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "2": [
+        {
+          "step": 2,
+          "argument": 0,
+          "function": "FilterConcept",
+          "role": "concept",
+          "value": "languages"
+        }
+      ]
+    }
+  },
+  {
+    "id": "train:32935",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 1,
+      "29": 1,
+      "43": 1
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "1": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "states of Germany",
+            "gold": "state of Germany"
+          }
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "1": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "states of Germany",
+            "gold": "state of Germany"
+          }
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "1": [
+        {
+          "step": 2,
+          "argument": 0,
+          "function": "FilterConcept",
+          "role": "concept",
+          "value": "states of Germany"
+        }
+      ]
+    }
+  },
+  {
+    "id": "train:82094",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 1,
+    "ranker_indices": {
+      "17": 2,
+      "29": 2,
+      "43": 2
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "2": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Count"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "2": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "Count"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttr"
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "2": []
+    }
+  },
+  {
+    "id": "train:66954",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 3,
+      "29": 3,
+      "43": 3
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "3": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "colleges",
+            "gold": "college"
+          }
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "3": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "colleges",
+            "gold": "college"
+          }
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "3": [
+        {
+          "step": 2,
+          "argument": 0,
+          "function": "FilterConcept",
+          "role": "concept",
+          "value": "colleges"
+        }
+      ]
+    }
+  },
+  {
+    "id": "train:5451",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 2,
+      "29": 2,
+      "43": 2
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "2": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "FilterNum",
+            "role": "attribute",
+            "predicted": "visitor per year",
+            "gold": "visitors per year"
+          }
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "2": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 1,
+            "argument": 0,
+            "function": "FilterNum",
+            "role": "attribute",
+            "predicted": "visitor per year",
+            "gold": "visitors per year"
+          }
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "2": [
+        {
+          "step": 1,
+          "argument": 0,
+          "function": "FilterNum",
+          "role": "attribute",
+          "value": "visitor per year"
+        }
+      ]
+    }
+  },
+  {
+    "id": "train:70267",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 1,
+      "29": 1,
+      "43": 1
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "1": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "And",
+          "What"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttrQualifier"
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "1": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "And",
+          "What"
+        ],
+        "gold_functions": [
+          "FindAll",
+          "FilterStr",
+          "FilterConcept",
+          "QueryAttrQualifier"
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "1": []
+    }
+  },
+  {
+    "id": "train:28629",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 1,
+      "29": 1,
+      "43": 1
+    },
+    "first_valid_diff_to_gold": {
+      "category": "identical_gold_program",
+      "differences": []
+    },
+    "ranker_diff_to_first_valid": {
+      "1": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "sciences",
+            "gold": "science"
+          }
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "1": {
+        "category": "single_field",
+        "differences": [
+          {
+            "step": 2,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "sciences",
+            "gold": "science"
+          }
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "1": [
+        {
+          "step": 2,
+          "argument": 0,
+          "function": "FilterConcept",
+          "role": "concept",
+          "value": "sciences"
+        }
+      ]
+    }
+  },
+  {
+    "id": "train:30674",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "first_valid_index": 0,
+    "ranker_indices": {
+      "17": 3,
+      "29": 3,
+      "43": 3
+    },
+    "first_valid_diff_to_gold": {
+      "category": "structure_function_sequence",
+      "differences": [],
+      "predicted_functions": [
+        "Find",
+        "Relate",
+        "Find",
+        "And",
+        "Find",
+        "Relate",
+        "Find",
+        "And",
+        "Relate",
+        "FilterConcept",
+        "Or",
+        "Count"
+      ],
+      "gold_functions": [
+        "Find",
+        "Relate",
+        "Find",
+        "And",
+        "Relate",
+        "FilterConcept",
+        "Find",
+        "Relate",
+        "Find",
+        "And",
+        "Relate",
+        "FilterConcept",
+        "Or",
+        "Count"
+      ]
+    },
+    "ranker_diff_to_first_valid": {
+      "3": {
+        "category": "structure_function_sequence",
+        "differences": [],
+        "predicted_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Relate",
+          "FilterConcept",
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Relate",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ],
+        "gold_functions": [
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Find",
+          "Relate",
+          "Find",
+          "And",
+          "Relate",
+          "FilterConcept",
+          "Or",
+          "Count"
+        ]
+      }
+    },
+    "ranker_diff_to_gold": {
+      "3": {
+        "category": "multiple_fields",
+        "differences": [
+          {
+            "step": 5,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "class of awards",
+            "gold": "class of award"
+          },
+          {
+            "step": 11,
+            "argument": 0,
+            "function": "FilterConcept",
+            "role": "concept",
+            "predicted": "class of awards",
+            "gold": "class of award"
+          }
+        ]
+      }
+    },
+    "ranker_global_field_violations": {
+      "3": [
+        {
+          "step": 5,
+          "argument": 0,
+          "function": "FilterConcept",
+          "role": "concept",
+          "value": "class of awards"
+        },
+        {
+          "step": 11,
+          "argument": 0,
+          "function": "FilterConcept",
+          "role": "concept",
+          "value": "class of awards"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,4322 @@
+{
+  "purpose": "Post-hoc mechanical audit of frozen results, not independent human semantic annotation",
+  "split": "holdout",
+  "questions": 2000,
+  "metrics": {
+    "top1": {
+      "correct": 1472,
+      "questions": 2000,
+      "accuracy": 0.736
+    },
+    "first_valid": {
+      "correct": 1585,
+      "questions": 2000,
+      "accuracy": 0.7925
+    },
+    "global_repair": {
+      "correct": 1594,
+      "questions": 2000,
+      "accuracy": 0.797
+    },
+    "global_no_acceptance": {
+      "correct": 1518,
+      "questions": 2000,
+      "accuracy": 0.759
+    },
+    "local_repair": {
+      "correct": 1603,
+      "questions": 2000,
+      "accuracy": 0.8015
+    },
+    "local_no_acceptance": {
+      "correct": 1524,
+      "questions": 2000,
+      "accuracy": 0.762
+    },
+    "beam8_first_valid": {
+      "correct": 1614,
+      "questions": 2000,
+      "accuracy": 0.807
+    },
+    "global_oracle": {
+      "correct": 1677,
+      "questions": 2000,
+      "accuracy": 0.8385
+    },
+    "local_oracle": {
+      "correct": 1693,
+      "questions": 2000,
+      "accuracy": 0.8465
+    }
+  },
+  "local_vs_first_valid": {
+    "questions": 2000,
+    "corrected": 38,
+    "regressed": 20,
+    "net_corrected": 18,
+    "accuracy_delta": 0.009,
+    "accuracy_delta_95pct_paired_percentile_ci": [
+      0.0015,
+      0.0165
+    ],
+    "bootstrap_samples": 2000,
+    "bootstrap_seed": 20260926,
+    "originally_correct": 1585,
+    "correct_to_wrong_rate": 0.012618296529968454
+  },
+  "program_match_definition": "Exact functions, normalized/inferred dependencies and input strings; alternate correct programs may differ",
+  "semantic_warning": "Answer equality does not imply semantic correctness. Gold-program mismatch does not prove semantic incorrectness. Gold labels may be inconsistent.",
+  "method_changed": false,
+  "labels_changed": false,
+  "cases_selected": "All corrected/regressed local vs first-valid questions, no case sampling",
+  "accepted_repairs": 85,
+  "accepted_with_unchanged_correctness": [
+    {
+      "id": "train:33509",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:34142",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:46319",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:30456",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:14773",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:635",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:40518",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:53780",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:81556",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:14229",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:2899",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:54753",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:42940",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:44967",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:57193",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:6683",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:18048",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:28058",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:14619",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:81140",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:14385",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:64468",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:76117",
+      "correct_before_and_after": true,
+      "selected_program_exact_gold": true
+    },
+    {
+      "id": "train:37675",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:61015",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:80663",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    },
+    {
+      "id": "train:22268",
+      "correct_before_and_after": false,
+      "selected_program_exact_gold": false
+    }
+  ],
+  "exact_gold_program_counts": {
+    "first_valid": 1429,
+    "local_repair": 1447,
+    "corrected_selected_exact_gold": 34,
+    "regressed_selected_exact_gold": 0
+  },
+  "corrected_without_correct_original_candidate": 38,
+  "transition_counts_by_edit_role": {
+    "corrected": {
+      "qualifier": 8,
+      "relation": 13,
+      "attribute": 17
+    },
+    "regressed": {
+      "relation": 10,
+      "attribute": 9,
+      "qualifier": 1
+    }
+  },
+  "transition_counts_by_trigger": {
+    "corrected": {
+      "globally_illegal_role_field": 38
+    },
+    "regressed": {
+      "globally_illegal_role_field": 20
+    }
+  },
+  "transition_profile": {
+    "corrected": {
+      "questions": 38,
+      "baseline_schema_clean": {
+        "conflicted": 13,
+        "no_baseline": 19,
+        "clean": 6
+      },
+      "parent_relative_to_first_valid": {
+        "same": 12,
+        "no_baseline": 19,
+        "later": 6,
+        "earlier": 1
+      },
+      "parent_indices": {
+        "0": 19,
+        "1": 9,
+        "3": 4,
+        "2": 6
+      },
+      "clean_baseline_replaced_by_other_parent_ids": [
+        "train:62902",
+        "train:8739",
+        "train:20508",
+        "train:75809",
+        "train:67448",
+        "train:38685"
+      ]
+    },
+    "regressed": {
+      "questions": 20,
+      "baseline_schema_clean": {
+        "clean": 19,
+        "conflicted": 1
+      },
+      "parent_relative_to_first_valid": {
+        "later": 19,
+        "earlier": 1
+      },
+      "parent_indices": {
+        "3": 6,
+        "1": 5,
+        "2": 8,
+        "0": 1
+      },
+      "clean_baseline_replaced_by_other_parent_ids": [
+        "train:50630",
+        "train:4943",
+        "train:66916",
+        "train:77012",
+        "train:84853",
+        "train:46977",
+        "train:46717",
+        "train:6605",
+        "train:60897",
+        "train:38440",
+        "train:60155",
+        "train:48560",
+        "train:8758",
+        "train:55451",
+        "train:47796",
+        "train:57519",
+        "train:57395",
+        "train:11377",
+        "train:68239"
+      ]
+    }
+  },
+  "posthoc_subsets_warning": "Overlapping groups defined using gold functions after final scoring; descriptive diagnostics only, not preregistered subgroup efficacy claims",
+  "posthoc_subset_definitions": {
+    "qualifier": [
+      "QFilterDate",
+      "QFilterNum",
+      "QFilterStr",
+      "QFilterYear",
+      "QueryAttrQualifier",
+      "QueryAttrUnderCondition",
+      "QueryRelationQualifier"
+    ],
+    "numeric_or_selection": [
+      "FilterNum",
+      "QFilterNum",
+      "SelectAmong",
+      "SelectBetween",
+      "VerifyNum"
+    ],
+    "temporal": [
+      "FilterDate",
+      "FilterYear",
+      "QFilterDate",
+      "QFilterYear",
+      "VerifyDate",
+      "VerifyYear"
+    ],
+    "set_operations": [
+      "And",
+      "Or"
+    ],
+    "count": [
+      "Count"
+    ],
+    "two_or_more_relate": "At least two Relate steps in the gold program"
+  },
+  "posthoc_subsets": {
+    "qualifier": {
+      "questions": 457,
+      "metrics": {
+        "top1": {
+          "correct": 278,
+          "questions": 457,
+          "accuracy": 0.6083150984682714
+        },
+        "first_valid": {
+          "correct": 301,
+          "questions": 457,
+          "accuracy": 0.6586433260393874
+        },
+        "global_repair": {
+          "correct": 303,
+          "questions": 457,
+          "accuracy": 0.6630196936542669
+        },
+        "global_no_acceptance": {
+          "correct": 262,
+          "questions": 457,
+          "accuracy": 0.5733041575492341
+        },
+        "local_repair": {
+          "correct": 310,
+          "questions": 457,
+          "accuracy": 0.6783369803063457
+        },
+        "local_no_acceptance": {
+          "correct": 300,
+          "questions": 457,
+          "accuracy": 0.6564551422319475
+        },
+        "beam8_first_valid": {
+          "correct": 309,
+          "questions": 457,
+          "accuracy": 0.6761487964989059
+        },
+        "global_oracle": {
+          "correct": 332,
+          "questions": 457,
+          "accuracy": 0.7264770240700219
+        },
+        "local_oracle": {
+          "correct": 337,
+          "questions": 457,
+          "accuracy": 0.737417943107221
+        }
+      },
+      "local_corrected_vs_first_valid": 13,
+      "local_regressed_vs_first_valid": 4
+    },
+    "numeric_or_selection": {
+      "questions": 525,
+      "metrics": {
+        "top1": {
+          "correct": 425,
+          "questions": 525,
+          "accuracy": 0.8095238095238095
+        },
+        "first_valid": {
+          "correct": 449,
+          "questions": 525,
+          "accuracy": 0.8552380952380952
+        },
+        "global_repair": {
+          "correct": 449,
+          "questions": 525,
+          "accuracy": 0.8552380952380952
+        },
+        "global_no_acceptance": {
+          "correct": 440,
+          "questions": 525,
+          "accuracy": 0.8380952380952381
+        },
+        "local_repair": {
+          "correct": 450,
+          "questions": 525,
+          "accuracy": 0.8571428571428571
+        },
+        "local_no_acceptance": {
+          "correct": 436,
+          "questions": 525,
+          "accuracy": 0.8304761904761905
+        },
+        "beam8_first_valid": {
+          "correct": 454,
+          "questions": 525,
+          "accuracy": 0.8647619047619047
+        },
+        "global_oracle": {
+          "correct": 462,
+          "questions": 525,
+          "accuracy": 0.88
+        },
+        "local_oracle": {
+          "correct": 463,
+          "questions": 525,
+          "accuracy": 0.8819047619047619
+        }
+      },
+      "local_corrected_vs_first_valid": 4,
+      "local_regressed_vs_first_valid": 3
+    },
+    "temporal": {
+      "questions": 265,
+      "metrics": {
+        "top1": {
+          "correct": 202,
+          "questions": 265,
+          "accuracy": 0.7622641509433963
+        },
+        "first_valid": {
+          "correct": 216,
+          "questions": 265,
+          "accuracy": 0.8150943396226416
+        },
+        "global_repair": {
+          "correct": 217,
+          "questions": 265,
+          "accuracy": 0.8188679245283019
+        },
+        "global_no_acceptance": {
+          "correct": 209,
+          "questions": 265,
+          "accuracy": 0.7886792452830189
+        },
+        "local_repair": {
+          "correct": 218,
+          "questions": 265,
+          "accuracy": 0.8226415094339623
+        },
+        "local_no_acceptance": {
+          "correct": 216,
+          "questions": 265,
+          "accuracy": 0.8150943396226416
+        },
+        "beam8_first_valid": {
+          "correct": 221,
+          "questions": 265,
+          "accuracy": 0.8339622641509434
+        },
+        "global_oracle": {
+          "correct": 227,
+          "questions": 265,
+          "accuracy": 0.8566037735849057
+        },
+        "local_oracle": {
+          "correct": 228,
+          "questions": 265,
+          "accuracy": 0.8603773584905661
+        }
+      },
+      "local_corrected_vs_first_valid": 3,
+      "local_regressed_vs_first_valid": 1
+    },
+    "set_operations": {
+      "questions": 536,
+      "metrics": {
+        "top1": {
+          "correct": 345,
+          "questions": 536,
+          "accuracy": 0.6436567164179104
+        },
+        "first_valid": {
+          "correct": 389,
+          "questions": 536,
+          "accuracy": 0.7257462686567164
+        },
+        "global_repair": {
+          "correct": 393,
+          "questions": 536,
+          "accuracy": 0.7332089552238806
+        },
+        "global_no_acceptance": {
+          "correct": 371,
+          "questions": 536,
+          "accuracy": 0.6921641791044776
+        },
+        "local_repair": {
+          "correct": 389,
+          "questions": 536,
+          "accuracy": 0.7257462686567164
+        },
+        "local_no_acceptance": {
+          "correct": 387,
+          "questions": 536,
+          "accuracy": 0.7220149253731343
+        },
+        "beam8_first_valid": {
+          "correct": 404,
+          "questions": 536,
+          "accuracy": 0.753731343283582
+        },
+        "global_oracle": {
+          "correct": 420,
+          "questions": 536,
+          "accuracy": 0.7835820895522388
+        },
+        "local_oracle": {
+          "correct": 422,
+          "questions": 536,
+          "accuracy": 0.7873134328358209
+        }
+      },
+      "local_corrected_vs_first_valid": 10,
+      "local_regressed_vs_first_valid": 10
+    },
+    "count": {
+      "questions": 237,
+      "metrics": {
+        "top1": {
+          "correct": 148,
+          "questions": 237,
+          "accuracy": 0.6244725738396625
+        },
+        "first_valid": {
+          "correct": 154,
+          "questions": 237,
+          "accuracy": 0.6497890295358649
+        },
+        "global_repair": {
+          "correct": 155,
+          "questions": 237,
+          "accuracy": 0.6540084388185654
+        },
+        "global_no_acceptance": {
+          "correct": 133,
+          "questions": 237,
+          "accuracy": 0.5611814345991561
+        },
+        "local_repair": {
+          "correct": 154,
+          "questions": 237,
+          "accuracy": 0.6497890295358649
+        },
+        "local_no_acceptance": {
+          "correct": 139,
+          "questions": 237,
+          "accuracy": 0.5864978902953587
+        },
+        "beam8_first_valid": {
+          "correct": 156,
+          "questions": 237,
+          "accuracy": 0.6582278481012658
+        },
+        "global_oracle": {
+          "correct": 192,
+          "questions": 237,
+          "accuracy": 0.810126582278481
+        },
+        "local_oracle": {
+          "correct": 198,
+          "questions": 237,
+          "accuracy": 0.8354430379746836
+        }
+      },
+      "local_corrected_vs_first_valid": 11,
+      "local_regressed_vs_first_valid": 11
+    },
+    "two_or_more_relate": {
+      "questions": 176,
+      "metrics": {
+        "top1": {
+          "correct": 92,
+          "questions": 176,
+          "accuracy": 0.5227272727272727
+        },
+        "first_valid": {
+          "correct": 110,
+          "questions": 176,
+          "accuracy": 0.625
+        },
+        "global_repair": {
+          "correct": 112,
+          "questions": 176,
+          "accuracy": 0.6363636363636364
+        },
+        "global_no_acceptance": {
+          "correct": 110,
+          "questions": 176,
+          "accuracy": 0.625
+        },
+        "local_repair": {
+          "correct": 112,
+          "questions": 176,
+          "accuracy": 0.6363636363636364
+        },
+        "local_no_acceptance": {
+          "correct": 111,
+          "questions": 176,
+          "accuracy": 0.6306818181818182
+        },
+        "beam8_first_valid": {
+          "correct": 114,
+          "questions": 176,
+          "accuracy": 0.6477272727272727
+        },
+        "global_oracle": {
+          "correct": 121,
+          "questions": 176,
+          "accuracy": 0.6875
+        },
+        "local_oracle": {
+          "correct": 122,
+          "questions": 176,
+          "accuracy": 0.6931818181818182
+        }
+      },
+      "local_corrected_vs_first_valid": 4,
+      "local_regressed_vs_first_valid": 2
+    }
+  },
+  "cases": [
+    {
+      "id": "train:50630",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "relation",
+        "from": "contains municipalities",
+        "to": "contains administrative territorial entity",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.44461538461538463,
+      "tf_mean_logprob": -0.110002867380778,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "4",
+      "selected_prediction_excerpt": "0",
+      "gold_answer_excerpt": "4",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:4943",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "causes of death",
+        "to": "manner of death",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7233333333333333,
+      "tf_mean_logprob": -0.08761420890466491,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "Find",
+        "FindAll",
+        "Or",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "4",
+      "selected_prediction_excerpt": "1",
+      "gold_answer_excerpt": "4",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 14,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:79763",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 3,
+        "input": 2,
+        "role": "qualifier",
+        "from": "earliest",
+        "to": "earliest date",
+        "function": "QueryAttrQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7976190476190476,
+      "tf_mean_logprob": -0.26973655611969705,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QueryAttrQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": true,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "None",
+      "selected_prediction_excerpt": "1503",
+      "gold_answer_excerpt": "1503",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:66916",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 5,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "relation",
+        "from": "contains",
+        "to": "country",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.4533333333333333,
+      "tf_mean_logprob": -0.19348680405389695,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "Find",
+        "FindAll",
+        "Or",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "2",
+      "selected_prediction_excerpt": "1",
+      "gold_answer_excerpt": "2",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 3,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:77012",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "short film title",
+        "to": "short name",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5980769230769231,
+      "tf_mean_logprob": -0.29440526609067563,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FindAll"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "1",
+      "selected_prediction_excerpt": "0",
+      "gold_answer_excerpt": "1",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:84853",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "offset",
+        "to": "cost",
+        "function": "FilterNum"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.51,
+      "tf_mean_logprob": -0.14999435197061567,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterNum",
+        "FilterStr",
+        "FindAll",
+        "Or"
+      ],
+      "posthoc_gold_subsets": [
+        "numeric_or_selection",
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "8",
+      "selected_prediction_excerpt": "1",
+      "gold_answer_excerpt": "8",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 201,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:46977",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "instrument used",
+        "to": "influenced by",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5,
+      "tf_mean_logprob": -0.19953710641433944,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "Find",
+        "FindAll",
+        "Or",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "3",
+      "selected_prediction_excerpt": "2",
+      "gold_answer_excerpt": "3",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 16,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:46646",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "terrain feature",
+        "to": "located on terrain feature",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6969512195121951,
+      "tf_mean_logprob": -0.13972748027128332,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "Find",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "0",
+      "selected_prediction_excerpt": "6",
+      "gold_answer_excerpt": "6",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:35686",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "attribute",
+        "from": "FIPS 10-4 (countries and regions) code",
+        "to": "FIPS 10-4 (countries and regions)",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.9365671641791045,
+      "tf_mean_logprob": -0.10346723110117811,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "QueryAttr",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "CA04",
+      "gold_answer_excerpt": "CA04",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 14,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:46717",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "establishment",
+        "to": "start time",
+        "function": "FilterYear"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.4434782608695652,
+      "tf_mean_logprob": -0.10946539140516712,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FilterYear",
+        "FindAll",
+        "Or"
+      ],
+      "posthoc_gold_subsets": [
+        "temporal",
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "6",
+      "selected_prediction_excerpt": "2",
+      "gold_answer_excerpt": "6",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 25,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:12346",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "jurisdiction",
+        "to": "applies to jurisdiction",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6828571428571428,
+      "tf_mean_logprob": -0.1644589768515693,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "Find",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "0",
+      "selected_prediction_excerpt": "1",
+      "gold_answer_excerpt": "1",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 5,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:32030",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "Dewey Decimal number",
+        "to": "Dewey Decimal Classification",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.63125,
+      "tf_mean_logprob": -0.0715161126757425,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "Or"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "1",
+      "selected_prediction_excerpt": "2",
+      "gold_answer_excerpt": "2",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:62902",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 2,
+        "input": 1,
+        "role": "qualifier",
+        "from": "statement has part",
+        "to": "statement is subject of",
+        "function": "QueryRelationQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5390243902439025,
+      "tf_mean_logprob": -0.015822829306125642,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Find",
+        "QueryRelationQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": true,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "None",
+      "selected_prediction_excerpt": "58th Tony Awards",
+      "gold_answer_excerpt": "58th Tony Awards",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1,
+          1
+        ],
+        "attached_fact_counts": [
+          0,
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:6605",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 5,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "country for origin",
+        "to": "country of citizenship",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6025,
+      "tf_mean_logprob": -0.18148016107493434,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "And",
+        "Find",
+        "QueryRelationQualifier",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier",
+        "set_operations"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": true,
+      "baseline_prediction_excerpt": "68th Academy Awards",
+      "selected_prediction_excerpt": "None",
+      "gold_answer_excerpt": "68th Academy Awards",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 42,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:67483",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "attribute",
+        "from": "reserve",
+        "to": "total reserves",
+        "function": "QueryAttrQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5666666666666667,
+      "tf_mean_logprob": -0.13974543749275853,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QueryAttrQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "2014-01-01",
+      "gold_answer_excerpt": "2014-01-01",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 1,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:60897",
+      "change": "regressed",
+      "first_valid_index": 1,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "attribute",
+        "from": "place of birth",
+        "to": "date of birth",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6925925925925925,
+      "tf_mean_logprob": -0.13177007283919898,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "Relate",
+        "What"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "Uttar Pradesh",
+      "selected_prediction_excerpt": "1956-05-28",
+      "gold_answer_excerpt": "Uttar Pradesh",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:11595",
+      "change": "corrected",
+      "first_valid_index": 1,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "soundex",
+        "to": "Soundex",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 1.0,
+      "tf_mean_logprob": -0.16761464086072198,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FindAll"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "0",
+      "selected_prediction_excerpt": "1",
+      "gold_answer_excerpt": "1",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:76401",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 2,
+        "input": 1,
+        "role": "qualifier",
+        "from": "terrain feature",
+        "to": "located on terrain feature",
+        "function": "QueryRelationQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6969512195121951,
+      "tf_mean_logprob": -0.2774618322199041,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Find",
+        "QueryRelationQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": true,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "None",
+      "selected_prediction_excerpt": "Stanford Research Park",
+      "gold_answer_excerpt": "Stanford Research Park",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1,
+          1
+        ],
+        "attached_fact_counts": [
+          0,
+          0
+        ],
+        "compatible_field_count": 3,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:70151",
+      "change": "corrected",
+      "first_valid_index": 3,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "earlier",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "Nintendo Game ID",
+        "to": "Nintendo GameID",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.8975806451612903,
+      "tf_mean_logprob": -0.09222256342569987,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "And",
+        "FilterConcept",
+        "FilterStr",
+        "Find",
+        "FindAll",
+        "Relate",
+        "What"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "0",
+      "selected_prediction_excerpt": "Cars",
+      "gold_answer_excerpt": "Cars",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:12586",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "relation",
+        "from": "famous work",
+        "to": "notable work",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5184782608695652,
+      "tf_mean_logprob": -0.05632625595997956,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "And",
+        "FilterConcept",
+        "Find",
+        "Relate",
+        "What"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "two_or_more_relate"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "Chariots of Fire",
+      "gold_answer_excerpt": "Chariots of Fire",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 8,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:8739",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "discipline",
+        "to": "award disciplines or subjects",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.43589743589743585,
+      "tf_mean_logprob": -0.16980129672634986,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "Find",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "0",
+      "selected_prediction_excerpt": "20",
+      "gold_answer_excerpt": "20",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 3,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:20508",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 2,
+        "input": 1,
+        "role": "qualifier",
+        "from": "subject of",
+        "to": "statement is subject of",
+        "function": "QueryRelationQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6276515151515152,
+      "tf_mean_logprob": -0.0004646307543704384,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Find",
+        "QueryRelationQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": true,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "None",
+      "selected_prediction_excerpt": "4th Academy Awards",
+      "gold_answer_excerpt": "4th Academy Awards",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1,
+          1
+        ],
+        "attached_fact_counts": [
+          0,
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:38440",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "attribute",
+        "from": "spouse name",
+        "to": "birth name",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.4797619047619047,
+      "tf_mean_logprob": -0.19370157068425958,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QueryAttr"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "Marilyn Bergman",
+      "selected_prediction_excerpt": "Marilyn Keith",
+      "gold_answer_excerpt": "Marilyn Bergman",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:8599",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "IPTC Newcode",
+        "to": "IPTC Newscode",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.8909999999999999,
+      "tf_mean_logprob": -0.16256830851236978,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "Or"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "1",
+      "selected_prediction_excerpt": "2",
+      "gold_answer_excerpt": "2",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:60684",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "ideology",
+        "to": "political ideology",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5980769230769231,
+      "tf_mean_logprob": -0.15624702998570034,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "QueryAttr",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "4295907944",
+      "gold_answer_excerpt": "4295907944",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 1,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:76154",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "attribute",
+        "from": "FIPS 10-4 (countries and regions) code",
+        "to": "FIPS 10-4 (countries and regions)",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.9365671641791045,
+      "tf_mean_logprob": -0.11778821945190429,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "QueryAttr",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "SZ05",
+      "gold_answer_excerpt": "SZ05",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 10,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:64755",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "languages spoken",
+        "to": "languages spoken, written or signed",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.544,
+      "tf_mean_logprob": -0.11594738372384686,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "And",
+        "FilterConcept",
+        "Find",
+        "QueryAttr",
+        "Relate",
+        "VerifyStr"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "two_or_more_relate"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "no",
+      "gold_answer_excerpt": "no",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 11,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:91834",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 5,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "Hornbostel-Sachs classification code",
+        "to": "Hornbostel-Sachs classification",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.9365671641791045,
+      "tf_mean_logprob": -0.36356345812479657,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Find",
+        "QueryAttr"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "314.122-5",
+      "gold_answer_excerpt": "314.122-5",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 1,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:14226",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "FIPS 6-4",
+        "to": "FIPS 6-4 (US counties)",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5757142857142856,
+      "tf_mean_logprob": -0.2440976161582797,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QueryAttr",
+        "VerifyYear"
+      ],
+      "posthoc_gold_subsets": [
+        "temporal"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "yes",
+      "gold_answer_excerpt": "yes",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:75809",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "name in Japanese",
+        "to": "name in kana",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7071428571428571,
+      "tf_mean_logprob": -0.2166729495949941,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "Or"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "1",
+      "selected_prediction_excerpt": "2",
+      "gold_answer_excerpt": "2",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:18224",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 2,
+        "input": 1,
+        "role": "qualifier",
+        "from": "role",
+        "to": "object has role",
+        "function": "QueryRelationQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.4078947368421052,
+      "tf_mean_logprob": -0.19734597206115723,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Find",
+        "QueryRelationQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": true,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "None",
+      "selected_prediction_excerpt": "region of France",
+      "gold_answer_excerpt": "region of France",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1,
+          1
+        ],
+        "attached_fact_counts": [
+          0,
+          0
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:60155",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 5,
+        "input": 0,
+        "role": "relation",
+        "from": "authored by",
+        "to": "after a work by",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.49519230769230765,
+      "tf_mean_logprob": -0.07055634171215457,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "And",
+        "Find",
+        "QueryRelation",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "two_or_more_relate"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": true,
+      "baseline_prediction_excerpt": "based on",
+      "selected_prediction_excerpt": "None",
+      "gold_answer_excerpt": "based on",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          4
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:48560",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "country for work",
+        "to": "country for sport",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7212121212121212,
+      "tf_mean_logprob": -0.18262150979811145,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "Find",
+        "FindAll",
+        "Or",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "2",
+      "selected_prediction_excerpt": "1",
+      "gold_answer_excerpt": "2",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 37,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:18688",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 3,
+        "input": 2,
+        "role": "qualifier",
+        "from": "relation type",
+        "to": "mapping relation type",
+        "function": "QueryAttrQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7499999999999999,
+      "tf_mean_logprob": -0.2608155497798213,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "QueryAttrQualifier",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": true,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "None",
+      "selected_prediction_excerpt": "exact match",
+      "gold_answer_excerpt": "exact match",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 1,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:67448",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 2,
+        "input": 1,
+        "role": "qualifier",
+        "from": "valid in time zone",
+        "to": "valid in period",
+        "function": "QueryRelationQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7166666666666667,
+      "tf_mean_logprob": -0.29873648285865784,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Find",
+        "QueryRelationQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": true,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "None",
+      "selected_prediction_excerpt": "standard time",
+      "gold_answer_excerpt": "standard time",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1,
+          1
+        ],
+        "attached_fact_counts": [
+          0,
+          0
+        ],
+        "compatible_field_count": 1,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:4361",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "male demonym",
+        "to": "demonym",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7763157894736842,
+      "tf_mean_logprob": -0.1504781630731398,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QFilterStr",
+        "QueryAttrQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "French",
+      "gold_answer_excerpt": "French",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:46669",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "work",
+        "to": "notable work",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5,
+      "tf_mean_logprob": -0.1420933116566051,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "Relate",
+        "What"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "Tarzan",
+      "gold_answer_excerpt": "Tarzan",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 12,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:75742",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 6,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "attribute",
+        "from": "death number",
+        "to": "number of deaths",
+        "function": "SelectAmong"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.41428571428571426,
+      "tf_mean_logprob": -0.049600432558757505,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterNum",
+        "FindAll",
+        "SelectAmong"
+      ],
+      "posthoc_gold_subsets": [
+        "numeric_or_selection"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "yellow fever",
+      "gold_answer_excerpt": "yellow fever",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          2
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 3,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:86630",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "local area code",
+        "to": "local dialing code",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7181818181818181,
+      "tf_mean_logprob": -0.23095819061877682,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QueryAttr",
+        "VerifyNum"
+      ],
+      "posthoc_gold_subsets": [
+        "numeric_or_selection"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "yes",
+      "gold_answer_excerpt": "yes",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:28878",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "film director",
+        "to": "film editor",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7833333333333333,
+      "tf_mean_logprob": -0.36377267579774597,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "Relate",
+        "SelectAmong"
+      ],
+      "posthoc_gold_subsets": [
+        "numeric_or_selection"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "Titanic",
+      "gold_answer_excerpt": "Titanic",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:8758",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "date of marriage",
+        "to": "date of birth",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5775862068965518,
+      "tf_mean_logprob": -0.2132607868739537,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Find",
+        "QueryRelationQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "2000-12-22",
+      "selected_prediction_excerpt": "1968-09-10",
+      "gold_answer_excerpt": "2000-12-22",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 8,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:11529",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 5,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "military personnel",
+        "to": "employees",
+        "function": "FilterNum"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.4648148148148148,
+      "tf_mean_logprob": -0.13931997891130118,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterNum",
+        "FindAll",
+        "Or"
+      ],
+      "posthoc_gold_subsets": [
+        "numeric_or_selection",
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "62",
+      "selected_prediction_excerpt": "81",
+      "gold_answer_excerpt": "62",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 201,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:38685",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 5,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 3,
+        "input": 2,
+        "role": "qualifier",
+        "from": "donation method",
+        "to": "donated by",
+        "function": "QueryAttrQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.483,
+      "tf_mean_logprob": -0.11116973389970496,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QueryAttrQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "Vin Diesel",
+      "selected_prediction_excerpt": "Mozinor",
+      "gold_answer_excerpt": "Mozinor",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 1,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:7285",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "relation",
+        "from": "distribution region",
+        "to": "film distribute region",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7134146341463415,
+      "tf_mean_logprob": -0.05755600452423096,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "0",
+      "selected_prediction_excerpt": "2",
+      "gold_answer_excerpt": "2",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 10,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:55451",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 2,
+        "input": 1,
+        "role": "qualifier",
+        "from": "statement has part",
+        "to": "statement is subject of",
+        "function": "QueryRelationQualifier"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5390243902439025,
+      "tf_mean_logprob": -0.10820843151637487,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Find",
+        "QueryRelationQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "Citizen Kane",
+      "selected_prediction_excerpt": "14th Academy Awards",
+      "gold_answer_excerpt": "Citizen Kane",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1,
+          1
+        ],
+        "attached_fact_counts": [
+          0,
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": true
+      }
+    },
+    {
+      "id": "train:47796",
+      "change": "regressed",
+      "first_valid_index": 2,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "earlier",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 2,
+        "input": 0,
+        "role": "attribute",
+        "from": "unemployed population",
+        "to": "population",
+        "function": "SelectBetween"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5483870967741935,
+      "tf_mean_logprob": -0.2451110536401922,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Find",
+        "SelectBetween"
+      ],
+      "posthoc_gold_subsets": [
+        "numeric_or_selection"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "Senegal",
+      "selected_prediction_excerpt": "Cameroon",
+      "gold_answer_excerpt": "Senegal",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1,
+          1
+        ],
+        "attached_fact_counts": [
+          0,
+          0
+        ],
+        "compatible_field_count": 18,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:24046",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "named after",
+        "to": "native label",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.5184782608695652,
+      "tf_mean_logprob": -0.10452521187918527,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "FilterStr",
+        "FindAll",
+        "QFilterStr",
+        "QueryAttr",
+        "VerifyStr"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "yes",
+      "gold_answer_excerpt": "yes",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 6,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:57519",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "relation",
+        "from": "location of event",
+        "to": "filming location",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.4871212121212121,
+      "tf_mean_logprob": -0.1715849334118413,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "Find",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "count",
+        "two_or_more_relate"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "1",
+      "selected_prediction_excerpt": "0",
+      "gold_answer_excerpt": "1",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 8,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:58414",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "site of formation",
+        "to": "location",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.408,
+      "tf_mean_logprob": -0.16083000867794722,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "QueryAttr",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "Ostpreußen",
+      "gold_answer_excerpt": "Ostpreußen",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:69611",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "located on continent",
+        "to": "continent",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6775862068965518,
+      "tf_mean_logprob": -0.08609693877551021,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "And",
+        "Count",
+        "FilterConcept",
+        "Find",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations",
+        "count",
+        "two_or_more_relate"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "2",
+      "gold_answer_excerpt": "2",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 6,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:57395",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 2,
+        "input": 0,
+        "role": "attribute",
+        "from": "region",
+        "to": "duration",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.48571428571428565,
+      "tf_mean_logprob": -0.2079427314527107,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Find",
+        "QueryAttrQualifier"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "Germany",
+      "selected_prediction_excerpt": "150 minute",
+      "gold_answer_excerpt": "Germany",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          1
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:24647",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 5,
+      "parent_index": 1,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "fleet/registration number",
+        "to": "fleet or registration number",
+        "function": "FilterStr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.9143867924528302,
+      "tf_mean_logprob": -0.22567218542099,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "And",
+        "FilterConcept",
+        "FilterDate",
+        "FilterStr",
+        "FindAll",
+        "What"
+      ],
+      "posthoc_gold_subsets": [
+        "temporal",
+        "set_operations"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "Ahmedabad",
+      "gold_answer_excerpt": "Ahmedabad",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          3
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 403,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:80626",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "twin administrative body",
+        "to": "twinned administrative body",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.8999999999999999,
+      "tf_mean_logprob": -0.1210850715637207,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "And",
+        "FilterConcept",
+        "Find",
+        "QueryAttrQualifier",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier",
+        "set_operations",
+        "two_or_more_relate"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "English",
+      "gold_answer_excerpt": "English",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 8,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:67123",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "attribute",
+        "from": "frequency",
+        "to": "frequency of event",
+        "function": "FilterNum"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6666666666666666,
+      "tf_mean_logprob": -0.09616592952183314,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterNum",
+        "FilterStr",
+        "FindAll",
+        "Or"
+      ],
+      "posthoc_gold_subsets": [
+        "numeric_or_selection",
+        "set_operations",
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "1",
+      "selected_prediction_excerpt": "5",
+      "gold_answer_excerpt": "5",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          16960
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 201,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:24624",
+      "change": "corrected",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 0,
+      "parent_is_first_valid": true,
+      "parent_relative_to_first_valid": "same",
+      "baseline_schema_clean": false,
+      "edit": {
+        "step": 3,
+        "input": 0,
+        "role": "relation",
+        "from": "founders",
+        "to": "found",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6538461538461539,
+      "tf_mean_logprob": -0.12096859858586238,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "FilterDate",
+        "FindAll",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "temporal",
+        "count"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "0",
+      "selected_prediction_excerpt": "3",
+      "gold_answer_excerpt": "3",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 2,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:11377",
+      "change": "regressed",
+      "first_valid_index": 1,
+      "selected_index": 4,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "work",
+        "to": "after a work by",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.4328947368421052,
+      "tf_mean_logprob": -0.20873821258544922,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "And",
+        "Find",
+        "QueryRelation",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "set_operations"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "country of origin",
+      "selected_prediction_excerpt": "film distribute region",
+      "gold_answer_excerpt": "country of origin",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:68239",
+      "change": "regressed",
+      "first_valid_index": 0,
+      "selected_index": 4,
+      "parent_index": 2,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "later",
+      "baseline_schema_clean": true,
+      "edit": {
+        "step": 1,
+        "input": 0,
+        "role": "relation",
+        "from": "country of formation",
+        "to": "location of formation",
+        "function": "Relate"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.7134146341463415,
+      "tf_mean_logprob": -0.2699617262809507,
+      "gold_program_exact_match": false,
+      "baseline_program_exact_gold": true,
+      "gold_function_set": [
+        "Count",
+        "FilterConcept",
+        "Find",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "count"
+      ],
+      "original_pool_has_correct_answer": true,
+      "baseline_valid": true,
+      "baseline_empty_result": false,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": "35",
+      "selected_prediction_excerpt": "0",
+      "gold_answer_excerpt": "35",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 37,
+        "qualifier_fact_binding": false
+      }
+    },
+    {
+      "id": "train:39306",
+      "change": "corrected",
+      "first_valid_index": null,
+      "selected_index": 4,
+      "parent_index": 3,
+      "parent_is_first_valid": false,
+      "parent_relative_to_first_valid": "no_baseline",
+      "baseline_schema_clean": null,
+      "edit": {
+        "step": 4,
+        "input": 0,
+        "role": "attribute",
+        "from": "website",
+        "to": "official website",
+        "function": "QueryAttr"
+      },
+      "single_field_edit_verified": true,
+      "trigger": "globally_illegal_role_field",
+      "schema_clean": true,
+      "match_score": 0.6673913043478261,
+      "tf_mean_logprob": -0.012655418569391425,
+      "gold_program_exact_match": true,
+      "baseline_program_exact_gold": false,
+      "gold_function_set": [
+        "FilterConcept",
+        "Find",
+        "QFilterStr",
+        "QueryAttr",
+        "Relate"
+      ],
+      "posthoc_gold_subsets": [
+        "qualifier"
+      ],
+      "original_pool_has_correct_answer": false,
+      "baseline_valid": false,
+      "baseline_empty_result": null,
+      "selected_empty_result": false,
+      "baseline_prediction_excerpt": null,
+      "selected_prediction_excerpt": "http://www.warnerbros.com/movies/home-entertainment/million-dollar-baby/ea451331-882d-4b74-bc62-73721eb40013.html",
+      "gold_answer_excerpt": "http://www.warnerbros.com/movies/home-entertainment/million-dollar-baby/ea451331-882d-4b74-bc62-73721eb40013.html",
+      "context": {
+        "scope": "local",
+        "trusted": true,
+        "semantic_correctness_guaranteed": false,
+        "prefix_steps": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "entity_counts": [
+          1
+        ],
+        "attached_fact_counts": [
+          0
+        ],
+        "compatible_field_count": 4,
+        "qualifier_fact_binding": false
+      }
+    }
+  ],
+  "development_diagnostics": {
+    "warning": "Post-hoc diagnosis with the unchanged frozen v1 policy, not evaluation of a new baseline-protection rule",
+    "policy_sha256": "4f5e37ebf0cd597d6515bde1af020a714cbb8b63ed185763ba16360241f86a8d",
+    "splits": {
+      "dev_diagnostic": {
+        "questions": 500,
+        "baseline_correct": 401,
+        "local_correct": 411,
+        "transition_profile": {
+          "corrected": {
+            "questions": 11,
+            "baseline_schema_clean": {
+              "no_baseline": 6,
+              "conflicted": 5
+            },
+            "parent_relative_to_first_valid": {
+              "no_baseline": 6,
+              "same": 3,
+              "later": 1,
+              "earlier": 1
+            },
+            "parent_indices": {
+              "1": 3,
+              "0": 5,
+              "2": 3
+            },
+            "clean_baseline_replaced_by_other_parent_ids": []
+          },
+          "regressed": {
+            "questions": 1,
+            "baseline_schema_clean": {
+              "clean": 1
+            },
+            "parent_relative_to_first_valid": {
+              "later": 1
+            },
+            "parent_indices": {
+              "3": 1
+            },
+            "clean_baseline_replaced_by_other_parent_ids": [
+              "train:52512"
+            ]
+          }
+        },
+        "cases": [
+          {
+            "id": "train:75060",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 1,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:76264",
+            "change": "corrected",
+            "first_valid_index": 0,
+            "parent_index": 0,
+            "parent_is_first_valid": true,
+            "parent_relative_to_first_valid": "same",
+            "baseline_schema_clean": false
+          },
+          {
+            "id": "train:94364",
+            "change": "corrected",
+            "first_valid_index": 0,
+            "parent_index": 2,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "later",
+            "baseline_schema_clean": false
+          },
+          {
+            "id": "train:52512",
+            "change": "regressed",
+            "first_valid_index": 0,
+            "parent_index": 3,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "later",
+            "baseline_schema_clean": true
+          },
+          {
+            "id": "train:5807",
+            "change": "corrected",
+            "first_valid_index": 2,
+            "parent_index": 0,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "earlier",
+            "baseline_schema_clean": false
+          },
+          {
+            "id": "train:5281",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 0,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:42943",
+            "change": "corrected",
+            "first_valid_index": 0,
+            "parent_index": 0,
+            "parent_is_first_valid": true,
+            "parent_relative_to_first_valid": "same",
+            "baseline_schema_clean": false
+          },
+          {
+            "id": "train:73789",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 2,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:45544",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 2,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:36499",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 1,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:30041",
+            "change": "corrected",
+            "first_valid_index": 0,
+            "parent_index": 0,
+            "parent_is_first_valid": true,
+            "parent_relative_to_first_valid": "same",
+            "baseline_schema_clean": false
+          },
+          {
+            "id": "train:77314",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 1,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          }
+        ],
+        "cache_sha256": "34c28f793abbb9366458a48320ed09e34751f1f5b5d45392c95a515da4632756",
+        "gold_sha256": "c3a3e1c8950a9bbe2e529dd986bb8fb55ce26fd0547171735c60daac31f43168"
+      },
+      "calibration": {
+        "questions": 500,
+        "baseline_correct": 395,
+        "local_correct": 400,
+        "transition_profile": {
+          "corrected": {
+            "questions": 6,
+            "baseline_schema_clean": {
+              "no_baseline": 4,
+              "conflicted": 2
+            },
+            "parent_relative_to_first_valid": {
+              "no_baseline": 4,
+              "later": 2
+            },
+            "parent_indices": {
+              "0": 1,
+              "3": 1,
+              "2": 3,
+              "1": 1
+            },
+            "clean_baseline_replaced_by_other_parent_ids": []
+          },
+          "regressed": {
+            "questions": 1,
+            "baseline_schema_clean": {
+              "clean": 1
+            },
+            "parent_relative_to_first_valid": {
+              "later": 1
+            },
+            "parent_indices": {
+              "3": 1
+            },
+            "clean_baseline_replaced_by_other_parent_ids": [
+              "train:91489"
+            ]
+          }
+        },
+        "cases": [
+          {
+            "id": "train:22800",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 0,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:84411",
+            "change": "corrected",
+            "first_valid_index": 0,
+            "parent_index": 3,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "later",
+            "baseline_schema_clean": false
+          },
+          {
+            "id": "train:91489",
+            "change": "regressed",
+            "first_valid_index": 0,
+            "parent_index": 3,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "later",
+            "baseline_schema_clean": true
+          },
+          {
+            "id": "train:73215",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 2,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:13375",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 2,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          },
+          {
+            "id": "train:29099",
+            "change": "corrected",
+            "first_valid_index": 0,
+            "parent_index": 2,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "later",
+            "baseline_schema_clean": false
+          },
+          {
+            "id": "train:27575",
+            "change": "corrected",
+            "first_valid_index": null,
+            "parent_index": 1,
+            "parent_is_first_valid": false,
+            "parent_relative_to_first_valid": "no_baseline",
+            "baseline_schema_clean": null
+          }
+        ],
+        "cache_sha256": "875b12a4925a9af3639e1a34123d8f8b512db1c06b7c80fcfa8f3b92499835d5",
+        "gold_sha256": "fc43fb5fe971987b2940e6a23080126290f32afdf472705f990c8ea67291a475"
+      }
+    }
+  },
+  "source_sha256": {
+    "metrics": "90c8fa18be0f68a5fe3758b45f48c835e6596b0279769546dd75d139e7e165d2",
+    "local_scored_cache": "af92caab1b58543c28f6a8f52c2dad78a6ebf67abd190be1688776ca8b5789db",
+    "gold": "1bef7bba8f8553bc4c24b7eb03c40b26ab0ef9104ccd4b4397c47abba771a378",
+    "audit_script": "fd2f4942490e0467d1bc46ddd216817031017f244ec99dcf368736b66f16ba8c",
+    "executor_adapter": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "repair_source": "7be23d6f6ef9a419b430af9bf7a33cba946eda0ddb3ff2469ec60a60bbe193f3"
+  }
+}

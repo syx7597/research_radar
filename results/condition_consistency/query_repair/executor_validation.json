@@ -1,0 +1,153 @@
+{
+  "purpose": "Executor state/order regression check; gold replay is not model accuracy",
+  "labels_changed": false,
+  "candidate_order": "frozen input order and exact reverse, fresh engine for each pass",
+  "questions": 6500,
+  "backend": "baseline",
+  "python_version": "3.12.8",
+  "python_hash_seed": "20260926",
+  "per_program_timeout_seconds": 5.0,
+  "source_hashes": {
+    "script_sha256": "b01874ad01364e76617cb38556ddf83b185056caf88e5161e7a6cf31a6ebf9d8",
+    "executor_adapter_sha256": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "official_executor_sha256": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+    "official_source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+    "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "legacy_replay_sha256": "da016d4c234da7e204a32b5b753b3e0c87795767416b9dbac211bb7f0116c38e"
+  },
+  "inputs": {
+    "generator_train": {
+      "sha256": "a404ca2610d739d07b8ba92ad9394748ecc37f652835d55154cd07db3eef3a59",
+      "questions": 5000
+    },
+    "reranker_train": {
+      "sha256": "3bc7ec1222b195f6d1efe2505da97bcac6535195a2ec9ad93078b0867c0c052c",
+      "questions": 1000
+    },
+    "dev": {
+      "sha256": "c3a3e1c8950a9bbe2e529dd986bb8fb55ce26fd0547171735c60daac31f43168",
+      "questions": 500
+    }
+  },
+  "forward": {
+    "order": "forward",
+    "counts": {
+      "questions": 6500,
+      "valid": 6500,
+      "correct": 6498
+    },
+    "splits": {
+      "dev": {
+        "questions": 500,
+        "valid": 500,
+        "correct": 499
+      },
+      "generator_train": {
+        "questions": 5000,
+        "valid": 5000,
+        "correct": 4999
+      },
+      "reranker_train": {
+        "questions": 1000,
+        "valid": 1000,
+        "correct": 1000
+      }
+    },
+    "mismatches": [
+      {
+        "id": "train:2522",
+        "split": "generator_train",
+        "expected": "12",
+        "valid": true,
+        "prediction": "9",
+        "error": null,
+        "answers": [
+          "9"
+        ],
+        "empty_result": false
+      },
+      {
+        "id": "train:40416",
+        "split": "dev",
+        "expected": "Batman & Robin",
+        "valid": true,
+        "prediction": "None",
+        "error": null,
+        "answers": [],
+        "empty_result": true
+      }
+    ],
+    "initialization_seconds": 1.3899074999935692,
+    "elapsed_seconds": 41.12203345898888
+  },
+  "reverse": {
+    "order": "reverse",
+    "counts": {
+      "questions": 6500,
+      "valid": 6500,
+      "correct": 6498
+    },
+    "splits": {
+      "dev": {
+        "questions": 500,
+        "valid": 500,
+        "correct": 499
+      },
+      "generator_train": {
+        "questions": 5000,
+        "valid": 5000,
+        "correct": 4999
+      },
+      "reranker_train": {
+        "questions": 1000,
+        "valid": 1000,
+        "correct": 1000
+      }
+    },
+    "mismatches": [
+      {
+        "id": "train:2522",
+        "split": "generator_train",
+        "expected": "12",
+        "valid": true,
+        "prediction": "9",
+        "error": null,
+        "answers": [
+          "9"
+        ],
+        "empty_result": false
+      },
+      {
+        "id": "train:40416",
+        "split": "dev",
+        "expected": "Batman & Robin",
+        "valid": true,
+        "prediction": "None",
+        "error": null,
+        "answers": [],
+        "empty_result": true
+      }
+    ],
+    "initialization_seconds": 1.5899475409969455,
+    "elapsed_seconds": 49.38354066599277
+  },
+  "order_differences": [],
+  "order_difference_ids": [],
+  "outputs_equal_for_all_ids": true,
+  "legacy_comparison": {
+    "old_correct": 6498,
+    "new_correct": 6498,
+    "old_mismatch_ids": [
+      "train:2522",
+      "train:40416"
+    ],
+    "new_mismatch_ids": [
+      "train:2522",
+      "train:40416"
+    ],
+    "mismatch_id_sets_equal": true,
+    "known_mismatch_predictions_unchanged": true,
+    "limitation": "Legacy report did not save all 6500 execution values; comparison to it is limited to correctness totals and preserved mismatch outputs"
+  },
+  "interpretation": "Agreement supports order-stable execution of these gold programs, not semantic correctness of arbitrary predicted programs"
+}

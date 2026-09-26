@@ -1,0 +1,82 @@
+{
+  "input_sha256": "9e71841e716fe0fb93ff3b412523c62e72ad802ab5213ba0012a8f8fdfd81a8b",
+  "output_sha256": "875b12a4925a9af3639e1a34123d8f8b512db1c06b7c80fcfa8f3b92499835d5",
+  "model_config": {
+    "added_tokens.json": "0cf7fca3546cdf159638535e02af92662303d2ae6f5e82128904ab2d5d417592",
+    "config.json": "3af518a0c148ee9ac1567a66a7510a36e985aa1c6bc2f5250920551aa421728f",
+    "generation_config.json": "1c424bd5cd1fd254e4cbeffac032c3825ccac268f3e398606daa3b18092c5f13",
+    "special_tokens_map.json": "d5469a60db23249c7f8945013d78df30b44b6bf686c6bb4740f4223f77b1b535",
+    "tokenizer.json": "e3f02b0cf04d0c9229efd939cb0f31bf121143c8d3038417cb1bcc49e8f36d85",
+    "tokenizer_config.json": "de08939a2dac7e45618dad9e99cd8fa176c4a516b59299ddf40bb02d3453259d",
+    "vocab.json": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e"
+  },
+  "questions": 500,
+  "model_weights": {
+    "model.safetensors": "298d44bc144e3e39c74e6a31a271692e1031265163f4bfe5bd2530fc775d8ee1"
+  },
+  "repair_metadata": {
+    "config": {
+      "version": "single_field_v1",
+      "mode": "local",
+      "max_original": 4,
+      "max_repairs": 4,
+      "timeout_seconds": 5.0,
+      "min_similarity": 0.0,
+      "score": "0.85*old_new_sequence_ratio+0.15*question_new_token_recall",
+      "allocation": "round_robin_parent_rank_then_match_score",
+      "trigger": "global_role_illegal_or_explicit_function_type_mismatch",
+      "empty_result_triggers": false,
+      "local_missing_field_triggers": false,
+      "gold_usage": "none",
+      "rounds": 1
+    },
+    "config_sha256": "c266c49fdaa71ef6ab1e4e31e3393041a649a5ddd54775700fc64f5167df0b74",
+    "python_hash_seed": "20260926",
+    "predictions_sha256": "4a1fa8af98f665eba0a3b3b11f425b5b73f37466ed6e9a0b8808b0d0ef00c15b",
+    "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "output_sha256": "9e71841e716fe0fb93ff3b412523c62e72ad802ab5213ba0012a8f8fdfd81a8b",
+    "repair_source_sha256": "7be23d6f6ef9a419b430af9bf7a33cba946eda0ddb3ff2469ec60a60bbe193f3",
+    "adapter_source_sha256": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "executor_source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+    "executor_source_sha256": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+    "counts": {
+      "questions": 500,
+      "original_candidates": 2000,
+      "repair_candidates": 262,
+      "questions_with_repairs": 84,
+      "questions_triggered": 140
+    },
+    "triggers": {
+      "globally_illegal_role_field": 232,
+      "explicit_function_type_mismatch": 12
+    },
+    "rejections": {
+      "unparseable_program": 608,
+      "untrusted_local_context": 79,
+      "no_compatible_replacement": 8
+    },
+    "cost": {
+      "prefix_calls": 244,
+      "prefix_executed_steps": 305,
+      "prefix_seconds": 1.0756915140373167,
+      "field_score_calls": 15762,
+      "field_scoring_seconds": 0.5669555899512488,
+      "original_execution_calls": 2000,
+      "repair_execution_calls": 262,
+      "original_execution_seconds": 21.975836216675816,
+      "repair_execution_seconds": 6.723089670820627,
+      "row_seconds": 35.332412542018574
+    },
+    "elapsed_seconds": 39.37661379398196,
+    "gold_usage": "none; input gold metadata is discarded",
+    "acceptance": "not performed; output contains all budgeted proposals, even failed ones"
+  },
+  "programs": 2262,
+  "source_tokens": 51418,
+  "target_tokens": 100532,
+  "padded_target_tokens": 156888,
+  "elapsed_seconds": 3.7831981310155243,
+  "score_definition": "sum/mean teacher-forced token log probabilities including BOS/EOS; padding masked",
+  "gold_used": false,
+  "scorer_sha256": "959924ecd31e4283b21209b8eb6e70eb3265ad4101313784a9d522a5fecbd162"
+}

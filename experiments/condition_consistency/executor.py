@@ -142,6 +142,34 @@ def compare_answers(answer, prediction) -> bool:
     return prediction is not None and bool(_official_equal()(str(answer), str(prediction)))
 
 
+def isolate_find_state(engine) -> None:
+    """Keep the release executor's Find result, without its persistent aliasing.
+
+    Official Find uses += on entity_name_to_ids[name] when a name is also a
+    concept. Repeated calls otherwise append concept IDs permanently. Repair
+    prefix calls must not alter subsequent candidates' answers. Each invocation
+    therefore gets a private list and restores the original mapping in finally.
+    The downloaded official implementation is left unchanged.
+    """
+    official_find = engine.Find
+
+    def isolated_find(dependencies, inputs):
+        name = inputs[0]
+        mapping = engine.entity_name_to_ids
+        existed = name in mapping
+        previous = mapping.get(name)
+        mapping[name] = list(previous) if existed else []
+        try:
+            return official_find(dependencies, inputs)
+        finally:
+            if existed:
+                mapping[name] = previous
+            else:
+                mapping.pop(name, None)
+
+    engine.Find = isolated_find
+
+
 class KoPLExecutor:
     def __init__(self, kb_path: str | Path, source_root: str | Path | None = None,
                  backend: str = "baseline"):
@@ -157,6 +185,7 @@ class KoPLExecutor:
             from Program.executor_rule import RuleExecutor
             with contextlib.redirect_stdout(io.StringIO()):
                 self.engine = RuleExecutor({}, str(kb_path))
+            isolate_find_state(self.engine)
             return
         source = Path(source_root) if source_root else ROOT / "external/kopl"
         if not (source / "src/kopl/kopl.py").is_file():

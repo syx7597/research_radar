@@ -110,6 +110,7 @@ kg_v3/retrieval_index/
 /results/condition_consistency/**/final/
 /results/condition_consistency/**/tokenized/
 /results/condition_consistency/**/runs/
+/runs/
 *.safetensors
 *.pt
 *.pth

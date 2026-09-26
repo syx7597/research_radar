@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-26T07:10:07.477346+00:00",
+  "policy_sha256": "4f5e37ebf0cd597d6515bde1af020a714cbb8b63ed185763ba16360241f86a8d",
+  "original_agreement": {
+    "dev": {
+      "questions": 500,
+      "original_candidate_mismatches": 0
+    },
+    "calibration": {
+      "questions": 500,
+      "original_candidate_mismatches": 0
+    }
+  },
+  "holdout_answers_evaluated": false,
+  "holdout_generation": "question-only, fixed checkpoint; completed before acceptance freeze",
+  "execution": "same PYTHONHASHSEED=20260926 and state-isolated Find for all methods"
+}

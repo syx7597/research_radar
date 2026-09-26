@@ -1,0 +1,15 @@
+{
+  "input_sha256": "8f43c6d86bc9871c2ec6bc31e869e67febd96177d4b17a46c6c722dbf5357321",
+  "output_sha256": "debb342f775f093e866ec27a94c44e1d33113a2d9b47c8aec5096c3608de4045",
+  "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+  "executor_source_commit": "14d87cd22eb79f702fd4ad5c09240bef126d9dce",
+  "questions": 500,
+  "total_candidates": 4000,
+  "valid_candidates": 1164,
+  "elapsed_seconds": 36.60974383199937,
+  "gold_used": false,
+  "python_hash_seed": "20260926",
+  "adapter_source_sha256": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+  "timeout_seconds": 5.0,
+  "source_sha256": "c13ecf92105086b82453a36e35f0653626ba66cc3826d9b832bbe3a4aacac2d6"
+}
