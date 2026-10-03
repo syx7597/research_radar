@@ -1,19 +1,57 @@
 {
-  "recorded_at_utc": "2026-10-03T08:22:43.107919+00:00",
-  "status": "reboot_requested_ssh_not_recovered",
+  "recorded_at_utc": "2026-10-03T10:13:34.598133+00:00",
+  "status": "reboot_verified_cuda_recovered",
   "user_authorized_normal_host_reboot": true,
   "administrator_scope": "one sudo systemctl reboot command; no administrator training",
   "reboot_command_exit_code": 1,
-  "reboot_completion_verified": false,
-  "observation": "SSH closed after the reboot request; subsequent TCP connections to port 22 were refused. The initial bounded 310.8-second port watch and a subsequent bounded approximately 3-minute watch never observed the port open.",
+  "reboot_completion_verified": true,
+  "observation": "SSH recovered on the following user continuation. A different boot ID was verified as syx. All four GPUs report no required recovery action; no compute processes were present before launch. A 32-element CUDA dot product returned 32.0 on every GPU, and BF16 support was reported on each device.",
   "pre_reboot": {
     "experiment_jobs_terminal": true,
     "verified_weights_present": true,
     "ollama_service": "active/running",
     "gdm_service": "active/running"
   },
-  "post_reboot_gpu_status": "unknown: cannot access host",
-  "training_started_after_request": false,
-  "next_action": "verify boot state through console or wait for SSH; then connect as syx, verify new boot ID/CUDA and run the original short training check",
-  "limits": "No second reboot, power cycle, driver reinstall, or administrator model training was performed."
+  "post_reboot_gpu_status": "healthy; four RTX 4090 devices, CUDA available, torch 2.6.0+cu124",
+  "training_started_after_request": true,
+  "next_action": "SFT smoke_v3 passed; initial Agent SFT and same-backbone program SFT now running in parallel as syx. Complete development evaluation and collect real training failures before A/C continuation.",
+  "limits": "No second reboot, power cycle, driver reinstall, or administrator model training was performed.",
+  "initial_observation": {
+    "recorded_at_utc": "2026-10-03T08:22:43.107919+00:00",
+    "status": "reboot_requested_ssh_not_recovered",
+    "reboot_completion_verified": false,
+    "observation": "SSH closed after the reboot request; subsequent TCP connections to port 22 were refused. The initial bounded 310.8-second port watch and a subsequent bounded approximately 3-minute watch never observed the port open.",
+    "post_reboot_gpu_status": "unknown: cannot access host",
+    "training_started_after_request": false,
+    "next_action": "verify boot state through console or wait for SSH; then connect as syx, verify new boot ID/CUDA and run the original short training check"
+  },
+  "pre_reboot_boot_id": "1ebf87b6-9909-4a24-a9e0-ba4a0422dd49",
+  "post_reboot_boot_id": "222cdbd8-e2ea-4bbc-85d9-1058c6639e75",
+  "verification_user": "syx",
+  "verification_uid": 1001,
+  "post_reboot_checks": {
+    "gpu_recovery_action": [
+      "None",
+      "None",
+      "None",
+      "None"
+    ],
+    "cuda_device_count": 4,
+    "cuda_dot_product_results": [
+      32.0,
+      32.0,
+      32.0,
+      32.0
+    ],
+    "bf16_supported": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "reported_total_memory_bytes_per_device": 50875924480,
+    "initial_display_process": "Xorg; 4 MiB per device; no compute applications before launch",
+    "sft_smoke_result": "results/agent_feedback/sft_smoke_v3/run_result.json",
+    "sft_smoke_ledger": "results/agent_feedback/jobs/sft_smoke_v3.json"
+  }
 }

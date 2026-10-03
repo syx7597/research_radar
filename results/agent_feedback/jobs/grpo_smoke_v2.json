@@ -1,0 +1,32 @@
+{
+  "name": "grpo_smoke_v2",
+  "supervisor_pid": 5901,
+  "child_pid": 5902,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    2
+  ],
+  "command": [
+    "env",
+    "CPATH=/home/syx/research_radar_agent/.deps/python-dev/extracted/usr/include/python3.10:/home/syx/research_radar_agent/.deps/python-dev/extracted/usr/include",
+    ".venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.train_grpo",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--adapter",
+    "results/agent_feedback/sft_smoke_v3/model",
+    "--output",
+    "results/agent_feedback/grpo_smoke_v2",
+    "--smoke-steps",
+    "1"
+  ],
+  "started_at": 1791023047.778636,
+  "heartbeat_at": 1791023097.7887278,
+  "status": "completed",
+  "finished_at": 1791023103.1103635,
+  "returncode": 0,
+  "gpu_seconds": 55.331727504730225
+}

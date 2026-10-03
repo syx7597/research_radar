@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "seconds": 36.38172342100006,
+  "smoke": true,
+  "formal_result_eligible": false,
+  "model_artifact": null,
+  "world_size": 1,
+  "cuda_visible_devices": "2",
+  "rank0_max_memory_allocated": 7507534848,
+  "metrics": {
+    "train_runtime": 35.3964,
+    "train_samples_per_second": 0.113,
+    "train_steps_per_second": 0.028,
+    "train_loss": 0.0,
+    "epoch": 0.00020004000800160032
+  },
+  "optimizer_steps": 1,
+  "seed": 20261003,
+  "sha256": {
+    "questions": "29485bcf05016c2e618085663c89139a77ceb59e7f4ee8c1bf734d53eae88b2f",
+    "gold": "2c1d811e95c17a58000bff0aa601b5fa7e2d6337aab58685aebd86ff50f8896c",
+    "eligible_ids": "e657aac461410424115355ad4868cc8d8d4988ae59f59757b008d4cf9e941598",
+    "protocol": "9c7794b4a36049c36ad469572ba6f805e48fdc74f2b9d8c994cfdaaa48d80ec3",
+    "script": "0adeef4b717ea1c5b7daab4f59162d838051f99d97847bbf363512950de13d75",
+    "environment": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "trl_trainer": "ec6ff9aa69de59237588aafe3de861342b78c3779a595d08a763eed120a3c406",
+    "adapter_config": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "adapter_weights": "513381d23cfafc775e3389fd62b6be261537bfc39397507697b0f720b768cb86"
+  },
+  "native_contract": {
+    "completion_budget_includes_tool_observations": true,
+    "total_completion_token_cap": 4096,
+    "per_turn_max_new_tokens": 192,
+    "max_tool_calling_iterations": 24,
+    "episode_max_calls": 24,
+    "multiple_tool_calls_per_turn": "native_trl_sequential",
+    "unknown_tools_and_parse_errors": "native_trl_not_episode_calls",
+    "post_finish_generation": "native_trl_until_no_tool_call_or_budget"
+  }
+}

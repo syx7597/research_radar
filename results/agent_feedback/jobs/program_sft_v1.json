@@ -1,0 +1,29 @@
+{
+  "name": "program_sft_v1",
+  "supervisor_pid": 5715,
+  "child_pid": 5717,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    1
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.train_sft",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--output",
+    "results/agent_feedback/program_sft_v1",
+    "--program",
+    "--data",
+    "data/agent_feedback/train.gold.jsonl",
+    "--epochs",
+    "3"
+  ],
+  "started_at": 1791022265.4480996,
+  "heartbeat_at": 1791023225.5707738,
+  "status": "running",
+  "finished_at": null
+}

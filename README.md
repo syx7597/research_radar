@@ -1,6 +1,6 @@
 # 复杂知识问答：公开基准验证与雷达知识应用
 
-**当前阶段：新Agent实验链路及权重已准备完成，GPU短测被服务器设备故障阻断；尚无新模型效果结论。** 采用已有的小模型工具Agent与SFT→GRPO框架，唯一改进研究“执行反馈恢复训练”；KQA Pro承担主要方法验证，雷达承担知识构建和独立应用评价。模型、文献、同模型对照及三周/72 GPU小时首轮上限见[完整路线](docs/THESIS_ROUTE_REVIEW.md)。字段修复和约束小试已结束，不继续围绕小规则追分；历史结果如实保留。
+**当前阶段：服务器重启后GPU已恢复，真实两步训练短测通过，初始Agent与同模型程序基线的正式SFT已启动；尚无方法收益结论。** 采用已有的小模型工具Agent与SFT→GRPO框架，唯一改进研究“执行反馈恢复训练”；KQA Pro承担主要方法验证，雷达承担知识构建和独立应用评价。模型、文献、同模型对照及三周/72 GPU小时首轮上限见[完整路线](docs/THESIS_ROUTE_REVIEW.md)。字段修复和约束小试已结束，不继续围绕小规则追分；历史结果如实保留。
 
 硕士毕业设计研究工作区，预计六个月后提交。当前主线：**雷达知识资源构建 → 小模型工具问答 → 公开方法验证 → 独立雷达应用评价**。复用现有知识、执行器和系统，BART作为历史对照；允许借鉴已有研究，方法效果由受控实验判断。
 
@@ -39,11 +39,15 @@
 - 旧固定策略系统499题88.6%属于历史结果，不能作为新方法实验结论。
 - 新公开实验固定5,000训练题、500开发题及2,000项目留出题；后者排除此前已用组件，仍不是官方隐藏测试集。见[冻结协议](results/agent_feedback/protocol.json)与[切分清单](results/agent_feedback/split_manifest.json)。
 - 逐步执行与原整程序执行在5,500条金标轨迹上完全一致；训练/开发各有1条既有答案不一致，仅排除训练异常。4,999条训练轨迹通过真实Qwen分词检查。这些是基础设施验证，不是模型正确率。
-- 新入口为`experiments/agent_feedback/`：共享初始SFT、同监督预算A/C续训、同模型程序基线、真实交互推理与GPU预算记录。GRPO适配已有CPU检查，原生工具循环预算见独立修订协议；基座权重已校验，尚无训练后的adapter和完整对照结果。
+- 新入口为`experiments/agent_feedback/`：共享初始SFT、同监督预算A/C续训、同模型程序基线、真实交互推理与GPU预算记录。GRPO适配已有CPU检查，原生工具循环预算见独立修订协议；基座权重已校验，短测已产生训练后的adapter，正式基线SFT已启动，尚无完整效果对照。
 
-2026-10-03运行记录：两次短测均未完成优化步骤。第一次暴露Transformers 5.18预热参数接口变化，已修复且保持3%预热；第二次因CUDA不可用退出。最初独立驱动调用返回`CUDA_ERROR_NO_DEVICE (100)`，四张卡报告`GPU Recovery Action: Reset`。随后经用户授权，由管理员释放全部GPU设备句柄并尝试重置，命令返回`No devices were found`（退出码6），内核记录GSP固件初始化失败。Ollama/GDM已恢复运行，管理员会话已退出；切回syx后CUDA初始化返回999，仍无法训练，需要维护恢复设备。这不是方法效果负结果；不能据此判断恢复训练是否有效。
+2026-10-03恢复与训练记录：经用户授权的一次正常整机重启后，SSH已恢复，新boot ID为`222cdbd8-e2ea-4bbc-85d9-1058c6639e75`。四张GPU通过CUDA实际计算及BF16检查；模型训练由`syx`（UID 1001）执行，管理员未执行训练。`sft_smoke_v3`完成真实两步优化，训练loss为1.0584，实际监督506 tokens，训练循环约3.05秒；这些数据证明训练链路可运行，不是问答准确率或方法收益证据。GPU预算按监督进程账本结算，不能以训练循环耗时替代全部进程耗时。
 
-最新操作见[整机重启请求](results/agent_feedback/server_reboot_attempt.json)：用户已授权一次正常重启，当前SSH尚未恢复，无法确认重启及GPU恢复成功。此前操作见[管理员重置尝试](results/agent_feedback/gpu_reset_attempt.json)和[GPU就绪状态](results/agent_feedback/gpu_readiness.json)，完整模型校验见[权重校验记录](results/agent_feedback/weights_verified.json)。
+正式初始Agent SFT（2 epochs，GPU 0）和同3B一次性程序基线（3 epochs，GPU 1）已并行启动。状态与证据见[重启记录](results/agent_feedback/server_reboot_attempt.json)、[短测结果](results/agent_feedback/sft_smoke_v3/run_result.json)、[短测账本](results/agent_feedback/jobs/sft_smoke_v3.json)、[Agent训练账本](results/agent_feedback/jobs/initial_sft_v1.json)及[程序基线账本](results/agent_feedback/jobs/program_sft_v1.json)。完成情况以对应账本和结果文件为准。
+
+另外用空闲GPU完成八题批量交互推理和一步原生GRPO短测，见[运行检查](results/agent_feedback/runtime_smoke_checks.json)。GRPO首次因缺少Python头文件失败，已在syx实验目录内补齐，系统环境及训练算法未修改；后续GRPO命令需要保留[依赖记录](results/agent_feedback/python_headers.json)中的`CPATH`。GRPO短测使用两步SFT权重，四条采样奖励及梯度均为零，首个预热步骤学习率也为零；只证明执行链路兼容，未验证有效参数更新或RL收益。正式RL前须用完成SFT的分支检查学习信号。仓库中的[训练快照](results/agent_feedback/running_snapshot.json)带采集时间，不是实时状态。
+
+历史故障：前两次短测未完成优化步骤，分别遇到Transformers 5.18预热接口变化和CUDA设备不可用；接口修复保持3%预热。此前GPU重置返回`No devices were found`，并记录GSP固件初始化失败，后经上述整机重启恢复。这些属于运行环境故障，不是方法效果负结果。历史证据见[管理员重置尝试](results/agent_feedback/gpu_reset_attempt.json)和[故障期GPU状态](results/agent_feedback/gpu_readiness.json)，模型来源见[权重校验记录](results/agent_feedback/weights_verified.json)。
 
 ## 目录
 

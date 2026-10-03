@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "seconds": 3.631912800000464,
+  "gpu_count": 1,
+  "cuda_visible_devices": "0",
+  "max_memory_allocated": 14332730880,
+  "metrics": {
+    "train_runtime": 3.0533,
+    "train_samples_per_second": 1.31,
+    "train_steps_per_second": 0.655,
+    "train_loss": 1.0584027767181396,
+    "epoch": 0.125
+  },
+  "actual_supervised_tokens": 506,
+  "actual_input_tokens": 5470,
+  "microbatches": 2,
+  "seed": 20261003,
+  "data_sha256": "e657aac461410424115355ad4868cc8d8d4988ae59f59757b008d4cf9e941598",
+  "script_sha256": "ea8259f783825f1e7733a8fb147f980a70d698766bb501d8ee9e3a26193c008e"
+}

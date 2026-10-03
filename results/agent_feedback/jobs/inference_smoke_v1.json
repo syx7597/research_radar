@@ -1,0 +1,35 @@
+{
+  "name": "inference_smoke_v1",
+  "supervisor_pid": 5812,
+  "child_pid": 5813,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    3
+  ],
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.inference",
+    "generate",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--adapter",
+    "results/agent_feedback/sft_smoke_v3/model",
+    "--questions",
+    "data/agent_feedback/dev.questions.jsonl",
+    "--limit",
+    "8",
+    "--batch-size",
+    "8",
+    "--output",
+    "results/agent_feedback/inference_smoke_v1.jsonl"
+  ],
+  "started_at": 1791022467.972411,
+  "heartbeat_at": 1791022678.015461,
+  "status": "completed",
+  "finished_at": 1791022680.5837097,
+  "returncode": 0,
+  "gpu_seconds": 212.61129879951477
+}

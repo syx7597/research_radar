@@ -1,8 +1,14 @@
 # 六个月执行计划
 
-更新：2026-10-03。当前唯一主路线见[论文路线与方法方案](THESIS_ROUTE_REVIEW.md)：公开KQA Pro上的3B工具Agent，SFT→终局奖励GRPO，唯一增量为执行反馈恢复轨迹训练；随后迁移到可追溯的雷达知识问答。已完成实验实现及CPU校验，两份基座权重已通过SHA-256校验；GPU重置尝试因设备无法枚举而失败，尚无新训练效果结论。
+更新：2026-10-03。当前唯一主路线见[论文路线与方法方案](THESIS_ROUTE_REVIEW.md)：公开KQA Pro上的3B工具Agent，SFT→终局奖励GRPO，唯一增量为执行反馈恢复轨迹训练；随后迁移到可追溯的雷达知识问答。实验实现、CPU校验及权重SHA-256校验已完成；服务器重启后GPU恢复，真实训练短测通过，正式基线SFT已开始，尚无方法收益结论。
 
-当前执行状态：切分与协议已冻结；逐步执行器在5,500条金标轨迹上与原执行器一致；4,999条可用训练轨迹经真实分词器核验，最长3,171 tokens。权重SHA-256校验已完成；已由管理员在释放设备占用后尝试重置，但返回No devices were found，固件初始化故障仍在；两个临时停止的服务已恢复。用户已授权并发出一次整机正常重启请求，当前SSH尚未恢复；先确认服务器启动及设备恢复，再由syx通过两步GPU训练检查，并行启动初始Agent SFT和同3B一次性程序基线。随后从训练题真实失败生成恢复对，A/C从同一初始adapter各续训一轮，严格匹配监督量；先评估固定开发集，再决定预注册范围内的后续验证。留出集不参与调参。
+当前执行状态：切分与协议已冻结；逐步执行器在5,500条金标轨迹上与原执行器一致；4,999条可用训练轨迹经真实分词器核验，最长3,171 tokens。用户授权的一次正常整机重启已完成，SSH恢复，新boot ID为`222cdbd8-e2ea-4bbc-85d9-1058c6639e75`，四张GPU通过CUDA实际计算与BF16检查。`syx`（UID 1001）完成`sft_smoke_v3`两步优化，训练loss为1.0584、实际监督506 tokens；管理员未执行训练。初始Agent SFT（2 epochs，GPU 0）与同3B一次性程序基线（3 epochs，GPU 1）已并行启动，短测结果不等于方法有效。
+
+运行证据见[重启记录](../results/agent_feedback/server_reboot_attempt.json)、[短测结果](../results/agent_feedback/sft_smoke_v3/run_result.json)、[短测账本](../results/agent_feedback/jobs/sft_smoke_v3.json)、[Agent训练账本](../results/agent_feedback/jobs/initial_sft_v1.json)及[程序基线账本](../results/agent_feedback/jobs/program_sft_v1.json)。此前两次短测在优化前失败，预热接口问题已修复；GPU重置未能恢复固件故障，后经本次整机重启恢复。历史失败及其预算记录继续保留。
+
+接下来等待正式SFT结果，通过训练题自由生成收集真实失败，构建恢复对；A/C从同一初始adapter各续训一轮，严格匹配监督量。先评估固定开发集，再决定预注册范围内的后续验证。留出集不参与调参；训练是否完成、实际GPU预算和方法是否改进均以对应产物为准。
+
+2026-10-03补充运行检查：八题批量交互推理完成；原生GRPO一步循环在补齐syx私有Python头文件后完成，未改动算法和参数。该GRPO短测奖励、梯度和首步预热学习率均为零，不能视为学习有效，正式RL前须检查完整SFT分支的学习信号。后续GRPO需显式携带[私有头文件CPATH](../results/agent_feedback/python_headers.json)。短测及失败成本见[运行检查](../results/agent_feedback/runtime_smoke_checks.json)，正式训练进度见带时间戳的[快照](../results/agent_feedback/running_snapshot.json)。
 
 ## 已结束的实验
 

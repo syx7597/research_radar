@@ -1,0 +1,32 @@
+{
+  "examples": 4999,
+  "input_tokens": 2012314,
+  "supervised_tokens": 273426,
+  "max_length": 538,
+  "token_cache_sha256": "dd66ae0c49397cc38562f163683f006129067721f06c826e6080e32fe51fb9a2",
+  "config": {
+    "model": "models/qwen2.5-3b-instruct",
+    "data": "data/agent_feedback/train.gold.jsonl",
+    "output": "results/agent_feedback/program_sft_v1",
+    "adapter": null,
+    "program": true,
+    "pretokenized": false,
+    "continuation_manifest": "results/agent_feedback/continuation_data.json",
+    "epochs": 3.0,
+    "max_steps": -1,
+    "batch_size": 2,
+    "accumulation": 8,
+    "max_length": 8192,
+    "learning_rate": 0.0001,
+    "seed": 20261003,
+    "limit": 0,
+    "tokenize_only": false
+  },
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "trl": "1.14.1"
+  }
+}

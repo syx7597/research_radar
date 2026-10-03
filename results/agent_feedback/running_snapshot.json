@@ -1,0 +1,160 @@
+{
+  "recorded_at_utc": "2026-10-03T10:26:24.900682+00:00",
+  "snapshot_only": true,
+  "jobs": [
+    {
+      "name": "grpo_smoke_v1",
+      "status": "failed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "started_at": 1791022367.5121496,
+      "finished_at": 1791022421.89433,
+      "returncode": 1,
+      "gpu_seconds": 54.3821804523468,
+      "elapsed_seconds": 54.38
+    },
+    {
+      "name": "grpo_smoke_v2",
+      "status": "completed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "started_at": 1791023047.778636,
+      "finished_at": 1791023103.1103635,
+      "returncode": 0,
+      "gpu_seconds": 55.331727504730225,
+      "elapsed_seconds": 55.33,
+      "latest_training_log": {
+        "loss": "0",
+        "grad_norm": "0",
+        "learning_rate": "0",
+        "num_tokens": "4487",
+        "completions/mean_length": "353.8",
+        "completions/min_length": "286",
+        "completions/max_length": "406",
+        "completions/clipped_ratio": "0.5",
+        "completions/mean_terminated_length": "395",
+        "completions/min_terminated_length": "384",
+        "completions/max_terminated_length": "406",
+        "tools/call_frequency": "6.25",
+        "tools/failure_frequency": "0.92",
+        "rewards/RewardEnvironment/mean": "0",
+        "rewards/RewardEnvironment/std": "0",
+        "reward": "0",
+        "reward_std": "0",
+        "frac_reward_zero_std": "1",
+        "entropy": "0.4776",
+        "clip_ratio/low_mean": "0",
+        "clip_ratio/high_mean": "0",
+        "clip_ratio/region_mean": "0",
+        "clip_ratio/low_min": "0",
+        "clip_ratio/high_max": "0",
+        "step_time": "35.28",
+        "epoch": "0.0002"
+      }
+    },
+    {
+      "name": "inference_smoke_v1",
+      "status": "completed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        3
+      ],
+      "started_at": 1791022467.972411,
+      "finished_at": 1791022680.5837097,
+      "returncode": 0,
+      "gpu_seconds": 212.61129879951477,
+      "elapsed_seconds": 212.61
+    },
+    {
+      "name": "initial_sft_v1",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "started_at": 1791022265.4459953,
+      "finished_at": null,
+      "returncode": null,
+      "gpu_seconds": null,
+      "elapsed_seconds": 919.45,
+      "latest_training_log": {
+        "loss": "0.03172",
+        "grad_norm": "0.2793",
+        "learning_rate": "8.517e-05",
+        "epoch": "0.352"
+      }
+    },
+    {
+      "name": "program_sft_v1",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "started_at": 1791022265.4480996,
+      "finished_at": null,
+      "returncode": null,
+      "gpu_seconds": null,
+      "elapsed_seconds": 919.45,
+      "latest_training_log": {
+        "loss": "0.03376",
+        "grad_norm": "0.5783",
+        "learning_rate": "6.703e-05",
+        "epoch": "1.054"
+      }
+    },
+    {
+      "name": "sft_smoke_v1",
+      "status": "failed",
+      "user": null,
+      "uid": null,
+      "gpus": [
+        0
+      ],
+      "started_at": 1790996672.876129,
+      "finished_at": 1790996679.8028047,
+      "returncode": 1,
+      "gpu_seconds": 6.926675796508789,
+      "elapsed_seconds": 6.93
+    },
+    {
+      "name": "sft_smoke_v2",
+      "status": "failed",
+      "user": null,
+      "uid": null,
+      "gpus": [
+        0
+      ],
+      "started_at": 1790996892.3472376,
+      "finished_at": 1790996898.122162,
+      "returncode": 1,
+      "gpu_seconds": 5.7749245166778564,
+      "elapsed_seconds": 5.77
+    },
+    {
+      "name": "sft_smoke_v3",
+      "status": "completed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "started_at": 1791022250.8336327,
+      "finished_at": 1791022265.4069955,
+      "returncode": 0,
+      "gpu_seconds": 14.573362827301025,
+      "elapsed_seconds": 14.57
+    }
+  ],
+  "method_effectiveness": "not yet evaluated",
+  "controller_pid": 5680
+}

@@ -1,0 +1,30 @@
+{
+  "name": "grpo_smoke_v1",
+  "supervisor_pid": 5771,
+  "child_pid": 5772,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    2
+  ],
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.train_grpo",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--adapter",
+    "results/agent_feedback/sft_smoke_v3/model",
+    "--output",
+    "results/agent_feedback/grpo_smoke_v1",
+    "--smoke-steps",
+    "1"
+  ],
+  "started_at": 1791022367.5121496,
+  "heartbeat_at": 1791022417.5231705,
+  "status": "failed",
+  "finished_at": 1791022421.89433,
+  "returncode": 1,
+  "gpu_seconds": 54.3821804523468
+}

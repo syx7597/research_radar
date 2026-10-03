@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-03T10:26:24.898483+00:00",
+  "purpose": "runtime compatibility only; no method effectiveness result",
+  "user": "syx",
+  "uid": 1001,
+  "sft": {
+    "name": "sft_smoke_v3",
+    "status": "passed",
+    "optimizer_steps": 2,
+    "result": "sft_smoke_v3/run_result.json"
+  },
+  "inference": {
+    "name": "inference_smoke_v1",
+    "status": "passed",
+    "questions": 8,
+    "adapter": "sft_smoke_v3/model",
+    "result": "inference_smoke_v1.runtime.json",
+    "accuracy_not_evaluated": true
+  },
+  "grpo": {
+    "name": "grpo_smoke_v2",
+    "status": "runtime_loop_passed",
+    "optimizer_steps": 1,
+    "formal_result_eligible": false,
+    "model_artifact": null,
+    "adapter": "sft_smoke_v3/model",
+    "rollouts": 4,
+    "nonzero_rewards": 0,
+    "logged_gradient_norm": 0.0,
+    "logged_learning_rate": 0.0,
+    "interpretation": "All sampled rewards and the gradient were zero; first warmup step had zero learning rate. This proves rollout/loss/backward/optimizer code compatibility, not a nonzero parameter update or RL effectiveness. Recheck learning signal using the completed SFT branch before formal RL.",
+    "result": "grpo_smoke_v2/run_result.json",
+    "failed_previous_attempt": {
+      "name": "grpo_smoke_v1",
+      "error": "Triton launcher compilation: Python.h missing",
+      "gpu_seconds": 54.3821804523468
+    },
+    "dependency_fix": "python_headers.json",
+    "training_algorithm_or_hyperparameters_changed": false
+  }
+}

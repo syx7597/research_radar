@@ -1,0 +1,14 @@
+{
+  "package": "libpython3.10-dev_3.10.12-1~22.04.18_amd64.deb",
+  "source": "https://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/libpython3.10-dev_3.10.12-1~22.04.18_amd64.deb",
+  "sha256": "c058675011ec4b64f5ad803d74b5fe7de0c720c3700683040da68d1fb5b44ed9",
+  "headers_extracted_only": true,
+  "system_unchanged": true,
+  "runtime_python": "3.10.12-1~22.04.9",
+  "header_package_python": "3.10.12-1~22.04.18",
+  "scope": "CPATH for GRPO processes only; no shared libraries loaded from this package",
+  "CPATH": "/home/syx/research_radar_agent/.deps/python-dev/extracted/usr/include/python3.10:/home/syx/research_radar_agent/.deps/python-dev/extracted/usr/include",
+  "header_compile_check": "passed",
+  "user": "syx",
+  "uid": 1001
+}
