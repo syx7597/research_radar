@@ -111,6 +111,10 @@ kg_v3/retrieval_index/
 /results/condition_consistency/**/tokenized/
 /results/condition_consistency/**/runs/
 /runs/
+/results/agent_feedback/**/*.jsonl
+/results/agent_feedback/**/checkpoint-*/
+/results/agent_feedback/**/model/
+/results/agent_feedback/**/tokenized/
 *.safetensors
 *.pt
 *.pth

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-03",
+  "model_training_started": false,
+  "changes": [
+    {
+      "component": "tool_schemas",
+      "reason": "match exact native TRL method reflection, including return schema and alphabetical finish/step order",
+      "evidence": "installed TRL1.14.1 and transformers.get_json_schema(Episode methods)"
+    },
+    {
+      "component": "observation failure",
+      "reason": "rollback appended handle if observation construction fails; preserve error/handle invariant"
+    },
+    {
+      "component": "transformers_5.18_tokenization",
+      "reason": "apply_chat_template defaults to BatchEncoding; request return_dict=False and assert exact prefix identity",
+      "observed_failure": "first training record rejected before any GPU training"
+    },
+    {
+      "component": "training_supervision",
+      "reason": "require explicit supervise mask; count actual optimizer-input supervised/input tokens; include shared Done termination message in budget"
+    },
+    {
+      "component": "token_cache",
+      "reason": "include vocabulary/template files, tokenizer libraries and program eligibility IDs in cache identity"
+    },
+    {
+      "component": "inference",
+      "reason": "isolate per-question remaining budgets; preserve tool tags; score full/subset coverage explicitly; program gets full generation cap"
+    }
+  ],
+  "rl_open_compatibility_items": [
+    "native completion cap includes observations",
+    "native tool loop allows multiple calls per generated turn",
+    "native parse errors not charged by Episode"
+  ],
+  "decision": "SFT and environment preparation continue; align and freeze RL semantics before any RL run, do not silently claim frozen v1 is satisfied"
+}

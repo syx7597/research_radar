@@ -1,0 +1,35 @@
+{
+  "purpose": "infrastructure and SFT data, not model accuracy",
+  "splits": {
+    "train": {
+      "total": 5000,
+      "step_vs_direct_agreement": 5000,
+      "correct": 4999,
+      "mismatches": [
+        {
+          "id": "train:2522",
+          "prediction": "9",
+          "gold": "12"
+        }
+      ]
+    },
+    "dev": {
+      "total": 500,
+      "step_vs_direct_agreement": 500,
+      "correct": 499,
+      "mismatches": [
+        {
+          "id": "train:40416",
+          "prediction": "None",
+          "gold": "Batman & Robin"
+        }
+      ]
+    }
+  },
+  "training_trajectories": {
+    "count": 4999,
+    "sha256": "e657aac461410424115355ad4868cc8d8d4988ae59f59757b008d4cf9e941598"
+  },
+  "seconds": 72.09012425001129,
+  "environment_sha256": "d3478d9182bbddafab1afed56503fa45ed7e12878cdbaf7066c3c4c9b6a31d3c"
+}

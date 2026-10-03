@@ -1,0 +1,67 @@
+{
+  "version": "agent_feedback_v1",
+  "frozen_date": "2026-10-03",
+  "seed": 20261003,
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "pin_download_before_training",
+  "adapter": {
+    "type": "LoRA",
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": "all-linear"
+  },
+  "sft": {
+    "learning_rate": 0.0001,
+    "warmup_ratio": 0.03,
+    "effective_batch_size": 16,
+    "initial_epochs": 2,
+    "continuation_epochs_equivalent": 1,
+    "max_context": 8192,
+    "supervision": "assistant action content and end token only; erroneous actions/observations masked",
+    "comparison": "shared initial adapter; A/C same unique questions and supervised-token budget; input tokens/compute separately reported"
+  },
+  "arms": {
+    "P": "same backbone one-shot program SFT, 3 epochs",
+    "A": "initial agent SFT + clean continuation",
+    "C": "initial agent SFT + mixed recovery continuation",
+    "B": "A + outcome-only GRPO",
+    "D": "C + identical GRPO"
+  },
+  "recovery": {
+    "target_supervised_fraction": 0.5,
+    "prefer": "initial model real training errors",
+    "synthetic": "supplement only, report separately; do not infer error from empty result",
+    "quality": "verify executed suffix, dependencies and conditions; do not expose gold to inference"
+  },
+  "rl": {
+    "reward": "official exact answer comparison, correct 1 else 0",
+    "group_size": 4,
+    "max_updates": 200,
+    "learning_rate": 5e-06,
+    "beta": 0.0,
+    "num_iterations": 1,
+    "max_calls": 24,
+    "per_turn_max_new_tokens": 192,
+    "total_generated_token_cap": 2048,
+    "backend": "mature GRPO implementation; exact installed version recorded before run"
+  },
+  "inference": {
+    "max_calls": 24,
+    "max_context": 8192,
+    "per_turn_max_new_tokens": 192,
+    "total_generated_token_cap": 2048,
+    "decoding": "greedy",
+    "observations": "same bounded actual results for all agent arms"
+  },
+  "pilot_gpu_hours_cap": 72,
+  "max_mechanism_revisions": 1,
+  "go_rule": {
+    "accuracy_gain_pp": 2.0,
+    "or_accuracy_loss_at_most_pp": 1.0,
+    "and_total_inference_token_reduction_fraction": 0.2,
+    "interpretation": "development investment decision, not statistical significance"
+  },
+  "formal_evaluation": "freeze method, then same fixed holdout; two seeds for key configurations; official val reference only",
+  "prompt": "Answer the question by executing KoPL tools against the knowledge base. Make exactly one tool call per turn, then read its actual observation. Use step(function, inputs, dependencies); inputs are strings, dependencies are integer handles returned by earlier successful steps. Do not copy entity lists. Keep every question condition. Empty results, zero and no can be correct. Errors do not create handles; earlier handles remain available. Use finish(answer_handle) to select a result from an answer-producing function; then respond Done. Do not answer from memory. At most 24 tool calls.\nFindAll(): all entities. Find(name): entities/concepts with that name.\nFilterConcept(h, concept): keep entities of a concept.\nFilterStr(h,key,value), FilterNum/Year/Date(h,key,value,op): filter attributes.\nQFilterStr(h,key,value), QFilterNum/Year/Date(h,key,value,op): filter qualifiers on attached facts.\nRelate(h,predicate,direction): follow a relation, direction forward or backward.\nAnd(h1,h2), Or(h1,h2): intersect or union entity sets.\nWhat(h): entity name. Count(h): number of entities.\nSelectBetween(h1,h2,key,op): compare, op greater or less.\nSelectAmong(h,key,op): select extreme, op largest or smallest.\nQueryAttr(h,key): attribute value.\nQueryAttrUnderCondition(h,key,qualifier_key,qualifier_value): conditional attribute.\nVerifyStr(h,value), VerifyNum/Year/Date(h,value,op): verify a queried value.\nQueryRelation(h1,h2): relation between entities.\nQueryAttrQualifier(h,key,value,qualifier_key): qualifier of an attribute fact.\nQueryRelationQualifier(h1,h2,predicate,qualifier_key): qualifier of a relation.\nNumeric/date operators are =, !=, <, >. Quantities include the exact unit, e.g. '5 metre'.\n"
+}

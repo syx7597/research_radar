@@ -1,0 +1,7 @@
+{
+  "repository": "Qwen/Qwen2.5-3B-Instruct",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "source": "https://huggingface.co/api/models/Qwen/Qwen2.5-3B-Instruct",
+  "download_status": "in_progress",
+  "weight_verification": "pending"
+}

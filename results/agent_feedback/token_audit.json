@@ -1,0 +1,30 @@
+{
+  "examples": 4999,
+  "input_tokens": 7478359,
+  "supervised_tokens": 788534,
+  "max_length": 3171,
+  "token_cache_sha256": "7efb861bf819220aa30ca879a0a3a8875d448f60bc8df83f264aac3599c6f153",
+  "config": {
+    "model": "models/qwen2.5-3b-instruct",
+    "data": "data/agent_feedback/train.success.jsonl",
+    "output": "results/agent_feedback/token_audit_v2",
+    "adapter": null,
+    "program": false,
+    "epochs": 2,
+    "max_steps": -1,
+    "batch_size": 2,
+    "accumulation": 8,
+    "max_length": 8192,
+    "learning_rate": 0.0001,
+    "seed": 20261003,
+    "limit": 0,
+    "tokenize_only": true
+  },
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "trl": "1.14.1"
+  }
+}
