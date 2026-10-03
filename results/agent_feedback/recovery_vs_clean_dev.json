@@ -1,0 +1,125 @@
+{
+  "evaluation_scope": "complete_fixed_gold",
+  "questions": 500,
+  "coverage": 1.0,
+  "arms": {
+    "baseline": {
+      "questions": 500,
+      "correct": 392,
+      "accuracy": 0.784,
+      "finished": 446,
+      "finish_rate": 0.892,
+      "failed_to_finish": 54,
+      "totals": {
+        "calls": 3957,
+        "input_tokens": 5414397,
+        "generated_tokens": 88374,
+        "invalid_calls": 1026,
+        "total_tokens": 5502771
+      },
+      "means": {
+        "calls": 7.914,
+        "input_tokens": 10828.794,
+        "generated_tokens": 176.748,
+        "invalid_calls": 2.052,
+        "total_tokens": 11005.542
+      },
+      "stop_reasons": {
+        "finished": 446,
+        "call_budget": 54
+      }
+    },
+    "candidate": {
+      "questions": 500,
+      "correct": 404,
+      "accuracy": 0.808,
+      "finished": 476,
+      "finish_rate": 0.952,
+      "failed_to_finish": 24,
+      "totals": {
+        "calls": 3732,
+        "input_tokens": 5073966,
+        "generated_tokens": 95206,
+        "invalid_calls": 395,
+        "total_tokens": 5169172
+      },
+      "means": {
+        "calls": 7.464,
+        "input_tokens": 10147.932,
+        "generated_tokens": 190.412,
+        "invalid_calls": 0.79,
+        "total_tokens": 10338.344
+      },
+      "stop_reasons": {
+        "finished": 476,
+        "call_budget": 24
+      }
+    }
+  },
+  "paired_outcomes": {
+    "corrected": 29,
+    "regressed": 17,
+    "both_correct": 375,
+    "both_wrong": 79,
+    "net_corrected": 12
+  },
+  "accuracy_delta_pp": 2.4,
+  "statistical_evidence": {
+    "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+    "replicates": 5000,
+    "seed": 20261003,
+    "confidence_level": 0.95,
+    "accuracy_delta_pp_ci": [
+      -0.2,
+      5.0
+    ],
+    "interval_assessment": "includes_zero",
+    "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+  },
+  "pilot_investment_decision": {
+    "rule": {
+      "accuracy_gain_pp": 2.0,
+      "or_accuracy_loss_at_most_pp": 1.0,
+      "and_total_inference_token_reduction_fraction": 0.2
+    },
+    "accuracy_threshold_passed": true,
+    "efficiency_threshold_passed": false,
+    "continue_investment": true,
+    "total_inference_token_reduction_fraction": 0.060623820253468685,
+    "interpretation": "development pilot investment decision only; passing is not statistical significance or a formal effectiveness claim",
+    "zero_baseline_token_policy": "efficiency branch unavailable when baseline total tokens are zero"
+  },
+  "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+  "interpretation": "A failed episode remains in the full denominator. Pilot thresholds and bootstrap evidence are reported separately; neither measures cross-seed reproducibility.",
+  "evaluation_split": "frozen_development",
+  "labels": {
+    "baseline": "A",
+    "candidate": "C"
+  },
+  "sources": {
+    "baseline_predictions": {
+      "path": "results/agent_feedback/clean_dev_v1.jsonl",
+      "sha256": "115f7ef52984021c5c1c79cb1d090616c1de3386042a95f0157869d58e49a177"
+    },
+    "candidate_predictions": {
+      "path": "results/agent_feedback/recovery_dev_v1.jsonl",
+      "sha256": "dfc2bbb1289d0c6a417642a16430cabdde336f118c6e20d5812715bb4c0c8130"
+    },
+    "development_gold": {
+      "path": "data/agent_feedback/dev.gold.jsonl",
+      "sha256": "864bcb1755bc8b70943e72771d8a27455698bcf923cbaee6bf24b36edd7847b8"
+    },
+    "split_manifest": {
+      "path": "results/agent_feedback/split_manifest.json",
+      "sha256": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60"
+    },
+    "protocol": {
+      "path": "results/agent_feedback/protocol.json",
+      "sha256": "659ce71a37aff491ac42a58a73c73c420db43556acb55d6aa3b79b9c2b4fb99d"
+    },
+    "comparator": {
+      "path": "/home/syx/research_radar_agent/experiments/agent_feedback/compare.py",
+      "sha256": "ee90e86613477514b6e30ff9452286f4ffc3dcd9acb0b2c5d195bb1d4712994e"
+    }
+  }
+}

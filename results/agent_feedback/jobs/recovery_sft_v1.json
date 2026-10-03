@@ -31,7 +31,9 @@
     "results/agent_feedback/recovery_sft_v1"
   ],
   "started_at": 1791034824.6928356,
-  "heartbeat_at": 1791034944.7189865,
-  "status": "running",
-  "finished_at": null
+  "heartbeat_at": 1791037975.338291,
+  "status": "completed",
+  "finished_at": 1791037981.4116788,
+  "returncode": 0,
+  "gpu_seconds": 3156.7188432216644
 }
