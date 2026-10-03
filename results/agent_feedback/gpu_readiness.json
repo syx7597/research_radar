@@ -1,0 +1,70 @@
+{
+  "checked_at_utc": "2026-10-03T07:33:04.186363+00:00",
+  "status": "administrator_gpu_reset_required",
+  "model_training_completed": false,
+  "optimizer_steps_completed": 0,
+  "driver_version": "570.133.07",
+  "driver_api_version": 12080,
+  "cuInit_code": 100,
+  "cuInit_error": "no CUDA-capable device is detected",
+  "torch_cuda_available": false,
+  "devices": [
+    {
+      "index": 0,
+      "recovery_action": "Reset",
+      "memory_used": "3 MiB",
+      "active_processes": 0
+    },
+    {
+      "index": 1,
+      "recovery_action": "Reset",
+      "memory_used": "3 MiB",
+      "active_processes": 0
+    },
+    {
+      "index": 2,
+      "recovery_action": "Reset",
+      "memory_used": "3 MiB",
+      "active_processes": 0
+    },
+    {
+      "index": 3,
+      "recovery_action": "Reset",
+      "memory_used": "3 MiB",
+      "active_processes": 0
+    }
+  ],
+  "reset_attempt": {
+    "authorized_by_user": true,
+    "command": "sudo nvidia-smi --gpu-reset -i 0,1,2,3",
+    "result": "denied: experiment account is not in the sudoers file",
+    "reset_performed": false
+  },
+  "completed_preparation": [
+    "pinned model weights SHA256 verified",
+    "4999 successful training trajectories replayed and tokenized",
+    "same-model program baseline tokenizer audit passed",
+    "native TRL 4096 completion budget and tokenizer preflight passed"
+  ],
+  "failed_jobs": [
+    {
+      "name": "sft_smoke_v2",
+      "status": "failed",
+      "returncode": 1,
+      "gpu_process_seconds": 5.7749245166778564
+    },
+    {
+      "name": "sft_smoke_v1",
+      "status": "failed",
+      "returncode": 1,
+      "gpu_process_seconds": 6.926675796508789
+    }
+  ],
+  "next_action": "administrator restores GPUs; verify CUDA and BF16, then resume short GPU check and original controlled experiments",
+  "evidence_sha256": {
+    "cuda_diagnostic.json": "ec2f24623ad41b7d904b85301a58d1b1e1ddedfac7fdcacfb76579c5d6e7f6f5",
+    "gpu_recovery_status.json": "a48c4e2f5c4eacbaed205ddb78cece8ee04837f808d3460569bf17e58890db27"
+  },
+  "charged_gpu_process_seconds": 12.701600313186646,
+  "accounting_note": "Supervisor process wall time is charged conservatively; both attempts failed before GPU training, so this is not measured GPU kernel time."
+}

@@ -215,7 +215,7 @@ def main():
     training_args = TrainingArguments(output_dir=str(output),
             per_device_train_batch_size=args.batch_size, gradient_accumulation_steps=args.accumulation,
             num_train_epochs=args.epochs, max_steps=args.max_steps, learning_rate=args.learning_rate,
-            warmup_ratio=0.03, weight_decay=0.0, bf16=True, tf32=True,
+            warmup_steps=0.03, weight_decay=0.0, bf16=True, tf32=True,
             gradient_checkpointing=True, gradient_checkpointing_kwargs={"use_reentrant": False},
             optim="adamw_torch", logging_steps=10, save_strategy="epoch", save_total_limit=2,
             report_to="none", seed=args.seed, data_seed=args.seed, dataloader_num_workers=0,

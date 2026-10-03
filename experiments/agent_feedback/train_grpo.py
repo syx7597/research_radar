@@ -329,7 +329,7 @@ def main():
         generation_kwargs={"max_new_tokens": PER_TURN_TOKEN_CAP, "use_cache": True}, use_vllm=False,
         bf16=True, tf32=True, gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant": False}, optim="adamw_torch",
-        weight_decay=0.0, warmup_ratio=0.03, logging_steps=1, save_strategy="no" if run["smoke"] else "steps",
+        weight_decay=0.0, warmup_steps=0.03, logging_steps=1, save_strategy="no" if run["smoke"] else "steps",
         save_steps=50, save_total_limit=2, report_to="none", seed=args.seed, data_seed=args.seed,
         dataloader_num_workers=0, remove_unused_columns=False, disable_tqdm=True)
     trainer = GRPOTrainer(model=model, args=config, train_dataset=Dataset.from_list(rows),

@@ -1,0 +1,15 @@
+{
+  "experiments/agent_feedback/prepare.py": "bdac7d1e467018bdd7cd2f801f4c10ec4aa4e54d4667743608a955a69ab58ab7",
+  "experiments/agent_feedback/continuation_data.py": "f33c662be4259aa728bf98ff739593c479fb101a92514cd4d4ce82643c51863d",
+  "experiments/agent_feedback/__init__.py": "d728dd14ed4a21430dab524a4e1b04923407c5d2c03f5438cfa5555fafd42ed7",
+  "experiments/agent_feedback/run_job.py": "aa42072dd02a40d1d679162e1f630d0095142051e48a61ca1e8513a1a7582356",
+  "experiments/agent_feedback/train_grpo.py": "898ab9fd99f2e7917d5d28799b078466f24e111b8876679ce00af04984874603",
+  "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+  "experiments/agent_feedback/initial_runs.py": "605167767aaed3e580bc315e28249c4254ab725becc86e2ab140c9def0fff5fe",
+  "experiments/agent_feedback/download_weights.py": "2f4e2a381109ac43e29c9fb7bc204cc74137fe3058443f7b7868b92fa861d858",
+  "experiments/agent_feedback/train_sft.py": "b2b747a55e2fd0c7ed4778cf68bfdb82b135e2ab8e13bd4fd02541110cf9010d",
+  "experiments/agent_feedback/training_data.py": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e",
+  "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+  "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+  "experiments/agent_feedback/compare.py": "ee90e86613477514b6e30ff9452286f4ffc3dcd9acb0b2c5d195bb1d4712994e"
+}

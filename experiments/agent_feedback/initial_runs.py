@@ -12,6 +12,7 @@ from pathlib import Path
 import subprocess
 import sys
 import time
+import xml.etree.ElementTree as ET
 
 from .download_weights import FILES, REVISION, ROOT as MODEL_ROOT
 
@@ -24,16 +25,37 @@ def run_job(name, gpu, command, hours):
 
 
 def require_idle_gpus():
-    busy = subprocess.check_output([
-        "nvidia-smi", "--query-compute-apps=pid", "--format=csv,noheader"], text=True).strip()
-    if busy:
+    health = ET.fromstring(subprocess.check_output(["nvidia-smi", "-q", "-x"], text=True))
+    recovery = {gpu.get("id"): gpu.findtext("gpu_recovery_action") for gpu in health.findall("gpu")}
+    faults = {key: value for key, value in recovery.items()
+              if value in {"Reset", "Reboot", "Drain P2P", "Drain and Reset"}}
+    if faults:
+        raise RuntimeError(f"GPU driver reports a required recovery action: {faults}")
+    lines = subprocess.check_output([
+        "nvidia-smi", "--query-compute-apps=pid", "--format=csv,noheader"], text=True).splitlines()
+    entries = [line.strip() for line in lines if line.strip()]
+    if any(entry.isdigit() for entry in entries):
         raise RuntimeError("GPU processes are present; inspect allocation before launching")
+    if entries:
+        # NVML can emit [N/A] PID rows. Require explicit absence of processes
+        # and low memory in addition to the health check above.
+        full = subprocess.check_output(["nvidia-smi"], text=True)
+        memory = subprocess.check_output(["nvidia-smi", "--query-gpu=memory.used",
+                    "--format=csv,noheader,nounits"], text=True).splitlines()
+        if (any(entry != "[N/A]" for entry in entries)
+                or "No running processes found" not in full
+                or len(memory) != 4 or any(not x.strip().isdigit() or int(x) > 128 for x in memory)):
+            raise RuntimeError("GPU availability cannot be established from NVML")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--wait-minutes", type=int, default=120)
+    parser.add_argument("--smoke-attempt", type=int, default=1,
+                        help="Distinct attempt number; previous failed checks remain in the GPU ledger")
     args = parser.parse_args()
+    if args.smoke_attempt < 1:
+        raise ValueError("Smoke attempt must be positive")
     root = Path("results/agent_feedback")
     marker = root / "initial_runs_started.json"
     # Exclusive creation prevents two controllers from scheduling the same jobs.
@@ -56,8 +78,9 @@ def main():
             raise ValueError("Verified weight disappeared or changed size")
     require_idle_gpus()
     base = ["experiments.agent_feedback.train_sft", "--model", str(MODEL_ROOT)]
-    smoke_dir = root / "sft_smoke_v1"
-    run_job("sft_smoke_v1", 0, base + ["--output", str(smoke_dir),
+    smoke_name = f"sft_smoke_v{args.smoke_attempt}"
+    smoke_dir = root / smoke_name
+    run_job(smoke_name, 0, base + ["--output", str(smoke_dir),
             "--limit", "32", "--max-steps", "2", "--batch-size", "2",
             "--accumulation", "1"], .25)
     result = json.loads((smoke_dir / "run_result.json").read_text())
