@@ -43,7 +43,7 @@
 
 2026-10-03运行记录：两次短测均未完成优化步骤。第一次暴露Transformers 5.18预热参数接口变化，已修复且保持3%预热；第二次因CUDA不可用退出。最初独立驱动调用返回`CUDA_ERROR_NO_DEVICE (100)`，四张卡报告`GPU Recovery Action: Reset`。随后经用户授权，由管理员释放全部GPU设备句柄并尝试重置，命令返回`No devices were found`（退出码6），内核记录GSP固件初始化失败。Ollama/GDM已恢复运行，管理员会话已退出；切回syx后CUDA初始化返回999，仍无法训练，需要维护恢复设备。这不是方法效果负结果；不能据此判断恢复训练是否有效。
 
-最新操作见[管理员重置尝试](results/agent_feedback/gpu_reset_attempt.json)，此前诊断见[GPU就绪状态](results/agent_feedback/gpu_readiness.json)，完整模型校验见[权重校验记录](results/agent_feedback/weights_verified.json)。
+最新操作见[整机重启请求](results/agent_feedback/server_reboot_attempt.json)：用户已授权一次正常重启，当前SSH尚未恢复，无法确认重启及GPU恢复成功。此前操作见[管理员重置尝试](results/agent_feedback/gpu_reset_attempt.json)和[GPU就绪状态](results/agent_feedback/gpu_readiness.json)，完整模型校验见[权重校验记录](results/agent_feedback/weights_verified.json)。
 
 ## 目录
 

@@ -10,6 +10,7 @@ import fcntl
 import json
 import os
 from pathlib import Path
+import pwd
 import signal
 import subprocess
 import sys
@@ -62,6 +63,7 @@ def main():
         if total_gpu_seconds(now) >= 72 * 3600:
             raise RuntimeError("Pilot GPU budget exhausted")
         record = {"name": args.name, "supervisor_pid": os.getpid(), "child_pid": None,
+                  "user": pwd.getpwuid(os.geteuid()).pw_name, "uid": os.geteuid(),
                   "gpus": gpus, "command": command, "started_at": now,
                   "heartbeat_at": now, "status": "starting", "finished_at": None}
         save(path, record)
