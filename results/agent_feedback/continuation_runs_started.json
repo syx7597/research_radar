@@ -1,0 +1,7 @@
+{
+  "started_at": 1791034824.1752725,
+  "script_sha256": "699bc989bce04424d7d40fa798f494f0348d841e3362d598f7e170544b01167a",
+  "manifest_sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+  "initial_adapter_weights_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+  "supervised_tokens_per_arm": 788534
+}

@@ -1,0 +1,23 @@
+{
+  "correct": 376,
+  "total": 500,
+  "failed_to_finish": 83,
+  "accuracy": 0.752,
+  "evaluation_scope": "complete",
+  "gold_questions": 500,
+  "prediction_questions": 500,
+  "missing_predictions": 0,
+  "coverage": 1.0,
+  "accuracy_denominator": "prediction_questions; unpredicted gold questions are not evaluated",
+  "stop_reasons": {
+    "program_completed": 417,
+    "program_error": 83
+  },
+  "means": {
+    "calls": 1.0,
+    "input_tokens": 347.89,
+    "generated_tokens": 55.252,
+    "invalid_calls": 0.166,
+    "total_tokens": 403.142
+  }
+}

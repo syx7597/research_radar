@@ -1,0 +1,71 @@
+{
+  "purpose": "offline training-pair construction; not model improvement or recovery accuracy",
+  "selection_label": "first_reference_divergence_in_failed_rollout",
+  "semantic_error_at_divergence": "not_established",
+  "scope": "frozen formal-training IDs only; no synthetic samples; no dev/holdout sampling",
+  "counts": {
+    "rollouts_supplied": 5000,
+    "rollouts_replay_verified": 4998,
+    "free_run_failed": 659,
+    "free_run_correct": 4339,
+    "accepted_pairs": 418
+  },
+  "exclusions": {
+    "free_run_answer_correct": 4339,
+    "no_shared_successful_prefix": 240,
+    "rollout_replay_mismatch": 2,
+    "reference_answer_mismatch": 1
+  },
+  "candidate_divergence_execution": {
+    "executable": 414,
+    "rejected": 4
+  },
+  "accepted_divergence_execution": {
+    "executable": 414,
+    "rejected": 4
+  },
+  "accepted_shared_prefix_call_histogram": {
+    "1": 187,
+    "2": 109,
+    "4": 38,
+    "3": 42,
+    "5": 30,
+    "7": 3,
+    "6": 7,
+    "10": 1,
+    "9": 1
+  },
+  "coverage": {
+    "formal_training_questions": 5000,
+    "free_run_training_question_fraction": 1.0,
+    "accepted_pair_fraction_of_all_supplied_rollouts": 0.0836,
+    "accepted_pair_fraction_of_replay_verified_failed_rollouts": 0.6342943854324734
+  },
+  "supervision": "same reference suffix functions, literals and dependency graph; preceding shared actions, real divergent action and all tools masked; Done. supervised in both. Handle IDs may differ. Token budgets are not yet matched.",
+  "sources": {
+    "predictions_sha256": "568fdd5c6eb74bc22c3b0bcc3b7ae9a057a34add62a6aca703c53ec65318b2e6",
+    "gold_sha256": "2c1d811e95c17a58000bff0aa601b5fa7e2d6337aab58685aebd86ff50f8896c",
+    "split_manifest_sha256": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60",
+    "kb_sha256": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "builder_sha256": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "environment_sha256": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "inference_sha256": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28"
+  },
+  "artifacts": {
+    "recovery": {
+      "path": "data/agent_feedback/recovery.recovery.jsonl",
+      "count": 418,
+      "sha256": "291924523abce59dd5579a265c7574cdf8499af7487066594fe55f66e979df88"
+    },
+    "clean": {
+      "path": "data/agent_feedback/recovery.clean.jsonl",
+      "count": 418,
+      "sha256": "397f59576605643e3a360333d7dfa88f319f00b7e0c296e9f02f416c75355961"
+    },
+    "audit": {
+      "path": "data/agent_feedback/recovery.audit.jsonl",
+      "count": 5000,
+      "sha256": "af439cd94d15a4d60ace3d4540796367f9ae35412bec1d20da34a7988b6881bd"
+    }
+  }
+}

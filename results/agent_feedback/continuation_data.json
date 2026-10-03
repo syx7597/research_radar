@@ -1,0 +1,115 @@
+{
+  "purpose": "paired continuation training data; not evidence of model improvement",
+  "seed": 20261003,
+  "max_context": 8192,
+  "budget": {
+    "total": 788534,
+    "ordinary": 394267,
+    "paired_suffix": 394267,
+    "target_paired_fraction": 0.5,
+    "actual_paired_fraction": 0.5,
+    "odd_token_policy": "if total is odd, ordinary receives the single extra token"
+  },
+  "supervision": "retain first cap supervised tokens in time order; cap=min(clean,recovery,pool budget remaining); keep entire input context",
+  "pairing": "same source questions, record order, repeat counts and per-record supervision in A/C; ordinary records identical",
+  "training_instruction": "one epoch over each pretokenized file; same seed, batch size and accumulation; do not independently resample or retokenize",
+  "scope": "formal training only; no development or holdout data accessed",
+  "synthetic_pairs": 0,
+  "formal_training_questions": 5000,
+  "verified_success_questions": 4999,
+  "raw_real_pairs": 418,
+  "excluded_context_pairs": [],
+  "real_recovery_coverage": {
+    "available_unique_questions": 418,
+    "used_unique_questions": 418,
+    "available_fraction_of_formal_train": 0.0836,
+    "used_fraction_of_formal_train": 0.0836,
+    "selected_records": 3286,
+    "records_per_used_question": 7.861244019138756,
+    "max_records_per_question": 8,
+    "reuse_histogram": {
+      "7": 58,
+      "8": 360
+    }
+  },
+  "ordinary_coverage": {
+    "available_unique_questions": 4999,
+    "used_unique_questions": 2486,
+    "available_fraction_of_formal_train": 0.9998,
+    "used_fraction_of_formal_train": 0.4972,
+    "selected_records": 2486,
+    "records_per_used_question": 1.0,
+    "max_records_per_question": 1,
+    "reuse_histogram": {
+      "1": 2486
+    }
+  },
+  "combined_unique_training_questions": 2694,
+  "arms": {
+    "A": {
+      "records": 5772,
+      "input_tokens": 9135350,
+      "supervised_tokens": 788534,
+      "masked_by_budget": 194,
+      "paired_suffix_supervised_tokens": 394267,
+      "ordinary_supervised_tokens": 394267,
+      "max_input_length": 3171,
+      "path": "data/agent_feedback/continuation/A.jsonl",
+      "sha256": "8b8ff38b211aa88859896340b4f13a97dbcfa615863f488fe18901eaeeac3c72"
+    },
+    "C": {
+      "records": 5772,
+      "input_tokens": 9520876,
+      "supervised_tokens": 788534,
+      "masked_by_budget": 321,
+      "paired_suffix_supervised_tokens": 394267,
+      "ordinary_supervised_tokens": 394267,
+      "max_input_length": 3497,
+      "path": "data/agent_feedback/continuation/C.jsonl",
+      "sha256": "58b7360b5c3f58db6c669075a5541888d011556a496ede2171aa4d24978fb48d"
+    }
+  },
+  "sources": {
+    "success": {
+      "path": "data/agent_feedback/train.success.jsonl",
+      "sha256": "e657aac461410424115355ad4868cc8d8d4988ae59f59757b008d4cf9e941598"
+    },
+    "clean": {
+      "path": "data/agent_feedback/recovery.clean.jsonl",
+      "sha256": "397f59576605643e3a360333d7dfa88f319f00b7e0c296e9f02f416c75355961"
+    },
+    "recovery": {
+      "path": "data/agent_feedback/recovery.recovery.jsonl",
+      "sha256": "291924523abce59dd5579a265c7574cdf8499af7487066594fe55f66e979df88"
+    },
+    "pair_manifest": {
+      "path": "results/agent_feedback/recovery_pairs.json",
+      "sha256": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9"
+    },
+    "split_manifest": {
+      "path": "results/agent_feedback/split_manifest.json",
+      "sha256": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60"
+    },
+    "builder": {
+      "path": "/home/syx/research_radar_agent/experiments/agent_feedback/continuation_data.py",
+      "sha256": "f33c662be4259aa728bf98ff739593c479fb101a92514cd4d4ce82643c51863d"
+    },
+    "tokenization": {
+      "path": "/home/syx/research_radar_agent/experiments/agent_feedback/training_data.py",
+      "sha256": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e"
+    },
+    "environment": {
+      "path": "/home/syx/research_radar_agent/experiments/agent_feedback/environment.py",
+      "sha256": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2"
+    }
+  },
+  "tokenizer": {
+    "model_path": "models/qwen2.5-3b-instruct",
+    "transformers": "5.18.0",
+    "files_sha256": {
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    }
+  },
+  "limitations": "Recovery records are reused when scarce. Repetition is not additional independent coverage; input tokens and compute are not matched."
+}

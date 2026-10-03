@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "seconds": 5993.789863488999,
+  "totals": {
+    "calls": 17147,
+    "input_tokens": 22117942,
+    "generated_tokens": 389894,
+    "total_tokens": 22507836,
+    "invalid_calls": 2896,
+    "questions": 2500
+  },
+  "source_questions": 5000,
+  "selected_questions": 2500,
+  "token_accounting": "input_tokens sums unpadded full prefills on every turn; generated_tokens includes EOS, excludes batch padding; total_tokens is their sum. Inference recomputes prior history per turn; this is not GPU FLOPs or allocated padding cost.",
+  "config": {
+    "command": "generate",
+    "model": "models/qwen2.5-3b-instruct",
+    "adapter": "results/agent_feedback/initial_sft_v1/model",
+    "questions": "data/agent_feedback/train.questions.jsonl",
+    "output": "results/agent_feedback/initial_train_v1_shard0.jsonl",
+    "kb": "datasets/kqa_pro/kb.json",
+    "batch_size": 8,
+    "limit": 2500,
+    "offset": 0,
+    "seed": 20261003,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "program": false
+  }
+}

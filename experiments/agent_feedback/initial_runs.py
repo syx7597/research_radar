@@ -8,6 +8,7 @@ import argparse
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -137,8 +138,12 @@ def main():
         subprocess.run([sys.executable, "-m", "experiments.agent_feedback.inference", "score",
             "--predictions", str(root / (name + ".jsonl")),
             "--gold", "data/agent_feedback/dev.gold.jsonl"], check=True)
+    # Match run_job's inference seed: the release executor converts sets to
+    # lists and some functions select the first entity from those lists.
+    recovery_env = os.environ.copy()
+    recovery_env["PYTHONHASHSEED"] = "20261003"
     subprocess.run([sys.executable, "-m", "experiments.agent_feedback.recovery",
-                    "--predictions", str(predictions)], check=True)
+                    "--predictions", str(predictions)], check=True, env=recovery_env)
     print("INITIAL_DEV_AND_RECOVERY_COLLECTION_COMPLETED", flush=True)
 
 

@@ -1,0 +1,32 @@
+{
+  "name": "sft_smoke_v1",
+  "supervisor_pid": 197781,
+  "child_pid": 197782,
+  "gpus": [
+    0
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.train_sft",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--output",
+    "results/agent_feedback/sft_smoke_v1",
+    "--limit",
+    "32",
+    "--max-steps",
+    "2",
+    "--batch-size",
+    "2",
+    "--accumulation",
+    "1"
+  ],
+  "started_at": 1790996672.876129,
+  "heartbeat_at": 1790996672.877547,
+  "status": "failed",
+  "finished_at": 1790996679.8028047,
+  "returncode": 1,
+  "gpu_seconds": 6.926675796508789
+}

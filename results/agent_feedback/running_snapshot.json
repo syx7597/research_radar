@@ -1,7 +1,27 @@
 {
-  "recorded_at_utc": "2026-10-03T10:26:24.900682+00:00",
+  "recorded_at_utc": "2026-10-03T13:41:32.816390+00:00",
   "snapshot_only": true,
+  "initial_stage": "completed",
+  "initial_stage_gpu_hours_including_smokes": 6.028371123671532,
+  "total_gpu_hours_at_snapshot": 6.066217871440782,
+  "method_effectiveness": "initial Agent has no demonstrated advantage over same-backbone program baseline; recovery-vs-clean comparison pending",
+  "continuation_controller_pid": 7128,
   "jobs": [
+    {
+      "name": "clean_sft_v1",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "started_at": 1791034824.6916935,
+      "finished_at": null,
+      "returncode": null,
+      "gpu_seconds": null,
+      "elapsed_seconds": 68.12,
+      "child_alive": true
+    },
     {
       "name": "grpo_smoke_v1",
       "status": "failed",
@@ -73,44 +93,115 @@
       "elapsed_seconds": 212.61
     },
     {
+      "name": "initial_dev_v1",
+      "status": "completed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "started_at": 1791027148.804539,
+      "finished_at": 1791028725.9441347,
+      "returncode": 0,
+      "gpu_seconds": 1577.139595746994,
+      "elapsed_seconds": 1577.14
+    },
+    {
       "name": "initial_sft_v1",
-      "status": "running",
+      "status": "completed",
       "user": "syx",
       "uid": 1001,
       "gpus": [
         0
       ],
       "started_at": 1791022265.4459953,
-      "finished_at": null,
-      "returncode": null,
-      "gpu_seconds": null,
-      "elapsed_seconds": 919.45,
+      "finished_at": 1791027148.2987084,
+      "returncode": 0,
+      "gpu_seconds": 4882.852713108063,
+      "elapsed_seconds": 4882.85,
       "latest_training_log": {
-        "loss": "0.03172",
-        "grad_norm": "0.2793",
-        "learning_rate": "8.517e-05",
-        "epoch": "0.352"
+        "loss": "0.01007",
+        "grad_norm": "0.08707",
+        "learning_rate": "1.153e-06",
+        "epoch": "1.982"
       }
     },
     {
+      "name": "initial_train_v1_shard0",
+      "status": "completed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "started_at": 1791027148.8065548,
+      "finished_at": 1791033155.5382893,
+      "returncode": 0,
+      "gpu_seconds": 6006.731734514236,
+      "elapsed_seconds": 6006.73
+    },
+    {
+      "name": "initial_train_v1_shard1",
+      "status": "completed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        3
+      ],
+      "started_at": 1791027148.7949147,
+      "finished_at": 1791033239.766502,
+      "returncode": 0,
+      "gpu_seconds": 6090.971587181091,
+      "elapsed_seconds": 6090.97
+    },
+    {
+      "name": "program_dev_v1",
+      "status": "completed",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "started_at": 1791027148.8036852,
+      "finished_at": 1791027417.2893498,
+      "returncode": 0,
+      "gpu_seconds": 268.48566460609436,
+      "elapsed_seconds": 268.49
+    },
+    {
       "name": "program_sft_v1",
-      "status": "running",
+      "status": "completed",
       "user": "syx",
       "uid": 1001,
       "gpus": [
         1
       ],
       "started_at": 1791022265.4480996,
+      "finished_at": 1791024791.8026798,
+      "returncode": 0,
+      "gpu_seconds": 2526.3545801639557,
+      "elapsed_seconds": 2526.35,
+      "latest_training_log": {
+        "loss": "0.01128",
+        "grad_norm": "0.3854",
+        "learning_rate": "1.099e-06",
+        "epoch": "2.973"
+      }
+    },
+    {
+      "name": "recovery_sft_v1",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "started_at": 1791034824.6928356,
       "finished_at": null,
       "returncode": null,
       "gpu_seconds": null,
-      "elapsed_seconds": 919.45,
-      "latest_training_log": {
-        "loss": "0.03376",
-        "grad_norm": "0.5783",
-        "learning_rate": "6.703e-05",
-        "epoch": "1.054"
-      }
+      "elapsed_seconds": 68.12,
+      "child_alive": true
     },
     {
       "name": "sft_smoke_v1",
@@ -154,7 +245,5 @@
       "gpu_seconds": 14.573362827301025,
       "elapsed_seconds": 14.57
     }
-  ],
-  "method_effectiveness": "not yet evaluated",
-  "controller_pid": 5680
+  ]
 }

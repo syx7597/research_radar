@@ -20,7 +20,9 @@
     "2"
   ],
   "started_at": 1791022265.4459953,
-  "heartbeat_at": 1791023225.570784,
-  "status": "running",
-  "finished_at": null
+  "heartbeat_at": 1791027146.0810413,
+  "status": "completed",
+  "finished_at": 1791027148.2987084,
+  "returncode": 0,
+  "gpu_seconds": 4882.852713108063
 }

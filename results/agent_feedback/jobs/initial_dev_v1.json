@@ -1,0 +1,33 @@
+{
+  "name": "initial_dev_v1",
+  "supervisor_pid": 6162,
+  "child_pid": 6169,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    0
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.inference",
+    "generate",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--batch-size",
+    "8",
+    "--adapter",
+    "results/agent_feedback/initial_sft_v1/model",
+    "--questions",
+    "data/agent_feedback/dev.questions.jsonl",
+    "--output",
+    "results/agent_feedback/initial_dev_v1.jsonl"
+  ],
+  "started_at": 1791027148.804539,
+  "heartbeat_at": 1791028719.069834,
+  "status": "completed",
+  "finished_at": 1791028725.9441347,
+  "returncode": 0,
+  "gpu_seconds": 1577.139595746994
+}

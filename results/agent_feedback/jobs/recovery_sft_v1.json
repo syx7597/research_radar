@@ -1,0 +1,37 @@
+{
+  "name": "recovery_sft_v1",
+  "supervisor_pid": 7136,
+  "child_pid": 7138,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    1
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.train_sft",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--adapter",
+    "results/agent_feedback/initial_sft_v1/model",
+    "--pretokenized",
+    "--epochs",
+    "1",
+    "--max-steps",
+    "-1",
+    "--limit",
+    "0",
+    "--continuation-manifest",
+    "results/agent_feedback/continuation_data.json",
+    "--data",
+    "data/agent_feedback/continuation/C.jsonl",
+    "--output",
+    "results/agent_feedback/recovery_sft_v1"
+  ],
+  "started_at": 1791034824.6928356,
+  "heartbeat_at": 1791034944.7189865,
+  "status": "running",
+  "finished_at": null
+}

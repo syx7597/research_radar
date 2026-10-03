@@ -1,0 +1,42 @@
+{
+  "recorded_at_utc": "2026-10-03T13:33:00.806904+00:00",
+  "manifest_sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+  "matched_record_ids_questions_order_reuse_and_target_counts": true,
+  "ordinary_rows_identical": true,
+  "arms": {
+    "A": {
+      "records": 5772,
+      "target_tokens": 788534,
+      "clipped_records": 2,
+      "clipped_unique_questions": 2,
+      "clipped_by_kind": {
+        "ordinary": 1,
+        "paired_suffix": 1
+      },
+      "masked_token_sum": 194,
+      "max_masked_tokens_per_record": 135,
+      "masked_fraction_of_original_supervision": 0.00024596565609436965,
+      "small_tail_masks_decoded": {},
+      "larger_mask_records": 2
+    },
+    "C": {
+      "records": 5772,
+      "target_tokens": 788534,
+      "clipped_records": 128,
+      "clipped_unique_questions": 17,
+      "clipped_by_kind": {
+        "paired_suffix": 127,
+        "ordinary": 1
+      },
+      "masked_token_sum": 321,
+      "max_masked_tokens_per_record": 135,
+      "masked_fraction_of_original_supervision": 0.00040691888876916545,
+      "small_tail_masks_decoded": {
+        "\n": 126
+      },
+      "larger_mask_records": 2
+    }
+  },
+  "supervision_capping_limit": "Exact token matching can remove final target tokens or part of an action on capped rows; full input context is retained. Counts are disclosed rather than claiming every target action is complete.",
+  "decision": "retain frozen budget policy for the preplanned A/C pilot; do not silently change samples or loss masks after evaluation"
+}

@@ -1,0 +1,116 @@
+{
+  "audit_date": "2026-10-03",
+  "evidence_hashes_recorded_at_utc": "2026-10-03T13:32:40.302172+00:00",
+  "purpose": "Read-only CPU audit of existing real-failure recovery pairs before A/C continuation; not an evaluation of model improvement",
+  "execution": {
+    "account": "syx",
+    "gpu_used": false,
+    "remote_artifacts_modified": false,
+    "model_inference_or_training_started": false,
+    "development_or_holdout_gold_accessed": false,
+    "bytecode_writes_disabled": true
+  },
+  "original_frozen_selection": {
+    "training_rollouts_supplied": 5000,
+    "replay_verified_rollouts": 4998,
+    "verified_correct_rollouts": 4339,
+    "verified_failed_rollouts": 659,
+    "accepted_pairs": 418,
+    "exclusions": {
+      "free_run_answer_correct": 4339,
+      "no_shared_successful_prefix": 240,
+      "rollout_replay_mismatch": 2,
+      "reference_answer_mismatch": 1
+    },
+    "accepted_executable_divergences": 414,
+    "accepted_rejected_divergences": 4
+  },
+  "hash_seed_diagnostic": {
+    "inference_pythonhashseed": "20261003",
+    "original_recovery_launcher_explicit_pythonhashseed": false,
+    "unset_seed_replay_reproduced_mismatch_cases": 2,
+    "first_mismatching_functions": {
+      "Relate": 1,
+      "QueryRelationQualifier": 1
+    },
+    "fixed_seed_replayed_previously_excluded_cases": 2,
+    "fixed_seed_cases_with_any_event_mismatch": 0,
+    "fixed_seed_cases_with_final_prediction_mismatch": 0,
+    "cause": "The unchanged official executor returns list(set(...)) in FilterConcept/And/Or; Relate and QueryRelationQualifier select the first entity. Python hash randomization can therefore alter observations and answers across processes.",
+    "corrective_scope": "Set PYTHONHASHSEED=20261003 in the recovery child process environment, preserving every other environment variable. Do not change executor semantics or the parent process environment."
+  },
+  "fixed_seed_full_pair_replay": {
+    "pythonhashseed": "20261003",
+    "clean": {
+      "pairs_replayed": 418,
+      "pairs_with_any_event_or_observation_mismatch": 0,
+      "pairs_with_final_prediction_mismatch": 0
+    },
+    "recovery": {
+      "pairs_replayed": 418,
+      "pairs_with_any_event_or_observation_mismatch": 0,
+      "pairs_with_final_prediction_mismatch": 0
+    }
+  },
+  "supervision_and_dependency_audit": {
+    "pairs_checked": 418,
+    "pairs_with_structural_or_dependency_violation": 0,
+    "shared_prefix_messages_identical": true,
+    "recovery_adds_exactly_one_real_action_and_one_actual_observation": true,
+    "correct_suffix_functions_literals_and_dependency_graph_match_after_inverse_handle_mapping": true,
+    "paired_final_predictions_identical": true,
+    "clean_mask_mismatches": 0,
+    "recovery_mask_mismatches": 0,
+    "clean_supervised_suffix_tool_calls": 1824,
+    "recovery_supervised_suffix_tool_calls": 1824,
+    "shared_prefix_and_divergent_action_supervised": false,
+    "tool_observations_supervised": false,
+    "common_done_message_supervised_in_both_arms": true,
+    "exact_token_budget_audited_here": false
+  },
+  "observed_pair_composition": {
+    "divergence_and_reference_have_same_function": 344,
+    "divergence_function_differs": 74,
+    "divergence_literal_inputs_differ": 410,
+    "divergence_dependencies_differ": 40,
+    "valid_empty_entity_results_at_divergence": 198,
+    "divergence_and_reference_have_identical_bounded_observation_excluding_handle": 13,
+    "rejected_divergence_function_and_error": {
+      "QueryAttrUnderCondition:UnboundLocalError": 2,
+      "QueryAttr:UnboundLocalError": 1,
+      "SelectBetween:UnboundLocalError": 1
+    },
+    "semantic_error_label_at_reference_divergence": "not_established; unchanged from original selection policy"
+  },
+  "decision": {
+    "retain_existing_v1_pair_artifacts": true,
+    "retain_original_two_replay_mismatch_exclusions": true,
+    "rebuild_to_add_cases": false,
+    "reason": "All 418 existing pairs and their clean controls replay exactly under the inference hash seed. Keep the already formed sample set and original selection denominator rather than reconstruct data to add two cases; document that the original exclusions came from process hash-seed inconsistency.",
+    "additional_pair_quality_blocker_for_ac_training": false,
+    "remaining_gate": "The independent real-tokenizer continuation audit must still verify the matched supervision budget and any masked target tails.",
+    "effectiveness_conclusion": "No claim of accuracy improvement or learned error recognition follows from this replay audit."
+  },
+  "reproduction": {
+    "working_directory": "repository root on the experiment server",
+    "command_prefix": "PYTHONHASHSEED=20261003 PYTHONDONTWRITEBYTECODE=1 .venv/bin/python",
+    "steps": [
+      "Select the two previously excluded rows by reason=rollout_replay_mismatch in recovery.audit.jsonl and find their original initial_train_v1.jsonl records.",
+      "Create a fresh Episode per record; pass each stored assistant message to execute_response and compare the entire resulting event and final prediction with the original record.",
+      "Repeat for every clean and recovery pair: compare each event and its serialized tool observation, then the final prediction.",
+      "Join paired files by ID; check exact shared-prefix messages, the two added masked messages, complete suffix supervision including common Done, and inverse-map recovery handles to compare all clean suffix function names, literal inputs and dependency references."
+    ]
+  },
+  "sha256": {
+    "data/agent_feedback/recovery.audit.jsonl": "af439cd94d15a4d60ace3d4540796367f9ae35412bec1d20da34a7988b6881bd",
+    "data/agent_feedback/recovery.clean.jsonl": "397f59576605643e3a360333d7dfa88f319f00b7e0c296e9f02f416c75355961",
+    "data/agent_feedback/recovery.recovery.jsonl": "291924523abce59dd5579a265c7574cdf8499af7487066594fe55f66e979df88",
+    "results/agent_feedback/recovery_pairs.json": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9",
+    "results/agent_feedback/initial_train_v1.jsonl": "568fdd5c6eb74bc22c3b0bcc3b7ae9a057a34add62a6aca703c53ec65318b2e6",
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/condition_consistency/executor.py": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "external/kqa_pro_baselines/Program/executor_rule.py": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6"
+  }
+}
