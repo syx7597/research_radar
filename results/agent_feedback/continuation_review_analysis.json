@@ -1,0 +1,71 @@
+{
+  "scope": "Interpretation of completed development audit; no new model inference or training",
+  "reviewer": "AI-assisted audit, not independent human labels",
+  "accuracy_decomposition": {
+    "unfinished_to_correct": 19,
+    "correct_to_unfinished": 4,
+    "net_from_completion_status_switch": 15,
+    "finished_wrong_to_correct": 10,
+    "correct_to_finished_wrong": 13,
+    "net_where_both_finished": -3,
+    "overall_net_corrected": 12
+  },
+  "cost_changes_C_relative_to_A": {
+    "input_tokens": -0.06287514565333863,
+    "generated_tokens": 0.07730780546314531,
+    "total_tokens": -0.060623820253468685,
+    "generation_seconds": 0.07413575755807567
+  },
+  "core_interpretation": "Positive pilot signal is chiefly associated with fewer unfinished episodes and fewer repeated invalid calls. It does not yet establish broadly improved semantic reasoning or causal use of diagnostic feedback.",
+  "evidence": {
+    "A_action_format_errors": 601,
+    "C_action_format_errors": 101,
+    "A_repeated_invalid_calls": 694,
+    "C_repeated_invalid_calls": 180,
+    "A_correct_episodes_with_any_invalid_call": 2,
+    "C_correct_episodes_with_any_invalid_call": 6
+  },
+  "representative_ai_trace_inspections": [
+    {
+      "id": "train:29890",
+      "change": "corrected",
+      "observation": "A queries an attribute qualifier; C filters the intended entity and queries the country qualifier on the birthplace relation, matching the reference dependency structure."
+    },
+    {
+      "id": "train:78759",
+      "change": "regressed",
+      "observation": "C uses Or where A and the reference use And, returning 10 rather than 6. Both trajectories execute and finish."
+    },
+    {
+      "id": "train:77314",
+      "change": "regressed",
+      "observation": "C terminates after returning the identified person; A continues through the political-party relation requested by the question."
+    },
+    {
+      "id": "train:78854",
+      "change": "regressed",
+      "observation": "C selects a comparison with equality; A uses the greater-than comparison requested by the question."
+    }
+  ],
+  "limitations": [
+    "Outcome-transition decomposition is descriptive; completion and reasoning are not causally independent mechanisms.",
+    "Reference-length and function groups were analyzed after observing the pilot and are exploratory, with overlapping memberships.",
+    "Both-finished accuracy is conditional on selected episode sets; do not generalize this subgroup as the entire reasoning capability.",
+    "The same 500 questions across seeds are not 1000 independent test questions."
+  ],
+  "decision": {
+    "paired_continuation_replication": true,
+    "training_seed": 20261004,
+    "initial_adapter_and_training_corpus": "unchanged",
+    "scope": "conditional on initial adapter and fixed recovery corpus; not full end-to-end seed replication",
+    "expected_additional_gpu_hours_approx": 2.6,
+    "per_job_timeout_sum_gpu_hours": 6,
+    "allow_rl_now": false,
+    "allow_semantic_preference_training_now": false,
+    "next_after_replication": "Report both seeds without selection, then decide on feedback-screening diagnostic and paired B/D within existing budget. Do not automatically launch RL."
+  },
+  "source_review": {
+    "path": "results/agent_feedback/continuation_review.json",
+    "sha256": "c764deb75a3cc59fc7b7db81a2832022dbd07071104551c5eb04ebea48b962bc"
+  }
+}

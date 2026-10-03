@@ -1,0 +1,504 @@
+{
+  "recorded_at_utc": "2026-10-03T15:46:34.980468+00:00",
+  "scope": "CPU replay of all 1000 frozen dev episodes; no new inference, training, or holdout",
+  "pythonhashseed": "20261003",
+  "training": {
+    "A": {
+      "config": {
+        "model": "models/qwen2.5-3b-instruct",
+        "data": "data/agent_feedback/continuation/A.jsonl",
+        "output": "results/agent_feedback/clean_sft_v1",
+        "adapter": "results/agent_feedback/initial_sft_v1/model",
+        "program": false,
+        "pretokenized": true,
+        "continuation_manifest": "results/agent_feedback/continuation_data.json",
+        "epochs": 1.0,
+        "max_steps": -1,
+        "batch_size": 2,
+        "accumulation": 8,
+        "max_length": 8192,
+        "learning_rate": 0.0001,
+        "seed": 20261003,
+        "limit": 0,
+        "tokenize_only": false
+      },
+      "versions": {
+        "torch": "2.6.0",
+        "transformers": "5.18.0",
+        "peft": "0.21.2",
+        "accelerate": "1.15.0",
+        "trl": "1.14.1"
+      },
+      "actual_supervised_tokens": 788534,
+      "actual_input_tokens": 9135350,
+      "microbatches": 2886,
+      "seconds": 3017.7798527449995,
+      "seed": 20261003,
+      "initial_adapter_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10"
+    },
+    "C": {
+      "config": {
+        "model": "models/qwen2.5-3b-instruct",
+        "data": "data/agent_feedback/continuation/C.jsonl",
+        "output": "results/agent_feedback/recovery_sft_v1",
+        "adapter": "results/agent_feedback/initial_sft_v1/model",
+        "program": false,
+        "pretokenized": true,
+        "continuation_manifest": "results/agent_feedback/continuation_data.json",
+        "epochs": 1.0,
+        "max_steps": -1,
+        "batch_size": 2,
+        "accumulation": 8,
+        "max_length": 8192,
+        "learning_rate": 0.0001,
+        "seed": 20261003,
+        "limit": 0,
+        "tokenize_only": false
+      },
+      "versions": {
+        "torch": "2.6.0",
+        "transformers": "5.18.0",
+        "peft": "0.21.2",
+        "accelerate": "1.15.0",
+        "trl": "1.14.1"
+      },
+      "actual_supervised_tokens": 788534,
+      "actual_input_tokens": 9520876,
+      "microbatches": 2886,
+      "seconds": 3145.7201287140015,
+      "seed": 20261003,
+      "initial_adapter_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10"
+    }
+  },
+  "comparison_exactly_reproduced": true,
+  "comparison": {
+    "evaluation_scope": "complete_fixed_gold",
+    "questions": 500,
+    "coverage": 1.0,
+    "arms": {
+      "baseline": {
+        "questions": 500,
+        "correct": 392,
+        "accuracy": 0.784,
+        "finished": 446,
+        "finish_rate": 0.892,
+        "failed_to_finish": 54,
+        "totals": {
+          "calls": 3957,
+          "input_tokens": 5414397,
+          "generated_tokens": 88374,
+          "invalid_calls": 1026,
+          "total_tokens": 5502771
+        },
+        "means": {
+          "calls": 7.914,
+          "input_tokens": 10828.794,
+          "generated_tokens": 176.748,
+          "invalid_calls": 2.052,
+          "total_tokens": 11005.542
+        },
+        "stop_reasons": {
+          "finished": 446,
+          "call_budget": 54
+        }
+      },
+      "candidate": {
+        "questions": 500,
+        "correct": 404,
+        "accuracy": 0.808,
+        "finished": 476,
+        "finish_rate": 0.952,
+        "failed_to_finish": 24,
+        "totals": {
+          "calls": 3732,
+          "input_tokens": 5073966,
+          "generated_tokens": 95206,
+          "invalid_calls": 395,
+          "total_tokens": 5169172
+        },
+        "means": {
+          "calls": 7.464,
+          "input_tokens": 10147.932,
+          "generated_tokens": 190.412,
+          "invalid_calls": 0.79,
+          "total_tokens": 10338.344
+        },
+        "stop_reasons": {
+          "finished": 476,
+          "call_budget": 24
+        }
+      }
+    },
+    "paired_outcomes": {
+      "corrected": 29,
+      "regressed": 17,
+      "both_correct": 375,
+      "both_wrong": 79,
+      "net_corrected": 12
+    },
+    "accuracy_delta_pp": 2.4,
+    "statistical_evidence": {
+      "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+      "replicates": 5000,
+      "seed": 20261003,
+      "confidence_level": 0.95,
+      "accuracy_delta_pp_ci": [
+        -0.2,
+        5.0
+      ],
+      "interval_assessment": "includes_zero",
+      "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+    },
+    "pilot_investment_decision": {
+      "rule": {
+        "accuracy_gain_pp": 2.0,
+        "or_accuracy_loss_at_most_pp": 1.0,
+        "and_total_inference_token_reduction_fraction": 0.2
+      },
+      "accuracy_threshold_passed": true,
+      "efficiency_threshold_passed": false,
+      "continue_investment": true,
+      "total_inference_token_reduction_fraction": 0.060623820253468685,
+      "interpretation": "development pilot investment decision only; passing is not statistical significance or a formal effectiveness claim",
+      "zero_baseline_token_policy": "efficiency branch unavailable when baseline total tokens are zero"
+    },
+    "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+    "interpretation": "A failed episode remains in the full denominator. Pilot thresholds and bootstrap evidence are reported separately; neither measures cross-seed reproducibility."
+  },
+  "replay": {
+    "A": {
+      "checked": 500,
+      "mismatches": []
+    },
+    "C": {
+      "checked": 500,
+      "mismatches": []
+    }
+  },
+  "arms": {
+    "A": {
+      "correct": 392,
+      "calls": 3957,
+      "invalid_calls": 1026,
+      "repeated_invalid_calls": 694,
+      "episodes_with_invalid_call": 62,
+      "correct_with_invalid_call": 2,
+      "unfinished_with_gold_matching_handle": 0,
+      "finished_wrong": 54,
+      "unfinished": 54,
+      "invalid_call_fraction": 0.25928733889310085,
+      "valid_calls": 2931,
+      "error_types": {
+        "UnboundLocalError": 2,
+        "ValueError": 337,
+        "ActionFormatError": 601,
+        "IndexError": 79,
+        "KeyError": 7
+      },
+      "common_errors": [
+        [
+          "ActionFormatError:exactly_one_tool_call_required",
+          593
+        ],
+        [
+          "ValueError:unknown_function",
+          194
+        ],
+        [
+          "IndexError:list index out of range",
+          79
+        ],
+        [
+          "ValueError:unknown_answer_handle",
+          65
+        ],
+        [
+          "ValueError:FilterConcept requires 1 existing integer handles",
+          26
+        ],
+        [
+          "ValueError:incompatible_dependency_type",
+          10
+        ],
+        [
+          "ValueError:Find requires 1 bounded string inputs",
+          9
+        ],
+        [
+          "ValueError:And requires 2 existing integer handles",
+          7
+        ],
+        [
+          "ActionFormatError:unknown_tool_or_invalid_arguments",
+          6
+        ],
+        [
+          "KeyError:'Q16913666'",
+          5
+        ],
+        [
+          "ValueError:QueryAttr requires 1 existing integer handles",
+          5
+        ],
+        [
+          "ValueError:QueryRelation requires 2 existing integer handles",
+          4
+        ]
+      ],
+      "generation_seconds": 1494.9605701159999,
+      "input_tokens": 5414397,
+      "generated_tokens": 88374,
+      "total_tokens": 5502771
+    },
+    "C": {
+      "correct": 404,
+      "calls": 3732,
+      "invalid_calls": 395,
+      "repeated_invalid_calls": 180,
+      "episodes_with_invalid_call": 50,
+      "correct_with_invalid_call": 6,
+      "unfinished_with_gold_matching_handle": 0,
+      "finished_wrong": 72,
+      "unfinished": 24,
+      "invalid_call_fraction": 0.10584137191854234,
+      "valid_calls": 3337,
+      "error_types": {
+        "UnboundLocalError": 28,
+        "ValueError": 151,
+        "IndexError": 110,
+        "ActionFormatError": 101,
+        "KeyError": 5
+      },
+      "common_errors": [
+        [
+          "IndexError:list index out of range",
+          110
+        ],
+        [
+          "ActionFormatError:exactly_one_tool_call_required",
+          100
+        ],
+        [
+          "ValueError:unknown_answer_handle",
+          65
+        ],
+        [
+          "UnboundLocalError:local variable 'v1' referenced before assignment",
+          24
+        ],
+        [
+          "ValueError:Find requires 1 bounded string inputs",
+          24
+        ],
+        [
+          "ValueError:finish_requires_answer_function",
+          16
+        ],
+        [
+          "ValueError:incompatible_dependency_type",
+          11
+        ],
+        [
+          "ValueError:unsupported_comparison",
+          6
+        ],
+        [
+          "ValueError:QueryAttr requires 1 bounded string inputs",
+          5
+        ],
+        [
+          "ValueError:unsupported_relation_direction",
+          5
+        ],
+        [
+          "ValueError:FilterConcept requires 1 bounded string inputs",
+          4
+        ],
+        [
+          "UnboundLocalError:local variable 'v' referenced before assignment",
+          4
+        ]
+      ],
+      "generation_seconds": 1605.7906045010022,
+      "input_tokens": 5073966,
+      "generated_tokens": 95206,
+      "total_tokens": 5169172
+    }
+  },
+  "outcome_transition_matrix": {
+    "correct -> correct": 375,
+    "finished_wrong -> finished_wrong": 39,
+    "unfinished -> unfinished": 15,
+    "correct -> finished_wrong": 13,
+    "correct -> unfinished": 4,
+    "unfinished -> correct": 19,
+    "finished_wrong -> correct": 10,
+    "unfinished -> finished_wrong": 20,
+    "finished_wrong -> unfinished": 5
+  },
+  "changed_case_ids": {
+    "corrected": [
+      "train:30739",
+      "train:29890",
+      "train:37266",
+      "train:6674",
+      "train:63554",
+      "train:25946",
+      "train:30043",
+      "train:27560",
+      "train:87706",
+      "train:77317",
+      "train:92881",
+      "train:86353",
+      "train:73209",
+      "train:39013",
+      "train:92115",
+      "train:62107",
+      "train:70687",
+      "train:67583",
+      "train:41934",
+      "train:3672",
+      "train:74572",
+      "train:33963",
+      "train:79727",
+      "train:38043",
+      "train:17793",
+      "train:55637",
+      "train:47259",
+      "train:1048",
+      "train:45885"
+    ],
+    "regressed": [
+      "train:1668",
+      "train:40068",
+      "train:838",
+      "train:5086",
+      "train:58505",
+      "train:9711",
+      "train:14397",
+      "train:78854",
+      "train:41317",
+      "train:78759",
+      "train:32754",
+      "train:61509",
+      "train:39484",
+      "train:76510",
+      "train:90102",
+      "train:1954",
+      "train:77314"
+    ]
+  },
+  "descriptive_overlapping_groups": {
+    "all": {
+      "questions": 500,
+      "A_correct": 392,
+      "C_correct": 404,
+      "net_corrected": 12
+    },
+    "reference_steps_le_5": {
+      "questions": 321,
+      "A_correct": 266,
+      "C_correct": 279,
+      "net_corrected": 13
+    },
+    "comparison_numeric_or_count": {
+      "questions": 230,
+      "A_correct": 192,
+      "C_correct": 194,
+      "net_corrected": 2
+    },
+    "reference_steps_gt_5": {
+      "questions": 179,
+      "A_correct": 126,
+      "C_correct": 125,
+      "net_corrected": -1
+    },
+    "set_operation": {
+      "questions": 163,
+      "A_correct": 119,
+      "C_correct": 118,
+      "net_corrected": -1
+    },
+    "qualifier": {
+      "questions": 122,
+      "A_correct": 82,
+      "C_correct": 87,
+      "net_corrected": 5
+    }
+  },
+  "known_reference_answer_mismatches_retained": {
+    "train:40416": {
+      "A": "finished_wrong",
+      "C": "unfinished"
+    }
+  },
+  "issues": {
+    "replay_mismatches": 0
+  },
+  "changed_original_code": [],
+  "gate": {
+    "allow_paired_replication": true,
+    "scope": "same initial adapter and frozen corpus; only continuation training RNG changes",
+    "allow_rl": false,
+    "allow_semantic_preference_training": false
+  },
+  "limitations": [
+    "Post-hoc descriptive groups are not independent significance claims.",
+    "A gold-matching intermediate value can occur by chance; not proof of semantic correctness.",
+    "Fewer invalid calls does not alone establish causal use of diagnostic feedback.",
+    "No full initial-model or trajectory-resampling seed variation is tested."
+  ],
+  "inputs_sha256": {
+    "results/agent_feedback/continuation_data.json": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+    "results/agent_feedback/split_manifest.json": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60",
+    "results/agent_feedback/protocol.json": "659ce71a37aff491ac42a58a73c73c420db43556acb55d6aa3b79b9c2b4fb99d",
+    "results/agent_feedback/recovery_vs_clean_dev.json": "a530c12843a6667cc7637a76364334e8a8126b1f4be54405137e22aa2845a0cb",
+    "results/agent_feedback/recovery_vs_program_dev.json": "bbf2eeed0bdb604877a4f19d836691ab8a604d40b1722e769a61fa43f7b4a6a6",
+    "results/agent_feedback/initial_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/initial_sft_v1/model/adapter_model.safetensors": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+    "data/agent_feedback/dev.gold.jsonl": "864bcb1755bc8b70943e72771d8a27455698bcf923cbaee6bf24b36edd7847b8",
+    "data/agent_feedback/dev.questions.jsonl": "f40f1f6776d58794a457aa92d570d30a4754cc46152f12d40d29a10739bd8a9a",
+    "datasets/kqa_pro/kb.json": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "results/agent_feedback/program_dev_v1.jsonl": "82d48da075ee6281628d044a42a4c28555576790b558f7bd08fb366e96ba2f89",
+    "results/agent_feedback/clean_sft_v1/input_manifest.json": "8f9b29bce8f0d953a9e60b86305625640df3720331043d6e5e5b60a15450e3a8",
+    "results/agent_feedback/clean_sft_v1/run_result.json": "87104dadb8edeffdd9597d851e544faa43ef482e2330b4d64b57208523e54f09",
+    "data/agent_feedback/continuation/A.jsonl": "8b8ff38b211aa88859896340b4f13a97dbcfa615863f488fe18901eaeeac3c72",
+    "results/agent_feedback/clean_dev_v1.jsonl": "115f7ef52984021c5c1c79cb1d090616c1de3386042a95f0157869d58e49a177",
+    "results/agent_feedback/clean_dev_v1.metrics.json": "b277ad108600e4052caa6957e526da4f2e7bf3a11481cd909f3f2ca6b0181d98",
+    "results/agent_feedback/clean_dev_v1.runtime.json": "23f49575b5ba1af544d5f96dbda2f3925095f48262b7c17733460a2b8317a0f8",
+    "results/agent_feedback/recovery_sft_v1/input_manifest.json": "b88191cc0564df2d14766bf88d33aa818452ed8370ceb3955415b0392388ea5d",
+    "results/agent_feedback/recovery_sft_v1/run_result.json": "6151d714257d493ee6d5c221562a1233d6992784e78fceb548b443c83f622a00",
+    "data/agent_feedback/continuation/C.jsonl": "58b7360b5c3f58db6c669075a5541888d011556a496ede2171aa4d24978fb48d",
+    "results/agent_feedback/recovery_dev_v1.jsonl": "dfc2bbb1289d0c6a417642a16430cabdde336f118c6e20d5812715bb4c0c8130",
+    "results/agent_feedback/recovery_dev_v1.metrics.json": "e147e5c5c6ce81f96decc666ac29e4dd72f80824a6df38acf28a7c4401e1f016",
+    "results/agent_feedback/recovery_dev_v1.runtime.json": "7b26ee03daa87d6d2339c41b58d0242c8628cc01ef7954813c4e0cdec0b9f423",
+    "experiments/agent_feedback/__init__.py": "d728dd14ed4a21430dab524a4e1b04923407c5d2c03f5438cfa5555fafd42ed7",
+    "experiments/agent_feedback/compare.py": "ee90e86613477514b6e30ff9452286f4ffc3dcd9acb0b2c5d195bb1d4712994e",
+    "experiments/agent_feedback/continuation_data.py": "f33c662be4259aa728bf98ff739593c479fb101a92514cd4d4ce82643c51863d",
+    "experiments/agent_feedback/continuation_runs.py": "699bc989bce04424d7d40fa798f494f0348d841e3362d598f7e170544b01167a",
+    "experiments/agent_feedback/download_weights.py": "2f4e2a381109ac43e29c9fb7bc204cc74137fe3058443f7b7868b92fa861d858",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/initial_runs.py": "dac1b6a1fc73282d1af902881b89271219f74a73c38ce8aee96d951a8a4bef90",
+    "experiments/agent_feedback/prepare.py": "bdac7d1e467018bdd7cd2f801f4c10ec4aa4e54d4667743608a955a69ab58ab7",
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "experiments/agent_feedback/train_grpo.py": "0adeef4b717ea1c5b7daab4f59162d838051f99d97847bbf363512950de13d75",
+    "experiments/agent_feedback/train_sft.py": "ea8259f783825f1e7733a8fb147f980a70d698766bb501d8ee9e3a26193c008e",
+    "experiments/agent_feedback/training_data.py": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e",
+    "external/kqa_pro_baselines/evaluate.py": "94eb964ea460663cef58f91ce2e75caca418ec49aae76d58c6268d685130242e",
+    "external/kqa_pro_baselines/Program/executor_rule.py": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+    "results/agent_feedback/continuation_code_manifest_v1.json": "12d5fb285d3d86e6d6ae30702d24d418fc588687f013136605065f7c51b9ff80"
+  },
+  "review_script_sha256": "f4e40ca02da7ae914ac82935988c5b4d6d32c323fc15455382a06fd025878e5a",
+  "private_changed_cases": {
+    "path": "results/agent_feedback/continuation_review_cases.jsonl",
+    "sha256": "404d0b97f68c8bb91888a787f55d644435ee48ccc8c12087ebe16688e3dcf8e6",
+    "count": 46
+  },
+  "metadata_amendment": {
+    "scope": "Add original code-manifest hash before freezing replication; numerical results and gate unchanged",
+    "previous_report_path": "results/agent_feedback/continuation_review_before_manifest_binding.json",
+    "previous_report_sha256": "2c360f1ea69cd987cc5d5467356e459906afc224ac7fd158d7ed22019344668c"
+  }
+}

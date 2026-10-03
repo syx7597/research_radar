@@ -1,0 +1,44 @@
+{
+  "examples": 5772,
+  "input_tokens": 9135350,
+  "supervised_tokens": 788534,
+  "max_length": 3171,
+  "token_cache_sha256": "8b8ff38b211aa88859896340b4f13a97dbcfa615863f488fe18901eaeeac3c72",
+  "config": {
+    "model": "models/qwen2.5-3b-instruct",
+    "data": "data/agent_feedback/continuation/A.jsonl",
+    "output": "results/agent_feedback/clean_sft_seed20261004",
+    "adapter": "results/agent_feedback/initial_sft_v1/model",
+    "program": false,
+    "pretokenized": true,
+    "continuation_manifest": "results/agent_feedback/continuation_data.json",
+    "epochs": 1.0,
+    "max_steps": -1,
+    "batch_size": 2,
+    "accumulation": 8,
+    "max_length": 8192,
+    "learning_rate": 0.0001,
+    "seed": 20261004,
+    "limit": 0,
+    "tokenize_only": false
+  },
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "trl": "1.14.1"
+  },
+  "continuation": {
+    "arm": "A",
+    "manifest_sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+    "artifact_sha256": "8b8ff38b211aa88859896340b4f13a97dbcfa615863f488fe18901eaeeac3c72",
+    "expected_supervised_tokens": 788534,
+    "adapter_config_sha256": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "adapter_weights_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+    "tokenizer_files_sha256": {
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    }
+  }
+}

@@ -8,7 +8,7 @@
 
 2026-10-03 23:29（北京时间）确认A/C训练及开发评测均完成。A为392/500（78.4%），C为404/500（80.8%）；C纠正29题、改错17题，净增12题，差异+2.4个百分点，配对bootstrap 95%区间[-0.2, 5.0]。达到预登记继续投入门槛，但单训练种子且区间跨0，不能宣称稳定有效。未完成54→24，无效调用1026/3957→395/3732；总token下降6.1%，评测生成进程耗时却为24.9→26.8分钟，不能据此声称整体提速。C相对程序P准确率+5.6个百分点，但输入加生成token约25.6倍且训练预算不同。证据见[同预算A/C比较](../results/agent_feedback/recovery_vs_clean_dev.json)及[程序基线比较](../results/agent_feedback/recovery_vs_program_dev.json)。
 
-初始Agent/程序基线、5,000题训练轨迹收集、418组恢复对及每组788,534监督token续训均已完成。下一步优先当前恢复训练的复现，新的语义核验候选暂不启动。
+初始Agent/程序基线、5,000题训练轨迹收集、418组恢复对及每组788,534监督token续训均已完成。已回放核验1000条开发轨迹，未发现执行/评分差异；完成变化净增15题、双方完成变化净减3题。2026-10-03 23:50已启动seed20261004的配对续训复现，仅改变续训随机性。见[复核](../results/agent_feedback/continuation_review.json)、[分析](../results/agent_feedback/continuation_review_analysis.json)与[复现协议](../results/agent_feedback/protocol_paired_replication_seed20261004.json)。RL及语义核验训练暂不启动。
 
 GRPO运行短测通过，但奖励和梯度为零，不能证明训练有效；正式RL须检查学习信号并遵守原预算。2,000题项目留出尚未使用。最新证据入口见[README](../README.md)、[初始配对比较](../results/agent_feedback/initial_vs_program_dev.json)、[恢复样本统计](../results/agent_feedback/recovery_pairs.json)及[续训语料清单](../results/agent_feedback/continuation_data.json)。
 

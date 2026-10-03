@@ -1,0 +1,40 @@
+{
+  "recorded_at_beijing": "2026-10-03T23:52:38.858914+08:00",
+  "snapshot_only": true,
+  "controller_pid": 7573,
+  "controller_alive": true,
+  "jobs": [
+    {
+      "name": "clean_sft_seed20261004",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "child_pid": 7582,
+      "started_at": 1791042630.7215462,
+      "finished_at": null,
+      "elapsed_minutes": 2.14,
+      "child_alive": true,
+      "heartbeat_age_seconds": 8.1,
+      "latest_training_log": "{'loss': '0.01759', 'grad_norm': '0.1951', 'learning_rate': '8.182e-05', 'epoch': '0.02772'}"
+    },
+    {
+      "name": "recovery_sft_seed20261004",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "child_pid": 7583,
+      "started_at": 1791042630.7225997,
+      "finished_at": null,
+      "elapsed_minutes": 2.14,
+      "child_alive": true,
+      "heartbeat_age_seconds": 8.1,
+      "latest_training_log": "{'loss': '0.07384', 'grad_norm': '0.275', 'learning_rate': '8.182e-05', 'epoch': '0.02772'}"
+    }
+  ]
+}
