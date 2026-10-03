@@ -1,0 +1,34 @@
+{
+  "checked_at_utc": "2026-10-03T08:09:24.584400+00:00",
+  "status": "gpu_reset_attempt_failed_no_devices",
+  "diagnostic_user": "syx",
+  "training_user_requirement": "syx only; administrator used for GPU recovery, never model training",
+  "cuInit_code": 999,
+  "nvidia_smi_returncode": 6,
+  "nvidia_smi_stdout": "No devices were found",
+  "authorized_recovery": {
+    "temporary_services": [
+      "ollama.service",
+      "gdm.service"
+    ],
+    "idle_checks": [
+      "Ollama had no loaded models or active requests",
+      "GDM was greeter; other sessions were SSH",
+      "fuser confirmed no GPU device holders immediately before reset"
+    ],
+    "reset_command": "nvidia-smi --gpu-reset -i 0,1,2,3",
+    "reset_returncode": 6,
+    "reset_stdout": "No devices were found",
+    "reset_completed": false,
+    "services_after": "Id=ollama.service\nActiveState=active\nSubState=running\n\nId=gdm.service\nActiveState=active\nSubState=running",
+    "administrator_session_closed": true
+  },
+  "observed_driver_errors": [
+    "unexpected WPR2 already up, cannot proceed with booting GSP",
+    "RmInitAdapter: Cannot initialize GSP firmware RM",
+    "RmInitAdapter failed! (0x62:0x40:1859)"
+  ],
+  "optimizer_steps_completed": 0,
+  "training_running": false,
+  "next_action": "maintenance recovery of GPU firmware/device state required; no host reboot, driver reload, or package modification performed"
+}

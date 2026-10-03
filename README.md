@@ -41,9 +41,9 @@
 - 逐步执行与原整程序执行在5,500条金标轨迹上完全一致；训练/开发各有1条既有答案不一致，仅排除训练异常。4,999条训练轨迹通过真实Qwen分词检查。这些是基础设施验证，不是模型正确率。
 - 新入口为`experiments/agent_feedback/`：共享初始SFT、同监督预算A/C续训、同模型程序基线、真实交互推理与GPU预算记录。GRPO适配已有CPU检查，原生工具循环预算见独立修订协议；基座权重已校验，尚无训练后的adapter和完整对照结果。
 
-2026-10-03运行记录：两次短测均未完成优化步骤。第一次暴露Transformers 5.18预热参数接口变化，已修复且保持3%预热；第二次因CUDA不可用退出。独立驱动调用返回`CUDA_ERROR_NO_DEVICE (100)`，四张卡均报告`GPU Recovery Action: Reset`，用户已授权重置，但实验账号不在sudoers，命令被系统拒绝，需管理员恢复设备后续跑。这不是方法效果负结果；不能据此判断恢复训练是否有效。
+2026-10-03运行记录：两次短测均未完成优化步骤。第一次暴露Transformers 5.18预热参数接口变化，已修复且保持3%预热；第二次因CUDA不可用退出。最初独立驱动调用返回`CUDA_ERROR_NO_DEVICE (100)`，四张卡报告`GPU Recovery Action: Reset`。随后经用户授权，由管理员释放全部GPU设备句柄并尝试重置，命令返回`No devices were found`（退出码6），内核记录GSP固件初始化失败。Ollama/GDM已恢复运行，管理员会话已退出；切回syx后CUDA初始化返回999，仍无法训练，需要维护恢复设备。这不是方法效果负结果；不能据此判断恢复训练是否有效。
 
-诊断与失败尝试见[GPU就绪状态](results/agent_feedback/gpu_readiness.json)，完整模型校验见[权重校验记录](results/agent_feedback/weights_verified.json)。
+最新操作见[管理员重置尝试](results/agent_feedback/gpu_reset_attempt.json)，此前诊断见[GPU就绪状态](results/agent_feedback/gpu_readiness.json)，完整模型校验见[权重校验记录](results/agent_feedback/weights_verified.json)。
 
 ## 目录
 
