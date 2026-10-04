@@ -13,19 +13,21 @@
     "knowledge_frozen": false,
     "evaluation_frozen": false,
     "domain_training_started": false,
-    "domain_training_readiness": "用户已授权按计划推进；目前尚未具备领域训练的数据和冻结条件。"
+    "domain_training_readiness": "用户已授权按计划推进；目前尚未具备领域训练的数据和冻结条件。",
+    "first_batch_ai_review_completed": true,
+    "ai_reviewed_development_records": 12
   },
   "review_arrangement": {
-    "first_fact_review": "用户本人先审首批 12 条；实际姓名/署名、完成时间与决定由本人填写，本文不代填。",
-    "peer_review": "用户计划后续找同学交叉复核；尚无已完成复核或实名承诺。",
+    "current_instruction": "用户于2026-10-05说明缺少专业知识，要求另开模型子agent代审；此安排取代开发必须先由用户本人审阅的队列。",
+    "first_fact_review": "已完成新上下文AI子agent逐条来源审阅及主agent复核，12条；保留原报告、裁决与差异，不假冒人工。",
+    "peer_review": "先前讨论过同学交叉复核，但目前没有真人实际完成；若以后取得专业复核再升级对应标签等级。",
     "work_can_start_now": [
-      "来源与候选事实整理",
-      "用户首批事实核验",
-      "仅限开发的查询/来源闭环",
-      "独立评价设计"
+      "AI来源审阅及候选修订",
+      "限定来源的开发问答与中文查询适配",
+      "来源/家族分组和评价设计"
     ],
-    "final_qa_gate": "独立 QA 最终验收需要与出题者不同的真人复核者；尚未找到第二人不阻止开发，但该状态不能被写成独立金标已经完成。",
-    "identity_limit": "身份字段只是审阅者声明；结构检查不能证明真人实际完成核验。"
+    "final_qa_gate": "独立人工金标仍要求真实独立出题与交叉复核；AI审阅数据可以支持明确标识的开发和探索性应用评价，不能改称人工金标。",
+    "identity_limit": "另一个上下文的子agent不等于不同模型或统计独立；多模型一致也不能替代外部事实证据。"
   },
   "size_estimates_not_quotas": {
     "radar_families_or_models": [
@@ -322,13 +324,6 @@
     "private_directory_gitignored": true,
     "roles": "出题/复核者可以读事实和原文；训练与提示开发仅访问适配/开发问题。最终评分答案不进入模型上下文/检索索引/训练文件。"
   },
-  "next_human_tasks": [
-    "用户按现有 12 条审阅包先核对主体，再核对事件、版本、值、单位、条件和一手来源；填写真实署名/时间，不能确定就保留 needs_changes/rejected。",
-    "在首批核验中标记文档的原始出处和型号/系统/部件家族；现有来源标签不是已通过的独立切分。",
-    "先补完 10–20 道开发题的答案并走通接口；这批题永久留在 development_only。",
-    "知识和分组稳定后，由用户或同学独立出新 QA；另一人复核，真实身份逐题登记。缺少复核者时继续完善开发资源，不预填 accepted。",
-    "最终运行前共同检查大小、题组覆盖、组件数、同源基线与所有冻结哈希，再确定具体执行预算。"
-  ],
   "templates": {
     "source_inventory.csv": {
       "path": "templates/radar_evaluation/source_inventory.csv",
@@ -384,5 +379,24 @@
     "未声明人工已完成核验",
     "未修改旧模板或已绑定文档",
     "未启动领域训练或最终评价"
+  ],
+  "label_tracks": {
+    "current": "AI_source_reviewed_development",
+    "AI_source_reviewed_development": {
+      "human_gold": false,
+      "final_evaluation_frozen": false,
+      "use": "候选修订、来源限定的问答开发；若以后用作探索评价须另冻结且披露参考标签由AI审阅。"
+    },
+    "independent_human_reference": {
+      "available": false,
+      "use": "原方案中的独立人工参考评价，保留验收要求，缺少它不阻止开发但不能宣称已取得对应证据。"
+    }
+  },
+  "next_review_tasks": [
+    "根据12条AI审阅裁决创建新的来源读法/候选修订版本，保留旧快照和原始意见；不将型号主体错配、取消事件或字段未知提升为无条件事实。",
+    "优先澄清09–10的一手手册原扫描、精度和离散选项；无法确认时仍可检验来源限定的开发回答。",
+    "完成少量开发答案和中文查询适配；永久保持development_only，不靠旧开发题生成最终成绩。",
+    "继续来源/家族连通分组与对照设计；如使用AI标签作探索评价须单列证据等级、固定题集、保留人工金标缺失的局限。",
+    "若后续取得同学或专业人员复核，按原独立人工参考流程记录真实署名、版本和判断，不补造已完成状态。"
   ]
 }

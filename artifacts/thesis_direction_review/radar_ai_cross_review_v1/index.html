@@ -1,0 +1,68 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>雷达首批 AI 交叉审阅结果</title><style>body{font-family:system-ui,sans-serif;max-width:950px;margin:32px auto;padding:0 18px;line-height:1.7;color:#172b3a;background:#f6f8fa}article,section{background:white;padding:18px;border:1px solid #d5dde4;border-radius:8px;margin:16px 0}h1{font-size:25px}h2{font-size:18px}.state{font-weight:bold;color:#18557b}a{color:#125a95}q{background:#eef3f7}</style>
+<h1>首批 12 条：AI 交叉审阅结果</h1><section>
+<p>按用户要求，另开未继承会话的新子 agent 对照本地来源审阅，主 agent 再核查证据并裁决开发用途。子 agent 可见候选中的旧备注；主 agent 有项目历史，并接收了子 agent 提供的新来源线索。这不是双盲或不同模型的统计独立验证。</p>
+<p><b>不需要用户先判断专业参数才能继续开发。</b>本轮结果用于候选修订与开发材料整理，统一标为 AI 审阅，不能改称人工金标或已核实的装备参数。原始事实、人工决定与最终 QA 答案均未修改。</p>
+<p>子agent建议：开发保留4条、隔离5条、修订3条。主agent进一步按开发用途裁决：5条需修订／隔离型号断言；5条可保留限定来源的读法（包括为12补未知范围）；2条保留读法但补查精度或选项范围。两套分布评价对象不同，未把分歧隐藏成一致投票。12条都不是独立人工金标。</p>
+<p><a href="reviewer_report.json">新子 agent 完整审阅</a> · <a href="root_semantic_review.json">主 agent 复核</a> · <a href="review_summary.csv">逐条处理表</a></p></section>
+<article><h2>radar-review-001-01 · AN/MPQ-65</h2>
+<p class="state">主agent开发用途裁决：修订或隔离型号断言</p><p>子agent建议：隔离。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>来源信息框的Type属于Patriot系统，不能作为AN/MPQ-65的型号类型；本地en_title标签与source_en正文主体不一致。</p>
+<p><b>处理：</b>分开source_subject与queried_entity；隔离雷达类型断言，后续用直接设备来源另建新事实。</p>
+<p><b>已绑定快照摘录：</b><q>Mobile; surface-to-air missile; /; anti-ballistic missile; system</q></p>
+<p><a href="https://en.wikipedia.org/wiki/MIM-104_Patriot">原网页</a> · <a href="../../../radar_corpus/raw/an_mpq-65.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-02 · AN/MPQ-65</h2>
+<p class="state">主agent开发用途裁决：修订或隔离型号断言</p><p>子agent建议：隔离。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>1981在绑定快照中出现，但其主语仍是系统页面，不能据此确定AN/MPQ-65的服役年份。</p>
+<p><b>处理：</b>保留系统页面的原文陈述及主体未对齐标记；不填写雷达替代年份。</p>
+<p><b>已绑定快照摘录：</b><q>Since 1981</q></p>
+<p><a href="https://en.wikipedia.org/wiki/MIM-104_Patriot">原网页</a> · <a href="../../../radar_corpus/raw/an_mpq-65.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-03 · AN/MPQ-65</h2>
+<p class="state">主agent开发用途裁决：修订或隔离型号断言</p><p>子agent建议：隔离。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>1984的字面事件与服役事件不同，且没有在本快照中直接绑定雷达型号。</p>
+<p><b>处理：</b>事件类型和来源主体分别记录；不能把系统部署、交付或初始能力互换。</p>
+<p><b>已绑定快照摘录：</b><q>initial operational capacity 1984</q></p>
+<p><a href="https://en.wikipedia.org/wiki/MIM-104_Patriot">原网页</a> · <a href="../../../radar_corpus/raw/an_mpq-65.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-04 · AN/APY-9</h2>
+<p class="state">主agent开发用途裁决：修订或隔离型号断言</p><p>子agent建议：修订。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>快照写有该区间；厂商正文只支持UHF类别，没有在已读正文给出该型号的数值端点。</p>
+<p><b>处理：</b>保留快照原文范围但禁止作为已核实型号数值；UHF类别如另建候选须单独绑定厂商来源。</p>
+<p><b>已绑定快照摘录：</b><q>UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/APY-9">原网页</a> · <a href="../../../radar_corpus/raw/an_apy-9.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-05 · AN/SPG-51</h2>
+<p class="state">主agent开发用途裁决：保留限定来源的开发读法</p><p>子agent建议：开发保留。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>双端点和Illuminator标签均与来源短摘录一致；未核实型号版本和原始参数资料。</p>
+<p><b>处理：</b>开发中保留区间及原文部件标签；不得与Tracking Radar记录合并或补全未写出的配置。</p>
+<p><b>已绑定快照摘录：</b><q>Illuminator: 10.25-10.5 GHz</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51">原网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-06 · AN/SPG-51</h2>
+<p class="state">主agent开发用途裁决：保留限定来源的开发读法</p><p>子agent建议：开发保留。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>双端点和Tracking Radar标签均与来源短摘录一致；未独立核实参数。</p>
+<p><b>处理：</b>保留独立部件记录和双端点；不能把两个部件的范围当一个连续范围。</p>
+<p><b>已绑定快照摘录：</b><q>Tracking Radar: 5.45 GHz - 5.825 GHz</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51">原网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-07 · AN/SPG-51</h2>
+<p class="state">主agent开发用途裁决：保留限定来源的开发读法</p><p>子agent建议：开发保留。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>标量、pps及surface字面标签一致；surface进一步表示哪一模式/对象尚未核实。</p>
+<p><b>处理：</b>保留verbatim_context_label，不自动解释为某目标或通用工作模式。</p>
+<p><b>已绑定快照摘录：</b><q>4100 pps (surface)</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51">原网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-08 · AN/SPG-51</h2>
+<p class="state">主agent开发用途裁决：保留限定来源的开发读法</p><p>子agent建议：开发保留。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>区间两端、pps及air字面标签一致；仍只是该快照的读法。</p>
+<p><b>处理：</b>保留与surface分开的范围和原标签，不擅自推出模式与适用条件。</p>
+<p><b>已绑定快照摘录：</b><q>9600-16700 pps (air)</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51">原网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-09 · AN/SPN-35</h2>
+<p class="state">主agent开发用途裁决：保留读法，另查精度／选项范围</p><p>子agent建议：隔离。子agent的隔离针对型号真值；仍可保留快照读法作开发，禁止提升为无条件型号事实。</p><p>快照的频率区间和GHz量纲可正确读取；子agent发现的手册转录端点精度不同，可能涉及舍入、版本或转录差异。</p>
+<p><b>处理：</b>旧kg量纲不可沿用；先保留两个来源的说法并注明来源等级，不据转录直接判定原区间错误或替换端点。</p>
+<p><b>已绑定快照摘录：</b><q>9.0 to 9.2 GHz band</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPN-35">原网页</a> · <a href="../../../radar_corpus/raw/an_spn-35.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-10 · AN/SPN-35</h2>
+<p class="state">主agent开发用途裁决：保留读法，另查精度／选项范围</p><p>子agent建议：隔离。子agent的隔离针对型号真值；仍可保留快照读法作开发，禁止提升为无条件型号事实。</p><p>快照脉宽按时间量读取正确；手册转录还列另一选项，所以不能把快照单值表述为唯一或无条件值。</p>
+<p><b>处理：</b>保留单值的来源范围并标记可能缺少选项/模式；在原扫描与配置核对前不合成新确定参数。</p>
+<p><b>已绑定快照摘录：</b><q>0.2 microseconds</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPN-35">原网页</a> · <a href="../../../radar_corpus/raw/an_spn-35.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-11 · AN/SPG-59</h2>
+<p class="state">主agent开发用途裁决：修订或隔离型号断言</p><p>子agent建议：修订。保留子agent的证据边界；主agent裁决仅描述开发用途，不是事实准入。</p><p>Canceled字面表示取消，event_type=cancellation合理，但attribute=service_entry仍与事件冲突。</p>
+<p><b>处理：</b>新版本将attribute改为中性lifecycle_event并保留cancellation；取消年份不能回答服役年份。</p>
+<p><b>已绑定快照摘录：</b><q>Canceled 1963</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-59">原网页</a> · <a href="../../../radar_corpus/raw/an_spg-59.json">本地历史快照</a></p></article>
+<article><h2>radar-review-001-12 · EL/M-2080</h2>
+<p class="state">主agent开发用途裁决：保留限定来源的开发读法</p><p>子agent建议：修订。采纳子agent补结构化unknown_scope的建议；保留读法并将未知明确限定到绑定来源字段。</p><p>Power字段没有可读出的功率数值；not_recorded只能限定为该快照未给数值。</p>
+<p><b>处理：</b>保留数值及单位为空，不补0，不从用途猜测推出数值或实际能力。</p>
+<p><b>已绑定快照摘录：</b><q>Classified</q></p>
+<p><a href="https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine">原网页</a> · <a href="../../../radar_corpus/raw/el_m-2080.json">本地历史快照</a></p></article><section><h2>复核所用补充资料</h2><ul><li><a href="https://samm.dsca.mil/policy-memoranda/dsca-18-51">root_dsca_18_51</a>：AN/MPQ-65 is separately listed as radar equipment; does not establish its service year.</li><li><a href="https://news.lockheedmartin.com/news-releases?item=128776">root_apy9_manufacturer_2019</a>：Manufacturer identifies APY-9 as UHF; inspected article does not specify the candidate numerical endpoints.</li><li><a href="https://radar.tpub.com/TM-11-487C-1/TM-11-487C-11198.htm">root_spn35_handbook_transcription</a>：Potential precision and alternative-value scope issue for 09/10; not conclusive contradiction or accepted replacement.</li></ul>
+<p>厂商文章支持频段类别，不支持本候选的完整数值范围；手册页是第三方转录，未核对原扫描，精度差异可能是舍入，单值也可能只是多选项之一。保留这些不确定性，不直接覆盖原事实。</p></section></html>

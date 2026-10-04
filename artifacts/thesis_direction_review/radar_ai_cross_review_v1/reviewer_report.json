@@ -1,0 +1,1608 @@
+{
+  "schema_version": "radar_ai_cross_review_v1",
+  "reviewer_kind": "AI",
+  "reviewer_agent": "/root/radar_independent_ai_reviewer",
+  "human_verified": false,
+  "independent_gold": false,
+  "review_date": "2026-10-05",
+  "generated_at_utc": "2026-10-04T16:19:41.755367+00:00",
+  "independence_statement_zh": "本报告是本轮新开子agent在独立任务上下文中的逐条审阅；没有声称使用不同模型，也不声称统计独立性。既有CSV review_notes未用于形成结论，既有AI审阅报告、逐题模型输出及公开逐题留出未被用作证据。",
+  "review_scope_zh": "先逐条读取绑定本地源字段及身份信息，复核哈希/路径/字符位置，再做有界外部核查。审阅对象是来源解读、字段一致性和证据范围，不涉及战术或装备效能分析。",
+  "input": {
+    "facts_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+    "facts_sha256": "4f7b0b1a2b05c6bd17e19e66cb4761de014924b2bb901bf88ead99b7287d63f9",
+    "fact_count": 12,
+    "source_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122"
+  },
+  "verdict_semantics": {
+    "supported": "整行在明确来源范围内可得到字面支持；不表示型号真值经过一手验证。",
+    "needs_revision": "主体、事件、数值语义或字段组合需要修订；引文自身仍可能逐字匹配。",
+    "insufficient": "现有材料不足以给出该层级的结论。"
+  },
+  "six_dimensions_definition": {
+    "source_subject": "来源主体及型号归属",
+    "event_type": "事件语义与时间类型",
+    "value_and_range": "值、区间及离散选项",
+    "unit": "单位与量纲",
+    "conditions": "条件及适用范围",
+    "unknown_scope": "未知的边界与不可推出的结论"
+  },
+  "action_semantics": {
+    "开发保留": "仅保留作绑定来源的读法/抽取开发样例；不进入已核实真值或独立金标。",
+    "隔离": "隔离当前主体归属或型号数值提升；原始证据仍可留存。",
+    "修订": "给出可执行的侧车或新候选记录建议，本报告不修改原包。"
+  },
+  "main_findings_zh": [
+    "12/12源文件sha、JSON指针、Unicode引文边界以及chunk行链接与含换行哈希全部匹配；这只是溯源完整性。",
+    "01–03 的信息框主体是 Patriot 系统，不能挂给 AN/MPQ-65 雷达。",
+    "04 的 UHF 类别有厂商检索正文支持，0.3–3.0 GHz 的型号参数语义仍不足。",
+    "05–08 保留了原文分量或surface/air标签，可作来源读法开发例；数值、脚注及改型未经一手核实。",
+    "09 与手册转录存在精度/版本待澄清线索；9.16到9.2可能为舍入，未判定原值错误。10的0.2是转录选项之一，不能无条件视为唯一值。",
+    "11 cancellation 与 service_entry 属性冲突；12未知必须限定为绑定来源字段未给数值。"
+  ],
+  "external_research": {
+    "search_or_open_operations": 6,
+    "tool_invocations": 3,
+    "bounded_search_stopped": true,
+    "operations": [
+      {
+        "operation": "search",
+        "query": "site.lockheedmartin.com APY-9 UHF radar",
+        "result": "manufacturer search-returned page text read; used for UHF category only"
+      },
+      {
+        "operation": "search",
+        "query": "site.history.navy.mil Typhon 1963 SPG-59",
+        "result": "Navy historical caption read in search; no precise radar cancellation date established; not used to verify row"
+      },
+      {
+        "operation": "open",
+        "url": "https://www.lockheedmartin.com/en-us/products/an-apy-9-radar.html",
+        "result": "Internal Error; no direct page text obtained"
+      },
+      {
+        "operation": "search",
+        "query": "site.navy.mil \"SPG-51\" \"frequency\"",
+        "result": "no applicable primary numeric evidence read; returned secondary results not adopted as verification"
+      },
+      {
+        "operation": "search",
+        "query": "site.navy.mil \"SPN-35\" \"0.2\"",
+        "result": "located original-manual transcription; unopened PDF search snippet not adopted as evidence"
+      },
+      {
+        "operation": "open",
+        "url": "https://radar.tpub.com/TM-11-487C-1/TM-11-487C-11198.htm",
+        "result": "HTML page text read; original scan not inspected"
+      }
+    ],
+    "source_registry": {
+      "lm_apy9_search_text": {
+        "url": "https://www.lockheedmartin.com/en-us/products/an-apy-9-radar.html",
+        "title": "AN/APY-9 Radar — Lockheed Martin",
+        "source_kind": "manufacturer",
+        "access": "search_returned_page_text_only; direct_open_failed",
+        "accessed_date": "2026-10-05",
+        "evidence_quote": "The APY-9 operates at UHF",
+        "supports_zh": "厂商搜索返回的正文只用于支持 UHF 类别。",
+        "does_not_support_zh": "未读到型号实际调谐上下界；直接打开返回 Internal Error。",
+        "locally_archived": false
+      },
+      "mil_hdbk_162a_spn35_transcription": {
+        "url": "https://radar.tpub.com/TM-11-487C-1/TM-11-487C-11198.htm",
+        "title": "MIL-HDBK-162A：AN/SPN-35 转录页",
+        "source_kind": "original_manual_third_party_html_transcription",
+        "document_date": "1965-12-15",
+        "document_locator": "Volume 1, Section 3, printed AN/SPN-35: 2; web navigation page 1185",
+        "access": "page_text_opened_and_read; original_scan_not_inspected",
+        "accessed_date": "2026-10-05",
+        "supports_zh": "页面标明 TYPE AN/SPN-35；发射机频率与脉宽栏为待核对的一手文献转录线索。",
+        "does_not_support_zh": "未核对原扫描、OCR准确性及适用配置，不能直接取代本地二手快照或成为独立金标。",
+        "locally_archived": false
+      }
+    },
+    "external_evidence_limit_zh": "网络结果未在本报告中固化为带哈希的独立源文件。手册为第三方转录，厂商页面直开失败；均未据此授予独立金标。"
+  },
+  "summary": {
+    "facts_reviewed": 12,
+    "literal_reading_counts": {
+      "needs_revision": 5,
+      "supported": 7
+    },
+    "recommended_action_counts": {
+      "隔离": 5,
+      "修订": 3,
+      "开发保留": 4
+    },
+    "source_bindings_verified": 12,
+    "model_facts_primary_verified": 0
+  },
+  "facts": [
+    {
+      "fact_id": "radar-review-001-01",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 1,
+        "fact_record_sha256": "61abd2e7f966bfd3b882cfbffa522d5083860be97d850e5580cda9fbceed069a",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/MPQ-65",
+          "entity_name": "AN/MPQ-65",
+          "variant": "",
+          "attribute": "type_description",
+          "event_type": "",
+          "value_raw": "Mobile surface-to-air missile / anti-ballistic missile system",
+          "value_kind": "text",
+          "value_status": "ambiguous",
+          "value": "Mobile surface-to-air missile / anti-ballistic missile system",
+          "min_value": "",
+          "max_value": "",
+          "unit_raw": "",
+          "unit_std": "",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_mpq-65.json",
+        "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+        "source_sha256_expected": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+        "source_sha256_observed": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 65,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_mpq-65#ibx",
+          "chunk_line": 5,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Type",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "Mobile; surface-to-air missile; /; anti-ballistic missile; system",
+        "bound_source_field": "Mobile; surface-to-air missile; /; anti-ballistic missile; system",
+        "source_identity": {
+          "id": "an_mpq-65",
+          "en_title": "AN/MPQ-65",
+          "zh_title": "MIM-104爱国者导弹",
+          "source_en": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "chunk_line_sha256_observed": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "needs_revision",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "needs_revision",
+          "note_zh": "源文件虽以 AN/MPQ-65 命名，source_en 却指向 MIM-104 Patriot；中文题名和系统级 Type 表明信息框主体是 Patriot 系统，不能据文件名归属到雷达部件。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "原文描述被保留；分号是采集拆分痕迹，去除后不改变词义。"
+        },
+        "unit": {
+          "verdict": "not_applicable",
+          "note_zh": "文本类别没有数值单位。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "not_stated 仅表示绑定字段没有给出条件；不能解释为所有型号、时期或模式都适用。"
+        },
+        "unknown_scope": {
+          "verdict": "insufficient",
+          "note_zh": "绑定字段未给出 AN/MPQ-65 自身的类别描述。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "needs_revision",
+        "note_zh": "entity_name/entity_id 是雷达，value 的主体是系统；value_kind=text 本身正确。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "引文准确，但导弹系统类别被赋给 AN/MPQ-65 雷达；ambiguous 标记没有修复主体错配。",
+      "recommended_action": "隔离",
+      "revision_suggestions": [
+        {
+          "operation": "quarantine_current_entity_attribution",
+          "fields": [
+            "entity_id",
+            "entity_name"
+          ],
+          "instruction_zh": "保留源行作为归属错误开发案例；停止把该值作为 AN/MPQ-65 类型。若另建系统记录，将主体明确为 MIM-104 Patriot，实体ID需通过注册表核对。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "AN/MPQ-65 自身的类别描述尚无本条证据；没有替其发明新描述。",
+        "即使转移到 Patriot 主体，当前证据仍是二手快照。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-02",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 2,
+        "fact_record_sha256": "6fcc9c2781905baeaef46d7ed6c1ac69c40090ee5c71f9788f0f8fe4882f6888",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/MPQ-65",
+          "entity_name": "AN/MPQ-65",
+          "variant": "",
+          "attribute": "service_entry",
+          "event_type": "in_service",
+          "value_raw": "Since 1981; initial operational capacity 1984",
+          "value_kind": "event",
+          "value_status": "ambiguous",
+          "value": "1981",
+          "min_value": "",
+          "max_value": "",
+          "unit_raw": "",
+          "unit_std": "year",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_mpq-65.json",
+        "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+        "source_sha256_expected": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+        "source_sha256_observed": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 10,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_mpq-65#ibx",
+          "chunk_line": 5,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/In service",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "Since 1981",
+        "bound_source_field": "Since 1981; initial operational capacity 1984; [; 1; ]",
+        "source_identity": {
+          "id": "an_mpq-65",
+          "en_title": "AN/MPQ-65",
+          "zh_title": "MIM-104爱国者导弹",
+          "source_en": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "chunk_line_sha256_observed": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "needs_revision",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "needs_revision",
+          "note_zh": "源文件虽以 AN/MPQ-65 命名，source_en 却指向 MIM-104 Patriot；中文题名和系统级 Type 表明信息框主体是 Patriot 系统，不能据文件名归属到雷达部件。"
+        },
+        "event_type": {
+          "verdict": "supported",
+          "note_zh": "in_service 对应 Since；必须与同栏的 initial operational capacity 分开。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "1981 的数字提取准确，按年粒度记录。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "year 对应年份。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "not_stated 仅表示绑定字段没有给出条件；不能解释为所有型号、时期或模式都适用。"
+        },
+        "unknown_scope": {
+          "verdict": "insufficient",
+          "note_zh": "AN/MPQ-65 服役年没有在绑定字段中给出。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "needs_revision",
+        "note_zh": "事件类型与文本相符，但 entity_id/entity_name 与事件主体不符；ambiguous 不能充当主体修正。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "1981 对应本地 Patriot 信息框的 Since 表述；它不能回答 AN/MPQ-65 的服役年。",
+      "recommended_action": "隔离",
+      "revision_suggestions": [
+        {
+          "operation": "quarantine_current_entity_attribution",
+          "fields": [
+            "entity_id",
+            "entity_name"
+          ],
+          "instruction_zh": "把1981仅作为 Patriot 系统来源陈述候选保留；若建立新行，明确系统主体、来源和年粒度；不得填入雷达服役日期。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "Since 1981 的日期及事件定义未经本轮一手验证。",
+        "不能推断该系统日期与某雷达改型服役日期相同。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-03",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 3,
+        "fact_record_sha256": "15fa1b802e5b1b1856c4bdfcd91b22d87bc9225af2883de9b251beeb059006e9",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/MPQ-65",
+          "entity_name": "AN/MPQ-65",
+          "variant": "",
+          "attribute": "service_entry",
+          "event_type": "initial_operational_capacity",
+          "value_raw": "Since 1981; initial operational capacity 1984",
+          "value_kind": "event",
+          "value_status": "ambiguous",
+          "value": "1984",
+          "min_value": "",
+          "max_value": "",
+          "unit_raw": "",
+          "unit_std": "year",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_mpq-65.json",
+        "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+        "source_sha256_expected": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+        "source_sha256_observed": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 45,
+          "char_start": 12,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_mpq-65#ibx",
+          "chunk_line": 5,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/In service",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "initial operational capacity 1984",
+        "bound_source_field": "Since 1981; initial operational capacity 1984; [; 1; ]",
+        "source_identity": {
+          "id": "an_mpq-65",
+          "en_title": "AN/MPQ-65",
+          "zh_title": "MIM-104爱国者导弹",
+          "source_en": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "chunk_line_sha256_observed": "92bb89d59eb90521c0eda65bd0123e5fda1316091d944f44c9b953b548097cb8",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "needs_revision",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "needs_revision",
+          "note_zh": "源文件虽以 AN/MPQ-65 命名，source_en 却指向 MIM-104 Patriot；中文题名和系统级 Type 表明信息框主体是 Patriot 系统，不能据文件名归属到雷达部件。"
+        },
+        "event_type": {
+          "verdict": "supported",
+          "note_zh": "initial_operational_capacity 保留了原文事件标签，不能并成普通服役事件或与1981互换。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "1984 提取准确；不增加月日精度。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "year 对应年份。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "not_stated 仅表示绑定字段没有给出条件；不能解释为所有型号、时期或模式都适用。"
+        },
+        "unknown_scope": {
+          "verdict": "insufficient",
+          "note_zh": "没有 AN/MPQ-65 的初始能力日期证据。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "needs_revision",
+        "note_zh": "event_type 正确但主体不符；service_entry 若只是粗类，仍应显式保存初始能力子类型并禁止无差别年份问答。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "1984 与 initial operational capacity 的拆分读法忠实，但信息框主体是 Patriot 系统。",
+      "recommended_action": "隔离",
+      "revision_suggestions": [
+        {
+          "operation": "quarantine_current_entity_attribution",
+          "fields": [
+            "entity_id",
+            "entity_name",
+            "event_type"
+          ],
+          "instruction_zh": "将该行限定为 Patriot 系统初始能力事件候选；保留原文 capacity 拼写及1984，不替换或归并到1981。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "本轮没有证实 Patriot 该里程碑日期；更没有证实雷达日期。",
+        "系统级事件词典是否把初始能力归入服役类，需在模式约束中明确。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-04",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 4,
+        "fact_record_sha256": "e874bd3d4320b3cfc9cd0fd1c0455a86bd9def843042c6d20a2e72e87fc9fe1c",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/APY-9",
+          "entity_name": "AN/APY-9",
+          "variant": "",
+          "attribute": "frequency",
+          "event_type": "",
+          "value_raw": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+          "value_kind": "range",
+          "value_status": "ambiguous",
+          "value": "",
+          "min_value": "0.3",
+          "max_value": "3.0",
+          "unit_raw": "GHz",
+          "unit_std": "GHz",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_apy-9.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/APY-9",
+        "source_sha256_expected": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+        "source_sha256_observed": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 36,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_apy-9#ibx",
+          "chunk_line": 31,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Frequency",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+        "bound_source_field": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+        "source_identity": {
+          "id": "an_apy-9",
+          "en_title": "AN/APY-9",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/APY-9",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "e8ad45daf61031edfb6dfcaf40d32045be7924aa721aec780d939f12bb3e6d1b",
+        "chunk_line_sha256_observed": "e8ad45daf61031edfb6dfcaf40d32045be7924aa721aec780d939f12bb3e6d1b",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "needs_revision",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地 source_en 和英文题名一致指向 AN/APY-9。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "needs_revision",
+          "note_zh": "0.3–3.0 的区间提取准确；缺少证据区分波段解释与型号实际工作上下界。应把数值角色标为未确定。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "GHz 是频率；括号 cm 是对应波长描述，不能混作第二个频率范围。"
+        },
+        "conditions": {
+          "verdict": "insufficient",
+          "note_zh": "未给出调谐、模式或硬件条件；不得用 not_stated 声称全区间可工作。"
+        },
+        "unknown_scope": {
+          "verdict": "needs_revision",
+          "note_zh": "具体工作上下界未知；保留 UHF 类别与原始区间来源文字，但隔离数值参数语义。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "needs_revision",
+        "note_zh": "attribute=frequency 与 value_kind=range 容易把波段说明提升为型号参数；ambiguous 标记应配合显式数值角色/适用范围。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "一手厂商检索正文部分支持 UHF 类别；当前候选的数值范围未获一手验证。"
+      },
+      "reason_zh": "数字与单位读法准确，但 UHF-Band 后的宽区间不能直接当成该型号实际可用的完整频率范围；厂商检索正文仅支持 UHF 类别。",
+      "recommended_action": "修订",
+      "revision_suggestions": [
+        {
+          "operation": "propose_source_scoped_band_record",
+          "suggested_fields": {
+            "attribute": "frequency_band",
+            "value_kind": "text",
+            "value": "UHF",
+            "min_value": "",
+            "max_value": "",
+            "unit_std": ""
+          },
+          "instruction_zh": "在新建议记录中保留 UHF；原始数值留在 provenance/source_note，标注 range_role=unresolved_band_description，不替换原包。"
+        }
+      ],
+      "external_sources": [
+        {
+          "source_id": "lm_apy9_search_text",
+          "used_for": "UHF category only; not numeric limits"
+        }
+      ],
+      "remaining_uncertainty": [
+        "厂商直开失败；只能说明检索返回正文明确有 UHF。",
+        "本轮没有一手材料给出型号实际工作频率上下界，也未证明0.3–3.0就是设备调谐范围。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-05",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 5,
+        "fact_record_sha256": "f11cf1b297a548d3e6b8d10e53f3bd4c1add3e49275ea3cf27bc617766ec7734",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/SPG-51",
+          "entity_name": "AN/SPG-51",
+          "variant": "",
+          "attribute": "frequency",
+          "event_type": "",
+          "value_raw": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+          "value_kind": "range",
+          "value_status": "stated",
+          "value": "",
+          "min_value": "10.25",
+          "max_value": "10.5",
+          "unit_raw": "GHz",
+          "unit_std": "GHz",
+          "condition_status": "explicit",
+          "condition_raw": "Illuminator",
+          "conditions_json": "[{\"kind\":\"verbatim_component_label\",\"text\":\"Illuminator\"}]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_spg-51.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51",
+        "source_sha256_expected": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_sha256_observed": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 27,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_spg-51#ibx",
+          "chunk_line": 112,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Frequency",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "Illuminator: 10.25-10.5 GHz",
+        "bound_source_field": "Illuminator: 10.25-10.5 GHz; [; 2; ]; Tracking Radar: 5.45 GHz - 5.825 GHz; [; 2; ]; [; a; ]",
+        "source_identity": {
+          "id": "an_spg-51",
+          "en_title": "AN/SPG-51",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/SPG-51",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_line_sha256_observed": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "supported",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名、URI和信息框均指向 AN/SPG-51；variant 留空仅能表示未确定，不能表示所有改型。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "min_value=10.25、max_value=10.5 与绑定片段一致；不能与另一分量的频率合并。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "源单位和标准单位同为 GHz，没有跨量纲换算。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "conditions_json 的 verbatim_component_label 保留 Illuminator；不把它改写成整机模式。"
+        },
+        "unknown_scope": {
+          "verdict": "supported",
+          "note_zh": "数值之外的型号变体、适用年代和测量/使用条件仍未知；没有从缺失信息补出数值。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "supported",
+        "note_zh": "range 使用上下界、scalar value 为空；attribute、单位、条件标签一致。value_status=stated 只能指来源明述。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "原文明确将 10.25–10.5 GHz 归到 Illuminator，该行保留了分量标签与区间；可用于来源读法开发样例，不能作为已核实型号真值。",
+      "recommended_action": "开发保留",
+      "revision_suggestions": [
+        {
+          "operation": "retain_as_source_scoped_development_example",
+          "fields": [
+            "variant",
+            "value_status",
+            "conditions_json"
+          ],
+          "instruction_zh": "保持该来源读法；在审阅侧车中加 evidence_scope=bound_source_only、numeric_truth_verified=false、variant_status=unresolved。补全原引用/脚注后才决定改型归属。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "本地快照保留引用[2]及脚注标记[a]，但未保存可核对的脚注正文；不能自行补出改型。",
+        "有界检索未读到可支持本条数值的一手制造商/原手册正文；不采用搜索中出现的二手同值作为独立验证。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-06",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 6,
+        "fact_record_sha256": "e41d87c4377645795618c8e27b68cc63054006e8ea4698440132239db11ad7f4",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/SPG-51",
+          "entity_name": "AN/SPG-51",
+          "variant": "",
+          "attribute": "frequency",
+          "event_type": "",
+          "value_raw": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+          "value_kind": "range",
+          "value_status": "stated",
+          "value": "",
+          "min_value": "5.45",
+          "max_value": "5.825",
+          "unit_raw": "GHz",
+          "unit_std": "GHz",
+          "condition_status": "explicit",
+          "condition_raw": "Tracking Radar",
+          "conditions_json": "[{\"kind\":\"verbatim_component_label\",\"text\":\"Tracking Radar\"}]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_spg-51.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51",
+        "source_sha256_expected": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_sha256_observed": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 74,
+          "char_start": 38,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_spg-51#ibx",
+          "chunk_line": 112,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Frequency",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "Tracking Radar: 5.45 GHz - 5.825 GHz",
+        "bound_source_field": "Illuminator: 10.25-10.5 GHz; [; 2; ]; Tracking Radar: 5.45 GHz - 5.825 GHz; [; 2; ]; [; a; ]",
+        "source_identity": {
+          "id": "an_spg-51",
+          "en_title": "AN/SPG-51",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/SPG-51",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_line_sha256_observed": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "supported",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名、URI和信息框均指向 AN/SPG-51；variant 留空仅能表示未确定，不能表示所有改型。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "min_value=5.45、max_value=5.825 与绑定片段一致；不能与另一分量的频率合并。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "源单位和标准单位同为 GHz，没有跨量纲换算。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "conditions_json 的 verbatim_component_label 保留 Tracking Radar；不把它改写成整机模式。"
+        },
+        "unknown_scope": {
+          "verdict": "supported",
+          "note_zh": "数值之外的型号变体、适用年代和测量/使用条件仍未知；没有从缺失信息补出数值。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "supported",
+        "note_zh": "range 使用上下界、scalar value 为空；attribute、单位、条件标签一致。value_status=stated 只能指来源明述。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "原文明确将 5.45–5.825 GHz 归到 Tracking Radar，该行保留了分量标签与区间；可用于来源读法开发样例，不能作为已核实型号真值。",
+      "recommended_action": "开发保留",
+      "revision_suggestions": [
+        {
+          "operation": "retain_as_source_scoped_development_example",
+          "fields": [
+            "variant",
+            "value_status",
+            "conditions_json"
+          ],
+          "instruction_zh": "保持该来源读法；在审阅侧车中加 evidence_scope=bound_source_only、numeric_truth_verified=false、variant_status=unresolved。补全原引用/脚注后才决定改型归属。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "本地快照保留引用[2]及脚注标记[a]，但未保存可核对的脚注正文；不能自行补出改型。",
+        "有界检索未读到可支持本条数值的一手制造商/原手册正文；不采用搜索中出现的二手同值作为独立验证。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-07",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 7,
+        "fact_record_sha256": "83de21950b10b88defa01a9242ab66bd3ada2c0dc28782ad0ad30bc39be64a93",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/SPG-51",
+          "entity_name": "AN/SPG-51",
+          "variant": "",
+          "attribute": "prf",
+          "event_type": "",
+          "value_raw": "4100 pps (surface); 9600-16700 pps (air)",
+          "value_kind": "scalar",
+          "value_status": "stated",
+          "value": "4100",
+          "min_value": "",
+          "max_value": "",
+          "unit_raw": "pps",
+          "unit_std": "pps",
+          "condition_status": "explicit",
+          "condition_raw": "surface",
+          "conditions_json": "[{\"kind\":\"verbatim_context_label\",\"text\":\"surface\"}]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_spg-51.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51",
+        "source_sha256_expected": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_sha256_observed": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 18,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_spg-51#ibx",
+          "chunk_line": 112,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/PRF",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "4100 pps (surface)",
+        "bound_source_field": "4100 pps (surface); 9600-16700 pps (air); [; 2; ]",
+        "source_identity": {
+          "id": "an_spg-51",
+          "en_title": "AN/SPG-51",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/SPG-51",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_line_sha256_observed": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "supported",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名、URI和信息框均指向 AN/SPG-51；variant 留空仅能表示未确定，不能表示所有改型。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "4100 提取为 scalar 与对应片段一致；不能把两个条件的数值混成一个无条件区间。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "PRF 的 pps 表示脉冲每秒，保持 pps 可避免与载波频率混淆；没有数值换算。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "verbatim_context_label=surface 忠实保留；未擅自解释为平台、天气、距离或确定的工作模式。"
+        },
+        "unknown_scope": {
+          "verdict": "supported",
+          "note_zh": "数值之外的型号变体、适用年代和测量/使用条件仍未知；没有从缺失信息补出数值。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "supported",
+        "note_zh": "prf、数值类型、pps和显式条件一致；stated 不代表外部核实完成。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "4100 pps 与 surface 条件一一对应；当前拆分忠实，标签含义应维持原文层级。",
+      "recommended_action": "开发保留",
+      "revision_suggestions": [
+        {
+          "operation": "retain_as_source_scoped_development_example",
+          "fields": [
+            "variant",
+            "conditions_json",
+            "value_status"
+          ],
+          "instruction_zh": "保留条件绑定；开发侧显式标注 exact_context_meaning=unresolved、variant_status=unresolved、numeric_truth_verified=false。不得将 surface/air 扩充成原文没有说明的条件。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "本轮未独立证实PRF数值及适用改型。",
+        "surface/air 的更细语义和来源脚注尚未核清。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-08",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 8,
+        "fact_record_sha256": "d992fb7db9d99ed1ac998e79e66cbb80dae98f906951f509d54123771b1cb159",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/SPG-51",
+          "entity_name": "AN/SPG-51",
+          "variant": "",
+          "attribute": "prf",
+          "event_type": "",
+          "value_raw": "4100 pps (surface); 9600-16700 pps (air)",
+          "value_kind": "range",
+          "value_status": "stated",
+          "value": "",
+          "min_value": "9600",
+          "max_value": "16700",
+          "unit_raw": "pps",
+          "unit_std": "pps",
+          "condition_status": "explicit",
+          "condition_raw": "air",
+          "conditions_json": "[{\"kind\":\"verbatim_context_label\",\"text\":\"air\"}]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_spg-51.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51",
+        "source_sha256_expected": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_sha256_observed": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 40,
+          "char_start": 20,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_spg-51#ibx",
+          "chunk_line": 112,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/PRF",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "9600-16700 pps (air)",
+        "bound_source_field": "4100 pps (surface); 9600-16700 pps (air); [; 2; ]",
+        "source_identity": {
+          "id": "an_spg-51",
+          "en_title": "AN/SPG-51",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/SPG-51",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_line_sha256_observed": "f22390e9a6e25e16b80ec346dbcfd24ac19d75dfe88e62dedefd478ce3da974c",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "supported",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名、URI和信息框均指向 AN/SPG-51；variant 留空仅能表示未确定，不能表示所有改型。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "9600–16700 提取为 range 与对应片段一致；不能把两个条件的数值混成一个无条件区间。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "PRF 的 pps 表示脉冲每秒，保持 pps 可避免与载波频率混淆；没有数值换算。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "verbatim_context_label=air 忠实保留；未擅自解释为平台、天气、距离或确定的工作模式。"
+        },
+        "unknown_scope": {
+          "verdict": "supported",
+          "note_zh": "数值之外的型号变体、适用年代和测量/使用条件仍未知；没有从缺失信息补出数值。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "supported",
+        "note_zh": "prf、数值类型、pps和显式条件一致；stated 不代表外部核实完成。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "9600–16700 pps 与 air 条件一一对应；当前拆分忠实，标签含义应维持原文层级。",
+      "recommended_action": "开发保留",
+      "revision_suggestions": [
+        {
+          "operation": "retain_as_source_scoped_development_example",
+          "fields": [
+            "variant",
+            "conditions_json",
+            "value_status"
+          ],
+          "instruction_zh": "保留条件绑定；开发侧显式标注 exact_context_meaning=unresolved、variant_status=unresolved、numeric_truth_verified=false。不得将 surface/air 扩充成原文没有说明的条件。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "本轮未独立证实PRF数值及适用改型。",
+        "surface/air 的更细语义和来源脚注尚未核清。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-09",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 9,
+        "fact_record_sha256": "caf25e3c40b5cda7cbd03c7b8de0a37ba36781992f1986b2ecb07893141640c3",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/SPN-35",
+          "entity_name": "AN/SPN-35",
+          "variant": "",
+          "attribute": "frequency",
+          "event_type": "",
+          "value_raw": "9.0 to 9.2 GHz band",
+          "value_kind": "range",
+          "value_status": "stated",
+          "value": "",
+          "min_value": "9.0",
+          "max_value": "9.2",
+          "unit_raw": "GHz",
+          "unit_std": "GHz",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_spn-35.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/SPN-35",
+        "source_sha256_expected": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+        "source_sha256_observed": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 19,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_spn-35#ibx",
+          "chunk_line": 135,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Frequency",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "9.0 to 9.2 GHz band",
+        "bound_source_field": "9.0 to 9.2 GHz band; [; 2; ]",
+        "source_identity": {
+          "id": "an_spn-35",
+          "en_title": "AN/SPN-35",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/SPN-35",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "cbca9ddcf8231c8d7d71379ba81ec3afa4f4ee2940e717657c54928a7a6b9d1b",
+        "chunk_line_sha256_observed": "cbca9ddcf8231c8d7d71379ba81ec3afa4f4ee2940e717657c54928a7a6b9d1b",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "supported",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名与 URI 指向 AN/SPN-35；未给出改型。外部转录页也写 AN/SPN-35，但不能据此断定配置、年代完全相同。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "本地文字明确给出9.0到9.2的范围；转录线索的9.16应作为精度/版本问题另记，不自动替换。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "GHz 为频率维度；与转录 giga cyc 的频率语义可对应，不能改成质量单位。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "not_stated 仅表示绑定字段没有给出条件；不能解释为所有型号、时期或模式都适用。"
+        },
+        "unknown_scope": {
+          "verdict": "insufficient",
+          "note_zh": "缺少原扫描与测量/版本条件，无法判定上下界差异的原因。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "supported",
+        "note_zh": "frequency、range、min/max和GHz相互一致；值的局部字段正确不代表全型号验证完成。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "原手册第三方转录提出精度/版本待核问题；未确认原扫描，因此当前数值未获一手核实。"
+      },
+      "reason_zh": "9.0–9.2 GHz 是对本地快照的忠实读取；手册转录的9.16上界可能与9.2存在舍入或粒度差异，不能宣布原值已证伪。",
+      "recommended_action": "隔离",
+      "revision_suggestions": [
+        {
+          "operation": "hold_numeric_truth_promotion",
+          "fields": [
+            "min_value",
+            "max_value",
+            "variant"
+          ],
+          "instruction_zh": "原行保留9.0/9.2，仅进入来源读法候选；另建待澄清项，比较手册9.16与快照9.2的舍入规则、年代及配置。先核原扫描，禁止自动覆盖为9.16。"
+        }
+      ],
+      "external_sources": [
+        {
+          "source_id": "mil_hdbk_162a_spn35_transcription",
+          "page_text_locator": "lines 128–136, Transmitter / Operating Frequency",
+          "evidence_quote": "X-band (9.0 to 9.16 giga cyc)",
+          "used_for": "precision/version clarification lead; not disproof"
+        }
+      ],
+      "remaining_uncertainty": [
+        "9.16→9.2可能是舍入/记录精度差异，尚无事实冲突定论。",
+        "外部原手册只读第三方HTML转录，未核原扫描及版本适用性。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-10",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 10,
+        "fact_record_sha256": "0963c2414799729db32edae87cb4e860ee7ed0794760cf171314bd122be175c0",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/SPN-35",
+          "entity_name": "AN/SPN-35",
+          "variant": "",
+          "attribute": "pulse_width",
+          "event_type": "",
+          "value_raw": "0.2 microseconds",
+          "value_kind": "scalar",
+          "value_status": "stated",
+          "value": "0.2",
+          "min_value": "",
+          "max_value": "",
+          "unit_raw": "microseconds",
+          "unit_std": "us",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_spn-35.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/SPN-35",
+        "source_sha256_expected": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+        "source_sha256_observed": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 16,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_spn-35#ibx",
+          "chunk_line": 135,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Pulsewidth",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "0.2 microseconds",
+        "bound_source_field": "0.2 microseconds; [; 2; ]; [; a; ]",
+        "source_identity": {
+          "id": "an_spn-35",
+          "en_title": "AN/SPN-35",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/SPN-35",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "cbca9ddcf8231c8d7d71379ba81ec3afa4f4ee2940e717657c54928a7a6b9d1b",
+        "chunk_line_sha256_observed": "cbca9ddcf8231c8d7d71379ba81ec3afa4f4ee2940e717657c54928a7a6b9d1b",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "supported",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名与 URI 指向 AN/SPN-35；未给出改型。外部转录页也写 AN/SPN-35，但不能据此断定配置、年代完全相同。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "0.2 对本地字段忠实；转录也列0.2为选项之一，不能据此认定0.2错误。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "microseconds 与 us 均为微秒；不是长度单位。"
+        },
+        "conditions": {
+          "verdict": "insufficient",
+          "note_zh": "本地 condition_status=not_stated 忠实表达未记条件，但不足以支持唯一或无条件脉宽。"
+        },
+        "unknown_scope": {
+          "verdict": "insufficient",
+          "note_zh": "另一离散选项及其选择条件未被本地字段覆盖；转录没有在已读行中确定两值的模式对应。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "supported",
+        "note_zh": "pulse_width/scalar/0.2/us 自洽；应另外约束来源覆盖，避免按单值字段推断唯一性。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "转录部分支持0.2选项，另提示0.8；原扫描与条件尚未核对，不能确认唯一型号参数。"
+      },
+      "reason_zh": "0.2 microseconds → 0.2 us 的读取与单位正确；手册转录同时列出0.8选项，问题是唯一性与条件覆盖，0.2本身并未被否定。",
+      "recommended_action": "隔离",
+      "revision_suggestions": [
+        {
+          "operation": "hold_unconditional_scalar_promotion",
+          "fields": [
+            "value_kind",
+            "value",
+            "conditions_json"
+          ],
+          "instruction_zh": "保留本地0.2 us读法，标记 incomplete_option_coverage；若后续原扫描确认0.2和0.8，应另建离散可选值记录，保留条件未知，不能合成连续0.2–0.8范围或自行命名模式。"
+        }
+      ],
+      "external_sources": [
+        {
+          "source_id": "mil_hdbk_162a_spn35_transcription",
+          "page_text_locator": "line 140, Transmitter / Pulse Width",
+          "evidence_quote": "Pulse Width: 0.2 or 0.8 usec",
+          "used_for": "additional discrete option / missing condition lead; not disproof of 0.2"
+        }
+      ],
+      "remaining_uncertainty": [
+        "0.2和0.8的模式/配置映射尚未核清。",
+        "第三方转录的文本不等于已核实扫描；不据此直接替换现有记录。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-11",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 11,
+        "fact_record_sha256": "3245ea8c12873d9b2f270b997ee400b6a07d5aa0633dc9750f5f9a1642b9ab19",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:AN/SPG-59",
+          "entity_name": "AN/SPG-59",
+          "variant": "",
+          "attribute": "service_entry",
+          "event_type": "cancellation",
+          "value_raw": "Canceled 1963",
+          "value_kind": "event",
+          "value_status": "stated",
+          "value": "1963",
+          "min_value": "",
+          "max_value": "",
+          "unit_raw": "",
+          "unit_std": "year",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/an_spg-59.json",
+        "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-59",
+        "source_sha256_expected": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+        "source_sha256_observed": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 13,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "an_spg-59#ibx",
+          "chunk_line": 125,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Introduced",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "Canceled 1963",
+        "bound_source_field": "Canceled 1963",
+        "source_identity": {
+          "id": "an_spg-59",
+          "en_title": "AN/SPG-59",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/AN/SPG-59",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "4c99078f5aadb299ba9448939f74e276d3efffe673ea039797995b86e61a5416",
+        "chunk_line_sha256_observed": "4c99078f5aadb299ba9448939f74e276d3efffe673ea039797995b86e61a5416",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "needs_revision",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名与URI指向 AN/SPG-59；但取消可能涉及所属项目，不能据此建立精确的项目/部件因果关系。"
+        },
+        "event_type": {
+          "verdict": "needs_revision",
+          "note_zh": "cancellation 对应 Canceled；service_entry 与它冲突，应使用生命周期事件属性或取消年份属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "1963 的提取忠实，保持年精度。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "year 与年份匹配。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "not_stated 仅表示绑定字段没有给出条件；不能解释为所有型号、时期或模式都适用。"
+        },
+        "unknown_scope": {
+          "verdict": "insufficient",
+          "note_zh": "本条没有服役日期；缺失服役信息不能转换为某年的服役事实。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "needs_revision",
+        "note_zh": "attribute=service_entry 与 event_type=cancellation 语义冲突，即使其余字段合法也应拒绝此组合。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "Canceled 1963 明确是取消事件；event_type 已体现这一点，但 attribute=service_entry 仍会将取消年混入服役查询。",
+      "recommended_action": "修订",
+      "revision_suggestions": [
+        {
+          "operation": "change_attribute_in_proposed_record",
+          "suggested_fields": {
+            "attribute": "lifecycle_event",
+            "event_type": "cancellation",
+            "value": "1963",
+            "unit_std": "year"
+          },
+          "instruction_zh": "若现有模式不支持 lifecycle_event，先定义 cancellation_year 或保留文本事件候选；禁止仍以 service_entry 导入。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "取消日期及精确项目主体仍未用一手材料核实。",
+        "海军历史检索结果仅提供Typhon取消背景，未用于证明本条1963或特定雷达取消日期。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-12",
+      "original_row": {
+        "csv_file": "artifacts/thesis_direction_review/radar_review_batch/facts.csv",
+        "data_row_1_based": 12,
+        "fact_record_sha256": "a061c240e8213f2e7d71e5224fcaf6f6df41d5d080483e25d650b64edab380c2",
+        "hash_recipe": "UTF-8(json.dumps(full CSV row, ensure_ascii=False, sort_keys=True, indent=2) + LF); includes review_notes without using it as review evidence",
+        "fields_reviewed": {
+          "entity_id": "kg_v3:EL/M-2080",
+          "entity_name": "EL/M-2080",
+          "variant": "",
+          "attribute": "power",
+          "event_type": "",
+          "value_raw": "Classified, but could be used as a directed-energy device.",
+          "value_kind": "unknown",
+          "value_status": "not_recorded",
+          "value": "",
+          "min_value": "",
+          "max_value": "",
+          "unit_raw": "",
+          "unit_std": "",
+          "condition_status": "not_stated",
+          "condition_raw": "",
+          "conditions_json": "[]"
+        }
+      },
+      "source_binding": {
+        "source_file": "radar_corpus/raw/el_m-2080.json",
+        "source_uri": "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine",
+        "source_sha256_expected": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+        "source_sha256_observed": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+        "source_hash_matches": true,
+        "locator": {
+          "char_end": 10,
+          "char_start": 0,
+          "chunk_file": "pipeline/v3/work/chunks.jsonl",
+          "chunk_id": "el_m-2080#ibx",
+          "chunk_line": 61,
+          "end_exclusive": true,
+          "json_pointer": "/infobox/Power",
+          "offset_unit": "unicode_codepoint"
+        },
+        "json_pointer_resolves": true,
+        "unicode_span_in_bounds": true,
+        "evidence_span_exact": true,
+        "evidence_text": "Classified",
+        "bound_source_field": "Classified, but could be used as a directed-energy device.; [; 1; ]",
+        "source_identity": {
+          "id": "el_m-2080",
+          "en_title": "EL/M-2080",
+          "zh_title": null,
+          "source_en": "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine",
+          "crawl_status": "success",
+          "manually_patched": false
+        },
+        "chunk_id_matches": true,
+        "chunk_line_sha256_expected": "5b53aa5b8467da9d22ae91606281d25d6869ef200e1b1d7de71fa7198c9a8a06",
+        "chunk_line_sha256_observed": "5b53aa5b8467da9d22ae91606281d25d6869ef200e1b1d7de71fa7198c9a8a06",
+        "chunk_hash_includes_line_ending": true,
+        "source_kind": "local Wikipedia-derived snapshot; not primary documentation"
+      },
+      "literal_reading": {
+        "verdict": "supported",
+        "quote_fidelity": "supported",
+        "scope_zh": "verdict 针对整行与绑定快照的语义对应；引文匹配本身不等于主体归属或型号真值正确。"
+      },
+      "six_dimensions": {
+        "source_subject": {
+          "verdict": "supported",
+          "note_zh": "本地题名与URI对应 EL/M-2080 Green Pine；变体未明确。"
+        },
+        "event_type": {
+          "verdict": "not_applicable",
+          "note_zh": "该条不是事件记录，event_type 为空符合当前属性。"
+        },
+        "value_and_range": {
+          "verdict": "supported",
+          "note_zh": "value_kind=unknown且value/min/max为空符合没有数值的局部证据。"
+        },
+        "unit": {
+          "verdict": "supported",
+          "note_zh": "未提供功率数值时单位也为空；没有把文本转换成瓦或其他量纲。"
+        },
+        "conditions": {
+          "verdict": "supported",
+          "note_zh": "not_stated 仅表示绑定字段没有给出条件；不能解释为所有型号、时期或模式都适用。"
+        },
+        "unknown_scope": {
+          "verdict": "needs_revision",
+          "note_zh": "必须把未知限定到该快照的Power字段；Classified 是来源主张，不是审阅者独立判定的保密状态。"
+        }
+      },
+      "field_consistency": {
+        "verdict": "supported",
+        "note_zh": "unknown/not_recorded 与空数值相容；但应补 source_scoped_unknown 防止下游误读为现实中不存在公开功率。"
+      },
+      "model_fact_verification": {
+        "verified": false,
+        "numeric_truth_verified": false,
+        "note_zh": "仅完成二手本地快照的语义审阅，未用已核实的一手材料证实该型号事实。"
+      },
+      "reason_zh": "绑定Power字段没有可填功率数字；Classified只能作为该来源的状态陈述，不能推出全球无公开数据或真实性已确认。",
+      "recommended_action": "修订",
+      "revision_suggestions": [
+        {
+          "operation": "add_source_scoped_unknown_annotation",
+          "suggested_fields": {
+            "unknown_scope": "bound_source_field",
+            "unknown_reason": "no_numeric_value_in_bound_field",
+            "source_claimed_status": "Classified"
+          },
+          "instruction_zh": "保留空数值。value_raw中的推测性后半句只留作来源文字，不形成装备能力事实，也不由本条推断其他来源没有数值。"
+        }
+      ],
+      "external_sources": [],
+      "remaining_uncertainty": [
+        "本轮没有确认实际保密状态，也没有审查所有公开来源。",
+        "不能由未知数值推断任何能力或功率范围。"
+      ],
+      "human_verified": false,
+      "independent_gold": false
+    }
+  ],
+  "preservation_statement_zh": "只新增本报告；未修改原facts.csv、原review_decisions、QA答案、旧知识图谱、公开实验代码或结果；未训练、未调用GPU。"
+}

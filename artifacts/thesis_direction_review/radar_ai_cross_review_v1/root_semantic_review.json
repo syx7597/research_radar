@@ -1,0 +1,200 @@
+{
+  "version": "radar_root_semantic_review_v1",
+  "reviewer_kind": "AI",
+  "reviewer_agent": "/root",
+  "reviewed_at_beijing": "2026-10-05T00:18:10.861166+08:00",
+  "review_scope": "source-faithfulness and development handling, not real-world parameter verification",
+  "context_limit": "Root has prior project context and incorporated a new handbook lead supplied by the separate-context reviewer; this is adjudication, not a second blinded independent trial.",
+  "new_child_handbook_lead_read_directly": true,
+  "sources": [
+    {
+      "source_id": "root_dsca_18_51",
+      "url": "https://samm.dsca.mil/policy-memoranda/dsca-18-51",
+      "access_status": "opened_full_text_and_existing_local_capture",
+      "supports": "AN/MPQ-65 is separately listed as radar equipment; does not establish its service year.",
+      "short_quote": "Radar Set, Patriot, Semi-Trailer Mounted, AN/MPQ-65",
+      "locator": "FINDING table, ITEM DESCRIPTION row"
+    },
+    {
+      "source_id": "root_apy9_manufacturer_2019",
+      "url": "https://news.lockheedmartin.com/news-releases?item=128776",
+      "access_status": "opened_full_html_text",
+      "supports": "Manufacturer identifies APY-9 as UHF; inspected article does not specify the candidate numerical endpoints.",
+      "short_quote": "The APY-9 radar is an Ultra High Frequency (UHF) surveillance system",
+      "locator": "2019-07-25 release, paragraph beginning The APY-9 radar",
+      "local_snapshot_bound": false
+    },
+    {
+      "source_id": "root_spn35_handbook_transcription",
+      "url": "https://radar.tpub.com/TM-11-487C-1/TM-11-487C-11198.htm",
+      "access_status": "opened_third_party_transcription_only",
+      "claimed_document": "MIL-HDBK-162A, Volume 1, Section 3, 15 December 1965, AN/SPN-35:2",
+      "supports": "Potential precision and alternative-value scope issue for 09/10; not conclusive contradiction or accepted replacement.",
+      "short_quote": "Pulse Width: 0.2 or 0.8 usec",
+      "locator": "Transmitter technical description",
+      "original_scan_checked": false,
+      "local_snapshot_bound": false
+    }
+  ],
+  "unavailable_leads": [
+    {
+      "url": "https://www.lockheedmartin.com/en-us/products/an-apy-9-radar.html",
+      "access_status": "search_body_available_but_direct_open_403",
+      "used_as_final_evidence": false
+    }
+  ],
+  "records": [
+    {
+      "fact_id": "radar-review-001-01",
+      "fact_record_sha256": "61abd2e7f966bfd3b882cfbffa522d5083860be97d850e5580cda9fbceed069a",
+      "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "revise_or_quarantine",
+      "reason_zh": "来源信息框的Type属于Patriot系统，不能作为AN/MPQ-65的型号类型；本地en_title标签与source_en正文主体不一致。",
+      "recommended_revision_zh": "分开source_subject与queried_entity；隔离雷达类型断言，后续用直接设备来源另建新事实。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-02",
+      "fact_record_sha256": "6fcc9c2781905baeaef46d7ed6c1ac69c40090ee5c71f9788f0f8fe4882f6888",
+      "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "revise_or_quarantine",
+      "reason_zh": "1981在绑定快照中出现，但其主语仍是系统页面，不能据此确定AN/MPQ-65的服役年份。",
+      "recommended_revision_zh": "保留系统页面的原文陈述及主体未对齐标记；不填写雷达替代年份。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-03",
+      "fact_record_sha256": "15fa1b802e5b1b1856c4bdfcd91b22d87bc9225af2883de9b251beeb059006e9",
+      "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "revise_or_quarantine",
+      "reason_zh": "1984的字面事件与服役事件不同，且没有在本快照中直接绑定雷达型号。",
+      "recommended_revision_zh": "事件类型和来源主体分别记录；不能把系统部署、交付或初始能力互换。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-04",
+      "fact_record_sha256": "e874bd3d4320b3cfc9cd0fd1c0455a86bd9def843042c6d20a2e72e87fc9fe1c",
+      "source_sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "revise_or_quarantine",
+      "reason_zh": "快照写有该区间；厂商正文只支持UHF类别，没有在已读正文给出该型号的数值端点。",
+      "recommended_revision_zh": "保留快照原文范围但禁止作为已核实型号数值；UHF类别如另建候选须单独绑定厂商来源。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-05",
+      "fact_record_sha256": "f11cf1b297a548d3e6b8d10e53f3bd4c1add3e49275ea3cf27bc617766ec7734",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "retain_scoped_reading",
+      "reason_zh": "双端点和Illuminator标签均与来源短摘录一致；未核实型号版本和原始参数资料。",
+      "recommended_revision_zh": "开发中保留区间及原文部件标签；不得与Tracking Radar记录合并或补全未写出的配置。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-06",
+      "fact_record_sha256": "e41d87c4377645795618c8e27b68cc63054006e8ea4698440132239db11ad7f4",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "retain_scoped_reading",
+      "reason_zh": "双端点和Tracking Radar标签均与来源短摘录一致；未独立核实参数。",
+      "recommended_revision_zh": "保留独立部件记录和双端点；不能把两个部件的范围当一个连续范围。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-07",
+      "fact_record_sha256": "83de21950b10b88defa01a9242ab66bd3ada2c0dc28782ad0ad30bc39be64a93",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "retain_scoped_reading",
+      "reason_zh": "标量、pps及surface字面标签一致；surface进一步表示哪一模式/对象尚未核实。",
+      "recommended_revision_zh": "保留verbatim_context_label，不自动解释为某目标或通用工作模式。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-08",
+      "fact_record_sha256": "d992fb7db9d99ed1ac998e79e66cbb80dae98f906951f509d54123771b1cb159",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "retain_scoped_reading",
+      "reason_zh": "区间两端、pps及air字面标签一致；仍只是该快照的读法。",
+      "recommended_revision_zh": "保留与surface分开的范围和原标签，不擅自推出模式与适用条件。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-09",
+      "fact_record_sha256": "caf25e3c40b5cda7cbd03c7b8de0a37ba36781992f1986b2ecb07893141640c3",
+      "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "retain_reading_with_scope_question",
+      "reason_zh": "快照的频率区间和GHz量纲可正确读取；子agent发现的手册转录端点精度不同，可能涉及舍入、版本或转录差异。",
+      "recommended_revision_zh": "旧kg量纲不可沿用；先保留两个来源的说法并注明来源等级，不据转录直接判定原区间错误或替换端点。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-10",
+      "fact_record_sha256": "0963c2414799729db32edae87cb4e860ee7ed0794760cf171314bd122be175c0",
+      "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "retain_reading_with_scope_question",
+      "reason_zh": "快照脉宽按时间量读取正确；手册转录还列另一选项，所以不能把快照单值表述为唯一或无条件值。",
+      "recommended_revision_zh": "保留单值的来源范围并标记可能缺少选项/模式；在原扫描与配置核对前不合成新确定参数。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-11",
+      "fact_record_sha256": "3245ea8c12873d9b2f270b997ee400b6a07d5aa0633dc9750f5f9a1642b9ab19",
+      "source_sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "revise_or_quarantine",
+      "reason_zh": "Canceled字面表示取消，event_type=cancellation合理，但attribute=service_entry仍与事件冲突。",
+      "recommended_revision_zh": "新版本将attribute改为中性lifecycle_event并保留cancellation；取消年份不能回答服役年份。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    },
+    {
+      "fact_id": "radar-review-001-12",
+      "fact_record_sha256": "a061c240e8213f2e7d71e5224fcaf6f6df41d5d080483e25d650b64edab380c2",
+      "source_sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+      "source_excerpt_binding": "verified",
+      "development_disposition": "retain_scoped_reading",
+      "reason_zh": "Power字段没有可读出的功率数值；not_recorded只能限定为该快照未给数值。",
+      "recommended_revision_zh": "保留数值及单位为空，不补0，不从用途猜测推出数值或实际能力。",
+      "equipment_fact_verified": false,
+      "human_verified": false,
+      "independent_gold": false
+    }
+  ],
+  "human_verified": false,
+  "independent_gold": false,
+  "original_data_modified": false,
+  "final_qa_answers_generated": false,
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_review_batch/facts.csv": "4f7b0b1a2b05c6bd17e19e66cb4761de014924b2bb901bf88ead99b7287d63f9",
+    "artifacts/thesis_direction_review/radar_review_batch/source_manifest.json": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122"
+  }
+}

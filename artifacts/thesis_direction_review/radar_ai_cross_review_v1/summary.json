@@ -1,0 +1,77 @@
+{
+  "version": "radar_ai_cross_review_v1",
+  "reviewer_kind": "AI",
+  "reviewed_records": 12,
+  "independent_context_reviewer": "/root/radar_independent_ai_reviewer",
+  "statistically_independent_or_different_model_claim": false,
+  "human_verified": false,
+  "independent_gold": false,
+  "development_dispositions": {
+    "revise_or_quarantine": 5,
+    "retain_scoped_reading": 5,
+    "retain_reading_with_scope_question": 2
+  },
+  "user_expert_review_required_to_continue_development": false,
+  "subagent_summary": {
+    "facts_reviewed": 12,
+    "literal_reading_counts": {
+      "needs_revision": 5,
+      "supported": 7
+    },
+    "recommended_action_counts": {
+      "隔离": 5,
+      "修订": 3,
+      "开发保留": 4
+    },
+    "source_bindings_verified": 12,
+    "model_facts_primary_verified": 0
+  },
+  "reconciliation": "Child recommendations and root development dispositions are distinct scopes; both are preserved per record, including 09/10 quarantine of truth promotion and 12 structured unknown scope.",
+  "next_step": "Version source-scoped development readings and proposed fixes, preserving uncertainty; then test Chinese query adaptation on development material only.",
+  "original_packet_modified": false,
+  "original_review_decisions_modified": false,
+  "original_question_answers_modified": false,
+  "new_training_started": false,
+  "original_workflow_audit": {
+    "protocol_version": "radar_review_workflow_v1",
+    "machine_checks_passed": true,
+    "facts": 12,
+    "exact_source_bindings": 12,
+    "secondary_source_snapshots": 6,
+    "review_decisions": {
+      "pending": 12,
+      "needs_changes": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "accepted_snapshot_readings": 0,
+      "independent_fact_eligible": 0
+    },
+    "questions": {
+      "development_questions": 12,
+      "answers_filled": 0,
+      "independent_evaluation_questions": 0,
+      "source_groups": 6,
+      "model_family_groups": 6
+    },
+    "human_identity_verified_by_software": false,
+    "factual_truth_verified_by_software": false,
+    "final_test_answers_generated": false,
+    "public_benchmark_holdout_read": false,
+    "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+    "checked_files": {
+      "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+      "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+      "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+    }
+  },
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_ai_cross_review_v1/reviewer_report.json": "91e57e92af3bf4cf253d925b171631456a1f3898f5b3c664da80f3b56ce4396c",
+    "artifacts/thesis_direction_review/radar_ai_cross_review_v1/root_semantic_review.json": "f074cbc2b2ec7bf8e69ddb6a0641c8fa67a200d57bc9d1719dc0c435a881e0dc",
+    "scripts/summarize_radar_ai_review.py": "1039fb047477ec88648ad8345513e3d3f72bedc34cefd3cb17858c6820915604"
+  },
+  "outputs_sha256": {
+    "review_summary.csv": "3f7c089619f120848f3d928ccf6ab7c0b5a9e75cffdc239fe70d141e09e39498",
+    "index.html": "1952bf8ac192ef102e6e0ba74d506682752f64cb4561bc988926afadc44e6979",
+    "development_readings.json": "2609426fd3a0eff78b5ee824d34ca7d15525ef860e9439b387a5397d1980df66"
+  }
+}
