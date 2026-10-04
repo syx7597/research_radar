@@ -1,0 +1,52 @@
+{
+  "version": "radar_ai_source_development_v2",
+  "record_count": 12,
+  "question_count": 12,
+  "split": "permanently_exposed_development_only",
+  "new_training_started": false,
+  "human_verified": false,
+  "independent_gold": false,
+  "equipment_truth_verified": false,
+  "source_file_sha256": {
+    "radar_corpus/raw/an_mpq-65.json": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+    "radar_corpus/raw/an_apy-9.json": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+    "radar_corpus/raw/an_spg-51.json": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+    "radar_corpus/raw/an_spn-35.json": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+    "radar_corpus/raw/an_spg-59.json": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+    "radar_corpus/raw/el_m-2080.json": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db"
+  },
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_review_batch/facts.csv": "4f7b0b1a2b05c6bd17e19e66cb4761de014924b2bb901bf88ead99b7287d63f9",
+    "artifacts/thesis_direction_review/radar_review_batch/source_manifest.json": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+    "artifacts/thesis_direction_review/radar_review_workflow/development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+    "artifacts/thesis_direction_review/radar_review_workflow/review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+    "artifacts/thesis_direction_review/radar_review_workflow/workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87",
+    "artifacts/thesis_direction_review/radar_ai_cross_review_v1/reviewer_report.json": "91e57e92af3bf4cf253d925b171631456a1f3898f5b3c664da80f3b56ce4396c",
+    "artifacts/thesis_direction_review/radar_ai_cross_review_v1/root_semantic_review.json": "f074cbc2b2ec7bf8e69ddb6a0641c8fa67a200d57bc9d1719dc0c435a881e0dc",
+    "artifacts/thesis_direction_review/radar_ai_cross_review_v1/development_readings.json": "2609426fd3a0eff78b5ee824d34ca7d15525ef860e9439b387a5397d1980df66",
+    "artifacts/thesis_direction_review/radar_ai_cross_review_v1/summary.json": "53e450dd100413c260e6dc9af291dbb062a1fea95215acc170a2db2231c2f64e",
+    "experiments/radar_domain/development_data.py": "c573a16f9744b02948d702581309ab1394c2e63d2ed73e081b67edf72112bc06"
+  },
+  "outputs_sha256": {
+    "readings.json": "13b95869b2e7aceebac3d1088cfb437533878d46f59e6ecc24c12eb152b398c2",
+    "questions.jsonl": "ddf2f9469715f681bb891c4881a6963c8cbaf14f8ded18a4ef01c63e18e4efed",
+    "references.json": "a7bee419d9a65857d3898e840907b35069e3aaee66ec993f395688bc7f8a8e32"
+  },
+  "inference_input_files": [
+    "readings.json",
+    "questions.jsonl"
+  ],
+  "excluded_from_inference": [
+    "references.json",
+    "manifest.json"
+  ],
+  "original_artifacts_modified": false,
+  "changes": [
+    "Separate source subject from the historical entity anchor for 01–03.",
+    "Preserve uncertain source ranges and the two source-scoped SPN-35 readings.",
+    "Change SPG-59 cancellation attribute to lifecycle_event.",
+    "Add bound-source-field unknown scope; never replace missing power by zero.",
+    "Add neutral source context uniformly to the twelve original Chinese questions.",
+    "Create separate AI draft references; preserve original blank answers."
+  ]
+}

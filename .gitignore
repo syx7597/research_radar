@@ -115,6 +115,7 @@ kg_v3/retrieval_index/
 /results/agent_feedback/**/checkpoint-*/
 /results/agent_feedback/**/model/
 /results/agent_feedback/**/tokenized/
+/results/radar_domain/**/*.jsonl
 *.safetensors
 *.pt
 *.pth

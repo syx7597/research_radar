@@ -1,0 +1,115 @@
+{
+  "version": "radar_development_probe_v1",
+  "frozen_at_utc": "2026-10-04T16:38:49.384592+00:00",
+  "scope": "12 exposed AI-reviewed development questions; interface compatibility only",
+  "training": false,
+  "independent_evaluation": false,
+  "human_gold": false,
+  "automatic_next_round": false,
+  "models": {
+    "P": {
+      "adapter": "results/agent_feedback/program_sft_v1/model",
+      "program": true,
+      "files_sha256": {
+        "results/agent_feedback/program_sft_v1/model/adapter_model.safetensors": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+        "results/agent_feedback/program_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "A1": {
+      "adapter": "results/agent_feedback/clean_sft_v1/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+        "results/agent_feedback/clean_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "C1": {
+      "adapter": "results/agent_feedback/recovery_sft_v1/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/recovery_sft_v1/model/adapter_model.safetensors": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33",
+        "results/agent_feedback/recovery_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "A2": {
+      "adapter": "results/agent_feedback/clean_sft_seed20261004/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+        "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "C2": {
+      "adapter": "results/agent_feedback/recovery_sft_seed20261004/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+        "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    }
+  },
+  "inputs_sha256": {
+    "experiments/radar_domain/development_data.py": "c573a16f9744b02948d702581309ab1394c2e63d2ed73e081b67edf72112bc06",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_probe.py": "ce5f1c26b9c9dd927ff4137bed41c354e7590ebee1d283842603c9021972a104",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "artifacts/thesis_direction_review/radar_development_v2/readings.json": "13b95869b2e7aceebac3d1088cfb437533878d46f59e6ecc24c12eb152b398c2",
+    "artifacts/thesis_direction_review/radar_development_v2/questions.jsonl": "ddf2f9469715f681bb891c4881a6963c8cbaf14f8ded18a4ef01c63e18e4efed",
+    "artifacts/thesis_direction_review/radar_development_v2/manifest.json": "ab7fc6f822a1163ba3970406d7bbda63bc593ac8675d608f58d930ed70571ffe",
+    "results/agent_feedback/weights_verified.json": "0e0758af62e353e510afa2058e70f5398b8cc01631a12ae137b389c7d1645b6a"
+  },
+  "reference_sha256": {
+    "artifacts/thesis_direction_review/radar_development_v2/references.json": "a7bee419d9a65857d3898e840907b35069e3aaee66ec993f395688bc7f8a8e32"
+  },
+  "model": "models/qwen2.5-3b-instruct",
+  "tokenizer_sha256": {
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  },
+  "base_weights": {
+    "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "files": [
+      {
+        "file": "model-00001-of-00002.safetensors",
+        "bytes": 3968658944,
+        "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2"
+      },
+      {
+        "file": "model-00002-of-00002.safetensors",
+        "bytes": 2203268048,
+        "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+      }
+    ],
+    "seconds": 150.52449499303475
+  },
+  "base_verification_policy": "Rehash both pinned base shards once on the syx host before any launch; each inference also checks frozen inputs, tokenizer and selected adapter before/after generation.",
+  "inference": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "max_calls": 24,
+    "agent_turn_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "question_count": 12,
+  "maximum_additional_gpu_hours": 1.25,
+  "schedule": "four idle GPUs for A1/C1/A2/C2, then P; each supervisor capped at 0.25 hours",
+  "metrics": [
+    "finished",
+    "exact_target_selection",
+    "target_covered",
+    "target_with_allowed_context",
+    "unrelated_extra_selection",
+    "empty_selection",
+    "invalid_calls",
+    "tokens"
+  ],
+  "error_policy": "Report observable format/function, entity/source, attribute/event, condition, finish/budget issues; do not infer Chinese-language causality without a control.",
+  "answer_policy": "Models select records only. Source notes are AI-reviewed KB content; deterministic evidence cards do not establish model semantic judgment or factual truth.",
+  "stop_rule": "Complete all fixed runs and replay; report errors, then decide next work. No training, prompt tuning, or retry by score."
+}

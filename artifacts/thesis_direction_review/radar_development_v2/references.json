@@ -1,0 +1,343 @@
+{
+  "version": "radar_ai_source_development_v2",
+  "split": "development_only",
+  "reference_kind": "AI_draft",
+  "human_verified": false,
+  "independent_gold": false,
+  "must_not_be_loaded_by_inference": true,
+  "scoring_scope": "Expected-record selection and source-scoped development diagnosis; no independent domain accuracy claim.",
+  "records": [
+    {
+      "id": "radar-workflow-dev-01",
+      "original_question": "所给来源快照的Type栏描述雷达型号还是整套系统？该栏能否直接支持AN/MPQ-65的类型归属？",
+      "expected_fact_ids": [
+        "radar-review-001-01"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "该快照的 Type 栏描述 MIM-104 Patriot 整套系统；历史入库标签为 AN/MPQ-65，不能据此把系统类型作为该雷达型号的类型。",
+      "rubric": {
+        "required_semantics_zh": [
+          "识别来源主体为 Patriot 系统",
+          "区分来源主体与历史雷达检索锚点",
+          "说明不能直接支持 AN/MPQ-65 的型号类型"
+        ],
+        "forbidden_overclaims_zh": [
+          "把系统类型断言为雷达类型"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "subject_attribution",
+      "source_group": "an_mpq-65",
+      "model_family": "Patriot_system_and_components"
+    },
+    {
+      "id": "radar-workflow-dev-02",
+      "original_question": "该来源快照的Since表述对应什么主体和事件？仅凭它能否确定AN/MPQ-65的服役年份？",
+      "expected_fact_ids": [
+        "radar-review-001-02"
+      ],
+      "acceptable_context_fact_ids": [
+        "radar-review-001-03"
+      ],
+      "context_justification_zh": "同一来源字段的服役与初始作战能力是两个事件；允许另一事件仅作为对照背景，主目标的严格集合匹配仍单独计分。",
+      "expected_response_zh": "绑定系统页面的 Since 1981 是服役事件表述。它属于来源中的 Patriot 系统陈述，不能仅凭该字段确定 AN/MPQ-65 雷达的服役年份。",
+      "rubric": {
+        "required_semantics_zh": [
+          "保留来源年份 1981 和 in_service 事件",
+          "限定主体为系统",
+          "拒绝据此填写雷达服役年份"
+        ],
+        "forbidden_overclaims_zh": [
+          "把 1981 确认为 AN/MPQ-65 服役年份",
+          "补造替代年份"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "event_scope",
+      "source_group": "an_mpq-65",
+      "model_family": "Patriot_system_and_components"
+    },
+    {
+      "id": "radar-workflow-dev-03",
+      "original_question": "该来源快照的initial operational capacity表述对应哪一事件？与服役事件应否分开记录？",
+      "expected_fact_ids": [
+        "radar-review-001-03"
+      ],
+      "acceptable_context_fact_ids": [
+        "radar-review-001-02"
+      ],
+      "context_justification_zh": "同一来源字段的服役与初始作战能力是两个事件；允许另一事件仅作为对照背景，主目标的严格集合匹配仍单独计分。",
+      "expected_response_zh": "绑定系统页面写有 initial operational capacity 1984，即初始作战能力事件；应与来源中的服役事件分别记录。该快照没有把 1984 直接绑定为 AN/MPQ-65 的型号事件。",
+      "rubric": {
+        "required_semantics_zh": [
+          "保留 1984 与 initial_operational_capacity",
+          "与 in_service 事件分开",
+          "保留系统主体范围"
+        ],
+        "forbidden_overclaims_zh": [
+          "将初始能力与服役、交付或部署事件互换",
+          "把年份直接归给雷达型号"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "event_scope",
+      "source_group": "an_mpq-65",
+      "model_family": "Patriot_system_and_components"
+    },
+    {
+      "id": "radar-workflow-dev-04",
+      "original_question": "AN/APY-9来源快照的Frequency栏给出什么区间？该区间是型号参数还是频段解释能否确定？",
+      "expected_fact_ids": [
+        "radar-review-001-04"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "Frequency 快照写有 UHF-Band 0.3–3.0 GHz；开发记录保留两个端点。它是否为该型号实际工作范围、还是频段解释，现有绑定资料不能确定，不能提升为已核实型号参数。",
+      "rubric": {
+        "required_semantics_zh": [
+          "保留 0.3 和 3.0 两端及 GHz",
+          "保留来源范围",
+          "明确型号实际参数与频段解释未判定"
+        ],
+        "forbidden_overclaims_zh": [
+          "确认整个范围为该型号实际工作频率",
+          "只保留单个端点"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "range_scope",
+      "source_group": "an_apy-9",
+      "model_family": "AN_APY_9_family"
+    },
+    {
+      "id": "radar-workflow-dev-05",
+      "original_question": "AN/SPG-51来源快照中标为Illuminator的频率记录应保留什么范围、单位与部件标签？",
+      "expected_fact_ids": [
+        "radar-review-001-05"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "绑定快照中 Illuminator 记录为 10.25–10.5 GHz；应保留两个端点和原文部件标签 Illuminator，独立于 Tracking Radar 记录。",
+      "rubric": {
+        "required_semantics_zh": [
+          "10.25 和 10.5",
+          "GHz",
+          "Illuminator 标签与独立记录"
+        ],
+        "forbidden_overclaims_zh": [
+          "把两个部件频率合并为一个连续范围",
+          "补造型号版本或配置"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "component_range",
+      "source_group": "an_spg-51",
+      "model_family": "AN_SPG_51_family"
+    },
+    {
+      "id": "radar-workflow-dev-06",
+      "original_question": "AN/SPG-51来源快照中标为Tracking Radar的频率记录应保留什么范围、单位与部件标签？",
+      "expected_fact_ids": [
+        "radar-review-001-06"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "绑定快照中 Tracking Radar 记录为 5.45–5.825 GHz；应保留两个端点和原文部件标签 Tracking Radar，独立于 Illuminator 记录。",
+      "rubric": {
+        "required_semantics_zh": [
+          "5.45 和 5.825",
+          "GHz",
+          "Tracking Radar 标签与独立记录"
+        ],
+        "forbidden_overclaims_zh": [
+          "把两个部件频率合并为一个连续范围",
+          "补造型号版本或配置"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "component_range",
+      "source_group": "an_spg-51",
+      "model_family": "AN_SPG_51_family"
+    },
+    {
+      "id": "radar-workflow-dev-07",
+      "original_question": "AN/SPG-51来源快照中surface标签下的PRF以什么数值形式记录？该标签的进一步含义是否已明确？",
+      "expected_fact_ids": [
+        "radar-review-001-07"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "绑定快照把 surface 标签下的 PRF 写为标量 4100 pps。surface 仅是原文标签，其进一步对应何种模式或对象尚未核实。",
+      "rubric": {
+        "required_semantics_zh": [
+          "标量 4100",
+          "pps",
+          "保留 surface 字面标签且不扩展其含义"
+        ],
+        "forbidden_overclaims_zh": [
+          "把 surface 的具体模式或目标含义当作已核实",
+          "与 air 数值混合"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "condition_scope",
+      "source_group": "an_spg-51",
+      "model_family": "AN_SPG_51_family"
+    },
+    {
+      "id": "radar-workflow-dev-08",
+      "original_question": "AN/SPG-51来源快照中air标签下的PRF应保留哪两个端点和什么单位？",
+      "expected_fact_ids": [
+        "radar-review-001-08"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "绑定快照中 air 标签下的 PRF 为 9600–16700 pps，应保留这两个端点、单位及 air 原文标签，与 surface 标量分开。",
+      "rubric": {
+        "required_semantics_zh": [
+          "9600 和 16700",
+          "pps",
+          "保留 air 标签及独立范围"
+        ],
+        "forbidden_overclaims_zh": [
+          "只保留一个端点",
+          "把 surface 的 4100 当作 air 数值"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "condition_range",
+      "source_group": "an_spg-51",
+      "model_family": "AN_SPG_51_family"
+    },
+    {
+      "id": "radar-workflow-dev-09",
+      "original_question": "AN/SPN-35来源快照的Frequency栏应按什么量纲和区间记录？",
+      "expected_fact_ids": [
+        "radar-review-001-09"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "绑定 Frequency 快照是频率量，记录为 9.0–9.2 GHz；不能按质量量纲或旧图谱的 kg 保存。这只是该快照读法，尚不能消除其他资料的精度或版本差异。",
+      "rubric": {
+        "required_semantics_zh": [
+          "频率量纲",
+          "9.0 和 9.2",
+          "GHz",
+          "限定快照读法"
+        ],
+        "forbidden_overclaims_zh": [
+          "保留旧图谱 kg 量纲",
+          "直接用未绑定的手册转录值替换快照",
+          "宣称已证明两个来源矛盾"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "unit_range",
+      "source_group": "an_spn-35",
+      "model_family": "AN_SPN_35_family"
+    },
+    {
+      "id": "radar-workflow-dev-10",
+      "original_question": "AN/SPN-35来源快照的Pulsewidth栏记录的是什么量纲和单位？",
+      "expected_fact_ids": [
+        "radar-review-001-10"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "绑定 Pulsewidth 快照记录 0.2 microseconds，是时间量；标准单位记为 us（微秒）。该快照单值不证明设备只有这一脉宽或无条件适用。",
+      "rubric": {
+        "required_semantics_zh": [
+          "时间量纲",
+          "microseconds 对应 us/微秒",
+          "快照值为 0.2 且不宣称唯一"
+        ],
+        "forbidden_overclaims_zh": [
+          "保存为长度或 km",
+          "将外部离散选项改写成连续区间",
+          "断言 0.2 是唯一无条件值"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "unit_dimension",
+      "source_group": "an_spn-35",
+      "model_family": "AN_SPN_35_family"
+    },
+    {
+      "id": "radar-workflow-dev-11",
+      "original_question": "AN/SPG-59来源快照中Canceled表述的是何种事件？它能否直接回答服役年份？",
+      "expected_fact_ids": [
+        "radar-review-001-11"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "Canceled 1963 表述取消事件，应记录为 lifecycle_event / cancellation，年份 1963；它不能直接回答服役年份。",
+      "rubric": {
+        "required_semantics_zh": [
+          "取消事件 cancellation",
+          "1963",
+          "与服役事件分开"
+        ],
+        "forbidden_overclaims_zh": [
+          "把 1963 作为服役年份",
+          "沿用 service_entry 表示取消事件"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "event_type",
+      "source_group": "an_spg-59",
+      "model_family": "AN_SPG_59_family"
+    },
+    {
+      "id": "radar-workflow-dev-12",
+      "original_question": "仅依据EL/M-2080来源快照的Power栏，是否存在可填写的功率数值？回答范围应如何限定？",
+      "expected_fact_ids": [
+        "radar-review-001-12"
+      ],
+      "acceptable_context_fact_ids": [],
+      "context_justification_zh": "无预先指定的额外背景记录。",
+      "expected_response_zh": "仅依据绑定快照 Power 字段，没有可填写的功率数值，数值和单位均留空。该字段写有 Classified；这只是来源声称和该字段的缺值状态，不能扩展为所有来源都未知或已证实的保密状态。",
+      "rubric": {
+        "required_semantics_zh": [
+          "没有数值且单位留空",
+          "unknown_scope 限定 bound_source_field",
+          "Classified 仅为来源声称"
+        ],
+        "forbidden_overclaims_zh": [
+          "用 0 代替未知",
+          "推测功率或用途能力",
+          "声称所有资料均不存在数值",
+          "将 Classified 提升为独立核实状态"
+        ]
+      },
+      "reference_kind": "AI_draft_source_scoped_development_only",
+      "human_verified": false,
+      "independent_gold": false,
+      "reasoning_type": "source_scoped_unknown",
+      "source_group": "el_m-2080",
+      "model_family": "EL_M_2080_family"
+    }
+  ]
+}
