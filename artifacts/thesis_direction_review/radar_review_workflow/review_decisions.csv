@@ -1,0 +1,13 @@
+fact_id,fact_record_sha256,source_sha256,decision,decision_scope,reviewer_kind,reviewer,reviewed_at,reason,subject_check,variant_check,event_check,value_check,unit_check,condition_check,independent_source_class,independent_source_uri,independent_source_file,independent_source_sha256,independent_source_locator,independent_evidence_text
+radar-review-001-01,61abd2e7f966bfd3b882cfbffa522d5083860be97d850e5580cda9fbceed069a,55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c,pending,,,,,,,,,,,,,,,,,
+radar-review-001-02,6fcc9c2781905baeaef46d7ed6c1ac69c40090ee5c71f9788f0f8fe4882f6888,55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c,pending,,,,,,,,,,,,,,,,,
+radar-review-001-03,15fa1b802e5b1b1856c4bdfcd91b22d87bc9225af2883de9b251beeb059006e9,55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c,pending,,,,,,,,,,,,,,,,,
+radar-review-001-04,e874bd3d4320b3cfc9cd0fd1c0455a86bd9def843042c6d20a2e72e87fc9fe1c,7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef,pending,,,,,,,,,,,,,,,,,
+radar-review-001-05,f11cf1b297a548d3e6b8d10e53f3bd4c1add3e49275ea3cf27bc617766ec7734,a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95,pending,,,,,,,,,,,,,,,,,
+radar-review-001-06,e41d87c4377645795618c8e27b68cc63054006e8ea4698440132239db11ad7f4,a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95,pending,,,,,,,,,,,,,,,,,
+radar-review-001-07,83de21950b10b88defa01a9242ab66bd3ada2c0dc28782ad0ad30bc39be64a93,a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95,pending,,,,,,,,,,,,,,,,,
+radar-review-001-08,d992fb7db9d99ed1ac998e79e66cbb80dae98f906951f509d54123771b1cb159,a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95,pending,,,,,,,,,,,,,,,,,
+radar-review-001-09,caf25e3c40b5cda7cbd03c7b8de0a37ba36781992f1986b2ecb07893141640c3,3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150,pending,,,,,,,,,,,,,,,,,
+radar-review-001-10,0963c2414799729db32edae87cb4e860ee7ed0794760cf171314bd122be175c0,3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150,pending,,,,,,,,,,,,,,,,,
+radar-review-001-11,3245ea8c12873d9b2f270b997ee400b6a07d5aa0633dc9750f5f9a1642b9ab19,2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde,pending,,,,,,,,,,,,,,,,,
+radar-review-001-12,a061c240e8213f2e7d71e5224fcaf6f6df41d5d080483e25d650b64edab380c2,45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db,pending,,,,,,,,,,,,,,,,,

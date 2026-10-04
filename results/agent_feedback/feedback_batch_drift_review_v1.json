@@ -1,0 +1,540 @@
+{
+  "scope": "Five predeclared development prefix divergences and their original eight-question batches; CPU only",
+  "cases": [
+    {
+      "continuation_seed": 20261003,
+      "id": "train:78759",
+      "question_zero_index": 215,
+      "batch_zero_index_start": 208,
+      "first_different_message_zero_index": 16,
+      "first_different_assistant_turn": 8,
+      "same_target_prior_messages": true,
+      "same_target_prior_events": true,
+      "same_target_prompt_token_ids": true,
+      "normal_first_failure_turn": null,
+      "masked_first_failure_turn": null,
+      "normal_action_kind": {
+        "tool": "step",
+        "function": "Or"
+      },
+      "masked_action_kind": {
+        "tool": "step",
+        "function": "And"
+      },
+      "other_questions_already_masked_in_same_batch": [
+        {
+          "id": "train:65333",
+          "first_masked_failure_turn": 4
+        },
+        {
+          "id": "train:25542",
+          "first_masked_failure_turn": 1
+        }
+      ],
+      "layouts": {
+        "normal": {
+          "active": [
+            {
+              "id": "train:65333",
+              "prompt_tokens": 1383,
+              "prompt_sha256": "1d9a0537cec74dac60ed11f13a883a0bde3aa155af7d2bab568ebea1e10b9ec4",
+              "first_failure_turn": 4,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:53265",
+              "prompt_tokens": 1801,
+              "prompt_sha256": "c6c0f9d90e8b919a83f1d22e6636b96fffa9a6cc364faad5f9428d5cb1c1bef1",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:25542",
+              "prompt_tokens": 1238,
+              "prompt_sha256": "ec2ed58527cc491e2f863238b55d05f0ddf46fa50ccf30ac8bd8173d841679f5",
+              "first_failure_turn": 1,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:78759",
+              "prompt_tokens": 2091,
+              "prompt_sha256": "294b9786f4d73378772bbc54fd5b0b0439a48f1bea54947dee18fabf6d7956e7",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 4,
+          "target_position": 3,
+          "maximum_prompt_tokens": 2091,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 2091,
+          "target_left_padding_if_single_192_group": 0
+        },
+        "masked": {
+          "active": [
+            {
+              "id": "train:65333",
+              "prompt_tokens": 1359,
+              "prompt_sha256": "0cc05ff7f63dcca611986073ead363ac39b776924a4d1714a1aa1181a8a8e2f5",
+              "first_failure_turn": 4,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:53265",
+              "prompt_tokens": 1801,
+              "prompt_sha256": "c6c0f9d90e8b919a83f1d22e6636b96fffa9a6cc364faad5f9428d5cb1c1bef1",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:78759",
+              "prompt_tokens": 2091,
+              "prompt_sha256": "294b9786f4d73378772bbc54fd5b0b0439a48f1bea54947dee18fabf6d7956e7",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 3,
+          "target_position": 2,
+          "maximum_prompt_tokens": 2091,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 2091,
+          "target_left_padding_if_single_192_group": 0
+        }
+      },
+      "active_members_changed": true,
+      "maximum_prompt_length_changed": false
+    },
+    {
+      "continuation_seed": 20261003,
+      "id": "train:41980",
+      "question_zero_index": 470,
+      "batch_zero_index_start": 464,
+      "first_different_message_zero_index": 18,
+      "first_different_assistant_turn": 9,
+      "same_target_prior_messages": true,
+      "same_target_prior_events": true,
+      "same_target_prompt_token_ids": true,
+      "normal_first_failure_turn": 9,
+      "masked_first_failure_turn": null,
+      "normal_action_kind": {
+        "tool": "unparseable"
+      },
+      "masked_action_kind": {
+        "tool": "step",
+        "function": "FilterStr"
+      },
+      "other_questions_already_masked_in_same_batch": [
+        {
+          "id": "train:1021",
+          "first_masked_failure_turn": 6
+        },
+        {
+          "id": "train:67823",
+          "first_masked_failure_turn": 8
+        },
+        {
+          "id": "train:30041",
+          "first_masked_failure_turn": 3
+        }
+      ],
+      "layouts": {
+        "normal": {
+          "active": [
+            {
+              "id": "train:1021",
+              "prompt_tokens": 1601,
+              "prompt_sha256": "6f1471d79af1df252e9d0d1dc2034ad93ff8a82eb9916fef0762555d8501366c",
+              "first_failure_turn": 6,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:67823",
+              "prompt_tokens": 2049,
+              "prompt_sha256": "b504ffa7b300a0062cb907a2541aa8ee420f8cfdfdd4da0316ab352ec7e6aedf",
+              "first_failure_turn": 8,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:30041",
+              "prompt_tokens": 1380,
+              "prompt_sha256": "d08c6035ca7055d6e354f26e7492077b14b336722dd6c1631412c015af764bf9",
+              "first_failure_turn": 3,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:41980",
+              "prompt_tokens": 2110,
+              "prompt_sha256": "20873d7166a587dee4b75ab3f4277e0b9f3aabc1d49df01a10ed14122d442cef",
+              "first_failure_turn": 9,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 4,
+          "target_position": 3,
+          "maximum_prompt_tokens": 2110,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 2110,
+          "target_left_padding_if_single_192_group": 0
+        },
+        "masked": {
+          "active": [
+            {
+              "id": "train:1021",
+              "prompt_tokens": 1598,
+              "prompt_sha256": "f35c605e4b2ba618c0ddd0406e7ade512f943de7f3838a313dd91fc4cf62d0b3",
+              "first_failure_turn": 6,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:67823",
+              "prompt_tokens": 2041,
+              "prompt_sha256": "1298ed5c03cc1cc8ad1b3d7e888e05c21c28b07b44c513aaf55be5ad873123cb",
+              "first_failure_turn": 8,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:41980",
+              "prompt_tokens": 2110,
+              "prompt_sha256": "20873d7166a587dee4b75ab3f4277e0b9f3aabc1d49df01a10ed14122d442cef",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 3,
+          "target_position": 2,
+          "maximum_prompt_tokens": 2110,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 2110,
+          "target_left_padding_if_single_192_group": 0
+        }
+      },
+      "active_members_changed": true,
+      "maximum_prompt_length_changed": false
+    },
+    {
+      "continuation_seed": 20261004,
+      "id": "train:75418",
+      "question_zero_index": 91,
+      "batch_zero_index_start": 88,
+      "first_different_message_zero_index": 22,
+      "first_different_assistant_turn": 11,
+      "same_target_prior_messages": true,
+      "same_target_prior_events": true,
+      "same_target_prompt_token_ids": true,
+      "normal_first_failure_turn": 11,
+      "masked_first_failure_turn": 11,
+      "normal_action_kind": {
+        "tool": "step",
+        "function": "Relate"
+      },
+      "masked_action_kind": {
+        "tool": "step",
+        "function": "Relate"
+      },
+      "other_questions_already_masked_in_same_batch": [
+        {
+          "id": "train:4474",
+          "first_masked_failure_turn": 5
+        }
+      ],
+      "layouts": {
+        "normal": {
+          "active": [
+            {
+              "id": "train:4474",
+              "prompt_tokens": 2550,
+              "prompt_sha256": "d28a6c64a52a19e296a7bfed97101b3ddf411195a0d66b62e0b2782a81efb035",
+              "first_failure_turn": 5,
+              "192_allowance_proved_from_total_bound": false,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:75418",
+              "prompt_tokens": 1955,
+              "prompt_sha256": "7e3b76324a4fa892ec348c379d30d85257bca4e68bac081c65c7a8522e2e2d23",
+              "first_failure_turn": 11,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 2,
+          "target_position": 1,
+          "maximum_prompt_tokens": 2550,
+          "all_192_allowance_proved_from_total_bound": false,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 1955,
+          "target_left_padding_if_single_192_group": 595
+        },
+        "masked": {
+          "active": [
+            {
+              "id": "train:4474",
+              "prompt_tokens": 2520,
+              "prompt_sha256": "5f7481063fd73be043e09bec08af2576b9c8133f3fc1a1a369e570468308645d",
+              "first_failure_turn": 5,
+              "192_allowance_proved_from_total_bound": false,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:75418",
+              "prompt_tokens": 1955,
+              "prompt_sha256": "7e3b76324a4fa892ec348c379d30d85257bca4e68bac081c65c7a8522e2e2d23",
+              "first_failure_turn": 11,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 2,
+          "target_position": 1,
+          "maximum_prompt_tokens": 2520,
+          "all_192_allowance_proved_from_total_bound": false,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 1955,
+          "target_left_padding_if_single_192_group": 565
+        }
+      },
+      "active_members_changed": false,
+      "maximum_prompt_length_changed": true
+    },
+    {
+      "continuation_seed": 20261004,
+      "id": "train:40934",
+      "question_zero_index": 307,
+      "batch_zero_index_start": 304,
+      "first_different_message_zero_index": 14,
+      "first_different_assistant_turn": 7,
+      "same_target_prior_messages": true,
+      "same_target_prior_events": true,
+      "same_target_prompt_token_ids": true,
+      "normal_first_failure_turn": null,
+      "masked_first_failure_turn": 7,
+      "normal_action_kind": {
+        "tool": "step",
+        "function": "QueryAttr"
+      },
+      "masked_action_kind": {
+        "tool": "step",
+        "function": "QueryAttr"
+      },
+      "other_questions_already_masked_in_same_batch": [
+        {
+          "id": "train:15218",
+          "first_masked_failure_turn": 6
+        }
+      ],
+      "layouts": {
+        "normal": {
+          "active": [
+            {
+              "id": "train:15218",
+              "prompt_tokens": 1901,
+              "prompt_sha256": "e08e8b14c2a4e2c201f2a974d67d5b93b05f2c018888cab2a2ff60e8ecb03d43",
+              "first_failure_turn": 6,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:40934",
+              "prompt_tokens": 1606,
+              "prompt_sha256": "ea18afca4bee68adef3f8d5bf3ed14fcb522b005a3f030cfe2fa2b048c318c3d",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:46070",
+              "prompt_tokens": 1857,
+              "prompt_sha256": "060afe60845d0acc03302fe38003b90eda3bfdb622b5e6d208236cb77a62cdbe",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 3,
+          "target_position": 1,
+          "maximum_prompt_tokens": 1901,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 1606,
+          "target_left_padding_if_single_192_group": 295
+        },
+        "masked": {
+          "active": [
+            {
+              "id": "train:15218",
+              "prompt_tokens": 1898,
+              "prompt_sha256": "8866f266520d106341c5eab1f0019067df82e32a0bce1238b38039f19b5a5a19",
+              "first_failure_turn": 6,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:40934",
+              "prompt_tokens": 1606,
+              "prompt_sha256": "ea18afca4bee68adef3f8d5bf3ed14fcb522b005a3f030cfe2fa2b048c318c3d",
+              "first_failure_turn": 7,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:46070",
+              "prompt_tokens": 1857,
+              "prompt_sha256": "060afe60845d0acc03302fe38003b90eda3bfdb622b5e6d208236cb77a62cdbe",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 3,
+          "target_position": 1,
+          "maximum_prompt_tokens": 1898,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 1606,
+          "target_left_padding_if_single_192_group": 292
+        }
+      },
+      "active_members_changed": false,
+      "maximum_prompt_length_changed": true
+    },
+    {
+      "continuation_seed": 20261004,
+      "id": "train:90102",
+      "question_zero_index": 473,
+      "batch_zero_index_start": 472,
+      "first_different_message_zero_index": 16,
+      "first_different_assistant_turn": 8,
+      "same_target_prior_messages": true,
+      "same_target_prior_events": true,
+      "same_target_prompt_token_ids": true,
+      "normal_first_failure_turn": null,
+      "masked_first_failure_turn": null,
+      "normal_action_kind": {
+        "tool": "step",
+        "function": "QueryAttrQualifier"
+      },
+      "masked_action_kind": {
+        "tool": "step",
+        "function": "QueryAttrQualifier"
+      },
+      "other_questions_already_masked_in_same_batch": [
+        {
+          "id": "train:1048",
+          "first_masked_failure_turn": 7
+        },
+        {
+          "id": "train:36021",
+          "first_masked_failure_turn": 5
+        }
+      ],
+      "layouts": {
+        "normal": {
+          "active": [
+            {
+              "id": "train:90102",
+              "prompt_tokens": 1550,
+              "prompt_sha256": "0ade7f3a22d6e4e640811f61b3dc2cfde67e479aadbc71a9d814eb0b4a5645e4",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:1048",
+              "prompt_tokens": 1583,
+              "prompt_sha256": "135c7ccfd34fb44ceb16379dfcf6fbc2720d522da9708035a1af990eabe414c3",
+              "first_failure_turn": 7,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:36021",
+              "prompt_tokens": 1301,
+              "prompt_sha256": "4e91dfe51ebca25fcc791c2eaf4b7c330bdc129fc51546ec73e97a6706679b63",
+              "first_failure_turn": 5,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 3,
+          "target_position": 0,
+          "maximum_prompt_tokens": 1583,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 1550,
+          "target_left_padding_if_single_192_group": 33
+        },
+        "masked": {
+          "active": [
+            {
+              "id": "train:90102",
+              "prompt_tokens": 1550,
+              "prompt_sha256": "0ade7f3a22d6e4e640811f61b3dc2cfde67e479aadbc71a9d814eb0b4a5645e4",
+              "first_failure_turn": null,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:1048",
+              "prompt_tokens": 1580,
+              "prompt_sha256": "38ad9f83cc88093e355369a932565ea2da62641a20086d19a43506e9cd5d4e9f",
+              "first_failure_turn": 7,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            },
+            {
+              "id": "train:36021",
+              "prompt_tokens": 1301,
+              "prompt_sha256": "8751aa7eab1af26ab895138409dd5d8e863453b66ffc8ceb27817dbbdad92c0f",
+              "first_failure_turn": 5,
+              "192_allowance_proved_from_total_bound": true,
+              "192_allowance_supported_under_retokenization": true
+            }
+          ],
+          "active_count": 3,
+          "target_position": 0,
+          "maximum_prompt_tokens": 1580,
+          "all_192_allowance_proved_from_total_bound": true,
+          "all_192_allowance_supported_under_retokenization": true,
+          "target_prompt_tokens": 1550,
+          "target_left_padding_if_single_192_group": 30
+        }
+      },
+      "active_members_changed": false,
+      "maximum_prompt_length_changed": true
+    }
+  ],
+  "unique_batch_trajectories_checked": 80,
+  "visible_messages_match_declared_renderer": true,
+  "all_reconstructed_input_token_totals_match": true,
+  "causal_conclusion": "All five diverge before their own first rendered failure. Prior interventions on other batch members and changed batch/padding are observable; numerical causation is plausible but not established without tensors/logits or a controlled rerun.",
+  "grouping_limit": "For most cases all max-new-token allowances are proved 192 from recorded total-token upper bounds. Otherwise the 192 grouping is reconstructed from re-tokenized text plus at most one EOS per prior turn; original per-turn token IDs were not retained.",
+  "interpretation": "Downgrade pure per-question feedback mechanism attribution. This diagnosis neither changes normal SFT results nor motivates further training or model selection.",
+  "inputs_sha256": {
+    "results/agent_feedback/recovery_dev_v1.jsonl": "dfc2bbb1289d0c6a417642a16430cabdde336f118c6e20d5812715bb4c0c8130",
+    "results/agent_feedback/recovery_feedback_masked_dev_v1.jsonl": "cf9e9773d63526b134e19f6568f660f357a3f29761d424f857e36591453a86f8",
+    "results/agent_feedback/recovery_dev_seed20261004.jsonl": "fb1b2b5c15523bdfa98df43d0f7aa36e7f4d9731f927ac2df6f024d3df09e9fe",
+    "results/agent_feedback/recovery_feedback_masked_dev_seed20261004.jsonl": "8cb6fbbaf23c120430a785b81efeca9dc5749af72a461a0830338fee662cdfc6"
+  },
+  "recorded_at_utc": "2026-10-04T12:23:36.261653+00:00",
+  "local_review_script_sha256": "aac1edade3a95a5ce4ee02dd3430e01b5ad0df8ea436889cafdc10134b16dafd",
+  "execution": "Remote CPU tokenizer only with CUDA_VISIBLE_DEVICES empty; four complete development prediction files scanned to select the five prespecified eight-question batches. No model weights, generation, gold, or holdout access."
+}

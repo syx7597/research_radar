@@ -1,0 +1,32 @@
+{
+  "checked_files": {
+    "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+    "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+    "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+  },
+  "exact_source_bindings": 12,
+  "facts": 12,
+  "factual_truth_verified_by_software": false,
+  "final_test_answers_generated": false,
+  "human_identity_verified_by_software": false,
+  "machine_checks_passed": true,
+  "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+  "protocol_version": "radar_review_workflow_v1",
+  "public_benchmark_holdout_read": false,
+  "questions": {
+    "answers_filled": 0,
+    "development_questions": 12,
+    "independent_evaluation_questions": 0,
+    "model_family_groups": 6,
+    "source_groups": 6
+  },
+  "review_decisions": {
+    "accepted": 0,
+    "accepted_snapshot_readings": 0,
+    "independent_fact_eligible": 0,
+    "needs_changes": 0,
+    "pending": 12,
+    "rejected": 0
+  },
+  "secondary_source_snapshots": 6
+}

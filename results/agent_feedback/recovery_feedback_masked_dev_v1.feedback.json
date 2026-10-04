@@ -1,0 +1,47 @@
+{
+  "feedback_mode": "generic_failure_v1",
+  "masked_fields": [
+    "error",
+    "detail"
+  ],
+  "replacement": {
+    "error": "ExecutionError",
+    "detail": "execution_failed"
+  },
+  "preserved": "ok flag, every other field, all successful observations, real events, handles, types, state and budgets",
+  "questions": 500,
+  "config": {
+    "command": "generate",
+    "model": "models/qwen2.5-3b-instruct",
+    "adapter": "results/agent_feedback/recovery_sft_v1/model",
+    "questions": "data/agent_feedback/dev.questions.jsonl",
+    "output": "results/agent_feedback/recovery_feedback_masked_dev_v1.jsonl",
+    "kb": "datasets/kqa_pro/kb.json",
+    "batch_size": 8,
+    "limit": 0,
+    "offset": 0,
+    "seed": 20261003,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "program": false,
+    "feedback_mode": "generic_failure_v1"
+  },
+  "inputs_sha256": {
+    "inference": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "environment": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "renderer": "12d6eb63f1b763935c5c50de7e4d177ab2778cf666c04486a60f569b2800ce81",
+    "questions": "f40f1f6776d58794a457aa92d570d30a4754cc46152f12d40d29a10739bd8a9a",
+    "kb": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "adapter_config": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "adapter_weights": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33"
+  },
+  "recorded_at_utc": "2026-10-04T11:26:43.150613+00:00",
+  "status": "completed",
+  "rendering_counts": {
+    "observations": 3635,
+    "failed_observations": 270,
+    "masked_observations": 270
+  },
+  "predictions_sha256": "cf9e9773d63526b134e19f6568f660f357a3f29761d424f857e36591453a86f8",
+  "runtime_sha256": "0d4a755cece9257c6ef6a9cec78ad5a58e5b2d87fcfa098bf005d95f1c4d2ac8"
+}

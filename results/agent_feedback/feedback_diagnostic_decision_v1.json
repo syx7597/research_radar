@@ -1,0 +1,162 @@
+{
+  "version": "feedback_diagnostic_closure_v1",
+  "recorded_at_beijing": "2026-10-04T20:29:08.852938+08:00",
+  "stage_status": "completed_and_reviewed_with_mechanism_limitation",
+  "gate": {
+    "allow_holdout_freeze": true,
+    "allow_new_training": false,
+    "allow_additional_diagnostic_runs": false,
+    "allow_semantic_preference_training": false
+  },
+  "decision": {
+    "primary_method": "recovery-trajectory SFT with original feedback",
+    "checkpoint_selection": "both prespecified continuation seeds; no best-seed selection",
+    "masked_feedback_adopted": false,
+    "holdout_models": [
+      "P",
+      "A_20261003",
+      "C_20261003",
+      "A_20261004",
+      "C_20261004"
+    ],
+    "holdout_files_opened": false,
+    "no_post_holdout_tuning": true
+  },
+  "diagnostic_results": {
+    "A_20261003": {
+      "normal_correct": 392,
+      "masked_correct": 394,
+      "delta_pp": 0.4,
+      "ci_pp": [
+        0.0,
+        1.0
+      ],
+      "pre_intervention_divergence_ids": []
+    },
+    "C_20261003": {
+      "normal_correct": 404,
+      "masked_correct": 405,
+      "delta_pp": 0.2,
+      "ci_pp": [
+        -0.4,
+        1.0
+      ],
+      "pre_intervention_divergence_ids": [
+        "train:78759",
+        "train:41980"
+      ]
+    },
+    "A_20261004": {
+      "normal_correct": 386,
+      "masked_correct": 387,
+      "delta_pp": 0.2,
+      "ci_pp": [
+        -0.4,
+        1.0
+      ],
+      "pre_intervention_divergence_ids": []
+    },
+    "C_20261004": {
+      "normal_correct": 412,
+      "masked_correct": 413,
+      "delta_pp": 0.2,
+      "ci_pp": [
+        -0.8,
+        1.2
+      ],
+      "pre_intervention_divergence_ids": [
+        "train:75418",
+        "train:40934",
+        "train:90102"
+      ]
+    }
+  },
+  "audit": {
+    "normal_and_masked_trajectories_replayed": 4000,
+    "replay_mismatches": 0,
+    "prefix_divergences": 5,
+    "batch_reviewed_trajectories": 80,
+    "batch_drift_cause": "plausible from changed batch/padding but not established; no logits or controlled rerun"
+  },
+  "reason": "No stable benefit of detailed error strings was demonstrated; all four paired intervals include zero. Only 4/418 training divergence actions were rejected, so this narrow error-content probe is not a gate on recovery-state training. Preserve original normal-feedback method, stop mechanism search, and evaluate the fixed models once on the project holdout.",
+  "program_baseline_identity": {
+    "weights_sha256": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+    "original_training_metadata_matches_local_preexisting_copy": true,
+    "prior_development_adapter_path": "results/agent_feedback/program_sft_v1/model",
+    "provenance_limit": "P weight SHA is explicitly bound now; the earlier continuation review did not bind P weights. Original P training metadata and development path match."
+  },
+  "gpu_hours": {
+    "diagnostic": 1.8736598741345936,
+    "cumulative": 15.756583817402522,
+    "holdout_reserved_maximum": 10.5,
+    "global_cap": 72
+  },
+  "inputs_sha256": {
+    "/home/syx/research_radar_agent/experiments/agent_feedback/compare.py": "ee90e86613477514b6e30ff9452286f4ffc3dcd9acb0b2c5d195bb1d4712994e",
+    "/home/syx/research_radar_agent/experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "/home/syx/research_radar_agent/experiments/agent_feedback/feedback_diagnostic_analysis.py": "28a7a95b2df540613f8791fe90754162eb585c6dd29b370514b7b8468c5fcd47",
+    "/home/syx/research_radar_agent/experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "/home/syx/research_radar_agent/experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "data/agent_feedback/dev.gold.jsonl": "864bcb1755bc8b70943e72771d8a27455698bcf923cbaee6bf24b36edd7847b8",
+    "data/agent_feedback/dev.questions.jsonl": "f40f1f6776d58794a457aa92d570d30a4754cc46152f12d40d29a10739bd8a9a",
+    "datasets/kqa_pro/kb.json": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "experiments/agent_feedback/feedback_mask.py": "12d6eb63f1b763935c5c50de7e4d177ab2778cf666c04486a60f569b2800ce81",
+    "experiments/agent_feedback/holdout_analysis.py": "02969422ec00b83f66521407d0e632b708cad21d263c72f8026aa4b45ccad05a",
+    "experiments/agent_feedback/holdout_runs.py": "6fbc2589c47d90977c2def344a69b4ccecefa54b13132efed4ff7949a913e1f0",
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "experiments/condition_consistency/executor.py": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "external/kqa_pro_baselines/utils/value_class.py": "83dcc227b5028dcc8835b68cc88ebc23d8a47c2c5b0259a5ce4adfd3451631a6",
+    "results/agent_feedback/clean_dev_seed20261004.jsonl": "8ea0fc344ad9fd3a6fe55effd29b9ffbf44ed4c5cda8e07e8f016172079439fa",
+    "results/agent_feedback/clean_dev_v1.jsonl": "115f7ef52984021c5c1c79cb1d090616c1de3386042a95f0157869d58e49a177",
+    "results/agent_feedback/clean_feedback_masked_dev_seed20261004.diagnostic.json": "61d2482a162e76baa3890e34c9b02d1980b7e14f2de4d73d2655181806afda34",
+    "results/agent_feedback/clean_feedback_masked_dev_seed20261004.jsonl": "8570c877ea8ee669c90285acfa59097c82edf2e99ef0288f141e90fcc8f8fe1c",
+    "results/agent_feedback/clean_feedback_masked_dev_v1.diagnostic.json": "65d3e11d7d4b3c7c9e15887dbe1af3a289eb4bde7334d511ad2b3d662bc53a7f",
+    "results/agent_feedback/clean_feedback_masked_dev_v1.jsonl": "2880e2163195c94799be42d289b8c5fe5f908ce937d1c25f876e474969d30796",
+    "results/agent_feedback/clean_sft_seed20261004/input_manifest.json": "34196ce44e73893055131429473d886bb98b319b4f50eefb47693c1991b0b86d",
+    "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+    "results/agent_feedback/clean_sft_seed20261004/run_result.json": "6ade3d957ddcee165ee9e3589206735d04893970134d4916bf49f60cf5ded434",
+    "results/agent_feedback/clean_sft_v1/input_manifest.json": "8f9b29bce8f0d953a9e60b86305625640df3720331043d6e5e5b60a15450e3a8",
+    "results/agent_feedback/clean_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+    "results/agent_feedback/clean_sft_v1/run_result.json": "87104dadb8edeffdd9597d851e544faa43ef482e2330b4d64b57208523e54f09",
+    "results/agent_feedback/continuation_code_manifest_v1.json": "12d5fb285d3d86e6d6ae30702d24d418fc588687f013136605065f7c51b9ff80",
+    "results/agent_feedback/continuation_data.json": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+    "results/agent_feedback/feedback_batch_drift_review_v1.json": "a1abca1dd60cf84cafdd9953683d419878868c4c426ec2d6f69bba4503513224",
+    "results/agent_feedback/feedback_diagnostic_audit_v1.json": "63791303844ec54788646c4acf826ec01957330ed595cffa0ac72ebebca971d2",
+    "results/agent_feedback/feedback_diagnostic_summary_v1.json": "785f0acfc91dc960d3092a74feff3806da1334a4da95a86dd047e4d8bb94456f",
+    "results/agent_feedback/jobs/clean_feedback_masked_dev_seed20261004.json": "d8e35d3f5ada40250c35f598da9e74ecaabeb7c3dfc734daad799253ec47e4a4",
+    "results/agent_feedback/jobs/clean_feedback_masked_dev_v1.json": "db1bf242c1ce3a3b31129f23953c290a53063acdcd767ce018527ffd2975d85e",
+    "results/agent_feedback/jobs/program_sft_v1.json": "4715fedd50b65da92430ceb947ed9226929980eb1f3a2364ca7613218a6495a1",
+    "results/agent_feedback/jobs/recovery_feedback_masked_dev_seed20261004.json": "d3818cacb24d136f90aa34ed572463f679e626158eb0f35a73101db83d0f62a1",
+    "results/agent_feedback/jobs/recovery_feedback_masked_dev_v1.json": "b2a8ba6658dcfd6316b96aeaffd71a59939f60555240826be238dac0f99ec514",
+    "results/agent_feedback/program_dev_v1.metrics.json": "e22a977dc3b468fc33a73fa87e2b8c4757043e5f42f160213c849ca6ee07807b",
+    "results/agent_feedback/program_dev_v1.runtime.json": "1acf98c45f62cfff5c0b5988dd960c65ea17adfe26b6601b8ffb8ba366778e60",
+    "results/agent_feedback/program_sft_v1/input_manifest.json": "e641af22dcff41fbc5d999e1e624b25357bb91e024a9ca21d9d0d96a322206a7",
+    "results/agent_feedback/program_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/program_sft_v1/model/adapter_model.safetensors": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+    "results/agent_feedback/program_sft_v1/run_result.json": "0074520c629c0513f579e9ff02a39bfcfe38ffcdae1f259dc163d4f707ff23cf",
+    "results/agent_feedback/protocol.json": "659ce71a37aff491ac42a58a73c73c420db43556acb55d6aa3b79b9c2b4fb99d",
+    "results/agent_feedback/protocol_feedback_diagnostic_v1.json": "1649d87ca6a97f3760af449cb43cf642dc4ddfa4df55abbb16a994451f26ac36",
+    "results/agent_feedback/recovery_dev_seed20261004.jsonl": "fb1b2b5c15523bdfa98df43d0f7aa36e7f4d9731f927ac2df6f024d3df09e9fe",
+    "results/agent_feedback/recovery_dev_v1.jsonl": "dfc2bbb1289d0c6a417642a16430cabdde336f118c6e20d5812715bb4c0c8130",
+    "results/agent_feedback/recovery_feedback_masked_dev_seed20261004.diagnostic.json": "703f2b207edfebb13dbbd7cd13258b654b4bb59cce8537812e8326fba7aba83b",
+    "results/agent_feedback/recovery_feedback_masked_dev_seed20261004.jsonl": "8cb6fbbaf23c120430a785b81efeca9dc5749af72a461a0830338fee662cdfc6",
+    "results/agent_feedback/recovery_feedback_masked_dev_v1.diagnostic.json": "5b03f405770b28c55c83f9dcf4ede3fd4262c7bd0bb0cfd2bee14e8d8de3405f",
+    "results/agent_feedback/recovery_feedback_masked_dev_v1.jsonl": "cf9e9773d63526b134e19f6568f660f357a3f29761d424f857e36591453a86f8",
+    "results/agent_feedback/recovery_pair_audit.json": "85a386f627c68061d84adfcbcec1500c72ef70550a0404b2d2cab84581cf20eb",
+    "results/agent_feedback/recovery_pairs.json": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9",
+    "results/agent_feedback/recovery_sft_seed20261004/input_manifest.json": "7486b2781903da06b8e0b27ccc648196f84577cdec86d609276b9a2276cadbd4",
+    "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+    "results/agent_feedback/recovery_sft_seed20261004/run_result.json": "a577b7b55ff26061d6509268affb4ad019caa8545a14bd03adc6ef25b4fef40b",
+    "results/agent_feedback/recovery_sft_v1/input_manifest.json": "b88191cc0564df2d14766bf88d33aa818452ed8370ceb3955415b0392388ea5d",
+    "results/agent_feedback/recovery_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/recovery_sft_v1/model/adapter_model.safetensors": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33",
+    "results/agent_feedback/recovery_sft_v1/run_result.json": "6151d714257d493ee6d5c221562a1233d6992784e78fceb548b443c83f622a00",
+    "results/agent_feedback/replication_review_seed20261004_v2.json": "4ec20899906fc5b3ec422c29064c7fee181536b1b17f1146cf6d41754d781cea",
+    "results/agent_feedback/rl_stage_decision_v1.json": "f89a3d9bf832d07c5b160ad0cc9ae3134ccf9e70532948b221613c01bb7b9c1d",
+    "results/agent_feedback/split_manifest.json": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60",
+    "results/agent_feedback/weights_verified.json": "0e0758af62e353e510afa2058e70f5398b8cc01631a12ae137b389c7d1645b6a"
+  }
+}

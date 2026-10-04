@@ -1,0 +1,55 @@
+{
+  "answers_prepared": false,
+  "development_only": true,
+  "fact_count": 12,
+  "grouping_warning": "Source/model groups are workflow labels, not an independent split audit.",
+  "human_verified": false,
+  "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+  "protocol_version": "radar_review_workflow_v1",
+  "question_count": 12,
+  "source_classes": [
+    {
+      "bytes": 1388,
+      "path": "radar_corpus/raw/an_apy-9.json",
+      "primary_source_verified": false,
+      "sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+      "source_class": "secondary_web_snapshot"
+    },
+    {
+      "bytes": 30651,
+      "path": "radar_corpus/raw/an_mpq-65.json",
+      "primary_source_verified": false,
+      "sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "source_class": "secondary_web_snapshot"
+    },
+    {
+      "bytes": 2482,
+      "path": "radar_corpus/raw/an_spg-51.json",
+      "primary_source_verified": false,
+      "sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "source_class": "secondary_web_snapshot"
+    },
+    {
+      "bytes": 1621,
+      "path": "radar_corpus/raw/an_spg-59.json",
+      "primary_source_verified": false,
+      "sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+      "source_class": "secondary_web_snapshot"
+    },
+    {
+      "bytes": 1562,
+      "path": "radar_corpus/raw/an_spn-35.json",
+      "primary_source_verified": false,
+      "sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+      "source_class": "secondary_web_snapshot"
+    },
+    {
+      "bytes": 1798,
+      "path": "radar_corpus/raw/el_m-2080.json",
+      "primary_source_verified": false,
+      "sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+      "source_class": "secondary_web_snapshot"
+    }
+  ],
+  "source_truth_verified": false
+}

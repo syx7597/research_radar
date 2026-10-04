@@ -1,0 +1,187 @@
+{
+  "accepted_records": 0,
+  "final_qa_answers_generated": false,
+  "human_review_status": "pending",
+  "input_facts_sha256": "4f7b0b1a2b05c6bd17e19e66cb4761de014924b2bb901bf88ead99b7287d63f9",
+  "input_packet_manifest": "artifacts/thesis_direction_review/radar_review_batch/source_manifest.json",
+  "input_packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+  "limitations": [
+    "机构来源身份由AI按发布网站和文种初判，等待真人核查。",
+    "未保存网页全文；quote_sha256仅属于公开短摘录，不是原网页快照哈希，不能冒充独立验收的完整来源绑定。",
+    "未找到直接确认AN/MPQ-65首次服役/初始能力年份的一手记录；没有证据不等于证明旧年份错误。",
+    "这三条补充只能辅助人工追查，不写入review_decisions的accepted，也不改原候选或最终评价答案。"
+  ],
+  "original_kg_modified": false,
+  "original_packet_modified": false,
+  "prepared_by": "AI_source_prescreening",
+  "prepared_date": "2026-10-04",
+  "records": [
+    {
+      "accepted": false,
+      "ai_assessment": "entity_level_mismatch_supported",
+      "candidate_source_ids": [
+        "primary-dsca-18-51"
+      ],
+      "fact_id": "radar-review-001-01",
+      "fact_record_sha256": "61abd2e7f966bfd3b882cfbffa522d5083860be97d850e5580cda9fbceed069a",
+      "final_qa_answer": null,
+      "human_review_status": "pending",
+      "human_reviewer": null,
+      "original_attribute": "type_description",
+      "original_entity_name": "AN/MPQ-65",
+      "original_source_file": "radar_corpus/raw/an_mpq-65.json",
+      "original_source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "prepared_by": "AI_source_prescreening",
+      "reason_zh": "AN/MPQ-65在正式机构文件中作为Patriot雷达设备列项；旧Type描述属于系统级页面，不宜直接作为雷达型号类型。",
+      "replacement_fact": null,
+      "review_status": "needs_review",
+      "suggested_human_next_step_zh": "AI建议继续隔离该候选，人工核查主体后另做有来源的型号/系统区分；不修改原事实值。"
+    },
+    {
+      "accepted": false,
+      "ai_assessment": "claimed_radar_service_year_not_established",
+      "candidate_source_ids": [
+        "primary-redstone-1981",
+        "primary-dsca-18-51"
+      ],
+      "fact_id": "radar-review-001-02",
+      "fact_record_sha256": "6fcc9c2781905baeaef46d7ed6c1ac69c40090ee5c71f9788f0f8fe4882f6888",
+      "final_qa_answer": null,
+      "human_review_status": "pending",
+      "human_reviewer": null,
+      "original_attribute": "service_entry",
+      "original_entity_name": "AN/MPQ-65",
+      "original_source_file": "radar_corpus/raw/an_mpq-65.json",
+      "original_source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "prepared_by": "AI_source_prescreening",
+      "reason_zh": "找到的1981年一手记录是首枚Patriot导弹交付，不能代替AN/MPQ-65雷达服役。未找到直接支持该雷达1981服役的一手记录；这不等于证明该年份为假。",
+      "replacement_fact": null,
+      "review_status": "needs_review",
+      "suggested_human_next_step_zh": "保留1981原值和待核验状态，人工分别追查交付、系统服役和雷达型号服役；不提供替代年份。"
+    },
+    {
+      "accepted": false,
+      "ai_assessment": "claimed_radar_ioc_not_established",
+      "candidate_source_ids": [
+        "primary-redstone-1984",
+        "primary-dsca-18-51"
+      ],
+      "fact_id": "radar-review-001-03",
+      "fact_record_sha256": "15fa1b802e5b1b1856c4bdfcd91b22d87bc9225af2883de9b251beeb059006e9",
+      "final_qa_answer": null,
+      "human_review_status": "pending",
+      "human_reviewer": null,
+      "original_attribute": "service_entry",
+      "original_entity_name": "AN/MPQ-65",
+      "original_source_file": "radar_corpus/raw/an_mpq-65.json",
+      "original_source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "prepared_by": "AI_source_prescreening",
+      "reason_zh": "一手史支持Patriot系统1984年的欧洲部署里程碑，但不能直接证实旧信息框的初始作战能力定义或AN/MPQ-65型号归属。",
+      "replacement_fact": null,
+      "review_status": "needs_review",
+      "suggested_human_next_step_zh": "保留事件歧义和主体归属问题；人工查正式IOC定义及型号演进文档，不把系统部署日期改填成雷达日期。"
+    }
+  ],
+  "scope": "Only original candidate facts 01–03; source attribution and event distinction, not final QA answers.",
+  "source_chain": {
+    "local_snapshot": "radar_corpus/raw/an_mpq-65.json",
+    "local_snapshot_limitation": "本地快照保留source_en但没有完整参考文献表；以下链条来自本次访问的现行网页，不声称与历史快照参考编号逐字一致。",
+    "not_a_verified_citation_for_every_claim": true,
+    "steps": [
+      {
+        "locator": "信息框服役栏关联参考文献1",
+        "role": "secondary_discovery_only",
+        "url": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+      },
+      {
+        "locator": "Main Sources中的Redstone Arsenal历史网站条目；该目录正文对1984的解释仍属二手资料。",
+        "role": "secondary_discovery_only",
+        "title": "Raytheon MIM-104 Patriot",
+        "url": "https://www.designation-systems.net/dusrm/m-104.html"
+      },
+      {
+        "locator": "在同机构历史站定位1981与1984年史，见sources。",
+        "role": "institutional_history_site",
+        "url": "https://history.redstone.army.mil/"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "access_status": "opened_full_html",
+      "accessed_date": "2026-10-04",
+      "does_not_establish": "不提供AN/MPQ-65首次服役年份，也不支持把1981或1984自动赋给该型号。",
+      "human_review_status": "pending",
+      "institution": "美国国防安全合作局（DSCA）",
+      "local_source_snapshot_file": null,
+      "local_source_snapshot_sha256": null,
+      "locator": "附件FINDING表，ITEM DESCRIPTION列中AN/MPQ-65对应行；该表将其作为雷达设备列项。",
+      "paraphrase_zh": "机构正式费用备忘录将AN/MPQ-65作为Patriot雷达设备单独列项。它可辅助判定实体层级，文件发布日期与费用生效日期均不是该型号服役日期。",
+      "primary_classification": "AI_proposed_official_institution_source_pending_human_review",
+      "publication_date": "2018-11-06",
+      "quote_sha256": "9e6f0ac586ccc444c3d9d71cc7066be46fddc368a2b1b58a011ce49a408403a0",
+      "short_quote": "Radar Set, Patriot, Semi-Trailer Mounted, AN/MPQ-65",
+      "short_quote_english_word_count": 6,
+      "source_id": "primary-dsca-18-51",
+      "source_type": "official_policy_memorandum",
+      "supports": "雷达设备与整套Patriot系统的实体层级需要区分。",
+      "title": "DSCA 18-51",
+      "url": "https://samm.dsca.mil/policy-memoranda/dsca-18-51"
+    },
+    {
+      "access_status": "opened_full_html",
+      "accessed_date": "2026-10-04",
+      "does_not_establish": "不证明1981是AN/MPQ-65服役年份，也不证明二手信息框采用1981的具体编写依据。",
+      "historical_period": "1981",
+      "human_review_status": "pending",
+      "institution": "美国陆军Redstone Arsenal历史网站",
+      "local_source_snapshot_file": null,
+      "local_source_snapshot_sha256": null,
+      "locator": "1981年史末段，1981年12月首枚Patriot导弹交付条目；不与同页其他装备事件合并。",
+      "paraphrase_zh": "这条历史记录描述1981年12月首枚Patriot导弹交付。主体是导弹，事件是交付，不能直接转换成AN/MPQ-65雷达型号服役。",
+      "primary_classification": "AI_proposed_official_institution_source_pending_human_review",
+      "publication_date": null,
+      "quote_sha256": "705ac57001a9db1f257d4981aa07475545b5ccba3d039f860daff665ae8e042b",
+      "short_quote": "December 81 The first PATRIOT missile was delivered.",
+      "short_quote_english_word_count": 8,
+      "source_id": "primary-redstone-1981",
+      "source_type": "institutional_historical_chronology",
+      "supports": "1981与Patriot的一个交付里程碑有关，必须保留主体和事件类型。",
+      "title": "Installation History — 1981",
+      "url": "https://history.redstone.army.mil/ihist-1981.html"
+    },
+    {
+      "access_status": "opened_full_html",
+      "accessed_date": "2026-10-04",
+      "does_not_establish": "不直接证实旧信息框所写初始作战能力事件的精确定义，更不确定AN/MPQ-65在1984达到该事件。",
+      "historical_period": "1984",
+      "human_review_status": "pending",
+      "institution": "美国陆军Redstone Arsenal历史网站",
+      "local_source_snapshot_file": null,
+      "local_source_snapshot_sha256": null,
+      "locator": "1984年史：9月欧洲部署有条件放行、10月欧洲部署就绪认证、11月首个欧洲营装备装运条目；本摘录定位10月条目。",
+      "paraphrase_zh": "该史分别记录Patriot系统在1984年的欧洲部署放行、就绪认证及装运；装运装备在次年抵达。这里是系统部署事件，不能把这些概念直接等同于某一雷达型号的初始作战能力。",
+      "primary_classification": "AI_proposed_official_institution_source_pending_human_review",
+      "publication_date": null,
+      "quote_sha256": "78cd06a3716c5387d547278cb2bf72271ccd04904100323a4d862d5d16b173b6",
+      "short_quote": "October 84 The PATRIOT missile system was certified ready for European deployment.",
+      "short_quote_english_word_count": 12,
+      "source_id": "primary-redstone-1984",
+      "source_type": "institutional_historical_chronology",
+      "supports": "1984对应Patriot系统的部署相关里程碑，应和交付、服役、初始能力等事件分开。",
+      "title": "Installation History — 1984",
+      "url": "https://history.redstone.army.mil/ihist-1984.html"
+    }
+  ],
+  "unverified_leads": [
+    {
+      "access_status": "search_excerpt_only_full_document_403",
+      "locator_hint": "印刷页171，Research, Development, and Acquisition章节的Patriot段",
+      "reason_to_check_zh": "搜索摘要出现本土单位初始作战能力的表述，提示系统/单位及事件定义还需分开；正文未打开，不据此判定年份或构造替代事实。",
+      "title": "Department of the Army Historical Summary, Fiscal Year 1983",
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/101-15.pdf",
+      "used_for_fact_acceptance": false
+    }
+  ],
+  "version": "radar_primary_source_ai_screening_001_003_v1"
+}

@@ -1,0 +1,30 @@
+{
+  "finished_at": 1791115240.5623782,
+  "protocol_sha256": "1649d87ca6a97f3760af449cb43cf642dc4ddfa4df55abbb16a994451f26ac36",
+  "audit_sha256": "63791303844ec54788646c4acf826ec01957330ed595cffa0ac72ebebca971d2",
+  "reports": {
+    "A_20261003": {
+      "path": "results/agent_feedback/clean_feedback_masked_dev_v1.diagnostic.json",
+      "sha256": "65d3e11d7d4b3c7c9e15887dbe1af3a289eb4bde7334d511ad2b3d662bc53a7f"
+    },
+    "C_20261003": {
+      "path": "results/agent_feedback/recovery_feedback_masked_dev_v1.diagnostic.json",
+      "sha256": "5b03f405770b28c55c83f9dcf4ede3fd4262c7bd0bb0cfd2bee14e8d8de3405f"
+    },
+    "A_20261004": {
+      "path": "results/agent_feedback/clean_feedback_masked_dev_seed20261004.diagnostic.json",
+      "sha256": "61d2482a162e76baa3890e34c9b02d1980b7e14f2de4d73d2655181806afda34"
+    },
+    "C_20261004": {
+      "path": "results/agent_feedback/recovery_feedback_masked_dev_seed20261004.diagnostic.json",
+      "sha256": "703f2b207edfebb13dbbd7cd13258b654b4bb59cce8537812e8326fba7aba83b"
+    }
+  },
+  "primary_results": "original normal-feedback outputs",
+  "pre_intervention_equivalence_passed": false,
+  "mechanism_interpretation": "needs_numerical_batching_review",
+  "model_selection": false,
+  "training": false,
+  "held_out_evaluation": false,
+  "automatic_next_round": false
+}

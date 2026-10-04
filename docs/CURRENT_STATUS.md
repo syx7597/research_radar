@@ -4,7 +4,7 @@
 
 ## 1. 当前阶段与历史证据
 
-**2026-10-04：配对复现、错误分析、学习信号短测、正式B/D训练及dev500均已完成，当前无后台GPU任务。** RL流水线于16:00（北京时间）结束，随后四组结果全部复算，B/D共1000条轨迹回放零差异。见[最终复核](../results/agent_feedback/rl_paired_review_v1.json)和[阶段决定](../results/agent_feedback/rl_stage_decision_v1.json)。
+**2026-10-04：所有公开训练、原dev500评测与一次四模型错误诊断消融完成。** RL流水线于16:00结束，随后四组结果全部复算，B/D共1000条轨迹回放零差异。错误诊断消融19:26启动、20:00完成（均为北京时间）。见[RL复核](../results/agent_feedback/rl_paired_review_v1.json)、[RL阶段决定](../results/agent_feedback/rl_stage_decision_v1.json)和[诊断汇总](../results/agent_feedback/feedback_diagnostic_summary_v1.json)。
 
 | 同一500题开发集 | 首种子 | 第二续训种子 |
 |---|---:|---:|
@@ -20,7 +20,13 @@
 
 正式RL前的两路16题短测确认非零奖励差异、有效梯度及真实参数更新；正式B/D各200更新、200个相同训练问题组、800轨迹，分别有47/43个有效学习信号组。采样来自4999个合格训练题，不是遍历全题库。正式训练和dev共2.524 GPU小时，含既往实验累计13.883/72 GPU小时。所有训练均为syx，未使用管理员训练；无自动追加轮次。
 
-下一步：限定反馈机制诊断的范围，冻结主方法与报告，再评估封存的2000题项目留出集；雷达事实和独立QA核验并行。语义核验偏好训练继续暂缓。当前仍是开发集证据，不能声称独立留出已验证。领域条件/区间/来源表示和人工验收仍待完成，工程规模不能替代方法证据。
+一次反馈机制诊断已完成：GPU 0–3分别运行原两个种子的A/C，全部syx、完整dev500；保留原真实事件，仅将失败观察的error/detail通用化。A/C首种子正确数392→394、404→405，第二种子386→387、412→413，差值分别+0.4/+0.2/+0.2/+0.2个百分点，区间均包含零。正常/遮蔽共4000条轨迹回放通过。A首次干预前和无错负对照均一致；C合计5条提前分歧，其中3条原本无错，因此C的变化不能全归因于报错内容。诊断耗费1.874 GPU小时，累计15.757/72 GPU小时。见[运行前协议](../results/agent_feedback/protocol_feedback_diagnostic_v1.json)。
+
+原418恢复对仅4个分歧动作被拒，414个可执行；这个探针只检验错误诊断内容，不是整个恢复方法的成败门槛。结果不支持具体报错文字提供稳定增益；保留原正常反馈和恢复轨迹SFT，不追加消融、训练或奖励搜索。
+
+20:29（北京时间）已[冻结五模型留出协议](../results/agent_feedback/protocol_holdout_v1.json)：P和两续训种子的A/C，不选最佳种子。冻结时未读取留出文件；接下来先保存全部2000题预测并CPU回放，再读取答案，按题保留两种子联合结果计算区间。四路Agent各2.5小时、随后P0.5小时为最大预算，不是耗时预测；不追加训练。五条提前分歧的[CPU复核](../results/agent_feedback/feedback_batch_drift_review_v1.json)发现批内其他题已被遮蔽、批次人数/补齐长度发生变化，支持但不能证实数值漂移解释。见[诊断收束决定](../results/agent_feedback/feedback_diagnostic_decision_v1.json)。语义核验偏好训练继续暂缓；领域条件/区间/来源表示和人工验收仍待完成。
+
+雷达首批12条事实的来源绑定全部通过，新增12条独立审阅记录和12道答案留空的流程开发题。原资料是6份二手网页快照，真人验收和独立事实准入均为0；机器检查不能证明事实真实。01–03另补了DSCA及Redstone机构来源的[AI预审](../artifacts/thesis_direction_review/radar_primary_screening_001_003/ai_screening.json)，用于区分系统/雷达与交付/部署事件，仍不能直接据此填雷达服役或初始能力年份。见[审阅工作流](research/RADAR_REVIEW_WORKFLOW.md)和[审计](../artifacts/thesis_direction_review/radar_review_workflow/audit_report.json)。
 
 以下字段约束、BART、旧雷达Agent和数据oracle均为历史证据。KQA Pro本地val共11,797题，其中2,806含限定相关函数；雷达16,609属性中未发现结构化条件字段，见[任务清单](../artifacts/public_benchmark_profile.json)。
 
