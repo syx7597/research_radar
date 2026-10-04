@@ -8,7 +8,9 @@
 
 主线：**保留主体、条件、区间和来源的雷达知识资源 → 小模型生成可执行查询 → 答案与依据 → 公开基准和独立雷达评价**。复用现有数据、执行器和系统，不重建整个项目。配对续训复现、回放复核及B/D配对RL均已完成。RL增量未达到扩展标准，保留恢复轨迹SFT为主方案；语义核验偏好训练继续暂缓。领域核验与论文写作并行推进；范围和队列见[执行计划](docs/ROADMAP.md)。
 
-**2026-10-05：已开始领域验证准备。** 新主线的[方法与公开实验两章草稿](thesis/README.md)及8张可追溯结果表已完成；[雷达只读查询适配器](experiments/radar_domain/adapter.py)已用10条已见开发查询走通来源预览，保留区间、事件、条件和精确引用。这是显式查询的流程演示，尚非模型的雷达问答成绩。按用户最新要求，已另开新上下文子agent审阅12条候选，并由主agent复核形成[AI交叉审阅结果](artifacts/thesis_direction_review/radar_ai_cross_review_v1/index.html)及[开发读法记录](artifacts/thesis_direction_review/radar_ai_cross_review_v1/development_readings.json)，不再等待用户具备专业知识后才能开发。AI审阅与人工金标分开；当前仍无已验收独立事实，默认事实模式返回无可用数据。[领域评价设计](artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)和[空标注模板](templates/radar_evaluation/README.txt)已备齐，尚未冻结最终QA或启动领域训练。
+**2026-10-05：已完成首轮中文领域开发检查，直接迁移尚不可靠。** [AI交叉审阅](artifacts/thesis_direction_review/radar_ai_cross_review_v1/index.html)的12条修订已应用为[独立开发版本](artifacts/thesis_direction_review/radar_development_v2/manifest.json)，原始数据保持不变。已接通中文问题→模型查询→真实执行→带来源的固定模板证据卡，并使用原P、A/C两个续训种子各运行12题。目标记录精确选择为P 0/12、A 0/12与0/12、C 3/12与1/12；60条流程重放零差异。主要出现参数数量错误、字段/条件混淆和终止失败，不能将它归因于中文能力或据此否定公开方法。见[开发结果](results/radar_domain/development_probe_v1/summary.json)及[逐题诊断](results/radar_domain/development_probe_v1/per_question_diagnosis.json)。本轮0.139 GPU小时，无新训练；下一步先做任务与接口对齐，停止直接扩大评价。12题均已暴露且由AI审阅，固定模板不代表模型独立完成来源裁决，不能称独立雷达准确率。
+
+新主线的[方法与公开实验两章草稿](thesis/README.md)及8张可追溯结果表已完成。[领域评价设计](artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)和[空标注模板](templates/radar_evaluation/README.txt)已备齐，尚未冻结最终QA或启动领域训练。用户的专业审阅不作为开发前提；AI材料与人工金标分开，当前仍无已验收独立事实，原接口默认事实模式返回无可用数据。
 
 **已完成两轮开发和KQA Pro完整官方validation的11,797题评测。** 同一5,000题训练的BART下，4候选执行筛选79.90%，普通保守字段修复81.25%，局部保守修复81.39%，8候选执行筛选81.44%。局部保守修复相对4候选纠正178题、改错2题，但未证明优于8候选；局部约束相对普通修复的额外增量很小。
 

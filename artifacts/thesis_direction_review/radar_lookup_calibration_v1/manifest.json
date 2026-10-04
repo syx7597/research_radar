@@ -1,0 +1,135 @@
+{
+  "version": "radar_lookup_calibration_v1",
+  "purpose": "Offline material for one future fixed lookup/language diagnostic; not launched here.",
+  "split": "development_seen_derivative",
+  "permanently_excluded_from_final_evaluation": true,
+  "rewrite_and_translation_by": "AI",
+  "bilingual_semantic_equivalence": "AI intended and reviewed; no independent expert verification",
+  "human_verified": false,
+  "independent_gold": false,
+  "question_count_per_language": 12,
+  "model_inference_runs": 0,
+  "new_training_started": false,
+  "gpu_used": false,
+  "input_files_only": [
+    "questions.zh.jsonl",
+    "questions.en.jsonl"
+  ],
+  "reference_file_excluded_from_inference": "references.json",
+  "cpu_validation": {
+    "programs_checked": 12,
+    "exact_record_matches": 12,
+    "renderer_checks": 12,
+    "is_model_performance": false,
+    "records": [
+      {
+        "id": "radar-lookup-dev-01",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "5c20b61172ea32832f08d1fb244a4f3366070f0d7bc3e2548239b1ff256c89ce"
+      },
+      {
+        "id": "radar-lookup-dev-02",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "fba5e3f43975b2df3c79a9083ee880ec9e3076e92d2dfd92395d45fb22d990e7"
+      },
+      {
+        "id": "radar-lookup-dev-03",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "f43f92adad09e7652c1d53cfbae37c61a982a5873ed3ecd2bd11930c52f5757e"
+      },
+      {
+        "id": "radar-lookup-dev-04",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "cba2a4973a984489f39c6e5662c9d8302a1d859e6cebd87c170d5136e7db7a1d"
+      },
+      {
+        "id": "radar-lookup-dev-05",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "2ddec27587386f26dfa44d0fa552fbd9c62014b2e9e9650ce5fee3c501247022"
+      },
+      {
+        "id": "radar-lookup-dev-06",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "f7deb91ee5e4686485f6e3f73f9cef57302e2f140f816177d0e6ab294ce984fe"
+      },
+      {
+        "id": "radar-lookup-dev-07",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "6096a3a9d239e9ab817134eab36efdab6cc9971a4a1fc1b881fc41bea8919c1f"
+      },
+      {
+        "id": "radar-lookup-dev-08",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "bf0a7d5197f6238079a62037b3b71ce8b32e08aa6eaf1ca419c7468e7359a0bc"
+      },
+      {
+        "id": "radar-lookup-dev-09",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "96850811868b764000bc5be8001dadfdece24d78f441de95d50034f2e2020920"
+      },
+      {
+        "id": "radar-lookup-dev-10",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "db72bc66cf77137e3dcc71965cd408a24f44e05ed557e0e0e8e628983e442953"
+      },
+      {
+        "id": "radar-lookup-dev-11",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "882123596108eb2827037a1ea3cf8ac1501c3f1a77b1b0a7c6172a645fa04ea8"
+      },
+      {
+        "id": "radar-lookup-dev-12",
+        "exact_source_record_selected": true,
+        "source_rendering_preserved": true,
+        "executed_calls": 3,
+        "rendered_evidence_sha256": "0e6f071c8d06beef1da23e26b24687c3c454bb5076fd9ac7bc6591e99490e2d1"
+      }
+    ]
+  },
+  "limits": [
+    "Rewritten lookup tasks do not measure semantic adjudication or equipment truth.",
+    "These twelve exposed derivatives cannot become held-out radar QA.",
+    "The two language versions share the same targets and reference programs; CPU success proves only executability.",
+    "Any later comparison with the original probe also changes task wording and must not be attributed solely to language."
+  ],
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_development_v2/readings.json": "13b95869b2e7aceebac3d1088cfb437533878d46f59e6ecc24c12eb152b398c2",
+    "artifacts/thesis_direction_review/radar_development_v2/questions.jsonl": "ddf2f9469715f681bb891c4881a6963c8cbaf14f8ded18a4ef01c63e18e4efed",
+    "artifacts/thesis_direction_review/radar_development_v2/references.json": "a7bee419d9a65857d3898e840907b35069e3aaee66ec993f395688bc7f8a8e32",
+    "artifacts/thesis_direction_review/radar_development_v2/manifest.json": "ab7fc6f822a1163ba3970406d7bbda63bc593ac8675d608f58d930ed70571ffe",
+    "results/radar_domain/development_probe_v1/protocol.json": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702",
+    "results/radar_domain/development_probe_v1/summary.json": "ce93a91065a10aa11545cdc2ff57c6bae3bfe80301659fe2ef3aa93fd5f9276d",
+    "results/radar_domain/development_probe_v1/per_question_diagnosis.json": "bb2d5f4ffc9c38922c0b4a9b5a14c28e91857b701cc61f36592cb4694e25d58c",
+    "results/radar_domain/development_probe_v1/execution_summary.json": "a5247b0865ef110f0988d150d177cd6d18a75f6764e1d237bea4107e757ce72a",
+    "experiments/radar_domain/task_calibration.py": "d21c93cf51d227dec9710b8ece74fd5d402d1c4cae2a68a3f859a3017bbe3e02",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_probe.py": "ce5f1c26b9c9dd927ff4137bed41c354e7590ebee1d283842603c9021972a104"
+  },
+  "outputs_sha256": {
+    "questions.zh.jsonl": "52873195290c0aa9dee38cee659075cfadb2917d898988451c580ffb0f5cb14a",
+    "questions.en.jsonl": "f309b71e3593f3b2b37f3f42bd7c54040f5c04f486eca6d12b43bebc84c3d30d",
+    "references.json": "83c3b679a5bf7af532dd29aaa753212939acec9a8ef2cfde51c264f9811d01d7"
+  }
+}

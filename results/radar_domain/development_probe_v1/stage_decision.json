@@ -1,0 +1,49 @@
+{
+  "version": "radar_development_transfer_decision_v1",
+  "date_beijing": "2026-10-05",
+  "status": "direct_transfer_not_ready",
+  "evidence": {
+    "protocol": "results/radar_domain/development_probe_v1/protocol.json",
+    "results": "results/radar_domain/development_probe_v1/summary.json",
+    "diagnosis": "results/radar_domain/development_probe_v1/per_question_diagnosis.json",
+    "execution": "results/radar_domain/development_probe_v1/execution_summary.json",
+    "questions_per_model": 12,
+    "exact_record_selection": {"P": 0, "A1": 0, "C1": 3, "A2": 0, "C2": 1},
+    "finished_including_empty": {"P": 1, "A1": 0, "C1": 7, "A2": 0, "C2": 3},
+    "replayed_runs": 60,
+    "replay_mismatches": 0,
+    "related_tests_passed": 52,
+    "probe_gpu_hours": 0.13944048245747884,
+    "cumulative_gpu_hours": 22.78073203868336
+  },
+  "interpretation_zh": [
+    "现有公开任务检查点不能直接可靠地完成当前中文来源记录选择任务。",
+    "主要可观察失败是参数数量/函数错误、字段与条件混淆、无效循环和终止句柄错误。",
+    "原题同时要求来源审阅判断，而三种函数只支持检索；P发明比较、if和Answer函数，符合任务错配的解释，但不能证明单独因果。",
+    "C1在06/07题、C2在11题有从错误或空查询恢复的个例；C1在08题曾取得air记录后又错选surface，不能把取到目标等同最终成功。",
+    "语言、任务表述、提示和返回格式同时变化，不能从本轮断言中文能力不足，不能否定公开2000题已冻结的训练效果。",
+    "输出是模型选择记录后的确定性证据卡，来源判断注记属于AI审阅资料，不是模型独立生成的语义答案。"
+  ],
+  "decisions": {
+    "retain_public_recovery_sft_mainline": true,
+    "public_benchmark_retuning": false,
+    "new_training": false,
+    "expand_final_domain_evaluation_now": false,
+    "automatic_additional_gpu_run": false,
+    "preserve_original_questions_and_negative_results": true,
+    "offline_next_material": "artifacts/thesis_direction_review/radar_lookup_calibration_v1/manifest.json",
+    "offline_calibration_completed": true,
+    "calibration_cpu_programs_passed": 12,
+    "calibration_model_inference_runs": 0
+  },
+  "next_steps_zh": [
+    "只追加离线校准材料：将12题另写为读取绑定来源字段/条件的单一意图题，配等义英文版本；来源裁决留在审阅层。",
+    "12条显式参考程序须CPU精确命中目标并保留来源展示。通过只证明材料自洽，模型调用数为0。",
+    "之后才冻结一次中英对齐诊断，完整报告P及A/C两种子；本轮不启动。改写及译文永久属于已见开发资料。",
+    "最多一版校准和一次固定复测；不按成绩连续改提示或挑种子。若仍以签名/句柄失败为主，停止零样本迁移，设计少量匹配监督预算的接口适配；若语法可用但字段/条件错误，则将适配目标限定于对应选择错误。",
+    "任何领域训练需另有开发/评价来源与问题分组，不把这12题记忆或AI自洽计分作为独立领域效果。"
+  ],
+  "human_verified": false,
+  "independent_domain_evaluation": false,
+  "semantic_verification_preference_training": "still_paused"
+}

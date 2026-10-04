@@ -1,0 +1,276 @@
+{
+  "version": "radar_development_probe_analysis_v1",
+  "scope": "12 exposed AI-reviewed development questions; interface compatibility only",
+  "models": {
+    "P": {
+      "questions": 12,
+      "selection_counts": {
+        "finished": 1,
+        "exact_target_selection": 0,
+        "target_covered": 0,
+        "target_with_allowed_context": 0,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 1,
+        "unfinished": 11
+      },
+      "execution_totals": {
+        "calls": 18,
+        "invalid_calls": 11,
+        "input_tokens": 6157,
+        "generated_tokens": 971,
+        "total_tokens": 7128,
+        "questions": 12
+      },
+      "seconds": 16.535870772000635,
+      "error_event_counts": {
+        "dependency": 1,
+        "format": 8,
+        "function_arguments": 2
+      },
+      "empty_query_event_counts": {
+        "condition": 1,
+        "event": 1
+      },
+      "selection_observation_question_counts": {
+        "finished_empty_selection": 1,
+        "unfinished_program_error": 11
+      },
+      "stop_reason_counts": {
+        "program_completed": 1,
+        "program_error": 11
+      }
+    },
+    "A1": {
+      "questions": 12,
+      "selection_counts": {
+        "finished": 0,
+        "exact_target_selection": 0,
+        "target_covered": 0,
+        "target_with_allowed_context": 0,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 0,
+        "unfinished": 12
+      },
+      "execution_totals": {
+        "calls": 288,
+        "invalid_calls": 165,
+        "input_tokens": 603802,
+        "generated_tokens": 8770,
+        "total_tokens": 612572,
+        "questions": 12
+      },
+      "seconds": 137.94411154699628,
+      "error_event_counts": {
+        "format": 1,
+        "function": 26,
+        "function_arguments": 138
+      },
+      "empty_query_event_counts": {},
+      "selection_observation_question_counts": {
+        "unfinished_call_budget": 12
+      },
+      "stop_reason_counts": {
+        "call_budget": 12
+      }
+    },
+    "C1": {
+      "questions": 12,
+      "selection_counts": {
+        "finished": 7,
+        "exact_target_selection": 3,
+        "target_covered": 3,
+        "target_with_allowed_context": 3,
+        "allowed_context_selected": 0,
+        "extra_selection": 2,
+        "unrelated_extra_selection": 2,
+        "empty_selection": 2,
+        "unfinished": 5
+      },
+      "execution_totals": {
+        "calls": 186,
+        "invalid_calls": 137,
+        "input_tokens": 305918,
+        "generated_tokens": 4345,
+        "total_tokens": 310263,
+        "questions": 12
+      },
+      "seconds": 95.51323528800276,
+      "error_event_counts": {
+        "condition_or_event_selector": 1,
+        "finish_or_budget": 6,
+        "format": 41,
+        "function_arguments": 89
+      },
+      "empty_query_event_counts": {
+        "attribute": 4,
+        "condition": 9,
+        "event": 8
+      },
+      "selection_observation_question_counts": {
+        "attribute_selection_difference": 1,
+        "condition_selection_difference": 1,
+        "finished_empty_selection": 2,
+        "unfinished_call_budget": 5
+      },
+      "stop_reason_counts": {
+        "call_budget": 5,
+        "finished": 7
+      }
+    },
+    "A2": {
+      "questions": 12,
+      "selection_counts": {
+        "finished": 0,
+        "exact_target_selection": 0,
+        "target_covered": 0,
+        "target_with_allowed_context": 0,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 0,
+        "unfinished": 12
+      },
+      "execution_totals": {
+        "calls": 288,
+        "invalid_calls": 198,
+        "input_tokens": 541437,
+        "generated_tokens": 5763,
+        "total_tokens": 547200,
+        "questions": 12
+      },
+      "seconds": 115.1054632919986,
+      "error_event_counts": {
+        "condition_or_event_selector": 8,
+        "dependency": 3,
+        "finish_or_budget": 4,
+        "format": 97,
+        "function": 1,
+        "function_arguments": 85
+      },
+      "empty_query_event_counts": {
+        "event": 1
+      },
+      "selection_observation_question_counts": {
+        "unfinished_call_budget": 12
+      },
+      "stop_reason_counts": {
+        "call_budget": 12
+      }
+    },
+    "C2": {
+      "questions": 12,
+      "selection_counts": {
+        "finished": 3,
+        "exact_target_selection": 1,
+        "target_covered": 1,
+        "target_with_allowed_context": 1,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 2,
+        "unfinished": 9
+      },
+      "execution_totals": {
+        "calls": 235,
+        "invalid_calls": 197,
+        "input_tokens": 395850,
+        "generated_tokens": 6091,
+        "total_tokens": 401941,
+        "questions": 12
+      },
+      "seconds": 100.31339472701075,
+      "error_event_counts": {
+        "dependency": 7,
+        "finish_or_budget": 27,
+        "format": 24,
+        "function_arguments": 139
+      },
+      "empty_query_event_counts": {
+        "attribute": 1,
+        "condition": 14,
+        "event": 9
+      },
+      "selection_observation_question_counts": {
+        "finished_empty_selection": 2,
+        "unfinished_call_budget": 9
+      },
+      "stop_reason_counts": {
+        "call_budget": 9,
+        "finished": 3
+      }
+    }
+  },
+  "cpu_replay": {
+    "rows": 60,
+    "mismatches": 0,
+    "all_models_completed_before_reference_access": true,
+    "checked": [
+      "frozen code/data hashes",
+      "runtime protocol/output hashes",
+      "initial prompts",
+      "all assistant/tool messages",
+      "events",
+      "prediction",
+      "selected_handle",
+      "calls",
+      "invalid_calls",
+      "deterministic renderer",
+      "token sums",
+      "runtime totals"
+    ]
+  },
+  "metric_definitions": {
+    "finished": "A terminal result was selected; an empty list still counts as finished.",
+    "exact_target_selection": "Selected record set equals the predeclared expected_fact_ids exactly.",
+    "target_covered": "All target records occur in the selected result, regardless of extras.",
+    "target_with_allowed_context": "All targets selected and no records outside target plus predeclared context; includes exact selections.",
+    "extra_selection": "Any record outside the target set, including allowed comparison context.",
+    "unrelated_extra_selection": "Any selected record outside target plus predeclared allowed context.",
+    "empty_selection": "Finished with an empty selected list; excludes unfinished episodes.",
+    "tokens": "Unpadded complete prefills summed over turns plus generated tokens including EOS; not FLOPs."
+  },
+  "interpretation_limits": [
+    "The same twelve already exposed AI-reviewed source-reading development questions; no independent radar evaluation.",
+    "The checkpoints were trained on the public English KoPL task; Chinese questions and this new source-record interface change multiple factors at once.",
+    "Selection differences cannot isolate a language, training-method or domain-causality effect.",
+    "Scoped prose is deterministically rendered from AI-reviewed KB notes; model semantic adjudication is not measured.",
+    "No new training, prompt search, retries by score or automated next round.",
+    "Analysis verifies existing inference artifacts and does not rerun GPU inference or revalidate local model weight bytes."
+  ],
+  "new_training_started": false,
+  "human_gold": false,
+  "independent_evaluation": false,
+  "semantic_answer_scored": false,
+  "inputs_sha256": {
+    "results/radar_domain/development_probe_v1/protocol.json": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702",
+    "results/radar_domain/development_probe_v1/P.jsonl": "4c02cd3d4b51a9db2826497e6c5ec4b124d10e892375490f185c75b15e3a5457",
+    "results/radar_domain/development_probe_v1/P.runtime.json": "f7438f58200df1ba50cf7c8ec00c9bc0908318e0094e22fb5d0e5ce29640f41b",
+    "results/radar_domain/development_probe_v1/A1.jsonl": "93ed6ecbb4482c66d4d3584f1a3e0760914c862d28d514605790346dd731d69b",
+    "results/radar_domain/development_probe_v1/A1.runtime.json": "134bbc113a06b42e358f0c545ad533bf25e3b7af437441f12e4b7366ecaaa91b",
+    "results/radar_domain/development_probe_v1/C1.jsonl": "b3097d05d9052e96be051ac39b4873d075c6176bab7731bf8bf0d8c8ab944a09",
+    "results/radar_domain/development_probe_v1/C1.runtime.json": "1f4e8970c5f7e34434d02855fbf388d00c7a0f288ea56a8611190c843703dfb9",
+    "results/radar_domain/development_probe_v1/A2.jsonl": "5a95faf453b38b90f488f33a22ef3c41bda23fa69648ddc685074551a9f6f85e",
+    "results/radar_domain/development_probe_v1/A2.runtime.json": "f7c5d5a2df062d08575102a5424fd660b64c1c025625f19342f08c4f180be6a7",
+    "results/radar_domain/development_probe_v1/C2.jsonl": "dc44156a060d6ff306b8c34dcc9745e2e8eb7a60d1914cec50729bf81fff12bf",
+    "results/radar_domain/development_probe_v1/C2.runtime.json": "0b7d39d1233f54aa5f03f5896257c9c40aae16247580810f828856cdf9a67fcd",
+    "experiments/radar_domain/development_data.py": "c573a16f9744b02948d702581309ab1394c2e63d2ed73e081b67edf72112bc06",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_probe.py": "ce5f1c26b9c9dd927ff4137bed41c354e7590ebee1d283842603c9021972a104",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "artifacts/thesis_direction_review/radar_development_v2/readings.json": "13b95869b2e7aceebac3d1088cfb437533878d46f59e6ecc24c12eb152b398c2",
+    "artifacts/thesis_direction_review/radar_development_v2/questions.jsonl": "ddf2f9469715f681bb891c4881a6963c8cbaf14f8ded18a4ef01c63e18e4efed",
+    "artifacts/thesis_direction_review/radar_development_v2/manifest.json": "ab7fc6f822a1163ba3970406d7bbda63bc593ac8675d608f58d930ed70571ffe",
+    "results/agent_feedback/weights_verified.json": "0e0758af62e353e510afa2058e70f5398b8cc01631a12ae137b389c7d1645b6a",
+    "artifacts/thesis_direction_review/radar_development_v2/references.json": "a7bee419d9a65857d3898e840907b35069e3aaee66ec993f395688bc7f8a8e32",
+    "experiments/radar_domain/development_analysis.py": "96c7d3d29c74d8c5664f9b7cecbb9aa42d239980056e71014436fead0a1a382e"
+  },
+  "outputs_sha256": {
+    "per_question_diagnosis.json": "bb2d5f4ffc9c38922c0b4a9b5a14c28e91857b701cc61f36592cb4694e25d58c"
+  }
+}

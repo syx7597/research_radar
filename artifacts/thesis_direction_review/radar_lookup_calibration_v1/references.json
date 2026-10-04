@@ -1,0 +1,167 @@
+{
+  "version": "radar_lookup_calibration_v1",
+  "split": "development_seen_derivative",
+  "reference_kind": "AI_authored_programs_and_bilingual_rewrites",
+  "human_verified": false,
+  "independent_gold": false,
+  "excluded_from_final_evaluation": true,
+  "must_not_be_loaded_by_inference": true,
+  "records": [
+    {
+      "id": "radar-lookup-dev-01",
+      "derived_from_question_id": "radar-workflow-dev-01",
+      "expected_fact_ids": [
+        "radar-review-001-01"
+      ],
+      "canonical_program": "Find<arg>AN/MPQ-65<func>QueryAttr<arg>type_description",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-02",
+      "derived_from_question_id": "radar-workflow-dev-02",
+      "expected_fact_ids": [
+        "radar-review-001-02"
+      ],
+      "canonical_program": "Find<arg>AN/MPQ-65<func>QueryAttrUnderCondition<arg>service_entry<arg>event_type<arg>in_service",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-03",
+      "derived_from_question_id": "radar-workflow-dev-03",
+      "expected_fact_ids": [
+        "radar-review-001-03"
+      ],
+      "canonical_program": "Find<arg>AN/MPQ-65<func>QueryAttrUnderCondition<arg>service_entry<arg>event_type<arg>initial_operational_capacity",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-04",
+      "derived_from_question_id": "radar-workflow-dev-04",
+      "expected_fact_ids": [
+        "radar-review-001-04"
+      ],
+      "canonical_program": "Find<arg>AN/APY-9<func>QueryAttr<arg>frequency",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-05",
+      "derived_from_question_id": "radar-workflow-dev-05",
+      "expected_fact_ids": [
+        "radar-review-001-05"
+      ],
+      "canonical_program": "Find<arg>AN/SPG-51<func>QueryAttrUnderCondition<arg>frequency<arg>condition_raw<arg>Illuminator",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-06",
+      "derived_from_question_id": "radar-workflow-dev-06",
+      "expected_fact_ids": [
+        "radar-review-001-06"
+      ],
+      "canonical_program": "Find<arg>AN/SPG-51<func>QueryAttrUnderCondition<arg>frequency<arg>condition_raw<arg>Tracking Radar",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-07",
+      "derived_from_question_id": "radar-workflow-dev-07",
+      "expected_fact_ids": [
+        "radar-review-001-07"
+      ],
+      "canonical_program": "Find<arg>AN/SPG-51<func>QueryAttrUnderCondition<arg>prf<arg>condition_raw<arg>surface",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-08",
+      "derived_from_question_id": "radar-workflow-dev-08",
+      "expected_fact_ids": [
+        "radar-review-001-08"
+      ],
+      "canonical_program": "Find<arg>AN/SPG-51<func>QueryAttrUnderCondition<arg>prf<arg>condition_raw<arg>air",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-09",
+      "derived_from_question_id": "radar-workflow-dev-09",
+      "expected_fact_ids": [
+        "radar-review-001-09"
+      ],
+      "canonical_program": "Find<arg>AN/SPN-35<func>QueryAttr<arg>frequency",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-10",
+      "derived_from_question_id": "radar-workflow-dev-10",
+      "expected_fact_ids": [
+        "radar-review-001-10"
+      ],
+      "canonical_program": "Find<arg>AN/SPN-35<func>QueryAttr<arg>pulse_width",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-11",
+      "derived_from_question_id": "radar-workflow-dev-11",
+      "expected_fact_ids": [
+        "radar-review-001-11"
+      ],
+      "canonical_program": "Find<arg>AN/SPG-59<func>QueryAttrUnderCondition<arg>lifecycle_event<arg>event_type<arg>cancellation",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    },
+    {
+      "id": "radar-lookup-dev-12",
+      "derived_from_question_id": "radar-workflow-dev-12",
+      "expected_fact_ids": [
+        "radar-review-001-12"
+      ],
+      "canonical_program": "Find<arg>EL/M-2080<func>QueryAttr<arg>power",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "reference_scope": "same bound source record in both languages"
+    }
+  ]
+}

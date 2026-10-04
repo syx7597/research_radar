@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-10-04T16:41:25.569905+00:00",
+  "user": "syx",
+  "protocol_sha256": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702",
+  "base_weights_sha256": {
+    "models/qwen2.5-3b-instruct/model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+    "models/qwen2.5-3b-instruct/model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+  },
+  "all_five_adapters_verified": true,
+  "prompt_lengths": {
+    "P": [
+      519,
+      517,
+      509,
+      508,
+      514,
+      513,
+      517,
+      512,
+      508,
+      509,
+      511,
+      520
+    ],
+    "agent": [
+      911,
+      909,
+      901,
+      900,
+      906,
+      905,
+      909,
+      904,
+      900,
+      901,
+      903,
+      912
+    ]
+  },
+  "other_gpu_processes": "",
+  "seconds": 6.179048152000178
+}

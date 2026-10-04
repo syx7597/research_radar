@@ -83,6 +83,34 @@
 
 ## 运行
 
+### AI开发数据与中文模型查询（2026-10-05）
+
+首批审阅意见已应用为单独的 [v2开发版本](../../artifacts/thesis_direction_review/radar_development_v2/manifest.json)，原候选、人工决定表和答案留空的原开发题保持不变。01–03将历史检索锚点与Patriot系统来源主体分开；11将取消记录的属性改为`lifecycle_event`；12把未知范围限定为绑定来源字段。区间、部件/情境标签、事件和单位独立保存，09–10的第三方转录疑点只保留为AI审阅注记，不覆盖快照或合成新参数。
+
+[开发执行环境](../../experiments/radar_domain/development_environment.py)复用公开实验的`step/finish`调用形式，支持`Find`、`QueryAttr`和`QueryAttrUnderCondition`。P的一次性程序与A/C逐步调用共用执行语义，没有按问题编号查答案或自动修复查询。全局提供一致的实体锚点、字段释义和限定词目录；问题仅增加中性的来源文档上下文，不包含逐题目标字段、条件或参考查询。
+
+模型的任务是选取证据记录。选中记录再由固定模板展示中文证据卡，保留来源主体、范围、单位、条件、短引文及定位。模板中的限定说明来自AI审阅资料，**不能记作模型独立进行事实判断或生成答案的能力**。12题均为已暴露开发题，永久不进入独立评价。
+
+[五检查点开发协议](../../results/radar_domain/development_probe_v1/protocol.json)固定P、两个普通续训种子A和两个恢复续训种子C，无新训练、无按成绩重跑。每模型12题、greedy、上下文8192、生成总预算2048，Agent最多24调用。计分区分精确目标集合、目标覆盖、允许背景记录、无关额外记录和未完成；02/03可保留另一事件作比较背景，但严格集合指标仍单独报告。先确认全部完成并重放轨迹，再打开独立保存的AI参考文件。
+
+```bash
+# 检查新版本与全部原始来源/审阅输入一致（需要本地原始资料）
+python3 -m experiments.radar_domain.development_data --check
+
+# 在配好原检查点的 syx GPU 环境中，通过现有 run_job 监管器运行；示例P
+python -m experiments.agent_feedback.run_job --name radar_dev_v1_P --gpus 0 \
+  --max-hours 0.25 -- python -m experiments.radar_domain.development_probe generate --label P
+
+# 五路全部完成后做CPU重放和开发诊断；--check仅复验既有报告
+python3 -m experiments.radar_domain.development_analysis
+python3 -m experiments.radar_domain.development_analysis --check
+
+# 首次迁移检查后另存的中英单意图材料；只执行12条参考程序，不调用模型
+python3 -m experiments.radar_domain.task_calibration --check
+```
+
+下列命令保留原始包和显式查询演示的复验入口：
+
 ```bash
 # 复验新子agent报告、主agent裁决和AI开发读法的来源绑定与确定性导出
 python3 scripts/summarize_radar_ai_review.py --check-only

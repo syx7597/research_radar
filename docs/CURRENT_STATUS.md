@@ -2,21 +2,37 @@
 
 更新：2026-10-05；历史资产基线审计为2026-09-26。主线见[论文主线与框架](THESIS_ROUTE_REVIEW.md)，下一步见[执行计划](ROADMAP.md)。以下区分当前训练与历史资产，不能把旧结果视作新方法成果。
 
-## 本轮推进：论文写作与雷达接口
+## 本轮推进：中文领域开发检查完成
+
+2026-10-05 00:44（北京时间）前五路开发推理全部完成，全部使用`syx`，没有新训练。原12条AI审阅意见已应用到[新开发版本](../artifacts/thesis_direction_review/radar_development_v2/manifest.json)，原候选和人工审阅表未改。模型现在可以接收中文问题、发起真实查询并选择记录，随后固定模板展示来源证据卡；不是由模型独立生成来源语义裁决。
+
+| 原检查点 | 精确目标记录／12 | 完成选择／12 | 其中空选择 | 无效调用 |
+|---|---:|---:|---:|---:|
+| P：一次性程序 | 0 | 1 | 1 | 11 |
+| A：首续训种子 | 0 | 0 | 0 | 165 |
+| C：首续训种子 | 3 | 7 | 2 | 137 |
+| A：第二续训种子 | 0 | 0 | 0 | 198 |
+| C：第二续训种子 | 1 | 3 | 2 | 197 |
+
+五路共60条轨迹/程序逐条重放，工具观察、选中记录与渲染均零差异，之后才读取冻结AI参考。相关52项测试通过。基座两片权重、五适配器和分词器哈希均在服务器实际核对；输入、提示和预算在推理前冻结。见[协议](../results/radar_domain/development_probe_v1/protocol.json)、[开发汇总](../results/radar_domain/development_probe_v1/summary.json)与[执行记录](../results/radar_domain/development_probe_v1/execution_summary.json)。本轮实耗0.139 GPU小时，项目累计22.781/72 GPU小时，当前本轮无剩余GPU任务。
+
+**结论：不能直接迁移到当前中文领域接口。** 观察到大量`QueryAttr`多填第二参数、`QueryAttrUnderCondition`参数错位、错误后重复调用及`finish`句柄错误。C首种子第06题最终保留Tracking Radar范围，第11题两个C种子均选中取消事件；但这些个例和3/12、1/12的结果不能支持可靠领域效果。语言、问题从事实查询变为来源审阅、提示与结构化返回都同时变化，未隔离哪个因素导致失败。公开2000题方法收益保持原结论，领域迁移尚未成立。
+
+本次按冻结停止规则收束，不因结果差自动训练或重跑。已另备[12组中英单意图查询](../artifacts/thesis_direction_review/radar_lookup_calibration_v1/manifest.json)，将“检索哪条记录”与“审核来源主体/不确定性”分开；12条参考查询CPU精确匹配与来源展示通过，模型运行数为0。下一步只进行一次固定对齐对照，再判断是否需要小规模领域SFT；尚不扩大最终评价或将12题改作训练效果证明。
 
 用户最新说明缺少领域知识，要求另开子agent代做审阅。已完成[12条AI交叉审阅](../artifacts/thesis_direction_review/radar_ai_cross_review_v1/index.html)：新子agent的原始建议为开发保留4条、隔离5条、修订3条；主agent核查来源后按开发用途分为5条修订/隔离型号断言、5条保留限定来源读法、2条保留读法但补查精度/选项范围。两者的评价对象与逐条处理差异完整保留，不声称一致投票或两个不同模型的统计独立验证。[开发读法记录](../artifacts/thesis_direction_review/radar_ai_cross_review_v1/development_readings.json)全部明确标为AI、development_only、非已验收知识库；没有将AI填写成真人。
 
-新增发现包括AN/SPN-35手册第三方转录中的不同频率端点精度及多个脉宽选项。主agent已另行打开转录页；原扫描未核对，可能涉及舍入、版本或模式，不将原值直接判错或覆盖。另确认取消事件仍挂在service_entry属性，应在新版本修订；未知功率新增结构化的来源字段范围。用户本人专业审阅不再作为开发前提，后续先版本化这些修订并做中文开发查询；独立人工金标与最终评价仍未完成。
+新增发现包括AN/SPN-35手册第三方转录中的不同频率端点精度及多个脉宽选项。主agent已另行打开转录页；原扫描未核对，可能涉及舍入、版本或模式，不将原值直接判错或覆盖。新版本已将取消事件的属性从service_entry改为lifecycle_event，并为未知功率记录来源字段范围。用户本人专业审阅不再作为开发前提；独立人工金标与最终评价仍未完成。
 
 已完成新主线[方法与公开实验两章草稿](../thesis/README.md)，8张表与220行机器可读结果绑定30份汇总/实现来源。导出与数字一致性检查通过；当前环境无XeLaTeX，尚未编译和目视检查PDF。旧稿完整保留并明确标为历史路线。
 
-新增[雷达记录查询接口](../experiments/radar_domain/adapter.py)：全包来源和审阅记录验证后，按主体、属性、事件、版本及原文条件精确查询。10条已有开发查询分别运行来源预览和独立事实模式，共20次调用；预览保留10条候选记录，独立事实模式返回0条。它保留区间双端点、未知/歧义、事件和条件、短引文及定位，不使用旧执行器取首个数字的聚合路径。接口尚未接入小模型或自然语言解析，不是模型正确率，也不是新增已核验知识。见[可重放演示](../artifacts/thesis_direction_review/radar_domain_pilot/manifest.json)。
+原[雷达记录查询接口](../experiments/radar_domain/adapter.py)及[10条显式查询演示](../artifacts/thesis_direction_review/radar_domain_pilot/manifest.json)保持冻结：来源预览保留候选，独立事实模式返回0条。新模型接入在单独的[开发执行环境](../experiments/radar_domain/development_environment.py)完成，未修改原接口的人工事实准入规则。
 
 此前准备的[12条人工审阅页](../artifacts/thesis_direction_review/radar_review_ui_v1/index.html)保留为可选工具，当前开发顺序已由用户改为AI代审，不要求用户现在填写。页面默认待审、署名留空，仅导出独立CSV草稿，不自动改仓库。第一轮只确认“来源快照的读法”，若将来声明独立人工事实，仍需真实审阅和一手来源。12条原候选/决定和12道答案留空的开发题保持不变。
 
 三条既有机构来源已尝试本地归档：DSCA文件取得原始HTML、文本和精确引文定位；Redstone 1981下载遇到TLS连接失败，1984返回内容未含原引文，均未作为本地验收证据。元数据见[来源归档记录](../artifacts/thesis_direction_review/radar_primary_screening_001_003/capture_manifest_v1.json)，全文留在被忽略的本地data目录。网页可读、文件可定位仍不等于真人完成核验。
 
-[领域评价设计版](../artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)规定四类题、同来源RAG/P/A/C、来源与型号家族连通分组、评分分母及QA交叉复核，配有空模板。它没有生成真实独立问题或答案，也未形成已冻结评价集。本轮未启动新训练、GPU推理或再次读取公开留出逐题数据。下一步依据已完成的AI审阅形成带来源范围的修订与开发材料，再检验中文问题到查询的最小适配；AI参考材料与独立人工评价分层报告。
+[领域评价设计版](../artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)规定四类题、同来源RAG/P/A/C、来源与型号家族连通分组、评分分母及QA交叉复核，配有空模板。它没有生成真实独立问题或答案，也未形成已冻结评价集。本轮仅运行前述12题开发推理，未训练、未重读公开留出逐题数据；AI参考材料与独立人工评价分层报告。
 
 ## 1. 当前阶段与历史证据
 

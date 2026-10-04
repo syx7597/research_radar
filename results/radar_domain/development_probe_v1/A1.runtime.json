@@ -1,0 +1,36 @@
+{
+  "label": "A1",
+  "status": "completed",
+  "seconds": 137.94411154699628,
+  "totals": {
+    "calls": 288,
+    "invalid_calls": 165,
+    "input_tokens": 603802,
+    "generated_tokens": 8770,
+    "total_tokens": 612572,
+    "questions": 12
+  },
+  "protocol_sha256": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702",
+  "output_sha256": "93ed6ecbb4482c66d4d3584f1a3e0760914c862d28d514605790346dd731d69b",
+  "scope": "12 exposed AI-reviewed development questions; interface compatibility only",
+  "config": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "max_calls": 24,
+    "agent_turn_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "model": {
+    "adapter": "results/agent_feedback/clean_sft_v1/model",
+    "program": false,
+    "files_sha256": {
+      "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+      "results/agent_feedback/clean_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+    }
+  },
+  "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+}
