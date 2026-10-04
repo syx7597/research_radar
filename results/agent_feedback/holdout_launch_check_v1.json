@@ -1,0 +1,64 @@
+{
+  "recorded_at_beijing": "2026-10-04T20:39:06.702700+08:00",
+  "jobs": [
+    {
+      "name": "clean_holdout_v1",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "child_pid": 12521,
+      "saved_questions": 32,
+      "expected_questions": 2000,
+      "heartbeat_age_seconds": 0.93,
+      "child_alive": true
+    },
+    {
+      "name": "recovery_holdout_v1",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "child_pid": 12522,
+      "saved_questions": 40,
+      "expected_questions": 2000,
+      "heartbeat_age_seconds": 0.92,
+      "child_alive": true
+    },
+    {
+      "name": "clean_holdout_seed20261004",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "child_pid": 12523,
+      "saved_questions": 40,
+      "expected_questions": 2000,
+      "heartbeat_age_seconds": 0.92,
+      "child_alive": true
+    },
+    {
+      "name": "recovery_holdout_seed20261004",
+      "status": "running",
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        3
+      ],
+      "child_pid": 12520,
+      "saved_questions": 24,
+      "expected_questions": 2000,
+      "heartbeat_age_seconds": 0.94,
+      "child_alive": true
+    }
+  ],
+  "holdout_analysis_started": false,
+  "program_job_started": false,
+  "scope": "launch health snapshot, no predictions or answer scores read"
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 12507,
+  "user": "syx",
+  "recorded_at_beijing": "2026-10-04T20:37:14.168178+08:00",
+  "log": "results/agent_feedback/holdout_controller_v1.log",
+  "preregistered_git_commit": "3e06845",
+  "protocol_sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+  "purpose": "five fixed models on holdout questions; separate full replay and scoring after complete generation",
+  "training": false,
+  "automatic_analysis": false
+}

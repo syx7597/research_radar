@@ -24,7 +24,9 @@
 
 原418恢复对仅4个分歧动作被拒，414个可执行；这个探针只检验错误诊断内容，不是整个恢复方法的成败门槛。结果不支持具体报错文字提供稳定增益；保留原正常反馈和恢复轨迹SFT，不追加消融、训练或奖励搜索。
 
-20:29（北京时间）已[冻结五模型留出协议](../results/agent_feedback/protocol_holdout_v1.json)：P和两续训种子的A/C，不选最佳种子。冻结时未读取留出文件；接下来先保存全部2000题预测并CPU回放，再读取答案，按题保留两种子联合结果计算区间。四路Agent各2.5小时、随后P0.5小时为最大预算，不是耗时预测；不追加训练。五条提前分歧的[CPU复核](../results/agent_feedback/feedback_batch_drift_review_v1.json)发现批内其他题已被遮蔽、批次人数/补齐长度发生变化，支持但不能证实数值漂移解释。见[诊断收束决定](../results/agent_feedback/feedback_diagnostic_decision_v1.json)。语义核验偏好训练继续暂缓；领域条件/区间/来源表示和人工验收仍待完成。
+20:29（北京时间）已[冻结五模型留出协议](../results/agent_feedback/protocol_holdout_v1.json)：P和两续训种子的A/C，不选最佳种子。冻结时未读取留出文件，协议先以提交`3e06845`推送GitHub；20:37启动question-only推理，全部使用syx。先保存全部2000题预测并CPU回放，再读取答案，按题保留两种子联合结果计算区间。四路Agent各2.5小时、随后P0.5小时为最大预算，不是耗时预测；不追加训练。生成控制器不会自动评分，完成后由显式分析阶段统一回放和评分。当前尚无留出成绩。
+
+五条提前分歧的[CPU复核](../results/agent_feedback/feedback_batch_drift_review_v1.json)发现批内其他题已被遮蔽、批次人数/补齐长度发生变化，支持但不能证实数值漂移解释。见[诊断收束决定](../results/agent_feedback/feedback_diagnostic_decision_v1.json)。语义核验偏好训练继续暂缓；领域条件/区间/来源表示和人工验收仍待完成。
 
 雷达首批12条事实的来源绑定全部通过，新增12条独立审阅记录和12道答案留空的流程开发题。原资料是6份二手网页快照，真人验收和独立事实准入均为0；机器检查不能证明事实真实。01–03另补了DSCA及Redstone机构来源的[AI预审](../artifacts/thesis_direction_review/radar_primary_screening_001_003/ai_screening.json)，用于区分系统/雷达与交付/部署事件，仍不能直接据此填雷达服役或初始能力年份。见[审阅工作流](research/RADAR_REVIEW_WORKFLOW.md)和[审计](../artifacts/thesis_direction_review/radar_review_workflow/audit_report.json)。
 
