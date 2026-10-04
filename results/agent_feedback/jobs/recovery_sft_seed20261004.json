@@ -41,7 +41,9 @@
     "results/agent_feedback/recovery_sft_seed20261004"
   ],
   "started_at": 1791042630.7225997,
-  "heartbeat_at": 1791042690.7442696,
-  "status": "running",
-  "finished_at": null
+  "heartbeat_at": 1791045781.3471773,
+  "status": "completed",
+  "finished_at": 1791045790.4252155,
+  "returncode": 0,
+  "gpu_seconds": 3159.702615737915
 }

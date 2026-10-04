@@ -1,0 +1,152 @@
+{
+  "recorded_at_utc": "2026-10-04T06:32:29.159115+00:00",
+  "review_type": "AI-assisted descriptive trace pre-review, not independently adjudicated human semantic labels",
+  "scope": "All 62 answer-correctness-changing pairs from the second continuation seed on the same frozen 500-question development set; unchanged pairs not semantically reviewed here.",
+  "coverage": {
+    "changed_pairs": 62,
+    "reviewed_pairs": 62,
+    "corrected": 44,
+    "regressed": 18,
+    "both_finished_pairs": 33,
+    "completion_status_changing_pairs": 29
+  },
+  "outcome_transition_matrix": {
+    "finished_wrong -> correct": 18,
+    "correct -> finished_wrong": 15,
+    "unfinished -> correct": 26,
+    "correct -> unfinished": 3
+  },
+  "accuracy_decomposition": {
+    "unfinished_to_correct": 26,
+    "correct_to_unfinished": 3,
+    "net_from_completion_status_switch": 23,
+    "finished_wrong_to_correct": 18,
+    "correct_to_finished_wrong": 15,
+    "net_where_both_finished": 3,
+    "overall_net_corrected": 26,
+    "interpretation": "Descriptive paired decomposition, not causal attribution or semantic improvement measurement."
+  },
+  "primary_observed_error_categories": {
+    "action_format_loop_after_query_failure": {
+      "corrected": 23,
+      "regressed": 1,
+      "total": 24
+    },
+    "answer_target_or_operator": {
+      "corrected": 3,
+      "regressed": 5,
+      "total": 8
+    },
+    "attribute_qualifier_binding": {
+      "regressed": 3,
+      "corrected": 2,
+      "total": 5
+    },
+    "concept_or_entity_scope": {
+      "corrected": 1,
+      "total": 1
+    },
+    "condition_value_or_operator": {
+      "regressed": 2,
+      "corrected": 1,
+      "total": 3
+    },
+    "dependency_type_and_finish_failure": {
+      "regressed": 1,
+      "total": 1
+    },
+    "literal_or_identifier": {
+      "corrected": 3,
+      "regressed": 1,
+      "total": 4
+    },
+    "query_search_loop_until_budget": {
+      "regressed": 1,
+      "corrected": 3,
+      "total": 4
+    },
+    "relation_direction_or_path": {
+      "regressed": 4,
+      "corrected": 7,
+      "total": 11
+    },
+    "set_or_dependency_composition": {
+      "corrected": 1,
+      "total": 1
+    }
+  },
+  "classification_uncertainty_counts": {
+    "low": 42,
+    "medium": 8,
+    "high": 12
+  },
+  "uncertainty_definition": "Confidence in the descriptive trace classification only; even low uncertainty is not a verified semantic-correctness label or a causal claim.",
+  "unfinished_to_correct_observations": {
+    "questions": 26,
+    "A_episodes_with_action_format_error_loop": 23,
+    "A_episodes_with_repeated_query_path_failure_without_action_format_loop": 3,
+    "interpretation": "C more often reaches finish; this does not establish that diagnostic feedback caused the improvement."
+  },
+  "condition_preservation_flags_on_answer_matching_traces": {
+    "C_corrected_pairs_with_observable_omission_bypass_or_entity_replacement": {
+      "count": 7,
+      "ids": [
+        "train:77317",
+        "train:42584",
+        "train:51372",
+        "train:61509",
+        "train:87675",
+        "train:1048",
+        "train:45885"
+      ]
+    },
+    "C_corrected_pair_with_additional_unverified_alias_substitution": {
+      "count": 1,
+      "ids": [
+        "train:32935"
+      ]
+    },
+    "A_answer_matching_regressed_pairs_with_condition_or_branch_flags": {
+      "count": 4,
+      "ids": [
+        "train:93107",
+        "train:5335",
+        "train:76510",
+        "train:77488"
+      ]
+    },
+    "interpretation": "Flags identify missing or altered explicit constraints requiring independent review. They are not adjudicated semantic errors, do not change benchmark labels, and are not a population semantic-error rate."
+  },
+  "question_reference_target_ambiguity_requires_human_review": {
+    "count": 1,
+    "ids": [
+      "train:76510"
+    ]
+  },
+  "observed_strength": "Both-seed answer-score gains coexist with fewer unfinished episodes; some C traces preserve the requested conditions while revising failed names, fields, or relation endpoints.",
+  "material_limit": "Selected answer-correct traces also omit or bypass conditions and comparisons. Answer-only reward may accept such shortcuts; answer matching alone cannot establish faithful multi-step reasoning.",
+  "decision": {
+    "allow_semantic_preference_training": false,
+    "allow_automatic_training_label_construction": false,
+    "formal_rl_approved_by_this_review": false,
+    "interpretation": "Retain existing benchmark metrics. Use these annotations only to plan independent semantic verification; a bounded implementation signal check is not formal effectiveness validation."
+  },
+  "limitations": [
+    "AI inspected saved actions and observations; no independent human annotation or counterfactual KB evaluation.",
+    "A program differing from the reference was not automatically classified as wrong.",
+    "Empty results, zero and no were not automatically treated as execution errors.",
+    "Question wording and reference intent can differ; uncertainty is preserved.",
+    "Selected changed pairs cannot measure overall semantic accuracy or establish a causal mechanism.",
+    "No dataset labels, training examples, original audit reports or frozen experiment code were changed."
+  ],
+  "inputs_sha256": {
+    "results/agent_feedback/replication_review_cases_seed20261004.jsonl": "39c2e69d997a66fdd3894512d636b5dfbe48a02381458807043b53258121ac7a",
+    "results/agent_feedback/recovery_vs_clean_dev_seed20261004.json": "9d368b4d162c80489d69454cbd3987560632955ecafaf2765fd193c7b19ff8d1",
+    "results/agent_feedback/replication_review_seed20261004.json": "e6b9e7835670cbc78bfa066f28e0510e81d06885d3f3bf36027aa772f53f4977"
+  },
+  "private_annotations": {
+    "path": "results/agent_feedback/replication_case_annotations_seed20261004.jsonl",
+    "sha256": "9c6b936de3c6ee2af81c24a093f7feff02424753a2299951312d0e566c5e3d71",
+    "count": 62
+  }
+}

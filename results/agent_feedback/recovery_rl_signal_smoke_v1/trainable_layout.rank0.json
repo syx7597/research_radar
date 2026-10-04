@@ -1,0 +1,7 @@
+{
+  "tensor_count": 504,
+  "elements_by_dtype": {
+    "torch.float32": 29933568
+  },
+  "measurement": "actual trainable LoRA tensors after trainer preparation; no dtype cast"
+}

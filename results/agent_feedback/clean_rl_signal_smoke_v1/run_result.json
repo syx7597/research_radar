@@ -1,0 +1,136 @@
+{
+  "status": "completed",
+  "seconds": 189.08251288199972,
+  "smoke": true,
+  "formal_result_eligible": false,
+  "model_artifact": null,
+  "world_size": 1,
+  "cuda_visible_devices": "0",
+  "rank0_max_memory_allocated": 15675688960,
+  "metrics": {
+    "train_runtime": 187.5388,
+    "train_samples_per_second": 0.341,
+    "train_steps_per_second": 0.011,
+    "train_loss": -9.313225746154785e-10,
+    "epoch": 1.0
+  },
+  "optimizer_steps": 2,
+  "seed": 20261003,
+  "sha256": {
+    "questions": "29485bcf05016c2e618085663c89139a77ceb59e7f4ee8c1bf734d53eae88b2f",
+    "gold": "2c1d811e95c17a58000bff0aa601b5fa7e2d6337aab58685aebd86ff50f8896c",
+    "eligible_ids": "910571fa639e8c0d3689e9dd213cbf12c4a2a1282b6eff1b300e224c7e288215",
+    "protocol": "9c7794b4a36049c36ad469572ba6f805e48fdc74f2b9d8c994cfdaaa48d80ec3",
+    "script": "924f2cc87b8eb131ad64fd55605e45b8fd683dd022bed229be10f0775e82b801",
+    "frozen_grpo_entry": "0adeef4b717ea1c5b7daab4f59162d838051f99d97847bbf363512950de13d75",
+    "environment": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "trl_trainer": "ec6ff9aa69de59237588aafe3de861342b78c3779a595d08a763eed120a3c406",
+    "trl_config": "68a927fb50b742f5cc35d6e094392f54e262d33a16f5cdb2f0cd740bb51c09fe",
+    "transformers_trainer": "d64bcb33d318cc161935c5d86cfca9d489e4802e8deae7aa2e1cbdd348fb8233",
+    "transformers_trainer_callback": "a9703b60f3d585627054ed976eca3dbea69fddcfd4eb01b1cc19bff67bccf00a",
+    "adapter_config": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "adapter_weights": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d"
+  },
+  "native_contract": {
+    "completion_budget_includes_tool_observations": true,
+    "total_completion_token_cap": 4096,
+    "per_turn_max_new_tokens": 192,
+    "max_tool_calling_iterations": 24,
+    "episode_max_calls": 24,
+    "multiple_tool_calls_per_turn": "native_trl_sequential",
+    "unknown_tools_and_parse_errors": "native_trl_not_episode_calls",
+    "post_finish_generation": "native_trl_until_no_tool_call_or_budget"
+  },
+  "learning_signal": {
+    "interpretation": "mechanical RL learning-signal evidence only; not a quality gain",
+    "group_size": 4,
+    "question_groups": 16,
+    "rollouts": 64,
+    "group_question_ids_in_generation_order": [
+      "train:74337",
+      "train:55509",
+      "train:80435",
+      "train:66535",
+      "train:69373",
+      "train:65388",
+      "train:22584",
+      "train:37105",
+      "train:14248",
+      "train:8239",
+      "train:40388",
+      "train:52340",
+      "train:72875",
+      "train:86665",
+      "train:88962",
+      "train:93615"
+    ],
+    "unique_questions_observed": 16,
+    "eligible_questions": 16,
+    "all_eligible_questions_observed": true,
+    "unobserved_eligible_ids": [],
+    "mixed_reward_groups": 5,
+    "all_zero_reward_groups": 1,
+    "all_one_reward_groups": 10,
+    "all_rewards_and_advantages_finite": true,
+    "all_rewards_binary": true,
+    "groups_with_unmasked_nonzero_advantage": 5,
+    "zero_loss_token_rollouts": 0,
+    "effective_signal_tokens": 4771,
+    "native_retained_completion_tokens_including_observations": 42726,
+    "optimizer_steps_observed": 2,
+    "all_observed_gradients_finite": true,
+    "finite_nonzero_gradient_steps": 2,
+    "positive_lr_finite_nonzero_gradient_steps": 1,
+    "optimizer_observations": [
+      {
+        "optimizer_step": 1,
+        "gradient_scope": "rank-local, after native clipping, before optimizer.step",
+        "parameters_with_gradient": 504,
+        "all_gradients_finite": true,
+        "gradient_l2_after_clip": 0.12629202322278554,
+        "learning_rates": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "optimizer_step": 2,
+        "gradient_scope": "rank-local, after native clipping, before optimizer.step",
+        "parameters_with_gradient": 504,
+        "all_gradients_finite": true,
+        "gradient_l2_after_clip": 0.13612446562768313,
+        "learning_rates": [
+          5e-06,
+          5e-06
+        ]
+      }
+    ],
+    "trainable_parameter_update": {
+      "tensor_count": 504,
+      "elements": 29933568,
+      "elements_by_dtype": {
+        "torch.float32": 29933568
+      },
+      "sha256_before": "fe155815e765097925496d9ad84f2cfa228d92337c647e0d3bbaf3e039ed3e82",
+      "sha256_after": "ad4bff84ab5f68ddb366ea015b6f5eb3504fc9edcdef4de873e076ead966e80d",
+      "all_before_finite": true,
+      "all_after_finite": true,
+      "changed_tensors": 504,
+      "changed_elements": 29932552,
+      "l2_delta": 0.018581812791099918,
+      "max_abs_delta": 5.0067901611328125e-06,
+      "audit_path": "results/agent_feedback/clean_rl_signal_smoke_v1/trainable_parameter_signal.rank0.json",
+      "audit_sha256": "061a49bef41e7b1cd00928b2d7e1f4122ba7aecbd4f2c21834682bdc32db3421"
+    },
+    "verified_nonzero_learning_signal": true,
+    "loss_note": "A group-averaged GRPO loss may equal zero while its gradient is nonzero.",
+    "coverage_note": "Input size is not rollout coverage; full small-smoke coverage must be checked separately.",
+    "gradient_parameter_scope": "rank0",
+    "optimizer_callbacks_match_trainer_steps": true,
+    "reward_groups_audit_path": "results/agent_feedback/clean_rl_signal_smoke_v1/reward_group_signal.jsonl",
+    "reward_groups_audit_sha256": "f4b6c70be70c65231ad0dacdb0e54b784d559b1a812d3bc5314053effc2d1b2e",
+    "elapsed_seconds_per_question_group": 11.817657055124982,
+    "elapsed_seconds_per_rollout": 2.9544142637812456,
+    "timing_note": "Whole trainer runtime including gradient/parameter audit; retained token totals are not GPU FLOPs."
+  }
+}

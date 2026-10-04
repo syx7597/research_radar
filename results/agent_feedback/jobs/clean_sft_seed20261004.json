@@ -41,7 +41,9 @@
     "results/agent_feedback/clean_sft_seed20261004"
   ],
   "started_at": 1791042630.7215462,
-  "heartbeat_at": 1791042690.743642,
-  "status": "running",
-  "finished_at": null
+  "heartbeat_at": 1791045661.3051786,
+  "status": "completed",
+  "finished_at": 1791045665.9765818,
+  "returncode": 0,
+  "gpu_seconds": 3035.255035638809
 }

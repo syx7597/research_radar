@@ -1,0 +1,43 @@
+{
+  "name": "recovery_dev_seed20261004",
+  "supervisor_pid": 7823,
+  "child_pid": 7824,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    1
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.inference",
+    "generate",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--batch-size",
+    "8",
+    "--questions",
+    "data/agent_feedback/dev.questions.jsonl",
+    "--seed",
+    "20261003",
+    "--max-context",
+    "8192",
+    "--max-generated",
+    "2048",
+    "--limit",
+    "0",
+    "--offset",
+    "0",
+    "--adapter",
+    "results/agent_feedback/recovery_sft_seed20261004/model",
+    "--output",
+    "results/agent_feedback/recovery_dev_seed20261004.jsonl"
+  ],
+  "started_at": 1791045791.8320153,
+  "heartbeat_at": 1791047622.245705,
+  "status": "completed",
+  "finished_at": 1791047631.0731342,
+  "returncode": 0,
+  "gpu_seconds": 1839.2411189079285
+}

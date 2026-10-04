@@ -1,0 +1,124 @@
+{
+  "version": "rl_stage_decision_v1",
+  "recorded_at_beijing": "2026-10-04T16:39:29.708399+08:00",
+  "stage_status": "completed_and_audited",
+  "decision": {
+    "continue_rl_training": false,
+    "additional_rl_seeds": false,
+    "primary_method_family": "C: recovery-trajectory SFT",
+    "role_of_B_D": "completed controlled RL extension, retained including negative and uncertain results",
+    "select_best_seed_checkpoint": false,
+    "holdout_evaluation_started": false,
+    "semantic_preference_training": false
+  },
+  "matched_first_seed_correct_out_of_500": {
+    "P": 376,
+    "A": 392,
+    "B": 390,
+    "C": 404,
+    "D": 410
+  },
+  "second_continuation_seed_correct_out_of_500": {
+    "A": 386,
+    "C": 412
+  },
+  "comparisons": {
+    "D_vs_B": {
+      "delta_pp": 4.0,
+      "ci_pp": [
+        1.2,
+        6.8
+      ],
+      "paired_outcomes": {
+        "corrected": 37,
+        "regressed": 17,
+        "both_correct": 373,
+        "both_wrong": 73,
+        "net_corrected": 20
+      },
+      "total_token_reduction_fraction": 0.006383742090961819,
+      "investment_threshold_passed": true
+    },
+    "B_vs_A": {
+      "delta_pp": -0.4,
+      "ci_pp": [
+        -1.6049999999999984,
+        0.8
+      ],
+      "paired_outcomes": {
+        "corrected": 4,
+        "regressed": 6,
+        "both_correct": 386,
+        "both_wrong": 104,
+        "net_corrected": -2
+      },
+      "total_token_reduction_fraction": 0.032061664932086065,
+      "investment_threshold_passed": false
+    },
+    "D_vs_C": {
+      "delta_pp": 1.2,
+      "ci_pp": [
+        -0.8,
+        3.2
+      ],
+      "paired_outcomes": {
+        "corrected": 16,
+        "regressed": 10,
+        "both_correct": 394,
+        "both_wrong": 80,
+        "net_corrected": 6
+      },
+      "total_token_reduction_fraction": -0.02382760720672472,
+      "investment_threshold_passed": false
+    },
+    "D_vs_P": {
+      "delta_pp": 6.8,
+      "ci_pp": [
+        3.2,
+        10.4
+      ],
+      "paired_outcomes": {
+        "corrected": 61,
+        "regressed": 27,
+        "both_correct": 349,
+        "both_wrong": 63,
+        "net_corrected": 34
+      },
+      "total_token_reduction_fraction": -25.25546829653075,
+      "investment_threshold_passed": true
+    }
+  },
+  "reason": "Both RL increments (B vs A and D vs C) fail the pre-existing practical investment threshold. D vs B remains positive but measures the recovery-training contrast after RL, not the incremental benefit of RL. Retain recovery SFT as the main recipe and do not expand this RL trial.",
+  "audit": {
+    "comparisons_reproduced": true,
+    "replayed_B_D_episodes": 1000,
+    "replay_mismatches": 0
+  },
+  "gpu_hours": {
+    "formal_pair_training_and_dev": 2.523944180475341,
+    "cumulative_recorded_jobs": 13.882923943267928,
+    "pilot_cap": 72
+  },
+  "next_steps": [
+    "Complete a bounded mechanism-diagnostic design before claiming causal use of execution feedback; no new algorithm branch.",
+    "Freeze the reporting and final method protocol before opening the 2000-question project holdout.",
+    "Continue independent radar fact/QA verification and domain adapter planning; automatic existing QA is not independent gold."
+  ],
+  "limitations": [
+    "This single-seed 200-update trial does not establish that RL can never help.",
+    "The two continuation seeds share an initial checkpoint and development questions; do not pool them as independent samples.",
+    "Do not compare first-seed D with second-seed C as a matched RL effect.",
+    "Answer equality does not establish semantic condition preservation; AI flags are not adjudicated labels."
+  ],
+  "inputs_sha256": {
+    "results/agent_feedback/rl_paired_review_v1.json": "6ed97a9cabc54a06d909644d4c8b289cd9dfec2c29423031e2ef19cc59ffeeb3",
+    "results/agent_feedback/rl_paired_v1_summary.json": "6628ec62485b3701ec27d48d9303a0cda8a499627f99f0aa0bd69632536810aa",
+    "results/agent_feedback/recovery_vs_clean_dev.json": "a530c12843a6667cc7637a76364334e8a8126b1f4be54405137e22aa2845a0cb",
+    "results/agent_feedback/recovery_vs_clean_dev_seed20261004.json": "9d368b4d162c80489d69454cbd3987560632955ecafaf2765fd193c7b19ff8d1",
+    "results/agent_feedback/replication_case_analysis_seed20261004.json": "d2b256e12298ad738496af5c0302b65bf77703a2fc60c8d797b63b208d9660f5",
+    "results/agent_feedback/jobs/clean_grpo_v1.json": "36a605852de78626c95d8718156fe178b8deff81515ba83d0b41bff645bd23bd",
+    "results/agent_feedback/jobs/recovery_grpo_v1.json": "2127aa48488328bd24dfdb65078ac03fa566f79675e2176e8f699be1c947ecce",
+    "results/agent_feedback/jobs/clean_grpo_dev_v1.json": "b5c985d9a67c22fa0224d0d27f483dd71fced41bd9eb0e1aa8dc537245abdc0f",
+    "results/agent_feedback/jobs/recovery_grpo_dev_v1.json": "5f2d9c5d01a04e81a33f2298c04be17a495191531f7cc0b408cc78e65064f3c5"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "checked_at_beijing": "2026-10-04T13:38:39.918883+08:00",
+  "scope": "Status and score recomputation only; no new training, generation, holdout reading, or second-seed trajectory replay",
+  "checks": {
+    "frozen_input_and_code_hashes_match": true,
+    "development_coverage_complete": true,
+    "comparison_reproduced": true,
+    "comparison_source_hashes_match": true,
+    "all_four_jobs_completed_successfully_as_syx": true
+  },
+  "jobs": {
+    "clean_sft_seed20261004": {
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "finished_at_beijing": "2026-10-04T00:41:05.976582+08:00",
+      "gpu_hours": 0.8431263987885581
+    },
+    "recovery_sft_seed20261004": {
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "gpus": [
+        1
+      ],
+      "finished_at_beijing": "2026-10-04T00:43:10.425215+08:00",
+      "gpu_hours": 0.8776951710383097
+    },
+    "clean_dev_seed20261004": {
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "finished_at_beijing": "2026-10-04T01:07:50.601570+08:00",
+      "gpu_hours": 0.4107668662071228
+    },
+    "recovery_dev_seed20261004": {
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "gpus": [
+        1
+      ],
+      "finished_at_beijing": "2026-10-04T01:13:51.073134+08:00",
+      "gpu_hours": 0.5109003108077579
+    }
+  },
+  "replication_gpu_hours": 2.6424887468417486,
+  "seeds": [
+    {
+      "seed": 20261003,
+      "A_correct": 392,
+      "C_correct": 404,
+      "questions": 500,
+      "accuracy_delta_pp": 2.4,
+      "question_bootstrap_ci_pp": [
+        -0.2,
+        5.0
+      ]
+    },
+    {
+      "seed": 20261004,
+      "A_correct": 386,
+      "C_correct": 412,
+      "questions": 500,
+      "accuracy_delta_pp": 5.2,
+      "question_bootstrap_ci_pp": [
+        2.2,
+        8.2
+      ]
+    }
+  ],
+  "replication_outcome_transition_matrix": {
+    "correct -> correct": 368,
+    "finished_wrong -> finished_wrong": 30,
+    "unfinished -> unfinished": 12,
+    "finished_wrong -> correct": 18,
+    "correct -> finished_wrong": 15,
+    "unfinished -> correct": 26,
+    "unfinished -> finished_wrong": 19,
+    "finished_wrong -> unfinished": 9,
+    "correct -> unfinished": 3
+  },
+  "replication_generation_seconds": {
+    "A": 1466.236546387001,
+    "C": 1827.503451261
+  },
+  "replication_total_token_reduction_fraction": 0.05554385285824426,
+  "limitations": [
+    "Only continuation training seed changed; same initial checkpoint and data",
+    "Same 500 development questions across both seeds; not 1000 independent questions",
+    "Question bootstrap conditions on checkpoints; not a training-seed confidence interval"
+  ],
+  "next_step": "Review changed cases and feedback attribution before deciding paired RL; semantic verification preference training remains paused"
+}

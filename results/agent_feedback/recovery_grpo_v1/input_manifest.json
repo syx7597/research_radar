@@ -1,0 +1,67 @@
+{
+  "status": "preflight",
+  "training_questions": 4999,
+  "smoke": false,
+  "formal_result_eligible": true,
+  "planned_optimizer_steps": 200,
+  "native_contract_recorded_in_protocol": true,
+  "native_contract": {
+    "completion_budget_includes_tool_observations": true,
+    "total_completion_token_cap": 4096,
+    "per_turn_max_new_tokens": 192,
+    "max_tool_calling_iterations": 24,
+    "episode_max_calls": 24,
+    "multiple_tool_calls_per_turn": "native_trl_sequential",
+    "unknown_tools_and_parse_errors": "native_trl_not_episode_calls",
+    "post_finish_generation": "native_trl_until_no_tool_call_or_budget"
+  },
+  "tokenizer_checks": {
+    "tool_names": [
+      "finish",
+      "step"
+    ],
+    "schemas_equal_sft": true,
+    "prompt_tokens_max": 833,
+    "chat_template_replaced": false,
+    "template_probe_tokens_equal": true,
+    "canonical_action_parser_pass": true,
+    "total_completion_token_cap_including_observations": 4096,
+    "temporary_context_bound_with_extra_turn": 5121,
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+  },
+  "config": {
+    "model": "models/qwen2.5-3b-instruct",
+    "adapter": "results/agent_feedback/recovery_sft_v1/model",
+    "questions": "data/agent_feedback/train.questions.jsonl",
+    "gold": "data/agent_feedback/train.gold.jsonl",
+    "eligible_ids": "data/agent_feedback/train.success.jsonl",
+    "protocol": "results/agent_feedback/protocol_rl_native.json",
+    "kb": "datasets/kqa_pro/kb.json",
+    "output": "results/agent_feedback/recovery_grpo_v1",
+    "batch_size": 1,
+    "accumulation": 4,
+    "seed": 20261003,
+    "preflight": false,
+    "smoke_steps": null
+  },
+  "sha256": {
+    "questions": "29485bcf05016c2e618085663c89139a77ceb59e7f4ee8c1bf734d53eae88b2f",
+    "gold": "2c1d811e95c17a58000bff0aa601b5fa7e2d6337aab58685aebd86ff50f8896c",
+    "eligible_ids": "e657aac461410424115355ad4868cc8d8d4988ae59f59757b008d4cf9e941598",
+    "protocol": "9c7794b4a36049c36ad469572ba6f805e48fdc74f2b9d8c994cfdaaa48d80ec3",
+    "script": "924f2cc87b8eb131ad64fd55605e45b8fd683dd022bed229be10f0775e82b801",
+    "frozen_grpo_entry": "0adeef4b717ea1c5b7daab4f59162d838051f99d97847bbf363512950de13d75",
+    "environment": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "trl_trainer": "ec6ff9aa69de59237588aafe3de861342b78c3779a595d08a763eed120a3c406",
+    "trl_config": "68a927fb50b742f5cc35d6e094392f54e262d33a16f5cdb2f0cd740bb51c09fe",
+    "transformers_trainer": "d64bcb33d318cc161935c5d86cfca9d489e4802e8deae7aa2e1cbdd348fb8233",
+    "transformers_trainer_callback": "a9703b60f3d585627054ed976eca3dbea69fddcfd4eb01b1cc19bff67bccf00a"
+  },
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "trl": "1.14.1"
+  }
+}

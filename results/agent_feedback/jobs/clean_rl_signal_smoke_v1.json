@@ -1,0 +1,40 @@
+{
+  "name": "clean_rl_signal_smoke_v1",
+  "supervisor_pid": 10488,
+  "child_pid": 10490,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    0
+  ],
+  "command": [
+    "env",
+    "CPATH=/home/syx/research_radar_agent/.deps/python-dev/extracted/usr/include/python3.10:/home/syx/research_radar_agent/.deps/python-dev/extracted/usr/include",
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.agent_feedback.train_grpo_signal",
+    "--model",
+    "models/qwen2.5-3b-instruct",
+    "--adapter",
+    "results/agent_feedback/clean_sft_v1/model",
+    "--output",
+    "results/agent_feedback/clean_rl_signal_smoke_v1",
+    "--eligible-ids",
+    "data/agent_feedback/rl_signal_v1.ids.jsonl",
+    "--seed",
+    "20261003",
+    "--batch-size",
+    "1",
+    "--accumulation",
+    "32",
+    "--smoke-steps",
+    "2"
+  ],
+  "started_at": 1791095653.4308913,
+  "heartbeat_at": 1791095853.4906657,
+  "status": "completed",
+  "finished_at": 1791095855.7598536,
+  "returncode": 0,
+  "gpu_seconds": 202.3289623260498
+}

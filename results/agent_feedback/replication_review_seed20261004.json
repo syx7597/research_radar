@@ -1,0 +1,954 @@
+{
+  "recorded_at_utc": "2026-10-04T06:23:34.544716+00:00",
+  "scope": "CPU replay of all 1000 second-seed dev episodes and recomparison of both seeds; no inference, training or holdout",
+  "pythonhashseed": "20261003",
+  "training": {
+    "20261003": {
+      "A": {
+        "config": {
+          "model": "models/qwen2.5-3b-instruct",
+          "data": "data/agent_feedback/continuation/A.jsonl",
+          "output": "results/agent_feedback/clean_sft_v1",
+          "adapter": "results/agent_feedback/initial_sft_v1/model",
+          "program": false,
+          "pretokenized": true,
+          "continuation_manifest": "results/agent_feedback/continuation_data.json",
+          "epochs": 1.0,
+          "max_steps": -1,
+          "batch_size": 2,
+          "accumulation": 8,
+          "max_length": 8192,
+          "learning_rate": 0.0001,
+          "seed": 20261003,
+          "limit": 0,
+          "tokenize_only": false
+        },
+        "versions": {
+          "torch": "2.6.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2",
+          "accelerate": "1.15.0",
+          "trl": "1.14.1"
+        },
+        "seed": 20261003,
+        "actual_supervised_tokens": 788534,
+        "actual_input_tokens": 9135350,
+        "microbatches": 2886,
+        "seconds": 3017.7798527449995,
+        "initial_adapter_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+        "continuation": {
+          "arm": "A",
+          "manifest_sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+          "artifact_sha256": "8b8ff38b211aa88859896340b4f13a97dbcfa615863f488fe18901eaeeac3c72",
+          "expected_supervised_tokens": 788534,
+          "adapter_config_sha256": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+          "adapter_weights_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+          "tokenizer_files_sha256": {
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+            "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+          }
+        }
+      },
+      "C": {
+        "config": {
+          "model": "models/qwen2.5-3b-instruct",
+          "data": "data/agent_feedback/continuation/C.jsonl",
+          "output": "results/agent_feedback/recovery_sft_v1",
+          "adapter": "results/agent_feedback/initial_sft_v1/model",
+          "program": false,
+          "pretokenized": true,
+          "continuation_manifest": "results/agent_feedback/continuation_data.json",
+          "epochs": 1.0,
+          "max_steps": -1,
+          "batch_size": 2,
+          "accumulation": 8,
+          "max_length": 8192,
+          "learning_rate": 0.0001,
+          "seed": 20261003,
+          "limit": 0,
+          "tokenize_only": false
+        },
+        "versions": {
+          "torch": "2.6.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2",
+          "accelerate": "1.15.0",
+          "trl": "1.14.1"
+        },
+        "seed": 20261003,
+        "actual_supervised_tokens": 788534,
+        "actual_input_tokens": 9520876,
+        "microbatches": 2886,
+        "seconds": 3145.7201287140015,
+        "initial_adapter_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+        "continuation": {
+          "arm": "C",
+          "manifest_sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+          "artifact_sha256": "58b7360b5c3f58db6c669075a5541888d011556a496ede2171aa4d24978fb48d",
+          "expected_supervised_tokens": 788534,
+          "adapter_config_sha256": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+          "adapter_weights_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+          "tokenizer_files_sha256": {
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+            "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+          }
+        }
+      }
+    },
+    "20261004": {
+      "A": {
+        "config": {
+          "model": "models/qwen2.5-3b-instruct",
+          "data": "data/agent_feedback/continuation/A.jsonl",
+          "output": "results/agent_feedback/clean_sft_seed20261004",
+          "adapter": "results/agent_feedback/initial_sft_v1/model",
+          "program": false,
+          "pretokenized": true,
+          "continuation_manifest": "results/agent_feedback/continuation_data.json",
+          "epochs": 1.0,
+          "max_steps": -1,
+          "batch_size": 2,
+          "accumulation": 8,
+          "max_length": 8192,
+          "learning_rate": 0.0001,
+          "seed": 20261004,
+          "limit": 0,
+          "tokenize_only": false
+        },
+        "versions": {
+          "torch": "2.6.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2",
+          "accelerate": "1.15.0",
+          "trl": "1.14.1"
+        },
+        "seed": 20261004,
+        "actual_supervised_tokens": 788534,
+        "actual_input_tokens": 9135350,
+        "microbatches": 2886,
+        "seconds": 3024.353821482,
+        "initial_adapter_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+        "continuation": {
+          "arm": "A",
+          "manifest_sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+          "artifact_sha256": "8b8ff38b211aa88859896340b4f13a97dbcfa615863f488fe18901eaeeac3c72",
+          "expected_supervised_tokens": 788534,
+          "adapter_config_sha256": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+          "adapter_weights_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+          "tokenizer_files_sha256": {
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+            "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+          }
+        }
+      },
+      "C": {
+        "config": {
+          "model": "models/qwen2.5-3b-instruct",
+          "data": "data/agent_feedback/continuation/C.jsonl",
+          "output": "results/agent_feedback/recovery_sft_seed20261004",
+          "adapter": "results/agent_feedback/initial_sft_v1/model",
+          "program": false,
+          "pretokenized": true,
+          "continuation_manifest": "results/agent_feedback/continuation_data.json",
+          "epochs": 1.0,
+          "max_steps": -1,
+          "batch_size": 2,
+          "accumulation": 8,
+          "max_length": 8192,
+          "learning_rate": 0.0001,
+          "seed": 20261004,
+          "limit": 0,
+          "tokenize_only": false
+        },
+        "versions": {
+          "torch": "2.6.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2",
+          "accelerate": "1.15.0",
+          "trl": "1.14.1"
+        },
+        "seed": 20261004,
+        "actual_supervised_tokens": 788534,
+        "actual_input_tokens": 9520876,
+        "microbatches": 2886,
+        "seconds": 3148.3273325400005,
+        "initial_adapter_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+        "continuation": {
+          "arm": "C",
+          "manifest_sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+          "artifact_sha256": "58b7360b5c3f58db6c669075a5541888d011556a496ede2171aa4d24978fb48d",
+          "expected_supervised_tokens": 788534,
+          "adapter_config_sha256": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+          "adapter_weights_sha256": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+          "tokenizer_files_sha256": {
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+            "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+          }
+        }
+      }
+    }
+  },
+  "comparison_exactly_reproduced": true,
+  "comparisons_by_continuation_seed": {
+    "20261003": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 500,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 500,
+          "correct": 392,
+          "accuracy": 0.784,
+          "finished": 446,
+          "finish_rate": 0.892,
+          "failed_to_finish": 54,
+          "totals": {
+            "calls": 3957,
+            "input_tokens": 5414397,
+            "generated_tokens": 88374,
+            "invalid_calls": 1026,
+            "total_tokens": 5502771
+          },
+          "means": {
+            "calls": 7.914,
+            "input_tokens": 10828.794,
+            "generated_tokens": 176.748,
+            "invalid_calls": 2.052,
+            "total_tokens": 11005.542
+          },
+          "stop_reasons": {
+            "finished": 446,
+            "call_budget": 54
+          }
+        },
+        "candidate": {
+          "questions": 500,
+          "correct": 404,
+          "accuracy": 0.808,
+          "finished": 476,
+          "finish_rate": 0.952,
+          "failed_to_finish": 24,
+          "totals": {
+            "calls": 3732,
+            "input_tokens": 5073966,
+            "generated_tokens": 95206,
+            "invalid_calls": 395,
+            "total_tokens": 5169172
+          },
+          "means": {
+            "calls": 7.464,
+            "input_tokens": 10147.932,
+            "generated_tokens": 190.412,
+            "invalid_calls": 0.79,
+            "total_tokens": 10338.344
+          },
+          "stop_reasons": {
+            "finished": 476,
+            "call_budget": 24
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 29,
+        "regressed": 17,
+        "both_correct": 375,
+        "both_wrong": 79,
+        "net_corrected": 12
+      },
+      "accuracy_delta_pp": 2.4,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          -0.2,
+          5.0
+        ],
+        "interval_assessment": "includes_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "pilot_investment_decision": {
+        "rule": {
+          "accuracy_gain_pp": 2.0,
+          "or_accuracy_loss_at_most_pp": 1.0,
+          "and_total_inference_token_reduction_fraction": 0.2
+        },
+        "accuracy_threshold_passed": true,
+        "efficiency_threshold_passed": false,
+        "continue_investment": true,
+        "total_inference_token_reduction_fraction": 0.060623820253468685,
+        "interpretation": "development pilot investment decision only; passing is not statistical significance or a formal effectiveness claim",
+        "zero_baseline_token_policy": "efficiency branch unavailable when baseline total tokens are zero"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "A failed episode remains in the full denominator. Pilot thresholds and bootstrap evidence are reported separately; neither measures cross-seed reproducibility."
+    },
+    "20261004": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 500,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 500,
+          "correct": 386,
+          "accuracy": 0.772,
+          "finished": 443,
+          "finish_rate": 0.886,
+          "failed_to_finish": 57,
+          "totals": {
+            "calls": 4020,
+            "input_tokens": 5526207,
+            "generated_tokens": 85035,
+            "invalid_calls": 1061,
+            "total_tokens": 5611242
+          },
+          "means": {
+            "calls": 8.04,
+            "input_tokens": 11052.414,
+            "generated_tokens": 170.07,
+            "invalid_calls": 2.122,
+            "total_tokens": 11222.484
+          },
+          "stop_reasons": {
+            "finished": 443,
+            "call_budget": 57
+          }
+        },
+        "candidate": {
+          "questions": 500,
+          "correct": 412,
+          "accuracy": 0.824,
+          "finished": 476,
+          "finish_rate": 0.952,
+          "failed_to_finish": 24,
+          "totals": {
+            "calls": 3764,
+            "input_tokens": 5198474,
+            "generated_tokens": 101098,
+            "invalid_calls": 349,
+            "total_tokens": 5299572
+          },
+          "means": {
+            "calls": 7.528,
+            "input_tokens": 10396.948,
+            "generated_tokens": 202.196,
+            "invalid_calls": 0.698,
+            "total_tokens": 10599.144
+          },
+          "stop_reasons": {
+            "finished": 476,
+            "call_budget": 23,
+            "generation_budget": 1
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 44,
+        "regressed": 18,
+        "both_correct": 368,
+        "both_wrong": 70,
+        "net_corrected": 26
+      },
+      "accuracy_delta_pp": 5.2,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          2.2,
+          8.2
+        ],
+        "interval_assessment": "entirely_above_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "pilot_investment_decision": {
+        "rule": {
+          "accuracy_gain_pp": 2.0,
+          "or_accuracy_loss_at_most_pp": 1.0,
+          "and_total_inference_token_reduction_fraction": 0.2
+        },
+        "accuracy_threshold_passed": true,
+        "efficiency_threshold_passed": false,
+        "continue_investment": true,
+        "total_inference_token_reduction_fraction": 0.05554385285824426,
+        "interpretation": "development pilot investment decision only; passing is not statistical significance or a formal effectiveness claim",
+        "zero_baseline_token_policy": "efficiency branch unavailable when baseline total tokens are zero"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "A failed episode remains in the full denominator. Pilot thresholds and bootstrap evidence are reported separately; neither measures cross-seed reproducibility."
+    }
+  },
+  "program_comparisons_by_continuation_seed": {
+    "20261003": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 500,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 500,
+          "correct": 376,
+          "accuracy": 0.752,
+          "finished": 417,
+          "finish_rate": 0.834,
+          "failed_to_finish": 83,
+          "totals": {
+            "calls": 500,
+            "input_tokens": 173945,
+            "generated_tokens": 27626,
+            "invalid_calls": 83,
+            "total_tokens": 201571
+          },
+          "means": {
+            "calls": 1.0,
+            "input_tokens": 347.89,
+            "generated_tokens": 55.252,
+            "invalid_calls": 0.166,
+            "total_tokens": 403.142
+          },
+          "stop_reasons": {
+            "program_completed": 417,
+            "program_error": 83
+          }
+        },
+        "candidate": {
+          "questions": 500,
+          "correct": 404,
+          "accuracy": 0.808,
+          "finished": 476,
+          "finish_rate": 0.952,
+          "failed_to_finish": 24,
+          "totals": {
+            "calls": 3732,
+            "input_tokens": 5073966,
+            "generated_tokens": 95206,
+            "invalid_calls": 395,
+            "total_tokens": 5169172
+          },
+          "means": {
+            "calls": 7.464,
+            "input_tokens": 10147.932,
+            "generated_tokens": 190.412,
+            "invalid_calls": 0.79,
+            "total_tokens": 10338.344
+          },
+          "stop_reasons": {
+            "finished": 476,
+            "call_budget": 24
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 56,
+        "regressed": 28,
+        "both_correct": 348,
+        "both_wrong": 68,
+        "net_corrected": 28
+      },
+      "accuracy_delta_pp": 5.6,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          2.0,
+          9.0
+        ],
+        "interval_assessment": "entirely_above_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "pilot_investment_decision": {
+        "rule": {
+          "accuracy_gain_pp": 2.0,
+          "or_accuracy_loss_at_most_pp": 1.0,
+          "and_total_inference_token_reduction_fraction": 0.2
+        },
+        "accuracy_threshold_passed": true,
+        "efficiency_threshold_passed": false,
+        "continue_investment": true,
+        "total_inference_token_reduction_fraction": -24.644423056888144,
+        "interpretation": "development pilot investment decision only; passing is not statistical significance or a formal effectiveness claim",
+        "zero_baseline_token_policy": "efficiency branch unavailable when baseline total tokens are zero"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "A failed episode remains in the full denominator. Pilot thresholds and bootstrap evidence are reported separately; neither measures cross-seed reproducibility."
+    },
+    "20261004": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 500,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 500,
+          "correct": 376,
+          "accuracy": 0.752,
+          "finished": 417,
+          "finish_rate": 0.834,
+          "failed_to_finish": 83,
+          "totals": {
+            "calls": 500,
+            "input_tokens": 173945,
+            "generated_tokens": 27626,
+            "invalid_calls": 83,
+            "total_tokens": 201571
+          },
+          "means": {
+            "calls": 1.0,
+            "input_tokens": 347.89,
+            "generated_tokens": 55.252,
+            "invalid_calls": 0.166,
+            "total_tokens": 403.142
+          },
+          "stop_reasons": {
+            "program_completed": 417,
+            "program_error": 83
+          }
+        },
+        "candidate": {
+          "questions": 500,
+          "correct": 412,
+          "accuracy": 0.824,
+          "finished": 476,
+          "finish_rate": 0.952,
+          "failed_to_finish": 24,
+          "totals": {
+            "calls": 3764,
+            "input_tokens": 5198474,
+            "generated_tokens": 101098,
+            "invalid_calls": 349,
+            "total_tokens": 5299572
+          },
+          "means": {
+            "calls": 7.528,
+            "input_tokens": 10396.948,
+            "generated_tokens": 202.196,
+            "invalid_calls": 0.698,
+            "total_tokens": 10599.144
+          },
+          "stop_reasons": {
+            "finished": 476,
+            "call_budget": 23,
+            "generation_budget": 1
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 56,
+        "regressed": 20,
+        "both_correct": 356,
+        "both_wrong": 68,
+        "net_corrected": 36
+      },
+      "accuracy_delta_pp": 7.2,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          3.8,
+          10.4
+        ],
+        "interval_assessment": "entirely_above_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "pilot_investment_decision": {
+        "rule": {
+          "accuracy_gain_pp": 2.0,
+          "or_accuracy_loss_at_most_pp": 1.0,
+          "and_total_inference_token_reduction_fraction": 0.2
+        },
+        "accuracy_threshold_passed": true,
+        "efficiency_threshold_passed": false,
+        "continue_investment": true,
+        "total_inference_token_reduction_fraction": -25.29134151241994,
+        "interpretation": "development pilot investment decision only; passing is not statistical significance or a formal effectiveness claim",
+        "zero_baseline_token_policy": "efficiency branch unavailable when baseline total tokens are zero"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "A failed episode remains in the full denominator. Pilot thresholds and bootstrap evidence are reported separately; neither measures cross-seed reproducibility."
+    }
+  },
+  "independent_question_count": 500,
+  "seeds_pooled": false,
+  "replay": {
+    "A": {
+      "checked": 500,
+      "mismatches": []
+    },
+    "C": {
+      "checked": 500,
+      "mismatches": []
+    }
+  },
+  "arms": {
+    "A": {
+      "correct": 386,
+      "calls": 4020,
+      "invalid_calls": 1061,
+      "repeated_calls": 882,
+      "repeated_invalid_calls": 796,
+      "episodes_with_invalid_call": 62,
+      "episodes_with_repeated_call": 79,
+      "correct_with_invalid_call": 2,
+      "unfinished_with_gold_matching_handle": 0,
+      "finished_wrong": 57,
+      "unfinished": 57,
+      "invalid_call_fraction": 0.2639303482587065,
+      "valid_calls": 2959,
+      "error_types": {
+        "UnboundLocalError": 12,
+        "ValueError": 138,
+        "ActionFormatError": 819,
+        "KeyError": 3,
+        "IndexError": 89
+      },
+      "common_errors": [
+        [
+          "ActionFormatError:exactly_one_tool_call_required",
+          819
+        ],
+        [
+          "IndexError:list index out of range",
+          89
+        ],
+        [
+          "ValueError:unknown_answer_handle",
+          48
+        ],
+        [
+          "ValueError:Find requires 1 bounded string inputs",
+          24
+        ],
+        [
+          "ValueError:FilterConcept requires 1 existing integer handles",
+          22
+        ],
+        [
+          "ValueError:unknown_function",
+          10
+        ],
+        [
+          "UnboundLocalError:local variable 'v1' referenced before assignment",
+          6
+        ],
+        [
+          "ValueError:VerifyStr requires 1 existing integer handles",
+          6
+        ],
+        [
+          "ValueError:QueryRelationQualifier requires 2 existing integer handles",
+          6
+        ],
+        [
+          "ValueError:And requires 2 existing integer handles",
+          5
+        ],
+        [
+          "UnboundLocalError:local variable 'v2' referenced before assignment",
+          5
+        ],
+        [
+          "ValueError:incompatible_dependency_type",
+          4
+        ]
+      ],
+      "generation_seconds": 1466.236546387001
+    },
+    "C": {
+      "correct": 412,
+      "calls": 3764,
+      "invalid_calls": 349,
+      "repeated_calls": 331,
+      "repeated_invalid_calls": 160,
+      "episodes_with_invalid_call": 53,
+      "episodes_with_repeated_call": 72,
+      "correct_with_invalid_call": 5,
+      "unfinished_with_gold_matching_handle": 1,
+      "finished_wrong": 64,
+      "unfinished": 24,
+      "invalid_call_fraction": 0.09272051009564293,
+      "valid_calls": 3415,
+      "error_types": {
+        "UnboundLocalError": 14,
+        "ValueError": 132,
+        "ActionFormatError": 76,
+        "IndexError": 117,
+        "KeyError": 10
+      },
+      "common_errors": [
+        [
+          "IndexError:list index out of range",
+          117
+        ],
+        [
+          "ActionFormatError:exactly_one_tool_call_required",
+          46
+        ],
+        [
+          "ValueError:incompatible_dependency_type",
+          30
+        ],
+        [
+          "ActionFormatError:unknown_tool_or_invalid_arguments",
+          30
+        ],
+        [
+          "ValueError:Find requires 1 bounded string inputs",
+          24
+        ],
+        [
+          "ValueError:could not convert string to float: 'largest'",
+          14
+        ],
+        [
+          "ValueError:invalid literal for int() with base 10: '126206817196091 United States dollar'",
+          13
+        ],
+        [
+          "ValueError:invalid literal for int() with base 10: 'point in time'",
+          11
+        ],
+        [
+          "UnboundLocalError:local variable 'v1' referenced before assignment",
+          8
+        ],
+        [
+          "ValueError:unknown_answer_handle",
+          8
+        ],
+        [
+          "KeyError:'relations'",
+          6
+        ],
+        [
+          "ValueError:finish_requires_answer_function",
+          4
+        ]
+      ],
+      "generation_seconds": 1827.503451261
+    }
+  },
+  "outcome_transition_matrix": {
+    "correct -> correct": 368,
+    "finished_wrong -> finished_wrong": 30,
+    "unfinished -> unfinished": 12,
+    "finished_wrong -> correct": 18,
+    "correct -> finished_wrong": 15,
+    "unfinished -> correct": 26,
+    "unfinished -> finished_wrong": 19,
+    "finished_wrong -> unfinished": 9,
+    "correct -> unfinished": 3
+  },
+  "changed_case_ids": {
+    "corrected": [
+      "train:1668",
+      "train:85926",
+      "train:30739",
+      "train:24708",
+      "train:37266",
+      "train:6674",
+      "train:36144",
+      "train:63554",
+      "train:35187",
+      "train:9711",
+      "train:94325",
+      "train:30043",
+      "train:27560",
+      "train:82999",
+      "train:27705",
+      "train:87706",
+      "train:77317",
+      "train:18536",
+      "train:73209",
+      "train:27217",
+      "train:38871",
+      "train:32935",
+      "train:1915",
+      "train:92115",
+      "train:42584",
+      "train:29626",
+      "train:66391",
+      "train:51372",
+      "train:24316",
+      "train:33771",
+      "train:61509",
+      "train:70687",
+      "train:41934",
+      "train:87675",
+      "train:74572",
+      "train:93374",
+      "train:55638",
+      "train:55637",
+      "train:47259",
+      "train:1048",
+      "train:89474",
+      "train:45885",
+      "train:1954",
+      "train:38657"
+    ],
+    "regressed": [
+      "train:46629",
+      "train:838",
+      "train:72949",
+      "train:86449",
+      "train:93107",
+      "train:4474",
+      "train:23627",
+      "train:4003",
+      "train:37226",
+      "train:5335",
+      "train:52524",
+      "train:39013",
+      "train:753",
+      "train:21439",
+      "train:76510",
+      "train:42943",
+      "train:77488",
+      "train:77314"
+    ]
+  },
+  "descriptive_overlapping_groups": {
+    "all": {
+      "questions": 500,
+      "A_correct": 386,
+      "C_correct": 412,
+      "net_corrected": 26
+    },
+    "reference_steps_le_5": {
+      "questions": 321,
+      "A_correct": 262,
+      "C_correct": 284,
+      "net_corrected": 22
+    },
+    "comparison_numeric_or_count": {
+      "questions": 230,
+      "A_correct": 190,
+      "C_correct": 197,
+      "net_corrected": 7
+    },
+    "reference_steps_gt_5": {
+      "questions": 179,
+      "A_correct": 124,
+      "C_correct": 128,
+      "net_corrected": 4
+    },
+    "set_operation": {
+      "questions": 163,
+      "A_correct": 118,
+      "C_correct": 119,
+      "net_corrected": 1
+    },
+    "qualifier": {
+      "questions": 122,
+      "A_correct": 79,
+      "C_correct": 92,
+      "net_corrected": 13
+    }
+  },
+  "known_reference_answer_mismatches_retained": {
+    "train:40416": {
+      "A": "finished_wrong",
+      "C": "unfinished"
+    }
+  },
+  "issues": {
+    "metrics_or_runtime_mismatch_20261003_C": 1,
+    "replay_mismatches": 0
+  },
+  "gate": {
+    "audit_passed": false,
+    "conditional_signal_check_eligible": false,
+    "scope": "Eligibility to design a separately reviewed, bounded signal check; not automatic training authorization",
+    "allow_rl": false,
+    "allow_formal_rl": false,
+    "allow_semantic_preference_training": false
+  },
+  "limitations": [
+    "Same initial adapter, corpus and 500 questions; only continuation training RNG changes.",
+    "Do not pool repeated questions or treat bootstrap intervals as training-seed uncertainty.",
+    "Descriptive groups overlap and are post-hoc, not independent significance claims.",
+    "Answer-matching intermediate values can occur by chance; semantic correctness is not established.",
+    "Fewer invalid/repeated calls do not establish causal use of diagnostic feedback.",
+    "No model, RL training, semantic-preference training or holdout evaluation was run by this audit."
+  ],
+  "inputs_sha256": {
+    "data/agent_feedback/continuation/A.jsonl": "8b8ff38b211aa88859896340b4f13a97dbcfa615863f488fe18901eaeeac3c72",
+    "data/agent_feedback/continuation/C.jsonl": "58b7360b5c3f58db6c669075a5541888d011556a496ede2171aa4d24978fb48d",
+    "data/agent_feedback/dev.gold.jsonl": "864bcb1755bc8b70943e72771d8a27455698bcf923cbaee6bf24b36edd7847b8",
+    "data/agent_feedback/dev.questions.jsonl": "f40f1f6776d58794a457aa92d570d30a4754cc46152f12d40d29a10739bd8a9a",
+    "datasets/kqa_pro/kb.json": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "experiments/agent_feedback/__init__.py": "d728dd14ed4a21430dab524a4e1b04923407c5d2c03f5438cfa5555fafd42ed7",
+    "experiments/agent_feedback/compare.py": "ee90e86613477514b6e30ff9452286f4ffc3dcd9acb0b2c5d195bb1d4712994e",
+    "experiments/agent_feedback/continuation_data.py": "f33c662be4259aa728bf98ff739593c479fb101a92514cd4d4ce82643c51863d",
+    "experiments/agent_feedback/continuation_runs.py": "699bc989bce04424d7d40fa798f494f0348d841e3362d598f7e170544b01167a",
+    "experiments/agent_feedback/download_weights.py": "2f4e2a381109ac43e29c9fb7bc204cc74137fe3058443f7b7868b92fa861d858",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/initial_runs.py": "dac1b6a1fc73282d1af902881b89271219f74a73c38ce8aee96d951a8a4bef90",
+    "experiments/agent_feedback/prepare.py": "bdac7d1e467018bdd7cd2f801f4c10ec4aa4e54d4667743608a955a69ab58ab7",
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "experiments/agent_feedback/replication_runs.py": "a420568889abeac8122a11ce9a8c51c3b03ab59900b838f0e8647bf9d960d2ad",
+    "experiments/agent_feedback/review_continuation.py": "f4e40ca02da7ae914ac82935988c5b4d6d32c323fc15455382a06fd025878e5a",
+    "experiments/agent_feedback/review_replication.py": "0ce76402ed0f5df6e45c15ad82ef117e3183f068ae3885f3283ca4a94128ae8d",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "experiments/agent_feedback/train_grpo.py": "0adeef4b717ea1c5b7daab4f59162d838051f99d97847bbf363512950de13d75",
+    "experiments/agent_feedback/train_sft.py": "ea8259f783825f1e7733a8fb147f980a70d698766bb501d8ee9e3a26193c008e",
+    "experiments/agent_feedback/training_data.py": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e",
+    "experiments/condition_consistency/executor.py": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "external/kqa_pro_baselines/Program/executor_rule.py": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+    "external/kqa_pro_baselines/evaluate.py": "94eb964ea460663cef58f91ce2e75caca418ec49aae76d58c6268d685130242e",
+    "results/agent_feedback/clean_dev_seed20261004.jsonl": "8ea0fc344ad9fd3a6fe55effd29b9ffbf44ed4c5cda8e07e8f016172079439fa",
+    "results/agent_feedback/clean_dev_seed20261004.metrics.json": "c9f6eee129702de73d3c11fabf15f997c349bf7c31195656fcfb01ff4ebce382",
+    "results/agent_feedback/clean_dev_seed20261004.runtime.json": "90d314c282ddb05b68f3a762a4cec221e18c2fa1dc557eac0c9b5712e4dbb592",
+    "results/agent_feedback/clean_dev_v1.jsonl": "115f7ef52984021c5c1c79cb1d090616c1de3386042a95f0157869d58e49a177",
+    "results/agent_feedback/clean_dev_v1.metrics.json": "b277ad108600e4052caa6957e526da4f2e7bf3a11481cd909f3f2ca6b0181d98",
+    "results/agent_feedback/clean_dev_v1.runtime.json": "23f49575b5ba1af544d5f96dbda2f3925095f48262b7c17733460a2b8317a0f8",
+    "results/agent_feedback/clean_sft_seed20261004/input_manifest.json": "34196ce44e73893055131429473d886bb98b319b4f50eefb47693c1991b0b86d",
+    "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+    "results/agent_feedback/clean_sft_seed20261004/run_result.json": "6ade3d957ddcee165ee9e3589206735d04893970134d4916bf49f60cf5ded434",
+    "results/agent_feedback/clean_sft_v1/input_manifest.json": "8f9b29bce8f0d953a9e60b86305625640df3720331043d6e5e5b60a15450e3a8",
+    "results/agent_feedback/clean_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+    "results/agent_feedback/clean_sft_v1/run_result.json": "87104dadb8edeffdd9597d851e544faa43ef482e2330b4d64b57208523e54f09",
+    "results/agent_feedback/continuation_code_manifest_v1.json": "12d5fb285d3d86e6d6ae30702d24d418fc588687f013136605065f7c51b9ff80",
+    "results/agent_feedback/continuation_data.json": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+    "results/agent_feedback/continuation_review.json": "c764deb75a3cc59fc7b7db81a2832022dbd07071104551c5eb04ebea48b962bc",
+    "results/agent_feedback/gold_replay.json": "5661c1cbb8e3074604ea5c5b937f4f32431e03cb3b1e11a42fd894e10a3774c8",
+    "results/agent_feedback/initial_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/initial_sft_v1/model/adapter_model.safetensors": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10",
+    "results/agent_feedback/initial_sft_v1/run_result.json": "d662f630c4ce61498a4aa5f2f664ff3469225c19e67b86da597b21f82724bae0",
+    "results/agent_feedback/program_dev_v1.jsonl": "82d48da075ee6281628d044a42a4c28555576790b558f7bd08fb366e96ba2f89",
+    "results/agent_feedback/protocol.json": "659ce71a37aff491ac42a58a73c73c420db43556acb55d6aa3b79b9c2b4fb99d",
+    "results/agent_feedback/protocol_paired_replication_seed20261004.json": "da86fe5ab597878271633afd8e70a8cc7a23ea1d11e1e66f813b762761f62d6d",
+    "results/agent_feedback/recovery_dev_seed20261004.jsonl": "fb1b2b5c15523bdfa98df43d0f7aa36e7f4d9731f927ac2df6f024d3df09e9fe",
+    "results/agent_feedback/recovery_dev_seed20261004.metrics.json": "8b43d51e9d5625410bc05f211fa017a578fb52500b353e0dfb437a02de631d57",
+    "results/agent_feedback/recovery_dev_seed20261004.runtime.json": "a1db83ec0e21e3158ff56f76c46d01340586b1978537c67e71e80e2171a9acf9",
+    "results/agent_feedback/recovery_dev_v1.jsonl": "dfc2bbb1289d0c6a417642a16430cabdde336f118c6e20d5812715bb4c0c8130",
+    "results/agent_feedback/recovery_dev_v1.metrics.json": "e147e5c5c6ce81f96decc666ac29e4dd72f80824a6df38acf28a7c4401e1f016",
+    "results/agent_feedback/recovery_dev_v1.runtime.json": "7b26ee03daa87d6d2339c41b58d0242c8628cc01ef7954813c4e0cdec0b9f423",
+    "results/agent_feedback/recovery_sft_seed20261004/input_manifest.json": "7486b2781903da06b8e0b27ccc648196f84577cdec86d609276b9a2276cadbd4",
+    "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+    "results/agent_feedback/recovery_sft_seed20261004/run_result.json": "a577b7b55ff26061d6509268affb4ad019caa8545a14bd03adc6ef25b4fef40b",
+    "results/agent_feedback/recovery_sft_v1/input_manifest.json": "b88191cc0564df2d14766bf88d33aa818452ed8370ceb3955415b0392388ea5d",
+    "results/agent_feedback/recovery_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/recovery_sft_v1/model/adapter_model.safetensors": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33",
+    "results/agent_feedback/recovery_sft_v1/run_result.json": "6151d714257d493ee6d5c221562a1233d6992784e78fceb548b443c83f622a00",
+    "results/agent_feedback/recovery_vs_clean_dev.json": "a530c12843a6667cc7637a76364334e8a8126b1f4be54405137e22aa2845a0cb",
+    "results/agent_feedback/recovery_vs_clean_dev_seed20261004.json": "9d368b4d162c80489d69454cbd3987560632955ecafaf2765fd193c7b19ff8d1",
+    "results/agent_feedback/recovery_vs_program_dev.json": "bbf2eeed0bdb604877a4f19d836691ab8a604d40b1722e769a61fa43f7b4a6a6",
+    "results/agent_feedback/recovery_vs_program_dev_seed20261004.json": "c06b4174b85d13f200b812f7d79f7f4cdf69d3eb9ddfa406b48871c600a58366",
+    "results/agent_feedback/replication_seed20261004_started.json": "6e70ed9af86151f5e7129c3c9c52b8e7eff64d65dfdab6a288c569b0cdbdbbb1",
+    "results/agent_feedback/split_manifest.json": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60"
+  },
+  "review_script_sha256": "0ce76402ed0f5df6e45c15ad82ef117e3183f068ae3885f3283ca4a94128ae8d",
+  "private_changed_cases": {
+    "path": "results/agent_feedback/replication_review_cases_seed20261004.jsonl",
+    "sha256": "39c2e69d997a66fdd3894512d636b5dfbe48a02381458807043b53258121ac7a",
+    "count": 62
+  }
+}
