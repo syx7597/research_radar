@@ -1,10 +1,22 @@
 # 首批雷达事实审阅与独立 QA 准入
 
-更新：2026-10-04。本文件补充[原标注规范](RADAR_DATA_ANNOTATION.md)。原规范和生成脚本是首批包的哈希输入，保持不变；本轮只增加审阅层，不改旧图谱、12 条候选事实或来源快照。
+更新：2026-10-05。本文件补充[原标注规范](RADAR_DATA_ANNOTATION.md)。原规范和生成脚本是首批包的哈希输入，保持不变；只增加审阅层，不改旧图谱、12 条候选事实或来源快照。
+
+## 现在可以直接开始的审阅
+
+用户已确认本人先核验首批样例，之后找同学交叉复核。打开[12条本地审阅页](../../artifacts/thesis_direction_review/radar_review_ui_v1/index.html)，按主体、版本、事件、值、单位和条件检查原始快照，填写真实署名及理由后导出CSV草稿。可以只完成几条，其余保持待审。页面没有自动上传或仓库写入，关闭前须导出以保存填写；后续导入前仍需跑版本与字段校验。
+
+页面的“确认”只对应 `source_snapshot_reading`，确认这份资料的读法；不自动确认现实参数或独立事实。含主体/事件歧义的候选可标需要修订，一手来源和新事实版本按下述门禁继续处理。未填写或不确定时不代填验收结果。当前页面默认12条待审，原决定文件未改变。
+
+已有01–03的[机构来源AI预审](../../artifacts/thesis_direction_review/radar_primary_screening_001_003/ai_screening.json)已附到页面。新增[本地抓取记录](../../artifacts/thesis_direction_review/radar_primary_screening_001_003/capture_manifest_v1.json)：DSCA文件全文与短引文绑定成功；Redstone 1981连接失败，1984响应未含原引文，不能把它们当已绑定的一手证据。全文只保存在本地 `data/`，不提交公开仓库，且未据此填写替代事实或问答答案。
+
+[领域评价设计版](../../artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)及[空模板说明](../../templates/radar_evaluation/README.txt)记录下一阶段的独立QA、来源/家族分组、同源对照和评分规则。目前尚未冻结知识或最终评价集。
+
+只读[查询接口](../../experiments/radar_domain/adapter.py)会先验证全包及决定。`source_preview` 返回保留条件/区间/引用的候选读法，`accepted-independent` 默认只返回完整通过独立事实验收的记录。当前10条开发查询的双模式回放通过，后者全部无可用事实；这不是自然语言模型评测。
 
 ## 当前交付与边界
 
-原[12 条事实包](../../artifacts/thesis_direction_review/radar_review_batch/facts.csv)由 9 条旧属性拆分，涉及 6 个实体标签和 6 份 Wikipedia 本地快照。12 条均为 AI 预填的 `needs_review`。每条已有原始属性、网页 URL、文件 SHA-256、JSON pointer、Unicode 字符区间和 chunk 定位。本轮离线复核这些绑定，不对真实装备参数作新的事实判定，也没有联网追索一手资料。
+原[12 条事实包](../../artifacts/thesis_direction_review/radar_review_batch/facts.csv)由 9 条旧属性拆分，涉及 6 个实体标签和 6 份 Wikipedia 本地快照。12 条均为 AI 预填的 `needs_review`。每条已有原始属性、网页 URL、文件 SHA-256、JSON pointer、Unicode 字符区间和 chunk 定位。原包构建阶段仅离线复核这些绑定，未判定真实参数；后续补充来源预审及抓取情况见上文，未改变原候选的验收状态。
 
 这 12 条是有目的选择的流程问题样例，不能估计全图错误比例。其现有来源全是二手网页快照；来源能定位、数字在原文出现，都不足以说明主体、配置或实际参数正确。
 
@@ -66,6 +78,15 @@
 ## 运行
 
 ```bash
+# 重建可填写的本地审阅页；不产生审阅决定
+python3 scripts/build_radar_review_ui.py
+
+# 验证已抓取的补充来源，默认不联网；输出区别文件绑定与引文匹配
+python3 scripts/capture_radar_primary_sources.py
+
+# 验证10条已有开发查询的确定性演示，不调用模型
+python3 -m experiments.radar_domain.pilot --check-only
+
 # 已有12条原包：只读验证，无网络和模型调用
 python3 scripts/prepare_radar_review_packet.py --check-only
 

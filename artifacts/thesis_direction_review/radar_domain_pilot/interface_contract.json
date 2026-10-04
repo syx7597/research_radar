@@ -1,0 +1,61 @@
+{
+  "default_mode": "accepted-independent",
+  "example_commands": [
+    "python3 -m experiments.radar_domain --query '{\"entity\":\"AN/SPG-51\",\"attribute\":\"prf\",\"condition_raw\":\"air\"}'",
+    "python3 -m experiments.radar_domain --mode source_preview --query '{\"entity\":\"AN/SPG-51\",\"attribute\":\"prf\",\"condition_raw\":\"air\"}'",
+    "python3 -m experiments.radar_domain.pilot --check-only"
+  ],
+  "interface_version": "radar_record_query_v1",
+  "legacy_value_raw": "Unmodified old extracted attribute string, potentially erroneous; kept separate from normalized candidate value and exact snapshot citation.evidence_text.",
+  "modes": [
+    "accepted-independent",
+    "source_preview"
+  ],
+  "no_match_meaning": "no matching record in this bounded and admitted view; never zero, false, or global absence",
+  "query_schema": {
+    "matching": "AND of all supplied selectors; unknown fields are errors; no inference or aliases",
+    "optional": {
+      "condition_raw": "exact original condition label or null for unrecorded condition",
+      "event_type": "exact event string or null for absent field",
+      "variant": "exact version string or null for unrecorded version"
+    },
+    "required": {
+      "attribute": "exact attribute",
+      "entity": "exact entity_id or entity_name"
+    }
+  },
+  "response_namespaces": {
+    "accepted_facts": "accepted-independent only after the complete independent review gate",
+    "snapshot_readings": "source_preview only; exact source citation and candidate interpretation"
+  },
+  "reuse": {
+    "legacy_executors_not_imported": [
+      {
+        "file": "agent/composition.py",
+        "limitation": "Extracts only the first numeric substring; ranges and attached scopes are unavailable.",
+        "symbol": "CompositionExecutor._numeric"
+      },
+      {
+        "file": "ca_agraphrag/kg_tools.py",
+        "limitation": "Indexes head/relation/tail sets; event, variant, condition, source and review records are not preserved.",
+        "symbol": "KGTools.__init__/lookup"
+      }
+    ],
+    "validators": [
+      "scripts/prepare_radar_review_packet.py::validate_packet",
+      "scripts/audit_radar_review_workflow.py::audit",
+      "scripts/audit_radar_review_workflow.py::validate_decisions"
+    ]
+  },
+  "scope_limits": [
+    "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+    "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+    "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+    "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+    "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+    "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+    "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+  ],
+  "source_binding": "whole packet and workflow audit, fact record hash, source file hash, JSON pointer and Unicode offsets",
+  "value_encoding": "decimal strings preserve original precision; ranges retain two endpoints; unknown values/units are null"
+}

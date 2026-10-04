@@ -1,0 +1,1 @@
+run_id,qid,claim_id,claim_text,required_answer_item_ids_json,is_substantive,is_numeric,numeric_correct,citation_ids_json,valid_citation_ids_json,source_supports_subject,source_supports_value_unit,source_supports_conditions,claim_supported,reviewer_kind,reviewer_id,reviewed_at,review_notes

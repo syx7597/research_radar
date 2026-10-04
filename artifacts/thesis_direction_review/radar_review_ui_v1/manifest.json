@@ -1,0 +1,19 @@
+{
+  "version": "radar_review_ui_v1",
+  "facts": 12,
+  "human_review_status": "pending",
+  "human_review_arrangement": "user first pass; peer cross-review planned",
+  "accepted_independent_facts": 0,
+  "export_scope": "source_snapshot_reading",
+  "changes_repository_on_export": false,
+  "all_decisions_initially_pending": true,
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_review_batch/facts.csv": "4f7b0b1a2b05c6bd17e19e66cb4761de014924b2bb901bf88ead99b7287d63f9",
+    "artifacts/thesis_direction_review/radar_review_workflow/review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+    "artifacts/thesis_direction_review/radar_primary_screening_001_003/ai_screening.json": "166a413615e99497df942435bab0c6bd2d665b1573c9c42ebfd66e48195fd0e1",
+    "scripts/build_radar_review_ui.py": "7dff5deebe357333859ec451094e0320eb835bc1819d0268096f0bcb0b0719aa",
+    "artifacts/thesis_direction_review/radar_primary_screening_001_003/capture_manifest_v1.json": "312259d763a9ab4ffc8bc69d40fb6ea93822ddd286c3bbdd76d0ce176fb134c3"
+  },
+  "html_sha256": "c3b940e40f9507c62ff4433ea6b207fdd852634591409228e8a14dfb7e9784e7",
+  "source_bindings_verified": 12
+}

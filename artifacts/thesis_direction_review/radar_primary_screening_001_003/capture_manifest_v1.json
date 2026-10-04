@@ -1,0 +1,94 @@
+{
+  "version": "radar_primary_capture_001_003_v1",
+  "screening_sha256": "166a413615e99497df942435bab0c6bd2d665b1573c9c42ebfd66e48195fd0e1",
+  "capture_script_sha256": "4b2718c00308da223edc37ee2006b4986b0bc0473cc373892c8fb91c52585a7d",
+  "sources": [
+    {
+      "source_id": "primary-dsca-18-51",
+      "title": "DSCA 18-51",
+      "capture_status": "captured",
+      "requested_url": "https://samm.dsca.mil/policy-memoranda/dsca-18-51",
+      "resolved_url": "https://samm.dsca.mil/policy-memoranda/dsca-18-51",
+      "encoding": "UTF-8",
+      "captured_at_utc": "2026-10-04T15:54:58.762733+00:00",
+      "html": {
+        "file": "data/radar_review/primary_capture_001_003_v1/primary-dsca-18-51.html",
+        "sha256": "bae30133c54e4dde2b026af76f8eda1dc536365a04e8bf07bd94922eef2d58fa",
+        "bytes": 57979
+      },
+      "text": {
+        "file": "data/radar_review/primary_capture_001_003_v1/primary-dsca-18-51.txt",
+        "sha256": "bb98e57016d1c0fbd86139b944d20f63649b84f1f5b0cbab4a202eef23966922",
+        "bytes": 4388
+      },
+      "evidence_text": "Radar Set, Patriot, Semi-Trailer Mounted, AN/MPQ-65",
+      "quote_occurrences": [
+        {
+          "char_start": 1599,
+          "char_end": 1650,
+          "offset_unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        {
+          "char_start": 3758,
+          "char_end": 3809,
+          "offset_unit": "unicode_codepoint",
+          "end_exclusive": true
+        }
+      ],
+      "quote_binding_verified": true,
+      "capture_note": "Exact screened quote located",
+      "locator_note": "附件FINDING表，ITEM DESCRIPTION列中AN/MPQ-65对应行；该表将其作为雷达设备列项。",
+      "supports": "雷达设备与整套Patriot系统的实体层级需要区分。",
+      "does_not_establish": "不提供AN/MPQ-65首次服役年份，也不支持把1981或1984自动赋给该型号。",
+      "human_review_status": "pending",
+      "accepted_as_fact": false
+    },
+    {
+      "source_id": "primary-redstone-1981",
+      "title": "Installation History — 1981",
+      "requested_url": "https://history.redstone.army.mil/ihist-1981.html",
+      "capture_status": "unavailable",
+      "curl_exit_code": 35,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to history.redstone.army.mil:443",
+      "attempted_at_utc": "2026-10-04T15:55:08.085275+00:00",
+      "human_review_status": "pending",
+      "accepted_as_fact": false
+    },
+    {
+      "source_id": "primary-redstone-1984",
+      "title": "Installation History — 1984",
+      "capture_status": "captured",
+      "requested_url": "https://history.redstone.army.mil/ihist-1984.html",
+      "resolved_url": "https://history.redstone.army.mil/ihist-1984.html",
+      "encoding": "utf-8",
+      "captured_at_utc": "2026-10-04T15:55:10.168887+00:00",
+      "html": {
+        "file": "data/radar_review/primary_capture_001_003_v1/primary-redstone-1984.html",
+        "sha256": "75402e361a5552a023c9d46e6102eed18eebb5bf2d89de57e05caf23ecb8a05a",
+        "bytes": 2606
+      },
+      "text": {
+        "file": "data/radar_review/primary_capture_001_003_v1/primary-redstone-1984.txt",
+        "sha256": "c7ea5fba9492292d03fcb14328c111209c346aed2d94226a2a4d88897933d02e",
+        "bytes": 242
+      },
+      "evidence_text": "October 84 The PATRIOT missile system was certified ready for European deployment.",
+      "quote_occurrences": [],
+      "quote_binding_verified": false,
+      "capture_note": "Downloaded HTML does not contain the screened quote; may be an access page or changed content. Do not use for fact acceptance.",
+      "locator_note": "1984年史：9月欧洲部署有条件放行、10月欧洲部署就绪认证、11月首个欧洲营装备装运条目；本摘录定位10月条目。",
+      "supports": "1984对应Patriot系统的部署相关里程碑，应和交付、服役、初始能力等事件分开。",
+      "does_not_establish": "不直接证实旧信息框所写初始作战能力事件的精确定义，更不确定AN/MPQ-65在1984达到该事件。",
+      "human_review_status": "pending",
+      "accepted_as_fact": false
+    }
+  ],
+  "source_classification": "AI-proposed institutional primary sources, human verification pending",
+  "rendition": "HTMLParser text nodes excluding script/style; whitespace normalized; HTML retained",
+  "scope": "Source and event attribution review only; not replacement radar facts or final QA gold",
+  "public_fulltext_included": false,
+  "accepted_records": 0,
+  "final_qa_answers_generated": false,
+  "original_packet_modified": false
+}

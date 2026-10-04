@@ -1,0 +1,262 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>首批雷达事实审阅 · 12 条</title><style>
+body{font-family:system-ui,sans-serif;max-width:980px;margin:32px auto;padding:0 18px;color:#172b3a;background:#f6f8fa;line-height:1.6}h1{font-size:26px}h2{font-size:19px}article,.intro{background:white;border:1px solid #d4dde4;border-radius:10px;padding:20px;margin:18px 0}label{display:block;margin:10px 0}select,textarea,input[type=text]{font:inherit;padding:8px;border:1px solid #9caebc;border-radius:4px;box-sizing:border-box;width:100%}.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.small{font-size:12px;overflow-wrap:anywhere}pre{white-space:pre-wrap}q{background:#f1f5f9}a{color:#125a95}button{padding:12px 20px;font:inherit;background:#125a95;color:white;border:0;border-radius:6px;cursor:pointer}.ack{font-weight:600}.status{color:#8c2b12}footer{margin:25px 0 60px}@media(max-width:600px){.checks{grid-template-columns:1fr}}@media print{button,footer{display:none}article{break-inside:avoid}body{background:white}}
+</style><h1>首批雷达事实审阅 · 12 条</h1>
+<section class="intro"><p><b>第一轮任务：核对现有来源快照的读法。</b>由你先审阅，后续再请同学交叉复核。所有决定初始均为待审，没有预填“确认”。可以分批完成。</p>
+<ol><li>打开原文，先辨认主体是系统、雷达、平台还是部件，再检查事件、值、单位、条件。</li><li>“本来源未明确”不是“现实中不存在”。选择确认只表示读法相符；不确定或归属不对时选择需要修订并说明。</li><li>填写真实署名和理由，勾选本条已核查，再导出 CSV。导出不会上传，也不会修改仓库。网页关闭会丢失未导出的填写。</li></ol>
+<p>网页与历史快照可能不同，请优先核对本地快照。全文仅保存在本工作区，GitHub 上的本地全文链接不会提供下载。已归档的机构来源仅辅助 01–03 的主体／事件核查，不能据此填替代年份。</p>
+<p><b>本轮导出不属于独立事实验收，也不是独立问答金标。</b>后续仍需一手来源与必要事实修订。12 道既有开发题永久不进入最终测试。</p>
+<label>你的真实署名<input id="reviewer" type="text" autocomplete="name" placeholder="请自行填写，AI 不代填"></label></section>
+<article data-fact="radar-review-001-01">
+<h2>01 · AN/MPQ-65 · type_description</h2>
+<p><b>旧属性原值：</b>Mobile surface-to-air missile / anti-ballistic missile system</p>
+<p><b>来源快照短摘录：</b><q>Mobile; surface-to-air missile; /; anti-ballistic missile; system</q></p>
+<p><a href="https://en.wikipedia.org/wiki/MIM-104_Patriot" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_mpq-65.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Type</code> [0, 65)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;text&quot;,
+  &quot;value_status&quot;: &quot;ambiguous&quot;,
+  &quot;value&quot;: &quot;Mobile surface-to-air missile / anti-ballistic missile system&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。来源页为MIM-104 Patriot系统，不能把系统类型直接当雷达型号类型；主体归属待核验。</p><p class="small">来源 SHA-256：55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c</p></details>
+<details><summary>补充机构来源与 AI 预审（仍待你核查）</summary><p>AN/MPQ-65在正式机构文件中作为Patriot雷达设备列项；旧Type描述属于系统级页面，不宜直接作为雷达型号类型。</p><ul><li><a href="https://samm.dsca.mil/policy-memoranda/dsca-18-51" target="_blank" rel="noopener">DSCA 18-51</a> · <a href="../../../data/radar_review/primary_capture_001_003_v1/primary-dsca-18-51.txt" target="_blank" rel="noopener">本地全文定位</a><br>不提供AN/MPQ-65首次服役年份，也不支持把1981或1984自动赋给该型号。</li></ul></details>
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-02">
+<h2>02 · AN/MPQ-65 · service_entry</h2>
+<p><b>旧属性原值：</b>Since 1981; initial operational capacity 1984</p>
+<p><b>来源快照短摘录：</b><q>Since 1981</q></p>
+<p><a href="https://en.wikipedia.org/wiki/MIM-104_Patriot" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_mpq-65.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/In service</code> [0, 10)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;event_type&quot;: &quot;in_service&quot;,
+  &quot;value_kind&quot;: &quot;event&quot;,
+  &quot;value_status&quot;: &quot;ambiguous&quot;,
+  &quot;value&quot;: &quot;1981&quot;,
+  &quot;unit_std&quot;: &quot;year&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。保留来源第一个时间事件；来源主体是Patriot系统，1981不能据此确认为AN/MPQ-65服役年份。</p><p class="small">来源 SHA-256：55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c</p></details>
+<details><summary>补充机构来源与 AI 预审（仍待你核查）</summary><p>找到的1981年一手记录是首枚Patriot导弹交付，不能代替AN/MPQ-65雷达服役。未找到直接支持该雷达1981服役的一手记录；这不等于证明该年份为假。</p><ul><li><a href="https://history.redstone.army.mil/ihist-1981.html" target="_blank" rel="noopener">Installation History — 1981</a><br>不证明1981是AN/MPQ-65服役年份，也不证明二手信息框采用1981的具体编写依据。</li><li><a href="https://samm.dsca.mil/policy-memoranda/dsca-18-51" target="_blank" rel="noopener">DSCA 18-51</a> · <a href="../../../data/radar_review/primary_capture_001_003_v1/primary-dsca-18-51.txt" target="_blank" rel="noopener">本地全文定位</a><br>不提供AN/MPQ-65首次服役年份，也不支持把1981或1984自动赋给该型号。</li></ul></details>
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-03">
+<h2>03 · AN/MPQ-65 · service_entry</h2>
+<p><b>旧属性原值：</b>Since 1981; initial operational capacity 1984</p>
+<p><b>来源快照短摘录：</b><q>initial operational capacity 1984</q></p>
+<p><a href="https://en.wikipedia.org/wiki/MIM-104_Patriot" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_mpq-65.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/In service</code> [12, 45)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;event_type&quot;: &quot;initial_operational_capacity&quot;,
+  &quot;value_kind&quot;: &quot;event&quot;,
+  &quot;value_status&quot;: &quot;ambiguous&quot;,
+  &quot;value&quot;: &quot;1984&quot;,
+  &quot;unit_std&quot;: &quot;year&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。第二个时间事件单列；旧属性只存1981。1984的主体和事件定义仍待人工核验，不是替代金标。</p><p class="small">来源 SHA-256：55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c</p></details>
+<details><summary>补充机构来源与 AI 预审（仍待你核查）</summary><p>一手史支持Patriot系统1984年的欧洲部署里程碑，但不能直接证实旧信息框的初始作战能力定义或AN/MPQ-65型号归属。</p><ul><li><a href="https://history.redstone.army.mil/ihist-1984.html" target="_blank" rel="noopener">Installation History — 1984</a> · <a href="../../../data/radar_review/primary_capture_001_003_v1/primary-redstone-1984.txt" target="_blank" rel="noopener">本地响应（未找到原引文，不作证据）</a><br>不直接证实旧信息框所写初始作战能力事件的精确定义，更不确定AN/MPQ-65在1984达到该事件。</li><li><a href="https://samm.dsca.mil/policy-memoranda/dsca-18-51" target="_blank" rel="noopener">DSCA 18-51</a> · <a href="../../../data/radar_review/primary_capture_001_003_v1/primary-dsca-18-51.txt" target="_blank" rel="noopener">本地全文定位</a><br>不提供AN/MPQ-65首次服役年份，也不支持把1981或1984自动赋给该型号。</li></ul></details>
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-04">
+<h2>04 · AN/APY-9 · frequency</h2>
+<p><b>旧属性原值：</b>UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)</p>
+<p><b>来源快照短摘录：</b><q>UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/APY-9" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_apy-9.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Frequency</code> [0, 36)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;range&quot;,
+  &quot;value_status&quot;: &quot;ambiguous&quot;,
+  &quot;min_value&quot;: &quot;0.3&quot;,
+  &quot;max_value&quot;: &quot;3.0&quot;,
+  &quot;unit_std&quot;: &quot;GHz&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。按快照预填区间两端；旧值只存3.0 GHz。需核实这是型号实际工作频段还是一般UHF频段说明；不把波长另造事实。</p><p class="small">来源 SHA-256：7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-05">
+<h2>05 · AN/SPG-51 · frequency</h2>
+<p><b>旧属性原值：</b>Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz</p>
+<p><b>来源快照短摘录：</b><q>Illuminator: 10.25-10.5 GHz</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Frequency</code> [0, 27)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;range&quot;,
+  &quot;value_status&quot;: &quot;stated&quot;,
+  &quot;min_value&quot;: &quot;10.25&quot;,
+  &quot;max_value&quot;: &quot;10.5&quot;,
+  &quot;unit_std&quot;: &quot;GHz&quot;,
+  &quot;condition_status&quot;: &quot;explicit&quot;,
+  &quot;condition_raw&quot;: &quot;Illuminator&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。原文照射部件范围单列；旧值只存10.5 GHz。部件名称仅忠实保留原文，不宣称型号版本已厘清。</p><p class="small">来源 SHA-256：a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-06">
+<h2>06 · AN/SPG-51 · frequency</h2>
+<p><b>旧属性原值：</b>Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz</p>
+<p><b>来源快照短摘录：</b><q>Tracking Radar: 5.45 GHz - 5.825 GHz</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Frequency</code> [38, 74)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;range&quot;,
+  &quot;value_status&quot;: &quot;stated&quot;,
+  &quot;min_value&quot;: &quot;5.45&quot;,
+  &quot;max_value&quot;: &quot;5.825&quot;,
+  &quot;unit_std&quot;: &quot;GHz&quot;,
+  &quot;condition_status&quot;: &quot;explicit&quot;,
+  &quot;condition_raw&quot;: &quot;Tracking Radar&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。原文跟踪部件范围单列；不与照射部件范围合并。出处引用及具体配置需人工核验。</p><p class="small">来源 SHA-256：a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-07">
+<h2>07 · AN/SPG-51 · prf</h2>
+<p><b>旧属性原值：</b>4100 pps (surface); 9600-16700 pps (air)</p>
+<p><b>来源快照短摘录：</b><q>4100 pps (surface)</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/PRF</code> [0, 18)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;scalar&quot;,
+  &quot;value_status&quot;: &quot;stated&quot;,
+  &quot;value&quot;: &quot;4100&quot;,
+  &quot;unit_std&quot;: &quot;pps&quot;,
+  &quot;condition_status&quot;: &quot;explicit&quot;,
+  &quot;condition_raw&quot;: &quot;surface&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。surface是原文标签，仅记录，不擅自扩展其模式/目标含义。当前条目未与air数值混合。</p><p class="small">来源 SHA-256：a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-08">
+<h2>08 · AN/SPG-51 · prf</h2>
+<p><b>旧属性原值：</b>4100 pps (surface); 9600-16700 pps (air)</p>
+<p><b>来源快照短摘录：</b><q>9600-16700 pps (air)</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-51" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_spg-51.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/PRF</code> [20, 40)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;range&quot;,
+  &quot;value_status&quot;: &quot;stated&quot;,
+  &quot;min_value&quot;: &quot;9600&quot;,
+  &quot;max_value&quot;: &quot;16700&quot;,
+  &quot;unit_std&quot;: &quot;pps&quot;,
+  &quot;condition_status&quot;: &quot;explicit&quot;,
+  &quot;condition_raw&quot;: &quot;air&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。air是原文标签，范围单列；旧属性只存surface的4100。标签实际语义及条件完整性待核验。</p><p class="small">来源 SHA-256：a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-09">
+<h2>09 · AN/SPN-35 · frequency</h2>
+<p><b>旧属性原值：</b>9.0 to 9.2 GHz band</p>
+<p><b>来源快照短摘录：</b><q>9.0 to 9.2 GHz band</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPN-35" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_spn-35.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Frequency</code> [0, 19)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;range&quot;,
+  &quot;value_status&quot;: &quot;stated&quot;,
+  &quot;min_value&quot;: &quot;9.0&quot;,
+  &quot;max_value&quot;: &quot;9.2&quot;,
+  &quot;unit_std&quot;: &quot;GHz&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。快照为GHz频率范围，旧图谱却存9000.0 kg；仅预填原文范围，不保留明显量纲冲突为金标。</p><p class="small">来源 SHA-256：3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-10">
+<h2>10 · AN/SPN-35 · pulse_width</h2>
+<p><b>旧属性原值：</b>0.2 microseconds</p>
+<p><b>来源快照短摘录：</b><q>0.2 microseconds</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPN-35" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_spn-35.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Pulsewidth</code> [0, 16)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;scalar&quot;,
+  &quot;value_status&quot;: &quot;stated&quot;,
+  &quot;value&quot;: &quot;0.2&quot;,
+  &quot;unit_std&quot;: &quot;us&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。快照为时间量，旧图谱却存0.3218 km。预填数值不变，仅将microseconds标作us；仍需人工核验。</p><p class="small">来源 SHA-256：3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-11">
+<h2>11 · AN/SPG-59 · service_entry</h2>
+<p><b>旧属性原值：</b>Canceled 1963</p>
+<p><b>来源快照短摘录：</b><q>Canceled 1963</q></p>
+<p><a href="https://en.wikipedia.org/wiki/AN/SPG-59" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/an_spg-59.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Introduced</code> [0, 13)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;event_type&quot;: &quot;cancellation&quot;,
+  &quot;value_kind&quot;: &quot;event&quot;,
+  &quot;value_status&quot;: &quot;stated&quot;,
+  &quot;value&quot;: &quot;1963&quot;,
+  &quot;unit_std&quot;: &quot;year&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。原文说Canceled，旧字段名却是service_entry；预标cancellation以提醒复核，不把取消年份解释为服役年份。</p><p class="small">来源 SHA-256：2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article>
+<article data-fact="radar-review-001-12">
+<h2>12 · EL/M-2080 · power</h2>
+<p><b>旧属性原值：</b>Classified, but could be used as a directed-energy device.</p>
+<p><b>来源快照短摘录：</b><q>Classified</q></p>
+<p><a href="https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine" target="_blank" rel="noopener">打开网页</a> · <a href="../../../radar_corpus/raw/el_m-2080.json" target="_blank" rel="noopener">打开本地原始快照</a> · 定位 <code>/infobox/Power</code> [0, 10)</p>
+<details><summary>AI 候选结构与待核查说明</summary><pre>{
+  &quot;value_kind&quot;: &quot;unknown&quot;,
+  &quot;value_status&quot;: &quot;not_recorded&quot;,
+  &quot;condition_status&quot;: &quot;not_stated&quot;
+}</pre><p>AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。快照没有给出功率数值，数值和单位留空；不把用途猜测变成数值或已证实能力。not_recorded仅描述本快照。</p><p class="small">来源 SHA-256：45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db</p></details>
+
+<div class="checks"><label>主体归属<select data-field="subject_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>型号版本<select data-field="variant_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>事件类型<select data-field="event_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>数值／文本读法<select data-field="value_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>单位<select data-field="unit_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label><label>条件与范围<select data-field="condition_check"><option value="">未填写</option><option value="confirmed">与本快照一致</option><option value="not_applicable">不适用</option><option value="not_specified_in_source">本来源未明确</option></select></label></div>
+<label>本条决定<select data-field="decision"><option value="pending">待审（默认）</option><option value="accepted">确认本快照的读法</option><option value="needs_changes">需要修订候选解释</option><option value="rejected">不接受候选解释</option></select></label>
+<label>理由／需修订内容（完成审阅必填）<textarea data-field="reason" rows="3" placeholder="例如：原文描述整套系统，不能赋给雷达型号；或者该区间的两个端点与条件均与本快照一致。"></textarea></label>
+<label class="ack"><input type="checkbox" data-field="ack">我已对照原文完成本条审阅；这里只确认资料读法，不证明现实参数真实。</label>
+</article><footer><button id="export">导出已填写的审阅 CSV</button><p id="status" class="status" role="status"></p></footer>
+<script id="review-data" type="application/json">{"headers": ["fact_id", "fact_record_sha256", "source_sha256", "decision", "decision_scope", "reviewer_kind", "reviewer", "reviewed_at", "reason", "subject_check", "variant_check", "event_check", "value_check", "unit_check", "condition_check", "independent_source_class", "independent_source_uri", "independent_source_file", "independent_source_sha256", "independent_source_locator", "independent_evidence_text"], "rows": [{"fact_id": "radar-review-001-01", "fact_record_sha256": "61abd2e7f966bfd3b882cfbffa522d5083860be97d850e5580cda9fbceed069a", "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-02", "fact_record_sha256": "6fcc9c2781905baeaef46d7ed6c1ac69c40090ee5c71f9788f0f8fe4882f6888", "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-03", "fact_record_sha256": "15fa1b802e5b1b1856c4bdfcd91b22d87bc9225af2883de9b251beeb059006e9", "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-04", "fact_record_sha256": "e874bd3d4320b3cfc9cd0fd1c0455a86bd9def843042c6d20a2e72e87fc9fe1c", "source_sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-05", "fact_record_sha256": "f11cf1b297a548d3e6b8d10e53f3bd4c1add3e49275ea3cf27bc617766ec7734", "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-06", "fact_record_sha256": "e41d87c4377645795618c8e27b68cc63054006e8ea4698440132239db11ad7f4", "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-07", "fact_record_sha256": "83de21950b10b88defa01a9242ab66bd3ada2c0dc28782ad0ad30bc39be64a93", "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-08", "fact_record_sha256": "d992fb7db9d99ed1ac998e79e66cbb80dae98f906951f509d54123771b1cb159", "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-09", "fact_record_sha256": "caf25e3c40b5cda7cbd03c7b8de0a37ba36781992f1986b2ecb07893141640c3", "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-10", "fact_record_sha256": "0963c2414799729db32edae87cb4e860ee7ed0794760cf171314bd122be175c0", "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-11", "fact_record_sha256": "3245ea8c12873d9b2f270b997ee400b6a07d5aa0633dc9750f5f9a1642b9ab19", "source_sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}, {"fact_id": "radar-review-001-12", "fact_record_sha256": "a061c240e8213f2e7d71e5224fcaf6f6df41d5d080483e25d650b64edab380c2", "source_sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db", "decision": "pending", "decision_scope": "", "reviewer_kind": "", "reviewer": "", "reviewed_at": "", "reason": "", "subject_check": "", "variant_check": "", "event_check": "", "value_check": "", "unit_check": "", "condition_check": "", "independent_source_class": "", "independent_source_uri": "", "independent_source_file": "", "independent_source_sha256": "", "independent_source_locator": "", "independent_evidence_text": ""}]}</script>
+<script>
+const payload=JSON.parse(document.getElementById('review-data').textContent);
+document.getElementById('export').addEventListener('click',()=>{
+  const name=document.getElementById('reviewer').value.trim();
+  const rows=payload.rows.map(x=>({...x})); let completed=0;
+  try {
+    for(const row of rows){
+      const card=document.querySelector('article[data-fact="'+row.fact_id+'"]');
+      const value=key=>card.querySelector('[data-field="'+key+'"]').value.trim();
+      const decision=value('decision');
+      if(decision==='pending') continue;
+      if(!name || /(?:^|[^a-z0-9])(?:ai|gpt\d*|chatgpt|codex|assistant|model)(?:$|[^a-z0-9])/i.test(name)) throw Error('请填写你本人的真实署名。');
+      if(!value('reason') || !card.querySelector('[data-field="ack"]').checked) throw Error(row.fact_id+'：请填写理由，并确认已对照原文核查。');
+      const checks=['subject_check','variant_check','event_check','value_check','unit_check','condition_check'];
+      if(decision==='accepted' && checks.some(key=>!value(key))) throw Error(row.fact_id+'：确认读法需要填写全部六项检查。');
+      Object.assign(row,{decision,decision_scope:'source_snapshot_reading',reviewer_kind:'human',reviewer:name,reviewed_at:new Date().toISOString(),reason:value('reason')});
+      checks.forEach(key=>row[key]=value(key)); completed++;
+    }
+    if(!completed) throw Error('尚未完成任何一条审阅；没有导出或修改文件。');
+    const quote=x=>'"'+String(x??'').replace(/"/g,'""')+'"';
+    const csv=[payload.headers.map(quote).join(','),...rows.map(row=>payload.headers.map(h=>quote(row[h])).join(','))].join('\n')+'\n';
+    const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+    const a=document.createElement('a');a.href=url;a.download='radar_review_decisions_draft.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    document.getElementById('status').textContent='已导出 '+completed+' 条审阅，其余保留待审。文件尚未导入仓库，独立事实验收仍未完成。';
+  } catch(e){document.getElementById('status').textContent=e.message;}
+});
+</script></html>

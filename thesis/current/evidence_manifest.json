@@ -1,0 +1,156 @@
+{
+  "version": "thesis_public_evidence_v1",
+  "evidence_cutoff": "2026-10-04",
+  "scope": "public aggregate tables and frozen implementation; no raw trajectories, questions, gold, or weights opened by this exporter",
+  "sources": {
+    "results/agent_feedback/holdout_v1_analysis.json": {
+      "sha256": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+      "role": "holdout"
+    },
+    "results/agent_feedback/holdout_v1_summary.json": {
+      "sha256": "5951c5533124374c32d241d8aa7b661e172c4937067c789ee94d4fc24681edf7",
+      "role": "summary"
+    },
+    "results/agent_feedback/holdout_v1_execution_audit.json": {
+      "sha256": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68",
+      "role": "audit"
+    },
+    "results/agent_feedback/protocol_holdout_v1.json": {
+      "sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+      "role": "protocol"
+    },
+    "results/agent_feedback/holdout_stage_decision_v1.json": {
+      "sha256": "c29152b87ddf19c2b03fd1d6202134208aad4bb9419b364d30e08852c322794d",
+      "role": "decision"
+    },
+    "results/agent_feedback/split_manifest.json": {
+      "sha256": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60",
+      "role": "split"
+    },
+    "results/agent_feedback/recovery_pairs.json": {
+      "sha256": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9",
+      "role": "pairs"
+    },
+    "results/agent_feedback/continuation_data.json": {
+      "sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+      "role": "corpus"
+    },
+    "results/agent_feedback/continuation_token_audit.json": {
+      "sha256": "27b338535ccdae85648d943d2110bd2248bdbbea7ce5226d062c4223704aa5a7",
+      "role": "token_audit"
+    },
+    "results/agent_feedback/recovery_vs_clean_dev.json": {
+      "sha256": "a530c12843a6667cc7637a76364334e8a8126b1f4be54405137e22aa2845a0cb",
+      "role": "dev1"
+    },
+    "results/agent_feedback/recovery_vs_clean_dev_seed20261004.json": {
+      "sha256": "9d368b4d162c80489d69454cbd3987560632955ecafaf2765fd193c7b19ff8d1",
+      "role": "dev2"
+    },
+    "results/agent_feedback/rl_stage_decision_v1.json": {
+      "sha256": "f89a3d9bf832d07c5b160ad0cc9ae3134ccf9e70532948b221613c01bb7b9c1d",
+      "role": "rl"
+    },
+    "results/agent_feedback/rl_paired_v1_summary.json": {
+      "sha256": "6628ec62485b3701ec27d48d9303a0cda8a499627f99f0aa0bd69632536810aa",
+      "role": "rl_summary"
+    },
+    "results/agent_feedback/feedback_diagnostic_decision_v1.json": {
+      "sha256": "10e6ad77bfed04e84395ee31c691f4ca6292480708640a3e0b24f91d4fdda69f",
+      "role": "feedback"
+    },
+    "results/agent_feedback/initial_sft_v1/input_manifest.json": {
+      "sha256": "6550977af236efec0aa8555d878b7e553900af8791cfd8333875dc56b3844a3c",
+      "role": "initial_input"
+    },
+    "results/agent_feedback/program_sft_v1/input_manifest.json": {
+      "sha256": "e641af22dcff41fbc5d999e1e624b25357bb91e024a9ca21d9d0d96a322206a7",
+      "role": "program_input"
+    },
+    "results/agent_feedback/clean_sft_v1/input_manifest.json": {
+      "sha256": "8f9b29bce8f0d953a9e60b86305625640df3720331043d6e5e5b60a15450e3a8",
+      "role": "clean_input"
+    },
+    "results/agent_feedback/recovery_sft_v1/input_manifest.json": {
+      "sha256": "b88191cc0564df2d14766bf88d33aa818452ed8370ceb3955415b0392388ea5d",
+      "role": "recovery_input"
+    },
+    "results/agent_feedback/clean_sft_seed20261004/input_manifest.json": {
+      "sha256": "34196ce44e73893055131429473d886bb98b319b4f50eefb47693c1991b0b86d",
+      "role": "clean_seed2_input"
+    },
+    "results/agent_feedback/recovery_sft_seed20261004/input_manifest.json": {
+      "sha256": "7486b2781903da06b8e0b27ccc648196f84577cdec86d609276b9a2276cadbd4",
+      "role": "recovery_seed2_input"
+    },
+    "experiments/agent_feedback/recovery.py": {
+      "sha256": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/continuation_data.py": {
+      "sha256": "f33c662be4259aa728bf98ff739593c479fb101a92514cd4d4ce82643c51863d",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/training_data.py": {
+      "sha256": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/train_sft.py": {
+      "sha256": "ea8259f783825f1e7733a8fb147f980a70d698766bb501d8ee9e3a26193c008e",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/environment.py": {
+      "sha256": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/inference.py": {
+      "sha256": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/compare.py": {
+      "sha256": "ee90e86613477514b6e30ff9452286f4ffc3dcd9acb0b2c5d195bb1d4712994e",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/holdout_analysis.py": {
+      "sha256": "02969422ec00b83f66521407d0e632b708cad21d263c72f8026aa4b45ccad05a",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/holdout_runs.py": {
+      "sha256": "6fbc2589c47d90977c2def344a69b4ccecefa54b13132efed4ff7949a913e1f0",
+      "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/feedback_mask.py": {
+      "sha256": "12d6eb63f1b763935c5c50de7e4d177ab2778cf666c04486a60f569b2800ce81",
+      "role": "frozen_implementation"
+    }
+  },
+  "outputs_sha256": {
+    "results_tables.csv": "9cf9b5fb39b3214bdf0bb014d5d5c5424b79ad99a14ef7aa786c0e7fe1fbbe79",
+    "generated_tables.tex": "fd1864dfb67761e4278d796589afd48bd1999f4c9f262db6b43f8f0cf2d15d9f",
+    "04_execution_feedback_method.tex": "2fb766e745217d1252565682d26f09284de7f5e294463897ee83a53e8e5411f6",
+    "05_public_experiments.tex": "bdbb5228e2603d5e432ff640b4bf174b5749c6c31cff5c8602f3f850b1e953f9",
+    "review.tex": "ceb5bd6fb58f04c211031ea8001215eb2648ac1912a80757146c19a404e32c6e",
+    "export_evidence.py": "ba7872cc666d677aadb05aee2449ecf7585f92b80ea7560bf16ee2a06e7d8959"
+  },
+  "table_rows": 220,
+  "validation": {
+    "frozen_summary_hash_bindings": true,
+    "aggregate_arithmetic": true,
+    "replay_count": 10000,
+    "replay_mismatches": 0,
+    "bootstrap_intervals": "copied with source hashes; cannot recompute joint-seed bootstrap from marginals",
+    "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"
+  },
+  "claim_limits": [
+    "two continuation seeds share an initial adapter",
+    "project holdout is not official hidden test",
+    "equal supervised token budgets, unequal input tokens and compute",
+    "first divergence need not be a semantic error",
+    "4 of 418 accepted divergence actions were rejected",
+    "no demonstrated incremental RL benefit in this short trial",
+    "detailed error-string mechanism not established",
+    "C costs about 24 times P total inference tokens",
+    "answer equality and replay consistency do not establish condition fidelity",
+    "no new references asserted"
+  ]
+}

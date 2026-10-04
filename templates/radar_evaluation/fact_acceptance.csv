@@ -1,0 +1,1 @@
+fact_id,fact_record_file,fact_record_sha256,source_ids_json,full_entity_ids_json,family_ids_json,equivalent_fact_group_id,acceptance_scope,acceptance_status,acceptance_record_file,acceptance_record_sha256,reviewer_kind,reviewer_id,reviewed_at,knowledge_version,notes

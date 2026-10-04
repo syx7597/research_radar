@@ -1,0 +1,1 @@
+run_id,qid,prediction_sha256,gold_record_sha256,predicted_answer_status,valid_output,answer_correct,substantive_answer_given,condition_faithful,all_required_items_supported,numeric_error_present,failure_type,reviewer_kind,reviewer_id,reviewed_at,review_notes

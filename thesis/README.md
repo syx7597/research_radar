@@ -1,4 +1,34 @@
-> 历史成果模块：以下指标属于旧版固定策略/应用系统。最新研究主线与完成度见 [项目首页](../README.md)。
+> 当前论文主线：**《基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用》**。下面的 `current/` 为新稿入口；本目录原有八章、合并稿与图片属于历史路线，不能直接作为当前论文结论或混入新稿。
+
+## 当前主线写作入口
+
+| 文件 | 用途与状态 |
+|---|---|
+| [current/04_execution_feedback_method.tex](current/04_execution_feedback_method.tex) | 方法章节：执行状态、恢复后缀、句柄重映射、监督掩码及匹配预算；绑定冻结实现 |
+| [current/05_public_experiments.tex](current/05_public_experiments.tex) | 公开实验章节：2,000 题留出结果、两个续训种子、成本、RL 与反馈诊断、局限 |
+| [current/results_tables.csv](current/results_tables.csv) | 机器可读结果字段、来源 JSON 路径与派生公式；不含逐题数据 |
+| [current/evidence_manifest.json](current/evidence_manifest.json) | 汇总来源、冻结实现、章节及生成表格的 SHA-256 |
+| [current/export_evidence.py](current/export_evidence.py) | 重建表格和清单；`--check` 检查数字及文件一致性 |
+| [current/review.tex](current/review.tex) | 两章的独立 XeLaTeX 审阅入口；需要 `ctexrep`、`amsmath`、`booktabs` 等常用包 |
+
+新稿已有依据的核心结论：恢复轨迹 SFT 在两个共享初始模型的续训种子上，相对同监督 token 预算的普通续训，项目留出集准确率平均提高 **4.75 个百分点**，问题配对 95% 区间 **[3.53, 5.98]**。它不是官方隐藏测试结果，不代表全流程两种子独立复现；C/P 总推理 token 约为 24 倍，详细报错文字和短程 RL 的额外收益均未得到证实。
+
+从仓库根目录执行：
+
+```sh
+python3 thesis/current/export_evidence.py --check
+python3 thesis/current/export_evidence.py
+xelatex -output-directory=thesis/current thesis/current/review.tex
+xelatex -output-directory=thesis/current thesis/current/review.tex
+```
+
+前两条分别检查和重建公开汇总导出，均不读取逐题留出数据或运行训练。当前写作环境没有 `xelatex`，尚未编译或目视检查新稿 PDF。章节编号为暂定四、五章；正式成稿仍需学校模板、核实后的相关文献、雷达事实与独立问答实验。已有旧稿的参考文献未自动迁入，以免把未经本轮核对的条目当成新稿证据。
+
+最新项目状态见 [项目首页](../README.md) 和 [当前状态](../docs/CURRENT_STATUS.md)。
+
+---
+
+## 以下为历史路线写作记录（保留供追溯）
 
 # 硕士毕业论文 · 写作进度与索引
 

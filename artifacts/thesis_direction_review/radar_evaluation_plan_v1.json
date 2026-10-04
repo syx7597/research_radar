@@ -1,0 +1,388 @@
+{
+  "protocol_id": "radar_evaluation_plan_v1",
+  "status": "design_draft_not_frozen",
+  "created_on": "2026-10-04",
+  "language": "zh-CN",
+  "purpose": "将已完成的公开恢复轨迹训练方法落地到可追溯雷达知识问答；先完成核验和开发闭环，再冻结独立领域评价。",
+  "current_state": {
+    "human_accepted_facts": 0,
+    "human_accepted_independent_questions": 0,
+    "final_questions_written": 0,
+    "final_answers_written": 0,
+    "split_audit_complete": false,
+    "knowledge_frozen": false,
+    "evaluation_frozen": false,
+    "domain_training_started": false,
+    "domain_training_readiness": "用户已授权按计划推进；目前尚未具备领域训练的数据和冻结条件。"
+  },
+  "review_arrangement": {
+    "first_fact_review": "用户本人先审首批 12 条；实际姓名/署名、完成时间与决定由本人填写，本文不代填。",
+    "peer_review": "用户计划后续找同学交叉复核；尚无已完成复核或实名承诺。",
+    "work_can_start_now": [
+      "来源与候选事实整理",
+      "用户首批事实核验",
+      "仅限开发的查询/来源闭环",
+      "独立评价设计"
+    ],
+    "final_qa_gate": "独立 QA 最终验收需要与出题者不同的真人复核者；尚未找到第二人不阻止开发，但该状态不能被写成独立金标已经完成。",
+    "identity_limit": "身份字段只是审阅者声明；结构检查不能证明真人实际完成核验。"
+  },
+  "size_estimates_not_quotas": {
+    "radar_families_or_models": [
+      20,
+      30
+    ],
+    "verified_facts": [
+      200,
+      300
+    ],
+    "final_questions": [
+      100,
+      150
+    ],
+    "development_trial_questions": [
+      10,
+      20
+    ],
+    "note": "都是工作量估计。按可核验来源和连通组数量调整；不凑数量、不把未核验记录视为金标、不为达到比例制造主评价冲突。"
+  },
+  "question_groups": [
+    {
+      "id": "fact_subject",
+      "label": "事实、主体与事件识别",
+      "scope": "明确资料范围内的实体属性、型号/系统/部件归属与事件类型；无必要限定的直接查询也保留。",
+      "approximate_share": 0.25
+    },
+    {
+      "id": "relation_set",
+      "label": "关联、集合与有限计数",
+      "scope": "来源支持的关系查询、实体集合和明确枚举范围内的计数；不从不完整库推出现实全体数量。",
+      "approximate_share": 0.25
+    },
+    {
+      "id": "condition_numeric",
+      "label": "条件、单位与区间",
+      "scope": "版本/部件/适用条件限定，数值、范围和同量纲有限比较；不推导作战效能、战术或装备运用建议。",
+      "approximate_share": 0.35
+    },
+    {
+      "id": "insufficient_conflict",
+      "label": "资料不足、冲突与有界解释",
+      "scope": "针对冻结资料说明不能确定的原因，或保留真实来源冲突及其出处；不混入无界开放问答。",
+      "approximate_share": 0.15
+    }
+  ],
+  "group_rules": [
+    "每题只有一个 primary question_group；secondary_tags 可重叠，次级标签结果仅作描述。",
+    "比例仅用于检查覆盖；冻结时公布实际题数。题型与 answerable/unknown/conflicting 是两个独立维度。",
+    "unknown 指冻结资料不足，不是现实中没有该参数；conflicting 必须有真实且仍未解决的同主体/版本/条件冲突。",
+    "合成注错、虚构冲突和演示问题单列压力测试，永久不进入自然领域主成绩。"
+  ],
+  "separate_acceptance": {
+    "facts": "复用原事实模式和审阅流程；fact_acceptance.csv 是已审阅事实的版本索引，不替代包含主体/版本/事件/数值/单位/条件检查的一手来源验收记录。只接收 independent_fact + accepted 且 reviewer_kind=human 的记录；source_snapshot_reading 只能用于开发材料。",
+    "fact_versioning": "事实修订产生新版本/哈希并保留旧决定；候选整行、原来源快照和验收记录都绑定 SHA-256。每条支持事实的所有主体、关系目标、来源和家族均登记，不能只登记 anchor。",
+    "questions": "先完成事实核验及知识版本，再由真人依据原始证据独立出题/作答；出题前不得看模型输出、旧自动 QA 答案或执行器结果。另一个真人复核题意、支持范围、答案、数值与条件。",
+    "qa_provenance": "最终集 annotation_origin 必须 independent_human_from_sources；model_outputs_seen 必须 false；author_kind/reviewer_kind 均为 human 且署名不同。AI 可做流程建议和格式检查，不代填独立问题/金标。",
+    "execution_crosscheck": "真人语义标注后才运行参考查询作一致性检查。冲突回到原文和真人裁决，不以执行器答案覆盖人工标签。",
+    "answerable": "每个要求的答案项绑定已验收事实和来源；集合/计数需记录检索范围与纳入规则。",
+    "unknown": "support_fact_ids 可以为空，但 scope_source_ids 与 scope_statement 必须完整，真人记录已检索字段/主体/版本及未能确定的原因；相关范围内现有事实仍登记。未标注或未审阅不等于 unknown。",
+    "conflicting": "至少列出两个已核验的原文陈述及不同答案候选，明确为何主体/版本/条件可比而冲突未解。来源支持其陈述，不等于宣称互斥值均为真实参数。"
+  },
+  "group_split": {
+    "unit": "来源与型号家族的二部依赖连通分量；拆分的是适配/开发问题与答案的可用性，不拆可查询知识。",
+    "input_inventory": [
+      "source_inventory.csv",
+      "family_assignments.csv",
+      "fact_acceptance.csv",
+      "所有拟复用旧自动 QA 的完整实体、支持事实、实际文档来源与派生链"
+    ],
+    "canonical_sources": "同一原始文档的镜像、翻译、转引和不同快照归到 canonical_document_id；同一手册全册是同源，不能为了拆组将不同页伪装成独立文档。衍生出处不确定则保守合并或排除适配使用。",
+    "family_scope": "先依据来源确定型号、变体、别名及系统/部件的家族范围并写明定义；不能为获得好切分临时把版本当独立家族。纯通用 schema/单位字典可共享，但不携带型号事实且必须预先列白名单。",
+    "connectivity_steps": [
+      "创建 canonical source、family、fact 和 candidate-question 节点。事实连到全部支持来源、全部涉及的型号家族和等价事实组；同一陈述的转引/复述合并。",
+      "问题连到全部支持事实、上下文涉及实体及完整回答/未知判定所依赖来源；关系目标与集合成员都纳入。unknown 问题按整个检索范围连接，不因 support_fact_ids 为空而孤立。",
+      "来源派生边、别名/家族边及已识别的等价信息请求边取传递闭包，得到 component_id；集合/跨家族题会合并多个组。",
+      "先做来源/家族组划分，之后在指定评价组内独立出题；新题若跨组件则重新合并并重新审核，必须在最终冻结前完成。",
+      "当前 12 个开发题的完整依赖闭包强制 development_only；其他已用于提示词、接口调试或训练的组不能进入 final_evaluation。",
+      "剩余组件整体赋给 adaptation_train、development_only 或 final_evaluation；记录理由、数量和跨组泄漏检查，不对文档或家族内部逐题随机分割。"
+    ],
+    "near_duplicate_rule": "同一实体/别名、投影属性/关系、限定条件、支持事实或资料范围的等价问法归并并同组；12 个已见题及旧自动 QA 的改写/翻译/改名不可升级独立题。通用查询操作语法可共享，本评价不宣称未见组合或未见模板泛化。",
+    "legacy_auto_qa": "旧 5401 道自动 QA 永久不能作为独立测试；仅可在核验完整依赖、排除评价组件和近似请求后用于适配/开发。来源归属不明的旧题不进入严格隔离适配数据。旧 split=test 标签无独立性效力。",
+    "knowledge_access": "所有被核验的领域事实和原文（包括 final_evaluation 题所依赖事实）保留在统一 KB/文本库供各方法查询。禁止把评价支持事实从检索库移除后把失败称为泛化测试。只有评价问题、答案、参考查询、评分标签对适配和调参隔离。",
+    "giant_component_policy": "若同一本手册/系统家族把大多数记录连成一组，报告真实组件数量；增加可独立核验的来源/家族或缩小声称范围。不能删边、按页伪切分或将逐题随机拆分叫严格来源隔离。",
+    "public_claim_limit": "这里的隔离约束项目内适配材料；不保证基础模型预训练从未见过公开资料。"
+  },
+  "permanent_exclusions": {
+    "development_question_ids": [
+      "radar-workflow-dev-01",
+      "radar-workflow-dev-02",
+      "radar-workflow-dev-03",
+      "radar-workflow-dev-04",
+      "radar-workflow-dev-05",
+      "radar-workflow-dev-06",
+      "radar-workflow-dev-07",
+      "radar-workflow-dev-08",
+      "radar-workflow-dev-09",
+      "radar-workflow-dev-10",
+      "radar-workflow-dev-11",
+      "radar-workflow-dev-12"
+    ],
+    "development_file": "artifacts/thesis_direction_review/radar_review_workflow/development_questions.csv",
+    "development_file_sha256": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+    "exclude_entire_lineages": [
+      "现有 5401 道旧自动 QA 及其改写/翻译/重编号",
+      "12 道已见流程题及其等价信息请求",
+      "本次与后续开发调试题",
+      "合成压力测试题"
+    ],
+    "current_source_family_labels_not_certified_split": true
+  },
+  "comparison_matrix": [
+    {
+      "id": "RAG",
+      "purpose": "同源文本检索并回答的必要基线",
+      "knowledge": "与核验 KB 同来源范围的冻结文本，保留条件、区间和原始定位",
+      "model": "同 Qwen2.5-3B-Instruct 基座；适合文本回答的提示/适配状态在领域开发结束时绑定",
+      "interface": "固定检索器/切片/top-k/重排/上下文预算；在答案输出中给来源定位",
+      "claim_limit": "与执行方案比较总体质量/成本；不同接口与训练表示差异不能归因于单个推理算法。"
+    },
+    {
+      "id": "P",
+      "purpose": "一次性可执行查询及其成本基线",
+      "knowledge": "同冻结核验 KB 与来源索引",
+      "model": "保留原 P 分支，领域接口或适配只用 adaptation_train/development_only",
+      "interface": "单次生成程序、固定执行；不在失败后隐式增加修复调用",
+      "claim_limit": "与 Agent 是系统层对照；原公开训练轮次/表示不同，必须记录。"
+    },
+    {
+      "id": "A_seed1,A_seed2",
+      "purpose": "无恢复状态监督的匹配 Agent 对照",
+      "knowledge": "与 C 完全相同的核验 KB、执行器和反馈",
+      "model": "保留公开实验两个普通续训检查点，不挑较好种子",
+      "interface": "与 C 相同调用、上下文、生成上限及终止规则",
+      "claim_limit": "如追加领域适配，A/C 同问题、初始化对应关系、监督预算和训练配置配对；不能只适配 C。"
+    },
+    {
+      "id": "C_seed1,C_seed2",
+      "purpose": "恢复轨迹训练主方法",
+      "knowledge": "与 A 完全相同",
+      "model": "保留公开实验两个恢复续训检查点",
+      "interface": "真实执行反馈；不将诊断遮蔽版替换为主模型",
+      "claim_limit": "领域主方法增量为同一题上两个续训配对的 C−A 平均；各个种子均完整报告。"
+    }
+  ],
+  "comparison_limits": [
+    "主对照需要上述 6 路配置在最终题/答案揭盲前冻结；目前未启动领域训练或最终评价。公开训练已收束，RL 和语义核验偏好训练继续暂停。",
+    "先用已有开发题检查中文接口可用性；是否需要领域适配及具体预算由开发证据决定，并在独立评价前另行绑定。不得用最终题来挑提示、检查点、检索器或训练步数。",
+    "同源意味着同 canonical_document_ids 和核验覆盖范围；文本保留原文语义，图表示是该范围的抽取视图。报告抽取缺失，不能故意给文本去条件而给图保留条件。",
+    "同基座不等于同训练数据或同算力。记录基础模型/adapter 哈希、适配题数、监督 token、更新数、GPU 小时、检索与执行预算，A/C 的等监督预算也不能写成等总计算。",
+    "完成主矩阵后才做同事实的扁平/条件区间表示投影和原抽取/核验图对照；这些是信息表示或知识质量对照，不能将增加信息或人工纠错归因于模型训练。",
+    "证据链收益如需单独归因，应固定同一答案/查询比较证据输出策略；RAG 与 Agent 的差异不能替代此消融。"
+  ],
+  "scoring": {
+    "population": "N = 冻结最终评价清单中的全部已验收自然问题；各系统分母相同。超时、无输出、解析/执行失败保留，答案算错，实际成本计入。",
+    "gold_states": [
+      "answerable",
+      "unknown",
+      "conflicting"
+    ],
+    "prediction_states": [
+      "answerable",
+      "unknown",
+      "conflicting",
+      "execution_failure"
+    ],
+    "answer_schema": "answer_json 保存结构化答案项/候选、原值/单位/区间、必要主体版本条件和资料范围；answerable 不允许凭空补原文未说明条件。unknown/conflicting 有明确范围及原因。填表规范见模板说明。",
+    "primary_metric": {
+      "id": "answer_accuracy_all",
+      "numerator": "答案状态及必要答案项、主体/版本/事件、数值/单位/区间和题目要求的条件全部正确的题数",
+      "denominator": "N",
+      "rules": "来源引用质量另计。数值比较采用事先登记的单位等价与舍入容差；区间不得用中点替代。answerable 的空答/拒答错误；unknown 要恰当限定资料不足且无无依据的确定答案；conflicting 要保留经核验冲突，不静默选值。额外无依据实质断言使该题不正确。"
+    },
+    "metrics": [
+      {
+        "id": "answer_accuracy_answerable",
+        "numerator": "gold=answerable 且答案正确的题数",
+        "denominator": "N_answerable = gold=answerable 的题数"
+      },
+      {
+        "id": "answer_accuracy_unknown",
+        "numerator": "gold=unknown 且有界资料不足回答正确的题数",
+        "denominator": "N_unknown"
+      },
+      {
+        "id": "answer_accuracy_conflicting",
+        "numerator": "gold=conflicting 且冲突候选/范围回答正确的题数",
+        "denominator": "N_conflicting"
+      },
+      {
+        "id": "answer_coverage",
+        "numerator": "predicted_answer_status=answerable 且提供实质答案的题数",
+        "denominator": "N",
+        "notes": "明确 unknown/conflicting 可能答对但不算确定答案覆盖；同时报告三种回答状态分布，不能仅用覆盖判断质量。"
+      },
+      {
+        "id": "valid_output_rate",
+        "numerator": "可按统一答案结构解析且非 execution_failure 的输出题数",
+        "denominator": "N"
+      },
+      {
+        "id": "false_refusal_rate",
+        "numerator": "gold=answerable 且输出 unknown 或 conflicting 的题数",
+        "denominator": "N_answerable",
+        "notes": "超时/空答/执行失败另报 failure_rate，不隐藏在拒答中。"
+      },
+      {
+        "id": "failure_rate",
+        "numerator": "超时、空答、解析失败或执行失败的题数",
+        "denominator": "N"
+      },
+      {
+        "id": "unsupported_decisive_answer_rate",
+        "numerator": "gold 为 unknown/conflicting 却给无依据确定答案的题数",
+        "denominator": "N_unknown + N_conflicting"
+      },
+      {
+        "id": "numeric_error_count_and_rate",
+        "numerator": "含至少一项错误或无依据的参数数值断言的题数，报告原始整数",
+        "denominator": "N；另报该整数 / 输出含至少一项参数数值断言的题数",
+        "notes": "错误包括单位、端点、主体或条件错配；citation 页码/编号不算参数。漏答数值由主准确率/覆盖记录，不能因少答而宣称数值能力更强。"
+      },
+      {
+        "id": "numeric_claim_error_rate",
+        "numerator": "错误或无依据的参数数值断言条数",
+        "denominator": "全部输出的参数数值断言条数",
+        "notes": "辅助指标，须同时报告题级错误与覆盖，防止输出粒度影响解释。"
+      },
+      {
+        "id": "condition_fidelity",
+        "numerator": "条件要求题中完整保留全部 required_conditions 的题数",
+        "denominator": "N_condition = gold=answerable 且 required_conditions 非空的题数",
+        "notes": "拒答/失败在全体条件题分母计不满足；另报实际给实质答案条件题中的比例。按必要主体/版本/部件/事件/适用条件核对，不以成功执行替代语义核验。"
+      },
+      {
+        "id": "supported_answer_item_recall",
+        "numerator": "答案正确表述且引用支持的必要答案项数",
+        "denominator": "gold=answerable 问题的 required_answer_items 总数",
+        "notes": "每项须同时支持主体、值/单位/区间和必要条件；计数/集合可使用支持事实及可回放运算依赖。漏答、拒答、失败贡献 0。"
+      },
+      {
+        "id": "fully_supported_answerable_answer_rate",
+        "numerator": "gold=answerable 且所有必要答案项正确、有定位支持的题数",
+        "denominator": "N_answerable"
+      },
+      {
+        "id": "citation_support_precision",
+        "numerator": "至少一个引用真正支持完整断言的已引实质断言数",
+        "denominator": "至少带一个引用的实质断言数",
+        "notes": "无引用不能提高完整度；多次引用同一断言只算一次，引用个数不能刷分。"
+      },
+      {
+        "id": "output_claim_support_rate",
+        "numerator": "有可定位且语义支持证据的实质断言数",
+        "denominator": "全部输出实质断言数",
+        "notes": "未引的断言在分母内；unknown 原因/冲突陈述也按范围与证据核对。"
+      },
+      {
+        "id": "locator_validity",
+        "numerator": "能在绑定快照中精确定位的引用数",
+        "denominator": "全部输出引用数",
+        "notes": "以 run_id/qid/citation_id 唯一去重计数；同一引用被多个断言使用不重复增加分母。链接可打开/定位成功并不证明支持答案。"
+      },
+      {
+        "id": "cost",
+        "numerator": "每题输入 token、生成 token、工具调用、检索调用与端到端耗时；运行总 GPU 小时和训练成本分开",
+        "denominator": "每题值覆盖全部 N，汇总均值、中位数、P90 与总量；失败仍计实际消耗",
+        "notes": "记录硬件、并发、缓存/预热、检索器加载成本；token 更少不等于更快，各方法预算不同则明确披露。"
+      }
+    ],
+    "zero_denominator": "所有比例分母为 0 时记录 null/not_applicable，不记作 0% 或 100%。每个比例旁保留原始分子和分母。",
+    "annotation_blinding": "保存全部预测和哈希后再揭盲评分；评分者尽可能隐藏模型名、打乱答案顺序。同题跨模型评分使用同一规范，边界案例由第二人裁决并记录，不能看到输赢后改评分规则。",
+    "mechanical_checks": "可做别名、单位转换、执行回放及引用定位检查；条件与语义支持必须真人按准则复核，AI 判分仅作预审。",
+    "statistics": {
+      "primary_contrast": "每题先平均两个续训种子的 C−A 正确性差值，再对全部 N 题求平均；两次种子不扩成 2N 个独立问题。",
+      "per_seed": "分别完整报告每种子的 A/C 准确率、改正数/改错数、成本；RAG/P 系统比较单列。",
+      "correlation_unit": "按最终 source/family component 聚类；组件 bootstrap 5000 次，以组件为有放回抽样单位，每次包含其所有题并按题数计算差值。",
+      "few_components": "若 final_evaluation 少于 8 个独立组件，不给具有稳定推断含义的 bootstrap 置信结论；报告原始配对差异及逐组件结果、删一组件敏感性并明确探索性质。8 组亦不保证区间可靠。",
+      "subgroups": "四大题组报告样本数、准确率和配对差异，仅作描述；不从少量子组显著性挖新算法。",
+      "limits": "区间条件于固定知识库、这些问题/组件和两个既有续训检查点，不覆盖全训练随机性或全部雷达型号。"
+    }
+  },
+  "freeze_gates": [
+    "F0 设计版：本文件与空模板；尚无已验收事实/独立题目，尚未具备领域训练和最终评价的数据与冻结条件，不新增用户审批要求。",
+    "F1 事实就绪：来源、家族、事实逐项绑定并验收，定义可查询范围；用户首批核验即可开始开发闭环。",
+    "F2 分组与标注：知识版本、来源/家族连通组、永久排除表先核对；独立真人出题和异人复核；全部答案完整，分歧已裁决。",
+    "F3 运行前冻结：填齐 freeze_manifest.json，绑定 KB/文本/来源/组表/题目/答案/评分规范/模型/配置/代码哈希，记录最终 N 和题组分母，任何 null 核心项均不算冻结。先发布无答案的协议与哈希，再开始最终推理。",
+    "F4 封存预测：所有计划模型对完整题单输出并绑定哈希；有失败则保留原始失败记录；不因错题选择性重跑。仅预定义基础设施中断策略允许重试并留全日志。",
+    "F5 揭盲评分：参考答案由独立文件/流程保管；分离模型推理输入和答案，按冻结指标评分并报告全部配置。最终集使用后不可再作未见集合追分。"
+  ],
+  "storage": {
+    "public": "仅空模板、方案、冻结哈希、聚合结果和获许可的必要短引文；不提交真实最终问题答案、原始全文或逐题模型输出。",
+    "private_working_directory": "data/radar_evaluation_private/",
+    "private_directory_gitignored": true,
+    "roles": "出题/复核者可以读事实和原文；训练与提示开发仅访问适配/开发问题。最终评分答案不进入模型上下文/检索索引/训练文件。"
+  },
+  "next_human_tasks": [
+    "用户按现有 12 条审阅包先核对主体，再核对事件、版本、值、单位、条件和一手来源；填写真实署名/时间，不能确定就保留 needs_changes/rejected。",
+    "在首批核验中标记文档的原始出处和型号/系统/部件家族；现有来源标签不是已通过的独立切分。",
+    "先补完 10–20 道开发题的答案并走通接口；这批题永久留在 development_only。",
+    "知识和分组稳定后，由用户或同学独立出新 QA；另一人复核，真实身份逐题登记。缺少复核者时继续完善开发资源，不预填 accepted。",
+    "最终运行前共同检查大小、题组覆盖、组件数、同源基线与所有冻结哈希，再确定具体执行预算。"
+  ],
+  "templates": {
+    "source_inventory.csv": {
+      "path": "templates/radar_evaluation/source_inventory.csv",
+      "rows": 0,
+      "sha256": "73b3272c85e8412c32ac60096f1b073964538d6e58d4771a34e42bea4ba2bbfa"
+    },
+    "family_assignments.csv": {
+      "path": "templates/radar_evaluation/family_assignments.csv",
+      "rows": 0,
+      "sha256": "5b76a6f8ce47821635951047a61dce2ff8c4baf9a7e0878741abc55e7485f925"
+    },
+    "fact_acceptance.csv": {
+      "path": "templates/radar_evaluation/fact_acceptance.csv",
+      "rows": 0,
+      "sha256": "791d9bb76b4069bb8c6361cafafe6e38d9f7069a05581e69121970f965f722e6"
+    },
+    "split_assignments.csv": {
+      "path": "templates/radar_evaluation/split_assignments.csv",
+      "rows": 0,
+      "sha256": "cb79a3d4f2d5ee7262f8b11105d8a2424051374b027be00d2d6024712664bc3c"
+    },
+    "questions.csv": {
+      "path": "templates/radar_evaluation/questions.csv",
+      "rows": 0,
+      "sha256": "2d89a8f48a5c8d04fba16aef133e3113e74f200bf07e323e842a353f47bb2e7e"
+    },
+    "question_reviews.csv": {
+      "path": "templates/radar_evaluation/question_reviews.csv",
+      "rows": 0,
+      "sha256": "9dd6de0cffda888e369e9fbb8ef29f901ec459772a4fe7bf11cfdb58b6f91384"
+    },
+    "prediction_reviews.csv": {
+      "path": "templates/radar_evaluation/prediction_reviews.csv",
+      "rows": 0,
+      "sha256": "e08738f58847b18e2b6c559ea529f88d7580e892d9fa5384ce131140f21bc9eb"
+    },
+    "answer_claim_reviews.csv": {
+      "path": "templates/radar_evaluation/answer_claim_reviews.csv",
+      "rows": 0,
+      "sha256": "0d227eed2ed7f691865a6bed8666ca027a22823dbbaa5dd51afbf2bcc9a6729b"
+    }
+  },
+  "references": [
+    "docs/ROADMAP.md",
+    "docs/THESIS_ROUTE_REVIEW.md#5.2",
+    "docs/research/RADAR_REVIEW_WORKFLOW.md",
+    "templates/radar_review/facts.csv",
+    "templates/radar_review/questions.csv"
+  ],
+  "non_actions": [
+    "未读取公开基准留出集逐题内容",
+    "未生成雷达独立问题或答案",
+    "未声明人工已完成核验",
+    "未修改旧模板或已绑定文档",
+    "未启动领域训练或最终评价"
+  ]
+}

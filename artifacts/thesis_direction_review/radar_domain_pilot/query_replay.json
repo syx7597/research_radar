@@ -1,0 +1,1481 @@
+{
+  "default_admitted_results": 0,
+  "development_questions_replayed": 10,
+  "final_answers_written": 0,
+  "gpu_calls": 0,
+  "independent_qa_examples": 0,
+  "model_calls": 0,
+  "original_question_file_unmodified": true,
+  "original_review_decisions_unmodified": true,
+  "performance_metric": null,
+  "performance_metric_reason": "Manual query replay demonstrates interface behavior; no model accuracy or effectiveness claim.",
+  "pilot_version": "radar_domain_pilot_v1",
+  "purpose": "manual_structured_query_development_demo",
+  "query_calls": 20,
+  "replays": [
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "service_entry",
+          "entity": "AN/MPQ-65",
+          "event_type": "in_service"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "该来源快照的Since表述对应什么主体和事件？仅凭它能否确定AN/MPQ-65的服役年份？",
+      "qid": "radar-workflow-dev-02",
+      "query": {
+        "attribute": "service_entry",
+        "entity": "AN/MPQ-65",
+        "event_type": "in_service"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "service_entry",
+          "entity": "AN/MPQ-65",
+          "event_type": "in_service"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "service_entry",
+            "citation": {
+              "evidence_text": "Since 1981",
+              "locator": {
+                "char_end": 10,
+                "char_start": 0,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_mpq-65#ibx",
+                "chunk_line": 5,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/In service",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_mpq-65.json",
+              "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+              "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+            },
+            "condition": {
+              "items": [],
+              "raw": null,
+              "status": "not_stated"
+            },
+            "entity_id": "kg_v3:AN/MPQ-65",
+            "entity_name": "AN/MPQ-65",
+            "event_type": "in_service",
+            "fact_id": "radar-review-001-02",
+            "fact_record_sha256": "6fcc9c2781905baeaef46d7ed6c1ac69c40090ee5c71f9788f0f8fe4882f6888",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "Since 1981; initial operational capacity 1984",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。保留来源第一个时间事件；来源主体是Patriot系统，1981不能据此确认为AN/MPQ-65服役年份。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": null,
+              "min_value": null,
+              "unit_raw": null,
+              "unit_std": "year",
+              "value": "1981",
+              "value_kind": "event",
+              "value_status": "ambiguous"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "service_entry",
+          "entity": "AN/MPQ-65",
+          "event_type": "initial_operational_capacity"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "该来源快照的initial operational capacity表述对应哪一事件？与服役事件应否分开记录？",
+      "qid": "radar-workflow-dev-03",
+      "query": {
+        "attribute": "service_entry",
+        "entity": "AN/MPQ-65",
+        "event_type": "initial_operational_capacity"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "service_entry",
+          "entity": "AN/MPQ-65",
+          "event_type": "initial_operational_capacity"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "service_entry",
+            "citation": {
+              "evidence_text": "initial operational capacity 1984",
+              "locator": {
+                "char_end": 45,
+                "char_start": 12,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_mpq-65#ibx",
+                "chunk_line": 5,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/In service",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_mpq-65.json",
+              "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+              "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+            },
+            "condition": {
+              "items": [],
+              "raw": null,
+              "status": "not_stated"
+            },
+            "entity_id": "kg_v3:AN/MPQ-65",
+            "entity_name": "AN/MPQ-65",
+            "event_type": "initial_operational_capacity",
+            "fact_id": "radar-review-001-03",
+            "fact_record_sha256": "15fa1b802e5b1b1856c4bdfcd91b22d87bc9225af2883de9b251beeb059006e9",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "Since 1981; initial operational capacity 1984",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。第二个时间事件单列；旧属性只存1981。1984的主体和事件定义仍待人工核验，不是替代金标。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": null,
+              "min_value": null,
+              "unit_raw": null,
+              "unit_std": "year",
+              "value": "1984",
+              "value_kind": "event",
+              "value_status": "ambiguous"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "frequency",
+          "entity": "AN/APY-9",
+          "variant": null
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "AN/APY-9来源快照的Frequency栏给出什么区间？该区间是型号参数还是频段解释能否确定？",
+      "qid": "radar-workflow-dev-04",
+      "query": {
+        "attribute": "frequency",
+        "entity": "AN/APY-9",
+        "variant": null
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "frequency",
+          "entity": "AN/APY-9",
+          "variant": null
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "frequency",
+            "citation": {
+              "evidence_text": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+              "locator": {
+                "char_end": 36,
+                "char_start": 0,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_apy-9#ibx",
+                "chunk_line": 31,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/Frequency",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_apy-9.json",
+              "source_sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+              "source_uri": "https://en.wikipedia.org/wiki/AN/APY-9"
+            },
+            "condition": {
+              "items": [],
+              "raw": null,
+              "status": "not_stated"
+            },
+            "entity_id": "kg_v3:AN/APY-9",
+            "entity_name": "AN/APY-9",
+            "event_type": null,
+            "fact_id": "radar-review-001-04",
+            "fact_record_sha256": "e874bd3d4320b3cfc9cd0fd1c0455a86bd9def843042c6d20a2e72e87fc9fe1c",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "UHF-Band 0.3–3.0 GHz (99.93–9.99 cm)",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。按快照预填区间两端；旧值只存3.0 GHz。需核实这是型号实际工作频段还是一般UHF频段说明；不把波长另造事实。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": "3.0",
+              "min_value": "0.3",
+              "unit_raw": "GHz",
+              "unit_std": "GHz",
+              "value": null,
+              "value_kind": "range",
+              "value_status": "ambiguous"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "frequency",
+          "condition_raw": "Illuminator",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "AN/SPG-51来源快照中标为Illuminator的频率记录应保留什么范围、单位与部件标签？",
+      "qid": "radar-workflow-dev-05",
+      "query": {
+        "attribute": "frequency",
+        "condition_raw": "Illuminator",
+        "entity": "AN/SPG-51"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "frequency",
+          "condition_raw": "Illuminator",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "frequency",
+            "citation": {
+              "evidence_text": "Illuminator: 10.25-10.5 GHz",
+              "locator": {
+                "char_end": 27,
+                "char_start": 0,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_spg-51#ibx",
+                "chunk_line": 112,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/Frequency",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_spg-51.json",
+              "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+              "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+            },
+            "condition": {
+              "items": [
+                {
+                  "kind": "verbatim_component_label",
+                  "text": "Illuminator"
+                }
+              ],
+              "raw": "Illuminator",
+              "status": "explicit"
+            },
+            "entity_id": "kg_v3:AN/SPG-51",
+            "entity_name": "AN/SPG-51",
+            "event_type": null,
+            "fact_id": "radar-review-001-05",
+            "fact_record_sha256": "f11cf1b297a548d3e6b8d10e53f3bd4c1add3e49275ea3cf27bc617766ec7734",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。原文照射部件范围单列；旧值只存10.5 GHz。部件名称仅忠实保留原文，不宣称型号版本已厘清。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": "10.5",
+              "min_value": "10.25",
+              "unit_raw": "GHz",
+              "unit_std": "GHz",
+              "value": null,
+              "value_kind": "range",
+              "value_status": "stated"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "frequency",
+          "condition_raw": "Tracking Radar",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "AN/SPG-51来源快照中标为Tracking Radar的频率记录应保留什么范围、单位与部件标签？",
+      "qid": "radar-workflow-dev-06",
+      "query": {
+        "attribute": "frequency",
+        "condition_raw": "Tracking Radar",
+        "entity": "AN/SPG-51"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "frequency",
+          "condition_raw": "Tracking Radar",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "frequency",
+            "citation": {
+              "evidence_text": "Tracking Radar: 5.45 GHz - 5.825 GHz",
+              "locator": {
+                "char_end": 74,
+                "char_start": 38,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_spg-51#ibx",
+                "chunk_line": 112,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/Frequency",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_spg-51.json",
+              "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+              "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+            },
+            "condition": {
+              "items": [
+                {
+                  "kind": "verbatim_component_label",
+                  "text": "Tracking Radar"
+                }
+              ],
+              "raw": "Tracking Radar",
+              "status": "explicit"
+            },
+            "entity_id": "kg_v3:AN/SPG-51",
+            "entity_name": "AN/SPG-51",
+            "event_type": null,
+            "fact_id": "radar-review-001-06",
+            "fact_record_sha256": "e41d87c4377645795618c8e27b68cc63054006e8ea4698440132239db11ad7f4",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "Illuminator: 10.25-10.5 GHz; Tracking Radar: 5.45 GHz - 5.825 GHz",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。原文跟踪部件范围单列；不与照射部件范围合并。出处引用及具体配置需人工核验。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": "5.825",
+              "min_value": "5.45",
+              "unit_raw": "GHz",
+              "unit_std": "GHz",
+              "value": null,
+              "value_kind": "range",
+              "value_status": "stated"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "prf",
+          "condition_raw": "surface",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "AN/SPG-51来源快照中surface标签下的PRF以什么数值形式记录？该标签的进一步含义是否已明确？",
+      "qid": "radar-workflow-dev-07",
+      "query": {
+        "attribute": "prf",
+        "condition_raw": "surface",
+        "entity": "AN/SPG-51"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "prf",
+          "condition_raw": "surface",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "prf",
+            "citation": {
+              "evidence_text": "4100 pps (surface)",
+              "locator": {
+                "char_end": 18,
+                "char_start": 0,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_spg-51#ibx",
+                "chunk_line": 112,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/PRF",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_spg-51.json",
+              "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+              "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+            },
+            "condition": {
+              "items": [
+                {
+                  "kind": "verbatim_context_label",
+                  "text": "surface"
+                }
+              ],
+              "raw": "surface",
+              "status": "explicit"
+            },
+            "entity_id": "kg_v3:AN/SPG-51",
+            "entity_name": "AN/SPG-51",
+            "event_type": null,
+            "fact_id": "radar-review-001-07",
+            "fact_record_sha256": "83de21950b10b88defa01a9242ab66bd3ada2c0dc28782ad0ad30bc39be64a93",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "4100 pps (surface); 9600-16700 pps (air)",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。surface是原文标签，仅记录，不擅自扩展其模式/目标含义。当前条目未与air数值混合。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": null,
+              "min_value": null,
+              "unit_raw": "pps",
+              "unit_std": "pps",
+              "value": "4100",
+              "value_kind": "scalar",
+              "value_status": "stated"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "prf",
+          "condition_raw": "air",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "AN/SPG-51来源快照中air标签下的PRF应保留哪两个端点和什么单位？",
+      "qid": "radar-workflow-dev-08",
+      "query": {
+        "attribute": "prf",
+        "condition_raw": "air",
+        "entity": "AN/SPG-51"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "prf",
+          "condition_raw": "air",
+          "entity": "AN/SPG-51"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "prf",
+            "citation": {
+              "evidence_text": "9600-16700 pps (air)",
+              "locator": {
+                "char_end": 40,
+                "char_start": 20,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_spg-51#ibx",
+                "chunk_line": 112,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/PRF",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_spg-51.json",
+              "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+              "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51"
+            },
+            "condition": {
+              "items": [
+                {
+                  "kind": "verbatim_context_label",
+                  "text": "air"
+                }
+              ],
+              "raw": "air",
+              "status": "explicit"
+            },
+            "entity_id": "kg_v3:AN/SPG-51",
+            "entity_name": "AN/SPG-51",
+            "event_type": null,
+            "fact_id": "radar-review-001-08",
+            "fact_record_sha256": "d992fb7db9d99ed1ac998e79e66cbb80dae98f906951f509d54123771b1cb159",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "4100 pps (surface); 9600-16700 pps (air)",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。air是原文标签，范围单列；旧属性只存surface的4100。标签实际语义及条件完整性待核验。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": "16700",
+              "min_value": "9600",
+              "unit_raw": "pps",
+              "unit_std": "pps",
+              "value": null,
+              "value_kind": "range",
+              "value_status": "stated"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "frequency",
+          "condition_raw": null,
+          "entity": "AN/SPN-35"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "AN/SPN-35来源快照的Frequency栏应按什么量纲和区间记录？",
+      "qid": "radar-workflow-dev-09",
+      "query": {
+        "attribute": "frequency",
+        "condition_raw": null,
+        "entity": "AN/SPN-35"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "frequency",
+          "condition_raw": null,
+          "entity": "AN/SPN-35"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "frequency",
+            "citation": {
+              "evidence_text": "9.0 to 9.2 GHz band",
+              "locator": {
+                "char_end": 19,
+                "char_start": 0,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_spn-35#ibx",
+                "chunk_line": 135,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/Frequency",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_spn-35.json",
+              "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+              "source_uri": "https://en.wikipedia.org/wiki/AN/SPN-35"
+            },
+            "condition": {
+              "items": [],
+              "raw": null,
+              "status": "not_stated"
+            },
+            "entity_id": "kg_v3:AN/SPN-35",
+            "entity_name": "AN/SPN-35",
+            "event_type": null,
+            "fact_id": "radar-review-001-09",
+            "fact_record_sha256": "caf25e3c40b5cda7cbd03c7b8de0a37ba36781992f1986b2ecb07893141640c3",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "9.0 to 9.2 GHz band",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。快照为GHz频率范围，旧图谱却存9000.0 kg；仅预填原文范围，不保留明显量纲冲突为金标。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": "9.2",
+              "min_value": "9.0",
+              "unit_raw": "GHz",
+              "unit_std": "GHz",
+              "value": null,
+              "value_kind": "range",
+              "value_status": "stated"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "service_entry",
+          "entity": "AN/SPG-59",
+          "event_type": "cancellation"
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "AN/SPG-59来源快照中Canceled表述的是何种事件？它能否直接回答服役年份？",
+      "qid": "radar-workflow-dev-11",
+      "query": {
+        "attribute": "service_entry",
+        "entity": "AN/SPG-59",
+        "event_type": "cancellation"
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "service_entry",
+          "entity": "AN/SPG-59",
+          "event_type": "cancellation"
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "service_entry",
+            "citation": {
+              "evidence_text": "Canceled 1963",
+              "locator": {
+                "char_end": 13,
+                "char_start": 0,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "an_spg-59#ibx",
+                "chunk_line": 125,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/Introduced",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/an_spg-59.json",
+              "source_sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+              "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-59"
+            },
+            "condition": {
+              "items": [],
+              "raw": null,
+              "status": "not_stated"
+            },
+            "entity_id": "kg_v3:AN/SPG-59",
+            "entity_name": "AN/SPG-59",
+            "event_type": "cancellation",
+            "fact_id": "radar-review-001-11",
+            "fact_record_sha256": "3245ea8c12873d9b2f270b997ee400b6a07d5aa0633dc9750f5f9a1642b9ab19",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "Canceled 1963",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。原文说Canceled，旧字段名却是service_entry；预标cancellation以提醒复核，不把取消年份解释为服役年份。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": null,
+              "min_value": null,
+              "unit_raw": null,
+              "unit_std": "year",
+              "value": "1963",
+              "value_kind": "event",
+              "value_status": "stated"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    },
+    {
+      "default_accepted_independent": {
+        "accepted_facts": [],
+        "answer_status": "no_accepted_independent_data",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "accepted-independent",
+        "query": {
+          "attribute": "power",
+          "entity": "EL/M-2080",
+          "variant": null
+        },
+        "returned_records": 0,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [],
+        "status": "no_accepted_independent_data",
+        "whole_packet_and_review_checks_passed": true
+      },
+      "is_final_qa_answer": false,
+      "is_independent_evaluation": false,
+      "original_development_question": "仅依据EL/M-2080来源快照的Power栏，是否存在可填写的功率数值？回答范围应如何限定？",
+      "qid": "radar-workflow-dev-12",
+      "query": {
+        "attribute": "power",
+        "entity": "EL/M-2080",
+        "variant": null
+      },
+      "query_authorship": "AI_manually_specified_for_interface_development_not_model_prediction",
+      "source_preview": {
+        "accepted_facts": [],
+        "answer_status": "not_a_fact_answer",
+        "dataset_independent_fact_eligible": 0,
+        "interface_version": "radar_record_query_v1",
+        "knowledge_version": {
+          "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+          "workflow_files_sha256": {
+            "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+            "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+            "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+          }
+        },
+        "matching_candidate_records": 1,
+        "mode": "source_preview",
+        "query": {
+          "attribute": "power",
+          "entity": "EL/M-2080",
+          "variant": null
+        },
+        "returned_records": 1,
+        "scope_limits": [
+          "Exact structured record matching only; no natural-language interpretation or alias expansion.",
+          "Omitted event/variant/condition selectors retain separate matching records; no scalar collapse.",
+          "A null optional selector matches an unrecorded field, not an unconditional or universal fact.",
+          "No match means no matching admitted record in this bounded packet, not real-world absence or zero.",
+          "Snapshot readings retain AI-prepared interpretations and are not independent accepted facts.",
+          "Hash/locator/review-form checks do not establish factual truth or authenticate a human identity.",
+          "This fixed 12-record pilot is not a representative corpus or independent QA evaluation."
+        ],
+        "snapshot_readings": [
+          {
+            "attribute": "power",
+            "citation": {
+              "evidence_text": "Classified",
+              "locator": {
+                "char_end": 10,
+                "char_start": 0,
+                "chunk_file": "pipeline/v3/work/chunks.jsonl",
+                "chunk_id": "el_m-2080#ibx",
+                "chunk_line": 61,
+                "end_exclusive": true,
+                "json_pointer": "/infobox/Power",
+                "offset_unit": "unicode_codepoint"
+              },
+              "source_class": "secondary_web_snapshot",
+              "source_file": "radar_corpus/raw/el_m-2080.json",
+              "source_sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+              "source_uri": "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine"
+            },
+            "condition": {
+              "items": [],
+              "raw": null,
+              "status": "not_stated"
+            },
+            "entity_id": "kg_v3:EL/M-2080",
+            "entity_name": "EL/M-2080",
+            "event_type": null,
+            "fact_id": "radar-review-001-12",
+            "fact_record_sha256": "a061c240e8213f2e7d71e5224fcaf6f6df41d5d080483e25d650b64edab380c2",
+            "factual_truth_verified_by_software": false,
+            "legacy_value_raw": "Classified, but could be used as a directed-energy device.",
+            "legacy_value_scope": "Old extracted attribute string; may contain extraction/unit errors. Not the normalized value or an accepted fact; exact snapshot text is citation.evidence_text.",
+            "reading_scope": "该快照记载（候选结构化解释，非事实答案）",
+            "review": {
+              "decision": "pending",
+              "decision_reason": null,
+              "decision_scope": null,
+              "human_identity_verified_by_software": false,
+              "human_review_declared": false,
+              "independent_fact_admitted": false,
+              "notes": "AI预填，未人工核验；不是金标或已接受替代事实。型号版本未明确，variant留空。快照没有给出功率数值，数值和单位留空；不把用途猜测变成数值或已证实能力。not_recorded仅描述本快照。",
+              "packet_preparer": "AI_initial_screening_not_human_verified",
+              "packet_status": "needs_review",
+              "reviewed_at": null,
+              "reviewer": null,
+              "reviewer_kind": null,
+              "value_status_is_not_a_truth_label": true
+            },
+            "value": {
+              "max_value": null,
+              "min_value": null,
+              "unit_raw": null,
+              "unit_std": null,
+              "value": null,
+              "value_kind": "unknown",
+              "value_status": "not_recorded"
+            },
+            "variant": null,
+            "variant_status": "not_recorded"
+          }
+        ],
+        "status": "snapshot_readings_available",
+        "whole_packet_and_review_checks_passed": true
+      }
+    }
+  ],
+  "source_preview_records": 10,
+  "training_runs": 0,
+  "whole_packet_audit": {
+    "checked_files": {
+      "development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+      "review_decisions.csv": "1ef4bbd55e5b60861fede78a2bc55c4dd1219b3aea9d8738d256b3fb601c4057",
+      "workflow_manifest.json": "cf6d9fa6ab5d10d4043b462b902e9660fdcc3cf196119fd286c12df502da2b87"
+    },
+    "exact_source_bindings": 12,
+    "facts": 12,
+    "factual_truth_verified_by_software": false,
+    "final_test_answers_generated": false,
+    "human_identity_verified_by_software": false,
+    "machine_checks_passed": true,
+    "packet_manifest_sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+    "protocol_version": "radar_review_workflow_v1",
+    "public_benchmark_holdout_read": false,
+    "questions": {
+      "answers_filled": 0,
+      "development_questions": 12,
+      "independent_evaluation_questions": 0,
+      "model_family_groups": 6,
+      "source_groups": 6
+    },
+    "review_decisions": {
+      "accepted": 0,
+      "accepted_snapshot_readings": 0,
+      "independent_fact_eligible": 0,
+      "needs_changes": 0,
+      "pending": 12,
+      "rejected": 0
+    },
+    "secondary_source_snapshots": 6
+  }
+}
