@@ -1,0 +1,37 @@
+{
+  "audit_passed": true,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "models": {
+    "A_20261003": {
+      "trajectories": 2000,
+      "mismatches": 0,
+      "executed_programs": 0
+    },
+    "C_20261003": {
+      "trajectories": 2000,
+      "mismatches": 0,
+      "executed_programs": 0
+    },
+    "A_20261004": {
+      "trajectories": 2000,
+      "mismatches": 0,
+      "executed_programs": 0
+    },
+    "C_20261004": {
+      "trajectories": 2000,
+      "mismatches": 0,
+      "executed_programs": 0
+    },
+    "P": {
+      "trajectories": 2000,
+      "mismatches": 0,
+      "executed_programs": 2000
+    }
+  },
+  "questions": 2000,
+  "scope": "Actual recorded execution consistency, not semantic equivalence or answer correctness",
+  "gold_opened": false,
+  "protocol_sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+  "generation_complete_sha256": "2144d5aff896b115c42fc95f78e6b10fb55c9d4af77c315350766e91dc1bd858"
+}

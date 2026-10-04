@@ -1,0 +1,739 @@
+{
+  "evaluation_split": "project_holdout_not_official_hidden_test",
+  "questions": 2000,
+  "primary": {
+    "accuracy_delta_pp": 4.75,
+    "accuracy_delta_pp_ci": [
+      3.525,
+      5.97562499999999
+    ],
+    "confidence_level": 0.95,
+    "questions": 2000,
+    "continuation_seeds": [
+      20261003,
+      20261004
+    ],
+    "replicates": 5000,
+    "bootstrap_seed": 20261003,
+    "method": "paired percentile bootstrap of questions, retaining both seed outcomes together",
+    "scope": "conditional on these two continuation checkpoints; shared initial model; no training-seed uncertainty",
+    "interval_assessment": "entirely_above_zero",
+    "A_mean_accuracy": 0.7875,
+    "C_mean_accuracy": 0.835,
+    "both_seed_point_estimates_positive": true,
+    "practical_gain_at_least_2pp": true
+  },
+  "arms": {
+    "P": {
+      "questions": 2000,
+      "correct": 1523,
+      "accuracy": 0.7615,
+      "finished": 1673,
+      "finish_rate": 0.8365,
+      "failed_to_finish": 327,
+      "totals": {
+        "calls": 2000,
+        "input_tokens": 695574,
+        "generated_tokens": 108522,
+        "invalid_calls": 327,
+        "total_tokens": 804096
+      },
+      "means": {
+        "calls": 1.0,
+        "input_tokens": 347.787,
+        "generated_tokens": 54.261,
+        "invalid_calls": 0.1635,
+        "total_tokens": 402.048
+      },
+      "stop_reasons": {
+        "program_completed": 1673,
+        "program_error": 327
+      }
+    },
+    "A_20261003": {
+      "questions": 2000,
+      "correct": 1565,
+      "accuracy": 0.7825,
+      "finished": 1802,
+      "finish_rate": 0.901,
+      "failed_to_finish": 198,
+      "totals": {
+        "calls": 15284,
+        "input_tokens": 20502342,
+        "generated_tokens": 350172,
+        "invalid_calls": 3725,
+        "total_tokens": 20852514
+      },
+      "means": {
+        "calls": 7.642,
+        "input_tokens": 10251.171,
+        "generated_tokens": 175.086,
+        "invalid_calls": 1.8625,
+        "total_tokens": 10426.257
+      },
+      "stop_reasons": {
+        "finished": 1802,
+        "call_budget": 198
+      }
+    },
+    "C_20261003": {
+      "questions": 2000,
+      "correct": 1658,
+      "accuracy": 0.829,
+      "finished": 1920,
+      "finish_rate": 0.96,
+      "failed_to_finish": 80,
+      "totals": {
+        "calls": 14220,
+        "input_tokens": 18645891,
+        "generated_tokens": 363771,
+        "invalid_calls": 1268,
+        "total_tokens": 19009662
+      },
+      "means": {
+        "calls": 7.11,
+        "input_tokens": 9322.9455,
+        "generated_tokens": 181.8855,
+        "invalid_calls": 0.634,
+        "total_tokens": 9504.831
+      },
+      "stop_reasons": {
+        "finished": 1920,
+        "call_budget": 80
+      }
+    },
+    "A_20261004": {
+      "questions": 2000,
+      "correct": 1585,
+      "accuracy": 0.7925,
+      "finished": 1795,
+      "finish_rate": 0.8975,
+      "failed_to_finish": 205,
+      "totals": {
+        "calls": 15330,
+        "input_tokens": 20411987,
+        "generated_tokens": 328276,
+        "invalid_calls": 3845,
+        "total_tokens": 20740263
+      },
+      "means": {
+        "calls": 7.665,
+        "input_tokens": 10205.9935,
+        "generated_tokens": 164.138,
+        "invalid_calls": 1.9225,
+        "total_tokens": 10370.1315
+      },
+      "stop_reasons": {
+        "finished": 1795,
+        "call_budget": 205
+      }
+    },
+    "C_20261004": {
+      "questions": 2000,
+      "correct": 1682,
+      "accuracy": 0.841,
+      "finished": 1909,
+      "finish_rate": 0.9545,
+      "failed_to_finish": 91,
+      "totals": {
+        "calls": 14523,
+        "input_tokens": 19493940,
+        "generated_tokens": 381937,
+        "invalid_calls": 1216,
+        "total_tokens": 19875877
+      },
+      "means": {
+        "calls": 7.2615,
+        "input_tokens": 9746.97,
+        "generated_tokens": 190.9685,
+        "invalid_calls": 0.608,
+        "total_tokens": 9937.9385
+      },
+      "stop_reasons": {
+        "finished": 1909,
+        "call_budget": 91
+      }
+    }
+  },
+  "paired_comparisons": {
+    "C_vs_A_20261003": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 2000,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 2000,
+          "correct": 1565,
+          "accuracy": 0.7825,
+          "finished": 1802,
+          "finish_rate": 0.901,
+          "failed_to_finish": 198,
+          "totals": {
+            "calls": 15284,
+            "input_tokens": 20502342,
+            "generated_tokens": 350172,
+            "invalid_calls": 3725,
+            "total_tokens": 20852514
+          },
+          "means": {
+            "calls": 7.642,
+            "input_tokens": 10251.171,
+            "generated_tokens": 175.086,
+            "invalid_calls": 1.8625,
+            "total_tokens": 10426.257
+          },
+          "stop_reasons": {
+            "finished": 1802,
+            "call_budget": 198
+          }
+        },
+        "candidate": {
+          "questions": 2000,
+          "correct": 1658,
+          "accuracy": 0.829,
+          "finished": 1920,
+          "finish_rate": 0.96,
+          "failed_to_finish": 80,
+          "totals": {
+            "calls": 14220,
+            "input_tokens": 18645891,
+            "generated_tokens": 363771,
+            "invalid_calls": 1268,
+            "total_tokens": 19009662
+          },
+          "means": {
+            "calls": 7.11,
+            "input_tokens": 9322.9455,
+            "generated_tokens": 181.8855,
+            "invalid_calls": 0.634,
+            "total_tokens": 9504.831
+          },
+          "stop_reasons": {
+            "finished": 1920,
+            "call_budget": 80
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 177,
+        "regressed": 84,
+        "both_correct": 1481,
+        "both_wrong": 258,
+        "net_corrected": 93
+      },
+      "accuracy_delta_pp": 4.65,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          3.1,
+          6.25
+        ],
+        "interval_assessment": "entirely_above_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "Complete fixed project holdout; estimation only, no training or model selection follows. Failures remain in the denominator. Question bootstrap conditions on checkpoints."
+    },
+    "C_vs_P_20261003": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 2000,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 2000,
+          "correct": 1523,
+          "accuracy": 0.7615,
+          "finished": 1673,
+          "finish_rate": 0.8365,
+          "failed_to_finish": 327,
+          "totals": {
+            "calls": 2000,
+            "input_tokens": 695574,
+            "generated_tokens": 108522,
+            "invalid_calls": 327,
+            "total_tokens": 804096
+          },
+          "means": {
+            "calls": 1.0,
+            "input_tokens": 347.787,
+            "generated_tokens": 54.261,
+            "invalid_calls": 0.1635,
+            "total_tokens": 402.048
+          },
+          "stop_reasons": {
+            "program_completed": 1673,
+            "program_error": 327
+          }
+        },
+        "candidate": {
+          "questions": 2000,
+          "correct": 1658,
+          "accuracy": 0.829,
+          "finished": 1920,
+          "finish_rate": 0.96,
+          "failed_to_finish": 80,
+          "totals": {
+            "calls": 14220,
+            "input_tokens": 18645891,
+            "generated_tokens": 363771,
+            "invalid_calls": 1268,
+            "total_tokens": 19009662
+          },
+          "means": {
+            "calls": 7.11,
+            "input_tokens": 9322.9455,
+            "generated_tokens": 181.8855,
+            "invalid_calls": 0.634,
+            "total_tokens": 9504.831
+          },
+          "stop_reasons": {
+            "finished": 1920,
+            "call_budget": 80
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 236,
+        "regressed": 101,
+        "both_correct": 1422,
+        "both_wrong": 241,
+        "net_corrected": 135
+      },
+      "accuracy_delta_pp": 6.75,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          4.95,
+          8.5
+        ],
+        "interval_assessment": "entirely_above_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "Complete fixed project holdout; estimation only, no training or model selection follows. Failures remain in the denominator. Question bootstrap conditions on checkpoints."
+    },
+    "C_vs_A_20261004": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 2000,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 2000,
+          "correct": 1585,
+          "accuracy": 0.7925,
+          "finished": 1795,
+          "finish_rate": 0.8975,
+          "failed_to_finish": 205,
+          "totals": {
+            "calls": 15330,
+            "input_tokens": 20411987,
+            "generated_tokens": 328276,
+            "invalid_calls": 3845,
+            "total_tokens": 20740263
+          },
+          "means": {
+            "calls": 7.665,
+            "input_tokens": 10205.9935,
+            "generated_tokens": 164.138,
+            "invalid_calls": 1.9225,
+            "total_tokens": 10370.1315
+          },
+          "stop_reasons": {
+            "finished": 1795,
+            "call_budget": 205
+          }
+        },
+        "candidate": {
+          "questions": 2000,
+          "correct": 1682,
+          "accuracy": 0.841,
+          "finished": 1909,
+          "finish_rate": 0.9545,
+          "failed_to_finish": 91,
+          "totals": {
+            "calls": 14523,
+            "input_tokens": 19493940,
+            "generated_tokens": 381937,
+            "invalid_calls": 1216,
+            "total_tokens": 19875877
+          },
+          "means": {
+            "calls": 7.2615,
+            "input_tokens": 9746.97,
+            "generated_tokens": 190.9685,
+            "invalid_calls": 0.608,
+            "total_tokens": 9937.9385
+          },
+          "stop_reasons": {
+            "finished": 1909,
+            "call_budget": 91
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 171,
+        "regressed": 74,
+        "both_correct": 1511,
+        "both_wrong": 244,
+        "net_corrected": 97
+      },
+      "accuracy_delta_pp": 4.85,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          3.35,
+          6.4
+        ],
+        "interval_assessment": "entirely_above_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "Complete fixed project holdout; estimation only, no training or model selection follows. Failures remain in the denominator. Question bootstrap conditions on checkpoints."
+    },
+    "C_vs_P_20261004": {
+      "evaluation_scope": "complete_fixed_gold",
+      "questions": 2000,
+      "coverage": 1.0,
+      "arms": {
+        "baseline": {
+          "questions": 2000,
+          "correct": 1523,
+          "accuracy": 0.7615,
+          "finished": 1673,
+          "finish_rate": 0.8365,
+          "failed_to_finish": 327,
+          "totals": {
+            "calls": 2000,
+            "input_tokens": 695574,
+            "generated_tokens": 108522,
+            "invalid_calls": 327,
+            "total_tokens": 804096
+          },
+          "means": {
+            "calls": 1.0,
+            "input_tokens": 347.787,
+            "generated_tokens": 54.261,
+            "invalid_calls": 0.1635,
+            "total_tokens": 402.048
+          },
+          "stop_reasons": {
+            "program_completed": 1673,
+            "program_error": 327
+          }
+        },
+        "candidate": {
+          "questions": 2000,
+          "correct": 1682,
+          "accuracy": 0.841,
+          "finished": 1909,
+          "finish_rate": 0.9545,
+          "failed_to_finish": 91,
+          "totals": {
+            "calls": 14523,
+            "input_tokens": 19493940,
+            "generated_tokens": 381937,
+            "invalid_calls": 1216,
+            "total_tokens": 19875877
+          },
+          "means": {
+            "calls": 7.2615,
+            "input_tokens": 9746.97,
+            "generated_tokens": 190.9685,
+            "invalid_calls": 0.608,
+            "total_tokens": 9937.9385
+          },
+          "stop_reasons": {
+            "finished": 1909,
+            "call_budget": 91
+          }
+        }
+      },
+      "paired_outcomes": {
+        "corrected": 241,
+        "regressed": 82,
+        "both_correct": 1441,
+        "both_wrong": 236,
+        "net_corrected": 159
+      },
+      "accuracy_delta_pp": 7.95,
+      "statistical_evidence": {
+        "method": "paired empirical question bootstrap, percentile interval with linear interpolation",
+        "replicates": 5000,
+        "seed": 20261003,
+        "confidence_level": 0.95,
+        "accuracy_delta_pp_ci": [
+          6.2,
+          9.7
+        ],
+        "interval_assessment": "entirely_above_zero",
+        "scope": "question-sampling uncertainty conditional on these checkpoints; no training-seed uncertainty or repeated-selection correction"
+      },
+      "token_accounting": "sum of all unpadded per-turn full prefills plus generated tokens including EOS; not generation-only tokens, GPU FLOPs, or elapsed time",
+      "interpretation": "Complete fixed project holdout; estimation only, no training or model selection follows. Failures remain in the denominator. Question bootstrap conditions on checkpoints."
+    }
+  },
+  "descriptive_overlapping_groups": {
+    "reference_steps_le_5": {
+      "questions": 1364,
+      "correct": {
+        "A_20261003": 1098,
+        "C_20261003": 1166,
+        "A_20261004": 1124,
+        "C_20261004": 1185,
+        "P": 1086
+      },
+      "accuracy": {
+        "A_20261003": 0.8049853372434017,
+        "C_20261003": 0.8548387096774194,
+        "A_20261004": 0.8240469208211144,
+        "C_20261004": 0.8687683284457478,
+        "P": 0.7961876832844574
+      },
+      "C_minus_A_pp_by_seed": {
+        "20261003": 4.9853372434017595,
+        "20261004": 4.472140762463343
+      }
+    },
+    "reference_steps_gt_5": {
+      "questions": 636,
+      "correct": {
+        "A_20261003": 467,
+        "C_20261003": 492,
+        "A_20261004": 461,
+        "C_20261004": 497,
+        "P": 437
+      },
+      "accuracy": {
+        "A_20261003": 0.7342767295597484,
+        "C_20261003": 0.7735849056603774,
+        "A_20261004": 0.7248427672955975,
+        "C_20261004": 0.7814465408805031,
+        "P": 0.6871069182389937
+      },
+      "C_minus_A_pp_by_seed": {
+        "20261003": 3.930817610062893,
+        "20261004": 5.660377358490566
+      }
+    },
+    "qualifier": {
+      "questions": 483,
+      "correct": {
+        "A_20261003": 300,
+        "C_20261003": 356,
+        "A_20261004": 317,
+        "C_20261004": 359,
+        "P": 294
+      },
+      "accuracy": {
+        "A_20261003": 0.6211180124223602,
+        "C_20261003": 0.7370600414078675,
+        "A_20261004": 0.6563146997929606,
+        "C_20261004": 0.7432712215320911,
+        "P": 0.6086956521739131
+      },
+      "C_minus_A_pp_by_seed": {
+        "20261003": 11.594202898550725,
+        "20261004": 8.695652173913043
+      }
+    },
+    "set_operation": {
+      "questions": 570,
+      "correct": {
+        "A_20261003": 433,
+        "C_20261003": 450,
+        "A_20261004": 424,
+        "C_20261004": 458,
+        "P": 418
+      },
+      "accuracy": {
+        "A_20261003": 0.7596491228070176,
+        "C_20261003": 0.7894736842105263,
+        "A_20261004": 0.743859649122807,
+        "C_20261004": 0.8035087719298246,
+        "P": 0.7333333333333333
+      },
+      "C_minus_A_pp_by_seed": {
+        "20261003": 2.982456140350877,
+        "20261004": 5.964912280701754
+      }
+    },
+    "comparison_numeric_or_count": {
+      "questions": 873,
+      "correct": {
+        "A_20261003": 709,
+        "C_20261003": 742,
+        "A_20261004": 714,
+        "C_20261004": 743,
+        "P": 689
+      },
+      "accuracy": {
+        "A_20261003": 0.8121420389461627,
+        "C_20261003": 0.849942726231386,
+        "A_20261004": 0.8178694158075601,
+        "C_20261004": 0.8510882016036655,
+        "P": 0.7892325315005727
+      },
+      "C_minus_A_pp_by_seed": {
+        "20261003": 3.7800687285223367,
+        "20261004": 3.3218785796105386
+      }
+    }
+  },
+  "cost_distribution": {
+    "A_20261003": {
+      "calls": {
+        "p50": 5.0,
+        "p95": 24.0,
+        "max": 24
+      },
+      "input_tokens": {
+        "p50": 5850.5,
+        "p95": 39683.65,
+        "max": 56655
+      },
+      "generated_tokens": {
+        "p50": 141.0,
+        "p95": 349.0999999999999,
+        "max": 818
+      },
+      "total_tokens": {
+        "p50": 5973.5,
+        "p95": 40174.25,
+        "max": 57314
+      },
+      "invalid_calls": {
+        "p50": 0.0,
+        "p95": 20.0,
+        "max": 23
+      }
+    },
+    "C_20261003": {
+      "calls": {
+        "p50": 6.0,
+        "p95": 16.0,
+        "max": 24
+      },
+      "input_tokens": {
+        "p50": 6517.0,
+        "p95": 27033.399999999987,
+        "max": 60608
+      },
+      "generated_tokens": {
+        "p50": 151.0,
+        "p95": 393.0,
+        "max": 1013
+      },
+      "total_tokens": {
+        "p50": 6674.0,
+        "p95": 27418.64999999999,
+        "max": 61283
+      },
+      "invalid_calls": {
+        "p50": 0.0,
+        "p95": 3.0,
+        "max": 23
+      }
+    },
+    "A_20261004": {
+      "calls": {
+        "p50": 5.0,
+        "p95": 24.0,
+        "max": 24
+      },
+      "input_tokens": {
+        "p50": 5898.5,
+        "p95": 38313.5,
+        "max": 54618
+      },
+      "generated_tokens": {
+        "p50": 142.0,
+        "p95": 274.0,
+        "max": 1076
+      },
+      "total_tokens": {
+        "p50": 6030.0,
+        "p95": 38635.7,
+        "max": 55342
+      },
+      "invalid_calls": {
+        "p50": 0.0,
+        "p95": 20.0,
+        "max": 24
+      }
+    },
+    "C_20261004": {
+      "calls": {
+        "p50": 6.0,
+        "p95": 20.049999999999955,
+        "max": 24
+      },
+      "input_tokens": {
+        "p50": 6556.0,
+        "p95": 35844.949999999946,
+        "max": 61263
+      },
+      "generated_tokens": {
+        "p50": 152.0,
+        "p95": 498.14999999999986,
+        "max": 1601
+      },
+      "total_tokens": {
+        "p50": 6714.5,
+        "p95": 36397.74999999994,
+        "max": 61893
+      },
+      "invalid_calls": {
+        "p50": 0.0,
+        "p95": 4.0,
+        "max": 21
+      }
+    },
+    "P": {
+      "calls": {
+        "p50": 1.0,
+        "p95": 1.0,
+        "max": 1
+      },
+      "input_tokens": {
+        "p50": 346.0,
+        "p95": 366.0,
+        "max": 444
+      },
+      "generated_tokens": {
+        "p50": 53.0,
+        "p95": 90.0,
+        "max": 173
+      },
+      "total_tokens": {
+        "p50": 401.0,
+        "p95": 454.0,
+        "max": 617
+      },
+      "invalid_calls": {
+        "p50": 0.0,
+        "p95": 1.0,
+        "max": 1
+      }
+    }
+  },
+  "group_inference": "descriptive only; no subgroup winner selection or multiplicity-adjusted claims",
+  "program_comparison": "same backbone but different representation/training/inference cost; not the causal recovery contrast",
+  "post_evaluation_policy": "report all fixed models and outcomes; no further tuning or selection on this split",
+  "limitations": [
+    "Both continuation seeds share the initial model and corpus.",
+    "2000 questions evaluated twice remain 2000 question units, not 4000 independent samples.",
+    "Project split excludes historical exact question/program components; not strict compositional generalization.",
+    "Public benchmark pretraining contamination cannot be excluded.",
+    "Answer matching does not prove semantic condition preservation.",
+    "Full-prefill plus generated token counts are not GPU FLOPs or wall-clock speed."
+  ]
+}

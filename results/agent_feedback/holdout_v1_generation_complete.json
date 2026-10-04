@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "finished_at": 1791125081.479971,
+  "questions_per_model": 2000,
+  "labels": [
+    "A_20261003",
+    "C_20261003",
+    "A_20261004",
+    "C_20261004",
+    "P"
+  ],
+  "protocol_sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+  "started_sha256": "176286a4939f896f7e720588f9fc412c4716cfc2c6edff9fe4a379d783d36662",
+  "outputs_sha256": {
+    "results/agent_feedback/clean_holdout_v1.jsonl": "c1f010d1926d73373be248f50fcc2370821a250976b4fe4449b5864cfe4a0b39",
+    "results/agent_feedback/clean_holdout_v1.runtime.json": "feeaaf729a1aea331cba8c73b62d3880284e7fcd093a02ecf1e861a1af006a57",
+    "results/agent_feedback/jobs/clean_holdout_v1.json": "f50eacf938dcdc8308a40315c427dc8951926e4d6f455d592e0a5571b0da5bac",
+    "results/agent_feedback/recovery_holdout_v1.jsonl": "6b08a46e8dd09c786ef1e7f4a5a791b69237a65472d5c8a91387c03ed397ab7e",
+    "results/agent_feedback/recovery_holdout_v1.runtime.json": "1ff985f02219d155cfb78ec032c9af31ea47d358678ab453a6d5868b8c4657d2",
+    "results/agent_feedback/jobs/recovery_holdout_v1.json": "0fc8e6d9630213f2a540119badb897bcd23a349d8a83caf27f7c02fde7fc4578",
+    "results/agent_feedback/clean_holdout_seed20261004.jsonl": "af4a6b161f2eb511d86eab4a5f06283c6a0c321b88302a31bbb26fd0438e2542",
+    "results/agent_feedback/clean_holdout_seed20261004.runtime.json": "59877f49f68c2c4cac69176d279ad7c50f789fc4f169484a0ea76b33f75c8127",
+    "results/agent_feedback/jobs/clean_holdout_seed20261004.json": "ab0d2822fdb3a63d244fa365baae9bd9ae369fb8d6e34632db59445558abdd3c",
+    "results/agent_feedback/recovery_holdout_seed20261004.jsonl": "d3421f034bc7ee9b723e9c278a3354fec4e62ebf7ed501274ca635d6d4f37e37",
+    "results/agent_feedback/recovery_holdout_seed20261004.runtime.json": "fd2e9891bc8b2dda48958768942dcdee49d5f6a5fc10371dc60ab6c236956a9c",
+    "results/agent_feedback/jobs/recovery_holdout_seed20261004.json": "06bc8b84cb3173d2ec9ea37629de300b63ca64173a21b6580e3753ac90c45015",
+    "results/agent_feedback/program_holdout_v1.jsonl": "f66db4d386c62208a560e15eb0a33821781fec087735a645e8fedc32e7ed2a70",
+    "results/agent_feedback/program_holdout_v1.runtime.json": "52534242c8fe556d8d7a68dab7ca3d8c075904f038c81e263e3412c43e459620",
+    "results/agent_feedback/jobs/program_holdout_v1.json": "071460aa5bd851c50c5cbb7afa3d8bd90822a6e902259d8144d733c671317232"
+  },
+  "gold_opened": false,
+  "analysis_started": false
+}

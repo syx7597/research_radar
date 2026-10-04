@@ -1,0 +1,9 @@
+{
+  "pid": 13116,
+  "user": "syx",
+  "recorded_at_beijing": "2026-10-04T22:49:08.957085+08:00",
+  "log": "results/agent_feedback/holdout_analysis_controller_v1.log",
+  "stage": "fixed_protocol_CPU_execution_replay_then_scoring",
+  "gpu_visible": false,
+  "protocol_sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "finished_at": 1791125502.1904926,
+  "protocol_sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+  "generation_complete_sha256": "2144d5aff896b115c42fc95f78e6b10fb55c9d4af77c315350766e91dc1bd858",
+  "analysis": "results/agent_feedback/holdout_v1_analysis.json",
+  "execution_audit_sha256": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68",
+  "execution_replay_mismatches": 0,
+  "analysis_sha256": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+  "scoring_outputs_sha256": {
+    "results/agent_feedback/clean_holdout_v1.metrics.json": "18ea370cd41b30a52431b9818d15bed913918a57508b66b5f10768593a045d74",
+    "results/agent_feedback/clean_holdout_v1.scored.jsonl": "561d7e0a2b438e243230aa0789a455ecb3be9743108844152b64925f56ecba2d",
+    "results/agent_feedback/recovery_holdout_v1.metrics.json": "cb2f6d45aba5461edc05e42a8e73f280e72ce60be95eaaea943e7dac7762576f",
+    "results/agent_feedback/recovery_holdout_v1.scored.jsonl": "79623db643116d0c806760f496d8d0f7a8ed432c479421152cbba0aaa76f86aa",
+    "results/agent_feedback/clean_holdout_seed20261004.metrics.json": "62d202988508e1ecaef34e9d4002ca0d0eaaaa25ce9be1854b9f60cd0100427a",
+    "results/agent_feedback/clean_holdout_seed20261004.scored.jsonl": "80aeb94f96213067d6cbe66dfb9e4b288a518d689ce15f2bb1e25be7d55f408f",
+    "results/agent_feedback/recovery_holdout_seed20261004.metrics.json": "87799aeb3d3d8bd67ffafbc89e58d87ac4cd7d9d04d05a9189646bcbb85af017",
+    "results/agent_feedback/recovery_holdout_seed20261004.scored.jsonl": "f0d55a944bfc78b6655c735dff1639dbbc2ab68871748d7328053628f20185de",
+    "results/agent_feedback/program_holdout_v1.metrics.json": "4da761384dbbbd3fe74ee0faa05f3900b677afb3213cb71064a05fde1a9023e0",
+    "results/agent_feedback/program_holdout_v1.scored.jsonl": "a2763b41ce8d20b476da516e2b6e48842bc65bcf47fbffb1921edba33b1154d4"
+  },
+  "gold_sha256": "05ae200a046a9007ee7b89e151a245c050977b40df8af9d4d176c3145e71b2db",
+  "training": false,
+  "model_selection": false,
+  "automatic_next_round": false
+}

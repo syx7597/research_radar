@@ -1,0 +1,126 @@
+{
+  "version": "holdout_stage_decision_v1",
+  "recorded_at_beijing": "2026-10-04T22:57:39.205474+08:00",
+  "stage_status": "completed_and_audited",
+  "primary": {
+    "accuracy_delta_pp": 4.75,
+    "accuracy_delta_pp_ci": [
+      3.525,
+      5.97562499999999
+    ],
+    "confidence_level": 0.95,
+    "questions": 2000,
+    "continuation_seeds": [
+      20261003,
+      20261004
+    ],
+    "replicates": 5000,
+    "bootstrap_seed": 20261003,
+    "method": "paired percentile bootstrap of questions, retaining both seed outcomes together",
+    "scope": "conditional on these two continuation checkpoints; shared initial model; no training-seed uncertainty",
+    "interval_assessment": "entirely_above_zero",
+    "A_mean_accuracy": 0.7875,
+    "C_mean_accuracy": 0.835,
+    "both_seed_point_estimates_positive": true,
+    "practical_gain_at_least_2pp": true
+  },
+  "matched_comparisons": {
+    "20261003": {
+      "A_correct": 1565,
+      "C_correct": 1658,
+      "delta_pp": 4.65,
+      "ci_pp": [
+        3.1,
+        6.25
+      ],
+      "paired_outcomes": {
+        "corrected": 177,
+        "regressed": 84,
+        "both_correct": 1481,
+        "both_wrong": 258,
+        "net_corrected": 93
+      },
+      "total_inference_token_reduction_fraction": 0.08837553112300989,
+      "invalid_call_reduction_fraction": 0.6595973154362416,
+      "C_vs_P_total_token_ratio": 23.64103539875836
+    },
+    "20261004": {
+      "A_correct": 1585,
+      "C_correct": 1682,
+      "delta_pp": 4.85,
+      "ci_pp": [
+        3.35,
+        6.4
+      ],
+      "paired_outcomes": {
+        "corrected": 171,
+        "regressed": 74,
+        "both_correct": 1511,
+        "both_wrong": 244,
+        "net_corrected": 97
+      },
+      "total_inference_token_reduction_fraction": 0.04167671354987157,
+      "invalid_call_reduction_fraction": 0.6837451235370611,
+      "C_vs_P_total_token_ratio": 24.718288612305
+    }
+  },
+  "program_baseline": {
+    "correct": 1523,
+    "accuracy": 0.7615
+  },
+  "decision": {
+    "retain_recovery_SFT_mainline": true,
+    "evidence_scope": "Positive held-out answer-accuracy increment of the frozen recovery-state/suffix training recipe under this 5000-training-question KQA Pro setup; two conditional continuation seeds sharing an initial model",
+    "new_public_training": false,
+    "additional_RL": false,
+    "semantic_preference_training": false,
+    "select_best_seed": false,
+    "tune_on_this_holdout": false,
+    "claim_new_optimizer_or_network": false,
+    "claim_semantic_error_understanding": false
+  },
+  "reason": "The preregistered mean gain is +4.75 percentage points with question-bootstrap 95% interval [3.525, 5.975625]; both matched seed estimates and intervals are positive. Retain the method, stop public-benchmark tuning, and move to radar knowledge verification and domain application.",
+  "limits": [
+    "This project holdout is not the official hidden test and cannot rule out backbone pretraining exposure.",
+    "Two continuation seeds share the initial model and corpus; intervals condition on the checkpoints and resample 2000 questions, not 4000 independent records.",
+    "Answer matching does not establish preservation of all semantic conditions. Detailed-error masking did not establish a reliable diagnostic-text mechanism.",
+    "Supervised token budgets match but input/compute budgets differ. The comparison identifies the whole recovery-context/handle-remapping/suffix recipe.",
+    "C uses approximately 24 times P total inference tokens; higher quality is not a claim of lower overall deployment cost or faster inference.",
+    "Subgroup estimates are descriptive, overlapping and not multiplicity-adjusted; no selective subgroup success claim."
+  ],
+  "audit": {
+    "recorded_trajectories_and_programs": 10000,
+    "replay_mismatches": 0,
+    "all_five_predictions_completed_before_answers_opened": true
+  },
+  "gpu_hours": {
+    "holdout_generation": 6.884707738823361,
+    "cumulative_at_end": 22.641291556225884,
+    "global_cap": 72
+  },
+  "next_steps": [
+    "Write the public benchmark method/results chapter using both continuation seeds, cost comparisons, and the bounded mechanism findings.",
+    "Advance the 12-item radar fact review and source corrections; independent human acceptance remains separate from AI prescreening.",
+    "Implement the minimal radar query/source/condition adapter and validate a complete source-to-fact-to-answer example before any new domain training.",
+    "Freeze independent radar QA and same-source baselines after verified facts are ready; existing automatic QA is not independent gold."
+  ],
+  "inputs_sha256": {
+    "results/agent_feedback/protocol_holdout_v1.json": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+    "results/agent_feedback/feedback_diagnostic_decision_v1.json": "10e6ad77bfed04e84395ee31c691f4ca6292480708640a3e0b24f91d4fdda69f",
+    "results/agent_feedback/holdout_v1_generation_complete.json": "2144d5aff896b115c42fc95f78e6b10fb55c9d4af77c315350766e91dc1bd858",
+    "results/agent_feedback/holdout_v1_analysis_started.json": "06be364a1733a68867c9c6ff3908f12e953a8cd723df7a4bd7400c3553898aed",
+    "results/agent_feedback/holdout_v1_execution_audit.json": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68",
+    "results/agent_feedback/holdout_v1_analysis.json": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+    "results/agent_feedback/holdout_v1_summary.json": "5951c5533124374c32d241d8aa7b661e172c4937067c789ee94d4fc24681edf7",
+    "results/agent_feedback/jobs/clean_holdout_v1.json": "f50eacf938dcdc8308a40315c427dc8951926e4d6f455d592e0a5571b0da5bac",
+    "results/agent_feedback/jobs/recovery_holdout_v1.json": "0fc8e6d9630213f2a540119badb897bcd23a349d8a83caf27f7c02fde7fc4578",
+    "results/agent_feedback/jobs/clean_holdout_seed20261004.json": "ab0d2822fdb3a63d244fa365baae9bd9ae369fb8d6e34632db59445558abdd3c",
+    "results/agent_feedback/jobs/recovery_holdout_seed20261004.json": "06bc8b84cb3173d2ec9ea37629de300b63ca64173a21b6580e3753ac90c45015",
+    "results/agent_feedback/jobs/program_holdout_v1.json": "071460aa5bd851c50c5cbb7afa3d8bd90822a6e902259d8144d733c671317232",
+    "results/agent_feedback/clean_holdout_v1.runtime.json": "feeaaf729a1aea331cba8c73b62d3880284e7fcd093a02ecf1e861a1af006a57",
+    "results/agent_feedback/recovery_holdout_v1.runtime.json": "1ff985f02219d155cfb78ec032c9af31ea47d358678ab453a6d5868b8c4657d2",
+    "results/agent_feedback/clean_holdout_seed20261004.runtime.json": "59877f49f68c2c4cac69176d279ad7c50f789fc4f169484a0ea76b33f75c8127",
+    "results/agent_feedback/recovery_holdout_seed20261004.runtime.json": "fd2e9891bc8b2dda48958768942dcdee49d5f6a5fc10371dc60ab6c236956a9c",
+    "results/agent_feedback/program_holdout_v1.runtime.json": "52534242c8fe556d8d7a68dab7ca3d8c075904f038c81e263e3412c43e459620"
+  }
+}
