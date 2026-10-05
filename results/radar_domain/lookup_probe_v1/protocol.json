@@ -1,0 +1,146 @@
+{
+  "version": "radar_lookup_probe_v1",
+  "frozen_at_utc": "2026-10-05T09:04:07.598960+00:00",
+  "scope": "One fixed bilingual lookup diagnostic on 12 exposed AI-rewritten development targets; interface compatibility only",
+  "training": false,
+  "independent_evaluation": false,
+  "human_gold": false,
+  "automatic_next_round": false,
+  "models": {
+    "P": {
+      "adapter": "results/agent_feedback/program_sft_v1/model",
+      "program": true,
+      "files_sha256": {
+        "results/agent_feedback/program_sft_v1/model/adapter_model.safetensors": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+        "results/agent_feedback/program_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "A1": {
+      "adapter": "results/agent_feedback/clean_sft_v1/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+        "results/agent_feedback/clean_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "C1": {
+      "adapter": "results/agent_feedback/recovery_sft_v1/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/recovery_sft_v1/model/adapter_model.safetensors": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33",
+        "results/agent_feedback/recovery_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "A2": {
+      "adapter": "results/agent_feedback/clean_sft_seed20261004/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+        "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "C2": {
+      "adapter": "results/agent_feedback/recovery_sft_seed20261004/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+        "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    }
+  },
+  "inputs_sha256": {
+    "experiments/radar_domain/development_data.py": "c573a16f9744b02948d702581309ab1394c2e63d2ed73e081b67edf72112bc06",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_probe.py": "ce5f1c26b9c9dd927ff4137bed41c354e7590ebee1d283842603c9021972a104",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "artifacts/thesis_direction_review/radar_development_v2/readings.json": "13b95869b2e7aceebac3d1088cfb437533878d46f59e6ecc24c12eb152b398c2",
+    "artifacts/thesis_direction_review/radar_development_v2/questions.jsonl": "ddf2f9469715f681bb891c4881a6963c8cbaf14f8ded18a4ef01c63e18e4efed",
+    "artifacts/thesis_direction_review/radar_development_v2/manifest.json": "ab7fc6f822a1163ba3970406d7bbda63bc593ac8675d608f58d930ed70571ffe",
+    "results/agent_feedback/weights_verified.json": "0e0758af62e353e510afa2058e70f5398b8cc01631a12ae137b389c7d1645b6a",
+    "experiments/radar_domain/lookup_probe.py": "035e22cd5d34fb9a73f506da0a847c6be0b8550f6a02492951c5bea35f097116",
+    "experiments/radar_domain/task_calibration.py": "d21c93cf51d227dec9710b8ece74fd5d402d1c4cae2a68a3f859a3017bbe3e02",
+    "experiments/radar_domain/lookup_analysis.py": "db4e605c228257c77b46c0a3f91dfc52623d564435a107c0a39a6036944041cd",
+    "experiments/radar_domain/development_analysis.py": "96c7d3d29c74d8c5664f9b7cecbb9aa42d239980056e71014436fead0a1a382e",
+    "results/radar_domain/development_probe_v1/protocol.json": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/manifest.json": "31b2ff3050e0a8eeb6696f22e40971604d7e65f37a349a5813f9ff79289b8115",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.zh.jsonl": "52873195290c0aa9dee38cee659075cfadb2917d898988451c580ffb0f5cb14a",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.en.jsonl": "f309b71e3593f3b2b37f3f42bd7c54040f5c04f486eca6d12b43bebc84c3d30d"
+  },
+  "reference_sha256": {
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/references.json": "83c3b679a5bf7af532dd29aaa753212939acec9a8ef2cfde51c264f9811d01d7"
+  },
+  "model": "models/qwen2.5-3b-instruct",
+  "tokenizer_sha256": {
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  },
+  "base_weights": {
+    "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "files": [
+      {
+        "file": "model-00001-of-00002.safetensors",
+        "bytes": 3968658944,
+        "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2"
+      },
+      {
+        "file": "model-00002-of-00002.safetensors",
+        "bytes": 2203268048,
+        "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+      }
+    ],
+    "seconds": 150.52449499303475
+  },
+  "base_verification_policy": "Rehash both pinned base shards once on the syx host before any launch; each inference also checks frozen inputs, tokenizer and selected adapter before/after generation.",
+  "inference": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "max_calls": 24,
+    "agent_turn_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "question_count": 12,
+  "questions": {
+    "zh": "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.zh.jsonl",
+    "en": "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.en.jsonl"
+  },
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "kb": "artifacts/thesis_direction_review/radar_development_v2/readings.json",
+  "run_count": 10,
+  "total_rows": 120,
+  "maximum_additional_gpu_hours": 2.5,
+  "maximum_hours_per_run": 0.25,
+  "schedule": "Ten fixed runs on idle GPUs under syx; one GPU per run and run_job supervisor capped at 0.25 hours. No score-selected retry.",
+  "metrics": [
+    "finished",
+    "exact_target_selection",
+    "target_covered",
+    "target_with_allowed_context",
+    "unrelated_extra_selection",
+    "empty_selection",
+    "invalid_calls",
+    "tokens"
+  ],
+  "analysis_order": "Validate all ten complete runtime manifests and all 120 CPU replays before opening reference records or computing target-selection scores.",
+  "paired_comparison": "For each fixed model compare zh/en on the same 12 IDs using exact-selection and finished counts plus paired concordant/discordant outcomes; descriptive only, no independence assumption across language views or checkpoints.",
+  "original_probe_comparison": "Post-hoc task-rewrite diagnostic only: wording and task demands changed. Do not attribute differences from development_probe_v1 solely to language.",
+  "language_scope": "Only the question and its source-context wrapper are translated; the shared bilingual system prompt, schema and Chinese KB notes are unchanged. The en condition is not an entirely English interface.",
+  "error_policy": "Report the same observable format/function, entity/source, attribute/event, condition, finish/budget issues; any language association is descriptive on twelve exposed AI-translated pairs.",
+  "answer_policy": "Models select records only. Source notes are AI-reviewed KB content; deterministic evidence cards do not establish model semantic judgment or factual truth.",
+  "stop_rule": "Complete the single fixed diagnostic and CPU replay, report errors, then make an explicit next-work decision. No training, prompt tuning, or automatic next round.",
+  "next_work_policy": [
+    "This exhausts the one planned zero-shot alignment retest; no further prompt or wording search by score.",
+    "If signature/handle loops persist, stop direct transfer and specify matched-budget interface-adaptation data before any new training.",
+    "If execution is usable but fields/conditions are wrong, specify field/condition supervision rather than silently relaxing the parser.",
+    "If lookup selection is usable, expand source-separated domain development and baseline coverage before claiming domain efficacy; these twelve exposed pairs cannot establish it.",
+    "Report all five checkpoints in both languages. Do not select a favorable seed or merge language variants into independent observations."
+  ]
+}
