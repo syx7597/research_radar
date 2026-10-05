@@ -1,0 +1,35 @@
+{
+  "version": "radar_sources_v1_pre_freeze_retrieval_observation",
+  "recorded_at_utc": "2026-10-05T13:33:41.747486+00:00",
+  "observation_date_local": "2026-10-05",
+  "local_timezone": "Asia/Shanghai",
+  "observed_by": "AI development packet author",
+  "stage": "before_source_evaluation_protocol_freeze",
+  "reference_accessed": true,
+  "reference_access_reason": "CPU admission checks of authored semantic declarations, canonical record selection and common raw-chunk evidence mapping",
+  "diagnostic": {
+    "method": "Already fixed source-only BM25 top4",
+    "question_count": 24,
+    "support_page_hits": 23,
+    "support_page_misses": 1,
+    "missed_question_ids": [
+      "source_zh_19"
+    ],
+    "model_predictions": 0
+  },
+  "no_changes_based_on_observation": {
+    "retrieval_configuration": true,
+    "question_text": true,
+    "reference_labels": true,
+    "chunking": true,
+    "source_readings": true
+  },
+  "scope": "Already seen preparation-side retrieval diagnostic; not model performance, not an independent blind retrieval test, and not a basis for selecting a favorable test subset",
+  "subsequent_policy": "No additional retrieval analysis or tuning before the fixed evaluation; preserve the missed case",
+  "files_sha256": {
+    "data/radar_sources_v1/questions.jsonl": "7ee2d27b2704a913d8bb2d857b9d548207d82a477d45a424e9bd259dec9d8288",
+    "data/radar_sources_v1/references.jsonl": "2f94be2e74107b5451bd731cbd17282fe16b491294af6d63bbe716f7d6cad985",
+    "data/radar_sources_v1/chunks.jsonl": "f3e19974e494aec82a8607c96123af32ca700fd2589df7e52caa3eee5cea3e98",
+    "experiments/radar_domain/source_rag.py": "368ccd908b25d6e3e1b423086e93c9388de1997b9a1b50ad1a5ff544ac434958"
+  }
+}

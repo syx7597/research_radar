@@ -1,0 +1,100 @@
+{
+  "extraction": {
+    "chunking": "One complete extracted PDF page, never question-dependent",
+    "furuno_wr2120": "pypdf 6.19.0 layout; horizontal whitespace collapsed separately within each line; rotated graphic text may be absent",
+    "jrc_derived_pdf_sha256": "80a76cffe7a1f88621235730a00aa637a4d03fd37b8474df8eafe637ec9f06e6",
+    "jrc_jma1030": "macOS PDFKit PDFDocument.write removes PDF encryption in a derived local copy; pypdf 6.19.0 layout preserves table column positions and horizontal whitespace",
+    "leonardo_meteor735c": "pypdf 6.19.0 plain reading-order text; layout mode visibly splits letters",
+    "page_numbers": "1-based",
+    "pypdf_wheel_sha256": "7e5d6e730e7dae87d560a2cee218b852f6498c8be61966f3cd02ead971e48d14",
+    "quality": "Machine extraction retains spacing/ligature artifacts; original PDF visual table review remains necessary",
+    "vaisala_wrm200": "pypdf 6.19.0 layout; horizontal whitespace collapsed separately within each line"
+  },
+  "isolation": {
+    "base_pretraining_exposure": "unknown",
+    "current_qa_origin": "New AI authorship from these manufacturer PDF snapshots; not rewritten old automatic QA",
+    "excluded_old_debug_families": [
+      "Patriot / AN/MPQ-65",
+      "AN/APY-9",
+      "AN/SPG-51",
+      "AN/SPN-35",
+      "AN/SPG-59",
+      "EL/M-2080"
+    ],
+    "historical_corpus_overlap_disclosed": true,
+    "independent_human_gold": false,
+    "legacy_qa_lineage": "not_certified",
+    "old_debug_family_overlap": false,
+    "old_debug_source_uri_overlap": false
+  },
+  "review_scope": "AI_only_development",
+  "source_only_chunking": "Every complete extracted PDF page; no question-dependent windows or answer annotations",
+  "sources": [
+    {
+      "entities": [
+        "WRM200"
+      ],
+      "family_id": "WRM200",
+      "historical_entity_or_family_seen": true,
+      "historical_scope_note": "WRM 200 empty-attribute legacy KG entity; mentioned in wrm_100__rt",
+      "historical_source_uri": "https://www.radartutorial.eu/19.kartei/10.weather/karte027.en.html",
+      "human_verified": false,
+      "page_count": 3,
+      "pdf_sha256": "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0",
+      "review_status": "AI_only_development",
+      "source_id": "vaisala_wrm200",
+      "title": "Vaisala Weather Radar WRM200 — B210698EN-J (2021)",
+      "url": "https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf"
+    },
+    {
+      "entities": [
+        "METEOR 735C"
+      ],
+      "family_id": "METEOR_700C_735C",
+      "historical_entity_or_family_seen": true,
+      "historical_scope_note": "Legacy meteor_700c_735c__rt family; source version frequency must not be merged",
+      "historical_source_uri": "https://www.radartutorial.eu/19.kartei/10.weather/karte021.en.html",
+      "human_verified": false,
+      "page_count": 2,
+      "pdf_sha256": "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d",
+      "review_status": "AI_only_development",
+      "source_id": "leonardo_meteor735c",
+      "title": "Leonardo METEOR 735C Weather Radar — 202510-1-05",
+      "url": "https://electronics.leonardo.com/documents/16277707/18380759/METEOR%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970"
+    },
+    {
+      "entities": [
+        "WR2120"
+      ],
+      "family_id": "WR2120",
+      "historical_entity_or_family_seen": true,
+      "historical_scope_note": "Legacy KG entity has properties and appears in corpus/chunks",
+      "historical_source_uri": "https://www.radartutorial.eu/19.kartei/10.weather/karte052.en.html",
+      "human_verified": false,
+      "page_count": 4,
+      "pdf_sha256": "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7",
+      "review_status": "AI_only_development",
+      "source_id": "furuno_wr2120",
+      "title": "FURUNO WR2120 Specifications — CA000001492 / G-2012PDF",
+      "url": "https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf"
+    },
+    {
+      "entities": [
+        "JMA-1032",
+        "JMA-1034"
+      ],
+      "family_id": "JMA1030",
+      "historical_entity_or_family_seen": false,
+      "historical_scope_note": "No exact model spelling found in the four principal historical KG/corpus/chunk files; not a proof of total workspace absence",
+      "historical_source_uri": null,
+      "human_verified": false,
+      "page_count": 6,
+      "pdf_sha256": "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be",
+      "review_status": "AI_only_development",
+      "source_id": "jrc_jma1030",
+      "title": "JRC JMA-1030 Radar — JMA-1032 and JMA-1034 Specifications",
+      "url": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf"
+    }
+  ],
+  "version": "radar_sources_v1"
+}

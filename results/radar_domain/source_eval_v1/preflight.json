@@ -1,0 +1,67 @@
+{
+  "version": "radar_sources_cpu_preflight_v1",
+  "status": "passed",
+  "cpu_only": true,
+  "created_at_utc": "2026-10-05T13:42:35.967777+00:00",
+  "questions": 24,
+  "chunks": 15,
+  "max_checked_answer_prompt_tokens": 4456,
+  "max_generated_tokens": 768,
+  "max_context_tokens": 8192,
+  "no_truncation": true,
+  "base_weights": {
+    "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "files": [
+      {
+        "file": "model-00001-of-00002.safetensors",
+        "bytes": 3968658944,
+        "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2"
+      },
+      {
+        "file": "model-00002-of-00002.safetensors",
+        "bytes": 2203268048,
+        "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+      }
+    ],
+    "seconds": 150.52449499303475
+  },
+  "base_files": {
+    "models/qwen2.5-3b-instruct/model-00001-of-00002.safetensors": {
+      "bytes": 3968658944,
+      "mtime_ns": 1790996516811000000,
+      "ctime_ns": 1790996520122000000,
+      "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2"
+    },
+    "models/qwen2.5-3b-instruct/model-00002-of-00002.safetensors": {
+      "bytes": 2203268048,
+      "mtime_ns": 1790996521471000000,
+      "ctime_ns": 1790996523351000000,
+      "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+    }
+  },
+  "base_config_sha256": {
+    "models/qwen2.5-3b-instruct/config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "models/qwen2.5-3b-instruct/generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9"
+  },
+  "inputs_sha256": {
+    "experiments/radar_domain/source_probe.py": "69531b5405d53c2443b013f08f67019373c1812e88c4f6e536c0953fd08a7c08",
+    "experiments/radar_domain/source_rag.py": "368ccd908b25d6e3e1b423086e93c9388de1997b9a1b50ad1a5ff544ac434958",
+    "experiments/radar_domain/source_answers.py": "d69e59257ac36ce9bbe287f1cd321b813cdaf2f2b45074159c3517891ea29366",
+    "experiments/radar_domain/source_analysis.py": "baacd9b8ee38786311278020e35ab16a70387e88f0c0867842a1d921b23be415",
+    "experiments/radar_domain/source_pipeline.py": "ba3ce47e3e01ec08fe32ab9c25bccdc143023fcd645c0e9b235888a4f0c95fda",
+    "experiments/radar_domain/source_packet.py": "826a08601bf9aba452e06f23c6f9321ae7d27725df63b5c13d8d86f20b2df15d",
+    "experiments/radar_domain/source_preflight.py": "62600208aedb29a34bfd2a0f5b3c449f099c299568e005b99154eb92efba0c2a",
+    "experiments/radar_domain/interface_training.py": "24e7ef918c1f6eee616019e6c0c483d5c9c78f7e0e544f38f73c921c8b646f33",
+    "experiments/radar_domain/interface_probe.py": "02cf3dcb82729b720c7da7e98d1acb5fd97dd3c528bd252ca213e83a115d0e57",
+    "experiments/radar_domain/lookup_probe.py": "035e22cd5d34fb9a73f506da0a847c6be0b8550f6a02492951c5bea35f097116",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_analysis.py": "96c7d3d29c74d8c5664f9b7cecbb9aa42d239980056e71014436fead0a1a382e",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "data/radar_sources_v1/questions.jsonl": "7ee2d27b2704a913d8bb2d857b9d548207d82a477d45a424e9bd259dec9d8288",
+    "data/radar_sources_v1/kb.json": "7ec463dcd8ed114b31da173d62317ea3faba3539f5dbf03f7d78739689b7aee5",
+    "data/radar_sources_v1/chunks.jsonl": "f3e19974e494aec82a8607c96123af32ca700fd2589df7e52caa3eee5cea3e98",
+    "artifacts/thesis_direction_review/radar_sources_v1/manifest.json": "77cd86058ab8450ec838c219e54bca209baa26fccb3dafe38e7ddff822e18417"
+  }
+}

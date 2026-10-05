@@ -1,0 +1,566 @@
+{
+  "CPU_validation": [
+    {
+      "command": "python3 -m experiments.radar_domain.source_packet --check",
+      "result": "passed; 24 canonical lookup targets, source byte and deterministic packet reproduction checks"
+    },
+    {
+      "command": "python3 -m unittest tests.test_radar_source_rag tests.test_radar_source_execution -v",
+      "result": "17 tests passed; no GPU/model calls"
+    },
+    {
+      "command": "Independent inline hash/span/schema/full-page and old-debug closure checks",
+      "result": "27 bindings valid, 62 source spans valid, 15 full pages identical, 24 minimal question schemas and zero old-debug entity/URI overlap"
+    }
+  ],
+  "blocking_issues": [],
+  "created_at_utc": "2026-10-05T13:33:37.674301+00:00",
+  "decision": "approved_as_AI_only_exploratory_source_packet_for_a_once_frozen_evaluation",
+  "facts_review": {
+    "record_readings_passed": 62,
+    "semantic_reference_questions_reviewed": 24,
+    "semantic_review_separate_from_program_validation": true,
+    "structured_readings_reviewed": 62,
+    "support_passed": 24,
+    "unknown_coverage_claim_permitted": false,
+    "unknown_records": 0
+  },
+  "fairness_contract_review": {
+    "KG_to_answer_boundary": "Selected records map only to original page chunks; structured values, fact IDs, rendered evidence cards and reference explanations must not enter answer prompts.",
+    "RAG_boundary": "Frozen global BM25/top-four with generic ontology expansion, no qid-to-source or target-page routing.",
+    "canonical_claim_limit": "Free-form Chinese/English synonyms and equivalent units can differ from the reference representation; strict field equality is not semantic accuracy.",
+    "common_answer_generator": "One fixed unadapted base model with identical prompt, schema and output/context budget for all arms.",
+    "comparison_scope": "Curated KG-assisted retrieval versus raw-text RAG with different representation/training histories; not isolated algorithm causality.",
+    "correct_answer_from_wrong_record": "Possible because several facts share a full-page chunk; selection and final answer scores are distinct.",
+    "final_pipeline_freeze_and_scoring_gate": "Parent must bind final code/protocol and completed preflight; this data audit does not substitute for those runtime gates.",
+    "no_answer_renderer_credit": true,
+    "preflight_weight_integrity_review": "CPU full-SHA attestation, per-job size/mtime/ctime checks and final full-SHA required; attestation must be protocol-bound.",
+    "reference_access_order": "Freeze all five selector and six answer outputs; replay/verify evidence and completion; only then score with references.",
+    "report_separately": [
+      "Exact source-record selection",
+      "Retrieved raw-source support coverage",
+      "JSON/citation syntactic validity",
+      "Canonical claim representation agreement",
+      "Blinded semantic support and natural-language fidelity"
+    ],
+    "same_raw_page_collection_for_all_answer_routes": true
+  },
+  "files_sha256": {
+    "artifacts/thesis_direction_review/radar_sources_v1/manifest.json": "77cd86058ab8450ec838c219e54bca209baa26fccb3dafe38e7ddff822e18417",
+    "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
+    "data/radar_sources_v1/chunks.jsonl": "f3e19974e494aec82a8607c96123af32ca700fd2589df7e52caa3eee5cea3e98",
+    "data/radar_sources_v1/curation.json": "afd5bf3481292af284345f3f577c44f7d257c26d54db9102b322ecca94ef8586",
+    "data/radar_sources_v1/kb.json": "7ec463dcd8ed114b31da173d62317ea3faba3539f5dbf03f7d78739689b7aee5",
+    "data/radar_sources_v1/pdf/furuno_wr2120.pdf": "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7",
+    "data/radar_sources_v1/pdf/jrc_jma1030.pdf": "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be",
+    "data/radar_sources_v1/pdf/leonardo_meteor735c.pdf": "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d",
+    "data/radar_sources_v1/pdf/vaisala_wrm200.pdf": "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0",
+    "data/radar_sources_v1/questions.jsonl": "7ee2d27b2704a913d8bb2d857b9d548207d82a477d45a424e9bd259dec9d8288",
+    "data/radar_sources_v1/references.jsonl": "2f94be2e74107b5451bd731cbd17282fe16b491294af6d63bbe716f7d6cad985",
+    "data/radar_sources_v1/text/furuno_wr2120.p01.txt": "a0955de826be67ecd94104b58028bd793d91ac64ec54418d7863b4df39cb83f3",
+    "data/radar_sources_v1/text/furuno_wr2120.p02.txt": "a700a16c869f6c7edc2a713e5d0d6de57ec319945df2d4d3f437b827eeb09c52",
+    "data/radar_sources_v1/text/furuno_wr2120.p03.txt": "2f105daaad1c827b921522d3a5af8752952d5eae1d4e8b85004cba0539e89e9f",
+    "data/radar_sources_v1/text/furuno_wr2120.p04.txt": "28df8c808a9ea63442f5526d29306f1ad394db94d8a8321c20bc3be374066d24",
+    "data/radar_sources_v1/text/jrc_jma1030.p01.txt": "409ec8652bd29b0d57badbe804f3d9f44321a53e5071b7b533c147530e5cb9cb",
+    "data/radar_sources_v1/text/jrc_jma1030.p02.txt": "74b13fc1e6c502c17a5b059c518dcead44ce9a971d5d2ec1ae2a2c52851c3481",
+    "data/radar_sources_v1/text/jrc_jma1030.p03.txt": "73f747b6049f7a6ec753ecd7727c26a68d7c95e38bd602aa69adec6bb284d83e",
+    "data/radar_sources_v1/text/jrc_jma1030.p04.txt": "a075a04d296ef62456194489b6672a353b4adea2c84b82dc8f7227d099040666",
+    "data/radar_sources_v1/text/jrc_jma1030.p05.txt": "a1a73643660967407dd080e2f65babd073e218193ca00eb19130d2439c3ee898",
+    "data/radar_sources_v1/text/jrc_jma1030.p06.txt": "a9c9db9f46e66c70455dd843f6ba9b0451646f4b4d60cccb4b1eb20b86dab0fa",
+    "data/radar_sources_v1/text/leonardo_meteor735c.p01.txt": "fbba8b5c189c69fada72625db1c34348e5a93054ad9a16ddb254add15ca236bf",
+    "data/radar_sources_v1/text/leonardo_meteor735c.p02.txt": "457e4843b1e2bab7c11471f59bf533ed0ea1fa22030a35ce0eb4ae165f0d4d4f",
+    "data/radar_sources_v1/text/vaisala_wrm200.p01.txt": "490d34dd2c5f6789ef9bc564f7fd26e2356419c33edcb1d68ce6ee83cd56497c",
+    "data/radar_sources_v1/text/vaisala_wrm200.p02.txt": "2f0969529099d03190c898675125d26938ab27370610a9844b9aa00a299ea759",
+    "data/radar_sources_v1/text/vaisala_wrm200.p03.txt": "68df9204d1b41da1b5db951d16c08509ca6fd8be5ff188093e1081ade15d99a0",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/source_packet.py": "826a08601bf9aba452e06f23c6f9321ae7d27725df63b5c13d8d86f20b2df15d"
+  },
+  "isolation": {
+    "JMA1030_historical_presence": "No matching model family spelling found in four principal historical files; total-workspace absence not certified.",
+    "METEOR735C_historical_presence": "Collected third-party METEOR700C/735C family source; new official version differs and remains separate.",
+    "WR2120_historical_presence": "Historical corpus/chunks and KG attributes present.",
+    "WRM200_historical_presence": "Mentioned in WRM100 legacy source; empty-attribute KG entity.",
+    "base_pretraining_exposure": "unknown",
+    "legacy_automatic_QA_lineage": "not_certified",
+    "legacy_files_searched": [
+      "kg_v3/entities.json",
+      "radar_corpus/corpus.json",
+      "pipeline/v3/work/chunks.jsonl",
+      "data/v2/enrich_wikipedia_cache.json"
+    ],
+    "new_QA_origin": "AI authored against the new manufacturer PDFs; not produced by reusing old debug questions.",
+    "old_debug_12_entity_intersection": 0,
+    "old_debug_12_source_uri_intersection": 0,
+    "old_debug_family_overlap_after_manual_family_review": false
+  },
+  "limitations": [
+    "AI-only source interpretation, not independently human-verified equipment truth.",
+    "Four source/family groups are the correlation units; the 24 questions are not 24 independent sources.",
+    "Three device families appear in historical collected corpus, while old debug sources/families are excluded.",
+    "Manufacturer publications report specifications, not independent measurements or guaranteed current equipment behavior.",
+    "Questions are source-bound single-intent lookup tasks, not multi-hop reasoning, unsupported-query robustness or general radar expertise.",
+    "No source-silent unknowns or invented events were added; this packet cannot validate unknown-answer behavior.",
+    "Text extraction retains spacing and ligature artifacts; source hashes and original PDF layouts remain authoritative.",
+    "The curated KB is a subset with distractors, whereas RAG sees full pages; record selection and answer generation require separate reporting.",
+    "No favorable-seed selection, extra training or post-score prompt/retrieval tuning is authorized by this audit."
+  ],
+  "pre_admission_issue_resolved": [
+    {
+      "issue": "JRC plain text lost parallel model columns.",
+      "resolution": "Machine layout extraction from PDFKit-derived PDF now retains table columns; independently matched to original PDF visual layout. No manual question-specific answer annotations were inserted."
+    }
+  ],
+  "pre_freeze_development_visibility": {
+    "coverage_reported": {
+      "missing_question_ids": [
+        "source_zh_19"
+      ],
+      "supported_questions": 23,
+      "total_questions": 24
+    },
+    "diagnostic": "Fixed BM25 top-four source-support page coverage compared with authored references during CPU bridge checking",
+    "independently_recomputed_by_this_audit": false,
+    "limit": "This retrieval diagnostic is already development-visible before model inference. The packet is exploratory, not a blind final held-out benchmark; retain the failure without tuning this frozen run.",
+    "model_results_seen": false,
+    "reported_by": "source packet author /root/radar_revision_v2",
+    "retrieval_or_question_retuning_performed_in_response": false
+  },
+  "provenance_checks": {
+    "chunks_equal_complete_machine_extracted_pages": 15,
+    "citation_extracted_text_hash_checks": 62,
+    "citation_pdf_hash_checks": 62,
+    "exact_codepoint_span_checks": 62,
+    "hash_mismatches": 0,
+    "manifest_bound_files_rehashed": 27,
+    "model_question_keys_exactly": [
+      "id",
+      "question"
+    ],
+    "reference_files_separate_from_model_inputs": true,
+    "scope_notes_are_shared_non_answer_disclaimer": true
+  },
+  "question_reviews": [
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "v01",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_01",
+      "source_id": "vaisala_wrm200",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "v02",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_02",
+      "source_id": "vaisala_wrm200",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "v03",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_03",
+      "source_id": "vaisala_wrm200",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "v04",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_04",
+      "source_id": "vaisala_wrm200",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "v05",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_05",
+      "source_id": "vaisala_wrm200",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "v06",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_06",
+      "source_id": "vaisala_wrm200",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "l01",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_07",
+      "source_id": "leonardo_meteor735c",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "l02",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_08",
+      "source_id": "leonardo_meteor735c",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "l03",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_09",
+      "source_id": "leonardo_meteor735c",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "l04",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_10",
+      "source_id": "leonardo_meteor735c",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "l05",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_11",
+      "source_id": "leonardo_meteor735c",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "l06",
+      "pdf_pages_visually_checked": [
+        2
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_12",
+      "source_id": "leonardo_meteor735c",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "f01",
+      "pdf_pages_visually_checked": [
+        4
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_13",
+      "source_id": "furuno_wr2120",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "f02",
+      "pdf_pages_visually_checked": [
+        4
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_14",
+      "source_id": "furuno_wr2120",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "f03",
+      "pdf_pages_visually_checked": [
+        4
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_15",
+      "source_id": "furuno_wr2120",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "f04",
+      "pdf_pages_visually_checked": [
+        4
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_16",
+      "source_id": "furuno_wr2120",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "f05",
+      "pdf_pages_visually_checked": [
+        4
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_17",
+      "source_id": "furuno_wr2120",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "f06",
+      "pdf_pages_visually_checked": [
+        4
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_18",
+      "source_id": "furuno_wr2120",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "j32power",
+      "pdf_pages_visually_checked": [
+        6
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_19",
+      "source_id": "jrc_jma1030",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "j32beamH",
+      "pdf_pages_visually_checked": [
+        6
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_20",
+      "source_id": "jrc_jma1030",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "j34beamH",
+      "pdf_pages_visually_checked": [
+        6
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_21",
+      "source_id": "jrc_jma1030",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "j34pw6",
+      "pdf_pages_visually_checked": [
+        6
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_22",
+      "source_id": "jrc_jma1030",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "j32prf5",
+      "pdf_pages_visually_checked": [
+        6
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_23",
+      "source_id": "jrc_jma1030",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    },
+    {
+      "basis": "Independent reading of the official PDF and its rendered technical table, followed by comparison with question, reading and authored claim; executor success was not treated as semantic evidence.",
+      "condition_or_component": "passed",
+      "expected_record_id": "j34tempS",
+      "pdf_pages_visually_checked": [
+        6
+      ],
+      "question_answer_alignment": "passed",
+      "question_id": "source_zh_24",
+      "source_id": "jrc_jma1030",
+      "subject_scope": "passed",
+      "value_shape_and_unit": "passed",
+      "verdict": "source_supported_AI_reading"
+    }
+  ],
+  "reviewer": {
+    "AI_only": true,
+    "agent": "/root/radar_probe_audit",
+    "different_model_family_independence": "not_certified",
+    "human_verified": false,
+    "separate_from_packet_author": true
+  },
+  "scope": {
+    "GPU_or_model_runs_by_reviewer": 0,
+    "complete_page_chunks": 15,
+    "entities": 5,
+    "families": 4,
+    "not_final_independent_evaluation": true,
+    "old_files_modified": false,
+    "questions_zh": 24,
+    "sources": 4,
+    "structured_readings": 62
+  },
+  "sources_reviewed": [
+    {
+      "historical_entity_or_family_seen": true,
+      "local_original_pdf_rendering_checked": true,
+      "official_url": "https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf",
+      "official_web_pdf_opened_independently": true,
+      "original_pdf_sha256": "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0",
+      "pdf_page_count": 3,
+      "semantic_checks": [
+        "发射机参数与天线/系统输入功率分开；峰值和平均功率未混合。",
+        "平均功率绑定占空比；离散脉宽没有改成连续区间。"
+      ],
+      "source_id": "vaisala_wrm200",
+      "technical_pages_visually_checked": [
+        2
+      ]
+    },
+    {
+      "historical_entity_or_family_seen": true,
+      "local_original_pdf_rendering_checked": true,
+      "official_url": "https://electronics.leonardo.com/documents/16277707/18380759/METEOR%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970",
+      "official_web_pdf_opened_independently": true,
+      "original_pdf_sha256": "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d",
+      "pdf_page_count": 2,
+      "semantic_checks": [
+        "735C当前官方版本与历史700C/735C第三方版本分别保留，不合并频率。",
+        "典型工作距离和技术距离为两种量，没有当作同一连续范围。"
+      ],
+      "source_id": "leonardo_meteor735c",
+      "technical_pages_visually_checked": [
+        2
+      ]
+    },
+    {
+      "historical_entity_or_family_seen": true,
+      "local_original_pdf_rendering_checked": true,
+      "official_url": "https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf",
+      "official_web_pdf_opened_independently": true,
+      "original_pdf_sha256": "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7",
+      "pdf_page_count": 4,
+      "semantic_checks": [
+        "频段原文保留为文本，没有推断为精确单频；峰值功率保留双波束原文限定，不推算合计或单束功率。",
+        "启动/工作温度分别保留；最大PRF和最大观测距离作为带max的文本干扰记录，不冒充精确无条件常数。"
+      ],
+      "source_id": "furuno_wr2120",
+      "technical_pages_visually_checked": [
+        4
+      ]
+    },
+    {
+      "historical_entity_or_family_seen": false,
+      "local_original_pdf_rendering_checked": true,
+      "official_url": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf",
+      "official_web_pdf_opened_independently": true,
+      "original_pdf_sha256": "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be",
+      "pdf_page_count": 6,
+      "semantic_checks": [
+        "原始PDF视觉确认两个型号列；机器layout文本保留列位置，供所有回答路线共同使用。",
+        "条件关系保留一对多配置；共享环境行按scanner/display解释，未误当作型号左右列。"
+      ],
+      "source_id": "jrc_jma1030",
+      "technical_pages_visually_checked": [
+        6
+      ]
+    }
+  ],
+  "status": "passed",
+  "version": "radar_sources_v1_independent_ai_audit"
+}

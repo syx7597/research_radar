@@ -1,0 +1,96 @@
+{
+  "chunk_count": 15,
+  "entity_count": 5,
+  "family_count": 4,
+  "files_sha256": {
+    "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
+    "data/radar_sources_v1/chunks.jsonl": "f3e19974e494aec82a8607c96123af32ca700fd2589df7e52caa3eee5cea3e98",
+    "data/radar_sources_v1/curation.json": "afd5bf3481292af284345f3f577c44f7d257c26d54db9102b322ecca94ef8586",
+    "data/radar_sources_v1/kb.json": "7ec463dcd8ed114b31da173d62317ea3faba3539f5dbf03f7d78739689b7aee5",
+    "data/radar_sources_v1/pdf/furuno_wr2120.pdf": "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7",
+    "data/radar_sources_v1/pdf/jrc_jma1030.pdf": "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be",
+    "data/radar_sources_v1/pdf/leonardo_meteor735c.pdf": "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d",
+    "data/radar_sources_v1/pdf/vaisala_wrm200.pdf": "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0",
+    "data/radar_sources_v1/questions.jsonl": "7ee2d27b2704a913d8bb2d857b9d548207d82a477d45a424e9bd259dec9d8288",
+    "data/radar_sources_v1/references.jsonl": "2f94be2e74107b5451bd731cbd17282fe16b491294af6d63bbe716f7d6cad985",
+    "data/radar_sources_v1/text/furuno_wr2120.p01.txt": "a0955de826be67ecd94104b58028bd793d91ac64ec54418d7863b4df39cb83f3",
+    "data/radar_sources_v1/text/furuno_wr2120.p02.txt": "a700a16c869f6c7edc2a713e5d0d6de57ec319945df2d4d3f437b827eeb09c52",
+    "data/radar_sources_v1/text/furuno_wr2120.p03.txt": "2f105daaad1c827b921522d3a5af8752952d5eae1d4e8b85004cba0539e89e9f",
+    "data/radar_sources_v1/text/furuno_wr2120.p04.txt": "28df8c808a9ea63442f5526d29306f1ad394db94d8a8321c20bc3be374066d24",
+    "data/radar_sources_v1/text/jrc_jma1030.p01.txt": "409ec8652bd29b0d57badbe804f3d9f44321a53e5071b7b533c147530e5cb9cb",
+    "data/radar_sources_v1/text/jrc_jma1030.p02.txt": "74b13fc1e6c502c17a5b059c518dcead44ce9a971d5d2ec1ae2a2c52851c3481",
+    "data/radar_sources_v1/text/jrc_jma1030.p03.txt": "73f747b6049f7a6ec753ecd7727c26a68d7c95e38bd602aa69adec6bb284d83e",
+    "data/radar_sources_v1/text/jrc_jma1030.p04.txt": "a075a04d296ef62456194489b6672a353b4adea2c84b82dc8f7227d099040666",
+    "data/radar_sources_v1/text/jrc_jma1030.p05.txt": "a1a73643660967407dd080e2f65babd073e218193ca00eb19130d2439c3ee898",
+    "data/radar_sources_v1/text/jrc_jma1030.p06.txt": "a9c9db9f46e66c70455dd843f6ba9b0451646f4b4d60cccb4b1eb20b86dab0fa",
+    "data/radar_sources_v1/text/leonardo_meteor735c.p01.txt": "fbba8b5c189c69fada72625db1c34348e5a93054ad9a16ddb254add15ca236bf",
+    "data/radar_sources_v1/text/leonardo_meteor735c.p02.txt": "457e4843b1e2bab7c11471f59bf533ed0ea1fa22030a35ce0eb4ae165f0d4d4f",
+    "data/radar_sources_v1/text/vaisala_wrm200.p01.txt": "490d34dd2c5f6789ef9bc564f7fd26e2356419c33edcb1d68ce6ee83cd56497c",
+    "data/radar_sources_v1/text/vaisala_wrm200.p02.txt": "2f0969529099d03190c898675125d26938ab27370610a9844b9aa00a299ea759",
+    "data/radar_sources_v1/text/vaisala_wrm200.p03.txt": "68df9204d1b41da1b5db951d16c08509ca6fd8be5ff188093e1081ade15d99a0",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/source_packet.py": "826a08601bf9aba452e06f23c6f9321ae7d27725df63b5c13d8d86f20b2df15d"
+  },
+  "human_gold": false,
+  "independent_final_evaluation": false,
+  "isolation": {
+    "base_pretraining_exposure": "unknown",
+    "current_qa_origin": "New AI authorship from these manufacturer PDF snapshots; not rewritten old automatic QA",
+    "excluded_old_debug_families": [
+      "Patriot / AN/MPQ-65",
+      "AN/APY-9",
+      "AN/SPG-51",
+      "AN/SPN-35",
+      "AN/SPG-59",
+      "EL/M-2080"
+    ],
+    "historical_corpus_overlap_disclosed": true,
+    "independent_human_gold": false,
+    "legacy_qa_lineage": "not_certified",
+    "old_debug_family_overlap": false,
+    "old_debug_source_uri_overlap": false
+  },
+  "languages": [
+    "zh"
+  ],
+  "limits": [
+    "CPU success is not model performance or factual truth validation",
+    "AI-authored and AI-reviewed; no independent human gold",
+    "The four source/family groups are the correlation units, not 24 independent sources",
+    "Some models/families existed in historical unused corpus; legacy QA lineage is not certified",
+    "Raw PDF text has extraction artifacts; original PDF, page layout and source versions remain authoritative",
+    "KB is a curated subset of source facts; RAG and final answers receive the identical complete raw page chunks",
+    "No source-silent unknowns, invented events or manufactured conditions were added",
+    "Full source text, structured real readings and QA remain in ignored private data; public metadata only"
+  ],
+  "model_runs": 0,
+  "purpose": "Source-isolated AI exploratory evaluation with fixed existing checkpoints and a same-source RAG route",
+  "qualified_question_count": 8,
+  "question_count": 24,
+  "question_counts_by_source": {
+    "furuno_wr2120": 6,
+    "jrc_jma1030": 6,
+    "leonardo_meteor735c": 6,
+    "vaisala_wrm200": 6
+  },
+  "record_count": 62,
+  "record_counts_by_value_kind": {
+    "options": 1,
+    "range": 10,
+    "scalar": 40,
+    "text": 11
+  },
+  "review_status": "AI_only_development",
+  "source_count": 4,
+  "status": "cpu_validated",
+  "training_runs": 0,
+  "validation": {
+    "authored_semantic_claims_match_readings": 24,
+    "canonical_programs": 24,
+    "empty_lookup_checks": 24,
+    "exact_targets": 24,
+    "independent_ai_review": "separate independent_ai_audit.json",
+    "source_span_checks": 62
+  },
+  "version": "radar_sources_v1"
+}
