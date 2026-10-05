@@ -1,0 +1,143 @@
+{
+  "version": "radar_interface_adapt_v1",
+  "frozen_at_utc": "2026-10-05T11:33:49.560784+00:00",
+  "scope": "One admitted synthetic interface adaptation; not a new recovery algorithm or radar factual evaluation",
+  "independent_radar_gold": false,
+  "automatic_next_round": false,
+  "inputs_sha256": {
+    "data/radar_interface_v1/train.questions.jsonl": "afde8f5793c1e58c02ab93e42a7a88ea25ff2a191c3745ad5016ccc868ddbf3b",
+    "data/radar_interface_v1/train.agent_trajectories.jsonl": "9fc7c300922b82f894a58198b6ab52c534ce8f09740adc5889d5353db6c23c63",
+    "data/radar_interface_v1/train.program_trajectories.jsonl": "19c668f6367f22f7d9fb14dbc09911548d15e5c1b5d0013f15c933e7dea8fcaf",
+    "artifacts/thesis_direction_review/radar_interface_synthetic_v1/manifest.json": "70983ddcf1be1d8bf9095843be510f46a14b3dee159674f067cac944e268df65",
+    "experiments/radar_domain/interface_training.py": "24e7ef918c1f6eee616019e6c0c483d5c9c78f7e0e544f38f73c921c8b646f33",
+    "experiments/radar_domain/development_probe.py": "ce5f1c26b9c9dd927ff4137bed41c354e7590ebee1d283842603c9021972a104",
+    "experiments/agent_feedback/training_data.py": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "results/radar_domain/development_probe_v1/protocol.json": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702",
+    "data/radar_interface_v1/tokenized/agent.jsonl": "70f87b3057c5f63234f1a01c34a9e18ef4212b8346b798d0a09aef1c742a69a7",
+    "data/radar_interface_v1/tokenized/program.jsonl": "7a7d18c26710715db13d4b2ae2b8482c1febc7edef64747d6608ad1a0e179747",
+    "results/radar_domain/interface_adapt_v1/preparation.json": "a9ef0e0a41c694a436e59f28db9d641d2e500038c4d1e8d082bab7065a19807e",
+    "artifacts/thesis_direction_review/radar_interface_synthetic_v1/independent_ai_audit.json": "cb095eb9ed5dd9ca34aa959ff83ee87d8b32b880c09d465a8852f05aae4e30b7"
+  },
+  "model": "models/qwen2.5-3b-instruct",
+  "models": {
+    "P": {
+      "adapter": "results/agent_feedback/program_sft_v1/model",
+      "program": true,
+      "files_sha256": {
+        "results/agent_feedback/program_sft_v1/model/adapter_model.safetensors": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+        "results/agent_feedback/program_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "A1": {
+      "adapter": "results/agent_feedback/clean_sft_v1/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+        "results/agent_feedback/clean_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "C1": {
+      "adapter": "results/agent_feedback/recovery_sft_v1/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/recovery_sft_v1/model/adapter_model.safetensors": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33",
+        "results/agent_feedback/recovery_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "A2": {
+      "adapter": "results/agent_feedback/clean_sft_seed20261004/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+        "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    },
+    "C2": {
+      "adapter": "results/agent_feedback/recovery_sft_seed20261004/model",
+      "program": false,
+      "files_sha256": {
+        "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+        "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+      }
+    }
+  },
+  "base_weights": {
+    "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "files": [
+      {
+        "file": "model-00001-of-00002.safetensors",
+        "bytes": 3968658944,
+        "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2"
+      },
+      {
+        "file": "model-00002-of-00002.safetensors",
+        "bytes": 2203268048,
+        "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+      }
+    ],
+    "seconds": 150.52449499303475
+  },
+  "tokenizer": {
+    "files_sha256": {
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "libraries": {
+      "transformers": "5.18.0",
+      "tokenizers": "0.23.2",
+      "jinja2": "3.1.6"
+    }
+  },
+  "seeds": {
+    "P": 20261003,
+    "A1": 20261003,
+    "C1": 20261003,
+    "A2": 20261004,
+    "C2": 20261004
+  },
+  "config": {
+    "epochs": 5,
+    "learning_rate": 5e-05,
+    "batch_size": 2,
+    "accumulation": 8,
+    "max_length": 8192,
+    "warmup_steps": 0,
+    "weight_decay": 0.0,
+    "lr_scheduler_type": "linear",
+    "optimizer": "adamw_torch",
+    "bf16": true,
+    "tf32": true,
+    "gradient_checkpointing": true,
+    "max_grad_norm": 1.0
+  },
+  "caches": {
+    "agent": {
+      "records": 120,
+      "input_tokens": 232598,
+      "supervised_tokens": 9734,
+      "max_input_length": 1987,
+      "path": "data/radar_interface_v1/tokenized/agent.jsonl",
+      "sha256": "70f87b3057c5f63234f1a01c34a9e18ef4212b8346b798d0a09aef1c742a69a7",
+      "tools": true
+    },
+    "program": {
+      "records": 120,
+      "input_tokens": 64270,
+      "supervised_tokens": 4200,
+      "max_input_length": 555,
+      "path": "data/radar_interface_v1/tokenized/program.jsonl",
+      "sha256": "7a7d18c26710715db13d4b2ae2b8482c1febc7edef64747d6608ad1a0e179747",
+      "tools": false
+    }
+  },
+  "maximum_hours_per_run": 0.5,
+  "maximum_additional_gpu_hours": 2.5,
+  "order_policy": "All A/C use the same full agent cache; within each A/C pair use the same training and data seed. Record the actual sampled-order digest.",
+  "loss_policy": "Stock Trainer causal language-model loss, original assistant-only labels. No recovery-specific data, additional adapter, optimizer replacement or held-out access.",
+  "program_comparison": "Same question instances; program/action supervision lengths differ and are not token-matched.",
+  "stop_rule": "Train each of the five starting adapters once for the fixed full epochs, retain all results, then run the separately frozen evaluation. No score-based restart or automatic extra epochs."
+}

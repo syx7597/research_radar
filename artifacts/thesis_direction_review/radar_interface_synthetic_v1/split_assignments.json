@@ -1,0 +1,1706 @@
+{
+  "version": "radar_interface_synthetic_v1",
+  "seed": 20261005,
+  "groups": [
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 1,
+      "family_index": 0,
+      "knowledge_id": "ifkb-291abf9284cf",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-2D8ECFF6ABC5",
+        "SYN-967D16855B5E",
+        "SYN-E7ECF30DB790"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 17,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 2,
+      "family_index": 0,
+      "knowledge_id": "ifkb-890ed21853c9",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-80CA000D9D01",
+        "SYN-A3FA2A268596",
+        "SYN-C58FE1933B22"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 26,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 3,
+      "family_index": 1,
+      "knowledge_id": "ifkb-43b97aff7c6e",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-54B40140EAE9",
+        "SYN-81B242C3608E",
+        "SYN-DDBEAB52E271"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 10,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 4,
+      "family_index": 1,
+      "knowledge_id": "ifkb-b4b7d7ae5d53",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-5A63B84C8058",
+        "SYN-608D4CDFC06A",
+        "SYN-F0EF5BEC4A56"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 4,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 5,
+      "family_index": 0,
+      "knowledge_id": "ifkb-8d2d6023c28f",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-0AE52F0154B7",
+        "SYN-49B1D48ABA9C",
+        "SYN-E811119A20EE"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 28,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 6,
+      "family_index": 0,
+      "knowledge_id": "ifkb-040dedd12806",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-489276311C70",
+        "SYN-4D8E68D553A2",
+        "SYN-C49336E74BAB"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 25,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 7,
+      "family_index": 0,
+      "knowledge_id": "ifkb-44f72fa35538",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-17C88FA902B5",
+        "SYN-3403C86CF454",
+        "SYN-F328F4162B06"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 21,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 8,
+      "family_index": 2,
+      "knowledge_id": "ifkb-f6af60734911",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-3CB881D884B0",
+        "SYN-6E6F4E967CCC",
+        "SYN-71BB66AD7169"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 7,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 9,
+      "family_index": 1,
+      "knowledge_id": "ifkb-14e1963f008f",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-ACF8E014828D",
+        "SYN-CFB545115F58",
+        "SYN-D868AB8CB514"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 26,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 10,
+      "family_index": 1,
+      "knowledge_id": "ifkb-66179cbf8ae0",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-0E5E423BB7DD",
+        "SYN-C52497F4BB5A",
+        "SYN-DBE5972177FA"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 25,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 11,
+      "family_index": 2,
+      "knowledge_id": "ifkb-6eaf6e54ff31",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-03A42BB9F643",
+        "SYN-8155429F138B",
+        "SYN-E6A035E18D8F"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 30,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 12,
+      "family_index": 2,
+      "knowledge_id": "ifkb-60b26bd16519",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-42FD742CC1F5",
+        "SYN-9CE1F47E462C",
+        "SYN-C4155BECE06B"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 26,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 13,
+      "family_index": 3,
+      "knowledge_id": "ifkb-755ed95d89fe",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-29BC84ECA577",
+        "SYN-5C8ED878B64E",
+        "SYN-F1F82CB67F00"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 5,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 14,
+      "family_index": 1,
+      "knowledge_id": "ifkb-5f6c86f88979",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-37C71FF86946",
+        "SYN-602F5A39F677",
+        "SYN-B6ED84B13DC8"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 31,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 15,
+      "family_index": 4,
+      "knowledge_id": "ifkb-656664c724a8",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-1B3F4BB7FC7D",
+        "SYN-47DD4A893B90",
+        "SYN-71EAC5416AA1"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 8,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 16,
+      "family_index": 3,
+      "knowledge_id": "ifkb-8f3292d3f133",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-16E935933B04",
+        "SYN-C07EE7C0B7B6",
+        "SYN-EB23DDB4AEF5"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 20,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 17,
+      "family_index": 5,
+      "knowledge_id": "ifkb-a4f46b6c31c3",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-6115E8C2D922",
+        "SYN-95FA1C145124",
+        "SYN-DC6CF9BEB616"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 2,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 18,
+      "family_index": 0,
+      "knowledge_id": "ifkb-5e67be4992e5",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-2B74290ACFD9",
+        "SYN-D6E270D255E2",
+        "SYN-ED5222C05EC0"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 15,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 19,
+      "family_index": 1,
+      "knowledge_id": "ifkb-96f88560a9a6",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-32DA91B10900",
+        "SYN-681BBBFABA70",
+        "SYN-EF47F443EE4B"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 31,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 20,
+      "family_index": 2,
+      "knowledge_id": "ifkb-815775597699",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-15B8066F78B7",
+        "SYN-34B28152B9E3",
+        "SYN-617377D120FC"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 27,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 21,
+      "family_index": 4,
+      "knowledge_id": "ifkb-15dc6091cbfe",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-0774A4EB07C8",
+        "SYN-E84953291885",
+        "SYN-ED78FC72F9AE"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 19,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 22,
+      "family_index": 5,
+      "knowledge_id": "ifkb-59b3226bc242",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-65282184126C",
+        "SYN-7E259DD2C890",
+        "SYN-BDD53417FEA3"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 12,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 23,
+      "family_index": 3,
+      "knowledge_id": "ifkb-68c53bd4435f",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-09AAAF869F70",
+        "SYN-7CDF318B4FAE",
+        "SYN-F681CFE22D66"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 1,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 24,
+      "family_index": 6,
+      "knowledge_id": "ifkb-a2d1725b90e1",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-46A076EC4032",
+        "SYN-75F13A1402CE",
+        "SYN-A9F3BE5266FF"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 4,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 25,
+      "family_index": 3,
+      "knowledge_id": "ifkb-82f31f31ef1b",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-02520D49CA76",
+        "SYN-619E0F9DF52E",
+        "SYN-F33A62F4F700"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 9,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 26,
+      "family_index": 2,
+      "knowledge_id": "ifkb-fdb0201cf523",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-1A8B022431D9",
+        "SYN-2C839D677F0B",
+        "SYN-A3FF45EC3E65"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 2,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 27,
+      "family_index": 4,
+      "knowledge_id": "ifkb-54746c723dd2",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-4E43A21C5B05",
+        "SYN-7FF19AD5906D",
+        "SYN-A1EA91C2C367"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 12,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 28,
+      "family_index": 5,
+      "knowledge_id": "ifkb-9c913a0eb0bd",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-551C90FD275A",
+        "SYN-AD3A4D1B5FD4",
+        "SYN-AF4035D556F0"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 14,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 29,
+      "family_index": 4,
+      "knowledge_id": "ifkb-abc4ae344ccb",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-17FA36DC517E",
+        "SYN-706831FBDFD8",
+        "SYN-F3FC35015397"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 9,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 30,
+      "family_index": 2,
+      "knowledge_id": "ifkb-0222eb311ff3",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-2725D60A9F64",
+        "SYN-75740A274DBD",
+        "SYN-9C91CB1AEB91"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 11,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 31,
+      "family_index": 3,
+      "knowledge_id": "ifkb-634f3ba76b66",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-0183DA11ADBD",
+        "SYN-8E48CFD0496B",
+        "SYN-B15F716C44B4"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 7,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 32,
+      "family_index": 4,
+      "knowledge_id": "ifkb-d80325d34754",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-0B0CD3D0431A",
+        "SYN-11C8E5A9ECB5",
+        "SYN-5DF38DE5EB86"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 25,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 33,
+      "family_index": 5,
+      "knowledge_id": "ifkb-bca1aed8c50d",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-1734BC68AB0A",
+        "SYN-278A995771FF",
+        "SYN-DB7C6FE7E9CA"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 15,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 34,
+      "family_index": 3,
+      "knowledge_id": "ifkb-5f461f7e4779",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-728573CB0015",
+        "SYN-9B2259EA9639",
+        "SYN-E2DF7E8E1FAF"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 8,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 35,
+      "family_index": 6,
+      "knowledge_id": "ifkb-1f7ca1a39390",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-8CBA877A5433",
+        "SYN-8D8005EB5F9C",
+        "SYN-BFF67C077604"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 0,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 36,
+      "family_index": 6,
+      "knowledge_id": "ifkb-27d7ab7361ee",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-2BDCF84A70CB",
+        "SYN-77B931D73F81",
+        "SYN-A63B195BCFE2"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 0,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 37,
+      "family_index": 5,
+      "knowledge_id": "ifkb-b07f61591fc3",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-8018346441FD",
+        "SYN-92B215586941",
+        "SYN-AE36C4910295"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 27,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 38,
+      "family_index": 7,
+      "knowledge_id": "ifkb-052b31bd88ec",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-6FF3448665E5",
+        "SYN-75C457B47E07",
+        "SYN-CA76AD15B2E9"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 16,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 39,
+      "family_index": 4,
+      "knowledge_id": "ifkb-7489667b4691",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-1A37B1722787",
+        "SYN-4E0D0EEC9E79",
+        "SYN-ABD4F65311D0"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 29,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 40,
+      "family_index": 8,
+      "knowledge_id": "ifkb-cf09306bd4fd",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-0CC88ECBDDED",
+        "SYN-1A6928814A9D",
+        "SYN-B5034510D3A5"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 7,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 41,
+      "family_index": 7,
+      "knowledge_id": "ifkb-f13a39ba3682",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-29D1FBFA5463",
+        "SYN-4661091720CC",
+        "SYN-D4D95C89B2C3"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 5,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 42,
+      "family_index": 7,
+      "knowledge_id": "ifkb-a4523b64f7df",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-7A894187807A",
+        "SYN-9875930EC348",
+        "SYN-A22908CF8443"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 25,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 43,
+      "family_index": 8,
+      "knowledge_id": "ifkb-ab5544b626e0",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-31D130E767AD",
+        "SYN-5A81F7444737",
+        "SYN-CE7B521A1D85"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 10,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 44,
+      "family_index": 8,
+      "knowledge_id": "ifkb-c1eba7f08d8e",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-033851A6943F",
+        "SYN-0A3A36E90BDF",
+        "SYN-B34B82B7EAB0"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 5,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 45,
+      "family_index": 6,
+      "knowledge_id": "ifkb-96cda37c7255",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-1BAB98CBD5D5",
+        "SYN-4C2733003E78",
+        "SYN-94A627882366"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 13,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 46,
+      "family_index": 5,
+      "knowledge_id": "ifkb-a7f260936325",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-8EF7298C0CB3",
+        "SYN-9439A64FF4CA",
+        "SYN-F6A8B1C4A581"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 28,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 47,
+      "family_index": 6,
+      "knowledge_id": "ifkb-6618c37ca755",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-389CC49D22F6",
+        "SYN-3A4E84A56C9B",
+        "SYN-D231FCC7700B"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 13,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 48,
+      "family_index": 7,
+      "knowledge_id": "ifkb-8b4b6186c026",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-331B40272784",
+        "SYN-44B65324979A",
+        "SYN-BFBB7C28E86F"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 7,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 49,
+      "family_index": 8,
+      "knowledge_id": "ifkb-153fec068546",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-62582FC6FB37",
+        "SYN-6AEA0A342EF0",
+        "SYN-7D6EB6B6EBE9"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 3,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 50,
+      "family_index": 6,
+      "knowledge_id": "ifkb-1b0e599d5cba",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-175F0192DA5C",
+        "SYN-795BBB91CA25",
+        "SYN-DF27C79773A1"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 28,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 51,
+      "family_index": 7,
+      "knowledge_id": "ifkb-d6caf689b2c3",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-4CB587CDD9F2",
+        "SYN-B810F6973E9F",
+        "SYN-C31B1A64DAF3"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 27,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "range",
+      "ordinal": 52,
+      "family_index": 9,
+      "knowledge_id": "ifkb-8f6f442d8d93",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-8FA4D0B4D714",
+        "SYN-C68BC669FFFF",
+        "SYN-E98F14652276"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 31,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 53,
+      "family_index": 7,
+      "knowledge_id": "ifkb-a4e7309abd0d",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-1894FA1AEC22",
+        "SYN-1DA3C367922E",
+        "SYN-8DA2D27D939B"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 1,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 54,
+      "family_index": 8,
+      "knowledge_id": "ifkb-a5e5cad4fa98",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-1E92A7B6363C",
+        "SYN-96074B0020B6",
+        "SYN-FFE649C7A44F"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 21,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 55,
+      "family_index": 8,
+      "knowledge_id": "ifkb-893b7502db24",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-32A176EA653F",
+        "SYN-EA524F47AAEE",
+        "SYN-F4FBB62A065F"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 9,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "event",
+      "ordinal": 56,
+      "family_index": 9,
+      "knowledge_id": "ifkb-9359d8858aa3",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-B2A264DB6CDE",
+        "SYN-CBBD8F6EE724",
+        "SYN-F5F179822ECE"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 19,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "unknown",
+      "ordinal": 57,
+      "family_index": 9,
+      "knowledge_id": "ifkb-2ace0dc5ebee",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-12EF0B951B52",
+        "SYN-35CE746061EB",
+        "SYN-B1B2EA8A02AF"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 16,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_scalar",
+      "ordinal": 58,
+      "family_index": 9,
+      "knowledge_id": "ifkb-63a13fed42bd",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-D0DE6101E838",
+        "SYN-DAFE03BE2367",
+        "SYN-EA41A6A3598C"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 2,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "conditional_range",
+      "ordinal": 59,
+      "family_index": 9,
+      "knowledge_id": "ifkb-8dadf3e1b159",
+      "template_id": "train-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-69A1CEEB4D2F",
+        "SYN-73BF91B4BAFB",
+        "SYN-CF71E20FC602"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 11,
+      "record_count": 32
+    },
+    {
+      "split": "train",
+      "family": "plain",
+      "ordinal": 60,
+      "family_index": 9,
+      "knowledge_id": "ifkb-0933045a6766",
+      "template_id": "train-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-0500FE676EA3",
+        "SYN-0CF6635F3A70",
+        "SYN-3B1B24612E9F"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 23,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "event",
+      "ordinal": 61,
+      "family_index": 0,
+      "knowledge_id": "ifkb-8565b20c6ec3",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-074A90E1995E",
+        "SYN-2C66C721B92A",
+        "SYN-FDCE1ECB5A01"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 28,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "conditional_scalar",
+      "ordinal": 62,
+      "family_index": 0,
+      "knowledge_id": "ifkb-ca2a21e3d640",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-11F04CF70F98",
+        "SYN-BEDC03B73476",
+        "SYN-F1052D0C815A"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 21,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "unknown",
+      "ordinal": 63,
+      "family_index": 0,
+      "knowledge_id": "ifkb-aa0562aa4d87",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-2567FF7A00F5",
+        "SYN-373D3CDA4A59",
+        "SYN-6C44A85BBBAB"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 10,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "conditional_range",
+      "ordinal": 64,
+      "family_index": 0,
+      "knowledge_id": "ifkb-e743a4aa9a30",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-20CA15EFB486",
+        "SYN-AD59CCB4F0F0",
+        "SYN-E36D73366A7B"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 20,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "conditional_range",
+      "ordinal": 65,
+      "family_index": 1,
+      "knowledge_id": "ifkb-4e5ad6f2c862",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-69F7A2791F42",
+        "SYN-6EB0A4C89867",
+        "SYN-AFF948CA82E4"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 10,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "unknown",
+      "ordinal": 66,
+      "family_index": 1,
+      "knowledge_id": "ifkb-0facbf4ba47b",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-210D69D1BCFD",
+        "SYN-2B136C4A4421",
+        "SYN-FFB6175933B2"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 17,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "event",
+      "ordinal": 67,
+      "family_index": 1,
+      "knowledge_id": "ifkb-14e6da9034fa",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-007EC00A2C7D",
+        "SYN-4D9E836671B2",
+        "SYN-CFECBB35F258"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 4,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "plain",
+      "ordinal": 68,
+      "family_index": 0,
+      "knowledge_id": "ifkb-f131cfcc65cd",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-0E2F78A2F60D",
+        "SYN-129358786116",
+        "SYN-8FB153F7D648"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 12,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "event",
+      "ordinal": 69,
+      "family_index": 2,
+      "knowledge_id": "ifkb-980f3d96bec0",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-04C8576BFA94",
+        "SYN-80C339CCDF65",
+        "SYN-F365FEE48E50"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 19,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "plain",
+      "ordinal": 70,
+      "family_index": 1,
+      "knowledge_id": "ifkb-d070d80a0702",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-2FD3370B6DBA",
+        "SYN-B20CFA8C2620",
+        "SYN-BE9B06BB130A"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 16,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "conditional_scalar",
+      "ordinal": 71,
+      "family_index": 1,
+      "knowledge_id": "ifkb-5d32aaf05053",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-070E41956265",
+        "SYN-83FD042A2A98",
+        "SYN-FDC994B7AE1F"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 2,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "conditional_scalar",
+      "ordinal": 72,
+      "family_index": 2,
+      "knowledge_id": "ifkb-e3de98401183",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-17C7F355455D",
+        "SYN-22655B2C7164",
+        "SYN-8DC358A6BB1B"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 17,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "range",
+      "ordinal": 73,
+      "family_index": 0,
+      "knowledge_id": "ifkb-86b51c6555d9",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-D6B63806F6F5",
+        "SYN-F264CB7B7B24",
+        "SYN-F62EE32D5EB9"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 31,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "conditional_range",
+      "ordinal": 74,
+      "family_index": 2,
+      "knowledge_id": "ifkb-d14e41725d1a",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-1FECE3E9B6EE",
+        "SYN-B0683C39A320",
+        "SYN-C5384AD1B4AB"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 28,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "plain",
+      "ordinal": 75,
+      "family_index": 2,
+      "knowledge_id": "ifkb-8b99d0f963c9",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-4C0DFECC885D",
+        "SYN-50E97A23928D",
+        "SYN-B1DF00911DD5"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 12,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "unknown",
+      "ordinal": 76,
+      "family_index": 2,
+      "knowledge_id": "ifkb-0e5e5a8e2f26",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-A9F7B5A39DD2",
+        "SYN-BC1EC08B49F3",
+        "SYN-C8615D1D4A4B"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 18,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "range",
+      "ordinal": 77,
+      "family_index": 1,
+      "knowledge_id": "ifkb-e16b38a47cfd",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-94EDC36BA776",
+        "SYN-C352FF5451C4",
+        "SYN-DCE9F5112C27"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 5,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "range",
+      "ordinal": 78,
+      "family_index": 2,
+      "knowledge_id": "ifkb-66d598f9674a",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-9BE45D1162C3",
+        "SYN-D6B9636EF6E1",
+        "SYN-DDABB9811D91"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 14,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "plain",
+      "ordinal": 79,
+      "family_index": 3,
+      "knowledge_id": "ifkb-62de38545a73",
+      "template_id": "dev-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-267F55820DDD",
+        "SYN-7C090A3CD662",
+        "SYN-CE5C75484646"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 2,
+      "record_count": 32
+    },
+    {
+      "split": "dev",
+      "family": "range",
+      "ordinal": 80,
+      "family_index": 3,
+      "knowledge_id": "ifkb-d9121d3f2626",
+      "template_id": "dev-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-78239822C202",
+        "SYN-79F71F57FBF6",
+        "SYN-F118C0F70D97"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 2,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "conditional_range",
+      "ordinal": 81,
+      "family_index": 0,
+      "knowledge_id": "ifkb-94212f56dd79",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-72640AB8406F",
+        "SYN-C5F535711665",
+        "SYN-CA99F40955E4"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 22,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "conditional_range",
+      "ordinal": 82,
+      "family_index": 1,
+      "knowledge_id": "ifkb-e45a0324f972",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-1C24E9D0883E",
+        "SYN-9B5DFD477616",
+        "SYN-DCDBAF997DDA"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 15,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "unknown",
+      "ordinal": 83,
+      "family_index": 0,
+      "knowledge_id": "ifkb-6296257a6eec",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-51EBBFA662B0",
+        "SYN-C2F2D396D8FC",
+        "SYN-E61DAC79353F"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 17,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "plain",
+      "ordinal": 84,
+      "family_index": 0,
+      "knowledge_id": "ifkb-0ccbf46d9569",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-02F5EACFCCB8",
+        "SYN-4CDBE1CA7A4A",
+        "SYN-A2D8309A3706"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 0,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "conditional_scalar",
+      "ordinal": 85,
+      "family_index": 0,
+      "knowledge_id": "ifkb-64c7cec4b2b8",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-8E42F03E27E3",
+        "SYN-9650852BC6AF",
+        "SYN-DB24303019A9"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 4,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "plain",
+      "ordinal": 86,
+      "family_index": 1,
+      "knowledge_id": "ifkb-3e2fc18616d0",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-612286F8EA07",
+        "SYN-66016013F984",
+        "SYN-9309A9D0813D"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 19,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "event",
+      "ordinal": 87,
+      "family_index": 0,
+      "knowledge_id": "ifkb-acef5ea03b8c",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-17C1E1603159",
+        "SYN-D492C2CDFCB1",
+        "SYN-D7B77001A7E4"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 13,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "event",
+      "ordinal": 88,
+      "family_index": 1,
+      "knowledge_id": "ifkb-4e84ad7f7583",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-6DD81ACA18CF",
+        "SYN-AF38B7F1A6AB",
+        "SYN-F468465BED1C"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 17,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "event",
+      "ordinal": 89,
+      "family_index": 2,
+      "knowledge_id": "ifkb-1f55a350ad08",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-97376D277C5B",
+        "SYN-9AA22B8B3E34",
+        "SYN-CE95DB4970F9"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 21,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "plain",
+      "ordinal": 90,
+      "family_index": 2,
+      "knowledge_id": "ifkb-1933851a3e49",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-2E3FE46DE75B",
+        "SYN-54A0BF2C647C",
+        "SYN-C2173CD0A534"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 17,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "range",
+      "ordinal": 91,
+      "family_index": 0,
+      "knowledge_id": "ifkb-ba89cef90fd1",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-9EA1DCA95C38",
+        "SYN-AC1DA6875747",
+        "SYN-F86026A8B239"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 29,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "conditional_scalar",
+      "ordinal": 92,
+      "family_index": 1,
+      "knowledge_id": "ifkb-bf058aac08f3",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-7C5007AF6577",
+        "SYN-921F0F130519",
+        "SYN-D87D5B17849F"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 30,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "event",
+      "ordinal": 93,
+      "family_index": 3,
+      "knowledge_id": "ifkb-5939c72c8dce",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-0F2F26565ED7",
+        "SYN-6A4914417371",
+        "SYN-F1E10F93C368"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 6,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "conditional_range",
+      "ordinal": 94,
+      "family_index": 2,
+      "knowledge_id": "ifkb-5cf3a221fe5c",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-10428DD0F40A",
+        "SYN-49A7DC9F5C92",
+        "SYN-99C0F8087F85"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 28,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "unknown",
+      "ordinal": 95,
+      "family_index": 1,
+      "knowledge_id": "ifkb-d7aaeaf4a14c",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-2DB35997FA6A",
+        "SYN-642401F0A993",
+        "SYN-86E1A1B0F98E"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 15,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "unknown",
+      "ordinal": 96,
+      "family_index": 2,
+      "knowledge_id": "ifkb-4c808cad2a22",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-AD4B20E20DC5",
+        "SYN-D4BD89670F58",
+        "SYN-DB355689D9C4"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 27,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "conditional_scalar",
+      "ordinal": 97,
+      "family_index": 2,
+      "knowledge_id": "ifkb-04c217924205",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-0AB4F6BF515C",
+        "SYN-2C517ED47FFF",
+        "SYN-E05382ED640B"
+      ],
+      "target_entity_schema_position": 2,
+      "target_record_position": 4,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "conditional_scalar",
+      "ordinal": 98,
+      "family_index": 3,
+      "knowledge_id": "ifkb-5ae91715d445",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-C103A9F5FB65",
+        "SYN-D5AA2B3578E3",
+        "SYN-F27ACAF1758C"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 28,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "range",
+      "ordinal": 99,
+      "family_index": 1,
+      "knowledge_id": "ifkb-a850f8430771",
+      "template_id": "holdout-wording-0",
+      "template_index": 0,
+      "entity_aliases": [
+        "SYN-0919340A98AA",
+        "SYN-A467CAE683FD",
+        "SYN-C083C86727BB"
+      ],
+      "target_entity_schema_position": 1,
+      "target_record_position": 5,
+      "record_count": 32
+    },
+    {
+      "split": "holdout",
+      "family": "range",
+      "ordinal": 100,
+      "family_index": 2,
+      "knowledge_id": "ifkb-d0196944b136",
+      "template_id": "holdout-wording-1",
+      "template_index": 1,
+      "entity_aliases": [
+        "SYN-0B2179929BB3",
+        "SYN-CFBE61E72DB3",
+        "SYN-FD8E89D8E300"
+      ],
+      "target_entity_schema_position": 0,
+      "target_record_position": 3,
+      "record_count": 32
+    }
+  ]
+}

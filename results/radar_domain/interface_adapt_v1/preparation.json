@@ -1,0 +1,62 @@
+{
+  "version": "radar_interface_tokenization_v1",
+  "status": "completed",
+  "created_at_utc": "2026-10-05T11:31:15.540056+00:00",
+  "cpu_only": true,
+  "training_started": false,
+  "truncation": false,
+  "max_length": 8192,
+  "model": "models/qwen2.5-3b-instruct",
+  "inputs_sha256": {
+    "data/radar_interface_v1/train.questions.jsonl": "afde8f5793c1e58c02ab93e42a7a88ea25ff2a191c3745ad5016ccc868ddbf3b",
+    "data/radar_interface_v1/train.agent_trajectories.jsonl": "9fc7c300922b82f894a58198b6ab52c534ce8f09740adc5889d5353db6c23c63",
+    "data/radar_interface_v1/train.program_trajectories.jsonl": "19c668f6367f22f7d9fb14dbc09911548d15e5c1b5d0013f15c933e7dea8fcaf",
+    "artifacts/thesis_direction_review/radar_interface_synthetic_v1/manifest.json": "70983ddcf1be1d8bf9095843be510f46a14b3dee159674f067cac944e268df65",
+    "experiments/radar_domain/interface_training.py": "24e7ef918c1f6eee616019e6c0c483d5c9c78f7e0e544f38f73c921c8b646f33",
+    "experiments/radar_domain/development_probe.py": "ce5f1c26b9c9dd927ff4137bed41c354e7590ebee1d283842603c9021972a104",
+    "experiments/agent_feedback/training_data.py": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "results/radar_domain/development_probe_v1/protocol.json": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702"
+  },
+  "tokenizer": {
+    "files_sha256": {
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "libraries": {
+      "transformers": "5.18.0",
+      "tokenizers": "0.23.2",
+      "jinja2": "3.1.6"
+    }
+  },
+  "caches": {
+    "agent": {
+      "records": 120,
+      "input_tokens": 232598,
+      "supervised_tokens": 9734,
+      "max_input_length": 1987,
+      "path": "data/radar_interface_v1/tokenized/agent.jsonl",
+      "sha256": "70f87b3057c5f63234f1a01c34a9e18ef4212b8346b798d0a09aef1c742a69a7",
+      "tools": true
+    },
+    "program": {
+      "records": 120,
+      "input_tokens": 64270,
+      "supervised_tokens": 4200,
+      "max_input_length": 555,
+      "path": "data/radar_interface_v1/tokenized/program.jsonl",
+      "sha256": "7a7d18c26710715db13d4b2ae2b8482c1febc7edef64747d6608ad1a0e179747",
+      "tools": false
+    }
+  },
+  "agent_cache_reused_by": [
+    "A1",
+    "C1",
+    "A2",
+    "C2"
+  ],
+  "program_comparison": "Same question instances; program/action supervision lengths differ and are not token-matched."
+}

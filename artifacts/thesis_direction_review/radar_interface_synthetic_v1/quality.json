@@ -1,0 +1,53 @@
+{
+  "status": "cpu_validated",
+  "group_count": 100,
+  "bilingual_questions": 200,
+  "successful_program_validations": 100,
+  "successful_agent_trajectories": 200,
+  "invalid_or_recovery_training_calls": 0,
+  "known_unknown_vs_empty_checked": true,
+  "wrong_entity_attribute_and_present_qualifier_checked": true,
+  "source_sha_pointer_and_evidence_checked": true,
+  "quarantined_groups": [],
+  "target_schema_positions": {
+    "dev:0": 8,
+    "dev:1": 8,
+    "dev:2": 4,
+    "holdout:0": 8,
+    "holdout:1": 5,
+    "holdout:2": 7,
+    "train:0": 22,
+    "train:1": 15,
+    "train:2": 23
+  },
+  "family_value_kind_counts": {
+    "dev:conditional_range:range": 3,
+    "dev:conditional_scalar:scalar": 3,
+    "dev:event:event": 3,
+    "dev:plain:scalar": 2,
+    "dev:plain:text": 2,
+    "dev:range:range": 4,
+    "dev:unknown:unknown": 3,
+    "holdout:conditional_range:range": 3,
+    "holdout:conditional_scalar:scalar": 4,
+    "holdout:event:event": 4,
+    "holdout:plain:scalar": 1,
+    "holdout:plain:text": 2,
+    "holdout:range:range": 3,
+    "holdout:unknown:unknown": 3,
+    "train:conditional_range:range": 10,
+    "train:conditional_scalar:scalar": 10,
+    "train:event:event": 10,
+    "train:plain:scalar": 5,
+    "train:plain:text": 5,
+    "train:range:range": 10,
+    "train:unknown:unknown": 10
+  },
+  "original_answer_exclusion": {
+    "original_entities_uris_text_answers_found": 0,
+    "original_numeric_answer_values_found": 0,
+    "numeric_rule": "Decimal-value equality in value/min_value/max_value, not arbitrary digit substrings of hashes or IDs."
+  },
+  "model_inference_runs": 0,
+  "new_training_started": false
+}

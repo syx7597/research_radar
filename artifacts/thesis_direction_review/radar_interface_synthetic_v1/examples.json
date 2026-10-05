@@ -1,0 +1,103 @@
+{
+  "scope": "Fictitious train-only examples, no real radar assertions.",
+  "questions": [
+    {
+      "id": "ifkb-291abf9284cf-zh",
+      "question": "请从SYN-2D8ECFF6ABC5的合成资料中读取类型说明条目。\n全部记录均为虚构合成材料，仅用于接口练习。\nsource_context_id=ifkb-291abf9284cf; source_uri=urn:synthetic-interface:ifkb-291abf9284cf",
+      "knowledge_id": "ifkb-291abf9284cf"
+    },
+    {
+      "id": "ifkb-291abf9284cf-en",
+      "question": "Read type-description entry from the synthetic records for SYN-2D8ECFF6ABC5.\nAll records are fictitious synthetic material used only for interface practice.\nsource_context_id=ifkb-291abf9284cf; source_uri=urn:synthetic-interface:ifkb-291abf9284cf",
+      "knowledge_id": "ifkb-291abf9284cf"
+    },
+    {
+      "id": "ifkb-890ed21853c9-zh",
+      "question": "查找SYN-C58FE1933B22，取出其中的服役事件条目。\n全部记录均为虚构合成材料，仅用于接口练习。\nsource_context_id=ifkb-890ed21853c9; source_uri=urn:synthetic-interface:ifkb-890ed21853c9",
+      "knowledge_id": "ifkb-890ed21853c9"
+    },
+    {
+      "id": "ifkb-890ed21853c9-en",
+      "question": "Find SYN-C58FE1933B22 and retrieve its in-service event entry.\nAll records are fictitious synthetic material used only for interface practice.\nsource_context_id=ifkb-890ed21853c9; source_uri=urn:synthetic-interface:ifkb-890ed21853c9",
+      "knowledge_id": "ifkb-890ed21853c9"
+    }
+  ],
+  "references": [
+    {
+      "id": "ifkb-291abf9284cf-zh",
+      "knowledge_id": "ifkb-291abf9284cf",
+      "language": "zh",
+      "family": "plain",
+      "template_id": "train-wording-0",
+      "declarative_intent": {
+        "entity_name": "SYN-2D8ECFF6ABC5",
+        "attribute": "type_description",
+        "selector": {},
+        "expected_value_kind": "text"
+      },
+      "expected_fact_ids": [
+        "synfact-31264db19cdb"
+      ],
+      "canonical_program": "Find<arg>SYN-2D8ECFF6ABC5<func>QueryAttr<arg>type_description",
+      "synthetic": true
+    },
+    {
+      "id": "ifkb-291abf9284cf-en",
+      "knowledge_id": "ifkb-291abf9284cf",
+      "language": "en",
+      "family": "plain",
+      "template_id": "train-wording-0",
+      "declarative_intent": {
+        "entity_name": "SYN-2D8ECFF6ABC5",
+        "attribute": "type_description",
+        "selector": {},
+        "expected_value_kind": "text"
+      },
+      "expected_fact_ids": [
+        "synfact-31264db19cdb"
+      ],
+      "canonical_program": "Find<arg>SYN-2D8ECFF6ABC5<func>QueryAttr<arg>type_description",
+      "synthetic": true
+    },
+    {
+      "id": "ifkb-890ed21853c9-zh",
+      "knowledge_id": "ifkb-890ed21853c9",
+      "language": "zh",
+      "family": "event",
+      "template_id": "train-wording-1",
+      "declarative_intent": {
+        "entity_name": "SYN-C58FE1933B22",
+        "attribute": "service_entry",
+        "selector": {
+          "event_type": "in_service"
+        },
+        "expected_value_kind": "event"
+      },
+      "expected_fact_ids": [
+        "synfact-49d4ac60ef70"
+      ],
+      "canonical_program": "Find<arg>SYN-C58FE1933B22<func>QueryAttrUnderCondition<arg>service_entry<arg>event_type<arg>in_service",
+      "synthetic": true
+    },
+    {
+      "id": "ifkb-890ed21853c9-en",
+      "knowledge_id": "ifkb-890ed21853c9",
+      "language": "en",
+      "family": "event",
+      "template_id": "train-wording-1",
+      "declarative_intent": {
+        "entity_name": "SYN-C58FE1933B22",
+        "attribute": "service_entry",
+        "selector": {
+          "event_type": "in_service"
+        },
+        "expected_value_kind": "event"
+      },
+      "expected_fact_ids": [
+        "synfact-49d4ac60ef70"
+      ],
+      "canonical_program": "Find<arg>SYN-C58FE1933B22<func>QueryAttrUnderCondition<arg>service_entry<arg>event_type<arg>in_service",
+      "synthetic": true
+    }
+  ]
+}

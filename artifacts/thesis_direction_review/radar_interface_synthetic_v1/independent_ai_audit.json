@@ -1,0 +1,153 @@
+{
+  "version": "radar_interface_independent_ai_audit_v1",
+  "reviewed_at_utc": "2026-10-05T11:23:30.509116+00:00",
+  "reviewer": "separate AI subagent /root/radar_probe_audit",
+  "reviewer_kind": "AI",
+  "different_model_family_verified": false,
+  "independent_human_review": false,
+  "blind_to_previous_domain_results": false,
+  "interface_adaptation_model_outputs_seen": false,
+  "status": "passed",
+  "decision": "approved_for_bounded_interface_adaptation",
+  "scope": "Synthetic interface data semantics, grouped split isolation, source bindings, trace replay, and static/CPU trainer admission review; no claim about real radar facts or training effectiveness.",
+  "data_manifest_sha256": "70983ddcf1be1d8bf9095843be510f46a14b3dee159674f067cac944e268df65",
+  "all_manifest_bound_files_verified": 215,
+  "reviewed_file_sha256": {
+    "experiments/radar_domain/interface_data.py": "4aac59d0d11c931cd66e3f02b68751d96d59d69cdfe1efe2b9ffa9d3c329da7d",
+    "experiments/radar_domain/interface_training.py": "24e7ef918c1f6eee616019e6c0c483d5c9c78f7e0e544f38f73c921c8b646f33",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/agent_feedback/training_data.py": "f65cee1dc9b71cd85f472aa287affc78d5fd69b3c83f12af6471738d76a3241e",
+    "tests/test_radar_interface_data.py": "45ab994f2cd0eef2beec4987631cda7f03b974af7fcc49ee5cbf4d7a6af6e5d1",
+    "tests/test_radar_interface_training.py": "fac7e5044226101ecf0a2c6678120495716df3b37dfd4c4e6d9923f4822002ed"
+  },
+  "independent_checks": {
+    "questions_semantically_parsed": 200,
+    "agent_trace_replays": 200,
+    "program_trace_replays": 200,
+    "full_kb_routes": 200
+  },
+  "split_review": {
+    "train": {
+      "groups": 60,
+      "questions": 120,
+      "entities": 180,
+      "family_question_counts": {
+        "plain": 20,
+        "event": 20,
+        "unknown": 20,
+        "conditional_scalar": 20,
+        "conditional_range": 20,
+        "range": 20
+      },
+      "target_value_kind_question_counts": {
+        "text": 10,
+        "event": 20,
+        "scalar": 30,
+        "unknown": 20,
+        "range": 40
+      },
+      "target_schema_positions": {
+        "0": 44,
+        "2": 46,
+        "1": 30
+      }
+    },
+    "dev": {
+      "groups": 20,
+      "questions": 40,
+      "entities": 60,
+      "family_question_counts": {
+        "event": 6,
+        "conditional_scalar": 6,
+        "unknown": 6,
+        "conditional_range": 6,
+        "plain": 8,
+        "range": 8
+      },
+      "target_value_kind_question_counts": {
+        "event": 6,
+        "scalar": 10,
+        "unknown": 6,
+        "range": 14,
+        "text": 4
+      },
+      "target_schema_positions": {
+        "0": 16,
+        "1": 16,
+        "2": 8
+      }
+    },
+    "holdout": {
+      "groups": 20,
+      "questions": 40,
+      "entities": 60,
+      "family_question_counts": {
+        "conditional_range": 6,
+        "unknown": 6,
+        "plain": 6,
+        "conditional_scalar": 8,
+        "event": 8,
+        "range": 6
+      },
+      "target_value_kind_question_counts": {
+        "range": 12,
+        "unknown": 6,
+        "text": 4,
+        "scalar": 10,
+        "event": 8
+      },
+      "target_schema_positions": {
+        "2": 14,
+        "1": 10,
+        "0": 16
+      }
+    }
+  },
+  "source_instances": 100,
+  "source_records_checked": 3200,
+  "pairing": "Each Chinese/English pair remains within one knowledge-instance group; both refer to the same record.",
+  "semantic_review_method": "An audit-only lexical interpretation of each question first line independently extracts the named fictional entity, attribute and optional event/condition. All 200 derived record sets equal the declared reference. The six bilingual wording-frame pairs and field/event phrases were also read by the reviewer.",
+  "source_integrity": "All source-entry fields, SHA256, pointer and evidence text match each queried record; every route contains 32 records, 3 entities and 7 attributes.",
+  "distractor_review": "Each queried attribute exists on all three entities. Conditional/event questions retain competing same-entity records. Unknown power is an explicit null-valued record with two known-power entity distractors.",
+  "leakage_review": {
+    "question_schema": [
+      "id",
+      "question",
+      "knowledge_id"
+    ],
+    "question_ids_in_model_messages": false,
+    "reference_or_fact_ids_in_questions": false,
+    "knowledge_route_opaque": true,
+    "original_real_entities_uris_text_answers_reused": false,
+    "original_numeric_answer_values_reused": false,
+    "cross_split_entity_or_instance_or_wording_id_overlap": false,
+    "target_schema_positions_all_three_present_in_each_split": true
+  },
+  "training_review": {
+    "checks": "Only three hash-admitted train files are opened; shared A/C token cache and paired seeds; exactly assistant actions supervised; context overflow rejected; integer-epoch actual sample/token accounting; final loss/gradient logs and LoRA parameter finite-value checks precede completion. P uses identical question exposure with its different serialized target length disclosed.",
+    "tests_run": 14,
+    "test_failures": 0,
+    "test_errors": 0,
+    "test_modules": [
+      "tests.test_radar_interface_data",
+      "tests.test_radar_interface_training"
+    ],
+    "gpu_or_torch_training_executed_by_reviewer": false,
+    "real_tokenizer_preparation_reviewed": false
+  },
+  "issues_resolved_before_admission": [
+    "The first draft holdout plain subset lacked text targets; deterministic per-family subtype rotation now covers text and scalar in every split.",
+    "Source validation now compares all source-entry fields against records; altered value with unchanged citation is rejected.",
+    "Nominal trainer completion now rejects nonfinite training evidence or final trainable LoRA parameters."
+  ],
+  "blocking_findings": [],
+  "limits": [
+    "Synthetic numeric values are deliberately nonphysical and are not radar parameter evidence.",
+    "Only successful Find/query/finish trajectories are taught. This is interface adaptation, not additional recovery training.",
+    "Task families, field phrases, function/qualifier vocabulary and program structures are deliberately shared across splits; holdout separation does not establish unseen-reasoning or real-source generalization.",
+    "All targets are present records, including explicit unknown records; nonexistent-answer handling is not a supervised task in this corpus.",
+    "AI rewrite pairs share one intent and are not independent samples.",
+    "Trainer review used static inspection and CPU boundary tests; real tokenizer counts, remote library compatibility and actual GPU execution remain run-time checks.",
+    "This audit is not an experiment score or authorization for unbounded tuning. Root must bind this artifact and the final training/evaluation protocol before the single planned experiment."
+  ]
+}
