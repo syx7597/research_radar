@@ -1,0 +1,26 @@
+{
+  "name": "radar_interface_v1_C1_after",
+  "supervisor_pid": 20234,
+  "child_pid": 20235,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    1
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-m",
+    "experiments.radar_domain.interface_probe",
+    "generate",
+    "--label",
+    "C1",
+    "--phase",
+    "after"
+  ],
+  "started_at": 1791201012.1284208,
+  "heartbeat_at": 1791201062.1522608,
+  "status": "completed",
+  "finished_at": 1791201068.9785028,
+  "returncode": 0,
+  "gpu_seconds": 56.85008192062378
+}

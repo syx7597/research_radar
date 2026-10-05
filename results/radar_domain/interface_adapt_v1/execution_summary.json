@@ -1,0 +1,243 @@
+{
+  "version": "radar_interface_execution_summary_v1",
+  "verified_at_beijing": "2026-10-05T21:01:10.077955+08:00",
+  "status": "completed",
+  "freeze_commit": "8ee7cf6",
+  "started_at_utc": "2026-10-05T11:39:54.391736+00:00",
+  "finished_at_utc": "2026-10-05T11:59:20.354324+00:00",
+  "user": "syx",
+  "jobs": [
+    {
+      "name": "radar_interface_v1_A1_before",
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200394.4326875,
+      "finished_at": 1791200798.5286782,
+      "gpu_seconds": 404.0959906578064
+    },
+    {
+      "name": "radar_interface_v1_A1_train",
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200798.574809,
+      "finished_at": 1791201151.7278516,
+      "gpu_seconds": 353.15304255485535
+    },
+    {
+      "name": "radar_interface_v1_A1_after",
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791201151.7755427,
+      "finished_at": 1791201231.975311,
+      "gpu_seconds": 80.19976830482483
+    },
+    {
+      "name": "radar_interface_v1_P_before",
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791201232.019556,
+      "finished_at": 1791201434.5200937,
+      "gpu_seconds": 202.50053763389587
+    },
+    {
+      "name": "radar_interface_v1_P_train",
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791201434.5662274,
+      "finished_at": 1791201536.4273558,
+      "gpu_seconds": 101.86112833023071
+    },
+    {
+      "name": "radar_interface_v1_P_after",
+      "user": "syx",
+      "gpus": [
+        0
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791201536.4652414,
+      "finished_at": 1791201560.3449094,
+      "gpu_seconds": 23.87966799736023
+    },
+    {
+      "name": "radar_interface_v1_C1_before",
+      "user": "syx",
+      "gpus": [
+        1
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200394.4346964,
+      "finished_at": 1791200664.7189116,
+      "gpu_seconds": 270.2842152118683
+    },
+    {
+      "name": "radar_interface_v1_C1_train",
+      "user": "syx",
+      "gpus": [
+        1
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200664.766798,
+      "finished_at": 1791201012.080549,
+      "gpu_seconds": 347.31375098228455
+    },
+    {
+      "name": "radar_interface_v1_C1_after",
+      "user": "syx",
+      "gpus": [
+        1
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791201012.1284208,
+      "finished_at": 1791201068.9785028,
+      "gpu_seconds": 56.85008192062378
+    },
+    {
+      "name": "radar_interface_v1_A2_before",
+      "user": "syx",
+      "gpus": [
+        2
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200394.4378033,
+      "finished_at": 1791200732.7526326,
+      "gpu_seconds": 338.3148293495178
+    },
+    {
+      "name": "radar_interface_v1_A2_train",
+      "user": "syx",
+      "gpus": [
+        2
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200732.7900527,
+      "finished_at": 1791201084.6912215,
+      "gpu_seconds": 351.9011688232422
+    },
+    {
+      "name": "radar_interface_v1_A2_after",
+      "user": "syx",
+      "gpus": [
+        2
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791201084.738304,
+      "finished_at": 1791201140.286263,
+      "gpu_seconds": 55.547959089279175
+    },
+    {
+      "name": "radar_interface_v1_C2_before",
+      "user": "syx",
+      "gpus": [
+        3
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200394.4402845,
+      "finished_at": 1791200696.7774096,
+      "gpu_seconds": 302.3371250629425
+    },
+    {
+      "name": "radar_interface_v1_C2_train",
+      "user": "syx",
+      "gpus": [
+        3
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791200696.8242195,
+      "finished_at": 1791201049.9834387,
+      "gpu_seconds": 353.15921926498413
+    },
+    {
+      "name": "radar_interface_v1_C2_after",
+      "user": "syx",
+      "gpus": [
+        3
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "started_at": 1791201050.0305192,
+      "finished_at": 1791201106.2278,
+      "gpu_seconds": 56.19728064537048
+    }
+  ],
+  "job_count": 15,
+  "new_prediction_rows": 520,
+  "gpu_hours": 0.9159988238414128,
+  "gpu_hours_by_stage": {
+    "before": 0.42153686053223083,
+    "train": 0.4187189749876658,
+    "after": 0.07574298832151626
+  },
+  "cumulative_gpu_hours": 23.937207948433027,
+  "maximum_budget_gpu_hours": 72,
+  "configured_stage_cap_gpu_hours": 6,
+  "paired_training_verified": true,
+  "all_models_optimizer_steps": 40,
+  "all_models_example_exposures": 600,
+  "agent_actual_supervised_tokens_each": 48670,
+  "program_actual_supervised_tokens": 21000,
+  "A_C_order_input_target_tokens_match": true,
+  "finite_losses_gradients_and_trainable_parameters": true,
+  "cpu_replay": {
+    "rows": 520,
+    "mismatches": 0,
+    "all_ten_completed_and_replayed_before_reference_access": true
+  },
+  "local_analysis_check": true,
+  "gpu_processes_at_final_remote_check": 0,
+  "inputs_sha256": {
+    "results/agent_feedback/jobs/radar_interface_v1_A1_before.json": "be29de66ce559f40aaa1aeaeddea71a6494f31260fab4512f1b3a9a9921abc75",
+    "results/agent_feedback/jobs/radar_interface_v1_A1_train.json": "b87455912d781919dc24dabfd6bc11bd6520064c41d229ac8b3335d148a6c254",
+    "results/agent_feedback/jobs/radar_interface_v1_A1_after.json": "bf772661d0e7e4fd843f741726a7272d162e4afa0abcf981450219ba08c8a375",
+    "results/agent_feedback/jobs/radar_interface_v1_P_before.json": "d93b0c3b93626807f6c6e90cfa28ef23a07405763b38ed2508a3a71e4e437ba8",
+    "results/agent_feedback/jobs/radar_interface_v1_P_train.json": "ea0280c30be6801cfcdddf57eec94bc5817c0cd23a1fae363e2ff94d8a666e6c",
+    "results/agent_feedback/jobs/radar_interface_v1_P_after.json": "0b0cd3024984d2c501482cc3ea0c94f2583dceab451b0f1809ada49c1176b8f9",
+    "results/agent_feedback/jobs/radar_interface_v1_C1_before.json": "6f7141e3fa83fbb7981efb4b63c4a07eb373cc58a4608c266164a901d4ffbfd6",
+    "results/agent_feedback/jobs/radar_interface_v1_C1_train.json": "9a674e114a86e9644d4f82cdf4df6997657fda0f900cc8b94351dbe91955b11f",
+    "results/agent_feedback/jobs/radar_interface_v1_C1_after.json": "6373b5351f79c6dfc5b2be48b2d6f8b93c25ae402a0d95152a702504268d5391",
+    "results/agent_feedback/jobs/radar_interface_v1_A2_before.json": "9bea0c0ba431b443faa4e4ad1e7f635eef4405936dff6a420e851a1eab342bfd",
+    "results/agent_feedback/jobs/radar_interface_v1_A2_train.json": "ecfe77a394fcbe0fc761457e05067479fb377ac90f44eaa45b92b6851e286415",
+    "results/agent_feedback/jobs/radar_interface_v1_A2_after.json": "c28464c4c098f88a0737c05386a6e1fff79cd9acf4a6f378cdf7ab8d19e5a8f4",
+    "results/agent_feedback/jobs/radar_interface_v1_C2_before.json": "3aa8c2d750f4a30cc004ff341885e42ada53bb7f45c7942f806207e23f04dd86",
+    "results/agent_feedback/jobs/radar_interface_v1_C2_train.json": "c1dc2652801659fbfedf12e093e48c54bdc03343e737137dd59a3794baa85693",
+    "results/agent_feedback/jobs/radar_interface_v1_C2_after.json": "cdb255d52a459cf78baa1945a0cb2c242881ea24823b73459aa3191c4c2c8b3c",
+    "results/radar_domain/interface_adapt_v1/pipeline_started.json": "5fbe8c1b21e91300ca09634ab730942edc56bb01ad94374766adcaeb2154845a",
+    "results/radar_domain/interface_adapt_v1/pipeline_completed.json": "d859cc6c9d348e63ad6b44ef42d4c2686dc6d60482efb97df12c91f83d26bb14",
+    "results/radar_domain/interface_adapt_v1/protocol.json": "b536a79d42f92493bcec394df3fc2edd02234b6ff7cf391ccaefec4fd12e30ba",
+    "results/radar_domain/interface_adapt_v1/evaluation/protocol.json": "715e94249707b3839d562b121d3ff48225095af60aa32ad279ee77180af9d1c7",
+    "results/radar_domain/interface_adapt_v1/evaluation/summary.json": "e8e9c576d2228250c4f8ad3431aa9cdbd57bf59e92619d5e6edfc856499eb4f2",
+    "results/radar_domain/interface_adapt_v1/P/run_result.json": "e2d0972b744168f277f5ec51821ef107e918c138ef9945000a5483c4c7e5ff06",
+    "results/radar_domain/interface_adapt_v1/A1/run_result.json": "ddffacecaf7ae88bd2ec579c2644d748ea19bde619658480fa91b0f399a5feb4",
+    "results/radar_domain/interface_adapt_v1/C1/run_result.json": "953cf9774e174603eb7fa98eea0b72a099976a394076ffb8447138bfba8ddcc2",
+    "results/radar_domain/interface_adapt_v1/A2/run_result.json": "5c27717a9b7201f1d8983d5166a891732adf972dafbafa4942eef89bb04d9be6",
+    "results/radar_domain/interface_adapt_v1/C2/run_result.json": "d2a6fe5b6e26aec8efb20ec5853fb81c312a69313fdb023f77b803be0e07ada4"
+  }
+}

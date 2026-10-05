@@ -1,0 +1,78 @@
+{
+  "version": "radar_interface_stage_decision_v1",
+  "decided_at_beijing": "2026-10-05T21:01:10.077955+08:00",
+  "status": "common_interface_adaptation_completed",
+  "predeclared_operational_gate": {
+    "agent_labels": [
+      "A1",
+      "C1",
+      "A2",
+      "C2"
+    ],
+    "each_agent_min_exact_of_40": 32,
+    "each_language_min_exact_of_20": 15,
+    "interpretation": "Practical gate for reliable simple three-action interface use, not a significance test or radar efficacy threshold. Failure blocks automatic scale-up; no retuning on this holdout."
+  },
+  "gate_results": {
+    "A1": {
+      "exact_by_language": {
+        "zh": 20,
+        "en": 19
+      },
+      "exact_of_40": 39,
+      "passed": true
+    },
+    "C1": {
+      "exact_by_language": {
+        "zh": 20,
+        "en": 20
+      },
+      "exact_of_40": 40,
+      "passed": true
+    },
+    "A2": {
+      "exact_by_language": {
+        "zh": 20,
+        "en": 20
+      },
+      "exact_of_40": 40,
+      "passed": true
+    },
+    "C2": {
+      "exact_by_language": {
+        "zh": 20,
+        "en": 20
+      },
+      "exact_of_40": 40,
+      "passed": true
+    }
+  },
+  "all_agents_passed": true,
+  "conclusion_zh": "本轮共同接口适配有效，固定合成保留组和已见雷达题的记录选择均明显改善；不支持C在雷达领域优于A的结论。",
+  "scope_zh": "20个虚构双语组的新实例/措辞检查，加12个已暴露雷达目标；不是独立真实雷达准确率。只能评分来源记录选择，证据卡由确定性模板生成。",
+  "frozen_protocol_followed": true,
+  "score_selected_retry": false,
+  "next_training_authorized_by_this_decision": false,
+  "further_prompt_or_training_search_on_current_sets": false,
+  "keep_all_models_and_failures": true,
+  "public_benchmark_conclusion_zh": "原始模型的公开2000题C−A收益保持为+4.65/+4.85个百分点；本次领域适配后未重评公开集，不能将旧分数赋给新权重。",
+  "domain_C_minus_A_after": {
+    "seed1": {
+      "zh_correct_difference": 0,
+      "en_correct_difference": 0
+    },
+    "seed2": {
+      "zh_correct_difference": 0,
+      "en_correct_difference": -1
+    }
+  },
+  "next_work_in_order_zh": [
+    "固定全部适配后检查点及本轮证据，停止当前题集上的训练和提示搜索。",
+    "先准备少量新来源、与已见型号家族隔离的事实和题目；逐条绑定原文、主体、条件、区间或未知范围，核验者标为AI或真人的真实身份。",
+    "在问题/参考/来源分组验收后冻结领域评价及同来源RAG对照，分别测记录选择和含引用的回答，保留未知与限定条件。",
+    "保持公开数据上的恢复轨迹SFT为方法贡献；领域章节报告可落地性及失效边界，若没有额外C优势也照实保留，不为追分扩大训练。"
+  ],
+  "automatic_new_gpu_run": false,
+  "source_summary_sha256": "e8e9c576d2228250c4f8ad3431aa9cdbd57bf59e92619d5e6edfc856499eb4f2",
+  "execution_summary_sha256": "034be662e4f14190d38f67d7eab8ced2ea67d92bac4e2251a787906d19bb5273"
+}

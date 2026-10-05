@@ -1,0 +1,38 @@
+{
+  "label": "A2",
+  "phase": "after",
+  "status": "completed",
+  "seconds": 48.681701862980844,
+  "totals": {
+    "calls": 192,
+    "invalid_calls": 0,
+    "input_tokens": 218511,
+    "generated_tokens": 4884,
+    "total_tokens": 223395,
+    "questions": 64
+  },
+  "protocol_sha256": "715e94249707b3839d562b121d3ff48225095af60aa32ad279ee77180af9d1c7",
+  "output_sha256": "95f2316a1d6e7bdf0720d597344725f70306b614a660fa61d2a3905966269847",
+  "scope": "Synthetic instance/wording holdout and exposed radar development diagnostic; no independent domain efficacy claim",
+  "config": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "max_calls": 24,
+    "agent_turn_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "model": {
+    "adapter": "results/radar_domain/interface_adapt_v1/A2/model",
+    "program": false,
+    "training_result_sha256": "5c27717a9b7201f1d8983d5166a891732adf972dafbafa4942eef89bb04d9be6",
+    "files_sha256": {
+      "results/radar_domain/interface_adapt_v1/A2/model/adapter_model.safetensors": "f962fefc45dabb52a5e421caf9fbb26944a7acf46a051204a8d6a579eab13f45",
+      "results/radar_domain/interface_adapt_v1/A2/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+    }
+  },
+  "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+}

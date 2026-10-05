@@ -1,0 +1,58 @@
+{
+  "label": "A2",
+  "seed": 20261004,
+  "kind": "agent",
+  "protocol_sha256": "b536a79d42f92493bcec394df3fc2edd02234b6ff7cf391ccaefec4fd12e30ba",
+  "config": {
+    "epochs": 5,
+    "learning_rate": 5e-05,
+    "batch_size": 2,
+    "accumulation": 8,
+    "max_length": 8192,
+    "warmup_steps": 0,
+    "weight_decay": 0.0,
+    "lr_scheduler_type": "linear",
+    "optimizer": "adamw_torch",
+    "bf16": true,
+    "tf32": true,
+    "gradient_checkpointing": true,
+    "max_grad_norm": 1.0
+  },
+  "cache": {
+    "records": 120,
+    "input_tokens": 232598,
+    "supervised_tokens": 9734,
+    "max_input_length": 1987,
+    "path": "data/radar_interface_v1/tokenized/agent.jsonl",
+    "sha256": "70f87b3057c5f63234f1a01c34a9e18ef4212b8346b798d0a09aef1c742a69a7",
+    "tools": true
+  },
+  "starting_model": {
+    "adapter": "results/agent_feedback/clean_sft_seed20261004/model",
+    "program": false,
+    "files_sha256": {
+      "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+      "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+    }
+  },
+  "trainable_parameters": 29933568,
+  "tokenizer": {
+    "files_sha256": {
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "libraries": {
+      "transformers": "5.18.0",
+      "tokenizers": "0.23.2",
+      "jinja2": "3.1.6"
+    }
+  },
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0"
+  }
+}

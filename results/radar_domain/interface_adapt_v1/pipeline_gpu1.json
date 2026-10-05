@@ -1,0 +1,18 @@
+{
+  "gpu": 1,
+  "results": [
+    {
+      "name": "radar_interface_v1_C1_before",
+      "returncode": 0
+    },
+    {
+      "name": "radar_interface_v1_C1_train",
+      "returncode": 0
+    },
+    {
+      "name": "radar_interface_v1_C1_after",
+      "returncode": 0
+    }
+  ],
+  "status": "completed"
+}

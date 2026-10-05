@@ -1,0 +1,37 @@
+{
+  "label": "P",
+  "phase": "before",
+  "status": "completed",
+  "seconds": 195.50354834497557,
+  "totals": {
+    "calls": 82,
+    "invalid_calls": 36,
+    "input_tokens": 20128,
+    "generated_tokens": 7050,
+    "total_tokens": 27178,
+    "questions": 40
+  },
+  "protocol_sha256": "715e94249707b3839d562b121d3ff48225095af60aa32ad279ee77180af9d1c7",
+  "output_sha256": "271324a03cfd93335f2295467befea876c4389e0a1c7a84c418cd0d2eef18b21",
+  "scope": "Synthetic instance/wording holdout and exposed radar development diagnostic; no independent domain efficacy claim",
+  "config": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "max_calls": 24,
+    "agent_turn_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "model": {
+    "adapter": "results/agent_feedback/program_sft_v1/model",
+    "program": true,
+    "files_sha256": {
+      "results/agent_feedback/program_sft_v1/model/adapter_model.safetensors": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+      "results/agent_feedback/program_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+    }
+  },
+  "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+}

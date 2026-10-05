@@ -1,0 +1,10 @@
+{
+  "controller_pid": 20025,
+  "user": "syx",
+  "local_freeze_commit": "8ee7cf6",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "experiments.radar_domain.interface_pipeline"
+  ]
+}

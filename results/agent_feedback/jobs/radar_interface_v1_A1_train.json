@@ -1,0 +1,24 @@
+{
+  "name": "radar_interface_v1_A1_train",
+  "supervisor_pid": 20205,
+  "child_pid": 20206,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    0
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-m",
+    "experiments.radar_domain.interface_training",
+    "train",
+    "--label",
+    "A1"
+  ],
+  "started_at": 1791200798.574809,
+  "heartbeat_at": 1791201148.7060728,
+  "status": "completed",
+  "finished_at": 1791201151.7278516,
+  "returncode": 0,
+  "gpu_seconds": 353.15304255485535
+}

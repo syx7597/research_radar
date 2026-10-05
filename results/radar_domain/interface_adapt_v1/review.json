@@ -1,0 +1,313 @@
+{
+  "version": "radar_interface_adaptation_independent_review_v1",
+  "reviewed_at_utc": "2026-10-05T13:04:24.708470+00:00",
+  "status": "passed",
+  "reviewer": "separate AI subagent /root/radar_probe_audit",
+  "reviewer_kind": "AI",
+  "independent_human_review": false,
+  "different_model_family_verified": false,
+  "scope": "Post-run integrity, matched-budget review, complete CPU replay and failure-case interpretation. No GPU inference or further training was run by this reviewer.",
+  "verification": {
+    "new_cpu_replay_rows": 520,
+    "new_cpu_replay_mismatches": 0,
+    "reused_radar_baseline_cpu_replay_rows": 120,
+    "reused_baseline_replay_mismatches": 0,
+    "all_frozen_inputs_verified": true,
+    "independently_recomputed_exact_count_groups": 30,
+    "all_five_training_manifests_and_loss_logs_checked": true,
+    "A_C_actual_sample_order_and_budget_match": true,
+    "all_runtime_adapter_identity_bindings_checked": true,
+    "local_weight_bytes_rehashed": false,
+    "weight_verification_scope": "Weights remain remote. Frozen training and inference code rehashed adapters at runtime; this review checks the bound metadata and before/after identities, not downloaded weight tensors. Final finite-parameter assertions are likewise remote run evidence."
+  },
+  "training": {
+    "P": {
+      "actual_supervised_tokens": 21000,
+      "actual_input_tokens": 321350,
+      "sampled_examples": 600,
+      "microbatches": 300,
+      "global_step": 40,
+      "sampled_order_sha256": "0f89a81025b63bb47d429592ad15b645bbe85807faf40794173a3ecd4685bde3",
+      "seed": 20261003,
+      "starting_adapter_sha256": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+      "final_adapter_sha256": "53dd432b4d900f2a131fc3ec8916dfa27b59598a3f77cfdfefce06c5e83ae205",
+      "trainable_parameters": 29933568,
+      "train_loss": 0.04166873645481246,
+      "finite_loss_log_entries": 40,
+      "finite_gradient_log_entries": 40,
+      "finite_parameter_tensors_reported": 504
+    },
+    "A1": {
+      "actual_supervised_tokens": 48670,
+      "actual_input_tokens": 1162990,
+      "sampled_examples": 600,
+      "microbatches": 300,
+      "global_step": 40,
+      "sampled_order_sha256": "0f89a81025b63bb47d429592ad15b645bbe85807faf40794173a3ecd4685bde3",
+      "seed": 20261003,
+      "starting_adapter_sha256": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+      "final_adapter_sha256": "c588c835667268718c12ab7f7d2be6fde34f7dca759baf63bd7f93e533007fca",
+      "trainable_parameters": 29933568,
+      "train_loss": 0.017585187992517605,
+      "finite_loss_log_entries": 40,
+      "finite_gradient_log_entries": 40,
+      "finite_parameter_tensors_reported": 504
+    },
+    "C1": {
+      "actual_supervised_tokens": 48670,
+      "actual_input_tokens": 1162990,
+      "sampled_examples": 600,
+      "microbatches": 300,
+      "global_step": 40,
+      "sampled_order_sha256": "0f89a81025b63bb47d429592ad15b645bbe85807faf40794173a3ecd4685bde3",
+      "seed": 20261003,
+      "starting_adapter_sha256": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33",
+      "final_adapter_sha256": "41a06581c3067e6761c60282865393af6bca352e4f06c10718459133764fb14e",
+      "trainable_parameters": 29933568,
+      "train_loss": 0.013593383799889124,
+      "finite_loss_log_entries": 40,
+      "finite_gradient_log_entries": 40,
+      "finite_parameter_tensors_reported": 504
+    },
+    "A2": {
+      "actual_supervised_tokens": 48670,
+      "actual_input_tokens": 1162990,
+      "sampled_examples": 600,
+      "microbatches": 300,
+      "global_step": 40,
+      "sampled_order_sha256": "666fd1f71b001af3fc119bffcae7b2a13d463b293ae77af5076dc3b7d5dba28f",
+      "seed": 20261004,
+      "starting_adapter_sha256": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+      "final_adapter_sha256": "f962fefc45dabb52a5e421caf9fbb26944a7acf46a051204a8d6a579eab13f45",
+      "trainable_parameters": 29933568,
+      "train_loss": 0.01352637011987099,
+      "finite_loss_log_entries": 40,
+      "finite_gradient_log_entries": 40,
+      "finite_parameter_tensors_reported": 504
+    },
+    "C2": {
+      "actual_supervised_tokens": 48670,
+      "actual_input_tokens": 1162990,
+      "sampled_examples": 600,
+      "microbatches": 300,
+      "global_step": 40,
+      "sampled_order_sha256": "666fd1f71b001af3fc119bffcae7b2a13d463b293ae77af5076dc3b7d5dba28f",
+      "seed": 20261004,
+      "starting_adapter_sha256": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+      "final_adapter_sha256": "444340a88125959f2b8e780f9a879ae11944f2505a6719d12b7af331f353aa30",
+      "trainable_parameters": 29933568,
+      "train_loss": 0.015272569787703106,
+      "finite_loss_log_entries": 40,
+      "finite_gradient_log_entries": 40,
+      "finite_parameter_tensors_reported": 504
+    }
+  },
+  "budget": {
+    "supervised_training_tokens_per_agent": 48670,
+    "supervised_training_tokens_P": 21000,
+    "same_question_exposures_per_model": 600,
+    "program_and_agent_target_tokens_matched": false,
+    "jobs": 15,
+    "all_jobs_syx": true,
+    "all_jobs_exit_zero": true,
+    "all_jobs_supervised": true,
+    "per_gpu_no_overlapping_pipeline_jobs": true,
+    "charged_gpu_hours": 0.9159988238414128,
+    "reserved_gpu_hours": 6.0,
+    "cumulative_gpu_hours_after": 23.937207948433027,
+    "global_cap_gpu_hours": 72,
+    "accounting": "Supervisor lifetime multiplied by assigned GPU count, including loading and waiting; not kernel compute time."
+  },
+  "results": {
+    "P": {
+      "synthetic_before_exact_out_of_40": 1,
+      "synthetic_after_exact_out_of_40": 40,
+      "seen_radar_after_zh_exact_out_of_12": 11,
+      "seen_radar_after_en_exact_out_of_12": 11
+    },
+    "A1": {
+      "synthetic_before_exact_out_of_40": 0,
+      "synthetic_after_exact_out_of_40": 39,
+      "seen_radar_after_zh_exact_out_of_12": 12,
+      "seen_radar_after_en_exact_out_of_12": 12
+    },
+    "C1": {
+      "synthetic_before_exact_out_of_40": 7,
+      "synthetic_after_exact_out_of_40": 40,
+      "seen_radar_after_zh_exact_out_of_12": 12,
+      "seen_radar_after_en_exact_out_of_12": 12
+    },
+    "A2": {
+      "synthetic_before_exact_out_of_40": 3,
+      "synthetic_after_exact_out_of_40": 40,
+      "seen_radar_after_zh_exact_out_of_12": 12,
+      "seen_radar_after_en_exact_out_of_12": 12
+    },
+    "C2": {
+      "synthetic_before_exact_out_of_40": 8,
+      "synthetic_after_exact_out_of_40": 40,
+      "seen_radar_after_zh_exact_out_of_12": 12,
+      "seen_radar_after_en_exact_out_of_12": 11
+    }
+  },
+  "failure_cases": [
+    {
+      "label": "P",
+      "id": "radar-lookup-dev-02-zh",
+      "dataset": "radar_seen",
+      "language": "zh",
+      "stop_reason": "program_completed",
+      "expected_fact_ids": [
+        "radar-review-001-02"
+      ],
+      "selected_fact_ids": [],
+      "calls": 3,
+      "invalid_calls": 0,
+      "failure_type": "wrong_event_mapping_and_valid_empty_result",
+      "wrong_event": "cancellation",
+      "expected_event": "in_service",
+      "explanation_zh": "两语言的同一Since问题均选成cancellation。查询和结束合法，但返回空集；不是正确回答未知，也不是两个独立失败题。"
+    },
+    {
+      "label": "P",
+      "id": "radar-lookup-dev-02-en",
+      "dataset": "radar_seen",
+      "language": "en",
+      "stop_reason": "program_completed",
+      "expected_fact_ids": [
+        "radar-review-001-02"
+      ],
+      "selected_fact_ids": [],
+      "calls": 3,
+      "invalid_calls": 0,
+      "failure_type": "wrong_event_mapping_and_valid_empty_result",
+      "wrong_event": "cancellation",
+      "expected_event": "in_service",
+      "explanation_zh": "两语言的同一Since问题均选成cancellation。查询和结束合法，但返回空集；不是正确回答未知，也不是两个独立失败题。"
+    },
+    {
+      "label": "A1",
+      "id": "ifkb-d0196944b136-en",
+      "dataset": "synthetic",
+      "language": "en",
+      "stop_reason": "call_budget",
+      "expected_fact_ids": [
+        "synfact-7d8844c89213"
+      ],
+      "selected_fact_ids": [],
+      "calls": 24,
+      "invalid_calls": 23,
+      "failure_type": "entity_literal_copy_then_invalid_finish_loop",
+      "observed_target_anchor": "SYN-0B2179929BB3",
+      "generated_anchor": "SYN-0B219929BB3",
+      "explanation_zh": "Find参数漏写一个字符后返回空实体；随后23次把finish当作step.function，耗尽调用预算。未出现成功目标检索。"
+    },
+    {
+      "label": "C2",
+      "id": "radar-lookup-dev-05-en",
+      "dataset": "radar_seen",
+      "language": "en",
+      "stop_reason": "finished",
+      "expected_fact_ids": [
+        "radar-review-001-05"
+      ],
+      "selected_fact_ids": [
+        "radar-review-001-05",
+        "radar-review-001-06"
+      ],
+      "calls": 3,
+      "invalid_calls": 0,
+      "failure_type": "omitted_condition_overinclusive_nonempty_selection",
+      "required_condition": "Illuminator",
+      "target_is_in_selected_set": true,
+      "explanation_zh": "QueryAttr未加Illuminator条件，返回Illuminator和Tracking Radar两条频率记录；目标在结果中，但严格单记录选择失败。没有捏造参数或返回错误数值。"
+    }
+  ],
+  "claims": {
+    "supported": [
+      "A common, small successful-trajectory adaptation substantially repairs the frozen interface-transfer task across all five checkpoints.",
+      "Most previous failures were not a permanent inability to use the field/condition tool contract; all arms can learn this bounded interface.",
+      "After adaptation the fixed synthetic instance/wording holdout is near its ceiling, and exposed radar lookup selections are mostly correct."
+    ],
+    "not_supported": [
+      "A recovery-trained C advantage in the radar domain is not established: seen radar C1 ties A1 and C2 misses one English condition while A2 is exact on all 24 views.",
+      "Near-perfect synthetic results do not establish real radar fact accuracy, independent domain generalization, semantic source adjudication or superiority to RAG.",
+      "The improvement is common interface adaptation; it is not a new recovery algorithm, an RL result or an isolated language-capability effect.",
+      "Post-adaptation public-benchmark retention is unmeasured; the earlier public result belongs to the original adapters."
+    ]
+  },
+  "interpretation_limits": [
+    "The 40 synthetic views represent 20 grouped intents with shared task families and ontology; languages are not independent samples.",
+    "The 24 radar views are the same 12 exposed AI-rewritten development targets, with AI source interpretations and deterministic evidence rendering.",
+    "Training and held instances differ in entities and outer wording frames, but share short three-action program structures; the near-ceiling outcome reflects a limited task.",
+    "P has the same question exposures but fewer supervised tokens and a different output format; do not claim token-matched P-versus-agent training.",
+    "One A1 spelling/termination failure and the C2 conditional over-selection are retained; no checkpoint or favorable language was selected."
+  ],
+  "decision": {
+    "additional_training_recommended_now": false,
+    "automatic_extra_round": false,
+    "next_work": [
+      "Retain all five adapted checkpoints and close this bounded interface-alignment experiment.",
+      "Prepare new source-separated radar fact/question groups with explicit evidence and review scope; do not relabel these exposed examples as final test data.",
+      "Build a same-evidence RAG baseline and freeze comparable questions and scoring before additional domain evaluation."
+    ],
+    "no_new_algorithm_proposed": true
+  },
+  "blocking_findings": [],
+  "inputs_sha256": {
+    "results/radar_domain/interface_adapt_v1/protocol.json": "b536a79d42f92493bcec394df3fc2edd02234b6ff7cf391ccaefec4fd12e30ba",
+    "results/radar_domain/interface_adapt_v1/preparation.json": "a9ef0e0a41c694a436e59f28db9d641d2e500038c4d1e8d082bab7065a19807e",
+    "results/radar_domain/interface_adapt_v1/pipeline_started.json": "5fbe8c1b21e91300ca09634ab730942edc56bb01ad94374766adcaeb2154845a",
+    "results/radar_domain/interface_adapt_v1/pipeline_completed.json": "d859cc6c9d348e63ad6b44ef42d4c2686dc6d60482efb97df12c91f83d26bb14",
+    "results/radar_domain/interface_adapt_v1/evaluation/protocol.json": "715e94249707b3839d562b121d3ff48225095af60aa32ad279ee77180af9d1c7",
+    "results/radar_domain/interface_adapt_v1/evaluation/summary.json": "e8e9c576d2228250c4f8ad3431aa9cdbd57bf59e92619d5e6edfc856499eb4f2",
+    "results/radar_domain/interface_adapt_v1/evaluation/per_question_diagnosis.json": "1a4571cd38a75a735a0fc54bf6ea417a00fc2778187ad97f3ccf2c4f6069159e",
+    "results/radar_domain/lookup_probe_v1/summary.json": "ee940a236ed2bd7043642ba4d8893d05f4c7735133122a8da02d1435b3219adb",
+    "results/radar_domain/lookup_probe_v1/per_question_diagnosis.json": "1f2f6d6508f1008f804207d294399c62123045b164551bbd20ec09e6c6c8eac7",
+    "results/agent_feedback/jobs/radar_interface_v1_A1_before.json": "be29de66ce559f40aaa1aeaeddea71a6494f31260fab4512f1b3a9a9921abc75",
+    "results/agent_feedback/jobs/radar_interface_v1_A1_train.json": "b87455912d781919dc24dabfd6bc11bd6520064c41d229ac8b3335d148a6c254",
+    "results/agent_feedback/jobs/radar_interface_v1_A1_after.json": "bf772661d0e7e4fd843f741726a7272d162e4afa0abcf981450219ba08c8a375",
+    "results/agent_feedback/jobs/radar_interface_v1_P_before.json": "d93b0c3b93626807f6c6e90cfa28ef23a07405763b38ed2508a3a71e4e437ba8",
+    "results/agent_feedback/jobs/radar_interface_v1_P_train.json": "ea0280c30be6801cfcdddf57eec94bc5817c0cd23a1fae363e2ff94d8a666e6c",
+    "results/agent_feedback/jobs/radar_interface_v1_P_after.json": "0b0cd3024984d2c501482cc3ea0c94f2583dceab451b0f1809ada49c1176b8f9",
+    "results/agent_feedback/jobs/radar_interface_v1_C1_before.json": "6f7141e3fa83fbb7981efb4b63c4a07eb373cc58a4608c266164a901d4ffbfd6",
+    "results/agent_feedback/jobs/radar_interface_v1_C1_train.json": "9a674e114a86e9644d4f82cdf4df6997657fda0f900cc8b94351dbe91955b11f",
+    "results/agent_feedback/jobs/radar_interface_v1_C1_after.json": "6373b5351f79c6dfc5b2be48b2d6f8b93c25ae402a0d95152a702504268d5391",
+    "results/agent_feedback/jobs/radar_interface_v1_A2_before.json": "9bea0c0ba431b443faa4e4ad1e7f635eef4405936dff6a420e851a1eab342bfd",
+    "results/agent_feedback/jobs/radar_interface_v1_A2_train.json": "ecfe77a394fcbe0fc761457e05067479fb377ac90f44eaa45b92b6851e286415",
+    "results/agent_feedback/jobs/radar_interface_v1_A2_after.json": "c28464c4c098f88a0737c05386a6e1fff79cd9acf4a6f378cdf7ab8d19e5a8f4",
+    "results/agent_feedback/jobs/radar_interface_v1_C2_before.json": "3aa8c2d750f4a30cc004ff341885e42ada53bb7f45c7942f806207e23f04dd86",
+    "results/agent_feedback/jobs/radar_interface_v1_C2_train.json": "c1dc2652801659fbfedf12e093e48c54bdc03343e737137dd59a3794baa85693",
+    "results/agent_feedback/jobs/radar_interface_v1_C2_after.json": "cdb255d52a459cf78baa1945a0cb2c242881ea24823b73459aa3191c4c2c8b3c",
+    "results/radar_domain/interface_adapt_v1/P/run_result.json": "e2d0972b744168f277f5ec51821ef107e918c138ef9945000a5483c4c7e5ff06",
+    "results/radar_domain/interface_adapt_v1/P/input_manifest.json": "9c90932d9d1af66b42e1d497768426c65b963dbd78a904ece63a3ec63c80ef87",
+    "results/radar_domain/interface_adapt_v1/evaluation/P_before.jsonl": "271324a03cfd93335f2295467befea876c4389e0a1c7a84c418cd0d2eef18b21",
+    "results/radar_domain/interface_adapt_v1/evaluation/P_before.runtime.json": "0abad19fe85fd6c161080c5bd34e8b0cfcfff6a0c49dec191e36c81d066fc139",
+    "results/radar_domain/interface_adapt_v1/evaluation/P_after.jsonl": "457ddd3f556b0a6916f72e29c15af609bf3a4f9d9419a32ee3a68c3ac8b34517",
+    "results/radar_domain/interface_adapt_v1/evaluation/P_after.runtime.json": "32502428981bffdda4dac62006d4b706cb426f1daead6977236a3db01daf0d20",
+    "results/radar_domain/interface_adapt_v1/A1/run_result.json": "ddffacecaf7ae88bd2ec579c2644d748ea19bde619658480fa91b0f399a5feb4",
+    "results/radar_domain/interface_adapt_v1/A1/input_manifest.json": "2fd94dd40b98d876db6cfe12b5daec4c246a72eeca51d81bf4c6f421ddef29f0",
+    "results/radar_domain/interface_adapt_v1/evaluation/A1_before.jsonl": "ddc3f4ca34c6851cbe1019a6c39b244828be8cb2e0468269f8e7dcd19a165ec4",
+    "results/radar_domain/interface_adapt_v1/evaluation/A1_before.runtime.json": "2b446ceba3f9f82e99904dae514d1d3a5928f6491bdea56b82d3d7debc68fc6f",
+    "results/radar_domain/interface_adapt_v1/evaluation/A1_after.jsonl": "c5cad819cf557c934a7747dd9cc66bf1625fd9affe1eac2e9443f5c46eaecb4d",
+    "results/radar_domain/interface_adapt_v1/evaluation/A1_after.runtime.json": "d662d763d6d720ce66dba84aeb1956ac272b984eab598e7772e048d7ef4ead8e",
+    "results/radar_domain/interface_adapt_v1/C1/run_result.json": "953cf9774e174603eb7fa98eea0b72a099976a394076ffb8447138bfba8ddcc2",
+    "results/radar_domain/interface_adapt_v1/C1/input_manifest.json": "b5d7a83620861f3c8dac2f65795efae05c5153e7434b6c2a7d848070feda8349",
+    "results/radar_domain/interface_adapt_v1/evaluation/C1_before.jsonl": "65f371240451f9b5279e7510a943fcc8743db5f5425a49693c16644818512289",
+    "results/radar_domain/interface_adapt_v1/evaluation/C1_before.runtime.json": "f2929f9a9c9a518cf0e6735e27cc5423460c9be33e0e6ea3281c3d745d62a9db",
+    "results/radar_domain/interface_adapt_v1/evaluation/C1_after.jsonl": "6d7ea349da12039d5912bf2bcde61825404bd057fa2da9f9e97f328e75d86947",
+    "results/radar_domain/interface_adapt_v1/evaluation/C1_after.runtime.json": "8e13c9597559853f9a731686abb6f3daec6698b6dcaf768b7f7387f0e2709379",
+    "results/radar_domain/interface_adapt_v1/A2/run_result.json": "5c27717a9b7201f1d8983d5166a891732adf972dafbafa4942eef89bb04d9be6",
+    "results/radar_domain/interface_adapt_v1/A2/input_manifest.json": "726dfed98d5e6d5ce77a959b21abf38b1f33835d760d6fa3da1c8620021ce928",
+    "results/radar_domain/interface_adapt_v1/evaluation/A2_before.jsonl": "60223415463cade2d1f8e80f2af7b8e07afd8e72b4d815caccd122550531b2d6",
+    "results/radar_domain/interface_adapt_v1/evaluation/A2_before.runtime.json": "8ae351931f4e9731bbfc453660eac437f8d8334fe31e3528a4607c6497f3e305",
+    "results/radar_domain/interface_adapt_v1/evaluation/A2_after.jsonl": "95f2316a1d6e7bdf0720d597344725f70306b614a660fa61d2a3905966269847",
+    "results/radar_domain/interface_adapt_v1/evaluation/A2_after.runtime.json": "7c4151e66d899b3f82bb50e9f2e0e0f50622977888aa74c02ead0ce0f2f782b6",
+    "results/radar_domain/interface_adapt_v1/C2/run_result.json": "d2a6fe5b6e26aec8efb20ec5853fb81c312a69313fdb023f77b803be0e07ada4",
+    "results/radar_domain/interface_adapt_v1/C2/input_manifest.json": "686022a1f038e7e61f223b7a95cdabbfa4425404c1a7bd6128137841ccd5acec",
+    "results/radar_domain/interface_adapt_v1/evaluation/C2_before.jsonl": "581790afbbd7b92f58aac63c5432c66fa2c779fbbaab2d86ddb79ac91e9bd4a7",
+    "results/radar_domain/interface_adapt_v1/evaluation/C2_before.runtime.json": "35dc4502d11bf179b05f15d94e63ad3a78a83e3efcb6b36fb63fe4c04d087f22",
+    "results/radar_domain/interface_adapt_v1/evaluation/C2_after.jsonl": "1d26e621a615b422e2d0ee413f5b8a39f7410a844c0c57503dbbc1d5b25f4454",
+    "results/radar_domain/interface_adapt_v1/evaluation/C2_after.runtime.json": "0510ff164cf78c761ccfb2cf5e70fd694f6f4a4a741d6c6a2fcefd0f6884514d"
+  }
+}

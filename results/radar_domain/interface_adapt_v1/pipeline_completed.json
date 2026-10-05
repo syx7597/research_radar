@@ -1,0 +1,76 @@
+{
+  "status": "completed",
+  "finished_at_utc": "2026-10-05T11:59:20.354324+00:00",
+  "jobs_returned": 15,
+  "gpu_hours_after": 23.937207948433027,
+  "results": [
+    [
+      {
+        "name": "radar_interface_v1_A1_before",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_A1_train",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_A1_after",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_P_before",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_P_train",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_P_after",
+        "returncode": 0
+      }
+    ],
+    [
+      {
+        "name": "radar_interface_v1_C1_before",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_C1_train",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_C1_after",
+        "returncode": 0
+      }
+    ],
+    [
+      {
+        "name": "radar_interface_v1_A2_before",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_A2_train",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_A2_after",
+        "returncode": 0
+      }
+    ],
+    [
+      {
+        "name": "radar_interface_v1_C2_before",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_C2_train",
+        "returncode": 0
+      },
+      {
+        "name": "radar_interface_v1_C2_after",
+        "returncode": 0
+      }
+    ]
+  ]
+}

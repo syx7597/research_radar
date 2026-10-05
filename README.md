@@ -8,11 +8,23 @@
 
 主线：**保留主体、条件、区间和来源的雷达知识资源 → 小模型生成可执行查询 → 答案与依据 → 公开基准和独立雷达评价**。复用现有数据、执行器和系统，不重建整个项目。配对续训复现、回放复核及B/D配对RL均已完成。RL增量未达到扩展标准，保留恢复轨迹SFT为主方案；语义核验偏好训练继续暂缓。领域核验与论文写作并行推进；范围和队列见[执行计划](docs/ROADMAP.md)。
 
-**2026-10-05：预定的一次中英对齐复测已完成，停止未经适配的直接迁移。** 在单一查询意图的同12题上，P/A1/C1/A2/C2中、英文精确记录选择均为1/1/2/3/0；C1和A2的中英成功题部分不同，不能解释为逐题相同。10组120条流程重放零差异，仍有大量参数、字段/条件和句柄错误，没有可靠语言优势或领域C优势。见[复测结果](results/radar_domain/lookup_probe_v1/summary.json)和[阶段决定](results/radar_domain/lookup_probe_v1/stage_decision.json)。本轮0.240 GPU小时，累计23.021/72；无新训练，不再改提示追分。下一步先准备与CPU核验[少量接口监督材料](artifacts/thesis_direction_review/radar_interface_adaptation_plan_v1.json)，再固定A/C同语料、同监督预算的适配方案；当前仅设计，未生成训练包或开训。公开方法主线保持不变，领域泛化尚未证实。
+**2026-10-05：一次共同接口适配与固定前后评价已完成，接口使用明显改善。** [合成材料](artifacts/thesis_direction_review/radar_interface_synthetic_v1/manifest.json)含100组虚构意图，按60/20/20划分训练、开发和保留组，中英共200题；[另一个AI agent审计](artifacts/thesis_direction_review/radar_interface_synthetic_v1/independent_ai_audit.json)及CPU执行检查通过。四个A/C检查点共用120条成功调用轨迹，固定5轮、学习率5e-5、batch 2、累积8，均完成40次更新、48,670个监督token；P完成同样40次更新、21,000个监督token，不能视为与Agent等预算。两组A/C的样本、实际顺序、监督量及配置匹配复核通过。该步骤用于教会新接口，不新增算法创新点。[训练](results/radar_domain/interface_adapt_v1/protocol.json)与[评价协议](results/radar_domain/interface_adapt_v1/evaluation/protocol.json)已在GPU运行前以`8ee7cf6`推送。
+
+| 检查点 | 合成精确选择：适配前→后／40 | 适配后已见雷达：中文／12 | 英文／12 |
+|---|---:|---:|---:|
+| P | 1→40 | 11 | 11 |
+| A1 | 0→39 | 12 | 12 |
+| C1 | 7→40 | 12 | 12 |
+| A2 | 3→40 | 12 | 12 |
+| C2 | 8→40 | 12 | 11 |
+
+新增520条预测全部CPU重放零差异，本地归档后再次复验一致；雷达适配前对照直接复用旧120条结果。15个作业全部由`syx`完成，结束检查四卡空闲。[执行记录](results/radar_domain/interface_adapt_v1/execution_summary.json)：北京时间19:39:54–19:59:20，本轮0.916 GPU小时，累计23.937/72。见[适配结果](results/radar_domain/interface_adapt_v1/evaluation/summary.json)和[阶段决定](results/radar_domain/interface_adapt_v1/stage_decision.json)。合成40题来自20个双语意图组，每语言20题；雷达两语言共享12个已见目标，不按独立样本累计。模型只选择来源记录，证据卡由模板展示，不计作独立生成语义回答。共同接口适配有效，但普通A同样达到高分，**未证明恢复C在领域上的额外优势，也不能称为真实雷达准确率**。固定全部检查点，停止本轮训练和提示搜索；下一步做来源隔离的小规模事实/问答AI审阅及同来源RAG对照，检验引用、条件、区间和未知范围。AI参考与独立人工金标分开标注，公开方法收益与领域应用边界分别报告。
+
+此前预定的一次中英对齐复测已完成，停止未经适配的直接迁移。在同12个查询目标上，P/A1/C1/A2/C2中、英文精确记录选择均为1/1/2/3/0；C1和A2的中英成功题部分不同。10组120条流程重放零差异，仍有大量参数、字段/条件和句柄错误，没有可靠语言优势或领域C优势。见[复测结果](results/radar_domain/lookup_probe_v1/summary.json)和[阶段决定](results/radar_domain/lookup_probe_v1/stage_decision.json)。该次复测0.240 GPU小时，当时累计23.021/72；没有训练，不再改提示追分。
 
 此前首轮中文开发检查也完整保留：[AI交叉审阅](artifacts/thesis_direction_review/radar_ai_cross_review_v1/index.html)的12条修订已应用为[独立开发版本](artifacts/thesis_direction_review/radar_development_v2/manifest.json)，原始数据保持不变。中文问题→模型查询→真实执行→固定模板来源证据卡已接通，首轮目标记录选择为P 0/12、A 0/12与0/12、C 3/12与1/12，60条重放零差异，实耗0.139 GPU小时。见[首次负结果](results/radar_domain/development_probe_v1/summary.json)。两轮都是已暴露AI开发材料，固定模板不代表模型独立完成来源裁决，不能称独立雷达准确率。
 
-新主线的[方法与公开实验两章草稿](thesis/README.md)及8张可追溯结果表已完成。[领域评价设计](artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)和[空标注模板](templates/radar_evaluation/README.txt)已备齐，尚未冻结最终QA或启动领域训练。用户的专业审阅不作为开发前提；AI材料与人工金标分开，当前仍无已验收独立事实，原接口默认事实模式返回无可用数据。
+新主线的[方法与公开实验两章草稿](thesis/README.md)及8张可追溯结果表已完成。[领域评价设计](artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)和[空标注模板](templates/radar_evaluation/README.txt)已备齐，尚未冻结最终独立QA；本次合成接口适配不改变这一状态。用户的专业审阅不作为开发前提；AI材料与人工金标分开，当前仍无已验收独立事实，原接口默认事实模式返回无可用数据。
 
 **已完成两轮开发和KQA Pro完整官方validation的11,797题评测。** 同一5,000题训练的BART下，4候选执行筛选79.90%，普通保守字段修复81.25%，局部保守修复81.39%，8候选执行筛选81.44%。局部保守修复相对4候选纠正178题、改错2题，但未证明优于8候选；局部约束相对普通修复的额外增量很小。
 
@@ -44,7 +56,7 @@
 
 ## 当前事实（2026-10-04）
 
-**公开实验已完成。** 五路2000题留出推理于2026-10-04 22:44（北京时间）结束，22:51完成全部10000条轨迹/程序回放与统一评分，零回放差异，当前无GPU任务。方法/统计在读取问题前冻结，全部预测保存后才读取答案。
+**公开实验已完成。** 五路2000题留出推理于2026-10-04 22:44（北京时间）结束，22:51完成全部10000条轨迹/程序回放与统一评分，零回放差异，该阶段GPU任务全部结束。方法/统计在读取问题前冻结，全部预测保存后才读取答案。
 
 | 项目留出2000题 | 首续训种子 | 第二续训种子 |
 |---|---:|---:|

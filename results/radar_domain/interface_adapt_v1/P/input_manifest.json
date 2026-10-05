@@ -1,0 +1,58 @@
+{
+  "label": "P",
+  "seed": 20261003,
+  "kind": "program",
+  "protocol_sha256": "b536a79d42f92493bcec394df3fc2edd02234b6ff7cf391ccaefec4fd12e30ba",
+  "config": {
+    "epochs": 5,
+    "learning_rate": 5e-05,
+    "batch_size": 2,
+    "accumulation": 8,
+    "max_length": 8192,
+    "warmup_steps": 0,
+    "weight_decay": 0.0,
+    "lr_scheduler_type": "linear",
+    "optimizer": "adamw_torch",
+    "bf16": true,
+    "tf32": true,
+    "gradient_checkpointing": true,
+    "max_grad_norm": 1.0
+  },
+  "cache": {
+    "records": 120,
+    "input_tokens": 64270,
+    "supervised_tokens": 4200,
+    "max_input_length": 555,
+    "path": "data/radar_interface_v1/tokenized/program.jsonl",
+    "sha256": "7a7d18c26710715db13d4b2ae2b8482c1febc7edef64747d6608ad1a0e179747",
+    "tools": false
+  },
+  "starting_model": {
+    "adapter": "results/agent_feedback/program_sft_v1/model",
+    "program": true,
+    "files_sha256": {
+      "results/agent_feedback/program_sft_v1/model/adapter_model.safetensors": "576a445e7c0f45af2eb636b91c46447a690a1c8635eabcee9960eebaeb0cf9e9",
+      "results/agent_feedback/program_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+    }
+  },
+  "trainable_parameters": 29933568,
+  "tokenizer": {
+    "files_sha256": {
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "libraries": {
+      "transformers": "5.18.0",
+      "tokenizers": "0.23.2",
+      "jinja2": "3.1.6"
+    }
+  },
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0"
+  }
+}
