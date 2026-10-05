@@ -1,0 +1,2405 @@
+{
+  "version": "radar_sources_mechanical_analysis_v1",
+  "records": [
+    {
+      "arm": "RAG",
+      "id": "source_zh_01",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_02",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_03",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_04",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_05",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_06",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_07",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_08",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": "ValueError: Invalid answer status or claims",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_09",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_10",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_11",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_12",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_13",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_14",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_15",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_16",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_17",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": "ValueError: Claim keys differ from the fixed contract",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_18",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_19",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": "ValueError: Invalid answer status or claims",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_20",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_21",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_22",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_23",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_24",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_01",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_02",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_03",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_04",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_05",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_06",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_07",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_08",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_09",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_10",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_11",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_12",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_13",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_14",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_15",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": false
+      },
+      "parse_error": "ValueError: Invalid answer status or claims",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_16",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Empty evidence cannot substantiate a claim or source-scoped unknown",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_17",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_18",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_19",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Natural-language answer_text is required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_20",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_21",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_22",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": false
+      },
+      "parse_error": "ValueError: Empty evidence cannot substantiate a claim or source-scoped unknown",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_23",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": false
+      },
+      "parse_error": "ValueError: Empty evidence cannot substantiate a claim or source-scoped unknown",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_24",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_01",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_02",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_03",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_04",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_05",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_06",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_07",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_08",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_09",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_10",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_11",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_12",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_13",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_14",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_15",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": false
+      },
+      "parse_error": "ValueError: Invalid answer status or claims",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_16",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_17",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_18",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_19",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_20",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_21",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_22",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_23",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_24",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": false
+      },
+      "parse_error": "ValueError: Invalid answer status or claims",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_01",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_02",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_03",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_04",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_05",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_06",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_07",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_08",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_09",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_10",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_11",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_12",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_13",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_14",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_15",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_16",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_17",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_18",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_19",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_20",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_21",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_22",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_23",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": false
+      },
+      "parse_error": "ValueError: Empty evidence cannot substantiate a claim or source-scoped unknown",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_24",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_01",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_02",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_03",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_04",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_05",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_06",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_07",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_08",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_09",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_10",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_11",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_12",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_13",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_14",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_15",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_16",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_17",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_18",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_19",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_20",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_21",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_22",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": false
+      },
+      "parse_error": "ValueError: Empty evidence cannot substantiate a claim or source-scoped unknown",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_23",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_24",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": false,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Invalid answer status or claims",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_01",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_02",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_03",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_04",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_05",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_06",
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_07",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_08",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_09",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_10",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_11",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": false,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": "ValueError: Claim subject and attribute are required",
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_12",
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_13",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_14",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_15",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_16",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_17",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_18",
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_19",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_20",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_21",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_22",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_23",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": true,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_24",
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "metrics": {
+        "json_contract_valid": true,
+        "all_required_chunks_available": true,
+        "strict_reference_claims_recalled": false,
+        "strict_reference_claim_set_equal": false,
+        "exact_record_selection": false,
+        "finished_selection": true
+      },
+      "parse_error": null,
+      "semantic_answer_reviewed": false
+    }
+  ]
+}

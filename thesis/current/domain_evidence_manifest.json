@@ -1,0 +1,95 @@
+{
+  "version": "thesis_domain_evidence_v1",
+  "evidence_cutoff": "2026-10-05",
+  "scope": "Public aggregate metadata only. No QA, source fulltext, raw predictions, weights or training opened; nested manifests are not recursively followed.",
+  "sources": {
+    "results/radar_domain/source_eval_v1/ai_semantic_summary.json": {
+      "sha256": "4b9732946282a245558fdb8e9295bc054621f1c1b6c532a184bb3f8536de87df",
+      "role": "semantic"
+    },
+    "results/radar_domain/source_eval_v1/mechanical_summary.json": {
+      "sha256": "091ac8f8dc387c1961768eddf038167943c1f08da60f3224f144e783a6b9ebf8",
+      "role": "mechanical"
+    },
+    "results/radar_domain/source_eval_v1/execution_summary.json": {
+      "sha256": "d2b06ef0833851ff54801fde9e6c74cf412c67eb373426a5a6aa0f2be8dbb33c",
+      "role": "execution"
+    },
+    "results/radar_domain/source_eval_v1/pipeline_completed.json": {
+      "sha256": "b9983efc59635b93f332939e67ecb8934332887c2dcfbd5143d1a21d0d784c4d",
+      "role": "completed"
+    },
+    "results/radar_domain/source_eval_v1/protocol.json": {
+      "sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+      "role": "protocol"
+    },
+    "results/radar_domain/source_eval_v1/stage_decision.json": {
+      "sha256": "24f83e7e6be41db4b215760df0f77da571b06edcc7104c97e2dc75de4185c786",
+      "role": "decision"
+    },
+    "results/radar_domain/source_eval_v1/failure_diagnosis.json": {
+      "sha256": "39e747a352b1e862b3ae1f8d7b2563835817de72bbcb4bcddc395be81c712b9d",
+      "role": "failures"
+    },
+    "artifacts/thesis_direction_review/radar_sources_v1/manifest.json": {
+      "sha256": "77cd86058ab8450ec838c219e54bca209baa26fccb3dafe38e7ddff822e18417",
+      "role": "source_manifest"
+    },
+    "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": {
+      "sha256": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
+      "role": "source_index"
+    },
+    "artifacts/thesis_direction_review/radar_interface_synthetic_v1/manifest.json": {
+      "sha256": "70983ddcf1be1d8bf9095843be510f46a14b3dee159674f067cac944e268df65",
+      "role": "synthetic_manifest"
+    },
+    "results/radar_domain/interface_adapt_v1/review.json": {
+      "sha256": "74199a1d9e56b92b311a2dc7b341a846222074811c462b569c9914626514effb",
+      "role": "interface"
+    },
+    "results/radar_domain/interface_adapt_v1/protocol.json": {
+      "sha256": "b536a79d42f92493bcec394df3fc2edd02234b6ff7cf391ccaefec4fd12e30ba",
+      "role": "interface_protocol"
+    },
+    "results/radar_domain/lookup_probe_v1/stage_decision.json": {
+      "sha256": "3fff51f182e514c7865c43b3825038af4248b13c76f700a98c9d88b7b4e4ed78",
+      "role": "lookup"
+    }
+  },
+  "outputs_sha256": {
+    "domain_results.csv": "4c50064a1ef39a9d79b0ad66f4a295c9b080e51b593da1bd2ea98fc7fc0b2f8d",
+    "domain_tables.tex": "2494c86ce818a24b41a4bcc76fa31be5d34b7e94d36e205cf0262d65f3d33638",
+    "06_radar_application.tex": "2428d68c51332db4cb891538f55d6afca18c58d3157cd1a304916ed3636e2cd2",
+    "domain_review.tex": "d26f037901e9c2c62440a672423b6b74e74f539fdc7a39e8e3a09f9308fcd76a",
+    "domain_export.py": "5e3573ea62426ff7a72db6a7607e6f9adcd9f6c0ac7591bee8dd38ae741e2689"
+  },
+  "table_rows": 412,
+  "validation": {
+    "verified_public_binding_edges": 16,
+    "aggregate_arithmetic": true,
+    "completed_jobs": 11,
+    "selector_replay_rows_reported": 120,
+    "answer_input_replay_rows_reported": 144,
+    "replay_mismatches_reported": 0,
+    "shared_answer_model_and_configuration": true,
+    "paired_adaptation_order_and_tokens": true,
+    "final_base_hash_attestation_matches_protocol": true,
+    "local_raw_or_tensor_reverification": false,
+    "semantic_judgments": "Copied from two masked AI reviews and an arm-aware source-grounded adjudication; not rejudged by exporter",
+    "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"
+  },
+  "claim_limits": [
+    "AI authorship/review is not human gold or different-model-family consensus",
+    "24 questions from four correlated sources; no significance claim",
+    "new source snapshots are not certified historical equipment-family isolation",
+    "common interface adaptation is effective on bounded lookup checks; no C domain advantage demonstrated",
+    "original public benchmark improvements belong to original adapters; adapted public retention unmeasured",
+    "curated KB and raw-page RAG have unequal preparation costs and training histories",
+    "strict claim field mismatch is not natural-answer error",
+    "page coverage can recover a wrong record selection; selection and answer metrics are separate",
+    "token counts include complete repeated prefills; not FLOPs or total preparation cost",
+    "pre-freeze retrieval coverage was observed and disclosed; no score-driven retuning",
+    "post-run error labels are descriptive; no causal mechanism established",
+    "no additional domain training planned; application evidence and the thesis remain preliminary"
+  ]
+}

@@ -8,6 +8,25 @@
 
 主线：**保留主体、条件、区间和来源的雷达知识资源 → 小模型生成可执行查询 → 答案与依据 → 公开基准和独立雷达评价**。复用现有数据、执行器和系统，不重建整个项目。配对续训复现、回放复核及B/D配对RL均已完成。RL增量未达到扩展标准，保留恢复轨迹SFT为主方案；语义核验偏好训练继续暂缓。领域核验与论文写作并行推进；范围和队列见[执行计划](docs/ROADMAP.md)。
 
+**当前阶段：新厂商来源的固定评价和双AI正文审阅已完成，未观察到恢复C的额外领域正确性收益。** [资料包](artifacts/thesis_direction_review/radar_sources_v1/manifest.json)来自Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120和JRC JMA-1030系列的4份厂商PDF，共4个来源/家族、5个型号、24道中文题、62条来源读法和15个完整原文页。[来源AI审阅](artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json)通过。新资料与原12条实际调试来源/家族闭包隔离，但3个家族已在历史语料出现，旧自动QA完整来源血缘未认证；这是小规模AI探索评价，不是最终独立人工评价。
+
+六种证据入口为固定适配后的P/A1/C1/A2/C2和BM25 top4 RAG，统一由未经本项目适配的Qwen2.5-3B-Instruct根据原文页生成正文、断言与引用，中文模板证据卡不算回答。120条选择及144条回答的CPU重放/输入核验均零差异，见[机械检查](results/radar_domain/source_eval_v1/mechanical_summary.json)和[AI语义汇总](results/radar_domain/source_eval_v1/ai_semantic_summary.json)。
+
+| 证据入口 | 精确记录选择／24 | 支持页覆盖／24 | 正文正确／24（AI审阅） | 选择＋回答总token |
+|---|---:|---:|---:|---:|
+| RAG | 不适用 | 23 | 13 | 88,520 |
+| P | 15 | 19 | 13 | 48,368 |
+| A1 | 21 | 22 | 16 | 212,651 |
+| C1 | 19 | 23 | 15 | 176,433 |
+| A2 | 20 | 22 | 16 | 169,768 |
+| C2 | 19 | 24 | 16 | 143,625 |
+
+两个隐藏方法标签的AI审阅者对58个去重答案的正文正确性完全一致；5条分歧仅涉及缺证据拒答是否有支持，按限定措辞裁决为支持，不改变其答错和引用未支持判定，原判保留。主agent裁决已见汇总结果，不称盲裁决或人工金标。严格断言字段匹配均为0/24，**这不是正文准确率为0**。显式查询条件子集保留8题分母，另公开运行后增加的9题参考限定诊断，包含第15题双波束说明，不静默换分母。
+
+[运行记录](results/radar_domain/source_eval_v1/execution_summary.json)：11个GPU任务均由`syx`完成，无新训练；北京时间22:04:05–22:06:41，实耗0.103 GPU小时，累计24.040/72。表中总token包含选择和回答，不能因Agent回答阶段上下文较短就称其比RAG省token；资料整理成本也不同。[预冻结检索23/24](artifacts/thesis_direction_review/radar_sources_v1/pre_freeze_retrieval_observation.json)已披露，未据此调参。
+
+接口已可用，但C1正文比A1少1题，C2与A2持平；C2虽覆盖全部24题支持页，仍有8题在已有证据下答错。当前短板集中在表格量值、条件/部件绑定与回答，不由本批推定某个新算法已有效。按[阶段决定](results/radar_domain/source_eval_v1/stage_decision.json)保留公开2000题方法结论，领域不宣称算法领先；停止追加领域训练、RL及提示搜索，先收束应用章节、来源证据表与[失败案例](results/radar_domain/source_eval_v1/failure_diagnosis.json)，再补数据构建章衔接。本批没有未知或事件题，不能宣称对应能力已验证。24道AI题只是最小验证，完整论文仍需按预定义来源多样性、题型和参考可信度补充评价工作，当前不按分数扩样追分。
+
 **2026-10-05：一次共同接口适配与固定前后评价已完成，接口使用明显改善。** [合成材料](artifacts/thesis_direction_review/radar_interface_synthetic_v1/manifest.json)含100组虚构意图，按60/20/20划分训练、开发和保留组，中英共200题；[另一个AI agent审计](artifacts/thesis_direction_review/radar_interface_synthetic_v1/independent_ai_audit.json)及CPU执行检查通过。四个A/C检查点共用120条成功调用轨迹，固定5轮、学习率5e-5、batch 2、累积8，均完成40次更新、48,670个监督token；P完成同样40次更新、21,000个监督token，不能视为与Agent等预算。两组A/C的样本、实际顺序、监督量及配置匹配复核通过。该步骤用于教会新接口，不新增算法创新点。[训练](results/radar_domain/interface_adapt_v1/protocol.json)与[评价协议](results/radar_domain/interface_adapt_v1/evaluation/protocol.json)已在GPU运行前以`8ee7cf6`推送。
 
 | 检查点 | 合成精确选择：适配前→后／40 | 适配后已见雷达：中文／12 | 英文／12 |
@@ -18,7 +37,7 @@
 | A2 | 3→40 | 12 | 12 |
 | C2 | 8→40 | 12 | 11 |
 
-新增520条预测全部CPU重放零差异，本地归档后再次复验一致；雷达适配前对照直接复用旧120条结果。15个作业全部由`syx`完成，结束检查四卡空闲。[执行记录](results/radar_domain/interface_adapt_v1/execution_summary.json)：北京时间19:39:54–19:59:20，本轮0.916 GPU小时，累计23.937/72。见[适配结果](results/radar_domain/interface_adapt_v1/evaluation/summary.json)和[阶段决定](results/radar_domain/interface_adapt_v1/stage_decision.json)。合成40题来自20个双语意图组，每语言20题；雷达两语言共享12个已见目标，不按独立样本累计。模型只选择来源记录，证据卡由模板展示，不计作独立生成语义回答。共同接口适配有效，但普通A同样达到高分，**未证明恢复C在领域上的额外优势，也不能称为真实雷达准确率**。固定全部检查点，停止本轮训练和提示搜索；下一步做来源隔离的小规模事实/问答AI审阅及同来源RAG对照，检验引用、条件、区间和未知范围。AI参考与独立人工金标分开标注，公开方法收益与领域应用边界分别报告。
+新增520条预测全部CPU重放零差异，本地归档后再次复验一致；雷达适配前对照直接复用旧120条结果。15个作业全部由`syx`完成，结束检查四卡空闲。[执行记录](results/radar_domain/interface_adapt_v1/execution_summary.json)：北京时间19:39:54–19:59:20，本轮0.916 GPU小时，该阶段结束时累计23.937/72。见[适配结果](results/radar_domain/interface_adapt_v1/evaluation/summary.json)和[阶段决定](results/radar_domain/interface_adapt_v1/stage_decision.json)。合成40题来自20个双语意图组，每语言20题；雷达两语言共享12个已见目标，不按独立样本累计。模型只选择来源记录，证据卡由模板展示，不计作独立生成语义回答。共同接口适配有效，但普通A同样达到高分，**未证明恢复C在领域上的额外优势，也不能称为真实雷达准确率**。全部检查点已固定，停止该轮训练和提示搜索；后续的新厂商来源评价与双AI审阅已完成，结果见上文。AI参考与独立人工金标分开标注，公开方法收益与领域应用边界分别报告。
 
 此前预定的一次中英对齐复测已完成，停止未经适配的直接迁移。在同12个查询目标上，P/A1/C1/A2/C2中、英文精确记录选择均为1/1/2/3/0；C1和A2的中英成功题部分不同。10组120条流程重放零差异，仍有大量参数、字段/条件和句柄错误，没有可靠语言优势或领域C优势。见[复测结果](results/radar_domain/lookup_probe_v1/summary.json)和[阶段决定](results/radar_domain/lookup_probe_v1/stage_decision.json)。该次复测0.240 GPU小时，当时累计23.021/72；没有训练，不再改提示追分。
 

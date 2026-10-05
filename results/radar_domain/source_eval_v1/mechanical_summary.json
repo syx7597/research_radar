@@ -1,0 +1,722 @@
+{
+  "version": "radar_sources_mechanical_analysis_v1",
+  "scope": "New manufacturer-source snapshots and newly authored AI-reviewed questions; exploratory source-grounded evaluation, not independent human equipment gold",
+  "runs": {
+    "RAG": {
+      "questions": 24,
+      "counts": {
+        "json_contract_valid": 18,
+        "all_required_chunks_available": 23,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0
+      },
+      "by_source": {
+        "vaisala_wrm200": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "json_contract_valid": 3,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0
+        },
+        "furuno_wr2120": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 5,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0
+        }
+      },
+      "answer_runtime": {
+        "status": "completed",
+        "arm": "RAG",
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "cc1cf850dd0fac20e15bdbf51b4139d5df1c56b7acf9e5dc8fcbbefef559b8be",
+        "evidence_inputs_sha256": {},
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 768,
+          "do_sample": false,
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": "models/qwen2.5-3b-instruct",
+        "adapter": null,
+        "seconds": 36.46608938701684,
+        "totals": {
+          "questions": 24,
+          "parsed": 18,
+          "input_tokens": 84126,
+          "generated_tokens": 4394,
+          "total_tokens": 88520
+        },
+        "claim_limit": "Parsed claims are not automatically supported claims; no semantic reference was accessed."
+      },
+      "selection_runtime": null
+    },
+    "P": {
+      "questions": 24,
+      "counts": {
+        "json_contract_valid": 16,
+        "all_required_chunks_available": 19,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 15,
+        "finished_selection": 21
+      },
+      "by_source": {
+        "vaisala_wrm200": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "json_contract_valid": 4,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "furuno_wr2120": {
+          "questions": 6,
+          "json_contract_valid": 4,
+          "all_required_chunks_available": 4,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 3,
+          "finished_selection": 5
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "json_contract_valid": 3,
+          "all_required_chunks_available": 3,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 0,
+          "finished_selection": 4
+        }
+      },
+      "answer_runtime": {
+        "status": "completed",
+        "arm": "P",
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "48ef826c845123e3d2d46c8909f6f6dd9c13ad692cde69855aa2366646a2300d",
+        "evidence_inputs_sha256": {
+          "results/radar_domain/source_eval_v1/P.selection.jsonl": "e5a8073113032661dd7ecc02e0d81290cd6dabd4a90e162df70b9646278fed71",
+          "results/radar_domain/source_eval_v1/P.selection.runtime.json": "8d9cf69f6d083a776c1c7633e41c2578a62e10f0e242d2b68d08a1f7c51257ff"
+        },
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 768,
+          "do_sample": false,
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": "models/qwen2.5-3b-instruct",
+        "adapter": null,
+        "seconds": 15.435260188998654,
+        "totals": {
+          "questions": 24,
+          "parsed": 16,
+          "input_tokens": 29955,
+          "generated_tokens": 4300,
+          "total_tokens": 34255
+        },
+        "claim_limit": "Parsed claims are not automatically supported claims; no semantic reference was accessed."
+      },
+      "selection_runtime": {
+        "label": "P",
+        "status": "completed",
+        "seconds": 5.921703824977158,
+        "totals": {
+          "calls": 69,
+          "invalid_calls": 3,
+          "input_tokens": 13537,
+          "generated_tokens": 576,
+          "total_tokens": 14113,
+          "questions": 24
+        },
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "e5a8073113032661dd7ecc02e0d81290cd6dabd4a90e162df70b9646278fed71",
+        "scope": "New manufacturer-source snapshots and newly authored AI-reviewed questions; exploratory source-grounded evaluation, not independent human equipment gold",
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 2048,
+          "max_calls": 24,
+          "agent_turn_tokens": 192,
+          "decoding": "greedy",
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": {
+          "adapter": "results/radar_domain/interface_adapt_v1/P/model",
+          "program": true,
+          "training_result_sha256": "e2d0972b744168f277f5ec51821ef107e918c138ef9945000a5483c4c7e5ff06",
+          "files_sha256": {
+            "results/radar_domain/interface_adapt_v1/P/model/adapter_model.safetensors": "53dd432b4d900f2a131fc3ec8916dfa27b59598a3f77cfdfefce06c5e83ae205",
+            "results/radar_domain/interface_adapt_v1/P/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+          }
+        },
+        "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+      }
+    },
+    "A1": {
+      "questions": 24,
+      "counts": {
+        "json_contract_valid": 19,
+        "all_required_chunks_available": 22,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 21,
+        "finished_selection": 22
+      },
+      "by_source": {
+        "vaisala_wrm200": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "json_contract_valid": 4,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "furuno_wr2120": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 5,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 5,
+          "finished_selection": 5
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 5,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 4,
+          "finished_selection": 5
+        }
+      },
+      "answer_runtime": {
+        "status": "completed",
+        "arm": "A1",
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "d2cc4618f612ddb9b862f4cc2cc34a1de49a4cea6ced3bb63048a19b3553f2e4",
+        "evidence_inputs_sha256": {
+          "results/radar_domain/source_eval_v1/A1.selection.jsonl": "2f6b1ff8062d28dda4ccc3e36d6ecc12ec1804e7ebdc4a4b1b3ace190b817a0f",
+          "results/radar_domain/source_eval_v1/A1.selection.runtime.json": "17dc37ef5105f90bcdb5664b78c90b8d69c92ebe882d771d784eb176b4d31758"
+        },
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 768,
+          "do_sample": false,
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": "models/qwen2.5-3b-instruct",
+        "adapter": null,
+        "seconds": 16.62157242500689,
+        "totals": {
+          "questions": 24,
+          "parsed": 19,
+          "input_tokens": 33598,
+          "generated_tokens": 4380,
+          "total_tokens": 37978
+        },
+        "claim_limit": "Parsed claims are not automatically supported claims; no semantic reference was accessed."
+      },
+      "selection_runtime": {
+        "label": "A1",
+        "status": "completed",
+        "seconds": 64.72686790299485,
+        "totals": {
+          "calls": 115,
+          "invalid_calls": 45,
+          "input_tokens": 171892,
+          "generated_tokens": 2781,
+          "total_tokens": 174673,
+          "questions": 24
+        },
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "2f6b1ff8062d28dda4ccc3e36d6ecc12ec1804e7ebdc4a4b1b3ace190b817a0f",
+        "scope": "New manufacturer-source snapshots and newly authored AI-reviewed questions; exploratory source-grounded evaluation, not independent human equipment gold",
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 2048,
+          "max_calls": 24,
+          "agent_turn_tokens": 192,
+          "decoding": "greedy",
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": {
+          "adapter": "results/radar_domain/interface_adapt_v1/A1/model",
+          "program": false,
+          "training_result_sha256": "ddffacecaf7ae88bd2ec579c2644d748ea19bde619658480fa91b0f399a5feb4",
+          "files_sha256": {
+            "results/radar_domain/interface_adapt_v1/A1/model/adapter_model.safetensors": "c588c835667268718c12ab7f7d2be6fde34f7dca759baf63bd7f93e533007fca",
+            "results/radar_domain/interface_adapt_v1/A1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+          }
+        },
+        "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+      }
+    },
+    "C1": {
+      "questions": 24,
+      "counts": {
+        "json_contract_valid": 20,
+        "all_required_chunks_available": 23,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 19,
+        "finished_selection": 23
+      },
+      "by_source": {
+        "vaisala_wrm200": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "json_contract_valid": 4,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "furuno_wr2120": {
+          "questions": 6,
+          "json_contract_valid": 6,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 5,
+          "finished_selection": 6
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 5,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 2,
+          "finished_selection": 5
+        }
+      },
+      "answer_runtime": {
+        "status": "completed",
+        "arm": "C1",
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "75025635be8c1bde29125c6ec83fa53f83e769d03d33d42753e251ad02bf2372",
+        "evidence_inputs_sha256": {
+          "results/radar_domain/source_eval_v1/C1.selection.jsonl": "852a08fd8b5a6323af23c02f1648c66fbb26c506f0c8dad7a3306a91833bb62b",
+          "results/radar_domain/source_eval_v1/C1.selection.runtime.json": "f99b7aded3a87336bb37f4e3263c566e52bf106efdbfe23c464601ae9da66e42"
+        },
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 768,
+          "do_sample": false,
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": "models/qwen2.5-3b-instruct",
+        "adapter": null,
+        "seconds": 16.047272172989324,
+        "totals": {
+          "questions": 24,
+          "parsed": 20,
+          "input_tokens": 34773,
+          "generated_tokens": 4431,
+          "total_tokens": 39204
+        },
+        "claim_limit": "Parsed claims are not automatically supported claims; no semantic reference was accessed."
+      },
+      "selection_runtime": {
+        "label": "C1",
+        "status": "completed",
+        "seconds": 37.822851550998166,
+        "totals": {
+          "calls": 98,
+          "invalid_calls": 26,
+          "input_tokens": 135033,
+          "generated_tokens": 2196,
+          "total_tokens": 137229,
+          "questions": 24
+        },
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "852a08fd8b5a6323af23c02f1648c66fbb26c506f0c8dad7a3306a91833bb62b",
+        "scope": "New manufacturer-source snapshots and newly authored AI-reviewed questions; exploratory source-grounded evaluation, not independent human equipment gold",
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 2048,
+          "max_calls": 24,
+          "agent_turn_tokens": 192,
+          "decoding": "greedy",
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": {
+          "adapter": "results/radar_domain/interface_adapt_v1/C1/model",
+          "program": false,
+          "training_result_sha256": "953cf9774e174603eb7fa98eea0b72a099976a394076ffb8447138bfba8ddcc2",
+          "files_sha256": {
+            "results/radar_domain/interface_adapt_v1/C1/model/adapter_model.safetensors": "41a06581c3067e6761c60282865393af6bca352e4f06c10718459133764fb14e",
+            "results/radar_domain/interface_adapt_v1/C1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+          }
+        },
+        "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+      }
+    },
+    "A2": {
+      "questions": 24,
+      "counts": {
+        "json_contract_valid": 19,
+        "all_required_chunks_available": 22,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 20,
+        "finished_selection": 23
+      },
+      "by_source": {
+        "vaisala_wrm200": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "json_contract_valid": 4,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "furuno_wr2120": {
+          "questions": 6,
+          "json_contract_valid": 6,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 5,
+          "finished_selection": 6
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "json_contract_valid": 4,
+          "all_required_chunks_available": 4,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 3,
+          "finished_selection": 5
+        }
+      },
+      "answer_runtime": {
+        "status": "completed",
+        "arm": "A2",
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "04751d84c5d3f0448d3b9d23faea7f9ca9ea94d9d37d7267979572c1d9490c95",
+        "evidence_inputs_sha256": {
+          "results/radar_domain/source_eval_v1/A2.selection.jsonl": "bf63be6b1622a8858f1b6f77ed9534af273822a7b9df001166f9d757ba8da97c",
+          "results/radar_domain/source_eval_v1/A2.selection.runtime.json": "e5e758e84a49598471385645551cb4e9ebeaa8579ff9ab3ea434cf3333414307"
+        },
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 768,
+          "do_sample": false,
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": "models/qwen2.5-3b-instruct",
+        "adapter": null,
+        "seconds": 15.780674542998895,
+        "totals": {
+          "questions": 24,
+          "parsed": 19,
+          "input_tokens": 33539,
+          "generated_tokens": 4375,
+          "total_tokens": 37914
+        },
+        "claim_limit": "Parsed claims are not automatically supported claims; no semantic reference was accessed."
+      },
+      "selection_runtime": {
+        "label": "A2",
+        "status": "completed",
+        "seconds": 44.27402312398772,
+        "totals": {
+          "calls": 93,
+          "invalid_calls": 23,
+          "input_tokens": 129546,
+          "generated_tokens": 2308,
+          "total_tokens": 131854,
+          "questions": 24
+        },
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "bf63be6b1622a8858f1b6f77ed9534af273822a7b9df001166f9d757ba8da97c",
+        "scope": "New manufacturer-source snapshots and newly authored AI-reviewed questions; exploratory source-grounded evaluation, not independent human equipment gold",
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 2048,
+          "max_calls": 24,
+          "agent_turn_tokens": 192,
+          "decoding": "greedy",
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": {
+          "adapter": "results/radar_domain/interface_adapt_v1/A2/model",
+          "program": false,
+          "training_result_sha256": "5c27717a9b7201f1d8983d5166a891732adf972dafbafa4942eef89bb04d9be6",
+          "files_sha256": {
+            "results/radar_domain/interface_adapt_v1/A2/model/adapter_model.safetensors": "f962fefc45dabb52a5e421caf9fbb26944a7acf46a051204a8d6a579eab13f45",
+            "results/radar_domain/interface_adapt_v1/A2/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+          }
+        },
+        "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+      }
+    },
+    "C2": {
+      "questions": 24,
+      "counts": {
+        "json_contract_valid": 21,
+        "all_required_chunks_available": 24,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 19,
+        "finished_selection": 24
+      },
+      "by_source": {
+        "vaisala_wrm200": {
+          "questions": 6,
+          "json_contract_valid": 5,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "json_contract_valid": 4,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 6,
+          "finished_selection": 6
+        },
+        "furuno_wr2120": {
+          "questions": 6,
+          "json_contract_valid": 6,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 5,
+          "finished_selection": 6
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "json_contract_valid": 6,
+          "all_required_chunks_available": 6,
+          "strict_reference_claims_recalled": 0,
+          "strict_reference_claim_set_equal": 0,
+          "exact_record_selection": 2,
+          "finished_selection": 6
+        }
+      },
+      "answer_runtime": {
+        "status": "completed",
+        "arm": "C2",
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "10ca2b9bb23f37bcb237821c9e8882a35d57fba7fc66741c4abf26ba004cf590",
+        "evidence_inputs_sha256": {
+          "results/radar_domain/source_eval_v1/C2.selection.jsonl": "1479bb90efcb2502676920d1f50d87c6594243d5e4d2623d98f2727f7b14367c",
+          "results/radar_domain/source_eval_v1/C2.selection.runtime.json": "a90528cfab9e1dad47bb4cb128bbd8a4fa6b18277adf121ed23ee5a6a2148373"
+        },
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 768,
+          "do_sample": false,
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": "models/qwen2.5-3b-instruct",
+        "adapter": null,
+        "seconds": 16.01631949399598,
+        "totals": {
+          "questions": 24,
+          "parsed": 21,
+          "input_tokens": 36007,
+          "generated_tokens": 4439,
+          "total_tokens": 40446
+        },
+        "claim_limit": "Parsed claims are not automatically supported claims; no semantic reference was accessed."
+      },
+      "selection_runtime": {
+        "label": "C2",
+        "status": "completed",
+        "seconds": 25.354239800974028,
+        "totals": {
+          "calls": 77,
+          "invalid_calls": 3,
+          "input_tokens": 101351,
+          "generated_tokens": 1828,
+          "total_tokens": 103179,
+          "questions": 24
+        },
+        "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+        "output_sha256": "1479bb90efcb2502676920d1f50d87c6594243d5e4d2623d98f2727f7b14367c",
+        "scope": "New manufacturer-source snapshots and newly authored AI-reviewed questions; exploratory source-grounded evaluation, not independent human equipment gold",
+        "config": {
+          "seed": 20261003,
+          "batch_size": 8,
+          "max_context": 8192,
+          "max_generated": 2048,
+          "max_calls": 24,
+          "agent_turn_tokens": 192,
+          "decoding": "greedy",
+          "dtype": "bfloat16",
+          "attention": "sdpa"
+        },
+        "model": {
+          "adapter": "results/radar_domain/interface_adapt_v1/C2/model",
+          "program": false,
+          "training_result_sha256": "d2a6fe5b6e26aec8efb20ec5853fb81c312a69313fdb023f77b803be0e07ada4",
+          "files_sha256": {
+            "results/radar_domain/interface_adapt_v1/C2/model/adapter_model.safetensors": "444340a88125959f2b8e780f9a879ae11944f2505a6719d12b7af331f353aa30",
+            "results/radar_domain/interface_adapt_v1/C2/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+          }
+        },
+        "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+      }
+    }
+  },
+  "selection_replay": {
+    "rows": 120,
+    "mismatches": 0
+  },
+  "answer_input_and_parser_replay": {
+    "rows": 144,
+    "mismatches": 0
+  },
+  "all_outputs_verified_before_reference_access": true,
+  "natural_language_answer_accuracy_scored": false,
+  "strict_match_limit": "Strict signatures normalize case/spacing and basic units, but not synonyms, paraphrases, alternative decompositions or source semantics. Non-match is not proof of a wrong natural answer.",
+  "source_granularity_limit": "Whole-page retrieval can include the target despite wrong record selection; these are separate metrics.",
+  "human_gold": false,
+  "statistical_significance_tested": false,
+  "inputs_sha256": {
+    "results/radar_domain/source_eval_v1/P.selection.jsonl": "e5a8073113032661dd7ecc02e0d81290cd6dabd4a90e162df70b9646278fed71",
+    "results/radar_domain/source_eval_v1/P.selection.runtime.json": "8d9cf69f6d083a776c1c7633e41c2578a62e10f0e242d2b68d08a1f7c51257ff",
+    "results/radar_domain/source_eval_v1/A1.selection.jsonl": "2f6b1ff8062d28dda4ccc3e36d6ecc12ec1804e7ebdc4a4b1b3ace190b817a0f",
+    "results/radar_domain/source_eval_v1/A1.selection.runtime.json": "17dc37ef5105f90bcdb5664b78c90b8d69c92ebe882d771d784eb176b4d31758",
+    "results/radar_domain/source_eval_v1/C1.selection.jsonl": "852a08fd8b5a6323af23c02f1648c66fbb26c506f0c8dad7a3306a91833bb62b",
+    "results/radar_domain/source_eval_v1/C1.selection.runtime.json": "f99b7aded3a87336bb37f4e3263c566e52bf106efdbfe23c464601ae9da66e42",
+    "results/radar_domain/source_eval_v1/A2.selection.jsonl": "bf63be6b1622a8858f1b6f77ed9534af273822a7b9df001166f9d757ba8da97c",
+    "results/radar_domain/source_eval_v1/A2.selection.runtime.json": "e5e758e84a49598471385645551cb4e9ebeaa8579ff9ab3ea434cf3333414307",
+    "results/radar_domain/source_eval_v1/C2.selection.jsonl": "1479bb90efcb2502676920d1f50d87c6594243d5e4d2623d98f2727f7b14367c",
+    "results/radar_domain/source_eval_v1/C2.selection.runtime.json": "a90528cfab9e1dad47bb4cb128bbd8a4fa6b18277adf121ed23ee5a6a2148373",
+    "results/radar_domain/source_eval_v1/RAG.answers.jsonl": "cc1cf850dd0fac20e15bdbf51b4139d5df1c56b7acf9e5dc8fcbbefef559b8be",
+    "results/radar_domain/source_eval_v1/RAG.answers.runtime.json": "fc3de8793e5325f2757b919115792e8e900b0b621af21b9918b1cd5b2847d27b",
+    "results/radar_domain/source_eval_v1/P.answers.jsonl": "48ef826c845123e3d2d46c8909f6f6dd9c13ad692cde69855aa2366646a2300d",
+    "results/radar_domain/source_eval_v1/P.answers.runtime.json": "11b40dcdabb8fdab9b299743f61b541fc7c1b129f5aee66fe882e8b1c056a0c2",
+    "results/radar_domain/source_eval_v1/A1.answers.jsonl": "d2cc4618f612ddb9b862f4cc2cc34a1de49a4cea6ced3bb63048a19b3553f2e4",
+    "results/radar_domain/source_eval_v1/A1.answers.runtime.json": "58e604878f0847c69d28588c0ec52dca38d3ee0a903d706635b2b1d40f2324d3",
+    "results/radar_domain/source_eval_v1/C1.answers.jsonl": "75025635be8c1bde29125c6ec83fa53f83e769d03d33d42753e251ad02bf2372",
+    "results/radar_domain/source_eval_v1/C1.answers.runtime.json": "a9d38533db8076824e354093f8017d86227bb96b20777d096fc2f69629b941b1",
+    "results/radar_domain/source_eval_v1/A2.answers.jsonl": "04751d84c5d3f0448d3b9d23faea7f9ca9ea94d9d37d7267979572c1d9490c95",
+    "results/radar_domain/source_eval_v1/A2.answers.runtime.json": "dde5968a26e6780e0726a40ff38cd2b17d50e8cbfbd5d66e2c4ab6bc4dd2d0cf",
+    "results/radar_domain/source_eval_v1/C2.answers.jsonl": "10ca2b9bb23f37bcb237821c9e8882a35d57fba7fc66741c4abf26ba004cf590",
+    "results/radar_domain/source_eval_v1/C2.answers.runtime.json": "f4094b5d7d3932e0fa9fe1dafb71ceb01137fd8a9f06f2d8f76a06f9be62f257",
+    "experiments/radar_domain/source_probe.py": "69531b5405d53c2443b013f08f67019373c1812e88c4f6e536c0953fd08a7c08",
+    "experiments/radar_domain/source_rag.py": "368ccd908b25d6e3e1b423086e93c9388de1997b9a1b50ad1a5ff544ac434958",
+    "experiments/radar_domain/source_answers.py": "d69e59257ac36ce9bbe287f1cd321b813cdaf2f2b45074159c3517891ea29366",
+    "experiments/radar_domain/source_analysis.py": "baacd9b8ee38786311278020e35ab16a70387e88f0c0867842a1d921b23be415",
+    "experiments/radar_domain/source_pipeline.py": "ba3ce47e3e01ec08fe32ab9c25bccdc143023fcd645c0e9b235888a4f0c95fda",
+    "experiments/radar_domain/source_packet.py": "826a08601bf9aba452e06f23c6f9321ae7d27725df63b5c13d8d86f20b2df15d",
+    "experiments/radar_domain/source_preflight.py": "62600208aedb29a34bfd2a0f5b3c449f099c299568e005b99154eb92efba0c2a",
+    "experiments/radar_domain/interface_training.py": "24e7ef918c1f6eee616019e6c0c483d5c9c78f7e0e544f38f73c921c8b646f33",
+    "experiments/radar_domain/interface_probe.py": "02cf3dcb82729b720c7da7e98d1acb5fd97dd3c528bd252ca213e83a115d0e57",
+    "experiments/radar_domain/lookup_probe.py": "035e22cd5d34fb9a73f506da0a847c6be0b8550f6a02492951c5bea35f097116",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_analysis.py": "96c7d3d29c74d8c5664f9b7cecbb9aa42d239980056e71014436fead0a1a382e",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "artifacts/thesis_direction_review/radar_sources_v1/manifest.json": "77cd86058ab8450ec838c219e54bca209baa26fccb3dafe38e7ddff822e18417",
+    "artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json": "0db9af9c7e37c488921f38669e5e384ee06d5b9660f5d688645bb910d166f5c1",
+    "data/radar_sources_v1/questions.jsonl": "7ee2d27b2704a913d8bb2d857b9d548207d82a477d45a424e9bd259dec9d8288",
+    "data/radar_sources_v1/kb.json": "7ec463dcd8ed114b31da173d62317ea3faba3539f5dbf03f7d78739689b7aee5",
+    "data/radar_sources_v1/chunks.jsonl": "f3e19974e494aec82a8607c96123af32ca700fd2589df7e52caa3eee5cea3e98",
+    "results/radar_domain/interface_adapt_v1/evaluation/protocol.json": "715e94249707b3839d562b121d3ff48225095af60aa32ad279ee77180af9d1c7",
+    "results/radar_domain/interface_adapt_v1/protocol.json": "b536a79d42f92493bcec394df3fc2edd02234b6ff7cf391ccaefec4fd12e30ba",
+    "results/radar_domain/source_eval_v1/preflight.json": "1f11e7fc68864ca83da4881e749fc3cf0e2aa58dfc8ac861ab017ba11adf72b5",
+    "artifacts/thesis_direction_review/radar_sources_v1/pre_freeze_retrieval_observation.json": "81836eba29fbaf50e2e2c9026043671cf447968614b9f2ac3a4d3234d25abdf1",
+    "results/radar_domain/interface_adapt_v1/P/run_result.json": "e2d0972b744168f277f5ec51821ef107e918c138ef9945000a5483c4c7e5ff06",
+    "results/radar_domain/interface_adapt_v1/A1/run_result.json": "ddffacecaf7ae88bd2ec579c2644d748ea19bde619658480fa91b0f399a5feb4",
+    "results/radar_domain/interface_adapt_v1/C1/run_result.json": "953cf9774e174603eb7fa98eea0b72a099976a394076ffb8447138bfba8ddcc2",
+    "results/radar_domain/interface_adapt_v1/A2/run_result.json": "5c27717a9b7201f1d8983d5166a891732adf972dafbafa4942eef89bb04d9be6",
+    "results/radar_domain/interface_adapt_v1/C2/run_result.json": "d2a6fe5b6e26aec8efb20ec5853fb81c312a69313fdb023f77b803be0e07ada4",
+    "data/radar_sources_v1/references.jsonl": "2f94be2e74107b5451bd731cbd17282fe16b491294af6d63bbe716f7d6cad985",
+    "results/radar_domain/source_eval_v1/pipeline_completed.json": "b9983efc59635b93f332939e67ecb8934332887c2dcfbd5143d1a21d0d784c4d"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "version": "radar_sources_ai_semantic_review_v1",
+  "human_gold": false,
+  "status": "completed",
+  "unique_answers": 58,
+  "arm_question_outputs": 144,
+  "reviewers": [
+    "AI separate reviewer /root/radar_probe_audit",
+    "AI independent semantic reviewer /root/lookup_probe_runner"
+  ],
+  "reviewer_arm_labels_seen": [
+    false,
+    false
+  ],
+  "adjudicator_arm_results_seen": true,
+  "disagreement_unique_answers": 5,
+  "disagreements_by_field": {
+    "answer_correct": 0,
+    "answer_supported": 5,
+    "citations_support_answer": 0,
+    "required_conditions_preserved": 0
+  },
+  "arms": {
+    "RAG": {
+      "reviewer_1": {
+        "questions": 24,
+        "answer_correct": 13,
+        "answer_supported": 15,
+        "citations_support_answer": 9,
+        "correct_and_supported": 13,
+        "correct_supported_and_cited": 9,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 4,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 4
+      },
+      "reviewer_2": {
+        "questions": 24,
+        "answer_correct": 13,
+        "answer_supported": 16,
+        "citations_support_answer": 9,
+        "correct_and_supported": 13,
+        "correct_supported_and_cited": 9,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 4,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 4
+      },
+      "adjudicated": {
+        "questions": 24,
+        "answer_correct": 13,
+        "answer_supported": 16,
+        "citations_support_answer": 9,
+        "correct_and_supported": 13,
+        "correct_supported_and_cited": 9,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 4,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 4
+      },
+      "mechanical": {
+        "json_contract_valid": 18,
+        "all_required_chunks_available": 23,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0
+      },
+      "by_source": {
+        "furuno_wr2120": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 5,
+          "citations_support_answer": 1,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 1,
+          "qualified_questions": 2,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 3,
+          "posthoc_reference_conditions_preserved": 1
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "answer_correct": 2,
+          "answer_supported": 3,
+          "citations_support_answer": 2,
+          "correct_and_supported": 2,
+          "correct_supported_and_cited": 2,
+          "qualified_questions": 5,
+          "qualified_conditions_preserved": 2,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 5,
+          "posthoc_reference_conditions_preserved": 2
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "answer_correct": 2,
+          "answer_supported": 3,
+          "citations_support_answer": 1,
+          "correct_and_supported": 2,
+          "correct_supported_and_cited": 1,
+          "qualified_questions": 0,
+          "qualified_conditions_preserved": 0,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 0,
+          "posthoc_reference_conditions_preserved": 0
+        },
+        "vaisala_wrm200": {
+          "questions": 6,
+          "answer_correct": 5,
+          "answer_supported": 5,
+          "citations_support_answer": 5,
+          "correct_and_supported": 5,
+          "correct_supported_and_cited": 5,
+          "qualified_questions": 1,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 1,
+          "posthoc_reference_conditions_preserved": 1
+        }
+      },
+      "incorrect_answer_partition": {
+        "missing_required_evidence_page": 1,
+        "required_pages_present_but_answer_incorrect": 10
+      },
+      "tokens": {
+        "selection": 0,
+        "answer": 88520,
+        "total": 88520
+      }
+    },
+    "P": {
+      "reviewer_1": {
+        "questions": 24,
+        "answer_correct": 13,
+        "answer_supported": 14,
+        "citations_support_answer": 14,
+        "correct_and_supported": 13,
+        "correct_supported_and_cited": 13,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 6,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 6
+      },
+      "reviewer_2": {
+        "questions": 24,
+        "answer_correct": 13,
+        "answer_supported": 16,
+        "citations_support_answer": 14,
+        "correct_and_supported": 13,
+        "correct_supported_and_cited": 13,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 6,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 6
+      },
+      "adjudicated": {
+        "questions": 24,
+        "answer_correct": 13,
+        "answer_supported": 16,
+        "citations_support_answer": 14,
+        "correct_and_supported": 13,
+        "correct_supported_and_cited": 13,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 6,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 6
+      },
+      "mechanical": {
+        "json_contract_valid": 16,
+        "all_required_chunks_available": 19,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 15,
+        "finished_selection": 21
+      },
+      "by_source": {
+        "furuno_wr2120": {
+          "questions": 6,
+          "answer_correct": 3,
+          "answer_supported": 3,
+          "citations_support_answer": 3,
+          "correct_and_supported": 3,
+          "correct_supported_and_cited": 3,
+          "qualified_questions": 2,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 3,
+          "posthoc_reference_conditions_preserved": 1
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "answer_correct": 2,
+          "answer_supported": 4,
+          "citations_support_answer": 2,
+          "correct_and_supported": 2,
+          "correct_supported_and_cited": 2,
+          "qualified_questions": 5,
+          "qualified_conditions_preserved": 4,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 5,
+          "posthoc_reference_conditions_preserved": 4
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "answer_correct": 3,
+          "answer_supported": 3,
+          "citations_support_answer": 3,
+          "correct_and_supported": 3,
+          "correct_supported_and_cited": 3,
+          "qualified_questions": 0,
+          "qualified_conditions_preserved": 0,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 0,
+          "posthoc_reference_conditions_preserved": 0
+        },
+        "vaisala_wrm200": {
+          "questions": 6,
+          "answer_correct": 5,
+          "answer_supported": 6,
+          "citations_support_answer": 6,
+          "correct_and_supported": 5,
+          "correct_supported_and_cited": 5,
+          "qualified_questions": 1,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 1,
+          "posthoc_reference_conditions_preserved": 1
+        }
+      },
+      "incorrect_answer_partition": {
+        "missing_required_evidence_page": 5,
+        "required_pages_present_but_answer_incorrect": 6
+      },
+      "tokens": {
+        "selection": 14113,
+        "answer": 34255,
+        "total": 48368
+      }
+    },
+    "A1": {
+      "reviewer_1": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 17,
+        "citations_support_answer": 17,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 6,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 6
+      },
+      "reviewer_2": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 17,
+        "citations_support_answer": 17,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 6,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 6
+      },
+      "adjudicated": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 17,
+        "citations_support_answer": 17,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 6,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 6
+      },
+      "mechanical": {
+        "json_contract_valid": 19,
+        "all_required_chunks_available": 22,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 21,
+        "finished_selection": 22
+      },
+      "by_source": {
+        "furuno_wr2120": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 4,
+          "citations_support_answer": 4,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 4,
+          "qualified_questions": 2,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 3,
+          "posthoc_reference_conditions_preserved": 1
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 4,
+          "citations_support_answer": 4,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 4,
+          "qualified_questions": 5,
+          "qualified_conditions_preserved": 4,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 5,
+          "posthoc_reference_conditions_preserved": 4
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "answer_correct": 3,
+          "answer_supported": 3,
+          "citations_support_answer": 3,
+          "correct_and_supported": 3,
+          "correct_supported_and_cited": 3,
+          "qualified_questions": 0,
+          "qualified_conditions_preserved": 0,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 0,
+          "posthoc_reference_conditions_preserved": 0
+        },
+        "vaisala_wrm200": {
+          "questions": 6,
+          "answer_correct": 5,
+          "answer_supported": 6,
+          "citations_support_answer": 6,
+          "correct_and_supported": 5,
+          "correct_supported_and_cited": 5,
+          "qualified_questions": 1,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 1,
+          "posthoc_reference_conditions_preserved": 1
+        }
+      },
+      "incorrect_answer_partition": {
+        "missing_required_evidence_page": 2,
+        "required_pages_present_but_answer_incorrect": 6
+      },
+      "tokens": {
+        "selection": 174673,
+        "answer": 37978,
+        "total": 212651
+      }
+    },
+    "C1": {
+      "reviewer_1": {
+        "questions": 24,
+        "answer_correct": 15,
+        "answer_supported": 17,
+        "citations_support_answer": 17,
+        "correct_and_supported": 15,
+        "correct_supported_and_cited": 15,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 5,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 5
+      },
+      "reviewer_2": {
+        "questions": 24,
+        "answer_correct": 15,
+        "answer_supported": 18,
+        "citations_support_answer": 17,
+        "correct_and_supported": 15,
+        "correct_supported_and_cited": 15,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 5,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 5
+      },
+      "adjudicated": {
+        "questions": 24,
+        "answer_correct": 15,
+        "answer_supported": 18,
+        "citations_support_answer": 17,
+        "correct_and_supported": 15,
+        "correct_supported_and_cited": 15,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 5,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 5
+      },
+      "mechanical": {
+        "json_contract_valid": 20,
+        "all_required_chunks_available": 23,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 19,
+        "finished_selection": 23
+      },
+      "by_source": {
+        "furuno_wr2120": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 5,
+          "citations_support_answer": 5,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 4,
+          "qualified_questions": 2,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 3,
+          "posthoc_reference_conditions_preserved": 1
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "answer_correct": 3,
+          "answer_supported": 4,
+          "citations_support_answer": 3,
+          "correct_and_supported": 3,
+          "correct_supported_and_cited": 3,
+          "qualified_questions": 5,
+          "qualified_conditions_preserved": 3,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 5,
+          "posthoc_reference_conditions_preserved": 3
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "answer_correct": 3,
+          "answer_supported": 3,
+          "citations_support_answer": 3,
+          "correct_and_supported": 3,
+          "correct_supported_and_cited": 3,
+          "qualified_questions": 0,
+          "qualified_conditions_preserved": 0,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 0,
+          "posthoc_reference_conditions_preserved": 0
+        },
+        "vaisala_wrm200": {
+          "questions": 6,
+          "answer_correct": 5,
+          "answer_supported": 6,
+          "citations_support_answer": 6,
+          "correct_and_supported": 5,
+          "correct_supported_and_cited": 5,
+          "qualified_questions": 1,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 1,
+          "posthoc_reference_conditions_preserved": 1
+        }
+      },
+      "incorrect_answer_partition": {
+        "missing_required_evidence_page": 1,
+        "required_pages_present_but_answer_incorrect": 8
+      },
+      "tokens": {
+        "selection": 137229,
+        "answer": 39204,
+        "total": 176433
+      }
+    },
+    "A2": {
+      "reviewer_1": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 18,
+        "citations_support_answer": 18,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 7,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 7
+      },
+      "reviewer_2": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 19,
+        "citations_support_answer": 18,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 7,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 7
+      },
+      "adjudicated": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 19,
+        "citations_support_answer": 18,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 7,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 7
+      },
+      "mechanical": {
+        "json_contract_valid": 19,
+        "all_required_chunks_available": 22,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 20,
+        "finished_selection": 23
+      },
+      "by_source": {
+        "furuno_wr2120": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 5,
+          "citations_support_answer": 5,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 4,
+          "qualified_questions": 2,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 3,
+          "posthoc_reference_conditions_preserved": 1
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 5,
+          "citations_support_answer": 4,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 4,
+          "qualified_questions": 5,
+          "qualified_conditions_preserved": 5,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 5,
+          "posthoc_reference_conditions_preserved": 5
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "answer_correct": 3,
+          "answer_supported": 3,
+          "citations_support_answer": 3,
+          "correct_and_supported": 3,
+          "correct_supported_and_cited": 3,
+          "qualified_questions": 0,
+          "qualified_conditions_preserved": 0,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 0,
+          "posthoc_reference_conditions_preserved": 0
+        },
+        "vaisala_wrm200": {
+          "questions": 6,
+          "answer_correct": 5,
+          "answer_supported": 6,
+          "citations_support_answer": 6,
+          "correct_and_supported": 5,
+          "correct_supported_and_cited": 5,
+          "qualified_questions": 1,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 1,
+          "posthoc_reference_conditions_preserved": 1
+        }
+      },
+      "incorrect_answer_partition": {
+        "missing_required_evidence_page": 2,
+        "required_pages_present_but_answer_incorrect": 6
+      },
+      "tokens": {
+        "selection": 131854,
+        "answer": 37914,
+        "total": 169768
+      }
+    },
+    "C2": {
+      "reviewer_1": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 18,
+        "citations_support_answer": 18,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 5,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 5
+      },
+      "reviewer_2": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 18,
+        "citations_support_answer": 18,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 5,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 5
+      },
+      "adjudicated": {
+        "questions": 24,
+        "answer_correct": 16,
+        "answer_supported": 18,
+        "citations_support_answer": 18,
+        "correct_and_supported": 16,
+        "correct_supported_and_cited": 16,
+        "qualified_questions": 8,
+        "qualified_conditions_preserved": 5,
+        "qualified_condition_not_applicable": 0,
+        "posthoc_reference_condition_questions": 9,
+        "posthoc_reference_conditions_preserved": 5
+      },
+      "mechanical": {
+        "json_contract_valid": 21,
+        "all_required_chunks_available": 24,
+        "strict_reference_claims_recalled": 0,
+        "strict_reference_claim_set_equal": 0,
+        "exact_record_selection": 19,
+        "finished_selection": 24
+      },
+      "by_source": {
+        "furuno_wr2120": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 5,
+          "citations_support_answer": 5,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 4,
+          "qualified_questions": 2,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 3,
+          "posthoc_reference_conditions_preserved": 1
+        },
+        "jrc_jma1030": {
+          "questions": 6,
+          "answer_correct": 4,
+          "answer_supported": 4,
+          "citations_support_answer": 4,
+          "correct_and_supported": 4,
+          "correct_supported_and_cited": 4,
+          "qualified_questions": 5,
+          "qualified_conditions_preserved": 3,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 5,
+          "posthoc_reference_conditions_preserved": 3
+        },
+        "leonardo_meteor735c": {
+          "questions": 6,
+          "answer_correct": 3,
+          "answer_supported": 3,
+          "citations_support_answer": 3,
+          "correct_and_supported": 3,
+          "correct_supported_and_cited": 3,
+          "qualified_questions": 0,
+          "qualified_conditions_preserved": 0,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 0,
+          "posthoc_reference_conditions_preserved": 0
+        },
+        "vaisala_wrm200": {
+          "questions": 6,
+          "answer_correct": 5,
+          "answer_supported": 6,
+          "citations_support_answer": 6,
+          "correct_and_supported": 5,
+          "correct_supported_and_cited": 5,
+          "qualified_questions": 1,
+          "qualified_conditions_preserved": 1,
+          "qualified_condition_not_applicable": 0,
+          "posthoc_reference_condition_questions": 1,
+          "posthoc_reference_conditions_preserved": 1
+        }
+      },
+      "incorrect_answer_partition": {
+        "missing_required_evidence_page": 0,
+        "required_pages_present_but_answer_incorrect": 8
+      },
+      "tokens": {
+        "selection": 103179,
+        "answer": 40446,
+        "total": 143625
+      }
+    }
+  },
+  "paired_natural_answer_differences": {
+    "C1_minus_A1": {
+      "wins": [],
+      "losses": [
+        "source_zh_23"
+      ],
+      "net_questions": -1,
+      "statistical_significance_tested": false
+    },
+    "C2_minus_A2": {
+      "wins": [],
+      "losses": [],
+      "net_questions": 0,
+      "statistical_significance_tested": false
+    }
+  },
+  "qualified_subset_definition": "Frozen selector intent.condition_raw is non-null (8 questions); this is the explicit query-condition subset, not every answer qualification",
+  "posthoc_reference_condition_subset_definition": "Additional post-run diagnostic: any frozen semantic_claim has non-null condition (9 questions); includes source_zh_15 beam qualification without silently replacing the 8-query denominator",
+  "condition_context_rule": "An answer can inherit a condition supplied in the question; requested or necessary unstated source qualifications must be preserved",
+  "limits": [
+    "Two masked AI-agent reviews are not independent human gold or different-model consensus",
+    "Adjudication by the root agent is source-grounded but not blind to aggregate arm results",
+    "24 questions share 4 source/family groups; no statistical significance or generalization claim",
+    "Curated KB and raw-page RAG have different preparation costs; this is a system-level route comparison",
+    "Strict structured-field matching remains unchanged and separate from natural-answer judgments",
+    "Original reviews and all disagreements are retained; adjudicated counts alone are insufficient",
+    "Condition preservation alone does not imply a correct or supported answer"
+  ],
+  "inputs_sha256": {
+    "data/radar_sources_v1/blind_answer_reviews.json": "8769b08fa0f0bcca6848754086d897153300335f86c476e02039aaef93a09c27",
+    "data/radar_sources_v1/blind_answer_reviews_second.json": "33c24cec5fa99d1bce7fa81b198dacb2e211e59e7bb06d2702ea49c363840a0c",
+    "data/radar_sources_v1/blind_answer_adjudication.json": "f05effbb40b77dfc412e77afbb9d0c0cb9e3312cafe439e8e68049295e1b4ab4",
+    "data/radar_sources_v1/blind_answer_review.json": "bb982c67cec35c8324d3ba37dfd075281a396622a0d4c896e695d425fac2d07a",
+    "data/radar_sources_v1/blind_answer_key.json": "63e193e9334b989489a194cdff48f73846efb409d34026cac20498ddf7ad3b2d",
+    "results/radar_domain/source_eval_v1/mechanical_summary.json": "091ac8f8dc387c1961768eddf038167943c1f08da60f3224f144e783a6b9ebf8",
+    "results/radar_domain/source_eval_v1/per_question_diagnosis.json": "c185abe0e723c34cddc9ece2416896d301c92d936d28763886558e3fc5e9e000",
+    "experiments/radar_domain/source_review_summary.py": "8dbab706694fd8d07dd0d1396e957d89924dca32b12ed574e4cee974499cef40",
+    "results/radar_domain/source_eval_v1/protocol.json": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471"
+  }
+}

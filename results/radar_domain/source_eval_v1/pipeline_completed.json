@@ -1,0 +1,123 @@
+{
+  "status": "completed",
+  "finished_at_utc": "2026-10-05T14:06:41.636476+00:00",
+  "gpu_hours_after": 24.040066315531732,
+  "stages": [
+    {
+      "stage": "select",
+      "status": "completed",
+      "jobs_returned": 5,
+      "expected_jobs": 5,
+      "results": [
+        [
+          {
+            "name": "radar_sources_v1_A1_select",
+            "label": "A1",
+            "stage": "select",
+            "returncode": 0
+          },
+          {
+            "name": "radar_sources_v1_P_select",
+            "label": "P",
+            "stage": "select",
+            "returncode": 0
+          }
+        ],
+        [
+          {
+            "name": "radar_sources_v1_C1_select",
+            "label": "C1",
+            "stage": "select",
+            "returncode": 0
+          }
+        ],
+        [
+          {
+            "name": "radar_sources_v1_A2_select",
+            "label": "A2",
+            "stage": "select",
+            "returncode": 0
+          }
+        ],
+        [
+          {
+            "name": "radar_sources_v1_C2_select",
+            "label": "C2",
+            "stage": "select",
+            "returncode": 0
+          }
+        ]
+      ]
+    },
+    {
+      "stage": "answer",
+      "status": "completed",
+      "jobs_returned": 6,
+      "expected_jobs": 6,
+      "results": [
+        [
+          {
+            "name": "radar_sources_v1_RAG_answer",
+            "label": "RAG",
+            "stage": "answer",
+            "returncode": 0
+          },
+          {
+            "name": "radar_sources_v1_C2_answer",
+            "label": "C2",
+            "stage": "answer",
+            "returncode": 0
+          }
+        ],
+        [
+          {
+            "name": "radar_sources_v1_P_answer",
+            "label": "P",
+            "stage": "answer",
+            "returncode": 0
+          }
+        ],
+        [
+          {
+            "name": "radar_sources_v1_A1_answer",
+            "label": "A1",
+            "stage": "answer",
+            "returncode": 0
+          },
+          {
+            "name": "radar_sources_v1_C1_answer",
+            "label": "C1",
+            "stage": "answer",
+            "returncode": 0
+          }
+        ],
+        [
+          {
+            "name": "radar_sources_v1_A2_answer",
+            "label": "A2",
+            "stage": "answer",
+            "returncode": 0
+          }
+        ]
+      ]
+    }
+  ],
+  "jobs_returned": 11,
+  "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+  "base_files_final": {
+    "models/qwen2.5-3b-instruct/model-00001-of-00002.safetensors": {
+      "bytes": 3968658944,
+      "mtime_ns": 1790996516811000000,
+      "ctime_ns": 1790996520122000000,
+      "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2"
+    },
+    "models/qwen2.5-3b-instruct/model-00002-of-00002.safetensors": {
+      "bytes": 2203268048,
+      "mtime_ns": 1790996521471000000,
+      "ctime_ns": 1790996523351000000,
+      "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+    }
+  },
+  "final_error": null,
+  "eligible_for_analysis": true
+}

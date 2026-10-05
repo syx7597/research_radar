@@ -1,0 +1,369 @@
+{
+  "version": "radar_source_evaluation_execution_v1",
+  "status": "completed",
+  "training": false,
+  "jobs_completed": 11,
+  "jobs_failed": 0,
+  "job_counts_by_stage": {
+    "select": 5,
+    "answer": 6
+  },
+  "runtime_users": [
+    "syx"
+  ],
+  "runtime_uids": [
+    1001
+  ],
+  "freeze_commit": "f4e5f55",
+  "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+  "protocol_binding_check": "Identical protocol SHA in pipeline_started and pipeline_completed; no protocol or frozen input was modified",
+  "started_at_utc": "2026-10-05T14:04:05.475412+00:00",
+  "finished_at_utc": "2026-10-05T14:06:41.636476+00:00",
+  "started_at_beijing": "2026-10-05T22:04:05.475412+08:00",
+  "finished_at_beijing": "2026-10-05T22:06:41.636476+08:00",
+  "pipeline_wall_seconds": 156.161064,
+  "gpu_hours_before": 23.937207948433027,
+  "gpu_hours_this_run": 0.10285836709870232,
+  "gpu_hours_by_stage": {
+    "select": 0.05962401972876655,
+    "answer": 0.04323434736993578
+  },
+  "gpu_hours_after": 24.040066315531732,
+  "maximum_additional_gpu_hours": 3.25,
+  "cumulative_project_budget_gpu_hours": 72,
+  "within_additional_budget": true,
+  "within_project_budget": true,
+  "cost_definition": "Sum of supervisor-recorded allocated-GPU elapsed seconds / 3600; each job used one GPU. This is not active-kernel utilization, FLOPs, or inference-only model time.",
+  "checks": {
+    "all_planned_jobs_present": true,
+    "all_jobs_completed_returncode_zero": true,
+    "all_job_commands_match_pipeline_plan": true,
+    "all_runtime_accounts_syx_uid1001": true,
+    "all_commands_are_selection_or_answer_inference": true,
+    "all_per_job_costs_match_elapsed_times": true,
+    "all_selectors_finished_before_answers_started": true,
+    "sum_matches_pipeline_cumulative_delta": true,
+    "initial_and_final_protocol_hash_match": true
+  },
+  "jobs": [
+    {
+      "name": "radar_sources_v1_A1_select",
+      "stage": "select",
+      "label": "A1",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_probe",
+        "generate",
+        "--label",
+        "A1"
+      ],
+      "started_at_utc": "2026-10-05T14:04:05.541497+00:00",
+      "finished_at_utc": "2026-10-05T14:05:17.492993+00:00",
+      "started_at_beijing": "2026-10-05T22:04:05.541497+08:00",
+      "finished_at_beijing": "2026-10-05T22:05:17.492993+08:00",
+      "duration_seconds": 71.95149660110474,
+      "gpu_seconds": 71.95149660110474,
+      "gpu_hours": 0.019986526833640203,
+      "maximum_gpu_hours": 0.35
+    },
+    {
+      "name": "radar_sources_v1_P_select",
+      "stage": "select",
+      "label": "P",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_probe",
+        "generate",
+        "--label",
+        "P"
+      ],
+      "started_at_utc": "2026-10-05T14:05:17.597058+00:00",
+      "finished_at_utc": "2026-10-05T14:05:30.724663+00:00",
+      "started_at_beijing": "2026-10-05T22:05:17.597058+08:00",
+      "finished_at_beijing": "2026-10-05T22:05:30.724663+08:00",
+      "duration_seconds": 13.127605676651001,
+      "gpu_seconds": 13.127605676651001,
+      "gpu_hours": 0.003646557132403056,
+      "maximum_gpu_hours": 0.35
+    },
+    {
+      "name": "radar_sources_v1_C1_select",
+      "stage": "select",
+      "label": "C1",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_probe",
+        "generate",
+        "--label",
+        "C1"
+      ],
+      "started_at_utc": "2026-10-05T14:04:05.545215+00:00",
+      "finished_at_utc": "2026-10-05T14:04:50.938411+00:00",
+      "started_at_beijing": "2026-10-05T22:04:05.545215+08:00",
+      "finished_at_beijing": "2026-10-05T22:04:50.938411+08:00",
+      "duration_seconds": 45.39319610595703,
+      "gpu_seconds": 45.39319610595703,
+      "gpu_hours": 0.01260922114054362,
+      "maximum_gpu_hours": 0.35
+    },
+    {
+      "name": "radar_sources_v1_A2_select",
+      "stage": "select",
+      "label": "A2",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_probe",
+        "generate",
+        "--label",
+        "A2"
+      ],
+      "started_at_utc": "2026-10-05T14:04:05.534718+00:00",
+      "finished_at_utc": "2026-10-05T14:04:57.123733+00:00",
+      "started_at_beijing": "2026-10-05T22:04:05.534718+08:00",
+      "finished_at_beijing": "2026-10-05T22:04:57.123733+08:00",
+      "duration_seconds": 51.58901524543762,
+      "gpu_seconds": 51.58901524543762,
+      "gpu_hours": 0.014330282012621562,
+      "maximum_gpu_hours": 0.35
+    },
+    {
+      "name": "radar_sources_v1_C2_select",
+      "stage": "select",
+      "label": "C2",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        3
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_probe",
+        "generate",
+        "--label",
+        "C2"
+      ],
+      "started_at_utc": "2026-10-05T14:04:05.547610+00:00",
+      "finished_at_utc": "2026-10-05T14:04:38.132767+00:00",
+      "started_at_beijing": "2026-10-05T22:04:05.547610+08:00",
+      "finished_at_beijing": "2026-10-05T22:04:38.132767+08:00",
+      "duration_seconds": 32.58515739440918,
+      "gpu_seconds": 32.58515739440918,
+      "gpu_hours": 0.009051432609558105,
+      "maximum_gpu_hours": 0.35
+    },
+    {
+      "name": "radar_sources_v1_RAG_answer",
+      "stage": "answer",
+      "label": "RAG",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_answers",
+        "--arm",
+        "RAG"
+      ],
+      "started_at_utc": "2026-10-05T14:05:30.833373+00:00",
+      "finished_at_utc": "2026-10-05T14:06:14.072271+00:00",
+      "started_at_beijing": "2026-10-05T22:05:30.833373+08:00",
+      "finished_at_beijing": "2026-10-05T22:06:14.072271+08:00",
+      "duration_seconds": 43.23889780044556,
+      "gpu_seconds": 43.23889780044556,
+      "gpu_hours": 0.01201080494456821,
+      "maximum_gpu_hours": 0.25
+    },
+    {
+      "name": "radar_sources_v1_C2_answer",
+      "stage": "answer",
+      "label": "C2",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_answers",
+        "--arm",
+        "C2"
+      ],
+      "started_at_utc": "2026-10-05T14:06:14.151572+00:00",
+      "finished_at_utc": "2026-10-05T14:06:36.383443+00:00",
+      "started_at_beijing": "2026-10-05T22:06:14.151572+08:00",
+      "finished_at_beijing": "2026-10-05T22:06:36.383443+08:00",
+      "duration_seconds": 22.23187017440796,
+      "gpu_seconds": 22.23187017440796,
+      "gpu_hours": 0.0061755194928910994,
+      "maximum_gpu_hours": 0.25
+    },
+    {
+      "name": "radar_sources_v1_P_answer",
+      "stage": "answer",
+      "label": "P",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_answers",
+        "--arm",
+        "P"
+      ],
+      "started_at_utc": "2026-10-05T14:05:30.830782+00:00",
+      "finished_at_utc": "2026-10-05T14:05:52.711953+00:00",
+      "started_at_beijing": "2026-10-05T22:05:30.830782+08:00",
+      "finished_at_beijing": "2026-10-05T22:05:52.711953+08:00",
+      "duration_seconds": 21.881170511245728,
+      "gpu_seconds": 21.881170511245728,
+      "gpu_hours": 0.00607810291979048,
+      "maximum_gpu_hours": 0.25
+    },
+    {
+      "name": "radar_sources_v1_A1_answer",
+      "stage": "answer",
+      "label": "A1",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_answers",
+        "--arm",
+        "A1"
+      ],
+      "started_at_utc": "2026-10-05T14:05:30.822430+00:00",
+      "finished_at_utc": "2026-10-05T14:05:54.453070+00:00",
+      "started_at_beijing": "2026-10-05T22:05:30.822430+08:00",
+      "finished_at_beijing": "2026-10-05T22:05:54.453070+08:00",
+      "duration_seconds": 23.630640745162964,
+      "gpu_seconds": 23.630640745162964,
+      "gpu_hours": 0.0065640668736563785,
+      "maximum_gpu_hours": 0.25
+    },
+    {
+      "name": "radar_sources_v1_C1_answer",
+      "stage": "answer",
+      "label": "C1",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_answers",
+        "--arm",
+        "C1"
+      ],
+      "started_at_utc": "2026-10-05T14:05:54.518928+00:00",
+      "finished_at_utc": "2026-10-05T14:06:16.749149+00:00",
+      "started_at_beijing": "2026-10-05T22:05:54.518928+08:00",
+      "finished_at_beijing": "2026-10-05T22:06:16.749149+08:00",
+      "duration_seconds": 22.230221033096313,
+      "gpu_seconds": 22.230221033096313,
+      "gpu_hours": 0.006175061398082309,
+      "maximum_gpu_hours": 0.25
+    },
+    {
+      "name": "radar_sources_v1_A2_answer",
+      "stage": "answer",
+      "label": "A2",
+      "status": "completed",
+      "returncode": 0,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        3
+      ],
+      "command": [
+        "/home/syx/research_radar_agent/.venv/bin/python",
+        "-m",
+        "experiments.radar_domain.source_answers",
+        "--arm",
+        "A2"
+      ],
+      "started_at_utc": "2026-10-05T14:05:30.835868+00:00",
+      "finished_at_utc": "2026-10-05T14:05:53.266718+00:00",
+      "started_at_beijing": "2026-10-05T22:05:30.835868+08:00",
+      "finished_at_beijing": "2026-10-05T22:05:53.266718+08:00",
+      "duration_seconds": 22.43085026741028,
+      "gpu_seconds": 22.43085026741028,
+      "gpu_hours": 0.0062307917409472995,
+      "maximum_gpu_hours": 0.25
+    }
+  ],
+  "input_files_sha256": {
+    "results/radar_domain/source_eval_v1/pipeline_started.json": "4d55d588a688dd5000512ee63832bb19c4a93300712a5d2e50a488c3289317a4",
+    "results/radar_domain/source_eval_v1/pipeline_completed.json": "b9983efc59635b93f332939e67ecb8934332887c2dcfbd5143d1a21d0d784c4d",
+    "results/radar_domain/source_eval_v1/launch.json": "19b852bcf0483dd8e7420445294b19784c39bc37e81ffa79ac9ac87ff04e74cc",
+    "results/agent_feedback/jobs/radar_sources_v1_A1_select.json": "7f469c1474519a393b6fad32245b5fe82d009776fa454f39a1b016381b970fa3",
+    "results/agent_feedback/jobs/radar_sources_v1_P_select.json": "308e45c88aefb5a30689aeb98f94d1b06803c4d57c628dfbc1325a8adbeb33fe",
+    "results/agent_feedback/jobs/radar_sources_v1_C1_select.json": "15f3ec0f4deda91be7f6f392b5aee5c040a32034b0cd70b698d14c6fba8a5c7a",
+    "results/agent_feedback/jobs/radar_sources_v1_A2_select.json": "cd65465b2b92b98a98851cc23a23b3da2c613dd4e9a74352c77a0fea213202c3",
+    "results/agent_feedback/jobs/radar_sources_v1_C2_select.json": "d313e7779b9c6af660312243c92ab16139bcf464b35eb18b3f0747a693e28736",
+    "results/agent_feedback/jobs/radar_sources_v1_RAG_answer.json": "d3ecf759f5226cc5d426741bf3b2860d325bd358bede226cbc728295b67917fd",
+    "results/agent_feedback/jobs/radar_sources_v1_C2_answer.json": "36c63f010a83aa9281360cae50b22546193a65c62f8a11b73ee7b1d82164d4f3",
+    "results/agent_feedback/jobs/radar_sources_v1_P_answer.json": "eeac5e45c7d06edf4da323f6d44956a92ed4f7b9e46ab34626c12fb832fe0133",
+    "results/agent_feedback/jobs/radar_sources_v1_A1_answer.json": "3a64e2d3aaa377064add2e8ca8a682d603fe83a554fd6b01790b497f3a72fcbe",
+    "results/agent_feedback/jobs/radar_sources_v1_C1_answer.json": "4cc60fdb6ace834563131dc75fd75d64fe7584acc7d7e8b5dc582ff781f32146",
+    "results/agent_feedback/jobs/radar_sources_v1_A2_answer.json": "4552a7e59d738edfe4c1eb3c5ad5d4e0c3d2c95fa77e0a35d1d9a7ba9d6b1fec"
+  },
+  "scope": "Execution identity, schedule and cost only. Source predictions, semantic references and evaluation scores were not read for this report. The cumulative starting value comes from the already recorded pipeline ledger."
+}

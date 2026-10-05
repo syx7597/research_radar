@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "recorded_at_utc": "2026-10-05T14:28:46.500374+00:00",
+  "remote_user": "syx",
+  "review_archive_synced": true,
+  "remote_source_review_summary_check": "verified:58 unique answers,5 support-only disagreements",
+  "gpu_query": "nvidia-smi --query-compute-apps=gpu_uuid,pid,process_name --format=csv,noheader",
+  "gpu_query_returncode": 0,
+  "compute_processes": [],
+  "new_training_started": false,
+  "scope": "Read-only GPU query and review artifact backup under the authorized syx project directory"
+}

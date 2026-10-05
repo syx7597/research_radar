@@ -1,0 +1,467 @@
+{
+  "version": "radar_sources_failure_diagnosis_v1",
+  "status": "post_run_descriptive_analysis",
+  "human_gold": false,
+  "all_four_agent_arms_common_incorrect_question_ids": [
+    "source_zh_06",
+    "source_zh_10",
+    "source_zh_11",
+    "source_zh_12",
+    "source_zh_15",
+    "source_zh_17",
+    "source_zh_22",
+    "source_zh_24"
+  ],
+  "records": [
+    {
+      "arm": "RAG",
+      "id": "source_zh_05",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "discrete_options_collapsed_to_range",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_08",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "available_value_claimed_unknown",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_10",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "transmitter_and_modulator_description_incomplete_or_misbound",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_11",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_12",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_15",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "explicit_beam_qualification_omitted_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_16",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "starting_vs_operating_condition_confused",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_19",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "target_evidence_missing",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_22",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_23",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "RAG",
+      "id": "source_zh_24",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "scanner_vs_display_component_temperature_misbound_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_06",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "requested_type_and_model_answer_incomplete",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_10",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "transmitter_and_modulator_description_incomplete_or_misbound",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_11",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_12",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_15",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "explicit_beam_qualification_omitted_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_16",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "starting_vs_operating_condition_confused",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_17",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "operating_vs_starting_condition_confused",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_19",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "target_evidence_missing",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_22",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_23",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "P",
+      "id": "source_zh_24",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "scanner_vs_display_component_temperature_misbound_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_06",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "requested_type_and_model_answer_incomplete",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_10",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "transmitter_and_modulator_description_incomplete_or_misbound",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_11",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_12",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_15",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "explicit_beam_qualification_omitted_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_17",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "operating_vs_starting_condition_confused",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_22",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A1",
+      "id": "source_zh_24",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "scanner_vs_display_component_temperature_misbound_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_06",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "requested_type_and_model_answer_incomplete",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_10",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "transmitter_and_modulator_description_incomplete_or_misbound",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_11",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_12",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_15",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "explicit_beam_qualification_omitted_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_17",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "operating_vs_starting_condition_confused",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_22",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_23",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "C1",
+      "id": "source_zh_24",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "scanner_vs_display_component_temperature_misbound_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_06",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "requested_type_and_model_answer_incomplete",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_10",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "transmitter_and_modulator_description_incomplete_or_misbound",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_11",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_12",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_15",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "explicit_beam_qualification_omitted_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_17",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "operating_vs_starting_condition_confused",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_22",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "A2",
+      "id": "source_zh_24",
+      "required_evidence_pages_present": false,
+      "observed_error_type": "scanner_vs_display_component_temperature_misbound_or_no_answer",
+      "failure_stage": "missing_target_evidence",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_06",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "requested_type_and_model_answer_incomplete",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_10",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "transmitter_and_modulator_description_incomplete_or_misbound",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_11",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_12",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "typical_and_technical_quantities_merged",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_15",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "explicit_beam_qualification_omitted_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_17",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "operating_vs_starting_condition_confused",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_22",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "pulse_width_prf_pair_misread_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    },
+    {
+      "arm": "C2",
+      "id": "source_zh_24",
+      "required_evidence_pages_present": true,
+      "observed_error_type": "scanner_vs_display_component_temperature_misbound_or_no_answer",
+      "failure_stage": "answer_from_available_page",
+      "human_gold": false
+    }
+  ],
+  "limits": [
+    "Descriptive tags are post-run and do not change frozen reference, metrics or model outputs",
+    "Missing page and answer-generation errors are separated; wrong record selection may still select the right page",
+    "An error association does not prove a training or attention mechanism"
+  ],
+  "inputs_sha256": {
+    "results/radar_domain/source_eval_v1/ai_semantic_summary.json": "4b9732946282a245558fdb8e9295bc054621f1c1b6c532a184bb3f8536de87df",
+    "results/radar_domain/source_eval_v1/ai_semantic_verdicts.json": "4b08c5c75d1727f98a87d992ef9ccdfbbd0443a72fb7e94f679fed1c53acf95d",
+    "results/radar_domain/source_eval_v1/per_question_diagnosis.json": "c185abe0e723c34cddc9ece2416896d301c92d936d28763886558e3fc5e9e000"
+  }
+}

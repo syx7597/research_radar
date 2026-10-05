@@ -1,0 +1,32 @@
+% Compile from repository root; this entry does not modify the public chapters.
+% xelatex -output-directory=thesis/current thesis/current/domain_review.tex
+\documentclass[UTF8,a4paper,12pt]{ctexrep}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\usepackage[hidelinks]{hyperref}
+\input{thesis/current/domain_tables.tex}
+\title{基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用\\雷达应用章节工作稿}
+\author{项目写作材料}
+\date{证据截止：2026年10月5日}
+\begin{document}
+\maketitle
+\tableofcontents
+\setcounter{chapter}{5}
+\input{thesis/current/06_radar_application.tex}
+\begin{thebibliography}{9}
+\bibitem{domain-vaisala}
+Vaisala. Weather Radar WRM200: B210698EN-J (2021)[EB/OL].
+\href{https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf}{制造商资料入口}.
+本文绑定下载快照 SHA-256，版本信息以来源索引为准。
+\bibitem{domain-leonardo}
+Leonardo. METEOR 735C Weather Radar: 202510-1-05[EB/OL].
+\href{https://electronics.leonardo.com/documents/16277707/18380759/METEOR\%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970}{制造商资料入口}.
+本文只引用该固定资料版本。
+\bibitem{domain-furuno}
+FURUNO. WR2120 Specifications: CA000001492 / G-2012PDF[EB/OL].
+\href{https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf}{制造商资料入口}.
+\bibitem{domain-jrc}
+JRC. JMA-1030 Radar: JMA-1032 and JMA-1034 Specifications[EB/OL].
+\href{https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf}{制造商资料入口}.
+\end{thebibliography}
+\end{document}

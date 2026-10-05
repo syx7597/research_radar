@@ -1,0 +1,20 @@
+{
+  "stage": "select",
+  "gpu": 0,
+  "status": "completed",
+  "results": [
+    {
+      "name": "radar_sources_v1_A1_select",
+      "label": "A1",
+      "stage": "select",
+      "returncode": 0
+    },
+    {
+      "name": "radar_sources_v1_P_select",
+      "label": "P",
+      "stage": "select",
+      "returncode": 0
+    }
+  ],
+  "unstarted_jobs": 0
+}

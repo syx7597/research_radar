@@ -1,0 +1,23 @@
+{
+  "name": "radar_sources_v1_C1_answer",
+  "supervisor_pid": 22023,
+  "child_pid": 22024,
+  "user": "syx",
+  "uid": 1001,
+  "gpus": [
+    2
+  ],
+  "command": [
+    "/home/syx/research_radar_agent/.venv/bin/python",
+    "-m",
+    "experiments.radar_domain.source_answers",
+    "--arm",
+    "C1"
+  ],
+  "started_at": 1791209154.5189278,
+  "heartbeat_at": 1791209174.5279288,
+  "status": "completed",
+  "finished_at": 1791209176.7491488,
+  "returncode": 0,
+  "gpu_seconds": 22.230221033096313
+}

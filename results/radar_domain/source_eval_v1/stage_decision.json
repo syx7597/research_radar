@@ -1,0 +1,128 @@
+{
+  "version": "radar_sources_stage_decision_v1",
+  "status": "completed_no_additional_training",
+  "decision_zh": "保留公开数据集的恢复轨迹训练主方法，雷达部分定位共同接口适配及来源约束应用评价。本轮没有恢复C额外领域正确性收益，不追加域训练或重新调参刷本批分数。下一阶段收束领域应用章节与来源表，明确方法贡献和应用边界。",
+  "public_method_result_unchanged": true,
+  "training_runs_this_stage": 0,
+  "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+  "arm_results": {
+    "RAG": {
+      "questions": 24,
+      "natural_answer_correct": 13,
+      "correct_supported_and_cited": 9,
+      "exact_record_selection": null,
+      "required_pages_available": 23,
+      "total_selection_and_answer_tokens": 88520
+    },
+    "P": {
+      "questions": 24,
+      "natural_answer_correct": 13,
+      "correct_supported_and_cited": 13,
+      "exact_record_selection": 15,
+      "required_pages_available": 19,
+      "total_selection_and_answer_tokens": 48368
+    },
+    "A1": {
+      "questions": 24,
+      "natural_answer_correct": 16,
+      "correct_supported_and_cited": 16,
+      "exact_record_selection": 21,
+      "required_pages_available": 22,
+      "total_selection_and_answer_tokens": 212651
+    },
+    "C1": {
+      "questions": 24,
+      "natural_answer_correct": 15,
+      "correct_supported_and_cited": 15,
+      "exact_record_selection": 19,
+      "required_pages_available": 23,
+      "total_selection_and_answer_tokens": 176433
+    },
+    "A2": {
+      "questions": 24,
+      "natural_answer_correct": 16,
+      "correct_supported_and_cited": 16,
+      "exact_record_selection": 20,
+      "required_pages_available": 22,
+      "total_selection_and_answer_tokens": 169768
+    },
+    "C2": {
+      "questions": 24,
+      "natural_answer_correct": 16,
+      "correct_supported_and_cited": 16,
+      "exact_record_selection": 19,
+      "required_pages_available": 24,
+      "total_selection_and_answer_tokens": 143625
+    }
+  },
+  "paired_natural_answer_differences": {
+    "C1_minus_A1": {
+      "wins": [],
+      "losses": [
+        "source_zh_23"
+      ],
+      "net_questions": -1,
+      "statistical_significance_tested": false
+    },
+    "C2_minus_A2": {
+      "wins": [],
+      "losses": [],
+      "net_questions": 0,
+      "statistical_significance_tested": false
+    }
+  },
+  "observations_zh": [
+    "C1相对A1少答对1题，C2与A2逐题正确性相同；不能声称恢复训练已在雷达域改善答案。",
+    "共同适配使接口可用；适配收益同时存在于A/C，不归因于恢复训练创新。",
+    "C2有支持页24/24但正文正确16/24；剩余8题全部是证据已提供仍答错。4个Agent共同失败8题，回答端的量值语义、条件、部件绑定及描述完整性是下一步诊断重点。",
+    "RAG与图谱入口输入同一来源原文、同一生成器；图谱额外有人工/AI整理结构的准备成本，不能将差值归为纯算法胜出。",
+    "Agent回答阶段上下文较短，但加上查询轨迹后总token高于本轮RAG；不能宣称端到端节省token。",
+    "严格断言字段一致性为0/24，不代表自然答案全错；本轮同时公开严格规范诊断和AI正文审阅。"
+  ],
+  "review": {
+    "two_agent_unique_answers": 58,
+    "total_arm_question_outputs": 144,
+    "answer_correct_disagreements": 0,
+    "support_only_disagreements": 5,
+    "human_review_count": 0,
+    "adjudicator_arm_results_seen": true
+  },
+  "next_ordered_work": [
+    {
+      "order": 1,
+      "action_zh": "将迁移失败、共同适配、新来源统一回答和错误分析写入当前论文领域章，生成可从公开汇总重建的表格。",
+      "requires_gpu": false
+    },
+    {
+      "order": 2,
+      "action_zh": "完成数据构建章与领域章衔接：主体—量值—单位—条件—部件—来源定位；明确每个字段如何避免雷达资料的表格歧义，不把整理流程直接称新算法。",
+      "requires_gpu": false
+    },
+    {
+      "order": 3,
+      "action_zh": "在章节与错误归因整理后，按来源家族、雷达量值/条件和题型覆盖预先设计后续评价范围，确定AI参考和实际可得的人工核验边界；当前24题保留为最小开发验证，不能冒充完整论文评价。",
+      "requires_gpu": false
+    },
+    {
+      "order": 4,
+      "action_zh": "如后续需要补领域改进，只立项同检索记录下的原文页、规则模板、条件绑定结构化证据三路回答对照；先冻结独立新题与评分规则，保留本批作为开发诊断，仅一轮有上限验证。当前未建立该实验，也不声称它有效。",
+      "requires_new_protocol": true
+    }
+  ],
+  "stopped_work": [
+    "additional radar selector SFT",
+    "RL expansion",
+    "semantic preference training",
+    "prompt/model selection on these 24 exposed questions",
+    "claims of radar C superiority or human-ground-truth validation"
+  ],
+  "inputs_sha256": {
+    "results/radar_domain/source_eval_v1/ai_semantic_summary.json": "4b9732946282a245558fdb8e9295bc054621f1c1b6c532a184bb3f8536de87df",
+    "results/radar_domain/source_eval_v1/mechanical_summary.json": "091ac8f8dc387c1961768eddf038167943c1f08da60f3224f144e783a6b9ebf8",
+    "results/radar_domain/source_eval_v1/execution_summary.json": "d2b06ef0833851ff54801fde9e6c74cf412c67eb373426a5a6aa0f2be8dbb33c",
+    "results/radar_domain/source_eval_v1/pipeline_completed.json": "b9983efc59635b93f332939e67ecb8934332887c2dcfbd5143d1a21d0d784c4d"
+  },
+  "additional_training_planned_in_this_stage": false,
+  "thesis_complete": false,
+  "remaining_thesis_evidence_zh": "24道AI题只完成最小应用验证，尚不能独立支撑完整领域有效性或泛化结论。后续仍需按预先定义的来源多样性、条件/表格题型和证据质量规划覆盖与评价可信度工作，不因本批分数临时扩样；是否取得真实人工参考须据实标记。"
+}

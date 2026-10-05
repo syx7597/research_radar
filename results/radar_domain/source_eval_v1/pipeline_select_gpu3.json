@@ -1,0 +1,14 @@
+{
+  "stage": "select",
+  "gpu": 3,
+  "status": "completed",
+  "results": [
+    {
+      "name": "radar_sources_v1_C2_select",
+      "label": "C2",
+      "stage": "select",
+      "returncode": 0
+    }
+  ],
+  "unstarted_jobs": 0
+}

@@ -10,19 +10,30 @@
 | [current/evidence_manifest.json](current/evidence_manifest.json) | 汇总来源、冻结实现、章节及生成表格的 SHA-256 |
 | [current/export_evidence.py](current/export_evidence.py) | 重建表格和清单；`--check` 检查数字及文件一致性 |
 | [current/review.tex](current/review.tex) | 两章的独立 XeLaTeX 审阅入口；需要 `ctexrep`、`amsmath`、`booktabs` 等常用包 |
+| [current/06_radar_application.tex](current/06_radar_application.tex) | 应用章节：来源表示、直接迁移诊断、共同接口适配、四来源六路线评价及失败边界 |
+| [current/domain_review.tex](current/domain_review.tex) | 第六章独立 XeLaTeX 审阅入口，含四份制造商资料的来源链接 |
+| [current/domain_export.py](current/domain_export.py) | 只读公开聚合与来源索引，重建应用章表格；不访问私有 QA 或运行训练 |
+| [current/domain_tables.tex](current/domain_tables.tex)、[current/domain_results.csv](current/domain_results.csv) | 六路线完整结果、成本、迁移前后及来源分组；CSV 记录来源字段和派生口径 |
+| [current/domain_evidence_manifest.json](current/domain_evidence_manifest.json) | 应用章输入、章节、导出结果的哈希绑定与适用边界 |
 
 新稿已有依据的核心结论：恢复轨迹 SFT 在两个共享初始模型的续训种子上，相对同监督 token 预算的普通续训，项目留出集准确率平均提高 **4.75 个百分点**，问题配对 95% 区间 **[3.53, 5.98]**。它不是官方隐藏测试结果，不代表全流程两种子独立复现；C/P 总推理 token 约为 24 倍，详细报错文字和短程 RL 的额外收益均未得到证实。
+
+领域应用已完成一轮最小验证：共同合成接口适配有效；四份新来源的 24 道 AI 题上，RAG/P/A1/C1/A2/C2 正文正确数为 **13/13/16/15/16/16**，C 相对 A 为 **−1/0 题**，未建立额外领域收益。C2 支持页齐全 24/24 而正文正确 16/24，显示来源阅读与条件绑定仍会失败。六路线共用同一未适配基础回答模型；AI 审阅不是人工金标，四个相关来源、历史型号重叠与知识库整理成本均限制结论。停止本批题上的追加训练，转入证据整理；后续覆盖与评价可信度工作仍未完成，不能将 24 道题视为整篇论文的充分验证。
 
 从仓库根目录执行：
 
 ```sh
 python3 thesis/current/export_evidence.py --check
 python3 thesis/current/export_evidence.py
+python3 thesis/current/domain_export.py --check
+python3 thesis/current/domain_export.py
 xelatex -output-directory=thesis/current thesis/current/review.tex
 xelatex -output-directory=thesis/current thesis/current/review.tex
+xelatex -output-directory=thesis/current thesis/current/domain_review.tex
+xelatex -output-directory=thesis/current thesis/current/domain_review.tex
 ```
 
-前两条分别检查和重建公开汇总导出，均不读取逐题留出数据或运行训练。当前写作环境没有 `xelatex`，尚未编译或目视检查新稿 PDF。章节编号为暂定四、五章；正式成稿仍需学校模板、核实后的相关文献、雷达事实与独立问答实验。已有旧稿的参考文献未自动迁入，以免把未经本轮核对的条目当成新稿证据。
+两组 Python 命令分别检查和重建公开实验、领域应用的聚合导出，均不读取私有逐题问答、原始预测或运行训练。当前写作环境没有 `xelatex`，尚未编译或目视检查新稿 PDF。章节编号暂定四、五、六章；正式成稿仍需学校模板、核实后的相关文献、数据构建章，以及预先定义覆盖范围的后续来源与评价核验。已有旧稿的参考文献未自动迁入，以免把未经本轮核对的条目当成新稿证据。
 
 最新项目状态见 [项目首页](../README.md) 和 [当前状态](../docs/CURRENT_STATUS.md)。
 

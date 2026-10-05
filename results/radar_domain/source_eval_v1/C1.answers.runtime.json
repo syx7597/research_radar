@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "arm": "C1",
+  "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+  "output_sha256": "75025635be8c1bde29125c6ec83fa53f83e769d03d33d42753e251ad02bf2372",
+  "evidence_inputs_sha256": {
+    "results/radar_domain/source_eval_v1/C1.selection.jsonl": "852a08fd8b5a6323af23c02f1648c66fbb26c506f0c8dad7a3306a91833bb62b",
+    "results/radar_domain/source_eval_v1/C1.selection.runtime.json": "f99b7aded3a87336bb37f4e3263c566e52bf106efdbfe23c464601ae9da66e42"
+  },
+  "config": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 768,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "model": "models/qwen2.5-3b-instruct",
+  "adapter": null,
+  "seconds": 16.047272172989324,
+  "totals": {
+    "questions": 24,
+    "parsed": 20,
+    "input_tokens": 34773,
+    "generated_tokens": 4431,
+    "total_tokens": 39204
+  },
+  "claim_limit": "Parsed claims are not automatically supported claims; no semantic reference was accessed."
+}

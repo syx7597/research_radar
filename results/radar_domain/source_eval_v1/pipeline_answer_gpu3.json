@@ -1,0 +1,14 @@
+{
+  "stage": "answer",
+  "gpu": 3,
+  "status": "completed",
+  "results": [
+    {
+      "name": "radar_sources_v1_A2_answer",
+      "label": "A2",
+      "stage": "answer",
+      "returncode": 0
+    }
+  ],
+  "unstarted_jobs": 0
+}

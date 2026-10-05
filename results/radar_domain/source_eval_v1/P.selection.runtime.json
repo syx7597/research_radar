@@ -1,0 +1,37 @@
+{
+  "label": "P",
+  "status": "completed",
+  "seconds": 5.921703824977158,
+  "totals": {
+    "calls": 69,
+    "invalid_calls": 3,
+    "input_tokens": 13537,
+    "generated_tokens": 576,
+    "total_tokens": 14113,
+    "questions": 24
+  },
+  "protocol_sha256": "a3ded57e4626f6d5458f81946e22b53889524fabf8542993fb28390db16a0471",
+  "output_sha256": "e5a8073113032661dd7ecc02e0d81290cd6dabd4a90e162df70b9646278fed71",
+  "scope": "New manufacturer-source snapshots and newly authored AI-reviewed questions; exploratory source-grounded evaluation, not independent human equipment gold",
+  "config": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "max_calls": 24,
+    "agent_turn_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "model": {
+    "adapter": "results/radar_domain/interface_adapt_v1/P/model",
+    "program": true,
+    "training_result_sha256": "e2d0972b744168f277f5ec51821ef107e918c138ef9945000a5483c4c7e5ff06",
+    "files_sha256": {
+      "results/radar_domain/interface_adapt_v1/P/model/adapter_model.safetensors": "53dd432b4d900f2a131fc3ec8916dfa27b59598a3f77cfdfefce06c5e83ae205",
+      "results/radar_domain/interface_adapt_v1/P/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+    }
+  },
+  "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+}
