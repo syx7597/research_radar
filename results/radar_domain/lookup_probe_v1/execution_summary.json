@@ -1,0 +1,271 @@
+{
+  "completed_at_beijing": "2026-10-05T17:14:35.526744+08:00",
+  "protocol_sha256": "2a4c9b81dcd35510213e0558d8a995cecdc6b1a0c9496fc02ce7fdd90bf175a2",
+  "training": false,
+  "all_jobs_user_syx": true,
+  "jobs": {
+    "P_zh": {
+      "name": "radar_lookup_v1_P_zh",
+      "supervisor_pid": 19108,
+      "child_pid": 19111,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "P",
+        "--language",
+        "zh"
+      ],
+      "started_at": 1791191619.9115376,
+      "heartbeat_at": 1791191629.9162865,
+      "status": "completed",
+      "finished_at": 1791191632.1347103,
+      "returncode": 0,
+      "gpu_seconds": 12.223172664642334
+    },
+    "P_en": {
+      "name": "radar_lookup_v1_P_en",
+      "supervisor_pid": 19109,
+      "child_pid": 19110,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "P",
+        "--language",
+        "en"
+      ],
+      "started_at": 1791191619.9060874,
+      "heartbeat_at": 1791191629.9096773,
+      "status": "completed",
+      "finished_at": 1791191631.8291645,
+      "returncode": 0,
+      "gpu_seconds": 11.92307710647583
+    },
+    "A1_zh": {
+      "name": "radar_lookup_v1_A1_zh",
+      "supervisor_pid": 18920,
+      "child_pid": 18924,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "A1",
+        "--language",
+        "zh"
+      ],
+      "started_at": 1791191270.7169409,
+      "heartbeat_at": 1791191400.7652566,
+      "status": "completed",
+      "finished_at": 1791191406.5402021,
+      "returncode": 0,
+      "gpu_seconds": 135.82326126098633
+    },
+    "A1_en": {
+      "name": "radar_lookup_v1_A1_en",
+      "supervisor_pid": 19007,
+      "child_pid": 19011,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        0
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "A1",
+        "--language",
+        "en"
+      ],
+      "started_at": 1791191449.3071904,
+      "heartbeat_at": 1791191559.3812678,
+      "status": "completed",
+      "finished_at": 1791191567.2616954,
+      "returncode": 0,
+      "gpu_seconds": 117.95450496673584
+    },
+    "C1_zh": {
+      "name": "radar_lookup_v1_C1_zh",
+      "supervisor_pid": 18921,
+      "child_pid": 18925,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "C1",
+        "--language",
+        "zh"
+      ],
+      "started_at": 1791191270.7186887,
+      "heartbeat_at": 1791191330.7411745,
+      "status": "completed",
+      "finished_at": 1791191336.2157724,
+      "returncode": 0,
+      "gpu_seconds": 65.49708366394043
+    },
+    "C1_en": {
+      "name": "radar_lookup_v1_C1_en",
+      "supervisor_pid": 19008,
+      "child_pid": 19012,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        1
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "C1",
+        "--language",
+        "en"
+      ],
+      "started_at": 1791191449.3090072,
+      "heartbeat_at": 1791191539.360196,
+      "status": "completed",
+      "finished_at": 1791191548.1385794,
+      "returncode": 0,
+      "gpu_seconds": 98.82957220077515
+    },
+    "A2_zh": {
+      "name": "radar_lookup_v1_A2_zh",
+      "supervisor_pid": 18922,
+      "child_pid": 18926,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "A2",
+        "--language",
+        "zh"
+      ],
+      "started_at": 1791191270.7211952,
+      "heartbeat_at": 1791191350.749637,
+      "status": "completed",
+      "finished_at": 1791191355.5220687,
+      "returncode": 0,
+      "gpu_seconds": 84.80087351799011
+    },
+    "A2_en": {
+      "name": "radar_lookup_v1_A2_en",
+      "supervisor_pid": 19009,
+      "child_pid": 19013,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        2
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "A2",
+        "--language",
+        "en"
+      ],
+      "started_at": 1791191449.3195605,
+      "heartbeat_at": 1791191559.3812673,
+      "status": "completed",
+      "finished_at": 1791191562.2046769,
+      "returncode": 0,
+      "gpu_seconds": 112.88511633872986
+    },
+    "C2_zh": {
+      "name": "radar_lookup_v1_C2_zh",
+      "supervisor_pid": 18923,
+      "child_pid": 18927,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        3
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "C2",
+        "--language",
+        "zh"
+      ],
+      "started_at": 1791191270.7229176,
+      "heartbeat_at": 1791191370.759869,
+      "status": "completed",
+      "finished_at": 1791191373.0798714,
+      "returncode": 0,
+      "gpu_seconds": 102.35695385932922
+    },
+    "C2_en": {
+      "name": "radar_lookup_v1_C2_en",
+      "supervisor_pid": 19010,
+      "child_pid": 19014,
+      "user": "syx",
+      "uid": 1001,
+      "gpus": [
+        3
+      ],
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "C2",
+        "--language",
+        "en"
+      ],
+      "started_at": 1791191449.32303,
+      "heartbeat_at": 1791191569.3747635,
+      "status": "completed",
+      "finished_at": 1791191572.7469237,
+      "returncode": 0,
+      "gpu_seconds": 123.42389369010925
+    }
+  },
+  "probe_gpu_hours": 0.24047708590825398,
+  "cumulative_gpu_hours": 23.021209124591614,
+  "budget_gpu_hours": 72
+}

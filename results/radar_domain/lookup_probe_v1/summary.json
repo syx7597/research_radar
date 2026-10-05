@@ -1,0 +1,1198 @@
+{
+  "version": "radar_lookup_probe_analysis_v1",
+  "scope": "One fixed bilingual lookup diagnostic on 12 exposed AI-rewritten development targets; interface compatibility only",
+  "runs": {
+    "P_zh": {
+      "label": "P",
+      "language": "zh",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 2,
+        "exact_target_selection": 1,
+        "target_covered": 1,
+        "target_with_allowed_context": 1,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 1,
+        "unfinished": 10
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 1,
+        "exact_target_ever_returned": 1,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 10,
+        "has_argument_error": 5,
+        "exact_final_after_invalid_call": 0
+      },
+      "execution_totals": {
+        "calls": 25,
+        "invalid_calls": 10,
+        "input_tokens": 5913,
+        "generated_tokens": 539,
+        "total_tokens": 6452,
+        "questions": 12
+      },
+      "seconds": 5.069448016991373,
+      "error_event_counts": {
+        "format": 3,
+        "function": 2,
+        "function_arguments": 5
+      },
+      "empty_query_event_counts": {
+        "condition": 2,
+        "event": 1
+      },
+      "selection_observation_question_counts": {
+        "finished_empty_selection": 1,
+        "unfinished_program_error": 10
+      },
+      "stop_reason_counts": {
+        "program_completed": 2,
+        "program_error": 10
+      }
+    },
+    "P_en": {
+      "label": "P",
+      "language": "en",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 6,
+        "exact_target_selection": 1,
+        "target_covered": 1,
+        "target_with_allowed_context": 1,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 5,
+        "unfinished": 6
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 1,
+        "exact_target_ever_returned": 1,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 6,
+        "has_argument_error": 4,
+        "exact_final_after_invalid_call": 0
+      },
+      "execution_totals": {
+        "calls": 32,
+        "invalid_calls": 6,
+        "input_tokens": 5860,
+        "generated_tokens": 418,
+        "total_tokens": 6278,
+        "questions": 12
+      },
+      "seconds": 4.691670748987235,
+      "error_event_counts": {
+        "function": 2,
+        "function_arguments": 4
+      },
+      "empty_query_event_counts": {
+        "attribute": 1,
+        "condition": 2,
+        "event": 4
+      },
+      "selection_observation_question_counts": {
+        "finished_empty_selection": 5,
+        "unfinished_program_error": 6
+      },
+      "stop_reason_counts": {
+        "program_completed": 6,
+        "program_error": 6
+      }
+    },
+    "A1_zh": {
+      "label": "A1",
+      "language": "zh",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 1,
+        "exact_target_selection": 1,
+        "target_covered": 1,
+        "target_with_allowed_context": 1,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 0,
+        "unfinished": 11
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 1,
+        "exact_target_ever_returned": 1,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 12,
+        "has_argument_error": 12,
+        "exact_final_after_invalid_call": 1
+      },
+      "execution_totals": {
+        "calls": 269,
+        "invalid_calls": 153,
+        "input_tokens": 527322,
+        "generated_tokens": 7090,
+        "total_tokens": 534412,
+        "questions": 12
+      },
+      "seconds": 127.86321588899591,
+      "error_event_counts": {
+        "finish_or_budget": 6,
+        "format": 26,
+        "function": 23,
+        "function_arguments": 98
+      },
+      "empty_query_event_counts": {
+        "attribute": 1,
+        "entity_or_source": 7
+      },
+      "selection_observation_question_counts": {
+        "unfinished_call_budget": 11
+      },
+      "stop_reason_counts": {
+        "call_budget": 11,
+        "finished": 1
+      }
+    },
+    "A1_en": {
+      "label": "A1",
+      "language": "en",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 1,
+        "exact_target_selection": 1,
+        "target_covered": 1,
+        "target_with_allowed_context": 1,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 0,
+        "unfinished": 11
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 1,
+        "exact_target_ever_returned": 1,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 12,
+        "has_argument_error": 12,
+        "exact_final_after_invalid_call": 1
+      },
+      "execution_totals": {
+        "calls": 269,
+        "invalid_calls": 174,
+        "input_tokens": 504705,
+        "generated_tokens": 6921,
+        "total_tokens": 511626,
+        "questions": 12
+      },
+      "seconds": 110.63693809899269,
+      "error_event_counts": {
+        "finish_or_budget": 13,
+        "format": 42,
+        "function": 30,
+        "function_arguments": 89
+      },
+      "empty_query_event_counts": {
+        "entity_or_source": 1
+      },
+      "selection_observation_question_counts": {
+        "unfinished_call_budget": 11
+      },
+      "stop_reason_counts": {
+        "call_budget": 11,
+        "finished": 1
+      }
+    },
+    "C1_zh": {
+      "label": "C1",
+      "language": "zh",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 5,
+        "exact_target_selection": 2,
+        "target_covered": 2,
+        "target_with_allowed_context": 2,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 3,
+        "unfinished": 7
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 2,
+        "exact_target_ever_returned": 2,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 10,
+        "has_argument_error": 10,
+        "exact_final_after_invalid_call": 0
+      },
+      "execution_totals": {
+        "calls": 197,
+        "invalid_calls": 172,
+        "input_tokens": 292887,
+        "generated_tokens": 2688,
+        "total_tokens": 295575,
+        "questions": 12
+      },
+      "seconds": 58.241867581004044,
+      "error_event_counts": {
+        "condition_or_event_selector": 1,
+        "finish_or_budget": 32,
+        "format": 99,
+        "function_arguments": 40
+      },
+      "empty_query_event_counts": {
+        "condition": 4,
+        "entity_or_source": 3,
+        "event": 2
+      },
+      "selection_observation_question_counts": {
+        "finished_empty_selection": 3,
+        "unfinished_call_budget": 7
+      },
+      "stop_reason_counts": {
+        "call_budget": 7,
+        "finished": 5
+      }
+    },
+    "C1_en": {
+      "label": "C1",
+      "language": "en",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 4,
+        "exact_target_selection": 2,
+        "target_covered": 2,
+        "target_with_allowed_context": 2,
+        "allowed_context_selected": 0,
+        "extra_selection": 1,
+        "unrelated_extra_selection": 1,
+        "empty_selection": 1,
+        "unfinished": 8
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 2,
+        "exact_target_ever_returned": 2,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 11,
+        "has_argument_error": 9,
+        "exact_final_after_invalid_call": 1
+      },
+      "execution_totals": {
+        "calls": 214,
+        "invalid_calls": 194,
+        "input_tokens": 331484,
+        "generated_tokens": 4083,
+        "total_tokens": 335567,
+        "questions": 12
+      },
+      "seconds": 91.59971174300881,
+      "error_event_counts": {
+        "condition_or_event_selector": 2,
+        "dependency": 8,
+        "finish_or_budget": 54,
+        "format": 54,
+        "function_arguments": 76
+      },
+      "empty_query_event_counts": {
+        "attribute": 2,
+        "event": 1
+      },
+      "selection_observation_question_counts": {
+        "attribute_selection_difference": 1,
+        "finished_empty_selection": 1,
+        "unfinished_call_budget": 8
+      },
+      "stop_reason_counts": {
+        "call_budget": 8,
+        "finished": 4
+      }
+    },
+    "A2_zh": {
+      "label": "A2",
+      "language": "zh",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 7,
+        "exact_target_selection": 3,
+        "target_covered": 3,
+        "target_with_allowed_context": 3,
+        "allowed_context_selected": 0,
+        "extra_selection": 1,
+        "unrelated_extra_selection": 1,
+        "empty_selection": 3,
+        "unfinished": 5
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 3,
+        "exact_target_ever_returned": 3,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 5,
+        "has_argument_error": 5,
+        "exact_final_after_invalid_call": 0
+      },
+      "execution_totals": {
+        "calls": 141,
+        "invalid_calls": 90,
+        "input_tokens": 227808,
+        "generated_tokens": 2463,
+        "total_tokens": 230271,
+        "questions": 12
+      },
+      "seconds": 77.69835896400036,
+      "error_event_counts": {
+        "finish_or_budget": 3,
+        "format": 57,
+        "function_arguments": 30
+      },
+      "empty_query_event_counts": {
+        "condition": 1,
+        "entity_or_source": 2,
+        "event": 2
+      },
+      "selection_observation_question_counts": {
+        "event_selection_difference": 1,
+        "finished_empty_selection": 3,
+        "unfinished_call_budget": 5
+      },
+      "stop_reason_counts": {
+        "call_budget": 5,
+        "finished": 7
+      }
+    },
+    "A2_en": {
+      "label": "A2",
+      "language": "en",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 4,
+        "exact_target_selection": 3,
+        "target_covered": 3,
+        "target_with_allowed_context": 3,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 1,
+        "unfinished": 8
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 3,
+        "exact_target_ever_returned": 3,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 11,
+        "has_argument_error": 11,
+        "exact_final_after_invalid_call": 2
+      },
+      "execution_totals": {
+        "calls": 210,
+        "invalid_calls": 159,
+        "input_tokens": 347497,
+        "generated_tokens": 3659,
+        "total_tokens": 351156,
+        "questions": 12
+      },
+      "seconds": 104.69887603097595,
+      "error_event_counts": {
+        "condition_or_event_selector": 2,
+        "dependency": 1,
+        "finish_or_budget": 9,
+        "format": 97,
+        "function_arguments": 50
+      },
+      "empty_query_event_counts": {
+        "event": 1
+      },
+      "selection_observation_question_counts": {
+        "finished_empty_selection": 1,
+        "unfinished_call_budget": 8
+      },
+      "stop_reason_counts": {
+        "call_budget": 8,
+        "finished": 4
+      }
+    },
+    "C2_zh": {
+      "label": "C2",
+      "language": "zh",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 2,
+        "exact_target_selection": 0,
+        "target_covered": 0,
+        "target_with_allowed_context": 0,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 2,
+        "unfinished": 10
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 0,
+        "exact_target_ever_returned": 0,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 12,
+        "has_argument_error": 12,
+        "exact_final_after_invalid_call": 0
+      },
+      "execution_totals": {
+        "calls": 263,
+        "invalid_calls": 249,
+        "input_tokens": 415365,
+        "generated_tokens": 5421,
+        "total_tokens": 420786,
+        "questions": 12
+      },
+      "seconds": 95.09463206699002,
+      "error_event_counts": {
+        "dependency": 23,
+        "finish_or_budget": 82,
+        "format": 45,
+        "function_arguments": 99
+      },
+      "empty_query_event_counts": {
+        "condition": 3,
+        "entity_or_source": 2,
+        "event": 2
+      },
+      "selection_observation_question_counts": {
+        "finished_empty_selection": 2,
+        "unfinished_call_budget": 10
+      },
+      "stop_reason_counts": {
+        "call_budget": 10,
+        "finished": 2
+      }
+    },
+    "C2_en": {
+      "label": "C2",
+      "language": "en",
+      "questions": 12,
+      "selection_counts": {
+        "finished": 0,
+        "exact_target_selection": 0,
+        "target_covered": 0,
+        "target_with_allowed_context": 0,
+        "allowed_context_selected": 0,
+        "extra_selection": 0,
+        "unrelated_extra_selection": 0,
+        "empty_selection": 0,
+        "unfinished": 12
+      },
+      "trace_question_counts": {
+        "target_ever_returned": 0,
+        "exact_target_ever_returned": 0,
+        "target_returned_but_not_finally_covered": 0,
+        "exact_target_returned_but_not_finally_exact": 0,
+        "exact_target_returned_but_unfinished": 0,
+        "has_invalid_call": 12,
+        "has_argument_error": 12,
+        "exact_final_after_invalid_call": 0
+      },
+      "execution_totals": {
+        "calls": 288,
+        "invalid_calls": 285,
+        "input_tokens": 464784,
+        "generated_tokens": 6206,
+        "total_tokens": 470990,
+        "questions": 12
+      },
+      "seconds": 116.30929977100459,
+      "error_event_counts": {
+        "condition_or_event_selector": 2,
+        "dependency": 16,
+        "finish_or_budget": 96,
+        "format": 55,
+        "function_arguments": 116
+      },
+      "empty_query_event_counts": {},
+      "selection_observation_question_counts": {
+        "unfinished_call_budget": 12
+      },
+      "stop_reason_counts": {
+        "call_budget": 12
+      }
+    }
+  },
+  "paired_language_comparison": {
+    "P": {
+      "question_pairs": 12,
+      "counts": {
+        "both_exact": 1,
+        "english_only_exact": 0,
+        "chinese_only_exact": 0,
+        "neither_exact": 11
+      },
+      "pairs": [
+        {
+          "id": "radar-lookup-dev-01",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_error",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-02",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_completed",
+          "en_stop_reason": "program_completed",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-03",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_completed",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-04",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_error",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-05",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_completed",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-06",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_completed",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-07",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_error",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-08",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_error",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-09",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_error",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-10",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_completed",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-11",
+          "category": "both_exact",
+          "zh_stop_reason": "program_completed",
+          "en_stop_reason": "program_completed",
+          "zh_selected_fact_ids": [
+            "radar-review-001-11"
+          ],
+          "en_selected_fact_ids": [
+            "radar-review-001-11"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-12",
+          "category": "neither_exact",
+          "zh_stop_reason": "program_error",
+          "en_stop_reason": "program_error",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        }
+      ],
+      "formal_significance_tested": false
+    },
+    "A1": {
+      "question_pairs": 12,
+      "counts": {
+        "both_exact": 1,
+        "english_only_exact": 0,
+        "chinese_only_exact": 0,
+        "neither_exact": 11
+      },
+      "pairs": [
+        {
+          "id": "radar-lookup-dev-01",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-02",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-03",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-04",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-05",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-06",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-07",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-08",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-09",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-10",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-11",
+          "category": "both_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [
+            "radar-review-001-11"
+          ],
+          "en_selected_fact_ids": [
+            "radar-review-001-11"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-12",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        }
+      ],
+      "formal_significance_tested": false
+    },
+    "C1": {
+      "question_pairs": 12,
+      "counts": {
+        "both_exact": 1,
+        "english_only_exact": 1,
+        "chinese_only_exact": 1,
+        "neither_exact": 9
+      },
+      "pairs": [
+        {
+          "id": "radar-lookup-dev-01",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-02",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": [
+            "radar-review-001-01"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-03",
+          "category": "neither_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-04",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-05",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-06",
+          "category": "english_only_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": [
+            "radar-review-001-06"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-07",
+          "category": "neither_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-08",
+          "category": "chinese_only_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [
+            "radar-review-001-08"
+          ],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-09",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-10",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-11",
+          "category": "both_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [
+            "radar-review-001-11"
+          ],
+          "en_selected_fact_ids": [
+            "radar-review-001-11"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-12",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        }
+      ],
+      "formal_significance_tested": false
+    },
+    "A2": {
+      "question_pairs": 12,
+      "counts": {
+        "both_exact": 2,
+        "english_only_exact": 1,
+        "chinese_only_exact": 1,
+        "neither_exact": 8
+      },
+      "pairs": [
+        {
+          "id": "radar-lookup-dev-01",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-02",
+          "category": "neither_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [
+            "radar-review-001-03"
+          ],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-03",
+          "category": "neither_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-04",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-05",
+          "category": "english_only_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": [
+            "radar-review-001-05"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-06",
+          "category": "neither_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-07",
+          "category": "both_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [
+            "radar-review-001-07"
+          ],
+          "en_selected_fact_ids": [
+            "radar-review-001-07"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-08",
+          "category": "chinese_only_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [
+            "radar-review-001-08"
+          ],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-09",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-10",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-11",
+          "category": "both_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "finished",
+          "zh_selected_fact_ids": [
+            "radar-review-001-11"
+          ],
+          "en_selected_fact_ids": [
+            "radar-review-001-11"
+          ]
+        },
+        {
+          "id": "radar-lookup-dev-12",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        }
+      ],
+      "formal_significance_tested": false
+    },
+    "C2": {
+      "question_pairs": 12,
+      "counts": {
+        "both_exact": 0,
+        "english_only_exact": 0,
+        "chinese_only_exact": 0,
+        "neither_exact": 12
+      },
+      "pairs": [
+        {
+          "id": "radar-lookup-dev-01",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-02",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-03",
+          "category": "neither_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-04",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-05",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-06",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-07",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-08",
+          "category": "neither_exact",
+          "zh_stop_reason": "finished",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-09",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-10",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-11",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        },
+        {
+          "id": "radar-lookup-dev-12",
+          "category": "neither_exact",
+          "zh_stop_reason": "call_budget",
+          "en_stop_reason": "call_budget",
+          "zh_selected_fact_ids": [],
+          "en_selected_fact_ids": []
+        }
+      ],
+      "formal_significance_tested": false
+    }
+  },
+  "cpu_replay": {
+    "rows": 120,
+    "mismatches": 0,
+    "completed_runs": 10,
+    "all_runs_completed_before_reference_access": true,
+    "all_runs_replayed_before_reference_access": true,
+    "checked": [
+      "frozen code/data hashes",
+      "runtime protocol/output/model/config/language bindings",
+      "paired question IDs and exact language prompts",
+      "assistant/tool messages",
+      "events",
+      "prediction",
+      "selected_handle",
+      "calls",
+      "invalid_calls",
+      "deterministic renderer",
+      "token sums",
+      "runtime totals",
+      "canonical reference executability"
+    ]
+  },
+  "metric_definitions": {
+    "finished": "A terminal result was selected; an empty list counts as finished.",
+    "exact_target_selection": "Final selected fact IDs equal the fixed one-record target.",
+    "target_covered": "The final result contains the target, possibly with extra records.",
+    "unrelated_extra_selection": "Any final record outside the single target; no allowed comparison context.",
+    "empty_selection": "Finished with an empty final list; excludes unfinished episodes.",
+    "target_ever_returned": "At least one successful QueryAttr/QueryAttrUnderCondition observation contains the target, even if no final selection follows.",
+    "exact_target_ever_returned": "At least one successful query observation contains exactly the target.",
+    "exact_final_after_invalid_call": "An exact final selection follows at least one invalid call; this is not a counterfactual recovery effect.",
+    "tokens": "Unpadded complete prefills summed over turns plus generated tokens including EOS; not FLOPs."
+  },
+  "interpretation_limits": [
+    "Twelve exposed AI-rewritten lookup questions in two language versions; not 24 independent items or a held-out radar benchmark.",
+    "Bilingual meanings were AI reviewed; common instructions, schema and source observations remain mixed language.",
+    "Within-checkpoint language pairs are descriptive compatibility diagnostics, not isolated proof of a language capability cause.",
+    "Compared with the original twelve-question probe, task wording and scope also changed; gains cannot be assigned solely to language or prompt optimization.",
+    "No formal significance test, domain efficacy claim, or new training decision follows automatically from these twelve items.",
+    "Source-scoped prose is rendered from AI-reviewed KB notes; model semantic adjudication and equipment truth are not scored.",
+    "Analysis replays existing artifacts on CPU and does not rerun GPU inference or revalidate local checkpoint weight bytes."
+  ],
+  "new_training_started": false,
+  "human_gold": false,
+  "independent_evaluation": false,
+  "semantic_answer_scored": false,
+  "formal_significance_tested": false,
+  "inputs_sha256": {
+    "results/radar_domain/lookup_probe_v1/protocol.json": "2a4c9b81dcd35510213e0558d8a995cecdc6b1a0c9496fc02ce7fdd90bf175a2",
+    "results/radar_domain/lookup_probe_v1/P_zh.jsonl": "09ec0fdd7ef2137811b3754e580a1f0d4578fcdef6cb0005ebe1cec2fac08906",
+    "results/radar_domain/lookup_probe_v1/P_zh.runtime.json": "f8283cd74e8b6a9671cd2474c29aff17d3ae9ce4525ac7f3a98801a696ddc60e",
+    "results/radar_domain/lookup_probe_v1/P_en.jsonl": "a62298ac20dbd7f6a44d2a8095c3ee9edff026c4e0a8d984262876c0d4867e9f",
+    "results/radar_domain/lookup_probe_v1/P_en.runtime.json": "cbcb3733a9ef2f44057b9945865891f4d475f3b766d93f8c9552155112c333bc",
+    "results/radar_domain/lookup_probe_v1/A1_zh.jsonl": "46eaf25b386a0e3050b79bf28ae5bc78604cbffb8733f981bdcbdcac2315c63e",
+    "results/radar_domain/lookup_probe_v1/A1_zh.runtime.json": "887f20861dc9c28267bec45871dc1d2b5ff382fd3b284e41ee078aac5da53f1d",
+    "results/radar_domain/lookup_probe_v1/A1_en.jsonl": "2165754c92d3144df7a9a95aa7323f5d20523f6cd20b152a7f15ece148f10255",
+    "results/radar_domain/lookup_probe_v1/A1_en.runtime.json": "ae51108ddd509f2aad5e68bcb4fd057dba463b4f18c0095ba6c942a70aa27b48",
+    "results/radar_domain/lookup_probe_v1/C1_zh.jsonl": "ce383074a5c4aa7d214da3629b97bdd6ab25bb1835ae1bdd59bd01a967ca5d12",
+    "results/radar_domain/lookup_probe_v1/C1_zh.runtime.json": "f127e0b787a6ec170f1a6885cff0e13412473f2c9ef2f512db659a0e5caba64d",
+    "results/radar_domain/lookup_probe_v1/C1_en.jsonl": "4be163d23bd0d6e54d633e2c78eaae8a7e79f2d5489ab0e736c37b1f71c0514e",
+    "results/radar_domain/lookup_probe_v1/C1_en.runtime.json": "d95ee2792f2ea52487890545916e0bd4672998ef4235222bb50b0b3bf3e92ab3",
+    "results/radar_domain/lookup_probe_v1/A2_zh.jsonl": "2f3a540459b9bae7658311e09d6a8510932bd56feccd9301ae1b685526da1181",
+    "results/radar_domain/lookup_probe_v1/A2_zh.runtime.json": "df0477322206c1c9a4d3cf8a1ee195da52828fb730325989974ac638509fe32d",
+    "results/radar_domain/lookup_probe_v1/A2_en.jsonl": "af88c6c751b69a8680d16d0a188f2f25cbc3455e54a57928b87876abdb72e944",
+    "results/radar_domain/lookup_probe_v1/A2_en.runtime.json": "9a5f86994db0ef341ccf0db96fb45044bf13e99c86390ee33be396e4e7294d31",
+    "results/radar_domain/lookup_probe_v1/C2_zh.jsonl": "72fa26a76df8e72f3f5e717e23e5277b91271872aee0f06a78f7ee16b0c739b3",
+    "results/radar_domain/lookup_probe_v1/C2_zh.runtime.json": "acefe106dcaba1c3f35ddff7a4f252ad5ed5add5bbbe0d19b55aadc9d869e123",
+    "results/radar_domain/lookup_probe_v1/C2_en.jsonl": "a51d4af483306b55bdb3064fca78aa726061952b0d85bad42f8b1a38b35dc8f4",
+    "results/radar_domain/lookup_probe_v1/C2_en.runtime.json": "2cbbae4e25d8f43f1d3256cc8469eadcb7aea54f31c101e242665a844e21c29a",
+    "experiments/radar_domain/development_data.py": "c573a16f9744b02948d702581309ab1394c2e63d2ed73e081b67edf72112bc06",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_probe.py": "ce5f1c26b9c9dd927ff4137bed41c354e7590ebee1d283842603c9021972a104",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/run_job.py": "8e1b06613ec2bf9ac9c8f209c66bc576585d520dfdef4715b283f52e23405b66",
+    "artifacts/thesis_direction_review/radar_development_v2/readings.json": "13b95869b2e7aceebac3d1088cfb437533878d46f59e6ecc24c12eb152b398c2",
+    "artifacts/thesis_direction_review/radar_development_v2/questions.jsonl": "ddf2f9469715f681bb891c4881a6963c8cbaf14f8ded18a4ef01c63e18e4efed",
+    "artifacts/thesis_direction_review/radar_development_v2/manifest.json": "ab7fc6f822a1163ba3970406d7bbda63bc593ac8675d608f58d930ed70571ffe",
+    "results/agent_feedback/weights_verified.json": "0e0758af62e353e510afa2058e70f5398b8cc01631a12ae137b389c7d1645b6a",
+    "experiments/radar_domain/lookup_probe.py": "035e22cd5d34fb9a73f506da0a847c6be0b8550f6a02492951c5bea35f097116",
+    "experiments/radar_domain/task_calibration.py": "d21c93cf51d227dec9710b8ece74fd5d402d1c4cae2a68a3f859a3017bbe3e02",
+    "experiments/radar_domain/lookup_analysis.py": "db4e605c228257c77b46c0a3f91dfc52623d564435a107c0a39a6036944041cd",
+    "experiments/radar_domain/development_analysis.py": "96c7d3d29c74d8c5664f9b7cecbb9aa42d239980056e71014436fead0a1a382e",
+    "results/radar_domain/development_probe_v1/protocol.json": "e2d9b5999d392c3094a8352b5e0bd93c73019e95769b9a79b459a5ee061b2702",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/manifest.json": "31b2ff3050e0a8eeb6696f22e40971604d7e65f37a349a5813f9ff79289b8115",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.zh.jsonl": "52873195290c0aa9dee38cee659075cfadb2917d898988451c580ffb0f5cb14a",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.en.jsonl": "f309b71e3593f3b2b37f3f42bd7c54040f5c04f486eca6d12b43bebc84c3d30d",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/references.json": "83c3b679a5bf7af532dd29aaa753212939acec9a8ef2cfde51c264f9811d01d7"
+  },
+  "outputs_sha256": {
+    "per_question_diagnosis.json": "1f2f6d6508f1008f804207d294399c62123045b164551bbd20ec09e6c6c8eac7"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "version": "radar_interface_adaptation_design_v1",
+  "status": "design_only_not_training_authorization_or_frozen_training_protocol",
+  "date_beijing": "2026-10-05",
+  "reason": "The single planned bilingual alignment retest still produced only 0-3 exact record selections per 12 questions for every checkpoint. Persistent signature, field/qualifier and handle errors precede correct retrieval.",
+  "evidence": "results/radar_domain/lookup_probe_v1/summary.json",
+  "research_role_zh": "领域接入的共同适配步骤；不作为新增算法创新，不替代公开数据上的恢复轨迹SFT主方法。",
+  "next_deliverable_zh": "先构建可执行且可审阅的接口监督小包，再冻结一次匹配预算适配方案；当前未生成该训练包，也未启动训练。",
+  "draft_data_scope": {
+    "target_intents": 100,
+    "count_is_provisional": true,
+    "languages": ["zh", "en"],
+    "synthetic": true,
+    "knowledge": "Explicitly fictitious entities and values for tool semantics; no fabricated claims about actual radar equipment.",
+    "functions": ["Find", "QueryAttr", "QueryAttrUnderCondition", "finish"],
+    "coverage": ["single attribute", "component/context condition", "event type", "range with both endpoints", "bound-source-field unknown", "valid handles and stopping after selecting the intended result"],
+    "target": "Canonical successful execution trajectories under the unchanged development tool contract; no erroneous trajectory recovery or preference objective in this common alignment phase.",
+    "target_budget": "Choose and freeze after tokenization and semantic review, before any adaptation run.",
+    "not_radar_factual_supervision": true
+  },
+  "isolation": {
+    "exclude_exposed_twelve_questions_and_all_rewrites_from_training": true,
+    "exclude_their_entity_identifiers_source_strings_values_and_copied_answers_from_synthetic_examples": true,
+    "keep_existing_twelve_as_seen_development_diagnostic_only": true,
+    "reserve_separate_synthetic_groups_before_training": true,
+    "synthetic_group_unit": "Shared entity aliases, knowledge instance and paraphrase/template family stay in one group; bilingual variants never split across groups.",
+    "sharing_function_names_and_attribute_ontology_is_intended": true,
+    "independent_radar_evaluation_still_requires_new_source_and_question_groups": true
+  },
+  "cpu_admission": [
+    "Check query meaning against the synthetic instance, not merely executor self-consistency.",
+    "Replay every reference and verify exact selected records, range endpoints, conditions, event and unknown scope.",
+    "Verify references terminate with existing answer handles; erroneous calls create no handles.",
+    "Check no original development record identifiers, literal answers or source-context text appear in synthetic training rows.",
+    "Separate question-only generation files from references; record source/generator/version hashes and exact supervised token counts."
+  ],
+  "comparison_design": {
+    "A_C": "Both existing continuation seeds, each adapted with the identical corpus/order, supervised token budget and optimization configuration. Do not choose one favorable seed.",
+    "P": "Retain the existing program baseline. Any adapted P arm must use the same task instances and disclose different output serialization/supervision length; do not claim automatically token-matched training against agents.",
+    "keep_unadapted_results": true,
+    "no_RL": true,
+    "no_semantic_verification_preference_training": true,
+    "no_new_architecture_or_optimizer": true
+  },
+  "decision_boundary_zh": "数据包与CPU核验完成后，先固定训练/诊断分组、样本和监督预算、超参数、对照、指标及停止规则，才决定实施小规模适配。若适配只记住示例或合成保留组仍不能正确调用，就停止扩大训练。真实雷达效果必须另用来源隔离的新资料检查。",
+  "training_started": false,
+  "gpu_allocated": false,
+  "human_gold": false,
+  "automatic_next_run": false
+}

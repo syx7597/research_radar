@@ -1,0 +1,58 @@
+{
+  "time_beijing": "2026-10-05T17:13:39.874867+08:00",
+  "protocol_sha256": "2a4c9b81dcd35510213e0558d8a995cecdc6b1a0c9496fc02ce7fdd90bf175a2",
+  "jobs": [
+    {
+      "label": "P",
+      "language": "zh",
+      "gpu": 0,
+      "supervisor_pid": 19108,
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.agent_feedback.run_job",
+        "--name",
+        "radar_lookup_v1_P_zh",
+        "--gpus",
+        "0",
+        "--max-hours",
+        "0.25",
+        "--",
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "P",
+        "--language",
+        "zh"
+      ]
+    },
+    {
+      "label": "P",
+      "language": "en",
+      "gpu": 1,
+      "supervisor_pid": 19109,
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "experiments.agent_feedback.run_job",
+        "--name",
+        "radar_lookup_v1_P_en",
+        "--gpus",
+        "1",
+        "--max-hours",
+        "0.25",
+        "--",
+        ".venv/bin/python",
+        "-m",
+        "experiments.radar_domain.lookup_probe",
+        "generate",
+        "--label",
+        "P",
+        "--language",
+        "en"
+      ]
+    }
+  ]
+}

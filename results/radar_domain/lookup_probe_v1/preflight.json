@@ -1,0 +1,71 @@
+{
+  "checked_at_beijing": "2026-10-05T17:07:50.677018+08:00",
+  "user": "syx",
+  "protocol_sha256": "2a4c9b81dcd35510213e0558d8a995cecdc6b1a0c9496fc02ce7fdd90bf175a2",
+  "frozen_git_commit": "122b3eb",
+  "base_weights_sha256": {
+    "models/qwen2.5-3b-instruct/model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+    "models/qwen2.5-3b-instruct/model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+  },
+  "all_five_adapters_verified": true,
+  "prompt_lengths": {
+    "zh_P": [
+      491,
+      493,
+      495,
+      485,
+      495,
+      495,
+      497,
+      497,
+      490,
+      491,
+      489,
+      495
+    ],
+    "zh_agent": [
+      883,
+      885,
+      887,
+      877,
+      887,
+      887,
+      889,
+      889,
+      882,
+      883,
+      881,
+      887
+    ],
+    "en_P": [
+      488,
+      490,
+      490,
+      482,
+      489,
+      489,
+      489,
+      489,
+      487,
+      488,
+      487,
+      492
+    ],
+    "en_agent": [
+      880,
+      882,
+      882,
+      874,
+      881,
+      881,
+      881,
+      881,
+      879,
+      880,
+      879,
+      884
+    ]
+  },
+  "other_gpu_processes": "",
+  "seconds": 6.257981780014234
+}

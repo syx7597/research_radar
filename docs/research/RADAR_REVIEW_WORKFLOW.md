@@ -140,3 +140,23 @@ python3 scripts/audit_radar_review_workflow.py \
 # 仅用合成事实检查验收门禁，不触及公开基准
 python3 -m unittest discover -s tests -p test_radar_review_workflow.py
 ```
+
+### 一次中英单意图对齐复测
+
+用户于2026-10-05授权执行已准备的校准材料。[运行前协议](../../results/radar_domain/lookup_probe_v1/protocol.json)固定P和A/C两个续训种子，每模型分别运行同一12题的中文与英文版本，共10组120条流程。新[运行器](../../experiments/radar_domain/lookup_probe.py)沿用原模型权重、提示、工具、知识版本、解析方式及生成预算，仅更换题面文件、语言标记和输出路径。每组由原`run_job`监管，最多15分钟，总上限2.5 GPU小时；实际耗时另记，不把上限当作实耗。
+
+英文题仍共享原双语系统提示和中文知识注记。因此中英差异只描述这12组AI改写题上的题面语言关联，不能推广为完整英文与中文系统优劣。与上一轮相比又改变了题意范围，只能作为任务改写诊断，不能全部归因于翻译。
+
+[统一分析器](../../experiments/radar_domain/lookup_analysis.py)先确认10组完成与语言、模型、配置及输出哈希，再重放全部120条流程，最后读取AI参考。分别报告严格目标选择、完成/空结果、调用错误和成本，并区分“从未取到目标”与“曾取到目标却未正确结束”。按同一模型的12个目标配对列出中英都对、仅中文对、仅英文对和都错，不把24个语言版本或不同检查点当独立样本。
+
+```bash
+# 仅在原syx GPU环境中运行；每个名称/输出只能首次创建
+python -m experiments.agent_feedback.run_job --name radar_lookup_v1_P_zh --gpus 0 \
+  --max-hours 0.25 -- python -m experiments.radar_domain.lookup_probe generate --label P --language zh
+
+# 十组全部完成后统一CPU回放和诊断；不调用GPU
+python3 -m experiments.radar_domain.lookup_analysis
+python3 -m experiments.radar_domain.lookup_analysis --check
+```
+
+这次用尽预定的单次对齐复测机会，不根据结果继续改提示或挑种子。签名/句柄循环持续存在时，先制定匹配监督预算的接口适配材料；调用可执行但字段/条件仍错时，再限定相应监督目标。不会自动启动训练，也不将这批已见衍生题转成最终评价。

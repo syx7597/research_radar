@@ -1,0 +1,37 @@
+{
+  "label": "C2",
+  "language": "zh",
+  "status": "completed",
+  "seconds": 95.09463206699002,
+  "totals": {
+    "calls": 263,
+    "invalid_calls": 249,
+    "input_tokens": 415365,
+    "generated_tokens": 5421,
+    "total_tokens": 420786,
+    "questions": 12
+  },
+  "protocol_sha256": "2a4c9b81dcd35510213e0558d8a995cecdc6b1a0c9496fc02ce7fdd90bf175a2",
+  "output_sha256": "72fa26a76df8e72f3f5e717e23e5277b91271872aee0f06a78f7ee16b0c739b3",
+  "scope": "One fixed bilingual lookup diagnostic on 12 exposed AI-rewritten development targets; interface compatibility only",
+  "config": {
+    "seed": 20261003,
+    "batch_size": 8,
+    "max_context": 8192,
+    "max_generated": 2048,
+    "max_calls": 24,
+    "agent_turn_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "model": {
+    "adapter": "results/agent_feedback/recovery_sft_seed20261004/model",
+    "program": false,
+    "files_sha256": {
+      "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+      "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807"
+    }
+  },
+  "token_accounting": "Unpadded complete prefills summed over turns plus generated tokens incl EOS; not FLOPs. P calls are executed program steps including automatic finish, not model tool turns."
+}

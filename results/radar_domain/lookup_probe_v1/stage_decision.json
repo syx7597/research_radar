@@ -1,0 +1,168 @@
+{
+  "version": "radar_lookup_transfer_decision_v1",
+  "date_beijing": "2026-10-05",
+  "status": "stop_unadapted_direct_transfer",
+  "evidence_sha256": {
+    "results/radar_domain/lookup_probe_v1/protocol.json": "2a4c9b81dcd35510213e0558d8a995cecdc6b1a0c9496fc02ce7fdd90bf175a2",
+    "results/radar_domain/lookup_probe_v1/summary.json": "ee940a236ed2bd7043642ba4d8893d05f4c7735133122a8da02d1435b3219adb",
+    "results/radar_domain/lookup_probe_v1/per_question_diagnosis.json": "1f2f6d6508f1008f804207d294399c62123045b164551bbd20ec09e6c6c8eac7",
+    "results/radar_domain/lookup_probe_v1/execution_summary.json": "b08831a03e6c533a87f30ef163d73db4f43ab357f2ddbc82a350fb33cfc6d935",
+    "artifacts/thesis_direction_review/radar_interface_adaptation_plan_v1.json": "034086b8e56bf2ff3e660546076ac547504f42205145f38d38686313b3169078"
+  },
+  "counts": {
+    "P_zh": {
+      "questions": 12,
+      "exact": 1,
+      "finished_including_empty": 2,
+      "empty": 1,
+      "has_argument_error": 5,
+      "target_returned_but_lost": 0
+    },
+    "P_en": {
+      "questions": 12,
+      "exact": 1,
+      "finished_including_empty": 6,
+      "empty": 5,
+      "has_argument_error": 4,
+      "target_returned_but_lost": 0
+    },
+    "A1_zh": {
+      "questions": 12,
+      "exact": 1,
+      "finished_including_empty": 1,
+      "empty": 0,
+      "has_argument_error": 12,
+      "target_returned_but_lost": 0
+    },
+    "A1_en": {
+      "questions": 12,
+      "exact": 1,
+      "finished_including_empty": 1,
+      "empty": 0,
+      "has_argument_error": 12,
+      "target_returned_but_lost": 0
+    },
+    "C1_zh": {
+      "questions": 12,
+      "exact": 2,
+      "finished_including_empty": 5,
+      "empty": 3,
+      "has_argument_error": 10,
+      "target_returned_but_lost": 0
+    },
+    "C1_en": {
+      "questions": 12,
+      "exact": 2,
+      "finished_including_empty": 4,
+      "empty": 1,
+      "has_argument_error": 9,
+      "target_returned_but_lost": 0
+    },
+    "A2_zh": {
+      "questions": 12,
+      "exact": 3,
+      "finished_including_empty": 7,
+      "empty": 3,
+      "has_argument_error": 5,
+      "target_returned_but_lost": 0
+    },
+    "A2_en": {
+      "questions": 12,
+      "exact": 3,
+      "finished_including_empty": 4,
+      "empty": 1,
+      "has_argument_error": 11,
+      "target_returned_but_lost": 0
+    },
+    "C2_zh": {
+      "questions": 12,
+      "exact": 0,
+      "finished_including_empty": 2,
+      "empty": 2,
+      "has_argument_error": 12,
+      "target_returned_but_lost": 0
+    },
+    "C2_en": {
+      "questions": 12,
+      "exact": 0,
+      "finished_including_empty": 0,
+      "empty": 0,
+      "has_argument_error": 12,
+      "target_returned_but_lost": 0
+    }
+  },
+  "language_pairs": {
+    "P": {
+      "both_exact": 1,
+      "english_only_exact": 0,
+      "chinese_only_exact": 0,
+      "neither_exact": 11
+    },
+    "A1": {
+      "both_exact": 1,
+      "english_only_exact": 0,
+      "chinese_only_exact": 0,
+      "neither_exact": 11
+    },
+    "C1": {
+      "both_exact": 1,
+      "english_only_exact": 1,
+      "chinese_only_exact": 1,
+      "neither_exact": 9
+    },
+    "A2": {
+      "both_exact": 2,
+      "english_only_exact": 1,
+      "chinese_only_exact": 1,
+      "neither_exact": 8
+    },
+    "C2": {
+      "both_exact": 0,
+      "english_only_exact": 0,
+      "chinese_only_exact": 0,
+      "neither_exact": 12
+    }
+  },
+  "cpu_replay": {
+    "rows": 120,
+    "mismatches": 0,
+    "completed_runs": 10,
+    "all_runs_completed_before_reference_access": true,
+    "all_runs_replayed_before_reference_access": true,
+    "checked": [
+      "frozen code/data hashes",
+      "runtime protocol/output/model/config/language bindings",
+      "paired question IDs and exact language prompts",
+      "assistant/tool messages",
+      "events",
+      "prediction",
+      "selected_handle",
+      "calls",
+      "invalid_calls",
+      "deterministic renderer",
+      "token sums",
+      "runtime totals",
+      "canonical reference executability"
+    ]
+  },
+  "new_tests_passed": 13,
+  "probe_gpu_hours": 0.24047708590825398,
+  "cumulative_gpu_hours": 23.021209124591614,
+  "interpretation_zh": [
+    "单一查询意图和英文题面均未使任何检查点稳定完成接口任务；五模型中英精确命中各为1/1/2/3/0。",
+    "C1和A2有不同的中英成功题，合计相同不能解释为逐题完全相同；没有稳定语言优势，也没有可支持的领域C优势。",
+    "本轮所有组曾返回目标却最终丢失的计数为0；失败主要发生在查询到正确记录之前。错误签名、字段/条件与句柄使用均需要对齐。",
+    "保持公开数据上已有的恢复SFT结论，领域直接迁移不成立；两种语言、五模型不是独立样本，AI开发材料不是人工事实金标。"
+  ],
+  "decisions": {
+    "one_planned_alignment_retest_completed": true,
+    "further_prompt_or_wording_search": false,
+    "automatic_additional_GPU_run": false,
+    "new_training_started": false,
+    "retain_public_recovery_SFT_mainline": true,
+    "next_work": "Prepare and CPU-review a small explicitly synthetic interface-supervision pack, then freeze a matched A/C adaptation protocol before deciding on training.",
+    "adaptation_design": "artifacts/thesis_direction_review/radar_interface_adaptation_plan_v1.json",
+    "final_domain_evaluation_not_ready": true,
+    "semantic_verification_preference_training": "still_paused"
+  }
+}
