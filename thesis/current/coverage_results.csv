@@ -1,0 +1,62 @@
+table,label,metric,value,source,json_pointer
+answers,原文页,denominator,96,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/raw/denominator
+answers,原文页,answer_correct,60,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/raw/answer_correct
+answers,原文页,joint_correct,56,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/raw/joint_correct
+answers,原文页,binding_error_any,26,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/raw/binding_error_any
+answers,原文页,refusal,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/raw/refusal
+answers,平铺记录,denominator,96,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/flat/denominator
+answers,平铺记录,answer_correct,73,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/flat/answer_correct
+answers,平铺记录,joint_correct,17,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/flat/joint_correct
+answers,平铺记录,binding_error_any,17,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/flat/binding_error_any
+answers,平铺记录,refusal,5,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/flat/refusal
+answers,条件绑定,denominator,96,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/bound/denominator
+answers,条件绑定,answer_correct,80,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/bound/answer_correct
+answers,条件绑定,joint_correct,52,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/bound/joint_correct
+answers,条件绑定,binding_error_any,11,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/bound/binding_error_any
+answers,条件绑定,refusal,4,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/overall/bound/refusal
+groups,Vaisala WRS300,raw,8,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/vaisala_wrs300/raw/joint_correct
+groups,Vaisala WRS300,flat,2,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/vaisala_wrs300/flat/joint_correct
+groups,Vaisala WRS300,bound,5,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/vaisala_wrs300/bound/joint_correct
+groups,Vaisala WRS300,paired_net,3,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/vaisala_wrs300/paired_bound_minus_flat/net
+groups,EEC Ranger-X,raw,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/eec_ranger_x_band/raw/joint_correct
+groups,EEC Ranger-X,flat,3,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/eec_ranger_x_band/flat/joint_correct
+groups,EEC Ranger-X,bound,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/eec_ranger_x_band/bound/joint_correct
+groups,EEC Ranger-X,paired_net,3,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/eec_ranger_x_band/paired_bound_minus_flat/net
+groups,GAMIC GMWR,raw,7,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/gamic_gmwr/raw/joint_correct
+groups,GAMIC GMWR,flat,2,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/gamic_gmwr/flat/joint_correct
+groups,GAMIC GMWR,bound,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/gamic_gmwr/bound/joint_correct
+groups,GAMIC GMWR,paired_net,4,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/gamic_gmwr/paired_bound_minus_flat/net
+groups,METEK MRR,raw,4,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/metek_mrr/raw/joint_correct
+groups,METEK MRR,flat,1,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/metek_mrr/flat/joint_correct
+groups,METEK MRR,bound,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/metek_mrr/bound/joint_correct
+groups,METEK MRR,paired_net,5,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/metek_mrr/paired_bound_minus_flat/net
+groups,FURUNO DRS-NXT,raw,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/furuno_drs_nxt/raw/joint_correct
+groups,FURUNO DRS-NXT,flat,2,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/furuno_drs_nxt/flat/joint_correct
+groups,FURUNO DRS-NXT,bound,9,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/furuno_drs_nxt/bound/joint_correct
+groups,FURUNO DRS-NXT,paired_net,7,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/furuno_drs_nxt/paired_bound_minus_flat/net
+groups,JRC JMA-5200Mk2,raw,8,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/jrc_jma5200mk2/raw/joint_correct
+groups,JRC JMA-5200Mk2,flat,0,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/jrc_jma5200mk2/flat/joint_correct
+groups,JRC JMA-5200Mk2,bound,5,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/jrc_jma5200mk2/bound/joint_correct
+groups,JRC JMA-5200Mk2,paired_net,5,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/jrc_jma5200mk2/paired_bound_minus_flat/net
+groups,Garmin Fantom,raw,10,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/garmin_gmr_fantom/raw/joint_correct
+groups,Garmin Fantom,flat,1,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/garmin_gmr_fantom/flat/joint_correct
+groups,Garmin Fantom,bound,7,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/garmin_gmr_fantom/bound/joint_correct
+groups,Garmin Fantom,paired_net,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/garmin_gmr_fantom/paired_bound_minus_flat/net
+groups,Raymarine Cyclone,raw,7,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/raymarine_cyclone/raw/joint_correct
+groups,Raymarine Cyclone,flat,6,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/raymarine_cyclone/flat/joint_correct
+groups,Raymarine Cyclone,bound,8,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/raymarine_cyclone/bound/joint_correct
+groups,Raymarine Cyclone,paired_net,2,results/radar_domain/coverage_v2/semantic_summary.json,/adjudicated/source_groups/raymarine_cyclone/paired_bound_minus_flat/net
+cost,原文页,input_tokens,197825,results/radar_domain/coverage_v2/execution_audit.json,/arms/raw/input_tokens
+cost,原文页,generated_tokens,7729,results/radar_domain/coverage_v2/execution_audit.json,/arms/raw/generated_tokens
+cost,原文页,gpu_hours,0.041966966077501035,results/radar_domain/coverage_v2/execution_audit.json,/arms/raw/gpu_hours
+cost,平铺记录,input_tokens,1131526,results/radar_domain/coverage_v2/execution_audit.json,/arms/flat/input_tokens
+cost,平铺记录,generated_tokens,6936,results/radar_domain/coverage_v2/execution_audit.json,/arms/flat/generated_tokens
+cost,平铺记录,gpu_hours,0.05444247700249737,results/radar_domain/coverage_v2/execution_audit.json,/arms/flat/gpu_hours
+cost,条件绑定,input_tokens,1022645,results/radar_domain/coverage_v2/execution_audit.json,/arms/bound/input_tokens
+cost,条件绑定,generated_tokens,6798,results/radar_domain/coverage_v2/execution_audit.json,/arms/bound/generated_tokens
+cost,条件绑定,gpu_hours,0.05064648951584887,results/radar_domain/coverage_v2/execution_audit.json,/arms/bound/gpu_hours
+posthoc_diagnosis,bound_minus_flat,CoverageAnswerWins,8,results/radar_domain/coverage_v2/posthoc_diagnosis.json,/answer_correct_bound_minus_flat/wins
+posthoc_diagnosis,bound_minus_flat,CoverageAnswerLosses,1,results/radar_domain/coverage_v2/posthoc_diagnosis.json,/answer_correct_bound_minus_flat/losses
+posthoc_diagnosis,bound_minus_flat,CoverageAnswerNet,7,results/radar_domain/coverage_v2/posthoc_diagnosis.json,/answer_correct_bound_minus_flat/net
+posthoc_diagnosis,bound_minus_flat,CoverageJointAlreadyCorrectWins,29,results/radar_domain/coverage_v2/posthoc_diagnosis.json,/joint_win_strata/both_answers_correct
+posthoc_diagnosis,bound_minus_flat,CoverageJointAnswerWins,8,results/radar_domain/coverage_v2/posthoc_diagnosis.json,/joint_win_strata/flat_answer_incorrect

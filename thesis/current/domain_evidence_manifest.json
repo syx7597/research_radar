@@ -59,8 +59,8 @@
   "outputs_sha256": {
     "domain_results.csv": "4c50064a1ef39a9d79b0ad66f4a295c9b080e51b593da1bd2ea98fc7fc0b2f8d",
     "domain_tables.tex": "2494c86ce818a24b41a4bcc76fa31be5d34b7e94d36e205cf0262d65f3d33638",
-    "06_radar_application.tex": "2428d68c51332db4cb891538f55d6afca18c58d3157cd1a304916ed3636e2cd2",
-    "domain_review.tex": "d26f037901e9c2c62440a672423b6b74e74f539fdc7a39e8e3a09f9308fcd76a",
+    "06_radar_application.tex": "64f1825fee773d6786794a9a1cdbe564ac99d01d19ba345538a1db182a974658",
+    "domain_review.tex": "7d3d9cc08c8ccedbe259aa6c7e34236991d01a8b982232311b0500e3b2c61e2f",
     "domain_export.py": "5e3573ea62426ff7a72db6a7607e6f9adcd9f6c0ac7591bee8dd38ae741e2689"
   },
   "table_rows": 412,

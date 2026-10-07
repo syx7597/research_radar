@@ -1,0 +1,245 @@
+{
+  "schema": "radar_coverage_independent_aggregate_review_v1",
+  "passed": true,
+  "audit_scope": "Independent arithmetic and artifact-binding audit; no reference values, model-answer interpretation or semantic regrading. Reviewer rationale/evidence prose was not used.",
+  "reference_files_opened": false,
+  "semantic_regrading_performed": false,
+  "counts_per_arm": 96,
+  "reviewed_outputs": 288,
+  "original_review_rows": [
+    288,
+    288
+  ],
+  "adjudication_rows": 19,
+  "original_disagreement_rows": 19,
+  "original_disagreement_fields": {
+    "binding_error_types": 6,
+    "redundancy": 8,
+    "supported_by_supplied_evidence": 6,
+    "citations_support": 3
+  },
+  "original_reviewer_agreement_counts_out_of_288": {
+    "joint_correct": 288,
+    "answer_correct": 288,
+    "supported_by_supplied_evidence": 282,
+    "citations_support": 285,
+    "binding_error_any": 288,
+    "refusal": 288,
+    "redundancy": 280
+  },
+  "all_288_joint_verdicts_agree_between_A_and_B": true,
+  "permitted_agreement_claim": "A and B agree on the joint_correct boolean for every one of the 288 outputs; component judgments still contain disagreements.",
+  "adjudication_changes_to_primary_answer_binding": {
+    "versus_A": {
+      "joint_correct": 0,
+      "answer_correct": 0,
+      "binding_error_any": 0
+    },
+    "versus_B": {
+      "joint_correct": 0,
+      "answer_correct": 0,
+      "binding_error_any": 0
+    }
+  },
+  "primary_answer_binding_by_review": {
+    "original_reviewer_A": {
+      "raw": {
+        "denominator": 96,
+        "joint_correct": 56,
+        "answer_correct": 60,
+        "binding_error_any": 26
+      },
+      "flat": {
+        "denominator": 96,
+        "joint_correct": 17,
+        "answer_correct": 73,
+        "binding_error_any": 17
+      },
+      "bound": {
+        "denominator": 96,
+        "joint_correct": 52,
+        "answer_correct": 80,
+        "binding_error_any": 11
+      }
+    },
+    "original_reviewer_B": {
+      "raw": {
+        "denominator": 96,
+        "joint_correct": 56,
+        "answer_correct": 60,
+        "binding_error_any": 26
+      },
+      "flat": {
+        "denominator": 96,
+        "joint_correct": 17,
+        "answer_correct": 73,
+        "binding_error_any": 17
+      },
+      "bound": {
+        "denominator": 96,
+        "joint_correct": 52,
+        "answer_correct": 80,
+        "binding_error_any": 11
+      }
+    },
+    "adjudicated": {
+      "raw": {
+        "denominator": 96,
+        "joint_correct": 56,
+        "answer_correct": 60,
+        "binding_error_any": 26
+      },
+      "flat": {
+        "denominator": 96,
+        "joint_correct": 17,
+        "answer_correct": 73,
+        "binding_error_any": 17
+      },
+      "bound": {
+        "denominator": 96,
+        "joint_correct": 52,
+        "answer_correct": 80,
+        "binding_error_any": 11
+      }
+    }
+  },
+  "paired_bound_minus_flat": {
+    "wins": 37,
+    "losses": 2,
+    "net": 35,
+    "percentage_points": 36.458333333333336
+  },
+  "source_group_results": {
+    "eec_ranger_x_band": {
+      "net_bound_minus_flat": 3,
+      "joint_correct": {
+        "raw": 6,
+        "flat": 3,
+        "bound": 6
+      },
+      "denominator_each_arm": 12
+    },
+    "furuno_drs_nxt": {
+      "net_bound_minus_flat": 7,
+      "joint_correct": {
+        "raw": 6,
+        "flat": 2,
+        "bound": 9
+      },
+      "denominator_each_arm": 12
+    },
+    "gamic_gmwr": {
+      "net_bound_minus_flat": 4,
+      "joint_correct": {
+        "raw": 7,
+        "flat": 2,
+        "bound": 6
+      },
+      "denominator_each_arm": 12
+    },
+    "garmin_gmr_fantom": {
+      "net_bound_minus_flat": 6,
+      "joint_correct": {
+        "raw": 10,
+        "flat": 1,
+        "bound": 7
+      },
+      "denominator_each_arm": 12
+    },
+    "jrc_jma5200mk2": {
+      "net_bound_minus_flat": 5,
+      "joint_correct": {
+        "raw": 8,
+        "flat": 0,
+        "bound": 5
+      },
+      "denominator_each_arm": 12
+    },
+    "metek_mrr": {
+      "net_bound_minus_flat": 5,
+      "joint_correct": {
+        "raw": 4,
+        "flat": 1,
+        "bound": 6
+      },
+      "denominator_each_arm": 12
+    },
+    "raymarine_cyclone": {
+      "net_bound_minus_flat": 2,
+      "joint_correct": {
+        "raw": 7,
+        "flat": 6,
+        "bound": 8
+      },
+      "denominator_each_arm": 12
+    },
+    "vaisala_wrs300": {
+      "net_bound_minus_flat": 3,
+      "joint_correct": {
+        "raw": 8,
+        "flat": 2,
+        "bound": 5
+      },
+      "denominator_each_arm": 12
+    }
+  },
+  "continuation_gate": {
+    "conditions": {
+      "net_gain": true,
+      "source_groups": true,
+      "binding_errors": true
+    },
+    "positive_source_groups": 8,
+    "passed": true,
+    "statistical_significance_claim": false
+  },
+  "checks": {
+    "protocol_96_unique_ids": true,
+    "mapping_288_unique_pairs": true,
+    "groups_8_by_12": true,
+    "public_protocol_policy_hashes": true,
+    "frozen_generation_code_hashes": true,
+    "current_summary_code_hash": true,
+    "execution_audit_binding": true,
+    "mapping_and_packet_hashes": true,
+    "builder_and_input_hashes": true,
+    "reviews_bound_to_packets": true,
+    "original_review_and_adjudication_hashes": true,
+    "distinct_review_identity_and_files": true,
+    "final_private_verdict_hashes": true,
+    "mapping_outputs_are_mechanically_audited": true,
+    "raw_flat_bound_runtime_hashes": true,
+    "reviewer_A_typed_boolean_identity": true,
+    "reviewer_A_unique_roster": true,
+    "reviewer_B_typed_boolean_identity": true,
+    "reviewer_B_unique_roster": true,
+    "adjudication_typed_boolean_identity": true,
+    "adjudication_unique_roster": true,
+    "private_final_typed_boolean_identity": true,
+    "private_final_unique_roster": true,
+    "every_disagreement_explicitly_adjudicated": true,
+    "merged_final_matches_saved_boolean_verdicts": true,
+    "original_rows_preserved": true,
+    "disagreements_and_overrides_retained": true,
+    "original_reviewer_A_all_published_aggregates_match": true,
+    "original_reviewer_B_all_published_aggregates_match": true,
+    "adjudicated_all_published_aggregates_match": true,
+    "frozen_gate_thresholds": true,
+    "reported_primary_pair_37_wins_2_losses": true
+  },
+  "bound_inputs_sha256": {
+    "results/radar_domain/coverage_v2/semantic_summary.json": "76974b0ed9771efab8e2d86e02e2246fd5c15c530ab93093a6fcd4f75595072f",
+    "results/radar_domain/coverage_v2/protocol.json": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+    "results/radar_domain/coverage_v2/evaluation_policy.json": "367e197dcdf52ff9db82d52b922894fb89b9435e3181905c171818a0717ef1f5",
+    "results/radar_domain/coverage_v2/execution_audit.json": "0d58e15b11818772a0783b3269d21a64e5c0bb9e9ab765bd25c36cc58bcd1ae4",
+    "data/radar_sources_v2/evaluation_audit_v1/final/audit.json": "db3c5af24ec03243231d2677e65108eef6da856f50f77dd99133678597352169",
+    "data/radar_sources_v2/semantic_review_v1/manifest.json": "ec4384710c87f3a9a88b08930586e6b50dc207bf3450fb57051629fe2e386296",
+    "data/radar_sources_v2/semantic_review_v1/mapping_for_adjudicator_only.json": "cf7345d41a44a6c95a0a97c77dc73ebf6a8aaf6dfbc48348499500d74b3f54be",
+    "data/radar_sources_v2/semantic_review_v1/reviewer_A.json": "b68050488de3c34d1fcfade14327aa32b7be3ed00676fbbda64fb1fc91ad4446",
+    "data/radar_sources_v2/semantic_review_v1/reviewer_B.json": "cb3734bd9982711b6d1308fc0b67343bd86d71e0ba118e5d56a1499fc7ce575d",
+    "data/radar_sources_v2/semantic_review_v1/adjudication.json": "c0dce98615efefe19565c5ce37de74b956ba89cb43284fa953764006b3067d12",
+    "data/radar_sources_v2/semantic_review_v1/final_verdicts.json": "55b75cba300f198411c77770e1102dc9766bac708d7ba5271f43c78e508731bd",
+    "experiments/radar_domain/coverage_review_summary.py": "fca7119c007152aeed10db96256581491703c73c6d38740ab14c93501118b221"
+  },
+  "limits": "Agreement on a conjunction does not mean agreement on every component or independent human validation. Continuation gates are arithmetic decision rules, not significance or generalization evidence."
+}

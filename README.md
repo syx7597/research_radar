@@ -8,80 +8,21 @@
 
 主线：**保留主体、条件、区间和来源的雷达知识资源 → 小模型生成可执行查询 → 答案与依据 → 公开基准和独立雷达评价**。复用现有数据、执行器和系统，不重建整个项目。配对续训复现、回放复核及B/D配对RL均已完成。RL增量未达到扩展标准，保留恢复轨迹SFT为主方案；语义核验偏好训练继续暂缓。领域核验与论文写作并行推进；范围和队列见[执行计划](docs/ROADMAP.md)。
 
-**2026-10-07：SSH恢复，旧开发GPU短测完成，96题三路正式协议已冻结。** [短测记录](results/radar_domain/coverage_v2_runtime_probe/summary.json)覆盖同一道旧题的2,733/8,192/31,000 token输入，最长输入峰值显存9.32 GiB；三例格式通过，但最长例引用列表为空，不能称引用完整或回答可靠。CPU常驻显示进程检查及生成API兼容失败均已保留；成功与失败共19.256 GPU秒，累计24.0454/72 GPU小时，无训练。
+**2026-10-07：SSH恢复后，三路96题评价和双AI语义审阅已完成。** 本轮不训练模型，检验相同结构化证据的组织方式。所有任务使用`syx`，三卡并行，各96题；288条输出的身份、分词、解码、顺序和预算复核通过，输入未截断。原文路线1条回答达到768输出上限，保留计分。正式评价耗费0.147056 GPU小时，项目累计24.192471/72；模型任务已结束。
 
-[正式协议](results/radar_domain/coverage_v2/protocol.json)固定同一基座、32768窗口、最多768生成token、batch 1贪心解码，三张空闲卡各跑raw/flat/bound的96题；总上限2 GPU小时，只跑一轮。输入另外绑定全部288条token ID哈希。原文仅作系统参照，主比较仍为等E_sem的bound对flat；[语义评分协议](results/radar_domain/coverage_v2/evaluation_policy.json)保留4道缺页题和所有失败分母，联合判断正文正确、证据支持与引用有效。当前刚冻结协议，尚无正式评价结果。
-
-[CPU资料展示参照](artifacts/thesis_direction_review/radar_representation_v1/evidence_display.json)已完成96页、8,434次记录出现的完整展示和还原检查；没有按答案筛记录，不计问答准确率。
-
-**此前完成：两种表示和真实分词预检。** [首版完整归档输入](artifacts/thesis_direction_review/radar_representation_v1/full_record_preflight.json)的flat/bound分别有84/82题超过8192，最长68,414/64,911 token；保留失败记录。随后在新测量前登记[一次输入协议修订](artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json)：仅将引文原文、字节偏移及文本哈希留在审计附件，全部主体、数值、单位、条件、技术注记和来源定位保留，两臂共用相同的E_sem。附件可还原完整记录，但模型没有读到附件，不能称整个原文无损。
-
-[修订后预检](artifacts/thesis_direction_review/radar_representation_v1/semantic_preflight.json)覆盖96题×3路：raw/flat/bound最长输入4,325/30,952/27,449 token；加768输出预算后全部符合模型配置声明的32768窗口。按测量前规则三路统一改用32768，不修改RoPE；96题、检索及8,434次记录出现均未减少，192次表示往返和502条完整记录还原通过。这是上下文可容纳性，不是准确率或GPU显存可行性结论。SSH连续两次连接超时，尚无新模型输出；下一步只用旧已见资料做显存、时延和回答格式短测，通过后冻结一次无训练评价。累计GPU仍24.040/72小时。
-
-**此前完成：96题独立编制、双AI语义复核与实际证据门槛。** [题目快照](artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json)覆盖8组各12题；由未读取旧答案、整理记录值或模型输出的作者从原文编题，两位非作者分别核验。四题通用脚注评分要求已澄清，允许正确简答和题面条件继承，具体测量条件及额外断言仍须核验。原题/数值未改，原稿、审稿及裁决保留；这是AI参考，不是人工金标。
-
-[固定检索与必要性检查](artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json)保守确认50题真实竞争读数、8个来源组、31题复杂对应，通过48/6/12门槛。两审原判44/57题均保留；逐项见证核对补认6题，另外7个边界分歧题不贡献通过数量。BM25覆盖92/96题全部参考页，每题带入7–241条完整读法；4个缺页题保留，未来不从分母删除。门槛只说明值得做对照，不能当作表示收益。旧题审计覆盖11文件10,874个问法/轨迹行，未识别本批同目标衍生，但同族暴露及未认证谱系局限仍在。
-
-该阶段16项CPU测试与96题检索重放通过；后续表示及上下文检查见上方新记录。没有按答案筛证据、删题或调整新题检索。
-
-**此前完成：502条来源读法和AI交叉复核。** [读法快照](artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json)覆盖预先声明的13页PDF与13个手册内容段、8个来源组；261条带显式限定、58条带多个限定，203条共同适用于多个主体，均不通过复制主体增加记录数。这些是来源读法，不能当作502个独立事实或评价样本。
-
-[归档汇总](artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json)记录8组可用来源、8家厂商、气象/船用各4组；保存8份PDF共78页、15个同册官方手册HTML段落及8份辅助网页。23个主型号包含同族变体，不算23份独立证据。原Simrad两次下载失败保留，已在出题和模型输出前登记METEK MRR替补，两份MRR资料只算一组。
-
-[历史排查](artifacts/thesis_direction_review/radar_sources_v2/history_screening.json)覆盖318个旧文件。Ranger、GMWR、DRS-NXT和未采用的HALO有同族记录，其中GMWR、DRS-NXT及HALO还命中旧QA/SFT；不称全项目未见，当前权重是否使用这些旧文件仍未知。官网与PDF的版本/规格差异已分开保存并限定主件，见[独立AI来源准备复核](artifacts/thesis_direction_review/radar_sources_v2/source_preparation_review.json)。171个本地原件、派生件和元数据文件通过字节核验；原件与全文不推送。
-
-[快照选择与复核边界](artifacts/thesis_direction_review/radar_readings_v1/selection.json)保留4个作者包、非作者AI审稿及修订历史。共39条排除/背景/歧义记录，其中5项来源未决问题不作为需要确定答案的题目依据；修正了可选加热器适用条件和技术功能遗漏。原文、标注、详细审稿留在忽略的本地数据目录，公开代码、哈希和汇总。8项CPU测试及全量页、引用校验通过；AI审稿不等于人工金标。
-
-后续96题与实际检索必要性审查已完成，见上方新快照；本段保留读法阶段依据。新增训练和模型运行均为0，累计GPU账本保持24.040/72小时。
-
-**此前完成：数据构建章及下一轮评价设计复核。** [第三章草稿](thesis/current/03_radar_data_construction.tex)区分历史库存、旧12条开发读法、合成100组和新来源材料，附6张表、109项可重建数据字段；当前第三至六章均有工作稿，PDF尚未编译，论文整体尚未完成。
-
-[下一轮设计](artifacts/thesis_direction_review/radar_coverage_v2/design.json)暂定8个来源/家族组、至少5家厂商、96道中文题。[原8个候选入口](artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json)保留为设计时筛查记录，后续归档及替补见上文。核心对照是同一完整证据的逐行表示与条件绑定组织；原文页作系统参照、规则模板作资料展示参照，不通过删掉条件削弱基线。至少48题存在真实竞争读数、覆盖6组，且12题需要双限定或多值对应，才启动该对照；不足则取消，避免做单记录格式试验。
-
-[独立AI设计审阅](artifacts/thesis_direction_review/radar_coverage_v2/design_review.json)未发现阻断问题，17项CPU审计测试及三组论文表格复核通过；设计审阅不等于来源事实验收或模型运行就绪。
-
-[已见登记](artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json)覆盖10份已见来源/10个家族组及全部已登记问法版本；[CPU划分审计](experiments/radar_domain/source_split_audit.py)检查显式闭包、跨组混用和AI身份声明，只证明元数据一致性。独立编题、必要性门槛及修订后E_sem等信息/分词检查现已完成；旧开发材料的运行短测通过后，才冻结一次暂定最多2 GPU小时的三路LLM评价。当前尚无正式执行协议冻结或新GPU任务。
-
-**前一轮：新厂商来源固定评价和双AI正文审阅完成，未观察到恢复C的额外领域正确性收益。** [资料包](artifacts/thesis_direction_review/radar_sources_v1/manifest.json)来自Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120和JRC JMA-1030系列的4份厂商PDF，共4个来源/家族、5个型号、24道中文题、62条来源读法和15个完整原文页。[来源AI审阅](artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json)通过。新资料与原12条实际调试来源/家族闭包隔离，但3个家族已在历史语料出现，旧自动QA完整来源血缘未认证；这是小规模AI探索评价，不是最终独立人工评价。
-
-六种证据入口为固定适配后的P/A1/C1/A2/C2和BM25 top4 RAG，统一由未经本项目适配的Qwen2.5-3B-Instruct根据原文页生成正文、断言与引用，中文模板证据卡不算回答。120条选择及144条回答的CPU重放/输入核验均零差异，见[机械检查](results/radar_domain/source_eval_v1/mechanical_summary.json)和[AI语义汇总](results/radar_domain/source_eval_v1/ai_semantic_summary.json)。
-
-| 证据入口 | 精确记录选择／24 | 支持页覆盖／24 | 正文正确／24（AI审阅） | 选择＋回答总token |
-|---|---:|---:|---:|---:|
-| RAG | 不适用 | 23 | 13 | 88,520 |
-| P | 15 | 19 | 13 | 48,368 |
-| A1 | 21 | 22 | 16 | 212,651 |
-| C1 | 19 | 23 | 15 | 176,433 |
-| A2 | 20 | 22 | 16 | 169,768 |
-| C2 | 19 | 24 | 16 | 143,625 |
-
-两个隐藏方法标签的AI审阅者对58个去重答案的正文正确性完全一致；5条分歧仅涉及缺证据拒答是否有支持，按限定措辞裁决为支持，不改变其答错和引用未支持判定，原判保留。主agent裁决已见汇总结果，不称盲裁决或人工金标。严格断言字段匹配均为0/24，**这不是正文准确率为0**。显式查询条件子集保留8题分母，另公开运行后增加的9题参考限定诊断，包含第15题双波束说明，不静默换分母。
-
-[运行记录](results/radar_domain/source_eval_v1/execution_summary.json)：11个GPU任务均由`syx`完成，无新训练；北京时间22:04:05–22:06:41，实耗0.103 GPU小时，累计24.040/72。表中总token包含选择和回答，不能因Agent回答阶段上下文较短就称其比RAG省token；资料整理成本也不同。[预冻结检索23/24](artifacts/thesis_direction_review/radar_sources_v1/pre_freeze_retrieval_observation.json)已披露，未据此调参。
-
-接口已可用，但C1正文比A1少1题，C2与A2持平；C2虽覆盖全部24题支持页，仍有8题在已有证据下答错。当前短板集中在表格量值、条件/部件绑定与回答，不由本批推定某个新算法已有效。按[阶段决定](results/radar_domain/source_eval_v1/stage_decision.json)保留公开2000题方法结论，领域不宣称算法领先；停止追加领域训练、RL及提示搜索，先收束应用章节、来源证据表与[失败案例](results/radar_domain/source_eval_v1/failure_diagnosis.json)，再补数据构建章衔接。本批没有未知或事件题，不能宣称对应能力已验证。24道AI题只是最小验证，完整论文仍需按预定义来源多样性、题型和参考可信度补充评价工作，当前不按分数扩样追分。
-
-**2026-10-05：一次共同接口适配与固定前后评价已完成，接口使用明显改善。** [合成材料](artifacts/thesis_direction_review/radar_interface_synthetic_v1/manifest.json)含100组虚构意图，按60/20/20划分训练、开发和保留组，中英共200题；[另一个AI agent审计](artifacts/thesis_direction_review/radar_interface_synthetic_v1/independent_ai_audit.json)及CPU执行检查通过。四个A/C检查点共用120条成功调用轨迹，固定5轮、学习率5e-5、batch 2、累积8，均完成40次更新、48,670个监督token；P完成同样40次更新、21,000个监督token，不能视为与Agent等预算。两组A/C的样本、实际顺序、监督量及配置匹配复核通过。该步骤用于教会新接口，不新增算法创新点。[训练](results/radar_domain/interface_adapt_v1/protocol.json)与[评价协议](results/radar_domain/interface_adapt_v1/evaluation/protocol.json)已在GPU运行前以`8ee7cf6`推送。
-
-| 检查点 | 合成精确选择：适配前→后／40 | 适配后已见雷达：中文／12 | 英文／12 |
+| 证据表示／各96题 | 正文正确（AI） | 正确且证据、引用有效 | 绑定错误题数 |
 |---|---:|---:|---:|
-| P | 1→40 | 11 | 11 |
-| A1 | 0→39 | 12 | 12 |
-| C1 | 7→40 | 12 | 12 |
-| A2 | 3→40 | 12 | 12 |
-| C2 | 8→40 | 12 | 11 |
+| raw：原文页 | 60 | 56 | 26 |
+| flat：完整平铺记录 | 73 | 17 | 17 |
+| bound：条件绑定表示 | 80 | 52 | 11 |
 
-新增520条预测全部CPU重放零差异，本地归档后再次复验一致；雷达适配前对照直接复用旧120条结果。15个作业全部由`syx`完成，结束检查四卡空闲。[执行记录](results/radar_domain/interface_adapt_v1/execution_summary.json)：北京时间19:39:54–19:59:20，本轮0.916 GPU小时，该阶段结束时累计23.937/72。见[适配结果](results/radar_domain/interface_adapt_v1/evaluation/summary.json)和[阶段决定](results/radar_domain/interface_adapt_v1/stage_decision.json)。合成40题来自20个双语意图组，每语言20题；雷达两语言共享12个已见目标，不按独立样本累计。模型只选择来源记录，证据卡由模板展示，不计作独立生成语义回答。共同接口适配有效，但普通A同样达到高分，**未证明恢复C在领域上的额外优势，也不能称为真实雷达准确率**。全部检查点已固定，停止该轮训练和提示搜索；后续的新厂商来源评价与双AI审阅已完成，结果见上文。AI参考与独立人工金标分开标注，公开方法收益与领域应用边界分别报告。
+[语义汇总](results/radar_domain/coverage_v2/semantic_summary.json)显示，bound相对flat联合正确37胜2负、净增35，8个来源组均正净增，绑定错误17→11，达到[运行前门槛](results/radar_domain/coverage_v2/evaluation_policy.json)。两位非题目作者AI分别评价全部288条，主判完全一致；19条输出存在23项字段分歧，原判保留，裁决没有改变联合正确、正文正确或题级错绑结果，见[独立复算](results/radar_domain/coverage_v2/aggregate_review.json)。这仍不是人工金标。
 
-此前预定的一次中英对齐复测已完成，停止未经适配的直接迁移。在同12个查询目标上，P/A1/C1/A2/C2中、英文精确记录选择均为1/1/2/3/0；C1和A2的中英成功题部分不同。10组120条流程重放零差异，仍有大量参数、字段/条件和句柄错误，没有可靠语言优势或领域C优势。见[复测结果](results/radar_domain/lookup_probe_v1/summary.json)和[阶段决定](results/radar_domain/lookup_probe_v1/stage_decision.json)。该次复测0.240 GPU小时，当时累计23.021/72；没有训练，不再改提示追分。
+**收益边界：正文只净增7题，不能把联合净增35题都说成事实推理提升。** [事后拆解](results/radar_domain/coverage_v2/posthoc_diagnosis.json)中，37个联合改善有29个原本两路正文都正确，主要改善在引用；正文配对为8胜1负。bound联合正确52/96仍低于raw的56/96。raw含额外未整理信息、上下文更短，也省去本批结构化读法整理，因此不能宣称全面优于原文RAG。表示变化没有新增模型训练、图关系推理或单位计算，也不是恢复SFT的雷达迁移收益。
 
-此前首轮中文开发检查也完整保留：[AI交叉审阅](artifacts/thesis_direction_review/radar_ai_cross_review_v1/index.html)的12条修订已应用为[独立开发版本](artifacts/thesis_direction_review/radar_development_v2/manifest.json)，原始数据保持不变。中文问题→模型查询→真实执行→固定模板来源证据卡已接通，首轮目标记录选择为P 0/12、A 0/12与0/12、C 3/12与1/12，60条重放零差异，实耗0.139 GPU小时。见[首次负结果](results/radar_domain/development_probe_v1/summary.json)。两轮都是已暴露AI开发材料，固定模板不代表模型独立完成来源裁决，不能称独立雷达准确率。
+本批按先定范围建立8来源组、502条来源读法和96道AI参考题；主比较flat/bound使用相同E_sem，保留全部8,434次记录出现。两者共同排除原引文审计附件，不能称整个原文无损；4道检索缺页题仍计入96分母。[执行审计](results/radar_domain/coverage_v2/execution_audit.json)与[阶段决定](results/radar_domain/coverage_v2/stage_decision.json)完整保留成本和限制。bound相对flat输入token减少9.62%，但仍显著多于raw；不作通用效率或泛化保证。
 
-新主线的[方法与公开实验两章草稿](thesis/README.md)及8张可追溯结果表已完成。[领域评价设计](artifacts/thesis_direction_review/radar_evaluation_plan_v1.json)和[空标注模板](templates/radar_evaluation/README.txt)已备齐，尚未冻结最终独立QA；本次合成接口适配不改变这一状态。用户的专业审阅不作为开发前提；AI材料与人工金标分开，当前仍无已验收独立事实，原接口默认事实模式返回无可用数据。
-
-**已完成两轮开发和KQA Pro完整官方validation的11,797题评测。** 同一5,000题训练的BART下，4候选执行筛选79.90%，普通保守字段修复81.25%，局部保守修复81.39%，8候选执行筛选81.44%。局部保守修复相对4候选纠正178题、改错2题，但未证明优于8候选；局部约束相对普通修复的额外增量很小。
-
-后验补算相同保护的beam8为81.74%，进一步削弱当前字段修复的必要性；字段修复已停止开发。完整正负结果、单种子和数据使用边界见[修复验证报告](docs/QUERY_REPAIR_VALIDATION.md)。历史首轮排序负结果保留在[最小验证报告](docs/MINIMAL_VALIDATION.md)。
+**当前下一步：整理为论文中的领域表示与引用可靠性对照，继续完善参考核验和应用章。** 公开2000题恢复SFT仍是核心方法证据；这次结果作为限定场景的辅助方法结果。不在本批题上继续改提示、改编码或追加训练，RL与语义偏好训练仍不进入队列。来源准备、首版超长失败、一次输入协议修订、旧开发GPU短测，以及此前迁移负结果，均见[完整阶段记录](docs/CURRENT_STATUS.md)及其原始报告。
 
 ## 阅读入口
 

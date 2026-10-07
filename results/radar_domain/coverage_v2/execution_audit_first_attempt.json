@@ -1,0 +1,88 @@
+{
+  "schema": "radar_coverage_execution_audit_v1",
+  "passed": false,
+  "protocol_sha256": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+  "audit_code_sha256": "e9f638eb2e1ffca59b6734d1157c188697f594a602023b9f01da9f246ef58638",
+  "semantic_scoring_performed": false,
+  "reference_files_opened": false,
+  "local_weight_rehash_performed": false,
+  "model_proof_basis": "Frozen remote CPU hash attestations, fingerprint and cross-arm equality; remote weights were not reread locally.",
+  "arms": {
+    "raw": {
+      "passed": false,
+      "question_count": 96,
+      "mechanical_valid_rows": 96,
+      "strict_format_valid_count": 95,
+      "strict_format_invalid_count": 1,
+      "input_tokens": 197825,
+      "generated_tokens": 7729,
+      "stop_reasons": {
+        "eos": 95,
+        "generation_budget": 1
+      },
+      "gpu_seconds": 151.08107787900371,
+      "gpu_hours": 0.041966966077501035,
+      "generation_seconds": 142.89050572394626,
+      "peak_allocated_bytes": 6815899648,
+      "peak_reserved_bytes": 7535067136,
+      "execution_report": {
+        "path": "data/radar_sources_v2/evaluation_v1/raw/runtime.json",
+        "sha256": "77f3394b82c8dbd491528f6238fa2d285967b6cd168e40392f68e1fbde6e4fdc"
+      }
+    },
+    "flat": {
+      "passed": false,
+      "question_count": 96,
+      "mechanical_valid_rows": 96,
+      "strict_format_valid_count": 28,
+      "strict_format_invalid_count": 68,
+      "input_tokens": 1131526,
+      "generated_tokens": 6936,
+      "stop_reasons": {
+        "eos": 96
+      },
+      "gpu_seconds": 195.99291720899055,
+      "gpu_hours": 0.05444247700249737,
+      "generation_seconds": 186.61799873202108,
+      "peak_allocated_bytes": 10003864576,
+      "peak_reserved_bytes": 14575206400,
+      "execution_report": {
+        "path": "data/radar_sources_v2/evaluation_v1/flat/runtime.json",
+        "sha256": "c647f663f5060b1a8e8187079eef59c8317afea04274fa6b0b108d44b67cf62f"
+      }
+    },
+    "bound": {
+      "passed": false,
+      "question_count": 96,
+      "mechanical_valid_rows": 96,
+      "strict_format_valid_count": 68,
+      "strict_format_invalid_count": 28,
+      "input_tokens": 1022645,
+      "generated_tokens": 6798,
+      "stop_reasons": {
+        "eos": 96
+      },
+      "gpu_seconds": 182.32736225705594,
+      "gpu_hours": 0.05064648951584887,
+      "generation_seconds": 173.05066445929697,
+      "peak_allocated_bytes": 9583659520,
+      "peak_reserved_bytes": 13925089280,
+      "execution_report": {
+        "path": "data/radar_sources_v2/evaluation_v1/bound/runtime.json",
+        "sha256": "0085f2026579354a7b97e8a0554070391b28c635783255b06d746de44382e7a9"
+      }
+    }
+  },
+  "total_gpu_seconds": 529.4013573450502,
+  "total_gpu_hours": 0.1470559325958473,
+  "project_gpu_hours_after": 24.192471076740624,
+  "issue_count": 3,
+  "issue_codes": {
+    "effective_config_cpu_gpu_match": 3
+  },
+  "claim_limit": "Mechanical integrity, token/decoding identity and recorded resource accounting only. Format validity is not answer correctness, evidence support or citation support.",
+  "private_audit": {
+    "path": "data/radar_sources_v2/evaluation_audit_v1/audit.json",
+    "sha256": "b40f3ec2543cffe918f44a61ad87304fce07f040b3c0fbcd952bf7838530f7eb"
+  }
+}

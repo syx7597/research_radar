@@ -1,0 +1,40 @@
+{
+  "schema": "radar_coverage_anonymous_review_package_v1",
+  "rows": 288,
+  "counts": {
+    "raw": 96,
+    "flat": 96,
+    "bound": 96
+  },
+  "deduplicated_outputs": 0,
+  "shared_evidence_storage_only": true,
+  "evidence_files": 136,
+  "canonical_equal_information_pairs_verified": 96,
+  "protocol_sha256": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+  "policy_sha256": "367e197dcdf52ff9db82d52b922894fb89b9435e3181905c171818a0717ef1f5",
+  "inputs_sha256": "f315d92f8ed6b0cba237e3496b60b44fdff4749f85f2efcceb37f789d559c1d1",
+  "builder_sha256": "8f5541c97dc68a914b90d186693243c822ca70594dac68e432765958121a3dac",
+  "mapping_sha256": "cf7345d41a44a6c95a0a97c77dc73ebf6a8aaf6dfbc48348499500d74b3f54be",
+  "packet_files": {
+    "packets/eec_ranger_x_band.json": "f5d2d4c107632625867650e98149811b5b8ff804b9b3dd7b67cee66fbb732535",
+    "packets/furuno_drs_nxt.json": "b73eaa4c2bba8a0666ba27bb0267ffe64afa239cd2824a4f504ac32cf34d78a4",
+    "packets/gamic_gmwr.json": "a3432f9d1f140060a5464897fd601b3e55a163efa49e8e77fb31f6b524be9c54",
+    "packets/garmin_gmr_fantom.json": "13e75cf303f4a2f44e2c359e733daf63c501b38fe61d544812cf1d230f4b782d",
+    "packets/jrc_jma5200mk2.json": "e00069c43513f3bd07ac55820a705618275e2f09de9d44645dfbb0e804fbcf24",
+    "packets/metek_mrr.json": "37c3dab286bfd96b3fcaa4d9e23f9e57848f70aa8f9be71e2cb494c773732885",
+    "packets/raymarine_cyclone.json": "ce101ebc9982790b347cd86935872ee97874d87a398394c1ebafd186662ae172",
+    "packets/vaisala_wrs300.json": "aafbf56b0fb36c9521d83b26ab064218bff5f05bd699b7ddbc48aaac81543f44"
+  },
+  "limits": "Method labels hidden, but evidence style may reveal raw. Reference source quotes are truth references only, not additional supplied evidence. No judgement or accuracy computed.",
+  "independent_packet_check": {
+    "raw": 96,
+    "flat": 96,
+    "bound": 96
+  },
+  "structured_same_serialized_review_evidence_pairs": 96,
+  "reviewer_A": "AI /root/radar_revision_v2; prior source/design reviewer, not QA author",
+  "reviewer_B": "AI /root/radar_qa_author_v2/executor_review; spawned fork_turns=none, code reviewer, not QA author",
+  "unblinded_adjudicator": "AI /root; constructed mapping, no claim of blind adjudication",
+  "citation_interpretation_note_sha256": "40e43ba9bfc6744f6af3e914a2ec9959b7553a3b4424a06adf9978b82d05978b",
+  "citation_boundary_note": "After reviews began, clarified that all IDs must be supplied valid chunks and the citation set must support all assertions; an extra valid unrelated citation is redundancy, not an unregistered citation-precision failure. Original checkpoints retained."
+}

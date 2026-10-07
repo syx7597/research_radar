@@ -37,11 +37,15 @@
 | 独立编题与实际证据审查已完成 | [96题快照](../artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json)、[门槛](../artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json) | 两位非作者AI复核；历史11文件核对；50竞争题/8组/31复杂题，门槛通过，7个边界题不计；92/96支持页覆盖不是问答准确率 |
 | 等信息表示与上下文预检已完成 | [实测汇总](../artifacts/thesis_direction_review/radar_representation_v1/semantic_preflight.json)及[一次修订](../artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json) | 完整归档首版超长失败保留；只把两项引文归档字段移入附件，两臂同E_sem、192次往返、502条完整还原通过；按预先规则三路统一32768，96题均可容纳 |
 | 旧开发材料GPU短测已完成 | [运行记录](../results/radar_domain/coverage_v2_runtime_probe/summary.json) | 最长31,000输入、峰值9.32 GiB；三例格式通过，最长例未给引用。实现兼容失败保留，共19.256 GPU秒；不把格式当成正确性 |
-| 当前优先项：已冻结三路96题评价 | [执行协议](../results/radar_domain/coverage_v2/protocol.json)、[评分口径](../results/radar_domain/coverage_v2/evaluation_policy.json) | 三张空闲卡、每臂2400秒，总2 GPU小时；全部288提示绑定token ID。CPU展示已完成，接下来一次正式推理及隐藏方法标签的双AI语义审阅，失败不补跑 |
+| 三路96题评价及双AI审阅已完成 | [语义结果](../results/radar_domain/coverage_v2/semantic_summary.json)、[独立复算](../results/radar_domain/coverage_v2/aggregate_review.json) | bound对flat正文73→80、联合17→52、错绑17→11；37胜2负且8组均正增，达标。原文联合56仍高于bound；正式评价0.147056 GPU小时，累计24.192471/72，无训练 |
 | 设计版与空模板已完成 | [领域QA与对照方案](../artifacts/thesis_direction_review/radar_evaluation_plan_v1.json) | 按来源/家族连通组组织材料；达到真实独立出题及异人复核标准后才能称独立人工评价；RAG/P/A/C使用同来源 |
 | 持续写作 | 研究问题、文献、数据章节 | 有出处的研究动机、现状与缺口、方案和评价表；领域效果按实际验证补写 |
 
-当前96题输入准备、服务器恢复、旧开发GPU短测和CPU全证据展示已经完成；正式执行与语义评分协议已冻结。下一步以`syx`运行唯一一轮三路96题问答，三卡并行、合计不超过2 GPU小时，再做隐藏方法标签的双AI语义审阅。长旧题能运行，但引用缺失问题保留；输入窗口和JSON合规不代表语义或引用可靠。flat与bound共用所有声明语义字段，raw原文含额外未结构化信息，仅作系统参照；CPU展示不算问答准确率。按原门槛，bound需比flat联合正确至少多5题、正收益覆盖至少3来源组且绑定错误不增加，才有继续价值。不得用新题输出搜提示、反复改组织格式或删证据追分；资源短测失败也应留痕停止这条候选。
+当前唯一一轮三路96题评价已完成，不继续用本批题调参。接下来按顺序：①将来源构建、等信息表示及完整对照写入论文；②保留并解释引用错误与正文错绑，避免把联合净增35题全称为语义提升；③完善来源页、匿名答案与判据的外部核验材料，再决定是否需要在另行冻结的新来源上复验。公开2000题恢复SFT是核心训练贡献，本轮确定性表示是领域辅助方法结果；不新增RL或偏好训练。
+
+本轮正文配对为8胜1负、净增7题，绑定错误减少6题；37个联合改善有29个原本两路正文都正确。两位AI对全部288条联合正确判定一致，19个分项分歧的裁决没有改变正文、联合或题级错绑结果。来源组相关、AI参考、单一基座/一次推理及raw信息与整理成本不同的限制须与正结果同时写明。后续验证着重参考可信度和外部有效性，不以本批分数继续搜索格式。详见[阶段决定](../results/radar_domain/coverage_v2/stage_decision.json)。
+
+以下保留此前四来源24题阶段的范围与结果；当前覆盖评价为上面的八来源96题，两批不合并为同一测试集。
 
 本批规模已经按原文证据确定为24道中文单意图题，不再为凑题型或取得更高分更换材料。4份厂商PDF分别为Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120和JRC JMA-1030系列（JMA-1032/1034），每源6题；全局KB包含全部型号及干扰读法。24条参考程序CPU核对、四份PDF表格AI语义审阅及24项RAG/执行/分析测试通过。按用户要求由AI代审继续明确标注等级的探索评价，只有真人实际完成核验时才能称人工参考。
 

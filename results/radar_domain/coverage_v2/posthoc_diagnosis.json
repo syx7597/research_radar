@@ -1,0 +1,31 @@
+{
+  "schema": "radar_coverage_posthoc_diagnosis_v1",
+  "posthoc": true,
+  "semantic_summary_sha256": "76974b0ed9771efab8e2d86e02e2246fd5c15c530ab93093a6fcd4f75595072f",
+  "code_sha256": "6948204cdce3de600166ac36d0f9447ca36e49cb5bc178a675263487d5d7e100",
+  "answer_correct_bound_minus_flat": {
+    "wins": 8,
+    "losses": 1,
+    "net": 7
+  },
+  "joint_win_strata": {
+    "both_answers_correct": 29,
+    "flat_answer_incorrect": 8
+  },
+  "arms": {
+    "raw": {
+      "correct_answer_but_citation_failure": 4,
+      "correct_answer_but_supplied_support_failure": 0
+    },
+    "flat": {
+      "correct_answer_but_citation_failure": 56,
+      "correct_answer_but_supplied_support_failure": 0
+    },
+    "bound": {
+      "correct_answer_but_citation_failure": 28,
+      "correct_answer_but_supplied_support_failure": 0
+    }
+  },
+  "meaning": "Most paired joint wins can occur with both answer texts already correct; do not attribute the whole joint gain to better factual reasoning or conditional binding.",
+  "limits": "Descriptive analysis after outputs, not a registered mechanistic ablation; original scoring, denominator and continuation gate unchanged."
+}

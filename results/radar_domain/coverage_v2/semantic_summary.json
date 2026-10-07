@@ -1,0 +1,1445 @@
+{
+  "schema": "radar_coverage_semantic_summary_v1",
+  "reference_grade": "AI source reference, not human gold",
+  "evaluated_outputs": 288,
+  "independent_original_review_rows": [
+    288,
+    288
+  ],
+  "output_deduplication": false,
+  "disagreement_rows": 19,
+  "disagreement_fields": {
+    "binding_error_types": 6,
+    "redundancy": 8,
+    "supported_by_supplied_evidence": 6,
+    "citations_support": 3
+  },
+  "adjudicated_rows": 19,
+  "adjudicator_exposed_to_arm_mapping": true,
+  "original_reviewer_A": {
+    "overall": {
+      "raw": {
+        "denominator": 96,
+        "joint_correct": 56,
+        "answer_correct": 60,
+        "supported_by_supplied_evidence": 64,
+        "citations_support": 58,
+        "binding_error_any": 26,
+        "refusal": 6,
+        "redundancy": 13
+      },
+      "flat": {
+        "denominator": 96,
+        "joint_correct": 17,
+        "answer_correct": 73,
+        "supported_by_supplied_evidence": 78,
+        "citations_support": 17,
+        "binding_error_any": 17,
+        "refusal": 5,
+        "redundancy": 6
+      },
+      "bound": {
+        "denominator": 96,
+        "joint_correct": 52,
+        "answer_correct": 80,
+        "supported_by_supplied_evidence": 86,
+        "citations_support": 55,
+        "binding_error_any": 11,
+        "refusal": 4,
+        "redundancy": 4
+      },
+      "paired_bound_minus_flat": {
+        "wins": 37,
+        "losses": 2,
+        "net": 35,
+        "percentage_points": 36.458333333333336
+      }
+    },
+    "source_groups": {
+      "eec_ranger_x_band": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 6,
+          "supported_by_supplied_evidence": 6,
+          "citations_support": 6,
+          "binding_error_any": 5,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 3,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 3,
+          "binding_error_any": 1,
+          "refusal": 1,
+          "redundancy": 1
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 6,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 3,
+          "losses": 0,
+          "net": 3,
+          "percentage_points": 25.0
+        }
+      },
+      "furuno_drs_nxt": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 6,
+          "binding_error_any": 4,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 2,
+          "binding_error_any": 2,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 9,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 9,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 7,
+          "losses": 0,
+          "net": 7,
+          "percentage_points": 58.333333333333336
+        }
+      },
+      "gamic_gmwr": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 2,
+          "redundancy": 0
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 8,
+          "citations_support": 2,
+          "binding_error_any": 4,
+          "refusal": 1,
+          "redundancy": 2
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 1,
+          "net": 4,
+          "percentage_points": 33.333333333333336
+        }
+      },
+      "garmin_gmr_fantom": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 10,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 11,
+          "binding_error_any": 1,
+          "refusal": 1,
+          "redundancy": 2
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 1,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 1,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 2
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 12,
+          "supported_by_supplied_evidence": 12,
+          "citations_support": 7,
+          "binding_error_any": 0,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 7,
+          "losses": 1,
+          "net": 6,
+          "percentage_points": 50.0
+        }
+      },
+      "jrc_jma5200mk2": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 9,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 3
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 0,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 0,
+          "binding_error_any": 2,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 5,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 5,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 0,
+          "net": 5,
+          "percentage_points": 41.666666666666664
+        }
+      },
+      "metek_mrr": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 4,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 4,
+          "binding_error_any": 3,
+          "refusal": 1,
+          "redundancy": 3
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 1,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 1,
+          "binding_error_any": 2,
+          "refusal": 1,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 7,
+          "binding_error_any": 2,
+          "refusal": 1,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 0,
+          "net": 5,
+          "percentage_points": 41.666666666666664
+        }
+      },
+      "raymarine_cyclone": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 2,
+          "redundancy": 2
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 6,
+          "binding_error_any": 2,
+          "refusal": 2,
+          "redundancy": 1
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 12,
+          "citations_support": 8,
+          "binding_error_any": 0,
+          "refusal": 3,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 2,
+          "losses": 0,
+          "net": 2,
+          "percentage_points": 16.666666666666668
+        }
+      },
+      "vaisala_wrs300": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 8,
+          "citations_support": 8,
+          "binding_error_any": 4,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 2,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 5,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 6,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 3,
+          "losses": 0,
+          "net": 3,
+          "percentage_points": 25.0
+        }
+      }
+    },
+    "registered_competing_subset": {
+      "raw": {
+        "denominator": 50,
+        "joint_correct": 29,
+        "answer_correct": 31,
+        "supported_by_supplied_evidence": 32,
+        "citations_support": 30,
+        "binding_error_any": 17,
+        "refusal": 2,
+        "redundancy": 6
+      },
+      "flat": {
+        "denominator": 50,
+        "joint_correct": 6,
+        "answer_correct": 37,
+        "supported_by_supplied_evidence": 39,
+        "citations_support": 6,
+        "binding_error_any": 11,
+        "refusal": 2,
+        "redundancy": 3
+      },
+      "bound": {
+        "denominator": 50,
+        "joint_correct": 30,
+        "answer_correct": 44,
+        "supported_by_supplied_evidence": 46,
+        "citations_support": 32,
+        "binding_error_any": 5,
+        "refusal": 0,
+        "redundancy": 2
+      },
+      "paired_bound_minus_flat": {
+        "wins": 24,
+        "losses": 0,
+        "net": 24,
+        "percentage_points": 48.0
+      }
+    },
+    "registered_complex_subset": {
+      "raw": {
+        "denominator": 31,
+        "joint_correct": 15,
+        "answer_correct": 17,
+        "supported_by_supplied_evidence": 18,
+        "citations_support": 16,
+        "binding_error_any": 13,
+        "refusal": 1,
+        "redundancy": 4
+      },
+      "flat": {
+        "denominator": 31,
+        "joint_correct": 4,
+        "answer_correct": 24,
+        "supported_by_supplied_evidence": 24,
+        "citations_support": 4,
+        "binding_error_any": 6,
+        "refusal": 1,
+        "redundancy": 3
+      },
+      "bound": {
+        "denominator": 31,
+        "joint_correct": 17,
+        "answer_correct": 28,
+        "supported_by_supplied_evidence": 29,
+        "citations_support": 18,
+        "binding_error_any": 2,
+        "refusal": 0,
+        "redundancy": 2
+      },
+      "paired_bound_minus_flat": {
+        "wins": 13,
+        "losses": 0,
+        "net": 13,
+        "percentage_points": 41.935483870967744
+      }
+    },
+    "missing_reference_pages_subset": {
+      "raw": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 2,
+        "citations_support": 0,
+        "binding_error_any": 1,
+        "refusal": 3,
+        "redundancy": 1
+      },
+      "flat": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 2,
+        "citations_support": 0,
+        "binding_error_any": 1,
+        "refusal": 3,
+        "redundancy": 0
+      },
+      "bound": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 3,
+        "citations_support": 0,
+        "binding_error_any": 0,
+        "refusal": 4,
+        "redundancy": 0
+      },
+      "paired_bound_minus_flat": {
+        "wins": 0,
+        "losses": 0,
+        "net": 0,
+        "percentage_points": 0.0
+      }
+    },
+    "continuation_gate": {
+      "conditions": {
+        "net_gain": true,
+        "source_groups": true,
+        "binding_errors": true
+      },
+      "positive_source_groups": 8,
+      "passed": true,
+      "statistical_significance_claim": false
+    }
+  },
+  "original_reviewer_B": {
+    "overall": {
+      "raw": {
+        "denominator": 96,
+        "joint_correct": 56,
+        "answer_correct": 60,
+        "supported_by_supplied_evidence": 63,
+        "citations_support": 57,
+        "binding_error_any": 26,
+        "refusal": 6,
+        "redundancy": 10
+      },
+      "flat": {
+        "denominator": 96,
+        "joint_correct": 17,
+        "answer_correct": 73,
+        "supported_by_supplied_evidence": 75,
+        "citations_support": 17,
+        "binding_error_any": 17,
+        "refusal": 5,
+        "redundancy": 4
+      },
+      "bound": {
+        "denominator": 96,
+        "joint_correct": 52,
+        "answer_correct": 80,
+        "supported_by_supplied_evidence": 84,
+        "citations_support": 53,
+        "binding_error_any": 11,
+        "refusal": 4,
+        "redundancy": 3
+      },
+      "paired_bound_minus_flat": {
+        "wins": 37,
+        "losses": 2,
+        "net": 35,
+        "percentage_points": 36.458333333333336
+      }
+    },
+    "source_groups": {
+      "eec_ranger_x_band": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 6,
+          "supported_by_supplied_evidence": 6,
+          "citations_support": 6,
+          "binding_error_any": 5,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 3,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 3,
+          "binding_error_any": 1,
+          "refusal": 1,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 6,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 3,
+          "losses": 0,
+          "net": 3,
+          "percentage_points": 25.0
+        }
+      },
+      "furuno_drs_nxt": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 6,
+          "binding_error_any": 4,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 2,
+          "binding_error_any": 2,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 9,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 9,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 7,
+          "losses": 0,
+          "net": 7,
+          "percentage_points": 58.333333333333336
+        }
+      },
+      "gamic_gmwr": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 2,
+          "redundancy": 0
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 2,
+          "binding_error_any": 4,
+          "refusal": 1,
+          "redundancy": 2
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 1,
+          "net": 4,
+          "percentage_points": 33.333333333333336
+        }
+      },
+      "garmin_gmr_fantom": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 10,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 10,
+          "binding_error_any": 1,
+          "refusal": 1,
+          "redundancy": 2
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 1,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 1,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 12,
+          "supported_by_supplied_evidence": 12,
+          "citations_support": 7,
+          "binding_error_any": 0,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 7,
+          "losses": 1,
+          "net": 6,
+          "percentage_points": 50.0
+        }
+      },
+      "jrc_jma5200mk2": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 9,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 2
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 0,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 0,
+          "binding_error_any": 2,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 5,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 5,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 0,
+          "net": 5,
+          "percentage_points": 41.666666666666664
+        }
+      },
+      "metek_mrr": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 4,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 4,
+          "binding_error_any": 3,
+          "refusal": 1,
+          "redundancy": 3
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 1,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 1,
+          "binding_error_any": 2,
+          "refusal": 1,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 6,
+          "binding_error_any": 2,
+          "refusal": 1,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 0,
+          "net": 5,
+          "percentage_points": 41.666666666666664
+        }
+      },
+      "raymarine_cyclone": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 2,
+          "redundancy": 2
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 6,
+          "binding_error_any": 2,
+          "refusal": 2,
+          "redundancy": 1
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 12,
+          "citations_support": 8,
+          "binding_error_any": 0,
+          "refusal": 3,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 2,
+          "losses": 0,
+          "net": 2,
+          "percentage_points": 16.666666666666668
+        }
+      },
+      "vaisala_wrs300": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 8,
+          "citations_support": 8,
+          "binding_error_any": 4,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 2,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 5,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 5,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 3,
+          "losses": 0,
+          "net": 3,
+          "percentage_points": 25.0
+        }
+      }
+    },
+    "registered_competing_subset": {
+      "raw": {
+        "denominator": 50,
+        "joint_correct": 29,
+        "answer_correct": 31,
+        "supported_by_supplied_evidence": 31,
+        "citations_support": 29,
+        "binding_error_any": 17,
+        "refusal": 2,
+        "redundancy": 4
+      },
+      "flat": {
+        "denominator": 50,
+        "joint_correct": 6,
+        "answer_correct": 37,
+        "supported_by_supplied_evidence": 37,
+        "citations_support": 6,
+        "binding_error_any": 11,
+        "refusal": 2,
+        "redundancy": 1
+      },
+      "bound": {
+        "denominator": 50,
+        "joint_correct": 30,
+        "answer_correct": 44,
+        "supported_by_supplied_evidence": 45,
+        "citations_support": 31,
+        "binding_error_any": 5,
+        "refusal": 0,
+        "redundancy": 1
+      },
+      "paired_bound_minus_flat": {
+        "wins": 24,
+        "losses": 0,
+        "net": 24,
+        "percentage_points": 48.0
+      }
+    },
+    "registered_complex_subset": {
+      "raw": {
+        "denominator": 31,
+        "joint_correct": 15,
+        "answer_correct": 17,
+        "supported_by_supplied_evidence": 17,
+        "citations_support": 15,
+        "binding_error_any": 13,
+        "refusal": 1,
+        "redundancy": 2
+      },
+      "flat": {
+        "denominator": 31,
+        "joint_correct": 4,
+        "answer_correct": 24,
+        "supported_by_supplied_evidence": 24,
+        "citations_support": 4,
+        "binding_error_any": 6,
+        "refusal": 1,
+        "redundancy": 1
+      },
+      "bound": {
+        "denominator": 31,
+        "joint_correct": 17,
+        "answer_correct": 28,
+        "supported_by_supplied_evidence": 29,
+        "citations_support": 18,
+        "binding_error_any": 2,
+        "refusal": 0,
+        "redundancy": 1
+      },
+      "paired_bound_minus_flat": {
+        "wins": 13,
+        "losses": 0,
+        "net": 13,
+        "percentage_points": 41.935483870967744
+      }
+    },
+    "missing_reference_pages_subset": {
+      "raw": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 2,
+        "citations_support": 0,
+        "binding_error_any": 1,
+        "refusal": 3,
+        "redundancy": 1
+      },
+      "flat": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 2,
+        "citations_support": 0,
+        "binding_error_any": 1,
+        "refusal": 3,
+        "redundancy": 0
+      },
+      "bound": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 3,
+        "citations_support": 0,
+        "binding_error_any": 0,
+        "refusal": 4,
+        "redundancy": 0
+      },
+      "paired_bound_minus_flat": {
+        "wins": 0,
+        "losses": 0,
+        "net": 0,
+        "percentage_points": 0.0
+      }
+    },
+    "continuation_gate": {
+      "conditions": {
+        "net_gain": true,
+        "source_groups": true,
+        "binding_errors": true
+      },
+      "positive_source_groups": 8,
+      "passed": true,
+      "statistical_significance_claim": false
+    }
+  },
+  "adjudicated": {
+    "overall": {
+      "raw": {
+        "denominator": 96,
+        "joint_correct": 56,
+        "answer_correct": 60,
+        "supported_by_supplied_evidence": 64,
+        "citations_support": 58,
+        "binding_error_any": 26,
+        "refusal": 6,
+        "redundancy": 12
+      },
+      "flat": {
+        "denominator": 96,
+        "joint_correct": 17,
+        "answer_correct": 73,
+        "supported_by_supplied_evidence": 78,
+        "citations_support": 17,
+        "binding_error_any": 17,
+        "refusal": 5,
+        "redundancy": 6
+      },
+      "bound": {
+        "denominator": 96,
+        "joint_correct": 52,
+        "answer_correct": 80,
+        "supported_by_supplied_evidence": 86,
+        "citations_support": 55,
+        "binding_error_any": 11,
+        "refusal": 4,
+        "redundancy": 5
+      },
+      "paired_bound_minus_flat": {
+        "wins": 37,
+        "losses": 2,
+        "net": 35,
+        "percentage_points": 36.458333333333336
+      }
+    },
+    "source_groups": {
+      "eec_ranger_x_band": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 6,
+          "supported_by_supplied_evidence": 6,
+          "citations_support": 6,
+          "binding_error_any": 5,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 3,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 3,
+          "binding_error_any": 1,
+          "refusal": 1,
+          "redundancy": 1
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 6,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 3,
+          "losses": 0,
+          "net": 3,
+          "percentage_points": 25.0
+        }
+      },
+      "furuno_drs_nxt": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 6,
+          "binding_error_any": 4,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 2,
+          "binding_error_any": 2,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 9,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 9,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 7,
+          "losses": 0,
+          "net": 7,
+          "percentage_points": 58.333333333333336
+        }
+      },
+      "gamic_gmwr": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 2,
+          "redundancy": 0
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 8,
+          "citations_support": 2,
+          "binding_error_any": 4,
+          "refusal": 1,
+          "redundancy": 2
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 1,
+          "net": 4,
+          "percentage_points": 33.333333333333336
+        }
+      },
+      "garmin_gmr_fantom": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 10,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 11,
+          "binding_error_any": 1,
+          "refusal": 1,
+          "redundancy": 2
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 1,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 1,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 2
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 12,
+          "supported_by_supplied_evidence": 12,
+          "citations_support": 7,
+          "binding_error_any": 0,
+          "refusal": 0,
+          "redundancy": 2
+        },
+        "paired_bound_minus_flat": {
+          "wins": 7,
+          "losses": 1,
+          "net": 6,
+          "percentage_points": 50.0
+        }
+      },
+      "jrc_jma5200mk2": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 9,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 3
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 0,
+          "answer_correct": 10,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 0,
+          "binding_error_any": 2,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 5,
+          "answer_correct": 11,
+          "supported_by_supplied_evidence": 11,
+          "citations_support": 5,
+          "binding_error_any": 1,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 0,
+          "net": 5,
+          "percentage_points": 41.666666666666664
+        }
+      },
+      "metek_mrr": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 4,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 7,
+          "citations_support": 4,
+          "binding_error_any": 3,
+          "refusal": 1,
+          "redundancy": 3
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 1,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 1,
+          "binding_error_any": 2,
+          "refusal": 1,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 7,
+          "binding_error_any": 2,
+          "refusal": 1,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 5,
+          "losses": 0,
+          "net": 5,
+          "percentage_points": 41.666666666666664
+        }
+      },
+      "raymarine_cyclone": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 7,
+          "answer_correct": 7,
+          "supported_by_supplied_evidence": 9,
+          "citations_support": 7,
+          "binding_error_any": 3,
+          "refusal": 2,
+          "redundancy": 2
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 6,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 6,
+          "binding_error_any": 2,
+          "refusal": 2,
+          "redundancy": 1
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 12,
+          "citations_support": 8,
+          "binding_error_any": 0,
+          "refusal": 3,
+          "redundancy": 1
+        },
+        "paired_bound_minus_flat": {
+          "wins": 2,
+          "losses": 0,
+          "net": 2,
+          "percentage_points": 16.666666666666668
+        }
+      },
+      "vaisala_wrs300": {
+        "raw": {
+          "denominator": 12,
+          "joint_correct": 8,
+          "answer_correct": 8,
+          "supported_by_supplied_evidence": 8,
+          "citations_support": 8,
+          "binding_error_any": 4,
+          "refusal": 0,
+          "redundancy": 1
+        },
+        "flat": {
+          "denominator": 12,
+          "joint_correct": 2,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 2,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "bound": {
+          "denominator": 12,
+          "joint_correct": 5,
+          "answer_correct": 9,
+          "supported_by_supplied_evidence": 10,
+          "citations_support": 6,
+          "binding_error_any": 3,
+          "refusal": 0,
+          "redundancy": 0
+        },
+        "paired_bound_minus_flat": {
+          "wins": 3,
+          "losses": 0,
+          "net": 3,
+          "percentage_points": 25.0
+        }
+      }
+    },
+    "registered_competing_subset": {
+      "raw": {
+        "denominator": 50,
+        "joint_correct": 29,
+        "answer_correct": 31,
+        "supported_by_supplied_evidence": 32,
+        "citations_support": 30,
+        "binding_error_any": 17,
+        "refusal": 2,
+        "redundancy": 5
+      },
+      "flat": {
+        "denominator": 50,
+        "joint_correct": 6,
+        "answer_correct": 37,
+        "supported_by_supplied_evidence": 39,
+        "citations_support": 6,
+        "binding_error_any": 11,
+        "refusal": 2,
+        "redundancy": 3
+      },
+      "bound": {
+        "denominator": 50,
+        "joint_correct": 30,
+        "answer_correct": 44,
+        "supported_by_supplied_evidence": 46,
+        "citations_support": 32,
+        "binding_error_any": 5,
+        "refusal": 0,
+        "redundancy": 3
+      },
+      "paired_bound_minus_flat": {
+        "wins": 24,
+        "losses": 0,
+        "net": 24,
+        "percentage_points": 48.0
+      }
+    },
+    "registered_complex_subset": {
+      "raw": {
+        "denominator": 31,
+        "joint_correct": 15,
+        "answer_correct": 17,
+        "supported_by_supplied_evidence": 18,
+        "citations_support": 16,
+        "binding_error_any": 13,
+        "refusal": 1,
+        "redundancy": 3
+      },
+      "flat": {
+        "denominator": 31,
+        "joint_correct": 4,
+        "answer_correct": 24,
+        "supported_by_supplied_evidence": 24,
+        "citations_support": 4,
+        "binding_error_any": 6,
+        "refusal": 1,
+        "redundancy": 3
+      },
+      "bound": {
+        "denominator": 31,
+        "joint_correct": 17,
+        "answer_correct": 28,
+        "supported_by_supplied_evidence": 29,
+        "citations_support": 18,
+        "binding_error_any": 2,
+        "refusal": 0,
+        "redundancy": 3
+      },
+      "paired_bound_minus_flat": {
+        "wins": 13,
+        "losses": 0,
+        "net": 13,
+        "percentage_points": 41.935483870967744
+      }
+    },
+    "missing_reference_pages_subset": {
+      "raw": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 2,
+        "citations_support": 0,
+        "binding_error_any": 1,
+        "refusal": 3,
+        "redundancy": 1
+      },
+      "flat": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 2,
+        "citations_support": 0,
+        "binding_error_any": 1,
+        "refusal": 3,
+        "redundancy": 0
+      },
+      "bound": {
+        "denominator": 4,
+        "joint_correct": 0,
+        "answer_correct": 0,
+        "supported_by_supplied_evidence": 3,
+        "citations_support": 0,
+        "binding_error_any": 0,
+        "refusal": 4,
+        "redundancy": 0
+      },
+      "paired_bound_minus_flat": {
+        "wins": 0,
+        "losses": 0,
+        "net": 0,
+        "percentage_points": 0.0
+      }
+    },
+    "continuation_gate": {
+      "conditions": {
+        "net_gain": true,
+        "source_groups": true,
+        "binding_errors": true
+      },
+      "positive_source_groups": 8,
+      "passed": true,
+      "statistical_significance_claim": false
+    }
+  },
+  "protocol_sha256": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+  "policy_sha256": "367e197dcdf52ff9db82d52b922894fb89b9435e3181905c171818a0717ef1f5",
+  "execution_audit_sha256": "0d58e15b11818772a0783b3269d21a64e5c0bb9e9ab765bd25c36cc58bcd1ae4",
+  "review_sha256": {
+    "reviewer_A.json": "b68050488de3c34d1fcfade14327aa32b7be3ed00676fbbda64fb1fc91ad4446",
+    "reviewer_B.json": "cb3734bd9982711b6d1308fc0b67343bd86d71e0ba118e5d56a1499fc7ce575d"
+  },
+  "adjudication_sha256": "c0dce98615efefe19565c5ce37de74b956ba89cb43284fa953764006b3067d12",
+  "reviewer_identities": [
+    "AI /root/radar_revision_v2 / A",
+    "B"
+  ],
+  "review_process": "Two separate non-QA-author agents instructed to retain independent original verdicts and avoid mapping/other judgments. Historical design/source/rubric exposure disclosed in review_preparation.json and private declarations; separate files alone do not prove statistical independence.",
+  "private_verdicts_sha256": "55b75cba300f198411c77770e1102dc9766bac708d7ba5271f43c78e508731bd",
+  "code_sha256": "fca7119c007152aeed10db96256581491703c73c6d38740ab14c93501118b221",
+  "limits": "Same-family AI reviewers are not independent human experts. Eight correlated source groups, one base-model run, no significance/generalization claim. Raw is a system reference; flat/bound have equal declared E_sem, excluding archival quote sidecars. No new recovery-SFT transfer or training evidence."
+}

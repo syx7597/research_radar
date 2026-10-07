@@ -1,0 +1,21 @@
+{
+  "schema": "radar_coverage_thesis_export_v1",
+  "sources_sha256": {
+    "results/radar_domain/coverage_v2/semantic_summary.json": "76974b0ed9771efab8e2d86e02e2246fd5c15c530ab93093a6fcd4f75595072f",
+    "results/radar_domain/coverage_v2/execution_audit.json": "0d58e15b11818772a0783b3269d21a64e5c0bb9e9ab765bd25c36cc58bcd1ae4",
+    "results/radar_domain/coverage_v2/protocol.json": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+    "results/radar_domain/coverage_v2/evaluation_policy.json": "367e197dcdf52ff9db82d52b922894fb89b9435e3181905c171818a0717ef1f5",
+    "results/radar_domain/coverage_v2/posthoc_diagnosis.json": "9918d26a0799d21beea7604259b5375d64090340440a4e5a378c5d1ddf262555"
+  },
+  "code_sha256": "1b78f21cc49c052c3147e7c67b801e98141a0d2cc123941a98faab6277d340e7",
+  "rows": 61,
+  "chapter_sha256": {
+    "thesis/current/06b_evidence_representation.tex": "3d37cd4669246cc3862d1ea88a352b34b5790204a4cd84b7aaffa5c01fc3f848"
+  },
+  "outputs_sha256": {
+    "coverage_tables.tex": "84d819b0517838970ca918c89e1cc2ae60185717b006673f18b66ce2e2413bdd",
+    "coverage_results.csv": "9df8b89db515dbe01bbbed46889c72974367676839095879e864e544431d5322"
+  },
+  "source_access": "Only five allowlisted public aggregate/protocol/diagnosis files plus this chapter/code; nested private references are not opened.",
+  "limits": "AI references and reviews, not human gold; correlated sources, one fixed round; descriptive counts only."
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "radar_coverage_stage_decision_v1",
+  "decided_at_utc": "2026-10-07T13:20:27.716046+00:00",
+  "decision": "retain_bounded_positive_domain_representation_result_and_integrate_thesis",
+  "registered_continuation_gate": {
+    "conditions": {
+      "net_gain": true,
+      "source_groups": true,
+      "binding_errors": true
+    },
+    "positive_source_groups": 8,
+    "passed": true,
+    "statistical_significance_claim": false
+  },
+  "primary_comparison": {
+    "wins": 37,
+    "losses": 2,
+    "net": 35,
+    "percentage_points": 36.458333333333336
+  },
+  "method_type_zh": "固定主体→部件→属性→条件的连续分组与继承表示；相同E_sem、记录顺序和信息，不训练新模型，也不是新增图推理或数值计算算法。",
+  "supported_claims_zh": [
+    "在本轮固定Qwen2.5-3B、96道AI参考题及相同声明语义证据下，bound相对flat正文正确73→80，题级绑定错误17→11。",
+    "联合正确17→52，配对37胜2负，8个来源组均正净增；达到运行前的继续投入标准。",
+    "bound相对flat输入token减少9.62%；本轮实测总token减少9.58%，这是这一序列化与输入包的观察，不是通用速度保证。"
+  ],
+  "claim_limits_zh": [
+    "原文路线联合正确56/96高于bound的52/96，但正文正确60/96低于bound的80/96；不得宣称整体优于原文RAG。",
+    "37个联合改善中29个原本两路正文都正确，引用改善占主要部分；另8个由flat正文不正确转为bound正确。不能把+35联合题全部归因于事实推理或条件理解。",
+    "raw含额外未结构化原文且无需这批人工/AI读法整理，structured成本更高；raw不是纯表示等信息因果对照。",
+    "只有一个基座、一次解码、8个相关来源组及AI参考/双AI审阅；不作显著性或跨模型/未知来源泛化宣称。",
+    "不是恢复轨迹SFT的雷达迁移验证，不恢复RL或偏好训练；公开2000题结果仍为论文核心方法证据。"
+  ],
+  "execution": {
+    "account": "syx",
+    "admin_training": false,
+    "new_training_runs": 0,
+    "formal_output_rows": 288,
+    "input_truncation": false,
+    "raw_generation_budget_stop_rows": 1,
+    "formal_gpu_hours": 0.1470559325958473,
+    "project_gpu_hours_after": 24.192471076740624,
+    "formal_model_rounds": 1,
+    "automatic_retries": 0
+  },
+  "next_actions_zh": [
+    "把固定覆盖评价、来源组结果、引用失败与成本写入应用章，保留全部正负结果和数据构建衔接。",
+    "将领域表示作为限定场景的辅助方法结果，公开集恢复SFT作为核心训练贡献；不把工程数量、AI审稿或引用格式收益包装成普遍语义推理突破。",
+    "下一验证优先解决参考可信度与外部复核：准备来源页/题文/实际证据/匿名答案的核验材料，之后若安排新来源或新模型复验，另行在输出前登记；本批不再调参、改提示、改编码或训模型。"
+  ],
+  "new_GPU_jobs_scheduled": false,
+  "inputs_sha256": {
+    "results/radar_domain/coverage_v2/protocol.json": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+    "results/radar_domain/coverage_v2/evaluation_policy.json": "367e197dcdf52ff9db82d52b922894fb89b9435e3181905c171818a0717ef1f5",
+    "results/radar_domain/coverage_v2/execution_audit.json": "0d58e15b11818772a0783b3269d21a64e5c0bb9e9ab765bd25c36cc58bcd1ae4",
+    "results/radar_domain/coverage_v2/execution_audit_first_attempt.json": "077fa2e69055e454b1d551eb6e6a2adc3ef80d7ca0226546834c2d9b062d2a88",
+    "results/radar_domain/coverage_v2/review_preparation.json": "e86f2556307f1e833182bdf7227fbb87f4156a6a9afcb726da81cedf6dcbe1c5",
+    "results/radar_domain/coverage_v2/semantic_summary.json": "76974b0ed9771efab8e2d86e02e2246fd5c15c530ab93093a6fcd4f75595072f",
+    "results/radar_domain/coverage_v2/posthoc_diagnosis.json": "9918d26a0799d21beea7604259b5375d64090340440a4e5a378c5d1ddf262555"
+  }
+}
