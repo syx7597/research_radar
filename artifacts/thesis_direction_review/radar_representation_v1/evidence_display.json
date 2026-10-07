@@ -1,0 +1,22 @@
+{
+  "schema": "radar_full_semantic_evidence_display_v1",
+  "questions": 96,
+  "record_occurrences": 8434,
+  "minimum_records": 7,
+  "maximum_records": 241,
+  "roundtrip_verified_pages": 96,
+  "input_filtering": false,
+  "model_runs": 0,
+  "answer_accuracy": null,
+  "seconds_including_input_read_render_and_verification": 0.8082635409955401,
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_representation_v1/semantic_preflight.json": "cf016e183c264753825dd1c7b88f75bbeb3a64b24d7b0d67ebcf213b2d76cab1",
+    "data/radar_sources_v2/representation_v1/semantic_payload_v1/inputs.jsonl": "f315d92f8ed6b0cba237e3496b60b44fdff4749f85f2efcceb37f789d559c1d1",
+    "experiments/radar_domain/coverage_display.py": "42ac503f9460bb73f290109f5ee90329f4fe7360bd7901fa58af381b05e92b98"
+  },
+  "scope": "Displays all E_sem only; no question-conditioned selection, generated answer, additional interpretation or access to citation sidecar. Faithful display is not QA accuracy.",
+  "local_manifest": {
+    "path": "data/radar_sources_v2/evidence_display_v1/frozen_semantic_v1/manifest.json",
+    "sha256": "b13643e6cddcfaf1efddfecf2f33922cc02082919d3e0d4dd206bfc90b9ec306"
+  }
+}

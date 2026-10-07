@@ -8,7 +8,13 @@
 
 主线：**保留主体、条件、区间和来源的雷达知识资源 → 小模型生成可执行查询 → 答案与依据 → 公开基准和独立雷达评价**。复用现有数据、执行器和系统，不重建整个项目。配对续训复现、回放复核及B/D配对RL均已完成。RL增量未达到扩展标准，保留恢复轨迹SFT为主方案；语义核验偏好训练继续暂缓。领域核验与论文写作并行推进；范围和队列见[执行计划](docs/ROADMAP.md)。
 
-**2026-10-07：两种表示和真实分词预检完成，等待旧开发材料的GPU运行预检。** [首版完整归档输入](artifacts/thesis_direction_review/radar_representation_v1/full_record_preflight.json)的flat/bound分别有84/82题超过8192，最长68,414/64,911 token；保留失败记录。随后在新测量前登记[一次输入协议修订](artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json)：仅将引文原文、字节偏移及文本哈希留在审计附件，全部主体、数值、单位、条件、技术注记和来源定位保留，两臂共用相同的E_sem。附件可还原完整记录，但模型没有读到附件，不能称整个原文无损。
+**2026-10-07：SSH恢复，旧开发GPU短测完成，96题三路正式协议已冻结。** [短测记录](results/radar_domain/coverage_v2_runtime_probe/summary.json)覆盖同一道旧题的2,733/8,192/31,000 token输入，最长输入峰值显存9.32 GiB；三例格式通过，但最长例引用列表为空，不能称引用完整或回答可靠。CPU常驻显示进程检查及生成API兼容失败均已保留；成功与失败共19.256 GPU秒，累计24.0454/72 GPU小时，无训练。
+
+[正式协议](results/radar_domain/coverage_v2/protocol.json)固定同一基座、32768窗口、最多768生成token、batch 1贪心解码，三张空闲卡各跑raw/flat/bound的96题；总上限2 GPU小时，只跑一轮。输入另外绑定全部288条token ID哈希。原文仅作系统参照，主比较仍为等E_sem的bound对flat；[语义评分协议](results/radar_domain/coverage_v2/evaluation_policy.json)保留4道缺页题和所有失败分母，联合判断正文正确、证据支持与引用有效。当前刚冻结协议，尚无正式评价结果。
+
+[CPU资料展示参照](artifacts/thesis_direction_review/radar_representation_v1/evidence_display.json)已完成96页、8,434次记录出现的完整展示和还原检查；没有按答案筛记录，不计问答准确率。
+
+**此前完成：两种表示和真实分词预检。** [首版完整归档输入](artifacts/thesis_direction_review/radar_representation_v1/full_record_preflight.json)的flat/bound分别有84/82题超过8192，最长68,414/64,911 token；保留失败记录。随后在新测量前登记[一次输入协议修订](artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json)：仅将引文原文、字节偏移及文本哈希留在审计附件，全部主体、数值、单位、条件、技术注记和来源定位保留，两臂共用相同的E_sem。附件可还原完整记录，但模型没有读到附件，不能称整个原文无损。
 
 [修订后预检](artifacts/thesis_direction_review/radar_representation_v1/semantic_preflight.json)覆盖96题×3路：raw/flat/bound最长输入4,325/30,952/27,449 token；加768输出预算后全部符合模型配置声明的32768窗口。按测量前规则三路统一改用32768，不修改RoPE；96题、检索及8,434次记录出现均未减少，192次表示往返和502条完整记录还原通过。这是上下文可容纳性，不是准确率或GPU显存可行性结论。SSH连续两次连接超时，尚无新模型输出；下一步只用旧已见资料做显存、时延和回答格式短测，通过后冻结一次无训练评价。累计GPU仍24.040/72小时。
 

@@ -1,0 +1,23 @@
+{
+  "schema": "radar_coverage_detached_launch_plan_v1",
+  "registered_at_utc": "2026-10-07T12:09:58.747007+00:00",
+  "reason": "SSH sessions disconnected after authentication. Run CPU gates and bounded arm supervisors detached, so transport loss does not remove runtime supervision.",
+  "protocol_path": "results/radar_domain/coverage_v2/protocol.json",
+  "protocol_sha256": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+  "pipeline_path": "experiments/radar_domain/coverage_pipeline.py",
+  "pipeline_sha256": "26e0b5aa0227d2dd274213d6bd12d87a2e363002632314d8226e5ff33147239e",
+  "launch_slot": "data/radar_sources_v2/evaluation_launch_v1",
+  "CPU_before_launch": [
+    "runtime environment equality",
+    "31 CPU tests in uploaded test directory",
+    "all 288 token sequences exactly match frozen hashes",
+    "three distinct idle compute GPUs",
+    "no prior arm output slot"
+  ],
+  "max_GPU_seconds_per_arm": 2400,
+  "max_total_GPU_seconds": 7200,
+  "new_training_runs": 0,
+  "automatic_retries": 0,
+  "new_evaluation_outputs_seen": false,
+  "status": "registered_not_launched"
+}

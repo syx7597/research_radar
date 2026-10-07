@@ -36,11 +36,12 @@
 | 全页读法与交叉复核已完成 | [502条读法快照](../artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json) | 13页PDF与13段HTML、8来源组；39条背景/排除/歧义记录含5项来源未决；作者与复核AI分开，原稿及修订保留 |
 | 独立编题与实际证据审查已完成 | [96题快照](../artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json)、[门槛](../artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json) | 两位非作者AI复核；历史11文件核对；50竞争题/8组/31复杂题，门槛通过，7个边界题不计；92/96支持页覆盖不是问答准确率 |
 | 等信息表示与上下文预检已完成 | [实测汇总](../artifacts/thesis_direction_review/radar_representation_v1/semantic_preflight.json)及[一次修订](../artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json) | 完整归档首版超长失败保留；只把两项引文归档字段移入附件，两臂同E_sem、192次往返、502条完整还原通过；按预先规则三路统一32768，96题均可容纳 |
-| 当前优先项：旧开发材料GPU短测 | [CPU准备包](../artifacts/thesis_direction_review/radar_representation_v1/runtime_probe_preparation.json)，后续回答格式、显存、耗时及基座身份核验 | 三个提示2,733/8,192/31,000 token已备齐，GPU执行器尚待实现/验证。SSH连续两次超时，暂无新GPU任务；仅用旧题及合成长输入验证，禁止以新96题试提示。通过后冻结正式协议；原定2 GPU小时仍为暂定上限 |
+| 旧开发材料GPU短测已完成 | [运行记录](../results/radar_domain/coverage_v2_runtime_probe/summary.json) | 最长31,000输入、峰值9.32 GiB；三例格式通过，最长例未给引用。实现兼容失败保留，共19.256 GPU秒；不把格式当成正确性 |
+| 当前优先项：已冻结三路96题评价 | [执行协议](../results/radar_domain/coverage_v2/protocol.json)、[评分口径](../results/radar_domain/coverage_v2/evaluation_policy.json) | 三张空闲卡、每臂2400秒，总2 GPU小时；全部288提示绑定token ID。CPU展示已完成，接下来一次正式推理及隐藏方法标签的双AI语义审阅，失败不补跑 |
 | 设计版与空模板已完成 | [领域QA与对照方案](../artifacts/thesis_direction_review/radar_evaluation_plan_v1.json) | 按来源/家族连通组组织材料；达到真实独立出题及异人复核标准后才能称独立人工评价；RAG/P/A/C使用同来源 |
 | 持续写作 | 研究问题、文献、数据章节 | 有出处的研究动机、现状与缺口、方案和评价表；领域效果按实际验证补写 |
 
-当前96题评价的输入准备已经完成。下一步先恢复实验机连接，用`syx`进行旧开发材料短测，确认近31,000输入token加768输出的运行成本及回答/引用格式；32,768只是配置容量，不是显存保证。正式运行前固定同一未适配基座、权重/配置/分词器哈希、统一提示、贪心解码、批大小及预算，随后只做一轮三路96题问答和CPU全证据展示。flat与bound共用所有声明语义字段，raw原文含额外未结构化信息，仅作系统参照；CPU展示不算问答准确率。按原门槛，bound需比flat联合正确至少多5题、正收益覆盖至少3来源组且绑定错误不增加，才有继续价值。不得用新题输出搜提示、反复改组织格式或删证据追分；资源短测失败也应留痕停止这条候选。
+当前96题输入准备、服务器恢复、旧开发GPU短测和CPU全证据展示已经完成；正式执行与语义评分协议已冻结。下一步以`syx`运行唯一一轮三路96题问答，三卡并行、合计不超过2 GPU小时，再做隐藏方法标签的双AI语义审阅。长旧题能运行，但引用缺失问题保留；输入窗口和JSON合规不代表语义或引用可靠。flat与bound共用所有声明语义字段，raw原文含额外未结构化信息，仅作系统参照；CPU展示不算问答准确率。按原门槛，bound需比flat联合正确至少多5题、正收益覆盖至少3来源组且绑定错误不增加，才有继续价值。不得用新题输出搜提示、反复改组织格式或删证据追分；资源短测失败也应留痕停止这条候选。
 
 本批规模已经按原文证据确定为24道中文单意图题，不再为凑题型或取得更高分更换材料。4份厂商PDF分别为Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120和JRC JMA-1030系列（JMA-1032/1034），每源6题；全局KB包含全部型号及干扰读法。24条参考程序CPU核对、四份PDF表格AI语义审阅及24项RAG/执行/分析测试通过。按用户要求由AI代审继续明确标注等级的探索评价，只有真人实际完成核验时才能称人工参考。
 

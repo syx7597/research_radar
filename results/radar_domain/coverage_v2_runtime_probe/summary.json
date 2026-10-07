@@ -1,0 +1,236 @@
+{
+  "schema": "radar_coverage_old_development_runtime_summary_v1",
+  "status": "three_old_development_lengths_passed",
+  "question_targets": 1,
+  "case_count": 3,
+  "new_96_question_outputs": 0,
+  "training_runs": 0,
+  "model_attempts": 2,
+  "cases": [
+    {
+      "case_id": "old_base",
+      "input_tokens": 2733,
+      "generated_tokens": 58,
+      "seconds": 1.4850723820272833,
+      "peak_allocated_bytes": 6623637504,
+      "peak_reserved_bytes": 6738149376,
+      "stop_reason": "eos",
+      "format_error": null,
+      "citation_count": 1
+    },
+    {
+      "case_id": "old_padded_8192",
+      "input_tokens": 8192,
+      "generated_tokens": 63,
+      "seconds": 1.4667517120251432,
+      "peak_allocated_bytes": 7275899904,
+      "peak_reserved_bytes": 7413432320,
+      "stop_reason": "eos",
+      "format_error": null,
+      "citation_count": 1
+    },
+    {
+      "case_id": "old_padded_31000",
+      "input_tokens": 31000,
+      "generated_tokens": 31,
+      "seconds": 2.824415579030756,
+      "peak_allocated_bytes": 10009211904,
+      "peak_reserved_bytes": 11345592320,
+      "stop_reason": "eos",
+      "format_error": null,
+      "citation_count": 0
+    }
+  ],
+  "runs": [
+    {
+      "directory": "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v1",
+      "runtime_sha256": "f6a132f6ef744c1a35e9297fdea41b587dd73f33279a87f5cd02730cad15ecbd",
+      "status": "failed",
+      "new_GPU_hours": 0,
+      "new_model_runs": 0,
+      "total_wall_seconds": 9.213911884988192,
+      "error": "Selected GPU has running processes",
+      "gpu_child_wall_seconds": 0
+    },
+    {
+      "directory": "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v2",
+      "runtime_sha256": "2f22648fb6d3e613d9f10e7fb3c173bf201c639288502673d4b321a7a042c787",
+      "status": "worker_failed",
+      "new_GPU_hours": 0.0018677871991530993,
+      "new_model_runs": 1,
+      "total_wall_seconds": 16.014830438012723,
+      "error": null,
+      "gpu_child_wall_seconds": 6.724033916951157
+    },
+    {
+      "directory": "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3",
+      "runtime_sha256": "493f7b5a0f4c00b6e8b7b39f4feb544f6b0555d81dd4375a1c790172971c0260",
+      "status": "completed",
+      "new_GPU_hours": 0.003481041413890327,
+      "new_model_runs": 1,
+      "total_wall_seconds": 22.486560209013987,
+      "error": null,
+      "gpu_child_wall_seconds": 12.531749090005178
+    }
+  ],
+  "runtime_environment": {
+    "python": "3.10.12",
+    "torch": "2.6.0+cu124",
+    "transformers": "5.18.0",
+    "tokenizers": "0.23.2",
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "identity": {
+      "real_uid": 1001,
+      "effective_uid": 1001,
+      "real_user": "syx",
+      "effective_user": "syx"
+    },
+    "gpu": {
+      "uuid": "GPU-bbdf1c45-7e38-2cb0-d440-7c506343709b",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "570.133.07",
+      "used_MiB": 18,
+      "total_MiB": 49140,
+      "gpu_utilization_percent": 0,
+      "allowed_idle_display_processes": [
+        {
+          "pid": "3651",
+          "type": "G",
+          "process_name": "/usr/lib/xorg/Xorg",
+          "used_memory": "4 MiB"
+        }
+      ]
+    }
+  },
+  "executor_sha256": "b88f2ba4313ed2d9d3c5c46f9b18d8bee5bb686d1b9dc78d2f66287cdbac5d8d",
+  "all_prompt_ids_match_local": true,
+  "model_and_tokenizer_files": {
+    "/home/syx/research_radar_agent/models/qwen2.5-3b-instruct/config.json": {
+      "sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "fingerprint": {
+        "bytes": 661,
+        "mtime_ns": 1790960513825000000,
+        "ctime_ns": 1790960513825000000,
+        "device": 66306,
+        "inode": 24146150
+      }
+    },
+    "/home/syx/research_radar_agent/models/qwen2.5-3b-instruct/generation_config.json": {
+      "sha256": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+      "fingerprint": {
+        "bytes": 242,
+        "mtime_ns": 1790960514950000000,
+        "ctime_ns": 1790960514950000000,
+        "device": 66306,
+        "inode": 24146174
+      }
+    },
+    "/home/syx/research_radar_agent/models/qwen2.5-3b-instruct/model-00001-of-00002.safetensors": {
+      "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "fingerprint": {
+        "bytes": 3968658944,
+        "mtime_ns": 1790996516811000000,
+        "ctime_ns": 1790996520122000000,
+        "device": 66306,
+        "inode": 24156598
+      }
+    },
+    "/home/syx/research_radar_agent/models/qwen2.5-3b-instruct/model-00002-of-00002.safetensors": {
+      "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "fingerprint": {
+        "bytes": 2203268048,
+        "mtime_ns": 1790996521471000000,
+        "ctime_ns": 1790996523351000000,
+        "device": 66306,
+        "inode": 24156599
+      }
+    },
+    "/home/syx/research_radar_agent/models/qwen2.5-3b-instruct/model.safetensors.index.json": {
+      "sha256": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "fingerprint": {
+        "bytes": 35581,
+        "mtime_ns": 1790962128837000000,
+        "ctime_ns": 1790962128838000000,
+        "device": 66306,
+        "inode": 24146413
+      }
+    },
+    "/home/syx/research_radar_coverage_v2_20261007/data/radar_sources_v2/representation_v1/tokenizer/tokenizer_config.json": {
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "fingerprint": {
+        "bytes": 7305,
+        "mtime_ns": 1791365248000000000,
+        "ctime_ns": 1791368366534000000,
+        "device": 66306,
+        "inode": 24273691
+      }
+    },
+    "/home/syx/research_radar_coverage_v2_20261007/data/radar_sources_v2/representation_v1/tokenizer/tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "fingerprint": {
+        "bytes": 7031645,
+        "mtime_ns": 1791365271000000000,
+        "ctime_ns": 1791368366599000000,
+        "device": 66306,
+        "inode": 24273693
+      }
+    },
+    "/home/syx/research_radar_coverage_v2_20261007/data/radar_sources_v2/representation_v1/tokenizer/config.json": {
+      "sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "fingerprint": {
+        "bytes": 661,
+        "mtime_ns": 1791365270000000000,
+        "ctime_ns": 1791368366534000000,
+        "device": 66306,
+        "inode": 24273692
+      }
+    }
+  },
+  "model_identity_grade": "Two base shards/config/generation config hashed; index matched against pinned safetensors tensor headers; separate pinned tokenizer; no adapter loaded.",
+  "code_checks": {
+    "new_executor_tests_final_local": 14,
+    "remote_executor_and_preparation_tests": 19,
+    "CPU_meta_generation_API_check": "passed without CUDA initialization",
+    "independent_AI_review": "Initial executor and subsequent Xorg/API/budget fixes reviewed read-only; no unresolved blocking findings."
+  },
+  "execution_fixes_before_outputs": [
+    "Preserved CPU-only rejection of a stationary Xorg graphics process. Permit only exact Xorg path, type G, <=8MiB per process, total <=256MiB and utilization=0; compute/mixed/unknown processes remain forbidden.",
+    "Preserved generate API failure after loading, before any output. Removed unsupported use_model_defaults and replaced both supplied and model default GenerationConfig; validated installed API on a meta model before the next GPU run."
+  ],
+  "fixed_input_and_decoding_unchanged": true,
+  "GPU_hours_before": 24.040066315531732,
+  "GPU_hours_added": 0.005348828613043427,
+  "GPU_hours_after": 24.045415144144776,
+  "GPU_seconds_added": 19.255783006956335,
+  "old_development_GPU_seconds_cap": 300,
+  "within_cap": true,
+  "remaining_execution_seconds_after_failed_load": 293,
+  "account": "syx",
+  "used_admin": false,
+  "GPU_processes_after_probe": "No compute processes reported by nvidia-smi after all probe supervisors exited. Xorg display process retained.",
+  "formal_model_run_ready": false,
+  "next": "Freeze formal protocol and cross-version token IDs, then at most one 96x3 evaluation <=2GPUh.",
+  "limits": [
+    "Only one old question with synthetic fact-free padding; not three independent QA samples.",
+    "Successful formatting and citation ID membership do not establish factual correctness or evidence support.",
+    "Longest input generated 31 tokens before EOS; a full 768-token continuation was not empirically stress-tested. Formal execution retains the same 768 cap and hard failure budget.",
+    "Synthetic repeated padding is a resource probe, not evidence that the model understands flat/bound records."
+  ],
+  "private_run_files_sha256": {
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/old_padded_31000.started.json": "3e1bac2f0f93539954d9de257c03d82e3020fc01500d137eced56053cbff5b63",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/runtime.json": "493f7b5a0f4c00b6e8b7b39f4feb544f6b0555d81dd4375a1c790172971c0260",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/old_padded_8192.started.json": "6e3392eaf6b65257890d1751d1b5055468464288996b6a35e97e6bd25b76661f",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/worker.log": "1e5d87604e8896d6fab89e8f8bc1c40cb77d5085399ef8d0968ad42c2c18468c",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/worker_result.json": "6b7dca6578d8df90d60fe572ddefd3ff222cfe07f7cb2ae08ddd5ee4141eaafc",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/old_padded_31000.json": "8e223078c06535fcc2ca40f0b90efde75b836838ac674859f7807c6afa6bec3d",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/old_padded_8192.json": "3425195345f1e6d76ad976c45a6884f5982dc14a9827758627d383f990b45564",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/environment.json": "c482736ca73ac662fa602d2a11508ae68755ef37609c098aae85b7b2a29496db",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/old_base.started.json": "661f39299961133d3a8365939011886e6b6dbd1131c12feeb9d69e7ac1bbb82d",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/model_loaded.json": "76e1f49d465209752ac55124d3875f24f1d8a24c44b0b2256ce299e281c2f2ff",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/cpu_preflight.json": "4f4bb2d7136a5e9d2d912e8548358d65157f8576d822b76d3ca635e91280024d",
+    "data/radar_sources_v2/runtime_probe_v1/old_dev_gpu_32768_run_v3/old_base.json": "c41a927ed2ad70aa92e5ba6c967dbe5cabbf35d58c5bbab858a50c0183cc312b"
+  },
+  "nonempty_citation_cases": 2,
+  "long_context_observation": "The 31000-token old case returned an answer but an empty citations list. This is format-valid under the shared schema, not a pass on citation completeness or joint correctness; no prompt or decoding changes were made in response."
+}
