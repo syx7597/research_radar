@@ -1,10 +1,16 @@
 # 首批雷达事实审阅与独立 QA 准入
 
-更新：2026-10-06。本文件补充[原标注规范](RADAR_DATA_ANNOTATION.md)。原规范和生成脚本是首批包的哈希输入，保持不变；后续审阅及新来源开发包均单独版本化，不改旧图谱、12条候选事实或来源快照。
+更新：2026-10-07。本文件补充[原标注规范](RADAR_DATA_ANNOTATION.md)。原规范和生成脚本是首批包的哈希输入，保持不变；后续审阅及新来源开发包均单独版本化，不改旧图谱、12条候选事实或来源快照。
+
+## 来源准备已执行：进入统一读法整理
+
+2026-10-07的[归档汇总](../../artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json)及[来源准备复核](../../artifacts/thesis_direction_review/radar_sources_v2/source_preparation_review.json)已完成，8组有主件，Simrad失败与MRR替补分别保留。新原件与旧语料型号重叠分开登记，历史排查不是当前权重污染认证。
+
+接下来严格使用[预先声明的标注范围](../../artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json)：先完整整理13页PDF和13段HTML内符合统一规则的主型号/部件读法，另记遗漏与歧义，再独立编题。源版本、父级、表头和脚注随记录保存；不以规范化或程序输出默补缺单位、消除真实冲突。JRC/Raymarine/METEK辅助网页不参与本轮事实输入。新题编写者不看旧答案，另由审计者核查旧QA/开发题衍生；排除规则在看模型分数前执行。当前读法/题目尚未生成，准入标志仍为false。
 
 ## 下一批材料：覆盖设计与元数据划分审计
 
-2026-10-06已形成[覆盖设计v2](../../artifacts/thesis_direction_review/radar_coverage_v2/design.json)，目标为8个新来源/家族组、96题，当前新归档/新题均为0。现有官方候选只有入口筛查，尚未通过版本、家族、原字节、表格和语义准入。先完成资料身份与覆盖检查，再整理新题，不先跑模型再挑题。
+2026-10-06已形成[覆盖设计v2](../../artifacts/thesis_direction_review/radar_coverage_v2/design.json)，目标为8个来源/家族组、96题，设计登记时新归档/新题均为0。现有官方候选只有入口筛查，尚未通过版本、家族、原字节、表格和语义准入。先完成资料身份与覆盖检查，再整理新题，不先跑模型再挑题。
 
 [已见登记](../../artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json)将原12目标及后续24题的来源和家族闭包一并登记；编号、翻译、问法文本指纹不是独立题数量。新增[source_split_audit](../../experiments/radar_domain/source_split_audit.py)只接收来源/问题元数据：规范文档ID、URI、哈希、家族、依赖来源、等价请求、用途、参考等级和已见状态。来源、家族、等价请求形成连通分量；跨开发/候选评价混用、候选与已见闭包相交、重复/悬空ID、未解决审阅及AI材料冒充人工金标均阻断。
 

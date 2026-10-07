@@ -1,0 +1,1519 @@
+{
+  "version": "marine_official_source_admission_v2",
+  "recorded_on": "2026-10-07",
+  "reviewer": "AI /root",
+  "human_review": false,
+  "status": "source_archive_and_initial_readability_review_only",
+  "model_run_ready": false,
+  "evaluation_frozen": false,
+  "historical_overlap_checked_in": "history_screening.json (separate report)",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_coverage_v2/design.json": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e",
+    "artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json": "2dd0694adc915bed97d31dbf7ecff71e9e2847931b508a43aaa130b3066acc36",
+    "scripts/capture_radar_coverage_sources.py": "ef192b3e2585ac11974acdde9b6c2c8b1fc4e1c8e4fde9649e33dc2e96844ada"
+  },
+  "counts": {
+    "candidate_groups": 5,
+    "groups_with_usable_primary_bytes": 4,
+    "groups_pending_access": 1,
+    "primary_PDF_documents": 3,
+    "primary_PDF_pages": 66,
+    "primary_manual_HTML_sections": 15,
+    "auxiliary_HTML_snapshots": 2,
+    "failed_access_responses": 3,
+    "new_questions": 0,
+    "new_curated_readings": 0,
+    "new_model_runs": 0,
+    "new_training_runs": 0
+  },
+  "sources": [
+    {
+      "capture_id": "furuno_nxt_entry",
+      "requested_url": "https://www.furuno.com/files/Manual/158/upload/IME36680G3_DRS6A_12A_25A-NXT.pdf",
+      "resolved_url": "https://www.furuno.com/jp/support/download/manuals/terms/index.html",
+      "captured_at_utc": "2026-10-07T06:52:32.318098+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "detected_type": "html",
+      "status": "unexpected_content_not_a_pdf",
+      "file": "data/radar_sources_v2/marine/furuno_nxt_entry/response.bin",
+      "sha256": "8a8733f207dbd484a65bf47b63b3a64996bc16785e746cc089e6eb93f1d0058d",
+      "bytes": 447602,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "furuno_nxt_entry",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/furuno_nxt_entry/capture.json",
+        "sha256": "93ba67661a471dfbc0ae6a98b1f6caa93bac5d77d183c235da8445e6f0a51879",
+        "size_bytes": 693,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "access_failure_evidence",
+      "derived_local_artifacts": []
+    },
+    {
+      "capture_id": "furuno_nxt_usa_manual",
+      "requested_url": "https://furunousa.com/-/media/sites/furuno/document_library/documents/manuals/public_manuals/drs6anxt_12anxt_25anxt_installation_manual.pdf",
+      "resolved_url": "https://www.furunousa.com/-/media/sites/furuno/document_library/documents/manuals/public_manuals/drs6anxt_12anxt_25anxt_installation_manual.pdf",
+      "captured_at_utc": "2026-10-07T06:54:55.548035+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "detected_type": "pdf",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/response.bin",
+      "sha256": "7cce6c83593d74f9b9eba4f0a7d8c470d0d13392c99db265c2c5bba5602ddf04",
+      "bytes": 6948644,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "furuno_nxt_usa_manual",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/capture.json",
+        "sha256": "2267b557e0dd14291d2f36c9402a043ae4f814ff3cce9322e4a93e587afbefa9",
+        "size_bytes": 827,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_document",
+      "pdf": {
+        "page_count": 44,
+        "encrypted": true,
+        "metadata": {
+          "/Creator": "FrameMaker 17.0.8",
+          "/ModDate": "D:20260620060520+09'00'",
+          "/CreationDate": "D:20260319084852Z",
+          "/Producer": "Acrobat Distiller 25.0 (Windows); modified using OpenPDF 1.3.33",
+          "/Title": "IME36680K_DRS6A_12A_25A-NXT"
+        }
+      },
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/001.txt",
+          "sha256": "502bc8eca2d116c522848b107cadffb7910919a203701e575fccbbd0e9f2b92f",
+          "size_bytes": 4215,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/002.txt",
+          "sha256": "d8b51f4012cf78a3c22a9765ddb2956d055186a47eb7748ae85a5b447f013f53",
+          "size_bytes": 3126,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/003.txt",
+          "sha256": "59e268320d48412e2a284e2d412dea726d81b53ce2c446e63f9bc74bdec65870",
+          "size_bytes": 6852,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/004.txt",
+          "sha256": "23200b16abc3fb65272999ee3b45774319fc3b946d30f8eece4e026cc0189541",
+          "size_bytes": 1725,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/005.txt",
+          "sha256": "db40959f0d5c32756b3214c04f105335b28c25344871ba3fffd04d8ce09e94b8",
+          "size_bytes": 8867,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/006.txt",
+          "sha256": "dfcdc8f87eb802e05675419fc68615315715a16aec7d5d31188c81e66abdd00b",
+          "size_bytes": 2713,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/007.txt",
+          "sha256": "e2c586a13c5fffa5b7db6eb3ee35a724b1fd4fe778805660badee6bef0c1cedd",
+          "size_bytes": 14908,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/008.txt",
+          "sha256": "091b0b405552bd667d515e937aac4f7c560cf787a49bbaf6468082761cb25eef",
+          "size_bytes": 2770,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/009.txt",
+          "sha256": "0eaf5a5446ae18ecc6b557b3b953fef6572a3a2bd6211ce48170dc581013050d",
+          "size_bytes": 2125,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/010.txt",
+          "sha256": "0752dfacf7ad16b5c1ba74ab0f8f45bbbd53f07e9cea3864d5ec42617ab7fbf8",
+          "size_bytes": 3003,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/011.txt",
+          "sha256": "ed742bc31c251306a85e9fc0173700140f4c62f07e069d86d21bd29688450ddc",
+          "size_bytes": 3019,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/012.txt",
+          "sha256": "2b70730de712dd7b2fad145961ccb4c59ba766e5732a4b85cdce028b09b87db1",
+          "size_bytes": 6763,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/013.txt",
+          "sha256": "44069da3bd821f7fa43ff03042e2939f03118e2a0ad35cc5e21dc267ecebf72f",
+          "size_bytes": 1481,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/014.txt",
+          "sha256": "c95bf08f3b933dfdfe00be660f10b11f3ed75334be4a6bd1ccc06b4b47f368cc",
+          "size_bytes": 2950,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/015.txt",
+          "sha256": "35ab96ab7953ea1a801b95e01d9a4ed883dc2eede45d1da7de9231614496d920",
+          "size_bytes": 1825,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/016.txt",
+          "sha256": "0bd59fd4d4d9a23a36320b11be8f39545a9b33a0a2deffef8cd6228618c3893e",
+          "size_bytes": 2090,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/017.txt",
+          "sha256": "6e926658e90e235dc9a05bcca351f2ed3cbc975b6d21517c2bfa96357451e0a9",
+          "size_bytes": 1931,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/018.txt",
+          "sha256": "592f2942aed7f76c248878beaeafc9f0f2bf8481b5e2432312ded71877523ccb",
+          "size_bytes": 2098,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/019.txt",
+          "sha256": "e7acc3ab8bdf3a7ef3810d43e766b86601b6b3925bc83e9e6798df2d05568560",
+          "size_bytes": 2086,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/020.txt",
+          "sha256": "8db08bd3dc00826b8f1b62bde44f0a4a4cd2f4685c1469358913d8ec2de38a64",
+          "size_bytes": 4503,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/021.txt",
+          "sha256": "0bc07ed27ce1cd97afba78ec785d656e77233a01eb44a06de710e0289f0e25ca",
+          "size_bytes": 1735,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/022.txt",
+          "sha256": "225c6b7963972e6ccd220d3e9a9a22d3b7e47077ce8c7305b906836375940000",
+          "size_bytes": 5429,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/023.txt",
+          "sha256": "0f8706960844b68113234530ee3d1fb7de40f0d29a6490d8df2a03cf28e876ce",
+          "size_bytes": 5285,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/024.txt",
+          "sha256": "4eeb74e49a4a8ed24786a29d50af68a0da9a071b6576dcac109ab55a069da706",
+          "size_bytes": 9735,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/025.txt",
+          "sha256": "2f8af29654d087992b7928c6073356cf34388a66b9cc725828dd1a1d6334b7fd",
+          "size_bytes": 4094,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/026.txt",
+          "sha256": "73148feccfbf4eff0b0c61923b43baf57a3b0c1c67a5330259dd035061566f37",
+          "size_bytes": 7711,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/027.txt",
+          "sha256": "34fd4863451db6b158c3dbbd1e13f1a070d7332183aabd19031f8c7618f675d9",
+          "size_bytes": 6562,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/028.txt",
+          "sha256": "1f257c888b6d42684298b1860cd62d63528ea226713523025e58a165fc5f9afe",
+          "size_bytes": 2579,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/029.txt",
+          "sha256": "57ee1acce15e6e79df4de6042d55aa55b39b4da5513e05bd48bfee0166fa2abc",
+          "size_bytes": 7721,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/030.txt",
+          "sha256": "0a12dcc8421a082d249abccd225847ef2ab558b6a43f960338d422ea7bb92fcb",
+          "size_bytes": 6588,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/031.txt",
+          "sha256": "04254b857f69e7b4bad5acb6824335757b65bd45c935235b014d3eda99da1426",
+          "size_bytes": 2966,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/032.txt",
+          "sha256": "2700e8367f729bd6de332c555efde9343d56b93199cb514c0e53a07020ce7cce",
+          "size_bytes": 3457,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/033.txt",
+          "sha256": "5c8308b0162329d8b551257301fed0cbc8dcbe575d8f28c77ac6ca04f7cd0169",
+          "size_bytes": 9512,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/034.txt",
+          "sha256": "9a28f7656cd1a7fdcb71e7fe137adec7f00d3ffe39487bc78b96743261e39fdb",
+          "size_bytes": 3714,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/035.txt",
+          "sha256": "18743c19055caac2b23bdfe359d5225c6904d1e4f4c624df1bf82d89c241c21f",
+          "size_bytes": 11832,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/036.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/037.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/038.txt",
+          "sha256": "cab4c048e164a0289ca8ca1013544f489b0fb6491beae58a2f4da982f70b9007",
+          "size_bytes": 727,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/039.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/040.txt",
+          "sha256": "50af20bb01f93db4085afdddd2f882d02a68580dff750dfcc081afc55aa5fc39",
+          "size_bytes": 6947,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/041.txt",
+          "sha256": "85ef2e8850ed77a5ef6eff9b09a671cda6f1049b9db21a649968db574db04bf1",
+          "size_bytes": 4191,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/042.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/043.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/044.txt",
+          "sha256": "67d0caf0ddbfa04c47c943b073c604ceeb34a1f8c4b4c504db35a00b3193665a",
+          "size_bytes": 534,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-33.png",
+          "sha256": "dd28447f0d7ba3962279b835be87f5e49b7a12b8da4b9c69302f0866809440af",
+          "size_bytes": 500092,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-34.png",
+          "sha256": "cc00f0180fd3276f4b0a5b877ec6dd1a578f0baf90092bf06afcd0e191dbe21d",
+          "size_bytes": 209144,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-44.png",
+          "sha256": "00d36b6d3a8d6cddcc98473e410412f1cf4951648fc1523beb07a9fd9dfca68f",
+          "size_bytes": 157153,
+          "role": "PDFKit page render"
+        }
+      ]
+    },
+    {
+      "capture_id": "garmin_fantom_manual",
+      "requested_url": "https://static.garmin.com/pumac/GMR_Fantom_Open_Array_Install_Instructions_EN-US.pdf",
+      "resolved_url": "https://static.garmin.com/pumac/GMR_Fantom_Open_Array_Install_Instructions_EN-US.pdf",
+      "captured_at_utc": "2026-10-07T06:52:32.135373+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "detected_type": "pdf",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/garmin_fantom_manual/response.bin",
+      "sha256": "5e7ec7a3d369239e749ae44616704ad2693589e0e82d0344f611b989cef04e36",
+      "bytes": 1051121,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "garmin_fantom_manual",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/garmin_fantom_manual/capture.json",
+        "sha256": "1f16a754eabaad64d88514a508945d8e6f262f486fd5225ab9df31c235c4f3f1",
+        "size_bytes": 711,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_document",
+      "pdf": {
+        "page_count": 16,
+        "encrypted": false,
+        "metadata": {
+          "/CreationDate": "D:20240522135725-05'00'",
+          "/ModDate": "D:20240522135725-05'00'",
+          "/Creator": "AH XSL Formatter V7.2 MR6 for Windows (x64) : 7.2.7.57141 (2022-07-01T16:24+09)",
+          "/Producer": "Antenna House PDF Output Library 7.2.1800",
+          "/Title": "GMR Fantom™‎ Series Open Array Radar Installation Instructions",
+          "/Trapped": "/False"
+        }
+      },
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/001.txt",
+          "sha256": "19027d792c61b58266e04e97ce315c0abda9bd2a3385134e8a4045d9a7ebb856",
+          "size_bytes": 3420,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/002.txt",
+          "sha256": "366ec092350c7827fc95635825aa1e404abcad59c566ba9a499944345ceec866",
+          "size_bytes": 2299,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/003.txt",
+          "sha256": "165fd3a7c1c6e65ff7e907291ceb80b4099d5624ab00a80ba32c2167e466f64e",
+          "size_bytes": 1818,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/004.txt",
+          "sha256": "74b68007dcca0bf4898cf704f6f7d960aaa3a3683b641b6716c6dd3891d45a62",
+          "size_bytes": 967,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/005.txt",
+          "sha256": "9a3f3343b6612c7733efb590a305e252293533046aaf475b69236c6ea3ea9be3",
+          "size_bytes": 3461,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/006.txt",
+          "sha256": "77ad3d171ea5b36777a04e2b17023e8e74659149836190437e7486f6ae227117",
+          "size_bytes": 950,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/007.txt",
+          "sha256": "ec8b507d2280eaa3bfd5be5d08608c3d5667cc62e20e2a26133018b2ddb76155",
+          "size_bytes": 1610,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/008.txt",
+          "sha256": "0fa996dd7b4f4b437213fb16ca3e7b0fdf6478cb21463c9d91d49187ac37f8bd",
+          "size_bytes": 3351,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/009.txt",
+          "sha256": "1c7881a1b372e05bb74f710b2243812dfbdf3bf51a02407d3a7eab9c31eb3204",
+          "size_bytes": 2116,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/010.txt",
+          "sha256": "dfd97744043becc6bc49f13981a8b5d771a269f9365166aefc85856f87445795",
+          "size_bytes": 1854,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/011.txt",
+          "sha256": "50e8fa14d387715cd7a5bb57c76c52ee65e076720c9804334afcfcf19d32c1fd",
+          "size_bytes": 2616,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/012.txt",
+          "sha256": "e9a015116cd31266ca5a6207642994e9129ad5d430a510f73cc17d9e01aad117",
+          "size_bytes": 2320,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/013.txt",
+          "sha256": "8214bfd418987c8a62b9b5fb3046178f3833a360b0a7534fc84db75959fb903e",
+          "size_bytes": 2576,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/014.txt",
+          "sha256": "9c1d9f4eca7d4ddcb7d88cb6ae495ede58fa37f236622a9b0c8f86de07dd89be",
+          "size_bytes": 635,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/015.txt",
+          "sha256": "d6c694d6b793812310584a166a2079477a0bd6b0bf2ba78a994ce90380c1ec2a",
+          "size_bytes": 1460,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/pages/016.txt",
+          "sha256": "e242a13592ba4f46ba7a2d9fd62ade1d1a4e8e97ec5e46e534e3aa7d1b6e367c",
+          "size_bytes": 187,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/render/page-12.png",
+          "sha256": "273e6fad7073416b200010573efe257b12b18f5855c84d7adb9d41d2db324af9",
+          "size_bytes": 341188,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/render/page-13.png",
+          "sha256": "6fe5cff3c57f7f2130d9e8c16c4761e735fc1e9a03a2d824bfbe3e6eb460e3d6",
+          "size_bytes": 388796,
+          "role": "PDFKit page render"
+        }
+      ]
+    },
+    {
+      "capture_id": "jrc_5200_catalog",
+      "requested_url": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/JMA-5200Mk2.pdf",
+      "resolved_url": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/JMA-5200Mk2.pdf",
+      "captured_at_utc": "2026-10-07T06:54:47.055597+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "detected_type": "pdf",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/jrc_5200_catalog/response.bin",
+      "sha256": "f41aee676a1be8fdf5cd0da9152e6b241f903ffa412fdbf26c9b8d1e32428a61",
+      "bytes": 4856260,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "jrc_5200_catalog",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/jrc_5200_catalog/capture.json",
+        "sha256": "fea5fe39c26cd8bfe9921bdcf4107c38271de18bac941ff9cac27fc26992024c",
+        "size_bytes": 683,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_document",
+      "pdf": {
+        "page_count": 6,
+        "encrypted": true,
+        "metadata": {
+          "/Author": "Japan Radio Co., Ltd.",
+          "/CreationDate": "D:20141211204809+09'00'",
+          "/Creator": "Adobe InDesign CS4_J (6.0.6)",
+          "/ModDate": "D:20150109155213+09'00'",
+          "/Producer": "Adobe PDF Library 9.0",
+          "/Title": "JMA-5200Mk2 Black box radar",
+          "/Trapped": "/False"
+        }
+      },
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/pages/001.txt",
+          "sha256": "93dced63057f5d28b04351f3918ef1f276a785cf8a7d859490bc2fd0ae8747fd",
+          "size_bytes": 653,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/pages/002.txt",
+          "sha256": "c5ddadef2b815b51f1e72d1e991cbfd1285a29fb44648281fb5d476c9f1ee631",
+          "size_bytes": 5482,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/pages/003.txt",
+          "sha256": "a6ea3a63fd4087ed8dc4554f564365f907d370c7ee9159206ae41c53f30d1640",
+          "size_bytes": 33012,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/pages/004.txt",
+          "sha256": "447dbef14d528b1ec1a6dd67678073bf9c7c91ff69ce7e1c8b3524d4aa3ed1d4",
+          "size_bytes": 3325,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/pages/005.txt",
+          "sha256": "08aed675047e6fb99795e9db8c932be4d5365ff2610b4b331ef026360e08493d",
+          "size_bytes": 2607,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/pages/006.txt",
+          "sha256": "18b6bd8bca42c04e208312730d7c03a7280dc73376172cf0b66831c3a2c6d834",
+          "size_bytes": 39399,
+          "role": "pypdf 6.19.0 page layout text"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/render/page-6.png",
+          "sha256": "214be15407379bc8944ce70d1c674be948a10978fda27d7863638f8d8eeb6789",
+          "size_bytes": 657866,
+          "role": "PDFKit page render"
+        }
+      ]
+    },
+    {
+      "capture_id": "jrc_5200_entry",
+      "requested_url": "https://www.jrc.co.jp/en/product/jma5200mk2",
+      "resolved_url": "https://www.jrc.co.jp/en/product/jma5200mk2",
+      "captured_at_utc": "2026-10-07T06:52:32.216855+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/jrc_5200_entry/response.bin",
+      "sha256": "f29d37f6a196440e3f5e7c19e4dd3953075ae6296d845c67762e749056ad68f7",
+      "bytes": 136691,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "jrc_5200_entry",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/jrc_5200_entry/capture.json",
+        "sha256": "6e9c2661d8fe35ac66a3c9af8ed8e4b792c1aa28df286f9d45a2f928596d5c7e",
+        "size_bytes": 626,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "identity_or_entry_support_only",
+      "derived_local_artifacts": []
+    },
+    {
+      "capture_id": "raymarine_cyclone_entry",
+      "requested_url": "https://www.raymarine.com/en-gb/our-products/marine-radar/cyclone/cyclone-radar",
+      "resolved_url": "https://www.raymarine.com/en-gb/our-products/marine-radar/cyclone/cyclone-radar",
+      "captured_at_utc": "2026-10-07T06:52:31.461210+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_cyclone_entry/response.bin",
+      "sha256": "219894fe33c0bf8d5ee0f2000fe9205a85046e8267575a8bc64d63c7f40d6670",
+      "bytes": 199824,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_cyclone_entry",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_cyclone_entry/capture.json",
+        "sha256": "a7211ec5a664c9ca942810e6fa5a883df487a0506f71f3d28bec9bd8fc3e05d7",
+        "size_bytes": 716,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "identity_or_entry_support_only",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_cyclone_entry/text.txt",
+          "sha256": "3ce1adbfd6cabcec8dcf5cff3187486d86ae351dcba27497c29ee0cf88f0dc2e",
+          "size_bytes": 16302,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ]
+    },
+    {
+      "capture_id": "raymarine_cyclone_manual_entry",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/PhysicalSpecificationPedestalCyclon-BCB9E621.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/PhysicalSpecificationPedestalCyclon-BCB9E621.html",
+      "captured_at_utc": "2026-10-07T06:54:46.308932+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_cyclone_manual_entry/response.bin",
+      "sha256": "f77653f8d4abd1e6b7eb9138b428bb31fed71e7cf8fb07027c50262f53bbf451",
+      "bytes": 9367,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_cyclone_manual_entry",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_cyclone_manual_entry/capture.json",
+        "sha256": "ab67fbbdc39c991c6f211da828f44623e5f172c491b7140a94a79a8a4cde979f",
+        "size_bytes": 745,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_cyclone_manual_entry/text.txt",
+          "sha256": "5e67da87fb308e5de378b52237bc4781c781159916484e2aaa044d071328e1f3",
+          "size_bytes": 737,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_cyclone_pro_spec_index",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/TechnicalSpecificationCyclonePro-BA442F10.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/TechnicalSpecificationCyclonePro-BA442F10.html",
+      "captured_at_utc": "2026-10-07T06:57:03.715779+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_cyclone_pro_spec_index/response.bin",
+      "sha256": "9658cbfd3f6675a1a5cee9c66cd021c99ad741709b57f6077a4a94ef350edb74",
+      "bytes": 9418,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_cyclone_pro_spec_index",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_cyclone_pro_spec_index/capture.json",
+        "sha256": "24a0471b1196a9cbd948d191ed7de3ba9a1e14bb289d3d59c172280acb3bfd90",
+        "size_bytes": 743,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_cyclone_pro_spec_index/text.txt",
+          "sha256": "e52c65a6d13c9f9674ea5b0dc6c9884b122580fbe73b5f838ac83d06664e625c",
+          "size_bytes": 623,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_cyclone_spec_index",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/TechnicalSpecificationCyclone-BA4412B1.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/TechnicalSpecificationCyclone-BA4412B1.html",
+      "captured_at_utc": "2026-10-07T06:57:03.700948+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_cyclone_spec_index/response.bin",
+      "sha256": "77d914b4b25552c02fca2eff63105fb7c1e6e39cc71aa73b947c28988fcc1213",
+      "bytes": 9458,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_cyclone_spec_index",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_cyclone_spec_index/capture.json",
+        "sha256": "e712cd135c9e211c40ddfe6ef91a2555223df8d2294063f0bb1d91364e30bdde",
+        "size_bytes": 729,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_cyclone_spec_index/text.txt",
+          "sha256": "a5b0b86699d7d6f6b177742c1397a45b4243b82a7e5e9b66947c4c26c183d34a",
+          "size_bytes": 610,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_antenna",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/AntennaSpecificationCyclonePro-BCBA1613.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/AntennaSpecificationCyclonePro-BCBA1613.html",
+      "captured_at_utc": "2026-10-07T06:58:59.327657+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_antenna/response.bin",
+      "sha256": "f7832fb4c0654d66ca565685f79b62e522c2a23127f29347baf313aad2e4868d",
+      "bytes": 11171,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_antenna",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_antenna/capture.json",
+        "sha256": "809d0d818124a58e9507ad8011e114d9033dfa066c5809dfd06b3458ec47f5bc",
+        "size_bytes": 720,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_antenna/text.txt",
+          "sha256": "208d60d2f7877f0bfca571fd04e62ce4953b968533a7b584cddded8e7b86a083",
+          "size_bytes": 868,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_antenna_physical",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/PhysicalSpecificationAntennaCyclone-BCB9EEF6.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/PhysicalSpecificationAntennaCyclone-BCB9EEF6.html",
+      "captured_at_utc": "2026-10-07T06:58:56.998877+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_antenna_physical/response.bin",
+      "sha256": "51bda7d0b7cb2db66b4c05fe27cdfc7ac3163589715f27ba9ec4055a71bb8c4b",
+      "bytes": 10145,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_antenna_physical",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_antenna_physical/capture.json",
+        "sha256": "aa84bbf01647a3cfb9e9e69f9e49f08ae3b8f56f36d438dd744f332f2739cf54",
+        "size_bytes": 748,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_antenna_physical/text.txt",
+          "sha256": "23ad4e9c57b0c9b02ff28964bd2f3da2d417b62037856f9d88591f8e016b2fbb",
+          "size_bytes": 740,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_arpa",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/ARPATargetTrackingCyclonePro-BCBA1B57.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/ARPATargetTrackingCyclonePro-BCBA1B57.html",
+      "captured_at_utc": "2026-10-07T06:58:59.525121+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_arpa/response.bin",
+      "sha256": "092e3195896a2196ac2c5572487a8bf5bfabf023d7f5308c0e1a04e43d818a87",
+      "bytes": 8673,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_arpa",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_arpa/capture.json",
+        "sha256": "60cf389e839565fba53563914a3a755a25ace7c74f0e9f751a19e0454399beaa",
+        "size_bytes": 709,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_arpa/text.txt",
+          "sha256": "c881339c0f8a20dc0046fb8985891983ba726ba5c7523d476aa9733ee542e009",
+          "size_bytes": 615,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_connections",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/DataConnectionsCyclonePro-BCB9FA7B.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/DataConnectionsCyclonePro-BCB9FA7B.html",
+      "captured_at_utc": "2026-10-07T06:58:57.814436+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_connections/response.bin",
+      "sha256": "e9993c769adcc3fad2a76bb3a8c6f17466f2eeee9ab2e0aeffffe539c9d6aa63",
+      "bytes": 9074,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_connections",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_connections/capture.json",
+        "sha256": "cf0f0409d37a33447760b140d57b67d317f9050764883ebf56f6f7536d450e1e",
+        "size_bytes": 717,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_connections/text.txt",
+          "sha256": "15d0fc70c1d209c64cf4daf467e7deb2619565bf0eaef769d99fbafd179e7061",
+          "size_bytes": 598,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_environment",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/EnvironmentalSpecificationCyclonePr-BCB9F5E5.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/EnvironmentalSpecificationCyclonePr-BCB9F5E5.html",
+      "captured_at_utc": "2026-10-07T06:58:57.113467+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_environment/response.bin",
+      "sha256": "bdcfdc613bfd10f7b42431cff081e176f32e6d7e7fff298acd91fdaaf8e18faa",
+      "bytes": 9755,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_environment",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_environment/capture.json",
+        "sha256": "498576a0c2fc01d0a7d687163c7a6396d874162bca897983dfffdce67dded059",
+        "size_bytes": 737,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_environment/text.txt",
+          "sha256": "1ac0919380d69df9db0aa9e4be5709d0648450239d1effc38160d7f59bc16655",
+          "size_bytes": 715,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_power",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/PowerSpecification-BA4B0B00.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/PowerSpecification-BA4B0B00.html",
+      "captured_at_utc": "2026-10-07T06:58:57.083968+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_power/response.bin",
+      "sha256": "0841df34d3b8ae123994840277dbacf859545a85dabb9dd4863bc9f5e3f82b3a",
+      "bytes": 10569,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_power",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_power/capture.json",
+        "sha256": "f13d22e133bf1d38d0ee313c616acc90376338faf59c388bccd96f71155f5dec",
+        "size_bytes": 692,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_power/text.txt",
+          "sha256": "d2d4a4404a6fa72750695137ce29a585b0d6c730fe248d374e5f2b2c84af4fd3",
+          "size_bytes": 834,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_power_pro",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/PowerSpecification-BA4C15BE.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/PowerSpecification-BA4C15BE.html",
+      "captured_at_utc": "2026-10-07T06:58:56.694655+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_power_pro/response.bin",
+      "sha256": "51b143c945e6513075161d47c707debdf8fa55cebb612dc04738f51fbd121b97",
+      "bytes": 10609,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_power_pro",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_power_pro/capture.json",
+        "sha256": "2e1b4ad41aa0115590ce0aa5368814fe5e58dde48bfd97f273fb94f6420e7e72",
+        "size_bytes": 700,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_power_pro/text.txt",
+          "sha256": "a59928fb0c4a7b2141146d00d50072de9cc966e0ade65c3c44174da561e41772",
+          "size_bytes": 839,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_range",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/RangeCyclonePro-BCBA0152.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/RangeCyclonePro-BCBA0152.html",
+      "captured_at_utc": "2026-10-07T06:58:58.200717+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_range/response.bin",
+      "sha256": "0713b796a6734e883dc4dceb079c2ed2449a89aa89bc317d20ee76211091829f",
+      "bytes": 14548,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_range",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_range/capture.json",
+        "sha256": "449f63d11c0fccf12b139145774b0bb0d32af24046e5303f867886fbaf22171a",
+        "size_bytes": 686,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_range/text.txt",
+          "sha256": "ea6931f842930b9ab0f33de9f040b9f3a66d6289c7d63b881ea6adddd932cd59",
+          "size_bytes": 1386,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_range_pro",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/Range-DD2CE309.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/Range-DD2CE309.html",
+      "captured_at_utc": "2026-10-07T06:58:58.031591+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_range_pro/response.bin",
+      "sha256": "fc58241a27585d0d6e25e7da373a686e8e8a27760b169c650c32b7c85f53bd87",
+      "bytes": 14476,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_range_pro",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_range_pro/capture.json",
+        "sha256": "551a878b11646423a13818c5eb89b158441e02e15089bfcb0ae2c071895de8c7",
+        "size_bytes": 674,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_range_pro/text.txt",
+          "sha256": "5db403cf942f0fbde55f854bde0a58a1adf88152ab74b12f9ebbd53338f6ba49",
+          "size_bytes": 1446,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_receiver",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/RecieverSpecificationCyclonePro-BCBA0D7F.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/RecieverSpecificationCyclonePro-BCBA0D7F.html",
+      "captured_at_utc": "2026-10-07T06:58:59.381075+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_receiver/response.bin",
+      "sha256": "1545f164d3511f1bbf7e334935779b1485cac0afdbff74bb6e54b6fd8e255431",
+      "bytes": 9155,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_receiver",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_receiver/capture.json",
+        "sha256": "a6e9a83fdae44f231a1814b27245b4c6f12954464d2b1f722c1fd54dc4d49990",
+        "size_bytes": 723,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_receiver/text.txt",
+          "sha256": "40948be34212aea24a8b7e51a559e29a0125fb0924c7565139f666c29d25873e",
+          "size_bytes": 615,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_transmitter",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/TransmitterSpecificationCyclonePro-BCBA0647.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/TransmitterSpecificationCyclonePro-BCBA0647.html",
+      "captured_at_utc": "2026-10-07T06:58:58.329837+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_transmitter/response.bin",
+      "sha256": "6ab0808f3b25300845737dc9a45d73c71c7b4684095e014389056aedcec9481a",
+      "bytes": 8301,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_transmitter",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_transmitter/capture.json",
+        "sha256": "5203ad8ae8a405aae3c06a139c05cb5b975dfea0e6a39dc4b264b771d05885c5",
+        "size_bytes": 735,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_transmitter/text.txt",
+          "sha256": "a0431543a8cfe44e242f6d0925802fc77b22d50aa7f7bba809ab6e23d6808952",
+          "size_bytes": 489,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "raymarine_spec_transmitter_pro",
+      "requested_url": "https://docs.raymarine.com/87402/en-US/latest/TransmitterSpecification-BF520DEC.html",
+      "resolved_url": "https://docs.raymarine.com/87402/en-US/latest/TransmitterSpecification-BF520DEC.html",
+      "captured_at_utc": "2026-10-07T06:58:59.086126+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/marine/raymarine_spec_transmitter_pro/response.bin",
+      "sha256": "2d8a1b1a25dd40576b02af92e88a557930094acc0aaa2765fc8d25cf29ed8878",
+      "bytes": 8234,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "raymarine_spec_transmitter_pro",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/raymarine_spec_transmitter_pro/capture.json",
+        "sha256": "d458bea5f09c80c98b26ede569a89d912c9dc4e95b03c2d187e86a4b6e1860fd",
+        "size_bytes": 723,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_manual_section",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/marine/raymarine_spec_transmitter_pro/text.txt",
+          "sha256": "fd5ae0cc0dc7ab5b8be36324515f926d3eada66711bbe7f383b37ae01e6a6a06",
+          "size_bytes": 506,
+          "role": "HTML text rendition for source inspection; raw DOM retained"
+        }
+      ],
+      "printed_version": "87402 Rev 9 en-US"
+    },
+    {
+      "capture_id": "simrad_halo_2000_3000_manual",
+      "requested_url": "https://softwaredownloads.navico.com/Simrad/SimradYachting_Software%20-%20Copy/Downloads/Radar/halo/HALO2000_3000_RADAR_IM_EN_988-12846-003_w.pdf",
+      "resolved_url": "https://www.navico.com/errors/404",
+      "captured_at_utc": "2026-10-07T06:54:46.108182+00:00",
+      "curl_exit_code": 0,
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "detected_type": "html",
+      "status": "failed_http_capture",
+      "file": "data/radar_sources_v2/marine/simrad_halo_2000_3000_manual/response.bin",
+      "sha256": "9b8127dc7aeab2d3907ed25edecdb0affe2a99051f235cf29e7ece28f8405081",
+      "bytes": 4545,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "simrad_halo_2000_3000_manual",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/simrad_halo_2000_3000_manual/capture.json",
+        "sha256": "5bf4e0f72e308e24ef3568ccb5c1d6d29d5e63248412ea933ad92dd740dd62a4",
+        "size_bytes": 739,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "access_failure_evidence",
+      "derived_local_artifacts": []
+    },
+    {
+      "capture_id": "simrad_halo_entry",
+      "requested_url": "https://www.simrad-yachting.com/en-eu/simrad/type/radar/halo-3-radar-w3-arrayri1220m-cbl/",
+      "resolved_url": "https://www.simrad-yachting.com/en-eu/simrad/type/radar/halo-3-radar-w3-arrayri1220m-cbl/",
+      "captured_at_utc": "2026-10-07T06:52:31.012997+00:00",
+      "curl_exit_code": 0,
+      "http_status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "detected_type": "html",
+      "status": "failed_http_capture",
+      "file": "data/radar_sources_v2/marine/simrad_halo_entry/response.bin",
+      "sha256": "45ee148eac584282bbf18119e5f00ce9dedee79fe6da6e981af8127a81c6ba86",
+      "bytes": 5492,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "simrad_halo_entry",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/marine/simrad_halo_entry/capture.json",
+        "sha256": "3831372792a29ea85f5680435d4ed4d5f44383fe4ac6ad1342462e3fcac9a4cd",
+        "size_bytes": 717,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "access_failure_evidence",
+      "derived_local_artifacts": []
+    }
+  ],
+  "candidate_groups": [
+    {
+      "candidate_label": "Furuno DRS-NXT",
+      "publisher": "Furuno",
+      "application": "marine_radar",
+      "proposed_family_id": "furuno_drs_nxt",
+      "primary_source_ids": [
+        "furuno_nxt_usa_manual"
+      ],
+      "document_models": [
+        "DRS6A-NXT",
+        "DRS12A-NXT",
+        "DRS25A-NXT"
+      ],
+      "printed_version": "IME-36680-K; printed K: MAY 29, 2026; specification leaves E3668S01D-M / 201120",
+      "visual_review": {
+        "pages_one_based": [
+          33,
+          34,
+          44
+        ],
+        "reviewer": "AI /root",
+        "human_review": false,
+        "local_images": [
+          "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-33.png",
+          "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-34.png",
+          "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-44.png"
+        ],
+        "result_zh": "AI已检查所列完整页的表头、脚注和对应关系；仅可读性及初步语义审阅，不是逐条读法和题目的双AI验收。"
+      },
+      "coverage_types": [
+        "model_by_antenna",
+        "effective_vs_physical_beam",
+        "channel_by_emission_form",
+        "continuous_ranges_and_discrete_scales",
+        "model_by_supply_voltage_and_current",
+        "operating_vs_storage_temperature"
+      ],
+      "semantic_cautions_zh": [
+        "候选日本站G3链接实际返回条款HTML；改从官方美国站取得K版，未取得G3，不能声称两者字节相同或任意合并。",
+        "同册三个型号、XN10A/XN12A/XN13A天线与保守DRS-NXT家族归一个来源组。DRS4D/2D仅用于家族排除，不向本册引入参数。",
+        "RezBoost有效波束与物理波束不同；通道下P0N/Q0N频率及电源电压/电流对应关系不能摊平。",
+        "量程表中的最高档脚注限特定型号；运行与储存温度须分别绑定。"
+      ],
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false,
+      "canonical_document_id": "furuno:IME-36680-K:en",
+      "proposed_family_aliases": [
+        "DRS-NXT",
+        "DRS2D-NXT",
+        "DRS4D-NXT",
+        "DRS6A-NXT",
+        "DRS12A-NXT",
+        "DRS25A-NXT"
+      ],
+      "auxiliary_source_ids": [
+        "furuno_nxt_entry"
+      ],
+      "annotation_scope_status": "archive_readability_passed_pending_history_and_full_semantic_annotation",
+      "family_rule_zh": "同族型号、共享手册、镜像和翻译同组；品牌相同本身不构成同一设备家族。"
+    },
+    {
+      "candidate_label": "JRC JMA-5200Mk2",
+      "publisher": "Japan Radio Co., Ltd.",
+      "application": "marine_radar",
+      "proposed_family_id": "jrc_jma5200mk2",
+      "primary_source_ids": [
+        "jrc_5200_catalog"
+      ],
+      "document_models": [
+        "JMA-5212-4",
+        "JMA-5212-6",
+        "JMA-5222-7",
+        "JMA-5222-9",
+        "JMA-5212-4HS",
+        "JMA-5212-6HS"
+      ],
+      "printed_version": "printed 2012.10 / CAT.No.Y9-171 (No.699-2-3) A; copyright 2010.11; PDF metadata modified 2015-01-09",
+      "visual_review": {
+        "pages_one_based": [
+          6
+        ],
+        "reviewer": "AI /root",
+        "human_review": false,
+        "local_images": [
+          "data/radar_sources_v2/marine/jrc_5200_catalog/render/page-6.png"
+        ],
+        "result_zh": "AI已检查所列完整页的表头、脚注和对应关系；仅可读性及初步语义审阅，不是逐条读法和题目的双AI验收。"
+      },
+      "coverage_types": [
+        "model_by_scanner",
+        "paired_pulse_width_frequency",
+        "typical_vs_maximum_power_by_model",
+        "scanner_vs_indoor_components",
+        "discrete_scale_vs_continuous_range"
+      ],
+      "semantic_cautions_zh": [
+        "采用官网直接链接的有版号PDF为待标注主件，网页只作入口和差异记录，不能混成一份无版本的设备真值。",
+        "PDF第6页可见JMA-5222组功耗与其他组不同，网页却重复另组数值；网页最后一栏扫描器型号也与PDF不同。差异已披露，原因未认证。",
+        "只可问冻结目录所述规格，不能声称解决现行设备参数矛盾；后续统一语料不包含网页的冲突规格。",
+        "保留跨列合并单元格、多脉宽同频率和扫描器/处理器/显示器/键盘温度限定。"
+      ],
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false,
+      "canonical_document_id": "jrc:Y9-171:699-2-3:A:2012-10:en",
+      "proposed_family_aliases": [
+        "JMA-5200Mk2",
+        "JMA5200",
+        "JMA-5212",
+        "JMA-5222",
+        "NKE-2103",
+        "NKE-2254"
+      ],
+      "auxiliary_source_ids": [
+        "jrc_5200_entry"
+      ],
+      "annotation_scope_status": "archive_readability_passed_pending_history_and_full_semantic_annotation",
+      "family_rule_zh": "同族型号、共享手册、镜像和翻译同组；品牌相同本身不构成同一设备家族。"
+    },
+    {
+      "candidate_label": "Garmin GMR Fantom",
+      "publisher": "Garmin",
+      "application": "marine_radar",
+      "proposed_family_id": "garmin_gmr_fantom",
+      "primary_source_ids": [
+        "garmin_fantom_manual"
+      ],
+      "document_models": [
+        "GMR Fantom 54",
+        "GMR Fantom 56",
+        "GMR Fantom 124",
+        "GMR Fantom 126",
+        "GMR Fantom 254",
+        "GMR Fantom 256"
+      ],
+      "printed_version": "GUID-B2BA7AFE-D24E-48DD-8DD0-38915DCBBE6A v4, May 2024",
+      "visual_review": {
+        "pages_one_based": [
+          12,
+          13
+        ],
+        "reviewer": "AI /root",
+        "human_review": false,
+        "local_images": [
+          "data/radar_sources_v2/marine/garmin_fantom_manual/render/page-12.png",
+          "data/radar_sources_v2/marine/garmin_fantom_manual/render/page-13.png"
+        ],
+        "result_zh": "AI已检查所列完整页的表头、脚注和对应关系；仅可读性及初步语义审阅，不是逐条读法和题目的双AI验收。"
+      },
+      "coverage_types": [
+        "model_by_typical_maximum_power",
+        "multi_condition_rotation_speed",
+        "antenna_length_by_beamwidth",
+        "side_lobe_by_angular_region",
+        "component_weights",
+        "voltage_converter_condition"
+      ],
+      "semantic_cautions_zh": [
+        "第12页转速脚注同时限定单量程、MotionScope关闭和量程上限，不能只保留转速选项。",
+        "第12页不同型号的典型/最大耗电，第13页天线长度与波束/角域与旁瓣对应须保留。",
+        "第13页涉及人体暴露的安全距离仅作资料可读性记录，不纳入后续本批标注范围；不以问答替代实际安装安全指导。"
+      ],
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false,
+      "canonical_document_id": "garmin:GUID-B2BA7AFE-D24E-48DD-8DD0-38915DCBBE6A:v4:en-US",
+      "proposed_family_aliases": [
+        "GMR Fantom",
+        "Fantom",
+        "GMR54",
+        "GMR56",
+        "GMR124",
+        "GMR126",
+        "GMR254",
+        "GMR256"
+      ],
+      "annotation_scope_status": "archive_readability_passed_pending_history_and_full_semantic_annotation",
+      "family_rule_zh": "同族型号、共享手册、镜像和翻译同组；品牌相同本身不构成同一设备家族。"
+    },
+    {
+      "candidate_label": "Raymarine Cyclone",
+      "publisher": "Raymarine",
+      "application": "marine_radar",
+      "proposed_family_id": "raymarine_cyclone",
+      "primary_source_ids": [
+        "raymarine_cyclone_manual_entry",
+        "raymarine_cyclone_spec_index",
+        "raymarine_cyclone_pro_spec_index",
+        "raymarine_spec_antenna",
+        "raymarine_spec_antenna_physical",
+        "raymarine_spec_arpa",
+        "raymarine_spec_connections",
+        "raymarine_spec_environment",
+        "raymarine_spec_power",
+        "raymarine_spec_power_pro",
+        "raymarine_spec_range",
+        "raymarine_spec_range_pro",
+        "raymarine_spec_receiver",
+        "raymarine_spec_transmitter",
+        "raymarine_spec_transmitter_pro"
+      ],
+      "document_models": [
+        "Cyclone",
+        "Cyclone Pro"
+      ],
+      "printed_version": "official online manual 87402, Rev 9, en-US; every archived specification section independently shows Rev 9",
+      "visual_review": {
+        "pages_one_based": [],
+        "reviewer": "AI /root",
+        "human_review": false
+      },
+      "coverage_types": [
+        "model_by_peak_power",
+        "model_by_maximum_range_scale",
+        "antenna_size_by_beamwidth_and_weight",
+        "typical_maximum_standby_roles",
+        "range_by_rotation_or_pulse_configuration"
+      ],
+      "semantic_cautions_zh": [
+        "采用手册明确的Cyclone与Cyclone Pro父级，不能从含Pro的URL文件名推定所属型号：普通版发射机页面文件名也含Pro。",
+        "产品网页混有重复规格和FAQ差异；正文55W与110W条目缺少同等清晰型号表头，FAQ又写Pro 100W。完整保存该网页但不作本轮事实输入。",
+        "本地现取15个手册目录/规格HTML均显示Rev9；web缓存曾显示一个Rev8页面，不能用缓存替换原字节版本。",
+        "后续评价只依据冻结的87402 Rev9声明，不认证设备现行真值，不混入营销等效磁控管功率或理论距离。"
+      ],
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false,
+      "canonical_document_id": "raymarine:87402:rev9:en-US",
+      "proposed_family_aliases": [
+        "Cyclone",
+        "Cyclone Pro",
+        "E70620",
+        "E70621"
+      ],
+      "auxiliary_source_ids": [
+        "raymarine_cyclone_entry"
+      ],
+      "html_review": {
+        "method": "raw HTML table cells, parent links and local full-text inspected; no rendered browser screenshot claimed",
+        "reviewed_sections": [
+          "raymarine_cyclone_manual_entry",
+          "raymarine_cyclone_pro_spec_index",
+          "raymarine_cyclone_spec_index",
+          "raymarine_spec_antenna",
+          "raymarine_spec_antenna_physical",
+          "raymarine_spec_arpa",
+          "raymarine_spec_connections",
+          "raymarine_spec_environment",
+          "raymarine_spec_power",
+          "raymarine_spec_power_pro",
+          "raymarine_spec_range",
+          "raymarine_spec_range_pro",
+          "raymarine_spec_receiver",
+          "raymarine_spec_transmitter",
+          "raymarine_spec_transmitter_pro"
+        ]
+      },
+      "annotation_scope_status": "archive_readability_passed_pending_history_and_full_semantic_annotation",
+      "family_rule_zh": "同族型号、共享手册、镜像和翻译同组；品牌相同本身不构成同一设备家族。",
+      "alias_scope_note_zh": "E70620出现在已存产品入口；E70621仅为历史排查候选别名，本轮已存规格页以Cyclone Pro父级标识，不将料号映射认证为已核验事实。"
+    },
+    {
+      "candidate_label": "Simrad HALO",
+      "publisher": "Simrad / Navico",
+      "application": "marine_radar",
+      "proposed_family_id": "simrad_halo",
+      "proposed_family_aliases": [
+        "HALO-3",
+        "HALO-4",
+        "HALO-6",
+        "HALO2000",
+        "HALO3000",
+        "HALO20",
+        "HALO24"
+      ],
+      "primary_source_ids": [],
+      "attempted_source_ids": [
+        "simrad_halo_entry",
+        "simrad_halo_2000_3000_manual"
+      ],
+      "eligible_for_pending_annotation": false,
+      "evaluation_admitted": false,
+      "status": "pending_official_bytes_access",
+      "reason_zh": "候选HALO-3网页HTTP403；官方HALO2000/3000手册地址重定向到404路径再返回403。搜索可读片段不是原件归档；两个尝试都保留，未绕过访问限制或采用第三方镜像。",
+      "generation_change_zh": "2000/3000仅为同HALO宽家族的备选代际检索尝试，未取得原件、未正式替代HALO-3，也不增加组数。"
+    }
+  ],
+  "extraction_limits_zh": [
+    "原件均保留，pypdf布局文本含字体/旋转文本警告和过量空白，不作为未经复核的完整事实；本轮已视觉核对指定规格页。",
+    "PDF页码为原文件1基页码，版号时间以印刷信息和元数据分别保存；不把文件改写时间当出版日期。",
+    "HTML文字仅助审阅；正式片段须保留所属型号、表头与脚注并单独冻结，不把表格展平顺序当原语义。",
+    "归档、视觉可读性和历史字符串筛查均不能认证装备真值、独立QA或模型收益。",
+    "Simrad缺口保留，八组目标未满足，未调低门槛。"
+  ]
+}

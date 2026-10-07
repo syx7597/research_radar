@@ -1,0 +1,234 @@
+{
+  "version": "replacement_official_source_admission_v2",
+  "recorded_on": "2026-10-07",
+  "reviewer": "AI /root",
+  "human_review": false,
+  "model_run_ready": false,
+  "evaluation_frozen": false,
+  "status": "source_archive_and_initial_readability_review_only",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_sources_v2/candidate_extension.json": "8ffa14ec771d08b622202b0e0cbd1ed6d81fc310a645b5c7f466f039afca106f",
+    "scripts/capture_radar_coverage_sources.py": "ef192b3e2585ac11974acdde9b6c2c8b1fc4e1c8e4fde9649e33dc2e96844ada"
+  },
+  "sources": [
+    {
+      "capture_id": "metek_mrr2_20230929",
+      "requested_url": "https://metek.de/wp-content/uploads/2014/05/20230929_Datenblatt_MRR-2.pdf",
+      "resolved_url": "https://metek.de/wp-content/uploads/2014/05/20230929_Datenblatt_MRR-2.pdf",
+      "captured_at_utc": "2026-10-07T07:05:51.827047+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "detected_type": "pdf",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/replacement/metek_mrr2_20230929/response.bin",
+      "sha256": "7f12ce8baf7e9e7e5afebd0337ff1a9fe39cc2337981cddef5e866fb61d5e0e6",
+      "bytes": 420892,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "metek_mrr2_20230929",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/replacement/metek_mrr2_20230929/capture.json",
+        "sha256": "c2e3c7afc26f928d9adefbd0cfe67d26acf994927a8edd242ab45e37205b21c8",
+        "size_bytes": 691,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_document",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr2_20230929/pages/001.txt",
+          "sha256": "1f228d8be4635f16c65c491eaf8508c338cda3d2dedddc388125e5cfc9c57ff1",
+          "size_bytes": 1127,
+          "role": "pypdf layout page text"
+        },
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr2_20230929/pages/002.txt",
+          "sha256": "ea39e4b4911c2bfb3ce752e7ccd28a50d1f8285680d9db328ae9f99872b879d4",
+          "size_bytes": 3364,
+          "role": "pypdf layout page text"
+        },
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr2_20230929/render/page-2.png",
+          "sha256": "c73dc1b309c7986e9d9b3c2df5b6e96a949c3d781964efd89adfb23a69746b0e",
+          "size_bytes": 1729895,
+          "role": "PDFKit page render"
+        }
+      ],
+      "pdf": {
+        "page_count": 2,
+        "encrypted": false,
+        "metadata": {
+          "/Title": "Folie 1",
+          "/Author": "Nina",
+          "/CreationDate": "D:20230929193357+02'00'",
+          "/ModDate": "D:20230929193357+02'00'",
+          "/Producer": "Microsoft® PowerPoint® für Microsoft 365",
+          "/Creator": "Microsoft® PowerPoint® für Microsoft 365"
+        }
+      }
+    },
+    {
+      "capture_id": "metek_mrr_pro_20240705",
+      "requested_url": "https://metek.de/wp-content/uploads/2016/12/2024-0705_MRR-PRO_datasheet_eng.pdf",
+      "resolved_url": "https://metek.de/wp-content/uploads/2016/12/2024-0705_MRR-PRO_datasheet_eng.pdf",
+      "captured_at_utc": "2026-10-07T07:05:51.697209+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "detected_type": "pdf",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/response.bin",
+      "sha256": "bc4eba55be07839370c738e5ec1682d9e1a81a4684a25ffb7c8f26206e499ab3",
+      "bytes": 211994,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "metek_mrr_pro_20240705",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/capture.json",
+        "sha256": "3fb790e80f66b92e147358e0202bca1d68f3618df48323980cf2ca2b447ac534",
+        "size_bytes": 709,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "primary_document",
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/pages/001.txt",
+          "sha256": "d1aa4682bf02e7b648a3d409fa31a33d0df53261f57da621aa49b102b36976b2",
+          "size_bytes": 1517,
+          "role": "pypdf layout page text"
+        },
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/pages/002.txt",
+          "sha256": "098319bf35b52ef3b30f1a8589c50d59901ee4455faed89799ad8e8a6d4e0094",
+          "size_bytes": 4232,
+          "role": "pypdf layout page text"
+        },
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/render/page-1.png",
+          "sha256": "32f1a3f0b28b9462101693b0da54671d0bd624d27ea6f875b224011cc546095b",
+          "size_bytes": 730060,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/render/page-2.png",
+          "sha256": "3fa8f99abc3ae6ee610560662a937a116143f3850e213d39692812f4c34da722",
+          "size_bytes": 525203,
+          "role": "PDFKit page render"
+        }
+      ],
+      "pdf": {
+        "page_count": 2,
+        "encrypted": false,
+        "metadata": {
+          "/Author": "Finn Burgemeister",
+          "/Creator": "Microsoft® Word für Microsoft 365",
+          "/CreationDate": "D:20240708095338+02'00'",
+          "/ModDate": "D:20240708095338+02'00'",
+          "/Producer": "Microsoft® Word für Microsoft 365"
+        }
+      }
+    },
+    {
+      "capture_id": "metek_mrr_pro_entry",
+      "requested_url": "https://metek.de/product/mrr-pro/",
+      "resolved_url": "https://metek.de/product/mrr-pro/",
+      "captured_at_utc": "2026-10-07T07:05:52.057813+00:00",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "detected_type": "html",
+      "status": "captured_candidate_bytes",
+      "file": "data/radar_sources_v2/replacement/metek_mrr_pro_entry/response.bin",
+      "sha256": "fa2ceb99125ba4471cfbe1ee34da01ed8dbeb745d440ce353ff8e2654a047a38",
+      "bytes": 59167,
+      "error": "",
+      "human_verified": false,
+      "evaluation_admitted": false,
+      "source_id": "metek_mrr_pro_entry",
+      "capture_metadata": {
+        "path": "data/radar_sources_v2/replacement/metek_mrr_pro_entry/capture.json",
+        "sha256": "377abdb4bd95d24506b55559303ae6a559213a425e272211426b0231dd018e69",
+        "size_bytes": 620,
+        "role": "HTTP capture metadata"
+      },
+      "archive_role": "identity_or_entry_support_only",
+      "derived_local_artifacts": []
+    }
+  ],
+  "candidate_groups": [
+    {
+      "candidate_label": "METEK Micro Rain Radar MRR-2 / MRR-PRO",
+      "publisher": "METEK",
+      "application": "weather_radar",
+      "proposed_family_id": "metek_mrr",
+      "primary_source_ids": [
+        "metek_mrr2_20230929",
+        "metek_mrr_pro_20240705"
+      ],
+      "auxiliary_source_ids": [
+        "metek_mrr_pro_entry"
+      ],
+      "canonical_document_ids": [
+        "metek:MRR-2:20230929",
+        "metek:MRR-PRO:2024-07-08"
+      ],
+      "document_models": [
+        "MRR-2",
+        "MRR-PRO"
+      ],
+      "printed_versions": {
+        "metek_mrr2_20230929": "20230929, vertical footer on PDF p2",
+        "metek_mrr_pro_20240705": "08.07.2024, PDF p2 footer; URL filename says 2024-0705, not used as printed date"
+      },
+      "proposed_family_aliases": [
+        "METEK MRR",
+        "MRR-2",
+        "MRR-PRO",
+        "Micro Rain Radar"
+      ],
+      "family_rule_zh": "MRR-PRO第1页明示为MRR-2后继，两个文档合为同一来源家族组；不将MRR泛称或其他厂商MRR自动作本型号。",
+      "visual_review": {
+        "reviewer": "AI /root",
+        "human_review": false,
+        "local_images": [
+          "data/radar_sources_v2/replacement/metek_mrr2_20230929/render/page-2.png",
+          "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/render/page-2.png"
+        ],
+        "regions_zh": [
+          "MRR-2第2页功率角色/高度分辨率与调制/加热与供电表及页脚",
+          "MRR-PRO第2页参数表、三重测量条件、配置脚注和页脚"
+        ]
+      },
+      "coverage_types": [
+        "model_by_range_gate_count_and_averaging_interval",
+        "transmitter_power_vs_EIRP_vs_heater_power",
+        "height_resolution_vs_modulation",
+        "three_condition_reflectivity_threshold",
+        "velocity_resolution_vs_Nyquist_range",
+        "bounds_approximation_and_not_all_combinations"
+      ],
+      "semantic_cautions_zh": [
+        "只采用本次两份指定PDF；产品入口沿用最多254等旧说明，当前MRR-PRO PDF写另一范围，不合并为无版本事实。",
+        "PRO文件名日期与印刷日期不同，两者分别记录；旧2018/2022版仅在搜索中出现，未归档也不引入事实。",
+        "配置选项不能任意做笛卡尔积，原文明确并非所有参数组合可用或有意义。",
+        "MRR-2的Transmit power/EiRP、加热和电源功耗为不同量值角色，不把单位相同视作同属性。",
+        "可检测反射率须保留高度、层厚和平均时间三个条件，不能写作无条件灵敏度。"
+      ],
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false
+    }
+  ],
+  "counts": {
+    "candidate_groups": 1,
+    "primary_PDF_documents": 2,
+    "primary_PDF_pages": 4,
+    "auxiliary_HTML_snapshots": 1,
+    "new_questions": 0,
+    "new_curated_readings": 0,
+    "new_model_runs": 0,
+    "new_training_runs": 0
+  },
+  "limits_zh": "替补来源归档与初步可读性通过，不证明必要性门槛、事实金标或方法收益；历史筛查另报，宽简称歧义不作已排除。"
+}

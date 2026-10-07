@@ -1,0 +1,2185 @@
+{
+  "version": "radar_history_alias_screening_v2",
+  "recorded_on": "2026-10-07",
+  "reviewer": "AI /root/coverage_weather_sources",
+  "human_review": false,
+  "status": "bounded_source_lineage_screening_not_gold_or_training_contamination_certification",
+  "new_questions": 0,
+  "new_model_runs": 0,
+  "model_run_ready": false,
+  "candidate_count": 9,
+  "candidate_extension_note": "Original eight retained; METEK MRR family added by root before QA/model outputs as a source-access replacement candidate. No default unseen designation.",
+  "normalization": "NFKC, casefold, Unicode dash folding; JSON string values AND object keys; embedded strings scanned lexically, no semantic paraphrase matching",
+  "counting": "Occurrences per regex in normalized string fields/keys; narrow and broad may overlap and must not be added as independent mentions. File/field counts and scope breakdown retained; repeated exports are not independent source evidence.",
+  "input_manifest_path": "artifacts/thesis_direction_review/radar_sources_v2/history_inputs.json",
+  "input_manifest_content_sha256": "b6632f1d7694e04dfb37a530fa1d2de19ca78af522e2e65789a36b332d78be8c",
+  "scanner_sha256": "c4d36d1c82f3b85cd882e09c2f2bf0123e7f3061edb1e0d9bef5e3fb1efb83fd",
+  "legacy_qa_counts": {
+    "original_splits": {
+      "train": 4277,
+      "dev": 582,
+      "test": 542
+    },
+    "original_total": 5401,
+    "polished_splits": {
+      "dev": 582,
+      "test": 542
+    },
+    "sft_train_records": 4277,
+    "interpretation": "5401 original QA target records; polished variants and SFT are derivatives, not extra independent questions; existing file is not proof a current checkpoint trained on it."
+  },
+  "groups": [
+    {
+      "family_id": "vaisala_wrs300",
+      "status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])wrs[ _-]*300(?![0-9])",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])wrs[ _-]*\\d+",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        }
+      },
+      "resolved_family_files": [],
+      "sample_locations_without_source_text": [],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "eec_ranger",
+      "status": "historical_family_mentions_identified",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])ranger[ _-]*x[ _-]*(?:1|5)(?![0-9])",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])rangers?(?![a-z])",
+          "match_occurrences": 100,
+          "matching_files": 4,
+          "class_counts": {
+            "candidate_family_mention": 22,
+            "other_named_entity": 78
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 100,
+              "matching_files": 4,
+              "unique_field_locations": 86,
+              "unique_jsonl_records": 8,
+              "class_counts": {
+                "candidate_family_mention": 22,
+                "other_named_entity": 78
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        }
+      },
+      "resolved_family_files": [
+        {
+          "path": "kg_v3/edges.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 6,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 6,
+          "locator_examples": [
+            "/14798/doc_ids/0",
+            "/14798/evidence/0",
+            "/14798/head"
+          ]
+        },
+        {
+          "path": "kg_v3/entities.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 6,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 6,
+          "locator_examples": [
+            "/8122/attributes/0/doc_id",
+            "/8122/attributes/1/doc_id",
+            "/8122/attributes/2/doc_id"
+          ]
+        },
+        {
+          "path": "pipeline/v3/work/chunks.jsonl",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 7,
+          "unique_jsonl_records": 2,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 7,
+          "locator_examples": [
+            "line:3568/chunk_id",
+            "line:3568/doc_id",
+            "line:3568/radar_hint"
+          ]
+        },
+        {
+          "path": "radar_corpus/corpus.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 3,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 3,
+          "locator_examples": [
+            "/989/en_title",
+            "/989/id",
+            "/989/raw_text_en"
+          ]
+        }
+      ],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/8122/attributes/0/doc_id",
+          "family": "eec_ranger",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "ffe5ab8b3629a97322e9eef281054ae0cdd4c5b3281c6fedbff405808cc33283",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/8122",
+          "record_identifier": null,
+          "hit_id": "f108248e7c4d73cb3f08"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/8122/attributes/1/doc_id",
+          "family": "eec_ranger",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "ffe5ab8b3629a97322e9eef281054ae0cdd4c5b3281c6fedbff405808cc33283",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/8122",
+          "record_identifier": null,
+          "hit_id": "dfed1870e2927d7689f2"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/8122/attributes/2/doc_id",
+          "family": "eec_ranger",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "ffe5ab8b3629a97322e9eef281054ae0cdd4c5b3281c6fedbff405808cc33283",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/8122",
+          "record_identifier": null,
+          "hit_id": "3f6ad0ae7fdbcd4c8232"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/5653/attributes/0/doc_id",
+          "family": "eec_ranger",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "57a622a069096e79ee53e91f7cb057dd65bac7f0d15e4ac4954ca290f75357d0",
+          "classification": "other_named_entity",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/5653",
+          "record_identifier": null,
+          "hit_id": "dc3951aee1897adeb7f4"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/5653/attributes/1/doc_id",
+          "family": "eec_ranger",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "57a622a069096e79ee53e91f7cb057dd65bac7f0d15e4ac4954ca290f75357d0",
+          "classification": "other_named_entity",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/5653",
+          "record_identifier": null,
+          "hit_id": "13be6b78c9439536d55e"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/5653/attributes/2/doc_id",
+          "family": "eec_ranger",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "57a622a069096e79ee53e91f7cb057dd65bac7f0d15e4ac4954ca290f75357d0",
+          "classification": "other_named_entity",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/5653",
+          "record_identifier": null,
+          "hit_id": "e7c3f4ef091a3a215ba6"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "gamic_gmwr",
+      "status": "historical_family_mentions_identified",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])gmwr[ _-]*25[ _-]*ws(?![a-z0-9])",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])gmwr(?![a-z])",
+          "match_occurrences": 55,
+          "matching_files": 6,
+          "class_counts": {
+            "candidate_family_mention": 55
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 49,
+              "matching_files": 4,
+              "unique_field_locations": 47,
+              "unique_jsonl_records": 4,
+              "class_counts": {
+                "candidate_family_mention": 49
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 3,
+              "matching_files": 1,
+              "unique_field_locations": 3,
+              "unique_jsonl_records": 1,
+              "class_counts": {
+                "candidate_family_mention": 3
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 3,
+              "matching_files": 1,
+              "unique_field_locations": 2,
+              "unique_jsonl_records": 1,
+              "class_counts": {
+                "candidate_family_mention": 3
+              }
+            }
+          }
+        }
+      },
+      "resolved_family_files": [
+        {
+          "path": "ca_agraphrag/data/sft_train.jsonl",
+          "scope": "legacy_sft_file",
+          "unique_field_locations": 2,
+          "unique_jsonl_records": 1,
+          "record_identifier_examples": [
+            "negation-04080"
+          ],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 3,
+          "locator_examples": [
+            "line:3236/messages/1/content",
+            "line:3236/messages/2/content"
+          ]
+        },
+        {
+          "path": "ca_agraphrag/data/train.jsonl",
+          "scope": "legacy_qa_original_file",
+          "unique_field_locations": 3,
+          "unique_jsonl_records": 1,
+          "record_identifier_examples": [
+            "negation-04080"
+          ],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 3,
+          "locator_examples": [
+            "line:3236/anchor",
+            "line:3236/gold_support/0/head",
+            "line:3236/question"
+          ]
+        },
+        {
+          "path": "kg_v3/edges.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 12,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 12,
+          "locator_examples": [
+            "/13386/doc_ids/0",
+            "/13386/evidence/0",
+            "/13386/head"
+          ]
+        },
+        {
+          "path": "kg_v3/entities.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 15,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 15,
+          "locator_examples": [
+            "/7271/attributes/0/doc_id",
+            "/7271/attributes/1/doc_id",
+            "/7271/attributes/2/doc_id"
+          ]
+        },
+        {
+          "path": "pipeline/v3/work/chunks.jsonl",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 14,
+          "unique_jsonl_records": 4,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 15,
+          "locator_examples": [
+            "line:3599/chunk_id",
+            "line:3599/doc_id",
+            "line:3599/radar_hint"
+          ]
+        },
+        {
+          "path": "radar_corpus/corpus.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 6,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 7,
+          "locator_examples": [
+            "/1005/en_title",
+            "/1005/id",
+            "/1005/raw_text_en"
+          ]
+        }
+      ],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/7271/attributes/0/doc_id",
+          "family": "gamic_gmwr",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "a3db6bd9e7c474ee94ae6b7ce626c0a0e793de10d8c5fe39ba01fa625fd5d0a8",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/7271",
+          "record_identifier": null,
+          "hit_id": "84faf36ff90593bc8441"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/7271/attributes/1/doc_id",
+          "family": "gamic_gmwr",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "a3db6bd9e7c474ee94ae6b7ce626c0a0e793de10d8c5fe39ba01fa625fd5d0a8",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/7271",
+          "record_identifier": null,
+          "hit_id": "1278db414c8f1b6df9e2"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/7271/attributes/2/doc_id",
+          "family": "gamic_gmwr",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "a3db6bd9e7c474ee94ae6b7ce626c0a0e793de10d8c5fe39ba01fa625fd5d0a8",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/7271",
+          "record_identifier": null,
+          "hit_id": "27e606e262a1dd97c9db"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "furuno_drs_nxt",
+      "status": "historical_family_mentions_identified",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])drs[ _-]*(?:(?:6|12|25)[ _-]*a?[ _-]*)?nxt(?![a-z0-9])",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])drs[ _-]*(?:\\d+[a-z]*)?|-?\\bnxt\\b",
+          "match_occurrences": 217,
+          "matching_files": 22,
+          "class_counts": {
+            "candidate_family_mention": 42,
+            "other_named_entity": 175
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 166,
+              "matching_files": 16,
+              "unique_field_locations": 123,
+              "unique_jsonl_records": 6,
+              "class_counts": {
+                "candidate_family_mention": 30,
+                "other_named_entity": 136
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 26,
+              "matching_files": 3,
+              "unique_field_locations": 23,
+              "unique_jsonl_records": 10,
+              "class_counts": {
+                "candidate_family_mention": 6,
+                "other_named_entity": 20
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 10,
+              "matching_files": 2,
+              "unique_field_locations": 10,
+              "unique_jsonl_records": 3,
+              "class_counts": {
+                "other_named_entity": 10
+              }
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 15,
+              "matching_files": 1,
+              "unique_field_locations": 11,
+              "unique_jsonl_records": 7,
+              "class_counts": {
+                "candidate_family_mention": 6,
+                "other_named_entity": 9
+              }
+            }
+          }
+        }
+      },
+      "resolved_family_files": [
+        {
+          "path": "ca_agraphrag/data/sft_train.jsonl",
+          "scope": "legacy_sft_file",
+          "unique_field_locations": 2,
+          "unique_jsonl_records": 1,
+          "record_identifier_examples": [
+            "negation-03951"
+          ],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 6,
+          "locator_examples": [
+            "line:3139/messages/1/content",
+            "line:3139/messages/2/content"
+          ]
+        },
+        {
+          "path": "ca_agraphrag/data/train.jsonl",
+          "scope": "legacy_qa_original_file",
+          "unique_field_locations": 3,
+          "unique_jsonl_records": 1,
+          "record_identifier_examples": [
+            "negation-03951"
+          ],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 6,
+          "locator_examples": [
+            "line:3139/anchor",
+            "line:3139/gold_support/0/head",
+            "line:3139/question"
+          ]
+        },
+        {
+          "path": "kg_v3/edges.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 3,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 5,
+          "locator_examples": [
+            "/10835/doc_ids/0",
+            "/10835/evidence/0",
+            "/10835/head"
+          ]
+        },
+        {
+          "path": "kg_v3/entities.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 9,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 10,
+          "locator_examples": [
+            "/5602/attributes/0/doc_id",
+            "/5602/attributes/1/doc_id",
+            "/5602/attributes/2/doc_id"
+          ]
+        },
+        {
+          "path": "pipeline/v3/work/chunks.jsonl",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 7,
+          "unique_jsonl_records": 2,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 10,
+          "locator_examples": [
+            "line:3093/chunk_id",
+            "line:3093/doc_id",
+            "line:3093/radar_hint"
+          ]
+        },
+        {
+          "path": "radar_corpus/corpus.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 3,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 0,
+          "broad_occurrences": 5,
+          "locator_examples": [
+            "/750/en_title",
+            "/750/id",
+            "/750/raw_text_en"
+          ]
+        }
+      ],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/5602/attributes/0/doc_id",
+          "family": "furuno_drs_nxt",
+          "width": "broad",
+          "normalized_offset": 7,
+          "context_sha256": "9d0a3510f71661accaf3a580fbbe5ada1862268e4d3ee79f935f152280f0c248",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/5602",
+          "record_identifier": null,
+          "hit_id": "926a44829ec1f2f8a290"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/5602/attributes/1/doc_id",
+          "family": "furuno_drs_nxt",
+          "width": "broad",
+          "normalized_offset": 7,
+          "context_sha256": "9d0a3510f71661accaf3a580fbbe5ada1862268e4d3ee79f935f152280f0c248",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/5602",
+          "record_identifier": null,
+          "hit_id": "04bd33f6ccdc2c2c8704"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/5602/attributes/2/doc_id",
+          "family": "furuno_drs_nxt",
+          "width": "broad",
+          "normalized_offset": 7,
+          "context_sha256": "9d0a3510f71661accaf3a580fbbe5ada1862268e4d3ee79f935f152280f0c248",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/5602",
+          "record_identifier": null,
+          "hit_id": "bcad8e692e66c4dfd2fe"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/597/name",
+          "family": "furuno_drs_nxt",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "9f82fb21030112af07211866f30111eda00c4e0f5804f7f3982dc489d9bd93f9",
+          "classification": "other_named_entity",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/597",
+          "record_identifier": null,
+          "hit_id": "4f2665eafd9d5ddb4814"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/600/name",
+          "family": "furuno_drs_nxt",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "a4f5595bf80b4607ba1dc826b8e9cb061b0081e3813ae3d75e258f8f12054f31",
+          "classification": "other_named_entity",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/600",
+          "record_identifier": null,
+          "hit_id": "401f6f5f09162d365b61"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/8627/name",
+          "family": "furuno_drs_nxt",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "75e7064d6828d7648f6c336befa77886c6f532efe19f6db97bc5a4fb56222db2",
+          "classification": "other_named_entity",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/8627",
+          "record_identifier": null,
+          "hit_id": "6faeb2ba0095537e1f98"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "jrc_jma5200",
+      "status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])(?:jma[ _-]*52(?:00|12|22)|nke[ _-]*(?:2103|2254))(?![0-9])",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])jma[ _-]*\\d{3,4}",
+          "match_occurrences": 419,
+          "matching_files": 11,
+          "class_counts": {
+            "same_publisher_other_model_lineage_unresolved": 419
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 129,
+              "matching_files": 5,
+              "unique_field_locations": 125,
+              "unique_jsonl_records": 14,
+              "class_counts": {
+                "same_publisher_other_model_lineage_unresolved": 129
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 46,
+              "matching_files": 3,
+              "unique_field_locations": 46,
+              "unique_jsonl_records": 16,
+              "class_counts": {
+                "same_publisher_other_model_lineage_unresolved": 46
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 10,
+              "matching_files": 2,
+              "unique_field_locations": 10,
+              "unique_jsonl_records": 4,
+              "class_counts": {
+                "same_publisher_other_model_lineage_unresolved": 10
+              }
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 234,
+              "matching_files": 1,
+              "unique_field_locations": 188,
+              "unique_jsonl_records": 91,
+              "class_counts": {
+                "same_publisher_other_model_lineage_unresolved": 234
+              }
+            }
+          }
+        }
+      },
+      "resolved_family_files": [],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/4181/name",
+          "family": "jrc_jma5200",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "41fb569fec2312dee6b23a913e1065396152dfb54a097e630d5ba1ec97ff39f0",
+          "classification": "same_publisher_other_model_lineage_unresolved",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/4181",
+          "record_identifier": null,
+          "hit_id": "43e8ba337881b5c410c0"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/4182/name",
+          "family": "jrc_jma5200",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "d2865d2bf8b6f9291e06955e4edaaabd874405656282b22e3efca0bbfce4af1d",
+          "classification": "same_publisher_other_model_lineage_unresolved",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/4182",
+          "record_identifier": null,
+          "hit_id": "19de630d3ebbe2cd3dde"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/4183/name",
+          "family": "jrc_jma5200",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "694aaab29275944abc609f4ec85955c4e18acd7b46a4d0acf58691415b62df3c",
+          "classification": "same_publisher_other_model_lineage_unresolved",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/4183",
+          "record_identifier": null,
+          "hit_id": "056b8700d2e44d0f342f"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "garmin_fantom",
+      "status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])fantom(?![a-z])",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])(?:gmr|fantom)(?![a-z])",
+          "match_occurrences": 529,
+          "matching_files": 18,
+          "class_counts": {
+            "ambiguous_abbreviation_unresolved": 145,
+            "other_radar_abbreviation": 384
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 138,
+              "matching_files": 12,
+              "unique_field_locations": 133,
+              "unique_jsonl_records": 11,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 5,
+                "other_radar_abbreviation": 133
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 39,
+              "matching_files": 3,
+              "unique_field_locations": 39,
+              "unique_jsonl_records": 20,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 6,
+                "other_radar_abbreviation": 33
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 17,
+              "matching_files": 2,
+              "unique_field_locations": 17,
+              "unique_jsonl_records": 6,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 3,
+                "other_radar_abbreviation": 14
+              }
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 335,
+              "matching_files": 1,
+              "unique_field_locations": 203,
+              "unique_jsonl_records": 100,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 131,
+                "other_radar_abbreviation": 204
+              }
+            }
+          }
+        }
+      },
+      "resolved_family_files": [],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/1584/name",
+          "family": "garmin_fantom",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "c9688c2c67d8952f8054c2970ecf368cae603f7f88a2feeb08223576b7c9d1a4",
+          "classification": "ambiguous_abbreviation_unresolved",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/1584",
+          "record_identifier": null,
+          "hit_id": "672c6e6dcd1d100ec9b3"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/1794/aliases/0",
+          "family": "garmin_fantom",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "c9688c2c67d8952f8054c2970ecf368cae603f7f88a2feeb08223576b7c9d1a4",
+          "classification": "ambiguous_abbreviation_unresolved",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/1794",
+          "record_identifier": null,
+          "hit_id": "9b94a1cda291e2bfbf77"
+        },
+        {
+          "file": "ca_agraphrag/data/sft_train.jsonl",
+          "pointer": "line:2675/messages/1/content",
+          "family": "garmin_fantom",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "122236918ebcbf7cf7e69eb6acad5df8990a35df045c24d4aa028cbc0ae99c75",
+          "classification": "ambiguous_abbreviation_unresolved",
+          "scope": "legacy_sft_file",
+          "record_locator": "line:2675",
+          "record_identifier": "comparison-03344",
+          "hit_id": "3cd58d537542c8c3fcc8"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/847/attributes/0/doc_id",
+          "family": "garmin_fantom",
+          "width": "broad",
+          "normalized_offset": 16,
+          "context_sha256": "e04ad6092727bedc8dc51216f5e2313c8e63923ecd3f0d88d4e5ae0fe86afef8",
+          "classification": "other_radar_abbreviation",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/847",
+          "record_identifier": null,
+          "hit_id": "e6f2199fc89d9ef49628"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/847/attributes/1/doc_id",
+          "family": "garmin_fantom",
+          "width": "broad",
+          "normalized_offset": 16,
+          "context_sha256": "e04ad6092727bedc8dc51216f5e2313c8e63923ecd3f0d88d4e5ae0fe86afef8",
+          "classification": "other_radar_abbreviation",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/847",
+          "record_identifier": null,
+          "hit_id": "0e446853da642069269f"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/847/attributes/2/doc_id",
+          "family": "garmin_fantom",
+          "width": "broad",
+          "normalized_offset": 16,
+          "context_sha256": "e04ad6092727bedc8dc51216f5e2313c8e63923ecd3f0d88d4e5ae0fe86afef8",
+          "classification": "other_radar_abbreviation",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/847",
+          "record_identifier": null,
+          "hit_id": "8996684b941360caa022"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "simrad_halo",
+      "status": "historical_family_mentions_identified",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])halo[ _-]*(?:3|4|6|20|20\\+|24|2000|3000)(?![0-9])",
+          "match_occurrences": 161,
+          "matching_files": 6,
+          "class_counts": {
+            "candidate_family_mention": 161
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 114,
+              "matching_files": 4,
+              "unique_field_locations": 79,
+              "unique_jsonl_records": 7,
+              "class_counts": {
+                "candidate_family_mention": 114
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 3,
+              "matching_files": 1,
+              "unique_field_locations": 3,
+              "unique_jsonl_records": 2,
+              "class_counts": {
+                "candidate_family_mention": 3
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 44,
+              "matching_files": 1,
+              "unique_field_locations": 44,
+              "unique_jsonl_records": 22,
+              "class_counts": {
+                "candidate_family_mention": 44
+              }
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])halo(?![a-z])",
+          "match_occurrences": 183,
+          "matching_files": 6,
+          "class_counts": {
+            "candidate_family_mention": 183
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 136,
+              "matching_files": 4,
+              "unique_field_locations": 99,
+              "unique_jsonl_records": 9,
+              "class_counts": {
+                "candidate_family_mention": 136
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 3,
+              "matching_files": 1,
+              "unique_field_locations": 3,
+              "unique_jsonl_records": 2,
+              "class_counts": {
+                "candidate_family_mention": 3
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 44,
+              "matching_files": 1,
+              "unique_field_locations": 44,
+              "unique_jsonl_records": 22,
+              "class_counts": {
+                "candidate_family_mention": 44
+              }
+            }
+          }
+        }
+      },
+      "resolved_family_files": [
+        {
+          "path": "ca_agraphrag/data/sft_train.jsonl",
+          "scope": "legacy_sft_file",
+          "unique_field_locations": 44,
+          "unique_jsonl_records": 22,
+          "record_identifier_examples": [
+            "count-01872",
+            "enumerate-01873",
+            "multi_constraint-04916",
+            "multi_constraint-04964",
+            "multi_constraint-04981"
+          ],
+          "narrow_occurrences": 44,
+          "broad_occurrences": 44,
+          "locator_examples": [
+            "line:1487/messages/3/content",
+            "line:1487/messages/4/content",
+            "line:1488/messages/3/content"
+          ]
+        },
+        {
+          "path": "ca_agraphrag/data/train.jsonl",
+          "scope": "legacy_qa_original_file",
+          "unique_field_locations": 3,
+          "unique_jsonl_records": 2,
+          "record_identifier_examples": [
+            "count-01872",
+            "enumerate-01873"
+          ],
+          "narrow_occurrences": 3,
+          "broad_occurrences": 3,
+          "locator_examples": [
+            "line:1487/gold_support/0/members/14",
+            "line:1488/gold_answer/14",
+            "line:1488/gold_support/0/members/14"
+          ]
+        },
+        {
+          "path": "kg_v3/edges.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 31,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 35,
+          "broad_occurrences": 38,
+          "locator_examples": [
+            "/13037/doc_ids/0",
+            "/13037/head",
+            "/13044/doc_ids/0"
+          ]
+        },
+        {
+          "path": "kg_v3/entities.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 26,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 23,
+          "broad_occurrences": 30,
+          "locator_examples": [
+            "/10535/attributes/0/doc_id",
+            "/10535/attributes/1/doc_id",
+            "/10535/attributes/2/doc_id"
+          ]
+        },
+        {
+          "path": "pipeline/v3/work/chunks.jsonl",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 29,
+          "unique_jsonl_records": 9,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 36,
+          "broad_occurrences": 44,
+          "locator_examples": [
+            "line:3010/chunk_id",
+            "line:3010/doc_id",
+            "line:3010/radar_hint"
+          ]
+        },
+        {
+          "path": "radar_corpus/corpus.json",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "unique_field_locations": 13,
+          "unique_jsonl_records": null,
+          "record_identifier_examples": [],
+          "narrow_occurrences": 20,
+          "broad_occurrences": 24,
+          "locator_examples": [
+            "/708/en_title",
+            "/708/id",
+            "/708/raw_text_en"
+          ]
+        }
+      ],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/10535/attributes/0/doc_id",
+          "family": "simrad_halo",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "ec55332621cddef2351a7a1e468286a740c30459ac917b0242c68a8da4129d7e",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/10535",
+          "record_identifier": null,
+          "hit_id": "e90d8f954a07e3396742"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/10535/attributes/1/doc_id",
+          "family": "simrad_halo",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "ec55332621cddef2351a7a1e468286a740c30459ac917b0242c68a8da4129d7e",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/10535",
+          "record_identifier": null,
+          "hit_id": "c5240b5f8e531474b0c8"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/10535/attributes/2/doc_id",
+          "family": "simrad_halo",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "ec55332621cddef2351a7a1e468286a740c30459ac917b0242c68a8da4129d7e",
+          "classification": "candidate_family_mention",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/10535",
+          "record_identifier": null,
+          "hit_id": "369e9c0d9b149604f4b5"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "raymarine_cyclone",
+      "status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])(?:cyclone[ _-]*pro|e[ _-]*7062[01])(?![a-z0-9])",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])cyclones?(?![a-z])",
+          "match_occurrences": 7,
+          "matching_files": 4,
+          "class_counts": {
+            "other_named_entity_ship_class": 7
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 3,
+              "matching_files": 2,
+              "unique_field_locations": 3,
+              "unique_jsonl_records": 0,
+              "class_counts": {
+                "other_named_entity_ship_class": 3
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 2,
+              "matching_files": 1,
+              "unique_field_locations": 2,
+              "unique_jsonl_records": 1,
+              "class_counts": {
+                "other_named_entity_ship_class": 2
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 2,
+              "matching_files": 1,
+              "unique_field_locations": 2,
+              "unique_jsonl_records": 1,
+              "class_counts": {
+                "other_named_entity_ship_class": 2
+              }
+            }
+          }
+        }
+      },
+      "resolved_family_files": [],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/3991/name",
+          "family": "raymarine_cyclone",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "fe8c235182ec31cac37c5196cc5a83b4b4af336e56bc89b9f581cab3278bf35d",
+          "classification": "other_named_entity_ship_class",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/3991",
+          "record_identifier": null,
+          "hit_id": "269cadf156091befa2c9"
+        },
+        {
+          "file": "ca_agraphrag/data/sft_train.jsonl",
+          "pointer": "line:3493/messages/1/content",
+          "family": "raymarine_cyclone",
+          "width": "broad",
+          "normalized_offset": 16,
+          "context_sha256": "603f45b04cbd1b55579fd4dcdacdfe1de54ecd4a8dc90944c4770e28c40ec64c",
+          "classification": "other_named_entity_ship_class",
+          "scope": "legacy_sft_file",
+          "record_locator": "line:3493",
+          "record_identifier": "negation-04406",
+          "hit_id": "e2657f204ec93615452a"
+        },
+        {
+          "file": "ca_agraphrag/data/sft_train.jsonl",
+          "pointer": "line:3493/messages/2/content",
+          "family": "raymarine_cyclone",
+          "width": "broad",
+          "normalized_offset": 43,
+          "context_sha256": "fffda61b20cb2fc09543f93694bb2009901f5f79e0fd018c431b8b00e66144a5",
+          "classification": "other_named_entity_ship_class",
+          "scope": "legacy_sft_file",
+          "record_locator": "line:3493",
+          "record_identifier": "negation-04406",
+          "hit_id": "29be77025ca3737e69db"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    },
+    {
+      "family_id": "metek_mrr",
+      "status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "matching": {
+        "narrow": {
+          "regex": "(?<![a-z0-9])mrr[ _-]*(?:2|pro)(?![a-z0-9])|\\bmetek\\b[\\s\\S]{0,60}(?:\\bmrr\\b|micro[ _-]*rain[ _-]*radar)",
+          "match_occurrences": 0,
+          "matching_files": 0,
+          "class_counts": {},
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 0,
+              "matching_files": 0,
+              "unique_field_locations": 0,
+              "unique_jsonl_records": 0,
+              "class_counts": {}
+            }
+          }
+        },
+        "broad": {
+          "regex": "(?<![a-z0-9])mrr(?![a-z])|micro[ _-]*rain[ _-]*radar|\\bmetek\\b",
+          "match_occurrences": 255,
+          "matching_files": 16,
+          "class_counts": {
+            "ambiguous_abbreviation_unresolved": 143,
+            "other_radar_abbreviation": 112
+          },
+          "by_scope": {
+            "legacy_corpus_kg_or_intermediate": {
+              "match_occurrences": 123,
+              "matching_files": 12,
+              "unique_field_locations": 109,
+              "unique_jsonl_records": 15,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 12,
+                "other_radar_abbreviation": 111
+              }
+            },
+            "legacy_qa_original_file": {
+              "match_occurrences": 15,
+              "matching_files": 2,
+              "unique_field_locations": 15,
+              "unique_jsonl_records": 9,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 15
+              }
+            },
+            "legacy_qa_polished_file": {
+              "match_occurrences": 3,
+              "matching_files": 1,
+              "unique_field_locations": 3,
+              "unique_jsonl_records": 2,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 3
+              }
+            },
+            "legacy_sft_file": {
+              "match_occurrences": 114,
+              "matching_files": 1,
+              "unique_field_locations": 111,
+              "unique_jsonl_records": 51,
+              "class_counts": {
+                "ambiguous_abbreviation_unresolved": 113,
+                "other_radar_abbreviation": 1
+              }
+            }
+          }
+        }
+      },
+      "resolved_family_files": [],
+      "sample_locations_without_source_text": [
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/3981/name",
+          "family": "metek_mrr",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "0030da21b6cb58efeb72476b197e0478c5a129482a5cd61167708f4e33088544",
+          "classification": "ambiguous_abbreviation_unresolved",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/3981",
+          "record_identifier": null,
+          "hit_id": "24539934f396ce629fb5"
+        },
+        {
+          "file": "ca_agraphrag/data/sft_train.jsonl",
+          "pointer": "line:2223/messages/3/content",
+          "family": "metek_mrr",
+          "width": "broad",
+          "normalized_offset": 22,
+          "context_sha256": "566b87c186aeb1fe819a0772deb045fc237628c7dffbe256fc86ece35e1f0b45",
+          "classification": "ambiguous_abbreviation_unresolved",
+          "scope": "legacy_sft_file",
+          "record_locator": "line:2223",
+          "record_identifier": "count-02786",
+          "hit_id": "bf1cbfee8b67ed74cf9b"
+        },
+        {
+          "file": "ca_agraphrag/data/sft_train.jsonl",
+          "pointer": "line:2223/messages/4/content",
+          "family": "metek_mrr",
+          "width": "broad",
+          "normalized_offset": 67,
+          "context_sha256": "0f91bbcc718c87f70f367d2042b45655893b827a62b11e6928cd64cb18896b3b",
+          "classification": "ambiguous_abbreviation_unresolved",
+          "scope": "legacy_sft_file",
+          "record_locator": "line:2223",
+          "record_identifier": "count-02786",
+          "hit_id": "541ecf703baca36c93f6"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/10692/attributes/0/value_raw",
+          "family": "metek_mrr",
+          "width": "broad",
+          "normalized_offset": 0,
+          "context_sha256": "c7da56d6fd7226df313f46cb36d1807abec21631d7095f01e3fc19c6fa853748",
+          "classification": "other_radar_abbreviation",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/10692",
+          "record_identifier": null,
+          "hit_id": "4ede04b01438f09a6559"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/10692/name",
+          "family": "metek_mrr",
+          "width": "broad",
+          "normalized_offset": 16,
+          "context_sha256": "842f670056a3bb786ac783b4b67cce688a7fa70a704ad6e6119569ab94481e12",
+          "classification": "other_radar_abbreviation",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/10692",
+          "record_identifier": null,
+          "hit_id": "dc35da481365bbde6ae3"
+        },
+        {
+          "file": "kg_v3/entities.json",
+          "pointer": "/5132/name",
+          "family": "metek_mrr",
+          "width": "broad",
+          "normalized_offset": 6,
+          "context_sha256": "f79b85567af43be1a2f04077cd68cba99b78c55847b36d1a9417690dfaec8829",
+          "classification": "other_radar_abbreviation",
+          "scope": "legacy_corpus_kg_or_intermediate",
+          "record_locator": "/5132",
+          "record_identifier": null,
+          "hit_id": "f4a6f5a2c6b428957a8e"
+        }
+      ],
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence",
+      "evaluation_admitted": false
+    }
+  ],
+  "known_debug_exposure_registry_comparison": {
+    "registry_documents": 10,
+    "declared_family_groups": 10,
+    "match_details": [
+      {
+        "family_id": "jrc_jma5200",
+        "width": "broad",
+        "field": "family_ids",
+        "index": 6,
+        "registry_value": "JMA-1030",
+        "interpretation": "screen_hit_not_automatic_same_family"
+      },
+      {
+        "family_id": "jrc_jma5200",
+        "width": "broad",
+        "field": "family_ids",
+        "index": 7,
+        "registry_value": "JMA-1032",
+        "interpretation": "screen_hit_not_automatic_same_family"
+      },
+      {
+        "family_id": "jrc_jma5200",
+        "width": "broad",
+        "field": "family_ids",
+        "index": 8,
+        "registry_value": "JMA-1034",
+        "interpretation": "screen_hit_not_automatic_same_family"
+      },
+      {
+        "family_id": "jrc_jma5200",
+        "width": "broad",
+        "field": "family_ids",
+        "index": 9,
+        "registry_value": "JMA1030",
+        "interpretation": "screen_hit_not_automatic_same_family"
+      },
+      {
+        "family_id": "jrc_jma5200",
+        "width": "broad",
+        "field": "canonical_document_ids",
+        "index": 8,
+        "registry_value": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf",
+        "interpretation": "screen_hit_not_automatic_same_family"
+      },
+      {
+        "family_id": "jrc_jma5200",
+        "width": "broad",
+        "field": "source_uris",
+        "index": 8,
+        "registry_value": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf",
+        "interpretation": "screen_hit_not_automatic_same_family"
+      }
+    ],
+    "exact_candidate_family_identifier_matches": [],
+    "interpretation": "Metadata alias scan of 10 known debug source groups only. JMA-1030 broad-prefix hits refer to the old JMA1030 group, not automatically JMA5200. Same publisher does not establish same family; no exact string overlap does not prove source isolation. Candidate byte/document identity comparison remains a separate root task."
+  },
+  "context_review": {
+    "type": "AI contextual classification with explicit conservative rules in scanner",
+    "context_hashes_by_class": [
+      {
+        "family_id": "eec_ranger",
+        "classification": "candidate_family_mention",
+        "unique_contexts": 6,
+        "sha256": [
+          "d4561f7a47ef2e24dcec5d775b45cb527edfb74667a09d25030ede558a9dfba6",
+          "dc8b241415962c7ca5e7c7321528cbcae64d044351f242a50ac0011d44593f64",
+          "e3c8c4a36cc52ca7e8e3a5dfa99cf38eed18267453321e1143cf22980eaa04f9",
+          "f1c66d9304fd67da3cc2dbf0422534f0c55a27d94635202e21d50c06914f5d45",
+          "fdfca6f4afa19405b6bfe7eb2ee30349729da63a487b8c34c343950edbd991c9",
+          "ffe5ab8b3629a97322e9eef281054ae0cdd4c5b3281c6fedbff405808cc33283"
+        ]
+      },
+      {
+        "family_id": "eec_ranger",
+        "classification": "other_named_entity",
+        "unique_contexts": 27,
+        "sha256": [
+          "0ffda9e5efd41c22ae7da25e3c19574388dcdce386c39c4d4229c6c776c85fd6",
+          "13e44c91c99d75abb5a43d737222300a5434ef6f2d93ae0d2b7f06187dfd89d8",
+          "191cd6d25603578fe162a479e85f8aa83aa1331a86a67ef6bc8bad411ac921dd",
+          "1d426e55a384941dec4d470608baef24f00fd538106a37ba15a5e3d5a418abd2",
+          "2398b8ae93fe6721b2419306e8183a8612353f8d0f674218da4629f586bf8d9a",
+          "2c51bdaea56d35e85c5fce5acee183b7d13e2d1153e7782f99d4b832fd70ad4b",
+          "2caf4470e11e8f98d528b9aefe7fc00417e4b36e5b2e9405d1fcae7c52a7d4b7",
+          "39e3393469def4837904aa9a6cd7c0616848337e9329fd5b76e9ba23234fbc7c",
+          "3cae1556073c0c78a8b04fa6efa6ac4b70781a1bb21fabcfee5a75c62acecdd5",
+          "3e366e749867642c1ef531e256ceb3329cd5568a0266ec32e1db715b081b3eae",
+          "41f54b9e9931171d480a6c98c59835a03dd7a02f5f7aa3541a609154a3abfd7d",
+          "434be33c833eb23dca54d7bf62fe4b57032d759721a6454f4ab4d57a3f363de6",
+          "4df9e056412873692138ff9ba3280963f96aaad9b190d972f815b599bd865f83",
+          "57a622a069096e79ee53e91f7cb057dd65bac7f0d15e4ac4954ca290f75357d0",
+          "609d3705f114bb35b2b97c6984562267b0c0a7cad575db95d5965b71918b48d5",
+          "633763ac2626737c3b793ea52272165fc22113636c85947556cb9f9182df5959",
+          "63b7b5752c2f3d9a9a850d3d37f7a6d02ab84863fea9cd66e8eb9f34d1d82684",
+          "7019a708375a483cec3bbce3e4f61c2ad61a3b59e92b1a102e50c679891a8431",
+          "70b826b685959a446fc908a3c71a587c1599f2526eb34589198af7fb902ddd78",
+          "b6c035f85c56f8e521a3897158d2fbd955116f3835b337a5412fa13b7da560cf",
+          "c59590f2878dd7abd24067404ce4d56702450d3dde1a518c1e2dd74cb3d085c9",
+          "dc9fa576be48b41b25359dbe99cc92349950c7522927b5cc4177ba693575db37",
+          "dcf03d35c2351b627dac0bcb3243a660e6c51a650bbb0a74bb49181cc089b992",
+          "e85f14c13ed492a0d416d8b6a1978781d6929a3f8558e15518809479379d34b3",
+          "ee47493401ab223fa96f6da0e5b872e49fd0cad2096c601d8815d97ec547f6a2",
+          "f59857e5e8c91cdb0c45c57f50e9742e43a60a57fbc92d5fb7b1968ed0e43490",
+          "fcd7ac540baf96807e57afc371b3e136cf3bb99ece2f7b0431d12337755acfcd"
+        ]
+      },
+      {
+        "family_id": "furuno_drs_nxt",
+        "classification": "candidate_family_mention",
+        "unique_contexts": 9,
+        "sha256": [
+          "40faa58ad180e2cc675c21ba71938e2a035a15c4ebb6b300acc1cbab79c8af7b",
+          "4b02c2c05317437cafc009988f725b5719693f436de4d7b22dda127d5a66caa0",
+          "59cfbafc4892669ca6eadebb3587916ed082ecf55bc9c00f9cb219c2563280f5",
+          "8dc01cda9863dfd653811d54392a336a50204b0b8e5592ae7dfc8f08f28c9f15",
+          "9d0a3510f71661accaf3a580fbbe5ada1862268e4d3ee79f935f152280f0c248",
+          "cb8c7a2119f65a233773164063c3387c81d80d00cc4e3145a32cdd3996628948",
+          "dd9f29b85b9d8d54e7f5c5464f75ecefabd498f205ad08048d8662b7d682f89d",
+          "ee04397d45bbe67451bb3ed535d2f8339fe95ec5b63c5c6589f7e8856bbccae6",
+          "f761fea27e401c71cb575708cefaca88e4491b25581ac554834ba3f69f50e9eb"
+        ]
+      },
+      {
+        "family_id": "furuno_drs_nxt",
+        "classification": "other_named_entity",
+        "unique_contexts": 35,
+        "sha256": [
+          "096291b72cf359f7079b80bca1d036ec53a2335a0ac603e8bfcb8ab1ba222b25",
+          "13eccb1ad48ed7525e0543e89cb230819df43505accf554c2d97316cad385cd0",
+          "17c0df29eea1d6d39112cded57217b613006625a6ccb1fe311c65a1aac11af9d",
+          "1ac0b7ea387654e9c27eee403c917e88c769f019971aff193f31efcd53981c94",
+          "2227460959a02b112797d2e9d8759759000da5e4f2f8407148ebdcfa42cce1a4",
+          "2500b7f4ce872e132b342721f57a76bcfa3d8ff88e4cf944e3461075aba95f65",
+          "2b034318409109e8726c276803d16137b0bc6c96a32c43426e43309b436f1e29",
+          "32a92051b7d6549ae15d3967b9fd30f25f29cb3956ec2f9e3ea25bf2bbced267",
+          "335664a9688fe1106a8f65184fbcc8157557bc764e932629845c2acc27acbb2e",
+          "3cf7d7b571f71b0ce5bf9650bbb084fe8ef0ac376188d978378f3ec7aac5e0b9",
+          "47707671db81055110a579f60aeae397658f86f6a17658e0f328453d758a9eb0",
+          "499ccf0d455ead29c326e470d98cd0cd4c7a6f2144ffbec600fd654a05daf110",
+          "55265ab23abb062e30be9285e0e36df528dbc4a009d62ca14864dd22478d2f14",
+          "55aee5bf95fcd40ee59034a26d44d65d73a3fe3f0df824ffbcb914c38f737802",
+          "5749a0710c646337f1fa4b8e3ce7639f2285961b6e916d485783d4a3cefb8268",
+          "69f524b76aebab4c4edaa9926be7313734d1dfcacee0c7ccc7e744d472a531ef",
+          "75e7064d6828d7648f6c336befa77886c6f532efe19f6db97bc5a4fb56222db2",
+          "762c01601441dbf044b5dfaa2fd04204d142d41fdc6605ea9440d91188a2c3a2",
+          "77e831aeb6e1bf131377badd7b69e1285c67e6efdf71c732a5cb22f82085b9a8",
+          "7b59fd29328f6340a99fe6ee77c729c0adee8d4eb295f05dfbe26394418ebb62",
+          "7bd708a92ab730a1dd75c93e241ab1a656268975b62d65887079e5c940144c15",
+          "7eb59fe76b4c60e65756729538b510c552abc844dd1390f141fd671755338b64",
+          "8256fd6ea1bdcb8f704cde65334c9333320f419972088cdf1e25f00b90480245",
+          "85e313fe81359da728211e297645f722ce5f7545de10d8544fa557673cb8bb69",
+          "9a24413061d9f6050964a27df37251c59ed9bd4b5bb642c0d5b52079d0c70053",
+          "9e4eaecc6cbd7573c754743ec6515cf8c218d5499cc6162778207811ef7cfa50",
+          "9f82fb21030112af07211866f30111eda00c4e0f5804f7f3982dc489d9bd93f9",
+          "a4f5595bf80b4607ba1dc826b8e9cb061b0081e3813ae3d75e258f8f12054f31",
+          "bd4c949ff3c697335e2f5376e2dc0fc25479305752b26a41d86c78d754695f8c",
+          "c58751216c62404a2f0172b0cb4793d3849f5531f2764056f2bf77c71f6954c3",
+          "c62a2341f0dd17d81a85152e968471b42f5944f38fc1bfb77527df4181726c9d",
+          "cce5dfb50ee0deb8f66d216d975465e746c8f870e57f8ceeccdec673bb30cd29",
+          "cf63ff1efaa65667d43d953f6ff7ed05d768dd18469a489937d6c529e873ee84",
+          "e16729ccef50054a6005940d7ea7c5d073b92a0a2c8ac8c185d3565ca1833328",
+          "fecd873c5ec3caeaea3f9acfad036bac34b82e764713a9c5adfeb1ac05a32fea"
+        ]
+      },
+      {
+        "family_id": "gamic_gmwr",
+        "classification": "candidate_family_mention",
+        "unique_contexts": 17,
+        "sha256": [
+          "0b9edbd5c571cbbcb4ae4bf299609b18563b77125daad006f23b6de9c88226e2",
+          "16da48156fba272e8d99748474f5eeafb8c8ec99fa12c6bbe1bcc58b407859ea",
+          "2410b378ff5c55193a14d78543efdb23d66f6660106c7a659ca9fc8455966043",
+          "3da35cd1ad920f89b724f9ed8175169c705e4e06108bc6b9719b15c3eace1990",
+          "4227a27ef1635d9cb25f7ead8e9cbabf7ce091e820df5dde66a3f321480e6dff",
+          "4b32d06936ab80dd7e4742897f652b2b841b0cd60d2b164ff9a07497b2d7b3db",
+          "57fbe732e41329ab235672562bbae0146e613b2e335157334a6981e4c0f73717",
+          "7aeeaa42ba02270b5b806ac0f49601fcbe67b65d337b64058fa1b58347b47d6c",
+          "7e4bb84be7cd1e9dc5f541f483828adf7799d4a267266d1d8af131cd05a3dd50",
+          "86aa081100931b2e759502c6b8498e40631bc9f8bbc573fbc6a7641d4678041b",
+          "98d39425093c83c99c2fa0c4beaf62e3a4f02c386fb34295c97a8c526ddcbc20",
+          "9cba96ccdba04f47ae1b86c561a4fb8fe7120a25ec163f91a7a8478050bbc354",
+          "a3db6bd9e7c474ee94ae6b7ce626c0a0e793de10d8c5fe39ba01fa625fd5d0a8",
+          "b6c6795e9587eb9da0c830b1924dd9c7cac16ebd2286121d120cedf33f2323f1",
+          "df478bb14265ab1c8d45c0783fd390125c4272641d69411e3a19eae14e38774d",
+          "e1029afe32aba8e824c798851ccd2d38d42c92fcd1b4db62bc02085a962862a7",
+          "f0690e497c1b9194e7a323214a19080b4b7d21abf84ce1bec76b9374b2cc8bf7"
+        ]
+      },
+      {
+        "family_id": "garmin_fantom",
+        "classification": "ambiguous_abbreviation_unresolved",
+        "unique_contexts": 4,
+        "sha256": [
+          "122236918ebcbf7cf7e69eb6acad5df8990a35df045c24d4aa028cbc0ae99c75",
+          "1d25377e327f23e197252982ad52e46e5f16890f2f765d8a1ffae377ec3b27f8",
+          "5d9832f49d3f1a2be5d9d263613deb19847536a0d6a3f7c7af26b5f6e6a07807",
+          "c9688c2c67d8952f8054c2970ecf368cae603f7f88a2feeb08223576b7c9d1a4"
+        ]
+      },
+      {
+        "family_id": "garmin_fantom",
+        "classification": "other_radar_abbreviation",
+        "unique_contexts": 62,
+        "sha256": [
+          "01b63662f768dd49175d20056701210ad0041b6088a9506f49e96c7243edaaa9",
+          "0a8a2252c6a16f0ed76b1973ac5674818ce74528f63158a2942d9d89b09435a9",
+          "0b78caf05bdf54cd77c0b909f5235834db4a44be8f3b622ea6c2bfb81e701d27",
+          "0bf8f8419b693e24ed0b21abe12a3a457a76bfc8bc5a547a69a19edc9e3634f0",
+          "0c8c4501f8bd2d6e985d2fc579da0fe8089633689e063fc143aaee32508b51f5",
+          "100433a93bc156d981c57c37f506ef710a35a21b19ab13e2cfe12be584c4a3f1",
+          "110b9caea6f6cef95ad66f089af2d20f4d52ea42180e0b0257136c3f7e6cf310",
+          "11e2221a14425c3d226e1d0dfedcda3ec46c3b11fcfd38ec1286dddbbe7db23c",
+          "14f5c403fbaf7c7e9110dfbf580c0217240c38d546aa9e604bc69a0334c9c0a3",
+          "181a1724861d5f915f1c96f66bac9ca5e99e3a0aa35e71823d4ba49452f0e129",
+          "1dbb4661a17f0fa5bbcb4ac115c54ff08c292608f22f7605595e3eb188808769",
+          "1ec826db42f0f6055d0aae9d21a1fe0097010d0d4d588409d08e90eeac9674c2",
+          "219c14014be2a8bae2d49eb8ebbf2bab3aece9dbc09b349af2204bc103a9f571",
+          "21c553a10f27e67ac439628067c25e489211f07794894847c721a9080b8270e6",
+          "21fcbfec666bf1c8eb916b634ccdace2c195403eb5da6f3344b39a3123f4cca1",
+          "24067f56b2b39d6f38d58d58f535d379cc7f2d16289aa7e741bf82c46b16e2a0",
+          "2914ed232e309f600b3f10c05dfdef93f5eef48b40836deee1c47022dbad947f",
+          "2a413fd1b7c3c03e8d671837d38f0c5468dbaef343bf28886d5cff29c8e9a272",
+          "3844d4a5efef7fd1dbd2f1ebfa7e91c40ecbb59c6b2b116b640574ca059bb5f6",
+          "3ba183cabe0be79c1c44c54c9a1c3f773a104329c5bbf230bc764b6cd942b022",
+          "3e4732c0c4d65af037b10d9c879254c3a51a8646fd0a8e0b9a5f587a094b1a3f",
+          "4fc87e4f3fe846b5d4ca5198cdbea061c8727d1a483be1fbd7d2b2a50ef9072c",
+          "5105b370156be08498b6153b3a31597189c2ba8d99072e6f1e7ff92855721563",
+          "52cfc0c62b9ed8e0b144b358fb63a7fad9f88267feba1c846779518be84e0d9c",
+          "52fbbe2ffdc464ae46af930997f95d733f421295b81d31cc209276f7be39576d",
+          "5438482e2fe6f98d8b1dd33676d95fd728d1070fb2adf13548f432002f10b1ac",
+          "5fe741db9e8f82adde1a3269d32863ddc0cf5d78d788772d99d10e2529e55898",
+          "76f61a765b2d624bb13cf8856faff4e7cf40b8dea8d23bb8139a47b5acd328b2",
+          "77b95f1c35f4e41f4b34385f1f7dcf7e44893b09493832853425066c41a0cc3d",
+          "7a632f6dca3bea5ce51bf5c195faf847d8d3dd0d2f64a2b70cf7bfea03230f32",
+          "7b46386b70380d8522acff44c8475c6f5d9969f330a2b8e76cdc31f32a68a323",
+          "952b75715248167d9441781d14dd7917a763fa7c4a6d8a8734f1962103ee5d33",
+          "9b5f48b1873cb22d60c27ccf04a4f06de8e05a39cfc3149042de909fdf40cf56",
+          "a1a4e230a2dfc5d0db05b99bc7cd91ff74e43b22275074ec0dafe5ee04966c0d",
+          "a5629fdf97e106f46473f9653f8a8b6984b15a16ae4db13084b831fabddb24ea",
+          "a7f122e4534c7c6b4840c9f72b34f450ba2802be31a728114f0982335e411bca",
+          "a8a187c69d657a9d7b6ed69349ad1030697eda5884c521f28c1befdeb1e8b3b2",
+          "a8d6b18ba15105559b4a0301fe94ce077da3435c2f2f8bc7082a5feaf28a0716",
+          "a8fc698ed52804340c9cf0de4444009a0ac257e14224f513bb7d86b4ebb90f67",
+          "ac6d36c15c303869ae09e092aadbdc976afb1a5bc58911e18d2f672ba0187b73",
+          "b3b88e410a262a12435ecc786a0f2b430d3714ecce74b9065a1c72ad470e9ce8",
+          "b50296e28ff2ac7d03dc38fb02a535e339968b49876c1dbabbc8ebae7e964f6e",
+          "b609cb7cf5a860da3784f9565f38753c40ec91aa0430f611f14466c28d403b20",
+          "b84b82d25d90807a6b3e0431d1dc5ee3c35469530624bc581810cc68ea857e2c",
+          "bf76865a401b027a4d1e3b34fc5673ef35e73376657e3ee238172a1eace381ca",
+          "c1ccdcee89b15f596762a2e78e2742a863807c644615f50df8fdc50314ef9eaf",
+          "c4e1b61817f9bd59689a08fafb05ab3dcfb508e7d549abf4ddd181684ca5077f",
+          "c57b547b6fbecb6271d3c108c881d25359999bbb4ca966964d4b6ffb79ac525f",
+          "c99ef2603f10d648ded8ca8cc5d50ffb3c016d6693cad9ab38e2d405f7bb8c0f",
+          "cb39fc12fe3c51afd88770bc74cb873e43d1942507b6bd50556145e1a04cc8a1",
+          "cb5c194f3702e34b9f26cfb0e2b0e0d839573a7f8a78169c5827621390de0b46",
+          "d1bbe980f7cc6002e9dd43dd4aaa34591077fa8e24170cf008defebc71b47229",
+          "d310676e0032b46b87eac459b525e01f25b20d52dac67a7b178d1c9384e5ad11",
+          "d57ce29d9cefef3078a4b259f0b816d327e97e606ece89055ace833f086c216a",
+          "d64fe392837e52d43c4560956c1495f93ad995f3117cfe08bcd886e8313e6368",
+          "d9757310483cb4d96a600daa452b17a5d3fc86a5131e81f30f3267232772f178",
+          "dcc1aa856b5ae9444e6544463273da82658c63e671d0364adf51bbf0b0d0f3a2",
+          "e04ad6092727bedc8dc51216f5e2313c8e63923ecd3f0d88d4e5ae0fe86afef8",
+          "e0cc751bc7748fb5277335b412bfe978f58c2b38e11e4c3c8c5526e7ded28fce",
+          "e3f01dd44fc6ede268f58df1ced04b2f7806c9618a08081c5496119c7aaf0f01",
+          "eaa1a3b9306ce17f09faf2e541aad304533c7ec60e8903620233af08915aa8ac",
+          "f8c5366084b7ee26067212f3ab6a887968c9f52a1485de12d0daedc02000fe43"
+        ]
+      },
+      {
+        "family_id": "jrc_jma5200",
+        "classification": "same_publisher_other_model_lineage_unresolved",
+        "unique_contexts": 70,
+        "sha256": [
+          "03a828da49acf7eb88313a3ad7e1d2d96c88e2b7f996706e88434919d51fe45b",
+          "043248c3ee9667b9b84563d94ac36a5d9717fd55f14cb893258818f6b06251dd",
+          "091cd2801f704b7f36e407d67257e7598714085d5e63cf5f0c0fb41872fbd0f8",
+          "0b24384b640ac8f25d8df640adbfd06d4e67d0ff794f9a2e323f00840a117d84",
+          "0df8db8c338b13e5992b8a11673798b4941dab8184a5b9c50f8b178b15cb605c",
+          "10156e0e08a0cbff781327ce85914353f2d35e73c2824f7043b75bc0fa300bfa",
+          "1191cdc5dd05cfee51c6c3485d952aba28677846afcbba0f2117e0126fa4654f",
+          "17f0d1a8fd7cf6d15b2b03fe4ac035c268a85df797d307f61abe1e13c872661e",
+          "26614702f9627922cc55bc952ad05b0144660887b2e55a47c2bd1c12868d9b59",
+          "2dbf8172c9dec20debfbf19ff0d8eb0918bdb981de693c32b9ad7c1976e64af5",
+          "316ab4291d627c845fee8d34277c0807ab0199fe85f87a2e92c3326ca31227d6",
+          "3474b28f44e4131585eadf5c3e0910f05ca08328dfa1eb113574e698d147ddb9",
+          "364b141f4aa8bad74cec071a7b9d392044e31449a152d1612718c7d8a7b7a9c6",
+          "380ddfc77891b256cd993d92c55623aed9cb260a47adc16572772f91d654d8fe",
+          "3aac900f1d0c3300c11c8ca08cf536c37989c248a850a1d73957eae2827f7167",
+          "3ad63bc8b594f491aadc4140bc1119f14bc92a4ecb5c077794fa99fbccff8838",
+          "3b8e60d453340837dd032f3832cb25bd0704abc6b66f23c333698afef1e5d9e5",
+          "41fb569fec2312dee6b23a913e1065396152dfb54a097e630d5ba1ec97ff39f0",
+          "4c0d45a3426a94aeadec5c9938aeb3ca307201b385033c9b682c19355ce156fb",
+          "56ac06f0e1eb5c75e39c59a0da6396557456c26284784064d4d99e1124b324de",
+          "58025c30d408e113fb090462ef628420abbdb4a8d1fadbc2bdfc35e8fc61c3de",
+          "59be0ddb900c5207cdab56b158bab144d5c38fdbaf0bdf7c21e9bf11ab6bdcf9",
+          "5c53f5263893304f4710edf8e8613ac03fc689037bc37b5b9f239d3a15d1f00a",
+          "61dcb8bec838f20261dfc19841c35dce4b2c7939a39fedcc0aefb10db8ebe09d",
+          "687b7ce737c59e60ffb580e1b0ba0092632eff987ee5ceda40cc98835d4d10bc",
+          "694aaab29275944abc609f4ec85955c4e18acd7b46a4d0acf58691415b62df3c",
+          "6d490fff0478317af871404b7e25eecbb8ca263a1b9fa4b64dea2e6d39ada66f",
+          "729ff1f472bdd71cbcd9ff5e439a826add5d2bf2bd9af3812da45d1ad71fd447",
+          "7304e08985a87e66e584840d2c929026027797242aa558c882b8b098acbf7405",
+          "79c98df93ed90ae825a1c37f0e8509090f824b2a76d46ccc71c5d14f13a65404",
+          "79fb4146473d23766ba0afa58ad1b87263da8fc74595f02498eac93689a92b50",
+          "7bd62c341aa5dcd6815115e93536870147b730f536a0f06be1da7ca375bdb699",
+          "85c3db64d413fe92d2f529ffc54a07ebb1d5e211f29eb610e1d15778ef7602e6",
+          "899dd504697474a2a7dc9258d8450e8f90f1bc04b5255a634bcf58d555f328d1",
+          "93ae7ecc1f6fd392ca4a16787e6151175d3508242872b87d865614ec773df715",
+          "948d060b1528d1494b8c281350067841ea5b8e1c6cc1ba121c7a73fc026f1ee1",
+          "96f7cac3c6c81f8473a2146320931739d0dbacc3fa0ebd9114856802168e4d33",
+          "9b5a71a107ccc3fa028f8ab97923bb7ff0b0f68580008752a431e101da0de80a",
+          "9ba0c820e46a875c94a2ae32b6dfeaaf622f9a9ca2f04d82f991867d22b440b2",
+          "9e48f3d5561079fb558f6425def4bf40bbea54c4aa3499060be18d2d38e141fe",
+          "a171a7200cfd224105e42030e53263db3531216200ac792d2a195256ffc05435",
+          "a5b8499a7eb49644931417bec5ab076867a6a5fb939a228d14530467b45e6279",
+          "a96ce53a6bce179a26fb527742b7fcd1baca11fc3248fc15ad32aa8b78d75c15",
+          "abc7a8be2ea9de23a529f79539a6d77d568c13599f331f965604075498434bce",
+          "ac3e303018faf8c6709aa28e7779372e13bfbd38b4512f3fd77ba84cef17ec9f",
+          "ad5f19865fdf8c5cda475b261f542aa6a30a10b0c15e7d88fbe4dee8a2ea1787",
+          "addf37fa3564f91dcabcd2734a8f84323049d4107c472ffe3c6618ec3e3a9100",
+          "ae72d012c94a5787bb91db1fabd0f2be36e41c4fffa1e79da5bc38de8505a494",
+          "af9e9338b19d210aca591d3d51a96e816895280f8dcbb346b3db9b05cb189443",
+          "b083c0b08fe2dcaa4aa20a0a62173b069fc9b34df2d851e7e232cf1955d22e0e",
+          "b1af38ec75fcde3351576c6350fc7e1bbd0e25cf8af0c2625dae0fdf327b5dcc",
+          "b7f7448bb5a4c1924e74cc1d89eb4b42e460f291261e7a68077726d61c5d4ba3",
+          "bc6711621994ee05d5ad1bb177efbd849800f5353bdb382f7f39576d0f96719a",
+          "c28e66ced83191e1b991f61dba58def978d4a03f327978627f9b117d9ef6d252",
+          "c4984726f5a5aa730e43157bb4e06ec4899adbf277bce59ce5101b63c81e554f",
+          "ca1d1f095ebd09a0788e0f3785fc13a78090564d89f347e691989bbbae505efa",
+          "d2865d2bf8b6f9291e06955e4edaaabd874405656282b22e3efca0bbfce4af1d",
+          "dc443dff41b4c0c5e8b62498c4e94808f5f8c74977190fa760b0158b028415d8",
+          "de5a32da29afca2578f8a8564256275307fe173eb9a49ef6dbc0e609560079fc",
+          "defe61544212b669968e07d1769897d4c5a6268b7e5dd5c2804ab4fb61b9a9fd",
+          "e0fbc849cc2ba7b2c090d2f6c46bd3905599864e9d8b0b9bcfabcf76ea92944b",
+          "e29cf0896dac4d4666757fdea1f9cbef0ff11dce3b328dad92b6f1b02c50d65d",
+          "e7a68f3160215310cf4e17bcc19087616233f0ea3d81798a57420bafe45fafa3",
+          "e7e9abd69921c11777b5c86b7d74f50b140460ea2791ad453702473c0dca8a29",
+          "ea3ae3823b3934a6dca8edb2ac32f2463e2c50c1b6ef6113969a42e2b619433f",
+          "ec3ef30da6335cd716c37d5b7f1be66f1a869679e5841ca2a23d95d052d2acb7",
+          "ee9dd4694996b57859d868d0fdaa1519cab8f78e8bb874cfee54593818e1f829",
+          "f28f207cfe797b041113300a15ec3ac3e2272f2f89e3e9933e094baef0f6eb1b",
+          "f8d7e6559745535d5d1387313edcb3e804a2e2871dcdc1b664a80f47fdacb668",
+          "ff84d6a20121ec6de116c4ba39ed89642fd0b4b7fe8905d2eff049b48d65b941"
+        ]
+      },
+      {
+        "family_id": "metek_mrr",
+        "classification": "ambiguous_abbreviation_unresolved",
+        "unique_contexts": 21,
+        "sha256": [
+          "0030da21b6cb58efeb72476b197e0478c5a129482a5cd61167708f4e33088544",
+          "0c7a64ed539054a36a66eba66ad7328040e3660a2be574b93e6636e17fb83fb7",
+          "0f91bbcc718c87f70f367d2042b45655893b827a62b11e6928cd64cb18896b3b",
+          "10da2d0d38f31c18780ce95a0c06d7a9808b870a6a69b96222be24fbc97ad687",
+          "177bb84a2677731b7b7c47ffb86cf79dd24404881e326d62c38ed771e9e8b5f8",
+          "26a26ab6b93a4c94522a26f1e384bb0cd2ee5589566ece1a69936093b81cde65",
+          "3438af7fa1a0fbe206162e670a330bb14baff50a54af72a1d7e484e7f6fa2fcf",
+          "45fb912c256fda054e1d6b3ae1fa3d56d852c76450d4955a23fc9d700a4bd2e7",
+          "566b87c186aeb1fe819a0772deb045fc237628c7dffbe256fc86ece35e1f0b45",
+          "5eee1a365ea3dc1e08e0dea9a140e5f582ed9648af792cb7ae1a4c0c63e4b154",
+          "6192af1b6dfc219510615395fc6abe70455a627d07e26abb2e1e1b6595b7216d",
+          "671d5332f0fc3c23e7f59ef64e3c348283098f648ef2f5ed9cd5100824f62ac1",
+          "6a10cff70d8b0740397c83fc76fa466da369132fa1475fccb86efcf3e4dd91e8",
+          "7e757fa9f57d9ffd68cbed82e726c1490ddf47a218ada60c57091dba93f8915d",
+          "8f3be1e4270626d6f1906703347ddf673d07edd9519f045d5764ed53cc545ebb",
+          "aa0f9faa9888e08824fedfd5b600c1a21f68850264fca910cfd1ab69093a029e",
+          "af9a353fa16eb12dabfc7f9f7b7e2bc10afead1ffd8a2fbee17284d0e4199ef9",
+          "e12ab660af77c2ddc0907e31fb59c3978cfbaf334c706e8e11b8fb0a76c86588",
+          "e46fde9cab7c737316911b280071435fd6e1a3b4890926d76543672e8c30a667",
+          "e81068b5e88549033708fc8a9a4abab8b0e2671e58412a15d3815e9f66eee5c4",
+          "f30f005273ade44eb865f14ff1571676165c125dad3f03d671ca492a606aaccd"
+        ]
+      },
+      {
+        "family_id": "metek_mrr",
+        "classification": "other_radar_abbreviation",
+        "unique_contexts": 38,
+        "sha256": [
+          "143f98d5377d18003213212e7c64a47ef4caff0705580f2c6e2c969bd4efb155",
+          "14bc72787c61519860e4e08a9e1ecf1c92fb1b601d7174a11c06c81179bbcec7",
+          "28f3e5dd79c363925d1449933edfb0608538a5fd31be33c24978d4d23d4f07ea",
+          "2952890f1779e9ee73690a1ceca1e2487e8124322bbfdeef54a76160448fc53a",
+          "2fb0dd948c74c33064b43a811a00f0fd7e3e0f9cfae3db839d69342cf41e62ad",
+          "460b45ce228ca2c0cb85014907349a763c418b0ebbdea030b13f7b9e55ca6d93",
+          "46c6d4bc2e0f499b51536df5853d6f24507e608572f308954c670896e56ce593",
+          "4f1d4f3f89440264af9bdb6f48dce6629a6e2fb31b56285326a7953786bd8e22",
+          "523d0f62e4a1e3a5b219dcf8b4662886c68bfb01c7558fb1fc3413d5baa9924d",
+          "6011ce2f4925e99ddcfe34272afd1275ebce26dc4756af46c2bd2494e35dc011",
+          "679cbd26d86aeb5d958326d259f8e2268ece105a29cdb42d778a3b6e427f44c7",
+          "697a843eb29a5c50be7c16002ea3a8b42ec0d1b457e51245651f5a098cfbb7de",
+          "74946a9c23793572c709faab512e23442776ab000465784c501b1d833aee0a33",
+          "842f670056a3bb786ac783b4b67cce688a7fa70a704ad6e6119569ab94481e12",
+          "848850d7a1e28ecb61a09bbacb1b89c2763ba1d3bca693a3ffec43d9afdd4afc",
+          "877e8a12dbdac7d1a7e76a61b33500b12a3d9ff10613df565057a08ad1b7c653",
+          "8b0813d058de97e92254f61bb1450cbc6f0f855c8996c9aff269e20f5b8b2570",
+          "8ea7d1fc8154a2f1dd4bbfaa55a54c2add457259530b5ca3f2191a4e05234fe7",
+          "8f4f9e4ac11554459821ca2cbd7dc42c72cd0c16804047dda57c6b63303911f3",
+          "960241fb5822a9207a60ad986b4865aebc8262faa65084c2160be93290378a8d",
+          "9911cd96ceddbdc347bf6de2bc246fc3db88feb0994e40f1491b06af5b893fe7",
+          "b156d013966ea9fafe8535bbf1e29ba77ec624cf1e6b9bcae97a9c23217d2a91",
+          "b2f2397a31da5d953efe7104b4ffc11e76a93c6322eb2909d8dbe9f24714ed23",
+          "b7b3776ac5e75155e0c52e3792fc36274204fec187f2a247c5bec845d08a9808",
+          "baa68738265ea6931540fd12afb9b5d84d19ccee83dcbdb51c33f0fb22c005b3",
+          "c1b223f6cf25489479e5584dd8d6ac49c182d63f006a1c98e57c8e9b9d01f392",
+          "c37a45a21832afd085f1adf7bcc9143fbc92f40b840837e5cdcc9d5579d95731",
+          "c7da56d6fd7226df313f46cb36d1807abec21631d7095f01e3fc19c6fa853748",
+          "cef0d8ac6df2ee19246576a55ecba1bed1de59d79f82b34cd30a07ef0961b947",
+          "df6341b5535c1bf8577a50acf1014b479a93388ffe9d99dd72560a045f2baae6",
+          "df9f94b47a95b44327b5b14bb4fdc1bf13d2a8b5cbab76714e86074b86183b64",
+          "e78e32f41b771490892de5d1c2d5da0a9c743409ee23bc66d1605b1f56343875",
+          "f113c30d8c884aef7178e479d2866737bca5ab3c1d0089dbabb6dcb7914e0f88",
+          "f232af316145fbe0aebbcdceaf7017e41b91c814713e201554f774e3755a82cd",
+          "f6909774487190cec0aaa622f4fa5b0045d5e5aec8950922b53c688e721925bf",
+          "f79b85567af43be1a2f04077cd68cba99b78c55847b36d1a9417690dfaec8829",
+          "f818efd320e21059be65b21e20d00dba46a3657ded02fa1e0d360dcd56fcfc90",
+          "fed0902ce6587030144d55dc255967250dab493f727776191652ab3113e19fc4"
+        ]
+      },
+      {
+        "family_id": "raymarine_cyclone",
+        "classification": "other_named_entity_ship_class",
+        "unique_contexts": 4,
+        "sha256": [
+          "603f45b04cbd1b55579fd4dcdacdfe1de54ecd4a8dc90944c4770e28c40ec64c",
+          "a1878762ba4f682aabe4d5c5a2fe10a9e4aa557eeedc261ca43ee6be7110c1bb",
+          "fe8c235182ec31cac37c5196cc5a83b4b4af336e56bc89b9f581cab3278bf35d",
+          "fffda61b20cb2fc09543f93694bb2009901f5f79e0fd018c431b8b00e66144a5"
+        ]
+      },
+      {
+        "family_id": "simrad_halo",
+        "classification": "candidate_family_mention",
+        "unique_contexts": 54,
+        "sha256": [
+          "0dbc7d1e5aa9fba3f2f7c5cfa1071c3b0fcaeb772fec2345acebf4cde58fbe73",
+          "0e48510202be91460ad80b66cc8c960be0750613d1b1a68559e6bd73f98e62b4",
+          "0f6f36e53ce15f6ede2de227ed27275650958fc6edf43efca706d5c70a043b1b",
+          "16b7727c2b1e97a4d0e037378617d41664b439d03ced98c9ae2cc0e834f77838",
+          "16c4293d0d86f72efd88a23a1ba791e8d73a52e45cd1df5f43e286847d3e69c9",
+          "18be72e9fd8423a6d6bb6ff949bef60631fe670f17c1bfe954d23d63a114738b",
+          "1b3a5062a2796aa05b6fdd678c993c1406d591092117725717bbdbbd299dda02",
+          "229d98d5fb55ef9c21877c6fb6c25a5a7e69838ab3be957a195d16ad9977f3be",
+          "2eb1fcb6535eb63937d58c9dca04618cf51f80143462e2a8c090dea0aa1f4a9f",
+          "2f53337efd0663a3dadac68523f99b022ccd5a57719b55a1a7e7e0df176936b4",
+          "30f121b7f057cb8a7646fd933b58a49679d5aa89c8e3b010cd0e7a0b5df85d8f",
+          "33b01485ea7c2301e55886e554dfd6f998293f6e1b130410b92594cade992d64",
+          "3d4f86a85661082518a74a9938168dc923d9091363b24bc41a40a098aa61fa5c",
+          "45750fadb602ea21b3cf72402615b31e80dfa89cb2c4bd4238edeaa18ce4c688",
+          "4a593f1f088c4a0230a1394a34e00a74d84b536af227534c01efb0844daa5ff3",
+          "65545f3303c1341768f35d1e203c93f35bae8887692ea18e4daa9a2ae0f45c64",
+          "65b386faa1aac8559dac3d65429a4da18b3241b24f9b703d13f8c3ba557ab7cc",
+          "673510b0354be81f83d0b633127d339627d7cd3f7e25532e344c2f2097d203e5",
+          "6abed3b225d18d8661ffa95dea37c7f6f9175fb4c5e7124f576dc03865938eb1",
+          "7165390d3ae0b4a80e461505810df77772ea73af6af062863684b1c57b8cd5b9",
+          "75072f305defdaaf48158654e01ef31984d3b9a48d1ef483acfb793342aa803c",
+          "7609e0553025c60e6014b23ac20acd13413782bb6d65f76d598e0af0bf0e4bd4",
+          "791e952718b045c37fe391537bdd890dda6b7431c3aba5233b85bb2d0fe44a97",
+          "7cf5b2e6d0f18184d8252dedaf7e6624ed2f8471dcb9942db158403c3b24b501",
+          "8168f6375f947c84aaee45e7db32b4628cd24200cc24ac48b6c8e4ffb82530cd",
+          "82e7ae58fdb86e328babfc72e18d46a31dcc39b24cca01513cb1a423b3da8080",
+          "85ad51a94a79ba54f7ac6e05384772b330ce78b9b6b715596a09de2ac91efc52",
+          "9210180880b8f65d167ab2ff92a4c604c5930c59bb02408bb398e728754373c3",
+          "94058eb53a8672e4632df8fbc20a7ada77ab56137b93c6c0d81cfa915be27473",
+          "95306b1b7970c1f3f7ce1987e738e5035970b2df694e7e4f7f8b117bd2dea38c",
+          "95d9962dc801024f68dc0abd2052b37f0ecc4552ff009c6845e3e6cc4508ef87",
+          "9d7f6507c026c945a2eecf3b306411509405a58fc871d3ce6a77c4dd66873039",
+          "a4784e179e5951db3dfd0971e071bc2820e0df17ed1ccad0eb67777ddcf76cea",
+          "a4e63bcacf6c172ad84f9f4523c8f1acaf33676fa76d3258c67b7e7bbf16d777",
+          "a73f5f9f93312e801d034047e07e706bace0178788414c3467084650d1a68369",
+          "aa204f3444c73dbefb7b3e1d99912b658678615945fffb86d387d3c6ad42851e",
+          "acd38a187ad7237490b1632e5f9ad28792251f5def13d28ecb28a52e4a8feb4b",
+          "ace97c85999a218149fd6078d14e708ee4c7a361dea680893edbb1fae45d83b1",
+          "b98bd505acaa23f7122e8fc611b8df094b23817c796007ef6851a259b8e25515",
+          "bf0473bf3c185843cb265f5cb16646c99e011d7aa64ca482f2327a80ad1c1e68",
+          "c08b9c0b157d722c1e8057b93501873db6d9998274de25c25190f193c206c1fe",
+          "cb8e0fc27b01a6eece246ff5eb5ade4902996f012ef66cf287a665f31d922bd0",
+          "d1bac99dd355374bcb459a5183f83ebc185156a17037ffb17dbafa9b6533dc50",
+          "d25ea2a3792ff2048500e4fed5a04c0cae5d3317c821a2272654cd39c7660cd6",
+          "d5411d5b2a6a28012afff822a87c1198c3af6889b426612409c51ed105e9177d",
+          "d6e90c2db224295b848f297d70f58113f585de49bbb06fdfbfb5d0618ec280c8",
+          "d82e720b3ed8ae23773f4938186077182dfc9ab335bbad482da9c1a3cfa8a5b1",
+          "e3173ca6e5527be56a55960b420f1da083a9318017d0ed1e8646e724badbae99",
+          "ec55332621cddef2351a7a1e468286a740c30459ac917b0242c68a8da4129d7e",
+          "ecfc0ad2f781b49187becac2e96ecb8c044ddcc08b41c3a2e3431aebbbe7b445",
+          "f40a685a5f38b3de129af6bae2b43d22777c2b04b84cbf2a1575cebff9a899e4",
+          "f45293f58a50dbd5de9eef965f65d8a4722a5fa97f40062d1ac21b2427a5f143",
+          "f85692246afd00b9d49accb7aaed05fc518d5d176f02987f5fb2e162d3ef0adb",
+          "ff7633509737dd3819d71d27886a8087210d5cf5041c7ea0309ae4e2916d0190"
+        ]
+      }
+    ],
+    "supporting_identity_locators": [
+      {
+        "path": "kg_v3/entities.json",
+        "pointer": "/847",
+        "entity": "TFR/GMR",
+        "purpose": "Non-Garmin ground-mapping abbreviation lineage"
+      },
+      {
+        "path": "kg_v3/entities.json",
+        "pointer": "/1584",
+        "entity": "GMR",
+        "purpose": "Bare abbreviation has limited attributes; do not upgrade all bare GMR matches to resolved Garmin absence"
+      },
+      {
+        "path": "kg_v3/entities.json",
+        "pointer": "/7804",
+        "entity": "HALO",
+        "purpose": "Bare HALO entity cites the maritime halo__rt lineage"
+      }
+    ],
+    "limits": "Classes are AI lineage judgments, not human annotations. Bare GMR and MRR list/query matches remain unresolved. Repeated identical contexts are grouped; full raw passages and QA are not exported."
+  },
+  "limits": [
+    "No candidate alias hit is not proof of complete project or pretraining non-exposure; transliterations, unnamed derivatives and unscanned backups can be missed.",
+    "Historical family overlap does not imply the newly archived official document bytes were used before; old corpus and old QA/SFT file presence are reported separately.",
+    "No relationship between these legacy files and the currently evaluated model checkpoint was certified; actual training-lineage overlap is unknown.",
+    "Old 5401 automatic QA and their rewrites remain ineligible as newly independent questions regardless of match count.",
+    "Four resolved historical families require an explicit source/QA lineage decision; do not silently rename them or treat later official versions as fully unseen families.",
+    "No public agent_feedback or condition_consistency benchmark questions were opened."
+  ]
+}

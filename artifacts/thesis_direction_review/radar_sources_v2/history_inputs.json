@@ -1,0 +1,2658 @@
+{
+  "version": "radar_history_screening_inputs_v2",
+  "selection": [
+    {
+      "selector": "kg_v3/entities.json",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "kg_v3/edges.json",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "radar_corpus/corpus.json",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "radar_corpus/raw/*.json",
+      "matched_files": 257,
+      "missing": false
+    },
+    {
+      "selector": "radar_corpus/raw_v1/*.json",
+      "matched_files": 23,
+      "missing": false
+    },
+    {
+      "selector": "radar_corpus/filtered.json",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "radar_corpus/discovered.json",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "graphrag_index/merged_triples*.json",
+      "matched_files": 8,
+      "missing": false
+    },
+    {
+      "selector": "pipeline/v3/work/chunks.jsonl",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "pipeline/v3/work/manual_body_chunks.jsonl",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "pipeline/v3/work/naval_body_chunks.jsonl",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "pipeline/v3/work/manual*attrs.jsonl",
+      "matched_files": 2,
+      "missing": false
+    },
+    {
+      "selector": "pipeline/v3/work/naval*attrs.jsonl",
+      "matched_files": 2,
+      "missing": false
+    },
+    {
+      "selector": "data/v2/*.json",
+      "matched_files": 12,
+      "missing": false
+    },
+    {
+      "selector": "ca_agraphrag/data/train.jsonl",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "ca_agraphrag/data/dev.jsonl",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "ca_agraphrag/data/test.jsonl",
+      "matched_files": 1,
+      "missing": false
+    },
+    {
+      "selector": "ca_agraphrag/data/*polished.jsonl",
+      "matched_files": 2,
+      "missing": false
+    },
+    {
+      "selector": "ca_agraphrag/data/sft_train.jsonl",
+      "matched_files": 1,
+      "missing": false
+    }
+  ],
+  "files": [
+    {
+      "path": "ca_agraphrag/data/dev.jsonl",
+      "sha256": "ae05c4487ff8da85064370f9339f988d245379e89ea5b610603c4f3d27da8cdb",
+      "size_bytes": 235962,
+      "record_count": 582,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_qa_original_file"
+    },
+    {
+      "path": "ca_agraphrag/data/dev_polished.jsonl",
+      "sha256": "c8f00b50fcf4ac804d08d71b3221f4554dfc1d86205b447e34fe520f90728968",
+      "size_bytes": 277902,
+      "record_count": 582,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_qa_polished_file"
+    },
+    {
+      "path": "ca_agraphrag/data/sft_train.jsonl",
+      "sha256": "10dc20067823a26bff339d056bfe967013a4225774a841ef0511ab8f6e23f745",
+      "size_bytes": 7511504,
+      "record_count": 4277,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_sft_file"
+    },
+    {
+      "path": "ca_agraphrag/data/test.jsonl",
+      "sha256": "cd6b4ca5865b0aa3a6fb771ef26ae3f2627f7003c374313375dc4c35af00fcaf",
+      "size_bytes": 219176,
+      "record_count": 542,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_qa_original_file"
+    },
+    {
+      "path": "ca_agraphrag/data/test_polished.jsonl",
+      "sha256": "45e30e47831a72c324cedd48b8e308b421dca5b8a068062f22ae4e04846ea818",
+      "size_bytes": 258439,
+      "record_count": 542,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_qa_polished_file"
+    },
+    {
+      "path": "ca_agraphrag/data/train.jsonl",
+      "sha256": "9bd1bf49c9aa009453676abfc482aa4d8af539f3c41a0e2c46875f8a2d347dec",
+      "size_bytes": 1714345,
+      "record_count": 4277,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_qa_original_file"
+    },
+    {
+      "path": "data/v2/enrich_compat_llm_cache.json",
+      "sha256": "c26a720d32a488a39d239701c9ce7fc4bae04a8132d41c848dcdcd369dd54475",
+      "size_bytes": 51611,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/enrich_country_dev_llm_cache.json",
+      "sha256": "945b9ea3615fd8a64dddce0f6f58c33abaa2ee02d8d17216293567b3329819cf",
+      "size_bytes": 54865,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/enrich_function_llm_cache.json",
+      "sha256": "bd203c5f00194d44eb128cb79b49dee3a08dfb0d32a58a84b943fc13772e6a03",
+      "size_bytes": 92938,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/enrich_numeric_llm_cache.json",
+      "sha256": "d5c505b184efd08056d31375706d1f6270184f2ab2d117475e5107ae32882b6e",
+      "size_bytes": 222274,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/enrich_similar_llm_cache.json",
+      "sha256": "71045fd82cf62ec1592611e18fa018837bb69ac0471443f1740b9539732149ba",
+      "size_bytes": 57277,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/enrich_wikipedia_cache.json",
+      "sha256": "192271595bd4124eb3b77ee23ebe66a0bef84fba7c06858ece91c99989df67e2",
+      "size_bytes": 129014,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/enrich_wikipedia_llm_cache.json",
+      "sha256": "29cee47119c4eded3779b9fd4e53e0ca0ec86cebfc887692d620cad7bc9c3d0f",
+      "size_bytes": 52470,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/radarkg_v2_edges.json",
+      "sha256": "8b925a763468abab02c1dfec33af69f5ec35c5b39a85fe3740760ccc85e3aade",
+      "size_bytes": 3745372,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/radarkg_v2_entities.json",
+      "sha256": "a55b189d89aa0a8cdab6f097400b4c568cf74a4315943a6e5d78cf48768062c4",
+      "size_bytes": 1284646,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/radarkg_v2_schema.json",
+      "sha256": "c791d1ae1ca7e1bff2c1e8fa2be52ea1e85233ebac6be551e6ef1fedc4bc9485",
+      "size_bytes": 1240,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/stage_c_llm_cache.json",
+      "sha256": "f2d8046a4168c0acba9b8500673383e69d8ac12c9ad6c1ca7c71aae9e5220113",
+      "size_bytes": 314957,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "data/v2/stage_c_raw_extractions.json",
+      "sha256": "3031ccffeebb9b9c16f5b1827f3b3b1e9a2b229b6ebf267a0e14a245bb179c9f",
+      "size_bytes": 611223,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples.json",
+      "sha256": "9a33d54758fe92de84fe573a4905ac5c3b8bb611149964260006724b7ea45c77",
+      "size_bytes": 4459035,
+      "record_count": 16909,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples.pre_schema_expand.bak.json",
+      "sha256": "cd42c78c99a4c7a146dbd11e335835ae0ff8ffad96e545dff1fb6d80d281b565",
+      "size_bytes": 3822112,
+      "record_count": 16513,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples.pre_v2clean.bak.json",
+      "sha256": "b6166f42e65cb3e1a6a502f509a75f85c9b7b39946446569780b520f5f64407d",
+      "size_bytes": 3995407,
+      "record_count": 17096,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples.pre_v2repair.bak.json",
+      "sha256": "aeafa644180d52d147155f88346fd9d0053a783d8a914123e2521a08d9406dda",
+      "size_bytes": 3950980,
+      "record_count": 16909,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples_enriched.json",
+      "sha256": "7cdb1b92f4bf94131fe6f454f4cafeea25b9ae8eb45670f3163f0ccc0c8009db",
+      "size_bytes": 1500309,
+      "record_count": 5145,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples_v1.bak.json",
+      "sha256": "4f01a8696ea6ed08140e3d01992be4476c36000e70bbc839f0a14c0ffc17e71f",
+      "size_bytes": 2414133,
+      "record_count": 5592,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples_v2.json",
+      "sha256": "78cfb55d18375ff8bc12b00ae4e3c9f5b20b42d444f7656863da1ab85be03be9",
+      "size_bytes": 4645111,
+      "record_count": 16621,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "graphrag_index/merged_triples_with_loops.bak.json",
+      "sha256": "6a1cec6970acb4e48fca39c17c235979af4c2f222892517054b70ad549f8ed38",
+      "size_bytes": 2421253,
+      "record_count": 5610,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "kg_v3/edges.json",
+      "sha256": "b7408c6e4b7e91525b2cf098a9f73862e39a0cf5d3b0c1fe85a99faf35a70bd0",
+      "size_bytes": 8765315,
+      "record_count": 21928,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "kg_v3/entities.json",
+      "sha256": "7418795ee4c082c00454f8158cad7e911bf4dfff49020d334834a7caf541a896",
+      "size_bytes": 5137140,
+      "record_count": 10744,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "pipeline/v3/work/chunks.jsonl",
+      "sha256": "961bb12cd16fdaaa2289a181e14123075b655fd5bf4f9b92d2383a567228ab60",
+      "size_bytes": 5295087,
+      "record_count": 5844,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "pipeline/v3/work/manual_attrs.jsonl",
+      "sha256": "36dd1fd32e5ee4f000b833349b1fe020a757ad06d1a2cf01dd2cc472ad6bd43e",
+      "size_bytes": 2406,
+      "record_count": 11,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "pipeline/v3/work/manual_body_attrs.jsonl",
+      "sha256": "86360a80093f4f2e29f4b7fa8d3f0f494a99bd88d93915507ac5265c16b3e901",
+      "size_bytes": 863365,
+      "record_count": 3328,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "pipeline/v3/work/manual_body_chunks.jsonl",
+      "sha256": "9125fce195482955574e1aa5aa071317f4083e2bc26cff1be29693174b822af7",
+      "size_bytes": 797958,
+      "record_count": 449,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "pipeline/v3/work/naval_appendix_attrs.jsonl",
+      "sha256": "fd4da8602a52b213c5726423f1ff718ff85eb612f8a63d0596723903b842b881",
+      "size_bytes": 204121,
+      "record_count": 1138,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "pipeline/v3/work/naval_body_attrs.jsonl",
+      "sha256": "5c19e1b3885562827f9d3e977bd747bc4e43006fc9c6214d020b1c1bb660e1f1",
+      "size_bytes": 336092,
+      "record_count": 1346,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "pipeline/v3/work/naval_body_chunks.jsonl",
+      "sha256": "60d80018c72a196040b8a897b18e5554f0b325362f7ef48d86e7912a70bddc4c",
+      "size_bytes": 779440,
+      "record_count": 983,
+      "record_count_unit": "nonempty_jsonl_lines",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/corpus.json",
+      "sha256": "f017e6e7f3c3a71c8312c2714df5fda3d348dbd43bbfc87ac8fc3939bb02809a",
+      "size_bytes": 5119933,
+      "record_count": 2085,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/discovered.json",
+      "sha256": "5d5ebd302161aa949f842bafe9096adccd0e1cbd6835e13e7f713342c03eadbc",
+      "size_bytes": 73116,
+      "record_count": 497,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/filtered.json",
+      "sha256": "e29eb0b9e78ca4787726ec7b3f567bcba937cda714b0f97001e784266fe8789b",
+      "size_bytes": 181780,
+      "record_count": 250,
+      "record_count_unit": "top_level_array_items",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/aegis_combat_system.json",
+      "sha256": "4c5685d0d6c546dddd08aecebb79605269fbea15cecbd6a73519b6e56c5051b2",
+      "size_bytes": 56292,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/aero_13.json",
+      "sha256": "73521bb5857b94a39fab8552e452afb2e34142e5d357fb958a1110e3b7f60c5a",
+      "size_bytes": 1041,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/aero_1a.json",
+      "sha256": "d34e57b80447caa1ee2aeb6de45ee4e1dbafe30883b85a51940d8a1959b81967",
+      "size_bytes": 1041,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ai_20_radar.json",
+      "sha256": "701df5e08cdabe55f340f9cb8572133bb1245cacdbbe0a8fa63ef00fe9520f07",
+      "size_bytes": 1401,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ai_mark_iv_radar.json",
+      "sha256": "bc25f95c76d36234cdc303422e1e8b3320f0192dd97cd9b4a9f1eaf5549c5639",
+      "size_bytes": 3463,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/air_ministry_experimental_station.json",
+      "sha256": "c93e0e1eb5faa8a0671fe966b5e14aad163e093c440665d68f105724c4416864",
+      "size_bytes": 1661,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/air_route_surveillance_radar.json",
+      "sha256": "d41d88bc3183644b89af091ec180d7890f5ef2f9689b30ac9cf8530ca87eb486",
+      "size_bytes": 2694,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/airborne_early_warning_and_control.json",
+      "sha256": "1f8c3a6b2aec5113aff28eb1b6dbe702123bf1399d2c8f14729471b974b98a7c",
+      "size_bytes": 7763,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/airport_surveillance_radar.json",
+      "sha256": "351cf141d7dd1bc5b89b8176a7c637d5ad4e34c2b1772898a9ea01efd17659bd",
+      "size_bytes": 2108,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/aistyonok.json",
+      "sha256": "b4dfb95d11b8ad4d832c1c714136b279cf2a9c5899d0cd67fca529911261ad2f",
+      "size_bytes": 1759,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/alim_radar_system.json",
+      "sha256": "0ad676db2496c340e2743962f5b23724ab26e807f1cd80d84aa918be3284cd53",
+      "size_bytes": 1465,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/alp_100-g.json",
+      "sha256": "aff7b43bd234c6cfdebd581e13965eef1a51549d1f556aecd77ad5f59bf2ce38",
+      "size_bytes": 1362,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ames_type_6.json",
+      "sha256": "1d2408849dad9980b48d54ac31eced067183489017f0a04dc923589e8620562a",
+      "size_bytes": 3412,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ames_type_7.json",
+      "sha256": "1a3327e926ff94da628a8e1ac58c7d58c198183f80cfed0a7a43a0711f2ff1f5",
+      "size_bytes": 4143,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ames_type_80.json",
+      "sha256": "ba54aafb3820d7d87c7549081a816b32c6e6c699c4a0b156c5a668ca5e9d785a",
+      "size_bytes": 3961,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ames_type_82.json",
+      "sha256": "f03366d463b23be75d6ec52cb63120eab80961a502286506081bfa21c35eb17e",
+      "size_bytes": 2914,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ames_type_84.json",
+      "sha256": "a74b22643155e412e1284718f117cb81dfcee33ce5df466e497d0eb6d804a3fd",
+      "size_bytes": 3823,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ames_type_85.json",
+      "sha256": "83dd0a40b2c4754ed4eb7f448c856ff37f7a2cb85694c5c8faffd013e4299788",
+      "size_bytes": 4260,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-59.json",
+      "sha256": "c96323eaa17de7347f0bd6308eef091bd8e4de00da70ac7928d1864706fbdf14",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-60.json",
+      "sha256": "718c295134b4e23ed679310d5896f574232b56c0c673519b08f251d0e33ceca7",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-61.json",
+      "sha256": "3c5129e0fb239f372738e3f9d7557abb4dd8ead4fb89652660c03fbf2e7fe7d2",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-63_radar_family.json",
+      "sha256": "4af34d3b29d7e232102a3ba47e3a406fd06ef2e726c73a405e00e2dcb0014421",
+      "size_bytes": 1420,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-64.json",
+      "sha256": "730382bf47147988d4f7c803b65472d214891ee36056c323c83fc3aa2dbc30cd",
+      "size_bytes": 1394,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-65_radar_family.json",
+      "sha256": "0e7505baf5d5ca9ba8a91b95dac08a3b7552e2cd40d3fe654051e4d457c72ce3",
+      "size_bytes": 1634,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-66.json",
+      "sha256": "e3af710eadfbeb70d6e473b3add02acd6326d9e6025c62b6cfba3a859f9f2bec",
+      "size_bytes": 6423,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-67.json",
+      "sha256": "43ed4f41b7884f117919b826eab156de402e66087da8e241ddcaa3abfd8659d1",
+      "size_bytes": 1907,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-68.json",
+      "sha256": "ccb86da397cf5335fe1886331201f20fc2d2d8c328b282db7511ad943e5bd112",
+      "size_bytes": 5158,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-69.json",
+      "sha256": "2bf2fe84b7773f647b9756db0d91f3623027fcb711223f92f0313c67a9ead4c4",
+      "size_bytes": 1770,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-70.json",
+      "sha256": "bc171be6ba257e6a1ba6f352782bba45b6e4907c44d52e9920aebe9c1c5a5e2f",
+      "size_bytes": 1394,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-71.json",
+      "sha256": "39696d282ea77224424b9f24c82a7a4549a2fefdf1f58b9de579e48ff448306f",
+      "size_bytes": 1675,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-73.json",
+      "sha256": "e5ba334be87bd914d2e707523dca9c77505c553c9ddca6f4c5b99694de9561d5",
+      "size_bytes": 1608,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-77.json",
+      "sha256": "75bbd7baf58b86f2355b2c2c1841aba59d6fe0793c1950860b023fb5ee45dce4",
+      "size_bytes": 2254,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-78_longbow.json",
+      "sha256": "7fb5f41ca8371fd84502bd5371d617d018e9d5b4c6db8e58069b38104c66aad6",
+      "size_bytes": 1613,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-79.json",
+      "sha256": "550a0df2f98df23c20b720ae812bc4617497c3934962077f69da38967d966ab4",
+      "size_bytes": 2462,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-80.json",
+      "sha256": "49d24fc6d0045e19ea4eaf0e90db4a9f1c58f2c72b8ed55fdcbae5d3b1e4a3e7",
+      "size_bytes": 1208,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-81.json",
+      "sha256": "0f129042c9c01dbc88c2d75983f315edc092dca450db173c3809e22766c389a6",
+      "size_bytes": 4381,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-82.json",
+      "sha256": "2cf1f15a347a919606cef60004c061601c560ce6e2a6b1c3d08f0711141ed5f1",
+      "size_bytes": 1394,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-83.json",
+      "sha256": "38dea8c9a955cd040db19657a417e3e9dac011a209ea7f5c2f83a0103b53a433",
+      "size_bytes": 4861,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apg-85.json",
+      "sha256": "87a6585aaed350acb4066bed3bd945fd6dd6950d6f4a7a1d09d05067eae6c221",
+      "size_bytes": 1961,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-100.json",
+      "sha256": "43ae6e97128c08a29e4e60ebd80a76fd11d5e4ac2e583578526302baa9c745a1",
+      "size_bytes": 1047,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-109.json",
+      "sha256": "313e840028521e89214cfccf961b92f62d8d2312818b44d71c81b9bb8525c811",
+      "size_bytes": 1047,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-117.json",
+      "sha256": "bcf22f972a51895c23b5cbc6501fd06ccd7b7bdb410309d8903ffafa88ec184c",
+      "size_bytes": 1047,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-120_radar_family.json",
+      "sha256": "dc47ab874c68ea07a4b35dd16a638df7040c2685e50359ab7e52a932c39557c3",
+      "size_bytes": 1073,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-13.json",
+      "sha256": "76b4e31590eb6cffb0594533340196e9ca20fcfef54e116203c1ba68ffe95dd9",
+      "size_bytes": 1384,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-153.json",
+      "sha256": "37ee668393f536fa10875e998f699ec158c2a474e0f9087854f5f88de464d7d6",
+      "size_bytes": 1918,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-159.json",
+      "sha256": "37c71041e09fccc6a3f486e6e5aff4ab60e6233dbc917478a6eae1ee95ad8281",
+      "size_bytes": 6201,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-180.json",
+      "sha256": "5406b828e4de10b33c06f6b8e329a007a6d2245b12c6720a79a94dfd2bfc5bfd",
+      "size_bytes": 1396,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-181.json",
+      "sha256": "d8ff9e467ea69adbea4089a1675bf8a884e65a6989807728f01b98969236160b",
+      "size_bytes": 2687,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-35.json",
+      "sha256": "8197b7f6a5dea674a5cc3cc818788875a23ef2fee97d67d8d96180b12f5eabc0",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-36.json",
+      "sha256": "a8aa3c20c240d04684a1b8ee464aad3d4b14848d08a6a568e95682738620a3f8",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-41.json",
+      "sha256": "be46241dd055ed0af931039edd774dff7ad78b929e0b172cc433c7b6e2d15000",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-46.json",
+      "sha256": "355d32f78bb719ff1d79c3ba5e6ac158cc2f1830a9ea6b3fe4870ad697e27693",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-50.json",
+      "sha256": "0fe2892e71623f198ed2946e0e04cafd4c650e7cc07b948a688a5e62289f8dd2",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apq-72.json",
+      "sha256": "8d11e4810a115817bc4a16f8d9d6952585a14ec27bc49ff3a13158560d40297c",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_aps-154.json",
+      "sha256": "1f0ea207e595f7a7872946b3d6a9da6bb7d3d2dcfb251f4b01e782b9beed4e3d",
+      "size_bytes": 2356,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_aps-4_search_radar.json",
+      "sha256": "557e48348d29333a39c52f906907980f67e51a0aee2b29caafccfe5aad1e96b1",
+      "size_bytes": 2040,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apy-10.json",
+      "sha256": "63db3283a1570d131d7ed9aef4dc09a42ad5f049717a1746a3bc1b6bd4cd0e87",
+      "size_bytes": 1428,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_apy-9.json",
+      "sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+      "size_bytes": 1388,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_asg-18.json",
+      "sha256": "8c5abfd19e7296c088fc76f9a661e0c8043d662c19216e31f29fc9518aef3c32",
+      "size_bytes": 2351,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_awg-10.json",
+      "sha256": "0e635aad0fdc002928ecaa0c60b3c56d321135a6deb82038f3441e24cc21c00b",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_awg-11.json",
+      "sha256": "b8e36542fecb5d57de290939a271a55da00056a802ff09741b625c7fe5a717c0",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_awg-12.json",
+      "sha256": "3d224997817c41ed07a1f2b787600caef5406b4157b9ef0d482aa16a8b30c33e",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_awg-14.json",
+      "sha256": "cf3d1d357c44efc183872bf1acdc60c36cdb061ae7392e4417e4d064ae449b46",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_awg-20.json",
+      "sha256": "0a7c3d96c1352f2f62c5fbcbdaac31764230c24bd2f40d03914c31cb3da84d11",
+      "size_bytes": 1394,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_awg-27.json",
+      "sha256": "cbc9e03bfa6f63ce4a404b4b133e2cf6420d1a51af438a7915a165ff040d696d",
+      "size_bytes": 1394,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_awg-9.json",
+      "sha256": "fb0cd332a208750acee229204fd58dc3998d7565f453bdec2dfe12c832f059d7",
+      "size_bytes": 1673,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_cps-4_radar.json",
+      "sha256": "00d6b6a0aa9d51a3c310542792deb8cad1150874b232bd0c3242db6c3d6fd1cd",
+      "size_bytes": 1454,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_cps-6_radar.json",
+      "sha256": "616ee5d4fa9b7e74a20fac3d10e42bbceee7a4b44a868d1077379b8863b9142f",
+      "size_bytes": 1561,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fpq-6.json",
+      "sha256": "1874db2ce71da11c6eedf655d0a0b45ecc43fa7efad16195f27c8ab94a76c21c",
+      "size_bytes": 1601,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-117.json",
+      "sha256": "8fe159aeb40194a84a0198a07ce0c1178cf4bebef4ad8800be416c6ad2992832",
+      "size_bytes": 5513,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-124.json",
+      "sha256": "15aba95fb615367f462b400beec82b932b20063fa4ae5df76b2a9c5f9b877434",
+      "size_bytes": 2085,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-14_radar.json",
+      "sha256": "75236494a7106e1772cad62976c61237b7d056595b144d4dc9a00c27edb2ea5c",
+      "size_bytes": 1852,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-16_instrumentation_radar.json",
+      "sha256": "70c87310472d9720985d9e2f8271d9c2305658639b0da8eeaf11f81a96495be2",
+      "size_bytes": 980,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-17.json",
+      "sha256": "f4126c6ec7f335acb3a897a7092754f07cbfa7e115a170c745756174064d7864",
+      "size_bytes": 2090,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-18_radar.json",
+      "sha256": "53b8374eb79a3c0fee2f60f9d3db4f07f36a3d6f1307e9c8d3c514b3effee438",
+      "size_bytes": 1758,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-20_early_warning_radar.json",
+      "sha256": "db14d6b80d79998bb9a4bf970c6981e5b32e45193ed7b7947646d4e60c5b0fd7",
+      "size_bytes": 5369,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-23.json",
+      "sha256": "8792beba4be531a964c7e37fb7e12f88654e68d143eb5d41ba531940b3de737b",
+      "size_bytes": 2216,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-24_radar.json",
+      "sha256": "2c93c2e1a3ad9555c5de7b6e0a250e88a1c76e1e644bc4ecacd22cf7a8920612",
+      "size_bytes": 1571,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-26_radar.json",
+      "sha256": "5380d7beb68b3f634f492626cc543518f7214964cec2e615857db4d0e48b8957",
+      "size_bytes": 2385,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-27.json",
+      "sha256": "58ea017906e36def100ff677944c3fe93178295e3faec79dbff07eae5ec3ad72",
+      "size_bytes": 2880,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-30.json",
+      "sha256": "314abddfad0a6f446a05aefc28191c635f2f20ec6292736b70e20b8dccd9d282",
+      "size_bytes": 1169,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-35.json",
+      "sha256": "1b35a40ce8492dc743a6fa1cfd92c2884a0371cc21d864927d7783f8a149879d",
+      "size_bytes": 2614,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-4_radar.json",
+      "sha256": "d60c3900854ed2909ab831328a2c83319ac8a86ef0d90fe6ed03e668da4c8ad5",
+      "size_bytes": 2394,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-5_radar.json",
+      "sha256": "5da12bd74d16231bd921e6e7a48111f0b8020687a9e71d8b1a7c5627077dc416",
+      "size_bytes": 1097,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-6_radar.json",
+      "sha256": "59494477f06d8061626ad45dfd22f8d15d3c1b78c69c8c99fa32957a51c444f3",
+      "size_bytes": 1594,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_fps-8_radar.json",
+      "sha256": "f91979d2ff63b7a087f70d2ba8ba21e2558a4b5b75cdc4359514f3b1d059fdf4",
+      "size_bytes": 1910,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_gpn-12.json",
+      "sha256": "339a6bf0885728df0b1630e763bdb500502bc5373d54699395543bbe9497a321",
+      "size_bytes": 2074,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_gpn-20.json",
+      "sha256": "5fb4a66a597b8981efa1ae393935cb9d41c35f5741fbc7b4a476296563205015",
+      "size_bytes": 2074,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_gpn-27.json",
+      "sha256": "af5314e8b438ff68fa6c00b656cf3c63a2d136c248df9f8618d79df6edcc67d9",
+      "size_bytes": 1699,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_gpn-30.json",
+      "sha256": "9329dd88476a9a7cecd1fe4b96e3b83be8828db5b78c31983b2a40c29428ff92",
+      "size_bytes": 2140,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_mpn.json",
+      "sha256": "38fed466a793184e81c8e16133fff17dd10100de2acd3ce9b2bdbba7039c546a",
+      "size_bytes": 870,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_mpq-2.json",
+      "sha256": "95fffb7048aa5cf1ed66ccad4e1f3d9a325e3b5a5cfe10dc15621f251196d171",
+      "size_bytes": 1948,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_mpq-64_sentinel.json",
+      "sha256": "25870ead958102709f89789a45d124663919bb919fb82291abc05cdad3c350b6",
+      "size_bytes": 6108,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_mpq-65.json",
+      "sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "size_bytes": 30651,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_mps-19.json",
+      "sha256": "8d64bc529f9aa5cde1868a75f0c85ecb229726b03140a3ee33b38ea7573736b9",
+      "size_bytes": 2113,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_msq-1.json",
+      "sha256": "a2ae52cac08cf089b82933899afc4cf4ab9732d753278ef20f456cf84b5101db",
+      "size_bytes": 1871,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_msq-35_bomb_scoring_central.json",
+      "sha256": "21e67b1b73a00417c126b157d7bec47280526e7ffc4a37929f167eca3df416c2",
+      "size_bytes": 1304,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_msq-51.json",
+      "sha256": "19454adeeda2917e49e3809c67e17ceb1a665fce375c34857f1131afb8445377",
+      "size_bytes": 2136,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spg-51.json",
+      "sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "size_bytes": 2482,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spg-53.json",
+      "sha256": "a435b65f64b6dd6ac0ba8d0c568d2f820ab1e1708079f334bca165349b9c9bdf",
+      "size_bytes": 1572,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spg-59.json",
+      "sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+      "size_bytes": 1621,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spg-60.json",
+      "sha256": "60df40ff998ca8c65391aeca613dde5a5558459a40846ab5cfb80978dccff31d",
+      "size_bytes": 2717,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spg-62.json",
+      "sha256": "72fc084c1ac3ae24f5121e7562e56c2ed5d500125ad9bb4d663cb018d047d5d6",
+      "size_bytes": 5693,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spn-35.json",
+      "sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+      "size_bytes": 1562,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spn-46.json",
+      "sha256": "46de548d30988c79e7e7bc3db8c9b0d8491277f927962ff07c00de2313ce7b96",
+      "size_bytes": 1450,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spq-9.json",
+      "sha256": "c046ed51a956a951e25ffadd91c9c4b5170ce89fa82f3c8206e51c35334ad164",
+      "size_bytes": 4409,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-10.json",
+      "sha256": "439488d3f7cb122ff52d5a882b85fc7ad645d9c370d5b626188ed4e5662d8e75",
+      "size_bytes": 1733,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-17.json",
+      "sha256": "4be76bdaae9b15bbde640f11335c9eaa7c30a0bca256ccee3521b488140d1d88",
+      "size_bytes": 1834,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-29.json",
+      "sha256": "3d8139efb49622ec36c2c55e34b41f9b81523ca6af1f9b033c1bba3991f8a7d6",
+      "size_bytes": 1585,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-39.json",
+      "sha256": "d8a87dd8666909f28075514136218e3e19b231733afe277881fe5e4967f4c359",
+      "size_bytes": 1756,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-48.json",
+      "sha256": "e03c1bbe77732aa13578a5a8a10ac6bc4d5dee1944c48d704c30b4881140c7a3",
+      "size_bytes": 7842,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-49.json",
+      "sha256": "94e755de43e8d504e278dcd24320439428c1eeb6c74f1e692bb235e1481fab51",
+      "size_bytes": 3706,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-6.json",
+      "sha256": "f75b0f6992dbe6655a61e596191a861014bf773dd79283a08c251d65e790f3e4",
+      "size_bytes": 1454,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-67.json",
+      "sha256": "c798f5157e87af7e3013692bd0ec7cf405ac492246fd6d47fed500d82fb579ac",
+      "size_bytes": 1294,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_sps-8.json",
+      "sha256": "6d1dc33612eef680fad25211629f797660f36d2a8c3fd27448826f8bf26a2162",
+      "size_bytes": 1485,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spy-1.json",
+      "sha256": "38fd9651c02dcb9e7d0e440e7b167c9681880a576b86cea2dc895ecb73a0ac21",
+      "size_bytes": 7476,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spy-3.json",
+      "sha256": "3296944c4d983f0aa9d1aa5372823b223988e0918caf009944415a97de8bb0da",
+      "size_bytes": 1348,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_spy-6.json",
+      "sha256": "11e677e30749f62a5b8347819c98171fd04dd7f1443b844738d3a6a602e06cd9",
+      "size_bytes": 7436,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tpq-10_radar_course_directing_central.json",
+      "sha256": "1f50aa269ea95d53eab4b16c998cd712dc58203b2dca03238a863d88c2930c2b",
+      "size_bytes": 2444,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tpq-36_firefinder_radar.json",
+      "sha256": "641cb09e7820206170be5de8cc9f28b579fe1663c61b353fb5121cf713607e6f",
+      "size_bytes": 2052,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tpq-37_firefinder_radar.json",
+      "sha256": "d537bfe0340988c6b5580f67eabcc54f6ff6036236de1be6c0c52a872b435a29",
+      "size_bytes": 1794,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tpq-53_quick_reaction_capability_radar.json",
+      "sha256": "b13f3734f9d6bb870cac9ee23e4c205f3c303cfd0c81fb93227c6ca06e96b59b",
+      "size_bytes": 1316,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-1.json",
+      "sha256": "5fd91afa3bea854358df135939332c737c04eb6cb594ba8952deb2ee3ee5ea13",
+      "size_bytes": 2781,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-32.json",
+      "sha256": "a5059754f6b50b59bf16adfbaa723a633c476707b68e7a0e52c3a1ed07e4a303",
+      "size_bytes": 1517,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-43.json",
+      "sha256": "a388bec600b4cb4eddcc78f3a65eb054f5fc7e332f15661dfc51acfe3e8d169b",
+      "size_bytes": 2250,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-44.json",
+      "sha256": "90ba3767e352b2205cfcd295bbb8af284cf45187e129abddfd5fb8f0738e0b76",
+      "size_bytes": 1133,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-58.json",
+      "sha256": "aa6b23b78c4685079f1a04e48e6140f51efd0d7715b5dc475983706d0cd5510e",
+      "size_bytes": 1658,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-59.json",
+      "sha256": "abd34ba5766551bd5eae25ce991ef9120125482bca5e2893e15dd93dfb561240",
+      "size_bytes": 5513,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-63.json",
+      "sha256": "067bfaa8709bb60f69c88dcc827e7fe71cddb253b8079a6792fcd45730b4b9c8",
+      "size_bytes": 1812,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-65.json",
+      "sha256": "29fde989d0418ce950beb4b95225df7d1d356bb22315d903ecf968773ce83ed0",
+      "size_bytes": 1812,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-70.json",
+      "sha256": "52942dd94cb30f2843e4f7646b5552cb14eabe843ac52040baf59b74080a36e5",
+      "size_bytes": 2280,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-72.json",
+      "sha256": "ad5cce0dc6339415eb9fb5d5caf295378844a84b2520fdbc01c7299d28599311",
+      "size_bytes": 887,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-75.json",
+      "sha256": "6c476f38a3274d19e654de5206a5223e4942a6393c01e435233c6c5ba9024da5",
+      "size_bytes": 949,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tps-80_ground_air_task_oriented_radar.json",
+      "sha256": "bcf7b07f861e351abf6501f910d36ee58a660086065c4a9c887ebb269371313c",
+      "size_bytes": 1706,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tpy-2.json",
+      "sha256": "b4797ee9c2c83d8373b7459e49f77a5d1bca1d20bf24bb20acafe982b574c5e6",
+      "size_bytes": 3255,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tpy-4.json",
+      "sha256": "08fad083416a8b7eb03d7167af0eaae0e5cd5487d015651e5d019253ce90398d",
+      "size_bytes": 2124,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_tsq-96_bomb_directing_central.json",
+      "sha256": "024960d0258f8188e4c6e566b7ee4e35b5a9c8ceb2d31b3503ff6a829c1db7cb",
+      "size_bytes": 1118,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/an_zpy-1.json",
+      "sha256": "8c123870cadc1f9650f855001581fef489c41ef650d972133fdf9aaa716161ab",
+      "size_bytes": 2862,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/apy-016k.json",
+      "sha256": "df56f1ac6cd93eb39e141b02cbef5b25f8d24143d339d663ec8ab4087bdda056",
+      "size_bytes": 1749,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/arthur.json",
+      "sha256": "cf499c819b6d2515a498f182bdc637fbcb03a512ba70e2b28771336afbc0860b",
+      "size_bytes": 1833,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/asars-2.json",
+      "sha256": "ec31631564a037852d816c01ec8f40ed0d7827e7f513f2d1e29c4c3d6aa6d37b",
+      "size_bytes": 1793,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/aselsan_eirs.json",
+      "sha256": "46475513b03b248676c7037a3386e2920ea06fe38868f0e7038d036cf89ac28e",
+      "size_bytes": 4121,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/asr-11.json",
+      "sha256": "8bff8731b4705c062dc836d1d8cf1d4ae5ced7608b4a7d000be3c1eff57fe8e5",
+      "size_bytes": 2134,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/asr-7.json",
+      "sha256": "4c961564cf5f9d010ddefe8c2b41f6c79bbcf5fc1a1afd2c5c3eb913ee55bd69",
+      "size_bytes": 2066,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/asr-8.json",
+      "sha256": "18e2b145772764a67461a4403710bdcaeca2fef65c6e361309e0ddd677cf776c",
+      "size_bytes": 2066,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/asr-9.json",
+      "sha256": "c4812463a71024b2ca65c7281c1c93cb1bb41ae7fdd07d57acbf442284e838b6",
+      "size_bytes": 1691,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/asr_radar.json",
+      "sha256": "a85c6516b0ac1d7bde0f2f4ea02c1882f09416beb52ff2406151c8a6826d6c60",
+      "size_bytes": 885,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/asv_mark_iii_radar.json",
+      "sha256": "1f69f448c5b3472efe5f6089212c66768ac7bb66c46cf1c8e8e71009a4f036f3",
+      "size_bytes": 4023,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/automatic_gun-laying_turret.json",
+      "sha256": "fe1ed6fc478cda711ff72ec95822cf8690eec1c2ef714d79c27edf6cf3dc2e6e",
+      "size_bytes": 1617,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/beam_riding.json",
+      "sha256": "163fd36553ad90b0b8837ad33645c634f4baf9486d9bd080b363aee2964011a2",
+      "size_bytes": 3661,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/bel_battle_field_surveillance_radar.json",
+      "sha256": "164e5392804d2b665fff6e63367834bb642178116cfe6224be6003511e5f3db1",
+      "size_bytes": 1932,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/blue_joker.json",
+      "sha256": "bcd68f81e1e777d2feb56b598b69451172f697545193754b484850ac6ee51f2e",
+      "size_bytes": 1320,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/bor-a_550.json",
+      "sha256": "ac497f824797c49f83954420cf6bb2636e7e6f3bc7c839fb9026779f76e4004b",
+      "size_bytes": 944,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/chain_home.json",
+      "sha256": "5445733b0c73af04b897cf644b644742ff356996e92271b5ed0d2d06ab2930eb",
+      "size_bytes": 4108,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/chain_home_low.json",
+      "sha256": "807d661ae8aa08b344fe6b9a49bb109c1551dcff09146c1da3eb3b521770993a",
+      "size_bytes": 2693,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/cobra_dane.json",
+      "sha256": "d0f686eac7073fd51028d8d9a486516a78cddc05e02e4200403394ace00a9c59",
+      "size_bytes": 1480,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/cobra_mist.json",
+      "sha256": "8019c0208e78828dabb21c878353c8911909fc5ac1220a9a63b180feaa81f88a",
+      "size_bytes": 1278,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/cobra_radar.json",
+      "sha256": "cd60816eb8b2bebf642de106d1cb9b0abed301f667f60d1743ad97b8d0219289",
+      "size_bytes": 2308,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/counter-battery_radar.json",
+      "sha256": "f4802e9240ac3248c12065f44ff427148c7f73238fd133e76a7ab50811e5d8a4",
+      "size_bytes": 2589,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/cs_spg-6.json",
+      "sha256": "9e1caa1da6d6d8a31070212ee01f72fce8f1369b98292eb59b9f9b9286d20374",
+      "size_bytes": 14363,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/el_m-2052.json",
+      "sha256": "10ffc8042607593419a6a35857af848d5d7bc5833c9349f1a88e07b178f4813d",
+      "size_bytes": 2222,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/el_m-2080.json",
+      "sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+      "size_bytes": 1798,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/el_m-2080_green_pine.json",
+      "sha256": "d1c18f111339f69aa290487ab3df40494febdf64b026d6cc69cfe6f59c64779e",
+      "size_bytes": 1822,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/el_m-2084.json",
+      "sha256": "6748d3492521ddb8e91b9b258daa61833e02525de0de0818b1c610e566ca9d3b",
+      "size_bytes": 1024,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/el_m-2090.json",
+      "sha256": "17d9046749d5b3b4cb64b49e34c741ae83c58097a9a023f3e7e7ab0811c90f22",
+      "size_bytes": 1590,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/el_w-2090.json",
+      "sha256": "19c802774b159fed792da0a815ae826c838c0c4f45499a8b59c30946335587c6",
+      "size_bytes": 960,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/empar.json",
+      "sha256": "ecfb92c49b5d72f84dd371d03a959950ee71bc1de9fe5c7eb8f3582c289173ac",
+      "size_bytes": 1090,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/erieye.json",
+      "sha256": "f1d7ca3f0236319e4d445d97d726012611cbdeb0bb4014be2d4153f94a79d3b3",
+      "size_bytes": 7407,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/fcs-3.json",
+      "sha256": "c7e57d8be96c3dfacbf4a14182927535eed311731e6c0041c47f1601c7484520",
+      "size_bytes": 17978,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/fire-control_radar.json",
+      "sha256": "8c3f521d36bc8e66d5760b02760f349c33b33cea480ea518b2cafc600800fde8",
+      "size_bytes": 3993,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/florako.json",
+      "sha256": "90bc5778303157b3ddcd676958ff9b44289b9a95a0e2e1de571258831bfe98e0",
+      "size_bytes": 801,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/flycatcher_radar.json",
+      "sha256": "6c95d52736533e52f53e44609bfa5824cc6f6415ec88c8ba22030a8343796e40",
+      "size_bytes": 1718,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/fug_240_berlin.json",
+      "sha256": "1ad46028679afd79e0a6ea714bb518732fa9979159bb768e8e6f36062be94596",
+      "size_bytes": 964,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/furke_radar.json",
+      "sha256": "6574f9be097ab4becbbc77152fc3c05491cda1d371c9d2b749a9a57569b391d9",
+      "size_bytes": 1647,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ghamar_3d_radar.json",
+      "sha256": "e528ad0c8eecff97437cc4112f4f70a2558e74adcf042964ef51e73aa248dc1e",
+      "size_bytes": 1235,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/giraffe_radar.json",
+      "sha256": "cabffe19638eb1694d145a3d71b74202b62d94344b66e26b3bb210ae7a21e20d",
+      "size_bytes": 2315,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/green_garlic.json",
+      "sha256": "d4ab2d1aa8b685af28160811dd58763e3a96512fd627a8e8d5060d70da69782f",
+      "size_bytes": 3961,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/green_satin_radar.json",
+      "sha256": "9f20047beee5e8dd714fe295eb01b96ba392fe7205762a99d80a8d50cf36ecb8",
+      "size_bytes": 1563,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ground-controlled_interception.json",
+      "sha256": "5d7c19e459cb650b40c268cbf442dcb778a5c62500598b1f14181312c6221148",
+      "size_bytes": 2598,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ground-directed_bombing.json",
+      "sha256": "c5f46a5d81b749d3c541b76434c140ba698855644324a74ef0a609b6bb3d20a9",
+      "size_bytes": 1379,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ground_master_200.json",
+      "sha256": "1b63d249968d1f572a2052fc3fa25f81f30d9bfa1a6d2152e31291c5eae2a8f0",
+      "size_bytes": 1796,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ground_master_200_multi_mission.json",
+      "sha256": "8502c62a8e945d6c5b2c25fafd388d2b75565eceb93969893244dcd2fd8908bb",
+      "size_bytes": 2223,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ground_master_400.json",
+      "sha256": "de6c90a9e59f712229a09d888ea3523ae2471f95b4c139fc55cf7b79f9109bfc",
+      "size_bytes": 3156,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/h2s_radar.json",
+      "sha256": "c19b87269a2a4194dc2fb53bf51556b38401fc8b9e33373ad169b55b01fbeef1",
+      "size_bytes": 3323,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/haukåsen_radar.json",
+      "sha256": "fb4ccf4487e7b0507b3053ae493dc9115f9ff2bc34fe7c1d71a1787e23af379e",
+      "size_bytes": 1276,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/herakles_radar.json",
+      "sha256": "6c118c7b05cc9bf6cdb056df25f75847c717c75856d870a1c63dbb7329ee06c9",
+      "size_bytes": 1940,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/indian_doppler_radar.json",
+      "sha256": "9721681903ec75ff4064660cd86ea16b9398201f11752622c445ded1bc3b214f",
+      "size_bytes": 1331,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/integrated_coastal_surveillance_system.json",
+      "sha256": "e0a6e46a737732ede3912635dac98455aaaa13ac1971e3b1b92b9346174ebd00",
+      "size_bytes": 3704,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/inverse_monopulse_seeker.json",
+      "sha256": "4ca8a289364600c5391c2b05dcbe205723a9f09d615f3227dba5a199397f0872",
+      "size_bytes": 1257,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/jl-10a.json",
+      "sha256": "08d0e7b8262fbcbfccb89030e9a3970d16006ed4802b67887c80d97a2b3e70a2",
+      "size_bytes": 4101,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/jlg-43_radar.json",
+      "sha256": "bc5318db14af636b7172a7c69a8e526c50227881299efa862e228004046e5cdd",
+      "size_bytes": 1020,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/jlp-40_radar.json",
+      "sha256": "5b67878857f7df53bb48640a55215169c47f297367dd3615c6324f6ca70e4106",
+      "size_bytes": 990,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/jy-14_radar.json",
+      "sha256": "159c6462ce91d0c01ff007ad972c645fd7bfa2c9263dedfd1f27600541ebeba1",
+      "size_bytes": 2174,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/jy-8_radar.json",
+      "sha256": "6d3881ac8ce18aa9311e86e1bf5009a9490f9cdddc4874339fbb468b08b2ff05",
+      "size_bytes": 1749,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/jy-9_radar.json",
+      "sha256": "7319226d986bd4397947ac82550e29c703809610a06a03d572c4177adece45f2",
+      "size_bytes": 1556,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/kalkan_radar.json",
+      "sha256": "174514a6d1ac483dfb807561ad643d4a138fb7bec3ffe8697fc3e41812f78983",
+      "size_bytes": 1671,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/kashef.json",
+      "sha256": "0ec3f2322f4e2b4bd453eda5d71d140b6f5eb520e0f20bf33bfe6f6eeb548adb",
+      "size_bytes": 1987,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/klein_heidelberg.json",
+      "sha256": "feda6dbb8d54c341beaadf5f76ce66495a1b95dcde39b4f63f7398729c5bb39c",
+      "size_bytes": 1193,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/klj-7.json",
+      "sha256": "828441b5fe88f4091c6205526098a719580d2a42f3869d2a47fcc03f1866e13f",
+      "size_bytes": 1510,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/kortik_ciws.json",
+      "sha256": "f2f8319e43d7674b98614e59c56e268fdc5d9f767c8d1530e06beb314859d528",
+      "size_bytes": 3659,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/lichtenstein_radar.json",
+      "sha256": "34a085e9e36ac1244fe295b465738d771bea059d6be33a68275b7d48c543503b",
+      "size_bytes": 1295,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/lock-on_after_launch.json",
+      "sha256": "fc3c863336e6425a9a8d8abec1be5ece52f1b107b28156271073968e23542e04",
+      "size_bytes": 5310,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/luftwaffe_and_kriegsmarine_radar_equipment_of_world_war_ii.json",
+      "sha256": "9ea35564f6c731ee827e88ff72130c648b8334d13473ba9285be09bef1d13316",
+      "size_bytes": 954,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/marconi_martello.json",
+      "sha256": "b917db10c1d352b6f84cbb26194743431b2531e2ed72bb640d958d11d64ebfe1",
+      "size_bytes": 3554,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/matla-ul-fajr.json",
+      "sha256": "053cb42382a6013953a88bf44d83f84a304447d6af0258ae78766642212893df",
+      "size_bytes": 2122,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/mm_spq-2.json",
+      "sha256": "d6660ee17492380b2ddb90e0d300817f372bb69f5511e8f032bd784dcd63ebe0",
+      "size_bytes": 1658,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/mstar.json",
+      "sha256": "54581a0604a3b38ba63a9304b3b980782ca372fdc3a65c61a239815aed55e73c",
+      "size_bytes": 1867,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/muff_cob.json",
+      "sha256": "3e0385088c871842250540b2e9be0d1a23922b7fd40d89e09e0ce780ba574006",
+      "size_bytes": 1072,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/murad_aesa_radar.json",
+      "sha256": "71bf2ef2010f4167c404229f4244af19fd51629bb70b7481811766b0acafcfca",
+      "size_bytes": 1126,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/neptun_radar.json",
+      "sha256": "bc6359b753ab28190df0d85feb383d9e21f34171e010b15a38fd746d64b7aeee",
+      "size_bytes": 1315,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/night_watchman_radar.json",
+      "sha256": "41e70cd6954c97ee33242a66d0f063155c2e41ac8cf50d0417ea2dd3fbd3188e",
+      "size_bytes": 1329,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-11.json",
+      "sha256": "780bf500da6672851cd2d8ff45a17f3344c1dc3925c56ea8c625f378e6e49642",
+      "size_bytes": 1390,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-12.json",
+      "sha256": "6f7bb61926d465d866d7ca96ea49f856ba32b1b76cbb869ffa43fd0ff4e8b570",
+      "size_bytes": 3756,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-14.json",
+      "sha256": "02d1062b5de77351a2d50864c98421a8d682b1a93ef58b68e84983e285234753",
+      "size_bytes": 1362,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-18.json",
+      "sha256": "25240b05bd9cf0d0a9d9b453f0175019137af6930f4e0d56fb185ecf7164e9db",
+      "size_bytes": 1318,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-20.json",
+      "sha256": "fc0e53872136e0902de1e626d7c199e90126b9495db0000be2a1307a30dfb190",
+      "size_bytes": 2565,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-24.json",
+      "sha256": "60b136f9461c0241da20d829e33837de619b8c1e8b38c8783460b397e355b036",
+      "size_bytes": 3961,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-28.json",
+      "sha256": "8bf80cd46353433d3d6545dbf4f371cc4be4128f2f5b2b1c5e7921d829f5e93f",
+      "size_bytes": 1307,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-4.json",
+      "sha256": "3568e6bd8dad06a056c4472b97c9570da196828128b134a187953dc70822ff13",
+      "size_bytes": 1403,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ops-9.json",
+      "sha256": "b6467460d9b90e4cff40c4b4cc18aee60eb07706da26503b509b723c2f678072",
+      "size_bytes": 1238,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/orange_poodle.json",
+      "sha256": "51bc3d7188c32dc951114dd765c3ecd2bb2239e33872214f928bc1812ecf0a18",
+      "size_bytes": 1404,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/orange_yeoman.json",
+      "sha256": "a618215ab5ef67c79eb30702d83a5dc40e33a03b5a5c33670913f8793ebe6fc2",
+      "size_bytes": 2916,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/over-the-horizon_radar.json",
+      "sha256": "ffaa4815164a5e3d862286940f1065ac1228d066b7ab1d61cb60c5d40c95404a",
+      "size_bytes": 14554,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/plessey_ar-320.json",
+      "sha256": "ea2a49794a623b16344bed308c1d7ecb45508d389785299b351353774db33cc0",
+      "size_bytes": 2334,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/plessey_ar-3d.json",
+      "sha256": "c87ce07e255cea9cee7f8865625b5bae4b5cbf431ecb581c76dfcabb061b28c0",
+      "size_bytes": 1939,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/precision_approach_radar.json",
+      "sha256": "b3f73cca4285f12629d3395f9109b1aca18672543eb07707b3d73d6fffafb9ba",
+      "size_bytes": 2019,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/ps-05_a.json",
+      "sha256": "66361ed6ef351b4ed57dd24396680b224a2114db64498bf356b6d079786c86a7",
+      "size_bytes": 1424,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/radar_doppler_multifunction.json",
+      "sha256": "6be666191ce9a5f58c14bbe0bf59691c1abe4ba4c64b2d51f057d1f2a0af9589",
+      "size_bytes": 1076,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/red_steer.json",
+      "sha256": "ae7f00052cd601bffbb2fab0a98c25f2ebc604884a1efdb2909e58ea498ca730",
+      "size_bytes": 2581,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/rp-21_sapfir.json",
+      "sha256": "4a657134a9fda4014897d4dfdb7d4ee3c08daf461656d9018c5ed1e18178cc92",
+      "size_bytes": 4813,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/s-300_missile_system.json",
+      "sha256": "744f4aa5375ad995bb4b156994b0410b3c5b6e0fed226fe321aa98fac69c3bf0",
+      "size_bytes": 18352,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/s1850m.json",
+      "sha256": "6d6a39f9c644ec904edbdbdb74d260293866641c5b25f12ba61a751d48521503",
+      "size_bytes": 4282,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/sampson.json",
+      "sha256": "ffacbd7e97efd8e66e5f8d82449fcac2255a11c0290a00be666ab1a275d4d47c",
+      "size_bytes": 6853,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/scanfar.json",
+      "sha256": "fd864e1cb5f2c96405e4062a0d259aae229704c59feb4dca1d0c6adfe90847bb",
+      "size_bytes": 1564,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/scr-720.json",
+      "sha256": "0727359c5b91d19f3e05986606bedf32d82c92ea29dbce1bedbebff9566d23dc",
+      "size_bytes": 3543,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/selex_ran-40l.json",
+      "sha256": "5517a25c86ff6bd9639b693e211860c5c8a5ab49e2ea7b5f8bbedd0e9ad6b365",
+      "size_bytes": 1721,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/sj_radar.json",
+      "sha256": "62896c6d4ae420d4d78e7ea846d96be64cf6195c4a57fb93e6745b5fddc37fb5",
+      "size_bytes": 2204,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/tactical_reconnaissance_and_counter-concealment-enabled_26ae.json",
+      "sha256": "9e89abc85023b3cf7118701689855c056ebebe37a17fbbe360a46939ee52a903",
+      "size_bytes": 1565,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/tail_warning_radar.json",
+      "sha256": "656ac81b8b2f140cf26f5c9d00fe5f29ebe5b1d4a96f17a6e94695b12ba08ffc",
+      "size_bytes": 2932,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_277_radar.json",
+      "sha256": "cd680f1aedaa913f7fa9e2121483259168c3b9fb9d7c4f25b7e89c6907e0d518",
+      "size_bytes": 3494,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_279_radar.json",
+      "sha256": "962c90496c3a58c9ebc64ea4732fd92074350bbd22a29eb68cf9ee696f4f81e2",
+      "size_bytes": 1237,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_281_radar.json",
+      "sha256": "a08ecc094dbc639ffe1db08559728264f544b4e1d45624875a43f33dfdc71f5c",
+      "size_bytes": 3078,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_285_radar.json",
+      "sha256": "cadc3208ffa10f9bad14a9051ad04c81fd93773f500c749499118b5626cb05f1",
+      "size_bytes": 1336,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_293_radar.json",
+      "sha256": "9c725b66cd807b8972cae2acaac48d474435227f785bd070cdab94779d96c35e",
+      "size_bytes": 1233,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_341_radar.json",
+      "sha256": "0701a51c33fb94ba2b800f9adff343ae28b6646a2f792c91a83cb720ff2b504d",
+      "size_bytes": 1348,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_345_radar.json",
+      "sha256": "74a06913314484121ce4883b3eee610bb93952c55fb651975f42927aecc074b4",
+      "size_bytes": 1723,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_346_radar.json",
+      "sha256": "1d8776021c3e1804bb79fb3370dfd65b10fc019b39c346514975440d3b44f790",
+      "size_bytes": 21399,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_354_radar.json",
+      "sha256": "4873e7f8f3845f02783b28ba0fafb16255cc37b8f3407de739fd92da503dd00c",
+      "size_bytes": 1600,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_364_radar.json",
+      "sha256": "e20591149cae44a881039290a5b0efdd6a8e2bac77511c7860a83f197dcc8190",
+      "size_bytes": 3439,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_381_radar.json",
+      "sha256": "5df3f563b56160af52e7cfc20c231bd6c07bd581ac0f6a7f3990e8b0fb8f3f88",
+      "size_bytes": 694,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_382_radar.json",
+      "sha256": "d06f998a34fef51e926051415c18dd6e96392e05d1320472b4655c99049b8585",
+      "size_bytes": 1051,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_517_radar.json",
+      "sha256": "7dfe140ea347a6b80d7f16cb2095e162f74e018a96114f3b26bf3e67c20d81f3",
+      "size_bytes": 2307,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_518_radar.json",
+      "sha256": "3415a1a884c767e9f423ad4acbf8ae938c940e70d5fbc81f63ba630cbdbc54c0",
+      "size_bytes": 1046,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_79_radar.json",
+      "sha256": "96eff5670dc65e16cccc14cf97b35cb1d4df2689fe2749fa1f85f527e265b522",
+      "size_bytes": 2524,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_965_radar.json",
+      "sha256": "d8d4d288ea172d7dd09c4663992bebcbf8ab18922be7e027566ec2e7f8a256f4",
+      "size_bytes": 4590,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/type_997_artisan_radar.json",
+      "sha256": "e18cf761ca9f88ac8e71157992789812a4f952fa1064c46d301d9ef1eac4c0d5",
+      "size_bytes": 398,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw/voronezh_radar.json",
+      "sha256": "41d162b8c1aaeb94380d7aef4689c61b48419121eb49e7cbfe24b70aa5f53fa2",
+      "size_bytes": 2956,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/cn_type346.json",
+      "sha256": "e11f56be1d340c8646e92b70852ffc52df3c4f57e2a8a215c098a50d29dae7c7",
+      "size_bytes": 1885,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/cn_type381.json",
+      "sha256": "9798baf9e45d3f950354474813fde318c1371609dc85d7c109f3257005eccd75",
+      "size_bytes": 648,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/cn_type517.json",
+      "sha256": "dc3f3fbe3c9a4b3cf7c891f2e28db3e658fbfcf21196c8977809785514e5d5c8",
+      "size_bytes": 1045,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/eu_empar.json",
+      "sha256": "af6a5324f3161709476399038e82094301325d7829d9be8f4fe6b6cb0ca923dc",
+      "size_bytes": 1027,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/eu_herakles.json",
+      "sha256": "6262d9e153573ff1b6b88ab6d80ca65c4364790f83a38f93845e73a6ff045929",
+      "size_bytes": 306,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/eu_sampson.json",
+      "sha256": "9e3cd378ad6ba6a0161da01b9ab84f3c963b8b13b21d5414b958e3d6848e4c82",
+      "size_bytes": 310,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/eu_smartl.json",
+      "sha256": "e967f2de1d031afd916fec2c99b057c2bde85f7038646f185b038b0dd899ba04",
+      "size_bytes": 306,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/il_elta2248.json",
+      "sha256": "1eeed65b595a79f5fb6a5d28955fa5c0343b41a84afe419da6dce364b4a0a8bd",
+      "size_bytes": 302,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/jp_fcs3.json",
+      "sha256": "6658a9201013d2fb42e7c649146d5f48c817f5d7207fa03600b44ee75ad172c2",
+      "size_bytes": 1776,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/ru_fregat.json",
+      "sha256": "0754c95a9198b4408d5c2750946d71e8400546a18db40bb03395ac62d01d363f",
+      "size_bytes": 305,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/ru_mineral.json",
+      "sha256": "fdec75dd291bbf3f6cf46e5becdedecb971e7addee6fcaf7b78889a3b8a476ef",
+      "size_bytes": 298,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/ru_s300.json",
+      "sha256": "6cfcdfb2fe06532204368cce64ef8647c43da5af7b473b725ba022386fc28470",
+      "size_bytes": 2266,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/ru_s400.json",
+      "sha256": "2b058140fd4b66abf1f9a51f7e297189410e80d0718eb3d2b25b81df64eecf26",
+      "size_bytes": 2492,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/ru_topplate.json",
+      "sha256": "5d33e40ccb5e0bb7c4752f771152b6eacd698ff0d136a785993af57f35318369",
+      "size_bytes": 307,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_apy2.json",
+      "sha256": "9d158e58c66bcf0f1ffa5b0b9dba06c5900e109e44c8f21acd0c32f27390f63f",
+      "size_bytes": 293,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_apy9.json",
+      "sha256": "28c66abfe24c38e337328decbd19701d7b9d6e1805ecf6d1e7e1fe19e9f48549",
+      "size_bytes": 1275,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_mpq65.json",
+      "sha256": "437780e9dc0aaee276fa2840b60dec860b21084b916959f89d9bb6097ef28388",
+      "size_bytes": 3975,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_spq9b.json",
+      "sha256": "58e02d737f7e06282957a355a4fd387fdaaafeb704a68203e28e1f1f6555ee66",
+      "size_bytes": 1341,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_sps49.json",
+      "sha256": "43f326e3218dbb508111143b116e41cc66ee1dac37b9a5f9e368110416f943ad",
+      "size_bytes": 2256,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_spy1d.json",
+      "sha256": "64b9b41d882556599826f24c70413d007a30e978b3ea20c8acafb073d48bcc36",
+      "size_bytes": 1968,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_spy6.json",
+      "sha256": "2582ff868ad574c5dc0f10374850e665d5e013d210f88463e6fdd4005914eb21",
+      "size_bytes": 1893,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_tpq37.json",
+      "sha256": "ffb1fb401c3d1a49cc2cf67f4cb2fa95a32c3db29979e451248da64986cacf58",
+      "size_bytes": 1960,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    },
+    {
+      "path": "radar_corpus/raw_v1/us_tpy2.json",
+      "sha256": "bc48c3e711a8ea44c75c1f5984b89e25b3000f418cb022d7d353a107241fdf6c",
+      "size_bytes": 3256,
+      "record_count": null,
+      "record_count_unit": "not_a_top_level_array",
+      "scope": "legacy_corpus_kg_or_intermediate"
+    }
+  ],
+  "file_count": 318,
+  "total_bytes": 72359852,
+  "registry_metadata": {
+    "path": "artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json",
+    "sha256": "8918c2abbf3e72139cb2dc6dd9a20e7b969c3eab1afee707eb71dec7eb384906",
+    "size_bytes": 15039
+  },
+  "excluded_untouched_prefixes": [
+    "data/agent_feedback",
+    "data/condition_consistency"
+  ],
+  "scope_limit": "Explicit selectors only; not recursive full-workspace or model-training provenance certification"
+}

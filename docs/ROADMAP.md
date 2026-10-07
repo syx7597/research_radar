@@ -31,8 +31,9 @@
 | 新来源数据/代码验收已通过 | [4份厂商PDF资料包](../artifacts/thesis_direction_review/radar_sources_v1/manifest.json)与[独立AI审阅](../artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json) | 4来源/家族、5型号、24中文题、62来源读法、15整页chunk；原12条调试闭包隔离，历史重叠及AI参考身份公开 |
 | 新来源固定评价及双AI正文审阅已完成 | [六入口同源回答结果](../results/radar_domain/source_eval_v1/ai_semantic_summary.json) | 120选择＋144回答重放零差异；正文正确RAG/P各13、A1/A2/C2各16、C1为15（各24题），不支持恢复C额外领域优势 |
 | 应用章与数据章草稿已完成 | [第三至六章入口](../thesis/README.md) | 第三章6张表/109项数据字段；第六章保留全部迁移、适配和零增量结果，尚未编译PDF |
-| 下一轮设计与已见闭包审计已完成 | [覆盖设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)、[CPU回归](../artifacts/thesis_direction_review/radar_coverage_v2/design_check.json) | 目标8组96题，当前新归档/新题为0；完整flat与bound等信息，原文系统参照和模板展示分开计分 |
-| 当前优先项：候选来源正式准入 | [8个官网候选](../artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json) | 先归档版本、核验家族和表格，再编写新读法/参考，不能先跑模型再挑题 |
+| 下一轮设计与已见闭包审计已完成 | [覆盖设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)、[CPU回归](../artifacts/thesis_direction_review/radar_coverage_v2/design_check.json) | 目标8组96题，设计登记时新归档/新题为0；完整flat与bound等信息，原文系统参照和模板展示分开计分 |
+| 来源准备已完成 | [原件/版本/历史汇总](../artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json) | 9候选保留，8组可用；Simrad失败以MRR宽家族替补。171个本地文件字节核验通过，历史QA/SFT同族命中公开 |
+| 当前优先项：统一读法整理与独立出题 | [标注范围](../artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json) | 13页PDF与13段HTML先整理全部合格读法，再编题和AI复核、排除旧QA衍生；新读法/QA目前均0 |
 | 设计版与空模板已完成 | [领域QA与对照方案](../artifacts/thesis_direction_review/radar_evaluation_plan_v1.json) | 按来源/家族连通组组织材料；达到真实独立出题及异人复核标准后才能称独立人工评价；RAG/P/A/C使用同来源 |
 | 持续写作 | 研究问题、文献、数据章节 | 有出处的研究动机、现状与缺口、方案和评价表；领域效果按实际验证补写 |
 
@@ -83,11 +84,11 @@ AI双重审阅可支持明确标注来源等级的探索评价，不等价于独
 
 ### 当前的下一轮设计与停止规则
 
-以[设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)接续上述已完成阶段：8个新来源/家族连通组、至少5家厂商、气象和船用两类、96题是采集目标，尚未实现。题型目标为简单16、量值形式24、限定属性20、表格绑定28、限定范围列举8；不强造未知、冲突或事件。先归档候选来源、登记来源家族闭包与历史重叠，再按统一规则整理整页读法，由另一AI据原文出题和复核，最后做CPU验收及执行冻结。
+以[设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)接续上述已完成阶段：8个来源/家族组、至少5家厂商、气象和船用两类、96题为采集目标。目前8组可用主件已经归档，读法与96题尚未形成，不能把来源数量达标当成评价就绪。题型目标为简单16、量值形式24、限定属性20、表格绑定28、限定范围列举8；不强造未知、冲突或事件。先归档候选来源、登记来源家族闭包与历史重叠，再按统一规则整理整页读法，由另一AI据原文出题和复核，最后做CPU验收及执行冻结。
 
 固定检索页→该页全部预整理记录作为统一证据。flat与bound须能还原相同完整关系元组及多重性；共享翻译/词表/记录顺序，禁止按金标筛答案。单记录格式调整不值得单开实验，因此至少48道真实竞争读数题、覆盖6组、其中12题具有双限定或多值对应时才运行主对照；不足则取消，不制造歧义。原文页为系统参照，规则模板为资料展示，不能把后者当作生成答案正确率。
 
-只计划一轮三路LLM与一路CPU，暂定最多2 GPU小时，无新训练；在真实分词预检后冻结正式预算和输出合同。主指标是正确、有据且引用有效的联合比例，bound相对完整flat至少净增ceil(0.05N)、收益来自至少3个来源组、错绑不增加，才有继续价值；这不是统计显著性标准。未达到则保留零/负结果并收束，不换模型或提示继续刷本批。当前工作只完成设计、写作与CPU审计，没有新题或GPU任务。
+只计划一轮三路LLM与一路CPU，暂定最多2 GPU小时，无新训练；在真实分词预检后冻结正式预算和输出合同。主指标是正确、有据且引用有效的联合比例，bound相对完整flat至少净增ceil(0.05N)、收益来自至少3个来源组、错绑不增加，才有继续价值；这不是统计显著性标准。未达到则保留零/负结果并收束，不换模型或提示继续刷本批。来源归档、初步语义及历史排查现已完成；下一步按独立版本的标注范围整理读法，仍没有新题或GPU任务。
 
 ## 3. 公开方法实验的边界不变
 

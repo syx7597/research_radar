@@ -1,0 +1,140 @@
+{
+  "version": "radar_source_preparation_summary_v2",
+  "recorded_on": "2026-10-07",
+  "status": "archive_verified_annotation_pending",
+  "model_run_ready": false,
+  "evaluation_frozen": false,
+  "human_gold": false,
+  "counts": {
+    "screened_candidate_families": 9,
+    "families_with_primary_material": 8,
+    "families_pending_official_access": 1,
+    "publishers_with_primary_material": 8,
+    "application_groups": {
+      "marine_radar": 4,
+      "weather_radar": 4
+    },
+    "named_main_models": 23,
+    "original_responses": 34,
+    "successful_original_snapshots": 31,
+    "failed_access_responses_retained": 3,
+    "primary_PDF_documents": 8,
+    "primary_PDF_pages": 78,
+    "primary_manual_HTML_sections": 15,
+    "auxiliary_HTML_snapshots": 8,
+    "selected_PDF_pages_for_annotation": 13,
+    "selected_HTML_sections_for_annotation": 13,
+    "verified_local_files": 171,
+    "new_curated_readings": 0,
+    "new_questions": 0,
+    "new_model_runs": 0,
+    "new_training_runs": 0,
+    "new_GPU_hours": 0
+  },
+  "family_status": [
+    {
+      "family_id": "vaisala_wrs300",
+      "history_family_id": "vaisala_wrs300",
+      "history_status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "eec_ranger_x_band",
+      "history_family_id": "eec_ranger",
+      "history_status": "historical_family_mentions_identified",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "gamic_gmwr",
+      "history_family_id": "gamic_gmwr",
+      "history_status": "historical_family_mentions_identified",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "furuno_drs_nxt",
+      "history_family_id": "furuno_drs_nxt",
+      "history_status": "historical_family_mentions_identified",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "jrc_jma5200mk2",
+      "history_family_id": "jrc_jma5200",
+      "history_status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "garmin_gmr_fantom",
+      "history_family_id": "garmin_fantom",
+      "history_status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "raymarine_cyclone",
+      "history_family_id": "raymarine_cyclone",
+      "history_status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "simrad_halo",
+      "history_family_id": "simrad_halo",
+      "history_status": "historical_family_mentions_identified",
+      "pending_annotation": false,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    },
+    {
+      "family_id": "metek_mrr",
+      "history_family_id": "metek_mrr",
+      "history_status": "no_resolved_candidate_family_mention_in_scanned_aliases",
+      "pending_annotation": true,
+      "evaluation_admitted": false,
+      "current_model_training_lineage_overlap": "unknown_not_inferred_from_file_presence"
+    }
+  ],
+  "exact_known_debug_source_hash_or_URI_overlap": [],
+  "historical_family_mentions": [
+    "eec_ranger",
+    "gamic_gmwr",
+    "furuno_drs_nxt",
+    "simrad_halo"
+  ],
+  "necessity_gate": "not_tested_no_questions_or_fixed_E_q_yet",
+  "next_action": "Declare uniform source reading scope; annotate complete eligible page readings; independent authorship and review before CPU and execution freeze",
+  "limits": [
+    "Source families are declared review units, not certified statistically independent samples.",
+    "No exact hash/URI match does not exclude shared lineage or historical content; see history screening.",
+    "Primary PDF page totals include unannotated pages; model and file counts are not verified fact counts.",
+    "HTML sections of one manual and two METEK documents do not create extra family groups.",
+    "Old corpus and QA/SFT overlap is disclosed; actual checkpoint training lineage and pretraining remain unknown.",
+    "Byte verification is not independent semantic reference or proof the planned representation improves answers."
+  ],
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_coverage_v2/design.json": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e",
+    "artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json": "8918c2abbf3e72139cb2dc6dd9a20e7b969c3eab1afee707eb71dec7eb384906",
+    "artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json": "2dd0694adc915bed97d31dbf7ecff71e9e2847931b508a43aaa130b3066acc36",
+    "artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json": "185e7752c5cd748b5e0c3a7dab679ed273d3f568e73c5f94e78010be70e72269",
+    "artifacts/thesis_direction_review/radar_sources_v2/candidate_extension.json": "8ffa14ec771d08b622202b0e0cbd1ed6d81fc310a645b5c7f466f039afca106f",
+    "artifacts/thesis_direction_review/radar_sources_v2/history_inputs.json": "b6632f1d7694e04dfb37a530fa1d2de19ca78af522e2e65789a36b332d78be8c",
+    "artifacts/thesis_direction_review/radar_sources_v2/history_screening.json": "6d35c307e108c9ad10d6e6d353df9cb223359f04da6b151232de9ec33e5a1c2a",
+    "artifacts/thesis_direction_review/radar_sources_v2/marine_admission.json": "5bf3fd35a210242cd8b148a01eeaa187326b2b85ec04e45af3037bf6243ca024",
+    "artifacts/thesis_direction_review/radar_sources_v2/replacement_admission.json": "323aaa4533866d5e882b7d4a186a336aae0bde07c1c954b82a341db2a3fdd3e8",
+    "artifacts/thesis_direction_review/radar_sources_v2/source_preparation_review.json": "2a1c5693736f085a78766855d9879357f528cbd4310c71b7a76e59a7eb07cc73",
+    "artifacts/thesis_direction_review/radar_sources_v2/weather_admission.json": "a92238b06854ead053d12aeefd39f5bda27ea815af8ad41ce002ae7bcb4f3de1",
+    "scripts/capture_radar_coverage_sources.py": "ef192b3e2585ac11974acdde9b6c2c8b1fc4e1c8e4fde9649e33dc2e96844ada"
+  },
+  "audit_code_sha256": "d7392f736f0c88344445430f8a4cf2704ecb83932a2c03c7e1a7e07827a63c3d"
+}

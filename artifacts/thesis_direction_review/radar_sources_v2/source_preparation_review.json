@@ -1,0 +1,122 @@
+{
+  "version": "radar_source_preparation_independent_AI_review_v2",
+  "reviewed_at_utc": "2026-10-07T07:12:04.160149+00:00",
+  "reviewer": "AI /root/coverage_weather_sources",
+  "author_of_reviewed_inputs": "AI /root",
+  "human_review": false,
+  "independent_agent_review": true,
+  "different_model_family_claimed": false,
+  "review_scope": "source preparation, version boundaries, archive identities, key-page readability and stated admission limits; not per-reading annotation or QA acceptance",
+  "status": "no_blocking_issue_found_within_source_preparation_scope",
+  "blocking_issues": [],
+  "model_run_ready": false,
+  "evaluation_admitted": false,
+  "reference_gold_certified": false,
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_sources_v2/marine_admission.json": "5bf3fd35a210242cd8b148a01eeaa187326b2b85ec04e45af3037bf6243ca024",
+    "artifacts/thesis_direction_review/radar_sources_v2/replacement_admission.json": "323aaa4533866d5e882b7d4a186a336aae0bde07c1c954b82a341db2a3fdd3e8",
+    "artifacts/thesis_direction_review/radar_sources_v2/candidate_extension.json": "8ffa14ec771d08b622202b0e0cbd1ed6d81fc310a645b5c7f466f039afca106f"
+  },
+  "checks": {
+    "archive_byte_checks": {
+      "original_capture_files_checked": 26,
+      "capture_metadata_and_derived_files_checked": 121,
+      "sha256_and_size_match": true,
+      "input_hash_links_match": true,
+      "note": "Includes failed HTML/error responses as retained evidence; they are not counted as primary source documents."
+    },
+    "counts_and_grouping": {
+      "marine_primary_pdf_documents": 3,
+      "marine_primary_pdf_pages": 66,
+      "raymarine_primary_manual_html_sections": 15,
+      "metek_primary_pdf_documents": 2,
+      "metek_primary_pdf_pages": 4,
+      "reviewed_candidate_groups": 6,
+      "groups_with_primary_bytes": 5,
+      "simrad_pending_access_groups": 1,
+      "finding_zh": "同册多型号、Raymarine的15段和METEK两份资料分别合在各自单一组；Simrad失败未作为主件，替补不删除其历史。"
+    },
+    "actual_visual_inspection": {
+      "image_count": 8,
+      "images": [
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-33.png",
+          "sha256": "dd28447f0d7ba3962279b835be87f5e49b7a12b8da4b9c69302f0866809440af"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-34.png",
+          "sha256": "cc00f0180fd3276f4b0a5b877ec6dd1a578f0baf90092bf06afcd0e191dbe21d"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/render/page-44.png",
+          "sha256": "00d36b6d3a8d6cddcc98473e410412f1cf4951648fc1523beb07a9fd9dfca68f"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/render/page-6.png",
+          "sha256": "214be15407379bc8944ce70d1c674be948a10978fda27d7863638f8d8eeb6789"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/render/page-12.png",
+          "sha256": "273e6fad7073416b200010573efe257b12b18f5855c84d7adb9d41d2db324af9"
+        },
+        {
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/render/page-13.png",
+          "sha256": "6fe5cff3c57f7f2130d9e8c16c4761e735fc1e9a03a2d824bfbe3e6eb460e3d6"
+        },
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr2_20230929/render/page-2.png",
+          "sha256": "c73dc1b309c7986e9d9b3c2df5b6e96a949c3d781964efd89adfb23a69746b0e"
+        },
+        {
+          "path": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/render/page-2.png",
+          "sha256": "3fa8f99abc3ae6ee610560662a937a116143f3850e213d39692812f4c34da722"
+        }
+      ],
+      "finding_zh": "指定型号表头、脚注、版本与量值角色均可读；只覆盖列出的页面，不宣称整本手册逐条核验。"
+    },
+    "html_inspection": {
+      "raymarine_sections_version_checked": 15,
+      "version": "87402 Rev 9 en-US",
+      "inspected_detail_source_ids": [
+        "raymarine_cyclone_spec_index",
+        "raymarine_cyclone_pro_spec_index",
+        "raymarine_spec_power",
+        "raymarine_spec_power_pro",
+        "raymarine_spec_transmitter",
+        "raymarine_spec_transmitter_pro",
+        "jrc_5200_entry",
+        "raymarine_cyclone_entry",
+        "metek_mrr_pro_entry"
+      ],
+      "method": "Local raw HTML and parsed text/parent links; no rendered browser screenshot claimed"
+    },
+    "conflict_boundaries": [
+      {
+        "source": "JRC",
+        "finding_zh": "原PDF型号/功耗列与已存官网规格差异真实可见；主件限定为指定版本PDF，网页冲突不进入事实输入。未宣称现行设备真值矛盾已解决。"
+      },
+      {
+        "source": "Raymarine",
+        "finding_zh": "本地手册普通/Pro页面父级可区分，即使文件名含Pro；55W/110W的版内归属与网页FAQ100-Watts差异分别保留。网页为辅助材料，15段仅一册一族。"
+      },
+      {
+        "source": "METEK",
+        "finding_zh": "PRO页脚08.07.2024与文件名0705分别记录；PDF高度门与入口254表述有差异，入口不混为PDF事实。MRR-PRO第一页明确继承MRR-2，两个文档计一组。"
+      }
+    ],
+    "history_and_execution_limits_zh": "报告仅引用另列历史筛查，没有宣称整个项目、当前权重或预训练未见；所有评价准入及模型就绪标志为false。未降低八组/96题目标或必要性门槛。"
+  },
+  "not_reviewed_as_independent": [
+    "weather_admission.json authored by this reviewer",
+    "history_screening.json authored by this reviewer",
+    "future curated readings, questions, references, retrieval chunks and model outputs"
+  ],
+  "outstanding_prerequisites_zh": [
+    "root汇总来源及历史族标识的显式对应和准入范围。",
+    "统一字段范围下完整整理读法与限定，独立出题和语义复核。",
+    "核对真实竞争读法覆盖、信息无损往返、上下文预算后冻结实际运行协议。"
+  ],
+  "new_downloads": 0,
+  "new_questions": 0,
+  "new_model_runs": 0
+}

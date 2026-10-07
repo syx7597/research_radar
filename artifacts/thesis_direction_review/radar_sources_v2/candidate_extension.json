@@ -1,0 +1,33 @@
+{
+  "version": "radar_source_candidate_extension_v2",
+  "registered_on": "2026-10-07",
+  "reason_zh": "原八个候选中Simrad两次官方字节归档失败（HTTP403/错误路径），保留失败；在出题和模型输出前追加一个气象雷达家族候选以补来源数量缺口，不用第三方镜像冒充官方原件。",
+  "candidate": {
+    "publisher": "METEK",
+    "family_id": "metek_mrr",
+    "family_label": "Micro Rain Radar MRR-2 / MRR-PRO",
+    "application": "weather_radar",
+    "official_entry": "https://metek.de/product/mrr-pro/",
+    "candidate_documents": [
+      "https://metek.de/wp-content/uploads/2016/12/2024-0705_MRR-PRO_datasheet_eng.pdf",
+      "https://metek.de/wp-content/uploads/2014/05/20230929_Datenblatt_MRR-2.pdf"
+    ],
+    "family_rule_zh": "MRR-2与MRR-PRO为同一宽家族一个组；不以两个文档补两组，历史暴露须另查。"
+  },
+  "design_change": {
+    "target_source_family_components": 8,
+    "target_questions": 96,
+    "necessity_gate_changed": false,
+    "evaluation_metric_changed": false,
+    "model_configuration_changed": false,
+    "candidate_added": true,
+    "Simrad_removed_from_history": false
+  },
+  "state_at_registration": {
+    "new_questions": 0,
+    "new_curated_readings": 0,
+    "new_model_runs": 0,
+    "new_training_runs": 0
+  },
+  "status": "additional_candidate_pending_archive_history_and_readability"
+}

@@ -2,11 +2,23 @@
 
 更新：2026-10-07；历史资产基线审计为2026-09-26。主线见[论文主线与框架](THESIS_ROUTE_REVIEW.md)，下一步见[执行计划](ROADMAP.md)。以下区分当前训练与历史资产，不能把旧结果视作新方法成果。
 
-## 本轮完成：数据构建章与下一轮覆盖设计
+## 本轮完成：官方来源归档、版本核对及历史排查
+
+[来源准备汇总](../artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json)已完成：9个候选中8组有可用主件，8家厂商，气象与船用各4组；8份PDF共78页、同一Raymarine手册的15个HTML段落、8份辅助网页。23个主型号包含同族变体；页数、型号数和URL数都不是独立事实或独立样本数。171个本地原件、派生件和抓取元数据文件通过SHA256/大小核验，全文、PNG和PDF保存在忽略的`data/radar_sources_v2/`。
+
+Simrad候选网页和官方替代手册均未取得原件，两次HTTP失败保留；Furuno原入口返回的条款HTML也保留为失败证据，不算技术文档。在出题和模型输出前登记[METEK替补](../artifacts/thesis_direction_review/radar_sources_v2/candidate_extension.json)，MRR-2与MRR-PRO有明确继承关系，两份主件合成一个组。原设计的8组、96题目标及48/6/12必要性门槛没有降低。
+
+[气象来源记录](../artifacts/thesis_direction_review/radar_sources_v2/weather_admission.json)、[船用来源记录](../artifacts/thesis_direction_review/radar_sources_v2/marine_admission.json)和[替补记录](../artifacts/thesis_direction_review/radar_sources_v2/replacement_admission.json)分别记录实际版本与语义注意项。Furuno采用美国官方站K版而非未取得的G3；JRC官网与所链PDF存在型号/功耗差异；Raymarine营销FAQ与官方手册不一致；METEK入口与当前PDF高度门描述不同。后续只基于声明版本的主PDF/手册，不混用辅助网页，也不声称解决现实设备真值矛盾。[另一AI来源准备复核](../artifacts/thesis_direction_review/radar_sources_v2/source_preparation_review.json)实际检查8张关键页图和Raymarine父级/版本，未发现本阶段阻断问题；不是逐条读法或QA验收，未将该agent本人编制的气象/历史报告算作独立复核。
+
+[历史别名筛查](../artifacts/thesis_direction_review/radar_sources_v2/history_screening.json)覆盖318文件、72,359,852字节，旧QA复核4277/582/542=5401，SFT4277。Ranger、GMWR、DRS-NXT、HALO有旧同族记录；其中GMWR和DRS-NXT各命中1条原QA与1条SFT，HALO命中2条原QA及22条SFT（含工具枚举），Ranger只在旧语料/KG命中。当前8组中的GMWR/DRS-NXT不能宣传为全项目家族未见。WRS300未检出，其他窄词未检出也不是完整隔离证明，JMA其他型号谱系及GMR/MRR裸简称仍有歧义。现有权重是否用过这些旧文件和基座预训练暴露仍未知；已知调试原件URI/哈希无精确交集不抵消上述历史重叠。
+
+[标注范围](../artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json)已在编题前声明13页PDF、13个完整HTML内容段。先整理页内全部合格的主型号/部件技术读法和排除/歧义清单，再独立出题与语义复核，并由另一审计者对照旧QA意图和来源；命中或无法排除的衍生题仅作开发。当前新读法、新QA、训练和模型运行均为0，必要性门槛尚不能验收。下一步是数据标注，不开GPU；累计账本保持24.040/72小时。
+
+## 前一轮完成：数据构建章与下一轮覆盖设计
 
 [第三章数据构建稿](../thesis/current/03_radar_data_construction.tex)及[导出清单](../thesis/current/data_evidence_manifest.json)已完成，6张表、109项数据字段可从公开汇总重建。历史10,744实体、21,928边和16,609属性仅作库存；旧自动QA、12条开发读法、100组合成接口材料和4来源24题分别登记用途。当前接口仅有三种精确记录查询，不把字段归档写成完整图推理、单位计算或版本消歧。第三至六章均有工作稿；学校模板、PDF、相关工作完善与最终领域评价仍未完成。
 
-[覆盖与表示设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)已登记，尚不是执行冻结协议。目标为8个新来源/家族连通组、至少5家厂商、两个应用类别、约96题；数值形式24题、限定属性20题、表格绑定28题、简单对照16题、限定范围列举8题，均为来源驱动的工作量目标，不为配额造事实。当前只有[8个官方候选入口](../artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json)，新归档资料和新题均为0。
+[覆盖与表示设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)已登记，尚不是执行冻结协议。目标为8个新来源/家族连通组、至少5家厂商、两个应用类别、约96题；数值形式24题、限定属性20题、表格绑定28题、简单对照16题、限定范围列举8题，均为来源驱动的工作量目标，不为配额造事实。设计登记时只有[8个官方候选入口](../artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json)，当时新归档资料和新题均为0；后续归档与替补见上节。
 
 方法必要性门槛是至少48题在固定证据集合中存在真实竞争读数、覆盖6个来源组，且至少12题涉及两个限定维度或多值对应。达不到则取消bound-vs-flat，不退化为没有研究问题的格式搜索。固定BM25取得原文页，按页映射全部预先整理记录；完整flat与bound共享同一元组、多重性、词表及记录顺序，必须无损往返。禁止用参考查询、目标事实ID或题型标签过滤答案。raw原文页只是系统参照，template完整展示只评价资料完整性和冗余，不混进模型正确率。
 
@@ -14,7 +26,7 @@
 
 [已见登记](../artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json)包括10份来源/10个家族组、48个历史编号和72个问法文本指纹；这些编号和翻译版本仍对应原12个开发目标及新24题，不能计成72个独立问题。新增[元数据审计](../experiments/radar_domain/source_split_audit.py)及17项合成CPU测试，检查来源/家族/等价题连通、暴露传播、悬空/重复ID、枚举与AI身份声明。[实际回归](../artifacts/thesis_direction_review/radar_coverage_v2/design_check.json)允许24题继续用于开发，但阻断将其改成评价候选；即使模拟更换题号/指纹并清空已见标志，来源闭包仍阻断。此检查不读取新原文、认证事实或证明未知别名无重叠。
 
-未来仅一轮三路LLM+一路CPU展示，无训练，暂定上限2 GPU小时；最终预算、真实题数、输入长度和哈希须在运行前冻结。主指标为正文正确且有证据和有效引用的联合比例；bound相对完整flat净增至少ceil(0.05N)、至少3个来源组净增、错绑不增加才考虑继续。这是投入标准，不是显著性保证。未达到即保留零/负结果并收束；AI参考不能升级为人工金标。下一步先核验候选来源身份/版本并归档，再按设计整理读法与题目，本轮没有GPU任务，累计GPU账本仍为24.040/72小时。
+未来仅一轮三路LLM+一路CPU展示，无训练，暂定上限2 GPU小时；最终预算、真实题数、输入长度和哈希须在运行前冻结。主指标为正文正确且有证据和有效引用的联合比例；bound相对完整flat净增至少ceil(0.05N)、至少3个来源组净增、错绑不增加才考虑继续。这是投入标准，不是显著性保证。未达到即保留零/负结果并收束；AI参考不能升级为人工金标。该阶段安排的来源归档现已完成初审，接下来按声明范围整理读法与题目；没有新增GPU任务，累计账本仍为24.040/72小时。
 
 ## 前一轮完成：新来源固定评价与双AI正文审阅
 

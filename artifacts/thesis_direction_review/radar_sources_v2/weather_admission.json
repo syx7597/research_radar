@@ -1,0 +1,527 @@
+{
+  "version": "weather_official_source_admission_v2",
+  "recorded_at_utc": "2026-10-07T06:56:35.944515+00:00",
+  "reviewer": "AI /root/coverage_weather_sources",
+  "human_review": false,
+  "status": "source_archive_and_initial_readability_review_only",
+  "scope_zh": "三组气象雷达候选的官方字节归档、身份/版本和关键页视觉可读性初审；未制作QA、未整理完整事实读法、未运行任何模型。",
+  "counts": {
+    "candidate_groups": 3,
+    "primary_PDF_documents": 3,
+    "primary_PDF_pages": 8,
+    "auxiliary_HTML_snapshots": 5,
+    "new_questions": 0,
+    "new_curated_readings": 0,
+    "new_model_runs": 0,
+    "new_training_runs": 0
+  },
+  "model_run_ready": false,
+  "source_isolation_certified": false,
+  "historical_overlap_checked_by_this_agent": false,
+  "methods": {
+    "browser": "official sites opened and PDF links followed using web browser",
+    "archive": "verified HTTPS GET; original received bytes preserved",
+    "text_and_render": "macOS PDFKit through Swift; page renders at up to 1500x2100",
+    "pdf_metadata": "pypdf 6.19.0 from existing /private/tmp/radar_source_pdfdeps",
+    "visual_review": "AI inspected local PNG page renders; not human review"
+  },
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_coverage_v2/design.json": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e",
+    "artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json": "2dd0694adc915bed97d31dbf7ecff71e9e2847931b508a43aaa130b3066acc36"
+  },
+  "sources": [
+    {
+      "source_id": "eec_products_catalog",
+      "request_uri": "https://www.eecweathertech.com/eec-products.php",
+      "final_uri": "https://www.eecweathertech.com/eec-products.php",
+      "retrieved_at_utc": "2026-10-07T06:54:38.916482+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:54:40.444760+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified_http": null,
+      "etag_http": null,
+      "sha256": "33480479b4fbff6368ff505dd83687bb08173f7dd7ac8339b32126d034e1cf76",
+      "size_bytes": 18809,
+      "local_relative_path": "data/radar_sources_v2/weather/eec_products_catalog.html",
+      "official_browser_verified": true,
+      "archive_role": "identity_or_entry_support_only"
+    },
+    {
+      "source_id": "eec_ranger_x_band",
+      "request_uri": "https://www.eecweathertech.com/pdf/EEC-Ranger-X-Band.pdf",
+      "final_uri": "https://www.eecweathertech.com/pdf/EEC-Ranger-X-Band.pdf",
+      "retrieved_at_utc": "2026-10-07T06:53:40.328746+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:53:43.399108+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified_http": "Wed, 01 Sep 2021 16:56:00 GMT",
+      "etag_http": "\"612fb0a0-1d993d\"",
+      "sha256": "d8598b0e5d21678c7ddfd1321aae32d54599da9b9d6e2b7d2a8b83ee8a7f4036",
+      "size_bytes": 1939773,
+      "local_relative_path": "data/radar_sources_v2/weather/eec_ranger_x_band.pdf",
+      "retrieval_note": "Initial urllib GET returned HTTP 403; normal curl GET with TLS verification succeeded. No restriction bypass.",
+      "official_browser_verified": true,
+      "archive_role": "primary_document",
+      "pdf": {
+        "page_count": 4,
+        "metadata": {
+          "/CreationDate": "D:20160526154406-04'00'",
+          "/Creator": "Adobe Illustrator CC 2015 (Macintosh)",
+          "/GTS_PDFXConformance": "PDF/X-1a:2001",
+          "/GTS_PDFXVersion": "PDF/X-1:2001",
+          "/ModDate": "D:20160526154511-04'00'",
+          "/Producer": "Adobe PDF library 15.00",
+          "/Title": "EEC-RANGER-brochure-2016-web",
+          "/Trapped": "/False"
+        },
+        "encrypted": false
+      },
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p01.txt",
+          "sha256": "69207eb619e8d0448ebabc66e30d802e1f9442021035b40e33038df98b802b2d",
+          "size_bytes": 396,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p02.txt",
+          "sha256": "ab33036d9e741b57a1bfefb9b815dbbf1a76692ec8cbe32bad1a3ffab2090c1c",
+          "size_bytes": 3562,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p03.txt",
+          "sha256": "f2e063bdeb53afd0929fd552aa90328408402e2315d94a379d6e0e0e9a872866",
+          "size_bytes": 3482,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p04.txt",
+          "sha256": "23c97f346053b7ee5a98a5ab0d6fbb12f1b7b23be10f894bf2271d8a78901215",
+          "size_bytes": 767,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p01.png",
+          "sha256": "b0f316490fa8f305caf894acedcbaaa7123cc983092b167b9d63bcdb767cba50",
+          "size_bytes": 2373656,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p02.png",
+          "sha256": "7004e0a0e916778cc5f4fa923a6b89cb24b219775574ba7f16de94e065e0e5c8",
+          "size_bytes": 1926946,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p03.png",
+          "sha256": "6faac74c36fe06502883d37419644b2af9989f26028360086009b795612382f6",
+          "size_bytes": 537593,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.p04.png",
+          "sha256": "02ac8dc9275a9e4059f537022fc139160dfe47318b0046e75c9db27e18b83b79",
+          "size_bytes": 1645298,
+          "role": "PDFKit page render"
+        }
+      ]
+    },
+    {
+      "source_id": "gamic_gmwr_25_ws",
+      "request_uri": "https://www.gamic.com/doc/GAMIC_GMWR-25-WS.pdf",
+      "final_uri": "https://www.gamic.com/doc/GAMIC_GMWR-25-WS.pdf",
+      "retrieved_at_utc": "2026-10-07T06:52:56.930317+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:53:00.780688+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified_http": "Fri, 27 Jun 2025 12:57:06 GMT",
+      "etag_http": null,
+      "sha256": "38d4e2d64af204571043369ab39f8953cd94f386ef0a3982132347884f985612",
+      "size_bytes": 374704,
+      "local_relative_path": "data/radar_sources_v2/weather/gamic_gmwr_25_ws.pdf",
+      "official_browser_verified": true,
+      "archive_role": "primary_document",
+      "pdf": {
+        "page_count": 2,
+        "metadata": {
+          "/trapped": "false",
+          "/Author": "GAMIC GmbH",
+          "/Subject": "Weather surveillance radar for airports and other applications",
+          "/Creator": "Serif Affinity Publisher 2 2.6.3",
+          "/Title": "GMWR-25-WS",
+          "/CreationDate": "D:20250627125002+02'00'",
+          "/Producer": "PDFlib+PDI 10.0.0p1-i (Win32)"
+        },
+        "encrypted": false
+      },
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p01.txt",
+          "sha256": "6df98203aecc14abfa267335eabc2944c182f6a58beda3c9cf3fe677ab11b08e",
+          "size_bytes": 3244,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p02.txt",
+          "sha256": "7baf01a39b4e21384723f1e00d311ec6db6cb2d43bbf8117557cb5a3cc5148d5",
+          "size_bytes": 1580,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p01.png",
+          "sha256": "d1b9f2a4026d218d26d9e4920b545a513d9a661820387ff4c065f1a191205628",
+          "size_bytes": 1421982,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p02.png",
+          "sha256": "ac249324edc0b6344bc4afd292ac726e543c14d2b794660bdf4dce0439b99627",
+          "size_bytes": 974193,
+          "role": "PDFKit page render"
+        }
+      ]
+    },
+    {
+      "source_id": "gamic_radar_systems_catalog",
+      "request_uri": "https://www.gamic.com/radar-systems",
+      "final_uri": "https://www.gamic.com/radar-systems",
+      "retrieved_at_utc": "2026-10-07T06:54:34.335677+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:54:36.559759+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified_http": "Tue, 06 Oct 2026 21:00:45 GMT",
+      "etag_http": null,
+      "sha256": "1307d1109b8545a892f461cdb4cc5b3ec9cd8b0874fc327e146a71152dbe97e9",
+      "size_bytes": 78478,
+      "local_relative_path": "data/radar_sources_v2/weather/gamic_radar_systems_catalog.html",
+      "official_browser_verified": true,
+      "archive_role": "identity_or_entry_support_only"
+    },
+    {
+      "source_id": "gamic_solid_state_family_page",
+      "request_uri": "https://www.gamic.com/radar-systems/gmwr-solid-state",
+      "final_uri": "https://www.gamic.com/radar-systems/gmwr-solid-state",
+      "retrieved_at_utc": "2026-10-07T06:54:36.562598+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:54:38.911482+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified_http": "Wed, 07 Oct 2026 00:02:46 GMT",
+      "etag_http": null,
+      "sha256": "249cc3c74d60f6691abdadc686958ce2f284827fce57572844d678451610314e",
+      "size_bytes": 109636,
+      "local_relative_path": "data/radar_sources_v2/weather/gamic_solid_state_family_page.html",
+      "official_browser_verified": true,
+      "archive_role": "identity_or_entry_support_only"
+    },
+    {
+      "source_id": "vaisala_wrs300_b212854en_e",
+      "request_uri": "https://docs.vaisala.com/api/khub/documents/2gUf291gL7qfqQRIqTA7Bg/content",
+      "final_uri": "https://docs.vaisala.com/api/khub/documents/2gUf291gL7qfqQRIqTA7Bg/content",
+      "retrieved_at_utc": "2026-10-07T06:52:18.100515+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:52:19.713608+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified_http": "Tue, 11 Aug 2026 05:48:56 GMT",
+      "etag_http": "\"b68b68dc1335799b32bfb4ec2620d0f832c73a51fa369751cc461a609e4b48ca\"",
+      "sha256": "b68b68dc1335799b32bfb4ec2620d0f832c73a51fa369751cc461a609e4b48ca",
+      "size_bytes": 144177,
+      "local_relative_path": "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.pdf",
+      "official_browser_verified": true,
+      "archive_role": "primary_document",
+      "pdf": {
+        "page_count": 2,
+        "metadata": {
+          "/Title": "Weather Radar WRS300 Datasheet B212854EN-E",
+          "/Author": "Vaisala",
+          "/Creator": "AH XSL Formatter V6.5 MR6 for Windows (x64) : 6.5.9.33828 (2018/06/29 17:18JST)",
+          "/Producer": "Antenna House PDF Output Library 6.5.1299 (Windows (x64))",
+          "/CreationDate": "D:20260810095154+02'00'",
+          "/ModDate": "D:20260810095154+02'00'",
+          "/Trapped": "/False"
+        },
+        "encrypted": false
+      },
+      "derived_local_artifacts": [
+        {
+          "path": "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p01.txt",
+          "sha256": "3b4e96d789611f323073425bd26cf145194b1e2556676ececa02dcc1dfdb41a2",
+          "size_bytes": 2319,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p02.txt",
+          "sha256": "a03791113c97723418a4bd852e9559d2f3c018cc6f25cffbc3d0e186ffaafa64",
+          "size_bytes": 3604,
+          "role": "PDFKit page text"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p01.png",
+          "sha256": "efd9fdd5c59af6f36de1a54b964e7ffdc4360f9ee157683ba7a7ddb9f215f042",
+          "size_bytes": 762571,
+          "role": "PDFKit page render"
+        },
+        {
+          "path": "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p02.png",
+          "sha256": "350dc74a0c192809a28232a4cb2de518c2f75c208d5b2defe1371177f1819bc6",
+          "size_bytes": 527021,
+          "role": "PDFKit page render"
+        }
+      ]
+    },
+    {
+      "source_id": "vaisala_wrs300_document_entry",
+      "request_uri": "https://docs.vaisala.com/access/sources/ud/document?aton_code=B212854EN",
+      "final_uri": "https://docs.vaisala.com/v/u/2gUf291gL7qfqQRIqTA7Bg",
+      "retrieved_at_utc": "2026-10-07T06:52:15.519063+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:52:18.098357+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "last_modified_http": null,
+      "etag_http": null,
+      "sha256": "8001b823f1ed3ef1d1ca74d3127e2440be9b493eae7c5630b0f0a00ace35dd1b",
+      "size_bytes": 2763,
+      "local_relative_path": "data/radar_sources_v2/weather/vaisala_wrs300_document_entry.html",
+      "official_browser_verified": true,
+      "archive_role": "identity_or_entry_support_only"
+    },
+    {
+      "source_id": "vaisala_wrs300_product",
+      "request_uri": "https://www.vaisala.com/en/products/weather-environmental-sensors/wrs300",
+      "final_uri": "https://www.vaisala.com/en/products/weather-environmental-sensors/wrs300",
+      "retrieved_at_utc": "2026-10-07T06:52:13.701663+00:00",
+      "retrieval_completed_at_utc": "2026-10-07T06:52:15.516547+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified_http": "Wed, 07 Oct 2026 06:52:14 GMT",
+      "etag_http": null,
+      "sha256": "84332d07eb4ad1e5dbc80615131aa5e5a1d7ecf8aeb11356f41fac83e6e1ae1f",
+      "size_bytes": 139110,
+      "local_relative_path": "data/radar_sources_v2/weather/vaisala_wrs300_product.html",
+      "official_browser_verified": true,
+      "archive_role": "identity_or_entry_support_only"
+    }
+  ],
+  "candidate_groups": [
+    {
+      "candidate_label": "Vaisala WRS300",
+      "publisher": "Vaisala",
+      "application": "weather_radar",
+      "proposed_family_id": "vaisala_wrs300",
+      "primary_source_id": "vaisala_wrs300_b212854en_e",
+      "auxiliary_source_ids": [
+        "vaisala_wrs300_product",
+        "vaisala_wrs300_document_entry"
+      ],
+      "canonical_document_id": "vaisala:B212854EN-E:en",
+      "printed_version": "B212854EN-E; copyright Vaisala 2026",
+      "printed_version_locator": "PDF page 2 footer",
+      "document_models": [
+        "WRS300"
+      ],
+      "model_option_note_zh": "两档H/V通道功率为同一型号配置，不能拆成独立来源或家族；RVP10为处理器，RCP8为控制器。",
+      "proposed_family_aliases": [
+        "WRS300",
+        "WRS 300",
+        "Weather Radar WRS300"
+      ],
+      "family_completeness_zh": "仅确认本册型号和选项；WRS400、WRM200等其他Vaisala产品并非本册型号。家族共享/谱系须结合历史审计，不据品牌相同直接判为同型。",
+      "source_relations": [
+        {
+          "from": "vaisala_wrs300_product",
+          "to": "vaisala_wrs300_document_entry",
+          "kind": "official_datasheet_link"
+        },
+        {
+          "from": "vaisala_wrs300_document_entry",
+          "to": "vaisala_wrs300_b212854en_e",
+          "kind": "official_pdf_attachment"
+        }
+      ],
+      "browser_document_entry_uri": "https://docs.vaisala.com/v/u/B212854EN-E/en-US",
+      "entry_identity_note_zh": "浏览器解析显示版本路径，下载入口HTTP最终URI为不透明文档ID；两者由同一官方入口链接到已存PDF，分别保留，不静默归一。",
+      "visual_review": {
+        "pages_one_based": [
+          2
+        ],
+        "local_images": [
+          "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p02.png"
+        ],
+        "regions": [
+          "左列罩内部件、发射机、接收机和天线",
+          "右列机柜、系统、处理器和页脚版本"
+        ],
+        "result_zh": "表格边界与跨行限定清晰；已逐区核对关键量值角色，非全文事实双人复核。"
+      },
+      "coverage_types": [
+        "ranges_and_bounds",
+        "component_qualified_environment",
+        "configuration_by_typical_or_maximum_power",
+        "receiver_vs_system_measurement_conditions",
+        "polarization_channels",
+        "discrete_options"
+      ],
+      "semantic_cautions_zh": [
+        "机柜和罩内部件环境不可并为系统统一温度。",
+        "发射功率与耗电、典型值与最大值、接收机与系统动态范围保留不同角色和条件。",
+        "位置精度行肉眼与文本均未标角度单位；该读法须保留原缺失或排除，不能默补。",
+        "营销入口非当前PDF技术值的覆盖依据；后续只基于冻结版本标注。"
+      ],
+      "annotation_candidate_status": "archive_and_readability_passed_pending_history_and_semantic_annotation",
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false
+    },
+    {
+      "candidate_label": "EEC Ranger X1/X5",
+      "publisher": "Enterprise Electronics Corporation (EEC)",
+      "application": "weather_radar",
+      "proposed_family_id": "eec_ranger_x_band",
+      "primary_source_id": "eec_ranger_x_band",
+      "auxiliary_source_ids": [
+        "eec_products_catalog"
+      ],
+      "canonical_document_id": "eec:RANGER-X1-X5-brochure:2016:en",
+      "printed_version": "copyright 2016; no separate revision code visible",
+      "printed_version_locator": "PDF page 4 footer",
+      "document_models": [
+        "RANGER-X1",
+        "RANGER-X5"
+      ],
+      "model_option_note_zh": "每个型号都有三档天线尺寸，嵌套列和罩体脚注必须随配置保留，同册所有型号归同组。",
+      "proposed_family_aliases": [
+        "Ranger X1",
+        "Ranger-X1",
+        "RANGER-X1",
+        "Ranger X5",
+        "Ranger-X5",
+        "RANGER-X5",
+        "Ranger X-Band"
+      ],
+      "family_completeness_zh": "本册X1和X5已确认；现行官方目录列Endurance/Defender，未确认Ranger与后续产品的改名、继承或独立关系，不能擅自互作别名。",
+      "source_relations": [
+        {
+          "from": "eec_products_catalog",
+          "to": "eec_ranger_x_band",
+          "kind": "same_official_publisher_only_no_current_catalog_link_asserted"
+        }
+      ],
+      "visual_review": {
+        "pages_one_based": [
+          3,
+          4
+        ],
+        "local_images": [
+          "data/radar_sources_v2/weather/eec_ranger_x_band.p03.png",
+          "data/radar_sources_v2/weather/eec_ranger_x_band.p04.png"
+        ],
+        "regions": [
+          "第3页双型号系统表与嵌套天线列",
+          "第3页发射机通道/总量行和罩体脚注",
+          "第4页版权年份"
+        ],
+        "result_zh": "型号列、三档配置列与脚注可辨；纯文本抽取顺序不能替代表格视觉绑定。"
+      },
+      "coverage_types": [
+        "model_by_antenna_configuration",
+        "channel_vs_total_peak_power",
+        "minimum_maximum_typical_roles",
+        "continuous_ranges",
+        "configuration_dependent_radome",
+        "performance_vs_survival_wind"
+      ],
+      "semantic_cautions_zh": [
+        "系统输出功率和发射机每通道/总功率行的量值角色必须分开。",
+        "天线增益、波束宽度、罩体脚注必须保留天线尺寸与型号双限定。",
+        "PRF行原印刷值后标PRF而非明确Hz，不自动修订原单位。",
+        "旧年份并非失效证明，也不是现行型号规范证明；评价须注明来源版本。"
+      ],
+      "annotation_candidate_status": "archive_and_readability_passed_pending_history_and_semantic_annotation",
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false
+    },
+    {
+      "candidate_label": "GAMIC GMWR",
+      "publisher": "GAMIC GmbH",
+      "application": "weather_radar",
+      "proposed_family_id": "gamic_gmwr",
+      "primary_source_id": "gamic_gmwr_25_ws",
+      "auxiliary_source_ids": [
+        "gamic_radar_systems_catalog",
+        "gamic_solid_state_family_page"
+      ],
+      "canonical_document_id": "gamic:GMWR-25-WS:v2.2:2025-06-27:en",
+      "printed_version": "v2.2 (2025-06-27)",
+      "printed_version_locator": "PDF page 2 bottom right",
+      "document_models": [
+        "GMWR-25-WS"
+      ],
+      "related_catalog_models": [
+        "GMWR-25-DP",
+        "GMWR-1000-SST",
+        "GMWR-400-SST"
+      ],
+      "model_option_note_zh": "本册仅25-WS；其他型号仅用于保守家族/历史排查，未归档其技术PDF且不进入本册事实。",
+      "proposed_family_aliases": [
+        "GMWR",
+        "GAMIC Multi-purpose Weather Radar",
+        "GMWR-25-WS",
+        "GMWR 25 WS",
+        "GMWR-25-DP",
+        "GMWR-1000-SST",
+        "GMWR-400-SST"
+      ],
+      "family_completeness_zh": "建议GMWR宽家族做保守隔离，非宣称各型号完全等价；官方当前目录与固态页可见上述型号，全部历史停产型号仍未认证。GWSP是另列信号提取器，不能合并为25-WS。",
+      "source_relations": [
+        {
+          "from": "gamic_radar_systems_catalog",
+          "to": "gamic_gmwr_25_ws",
+          "kind": "same_named_product_in_official_catalog"
+        },
+        {
+          "from": "gamic_solid_state_family_page",
+          "to": "gamic_radar_systems_catalog",
+          "kind": "related_GMWR_family_identity_only"
+        }
+      ],
+      "visual_review": {
+        "pages_one_based": [
+          1,
+          2
+        ],
+        "local_images": [
+          "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p01.png",
+          "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p02.png"
+        ],
+        "regions": [
+          "第1页用途/工作范围和侧栏GWSP",
+          "第2页接收机、天线、软件等分区表",
+          "第2页版本脚注"
+        ],
+        "result_zh": "分区标题清晰；软件最大范围不能直接绑定为整机工作探测范围。"
+      },
+      "coverage_types": [
+        "component_scoped_range",
+        "horizontal_vs_vertical_beam",
+        "nominal_vs_approximate_dynamic_range",
+        "pulse_conditioned_sensitivity",
+        "tolerance_and_range_and_options",
+        "standard_vs_optional_calibration"
+      ],
+      "semantic_cautions_zh": [
+        "第一页工作范围与第二页软件最大范围属于不同作用对象，不能消除限定后宣称数值冲突。",
+        "标称与近似动态范围需保留不同量值角色。",
+        "单极化系统与双通道处理器不是同一属性。",
+        "侧栏GWSP介绍不可归给GMWR-25-WS；数据格式上下文中并列/选项关系留待独立语义审阅。"
+      ],
+      "annotation_candidate_status": "archive_and_readability_passed_pending_history_and_semantic_annotation",
+      "eligible_for_pending_annotation": true,
+      "evaluation_admitted": false
+    }
+  ],
+  "limits_zh": [
+    "所有原PDF、HTML、页面文字和图像只在git忽略的data目录；公开文件只列元数据和简要审阅。",
+    "网络Last-Modified、PDF创建日期、纸面版本分别记录，不互相替代。",
+    "页面视觉初审只证明列/范围可读，不证明完成独立事实核验、家族全谱系认证或旧语料隔离。",
+    "下一步须先合并root历史排查，再按统一纳入规则完整整理与独立语义审阅；不据本文件直接认定96题和必要性门槛成立。"
+  ]
+}
