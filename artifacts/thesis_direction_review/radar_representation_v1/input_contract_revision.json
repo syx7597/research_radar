@@ -1,0 +1,61 @@
+{
+  "schema": "radar_representation_input_contract_revision_v1",
+  "registered_at_utc": "2026-10-07T09:37:07.669075+00:00",
+  "status": "registered_candidate_before_semantic_payload_token_measurement",
+  "reason_zh": "完整归档字段无损的首版flat/bound分别84/82题超过8192，最大68414/64911。保存该失败，不运行/截断/删题。",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_coverage_v2/design.json": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e",
+    "artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json": "755264eb40d1af05a498cdf6553171035d7467e1dfa307470da6b271bff8ac53",
+    "artifacts/thesis_direction_review/radar_representation_v1/full_record_preflight.json": "b388bebea3793432306ee4797e08e0d9d9a7893f406dc7034824941c9c88f875",
+    "data/radar_sources_v2/representation_v1/tokenizer/config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b"
+  },
+  "unchanged": [
+    "all 96 question texts and semantic references",
+    "fixed BM25 vocabulary, top4, all P(q) and E(q) record membership",
+    "all record order, subject multiplicity, value strings/types/units, complete conditions_all",
+    "record_id, family_id, subjects, component, attribute, value, conditions_all, locator, annotation_note",
+    "same Qwen2.5-3B-Instruct revision, greedy generation, max_generated=768",
+    "three LLM routes plus CPU full evidence display; no training",
+    "joint correctness gate ceil(.05*N), positive source groups>=3, binding errors do not increase"
+  ],
+  "uniform_projection": {
+    "input": "complete archived source-reading records E(q)",
+    "output": "E_sem(q), all the same records",
+    "move_to_local_audit_sidecar_only": [
+      "citation.text_sha256",
+      "citation.spans (start, end and original quote text)"
+    ],
+    "retained_citation": "citation.chunk_id unchanged",
+    "new_equal_information_contract": "decode(flat(E_sem)) == decode(bound(E_sem)) == E_sem including typed fields, sequence and duplicate multiplicity",
+    "full_archive_reconstruction": "restore(E_sem, bound audit_sidecar) == original E; the sidecar is NOT LLM input",
+    "boundary_zh": "原文quote可能有额外未整理信息；E_sem不是整个原件或全归档记录的无损压缩。两结构化臂保留相同全部声明语义字段，raw保留原文，继续仅作系统参照。不能把字节往返当做来源语义完整证明。"
+  },
+  "context_rule_before_measurement": {
+    "original_max_context": 8192,
+    "model_native_max_context": 32768,
+    "native_config_sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "reserve_generated": 768,
+    "selection": "If every prompt in all three arms fits 8192, retain it; else if every prompt fits the unchanged checkpoint native 32768, use 32768 uniformly for all arms; otherwise stop this candidate and retain failure.",
+    "not_allowed": [
+      "context above native model config",
+      "YaRN/RoPE modification",
+      "arm-specific limits",
+      "record or field removal beyond the two predeclared citation fields",
+      "question removal",
+      "new-question-driven retrieval or prompt search"
+    ]
+  },
+  "bounded_next_steps": [
+    "Review the common projection/codec and preserve all original failure artifacts.",
+    "Perform one CPU measurement for the declared E_sem payload on all 96x3 prompts, no model outputs.",
+    "If budget passes, validate the same answer/citation prompt on old seen development material only, attest remote base weights and freeze execution protocol.",
+    "If budget fails, stop this representation candidate rather than search more encodings or shrink retrieved evidence."
+  ],
+  "initial_GPU_budget_is_provisional": true,
+  "provisional_GPU_hours_max": 2.0,
+  "final_runtime_budget_freeze": "Requires old-development latency/memory check before any new evaluation; larger context is reported as a configuration revision and all arms share it.",
+  "new_model_runs": 0,
+  "new_training_runs": 0,
+  "new_question_outputs_seen": false,
+  "model_run_ready": false
+}

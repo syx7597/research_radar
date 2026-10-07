@@ -1,0 +1,73 @@
+{
+  "schema": "radar_representation_stage_decision_v1",
+  "created_at_utc": "2026-10-07T09:54:24.749470+00:00",
+  "status": "cpu_input_checks_passed_waiting_for_remote_runtime_probe",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_representation_v1/full_record_preflight.json": "b388bebea3793432306ee4797e08e0d9d9a7893f406dc7034824941c9c88f875",
+    "artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json": "a9481a4cdd3fcc4b0e6b836f8d5c5918ef347703a2bda7306f39ce9a71896d3e",
+    "artifacts/thesis_direction_review/radar_representation_v1/semantic_preflight.json": "cf016e183c264753825dd1c7b88f75bbeb3a64b24d7b0d67ebcf213b2d76cab1",
+    "artifacts/thesis_direction_review/radar_representation_v1/review_summary.json": "97fe46cb2e09a491530e43e205602425c9dbe9cd564bbd70cb96f62b2cbc64e6"
+  },
+  "completed": {
+    "questions_retained": 96,
+    "all_record_occurrences_retained": 8434,
+    "structured_roundtrips": 192,
+    "source_records_restored_with_sidecar": 502,
+    "independent_saved_message_token_recounts": 288,
+    "root_CPU_tests_passed": 38,
+    "source_question_necessity_snapshots_reverified": true
+  },
+  "preserved_failure": {
+    "complete_archive_flat_overflow_questions_at_8192": 84,
+    "complete_archive_bound_overflow_questions_at_8192": 82,
+    "original_input_and_design_overwritten": false
+  },
+  "accepted_amendment": {
+    "same_E_sem_in_flat_and_bound": true,
+    "fields_moved_to_private_sidecar": [
+      "citation.text_sha256",
+      "citation.spans"
+    ],
+    "same_record_membership_order_multiplicity_and_other_fields": true,
+    "full_original_quote_information_available_to_model": false,
+    "selected_common_max_context": 32768,
+    "max_generated_tokens": 768,
+    "largest_prompt_plus_reserved_tokens": 31720,
+    "question_or_record_drops": 0,
+    "truncation": false,
+    "semantic_payload_candidates_measured": 1
+  },
+  "remaining": {
+    "network": "Two SSH port connections timed out before authentication; no remote commands or GPU job started. Host reachability needs to be restored.",
+    "old_development_only": "Verify common answer/citation format and near-largest-context GPU memory/latency using old seen material or fact-free synthetic padding, never the new 96 model outputs.",
+    "identity": "Attest exact unadapted base weight shards, config, tokenizer/chat template, generation settings and software before formal execution.",
+    "freeze": "Freeze common three-arm execution settings and budget only after the old-development probe passes.",
+    "formal_evaluation": "At most one three-arm model evaluation on all 96 questions; CPU full-evidence display is not QA accuracy."
+  },
+  "provisional_formal_GPU_hours_cap": 2.0,
+  "old_development_probe_limits": {
+    "account": "syx",
+    "GPU_cards": 1,
+    "batch_size": 1,
+    "wall_seconds_max": 300,
+    "GPU_hours_max": 0.08333333333333333,
+    "charged_to_project_budget": true,
+    "requires_idle_device_check": true,
+    "training": false
+  },
+  "continuation_gate_unchanged": {
+    "minimum_bound_minus_flat_joint_correct": 5,
+    "minimum_source_groups_positive_net_gain": 3,
+    "bound_binding_errors_must_not_exceed_flat": true,
+    "statistical_significance_claim": false
+  },
+  "stop_rule": "If runtime is infeasible or the later efficacy gate fails, retain the full failure and stop this candidate. Do not drop questions, truncate records, search new-question prompts or start new training.",
+  "new_model_runs": 0,
+  "new_training_runs": 0,
+  "new_GPU_hours": 0,
+  "project_GPU_hours": 24.0400663155,
+  "project_GPU_hours_cap": 72,
+  "model_run_ready": false,
+  "method_benefit_established": false,
+  "thesis_main_evidence": "Previously frozen public holdout recovery-SFT results remain the main method evidence; this CPU preparation adds no answer-accuracy result."
+}

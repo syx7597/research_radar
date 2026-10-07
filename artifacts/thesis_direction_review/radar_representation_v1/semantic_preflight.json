@@ -1,0 +1,87 @@
+{
+  "schema": "radar_semantic_payload_context_preflight_v1",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json": "755264eb40d1af05a498cdf6553171035d7467e1dfa307470da6b271bff8ac53",
+    "artifacts/thesis_direction_review/radar_readings_v1/selection.json": "af06dbc7e89d18d5633170ec7576d6b483f9377185d04c5bb4c135d8b4a38441",
+    "data/radar_sources_v2/qa_v1/questions.minimal.jsonl": "e79f61b6ce5a3e13343b5eca788112f64251a68ebe06d91704e4cb32ad96bde5",
+    "data/radar_sources_v2/qa_v1/retrieval_observation.json": "f469b9ab2d69a1aefb1f7f783eb904d52500e02603128dd770f3f8129fef7e1a",
+    "data/radar_sources_v2/qa_v1/retrieval_corpus.json": "f0aeab98347f4357213d556f15de550a67f5dc3d41b63d7bb79527c1075c0ed4",
+    "experiments/radar_domain/source_rag.py": "368ccd908b25d6e3e1b423086e93c9388de1997b9a1b50ad1a5ff544ac434958",
+    "experiments/radar_domain/source_readings.py": "c850c3834ad0ae34def66cac3356731c6a1382a5ca7f347b0acadd66754fb56c",
+    "data/radar_sources_v2/curation_v1/weather.v2.json": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+    "data/radar_sources_v2/curation_v1/marine.v2.json": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+    "data/radar_sources_v2/curation_v1/raymarine.draft.json": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+    "data/radar_sources_v2/curation_v1/metek.v2.json": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909",
+    "artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json": "a9481a4cdd3fcc4b0e6b836f8d5c5918ef347703a2bda7306f39ce9a71896d3e",
+    "data/radar_sources_v2/representation_v1/full_record_v1/preflight.json": "92d7775c85d7370c1f23a55518e8b2c5b3de27fc4c766c008be6097f78da6800",
+    "experiments/radar_domain/coverage_payload.py": "d1bad012f0b059ede73cc253f87cad476dde39a1aa08c1aa21fba33712a36029",
+    "experiments/radar_domain/coverage_representation.py": "aaad3cd9971e361a74766123f97ad67c21baf5337a7e26cedd7aeeb7e84dfc95",
+    "experiments/radar_domain/coverage_preflight.py": "f56482d91a8e518eb3d970fd13d546233b960b04830e3cd46201c9ac1353ddb8",
+    "experiments/radar_domain/coverage_semantic_preflight.py": "ca5abf6309e6549108d401d2ea4518b721e068aa1d474dc5462ed40cfe2e2f0e"
+  },
+  "question_count": 96,
+  "corpus_records": 502,
+  "semantic_roundtrips": 192,
+  "archive_roundtrip_records_with_sidecar": 502,
+  "retained_fields_verified_over_all_source_records": 502,
+  "represented_record_occurrences": 8434,
+  "selected_common_max_context": 32768,
+  "reserved_generated_tokens": 768,
+  "native_model_max_context": 32768,
+  "fits_registered_candidate": true,
+  "arms": {
+    "raw": {
+      "min_input_tokens": 799,
+      "max_input_tokens": 4325,
+      "total_input_tokens": 197825,
+      "overflow_at_8192": 0,
+      "overflow_at_native_context": 0
+    },
+    "flat": {
+      "min_input_tokens": 1411,
+      "max_input_tokens": 30952,
+      "total_input_tokens": 1131526,
+      "overflow_at_8192": 60,
+      "overflow_at_native_context": 0
+    },
+    "bound": {
+      "min_input_tokens": 1423,
+      "max_input_tokens": 27449,
+      "total_input_tokens": 1022645,
+      "overflow_at_8192": 58,
+      "overflow_at_native_context": 0
+    }
+  },
+  "tokenizer_files_sha256": {
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  },
+  "model_config_sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+  "system_prompt_sha256": "a0ea942b8c6f6e5a9d91b5bc3d8aa8227b34626f3cf1b006f3d3da42b7f5fc50",
+  "local_inputs_sha256": "f315d92f8ed6b0cba237e3496b60b44fdff4749f85f2efcceb37f789d559c1d1",
+  "local_semantic_corpus_and_audit_sha256": "1c257fac97ab5d6b3df230cae6786a526a63780597290908a1d97d9e0fba2f7d",
+  "raw_inputs_unchanged_from_full_record_check": true,
+  "model_run_ready": false,
+  "new_model_runs": 0,
+  "new_GPU_hours": 0,
+  "next_action": "old_development_prompt_memory_latency_probe_then_freeze",
+  "limits": "E_sem excludes quotation text/byte spans/hash; only both structured arms share identical declared semantic fields. Sidecar reconstruction is not LLM access to the full original archive.",
+  "local_report": {
+    "path": "data/radar_sources_v2/representation_v1/semantic_payload_v1/preflight.json",
+    "sha256": "d2b0c32d85a48e2c69c08b03255889293e6106649f378f684d0d2205cf1edddf"
+  },
+  "status": "cpu_context_passed_runtime_probe_pending",
+  "measurement_environment": {
+    "python": "3.12.8",
+    "transformers": "4.56.2",
+    "tokenizers": "0.22.2"
+  },
+  "historical_metadata_clarification": "full_record_preflight.json key tokenizer_config_sha256 actually hashes model config.json; tokenizer_files_sha256 separately and correctly pins tokenizer_config.json. Historical artifact remains unchanged; this report uses model_config_sha256.",
+  "claims_not_supported": [
+    "GPU memory feasibility",
+    "latency or throughput improvement",
+    "answer correctness",
+    "method effectiveness",
+    "lossless preservation of original unstructured quotation information in LLM inputs"
+  ]
+}

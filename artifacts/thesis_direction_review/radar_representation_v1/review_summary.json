@@ -1,0 +1,92 @@
+{
+  "schema": "radar_representation_ai_review_summary_v1",
+  "reviewer": "AI /root/grpo_adapter/continuation_cli_review",
+  "human_review": false,
+  "prior_exposure": "Reviewer previously performed source/QA/gate reviews in earlier recorded phases; this is not a claim of a reference-naive history.",
+  "private_reviews": [
+    {
+      "path": "data/radar_sources_v2/representation_v1/design_revision_review.json",
+      "sha256": "a1f96c134b22c1e3207b659352aced1e30e659ba78a6e41bad56a4470257e19b"
+    },
+    {
+      "path": "data/radar_sources_v2/representation_v1/semantic_payload_review.json",
+      "sha256": "08a286e7af9ea71a10d7c208827bd1e572910818f16adaf2ddbe546f9f17be5d"
+    }
+  ],
+  "inputs_sha256": {
+    "experiments/radar_domain/coverage_payload.py": "d1bad012f0b059ede73cc253f87cad476dde39a1aa08c1aa21fba33712a36029",
+    "experiments/radar_domain/coverage_semantic_preflight.py": "ca5abf6309e6549108d401d2ea4518b721e068aa1d474dc5462ed40cfe2e2f0e",
+    "experiments/radar_domain/coverage_representation.py": "aaad3cd9971e361a74766123f97ad67c21baf5337a7e26cedd7aeeb7e84dfc95",
+    "experiments/radar_domain/coverage_preflight.py": "f56482d91a8e518eb3d970fd13d546233b960b04830e3cd46201c9ac1353ddb8",
+    "experiments/radar_domain/coverage_evidence.py": "0bf64997ab767040f315555e7916621de2edfb3be8d2cb3eacb99430dc5c7973",
+    "tests/test_radar_coverage_payload.py": "b47404213d48aed305f030beada477e96142e5d5f086982d350455253e144452",
+    "tests/test_radar_coverage_preflight.py": "ddc7fdd7d0d26b7c27889281618c2098f8388041dc27d0e257fa143a4fcc4f93",
+    "tests/test_radar_coverage_representation.py": "6168a6297f6481ab2e8ba93f50e48a52e5dd113fe64781269fb34e5c7280ccac",
+    "tests/test_radar_coverage_questions.py": "8961319ebff336ccd1fd5c7d0c5583fbbc9f602e38eec1291737529076853d75",
+    "data/radar_sources_v2/representation_v1/semantic_payload_v1/preflight.json": "d2b0c32d85a48e2c69c08b03255889293e6106649f378f684d0d2205cf1edddf",
+    "data/radar_sources_v2/representation_v1/semantic_payload_v1/inputs.jsonl": "f315d92f8ed6b0cba237e3496b60b44fdff4749f85f2efcceb37f789d559c1d1",
+    "data/radar_sources_v2/representation_v1/semantic_payload_v1/semantic_corpus_and_audit.json": "1c257fac97ab5d6b3df230cae6786a526a63780597290908a1d97d9e0fba2f7d",
+    "data/radar_sources_v2/representation_v1/full_record_v1/preflight.json": "92d7775c85d7370c1f23a55518e8b2c5b3de27fc4c766c008be6097f78da6800",
+    "data/radar_sources_v2/representation_v1/full_record_v1/inputs.jsonl": "385f15418f1b1e12c5c0faa09d1c1f6c04d44b0a51be480f76380404e128335f",
+    "data/radar_sources_v2/representation_v1/tokenizer/config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "data/radar_sources_v2/representation_v1/tokenizer/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "data/radar_sources_v2/representation_v1/tokenizer/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "data/radar_sources_v2/representation_v1/design_revision_review.json": "a1f96c134b22c1e3207b659352aced1e30e659ba78a6e41bad56a4470257e19b",
+    "artifacts/thesis_direction_review/radar_representation_v1/input_contract_revision.json": "a9481a4cdd3fcc4b0e6b836f8d5c5918ef347703a2bda7306f39ce9a71896d3e",
+    "artifacts/thesis_direction_review/radar_representation_v1/full_record_preflight.json": "b388bebea3793432306ee4797e08e0d9d9a7893f406dc7034824941c9c88f875",
+    "artifacts/thesis_direction_review/radar_representation_v1/semantic_preflight.json": "cf016e183c264753825dd1c7b88f75bbeb3a64b24d7b0d67ebcf213b2d76cab1",
+    ".gitignore": "b0f0e4b5a3fe6ed2ae108a220017e701edc4a31e0f36e170937f7804b823d3a7",
+    "artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json": "755264eb40d1af05a498cdf6553171035d7467e1dfa307470da6b271bff8ac53",
+    "artifacts/thesis_direction_review/radar_readings_v1/selection.json": "af06dbc7e89d18d5633170ec7576d6b483f9377185d04c5bb4c135d8b4a38441",
+    "data/radar_sources_v2/qa_v1/questions.minimal.jsonl": "e79f61b6ce5a3e13343b5eca788112f64251a68ebe06d91704e4cb32ad96bde5",
+    "data/radar_sources_v2/qa_v1/retrieval_observation.json": "f469b9ab2d69a1aefb1f7f783eb904d52500e02603128dd770f3f8129fef7e1a",
+    "data/radar_sources_v2/qa_v1/retrieval_corpus.json": "f0aeab98347f4357213d556f15de550a67f5dc3d41b63d7bb79527c1075c0ed4",
+    "experiments/radar_domain/source_rag.py": "368ccd908b25d6e3e1b423086e93c9388de1997b9a1b50ad1a5ff544ac434958",
+    "experiments/radar_domain/source_readings.py": "c850c3834ad0ae34def66cac3356731c6a1382a5ca7f347b0acadd66754fb56c",
+    "data/radar_sources_v2/curation_v1/weather.v2.json": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+    "data/radar_sources_v2/curation_v1/marine.v2.json": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+    "data/radar_sources_v2/curation_v1/raymarine.draft.json": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+    "data/radar_sources_v2/curation_v1/metek.v2.json": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909"
+  },
+  "summary": {
+    "review_grade": "AI implementation/artifact review, not human gold",
+    "verdict": "pass_semantic_payload_and_context_checks_runtime_probe_pending",
+    "source_records_exactly_projected_and_restored": 502,
+    "question_record_occurrences_verified": 8434,
+    "structured_roundtrips_verified": 192,
+    "raw_inputs_byte_identical": 96,
+    "messages_independently_retokenized": 288,
+    "max_prompt_plus_reserved_tokens": 31720,
+    "common_native_context": 32768,
+    "tests_passed": 30,
+    "information_contract": "E_sem only; complete archival quotes require private sidecar and are not model input.",
+    "new_model_runs": 0,
+    "model_run_ready": false
+  },
+  "nonblocking_observations": [
+    {
+      "id": "SP-N1",
+      "finding": "coverage_semantic_preflight.py currently guards raw preservation by token-count equality with the old report, which alone would not prove identical content. This review independently established byte-identical actual raw rows for all 96, so this is not a defect in the accepted saved package. Any later regeneration should compare frozen messages/hashes directly."
+    },
+    {
+      "id": "SP-N2",
+      "finding": "context_choice defaults and imported MAX_GENERATED currently equal the registered 8192/32768/768 constants, which was independently checked. Future changed contracts must be bound/validated rather than relying on matching defaults; no current mismatch exists."
+    }
+  ],
+  "remaining_execution_limits": [
+    "CPU token fit does not establish GPU memory capacity, latency, throughput, or the provisional runtime budget.",
+    "Validate the common answer_text/citations prompt only on old seen development material, then bind actual unadapted base weights/config, effective tokenizer/chat template, generation/software settings and a bounded resource decision before new evaluation outputs.",
+    "All arms must retain the same 32768 context ceiling and 768 generation limit. Any later actual prompt/runner difference requires checking the complete frozen prompts again; no silent truncation or dropping failed questions.",
+    "The explicit one-round/no-training stop rules and full 96-question denominator remain. This review authorizes no GPU run, claims no method effectiveness, and changes no resource cap."
+  ],
+  "root_verification": {
+    "tests_passed": 38,
+    "command": "python3 -m unittest tests.test_radar_coverage_representation tests.test_radar_coverage_payload tests.test_radar_coverage_preflight tests.test_radar_source_readings tests.test_radar_coverage_questions",
+    "snapshot_rechecks": [
+      "502 readings and 856 citation spans unchanged",
+      "96 questions unchanged",
+      "50 competition / 8 groups / 31 complex necessity gate unchanged"
+    ],
+    "GPU_used": false
+  }
+}
