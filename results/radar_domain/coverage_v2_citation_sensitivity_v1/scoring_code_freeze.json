@@ -1,0 +1,16 @@
+{
+  "schema": "radar_citation_scoring_code_freeze_v1",
+  "recorded_at_utc": "2026-10-07T15:00:50.095737+00:00",
+  "protocol_sha256": "ec82a3719bd1e31cf6505d79739e6e4fccdd3a378596f3afd14fefe825ef3c97",
+  "code_sha256": {
+    "experiments/radar_domain/coverage_citation_sensitivity.py": "3c7f8fb7ac974d41cb251567e800db83e67e6c9a0ca9be277e7a06847c10a4aa",
+    "experiments/radar_domain/coverage_citation_normalize.py": "2ade735711386492508bda27e2305ffc78d57b4ede0f5fc274cfa315a24ff1c5",
+    "experiments/radar_domain/coverage_review_summary.py": "fca7119c007152aeed10db96256581491703c73c6d38740ab14c93501118b221",
+    "experiments/radar_domain/coverage_review_package.py": "8f5541c97dc68a914b90d186693243c822ca70594dac68e432765958121a3dac",
+    "experiments/radar_domain/coverage_representation.py": "aaad3cd9971e361a74766123f97ad67c21baf5337a7e26cedd7aeeb7e84dfc95",
+    "experiments/radar_domain/source_readings.py": "c850c3834ad0ae34def66cac3356731c6a1382a5ca7f347b0acadd66754fb56c"
+  },
+  "normalized_mechanical_counts_seen": true,
+  "citation_semantic_reviews_seen": false,
+  "scope": "Implementation of already registered scoring rules; no change in scope or rubric. Added explicit verification of original input SHA and normalized per-row input hash before semantic reviews."
+}

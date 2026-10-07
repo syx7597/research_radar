@@ -26,7 +26,7 @@
 
 2026-10-07的八来源覆盖评价也已完成：502条来源读法、96道AI参考题，raw/flat/bound各运行96题。正文正确60/73/80，联合正确56/17/52，绑定错误26/17/11；bound对flat达到预设门槛，但未在联合指标上超过raw。37个联合改善有29个原本正文都对，因此不能把全部收益称为语义推理改进。数据、执行与判分边界见[阶段决定](../results/radar_domain/coverage_v2/stage_decision.json)。
 
-新增 [current/06b_evidence_representation.tex](current/06b_evidence_representation.tex)，已接入应用章；[current/coverage_export.py](current/coverage_export.py)从五个公开汇总/协议生成三张表与61个可追溯数据字段，输出 [CSV](current/coverage_results.csv)、[LaTeX表](current/coverage_tables.tex)及[证据清单](current/coverage_evidence_manifest.json)。不访问私有原文、QA或模型答案。当前GPU任务均已结束，未追加训练；新章节尚未编译PDF。
+新增 [current/06b_evidence_representation.tex](current/06b_evidence_representation.tex)，已接入应用章；[current/coverage_export.py](current/coverage_export.py)从八个公开汇总/协议生成四张表与79个可追溯数据字段，输出 [CSV](current/coverage_results.csv)、[LaTeX表](current/coverage_tables.tex)及[证据清单](current/coverage_evidence_manifest.json)。不访问私有原文、QA或模型答案。2026-10-08补入统一引用解析事后对照：联合正确raw/flat/bound为56/55/68，bound−flat净13题，原始净35题完整保留；正文与错绑评分不变。第三章同步八来源502条读法、96题与固定24题来源核验流程，数据导出更新为7张表/124个字段。核验包只准备材料，当前真人核验数为0。当前没有新增GPU任务或训练；新章节尚未编译PDF。
 
 从仓库根目录执行：
 

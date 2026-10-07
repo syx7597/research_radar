@@ -1,0 +1,50 @@
+{
+  "schema": "radar_citation_sensitivity_stage_decision_v1",
+  "recorded_at_utc": "2026-10-07T17:28:08.980549+00:00",
+  "status": "offline_control_review_packet_and_thesis_integration_complete",
+  "inputs_sha256": {
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/protocol.json": "ec82a3719bd1e31cf6505d79739e6e4fccdd3a378596f3afd14fefe825ef3c97",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/normalization_summary.json": "5aed20bbaedeef000a6253131abc80fed9da296ed55383a87a45fc68fa320c7a",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json": "73604a0778cd3f814dec796e6ae8766cb1f8f1052a2e10cdf4ed5cedceb6df06",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/aggregate_review.json": "2ec2e50aad9477ac4553fad6fa42ea5b2259cb13804f52806ebca2ce6c81f6e7",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/external_review_protocol.json": "5e392c4b0ff9a804800ddea1f965695abfad3579c59e4edd9107004255a113b0",
+    "artifacts/thesis_direction_review/radar_external_review_v1/manifest.json": "f54d3d69805f0dd65a95bea6bf005c97e03410f511b82274cd6a5bfdb12c9606"
+  },
+  "original_result_preserved": true,
+  "conclusions_zh": [
+    "统一引用解析使flat/bound联合正确从17/52变为55/68；原始净35题缩小为净13题，21胜8负，6来源组正增、2持平。",
+    "正文73/80与绑定错误17/11保持原判，解析本身没有事实回答收益。",
+    "统一解析后仍有18/12条正文正确而未联合正确；剩余13题不能全部归为事实推理。",
+    "表示加统一解析的本批联合68高于raw的56，但信息、长度和整理成本不同，不声称普遍或同成本优于RAG。",
+    "核心训练方法仍为公开项目留出集支持的恢复状态/后缀SFT，不冒称其已获得雷达迁移增量。"
+  ],
+  "fixed_external_review": {
+    "packet_prepared": true,
+    "questions": 24,
+    "families": 8,
+    "strata_per_family": 3,
+    "human_reviews_completed": 0,
+    "human_gold": false,
+    "unbiased_population_accuracy_sample": false
+  },
+  "validation": {
+    "new_synthetic_tests_passed": 33,
+    "independent_aggregate_audit_passed": true,
+    "original_frozen_execution_code_files_unchanged": 11,
+    "original_model_outputs_unchanged": 288
+  },
+  "new_model_calls": 0,
+  "new_training_scheduled": false,
+  "new_GPU_hours": 0,
+  "project_GPU_hours_unchanged": 24.192471076740624,
+  "next_steps_zh": [
+    "按固定24题核验原文与参考，保留独立判断和不确定性，交叉复核争议；没有真人就继续明确AI证据等级。",
+    "完成绪论、相关工作、数据—方法—公开验证—领域评价的章节衔接和总结，按学校模板编译检查。",
+    "仅在核验或导师反馈明确指出外部有效性缺口时，再登记一次新来源或第二模型复验；不在96已见题上搜索提示/编码。"
+  ],
+  "limits": [
+    "This posthoc analysis is separately registered after original outputs/results; it does not replace the original primary evaluation.",
+    "All references and semantic reviews remain AI, not human gold.",
+    "Preparing an external source packet does not mean source facts have been independently human-verified."
+  ]
+}

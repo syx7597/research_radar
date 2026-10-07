@@ -12,7 +12,10 @@ OUT = Path(__file__).resolve().parent
 BASE = "results/radar_domain/coverage_v2/"
 FILES = {"semantic": BASE + "semantic_summary.json", "execution": BASE + "execution_audit.json",
          "protocol": BASE + "protocol.json", "policy": BASE + "evaluation_policy.json",
-         "diagnosis": BASE + "posthoc_diagnosis.json"}
+         "diagnosis": BASE + "posthoc_diagnosis.json",
+         "citation": "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json",
+         "normalization": "results/radar_domain/coverage_v2_citation_sensitivity_v1/normalization_summary.json",
+         "citation_protocol": "results/radar_domain/coverage_v2_citation_sensitivity_v1/protocol.json"}
 LABELS = {"raw": "原文页", "flat": "平铺记录", "bound": "条件绑定"}
 GROUPS = {"vaisala_wrs300": "Vaisala WRS300", "eec_ranger_x_band": "EEC Ranger-X",
           "gamic_gmwr": "GAMIC GMWR", "metek_mrr": "METEK MRR",
@@ -36,6 +39,13 @@ def build():
             or sem["execution_audit_sha256"] != hashes[FILES["execution"]]
             or docs["diagnosis"]["semantic_summary_sha256"] != hashes[FILES["semantic"]]):
         raise ValueError("Public evidence bindings changed")
+    citation = docs["citation"]
+    if (citation["original_summary_sha256"] != hashes[FILES["semantic"]]
+            or citation["protocol_sha256"] != hashes[FILES["citation_protocol"]]
+            or citation["normalization_summary_sha256"] != hashes[FILES["normalization"]]
+            or citation["evaluated_outputs"] != 288 or citation["answer_body_changed"]
+            or citation["body_verdicts_changed"] or citation["new_model_calls"] != 0):
+        raise ValueError("Citation sensitivity bindings/invariants changed")
     rows, tex = [], ["% Generated from public aggregates by coverage_export.py; no private QA is read."]
 
     def value(table, label, metric, source, pointer):
@@ -74,6 +84,20 @@ def build():
                    for key in ("input_tokens", "generated_tokens", "gpu_hours")]
         body.append([label, f"{metrics[0]:,}", f"{metrics[1]:,}", f"{metrics[2]:.4f}"])
     table("CoverageCostTable", ["证据输入", "输入token", "生成token", "GPU小时"], body)
+    body = []
+    for arm, label in LABELS.items():
+        prefix = f"/uniform_resolver/overall/{arm}"
+        if value("citation_sensitivity", label, "denominator", "citation", prefix + "/denominator") != 96:
+            raise ValueError("Citation sensitivity denominator changed")
+        answer = value("citation_sensitivity", label, "answer_correct", "citation", prefix + "/answer_correct")
+        before = value("citation_sensitivity", label, "original_joint", "citation", f"/original/overall/{arm}/joint_correct")
+        after = value("citation_sensitivity", label, "resolver_joint", "citation", prefix + "/joint_correct")
+        changed = value("citation_sensitivity", label, "changed_outputs", "normalization", f"/arms/{arm}/changed_outputs")
+        body.append([label, answer, before, after, changed])
+    table("CoverageCitationTable", ["证据输入", "正文正确", "原始联合", "统一解析后联合", "引用变动回答"], body)
+    for command, key in {"CoverageResolvedWins": "wins", "CoverageResolvedLosses": "losses", "CoverageResolvedNet": "net"}.items():
+        number = value("citation_sensitivity", "bound_minus_flat", key, "citation", "/uniform_resolver/overall/paired_bound_minus_flat/" + key)
+        tex.append("\\newcommand{\\" + command + "}{" + str(number) + "}")
     for command, pointer in {
             "CoverageAnswerWins": "/answer_correct_bound_minus_flat/wins",
             "CoverageAnswerLosses": "/answer_correct_bound_minus_flat/losses",
@@ -91,8 +115,8 @@ def build():
                 "code_sha256": digest(Path(__file__)), "rows": len(rows),
                 "chapter_sha256": {"thesis/current/06b_evidence_representation.tex": digest(OUT / "06b_evidence_representation.tex")},
                 "outputs_sha256": {name: hashlib.sha256(text.encode()).hexdigest() for name, text in outputs.items()},
-                "source_access": "Only five allowlisted public aggregate/protocol/diagnosis files plus this chapter/code; nested private references are not opened.",
-                "limits": "AI references and reviews, not human gold; correlated sources, one fixed round; descriptive counts only."}
+                "source_access": "Only eight allowlisted public aggregate/protocol/diagnosis files plus this chapter/code; nested private references are not opened.",
+                "limits": "AI references and reviews, not human gold; correlated sources, one fixed round; descriptive counts only. Uniform citation resolution is posthoc, separate from unchanged original model outputs."}
     outputs["coverage_evidence_manifest.json"] = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     return outputs, len(rows)
 

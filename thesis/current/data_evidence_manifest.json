@@ -1,6 +1,6 @@
 {
   "version": "thesis_data_evidence_v1",
-  "evidence_cutoff": "2026-10-05",
+  "evidence_cutoff": "2026-10-08",
   "scope": "Public inventory, construction and audit metadata plus implementation hashes; no underlying raw sources or private QA opened; no recursive manifest reads.",
   "sources": {
     "artifacts/data_manifest.json": {
@@ -54,6 +54,18 @@
     "artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json": {
       "sha256": "0db9af9c7e37c488921f38669e5e384ee06d5b9660f5d688645bb910d166f5c1",
       "role": "source_audit"
+    },
+    "artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json": {
+      "sha256": "a2603bf9e262f0e2ee7b3eb6fc7c6e08de292bf810d6db9977fa2e03a58fc42e",
+      "role": "coverage_readings"
+    },
+    "artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json": {
+      "sha256": "cb8c994e3ad50419af11bb5b6a6ef0f2dd6d3fff2e1daf35ef75de56f39cdad0",
+      "role": "coverage_questions"
+    },
+    "artifacts/thesis_direction_review/radar_external_review_v1/manifest.json": {
+      "sha256": "f54d3d69805f0dd65a95bea6bf005c97e03410f511b82274cd6a5bfdb12c9606",
+      "role": "external_review"
     }
   },
   "implementation_and_schema_sha256": {
@@ -70,16 +82,16 @@
     "templates/radar_review/questions.csv": "600401fbe782178e3c6be970a13acc05e1a790ea27f41bf676a7675ac5ff5ecb"
   },
   "outputs_sha256": {
-    "data_results.csv": "b5004d13eb6471185f188ea5070824e86038c0c7b332343ee44e01b03b858df1",
-    "data_tables.tex": "35a9226b8f9c33c841db1aa524c7f7d2e8ea72b2365b2c54f4dc0b7a6e770994",
-    "03_radar_data_construction.tex": "ba97f486aae9ebec6efed5f7f09436758b99ce89c32f79902f58c9bcbedcfa2c",
+    "data_results.csv": "2ee23572632cece2fd0261d130b4a518084de56dd5b61e8406e92fe6e9aea5a8",
+    "data_tables.tex": "3c7043d58b2a8ca98cd807e93ccefa3ec39eb0d9c9526a585fbea90520b4e3b6",
+    "03_radar_data_construction.tex": "7e1278e3f8554e87e3674d92b7b9ff275f9a846d9ff2c36deb6130cf688b731a",
     "data_review.tex": "ba5ab147b9d340a602b1f9620974c40ec6c81d408d77826f6927857133f2a7f5",
-    "data_export.py": "ff1ba67447d5a4dc7877f0380ac9640b201e0071bb2eb8452ae49e2532ab32e3"
+    "data_export.py": "6ed5dfd5a5e8696ba51ba248d1956b928a49c3f9d9e5f076a92a1b59a133ff0e"
   },
-  "rows": 109,
+  "rows": 124,
   "validation": {
     "aggregate_arithmetic": true,
-    "checked_public_binding_edges": 17,
+    "checked_public_binding_edges": 18,
     "historical_profile_and_inventory_share_entity_hash": true,
     "private_data_revalidated": false,
     "new_training_or_inference": false,
@@ -92,6 +104,7 @@
     "Synthetic groups share ontology and short program structures and have no physical realism",
     "AI multi-agent review is not human gold or verified different-model independence",
     "Four related source groups and 24 questions are an exploratory sample, not final domain coverage",
+    "The later eight-source/96-question study remains AI-authored and reviewed; its 24-item risk-stratified external packet has zero completed human reviews",
     "Source snapshots and query records do not implement universal unit conversion, component ontology, version reasoning or graph traversal",
     "Required runtime fields are narrower than the annotation schema; raw units and variant fields are not universally queryable",
     "Record counts can include alternative encodings of the same source configuration",

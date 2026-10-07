@@ -5,17 +5,20 @@
     "results/radar_domain/coverage_v2/execution_audit.json": "0d58e15b11818772a0783b3269d21a64e5c0bb9e9ab765bd25c36cc58bcd1ae4",
     "results/radar_domain/coverage_v2/protocol.json": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
     "results/radar_domain/coverage_v2/evaluation_policy.json": "367e197dcdf52ff9db82d52b922894fb89b9435e3181905c171818a0717ef1f5",
-    "results/radar_domain/coverage_v2/posthoc_diagnosis.json": "9918d26a0799d21beea7604259b5375d64090340440a4e5a378c5d1ddf262555"
+    "results/radar_domain/coverage_v2/posthoc_diagnosis.json": "9918d26a0799d21beea7604259b5375d64090340440a4e5a378c5d1ddf262555",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json": "73604a0778cd3f814dec796e6ae8766cb1f8f1052a2e10cdf4ed5cedceb6df06",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/normalization_summary.json": "5aed20bbaedeef000a6253131abc80fed9da296ed55383a87a45fc68fa320c7a",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/protocol.json": "ec82a3719bd1e31cf6505d79739e6e4fccdd3a378596f3afd14fefe825ef3c97"
   },
-  "code_sha256": "1b78f21cc49c052c3147e7c67b801e98141a0d2cc123941a98faab6277d340e7",
-  "rows": 61,
+  "code_sha256": "dc2249f848af147e092a483441a7716f8ae1c7206f35162bd2b609dc5351ba6f",
+  "rows": 79,
   "chapter_sha256": {
-    "thesis/current/06b_evidence_representation.tex": "3d37cd4669246cc3862d1ea88a352b34b5790204a4cd84b7aaffa5c01fc3f848"
+    "thesis/current/06b_evidence_representation.tex": "e55396fc3c49401f0619d51e0e6f20763db45aa9980cca865d5a9b4764ae6e0d"
   },
   "outputs_sha256": {
-    "coverage_tables.tex": "84d819b0517838970ca918c89e1cc2ae60185717b006673f18b66ce2e2413bdd",
-    "coverage_results.csv": "9df8b89db515dbe01bbbed46889c72974367676839095879e864e544431d5322"
+    "coverage_tables.tex": "b0908449180b1693f31516b9525ec92e33c9a0d62a6dff2225fa04c83b2c7639",
+    "coverage_results.csv": "823e622a3f77c763e76f0aab4cba297ae2471987a427e7ca7da4e4532485599d"
   },
-  "source_access": "Only five allowlisted public aggregate/protocol/diagnosis files plus this chapter/code; nested private references are not opened.",
-  "limits": "AI references and reviews, not human gold; correlated sources, one fixed round; descriptive counts only."
+  "source_access": "Only eight allowlisted public aggregate/protocol/diagnosis files plus this chapter/code; nested private references are not opened.",
+  "limits": "AI references and reviews, not human gold; correlated sources, one fixed round; descriptive counts only. Uniform citation resolution is posthoc, separate from unchanged original model outputs."
 }

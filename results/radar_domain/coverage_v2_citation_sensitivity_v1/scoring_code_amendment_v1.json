@@ -1,0 +1,17 @@
+{
+  "schema": "radar_citation_scoring_code_amendment_v1",
+  "recorded_at_utc": "2026-10-07T15:37:31.515086+00:00",
+  "original_code_freeze_sha256": "3b5bddbf484684916df7ebf12ae4b675416b8d434d85c5dd0a4236b2f31195d2",
+  "protocol_sha256": "ec82a3719bd1e31cf6505d79739e6e4fccdd3a378596f3afd14fefe825ef3c97",
+  "code_sha256": {
+    "experiments/radar_domain/coverage_citation_sensitivity.py": "0866272d856cd415553db7b8488e03730aba110178a16953518cc972fad4ef51",
+    "experiments/radar_domain/coverage_citation_normalize.py": "2ade735711386492508bda27e2305ffc78d57b4ede0f5fc274cfa315a24ff1c5",
+    "experiments/radar_domain/coverage_review_summary.py": "fca7119c007152aeed10db96256581491703c73c6d38740ab14c93501118b221",
+    "experiments/radar_domain/coverage_review_package.py": "8f5541c97dc68a914b90d186693243c822ca70594dac68e432765958121a3dac",
+    "experiments/radar_domain/coverage_representation.py": "aaad3cd9971e361a74766123f97ad67c21baf5337a7e26cedd7aeeb7e84dfc95",
+    "experiments/radar_domain/source_readings.py": "c850c3834ad0ae34def66cac3356731c6a1382a5ca7f347b0acadd66754fb56c"
+  },
+  "citation_reviews_in_progress": true,
+  "citation_review_results_read_by_root": false,
+  "reason": "Synthetic-test review identified adjudication duplicate IDs could be silently overwritten. Reject duplicates and require adjudication hashes bind both reviewers and the existing packets. Added versioned code-amendment loading. No scoring rule, input, packet, answer, selection, or reviewer instruction changed. Original code registration and package build hashes retained."
+}

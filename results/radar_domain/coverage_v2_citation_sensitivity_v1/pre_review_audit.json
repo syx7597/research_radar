@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "reviewed_output_rows": 65,
+  "input_sha256": "f315d92f8ed6b0cba237e3496b60b44fdff4749f85f2efcceb37f789d559c1d1",
+  "code_freeze_sha256": "3b5bddbf484684916df7ebf12ae4b675416b8d434d85c5dd0a4236b2f31195d2",
+  "review_manifest_sha256": "621c36cb3f8e1c829e309dee282ef047bdff805c4977303ea003a49f5035e0a0",
+  "note": "Initial package creation preceded addition of per-row input/hash guards; this independent validation rechecked all existing packet question, normalized output and actual evidence bytes before citation reviewers accessed them. Original package not rewritten."
+}

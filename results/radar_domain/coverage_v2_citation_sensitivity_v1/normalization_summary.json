@@ -1,0 +1,66 @@
+{
+  "schema": "radar_citation_normalization_counts_v1",
+  "rules_version": "exact_supplied_id_v1",
+  "completed": true,
+  "protocol_sha256": "ec82a3719bd1e31cf6505d79739e6e4fccdd3a378596f3afd14fefe825ef3c97",
+  "execution_protocol_sha256": "fb189d7fadf9cb052f2428fcb65918878174663ae27d71e0bb2543d159730704",
+  "execution_audit_sha256": "0d58e15b11818772a0783b3269d21a64e5c0bb9e9ab765bd25c36cc58bcd1ae4",
+  "input_sha256": "f315d92f8ed6b0cba237e3496b60b44fdff4749f85f2efcceb37f789d559c1d1",
+  "arms": {
+    "raw": {
+      "outputs": 96,
+      "parsed_outputs": 95,
+      "parse_rejected_outputs": 1,
+      "fenced_json_outputs": 0,
+      "changed_outputs": 0,
+      "changed_references": 0,
+      "rejected_references": 0,
+      "empty_citation_lists": 4,
+      "missing_citation_fields": 0,
+      "invalid_citation_list_types": 0,
+      "reference_already_chunk_id": 106
+    },
+    "flat": {
+      "outputs": 96,
+      "parsed_outputs": 96,
+      "parse_rejected_outputs": 0,
+      "fenced_json_outputs": 0,
+      "changed_outputs": 49,
+      "changed_references": 74,
+      "rejected_references": 21,
+      "empty_citation_lists": 4,
+      "missing_citation_fields": 0,
+      "invalid_citation_list_types": 0,
+      "reference_record_id_replaced": 74,
+      "reference_already_chunk_id": 27,
+      "reference_unknown_id": 21
+    },
+    "bound": {
+      "outputs": 96,
+      "parsed_outputs": 96,
+      "parse_rejected_outputs": 0,
+      "fenced_json_outputs": 0,
+      "changed_outputs": 16,
+      "changed_references": 19,
+      "rejected_references": 14,
+      "empty_citation_lists": 4,
+      "missing_citation_fields": 0,
+      "invalid_citation_list_types": 0,
+      "reference_unknown_id": 14,
+      "reference_already_chunk_id": 67,
+      "reference_record_id_replaced": 19
+    }
+  },
+  "semantic_scoring_performed": false,
+  "reference_files_opened": false,
+  "original_output_files_rewritten": false,
+  "private_output": {
+    "path": "data/radar_sources_v2/citation_sensitivity_v1/normalized.json",
+    "sha256": "dc29f23acd10088ef285a02a05d3822afeb3aa07b4a90a58bfff579e72191da3"
+  },
+  "private_manifest": {
+    "path": "data/radar_sources_v2/citation_sensitivity_v1/normalized.manifest.json",
+    "sha256": "2e933dc1a1b82f1b52b9104065c73766fc2f1713220b73e7d026d686a0959418"
+  },
+  "limits": "Exact supplied-ID substitutions only. Unknown and ambiguous citations remain unchanged. Parsing/normalization counts are not correctness or citation-support judgments."
+}

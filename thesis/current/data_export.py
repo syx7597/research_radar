@@ -30,6 +30,9 @@ FILES = {
     "sources": ART + "radar_sources_v1/manifest.json",
     "source_index": ART + "radar_sources_v1/source_index.json",
     "source_audit": ART + "radar_sources_v1/independent_ai_audit.json",
+    "coverage_readings": ART + "radar_readings_v1/snapshot_audit.json",
+    "coverage_questions": ART + "radar_questions_v1/snapshot_audit.json",
+    "external_review": ART + "radar_external_review_v1/manifest.json",
 }
 IMPLEMENTATION = (
     "scripts/audit_workspace.py", "scripts/profile_public_benchmark.py",
@@ -56,7 +59,7 @@ def build():
     hashes = {path: sha(ROOT / path) for path in (*FILES.values(), *IMPLEMENTATION)}
     checked_bindings = 0
     for doc in docs.values():
-        for field in ("inputs_sha256", "files_sha256", "reviewed_file_sha256"):
+        for field in ("inputs_sha256", "input_sha256", "files_sha256", "reviewed_file_sha256"):
             for path, expected in doc.get(field, {}).items():
                 if path in hashes:
                     require(expected == hashes[path], f"Bound source changed: {path}")
@@ -183,13 +186,35 @@ def build():
                     ["新来源参考程序检查", source["validation"]["canonical_programs"], "语义声明之后的程序核对"]]
     table("DataQualityTable", ["检查项", "数量", "能够支持的结论"], quality_rows, "lrl")
 
+    readings, questions, external = (docs[k] for k in ("coverage_readings", "coverage_questions", "external_review"))
+    require(sum(readings["by_family"].values()) == readings["counts"]["readings"] == 502, "Eight-source reading roster changed")
+    require(sum(questions["by_family"].values()) == sum(questions["by_primary_type"].values()) == questions["questions"] == 96, "Coverage QA roster changed")
+    require(not any(d["human_gold"] for d in (readings, questions, external)), "AI source packets relabeled as human gold")
+    require(external["question_count"] == 24 and external["human_reviews_completed"] == 0, "Prepared packet is not a completed human review")
+    coverage_rows = []
+    for key, label in (("families", "来源家族组"), ("PDF_pages", "PDF页"), ("HTML_content_sections", "HTML整节"),
+                       ("readings", "来源读法"), ("qualified_readings", "具限定读法"),
+                       ("multiple_qualifier_readings", "多限定读法"), ("shared_subject_readings", "多主体共用读法")):
+        value = readings["counts"][key]
+        row("coverage_data", label, key, value, "coverage_readings", "/counts/" + key)
+        coverage_rows.append([label, value])
+    for source_key, metric, label in (("coverage_questions", "questions", "AI参考题"),
+                                     ("external_review", "question_count", "固定来源核验样本"),
+                                     ("external_review", "human_reviews_completed", "已完成的真人核验")):
+        value = docs[source_key][metric]
+        row("coverage_data", label, metric, value, source_key, "/" + metric)
+        coverage_rows.append([label, value])
+    table("DataCoverageTable", ["八来源材料口径", "数量"], coverage_rows, "lr")
+    for kind, count in questions["by_primary_type"].items():
+        row("coverage_question_types", kind, "questions", count, "coverage_questions", "/by_primary_type/" + kind)
+
     stream = io.StringIO(newline="")
     writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
     writer.writeheader(); writer.writerows(rows)
     outputs = {"data_results.csv": stream.getvalue(), "data_tables.tex": "\n".join(tex) + "\n"}
     authored = ("03_radar_data_construction.tex", "data_review.tex", "data_export.py")
     manifest = {
-        "version": "thesis_data_evidence_v1", "evidence_cutoff": "2026-10-05",
+        "version": "thesis_data_evidence_v1", "evidence_cutoff": "2026-10-08",
         "scope": "Public inventory, construction and audit metadata plus implementation hashes; no underlying raw sources or private QA opened; no recursive manifest reads.",
         "sources": {path: {"sha256": hashes[path], "role": key} for key, path in FILES.items()},
         "implementation_and_schema_sha256": {path: hashes[path] for path in IMPLEMENTATION},
@@ -206,6 +231,7 @@ def build():
                    "Synthetic groups share ontology and short program structures and have no physical realism",
                    "AI multi-agent review is not human gold or verified different-model independence",
                    "Four related source groups and 24 questions are an exploratory sample, not final domain coverage",
+                   "The later eight-source/96-question study remains AI-authored and reviewed; its 24-item risk-stratified external packet has zero completed human reviews",
                    "Source snapshots and query records do not implement universal unit conversion, component ontology, version reasoning or graph traversal",
                    "Required runtime fields are narrower than the annotation schema; raw units and variant fields are not universally queryable",
                    "Record counts can include alternative encodings of the same source configuration",

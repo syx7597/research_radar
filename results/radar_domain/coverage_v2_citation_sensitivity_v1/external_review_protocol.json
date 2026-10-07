@@ -1,0 +1,57 @@
+{
+  "schema": "radar_coverage_external_review_protocol_v1",
+  "status": "registered",
+  "registered_at_utc": "2026-10-07T14:55:15.051768+00:00",
+  "seed": 20261008,
+  "selection_rule": "sha256_utf8_pipe_rank_v1",
+  "selection_exact": "SHA256(UTF-8(str(seed)+\"|\"+family_id+\"|\"+primary_type+\"|\"+question_id+\"|\"+question_sha256)), ascending; tie question_id; take first; no replacement/fallback",
+  "families": [
+    "eec_ranger_x_band",
+    "furuno_drs_nxt",
+    "gamic_gmwr",
+    "garmin_gmr_fantom",
+    "jrc_jma5200mk2",
+    "metek_mrr",
+    "raymarine_cyclone",
+    "vaisala_wrs300"
+  ],
+  "strata": [
+    "quantity_form",
+    "qualified_attribute",
+    "table_binding"
+  ],
+  "per_family_per_stratum": 1,
+  "input_sha256": {
+    "artifacts/thesis_direction_review/radar_questions_v1/selection.json": "829299f2b08eceb3f093d49978b2d1a71ef8bbdaf2bb14e0fa8ee340cedb9bf7",
+    "artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json": "cb8c994e3ad50419af11bb5b6a6ef0f2dd6d3fff2e1daf35ef75de56f39cdad0",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "data/radar_sources_v2/qa_v1/scoring_adjudication.json": "8fcf692e7d236f0eaa0d18884321f4e7f844bd088e12fed91fb5ba1415441c2f",
+    "data/radar_sources_v2/qa_v1/author_rubric_response.json": "f1cd494623a64fe64fb887badf8e4f9a3594a2c22db390f193b1583bad387c5f",
+    "data/radar_sources_v2/qa_v1/weather.author.json": "c136481ab35839a4d985bd6e04a7c27b3a7d1f933c80a905aee714308a30bf64",
+    "data/radar_sources_v2/qa_v1/marine.author.json": "fc9809870f1f989d286c362de6c8cdcc3f44dc01da021604d6ccad593c37b146"
+  },
+  "paths": {
+    "selection": "artifacts/thesis_direction_review/radar_questions_v1/selection.json",
+    "snapshot": "artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json",
+    "author_packets": [
+      "data/radar_sources_v2/qa_v1/weather.author.json",
+      "data/radar_sources_v2/qa_v1/marine.author.json"
+    ],
+    "chunks": "data/radar_sources_v2/curation_v1/chunks.json",
+    "scoring_adjudication": "data/radar_sources_v2/qa_v1/scoring_adjudication.json",
+    "author_rubric_response": "data/radar_sources_v2/qa_v1/author_rubric_response.json",
+    "private_dir": "data/radar_sources_v2/external_review_v1",
+    "public_manifest": "artifacts/thesis_direction_review/radar_external_review_v1/manifest.json"
+  },
+  "human_gold": false,
+  "purpose": "source_and_QA_reference_fact_verification",
+  "citation_sensitivity_results_seen_at_registration": false,
+  "previous_original_coverage_results_known_to_project": true,
+  "limits": [
+    "Risk-stratified 24-question audit, not an unbiased estimate of all 96 questions.",
+    "Simple attribute and constrained listing types are not sampled in this round.",
+    "No score-dependent selection or replacement.",
+    "Packet generation and AI review never count as human review.",
+    "External reviewer response and uncertainty fields remain blank until an actual reviewer supplies them."
+  ]
+}
