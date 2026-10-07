@@ -1,0 +1,132 @@
+{
+  "schema": "radar_reading_snapshot_selection_v1",
+  "recorded_on": "2026-10-07",
+  "status": "source_reading_snapshot_before_independent_question_authoring",
+  "evaluation_frozen": false,
+  "model_run_ready": false,
+  "human_gold": false,
+  "new_questions": 0,
+  "new_model_runs": 0,
+  "new_training_runs": 0,
+  "new_GPU_hours": 0,
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json": "185e7752c5cd748b5e0c3a7dab679ed273d3f568e73c5f94e78010be70e72269",
+    "artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json": "e4c02637bdc1b17dbef50281c422fdc9076c53fba9757b7d3d67c162b199937f",
+    "artifacts/thesis_direction_review/radar_sources_v2/history_screening.json": "6d35c307e108c9ad10d6e6d353df9cb223359f04da6b151232de9ec33e5a1c2a",
+    "artifacts/thesis_direction_review/radar_coverage_v2/design.json": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e",
+    "experiments/radar_domain/source_readings.py": "c850c3834ad0ae34def66cac3356731c6a1382a5ca7f347b0acadd66754fb56c",
+    "experiments/radar_domain/reading_snapshot.py": "8d2b0d91cad4a169a7be38c518c32940f465541f67e9cd139ca054994ec73e17",
+    "tests/test_radar_source_readings.py": "6f60b12c4e6a9cc5d21d1da1d4de558da506b0fe631b34066cf9f1ba0ee25b51",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "data/radar_sources_v2/curation_v1/weather.draft.json": "94df515b8b3ab1a9d51f48f3e6cd6907ecc288d12733d51d82078ef656f8f6a6",
+    "data/radar_sources_v2/curation_v1/weather.v2.json": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+    "data/radar_sources_v2/curation_v1/weather_build.py": "799084d474c089ba589d7cb78d2e2b9b199ce969b38880079f3608a5fe893fb5",
+    "data/radar_sources_v2/curation_v1/marine.draft.json": "3cb28b14df1f19e997aa9613bc9a4a4e3e64afcb1849488a0022e94f9376e894",
+    "data/radar_sources_v2/curation_v1/marine.v2.json": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+    "data/radar_sources_v2/curation_v1/marine_build.py": "6d0b2ee19109cb1fb50e1a35393137184866fade8ebf4bd74f133adf8dddb32f",
+    "data/radar_sources_v2/curation_v1/raymarine.draft.json": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+    "data/radar_sources_v2/curation_v1/raymarine.identity.json": "7bc9c8183e5f156475acaa8160c6d209137d6054757c81ebd603e8158859ceb7",
+    "data/radar_sources_v2/curation_v1/raymarine.author_check.json": "3b32faeeec036380ac17eeb7464f171a9cbac7ccea52bb7131323f7f1087ec38",
+    "data/radar_sources_v2/curation_v1/raymarine_build.py": "2ce56b77a24b5edbf6c790d57e4bbffa85789b4510b711a3d2b46bd5cb880db0",
+    "data/radar_sources_v2/curation_v1/metek.draft.json": "b61de0df76ae6db9261d89635c6d965993fb90e428ecccf9b7c481abef9aac08",
+    "data/radar_sources_v2/curation_v1/metek.v2.json": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909",
+    "data/radar_sources_v2/curation_v1/metek_build.py": "6efa268dc27bef345297687bbb0eb5ed1a7869931e4bb20b62e63739ffa2ec09",
+    "data/radar_sources_v2/curation_v1/metek_revision.py": "e70acc348eae301cc1c239d42af1d068dbf1629f30bb8d197cb5b2d9ec9ecac2"
+  },
+  "accepted_packets": [
+    {
+      "path": "data/radar_sources_v2/curation_v1/weather.v2.json",
+      "sha256": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+      "author": "AI /root/coverage_weather_sources",
+      "reviewer": "AI /root",
+      "reviews": [
+        {
+          "path": "data/radar_sources_v2/curation_v1/weather.review.json",
+          "sha256": "c3eca0bd19c05e6706633bdaae702d349264bb5de5ea06a5617e6be9aa6de530"
+        }
+      ],
+      "open_annotation_corrections": [],
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    },
+    {
+      "path": "data/radar_sources_v2/curation_v1/marine.v2.json",
+      "sha256": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+      "author": "/root/grpo_adapter/continuation_cli_review",
+      "reviewer": "AI /root/coverage_weather_sources",
+      "reviews": [
+        {
+          "path": "data/radar_sources_v2/curation_v1/marine.review.json",
+          "sha256": "4def3534f142a0a3003c0f3bd5b6218892fb2e5981fb46eb1c0573dead36fc36"
+        }
+      ],
+      "open_annotation_corrections": [],
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    },
+    {
+      "path": "data/radar_sources_v2/curation_v1/raymarine.draft.json",
+      "sha256": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+      "author": "AI /root/thesis_method_critique",
+      "reviewer": "AI /root/grpo_adapter/continuation_cli_review",
+      "reviews": [
+        {
+          "path": "data/radar_sources_v2/curation_v1/raymarine.review.json",
+          "sha256": "c867145c98344fd41286e82ed8d868fc6d3e1cba9cc0b0cfc133ee56c6fa9515"
+        }
+      ],
+      "open_annotation_corrections": [],
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    },
+    {
+      "path": "data/radar_sources_v2/curation_v1/metek.v2.json",
+      "sha256": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909",
+      "author": "AI /root",
+      "reviewer": "AI /root/thesis_method_critique",
+      "reviews": [
+        {
+          "path": "data/radar_sources_v2/curation_v1/metek.review.json",
+          "sha256": "1c39de415c187030b79d9c8078f1da4a7b0fc1d3f1e4ce3c1ef8f9c3b58df073"
+        },
+        {
+          "path": "data/radar_sources_v2/curation_v1/metek.review_closure.json",
+          "sha256": "a964279b81cec76e4f2b00a2c0eb665bd6f0bf15e1af7d5a911b2c17c240226c"
+        }
+      ],
+      "open_annotation_corrections": [],
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    }
+  ],
+  "historical_code_versions": [
+    {
+      "original_path": "experiments/radar_domain/source_readings.py",
+      "sha256": "64e74ca58f54cf5242ae3f2938922eafaae403cd5a3147c9d2b533879f6cd00e",
+      "archived_path": "data/radar_sources_v2/curation_v1/code_versions/source_readings.64e74ca58f54cf5242ae3f2938922eafaae403cd5a3147c9d2b533879f6cd00e.py",
+      "note": "Historical reviews bound this version. Later changes clarify nonexclusive enumeration semantics and add global ledger ID collision checks; original reviewed code bytes are retained."
+    }
+  ],
+  "scope_and_schema_zh": [
+    "覆盖原声明26个完整页/段的合格读法；200–300只是原估计，不能为配额删掉合格记录。",
+    "一条读法保存适用主体列表、部件、属性、量值原文及形式、原单位、AND限定、原件/页/字符引用、定位和注记；同一行公共主体不逐型号复制，成对量值不展开笛卡尔组合。",
+    "options仅表示原文列举，不默认互斥、完备或可以同时组合；约数/上下界/容差符号保留。",
+    "annotation_note可能包含来源中的技术适用信息；后续等信息表示不得只在一侧删去这类内容。原始scope_review和作者审稿备注不作为推理金标。",
+    "同页不同属性、同值不同角色和跨页重复出现均可能保留；502读法不是502条独立事实或评价题。",
+    "来源未解项保留ledger，不被编码或外部常识修成确定真值；不用于需要该未决信息的固定答案QA。"
+  ],
+  "review_findings_zh": [
+    "四个作者包均由非作者AI交叉复核，原稿和审稿保留。",
+    "METEK的四项意见闭环：加热器补可选配置及出处、维护宣传排除粒度缩小、保留衰减订正功能而不推断改进幅度、枚举不默认为互斥或完备。",
+    "其余包未发现本轮需修正的实质读法问题；Furuno量程单位等既有来源歧义继续保留。"
+  ],
+  "semantic_review_limits": [
+    "Cross-review uses separate AI agents of the same available model class, not independent human experts or a gold benchmark.",
+    "Whole-page semantic coverage is an AI judgment. Structural checks validate scope, byte identity and quotation spans, not factual truth.",
+    "No claim of whole-project family isolation or current-checkpoint training/pretraining nonexposure; retain the historical screening conclusions.",
+    "This is source-conditioned technical QA preparation, not independently verified equipment truth or a full knowledge-graph reasoning engine."
+  ],
+  "necessary_next_steps": [
+    "由未读取旧QA答案及待评模型输出的另一作者从原文独立编制中文题和语义参考；按96题/8组既定目标，不靠配额造事实。",
+    "另一审计者对照旧5401题、12题和24题的来源/意图；命中或无法排除的衍生题只作开发，并复核来源语义。",
+    "实现固定BM25 top4页检索到全部合格读法E(q)的映射，flat/bound完整元组、多重性及来源技术注记等信息往返验收。",
+    "基于实际问题和E(q)检验48个竞争读数问题、6来源组、12双限定或对应问题门槛；不足取消对照。",
+    "实际分词和共同提示只用旧开发材料预检，冻结协议及预算后才运行一轮无训练对照；当前不启动GPU。"
+  ]
+}

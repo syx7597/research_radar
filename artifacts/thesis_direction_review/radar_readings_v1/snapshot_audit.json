@@ -1,0 +1,330 @@
+{
+  "schema": "radar_reading_snapshot_audit_v1",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_readings_v1/selection.json": "af06dbc7e89d18d5633170ec7576d6b483f9377185d04c5bb4c135d8b4a38441",
+    "artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json": "185e7752c5cd748b5e0c3a7dab679ed273d3f568e73c5f94e78010be70e72269",
+    "artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json": "e4c02637bdc1b17dbef50281c422fdc9076c53fba9757b7d3d67c162b199937f",
+    "artifacts/thesis_direction_review/radar_sources_v2/history_screening.json": "6d35c307e108c9ad10d6e6d353df9cb223359f04da6b151232de9ec33e5a1c2a",
+    "artifacts/thesis_direction_review/radar_coverage_v2/design.json": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e",
+    "experiments/radar_domain/source_readings.py": "c850c3834ad0ae34def66cac3356731c6a1382a5ca7f347b0acadd66754fb56c",
+    "experiments/radar_domain/reading_snapshot.py": "8d2b0d91cad4a169a7be38c518c32940f465541f67e9cd139ca054994ec73e17",
+    "tests/test_radar_source_readings.py": "6f60b12c4e6a9cc5d21d1da1d4de558da506b0fe631b34066cf9f1ba0ee25b51",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "data/radar_sources_v2/curation_v1/weather.draft.json": "94df515b8b3ab1a9d51f48f3e6cd6907ecc288d12733d51d82078ef656f8f6a6",
+    "data/radar_sources_v2/curation_v1/weather.v2.json": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+    "data/radar_sources_v2/curation_v1/weather_build.py": "799084d474c089ba589d7cb78d2e2b9b199ce969b38880079f3608a5fe893fb5",
+    "data/radar_sources_v2/curation_v1/marine.draft.json": "3cb28b14df1f19e997aa9613bc9a4a4e3e64afcb1849488a0022e94f9376e894",
+    "data/radar_sources_v2/curation_v1/marine.v2.json": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+    "data/radar_sources_v2/curation_v1/marine_build.py": "6d0b2ee19109cb1fb50e1a35393137184866fade8ebf4bd74f133adf8dddb32f",
+    "data/radar_sources_v2/curation_v1/raymarine.draft.json": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+    "data/radar_sources_v2/curation_v1/raymarine.identity.json": "7bc9c8183e5f156475acaa8160c6d209137d6054757c81ebd603e8158859ceb7",
+    "data/radar_sources_v2/curation_v1/raymarine.author_check.json": "3b32faeeec036380ac17eeb7464f171a9cbac7ccea52bb7131323f7f1087ec38",
+    "data/radar_sources_v2/curation_v1/raymarine_build.py": "2ce56b77a24b5edbf6c790d57e4bbffa85789b4510b711a3d2b46bd5cb880db0",
+    "data/radar_sources_v2/curation_v1/metek.draft.json": "b61de0df76ae6db9261d89635c6d965993fb90e428ecccf9b7c481abef9aac08",
+    "data/radar_sources_v2/curation_v1/metek.v2.json": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909",
+    "data/radar_sources_v2/curation_v1/metek_build.py": "6efa268dc27bef345297687bbb0eb5ed1a7869931e4bb20b62e63739ffa2ec09",
+    "data/radar_sources_v2/curation_v1/metek_revision.py": "e70acc348eae301cc1c239d42af1d068dbf1629f30bb8d197cb5b2d9ec9ecac2"
+  },
+  "chunks_sha256": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+  "counts": {
+    "readings": 502,
+    "covered_chunks": 26,
+    "scope_chunks": 26,
+    "families": 8,
+    "qualified_readings": 261,
+    "multiple_qualifier_readings": 58,
+    "ledger_entries": 39,
+    "citation_spans": 856,
+    "shared_subject_readings": 203,
+    "PDF_pages": 13,
+    "HTML_content_sections": 13
+  },
+  "by_family": {
+    "vaisala_wrs300": 70,
+    "eec_ranger_x_band": 47,
+    "gamic_gmwr": 62,
+    "furuno_drs_nxt": 53,
+    "jrc_jma5200mk2": 81,
+    "garmin_gmr_fantom": 31,
+    "raymarine_cyclone": 100,
+    "metek_mrr": 58
+  },
+  "by_form": {
+    "text": 96,
+    "range": 45,
+    "upper_bound": 60,
+    "lower_bound": 24,
+    "correspondence": 76,
+    "options": 52,
+    "scalar": 139,
+    "tolerance": 4,
+    "approximate": 6
+  },
+  "by_ledger_status": {
+    "unresolved": 5,
+    "context_only": 23,
+    "excluded": 11
+  },
+  "uncovered_chunks": [],
+  "status": "AI_cross_reviewed_readings_before_independent_question_authoring",
+  "human_gold": false,
+  "evaluation_frozen": false,
+  "model_run_ready": false,
+  "new_questions": 0,
+  "new_training_runs": 0,
+  "new_model_runs": 0,
+  "limits": [
+    "Citation bytes do not certify semantic binding or completeness.",
+    "Reading counts are not independent facts or evaluation sample counts.",
+    "Necessity gate depends on independent questions and actual retrieval, not record counts."
+  ],
+  "recorded_on": "2026-10-07",
+  "packet_review_summary": [
+    {
+      "packet": "data/radar_sources_v2/curation_v1/weather.v2.json",
+      "author": "AI /root/coverage_weather_sources",
+      "reviewer": "AI /root",
+      "readings": 179,
+      "ledger_entries": 9,
+      "chunks": 4,
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    },
+    {
+      "packet": "data/radar_sources_v2/curation_v1/marine.v2.json",
+      "author": "/root/grpo_adapter/continuation_cli_review",
+      "reviewer": "AI /root/coverage_weather_sources",
+      "readings": 165,
+      "ledger_entries": 8,
+      "chunks": 5,
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    },
+    {
+      "packet": "data/radar_sources_v2/curation_v1/raymarine.draft.json",
+      "author": "AI /root/thesis_method_critique",
+      "reviewer": "AI /root/grpo_adapter/continuation_cli_review",
+      "readings": 100,
+      "ledger_entries": 14,
+      "chunks": 13,
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    },
+    {
+      "packet": "data/radar_sources_v2/curation_v1/metek.v2.json",
+      "author": "AI /root",
+      "reviewer": "AI /root/thesis_method_critique",
+      "readings": 58,
+      "ledger_entries": 8,
+      "chunks": 4,
+      "review_status": "accepted_source_conditioned_AI_readings_with_source_ambiguities_kept_separate"
+    }
+  ],
+  "verified_input_files": 84,
+  "historical_reviewed_code": [
+    {
+      "original_path": "experiments/radar_domain/source_readings.py",
+      "sha256": "64e74ca58f54cf5242ae3f2938922eafaae403cd5a3147c9d2b533879f6cd00e",
+      "archived_path": "data/radar_sources_v2/curation_v1/code_versions/source_readings.64e74ca58f54cf5242ae3f2938922eafaae403cd5a3147c9d2b533879f6cd00e.py",
+      "note": "Historical reviews bound this version. Later changes clarify nonexclusive enumeration semantics and add global ledger ID collision checks; original reviewed code bytes are retained."
+    }
+  ],
+  "unresolved_source_topics": [
+    {
+      "entry_id": "WX-L001",
+      "family_id": "vaisala_wrs300",
+      "topic": "Pedestal position accuracy unit"
+    },
+    {
+      "entry_id": "WX-L002",
+      "family_id": "vaisala_wrs300",
+      "topic": "Pulse compression ratio bound"
+    },
+    {
+      "entry_id": "WX-L004",
+      "family_id": "eec_ranger_x_band",
+      "topic": "Pulse repetition frequency unit"
+    },
+    {
+      "entry_id": "marine-L001",
+      "family_id": "furuno_drs_nxt",
+      "topic": "range scale: unit missing"
+    },
+    {
+      "entry_id": "RAY-L001",
+      "family_id": "raymarine_cyclone",
+      "topic": "ARPA software applicability details"
+    }
+  ],
+  "by_chunk": [
+    {
+      "chunk_id": "vaisala_wrs300_b212854en_e:p002",
+      "family_id": "vaisala_wrs300",
+      "readings": 70,
+      "ledger_entries": 3
+    },
+    {
+      "chunk_id": "eec_ranger_x_band:p003",
+      "family_id": "eec_ranger_x_band",
+      "readings": 47,
+      "ledger_entries": 2
+    },
+    {
+      "chunk_id": "gamic_gmwr_25_ws:p001",
+      "family_id": "gamic_gmwr",
+      "readings": 19,
+      "ledger_entries": 3
+    },
+    {
+      "chunk_id": "gamic_gmwr_25_ws:p002",
+      "family_id": "gamic_gmwr",
+      "readings": 43,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "furuno_nxt_usa_manual:p033",
+      "family_id": "furuno_drs_nxt",
+      "readings": 44,
+      "ledger_entries": 2
+    },
+    {
+      "chunk_id": "furuno_nxt_usa_manual:p034",
+      "family_id": "furuno_drs_nxt",
+      "readings": 9,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "jrc_5200_catalog:p006",
+      "family_id": "jrc_jma5200mk2",
+      "readings": 81,
+      "ledger_entries": 4
+    },
+    {
+      "chunk_id": "garmin_fantom_manual:p012",
+      "family_id": "garmin_gmr_fantom",
+      "readings": 23,
+      "ledger_entries": 0
+    },
+    {
+      "chunk_id": "garmin_fantom_manual:p013",
+      "family_id": "garmin_gmr_fantom",
+      "readings": 8,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "metek_mrr2_20230929:p001",
+      "family_id": "metek_mrr",
+      "readings": 5,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "metek_mrr2_20230929:p002",
+      "family_id": "metek_mrr",
+      "readings": 26,
+      "ledger_entries": 3
+    },
+    {
+      "chunk_id": "metek_mrr_pro_20240705:p001",
+      "family_id": "metek_mrr",
+      "readings": 4,
+      "ledger_entries": 2
+    },
+    {
+      "chunk_id": "metek_mrr_pro_20240705:p002",
+      "family_id": "metek_mrr",
+      "readings": 23,
+      "ledger_entries": 2
+    },
+    {
+      "chunk_id": "raymarine_cyclone_manual_entry:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 4,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_antenna:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 12,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_antenna_physical:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 6,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_arpa:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 1,
+      "ledger_entries": 2
+    },
+    {
+      "chunk_id": "raymarine_spec_connections:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 2,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_environment:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 4,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_power:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 13,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_power_pro:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 13,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_range:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 19,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_range_pro:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 20,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_receiver:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 2,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_transmitter:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 2,
+      "ledger_entries": 1
+    },
+    {
+      "chunk_id": "raymarine_spec_transmitter_pro:html",
+      "family_id": "raymarine_cyclone",
+      "readings": 2,
+      "ledger_entries": 1
+    }
+  ],
+  "distinct_subject_labels": 23,
+  "subject_count_limit": "Model labels include variants; these are not independent evidence groups.",
+  "necessary_next_steps": [
+    "由未读取旧QA答案及待评模型输出的另一作者从原文独立编制中文题和语义参考；按96题/8组既定目标，不靠配额造事实。",
+    "另一审计者对照旧5401题、12题和24题的来源/意图；命中或无法排除的衍生题只作开发，并复核来源语义。",
+    "实现固定BM25 top4页检索到全部合格读法E(q)的映射，flat/bound完整元组、多重性及来源技术注记等信息往返验收。",
+    "基于实际问题和E(q)检验48个竞争读数问题、6来源组、12双限定或对应问题门槛；不足取消对照。",
+    "实际分词和共同提示只用旧开发材料预检，冻结协议及预算后才运行一轮无训练对照；当前不启动GPU。"
+  ],
+  "new_GPU_hours": 0,
+  "semantic_review_limits": [
+    "Cross-review uses separate AI agents of the same available model class, not independent human experts or a gold benchmark.",
+    "Whole-page semantic coverage is an AI judgment. Structural checks validate scope, byte identity and quotation spans, not factual truth.",
+    "No claim of whole-project family isolation or current-checkpoint training/pretraining nonexposure; retain the historical screening conclusions.",
+    "This is source-conditioned technical QA preparation, not independently verified equipment truth or a full knowledge-graph reasoning engine."
+  ]
+}

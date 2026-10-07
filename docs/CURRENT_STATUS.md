@@ -2,7 +2,17 @@
 
 更新：2026-10-07；历史资产基线审计为2026-09-26。主线见[论文主线与框架](THESIS_ROUTE_REVIEW.md)，下一步见[执行计划](ROADMAP.md)。以下区分当前训练与历史资产，不能把旧结果视作新方法成果。
 
-## 本轮完成：官方来源归档、版本核对及历史排查
+## 本轮完成：全页读法整理与AI交叉复核
+
+[读法快照](../artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json)已按预先声明的13页PDF与13段HTML整理502条读法，覆盖8个来源组。261条含显式限定、58条含多个限定；203条适用于多个主体，共用一条记录，不逐型号复制。39条背景/排除/歧义记录中有5项来源未决问题，继续隔离，不靠常识补单位或修正原文。数量超过原200–300估计是因为遵守完整页范围，不是扩样追模型分数；也不是502个独立事实或评价样本。
+
+四个作者包均经过非作者AI逐条、全页交叉复核，详见[选择清单](../artifacts/thesis_direction_review/radar_readings_v1/selection.json)。METEK四项意见已经闭环：加热器数值补可选配置、缩小宣传性维护表述的排除范围、保留衰减订正功能而不推断改进幅度、明确枚举不自动表示互斥/完备。原稿、修订稿和详细审稿留存在本地`data/radar_sources_v2/curation_v1/`，公开元数据及校验代码。同类AI交叉复核不是独立人工金标，也不证明实际设备参数真值。
+
+新增[读法校验](../experiments/radar_domain/source_readings.py)和[快照重建](../experiments/radar_domain/reading_snapshot.py)，检查全部26块的来源/页范围、原件与提取文本字节、856处引用片段、跨包标识及复核输入绑定；8项CPU故障用例通过。通过判定和修订闭环来自保存的AI审稿及选择决定，校验器不重新判断审稿意见是否实质解决；结构与哈希检查不能证明语义完整性。现有字段仍是来源读法表示，不宣称新增了图关系推理或单位计算算法。
+
+下一步由未读取旧答案和待评输出的作者从原文独立编题，再做来源语义与旧题重叠审查，以及实际检索证据下的48/6/12必要性门槛。当前新QA、训练、模型运行均为0，尚未冻结评价协议；本轮GPU用量0，累计保持24.040/72小时。
+
+## 前一阶段：官方来源归档、版本核对及历史排查
 
 [来源准备汇总](../artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json)已完成：9个候选中8组有可用主件，8家厂商，气象与船用各4组；8份PDF共78页、同一Raymarine手册的15个HTML段落、8份辅助网页。23个主型号包含同族变体；页数、型号数和URL数都不是独立事实或独立样本数。171个本地原件、派生件和抓取元数据文件通过SHA256/大小核验，全文、PNG和PDF保存在忽略的`data/radar_sources_v2/`。
 
@@ -12,7 +22,7 @@ Simrad候选网页和官方替代手册均未取得原件，两次HTTP失败保�
 
 [历史别名筛查](../artifacts/thesis_direction_review/radar_sources_v2/history_screening.json)覆盖318文件、72,359,852字节，旧QA复核4277/582/542=5401，SFT4277。Ranger、GMWR、DRS-NXT、HALO有旧同族记录；其中GMWR和DRS-NXT各命中1条原QA与1条SFT，HALO命中2条原QA及22条SFT（含工具枚举），Ranger只在旧语料/KG命中。当前8组中的GMWR/DRS-NXT不能宣传为全项目家族未见。WRS300未检出，其他窄词未检出也不是完整隔离证明，JMA其他型号谱系及GMR/MRR裸简称仍有歧义。现有权重是否用过这些旧文件和基座预训练暴露仍未知；已知调试原件URI/哈希无精确交集不抵消上述历史重叠。
 
-[标注范围](../artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json)已在编题前声明13页PDF、13个完整HTML内容段。先整理页内全部合格的主型号/部件技术读法和排除/歧义清单，再独立出题与语义复核，并由另一审计者对照旧QA意图和来源；命中或无法排除的衍生题仅作开发。当前新读法、新QA、训练和模型运行均为0，必要性门槛尚不能验收。下一步是数据标注，不开GPU；累计账本保持24.040/72小时。
+[标注范围](../artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json)在编题前声明13页PDF、13个完整HTML内容段，其中零读法/零题为当时状态，快照不回写。后续读法已完成，见本轮汇总；仍须独立出题与语义复核，并由另一审计者对照旧QA意图和来源，命中或无法排除的衍生题仅作开发。必要性门槛尚不能验收，不开GPU。
 
 ## 前一轮完成：数据构建章与下一轮覆盖设计
 
