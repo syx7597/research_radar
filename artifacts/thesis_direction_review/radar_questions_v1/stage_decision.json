@@ -1,0 +1,38 @@
+{
+  "schema": "radar_questions_and_gate_stage_decision_v1",
+  "recorded_on": "2026-10-07",
+  "status": "data_semantics_and_necessity_accepted_execution_preflight_pending",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_questions_v1/selection.json": "829299f2b08eceb3f093d49978b2d1a71ef8bbdaf2bb14e0fa8ee340cedb9bf7",
+    "artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json": "cb8c994e3ad50419af11bb5b6a6ef0f2dd6d3fff2e1daf35ef75de56f39cdad0",
+    "artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json": "755264eb40d1af05a498cdf6553171035d7467e1dfa307470da6b271bff8ac53"
+  },
+  "completed": [
+    "96 source-authored questions; eight related source groups; two isolated non-author AI semantic reviews.",
+    "Four scoring clarifications closed without changing question text or numerical references.",
+    "Bounded old-question audit: 11 files, 10874 question/trace rows including variants, no identified same-target derivative in inspected contexts.",
+    "Fixed question-only BM25 retrieval replay identical; E contains every curated reading on retrieved pages.",
+    "Conservative actual-evidence gate 50 competing questions / 8 groups / 31 complex questions; seven boundary disagreements uncounted.",
+    "16 CPU tests including rejected-review, stale-history-binding, source-family, gold-input and witness-membership failure cases."
+  ],
+  "not_completed": [
+    "Equal-information flat/bound serializers and exact round-trip checks.",
+    "Real tokenizer checks for every complete input and shared prompt validation on old development material.",
+    "Final checkpoint/prompt/code/budget execution freeze and model evaluation."
+  ],
+  "next_actions_zh": [
+    "实现完整逐条flat与按归属组织的bound；记录、全部字段、来源技术注记、多重性及顺序完全一致。",
+    "对全部96题所有臂做真实分词预检；每题7–241条记录不可按答案筛选或各臂分别截断。若超限先记录统一设计修订，不运行后删题。",
+    "只在预检通过后冻结一次最多暂定2 GPU小时的无训练评价；恢复SFT公开主结论不由此预设领域增益。"
+  ],
+  "stop_rules_unchanged": true,
+  "reference_grade": "source_grouped_AI_reviewed_not_human_gold",
+  "evaluation_frozen": false,
+  "model_run_ready": false,
+  "new_training_runs": 0,
+  "new_model_runs": 0,
+  "new_GPU_hours": 0,
+  "cumulative_GPU_hours": 24.0400663155,
+  "GPU_hours_ceiling": 72,
+  "claim_boundary_zh": "本轮证明评价材料及可检验的绑定场景已形成，不证明新算法有效，不把支持页覆盖当作问答准确率。"
+}

@@ -8,7 +8,13 @@
 
 主线：**保留主体、条件、区间和来源的雷达知识资源 → 小模型生成可执行查询 → 答案与依据 → 公开基准和独立雷达评价**。复用现有数据、执行器和系统，不重建整个项目。配对续训复现、回放复核及B/D配对RL均已完成。RL增量未达到扩展标准，保留恢复轨迹SFT为主方案；语义核验偏好训练继续暂缓。领域核验与论文写作并行推进；范围和队列见[执行计划](docs/ROADMAP.md)。
 
-**2026-10-07：完成502条来源读法和AI交叉复核，下一步独立编题，未启动模型。** [读法快照](artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json)覆盖预先声明的13页PDF与13个手册内容段、8个来源组；261条带显式限定、58条带多个限定，203条共同适用于多个主体，均不通过复制主体增加记录数。这些是来源读法，不能当作502个独立事实或评价样本。
+**2026-10-07：96题独立编制、双AI语义复核与实际证据门槛完成，尚未启动模型。** [题目快照](artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json)覆盖8组各12题；由未读取旧答案、整理记录值或模型输出的作者从原文编题，两位非作者分别核验。四题通用脚注评分要求已澄清，允许正确简答和题面条件继承，具体测量条件及额外断言仍须核验。原题/数值未改，原稿、审稿及裁决保留；这是AI参考，不是人工金标。
+
+[固定检索与必要性检查](artifacts/thesis_direction_review/radar_questions_v1/necessity_gate.json)保守确认50题真实竞争读数、8个来源组、31题复杂对应，通过48/6/12门槛。两审原判44/57题均保留；逐项见证核对补认6题，另外7个边界分歧题不贡献通过数量。BM25覆盖92/96题全部参考页，每题带入7–241条完整读法；4个缺页题保留，未来不从分母删除。门槛只说明值得做对照，不能当作表示收益。旧题审计覆盖11文件10,874个问法/轨迹行，未识别本批同目标衍生，但同族暴露及未认证谱系局限仍在。
+
+下一步实现完整flat与bound的无损往返，使用同一完整E(q)、字段和顺序，做全部输入的真实分词预算检查，再冻结一次无训练对照；不静默截断、不按答案筛证据、不调新题检索。16项CPU测试与96题检索重放通过；累计GPU仍24.040/72小时。
+
+**此前完成：502条来源读法和AI交叉复核。** [读法快照](artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json)覆盖预先声明的13页PDF与13个手册内容段、8个来源组；261条带显式限定、58条带多个限定，203条共同适用于多个主体，均不通过复制主体增加记录数。这些是来源读法，不能当作502个独立事实或评价样本。
 
 [归档汇总](artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json)记录8组可用来源、8家厂商、气象/船用各4组；保存8份PDF共78页、15个同册官方手册HTML段落及8份辅助网页。23个主型号包含同族变体，不算23份独立证据。原Simrad两次下载失败保留，已在出题和模型输出前登记METEK MRR替补，两份MRR资料只算一组。
 
@@ -16,7 +22,7 @@
 
 [快照选择与复核边界](artifacts/thesis_direction_review/radar_readings_v1/selection.json)保留4个作者包、非作者AI审稿及修订历史。共39条排除/背景/歧义记录，其中5项来源未决问题不作为需要确定答案的题目依据；修正了可选加热器适用条件和技术功能遗漏。原文、标注、详细审稿留在忽略的本地数据目录，公开代码、哈希和汇总。8项CPU测试及全量页、引用校验通过；AI审稿不等于人工金标。
 
-下一步从原文独立编题和语义参考，检查旧题意图/来源重叠，再实现完整证据的两种表示并检验实际检索下的48/6/12门槛。当前新QA、训练和模型运行仍为0；读法数量不能替代门槛，也不表示96题已经完成。累计GPU账本保持24.040/72小时。
+后续96题与实际检索必要性审查已完成，见上方新快照；本段保留读法阶段依据。新增训练和模型运行均为0，累计GPU账本保持24.040/72小时。
 
 **此前完成：数据构建章及下一轮评价设计复核。** [第三章草稿](thesis/current/03_radar_data_construction.tex)区分历史库存、旧12条开发读法、合成100组和新来源材料，附6张表、109项可重建数据字段；当前第三至六章均有工作稿，PDF尚未编译，论文整体尚未完成。
 
@@ -24,7 +30,7 @@
 
 [独立AI设计审阅](artifacts/thesis_direction_review/radar_coverage_v2/design_review.json)未发现阻断问题，17项CPU审计测试及三组论文表格复核通过；设计审阅不等于来源事实验收或模型运行就绪。
 
-[已见登记](artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json)覆盖10份已见来源/10个家族组及全部已登记问法版本；[CPU划分审计](experiments/radar_domain/source_split_audit.py)检查显式闭包、跨组混用和AI身份声明，只证明元数据一致性。读法整理之后仍须独立编题与核验；达到数据和CPU门槛后另行冻结一次最多2 GPU小时的三路LLM评价。当前没有96道新题、运行协议冻结或新GPU任务。
+[已见登记](artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json)覆盖10份已见来源/10个家族组及全部已登记问法版本；[CPU划分审计](experiments/radar_domain/source_split_audit.py)检查显式闭包、跨组混用和AI身份声明，只证明元数据一致性。独立编题与必要性门槛现已完成；等信息表示和实际分词预算检查通过后，再冻结一次暂定最多2 GPU小时的三路LLM评价。当前尚无运行协议冻结或新GPU任务。
 
 **前一轮：新厂商来源固定评价和双AI正文审阅完成，未观察到恢复C的额外领域正确性收益。** [资料包](artifacts/thesis_direction_review/radar_sources_v1/manifest.json)来自Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120和JRC JMA-1030系列的4份厂商PDF，共4个来源/家族、5个型号、24道中文题、62条来源读法和15个完整原文页。[来源AI审阅](artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json)通过。新资料与原12条实际调试来源/家族闭包隔离，但3个家族已在历史语料出现，旧自动QA完整来源血缘未认证；这是小规模AI探索评价，不是最终独立人工评价。
 

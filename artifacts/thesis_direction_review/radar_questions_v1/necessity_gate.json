@@ -1,0 +1,136 @@
+{
+  "schema": "radar_actual_evidence_necessity_gate_v1",
+  "recorded_on": "2026-10-07",
+  "inputs_sha256": {
+    "data/radar_sources_v2/qa_v1/gate_review_root.json": "8f4dbb58749699e5b74e6512011283a1b27126ee729f9f2e725927fc9740002d",
+    "data/radar_sources_v2/qa_v1/gate_review_root.v2.json": "72ea1a5146f12b76d8e79e6224b0e2d1d1efbf55df33e2710cc04c791b054b57",
+    "data/radar_sources_v2/qa_v1/gate_review_second.json": "e9e5f26b4e380e3b8284771512284e8ed36f633ee96e0a1ec6c159265710bae7",
+    "data/radar_sources_v2/qa_v1/gate_resolution_second.json": "c998a104b5f7b515a90ea2c41469bedd932a9f5919d9e222001b5cf1d8515b0b",
+    "data/radar_sources_v2/qa_v1/gate_interpretation_before_retrieval.json": "b68ea264cb9fbf6c99071a50c2615193734182488974a699ebe91aae350a1e67",
+    "data/radar_sources_v2/qa_v1/retrieval_observation.json": "f469b9ab2d69a1aefb1f7f783eb904d52500e02603128dd770f3f8129fef7e1a",
+    "data/radar_sources_v2/qa_v1/retrieval_corpus.json": "f0aeab98347f4357213d556f15de550a67f5dc3d41b63d7bb79527c1075c0ed4",
+    "data/radar_sources_v2/qa_v1/questions.minimal.jsonl": "e79f61b6ce5a3e13343b5eca788112f64251a68ebe06d91704e4cb32ad96bde5",
+    "data/radar_sources_v2/qa_v1/review_rubric_closure_second.json": "89742d8bce2f12f6294f55201ae2e54ca89b840492850b6d939c6e545802b59b",
+    "artifacts/thesis_direction_review/radar_questions_v1/selection.json": "829299f2b08eceb3f093d49978b2d1a71ef8bbdaf2bb14e0fa8ee340cedb9bf7",
+    "artifacts/thesis_direction_review/radar_questions_v1/snapshot_audit.json": "cb8c994e3ad50419af11bb5b6a6ef0f2dd6d3fff2e1daf35ef75de56f39cdad0",
+    "experiments/radar_domain/coverage_gate.py": "42f25b97787be8d76af92dcc77c541556e553ddf0def24f133204886b8c97271",
+    "experiments/radar_domain/question_snapshot.py": "873388e53d40535da998fe9dafaa33f501f53754c7f75ad015c5e5ec1c9d2ad7",
+    "experiments/radar_domain/coverage_evidence.py": "0bf64997ab767040f315555e7916621de2edfb3be8d2cb3eacb99430dc5c7973",
+    "data/radar_sources_v2/qa_v1/gate_adjudication.json": "e9fa97bfb1cce8808030a53d106ac6e3f69e762a4e677531e6b085b6ce1b0ba9",
+    "artifacts/thesis_direction_review/radar_coverage_v2/design.json": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e"
+  },
+  "counts": {
+    "questions": 96,
+    "all_reference_chunks_retrieved": 92,
+    "competing_questions": 50,
+    "competing_source_groups": 8,
+    "complex_questions_in_competing_subset": 31
+  },
+  "thresholds": {
+    "competing_questions": 48,
+    "competing_source_groups": 6,
+    "complex_questions_in_competing_subset": 12
+  },
+  "passed": true,
+  "by_family": [
+    {
+      "family_id": "eec_ranger_x_band",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 12,
+      "competing_questions": 6,
+      "complex_in_competing": 2
+    },
+    {
+      "family_id": "furuno_drs_nxt",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 12,
+      "competing_questions": 6,
+      "complex_in_competing": 4
+    },
+    {
+      "family_id": "gamic_gmwr",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 12,
+      "competing_questions": 7,
+      "complex_in_competing": 4
+    },
+    {
+      "family_id": "garmin_gmr_fantom",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 12,
+      "competing_questions": 6,
+      "complex_in_competing": 4
+    },
+    {
+      "family_id": "jrc_jma5200mk2",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 12,
+      "competing_questions": 8,
+      "complex_in_competing": 3
+    },
+    {
+      "family_id": "metek_mrr",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 11,
+      "competing_questions": 4,
+      "complex_in_competing": 4
+    },
+    {
+      "family_id": "raymarine_cyclone",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 9,
+      "competing_questions": 5,
+      "complex_in_competing": 5
+    },
+    {
+      "family_id": "vaisala_wrs300",
+      "questions": 12,
+      "all_reference_chunks_retrieved": 12,
+      "competing_questions": 8,
+      "complex_in_competing": 5
+    }
+  ],
+  "retrieval_replay": "identical_96_questions_all_page_records_no_reference_filter",
+  "retrieved_records_per_question": {
+    "min": 7,
+    "max": 241
+  },
+  "review_resolution": {
+    "root_original_counts": {
+      "questions": 96,
+      "all_reference_chunks_retrieved": 92,
+      "competing": 44,
+      "competing_families": 8,
+      "complex_in_competing": 28
+    },
+    "second_original_counts": {
+      "competing": 57,
+      "groups": 8,
+      "complex": 31
+    },
+    "competition_disagreements": 13,
+    "newly_supported_after_witness_review": 6,
+    "boundary_questions_conservatively_uncounted": 7,
+    "root_self_check_complex_corrections_preserved": 4,
+    "final_competing": 50,
+    "final_groups": 8,
+    "final_complex": 31,
+    "resolution_second_review": "data/radar_sources_v2/qa_v1/gate_resolution_second.json",
+    "root_adjudication_seen_review_totals": true
+  },
+  "limits_zh": [
+    "必要性标签是来源语义AI审阅，不是已观察的模型错误、统计难度或效果证据。",
+    "原判先隔离保存；裁决时已见两组汇总，不称盲裁决。7个边界题按不贡献下界处理，语义分歧本身保留。",
+    "新题检索前固定了更严格的同族、至少2个不同record_id见证；单record内部多值不独自满足竞争。复杂12题门槛仅在竞争子集中计，是预先声明的更严格口径。",
+    "所有96题保留；4个缺支持页题也不会从未来端到端评价分母删除。",
+    "支持页覆盖92/96不是问答准确率；50题门槛通过不是bound优于完整flat的证据。",
+    "正式模型、提示、等信息往返和实际token预算仍未冻结；没有模型运行或训练。"
+  ],
+  "action": "prepare_equal_information_and_context_preflight",
+  "human_gold": false,
+  "evaluation_frozen": false,
+  "model_run_ready": false,
+  "new_model_runs": 0,
+  "new_training_runs": 0,
+  "new_GPU_hours": 0
+}

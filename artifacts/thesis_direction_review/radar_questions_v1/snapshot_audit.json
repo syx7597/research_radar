@@ -1,0 +1,84 @@
+{
+  "schema": "radar_question_snapshot_audit_v1",
+  "inputs_sha256": {
+    "data/radar_sources_v2/qa_v1/weather.author.json": "c136481ab35839a4d985bd6e04a7c27b3a7d1f933c80a905aee714308a30bf64",
+    "data/radar_sources_v2/qa_v1/marine.author.json": "fc9809870f1f989d286c362de6c8cdcc3f44dc01da021604d6ccad593c37b146"
+  },
+  "questions": 96,
+  "by_family": {
+    "vaisala_wrs300": 12,
+    "eec_ranger_x_band": 12,
+    "gamic_gmwr": 12,
+    "metek_mrr": 12,
+    "furuno_drs_nxt": 12,
+    "jrc_jma5200mk2": 12,
+    "garmin_gmr_fantom": 12,
+    "raymarine_cyclone": 12
+  },
+  "by_primary_type": {
+    "simple_attribute": 16,
+    "quantity_form": 24,
+    "qualified_attribute": 20,
+    "table_binding": 28,
+    "bounded_listing": 8
+  },
+  "distinct_declared_intents": 96,
+  "evaluation_frozen": false,
+  "human_gold": false,
+  "model_run_ready": false,
+  "limits": [
+    "Identity, quotes and author declarations only; not semantic correctness or historical isolation.",
+    "Author competition notes are hypotheses, not a measured necessity gate."
+  ],
+  "recorded_on": "2026-10-07",
+  "selection_sha256": "829299f2b08eceb3f093d49978b2d1a71ef8bbdaf2bb14e0fa8ee340cedb9bf7",
+  "status": "source_authored_two_AI_reviews",
+  "reviews": [
+    {
+      "packet": "data/radar_sources_v2/qa_v1/weather.author.json",
+      "questions": 48,
+      "author": "AI /root/radar_qa_author_v2",
+      "reviewers": [
+        "AI /root",
+        "AI /root/grpo_adapter/continuation_cli_review"
+      ]
+    },
+    {
+      "packet": "data/radar_sources_v2/qa_v1/marine.author.json",
+      "questions": 48,
+      "author": "AI /root/radar_qa_author_v2",
+      "reviewers": [
+        "AI /root",
+        "AI /root/grpo_adapter/continuation_cli_review"
+      ]
+    }
+  ],
+  "history_counts": {
+    "reviewed_new_questions": 96,
+    "exact_normalized_matches": 0,
+    "identified_same_target_or_derivatives": 0,
+    "moved_to_development": 0
+  },
+  "history_limits_zh": [
+    "承认旧任务结构和问法类型可重合；没有主张96个新独立任务类型。",
+    "GMWR/DRS-NXT已知同族暴露；MRR/GMR/JMA宽词旧身份谱系未完全认证。这些设备暴露不等于已核对的特定新技术问题衍生，但限制未见泛化结论。",
+    "AI审阅只有在已登记资料范围内未识别同目标衍生关系；不是统计独立、全项目未见或人工金标证明。"
+  ],
+  "scoring_clarifications": {
+    "affected_questions": 4,
+    "changed_question_wordings": 0,
+    "changed_reference_values": 0,
+    "rule_zh": "允许题面条件继承及正确简答；通用脚注不强制复述，禁止无支持扩展断言；具体测量条件仍必要。",
+    "decision_file": "data/radar_sources_v2/qa_v1/scoring_adjudication.json",
+    "second_closure_file": "data/radar_sources_v2/qa_v1/review_rubric_closure_second.json"
+  },
+  "semantic_limits": [
+    "两位非作者AI意见在彼此隔离下形成；不是两个人工专家或两个不同模型家族。",
+    "哈希/字段检查只能绑定保存的判断；评分问题的实质闭环由保存的作者回应与根审阅裁决完成。",
+    "96题来自8个相关来源组，有事实和同表依赖，不是96个统计独立设备或新推理结构。",
+    "历史审查有明确11文件边界，家族暴露及旧别名谱系局限保留；基础模型预训练暴露未知。"
+  ],
+  "new_model_runs": 0,
+  "new_training_runs": 0,
+  "new_GPU_hours": 0
+}

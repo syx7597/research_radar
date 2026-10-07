@@ -1,0 +1,76 @@
+{
+  "schema": "radar_question_snapshot_selection_v1",
+  "recorded_on": "2026-10-07",
+  "status": "source_authored_AI_semantically_reviewed_candidate_snapshot",
+  "human_gold": false,
+  "evaluation_frozen": false,
+  "model_run_ready": false,
+  "accepted_packets": [
+    {
+      "path": "data/radar_sources_v2/qa_v1/weather.author.json",
+      "sha256": "c136481ab35839a4d985bd6e04a7c27b3a7d1f933c80a905aee714308a30bf64",
+      "author": "AI /root/radar_qa_author_v2",
+      "reviews": [
+        {
+          "path": "data/radar_sources_v2/qa_v1/review_weather_root.json",
+          "sha256": "e15e91c49aac8891e927f0ef152b02936244e1ddc762cc6f0ab8da70295e003d"
+        },
+        {
+          "path": "data/radar_sources_v2/qa_v1/review_weather_second.json",
+          "sha256": "eee68a23cc7fe4c400c6bf472840edac98387beace0361f1efcd6d0c9bdec9ff"
+        }
+      ],
+      "open_semantic_issues": [],
+      "adjudication": "data/radar_sources_v2/qa_v1/scoring_adjudication.json"
+    },
+    {
+      "path": "data/radar_sources_v2/qa_v1/marine.author.json",
+      "sha256": "fc9809870f1f989d286c362de6c8cdcc3f44dc01da021604d6ccad593c37b146",
+      "author": "AI /root/radar_qa_author_v2",
+      "reviews": [
+        {
+          "path": "data/radar_sources_v2/qa_v1/review_marine_root.json",
+          "sha256": "3f3fc284a3c8f63b20b13616d08f73ddeffb3e53a63a02dd0e4e5b519ea7f0dc"
+        },
+        {
+          "path": "data/radar_sources_v2/qa_v1/review_marine_second.json",
+          "sha256": "61879ce905f9b236624cc2c05f2519573a37486e599d66ddd31c94140e4252eb"
+        }
+      ],
+      "open_semantic_issues": [],
+      "adjudication": "data/radar_sources_v2/qa_v1/scoring_adjudication.json"
+    }
+  ],
+  "inputs_sha256": {
+    "data/radar_sources_v2/qa_v1/scoring_adjudication.json": "8fcf692e7d236f0eaa0d18884321f4e7f844bd088e12fed91fb5ba1415441c2f",
+    "data/radar_sources_v2/qa_v1/author_rubric_response.json": "f1cd494623a64fe64fb887badf8e4f9a3594a2c22db390f193b1583bad387c5f",
+    "data/radar_sources_v2/qa_v1/history_semantic_review.json": "5e79405cf3f563cd3524f35cedcf846af798f177f118e1741e1696740e248524",
+    "data/radar_sources_v2/qa_v1/retrieval_corpus.json": "f0aeab98347f4357213d556f15de550a67f5dc3d41b63d7bb79527c1075c0ed4",
+    "data/radar_sources_v2/qa_v1/gate_interpretation_before_retrieval.json": "b68ea264cb9fbf6c99071a50c2615193734182488974a699ebe91aae350a1e67",
+    "experiments/radar_domain/coverage_questions.py": "d64d83d3f4b0f984e9bdf3cfc36611bd3af342a74425306690dac3d645f53b33",
+    "experiments/radar_domain/coverage_evidence.py": "0bf64997ab767040f315555e7916621de2edfb3be8d2cb3eacb99430dc5c7973",
+    "experiments/radar_domain/question_history.py": "8444d65f2874c17af229835b8efe6d515b9d6ca42ff97d55402b3ecc9caecba6",
+    "experiments/radar_domain/question_snapshot.py": "873388e53d40535da998fe9dafaa33f501f53754c7f75ad015c5e5ec1c9d2ad7",
+    "data/radar_sources_v2/qa_v1/review_rubric_closure_second.json": "89742d8bce2f12f6294f55201ae2e54ca89b840492850b6d939c6e545802b59b"
+  },
+  "history_semantic_review": "data/radar_sources_v2/qa_v1/history_semantic_review.json",
+  "scoring_clarifications": {
+    "affected_questions": 4,
+    "changed_question_wordings": 0,
+    "changed_reference_values": 0,
+    "rule_zh": "允许题面条件继承及正确简答；通用脚注不强制复述，禁止无支持扩展断言；具体测量条件仍必要。",
+    "decision_file": "data/radar_sources_v2/qa_v1/scoring_adjudication.json",
+    "second_closure_file": "data/radar_sources_v2/qa_v1/review_rubric_closure_second.json"
+  },
+  "semantic_limits": [
+    "两位非作者AI意见在彼此隔离下形成；不是两个人工专家或两个不同模型家族。",
+    "哈希/字段检查只能绑定保存的判断；评分问题的实质闭环由保存的作者回应与根审阅裁决完成。",
+    "96题来自8个相关来源组，有事实和同表依赖，不是96个统计独立设备或新推理结构。",
+    "历史审查有明确11文件边界，家族暴露及旧别名谱系局限保留；基础模型预训练暴露未知。"
+  ],
+  "next_steps": [
+    "Observe fixed question-only retrieval and all-page reading sets without tuning.",
+    "Apply registered source-semantic necessity gate before representation or model work."
+  ],
+  "checker_revision_zh": "代码审查修正拒绝状态可绕过、历史复核未强绑当前包的问题；预修正版代码/清单/汇总保存在qa_v1/pre_code_review，题目/参考/原判/检索未改。 后续进一步强制裁决/独立闭环共享同一作者回应SHA、绑定当前原审稿；预加固汇总也保存在qa_v1/pre_binding_hardening。"
+}
