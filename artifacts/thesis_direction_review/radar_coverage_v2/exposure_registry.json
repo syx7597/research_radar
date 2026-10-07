@@ -1,0 +1,313 @@
+{
+  "version": "radar_known_exposure_v2",
+  "status": "known_exposure_registry_not_complete_lineage",
+  "canonical_document_ids": [
+    "https://electronics.leonardo.com/documents/16277707/18380759/METEOR%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970",
+    "https://en.wikipedia.org/wiki/AN/APY-9",
+    "https://en.wikipedia.org/wiki/AN/SPG-51",
+    "https://en.wikipedia.org/wiki/AN/SPG-59",
+    "https://en.wikipedia.org/wiki/AN/SPN-35",
+    "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine",
+    "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf",
+    "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf",
+    "https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf"
+  ],
+  "source_sha256": [
+    "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+    "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0",
+    "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d",
+    "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+    "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+    "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+    "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7",
+    "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+    "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be",
+    "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95"
+  ],
+  "source_uris": [
+    "https://electronics.leonardo.com/documents/16277707/18380759/METEOR%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970",
+    "https://en.wikipedia.org/wiki/AN/APY-9",
+    "https://en.wikipedia.org/wiki/AN/SPG-51",
+    "https://en.wikipedia.org/wiki/AN/SPG-59",
+    "https://en.wikipedia.org/wiki/AN/SPN-35",
+    "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine",
+    "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+    "https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf",
+    "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf",
+    "https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf"
+  ],
+  "family_ids": [
+    "AN/APY-9",
+    "AN/MPQ-65",
+    "AN/SPG-51",
+    "AN/SPG-59",
+    "AN/SPN-35",
+    "EL/M-2080",
+    "JMA-1030",
+    "JMA-1032",
+    "JMA-1034",
+    "JMA1030",
+    "METEOR 700C",
+    "METEOR 735C",
+    "METEOR_700C_735C",
+    "MIM-104 Patriot",
+    "MIM-104 Patriot system",
+    "Patriot",
+    "WR2120",
+    "WRM 200",
+    "WRM200"
+  ],
+  "question_ids": [
+    "radar-lookup-dev-01",
+    "radar-lookup-dev-02",
+    "radar-lookup-dev-03",
+    "radar-lookup-dev-04",
+    "radar-lookup-dev-05",
+    "radar-lookup-dev-06",
+    "radar-lookup-dev-07",
+    "radar-lookup-dev-08",
+    "radar-lookup-dev-09",
+    "radar-lookup-dev-10",
+    "radar-lookup-dev-11",
+    "radar-lookup-dev-12",
+    "radar-workflow-dev-01",
+    "radar-workflow-dev-02",
+    "radar-workflow-dev-03",
+    "radar-workflow-dev-04",
+    "radar-workflow-dev-05",
+    "radar-workflow-dev-06",
+    "radar-workflow-dev-07",
+    "radar-workflow-dev-08",
+    "radar-workflow-dev-09",
+    "radar-workflow-dev-10",
+    "radar-workflow-dev-11",
+    "radar-workflow-dev-12",
+    "source_zh_01",
+    "source_zh_02",
+    "source_zh_03",
+    "source_zh_04",
+    "source_zh_05",
+    "source_zh_06",
+    "source_zh_07",
+    "source_zh_08",
+    "source_zh_09",
+    "source_zh_10",
+    "source_zh_11",
+    "source_zh_12",
+    "source_zh_13",
+    "source_zh_14",
+    "source_zh_15",
+    "source_zh_16",
+    "source_zh_17",
+    "source_zh_18",
+    "source_zh_19",
+    "source_zh_20",
+    "source_zh_21",
+    "source_zh_22",
+    "source_zh_23",
+    "source_zh_24"
+  ],
+  "question_sha256": [
+    "0c67ba805d475fed0bb4dc851d34e2536444e6ab53820c9831563cbe4d91e354",
+    "0f4eea8ec88bad2274c740af1e925d2ce1799e5434fa8e8dd3f6711f1b04d655",
+    "0f540e327b630c296df351171918f6d5a8d584e121ea995c7bdf77d7898f9b62",
+    "153b4c0c03814e14675752f8dc4a18e3887a6c735df0fedecc4e0f15063c2723",
+    "1847cbf0752d26a3f108d99216685ebc640fb59a6e2a1162fe37b19c908117bf",
+    "18ee933b19a370baa71703c2bb22ba0e78ff62e6905f05c1ca75a8298b4d909c",
+    "1fcdd7b18c831d3f50935622ec43d7c2d9c3e8671886de12e114ed418b6603b9",
+    "20ea1b4f17946f069860fd968d6092d2331997d03283c26bc4f41c29e8b1444a",
+    "22013af4519927e7114cad7b64425c986e70784ebac4ef49dc732c2497ca013a",
+    "22d57dc03fa4f2cb4dfa26f50c2ab2dfebca81fbbb35f6d405c7448353769f07",
+    "257370c4657ccb5ae991ee4c3bc7b9fe80e65a616159e01aa3a47cc6ad04d776",
+    "25910f87a85d06b2a37e20101f8293660b2fe82b8c19ca809c0b32989953c112",
+    "26d05efc7fd7934997c75d05326762380442c9ec7854e08197b362317792ebc7",
+    "26ed26a1b13fa2086adc38c8859407459a45d8eb07ed55e415bbcdf17dcb248e",
+    "2c48b909a5bf8600bda3b73922e8526baeeae78a87acaac270dc20919f93b604",
+    "2dda7dc3c94336603b8c67097e3c55b9af3c7742484d85a71b0e8a9683c8c0ec",
+    "2e0b4933c882e58e8a452fff6c3ebc7021f18c8972982c9cb6aa39829210c1bb",
+    "2f9a6a28ff7b3ad24b38c2596ea71fb56a2a31f2dae9e12094852465aebda000",
+    "339cd2a934fe0879516bd8b5d6d2c703fef2b19280fec0dd95778df3b28cd84d",
+    "348488cc632e758b8b4bd96f3d1727557e46907152e4335abf40a0456c95f028",
+    "387f88189080d97d74271256afed00b2fb981e050a35ed73715b1ffb1e079b22",
+    "38e9ce3f8233f22fc8d8e3900efa3f3f61122c48e375760c584af946c4fd0a95",
+    "3aa75165362b6f7b89292ed2dcecc543ce16d46d4988f464203603f5dfa5346e",
+    "3c5f496d51200b42e9a0932795da145f9b453f7f536bac66c5c14fc96e8098b1",
+    "3da0b14883adbae126dc028a424638cc2779aa8ccdc8a1dd51283b54f64b1f39",
+    "44b2a2174a2fd3c9e67d0f88d2340e6f037daecef0bda0c1d7f9e523b81ff3d1",
+    "4bc0bbab380272f7713124d4b9e13bd1ce3dc8028494cf904e31f07d52cf4612",
+    "52cda979ac101f2a7aa943519bb7a9a20c7d85632581e3ba35d84bd7e3b64aa6",
+    "542fceeecff276bf8d65ecb445037b8946f52deb016c5705e2efef56c856cfb2",
+    "580bb35ff9ebf7fe1f38fc56ca95048c8c041bfacd5e69e4b9f0560ca5a2d2a2",
+    "615fbd51e762487273149db1ba8d12ae22ba76eab8e5f46b8826731b8d6dbe7f",
+    "64ed747b8a231f201d3f9c00efa0f9c73b6784752c8cc0387facc27fcb761f21",
+    "68cba772ec4fe2945ae4f9447514e19562d1d600ed1727215f1e4065f27aedd2",
+    "6c506ab6eca7eda6bb2ebe1ce81ea168a3c486d5cff23bcbeb7a919b7af74e0c",
+    "6ecb5b81d83add5f2fcf8cc0638caf1654d6d6b19ed701bf92eade8ebd7527bb",
+    "70dc6cf6ebccf65248a6ca11c4dd41d5694bc894076ded6e045927952ad3bfc3",
+    "7263c56038baaa1da4b3bb15e9b4e826376b992ed91a1896c13f448a82ad3440",
+    "756595a7335002ab8d672ba12da21d84e8f576ece170ec27ba76e752b3665659",
+    "7a41f83e67ed9f25a9f2cb1beb9060e30b738a3d11c38609ecae360dafe68d4d",
+    "841b8f1a9ef3a5c9c03fef5a68f6255c7f3bb24a76203ac677ae3a668bce12c4",
+    "86f19448d6258c50ba6a8a83ad307c4e8ce6d3041a643cb11e94aa159c5d5d86",
+    "8a9e584ee8353ea5f893e852c72c9ddbcb9773539d7b39561c69d2ab71108a2c",
+    "8b212942f50581d478daff79f8840a7a553543305d6e0ade080644e48d77dd0c",
+    "8ea73b4a0a04b73411e95ad96c3ec38359341c3fe768850acc11a38645070e07",
+    "95e1f44795935c453d40e513c107cb0883f75fe2baa83a75424446c77ead8ab5",
+    "96fcf2b78eec2eb72e06dc259136ba72946e7a0fa2a30030c33c16cdeef59b50",
+    "9be5447e7656c3b987fbe8f0ef719a9770ad70353c6c08218c16762240962b3c",
+    "9faba785203a0c3877fdc4fcef1f1cecfa80daf1119e79400dc87249796d8c66",
+    "a3f706ea7fff2ab6e35989037bff5c0f2bea67d3e8d773d34d9f8ce211442884",
+    "a79b95b86b1fe31f46ee8a63c9a36bdf7120b5b3b445c0b7f28d74dced93ea8b",
+    "afa2f346f92c89bdbee019d3bc952eb4634b09a2d4eb9483d907bc4e0018ba20",
+    "b8fe9acc02bff152fab0e3cd075be45d214971b045d6da77a1ac853a520db505",
+    "c2aeb259f6bc29c077bbd4b0cbcd24b5f0195025dc021e7e6d961d0fda9fadba",
+    "c31d4ed08d4722df830a1d31a08d966df0c894d67b4de3e4c8441db73ec8918e",
+    "c42b8c88d1fc9700c16ece0fe1ef8df5d43140d9efd242f052f38fa2f388f6f4",
+    "c8c1a1e44ee8f1feaa15e7b35c54acd7ca896193637c1eda22afc0f0a7bcea6a",
+    "cd8f3a382cbc6712678be4c0ba3303d70450597a5a9eedd86cbf55a54f071f91",
+    "ce56d0b2253d3915d2d270fe59077e0525a8e9751fd4bfb357727b394ee2eaa9",
+    "ce7c13990003565baf7aa7c3a5bbcb555e06d2facd0b81ff5daab1d7583eef8e",
+    "d04ff6e7623979eea0e369e9de1c873872454a34a437a37675ca9e640c1d9716",
+    "d85f2d9496f02c3615a2d293bf0522ec33c470f3ac9267b326adf3f0fa57e9ca",
+    "d94202b0d2afec0f9d15e1d88598e9b35523a25fc88715a6c376a2485964e1a5",
+    "daba879bd540b1cefebc821c91e9cd63ed10bd90e03015367ab6e7f5a102febd",
+    "e034fd158063546f7133f3abd648b0c32c6e266b5147bffba8c5e36ae39eefd2",
+    "ea6d28c70e0112f5b804fccf7c9630504f84fa9e4d9a02e5247f6f2dacbdc2b0",
+    "f091d13a8d458172083052230b1d3e2585b9de861cf12e60d55e52394b1e4dbd",
+    "f22de881f7674fde861c6d4c84fecd9ba8abe6eb318ed72ccfff35d66c44305f",
+    "f31562dbc40f7698b23394f6cf3a1db1770a43ef4a33035e88c7ec72ec519e1f",
+    "f6a5aa230c7da46dce9f7be3149c828611db2434e550868fca140e1223188c79",
+    "fb32f7efff25dc99cc8136efc4aff73024bcc138271e57c763c36a3971bbfa54",
+    "fccf1c4c6b455f1d3715617e3f8aa2932d8393fd3bc471bb810a2beb3d8f8559",
+    "fd577606524813b8e633168f0e72f568b38f5c766b33fd27fd447c5d7e1a3220"
+  ],
+  "documents": [
+    {
+      "canonical_document_id": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+      "source_uri": "https://en.wikipedia.org/wiki/MIM-104_Patriot",
+      "source_sha256": "55822bec7df58ee20138f19c9702270f4947ca56f834e6927f3e88758797432c",
+      "family_ids": [
+        "AN/MPQ-65"
+      ]
+    },
+    {
+      "canonical_document_id": "https://en.wikipedia.org/wiki/AN/APY-9",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/APY-9",
+      "source_sha256": "7366d6584f91cb16ed03ce696866838e3be16d77eb5a4d9d39e72bab95fdf4ef",
+      "family_ids": [
+        "AN/APY-9"
+      ]
+    },
+    {
+      "canonical_document_id": "https://en.wikipedia.org/wiki/AN/SPG-51",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-51",
+      "source_sha256": "a5472711842723a90e4413f3d4eb0ff00b773cf9943f8e5170e78d5750dd6a95",
+      "family_ids": [
+        "AN/SPG-51"
+      ]
+    },
+    {
+      "canonical_document_id": "https://en.wikipedia.org/wiki/AN/SPN-35",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPN-35",
+      "source_sha256": "3003133c4297385d574dda55ff5714ee45231c4c655b981fdf742d7d8e37f150",
+      "family_ids": [
+        "AN/SPN-35"
+      ]
+    },
+    {
+      "canonical_document_id": "https://en.wikipedia.org/wiki/AN/SPG-59",
+      "source_uri": "https://en.wikipedia.org/wiki/AN/SPG-59",
+      "source_sha256": "2021a48450a5a861144acb2cc7721fe6a7db5da7e314baa74c3e376377214bde",
+      "family_ids": [
+        "AN/SPG-59"
+      ]
+    },
+    {
+      "canonical_document_id": "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine",
+      "source_uri": "https://en.wikipedia.org/wiki/EL/M-2080_Green_Pine",
+      "source_sha256": "45b4498d4004932dc42093e6ea30e29426275917e2198914de43746109e210db",
+      "family_ids": [
+        "EL/M-2080"
+      ]
+    },
+    {
+      "canonical_document_id": "https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf",
+      "source_uri": "https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf",
+      "source_sha256": "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0",
+      "family_ids": [
+        "WRM200"
+      ]
+    },
+    {
+      "canonical_document_id": "https://electronics.leonardo.com/documents/16277707/18380759/METEOR%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970",
+      "source_uri": "https://electronics.leonardo.com/documents/16277707/18380759/METEOR%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970",
+      "source_sha256": "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d",
+      "family_ids": [
+        "METEOR_700C_735C"
+      ]
+    },
+    {
+      "canonical_document_id": "https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf",
+      "source_uri": "https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf",
+      "source_sha256": "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7",
+      "family_ids": [
+        "WR2120"
+      ]
+    },
+    {
+      "canonical_document_id": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf",
+      "source_uri": "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf",
+      "source_sha256": "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be",
+      "family_ids": [
+        "JMA1030"
+      ]
+    }
+  ],
+  "known_family_aliases": {
+    "AN/MPQ-65": [
+      "Patriot",
+      "MIM-104 Patriot",
+      "MIM-104 Patriot system"
+    ],
+    "WRM200": [
+      "WRM 200"
+    ],
+    "METEOR_700C_735C": [
+      "METEOR 735C",
+      "METEOR 700C"
+    ],
+    "JMA1030": [
+      "JMA-1030",
+      "JMA-1032",
+      "JMA-1034"
+    ]
+  },
+  "source_document_count": 10,
+  "declared_family_group_count": 10,
+  "question_rows_by_input_file": {
+    "artifacts/thesis_direction_review/radar_review_workflow/development_questions.csv": 12,
+    "artifacts/thesis_direction_review/radar_development_v2/questions.jsonl": 12,
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.zh.jsonl": 12,
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.en.jsonl": 12,
+    "data/radar_sources_v1/questions.jsonl": 24
+  },
+  "question_hash_normalization": "NFKC, casefold, whitespace collapsed; no semantic paraphrase detection",
+  "limits": [
+    "Known old 12-target lineages plus exposed source_eval_v1 material; not a whole-workspace audit",
+    "Family aliases and canonical document mappings require source review, cannot be inferred from absent matches",
+    "Old 5401 automatic QA and all paraphrases remain ineligible as new independent questions",
+    "Historical corpus overlap and base pretraining exposure remain unknown or only partly audited",
+    "Question versions and translations are not independent targets; fingerprint counts are not dataset size"
+  ],
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_review_batch/source_manifest.json": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+    "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
+    "artifacts/thesis_direction_review/radar_review_workflow/development_questions.csv": "dc9f72a855e3b18e087a3e81da9ef3c22aca9b081f16157d22404772fca913b1",
+    "artifacts/thesis_direction_review/radar_development_v2/questions.jsonl": "ddf2f9469715f681bb891c4881a6963c8cbaf14f8ded18a4ef01c63e18e4efed",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.zh.jsonl": "52873195290c0aa9dee38cee659075cfadb2917d898988451c580ffb0f5cb14a",
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/questions.en.jsonl": "f309b71e3593f3b2b37f3f42bd7c54040f5c04f486eca6d12b43bebc84c3d30d",
+    "data/radar_sources_v1/questions.jsonl": "7ee2d27b2704a913d8bb2d857b9d548207d82a477d45a424e9bd259dec9d8288",
+    "data/radar_sources_v1/references.jsonl": "2f94be2e74107b5451bd731cbd17282fe16b491294af6d63bbe716f7d6cad985"
+  }
+}

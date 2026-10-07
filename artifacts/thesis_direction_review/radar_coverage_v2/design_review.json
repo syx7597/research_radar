@@ -1,0 +1,61 @@
+{
+  "version": "radar_coverage_design_review_v2",
+  "reviewed_on": "2026-10-06",
+  "reviewer": "AI /root/coverage_design_review",
+  "human_review": false,
+  "design_review_only": true,
+  "model_run_ready": false,
+  "verdict": "no_blocking_design_issue_identified",
+  "reviewed_files": [
+    {
+      "path": "artifacts/thesis_direction_review/radar_coverage_v2/design.json",
+      "sha256": "e8d6eef2468eaecfb5cb1b47367e79f94471a1d26440b102f1c798fb3db22a1e"
+    },
+    {
+      "path": "artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json",
+      "sha256": "2dd0694adc915bed97d31dbf7ecff71e9e2847931b508a43aaa130b3066acc36"
+    }
+  ],
+  "material_issues": [],
+  "checks": [
+    {
+      "id": "coverage_and_stage",
+      "result": "pass_at_design_level",
+      "note_zh": "五个主层目标合计96，8组乘12题一致；候选标签覆盖两种应用及至少五个发布者。文件明确区分数量目标、候选入口、正式准入和已有成果，尚未声称来源独立性已验证。"
+    },
+    {
+      "id": "equal_information_primary_comparison",
+      "result": "pass_at_design_level",
+      "note_zh": "flat与bound共享固定页检索映射得到的全部E(q)，要求完整关系元组、重复度与引用无损往返；同模型、提示和生成配置，禁止单臂添删条件、解释、翻译或差异截断。raw仅为系统参照，template展示不计入模型答案准确率。"
+    },
+    {
+      "id": "reference_leakage_controls",
+      "result": "pass_at_design_level",
+      "note_zh": "先整理页面全部合格读法，再出题和独立复核；检索映射禁止使用金标、题型与答案条件筛选。历史开发、适配及旧评价闭包须排除，并明确历史谱系和预训练暴露尚未认证。"
+    },
+    {
+      "id": "necessity_and_continuation_gates",
+      "result": "pass_at_design_level",
+      "note_zh": "48道真实竞争题、6个来源组、12道双限定或数值对应题须由来源与语义参考判定，不依据模型错误反推；未满足即取消方法实验。继续门槛为联合净增至少ceil(0.05*N)、至少3组净正收益且错绑题数不增；96题时为5题，明确不是统计显著性标准。"
+    },
+    {
+      "id": "evaluation_denominator_and_grade",
+      "result": "pass_at_design_level",
+      "note_zh": "主指标联合要求正文正确、证据支持和有效引用，全部冻结题留在分母；按题统计错绑且包含额外回答错误。采用隐藏方法标签的AI审阅，保留原判、分歧和裁决，未声称真人金标或子agent统计独立。"
+    },
+    {
+      "id": "bounded_execution",
+      "result": "pass_at_design_level",
+      "note_zh": "只计划一次三路LLM完整评价，不训练；2 GPU小时为待真实分词和执行配置验证的暂定上限。文件未将设计注册、候选发现或本次审阅视为执行冻结。"
+    }
+  ],
+  "remaining_data_and_execution_freeze_preconditions_zh": [
+    "归档来源原字节、版本、哈希与页定位；核验来源语义、家族闭包、真实应用覆盖及历史暴露。八个候选标签不能直接算八个独立组。",
+    "完成统一字段范围的页面读法整理、新题、独立语义参考和两次AI复核记录；解决歧义与遗漏，保留修改记录和AI参考等级。",
+    "固定检索、切片、词表及页到读法映射后，在实际E(q)上审核必要性门槛；不够即执行取消规则。",
+    "实际实现并CPU核验完整关系元组及重复度往返、共享证据、引用定位与禁止金标输入；本次仅核查设计文本，未验证执行实现。",
+    "在已见开发材料验证统一回答合同；冻结语义正确、证据支持、有效引用和错绑判定细则，以及盲审映射、去重、分歧裁决流程。",
+    "对全部题和各臂完成真实分词长度及预算预检，冻结题单、参考、代码、模型权重、提示、配置、实际资源上限和哈希；发生设计修改须重新绑定审阅。"
+  ],
+  "review_limits_zh": "本记录是对所列两文件的独立AI设计审阅，另做JSON解析及声明数量算术检查。未浏览或下载候选来源，未采集QA、运行模型、核验来源事实或认证历史完全未见，也未引用此前未返回结果的审阅agent为通过依据。无阻断设计问题不等于数据就绪或允许跳过执行冻结。"
+}

@@ -1,8 +1,22 @@
 # 当前状态与证据边界
 
-更新：2026-10-05；历史资产基线审计为2026-09-26。主线见[论文主线与框架](THESIS_ROUTE_REVIEW.md)，下一步见[执行计划](ROADMAP.md)。以下区分当前训练与历史资产，不能把旧结果视作新方法成果。
+更新：2026-10-07；历史资产基线审计为2026-09-26。主线见[论文主线与框架](THESIS_ROUTE_REVIEW.md)，下一步见[执行计划](ROADMAP.md)。以下区分当前训练与历史资产，不能把旧结果视作新方法成果。
 
-## 本轮完成：新来源固定评价与双AI正文审阅
+## 本轮完成：数据构建章与下一轮覆盖设计
+
+[第三章数据构建稿](../thesis/current/03_radar_data_construction.tex)及[导出清单](../thesis/current/data_evidence_manifest.json)已完成，6张表、109项数据字段可从公开汇总重建。历史10,744实体、21,928边和16,609属性仅作库存；旧自动QA、12条开发读法、100组合成接口材料和4来源24题分别登记用途。当前接口仅有三种精确记录查询，不把字段归档写成完整图推理、单位计算或版本消歧。第三至六章均有工作稿；学校模板、PDF、相关工作完善与最终领域评价仍未完成。
+
+[覆盖与表示设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)已登记，尚不是执行冻结协议。目标为8个新来源/家族连通组、至少5家厂商、两个应用类别、约96题；数值形式24题、限定属性20题、表格绑定28题、简单对照16题、限定范围列举8题，均为来源驱动的工作量目标，不为配额造事实。当前只有[8个官方候选入口](../artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json)，新归档资料和新题均为0。
+
+方法必要性门槛是至少48题在固定证据集合中存在真实竞争读数、覆盖6个来源组，且至少12题涉及两个限定维度或多值对应。达不到则取消bound-vs-flat，不退化为没有研究问题的格式搜索。固定BM25取得原文页，按页映射全部预先整理记录；完整flat与bound共享同一元组、多重性、词表及记录顺序，必须无损往返。禁止用参考查询、目标事实ID或题型标签过滤答案。raw原文页只是系统参照，template完整展示只评价资料完整性和冗余，不混进模型正确率。
+
+[独立AI设计审阅](../artifacts/thesis_direction_review/radar_coverage_v2/design_review.json)绑定设计及候选索引的文件哈希，未发现阻断性设计问题；仅审阅设计文本，没有认证来源事实、历史完全未见或模型执行就绪。2026-10-07复核17项CPU测试、三组论文表格导出与设计回归均通过，设计文件与审阅绑定一致。
+
+[已见登记](../artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json)包括10份来源/10个家族组、48个历史编号和72个问法文本指纹；这些编号和翻译版本仍对应原12个开发目标及新24题，不能计成72个独立问题。新增[元数据审计](../experiments/radar_domain/source_split_audit.py)及17项合成CPU测试，检查来源/家族/等价题连通、暴露传播、悬空/重复ID、枚举与AI身份声明。[实际回归](../artifacts/thesis_direction_review/radar_coverage_v2/design_check.json)允许24题继续用于开发，但阻断将其改成评价候选；即使模拟更换题号/指纹并清空已见标志，来源闭包仍阻断。此检查不读取新原文、认证事实或证明未知别名无重叠。
+
+未来仅一轮三路LLM+一路CPU展示，无训练，暂定上限2 GPU小时；最终预算、真实题数、输入长度和哈希须在运行前冻结。主指标为正文正确且有证据和有效引用的联合比例；bound相对完整flat净增至少ceil(0.05N)、至少3个来源组净增、错绑不增加才考虑继续。这是投入标准，不是显著性保证。未达到即保留零/负结果并收束；AI参考不能升级为人工金标。下一步先核验候选来源身份/版本并归档，再按设计整理读法与题目，本轮没有GPU任务，累计GPU账本仍为24.040/72小时。
+
+## 前一轮完成：新来源固定评价与双AI正文审阅
 
 [厂商来源包](../artifacts/thesis_direction_review/radar_sources_v1/manifest.json)取自Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120、JRC JMA-1030系列的4份原始PDF；JRC含JMA-1032/1034，共4个来源/家族、5个型号、每源6道共24道中文题、62条来源读法和15个完整原文页。[另一个AI agent](../artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json)完成全部读法与题目的PDF表格核对，24条参考查询CPU验收通过。全局KB保留全部型号与干扰读法，问题和语义参考分开；原PDF、全文和真实QA保存在忽略的`data/radar_sources_v1/`，公开[来源索引](../artifacts/thesis_direction_review/radar_sources_v1/source_index.json)和审阅元数据。62条含同一脉宽/PRF配置的正反向视图，不能计作62个独立事实样本。
 

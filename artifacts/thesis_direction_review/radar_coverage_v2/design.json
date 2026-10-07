@@ -1,0 +1,222 @@
+{
+  "version": "radar_coverage_and_representation_design_v2",
+  "updated_on": "2026-10-06",
+  "status": "design_registered_not_execution_frozen",
+  "purpose_zh": "在保持完整信息的前提下，检验来源记录的组织方式是否减少雷达量值、条件和部件误绑定；公开恢复轨迹监督仍是论文主要方法研究。",
+  "current_state": {
+    "new_source_snapshots_archived": 0,
+    "new_questions_authored": 0,
+    "human_gold_questions": 0,
+    "evaluation_frozen": false,
+    "model_run_ready": false,
+    "new_training_runs": 0,
+    "new_model_runs": 0
+  },
+  "research_question_zh": "同一个冻结检索结果提供相同完整关系元组时，将其按主体、部件、量值角色和条件组织，能否优于逐条完整记录的强基线？",
+  "claim_scope_zh": "这是知识表示与回答环节的应用设计验证，不是新网络、优化器、强化学习或恢复训练C>A的新实验。尚未实现和验证，不预先认定为论文创新成果。",
+  "coverage": {
+    "target_source_family_components": 8,
+    "minimum_publishers": 5,
+    "target_models_estimate": [
+      12,
+      20
+    ],
+    "target_curated_readings_estimate": [
+      200,
+      300
+    ],
+    "target_questions": 96,
+    "target_questions_per_component": 12,
+    "application_scope": [
+      "weather_radar",
+      "marine_radar"
+    ],
+    "minimum_application_groups": 2,
+    "primary_question_strata": [
+      {
+        "id": "simple_attribute",
+        "target": 16,
+        "description_zh": "无额外限定的标量或文本，作为简单对照"
+      },
+      {
+        "id": "quantity_form",
+        "target": 24,
+        "description_zh": "连续范围、离散选项、上下界、容差或近似；只选来源真实具备的类型"
+      },
+      {
+        "id": "qualified_attribute",
+        "target": 20,
+        "description_zh": "模式、工作环境或部件限定"
+      },
+      {
+        "id": "table_binding",
+        "target": 28,
+        "description_zh": "同表不同型号、条件或量值角色之间的正确绑定"
+      },
+      {
+        "id": "bounded_listing",
+        "target": 8,
+        "description_zh": "同一来源明确范围内两条读数的对照或完整列举，不进行未实现的物理推导"
+      }
+    ],
+    "rules_zh": [
+      "每题一个主要题型；次级标签可重叠，不累计为新增独立题。",
+      "先根据原文与预定义覆盖确定材料，再看待评模型输出；不可用分数决定题目和来源去留。",
+      "数量是搜集和工作量目标，不是已有成果或为了凑数的硬性造题配额。若实际来源不满足，先登记缺口和无输出条件下的设计修订，不能悄悄降低门槛。",
+      "相关单元按来源/家族连通分量计；共享整本手册、变体表、翻译、镜像或已知派生文档需合并，八份URL不自动等于八个独立组。",
+      "不为覆盖制造unknown、冲突或事件。若存在真实来源不足题，须明确冻结材料范围，另列状态和分母；检索失败不等于参数现实未知。"
+    ]
+  },
+  "necessity_gate_before_model_outputs": {
+    "minimum_questions_with_multiple_competing_readings": 48,
+    "minimum_components_with_competing_readings": 6,
+    "minimum_questions_with_two_qualifier_dimensions_or_value_correspondence": 12,
+    "definition_zh": "同一E(q)内至少两条来源真实支持的竞争读数，回答必须依据题中明确主体/量值角色/条件或部件区分；多个互不相关的数字不自动算竞争。由来源和语义参考审阅，不由模型错误反推标签。",
+    "failure_action_zh": "达不到则取消bound-vs-flat方法实验，保留数据构建和应用基线工作；不制造歧义，不改做单记录格式小游戏。"
+  },
+  "source_and_question_isolation": {
+    "known_exposure_registry": "artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json",
+    "audit_code": "experiments/radar_domain/source_split_audit.py",
+    "excluded_lineages_zh": [
+      "原12个实际开发目标及其所有已见中英版本、改写、来源和家族闭包",
+      "source_eval_v1的24道题及其四个来源/家族闭包；不能换题号升级成未见评价",
+      "旧5401道自动QA及其派生；不能作为新独立出题",
+      "任何已用于适配、提示搜索、模板调试或模型错误驱动修订的题组"
+    ],
+    "knowledge_access_zh": "评价题依赖的来源页和读法保留在统一可检索知识中；隔离的是题目、答案、标签和调参使用，不将支持证据从库中移除。",
+    "limits_zh": "元数据审计只能核对已登记闭包；历史QA完整谱系仍未认证，基础模型预训练暴露未知，不能从字符串无交集推定完全未见。"
+  },
+  "annotation_order": [
+    "归档官方原始文档及版本，记录来源身份、型号家族、镜像/派生关系和历史排查范围。",
+    "按统一字段范围整理完整页面的合格读法与引用，先固定纳入/排除规则；不依据待评问题只保留目标记录。",
+    "由另一AI依据原文出题并独立声明语义参考，不读取模型输出、旧QA答案或执行器生成答案。",
+    "另作来源与表格语义复核，记录歧义、遗漏、范围和全部修改；如有程序一致性检查，不以程序输出覆盖参考。",
+    "检查页映射、覆盖、完整信息往返、上下文预算与已见闭包，然后冻结题单、参考、代码、模型、词表和配置。"
+  ],
+  "reference_grade": {
+    "planned": "source_grouped_AI_reviewed_evaluation",
+    "human_gold": false,
+    "author_outputs_seen": false,
+    "two_ai_reviews_required": true,
+    "human_upgrade_zh": "只有真人实际完成来源核验和独立出题/异人复核时，才按对应过程升级等级；不以缺少人工阻止明确标为AI的开发，也不由AI代填身份。",
+    "limits_zh": "不同子agent不等于不同模型家族或统计独立；样本扩大不补偿参考等级不足。"
+  },
+  "shared_evidence": {
+    "retriever": "固定BM25，复用预定k1=1.2、b=0.75、top4及通用词表；任何开发修改须先登记并冻结，不用新评价参考调参",
+    "unit": "固定原文页或在出题前按统一规则形成的来源片段",
+    "definition": "P(q)=fixed_retriever(question); E(q)=all_precurated_readings_citing_any_chunk_in_P(q)",
+    "forbidden_inputs": [
+      "expected_fact_ids",
+      "canonical_program",
+      "reference_answers",
+      "QA intent",
+      "question_type_labels",
+      "gold_condition_filter"
+    ],
+    "no_answer_filtering_zh": "E(q)只由检索页和预先固定读法映射确定，不再按题目或目标值筛出答案，不在每个实验臂增加各自检索器。",
+    "all_information_zh": "完整元组含主体、部件/版本（若来源有）、属性/量值角色、值类型、数值或端点/选项、边界/近似状态、原单位与规范单位、条件/事件、来源及定位。缺失字段显式保留缺失，不臆补值。"
+  },
+  "arms": [
+    {
+      "id": "raw",
+      "role": "system_reference",
+      "input": "P(q)全部原文片段",
+      "generator": "shared_LLM",
+      "limit_zh": "原文有额外未结构化内容，整理成本与其他路线不同，不能将差异纯归因于格式算法。"
+    },
+    {
+      "id": "flat",
+      "role": "primary_strong_baseline",
+      "input": "E(q)的完整逐条自包含记录",
+      "generator": "shared_LLM",
+      "limit_zh": "保留全部限定和来源，禁止删条件或故意拆散量值关系。"
+    },
+    {
+      "id": "bound",
+      "role": "primary_comparison",
+      "input": "同一个E(q)按主体/部件/量值角色/条件组织，明确层级归属",
+      "generator": "shared_LLM",
+      "limit_zh": "只改变组织，不能增加事实、翻译、推导答案、纠错或额外中文提示。"
+    },
+    {
+      "id": "template",
+      "role": "non_generative_evidence_display_reference",
+      "input": "完整展示同一E(q)",
+      "generator": "deterministic_CPU",
+      "limit_zh": "不得读取金标筛选；展示全部记录不计作模型问答正确率，只报覆盖、完整性和冗余。"
+    }
+  ],
+  "equal_information_contract": {
+    "required": "decode(flat(E)) == decode(bound(E)) == E, including duplicate multiplicity and every relation tuple",
+    "order": "共享预先固定的记录顺序、字段词表、语言翻译和数值规范化；层级表示可改变结构，但不改变对应关系。",
+    "must_reject": [
+      "只对比数值集合",
+      "交换不同主体或条件的值",
+      "一臂丢字段或引用",
+      "一臂增加解释或答案",
+      "分别按长度截掉不同记录",
+      "不同提示或不同模型权重"
+    ],
+    "scope_zh": "无损往返只能证明表示保留已声明读法，不能证明读法符合PDF语义；该部分仍需来源审阅。"
+  },
+  "answer_generation": {
+    "model": "同一未经项目适配的Qwen2.5-3B-Instruct回答基座，权重须在执行协议中绑定",
+    "decoding": "greedy",
+    "max_context": 8192,
+    "max_generated": 768,
+    "output_contract_design": [
+      "answer_text",
+      "citations"
+    ],
+    "prompt_gate_zh": "简化的正文+引用合同只在已见开发材料验证，三路LLM完全一致；实际提示、代码及分词长度预检完成后再冻结，不与v1跨轮直接归因。",
+    "overflow_policy_zh": "在运行前检查所有臂、全部问题的真实分词长度，不静默截断；不合格先修订统一来源切片或设计并留痕，不在结果出来后选择性删题。"
+  },
+  "evaluation": {
+    "primary": "AI审阅正文正确且被所给证据支持且引用有效的联合比例，bound对flat配对",
+    "denominator": "冻结的全部N题；无效输出、拒答及预算失败不从分母移除",
+    "secondary": [
+      "正文正确",
+      "所给证据支持",
+      "引用支持",
+      "量值类型/单位错误",
+      "条件或部件错绑",
+      "拒答与冗余",
+      "每个来源组结果",
+      "预登记多记录子集"
+    ],
+    "review": "隐藏方法标签；完全相同的题目/证据/输出才可去重，保留映射、两位原判、分歧及裁决，声明裁决是否已见分组结果",
+    "strict_field_matching": "仅辅助诊断，不用英文字段不匹配替代正文正确性",
+    "statistics_zh": "报告每组分母、配对获胜/失败题和来源分布；八个相关来源组不支持强泛化或显著性宣传。",
+    "costs": [
+      "各路全部输入和生成token",
+      "GPU任务时间",
+      "CPU检索与模板时间",
+      "来源页数和读法整理/审阅量"
+    ],
+    "template_scoring": "展示忠实性/覆盖/冗余单列，不混入主问答准确率排名",
+    "counting_unit_zh": "全部主指标与错误率以问题为单位。量纲、单位或条件/部件任一错绑使该题错误标志为1，同题多个错误不重复累计；额外回答中的错误也计入。",
+    "format_and_context_rule_zh": "格式合规单列，不以英文字段或严格JSON不匹配代替语义错误。可明确识别的正文与引用按同一冻结语义规则审阅；缺失或无法识别的答案/引用不能通过联合指标。回答可承接题中明确条件，题面未给出的必要来源限定仍须保留。"
+  },
+  "bounded_execution_and_stop": {
+    "maximum_full_model_evaluation_rounds": 1,
+    "training_runs": 0,
+    "planned_LLM_arms": 3,
+    "planned_CPU_arms": 1,
+    "provisional_GPU_hours_cap": 2.0,
+    "cap_freeze_zh": "正式配置在真实分词预检后冻结，本预算不是已预约或已消耗；只用syx，不使用管理员训练。",
+    "continuation_gate": {
+      "net_joint_correct_gain": "at least ceil(0.05*N), i.e. 5/96 at target size",
+      "minimum_source_components_with_positive_net_gain": 3,
+      "quantity_unit_or_condition_binding_errors": "bound count must not exceed flat count",
+      "interpretation": "Practical investment threshold, not a statistical-significance criterion"
+    },
+    "if_gate_fails_zh": "收束为完整flat已足够或未证明额外组织有益，保留全部零/负结果；不追加提示搜索、RL、换模型或重跑本批。",
+    "if_gate_passes_zh": "只支持本设置下的表示增益，仍须报告来源等级、整理成本及局限，不升级为普遍领域方法优势。"
+  },
+  "next_actions": [
+    "先核查候选官方来源的版本、型号家族、历史重叠与表格可读性，建立归档后的source ledger。",
+    "按照事先确定的覆盖范围整理来源读法与新题，做AI来源复核和显式闭包审计。",
+    "只有必要性门槛成立才实现flat/bound无损表示与统一生成接口；先CPU验收，再冻结实际运行协议。",
+    "本设计完成不等于数据已就绪或执行条件已满足；当前没有新评价题，也没有新GPU任务，不新增用户审批要求。"
+  ]
+}

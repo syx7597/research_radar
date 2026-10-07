@@ -2,13 +2,21 @@
 
 **论文定位：电子信息专业硕士，以一项可归因的算法或训练改进为研究核心，雷达知识资源和领域应用提供支撑。** 建议题目为“基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用”。已调研9篇具有学位依据的硕士论文，具体文献、贡献边界、七章框架和六个月安排见[论文主线](docs/THESIS_ROUTE_REVIEW.md)。
 
-**当前实验：固定2000题项目留出评测完成，恢复轨迹SFT的收益保留。** 两个续训种子分别由78.25%提升到82.90%、79.25%提升到84.10%；预先固定的两种子平均增益为**+4.75个百分点，题目配对95%区间[3.53,5.98]**。两轮共享初始模型和语料，属于条件续训种子复现；不是两个完整端到端种子。雷达独立金标、条件与区间表示、证据链和领域接入仍需完成，不能把既有大图和自动题视为已验证成果。
+**当前实验：固定2000题项目留出评测完成，恢复轨迹SFT的收益保留。** 两个续训种子分别由78.25%提升到82.90%、79.25%提升到84.10%；预先固定的两种子平均增益为**+4.75个百分点，题目配对95%区间[3.53,5.98]**。两轮共享初始模型和语料，属于条件续训种子复现；不是两个完整端到端种子。雷达接口和来源回答已完成最小接通，独立人工参考、更广来源覆盖和可靠条件理解仍待补足；不能把既有大图和自动题视为已验证成果。
 
 [导师式方法审查](docs/THESIS_ROUTE_REVIEW.md#8-导师式方法审查将工程主线落实为可检验的训练改进)中的“语义核验辅助的轨迹偏好训练”已按用户要求暂缓，不在当前队列。恢复轨迹SFT已获得本项目留出证据，停止公开集追分，转入雷达核验与应用验证；工程完整性不能替代核心方法证据。
 
 主线：**保留主体、条件、区间和来源的雷达知识资源 → 小模型生成可执行查询 → 答案与依据 → 公开基准和独立雷达评价**。复用现有数据、执行器和系统，不重建整个项目。配对续训复现、回放复核及B/D配对RL均已完成。RL增量未达到扩展标准，保留恢复轨迹SFT为主方案；语义核验偏好训练继续暂缓。领域核验与论文写作并行推进；范围和队列见[执行计划](docs/ROADMAP.md)。
 
-**当前阶段：新厂商来源的固定评价和双AI正文审阅已完成，未观察到恢复C的额外领域正确性收益。** [资料包](artifacts/thesis_direction_review/radar_sources_v1/manifest.json)来自Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120和JRC JMA-1030系列的4份厂商PDF，共4个来源/家族、5个型号、24道中文题、62条来源读法和15个完整原文页。[来源AI审阅](artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json)通过。新资料与原12条实际调试来源/家族闭包隔离，但3个家族已在历史语料出现，旧自动QA完整来源血缘未认证；这是小规模AI探索评价，不是最终独立人工评价。
+**2026-10-07：数据构建章及下一轮评价设计已完成复核，本轮没有新训练或模型推理。** [第三章草稿](thesis/current/03_radar_data_construction.tex)区分历史库存、旧12条开发读法、合成100组和新来源材料，附6张表、109项可重建数据字段；当前第三至六章均有工作稿，PDF尚未编译，论文整体尚未完成。
+
+[下一轮设计](artifacts/thesis_direction_review/radar_coverage_v2/design.json)暂定8个新来源/家族组、至少5家厂商、96道中文题。[8个官方候选入口](artifacts/thesis_direction_review/radar_coverage_v2/source_candidates.json)只完成网页级筛查，尚未归档或出题。核心对照是同一完整证据的逐行表示与条件绑定组织；原文页作系统参照、规则模板作资料展示参照，不通过删掉条件削弱基线。至少48题存在真实竞争读数、覆盖6组，且12题需要双限定或多值对应，才启动该对照；不足则取消，避免做单记录格式试验。
+
+[独立AI设计审阅](artifacts/thesis_direction_review/radar_coverage_v2/design_review.json)未发现阻断问题，17项CPU审计测试及三组论文表格复核通过；设计审阅不等于来源事实验收或模型运行就绪。
+
+[已见登记](artifacts/thesis_direction_review/radar_coverage_v2/exposure_registry.json)覆盖10份已见来源/10个家族组及全部已登记问法版本；[CPU划分审计](experiments/radar_domain/source_split_audit.py)检查显式闭包、跨组混用和AI身份声明，只证明元数据一致性。下一步先归档候选来源并核验家族/版本/表格可读性，再整理新读法与题目；达到数据和CPU门槛后另行冻结一次最多2 GPU小时的三路LLM评价。当前只是设计，既没有96道新题，也没有运行协议冻结或新GPU任务。
+
+**前一轮：新厂商来源固定评价和双AI正文审阅完成，未观察到恢复C的额外领域正确性收益。** [资料包](artifacts/thesis_direction_review/radar_sources_v1/manifest.json)来自Vaisala WRM200、Leonardo METEOR 735C、Furuno WR2120和JRC JMA-1030系列的4份厂商PDF，共4个来源/家族、5个型号、24道中文题、62条来源读法和15个完整原文页。[来源AI审阅](artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json)通过。新资料与原12条实际调试来源/家族闭包隔离，但3个家族已在历史语料出现，旧自动QA完整来源血缘未认证；这是小规模AI探索评价，不是最终独立人工评价。
 
 六种证据入口为固定适配后的P/A1/C1/A2/C2和BM25 top4 RAG，统一由未经本项目适配的Qwen2.5-3B-Instruct根据原文页生成正文、断言与引用，中文模板证据卡不算回答。120条选择及144条回答的CPU重放/输入核验均零差异，见[机械检查](results/radar_domain/source_eval_v1/mechanical_summary.json)和[AI语义汇总](results/radar_domain/source_eval_v1/ai_semantic_summary.json)。
 

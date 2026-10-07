@@ -1,0 +1,100 @@
+{
+  "version": "thesis_data_evidence_v1",
+  "evidence_cutoff": "2026-10-05",
+  "scope": "Public inventory, construction and audit metadata plus implementation hashes; no underlying raw sources or private QA opened; no recursive manifest reads.",
+  "sources": {
+    "artifacts/data_manifest.json": {
+      "sha256": "44e7dc2d27b6d53501586b3bfe9d4d06426c8e09d82aeb24594611663d046d0f",
+      "role": "inventory"
+    },
+    "artifacts/public_benchmark_profile.json": {
+      "sha256": "bbc3cbe175b2a499f760e7431309dc597e83bca3b3f1d52ea1bb97c688db5090",
+      "role": "profile"
+    },
+    "artifacts/thesis_direction_review/radar_review_batch/source_manifest.json": {
+      "sha256": "de9af2bf1c7422a6db0597d6a2c827a97431e97dc715f7f72663d7c708f8f122",
+      "role": "candidate"
+    },
+    "artifacts/thesis_direction_review/radar_review_workflow/audit_report.json": {
+      "sha256": "3db8e7de2ad67b3f3251588f4b3cfb34402e08f014072338204673ac63843ffc",
+      "role": "workflow"
+    },
+    "artifacts/thesis_direction_review/radar_ai_cross_review_v1/summary.json": {
+      "sha256": "53e450dd100413c260e6dc9af291dbb062a1fea95215acc170a2db2231c2f64e",
+      "role": "cross_review"
+    },
+    "artifacts/thesis_direction_review/radar_development_v2/manifest.json": {
+      "sha256": "ab7fc6f822a1163ba3970406d7bbda63bc593ac8675d608f58d930ed70571ffe",
+      "role": "development"
+    },
+    "artifacts/thesis_direction_review/radar_lookup_calibration_v1/manifest.json": {
+      "sha256": "31b2ff3050e0a8eeb6696f22e40971604d7e65f37a349a5813f9ff79289b8115",
+      "role": "calibration"
+    },
+    "artifacts/thesis_direction_review/radar_interface_synthetic_v1/manifest.json": {
+      "sha256": "70983ddcf1be1d8bf9095843be510f46a14b3dee159674f067cac944e268df65",
+      "role": "synthetic"
+    },
+    "artifacts/thesis_direction_review/radar_interface_synthetic_v1/quality.json": {
+      "sha256": "2a9a0e1e29afbd3a475d3d98831fd746421f79b21f9e0fc35e979732274dfe39",
+      "role": "synthetic_quality"
+    },
+    "artifacts/thesis_direction_review/radar_interface_synthetic_v1/independent_ai_audit.json": {
+      "sha256": "cb095eb9ed5dd9ca34aa959ff83ee87d8b32b880c09d465a8852f05aae4e30b7",
+      "role": "synthetic_audit"
+    },
+    "artifacts/thesis_direction_review/radar_sources_v1/manifest.json": {
+      "sha256": "77cd86058ab8450ec838c219e54bca209baa26fccb3dafe38e7ddff822e18417",
+      "role": "sources"
+    },
+    "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": {
+      "sha256": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
+      "role": "source_index"
+    },
+    "artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json": {
+      "sha256": "0db9af9c7e37c488921f38669e5e384ee06d5b9660f5d688645bb910d166f5c1",
+      "role": "source_audit"
+    }
+  },
+  "implementation_and_schema_sha256": {
+    "scripts/audit_workspace.py": "0c28ac37974fe35e8bdab5463de81cf8c93dc921ad44309a57348d706ac89165",
+    "scripts/profile_public_benchmark.py": "5875af1ea41e791419aefb1388138425b9eac4f5e3ad6f027472b8c1d6534dd4",
+    "scripts/prepare_radar_review_packet.py": "8f60d7bd72391bda2d6d45d0551661b2d36e3a98cb8abde2846528a37f466b26",
+    "scripts/audit_radar_review_workflow.py": "5ac09416d5a77c93226b0a9a7bea62cc78f26a6dffe506858431475200b52395",
+    "experiments/radar_domain/development_environment.py": "e87d8e10a5eee0e8b1902b2abf1b8ed52b580c89ca5ca542450bbd8235e6f697",
+    "experiments/radar_domain/development_data.py": "c573a16f9744b02948d702581309ab1394c2e63d2ed73e081b67edf72112bc06",
+    "experiments/radar_domain/interface_data.py": "4aac59d0d11c931cd66e3f02b68751d96d59d69cdfe1efe2b9ffa9d3c329da7d",
+    "experiments/radar_domain/source_packet.py": "826a08601bf9aba452e06f23c6f9321ae7d27725df63b5c13d8d86f20b2df15d",
+    "docs/research/RADAR_DATA_ANNOTATION.md": "276bafbf34315ec018d45a18b469d74f7f8f36a9e24632fe67f2137a1d966386",
+    "templates/radar_review/facts.csv": "52116318178196bbd0cf3cb23cb9086f429d76c39eb96ebd8b4e6f2fed0fed7a",
+    "templates/radar_review/questions.csv": "600401fbe782178e3c6be970a13acc05e1a790ea27f41bf676a7675ac5ff5ecb"
+  },
+  "outputs_sha256": {
+    "data_results.csv": "b5004d13eb6471185f188ea5070824e86038c0c7b332343ee44e01b03b858df1",
+    "data_tables.tex": "35a9226b8f9c33c841db1aa524c7f7d2e8ea72b2365b2c54f4dc0b7a6e770994",
+    "03_radar_data_construction.tex": "ba97f486aae9ebec6efed5f7f09436758b99ce89c32f79902f58c9bcbedcfa2c",
+    "data_review.tex": "ba5ab147b9d340a602b1f9620974c40ec6c81d408d77826f6927857133f2a7f5",
+    "data_export.py": "ff1ba67447d5a4dc7877f0380ac9640b201e0071bb2eb8452ae49e2532ab32e3"
+  },
+  "rows": 109,
+  "validation": {
+    "aggregate_arithmetic": true,
+    "checked_public_binding_edges": 17,
+    "historical_profile_and_inventory_share_entity_hash": true,
+    "private_data_revalidated": false,
+    "new_training_or_inference": false,
+    "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"
+  },
+  "limits": [
+    "Historical asset counts are not verified radar facts or radar model counts",
+    "Anchor isolation is not full entity or source-family isolation",
+    "Old twelve readings and bilingual rewrites remain exposed development material",
+    "Synthetic groups share ontology and short program structures and have no physical realism",
+    "AI multi-agent review is not human gold or verified different-model independence",
+    "Four related source groups and 24 questions are an exploratory sample, not final domain coverage",
+    "Source snapshots and query records do not implement universal unit conversion, component ontology, version reasoning or graph traversal",
+    "Required runtime fields are narrower than the annotation schema; raw units and variant fields are not universally queryable",
+    "Record counts can include alternative encodings of the same source configuration",
+    "CPU source and program checks do not establish equipment truth or natural-language answer accuracy"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "radar_official_source_candidates_v2",
+  "status": "official_entry_screening_only_not_admitted",
+  "reported_on": "2026-10-06",
+  "screened_by": "AI /root/radar_revision_v2 using official publisher pages and documents",
+  "new_snapshots_archived_this_stage": 0,
+  "new_questions_authored_this_stage": 0,
+  "candidates": [
+    {"family_label": "Vaisala WRS300", "publisher": "Vaisala", "application": "weather_radar", "url": "https://www.vaisala.com/en/products/weather-environmental-sensors/wrs300", "entry_type": "official_product_page", "screening_note_zh": "产品和资料入口已确认，具体PDF待归档核验。"},
+    {"family_label": "EEC Ranger X1/X5", "publisher": "EEC", "application": "weather_radar", "url": "https://www.eecweathertech.com/pdf/EEC-Ranger-X-Band.pdf", "entry_type": "official_pdf", "screening_note_zh": "可见型号和参数表；每通道与总量适用关系待原件归档及语义复核。"},
+    {"family_label": "GAMIC GMWR", "publisher": "GAMIC", "application": "weather_radar", "url": "https://www.gamic.com/doc/GAMIC_GMWR-25-WS.pdf", "entry_type": "official_pdf", "screening_note_zh": "一个型号有官方资料，其他型号及家族边界未认证。"},
+    {"family_label": "Furuno DRS-NXT", "publisher": "Furuno", "application": "marine_radar", "url": "https://www.furuno.com/files/Manual/158/upload/IME36680G3_DRS6A_12A_25A-NXT.pdf", "entry_type": "official_installation_manual", "screening_note_zh": "多型号共用手册，所有相关型号须归同一来源连通组，不能拆页制造独立组。"},
+    {"family_label": "JRC JMA-5200Mk2", "publisher": "JRC", "application": "marine_radar", "url": "https://www.jrc.co.jp/en/product/jma5200mk2", "entry_type": "official_specification_page", "screening_note_zh": "多型号规格页可访问，须核对扫描器和脉宽配置对应关系。"},
+    {"family_label": "Garmin GMR Fantom", "publisher": "Garmin", "application": "marine_radar", "url": "https://static.garmin.com/pumac/GMR_Fantom_Open_Array_Install_Instructions_EN-US.pdf", "entry_type": "official_installation_manual", "screening_note_zh": "多型号和转速条件的资料入口可用，版本及表格读法待正式核验。"},
+    {"family_label": "Simrad HALO", "publisher": "Simrad", "application": "marine_radar", "url": "https://www.simrad-yachting.com/en-eu/simrad/type/radar/halo-3-radar-w3-arrayri1220m-cbl/", "entry_type": "official_specification_page", "screening_note_zh": "型号规格与模式限制可查询，系列继承关系及其他型号需统一核验。"},
+    {"family_label": "Raymarine Cyclone", "publisher": "Raymarine", "application": "marine_radar", "url": "https://www.raymarine.com/en-gb/our-products/marine-radar/cyclone/cyclone-radar", "entry_type": "official_product_page", "screening_note_zh": "网页文案与规格可能存在不一致，必须先核对版本和语义；未解决前不进入正式材料。"}
+  ],
+  "admission_still_required": [
+    "保存原字节、文档版本、哈希、页或网页定位与可读性记录",
+    "依据来源核验家族、变体、镜像与派生关系，并排查已见资料和历史语料",
+    "验证真实条件、量值和部件覆盖，不按模型成绩选择资料",
+    "独立整理与复核读法、题目和参考后，执行元数据闭包及完整信息检查"
+  ],
+  "limits_zh": "网页级可得性不是下载成功、事实核验或划分准入。八个候选标签并不保证八个独立来源/家族；数量不足时报告缺口，不用同册多页或同族变体补成独立组。"
+}
