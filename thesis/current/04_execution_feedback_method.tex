@@ -1,6 +1,6 @@
 % XeLaTeX chapter fragment. Dependencies: ctexbook/ctexrep, amsmath, amssymb,
 % booktabs, graphicx. Load generated_tables.tex once before these chapters.
-\chapter{基于执行状态与恢复后缀配对监督的小模型知识图谱问答方法}
+\chapter{小模型知识图谱问答的恢复轨迹监督方法}
 \label{chap:execution-feedback}
 
 \section{研究问题与方法定位}
@@ -94,7 +94,7 @@
 
 \section{训练与推理实现}
 
-模型使用 Qwen2.5-3B-Instruct。先以通过回放核验的成功轨迹训练初始分步模型 I，再从同一个 I 检查点分别续训 A 和 C。LoRA 秩为 $16$，缩放参数为 $32$，dropout 为 $0.05$，作用于实现中指定的全部线性层；使用现有 AdamW 优化器。A/C 学习率均为 $10^{-4}$，每设备批大小为 $2$，梯度累计步数为 $8$，在冻结的续训语料上训练一个遍历。上下文上限为 $8\,192$，使用 BF16 与梯度检查点。参数及依赖版本以训练输入清单和源码摘要为准。
+模型使用 Qwen2.5-3B-Instruct\cite{qwen2024qwen25}。先以通过回放核验的成功轨迹训练初始分步模型 I，再从同一个 I 检查点分别续训 A 和 C。LoRA\cite{hu2022lora} 秩为 $16$，缩放参数为 $32$，dropout 为 $0.05$，作用于实现中指定的全部线性层；使用现有 AdamW 优化器。A/C 学习率均为 $10^{-4}$，每设备批大小为 $2$，梯度累计步数为 $8$，在冻结的续训语料上训练一个遍历。上下文上限为 $8\,192$，使用 BF16 与梯度检查点。参数及依赖版本以训练输入清单和源码摘要为准。
 
 两组分别使用续训随机种子 $20261003$ 和 $20261004$ 进行配对实验。两次均继承相同的初始模型与训练语料；它们评价的是改变\textbf{续训随机性}后的效果，不构成两次从基础模型开始的全流程独立复现。语料构造种子、推理种子及 Python 哈希种子固定为 $20261003$。
 

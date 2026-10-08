@@ -2,8 +2,16 @@
 
 ## 当前主线写作入口
 
+2026-10-08 已将中英文摘要、绪论、相关工作、原有四章正文和总结整合为**七章工作稿**，采用通用审阅版式实际编译 PDF。新增文献库含 23 条已核对条目（10 篇方法论文、13 份厂商来源），访问范围与版本限制见文献审计。这仍不是按学校模板完成、经导师审定或经人工金标验证的定稿。
+
 | 文件 | 用途与状态 |
 |---|---|
+| [current/build/main.pdf](current/build/main.pdf) | 本工作区生成的完整 PDF；编译目录不进入 Git，其他机器需从源稿重建 |
+| [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 七章总入口与构建脚本；先核对四组证据表，再调用已有编译器 |
+| [current/00_abstract.tex](current/00_abstract.tex)、[current/01_introduction.tex](current/01_introduction.tex) | 中英文摘要、研究问题、贡献范围与技术路线 |
+| [current/02_background_related_work.tex](current/02_background_related_work.tex)、[current/07_conclusion.tex](current/07_conclusion.tex) | 相关方法比较、结论与局限 |
+| [current/references.bib](current/references.bib)、[current/literature_audit.json](current/literature_audit.json) | 23 条引用及原始文献、版本和核对范围 |
+| [current/manuscript_manifest.json](current/manuscript_manifest.json)、[current/manuscript_review.json](current/manuscript_review.json) | 源稿与 PDF 哈希、编译检查、抽样页面目视复核；不替代学术或人工事实审查 |
 | [current/03_radar_data_construction.tex](current/03_radar_data_construction.tex) | 数据构建章节：历史库存、旧开发读法、合成实例、新来源材料及表示、审阅、划分边界 |
 | [current/data_review.tex](current/data_review.tex) | 第三章独立 XeLaTeX 审阅入口 |
 | [current/data_export.py](current/data_export.py)、[current/data_tables.tex](current/data_tables.tex) | 从公开清单与审计汇总重建数据表，不访问私有原始资料或 QA |
@@ -22,32 +30,26 @@
 
 新稿已有依据的核心结论：恢复轨迹 SFT 在两个共享初始模型的续训种子上，相对同监督 token 预算的普通续训，项目留出集准确率平均提高 **4.75 个百分点**，问题配对 95% 区间 **[3.53, 5.98]**。它不是官方隐藏测试结果，不代表全流程两种子独立复现；C/P 总推理 token 约为 24 倍，详细报错文字和短程 RL 的额外收益均未得到证实。
 
-领域应用已完成一轮最小验证：共同合成接口适配有效；四份新来源的 24 道 AI 题上，RAG/P/A1/C1/A2/C2 正文正确数为 **13/13/16/15/16/16**，C 相对 A 为 **−1/0 题**，未建立额外领域收益。C2 支持页齐全 24/24 而正文正确 16/24，显示来源阅读与条件绑定仍会失败。六路线共用同一未适配基础回答模型；AI 审阅不是人工金标，四个相关来源、历史型号重叠与知识库整理成本均限制结论。停止本批题上的追加训练，转入证据整理；后续覆盖与评价可信度工作仍未完成，不能将 24 道题视为整篇论文的充分验证。
+领域应用已完成一轮最小验证：共同合成接口适配有效；四份新来源的 24 道 AI 题上，RAG/P/A1/C1/A2/C2 正文正确数为 **13/13/16/15/16/16**，C 相对 A 为 **−1/0 题**，未建立额外领域收益。C2 支持页齐全 24/24 而正文正确 16/24，显示来源阅读与条件绑定仍会失败。六路线共用同一未适配基础回答模型；AI 审阅不是人工金标，四个相关来源、历史型号重叠与知识库整理成本均限制结论。停止本批题上的追加训练；后续八来源覆盖评价见下文，人工核验与外部有效性仍待补足，不能将这 24 道题视为整篇论文的充分验证。
 
 2026-10-07的八来源覆盖评价也已完成：502条来源读法、96道AI参考题，raw/flat/bound各运行96题。正文正确60/73/80，联合正确56/17/52，绑定错误26/17/11；bound对flat达到预设门槛，但未在联合指标上超过raw。37个联合改善有29个原本正文都对，因此不能把全部收益称为语义推理改进。数据、执行与判分边界见[阶段决定](../results/radar_domain/coverage_v2/stage_decision.json)。
 
-新增 [current/06b_evidence_representation.tex](current/06b_evidence_representation.tex)，已接入应用章；[current/coverage_export.py](current/coverage_export.py)从八个公开汇总/协议生成四张表与79个可追溯数据字段，输出 [CSV](current/coverage_results.csv)、[LaTeX表](current/coverage_tables.tex)及[证据清单](current/coverage_evidence_manifest.json)。不访问私有原文、QA或模型答案。2026-10-08补入统一引用解析事后对照：联合正确raw/flat/bound为56/55/68，bound−flat净13题，原始净35题完整保留；正文与错绑评分不变。第三章同步八来源502条读法、96题与固定24题来源核验流程，数据导出更新为7张表/124个字段。核验包只准备材料，当前真人核验数为0。当前没有新增GPU任务或训练；新章节尚未编译PDF。
+新增 [current/06b_evidence_representation.tex](current/06b_evidence_representation.tex)，已接入应用章；[current/coverage_export.py](current/coverage_export.py)从八个公开汇总/协议生成四张表与79个可追溯数据字段，输出 [CSV](current/coverage_results.csv)、[LaTeX表](current/coverage_tables.tex)及[证据清单](current/coverage_evidence_manifest.json)。不访问私有原文、QA或模型答案。2026-10-08补入统一引用解析事后对照：联合正确raw/flat/bound为56/55/68，bound−flat净13题，原始净35题完整保留；正文与错绑评分不变。第三章同步八来源502条读法、96题与固定24题来源核验流程，数据导出更新为7张表/124个字段。核验包只准备材料，当前真人核验数为0。当前没有新增GPU任务或训练；七章已合并编译，表格与引用均已接入。
 
 从仓库根目录执行：
 
 ```sh
-python3 thesis/current/data_export.py --check
-python3 thesis/current/data_export.py
-python3 thesis/current/export_evidence.py --check
-python3 thesis/current/export_evidence.py
-python3 thesis/current/coverage_export.py --check
-python3 thesis/current/coverage_export.py
-python3 thesis/current/domain_export.py --check
-python3 thesis/current/domain_export.py
-xelatex -output-directory=thesis/current thesis/current/data_review.tex
-xelatex -output-directory=thesis/current thesis/current/data_review.tex
-xelatex -output-directory=thesis/current thesis/current/review.tex
-xelatex -output-directory=thesis/current thesis/current/review.tex
-xelatex -output-directory=thesis/current thesis/current/domain_review.tex
-xelatex -output-directory=thesis/current thesis/current/domain_review.tex
+# 静态检查四组证据导出、章节、标签与引用，无需 TeX 编译器。
+python3 thesis/current/build_thesis.py --check-only
+# 使用已有 Tectonic；首次运行可能需要下载 TeX 包。
+python3 thesis/current/build_thesis.py --engine-path /path/to/tectonic
+# 或使用已有 XeLaTeX、BibTeX 和 ctex/Fandol 环境。
+python3 thesis/current/build_thesis.py --engine xelatex
 ```
 
-四组 Python 命令分别检查和重建数据构建、公开实验、领域应用与覆盖评价的聚合导出，均不读取私有逐题问答、原始预测或运行训练。第三章明确：旧 10,744 个实体不是已核验雷达型号，原单位和版本归档不等于查询接口已支持这些字段，AI 多代理审阅不等于人工金标。当前写作环境没有 `xelatex`，尚未编译或目视检查新稿 PDF。章节编号暂定三至六章；正式成稿仍需学校模板、核实后的相关文献，以及预先定义覆盖范围的后续来源与评价核验。已有旧稿的参考文献未自动迁入，以免把未经本轮核对的条目当成新稿证据。
+修改第 3–6 章后，需要运行对应的 `data_export.py`、`export_evidence.py`、`domain_export.py` 或 `coverage_export.py`（不带 `--check`）更新章节哈希，再构建。它们只读取公开聚合资料，均不读取私有逐题问答、原始预测或运行训练。旧 10,744 个实体不是已核验雷达型号，原单位和版本归档不等于查询接口已支持这些字段，AI 多代理审阅不等于人工金标。
+
+本次采用临时目录中的 Tectonic 0.17.0 实际构建；没有全局安装编译器。`build/` 保存 PDF、日志及抽查图片，Git 仅保存源稿、构建工具和审计清单。完整 PDF 没有未解析引用、缺字或越界盒警告；目视复核的页码与范围另行登记。正式成稿仍需学校模板、导师评阅和实际来源核验；旧稿文献及旧路线结果没有自动迁入。
 
 最新项目状态见 [项目首页](../README.md) 和 [当前状态](../docs/CURRENT_STATUS.md)。
 

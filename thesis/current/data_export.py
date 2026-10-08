@@ -224,7 +224,7 @@ def build():
         "validation": {"aggregate_arithmetic": True, "checked_public_binding_edges": checked_bindings,
                        "historical_profile_and_inventory_share_entity_hash": True,
                        "private_data_revalidated": False, "new_training_or_inference": False,
-                       "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"},
+                       "pdf_compilation": "not performed by this exporter; full manuscript build is recorded separately in manuscript_manifest.json"},
         "limits": ["Historical asset counts are not verified radar facts or radar model counts",
                    "Anchor isolation is not full entity or source-family isolation",
                    "Old twelve readings and bilingual rewrites remain exposed development material",

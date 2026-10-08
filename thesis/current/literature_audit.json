@@ -1,0 +1,790 @@
+{
+  "schema": "thesis_literature_audit_v1",
+  "audit_date": "2026-10-08",
+  "reviewer": "AI /root/radar_revision_v2",
+  "status": "bibliographic_metadata_and_selected_claims_checked",
+  "human_review_completed": false,
+  "scope": [
+    "Ten primary papers checked through official proceedings or author preprints for selected related-work claims.",
+    "Thirteen manufacturer bibliography entries checked against existing archived metadata: four prior-source entries plus nine entries representing eight new source families.",
+    "This is a bibliography and selected-claims audit, not a new equipment-fact review, independent human acceptance, systematic literature survey or experimental replication."
+  ],
+  "files_sha256": {
+    "thesis/current/02_background_related_work.tex": "dc689357c271ffb80b37399d51319df83a11d5cc925fd2787a6675620f7c7f93",
+    "thesis/current/references.bib": "69baa1e3c3b0b7b240376a8a6ecb3210ff2b235402cc8f3fb3e032e65126fc0e"
+  },
+  "local_metadata_inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
+    "artifacts/thesis_direction_review/radar_sources_v2/annotation_scope.json": "185e7752c5cd748b5e0c3a7dab679ed273d3f568e73c5f94e78010be70e72269",
+    "artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json": "e4c02637bdc1b17dbef50281c422fdc9076c53fba9757b7d3d67c162b199937f",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "data/radar_sources_v2/curation_v1/raymarine.identity.json": "7bc9c8183e5f156475acaa8160c6d209137d6054757c81ebd603e8158859ceb7",
+    "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/001.txt": "502bc8eca2d116c522848b107cadffb7910919a203701e575fccbbd0e9f2b92f",
+    "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/044.txt": "67d0caf0ddbfa04c47c943b073c604ceeb34a1f8c4b4c504db35a00b3193665a",
+    "data/radar_sources_v2/marine/garmin_fantom_manual/pages/001.txt": "19027d792c61b58266e04e97ce315c0abda9bd2a3385134e8a4045d9a7ebb856",
+    "data/radar_sources_v2/marine/jrc_5200_catalog/pages/001.txt": "93dced63057f5d28b04351f3918ef1f276a785cf8a7d859490bc2fd0ae8747fd",
+    "data/radar_sources_v2/marine/jrc_5200_catalog/pages/006.txt": "18b6bd8bca42c04e208312730d7c03a7280dc73376172cf0b66831c3a2c6d834",
+    "data/radar_sources_v2/replacement/metek_mrr2_20230929/pages/001.txt": "1f228d8be4635f16c65c491eaf8508c338cda3d2dedddc388125e5cfc9c57ff1",
+    "data/radar_sources_v2/replacement/metek_mrr2_20230929/pages/002.txt": "ea39e4b4911c2bfb3ce752e7ccd28a50d1f8285680d9db328ae9f99872b879d4",
+    "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/pages/001.txt": "d1aa4682bf02e7b648a3d409fa31a33d0df53261f57da621aa49b102b36976b2",
+    "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/pages/002.txt": "098319bf35b52ef3b30f1a8589c50d59901ee4455faed89799ad8e8a6d4e0094",
+    "data/radar_sources_v2/weather/eec_ranger_x_band.p01.txt": "69207eb619e8d0448ebabc66e30d802e1f9442021035b40e33038df98b802b2d",
+    "data/radar_sources_v2/weather/eec_ranger_x_band.p04.txt": "23c97f346053b7ee5a98a5ab0d6fbb12f1b7b23be10f894bf2271d8a78901215",
+    "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p01.txt": "6df98203aecc14abfa267335eabc2944c182f6a58beda3c9cf3fe677ab11b08e",
+    "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p02.txt": "7baf01a39b4e21384723f1e00d311ec6db6cb2d43bbf8117557cb5a3cc5148d5",
+    "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p01.txt": "3b4e96d789611f323073425bd26cf145194b1e2556676ececa02dcc1dfdb41a2",
+    "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p02.txt": "a03791113c97723418a4bd852e9559d2f3c018cc6f25cffbc3d0e186ffaafa64"
+  },
+  "academic_papers": [
+    {
+      "citekey": "cao2022kqapro",
+      "title": "{KQA Pro}: A Dataset with Explicit Compositional Programs for Complex Question Answering over Knowledge Base",
+      "authors_bibtex": "Cao, Shulin and Shi, Jiaxin and Pan, Liangming and Nie, Lunyiu and Xiang, Yutong and Hou, Lei and Li, Juanzi and He, Bin and Zhang, Hanwang",
+      "year": 2022,
+      "venue_or_institution": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "version_note": null,
+      "primary_urls": [
+        "https://aclanthology.org/2022.acl-long.422/",
+        "https://aclanthology.org/2022.acl-long.422.pdf"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Official metadata and abstract",
+        "Paper task description and KoPL function appendix, PDF page 15"
+      ],
+      "claims_used_in_chapter": [
+        "KQA Pro provides about 120,000 questions with explicit KoPL programs and SPARQL queries.",
+        "KoPL includes attribute, qualifier, set and comparison operations."
+      ],
+      "limitations": [],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "qwen2024qwen25",
+      "title": "{Qwen2.5} Technical Report",
+      "authors_bibtex": "{Qwen Team}",
+      "year": 2024,
+      "venue_or_institution": "arXiv",
+      "version_note": "Version 1. \\url{https://arxiv.org/abs/2412.15115v1}",
+      "primary_urls": [
+        "https://arxiv.org/abs/2412.15115v1",
+        "https://arxiv.org/html/2412.15115v1"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Version 1 title/byline and abstract",
+        "Section 2 architecture/model-size table and post-training overview"
+      ],
+      "claims_used_in_chapter": [
+        "The report covers multiple open-weight model sizes, including a 3B model, and instruction post-training."
+      ],
+      "limitations": [
+        "Corporate author Qwen Team follows the report byline.",
+        "No general 128K-context claim is applied to the 3B model."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "hu2022lora",
+      "title": "{LoRA}: Low-Rank Adaptation of Large Language Models",
+      "authors_bibtex": "Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu",
+      "year": 2022,
+      "venue_or_institution": "International Conference on Learning Representations",
+      "version_note": null,
+      "primary_urls": [
+        "https://openreview.net/forum?id=nZeVKeeFYf9",
+        "https://arxiv.org/abs/2106.09685",
+        "https://arxiv.org/pdf/2106.09685"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Author-preprint metadata and abstract",
+        "Section 4 low-rank update and scaling formulation"
+      ],
+      "claims_used_in_chapter": [
+        "LoRA freezes original weights and learns low-rank update matrices."
+      ],
+      "limitations": [
+        "OpenReview full page was challenged during this audit; method details were read from the author preprint, not claimed as a successful full OpenReview-page read.",
+        "ICLR 2022 venue is recorded separately from the 2021 preprint year."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "ross2011dagger",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "authors_bibtex": "Ross, Stephane and Gordon, Geoffrey and Bagnell, Drew",
+      "year": 2011,
+      "venue_or_institution": "Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics",
+      "version_note": null,
+      "primary_urls": [
+        "https://proceedings.mlr.press/v15/ross11a.html",
+        "https://proceedings.mlr.press/v15/ross11a/ross11a.pdf"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Official metadata and abstract",
+        "Section 3 and Algorithm 3.1, PDF pages 3–4"
+      ],
+      "claims_used_in_chapter": [
+        "DAgger iteratively aggregates expert labels on states visited by a learned policy.",
+        "The analysis connects imitation learning to no-regret online learning under stated assumptions."
+      ],
+      "limitations": [
+        "Author name Drew Bagnell follows the official PMLR citation metadata.",
+        "No DAgger theoretical guarantee is transferred to the local fixed-rollout suffix-replay scheme."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "yao2023react",
+      "title": "{ReAct}: Synergizing Reasoning and Acting in Language Models",
+      "authors_bibtex": "Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan",
+      "year": 2023,
+      "venue_or_institution": "International Conference on Learning Representations",
+      "version_note": null,
+      "primary_urls": [
+        "https://arxiv.org/abs/2210.03629v3",
+        "https://arxiv.org/pdf/2210.03629"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "ICLR 2023 conference-version metadata, abstract and introduction",
+        "Section 3.2 fine-tuning discussion, PDF page 5"
+      ],
+      "claims_used_in_chapter": [
+        "ReAct interleaves reasoning, actions and external observations.",
+        "The original paper studies both prompting and trajectory fine-tuning."
+      ],
+      "limitations": [
+        "ReAct is not described as exclusively a prompting method."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "shinn2023reflexion",
+      "title": "{Reflexion}: Language Agents with Verbal Reinforcement Learning",
+      "authors_bibtex": "Shinn, Noah and Cassano, Federico and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu",
+      "year": 2023,
+      "venue_or_institution": "Advances in Neural Information Processing Systems",
+      "version_note": null,
+      "primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Official proceedings metadata and abstract",
+        "Indexed paper introduction excerpt"
+      ],
+      "claims_used_in_chapter": [
+        "Reflexion uses verbal feedback and episodic memory to influence subsequent attempts without weight updates in its core scheme."
+      ],
+      "limitations": [
+        "No claim of a full-paper replication or complete experiment audit."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "madaan2023selfrefine",
+      "title": "{Self-Refine}: Iterative Refinement with Self-Feedback",
+      "authors_bibtex": "Madaan, Aman and Tandon, Niket and Gupta, Prakhar and Hallinan, Skyler and Gao, Luyu and Wiegreffe, Sarah and Alon, Uri and Dziri, Nouha and Prabhumoye, Shrimai and Yang, Yiming and Gupta, Shashank and Majumder, Bodhisattwa Prasad and Hermann, Katherine and Welleck, Sean and Yazdanbakhsh, Amir and Clark, Peter",
+      "year": 2023,
+      "venue_or_institution": "Advances in Neural Information Processing Systems",
+      "version_note": null,
+      "primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Official proceedings metadata and abstract",
+        "Indexed paper introduction/method excerpt"
+      ],
+      "claims_used_in_chapter": [
+        "Self-Refine uses one model for generation, feedback and iterative refinement without additional training in its core scheme."
+      ],
+      "limitations": [
+        "No claim of a full-paper replication or complete experiment audit."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "shao2024deepseekmath",
+      "title": "{DeepSeekMath}: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "authors_bibtex": "Shao, Zhihong and Wang, Peiyi and Zhu, Qihao and Xu, Runxin and Song, Junxiao and Zhang, Mingchuan and Li, Y. K. and Wu, Y. and Guo, Daya",
+      "year": 2024,
+      "venue_or_institution": "arXiv",
+      "version_note": "Version 2; author list follows this version. \\url{https://arxiv.org/abs/2402.03300v2}",
+      "primary_urls": [
+        "https://arxiv.org/abs/2402.03300v2",
+        "https://arxiv.org/html/2402.03300v2"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Version 2 byline",
+        "Sections 4.1.1–4.1.2 on GRPO"
+      ],
+      "claims_used_in_chapter": [
+        "GRPO uses rewards within a group of sampled outputs for a question to form relative advantages without a separate critic."
+      ],
+      "limitations": [
+        "Nine-author list follows version 2; later-version authors are not silently mixed into this entry.",
+        "Mathematics-task gains are not transferred to the local knowledge-base task."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "lewis2020rag",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks",
+      "authors_bibtex": "Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\\\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\\\"a}schel, Tim and Riedel, Sebastian and Kiela, Douwe",
+      "year": 2020,
+      "venue_or_institution": "Advances in Neural Information Processing Systems",
+      "version_note": null,
+      "primary_urls": [
+        "https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html",
+        "https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Official proceedings metadata and abstract",
+        "Indexed paper introduction excerpt"
+      ],
+      "claims_used_in_chapter": [
+        "RAG combines a parametric sequence-to-sequence generator with dense non-parametric retrieval."
+      ],
+      "limitations": [
+        "The local fixed BM25 baseline is an application comparator, not a reproduction of the original RAG training architecture."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "gao2023alce",
+      "title": "Enabling Large Language Models to Generate Text with Citations",
+      "authors_bibtex": "Gao, Tianyu and Yen, Howard and Yu, Jiatong and Chen, Danqi",
+      "year": 2023,
+      "venue_or_institution": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+      "version_note": null,
+      "primary_urls": [
+        "https://aclanthology.org/2023.emnlp-main.398/",
+        "https://aclanthology.org/2023.emnlp-main.398.pdf"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-08",
+      "accessed_scope": [
+        "Official metadata and abstract",
+        "Section 3.3 and Figure 3 on citation recall/precision, PDF page 4",
+        "Selected human-evaluation discussion"
+      ],
+      "claims_used_in_chapter": [
+        "ALCE distinguishes answer correctness from citation support coverage and irrelevant citations."
+      ],
+      "limitations": [
+        "Local question-level semantic flags are not described as direct ALCE metric reproduction."
+      ],
+      "cross_paper_score_comparison_used": false
+    }
+  ],
+  "manufacturer_archives": [
+    {
+      "citekey": "domain-vaisala",
+      "title": "Weather Radar {WRM200}: {B210698EN-J}",
+      "author_bibtex": "{Vaisala}",
+      "year": "2021",
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://www.vaisala.com/sites/default/files/documents/WRM200-Datasheet-B210698EN.pdf"
+      ],
+      "source_ids": [
+        "vaisala_wrm200"
+      ],
+      "archive_bindings": [
+        {
+          "path": "data/radar_sources_v1/pdf/vaisala_wrm200.pdf",
+          "sha256": "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_sources_v1/source_index.json"
+      ],
+      "accessed_scope": "Existing source-index metadata, original snapshot byte hash, and previous standalone bibliography; no fresh equipment-fact adjudication.",
+      "human_verification": false,
+      "publication_date_policy": "Keep the recorded version identifier; omit a year unless supported by archived bibliographic metadata."
+    },
+    {
+      "citekey": "domain-leonardo",
+      "title": "{METEOR 735C} Weather Radar: {202510-1-05}",
+      "author_bibtex": "{Leonardo}",
+      "year": null,
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://electronics.leonardo.com/documents/16277707/18380759/METEOR%2B735C_202510-1-05.pdf/af4363a1-5aa9-55d4-b371-355f20c9f01e?t=1759766404970"
+      ],
+      "source_ids": [
+        "leonardo_meteor735c"
+      ],
+      "archive_bindings": [
+        {
+          "path": "data/radar_sources_v1/pdf/leonardo_meteor735c.pdf",
+          "sha256": "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_sources_v1/source_index.json"
+      ],
+      "accessed_scope": "Existing source-index metadata, original snapshot byte hash, and previous standalone bibliography; no fresh equipment-fact adjudication.",
+      "human_verification": false,
+      "publication_date_policy": "Keep the recorded version identifier; omit a year unless supported by archived bibliographic metadata."
+    },
+    {
+      "citekey": "domain-furuno",
+      "title": "{WR2120} Specifications: {CA000001492 / G-2012PDF}",
+      "author_bibtex": "{FURUNO}",
+      "year": null,
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://www.furuno.com/files/Brochure/WR2120_en_1911.pdf"
+      ],
+      "source_ids": [
+        "furuno_wr2120"
+      ],
+      "archive_bindings": [
+        {
+          "path": "data/radar_sources_v1/pdf/furuno_wr2120.pdf",
+          "sha256": "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_sources_v1/source_index.json"
+      ],
+      "accessed_scope": "Existing source-index metadata, original snapshot byte hash, and previous standalone bibliography; no fresh equipment-fact adjudication.",
+      "human_verification": false,
+      "publication_date_policy": "Keep the recorded version identifier; omit a year unless supported by archived bibliographic metadata."
+    },
+    {
+      "citekey": "domain-jrc",
+      "title": "{JMA-1030} Radar: {JMA-1032 and JMA-1034} Specifications",
+      "author_bibtex": "{JRC}",
+      "year": null,
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/jma1030_e_v2.pdf"
+      ],
+      "source_ids": [
+        "jrc_jma1030"
+      ],
+      "archive_bindings": [
+        {
+          "path": "data/radar_sources_v1/pdf/jrc_jma1030.pdf",
+          "sha256": "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_sources_v1/source_index.json"
+      ],
+      "accessed_scope": "Existing source-index metadata, original snapshot byte hash, and previous standalone bibliography; no fresh equipment-fact adjudication.",
+      "human_verification": false,
+      "publication_date_policy": "Keep the recorded version identifier; omit a year unless supported by archived bibliographic metadata."
+    },
+    {
+      "citekey": "source-v2-vaisala-wrs300",
+      "title": "Weather Radar {WRS300}: {B212854EN-E}",
+      "author_bibtex": "{Vaisala}",
+      "year": "2026",
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://docs.vaisala.com/api/khub/documents/2gUf291gL7qfqQRIqTA7Bg/content"
+      ],
+      "source_ids": [
+        "vaisala_wrs300_b212854en_e"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "vaisala_wrs300_b212854en_e",
+          "path": "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.pdf",
+          "sha256": "b68b68dc1335799b32bfb4ec2620d0f832c73a51fa369751cc461a609e4b48ca",
+          "selected_pages_one_based": [
+            2
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p01.txt",
+        "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p02.txt"
+      ],
+      "version_note": "B212854EN-E; printed copyright 2026, not inferred from filename.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-eec-ranger",
+      "title": "{RANGER} Series {X-Band}: Solid State {X1} and {X5} Models",
+      "author_bibtex": "{Enterprise Electronics Corporation}",
+      "year": "2016",
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://www.eecweathertech.com/pdf/EEC-Ranger-X-Band.pdf"
+      ],
+      "source_ids": [
+        "eec_ranger_x_band"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "eec_ranger_x_band",
+          "path": "data/radar_sources_v2/weather/eec_ranger_x_band.pdf",
+          "sha256": "d8598b0e5d21678c7ddfd1321aae32d54599da9b9d6e2b7d2a8b83ee8a7f4036",
+          "selected_pages_one_based": [
+            3
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/weather/eec_ranger_x_band.p01.txt",
+        "data/radar_sources_v2/weather/eec_ranger_x_band.p04.txt"
+      ],
+      "version_note": "Printed copyright 2016; title identifies Ranger Series X-Band / X1 and X5.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-gamic-gmwr",
+      "title": "{GMWR-25-WS}: Weather Radar and Technical Specifications",
+      "author_bibtex": "{GAMIC GmbH}",
+      "year": null,
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://www.gamic.com/doc/GAMIC_GMWR-25-WS.pdf"
+      ],
+      "source_ids": [
+        "gamic_gmwr_25_ws"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "gamic_gmwr_25_ws",
+          "path": "data/radar_sources_v2/weather/gamic_gmwr_25_ws.pdf",
+          "sha256": "38d4e2d64af204571043369ab39f8953cd94f386ef0a3982132347884f985612",
+          "selected_pages_one_based": [
+            1,
+            2
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p01.txt",
+        "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p02.txt"
+      ],
+      "version_note": "Model-specific descriptive bibliography title; publication year not established and omitted.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-furuno-nxt",
+      "title": "Radar Sensor {DRS6A-NXT / DRS12A-NXT / DRS25A-NXT}: Installation Manual",
+      "author_bibtex": "{FURUNO}",
+      "year": "2026",
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://www.furunousa.com/-/media/sites/furuno/document_library/documents/manuals/public_manuals/drs6anxt_12anxt_25anxt_installation_manual.pdf"
+      ],
+      "source_ids": [
+        "furuno_nxt_usa_manual"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "furuno_nxt_usa_manual",
+          "path": "data/radar_sources_v2/marine/furuno_nxt_usa_manual/response.bin",
+          "sha256": "7cce6c83593d74f9b9eba4f0a7d8c470d0d13392c99db265c2c5bba5602ddf04",
+          "selected_pages_one_based": [
+            33,
+            34
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/001.txt",
+        "data/radar_sources_v2/marine/furuno_nxt_usa_manual/pages/044.txt"
+      ],
+      "version_note": "IME-36680-K; printed K revision dated 2026-05-29; initial A revision is 2017-04.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-jrc-5200",
+      "title": "{JMA-5200Mk2}: Black Box Radar",
+      "author_bibtex": "{JRC}",
+      "year": "2012",
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://www.jrc.co.jp/hubfs/jrc-corp/assets/pdf/en/product/JMA-5200Mk2.pdf"
+      ],
+      "source_ids": [
+        "jrc_5200_catalog"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "jrc_5200_catalog",
+          "path": "data/radar_sources_v2/marine/jrc_5200_catalog/response.bin",
+          "sha256": "f41aee676a1be8fdf5cd0da9152e6b241f903ffa412fdbf26c9b8d1e32428a61",
+          "selected_pages_one_based": [
+            6
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/marine/jrc_5200_catalog/pages/001.txt",
+        "data/radar_sources_v2/marine/jrc_5200_catalog/pages/006.txt"
+      ],
+      "version_note": "Printed revision 2012.10, CAT.No.Y9-171 (No.699-2-3) A; distinct printed copyright 2010.11 retained.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-garmin-fantom",
+      "title": "{GMR Fantom} Series Open Array Radar: Installation Instructions",
+      "author_bibtex": "{Garmin}",
+      "year": "2024",
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://static.garmin.com/pumac/GMR_Fantom_Open_Array_Install_Instructions_EN-US.pdf"
+      ],
+      "source_ids": [
+        "garmin_fantom_manual"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "garmin_fantom_manual",
+          "path": "data/radar_sources_v2/marine/garmin_fantom_manual/response.bin",
+          "sha256": "5e7ec7a3d369239e749ae44616704ad2693589e0e82d0344f611b989cef04e36",
+          "selected_pages_one_based": [
+            12,
+            13
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/marine/garmin_fantom_manual/pages/001.txt"
+      ],
+      "version_note": "Printed May 2024, v4, GUID-B2BA7AFE-D24E-48DD-8DD0-38915DCBBE6A.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-metek-mrr2",
+      "title": "Micro Rain Radar {MRR-2}",
+      "author_bibtex": "{METEK Meteorologische Messtechnik GmbH}",
+      "year": null,
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://metek.de/wp-content/uploads/2014/05/20230929_Datenblatt_MRR-2.pdf"
+      ],
+      "source_ids": [
+        "metek_mrr2_20230929"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "metek_mrr2_20230929",
+          "path": "data/radar_sources_v2/replacement/metek_mrr2_20230929/response.bin",
+          "sha256": "7f12ce8baf7e9e7e5afebd0337ff1a9fe39cc2337981cddef5e866fb61d5e0e6",
+          "selected_pages_one_based": [
+            1,
+            2
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/replacement/metek_mrr2_20230929/pages/001.txt",
+        "data/radar_sources_v2/replacement/metek_mrr2_20230929/pages/002.txt"
+      ],
+      "version_note": "20230929 is the source filename version, not an independently established publication date; year omitted.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-metek-mrrpro",
+      "title": "Micro Rain Radar {MRR-PRO}: Data Sheet",
+      "author_bibtex": "{METEK Meteorologische Messtechnik GmbH}",
+      "year": "2024",
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://metek.de/wp-content/uploads/2016/12/2024-0705_MRR-PRO_datasheet_eng.pdf"
+      ],
+      "source_ids": [
+        "metek_mrr_pro_20240705"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "metek_mrr_pro_20240705",
+          "path": "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/response.bin",
+          "sha256": "bc4eba55be07839370c738e5ec1682d9e1a81a4684a25ffb7c8f26206e499ab3",
+          "selected_pages_one_based": [
+            1,
+            2
+          ]
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/pages/001.txt",
+        "data/radar_sources_v2/replacement/metek_mrr_pro_20240705/pages/002.txt"
+      ],
+      "version_note": "Printed date 08.07.2024 and copyright 2024; filename version 2024-0705 is separately retained.",
+      "accessed_scope": "Existing title/version/footer extraction and original snapshot byte hashes; no new source download or fresh equipment-fact review.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v2-raymarine-cyclone",
+      "title": "Cyclone / Cyclone Pro Radar Installation Instructions",
+      "author_bibtex": "{Raymarine}",
+      "year": null,
+      "verification_mode": "existing_local_source_archive_metadata_and_byte_hash",
+      "primary_urls": [
+        "https://docs.raymarine.com/87402/en-US/latest/index.html"
+      ],
+      "source_ids": [
+        "raymarine_cyclone_manual_entry",
+        "raymarine_spec_antenna",
+        "raymarine_spec_antenna_physical",
+        "raymarine_spec_arpa",
+        "raymarine_spec_connections",
+        "raymarine_spec_environment",
+        "raymarine_spec_power",
+        "raymarine_spec_power_pro",
+        "raymarine_spec_range",
+        "raymarine_spec_range_pro",
+        "raymarine_spec_receiver",
+        "raymarine_spec_transmitter",
+        "raymarine_spec_transmitter_pro"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "raymarine_cyclone_manual_entry",
+          "path": "data/radar_sources_v2/marine/raymarine_cyclone_manual_entry/response.bin",
+          "sha256": "f77653f8d4abd1e6b7eb9138b428bb31fed71e7cf8fb07027c50262f53bbf451",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/PhysicalSpecificationPedestalCyclon-BCB9E621.html"
+        },
+        {
+          "source_id": "raymarine_spec_antenna",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_antenna/response.bin",
+          "sha256": "f7832fb4c0654d66ca565685f79b62e522c2a23127f29347baf313aad2e4868d",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/AntennaSpecificationCyclonePro-BCBA1613.html"
+        },
+        {
+          "source_id": "raymarine_spec_antenna_physical",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_antenna_physical/response.bin",
+          "sha256": "51bda7d0b7cb2db66b4c05fe27cdfc7ac3163589715f27ba9ec4055a71bb8c4b",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/PhysicalSpecificationAntennaCyclone-BCB9EEF6.html"
+        },
+        {
+          "source_id": "raymarine_spec_arpa",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_arpa/response.bin",
+          "sha256": "092e3195896a2196ac2c5572487a8bf5bfabf023d7f5308c0e1a04e43d818a87",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/ARPATargetTrackingCyclonePro-BCBA1B57.html"
+        },
+        {
+          "source_id": "raymarine_spec_connections",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_connections/response.bin",
+          "sha256": "e9993c769adcc3fad2a76bb3a8c6f17466f2eeee9ab2e0aeffffe539c9d6aa63",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/DataConnectionsCyclonePro-BCB9FA7B.html"
+        },
+        {
+          "source_id": "raymarine_spec_environment",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_environment/response.bin",
+          "sha256": "bdcfdc613bfd10f7b42431cff081e176f32e6d7e7fff298acd91fdaaf8e18faa",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/EnvironmentalSpecificationCyclonePr-BCB9F5E5.html"
+        },
+        {
+          "source_id": "raymarine_spec_power",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_power/response.bin",
+          "sha256": "0841df34d3b8ae123994840277dbacf859545a85dabb9dd4863bc9f5e3f82b3a",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/PowerSpecification-BA4B0B00.html"
+        },
+        {
+          "source_id": "raymarine_spec_power_pro",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_power_pro/response.bin",
+          "sha256": "51b143c945e6513075161d47c707debdf8fa55cebb612dc04738f51fbd121b97",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/PowerSpecification-BA4C15BE.html"
+        },
+        {
+          "source_id": "raymarine_spec_range",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_range/response.bin",
+          "sha256": "0713b796a6734e883dc4dceb079c2ed2449a89aa89bc317d20ee76211091829f",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/RangeCyclonePro-BCBA0152.html"
+        },
+        {
+          "source_id": "raymarine_spec_range_pro",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_range_pro/response.bin",
+          "sha256": "fc58241a27585d0d6e25e7da373a686e8e8a27760b169c650c32b7c85f53bd87",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/Range-DD2CE309.html"
+        },
+        {
+          "source_id": "raymarine_spec_receiver",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_receiver/response.bin",
+          "sha256": "1545f164d3511f1bbf7e334935779b1485cac0afdbff74bb6e54b6fd8e255431",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/RecieverSpecificationCyclonePro-BCBA0D7F.html"
+        },
+        {
+          "source_id": "raymarine_spec_transmitter",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_transmitter/response.bin",
+          "sha256": "6ab0808f3b25300845737dc9a45d73c71c7b4684095e014389056aedcec9481a",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/TransmitterSpecificationCyclonePro-BCBA0647.html"
+        },
+        {
+          "source_id": "raymarine_spec_transmitter_pro",
+          "path": "data/radar_sources_v2/marine/raymarine_spec_transmitter_pro/response.bin",
+          "sha256": "2d8a1b1a25dd40576b02af92e88a557930094acc0aaa2765fc8d25cf29ed8878",
+          "source_uri": "https://docs.raymarine.com/87402/en-US/latest/TransmitterSpecification-BF520DEC.html"
+        }
+      ],
+      "metadata_inputs": [
+        "data/radar_sources_v2/curation_v1/chunks.json",
+        "data/radar_sources_v2/curation_v1/raymarine.identity.json"
+      ],
+      "version_note": "87402 Rev 9 en-US; 13 technical sections plus two parent indices for subject identity. No publication year inferred.",
+      "accessed_scope": "Archived parent-link identity metadata and section byte hashes. The manual index URL is resolved from the existing index.html parent link, not a claim of a fresh live-page fetch.",
+      "limitations": [
+        "The live latest URL may change. Section snapshots, not the full live site, define project evidence.",
+        "URL filenames alone do not establish whether a section belongs to Cyclone or Cyclone Pro."
+      ],
+      "human_verification": false
+    }
+  ],
+  "validation": {
+    "bib_entries": 23,
+    "chapter_citekeys_resolve": true,
+    "chapter_chinese_character_count": 3527,
+    "chapter_section_count": 8,
+    "chapter_citekeys": [
+      "cao2022kqapro",
+      "gao2023alce",
+      "hu2022lora",
+      "lewis2020rag",
+      "madaan2023selfrefine",
+      "qwen2024qwen25",
+      "ross2011dagger",
+      "shao2024deepseekmath",
+      "shinn2023reflexion",
+      "yao2023react"
+    ],
+    "all_listed_original_archive_hashes_checked": true,
+    "long_source_passages_republished": false,
+    "new_experiment_run": false,
+    "latex_compilation_performed_by_this_agent": false,
+    "compilation_scope_note": "Static bibliography and chapter checks only; the parent agent owns main-document integration and compilation."
+  }
+}

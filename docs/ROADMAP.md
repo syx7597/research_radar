@@ -22,7 +22,7 @@
 
 | 优先顺序 | 工作 | 可验收产物 |
 |---|---|---|
-| 两章草稿已完成 | 方法、公开实验及可重建结果表 | [新稿入口](../thesis/README.md)，8张表/220行结果均有来源；待学校模板、正式文献及PDF排版复核 |
+| 方法与实验草稿已完成 | 方法、公开实验及可重建结果表 | [新稿入口](../thesis/README.md)，8张表/220行结果均有来源；已纳入七章通用审阅版，待学校模板与导师意见 |
 | AI交叉审阅与修订已完成 | [12条逐条结论](../artifacts/thesis_direction_review/radar_ai_cross_review_v1/index.html)及[版本化修订](../artifacts/thesis_direction_review/radar_development_v2/manifest.json) | 系统/雷达主体、事件、范围和未知边界已保留；不等待用户专业审阅，AI材料不记成人工金标 |
 | 中文开发推理已完成 | [固定五检查点各12题](../results/radar_domain/development_probe_v1/summary.json)，60条CPU重放零差异 | 精确记录选择P/A1/C1/A2/C2为0/0/3/0/1，直接迁移不可靠；本轮0.139 GPU小时，无新训练 |
 | 中英对齐复测已完成 | [五模型×两语言×12题](../results/radar_domain/lookup_probe_v1/summary.json)，120条重放零差异 | 中英精确选择各为1/1/2/3/0，直接迁移仍不可用；停止继续改提示/题面 |
@@ -30,7 +30,7 @@
 | 共同接口适配与固定评价已完成 | [五检查点结果](../results/radar_domain/interface_adapt_v1/evaluation/summary.json) | 每模型完成40更新；520条新预测重放零差异，旧雷达120条直接复用。合成精确选择均达39–40/40，不能据此声称恢复C领域优势 |
 | 新来源数据/代码验收已通过 | [4份厂商PDF资料包](../artifacts/thesis_direction_review/radar_sources_v1/manifest.json)与[独立AI审阅](../artifacts/thesis_direction_review/radar_sources_v1/independent_ai_audit.json) | 4来源/家族、5型号、24中文题、62来源读法、15整页chunk；原12条调试闭包隔离，历史重叠及AI参考身份公开 |
 | 新来源固定评价及双AI正文审阅已完成 | [六入口同源回答结果](../results/radar_domain/source_eval_v1/ai_semantic_summary.json) | 120选择＋144回答重放零差异；正文正确RAG/P各13、A1/A2/C2各16、C1为15（各24题），不支持恢复C额外领域优势 |
-| 应用章与数据章草稿已完成 | [第三至六章入口](../thesis/README.md) | 第三章更新为7张表/124项数据字段；第六章加入原始及统一引用解析对照，保留全部迁移、适配和零增量结果，尚未编译PDF |
+| 应用章与数据章草稿已完成 | [第三至六章入口](../thesis/README.md) | 第三章更新为7张表/124项数据字段；第六章加入原始及统一引用解析对照，保留全部迁移、适配和零增量结果，已纳入完整PDF |
 | 下一轮设计与已见闭包审计已完成 | [覆盖设计v2](../artifacts/thesis_direction_review/radar_coverage_v2/design.json)、[CPU回归](../artifacts/thesis_direction_review/radar_coverage_v2/design_check.json) | 目标8组96题，设计登记时新归档/新题为0；完整flat与bound等信息，原文系统参照和模板展示分开计分 |
 | 来源准备已完成 | [原件/版本/历史汇总](../artifacts/thesis_direction_review/radar_sources_v2/archive_summary.json) | 9候选保留，8组可用；Simrad失败以MRR宽家族替补。171个本地文件字节核验通过，历史QA/SFT同族命中公开 |
 | 全页读法与交叉复核已完成 | [502条读法快照](../artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json) | 13页PDF与13段HTML、8来源组；39条背景/排除/歧义记录含5项来源未决；作者与复核AI分开，原稿及修订保留 |
@@ -45,10 +45,12 @@
 
 本次顺序交付已落地：①统一引用解析与65条双AI复审；②按8组×3类固定抽样的24题来源核验包；③数据章、应用章和可追溯表格整合。核验包已准备，真实人工核验完成数为0，二者不可混淆。
 
+七章整合与初次排版已完成：中英文摘要、绪论、相关工作、四章主体、总结及23条核对文献均接入[总稿](../thesis/current/main.tex)，完整PDF已实际构建并检查。当前不等待核验反馈才写稿，也不把未到来的人工反馈填成已完成。
+
 下一阶段按顺序：
 
 1. 实际核验24题的原文与参考，保留独立回答、出处和不确定性；之后交叉复核有争议项。发现参考问题时版本化更正并公开影响范围，不删除难题保分数。AI协助仍标AI，不能替代真人验收。
-2. 把第3–6章与绪论、相关工作和总结衔接成完整稿；主贡献写恢复状态/后缀监督方法，领域条件表示作为有限辅助结果，迁移失败、成本和通用引用处理同时报告。
+2. 用已形成的七章工作稿接受导师对问题、方法贡献和实验充分性的评阅，并适配学校模板；主贡献仍是恢复状态/后缀监督，领域条件表示是有限辅助结果，迁移失败、成本和通用引用处理同时报告。
 3. 按导师反馈和核验结果判断是否存在明确的外部有效性缺口，再单独登记一次新来源或第二模型复验；没有具体问题、固定对照与停止条件时不追加实验。当前不启动公开调参、RL或语义偏好训练。
 
 本轮正文配对为8胜1负、净增7题，绑定错误减少6题；37个联合改善有29个原本两路正文都正确。两位AI对全部288条联合正确判定一致，19个分项分歧的裁决没有改变正文、联合或题级错绑结果。来源组相关、AI参考、单一基座/一次推理及raw信息与整理成本不同的限制须与正结果同时写明。后续验证着重参考可信度和外部有效性，不以本批分数继续搜索格式。详见[阶段决定](../results/radar_domain/coverage_v2/stage_decision.json)。

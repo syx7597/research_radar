@@ -59,9 +59,9 @@
   "outputs_sha256": {
     "domain_results.csv": "4c50064a1ef39a9d79b0ad66f4a295c9b080e51b593da1bd2ea98fc7fc0b2f8d",
     "domain_tables.tex": "2494c86ce818a24b41a4bcc76fa31be5d34b7e94d36e205cf0262d65f3d33638",
-    "06_radar_application.tex": "64f1825fee773d6786794a9a1cdbe564ac99d01d19ba345538a1db182a974658",
-    "domain_review.tex": "7d3d9cc08c8ccedbe259aa6c7e34236991d01a8b982232311b0500e3b2c61e2f",
-    "domain_export.py": "5e3573ea62426ff7a72db6a7607e6f9adcd9f6c0ac7591bee8dd38ae741e2689"
+    "06_radar_application.tex": "6f179740ab584413580af474d41b91fe2390ea9e560c8632701cf94143cef021",
+    "domain_review.tex": "95476cc2c8c8e0e43872803e3aa72dccf4ecfc1790cb239a5ca2bd98fdf73e6d",
+    "domain_export.py": "690bddeaf145ad9cf33c9de189b0ed21d7eec208d5f4ac51a7e906d55de8eed2"
   },
   "table_rows": 412,
   "validation": {
@@ -76,7 +76,7 @@
     "final_base_hash_attestation_matches_protocol": true,
     "local_raw_or_tensor_reverification": false,
     "semantic_judgments": "Copied from two masked AI reviews and an arm-aware source-grounded adjudication; not rejudged by exporter",
-    "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"
+    "pdf_compilation": "not performed by this exporter; full manuscript build is recorded separately in manuscript_manifest.json"
   },
   "claim_limits": [
     "AI authorship/review is not human gold or different-model-family consensus",

@@ -127,10 +127,10 @@
   "outputs_sha256": {
     "results_tables.csv": "9cf9b5fb39b3214bdf0bb014d5d5c5424b79ad99a14ef7aa786c0e7fe1fbbe79",
     "generated_tables.tex": "fd1864dfb67761e4278d796589afd48bd1999f4c9f262db6b43f8f0cf2d15d9f",
-    "04_execution_feedback_method.tex": "2fb766e745217d1252565682d26f09284de7f5e294463897ee83a53e8e5411f6",
-    "05_public_experiments.tex": "bdbb5228e2603d5e432ff640b4bf174b5749c6c31cff5c8602f3f850b1e953f9",
-    "review.tex": "ceb5bd6fb58f04c211031ea8001215eb2648ac1912a80757146c19a404e32c6e",
-    "export_evidence.py": "ba7872cc666d677aadb05aee2449ecf7585f92b80ea7560bf16ee2a06e7d8959"
+    "04_execution_feedback_method.tex": "c84723db7e077b4b9c93d094a437059d7e85a2c6a7470c4e3b0730fad67d452f",
+    "05_public_experiments.tex": "a6e065a7a13a1ced8d1ac5996eec66d4d8d8498dae0a7d744f8a1109832a1e41",
+    "review.tex": "162da7ec8d2da6eb9683ceba86fcffbda7b5ea085ac43239693cb49bfa366b1e",
+    "export_evidence.py": "5f3810f89d74121cf180ca238f60e2579ae9695665f6783292546986f36e7269"
   },
   "table_rows": 220,
   "validation": {
@@ -139,7 +139,7 @@
     "replay_count": 10000,
     "replay_mismatches": 0,
     "bootstrap_intervals": "copied with source hashes; cannot recompute joint-seed bootstrap from marginals",
-    "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"
+    "pdf_compilation": "not performed by this exporter; full manuscript build is recorded separately in manuscript_manifest.json"
   },
   "claim_limits": [
     "two continuation seeds share an initial adapter",

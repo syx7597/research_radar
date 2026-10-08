@@ -1,0 +1,54 @@
+{
+  "schema": "radar_seven_chapter_build_v1",
+  "status": "compiled",
+  "chapters": [
+    "绪论",
+    "相关技术与研究现状",
+    "雷达来源数据与评价材料构建",
+    "小模型知识图谱问答的恢复轨迹监督方法",
+    "公开知识图谱问答实验与结果分析",
+    "雷达领域问答与证据表示评价",
+    "总结与展望"
+  ],
+  "numbered_chapters": 7,
+  "labels": 36,
+  "cited_works": 23,
+  "bibliography_entries": 23,
+  "inputs_sha256": {
+    "thesis/current/00_abstract.tex": "0d1917437dbd68d6ce208cd60f85b59e93872201d0970cc92f12e5358398b78d",
+    "thesis/current/01_introduction.tex": "d7995c55629e50f200cbca92faba983a0810651402bc7d6f0ea85e7cfa2b306d",
+    "thesis/current/02_background_related_work.tex": "dc689357c271ffb80b37399d51319df83a11d5cc925fd2787a6675620f7c7f93",
+    "thesis/current/03_radar_data_construction.tex": "5bb4e163068830595e032ad679c09145a11aa458166876bb56a3194926bd6997",
+    "thesis/current/04_execution_feedback_method.tex": "c84723db7e077b4b9c93d094a437059d7e85a2c6a7470c4e3b0730fad67d452f",
+    "thesis/current/05_public_experiments.tex": "a6e065a7a13a1ced8d1ac5996eec66d4d8d8498dae0a7d744f8a1109832a1e41",
+    "thesis/current/06_radar_application.tex": "6f179740ab584413580af474d41b91fe2390ea9e560c8632701cf94143cef021",
+    "thesis/current/06b_evidence_representation.tex": "e55396fc3c49401f0619d51e0e6f20763db45aa9980cca865d5a9b4764ae6e0d",
+    "thesis/current/07_conclusion.tex": "678c4c60086ff751b0e0f35d1e468580ec135c047242ddefe6e889628ef37201",
+    "thesis/current/coverage_evidence_manifest.json": "d02c9e9e95dc098096d959619bc9fd9342a0344ff39fc03d43a059e887f3fb79",
+    "thesis/current/coverage_tables.tex": "b0908449180b1693f31516b9525ec92e33c9a0d62a6dff2225fa04c83b2c7639",
+    "thesis/current/data_evidence_manifest.json": "48a6f1d818b6253a01cbefa8b9a5f268daee5c01d60c2b3b4339e7779a8ddf70",
+    "thesis/current/data_tables.tex": "3c7043d58b2a8ca98cd807e93ccefa3ec39eb0d9c9526a585fbea90520b4e3b6",
+    "thesis/current/domain_evidence_manifest.json": "3349957f4771b6823afc78fd8638e8d6b81fb1984d4e88658e8bcd5547c14aa9",
+    "thesis/current/domain_tables.tex": "2494c86ce818a24b41a4bcc76fa31be5d34b7e94d36e205cf0262d65f3d33638",
+    "thesis/current/evidence_manifest.json": "42adbb81b2e7a2c4da0166d5c7e6611775d51c9002381af429a99a6bb89e4c16",
+    "thesis/current/generated_tables.tex": "fd1864dfb67761e4278d796589afd48bd1999f4c9f262db6b43f8f0cf2d15d9f",
+    "thesis/current/literature_audit.json": "1a2015bfca722d840882e0536b176a5247af7b7ca75b9ab0b0d3443e22aa22c1",
+    "thesis/current/main.tex": "f36cc28a817239adde842faf09d6b882f855b97f209c097d333090085643a194",
+    "thesis/current/references.bib": "69baa1e3c3b0b7b240376a8a6ecb3210ff2b235402cc8f3fb3e032e65126fc0e"
+  },
+  "engine": "Tectonic 0.17.0",
+  "builder_sha256": "40e5d3a3430d0835245015031e0a7d6d806a76fb58363b6b76f583cc7024ce52",
+  "pdf": {
+    "path": "thesis/current/build/main.pdf",
+    "sha256": "64119e7b4402d9275a9fbe8791edd9bef50ea0f3e011fd3bef99f7ceeb9b05da",
+    "bytes": 703044
+  },
+  "final_log_sha256": "980cae1b433ef606a0cc02dc530d96b071ba61facc14a03c1525936bbf04fa8d",
+  "overfull_box_warnings": 0,
+  "unresolved_references_or_missing_glyphs": 0,
+  "limits": [
+    "Generic review layout, not a university-approved thesis template.",
+    "Compilation and source consistency do not establish factual validity or human gold.",
+    "Visual review is recorded separately; this compiler report alone is not visual approval."
+  ]
+}

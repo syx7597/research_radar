@@ -24,7 +24,9 @@
 
 本批按先定范围建立8来源组、502条来源读法和96道AI参考题；主比较flat/bound使用相同E_sem，保留全部8,434次记录出现。两者共同排除原引文审计附件，不能称整个原文无损；4道检索缺页题仍计入96分母。[执行审计](results/radar_domain/coverage_v2/execution_audit.json)与[阶段决定](results/radar_domain/coverage_v2/stage_decision.json)完整保留成本和限制。bound相对flat输入token减少9.62%，但仍显著多于raw；不作通用效率或泛化保证。
 
-**当前下一步：开展固定样本的实际来源核验，统一论文第3–6章的证据与贡献边界。** 24题核验包已按8组×3类固定抽样准备，先独立作答后查看AI参考；[公开清单](artifacts/thesis_direction_review/radar_external_review_v1/manifest.json)记录人工完成数仍为0。 公开2000题恢复SFT仍是核心方法证据；这次结果作为限定场景的辅助方法结果。不在本批题上继续改提示、改编码或追加训练，RL与语义偏好训练仍不进入队列。来源准备、首版超长失败、一次输入协议修订、旧开发GPU短测，以及此前迁移负结果，均见[完整阶段记录](docs/CURRENT_STATUS.md)及其原始报告。
+**七章论文工作稿已整合并实际编译。** 新增中英文摘要、绪论、相关工作与总结，23条文献经过来源核对；正文保留训练正结果、迁移负结果、成本与引用解析前后差异。见[论文入口与构建方法](thesis/README.md)、[总入口](thesis/current/main.tex)及[构建记录](thesis/current/manuscript_manifest.json)。通用审阅版不等于学校格式定稿或导师审定。
+
+**当前下一步：实际来源核验与导师审稿。** 24题核验包已按8组×3类固定抽样准备，先独立作答后查看AI参考；[公开清单](artifacts/thesis_direction_review/radar_external_review_v1/manifest.json)记录人工完成数仍为0。公开2000题恢复SFT仍是核心方法证据；领域表示结果作为限定场景的辅助证据。不在本批题上继续改提示、改编码或追加训练，RL与语义偏好训练仍不进入队列。来源准备、首版超长失败、一次输入协议修订、旧开发GPU短测，以及此前迁移负结果，均见[完整阶段记录](docs/CURRENT_STATUS.md)及其原始报告。
 
 ## 阅读入口
 

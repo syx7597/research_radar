@@ -1,0 +1,43 @@
+% Run the build script from any working directory: python3 thesis/current/build_thesis.py
+% General review layout; replace with the institution's required template later.
+\documentclass[UTF8,a4paper,12pt,fontset=fandol]{ctexrep}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,longtable,array}
+\usepackage[hidelinks,unicode]{hyperref}
+\hypersetup{pdftitle={基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用},
+  pdfsubject={电子信息专业硕士论文七章工作稿；AI参考与人工核验分别标注}}
+\setlength{\emergencystretch}{2em}
+\input{thesis/current/generated_tables.tex}
+\input{thesis/current/data_tables.tex}
+\input{thesis/current/domain_tables.tex}
+\input{thesis/current/coverage_tables.tex}
+\title{基于执行反馈的小模型知识图谱问答方法研究\\及雷达领域应用}
+\author{电子信息专业硕士学位论文工作稿}
+\date{2026年10月8日\quad 通用审阅版}
+\begin{document}
+\hypersetup{pageanchor=false}
+\maketitle
+\clearpage
+\pagenumbering{Roman}
+\hypersetup{pageanchor=true}
+\input{thesis/current/00_abstract.tex}
+\tableofcontents
+\begingroup
+\footnotesize
+\listoftables
+\endgroup
+\clearpage
+\pagenumbering{arabic}
+\input{thesis/current/01_introduction.tex}
+\input{thesis/current/02_background_related_work.tex}
+\input{thesis/current/03_radar_data_construction.tex}
+\input{thesis/current/04_execution_feedback_method.tex}
+\input{thesis/current/05_public_experiments.tex}
+\input{thesis/current/06_radar_application.tex}
+\input{thesis/current/07_conclusion.tex}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{参考文献}
+\bibliographystyle{plain}
+\bibliography{thesis/current/references}
+\end{document}

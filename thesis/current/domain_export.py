@@ -268,7 +268,7 @@ def build():
                        "paired_adaptation_order_and_tokens": True, "final_base_hash_attestation_matches_protocol": True,
                        "local_raw_or_tensor_reverification": False,
                        "semantic_judgments": "Copied from two masked AI reviews and an arm-aware source-grounded adjudication; not rejudged by exporter",
-                       "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"},
+                       "pdf_compilation": "not performed by this exporter; full manuscript build is recorded separately in manuscript_manifest.json"},
         "claim_limits": ["AI authorship/review is not human gold or different-model-family consensus",
                          "24 questions from four correlated sources; no significance claim",
                          "new source snapshots are not certified historical equipment-family isolation",

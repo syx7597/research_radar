@@ -232,7 +232,7 @@ def build():
                 "validation": {"frozen_summary_hash_bindings": True, "aggregate_arithmetic": True,
                                "replay_count": 10000, "replay_mismatches": 0,
                                "bootstrap_intervals": "copied with source hashes; cannot recompute joint-seed bootstrap from marginals",
-                               "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"},
+                               "pdf_compilation": "not performed by this exporter; full manuscript build is recorded separately in manuscript_manifest.json"},
                 "claim_limits": ["two continuation seeds share an initial adapter", "project holdout is not official hidden test",
                                  "equal supervised token budgets, unequal input tokens and compute", "first divergence need not be a semantic error",
                                  "4 of 418 accepted divergence actions were rejected", "no demonstrated incremental RL benefit in this short trial",

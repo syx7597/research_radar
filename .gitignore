@@ -30,6 +30,7 @@ apikey*.txt
 !.env.example
 
 # LaTeX build artifacts (regenerable)
+/thesis/current/build/
 *.aux
 *.log
 *.out

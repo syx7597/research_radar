@@ -1,0 +1,104 @@
+{
+  "schema": "radar_seven_chapter_manuscript_review_v1",
+  "review_date": "2026-10-08",
+  "status": "compiled_and_selected_pages_visually_reviewed_by_AI",
+  "reviewer": "AI /root",
+  "pdf": {
+    "path": "thesis/current/build/main.pdf",
+    "sha256": "64119e7b4402d9275a9fbe8791edd9bef50ea0f3e011fd3bef99f7ceeb9b05da",
+    "bytes": 703044
+  },
+  "build_manifest_sha256": "14919f054551d85a25eeb236b627bc6363bbdca47775d4484037b08ed9dc832b",
+  "literature_audit_sha256": "1a2015bfca722d840882e0536b176a5247af7b7ca75b9ab0b0d3443e22aa22c1",
+  "page_count": 54,
+  "pages_with_extractable_text": 54,
+  "text_extract_sha256": "71cb94ef34743124afb48ae4c32bae9626efbd03f5fed2e9c32c6b3e1f77cf4b",
+  "visual_tool": "macOS PDFKit thumbnails rendered through Swift; viewed by AI",
+  "visually_reviewed_physical_pages": [
+    {
+      "page_one_based": 2,
+      "png_sha256": "152f0d57398a9070c99af6ad4934395cb11443c476a4e59353cb58cefb1d3964",
+      "observation": "Chinese abstract and keywords fit together and are readable"
+    },
+    {
+      "page_one_based": 5,
+      "png_sha256": "ac04b7282ed1c96bc87155e1c674a91647d31034d7f4890a7615a9268195e1eb",
+      "observation": "Contents entries, hierarchy and page numbers are readable"
+    },
+    {
+      "page_one_based": 8,
+      "png_sha256": "2401cf225bdc7ecaaf283c0b388678b5b6f2614c4362a4262911e8dae072719a",
+      "observation": "Full list of tables fits on one page"
+    },
+    {
+      "page_one_based": 15,
+      "png_sha256": "b8f3e1183ad77355785adccc8a1b786144613367992a159623f90675862bcef5",
+      "observation": "Related-method comparison table fits within page margins"
+    },
+    {
+      "page_one_based": 25,
+      "png_sha256": "0cbbc9a6b8bff4875e369b6b6051c0818f738fb293937b459e57a7968ae2952e",
+      "observation": "Method chapter title wraps at a phrase boundary; body is readable"
+    },
+    {
+      "page_one_based": 32,
+      "png_sha256": "69bea0d083d68da118f3e93778b236a0b96f56d40fea985d9f2771ca60aac263",
+      "observation": "Public holdout accuracy, paired differences and cost tables fit within margins"
+    },
+    {
+      "page_one_based": 37,
+      "png_sha256": "8c04a10e65ab3d0d57fe9ccf65fdcfdae4e81742a7cc78a5f7c9404913c1afcb",
+      "observation": "Domain chapter title and distinct evaluation stages are readable"
+    },
+    {
+      "page_one_based": 47,
+      "png_sha256": "866dd32e2859dc9ed52ce9386c2c01a797d3e2ca49cffb15b70c136e06932d6d",
+      "observation": "Original and posthoc citation-result table and cost table are readable"
+    },
+    {
+      "page_one_based": 51,
+      "png_sha256": "8610f5e53960b1174db8f0fa5b5afb10b5f8fda7a6fcf59de06e18016a873a5d",
+      "observation": "First bibliography page and primary-source links are readable"
+    },
+    {
+      "page_one_based": 54,
+      "png_sha256": "845272adb817dee1ff4bf18bc6450d3f364833afa994d610d67e90465278203c",
+      "observation": "Final bibliography entries and links are readable"
+    }
+  ],
+  "checks": {
+    "public_export_groups_passed": 4,
+    "numbered_chapters": 7,
+    "labels": 36,
+    "cited_works": 23,
+    "bound_input_hashes_verified": 20,
+    "literature_authored_file_hashes_verified": 2,
+    "pdf_hash_verified": true,
+    "unresolved_references_or_missing_glyphs": 0,
+    "overfull_box_warnings": 0,
+    "duplicate_destination_warnings": 0,
+    "underfull_spacing_warnings": 17,
+    "new_training_or_model_inference": false,
+    "experiment_implementation_or_frozen_result_changes": false
+  },
+  "compiler_provenance": {
+    "engine": "Tectonic 0.17.0",
+    "installed_globally": false,
+    "official_asset": "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-aarch64-apple-darwin.tar.gz",
+    "archive_sha256": "a3f1cac7c5678f01661a92212f58480ae3b0634115d880dbc59e2953ded45667",
+    "asset_sha256_verified_against_release_metadata": true
+  },
+  "human_source_review": {
+    "completed": 0,
+    "planned": 24,
+    "status": "packet_prepared_no_returned_human_reviews"
+  },
+  "limits": [
+    "Visual review sampled ten physical pages; it is not a complete line-by-line review of all pages.",
+    "Generic review layout, not the institution-required format; English abstract spans two pages and some text spacing warnings remain.",
+    "Compilation, hash consistency and AI review do not establish human gold or advisor acceptance.",
+    "Bibliography uses a general numeric style; institutional citation formatting remains to be applied.",
+    "The manuscript preserves the original and posthoc domain results separately; no successful recovery-SFT transfer is claimed.",
+    "PDF, renderer outputs and compiler cache are local build products, not public Git artifacts."
+  ]
+}

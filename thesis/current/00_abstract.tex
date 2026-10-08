@@ -1,0 +1,27 @@
+\chapter*{摘\quad 要}
+\addcontentsline{toc}{chapter}{摘要}
+
+知识图谱问答将自然语言问题转换为可执行操作，为小规模语言模型调用外部知识提供了一种路径。然而，以正确轨迹为主的监督训练与模型自由运行时所见执行状态存在差异；工具调用合法也不等于满足问题语义。雷达技术资料还包含型号与部件共用表格、量值区间和工作条件，来源记录、生成正文与引用之间容易出现错配。本文围绕小模型的执行恢复训练及其雷达应用边界，研究训练状态构造、来源知识表示与分层评价方法。
+
+首先，建立保留主体、部件、原始量值形式、明确条件和来源位置的雷达资料组织流程，将历史资产、开发材料、虚构接口实例和来源约束评价材料分开管理。在固定的八个厂商来源组中整理 502 条来源读法，另从原文编制并交叉审阅 96 道中文问题。上述资料和语义判断仍属于 AI 辅助参考，不能视为独立人工金标。
+
+其次，提出基于真实偏离执行状态与可执行恢复后缀的配对监督方案。从初始模型的失败执行轨迹中构造 418 个可回放的配对；恢复组额外读取首次参考分歧动作及实际观察，通过句柄重映射继续执行参考后缀，并仅监督后缀动作。普通续训组使用相同问题、初始检查点、记录次序和监督 token 预算。方案采用已有的 Qwen2.5-3B-Instruct、LoRA 与交叉熵训练，改进集中于训练状态、目标构造及监督位置。
+
+在 KQA Pro 的 2,000 题项目留出评价中，普通续训与恢复续训的两种子平均准确率分别为 78.75\% 和 83.50\%，平均增量为 4.75 个百分点，问题配对 bootstrap 的 95\% 区间为 $[3.53,5.98]$。两次续训共享初始模型和语料，且项目留出集不是官方隐藏测试集。恢复组相对普通分步基线减少未完成题和总推理 token，但其总 token 仍约为一次性程序基线的 24 倍。短程强化学习与具体报错文字的稳定额外收益未得到支持。
+
+最后，分别评价接口迁移和证据组织。共同接口适配使查询可用，但四来源 24 题实验未发现恢复组相对普通组的额外雷达正文收益。在另一轮固定八来源评价中，条件绑定表示相对等信息平铺记录使正文正确数由 73 增至 80、绑定错误由 17 降至 11。原始联合正确为 17 与 52；另行登记的事后统一引用解析将其变为 55 与 68，显示原始差距有较大部分来自可通用处理的引用编号问题。该领域结果是确定性表示与后处理的有限证据，不构成恢复训练迁移成功或普遍优于原文检索增强问答的证明。人工核验、来源外推和机制识别仍有待完成。
+
+\noindent\textbf{关键词：}知识图谱问答；小语言模型；执行反馈；恢复轨迹监督；雷达知识；证据引用
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Executable knowledge graph question answering enables small language models to use external knowledge, but supervised reference trajectories do not cover all states encountered during free-running execution. Valid tool calls may also violate question constraints. Radar documents introduce additional difficulties through shared specification tables, quantity ranges, operating conditions, and source attribution. This thesis studies recovery supervision for executable question answering and evaluates its application boundaries in the radar domain.
+
+A source-conditioned representation preserves subjects, components, quantity forms, explicit conditions, and source locations. A fixed collection contains 502 source readings and 96 Chinese questions from eight manufacturer source groups. These resources are authored and cross-reviewed with AI assistance and are not human-validated ground truth. For training, 418 paired examples are constructed from unsuccessful free-running trajectories. The recovery variant retains the first divergence from the reference trajectory and its actual execution observation, remaps result handles, and supervises the executable reference suffix. Its control uses the same initial checkpoint, questions, record order, and supervised-token budget. The approach uses Qwen2.5-3B-Instruct, LoRA, and standard cross-entropy training; the intervention concerns training states, target construction, and supervision positions.
+
+On a project-held-out set of 2,000 KQA Pro questions, mean accuracy across two continuation seeds increases from 78.75\% to 83.50\%. The mean paired gain is 4.75 percentage points, with a question-level paired bootstrap 95\% interval of $[3.53,5.98]$. Both seeds share the initial checkpoint and corpus, and the evaluation is not the official hidden test. Recovery training reduces unfinished episodes and total inference tokens relative to the matched stepwise control, while still using about 24 times the tokens of a one-shot program baseline. Stable additional benefits from short reinforcement learning or detailed error messages are not established.
+
+Shared interface adaptation enables radar queries, but a 24-question source-based study does not establish additional domain answer gains from recovery training. In a separate fixed 96-question comparison, condition-bound and semantically equivalent flat evidence yield 80 and 73 correct answers and 11 and 17 binding errors, respectively. Their original joint-success counts are 52 and 17. A separately registered posthoc exact citation resolver raises these to 68 and 55 without changing answer text, narrowing the observed difference. The results support a bounded evidence-organization finding, rather than successful transfer of recovery training or universal superiority over raw-source retrieval-augmented answering. Human source validation, external validity, and separation of the training intervention's mechanisms remain open.
+
+\noindent\textbf{Keywords:} knowledge graph question answering; small language models; execution feedback; recovery supervision; radar knowledge; evidence attribution

@@ -84,9 +84,9 @@
   "outputs_sha256": {
     "data_results.csv": "2ee23572632cece2fd0261d130b4a518084de56dd5b61e8406e92fe6e9aea5a8",
     "data_tables.tex": "3c7043d58b2a8ca98cd807e93ccefa3ec39eb0d9c9526a585fbea90520b4e3b6",
-    "03_radar_data_construction.tex": "7e1278e3f8554e87e3674d92b7b9ff275f9a846d9ff2c36deb6130cf688b731a",
-    "data_review.tex": "ba5ab147b9d340a602b1f9620974c40ec6c81d408d77826f6927857133f2a7f5",
-    "data_export.py": "6ed5dfd5a5e8696ba51ba248d1956b928a49c3f9d9e5f076a92a1b59a133ff0e"
+    "03_radar_data_construction.tex": "5bb4e163068830595e032ad679c09145a11aa458166876bb56a3194926bd6997",
+    "data_review.tex": "44123804a77151a5f138f510a817fb194ebb033df29d6f7c37840adfb5fec4b2",
+    "data_export.py": "18aa6ec66687031be92c603d0ca121ccf863fee5a8bdc474572d4ab7f9c4b9d2"
   },
   "rows": 124,
   "validation": {
@@ -95,7 +95,7 @@
     "historical_profile_and_inventory_share_entity_hash": true,
     "private_data_revalidated": false,
     "new_training_or_inference": false,
-    "pdf_compilation": "not_performed; xelatex unavailable in authoring environment"
+    "pdf_compilation": "not performed by this exporter; full manuscript build is recorded separately in manuscript_manifest.json"
   },
   "limits": [
     "Historical asset counts are not verified radar facts or radar model counts",
