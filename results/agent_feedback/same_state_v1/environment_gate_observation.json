@@ -1,0 +1,59 @@
+{
+  "schema": "same_state_environment_gate_observation_v1",
+  "observed_at_epoch": 1792293919.6892729,
+  "uid": 1001,
+  "read_only_check": true,
+  "files": [
+    {
+      "path": "/usr/bin/nvidia-smi",
+      "resolved": "/usr/bin/nvidia-smi",
+      "uid": 0,
+      "gid": 0,
+      "bytes": 1043552,
+      "mtime_epoch": 1787670771.0,
+      "sha256": "0630fe8e764426202a60be6a6bb2c0e39f5218ffa024e997e0c9826823c05eed",
+      "magic_first_16_bytes_hex": "7f454c46020101000000000000000000",
+      "literal_mod_pip_present": false
+    },
+    {
+      "path": "/usr/sbin/python3",
+      "resolved": "/usr/sbin/python3",
+      "uid": 14,
+      "gid": 50,
+      "bytes": 36332912,
+      "mtime_epoch": 1791662197.0,
+      "sha256": "58c22c40a808b861dba2f97b4bc39b3185cefde7e6dad66cf5d7b7d15dc61523",
+      "magic_first_16_bytes_hex": "7f454c46020101030000000000000000",
+      "literal_mod_pip_present": false
+    },
+    {
+      "path": "/usr/bin/python3.10",
+      "resolved": "/usr/bin/python3.10",
+      "uid": 0,
+      "gid": 0,
+      "bytes": 5941864,
+      "mtime_epoch": 1788171497.0,
+      "sha256": "a2f33a6e006989270f4340528eb61f8f97366e00a5d1b602ac8672ea44fc56ae",
+      "magic_first_16_bytes_hex": "7f454c46020101000000000000000000",
+      "literal_mod_pip_present": false
+    }
+  ],
+  "gpu_reported_processes": {
+    "4280": {
+      "proc_directory_exists": false
+    },
+    "32696": {
+      "proc_directory_exists": true
+    },
+    "59336": {
+      "proc_directory_exists": true
+    }
+  },
+  "gpu_stage_started_marker_exists": false,
+  "gpu_job_records": [],
+  "probe_prediction_exists": false,
+  "formal_collection_binding_exists": false,
+  "observed_probe_exit": 1,
+  "observed_probe_stderr": "sh: 1: mod-pip: not found; XML ParseError: no element found",
+  "diagnosis": "Health query failed; executable anomaly and process ownership unresolved. No cause established."
+}

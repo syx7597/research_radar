@@ -14,7 +14,9 @@
 
 四卡均观测到 100% 利用率、每卡约 20,020 MiB 占用，NVML 的占用 PID 无法由当前 ps 视图确认，论文作业账本没有未结束任务。此外默认 python3 指向异常的 /usr/sbin/python3；本轮 CPU 检查使用明确的项目虚拟环境，其指向 /usr/bin/python3.10。未停止任何进程、未重置 GPU、未使用管理员、未启动新评价。
 
-同日续做：四卡占用复查仍相同。补齐整对预算筛选和四臂配对统计模块，新增 13 项测试、相关合计 37 项通过。服务器 CPU 再次实际回放旧开发 500 题，69 对／138 条状态与上次 Linux 结果全部一致；378 题原 I 答对、52 题无共同前缀、1 题参考答案不匹配，500 题均有筛选记录。复用已核验哈希的分词检查后仍保留 69 对，没有新题推理或效果估计。见[筛选复核](../results/agent_feedback/same_state_v1/linux_dev_cohort_preflight.json)及[程序检查](../results/agent_feedback/same_state_v1/cpu_implementation_check.json)。正式采集完成记录、运行绑定及限时任务编排仍待完成，不能将模块测试视为已运行全流程。
+同日续做：补齐整对预算筛选和四臂配对统计模块。服务器 CPU 再次实际回放旧开发 500 题，69 对／138 条状态与上次 Linux 结果全部一致；378 题原 I 答对、52 题无共同前缀、1 题参考答案不匹配，500 题均有筛选记录。复用已核验哈希的分词检查后仍保留 69 对，没有新题推理或效果估计。见[筛选复核](../results/agent_feedback/same_state_v1/linux_dev_cohort_preflight.json)。
+
+限时控制器已实现并同步服务器，相关测试合计 **47 项通过**。CPU `prepare-probe` 实际执行成功，固定原开发题序首题的正常／偏离两条状态，核对 65 项输入并生成[短测绑定](../results/agent_feedback/same_state_v1/probe_binding.json)；它只表示旧开发短测准备完成，不是正式评价绑定。实际 `probe` 在 GPU 健康门槛退出：`/usr/bin/nvidia-smi -i 0 -q -x` 返回空 XML，并出现 `mod-pip: not found`。随后只读确认没有短测启动标记、GPU 作业记录、预测文件或正式采集绑定。[环境观察](../results/agent_feedback/same_state_v1/environment_gate_observation.json)及[进程归属检查](../results/agent_feedback/same_state_v1/process_identity_observation.json)保留原始事实，原因未确定。四卡满载与环境异常仍待解决，未跳过健康门槛、未使用管理员、未启动新 GPU 推理。
 
 用户确认真人核验尚未开始，仍为 0/24；已记录[状态确认](../artifacts/thesis_direction_review/radar_external_review_v1/human_status_20261018.json)，没有伪造响应。第二章补近邻表，第四章补流程图、伪代码及原训练样本，第五章补状态矩阵和正反案例，并纠正“训练／开发也全部排除了历史使用”的表述。
 

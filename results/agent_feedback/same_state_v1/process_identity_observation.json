@@ -1,0 +1,24 @@
+{
+  "schema": "same_state_process_identity_observation_v1",
+  "observed_at_epoch": 1792293952.9616737,
+  "read_only": true,
+  "processes": {
+    "4280": {
+      "status_error": "FileNotFoundError",
+      "executable_error": "FileNotFoundError"
+    },
+    "32696": {
+      "status_error": "FileNotFoundError",
+      "executable_error": "FileNotFoundError"
+    },
+    "59336": {
+      "status_error": "FileNotFoundError",
+      "executable_error": "FileNotFoundError"
+    }
+  },
+  "dynamic_loader_preload": {
+    "exists": true,
+    "bytes": 0,
+    "library_paths": []
+  }
+}

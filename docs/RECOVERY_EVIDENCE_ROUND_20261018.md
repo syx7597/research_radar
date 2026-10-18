@@ -76,4 +76,36 @@
 
 服务器实际 CPU 复核已完成：重新回放旧开发 500 题，138 条状态与原 Linux 状态逐项一致；复用输入哈希检查通过的原 tokenizer 预算记录，69 对全部保留。筛选账本完整覆盖 378 道原 I 正确题、69 道合格题、52 道无共同前缀题和 1 道参考答案不一致题。详见[复核报告](../results/agent_feedback/same_state_v1/linux_dev_cohort_preflight.json)。该运行使用 syx 项目虚拟环境、显式禁用 CUDA，耗时约 111 秒；没有重新分词、没有新题推理，也没有产生新的准确率结论。
 
-当前仍需补齐与验证：GPU 短测、采集完成记录与正式执行绑定、限时任务编排和真实四臂结果。新增模块不表示这些运行已经完成。人工核验也仍等待实际响应。
+当时仍需补齐限时编排；随后完成情况见下节。GPU 短测、正式采集完成记录与执行绑定、真实四臂结果以及人工响应仍未产生，新增模块不表示这些运行已经完成。
+
+## 限时运行控制器
+
+`experiments/agent_feedback/same_state_runs.py` 接通八个显式阶段。先固定旧开发首对状态的短测绑定；短测完成且真实续写回放通过后，才能冻结采集绑定。采集绑定同时固定模型、知识库、题池、统计程序和其他实现文件。全量 I 采集完成后才构造正式状态及第二份执行绑定；因此在新题推理前固定的是模型、分析和采集配置，实际状态文件则在构造后、A/C 推理前固定。
+
+所有任务仍使用 `run_job` 记账：短测一项最多 300 秒、两项采集各 5,400 秒、四项续跑各 5,400 秒，总上限 32,700 GPU 秒。每项从监督器超时参数中预留 35 秒，用于轮询及终止宽限；终态再检查实际计费是否超过登记上限。超预算、非零返回、部分输出或未结束记录均不能放行下一阶段。限时中断也不会自动重跑。
+
+GPU 在启动前必须明确空闲，不能有未知 PID 或 `[N/A]`；被占用时不创建启动标记。一旦阶段已启动，无论是否已收到输出，都禁止再次启动同名阶段，须先检查进程与账本。控制器只使用 `syx`、明确的项目 Python 及 `/usr/bin/nvidia-smi`，子进程 PATH 限为 `/usr/bin:/bin`，避免默认 Python 路径异常；这不等于服务器整机异常已经解决。
+
+在 `/home/syx/research_radar_agent` 下使用下列顺序。CPU 准备阶段完成后不重复执行；每一步成功并核对证据后才执行下一步。`--gpus` 必须改为当时确认空闲的卡号，支持使用一张卡依次执行各项，题序和批大小不变。
+
+```bash
+export PATH=/usr/bin:/bin PYTHONHASHSEED=20261003 CUDA_VISIBLE_DEVICES=""
+RADAR_PY=/home/syx/research_radar_agent/.venv/bin/python
+"$RADAR_PY" -m experiments.agent_feedback.same_state_runs prepare-probe
+"$RADAR_PY" -m experiments.agent_feedback.same_state_runs probe --gpus 0
+"$RADAR_PY" -m experiments.agent_feedback.same_state_runs freeze-collection
+"$RADAR_PY" -m experiments.agent_feedback.same_state_runs collect --gpus 0,1
+"$RADAR_PY" -m experiments.agent_feedback.same_state_runs cohort
+"$RADAR_PY" -m experiments.agent_feedback.same_state_runs resume --gpus 0,1,2,3
+"$RADAR_PY" -m experiments.agent_feedback.same_state_runs analyze
+```
+
+第八个 `collector-child` 是监督器内部入口，不单独调用。前台观察断开不能作为任务结束或重跑依据；先查 `results/agent_feedback/jobs/same_state_v1_*.json` 对应 PID 和终态。这个控制器没有训练入口，也不会依据统计结果自动开展其他实验。
+
+### 实际执行到哪里
+
+控制器及相关测试合计 47 项通过。服务器 `prepare-probe` 已用 syx 原环境执行成功，绑定 65 项输入，固定开发题序首题的两个起点；实际运行版本为 torch 2.6.0+cu124、transformers 5.18.0、peft 0.21.2。本地已核对短测状态及五份核心实现的 SHA256 与服务器绑定一致。
+
+随后实际调用 `probe --gpus 0`，在健康查询阶段失败：`/usr/bin/nvidia-smi -i 0 -q -x` 没有返回 XML，stderr 出现 `sh: 1: mod-pip: not found`，解析抛出 `ParseError`。没有模型加载、启动标记、GPU 作业或预测输出，新增 GPU 时间仍为 0。此次失败不是模型方法结果，也没有自动重跑或放宽检查。
+
+只读元数据检查保留了命令文件哈希及 PID 可见性；不执行异常 Python，不读取进程命令行、环境内容或凭据。两个 PID 目录在一次检查中可见，但随后均无法读取状态与可执行链接，不能据此确认占用归属或诊断根因。系统 preload 配置为空。这些观察不足以断言具体软件问题或入侵；需要服务器维护方确认后再运行。已向用户请求确认占用来源，可继续的第一步仍是同一个未启动的旧开发短测，不能跳到新题采集。

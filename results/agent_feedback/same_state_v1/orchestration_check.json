@@ -1,0 +1,27 @@
+{
+  "schema": "same_state_orchestration_check_v1",
+  "date": "2026-10-18",
+  "tests_passed": 47,
+  "new_tests_this_change": 10,
+  "py_compile_passed": true,
+  "linux_prepare_probe_completed": true,
+  "bound_input_files": 65,
+  "probe_states": 2,
+  "gpu_health_gate_passed": false,
+  "gpu_job_started": false,
+  "gpu_model_calls": 0,
+  "formal_four_arm_evaluation_completed": false,
+  "frozen_design_inputs_unchanged": true,
+  "tests_command": "python3 -m unittest tests.test_agent_same_state_runs tests.test_agent_same_state_analysis tests.test_agent_same_state_cohort tests.test_agent_same_state tests.test_agent_state_transitions tests.test_agent_feedback_recovery -q",
+  "files_sha256": {
+    "experiments/agent_feedback/same_state_runs.py": "026d16cb234eff6d54642e64b6bfbaba4ccb803245aff4a3c8253c490f400dcd",
+    "experiments/agent_feedback/same_state_analysis.py": "82f00c5d6fc800f26d22d0972b8d8b9327fb6bb54f077cfd70be0c780ab3f508",
+    "experiments/agent_feedback/same_state_cohort.py": "bc04821533dbc3669340dfa596c91ad95a447ae9101febdea682cd4e8ec87ae3",
+    "tests/test_agent_same_state_runs.py": "078159f2183a3e34bb05f7ff2e13c3e11b777c73fbd9cf6f922ecdced86f3ee9",
+    "tests/test_agent_same_state_analysis.py": "d4d3e0aa6a7b1618e8021d914b7ca169fa28f2f074dfa93ec3678d724a88d3e7",
+    "results/agent_feedback/same_state_v1/probe_binding.json": "738a5e011a441759cb60d0115e19aa1758be5db17551f0aef828b1ea215eca3a",
+    "results/agent_feedback/same_state_v1/environment_gate_observation.json": "b8c02fda01aadff7b02ff64c7fa8c29babef7d3eb9d6d905f72414a6b1189fe4",
+    "results/agent_feedback/same_state_v1/process_identity_observation.json": "1e7ed70629257ef654c8b236a030893f50bd66f246cc7a2ecf80e5916c408258"
+  },
+  "scope": "CPU and guarded startup validation; no claim of successful GPU or end-to-end execution."
+}

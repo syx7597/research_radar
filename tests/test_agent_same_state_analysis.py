@@ -50,6 +50,15 @@ class SameStateAnalysisTest(unittest.TestCase):
         self.assertEqual(report["contrasts"]["difference_of_differences"]["delta_pp"], 0)
         self.assertEqual(len(rows), 1)
 
+    def test_single_arm_requires_explicit_probe_mode(self):
+        states, predictions = self.predictions()
+        probe = {"A_20261003": predictions["A_20261003"]}
+        with self.assertRaises(ValueError):
+            validate_resumes(self.executor, states, probe)
+        validate_resumes(self.executor, states, probe, probe=True)
+        with self.assertRaises(ValueError):
+            validate_resumes(self.executor, states, predictions, probe=True)
+
     def test_reject_missing_arm_missing_state_duplicate_and_reordered(self):
         states, predictions = self.predictions()
         bad = deepcopy(predictions); del bad["C_20261004"]

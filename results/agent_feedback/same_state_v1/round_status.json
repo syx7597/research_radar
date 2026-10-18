@@ -1,7 +1,7 @@
 {
   "schema": "same_state_round_status_v1",
   "updated_date": "2026-10-18",
-  "status": "cpu_replay_cohort_statistics_checked_execution_orchestration_pending",
+  "status": "probe_prepared_gpu_health_query_failed_before_job_start",
   "human_review_completed": 0,
   "training_started": false,
   "gpu_model_calls": 0,
@@ -21,7 +21,9 @@
     "cause_not_established": true,
     "cohort_ledger_questions": 500,
     "cohort_eligible_pairs": 69,
-    "linux_state_recheck_identical": true
+    "linux_state_recheck_identical": true,
+    "old_dev_probe_binding_prepared": true,
+    "old_dev_gpu_probe_completed": false
   },
   "resource_observation": {
     "gpu_utilization_percent": [
@@ -42,14 +44,16 @@
       4280,
       32696,
       59336
-    ]
+    ],
+    "health_query_xml_empty": true,
+    "health_query_stderr": "sh: 1: mod-pip: not found",
+    "own_probe_job_started": false
   },
   "pending": [
-    "Complete and validate bounded collection/resume orchestration with terminal collection records and frozen analysis binding",
-    "Confirm idle compute GPUs and resolve or isolate abnormal executable-path/runtime environment",
-    "Run bounded old-dev GPU resume smoke and freeze actual execution binding",
-    "Collect fixed I trajectories on 2400 new questions; build and audit states on Linux",
-    "Run four existing A/C checkpoints once on frozen paired states and analyze all outcomes",
+    "Confirm GPU ownership/availability and resolve anomalous health-query/runtime environment",
+    "Run the prepared bounded old-dev GPU resume probe and validate actual continuations",
+    "Freeze collection binding; collect fixed I trajectories on all 2400 new questions",
+    "Build and freeze eligible Linux state pairs; run all four existing A/C checkpoints once and analyze outcomes",
     "Receive actual 24-question human source review; retain partial/uncertain responses honestly"
   ],
   "inputs_sha256": {
@@ -60,14 +64,19 @@
     "results/agent_feedback/same_state_v1/linux_dev_token_preflight.json": "07e5aa0673015a0b34213ce7534757726a9f326dcce1bb17edc1ff6fc9b55fbc",
     "results/agent_feedback/same_state_v1/cross_platform_check.json": "9c3a34c12fb9965f0a5ac7837bf2147d1f1d42aeb2a60da5b38ca4e320a7a42f",
     "results/agent_feedback/same_state_v1/linux_dev_cohort_preflight.json": "47a6101b2eb04b62ad3207c9a04c3044406e27ffeda083a4a633c9ad8cdcc461",
-    "results/agent_feedback/same_state_v1/cpu_implementation_check.json": "c4293e47eff95d8c23be9b3d8141ac00c850ed9d7bf3d60fbb291591229baf44"
+    "results/agent_feedback/same_state_v1/cpu_implementation_check.json": "c4293e47eff95d8c23be9b3d8141ac00c850ed9d7bf3d60fbb291591229baf44",
+    "results/agent_feedback/same_state_v1/orchestration_check.json": "5def9113d6955753d4226ad59445bad8e592b45e03a0a4d080eb5f2d00840439",
+    "results/agent_feedback/same_state_v1/probe_binding.json": "738a5e011a441759cb60d0115e19aa1758be5db17551f0aef828b1ea215eca3a",
+    "results/agent_feedback/same_state_v1/environment_gate_observation.json": "b8c02fda01aadff7b02ff64c7fa8c29babef7d3eb9d6d905f72414a6b1189fe4",
+    "results/agent_feedback/same_state_v1/process_identity_observation.json": "1e7ed70629257ef654c8b236a030893f50bd66f246cc7a2ecf80e5916c408258"
   },
   "no_automatic_training": true,
   "implementation": {
     "cohort_selection_and_analysis_modules_added": true,
-    "tests_passed": 37,
-    "new_tests": 13,
-    "formal_orchestration_complete": false,
-    "new_effect_estimate_obtained": false
+    "tests_passed": 47,
+    "new_effect_estimate_obtained": false,
+    "orchestration_implemented": true,
+    "orchestration_gpu_validated": false,
+    "new_tests_total": 23
   }
 }

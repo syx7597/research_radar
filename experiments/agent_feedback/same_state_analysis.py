@@ -25,11 +25,12 @@ SEEDS = (20261003, 20261004)
 COSTS = ("continuation_calls", "invalid_calls", "input_tokens", "generated_tokens", "total_tokens")
 
 
-def validate_resumes(executor, states, predictions):
+def validate_resumes(executor, states, predictions, *, probe=False):
     """Check complete ordered coverage and actual execution, including failures."""
     validate_inventory(states)
-    if set(predictions) != set(ARMS):
-        raise ValueError("All four registered checkpoints are required")
+    required = {"A_20261003"} if probe else set(ARMS)
+    if set(predictions) != required:
+        raise ValueError("All registered checkpoints for this evaluation or explicit old-dev probe are required")
     keys = [(r["id"], r["condition"]) for r in states]
     for arm, rows in predictions.items():
         if [(r["id"], r["condition"]) for r in rows] != keys:
