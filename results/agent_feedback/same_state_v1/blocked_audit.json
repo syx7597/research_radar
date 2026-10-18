@@ -1,0 +1,58 @@
+{
+  "schema": "same_state_blocked_audit_v1",
+  "date": "2026-10-18",
+  "observed_at_epoch": 1792294147.4024339,
+  "previous_goal_turn_classification": "progress",
+  "previous_progress_commits": [
+    "d365741",
+    "2f7793f"
+  ],
+  "consecutive_verified_goal_continuations_with_same_resource_blocker": 3,
+  "resource_blocker": "All four GPUs remain occupied; process ownership and health-query anomaly unresolved.",
+  "current_gpu_utilization_percent": [
+    100,
+    100,
+    100,
+    100
+  ],
+  "current_gpu_memory_mib": [
+    20020,
+    20020,
+    20020,
+    20020
+  ],
+  "current_nvml_reported_pids": [
+    4280,
+    32696,
+    59336
+  ],
+  "current_own_gpu_job_records": [],
+  "current_probe_started_marker_exists": false,
+  "current_probe_prediction_exists": false,
+  "current_collection_binding_exists": false,
+  "health_query_repeated_this_audit": false,
+  "last_health_query_evidence": "results/agent_feedback/same_state_v1/environment_gate_observation.json",
+  "human_review_records_received": 0,
+  "fixed_human_sample": 24,
+  "local_response_files": [
+    "blank_responses.json",
+    "blank_responses.csv"
+  ],
+  "independent_preparation_completed": [
+    "nearest-method comparison",
+    "prior state-transition and case report",
+    "method chapter revision and compiled thesis",
+    "frozen pool and design",
+    "Linux replay and token preflight",
+    "cohort/paired analysis implementation",
+    "bounded orchestration and old-dev probe input binding"
+  ],
+  "goal_completed": false,
+  "not_a_verified_wait_for_our_training": true,
+  "remaining_requires_external_change": [
+    "At least one confirmed idle and healthy GPU in the authorized runtime",
+    "Actual human source-review responses"
+  ],
+  "next_experiment": "Same previously prepared old-dev probe; no new training or alternative branch",
+  "reason_not_resetting": "Unknown occupied GPU tasks cannot be interrupted under the current authorization."
+}
