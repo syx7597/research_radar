@@ -1,0 +1,30 @@
+{
+  "schema": "posthoc_original_score_validation_v1",
+  "date": "2026-10-18",
+  "models": {
+    "clean_holdout_v1": {
+      "rows": 2000,
+      "per_question_correctness_mismatches": 0
+    },
+    "recovery_holdout_v1": {
+      "rows": 2000,
+      "per_question_correctness_mismatches": 0
+    },
+    "clean_holdout_seed20261004": {
+      "rows": 2000,
+      "per_question_correctness_mismatches": 0
+    },
+    "recovery_holdout_seed20261004": {
+      "rows": 2000,
+      "per_question_correctness_mismatches": 0
+    }
+  },
+  "input_scores_sha256": {
+    "results/agent_feedback/clean_holdout_v1.scored.jsonl": "561d7e0a2b438e243230aa0789a455ecb3be9743108844152b64925f56ecba2d",
+    "results/agent_feedback/recovery_holdout_v1.scored.jsonl": "79623db643116d0c806760f496d8d0f7a8ed432c479421152cbba0aaa76f86aa",
+    "results/agent_feedback/clean_holdout_seed20261004.scored.jsonl": "80aeb94f96213067d6cbe66dfb9e4b288a518d689ce15f2bb1e25be7d55f408f",
+    "results/agent_feedback/recovery_holdout_seed20261004.scored.jsonl": "f0d55a944bfc78b6655c735dff1639dbbc2ab68871748d7328053628f20185de"
+  },
+  "total_rows": 8000,
+  "new_generation": false
+}

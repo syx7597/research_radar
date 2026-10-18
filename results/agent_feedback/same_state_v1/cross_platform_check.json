@@ -1,0 +1,47 @@
+{
+  "schema": "cross_platform_state_replay_diagnostic_v1",
+  "date": "2026-10-18",
+  "status": "cross_platform_fixture_reuse_rejected",
+  "gpu_calls": 0,
+  "local_runtime": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "linux_runtime": "Python 3.10.12; original execution environment",
+  "local_accepted_pairs": 68,
+  "linux_accepted_pairs": 69,
+  "local_counts": {
+    "free_run_answer_correct": 378,
+    "accepted": 68,
+    "rollout_replay_mismatch": 2,
+    "no_shared_successful_prefix": 51,
+    "reference_answer_mismatch": 1
+  },
+  "linux_counts": {
+    "free_run_answer_correct": 378,
+    "accepted": 69,
+    "no_shared_successful_prefix": 52,
+    "reference_answer_mismatch": 1
+  },
+  "common_state_count": 136,
+  "internal_state_digest_differences": 3,
+  "differing_state_keys": [
+    [
+      "train:32754",
+      "clean"
+    ],
+    [
+      "train:32754",
+      "divergent"
+    ],
+    [
+      "train:50724",
+      "divergent"
+    ]
+  ],
+  "first_token_check_error": "Full internal handle state differs, even if displayed observations match",
+  "decision": "Construct and replay all official diagnostic states in the actual Linux evaluation environment. Do not relax full-state checks or use local state hashes as runtime identities.",
+  "cause": "Platform/Python-dependent execution ordering is a candidate explanation; exact cause not established.",
+  "old_experiment_outputs_changed": false,
+  "inputs_sha256": {
+    "results/agent_feedback/same_state_v1/dev_replay_preflight.json": "41793610aa174aff279c7c0504f484dea59a887bc61033eedc59a585c038cdf9",
+    "results/agent_feedback/same_state_v1/linux_dev_replay_preflight.json": "948eb19b93591daecab14b9d2282d09e9430e2c9e1cc97ee26db82f9dd9b3ec6"
+  }
+}

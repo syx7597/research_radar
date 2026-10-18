@@ -39,10 +39,12 @@ FILES = {
     "recovery_input": "recovery_sft_v1/input_manifest.json",
     "clean_seed2_input": "clean_sft_seed20261004/input_manifest.json",
     "recovery_seed2_input": "recovery_sft_seed20261004/input_manifest.json",
+    "transitions": "state_transitions_v1/summary.json",
+    "method_example": "state_transitions_v1/method_example.json",
 }
 CODE = ["recovery.py", "continuation_data.py", "training_data.py", "train_sft.py",
         "environment.py", "inference.py", "compare.py", "holdout_analysis.py",
-        "holdout_runs.py", "feedback_mask.py"]
+        "holdout_runs.py", "feedback_mask.py", "state_transition_analysis.py"]
 
 
 def digest(artifact):
@@ -84,6 +86,27 @@ def build():
                     "\\toprule", " & ".join(headers) + r" \\", "\\midrule"])
         tex.extend(" & ".join(map(str, record)) + r" \\" for record in data)
         tex.extend(["\\bottomrule", "\\end{tabular}%", "}"])
+
+    transition_table = []
+    status_names = {"unfinished": "未完成", "finished_wrong": "完成错误", "correct": "正确"}
+    transition_report = docs["transitions"]
+    if transition_report["code_sha256"] != digest(ROOT / "experiments/agent_feedback/state_transition_analysis.py"):
+        raise ValueError("Posthoc analyzer differs from the completed report")
+    for seed, value in transition_report["seeds"].items():
+        matrix = value["row_A_column_C"]
+        close(sum(sum(record.values()) for record in matrix.values()), 2000)
+        for state, values in matrix.items():
+            transition_table.append([seed, status_names[state], *values.values()])
+            for target, count in values.items():
+                row("posthoc_state_transition", seed + ":" + state, target, count, "count",
+                    "transitions", f"/seeds/{seed}/row_A_column_C/{state}/{target}")
+        for arm in ("A", "C"):
+            close(value["margins"][arm]["correct"], report["arms"][f"{arm}_{seed}"]["correct"])
+        for key, val in value["decomposition"].items():
+            row("posthoc_correct_gain_decomposition", seed, key, val, "count", "transitions",
+                f"/seeds/{seed}/decomposition/{key}")
+    table("PublicTransitionTable", ["续训种子", "A 状态", "C 未完成", "C 完成错误", "C 正确"],
+          transition_table, "llrrr")
 
     holdout_table, cost_table = [], []
     labels = {"P": "P", "A_20261003": "$A_1$", "C_20261003": "$C_1$",

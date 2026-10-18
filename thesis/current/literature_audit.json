@@ -1,17 +1,17 @@
 {
   "schema": "thesis_literature_audit_v1",
-  "audit_date": "2026-10-08",
+  "audit_date": "2026-10-18",
   "reviewer": "AI /root/radar_revision_v2",
   "status": "bibliographic_metadata_and_selected_claims_checked",
   "human_review_completed": false,
   "scope": [
-    "Ten primary papers checked through official proceedings or author preprints for selected related-work claims.",
+    "Thirteen selected primary method papers; the three 2026-10-18 additions and earlier ten checks have individually recorded dates and scope.",
     "Thirteen manufacturer bibliography entries checked against existing archived metadata: four prior-source entries plus nine entries representing eight new source families.",
     "This is a bibliography and selected-claims audit, not a new equipment-fact review, independent human acceptance, systematic literature survey or experimental replication."
   ],
   "files_sha256": {
-    "thesis/current/02_background_related_work.tex": "dc689357c271ffb80b37399d51319df83a11d5cc925fd2787a6675620f7c7f93",
-    "thesis/current/references.bib": "69baa1e3c3b0b7b240376a8a6ecb3210ff2b235402cc8f3fb3e032e65126fc0e"
+    "thesis/current/02_background_related_work.tex": "c39e634ad78387ae58b9922c4b761571e3b39ebb803003b4bdc2c33fb015c2c4",
+    "thesis/current/references.bib": "545ae33ebaaeb68203fa4e0385a26269db447823e3e3f888f68b94a8746e3540"
   },
   "local_metadata_inputs_sha256": {
     "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
@@ -290,6 +290,78 @@
       ],
       "limitations": [
         "Local question-level semantic flags are not described as direct ALCE metric reproduction."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "yuan2025agentr",
+      "title": "Agent-R: Training Language Model Agents to Reflect via Iterative Self-Training",
+      "authors_bibtex": "Yuan, Siyu and Chen, Zehui and Xi, Zhiheng and Ye, Junjie and Du, Zhengyin and Chen, Jiecao",
+      "year": 2025,
+      "venue_or_institution": "arXiv",
+      "version_note": "Version 1",
+      "primary_urls": [
+        "https://arxiv.org/abs/2501.11425v1",
+        "https://arxiv.org/html/2501.11425v1"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-18",
+      "accessed_scope": [
+        "Section 3: MCTS, revision trajectories and iterative self-training"
+      ],
+      "claims_used_in_chapter": [
+        "MCTS and model-guided revision; no external expert-model requirement."
+      ],
+      "limitations": [
+        "Not experimentally reproduced; no cross-task performance ranking or proven cost advantage."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "chen2025step",
+      "title": "Training LLM-Based Agents with Synthetic Self-Reflected Trajectories and Partial Masking",
+      "authors_bibtex": "Chen, Yihan and Xu, Benfeng and Wang, Xiaorui and Zhang, Yongdong and Mao, Zhendong",
+      "year": 2025,
+      "venue_or_institution": "arXiv",
+      "version_note": "Version 1",
+      "primary_urls": [
+        "https://arxiv.org/abs/2505.20023v1",
+        "https://arxiv.org/html/2505.20023v1"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-18",
+      "accessed_scope": [
+        "Sections 3.2-3.4: student initialization, teacher reflection/correction and partial masking"
+      ],
+      "claims_used_in_chapter": [
+        "Teacher supplies feedback/corrections; incorrect thought/action loss masked."
+      ],
+      "limitations": [
+        "Not experimentally reproduced; no cross-task performance ranking or proven cost advantage."
+      ],
+      "cross_paper_score_comparison_used": false
+    },
+    {
+      "citekey": "lauffer2025oec",
+      "title": "Imitation Learning for Multi-turn LM Agents via On-policy Expert Corrections",
+      "authors_bibtex": "Lauffer, Niklas and Deng, Xiang and Kundurthy, Srivatsa and Kenstler, Brad and Da, Jeff",
+      "year": 2025,
+      "venue_or_institution": "arXiv",
+      "version_note": "Version 1",
+      "primary_urls": [
+        "https://arxiv.org/abs/2512.14895v1",
+        "https://arxiv.org/html/2512.14895v1"
+      ],
+      "verification_mode": "new_web_primary_source_check",
+      "accessed_date": "2026-10-18",
+      "accessed_scope": [
+        "Sections 3.1-3.3: random switching, expert-only masking, rejection and repetition filtering"
+      ],
+      "claims_used_in_chapter": [
+        "Student history followed by expert continuation; only expert portion supervised."
+      ],
+      "limitations": [
+        "Not experimentally reproduced; no cross-task performance ranking or proven cost advantage."
       ],
       "cross_paper_score_comparison_used": false
     }
@@ -765,26 +837,31 @@
     }
   ],
   "validation": {
-    "bib_entries": 23,
+    "bib_entries": 26,
     "chapter_citekeys_resolve": true,
-    "chapter_chinese_character_count": 3527,
+    "chapter_chinese_character_count": 4162,
     "chapter_section_count": 8,
     "chapter_citekeys": [
       "cao2022kqapro",
+      "chen2025step",
       "gao2023alce",
       "hu2022lora",
+      "lauffer2025oec",
       "lewis2020rag",
       "madaan2023selfrefine",
       "qwen2024qwen25",
       "ross2011dagger",
       "shao2024deepseekmath",
       "shinn2023reflexion",
-      "yao2023react"
+      "yao2023react",
+      "yuan2025agentr"
     ],
     "all_listed_original_archive_hashes_checked": true,
     "long_source_passages_republished": false,
     "new_experiment_run": false,
     "latex_compilation_performed_by_this_agent": false,
     "compilation_scope_note": "Static bibliography and chapter checks only; the parent agent owns main-document integration and compilation."
-  }
+  },
+  "previous_audit_sha256": "1a2015bfca722d840882e0536b176a5247af7b7ca75b9ab0b0d3443e22aa22c1",
+  "revision_note": "Added three nearest recovery-training papers; earlier source checks retain their original access dates and scope."
 }

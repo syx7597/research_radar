@@ -1,0 +1,54 @@
+{
+  "schema": "same_state_round_status_v1",
+  "updated_date": "2026-10-18",
+  "status": "cpu_preflight_complete_gpu_execution_pending",
+  "human_review_completed": 0,
+  "training_started": false,
+  "gpu_model_calls": 0,
+  "gpu_hours_this_round": 0,
+  "prior_project_gpu_hours": 24.192471,
+  "design_protocol_sha256": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
+  "pool_questions": 2400,
+  "initial_model_new_pool_collection_started": false,
+  "four_arm_resume_started": false,
+  "development_preflight": {
+    "linux_pairs": 69,
+    "linux_states": 138,
+    "all_replay_and_reference_budgets_passed": true,
+    "cross_platform_fixture_reuse_rejected": true,
+    "local_pairs": 68,
+    "internal_state_digest_differences": 3,
+    "cause_not_established": true
+  },
+  "resource_observation": {
+    "gpu_utilization_percent": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "gpu_memory_MiB_each": 20020,
+    "nvml_compute_process_ids_visible_in_ps": false,
+    "unfinished_project_gpu_jobs": 0,
+    "default_python3_path": "/usr/sbin/python3",
+    "default_python3_response": "No pool URL supplied. Exiting.",
+    "explicit_system_python": "/usr/bin/python3.10; Python 3.10.12",
+    "environment_issue_resolved": false
+  },
+  "pending": [
+    "Confirm idle compute GPUs and resolve or isolate abnormal executable-path/runtime environment",
+    "Run bounded old-dev GPU resume smoke and freeze actual execution binding",
+    "Collect fixed I trajectories on 2400 new questions; build and audit states on Linux",
+    "Run four existing A/C checkpoints once on frozen paired states and analyze all outcomes",
+    "Receive actual 24-question human source review; retain partial/uncertain responses honestly"
+  ],
+  "inputs_sha256": {
+    "results/agent_feedback/same_state_v1/pool_manifest.json": "81d6ffc88cb1f6400db0a307330eddad6d30d3bb800e619355805b4730fc5e84",
+    "results/agent_feedback/same_state_v1/dev_replay_preflight.json": "41793610aa174aff279c7c0504f484dea59a887bc61033eedc59a585c038cdf9",
+    "results/agent_feedback/same_state_v1/linux_dev_replay_preflight.json": "948eb19b93591daecab14b9d2282d09e9430e2c9e1cc97ee26db82f9dd9b3ec6",
+    "results/agent_feedback/same_state_v1/design_protocol.json": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
+    "results/agent_feedback/same_state_v1/linux_dev_token_preflight.json": "07e5aa0673015a0b34213ce7534757726a9f326dcce1bb17edc1ff6fc9b55fbc",
+    "results/agent_feedback/same_state_v1/cross_platform_check.json": "9c3a34c12fb9965f0a5ac7837bf2147d1f1d42aeb2a60da5b38ca4e320a7a42f"
+  },
+  "no_automatic_training": true
+}

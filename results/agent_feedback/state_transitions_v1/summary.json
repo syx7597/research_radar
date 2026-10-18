@@ -1,0 +1,224 @@
+{
+  "schema": "posthoc_holdout_state_transitions_v1",
+  "date": "2026-10-18",
+  "analysis_status": "completed",
+  "original_results_modified": false,
+  "new_model_calls": 0,
+  "training": false,
+  "posthoc": true,
+  "state_order": [
+    "unfinished",
+    "finished_wrong",
+    "correct"
+  ],
+  "seeds": {
+    "20261003": {
+      "questions": 2000,
+      "row_A_column_C": {
+        "unfinished": {
+          "unfinished": 47,
+          "finished_wrong": 64,
+          "correct": 87
+        },
+        "finished_wrong": {
+          "unfinished": 18,
+          "finished_wrong": 129,
+          "correct": 90
+        },
+        "correct": {
+          "unfinished": 15,
+          "finished_wrong": 69,
+          "correct": 1481
+        }
+      },
+      "margins": {
+        "A": {
+          "unfinished": 198,
+          "finished_wrong": 237,
+          "correct": 1565
+        },
+        "C": {
+          "unfinished": 80,
+          "finished_wrong": 262,
+          "correct": 1658
+        }
+      },
+      "decomposition": {
+        "unfinished_to_correct": 87,
+        "wrong_to_correct": 90,
+        "correct_to_unfinished": 15,
+        "correct_to_wrong": 69,
+        "completion_boundary_net": 72,
+        "both_finished_net": 21,
+        "total_correct_net": 93
+      },
+      "unfinished_stop_reasons": {
+        "A": {
+          "call_budget": 198
+        },
+        "C": {
+          "call_budget": 80
+        }
+      },
+      "selected_cases": [
+        {
+          "seed": "20261003",
+          "cell": "unfinished->unfinished",
+          "id": "train:31530"
+        },
+        {
+          "seed": "20261003",
+          "cell": "unfinished->finished_wrong",
+          "id": "train:71760"
+        },
+        {
+          "seed": "20261003",
+          "cell": "unfinished->correct",
+          "id": "train:18006"
+        },
+        {
+          "seed": "20261003",
+          "cell": "finished_wrong->unfinished",
+          "id": "train:2378"
+        },
+        {
+          "seed": "20261003",
+          "cell": "finished_wrong->finished_wrong",
+          "id": "train:46175"
+        },
+        {
+          "seed": "20261003",
+          "cell": "finished_wrong->correct",
+          "id": "train:20507"
+        },
+        {
+          "seed": "20261003",
+          "cell": "correct->unfinished",
+          "id": "train:81833"
+        },
+        {
+          "seed": "20261003",
+          "cell": "correct->finished_wrong",
+          "id": "train:38760"
+        }
+      ]
+    },
+    "20261004": {
+      "questions": 2000,
+      "row_A_column_C": {
+        "unfinished": {
+          "unfinished": 50,
+          "finished_wrong": 68,
+          "correct": 87
+        },
+        "finished_wrong": {
+          "unfinished": 29,
+          "finished_wrong": 97,
+          "correct": 84
+        },
+        "correct": {
+          "unfinished": 12,
+          "finished_wrong": 62,
+          "correct": 1511
+        }
+      },
+      "margins": {
+        "A": {
+          "unfinished": 205,
+          "finished_wrong": 210,
+          "correct": 1585
+        },
+        "C": {
+          "unfinished": 91,
+          "finished_wrong": 227,
+          "correct": 1682
+        }
+      },
+      "decomposition": {
+        "unfinished_to_correct": 87,
+        "wrong_to_correct": 84,
+        "correct_to_unfinished": 12,
+        "correct_to_wrong": 62,
+        "completion_boundary_net": 75,
+        "both_finished_net": 22,
+        "total_correct_net": 97
+      },
+      "unfinished_stop_reasons": {
+        "A": {
+          "call_budget": 205
+        },
+        "C": {
+          "call_budget": 91
+        }
+      },
+      "selected_cases": [
+        {
+          "seed": "20261004",
+          "cell": "unfinished->unfinished",
+          "id": "train:75242"
+        },
+        {
+          "seed": "20261004",
+          "cell": "unfinished->finished_wrong",
+          "id": "train:60480"
+        },
+        {
+          "seed": "20261004",
+          "cell": "unfinished->correct",
+          "id": "train:87590"
+        },
+        {
+          "seed": "20261004",
+          "cell": "finished_wrong->unfinished",
+          "id": "train:23252"
+        },
+        {
+          "seed": "20261004",
+          "cell": "finished_wrong->finished_wrong",
+          "id": "train:29963"
+        },
+        {
+          "seed": "20261004",
+          "cell": "finished_wrong->correct",
+          "id": "train:53183"
+        },
+        {
+          "seed": "20261004",
+          "cell": "correct->unfinished",
+          "id": "train:13577"
+        },
+        {
+          "seed": "20261004",
+          "cell": "correct->finished_wrong",
+          "id": "train:21204"
+        }
+      ]
+    }
+  },
+  "case_selection": {
+    "seed": 20261018,
+    "per_nonempty_cell_per_seed": 1,
+    "exclude": "correct->correct",
+    "rule": "minimum sha256(seed|continuation_seed|cell|id)",
+    "selection_blinding": "outcome categories used; hash chosen before reading full selected case contents"
+  },
+  "inputs_sha256": {
+    "results/agent_feedback/holdout_v1_generation_complete.json": "2144d5aff896b115c42fc95f78e6b10fb55c9d4af77c315350766e91dc1bd858",
+    "results/agent_feedback/holdout_v1_summary.json": "5951c5533124374c32d241d8aa7b661e172c4937067c789ee94d4fc24681edf7",
+    "results/agent_feedback/holdout_v1_execution_audit.json": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68",
+    "results/agent_feedback/holdout_v1_analysis.json": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+    "data/agent_feedback/holdout.gold.jsonl": "05ae200a046a9007ee7b89e151a245c050977b40df8af9d4d176c3145e71b2db",
+    "results/agent_feedback/clean_holdout_v1.jsonl": "c1f010d1926d73373be248f50fcc2370821a250976b4fe4449b5864cfe4a0b39",
+    "results/agent_feedback/recovery_holdout_v1.jsonl": "6b08a46e8dd09c786ef1e7f4a5a791b69237a65472d5c8a91387c03ed397ab7e",
+    "results/agent_feedback/clean_holdout_seed20261004.jsonl": "af4a6b161f2eb511d86eab4a5f06283c6a0c321b88302a31bbb26fd0438e2542",
+    "results/agent_feedback/recovery_holdout_seed20261004.jsonl": "d3421f034bc7ee9b723e9c278a3354fec4e62ebf7ed501274ca635d6d4f37e37"
+  },
+  "code_sha256": "3728a51c394d189736399566d0aeb1ff6b60cdefbd606049c52c81f7082a8af3",
+  "limitations": [
+    "Descriptive decomposition, not causal mediation.",
+    "The two continuation seeds share their initialization and training corpus.",
+    "Cases illustrate categories and are not independent validation or training data.",
+    "No semantic error labels inferred solely from reference divergence or an empty result."
+  ],
+  "private_cases_sha256": "38b7effa68dcb780f480fe68a02a08b65ff386be8eacd5c7c93b36e703e1d3c4"
+}

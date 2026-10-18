@@ -1,0 +1,259 @@
+{
+  "schema": "method_example_binding_v1",
+  "selection": "min sha256(method_example_v1|id) across original 418 recovery pairs",
+  "id": "train:8993",
+  "selection_audit": {
+    "id": "train:8993",
+    "selection_label": "first_reference_divergence_in_failed_rollout",
+    "semantic_error_at_divergence": "not_established",
+    "free_run_failed": true,
+    "shared_prefix_calls": 3,
+    "divergence_call_index": 3,
+    "divergence_executable": true,
+    "divergence_tool": "step",
+    "divergence_empty_entities": false,
+    "divergence_error": null,
+    "source_rollout_calls": 24,
+    "status": "accepted",
+    "supervised_reference_calls": 3,
+    "recovery_calls": 7,
+    "clean_calls": 6
+  },
+  "reference_handle_map": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 5
+  },
+  "recovery_events": [
+    {
+      "tool": "step",
+      "arguments": {
+        "function": "Find",
+        "inputs": [
+          "pizza"
+        ],
+        "dependencies": []
+      },
+      "observation": {
+        "ok": true,
+        "handle": 0,
+        "type": "entities",
+        "count": 1,
+        "sample": [
+          {
+            "id": "Q177",
+            "name": "pizza"
+          }
+        ],
+        "attributes": [
+          "Dewey Decimal Classification",
+          "USDA NDB number",
+          "subreddit"
+        ],
+        "relations": [
+          [
+            "country of origin",
+            "forward"
+          ],
+          [
+            "has part",
+            "forward"
+          ]
+        ]
+      }
+    },
+    {
+      "tool": "step",
+      "arguments": {
+        "function": "Relate",
+        "inputs": [
+          "has part",
+          "forward"
+        ],
+        "dependencies": [
+          0
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "handle": 1,
+        "type": "entities_with_facts",
+        "count": 1,
+        "sample": [
+          {
+            "id": "Q10943",
+            "name": "cheese"
+          }
+        ],
+        "attributes": [
+          "Iconclass notation",
+          "OKPD2 code of the good or service",
+          "USDA NDB number",
+          "pronunciation audio",
+          "subreddit"
+        ],
+        "relations": [
+          [
+            "has part",
+            "backward"
+          ],
+          [
+            "nutrient",
+            "forward"
+          ]
+        ],
+        "qualifiers": []
+      }
+    },
+    {
+      "tool": "step",
+      "arguments": {
+        "function": "FilterConcept",
+        "inputs": [
+          "food ingredient"
+        ],
+        "dependencies": [
+          1
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "handle": 2,
+        "type": "entities",
+        "count": 1,
+        "sample": [
+          {
+            "id": "Q10943",
+            "name": "cheese"
+          }
+        ],
+        "attributes": [
+          "Iconclass notation",
+          "OKPD2 code of the good or service",
+          "USDA NDB number",
+          "pronunciation audio",
+          "subreddit"
+        ],
+        "relations": [
+          [
+            "has part",
+            "backward"
+          ],
+          [
+            "nutrient",
+            "forward"
+          ]
+        ]
+      }
+    },
+    {
+      "tool": "step",
+      "arguments": {
+        "function": "QueryAttrQualifier",
+        "inputs": [
+          "pronunciation audio",
+          "Cs-jablko.ogg",
+          "language of work or name"
+        ],
+        "dependencies": [
+          2
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "handle": 3,
+        "type": "value",
+        "value": null
+      }
+    },
+    {
+      "tool": "step",
+      "arguments": {
+        "function": "QueryAttrUnderCondition",
+        "inputs": [
+          "pronunciation audio",
+          "language of work or name",
+          "Portuguese"
+        ],
+        "dependencies": [
+          2
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "handle": 4,
+        "type": "value",
+        "value": "Pt-queijo.ogg"
+      }
+    },
+    {
+      "tool": "step",
+      "arguments": {
+        "function": "VerifyStr",
+        "inputs": [
+          "Cs-jablko.ogg"
+        ],
+        "dependencies": [
+          4
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "handle": 5,
+        "type": "answer",
+        "value": "no"
+      }
+    },
+    {
+      "tool": "finish",
+      "arguments": {
+        "answer_handle": 5
+      },
+      "observation": {
+        "ok": true,
+        "done": true,
+        "answer": "no"
+      }
+    }
+  ],
+  "supervise": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true
+  ],
+  "source_artifacts": {
+    "recovery": {
+      "path": "data/agent_feedback/recovery.recovery.jsonl",
+      "count": 418,
+      "sha256": "291924523abce59dd5579a265c7574cdf8499af7487066594fe55f66e979df88"
+    },
+    "clean": {
+      "path": "data/agent_feedback/recovery.clean.jsonl",
+      "count": 418,
+      "sha256": "397f59576605643e3a360333d7dfa88f319f00b7e0c296e9f02f416c75355961"
+    },
+    "audit": {
+      "path": "data/agent_feedback/recovery.audit.jsonl",
+      "count": 5000,
+      "sha256": "af439cd94d15a4d60ace3d4540796367f9ae35412bec1d20da34a7988b6881bd"
+    }
+  },
+  "source_report_sha256": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9",
+  "scope": "Existing training sample only; no new training; chapter summarizes observations, full original messages remain private."
+}

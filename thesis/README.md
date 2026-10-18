@@ -2,7 +2,7 @@
 
 ## 当前主线写作入口
 
-2026-10-08 已将中英文摘要、绪论、相关工作、原有四章正文和总结整合为**七章工作稿**，采用通用审阅版式实际编译 PDF。新增文献库含 23 条已核对条目（10 篇方法论文、13 份厂商来源），访问范围与版本限制见文献审计。这仍不是按学校模板完成、经导师审定或经人工金标验证的定稿。
+2026-10-18 已在七章工作稿中补入 Agent-R／STeP／OEC 近邻比较、恢复构造流程图与伪代码、实际训练样本、留出状态转移和正反案例，并重新编译 PDF。文献库现有 26 条核对条目（13 篇方法论文、13 份厂商来源），版本与访问范围见文献审计。这仍是通用审阅稿；新同状态 GPU 评价尚未运行，真人核验仍为 0/24。
 
 | 文件 | 用途与状态 |
 |---|---|
@@ -10,14 +10,14 @@
 | [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 七章总入口与构建脚本；先核对四组证据表，再调用已有编译器 |
 | [current/00_abstract.tex](current/00_abstract.tex)、[current/01_introduction.tex](current/01_introduction.tex) | 中英文摘要、研究问题、贡献范围与技术路线 |
 | [current/02_background_related_work.tex](current/02_background_related_work.tex)、[current/07_conclusion.tex](current/07_conclusion.tex) | 相关方法比较、结论与局限 |
-| [current/references.bib](current/references.bib)、[current/literature_audit.json](current/literature_audit.json) | 23 条引用及原始文献、版本和核对范围 |
+| [current/references.bib](current/references.bib)、[current/literature_audit.json](current/literature_audit.json) | 26 条引用及原始文献、版本和核对范围 |
 | [current/manuscript_manifest.json](current/manuscript_manifest.json)、[current/manuscript_review.json](current/manuscript_review.json) | 源稿与 PDF 哈希、编译检查、抽样页面目视复核；不替代学术或人工事实审查 |
 | [current/03_radar_data_construction.tex](current/03_radar_data_construction.tex) | 数据构建章节：历史库存、旧开发读法、合成实例、新来源材料及表示、审阅、划分边界 |
 | [current/data_review.tex](current/data_review.tex) | 第三章独立 XeLaTeX 审阅入口 |
 | [current/data_export.py](current/data_export.py)、[current/data_tables.tex](current/data_tables.tex) | 从公开清单与审计汇总重建数据表，不访问私有原始资料或 QA |
 | [current/data_results.csv](current/data_results.csv)、[current/data_evidence_manifest.json](current/data_evidence_manifest.json) | 数据数量、来源字段及章节/实现哈希；库存数量不视为已核验事实数量 |
-| [current/04_execution_feedback_method.tex](current/04_execution_feedback_method.tex) | 方法章节：执行状态、恢复后缀、句柄重映射、监督掩码及匹配预算；绑定冻结实现 |
-| [current/05_public_experiments.tex](current/05_public_experiments.tex) | 公开实验章节：2,000 题留出结果、两个续训种子、成本、RL 与反馈诊断、局限 |
+| [current/04_execution_feedback_method.tex](current/04_execution_feedback_method.tex) | 方法章节：执行状态、句柄映射、流程图、构造伪代码、完整动作样本及匹配监督预算 |
+| [current/05_public_experiments.tex](current/05_public_experiments.tex) | 公开实验章节：2,000 题留出结果、双种子、成本、RL、反馈诊断及新增 3×3 状态转移与正反案例 |
 | [current/results_tables.csv](current/results_tables.csv) | 机器可读结果字段、来源 JSON 路径与派生公式；不含逐题数据 |
 | [current/evidence_manifest.json](current/evidence_manifest.json) | 汇总来源、冻结实现、章节及生成表格的 SHA-256 |
 | [current/export_evidence.py](current/export_evidence.py) | 重建表格和清单；`--check` 检查数字及文件一致性 |

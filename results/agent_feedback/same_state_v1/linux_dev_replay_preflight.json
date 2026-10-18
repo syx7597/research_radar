@@ -1,0 +1,22 @@
+{
+  "schema": "same_state_development_replay_v1",
+  "source_questions": 500,
+  "accepted_pairs": 69,
+  "counts": {
+    "free_run_answer_correct": 378,
+    "accepted": 69,
+    "no_shared_successful_prefix": 52,
+    "reference_answer_mismatch": 1
+  },
+  "state_restore_and_suffix_call_budget_passed": true,
+  "token_budget_checked": false,
+  "gpu_inference_performed": false,
+  "development_only": true,
+  "inputs_sha256": {
+    "results/agent_feedback/initial_dev_v1.jsonl": "e6130169940f5b8efdc5085266a08bd87dda6e32aefb96925ad7c06a7e9def2e",
+    "data/agent_feedback/dev.gold.jsonl": "864bcb1755bc8b70943e72771d8a27455698bcf923cbaee6bf24b36edd7847b8"
+  },
+  "state_file": "data/agent_feedback/same_state_v1/dev.states.jsonl",
+  "state_file_sha256": "b98b269cff9653f3ed9463eeb09487d7d1350d2fbe58fcd6693a968472459b79",
+  "code_sha256": "94944a2a0f3e3f3a97fb89e554d26140408cfb67cd289dddc43d0fdc87940b5e"
+}

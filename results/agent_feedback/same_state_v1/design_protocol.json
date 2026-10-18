@@ -1,0 +1,147 @@
+{
+  "schema": "same_state_design_protocol_v1",
+  "date": "2026-10-18",
+  "status": "design_frozen_runtime_binding_pending",
+  "purpose": "Test existing recovery-trained and clean-trained checkpoints from identical actual histories; no new training",
+  "checkpoints": {
+    "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors": "be86b48a6283162de82ffc60cc8165336fdc3197f466c4b96adee7e565655cb5",
+    "results/agent_feedback/clean_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors": "69a5f6626cb8c8b9c174e3adfbacd787b279795481442560331a74a6cf5cbc8d",
+    "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors": "2c1ea7ff5004668ce033f6399f3810935f2a12bbc346a0d27c46bb7a907cb0e3",
+    "results/agent_feedback/recovery_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/recovery_sft_v1/model/adapter_model.safetensors": "0ef6ceeb8704b064b1503b6ee208687aea8e71b6844a66f27f66b452ba5a9e33",
+    "results/agent_feedback/initial_sft_v1/model/adapter_config.json": "f6fbd1800d82b35e27be7658c99723218fdb63fa3481e45da6b86c65868b3807",
+    "results/agent_feedback/initial_sft_v1/model/adapter_model.safetensors": "20f66d6bb3ca48beef046b36aa1c20269be3cd5804610c639c8b527906e82b10"
+  },
+  "models": [
+    "A_20261003",
+    "C_20261003",
+    "A_20261004",
+    "C_20261004"
+  ],
+  "collector": "initial_sft_v1",
+  "pool": {
+    "size": 2400,
+    "seed": 20261018,
+    "manifest_sha256": "81d6ffc88cb1f6400db0a307330eddad6d30d3bb800e619355805b4730fc5e84",
+    "exclude_historical_components": 10500,
+    "adaptive_expansion": false,
+    "maximum_states_per_question": 1
+  },
+  "collection": {
+    "shards": [
+      {
+        "offset": 0,
+        "limit": 1200
+      },
+      {
+        "offset": 1200,
+        "limit": 1200
+      }
+    ],
+    "batch_size": 8,
+    "max_calls": 24,
+    "max_generated_tokens": 2048,
+    "max_context": 8192,
+    "per_turn_max_new_tokens": 192,
+    "decoding": "greedy",
+    "seed": 20261003,
+    "max_gpu_hours_per_shard": 1.5
+  },
+  "eligibility": {
+    "source": "all completed fixed-I pool rollouts; same make_pair failure and common-prefix rules as training",
+    "initial_and_target_budget": "Both condition prefixes and replayed reference suffix must fit context 8192, new-generation 2048, per-turn 192, and matched remaining calls",
+    "report": "All pool IDs retained in selection ledger; count every exclusion reason; never select using A/C outcomes",
+    "selection_bias": "Conditional on failed I rollout and reference-replay constructibility; not all-error recovery",
+    "partial_collection": "Do not start A/C or score incomplete fixed collection; retain failures and request infrastructure decision, not automatic resampling"
+  },
+  "resume": {
+    "conditions": [
+      "clean",
+      "divergent"
+    ],
+    "batch_size": 1,
+    "order": "Fixed pool order, clean then divergent per accepted question; same order in all arms",
+    "remaining_calls": "24 - shared_prefix_calls - 1 for BOTH conditions",
+    "remaining_generated_tokens": 2048,
+    "generated_token_scope": "fresh continuation budget; fixed history is not charged as new generation",
+    "max_context": 8192,
+    "context_scope": "full actual history; longer divergent history has less context space, separately reported",
+    "per_turn_max_new_tokens": 192,
+    "decoding": "greedy",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "seed": 20261003,
+    "max_gpu_hours_per_arm": 1.5,
+    "required_state_restore": "Re-execute actual messages/events, verify full typed handle-state digest before inference; no text-only restoration",
+    "gold_in_prompt": false
+  },
+  "statistics": {
+    "primary": "Mean across questions of mean two-seed C-minus-A correctness in divergent condition",
+    "secondary": [
+      "same contrast in clean condition",
+      "within-question difference of divergent and clean C-minus-A contrasts",
+      "completion rate",
+      "continuation invalid calls",
+      "full-prefill input and new generated tokens",
+      "per-seed results",
+      "descriptive executable/rejected/empty-entity divergence strata"
+    ],
+    "bootstrap": {
+      "unit": "question; keep both seeds and both conditions together",
+      "replicates": 5000,
+      "seed": 20261018,
+      "confidence_level": 0.95,
+      "scope": "conditional on four fixed checkpoints and selected constructible states"
+    },
+    "failed_continuations": "All frozen accepted states remain in each arm denominator; no result-driven reruns or deletions",
+    "sample_size": "All eligible states in fixed 2400 pool; report intervals and limited power, do not enlarge after seeing results"
+  },
+  "runtime_gate": {
+    "user": "syx only",
+    "python": "Linux Python 3.10; actual pinned project environment",
+    "pythonhashseed": "20261003",
+    "gpu": "Use only explicitly idle compute GPUs; unresolved occupancy blocks start; no reset/kill/admin training",
+    "mandatory": [
+      "Linux full-state replay",
+      "exact tokenizer IDs and target budget preflight",
+      "checkpoint/backbone/code file hashes",
+      "old-dev GPU resume smoke at most 300 GPU-seconds",
+      "execution binding frozen before new-pool inference"
+    ],
+    "current_gpu_inference_started": false
+  },
+  "budget": {
+    "collection_gpu_hours_cap": 3,
+    "four_arm_gpu_hours_cap": 6,
+    "old_dev_gpu_probe_seconds_cap": 300,
+    "round_gpu_hours_cap": 9.083333333333334,
+    "project_gpu_hours_cap": 72,
+    "prior_project_gpu_hours": 24.192471,
+    "round_gpu_hours_used": 0
+  },
+  "interpretation": {
+    "stronger_diagnostic_support": "C improvement at same divergent state and positive divergence-minus-clean interaction support adaptation to this history distribution, not proven semantic error detection",
+    "general_gain": "Similar improvement in both conditions supports general execution improvement",
+    "null": "Report null/uncertain results without launching several alternatives",
+    "training_after_this_round": "At most one targeted control only after literature, state results, real human review and method revision are assessed; no automatic training"
+  },
+  "inputs_sha256": {
+    "experiments/agent_feedback/same_state.py": "94944a2a0f3e3f3a97fb89e554d26140408cfb67cd289dddc43d0fdc87940b5e",
+    "experiments/agent_feedback/same_state_inference.py": "50c820ff532b58b90f5c56da17a6fa53d9b6dcfee3037f2cbe5394c32314aa33",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "experiments/condition_consistency/executor.py": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "results/agent_feedback/same_state_v1/pool_manifest.json": "81d6ffc88cb1f6400db0a307330eddad6d30d3bb800e619355805b4730fc5e84",
+    "results/agent_feedback/weights_verified.json": "0e0758af62e353e510afa2058e70f5398b8cc01631a12ae137b389c7d1645b6a"
+  },
+  "human_review": {
+    "status": "not_started_user_confirmed_2026-10-18",
+    "completed": 0,
+    "fixed_sample_size": 24,
+    "AI_is_not_human": true
+  }
+}

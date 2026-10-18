@@ -83,6 +83,14 @@
       "sha256": "7486b2781903da06b8e0b27ccc648196f84577cdec86d609276b9a2276cadbd4",
       "role": "recovery_seed2_input"
     },
+    "results/agent_feedback/state_transitions_v1/summary.json": {
+      "sha256": "fcfceaad9acdac09e9f66b72258a5ca10ac40b015ad65d735266076a9762ee3c",
+      "role": "transitions"
+    },
+    "results/agent_feedback/state_transitions_v1/method_example.json": {
+      "sha256": "0c80356debf5845c6551ccad988782249c68fd1f9930da8233af0b6f1c63b698",
+      "role": "method_example"
+    },
     "experiments/agent_feedback/recovery.py": {
       "sha256": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
       "role": "frozen_implementation"
@@ -122,17 +130,21 @@
     "experiments/agent_feedback/feedback_mask.py": {
       "sha256": "12d6eb63f1b763935c5c50de7e4d177ab2778cf666c04486a60f569b2800ce81",
       "role": "frozen_implementation"
+    },
+    "experiments/agent_feedback/state_transition_analysis.py": {
+      "sha256": "3728a51c394d189736399566d0aeb1ff6b60cdefbd606049c52c81f7082a8af3",
+      "role": "frozen_implementation"
     }
   },
   "outputs_sha256": {
-    "results_tables.csv": "9cf9b5fb39b3214bdf0bb014d5d5c5424b79ad99a14ef7aa786c0e7fe1fbbe79",
-    "generated_tables.tex": "fd1864dfb67761e4278d796589afd48bd1999f4c9f262db6b43f8f0cf2d15d9f",
-    "04_execution_feedback_method.tex": "c84723db7e077b4b9c93d094a437059d7e85a2c6a7470c4e3b0730fad67d452f",
-    "05_public_experiments.tex": "a6e065a7a13a1ced8d1ac5996eec66d4d8d8498dae0a7d744f8a1109832a1e41",
+    "results_tables.csv": "2439e317f22ebaf22fdf1c1a302e4f05386c1f1baa872f3cb271bb851d47ddee",
+    "generated_tables.tex": "f7b14ab07c4377365e17c63642e36eaf98e80b5c62c1c633186cf948f9d8456c",
+    "04_execution_feedback_method.tex": "a11ba0db32e7a113e78ae503f43a4760c494be2bb44b282f4b5c3b0272f872f2",
+    "05_public_experiments.tex": "442769cf4f8cf33daff1a73a0d6ce09e740b80f5f6a224f8ba1f04101f984022",
     "review.tex": "162da7ec8d2da6eb9683ceba86fcffbda7b5ea085ac43239693cb49bfa366b1e",
-    "export_evidence.py": "5f3810f89d74121cf180ca238f60e2579ae9695665f6783292546986f36e7269"
+    "export_evidence.py": "80583a436915a6e3fd2d244542da97637b52a81d1fe703f6824f0e605e87c603"
   },
-  "table_rows": 220,
+  "table_rows": 252,
   "validation": {
     "frozen_summary_hash_bindings": true,
     "aggregate_arithmetic": true,

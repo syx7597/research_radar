@@ -43,16 +43,75 @@
 
 构造器分别从干净前缀和含分歧动作的前缀继续执行后缀。只有在后缀可执行、执行结果与对应参考结果匹配、最终答案通过比较时，才保留该配对。若插入的分歧动作已经终止回合、超过调用预算、无法匹配前缀或不能重放参考后缀，则排除该样本。此检查证明的是构造出的训练目标可在规定环境中执行，不能替代人工对自然语言条件的语义核验。
 
-\subsection{构造流程与实际覆盖}
+\subsection{依赖映射与恢复成立的条件}
 
-构造过程可概括为以下步骤。
+设参考操作产生的第 $i$ 个结果对应实际句柄 $m(i)$。对参考后缀操作，将依赖列表 $D_i^*$ 替换为 $[m(j):j\in D_i^*]$，保持函数和字面参数不变；成功产生句柄 $u$ 后更新 $m(i)=u$，结束动作同样使用映射后的答案句柄。被拒绝的分歧动作不会新增句柄，不能无条件将全部编号加一。
+
+构造依赖四项条件：环境可确定性重放；已保留的中间结果不被后续动作覆写；参考依赖具有完整映射；插入分歧后仍有足够调用预算。当前只读查询环境使用追加式句柄；新增的无关结果可以被忽略，后缀继续引用有效结果。若环境包含删除文件、修改知识库或不可撤销交易，这些条件不自动成立。
+
+本文的恢复首先指\textbf{在偏离历史和实际中间结果条件下继续成功执行}。它可能体现为忽略多余操作、保持依赖引用或减少无效循环，不要求模型显式指出前一步为何语义错误。构造器比较实际观察与最终答案，有限长度的结果展示也不等于对任意状态的语义等价证明。
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.88\linewidth}
+\centering
+固定训练问题、参考程序与初始模型 I\\[0.4em]
+$\downarrow$\\[0.4em]
+采集自由轨迹，回放核验，保留最终失败\\[0.4em]
+$\downarrow$\\[0.4em]
+定位共同成功前缀与首次参考分歧\\[0.4em]
+$\swarrow\qquad\qquad\searrow$\\[0.4em]
+A：共同前缀\qquad C：共同前缀＋实际分歧及观察\\[0.4em]
+$\downarrow\qquad\qquad\downarrow$\\[0.4em]
+分别映射依赖并执行参考后缀，失败则记录排除原因\\[0.4em]
+$\downarrow$\\[0.4em]
+仅监督后缀；混入相同普通轨迹；匹配监督 token 后续训
+\end{minipage}}
+\caption{恢复监督构造与普通续训的配对流程。参考后缀只供离线构造，不进入推理提示。}
+\label{fig:recovery-construction}
+\end{figure}
+
+\subsection{配对构造伪代码}
+
+任一步检查失败均记录排除理由，不改写观察以迁就目标后缀。
 \begin{enumerate}
-  \item 固定训练题 ID、执行环境、参考程序和初始模型，在训练题上进行一次自由运行。
-  \item 回放轨迹并核对事件，从最终失败的轨迹中识别至少一个成功参考动作组成的共同前缀。
-  \item 提取首次参考分歧动作及其实际观察，分别构造 A 的普通后缀与 C 的恢复后缀。
-  \item 执行句柄重映射，完整重放两条目标轨迹，核验后缀结果及最终答案。
-  \item 记录样本来源、排除原因和监督掩码，冻结训练配对与来源摘要。
+\item 输入问题 $q$、参考程序 $P^*$、自由轨迹 $\hat\tau$ 和调用上限 $B$。回放 $\hat\tau$；若记录不一致或最终已答对，返回排除。
+\item 执行 $P^*$ 并核验答案；找最长共同成功前缀 $k$。若 $k<1$、没有分歧或参考已结束，返回排除。
+\item 对 A、C 分别新建回合，重放共同前缀并建立映射 $m$。仅 C 执行真实分歧；若回合终止，返回排除。
+\item 检查已用调用数加参考剩余调用数不超过 $B$。依次重映射后缀依赖，执行、比较对应观察并更新 $m$；映射不完整或执行失败则返回排除。
+\item 用映射后的句柄提交并核验答案。保存配对，前缀、分歧及工具观察不计算损失，仅监督后缀助手动作及训练结束文本。
 \end{enumerate}
+
+\subsection{一个实际恢复样本}
+
+样本 \texttt{train:8993} 来自原训练配对，按字符串 \texttt{method\_example\_v1|ID} 的 SHA-256 最小值选择，不按可读性或后续收益挑选。问题询问披萨所含食材的葡萄牙语发音音频是否为 \texttt{Cs-jablko.ogg}。原初始模型在 24 次调用后失败，共同成功前缀为三步；分歧查询合法执行并返回空值，不能仅据空值标注语义错误。
+
+表\ref{tab:recovery-example}列出 C 的完整动作顺序与核心观察。前缀的实体、属性和关系提示仍保存在原始消息中，未以此表简写替换训练输入。调用和句柄从零计数。
+
+\begin{longtable}{@{}p{0.08\linewidth}p{0.51\linewidth}p{0.22\linewidth}p{0.09\linewidth}@{}}
+\caption{实际恢复样本的动作、结果与监督位置}\label{tab:recovery-example}\\
+\toprule
+调用 & 操作及输入 & 实际结果 & 监督\\
+\midrule
+\endfirsthead
+\toprule
+调用 & 操作及输入 & 实际结果 & 监督\\
+\midrule
+\endhead
+0 & Find：pizza & 句柄 0，披萨实体 & 否\\
+1 & Relate：has part，forward，依赖 [0] & 句柄 1，cheese & 否\\
+2 & FilterConcept：food ingredient，依赖 [1] & 句柄 2，cheese & 否\\
+3 & QueryAttrQualifier：pronunciation audio，Cs-jablko.ogg，language of work or name，依赖 [2] & 句柄 3，空值；真实分歧 & 否\\
+4 & QueryAttrUnderCondition：pronunciation audio，language of work or name，Portuguese，依赖 [2] & 句柄 4，Pt-queijo.ogg & 是\\
+5 & VerifyStr：Cs-jablko.ogg，依赖 [4] & 句柄 5，no & 是\\
+6 & finish：answer\_handle = 5 & 提交 no & 是\\
+结束 & Done.（训练结束文本，不再调用工具） & 无新增句柄 & 是\\
+\bottomrule
+\end{longtable}
+
+A 没有调用 3 的分歧，条件查询与字符串核验分别产生句柄 3、4，并提交句柄 4。C 的映射为 $0\mapsto0,1\mapsto1,2\mapsto2,3\mapsto4,4\mapsto5$：条件查询仍引用有效食材句柄 2；核验依赖从 3 改为 4，结束句柄从 4 改为 5。目标的函数、常量及依赖图相同，编号不同；C 仅以分歧为上下文，学习后续目标。
+
+\subsection{构造覆盖与排除原因}
 
 在 $5\,000$ 条训练自由运行轨迹中，$4\,998$ 条通过记录回放核验，其中 $659$ 条最终失败、$4\,339$ 条正确。最终保留 $418$ 个真实恢复配对，覆盖全部训练问题的 $8.36\%$。主要排除项包括 $240$ 条缺少共同成功前缀、$2$ 条回放记录不一致及 $1$ 条参考答案核验不通过。$418$ 个配对中，分歧动作有 $414$ 个可以执行、仅 $4$ 个被执行器拒绝。因此，这批数据主要是\textbf{可执行分歧状态之后的恢复监督}，不能描述成以大量语法报错修复样本为主体的数据集。
 
@@ -110,4 +169,4 @@
 
 \section{本章材料的证据入口}
 
-配对数量与选择规则来自冻结的 \texttt{recovery\_pairs.json}；语料与监督预算来自 \texttt{continuation\_data.json} 及 \texttt{continuation\_token\_audit.json}；模型设置来自各训练运行的 \texttt{input\_manifest.json} 与实现。具体文件路径、SHA-256 和表格导出规则记录在本目录的 \texttt{evidence\_manifest.json} 与 \texttt{results\_tables.csv} 中。本文没有在写作阶段新增训练样本、重新选择模型或打开逐题留出预测。
+配对数量与选择规则来自冻结的 \texttt{recovery\_pairs.json}；语料与监督预算来自 \texttt{continuation\_data.json} 及 \texttt{continuation\_token\_audit.json}；模型设置来自各训练运行的 \texttt{input\_manifest.json} 与实现。具体文件路径、SHA-256 和表格导出规则记录在本目录的 \texttt{evidence\_manifest.json} 与 \texttt{results\_tables.csv} 中。本轮未新增训练样本或选择模型；2026年10月18日补充只读的留出逐题状态与案例分析，原始预测、分数和模型均保留。实际方法样本来自原冻结训练配对，不来自留出题。
