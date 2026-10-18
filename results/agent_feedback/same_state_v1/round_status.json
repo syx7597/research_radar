@@ -1,7 +1,7 @@
 {
   "schema": "same_state_round_status_v1",
   "updated_date": "2026-10-18",
-  "status": "cpu_preflight_complete_gpu_execution_pending",
+  "status": "cpu_replay_cohort_statistics_checked_execution_orchestration_pending",
   "human_review_completed": 0,
   "training_started": false,
   "gpu_model_calls": 0,
@@ -18,7 +18,10 @@
     "cross_platform_fixture_reuse_rejected": true,
     "local_pairs": 68,
     "internal_state_digest_differences": 3,
-    "cause_not_established": true
+    "cause_not_established": true,
+    "cohort_ledger_questions": 500,
+    "cohort_eligible_pairs": 69,
+    "linux_state_recheck_identical": true
   },
   "resource_observation": {
     "gpu_utilization_percent": [
@@ -33,9 +36,16 @@
     "default_python3_path": "/usr/sbin/python3",
     "default_python3_response": "No pool URL supplied. Exiting.",
     "explicit_system_python": "/usr/bin/python3.10; Python 3.10.12",
-    "environment_issue_resolved": false
+    "environment_issue_resolved": false,
+    "occupancy_rechecked_20261018": true,
+    "same_nvml_pids": [
+      4280,
+      32696,
+      59336
+    ]
   },
   "pending": [
+    "Complete and validate bounded collection/resume orchestration with terminal collection records and frozen analysis binding",
     "Confirm idle compute GPUs and resolve or isolate abnormal executable-path/runtime environment",
     "Run bounded old-dev GPU resume smoke and freeze actual execution binding",
     "Collect fixed I trajectories on 2400 new questions; build and audit states on Linux",
@@ -48,7 +58,16 @@
     "results/agent_feedback/same_state_v1/linux_dev_replay_preflight.json": "948eb19b93591daecab14b9d2282d09e9430e2c9e1cc97ee26db82f9dd9b3ec6",
     "results/agent_feedback/same_state_v1/design_protocol.json": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
     "results/agent_feedback/same_state_v1/linux_dev_token_preflight.json": "07e5aa0673015a0b34213ce7534757726a9f326dcce1bb17edc1ff6fc9b55fbc",
-    "results/agent_feedback/same_state_v1/cross_platform_check.json": "9c3a34c12fb9965f0a5ac7837bf2147d1f1d42aeb2a60da5b38ca4e320a7a42f"
+    "results/agent_feedback/same_state_v1/cross_platform_check.json": "9c3a34c12fb9965f0a5ac7837bf2147d1f1d42aeb2a60da5b38ca4e320a7a42f",
+    "results/agent_feedback/same_state_v1/linux_dev_cohort_preflight.json": "47a6101b2eb04b62ad3207c9a04c3044406e27ffeda083a4a633c9ad8cdcc461",
+    "results/agent_feedback/same_state_v1/cpu_implementation_check.json": "c4293e47eff95d8c23be9b3d8141ac00c850ed9d7bf3d60fbb291591229baf44"
   },
-  "no_automatic_training": true
+  "no_automatic_training": true,
+  "implementation": {
+    "cohort_selection_and_analysis_modules_added": true,
+    "tests_passed": 37,
+    "new_tests": 13,
+    "formal_orchestration_complete": false,
+    "new_effect_estimate_obtained": false
+  }
 }

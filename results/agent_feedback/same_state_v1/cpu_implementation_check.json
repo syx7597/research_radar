@@ -1,0 +1,20 @@
+{
+  "schema": "same_state_cpu_implementation_check_v1",
+  "date": "2026-10-18",
+  "tests": {
+    "command": "python3 -m unittest tests.test_agent_same_state_cohort tests.test_agent_same_state_analysis tests.test_agent_same_state tests.test_agent_state_transitions tests.test_agent_feedback_recovery -q",
+    "passed": 37,
+    "new_tests": 13
+  },
+  "py_compile_passed": true,
+  "frozen_design_inputs_unchanged": true,
+  "gpu_model_calls": 0,
+  "new_effect_estimate_obtained": false,
+  "scope": "Synthetic unit fixtures and bootstrap invariants; not real four-checkpoint evaluation.",
+  "files_sha256": {
+    "experiments/agent_feedback/same_state_analysis.py": "a85e02243dcba1f10f139fbeebf5b540f8f8c4073a9398d8cb2c6eb5f5993289",
+    "experiments/agent_feedback/same_state_cohort.py": "bc04821533dbc3669340dfa596c91ad95a447ae9101febdea682cd4e8ec87ae3",
+    "tests/test_agent_same_state_analysis.py": "8b918c163b580f9b09a4aa71805308efe70af67683ba9fcf8e066184a68cdbd2",
+    "tests/test_agent_same_state_cohort.py": "ab2b7467da861f3afca9bc9e65f8638c89f0163cccf5c9bf9fca574112a28809"
+  }
+}
