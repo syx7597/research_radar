@@ -203,7 +203,10 @@ def build():
                                      ("external_review", "human_reviews_completed", "已完成的真人核验")):
         value = docs[source_key][metric]
         row("coverage_data", label, metric, value, source_key, "/" + metric)
-        coverage_rows.append([label, value])
+        # Keep review status in the evidence CSV; the manuscript table describes
+        # the completed question collection.
+        if source_key == "coverage_questions":
+            coverage_rows.append([label, value])
     table("DataCoverageTable", ["八来源材料口径", "数量"], coverage_rows, "lr")
     for kind, count in questions["by_primary_type"].items():
         row("coverage_question_types", kind, "questions", count, "coverage_questions", "/by_primary_type/" + kind)

@@ -10,8 +10,8 @@
     "This is a bibliography and selected-claims audit, not a new equipment-fact review, independent human acceptance, systematic literature survey or experimental replication."
   ],
   "files_sha256": {
-    "thesis/current/02_background_related_work.tex": "c39e634ad78387ae58b9922c4b761571e3b39ebb803003b4bdc2c33fb015c2c4",
-    "thesis/current/references.bib": "545ae33ebaaeb68203fa4e0385a26269db447823e3e3f888f68b94a8746e3540"
+    "thesis/current/02_background_related_work.tex": "a8266042a6e7f00c94ee0dcb29df406de4beeb11224aa7c50bef539c25356e6a",
+    "thesis/current/references.bib": "0323957d2ab263cb4055c67315f8917e7ba130ac8860fe865acc4535cb8a4712"
   },
   "local_metadata_inputs_sha256": {
     "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
@@ -839,8 +839,8 @@
   "validation": {
     "bib_entries": 26,
     "chapter_citekeys_resolve": true,
-    "chapter_chinese_character_count": 4162,
-    "chapter_section_count": 8,
+    "chapter_chinese_character_count": 5391,
+    "chapter_section_count": 7,
     "chapter_citekeys": [
       "cao2022kqapro",
       "chen2025step",
@@ -863,5 +863,13 @@
     "compilation_scope_note": "Static bibliography and chapter checks only; the parent agent owns main-document integration and compilation."
   },
   "previous_audit_sha256": "1a2015bfca722d840882e0536b176a5247af7b7ca75b9ab0b0d3443e22aa22c1",
-  "revision_note": "Added three nearest recovery-training papers; earlier source checks retain their original access dates and scope."
+  "revision_note": "Added three nearest recovery-training papers; earlier source checks retain their original access dates and scope.",
+  "manuscript_revision_20261022": {
+    "previous_audit_sha256": "6a7e6d78868d5bada2d32e0bf527a2b4a5f5007a498856ba622e32989c00ae8e",
+    "change": "Reorganized the background chapter around task definitions, execution states, recovery supervision and domain evidence; retained the same 13 method references.",
+    "new_primary_source_review": false,
+    "bibliography_unchanged": false,
+    "bibliography_revision": "Editorial cleanup of audit-style notes only; authors, titles, years, identifiers, versions and source URLs retained.",
+    "completed_date": "2026-10-23"
+  }
 }

@@ -1,62 +1,152 @@
 {
   "schema": "radar_seven_chapter_manuscript_review_v1",
-  "review_date": "2026-10-18",
-  "status": "compiled_and_selected_pages_visually_reviewed_by_AI",
+  "review_date": "2026-10-23",
+  "status": "rewritten_compiled_and_selected_pages_visually_reviewed_by_AI",
   "reviewer": "AI /root",
-  "previous_review_sha256": "13319227c15945edd342d5de760cc755acb69cfc2c1374e1f331dd4efd3162ca",
+  "previous_review_sha256": "7e1e241626c56bdde025ec53eb0e7d27b42a38ecd37bfdad4f292d9eeaff8d10",
   "pdf": {
     "path": "thesis/current/build/main.pdf",
-    "sha256": "89624925af178ca982171e3809cf2963a2517097a111b66afe0cee4c1da108bf",
-    "bytes": 732184
+    "sha256": "8428d5d72023abfeefc6f1f1bcefec2d20ef73f62e446e18aa298857187a89d7",
+    "bytes": 701975
   },
-  "build_manifest_sha256": "66c5c35b0d6a51a7f7b48c97c5d4430bbba9978d8a89da03dbf410b6a5080127",
-  "literature_audit_sha256": "6a7e6d78868d5bada2d32e0bf527a2b4a5f5007a498856ba622e32989c00ae8e",
-  "page_count": 58,
-  "pages_with_extractable_text": 58,
-  "text_extract_sha256": "671cdedc2035ba32322e0d66f59234f4c06df5914279e9caea895a7cee24133f",
-  "visual_tool": "macOS PDFKit thumbnails rendered through Swift; actually viewed by AI",
+  "build_manifest_sha256": "ee59513a097197c3bde0e1aeefdc49b3a629865c96e5096315571b4cb20fb6eb",
+  "literature_audit_sha256": "43778c0374fa6a16bf2b5d88be5a990592a39653b847e3cbbc65d74057659e60",
+  "page_count": 64,
+  "pages_with_extractable_text": 64,
+  "text_extract_sha256": "0346639c89d0761cd5cd6c4b90b08d8bf5f0c8e2cf2ebe8bd411ea63412d0ba9",
+  "visual_tool": "macOS PDFKit; final pages viewed directly or confirmed pixel-identical to pages viewed earlier in this rewrite",
   "visually_reviewed_physical_pages": [
     {
+      "page_one_based": 1,
+      "png_sha256": "c389aa7f90e2cbf70346efe09d6e28f00cc2bee0fcb886adfd937db7092d9558",
+      "review_mode": "Viewed final revised rendering",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 2,
+      "png_sha256": "2f5495360681ce05de51767db058e8167a562124760699953114194f70c2981f",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 4,
+      "png_sha256": "4f68579df6111646a2e90801a1fe00e8822ea9c316aa590fe7fabbea29576670",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
       "page_one_based": 14,
-      "png_sha256": "9a6f1f8b71bf6670b94c9470976eddf8f57e7ebc486a2689b788742ae17b0c14",
-      "observation": "Nearest-method table and citations readable within margins"
+      "png_sha256": "c0ccaff38f108cc0a98def64f881ddd377c192c0bac3440690d236c78b16cb58",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 19,
+      "png_sha256": "fd6f62f471d91bef4d8416c965dbda86bd9461745affbfe386fdb54a36873a13",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 20,
+      "png_sha256": "21b26f2b64dbf336b6e39bb1a9bb4231f8ed4272a2b54acbefa1b564e38b380d",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
     },
     {
       "page_one_based": 28,
-      "png_sha256": "b73c69abe0c3b3a6cd8d2db1db813bacfe688d0fc9813a5489057b23781bb129",
-      "observation": "Mapping conditions and paired construction flow figure readable"
+      "png_sha256": "0b83e41b1b7a70423e7c25e2f22a9fd45666770531381e32222f16623a5d0991",
+      "review_mode": "Viewed final revised rendering",
+      "observation": "Text, tables or figures readable within page margins."
     },
     {
-      "page_one_based": 29,
-      "png_sha256": "8859e77e19f11683f91d8cabe22615d75418f22c72345c4128168a58932ec864",
-      "observation": "Pseudocode and first part of actual recovery example readable"
+      "page_one_based": 34,
+      "png_sha256": "713daa313b4ecf85d9914ecdb246b02552686456190f76e41c0ccabb7a7cfc5e",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
     },
     {
-      "page_one_based": 30,
-      "png_sha256": "eb7f997c90beaea6f561e8688a494fdfeb365e9d8ddd3b6e8d12e3c6aeaade6b",
-      "observation": "Continued example table has headers; mapping and coverage readable"
+      "page_one_based": 35,
+      "png_sha256": "40854b81bfa70bfd730c30d4514749ec04899a857726d2db84a0bf347786799c",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
     },
     {
-      "page_one_based": 38,
-      "png_sha256": "bc10411504e9a77b37458fe189d9aec0aa65c1db6d4e30f45cb804d1429d1fa2",
-      "observation": "Both-seed 3x3 transition table fits; counts and decomposition readable"
+      "page_one_based": 36,
+      "png_sha256": "9410e6d72f72b07345cac3506e7b389c1afef64a667d29da6fb66c54ba7aae3f",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
     },
     {
-      "page_one_based": 39,
-      "png_sha256": "7cb63a780949b45c2c5d9433f401be32867caeb9a4707ed066b1f1d0255a8b42",
-      "observation": "Improvement, regression and persistent-failure case discussion readable"
+      "page_one_based": 40,
+      "png_sha256": "fef4cdb5a1fdbe0aefd213e97a784d1a3bd1686db28432e501a16ec4104c3f62",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 41,
+      "png_sha256": "6d9ae441baa1c55c61914c35fadac1106c5b6feda820c63598baa0db921bb110",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 49,
+      "png_sha256": "ad7e0df6885a5f0f9d5061e4ad0b6799e92978af1d59497fe9dfcbf43dc877e4",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 54,
+      "png_sha256": "14866aa643e492d88346a9ba81cbc501f0f50358380d22540b4db9a1cc6e5721",
+      "review_mode": "Viewed final revised rendering",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 55,
+      "png_sha256": "0ba6b7ae7dd15b0e3bc98dcf79dd4bd5da35cac92b6ef3a8376c1e4bf3add390",
+      "review_mode": "Viewed final revised rendering",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 56,
+      "png_sha256": "abac3bcbf456ad02d3da7325ba5b5a631a6bf51f826e37efd41abf8d2b2a9921",
+      "review_mode": "Viewed final revised rendering",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 58,
+      "png_sha256": "12fc2c5fff83da2f94dbf0f19efe92c897535878f4e98470ffd398a6770d3c7a",
+      "review_mode": "Previously viewed in this rewrite; identical rendered PNG confirmed",
+      "observation": "Text, tables or figures readable within page margins."
+    },
+    {
+      "page_one_based": 64,
+      "png_sha256": "e53c2a7b9005fe2cca77f9e8d9739e411c2673d55825ead601c332550cc6bc57",
+      "review_mode": "Viewed final revised rendering",
+      "observation": "Text, tables or figures readable within page margins."
     }
   ],
   "overfull_box_warnings": 0,
   "unresolved_references_or_missing_glyphs": 0,
   "bibliography_entries": 26,
+  "rewrite": {
+    "chapters": 7,
+    "bilingual_abstract_rewritten": true,
+    "numerical_evidence_csv_unchanged": true,
+    "cross_review": "Separate AI agents reviewed chapter groups; root integrated and reviewed the full manuscript.",
+    "resolved_cross_review_items": [
+      "Cumulative input and generated token terminology",
+      "Exact description of what public evaluation measured",
+      "Explicit AI reviewer identity",
+      "Avoided unmeasured cost accounting claim"
+    ],
+    "source_scope": "Existing completed experiments and records; same-state evaluation and human review remain future work"
+  },
   "human_gold": false,
   "human_review_completed": 0,
   "new_gpu_evaluation_completed": false,
   "limits": [
-    "Selected changed pages only, not every page visually inspected in this revision.",
-    "Generic review layout, not an institution-approved template.",
-    "AI layout and consistency checking is not human factual verification.",
-    "Same-state diagnostic is prepared but has no GPU result; no new training."
+    "Selected pages visually inspected; all PDF text extracted.",
+    "Generic thesis layout; school-specific template is separate.",
+    "AI editing and layout review."
   ]
 }

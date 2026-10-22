@@ -83,10 +83,10 @@
   },
   "outputs_sha256": {
     "data_results.csv": "2ee23572632cece2fd0261d130b4a518084de56dd5b61e8406e92fe6e9aea5a8",
-    "data_tables.tex": "3c7043d58b2a8ca98cd807e93ccefa3ec39eb0d9c9526a585fbea90520b4e3b6",
-    "03_radar_data_construction.tex": "5bb4e163068830595e032ad679c09145a11aa458166876bb56a3194926bd6997",
+    "data_tables.tex": "9b54be080441ae88f876c0a1b911ae497726555fcdc57861e8f6fa9311fed810",
+    "03_radar_data_construction.tex": "20359714ab9e5c85dd09d84a7919bb22001dbb14f2196ba18c5c4218298bfb88",
     "data_review.tex": "44123804a77151a5f138f510a817fb194ebb033df29d6f7c37840adfb5fec4b2",
-    "data_export.py": "18aa6ec66687031be92c603d0ca121ccf863fee5a8bdc474572d4ab7f9c4b9d2"
+    "data_export.py": "8b70eb2096e27a8e5f59f1327781f11c1ee6197d92de99a58d4f06f60cfab4b2"
   },
   "rows": 124,
   "validation": {
