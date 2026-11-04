@@ -1,0 +1,108 @@
+{
+  "schema": "radar_source_reaudit_public_summary_v1",
+  "review_date": "2026-11-04",
+  "reviewer": "AI",
+  "human_gold": false,
+  "review_design": "Independent source-first answers saved and SHA256 sealed before reference sidecar access; then semantic and evidence-location comparison.",
+  "counts": {
+    "consistent": 23,
+    "needs_revision": 1,
+    "source_ambiguity": 0,
+    "answer_semantics_agree": 24,
+    "question_supported": 24,
+    "answer_changes_required": 0,
+    "question_changes_required": 0,
+    "evidence_location_changes_required": 1
+  },
+  "fixed_question_count": 24,
+  "reviewed_source_file_count": 10,
+  "reviewed_cited_pdf_page_count": 9,
+  "additional_pdf_context_page_count": 1,
+  "reviewed_archived_html_section_count": 2,
+  "consistent_ids": [
+    "RQ2-RNG-04",
+    "RQ2-RNG-10",
+    "RQ2-FUR-04",
+    "RQ2-FUR-06",
+    "RQ2-FUR-09",
+    "RQ2-GMW-03",
+    "RQ2-GMW-08",
+    "RQ2-GMW-11",
+    "RQ2-GAR-04",
+    "RQ2-GAR-06",
+    "RQ2-GAR-09",
+    "RQ2-JRC-03",
+    "RQ2-JRC-06",
+    "RQ2-JRC-11",
+    "RQ2-MRR-05",
+    "RQ2-MRR-07",
+    "RQ2-MRR-10",
+    "RQ2-RAY-05",
+    "RQ2-RAY-08",
+    "RQ2-RAY-09",
+    "RQ2-WRS-03",
+    "RQ2-WRS-07",
+    "RQ2-WRS-11"
+  ],
+  "needs_revision_ids": [
+    "RQ2-RNG-07"
+  ],
+  "source_ambiguity_ids": [],
+  "unresolved_answer_uncertainty_ids": [],
+  "required_revisions": [
+    {
+      "question_id": "RQ2-RNG-07",
+      "kind": "evidence_location_only",
+      "reason_zh": "参考引用的数值片段位于相同数值的另一型号列；需定位至题问型号列。",
+      "answer_change_required": false,
+      "question_change_required": false
+    }
+  ],
+  "notes_zh": [
+    "24题答案数值、单位、部件绑定和题目条件均获归档来源支持。",
+    "另有1题的引用片段型号列需修订；不构成答案数值错误。",
+    "一般脚注与必需操作条件应区分；现有RQ2-GAR-09解释已允许正确最大值短答。",
+    "审阅为AI来源核验，不是人工金标或独立的人类评测。"
+  ],
+  "scope": {
+    "original_sources_used": true,
+    "input_file_hashes_verified": true,
+    "all_24_independently_answered_before_reference_access": true,
+    "actual_pdf_table_layouts_inspected": true,
+    "raw_html_cells_inspected": true,
+    "model_outputs_seen": false,
+    "performance_scores_seen": false,
+    "online_source_replacements_used": false,
+    "training_started": false,
+    "original_data_modified": false,
+    "contains_full_sources_or_full_qa": false
+  },
+  "input_hashes": {
+    "data/radar_sources_v2/external_review_v1/questions.json": "1326331087c80da9228c71ad34466529fbe8ebb5b4b34ecd150be9a3d2d94cd4",
+    "data/radar_sources_v2/external_review_v1/sources/eec_ranger_x_band.pdf": "d8598b0e5d21678c7ddfd1321aae32d54599da9b9d6e2b7d2a8b83ee8a7f4036",
+    "data/radar_sources_v2/external_review_v1/sources/furuno_nxt_usa_manual.pdf": "7cce6c83593d74f9b9eba4f0a7d8c470d0d13392c99db265c2c5bba5602ddf04",
+    "data/radar_sources_v2/external_review_v1/sources/gamic_gmwr_25_ws.pdf": "38d4e2d64af204571043369ab39f8953cd94f386ef0a3982132347884f985612",
+    "data/radar_sources_v2/external_review_v1/sources/garmin_fantom_manual.pdf": "5e7ec7a3d369239e749ae44616704ad2693589e0e82d0344f611b989cef04e36",
+    "data/radar_sources_v2/external_review_v1/sources/jrc_5200_catalog.pdf": "f41aee676a1be8fdf5cd0da9152e6b241f903ffa412fdbf26c9b8d1e32428a61",
+    "data/radar_sources_v2/external_review_v1/sources/metek_mrr_pro_20240705.pdf": "bc4eba55be07839370c738e5ec1682d9e1a81a4684a25ffb7c8f26206e499ab3",
+    "data/radar_sources_v2/external_review_v1/sources/metek_mrr2_20230929.pdf": "7f12ce8baf7e9e7e5afebd0337ff1a9fe39cc2337981cddef5e866fb61d5e0e6",
+    "data/radar_sources_v2/external_review_v1/sources/raymarine_spec_receiver.html.bin": "1545f164d3511f1bbf7e334935779b1485cac0afdbff74bb6e54b6fd8e255431",
+    "data/radar_sources_v2/external_review_v1/sources/raymarine_spec_receiver.section.html": "760c016382b467d4388f17bc41f66719bad7b8e96889e847db55b0256b09701b",
+    "data/radar_sources_v2/external_review_v1/sources/raymarine_spec_power_pro.html.bin": "51b143c945e6513075161d47c707debdf8fa55cebb612dc04738f51fbd121b97",
+    "data/radar_sources_v2/external_review_v1/sources/raymarine_spec_power_pro.section.html": "0d07cc72ee62443bddd3bb759bbdb0ce501fd8ab8e2313248af91e1871f581ed",
+    "data/radar_sources_v2/external_review_v1/sources/vaisala_wrs300_b212854en_e.pdf": "b68b68dc1335799b32bfb4ec2620d0f832c73a51fa369751cc461a609e4b48ca",
+    "data/radar_sources_v2/external_review_v1/references.json": "0b866cb90b96522b822e1db7fe6b45e7f18acd94db52d4af607a2558fe76acbc",
+    "data/radar_sources_v2/source_reaudit_20261104/independent_answers.json": "446a3c031435dffc29bc1a97642f8e9677f3898ffe5c7ac9dc5c8904274f7b9d",
+    "data/radar_sources_v2/source_reaudit_20261104/phase1_seal.json": "27de33b583bdc17087c7778f190fee19037c070a6a3bfd1eec24b1801cbca790"
+  },
+  "private_artifact_hashes": {
+    "independent_answers.json": "446a3c031435dffc29bc1a97642f8e9677f3898ffe5c7ac9dc5c8904274f7b9d",
+    "phase1_seal.json": "27de33b583bdc17087c7778f190fee19037c070a6a3bfd1eec24b1801cbca790",
+    "comparison.json": "056355e7a2cc9642c327d1df1c1aa1b2bf0c8655175f648ac135e308aa115737"
+  },
+  "limitations": [
+    "AI核验仍需与人工审阅区分；本次未产生human gold。",
+    "仅核验固定归档版本及24题，不保证现实设备表现或后续版本仍然相同。",
+    "除EEC已复现且哈希一致的文本外，部分PDF抽取文本随工具版本有差异；事实与表格绑定已由版面审阅，未将抽取差异判作来源错误。"
+  ]
+}

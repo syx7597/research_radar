@@ -1,0 +1,41 @@
+{
+  "schema": "radar_source_location_revision_v1",
+  "date": "2026-11-04",
+  "parent_protocol_sha256": "5e392c4b0ff9a804800ddea1f965695abfad3579c59e4edd9107004255a113b0",
+  "purpose": "Correct model-column source locator; preserve question and answer semantics",
+  "reviewer_type": "AI",
+  "human_gold": false,
+  "question_id": "RQ2-RNG-07",
+  "old_span": [
+    943,
+    982
+  ],
+  "new_span": [
+    3015,
+    3054
+  ],
+  "source_text_sha256": "c5545f49930eaaf9543648b2ab8861588af491a9d2b964074a4bad0dac808e85",
+  "question_changed": false,
+  "answer_changed": false,
+  "score_changed": false,
+  "inputs_sha256": {
+    "data/radar_sources_v2/external_review_v1/references.json": "0b866cb90b96522b822e1db7fe6b45e7f18acd94db52d4af607a2558fe76acbc",
+    "data/radar_sources_v2/external_review_v1/questions.json": "1326331087c80da9228c71ad34466529fbe8ebb5b4b34ecd150be9a3d2d94cd4",
+    "data/radar_sources_v2/qa_v1/weather.author.json": "c136481ab35839a4d985bd6e04a7c27b3a7d1f933c80a905aee714308a30bf64",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "artifacts/thesis_direction_review/radar_source_reaudit_20261104/summary.json": "fad63185569281c13d5eeedc709fffa79ff63b554142e23b72b7394a23acbca6",
+    "data/radar_sources_v2/source_reaudit_20261104/comparison.json": "056355e7a2cc9642c327d1df1c1aa1b2bf0c8655175f648ac135e308aa115737"
+  },
+  "new_packet": "data/radar_sources_v2/external_review_v2_20261104",
+  "actual_human_reviews": 0,
+  "historical_evaluation_changed": false,
+  "artifacts_sha256": {
+    "data/radar_sources_v2/external_review_v2_20261104/references.json": "6fcd25ca889cc1d4cc03b1b8cde48b0d4c6db65e848811c4453fd622dca1fd60",
+    "data/radar_sources_v2/external_review_v2_20261104/revision_protocol.json": "7fd049173b73bb2c67f7625644bfa27c2531089ed2427692b8088cc90012b5bf",
+    "data/radar_sources_v2/external_review_v2_20261104/index.html": "5b7cbb8db9477186d5a6bfe46581a2dd05ca775879b9435ab6e35042f94c5fa8",
+    "data/radar_sources_v2/external_review_v2_20261104/questions.json": "1326331087c80da9228c71ad34466529fbe8ebb5b4b34ecd150be9a3d2d94cd4",
+    "data/radar_sources_v2/external_review_v2_20261104/blank_responses.json": "9a5d6f4440fa881f1483f6a1f1212ea6a1f9334288be1a38c8518e9fb93f89a2",
+    "data/radar_sources_v2/source_reaudit_20261104/weather.author.corrected.json": "f2d25f71b85142ee35886cf68ae4c47fd7e795d2d955eb707a08a3b4b77ccce6"
+  },
+  "old_reference_sha256": "0b866cb90b96522b822e1db7fe6b45e7f18acd94db52d4af607a2558fe76acbc"
+}

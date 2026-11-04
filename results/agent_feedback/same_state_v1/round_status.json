@@ -1,7 +1,7 @@
 {
   "schema": "same_state_round_status_v1",
-  "updated_date": "2026-10-18",
-  "status": "blocked_external_gpu_environment_and_human_review",
+  "updated_date": "2026-11-04",
+  "status": "blocked_server_integrity_and_occupied_compute",
   "human_review_completed": 0,
   "training_started": false,
   "gpu_model_calls": 0,
@@ -26,6 +26,81 @@
     "old_dev_gpu_probe_completed": false
   },
   "resource_observation": {
+    "observed_at_utc": "2026-11-04T06:41:52.038184+00:00",
+    "report": "results/agent_feedback/same_state_v1/server_observation_20261104.json",
+    "gpu_utilization_percent": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "gpu_memory_MiB": [
+      13982,
+      13725,
+      13725,
+      13725
+    ],
+    "nvml_pids": [
+      1628885,
+      2256203
+    ],
+    "system_binary_integrity_mismatches": [
+      "/usr/bin/uptime",
+      "/usr/bin/nvidia-smi"
+    ],
+    "proc_directory_overlay_confirmed": "/proc/1628885",
+    "environment_issue_resolved": false,
+    "unfinished_project_gpu_jobs": 0,
+    "user_current_server_scope": "read-only investigation",
+    "new_gpu_workload_started": false,
+    "admin_readonly_report": "results/agent_feedback/same_state_v1/server_admin_readonly_observation_20261104.json",
+    "pid2256203_actual_executable": "/tmp/sshd",
+    "same_bytes_as_abnormal_python": true
+  },
+  "pending": [
+    "Restore a trusted runtime and confirm explicitly idle compute resources; preserve read-only scope until user authorizes system changes",
+    "Run the already prepared bounded old-dev GPU resume probe and validate continuations",
+    "Freeze collection binding and collect fixed I trajectories on all 2400 questions",
+    "Freeze eligible Linux states, evaluate the four existing A/C checkpoints and analyze all outcomes"
+  ],
+  "inputs_sha256": {
+    "results/agent_feedback/same_state_v1/pool_manifest.json": "81d6ffc88cb1f6400db0a307330eddad6d30d3bb800e619355805b4730fc5e84",
+    "results/agent_feedback/same_state_v1/dev_replay_preflight.json": "41793610aa174aff279c7c0504f484dea59a887bc61033eedc59a585c038cdf9",
+    "results/agent_feedback/same_state_v1/linux_dev_replay_preflight.json": "948eb19b93591daecab14b9d2282d09e9430e2c9e1cc97ee26db82f9dd9b3ec6",
+    "results/agent_feedback/same_state_v1/design_protocol.json": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
+    "results/agent_feedback/same_state_v1/linux_dev_token_preflight.json": "07e5aa0673015a0b34213ce7534757726a9f326dcce1bb17edc1ff6fc9b55fbc",
+    "results/agent_feedback/same_state_v1/cross_platform_check.json": "9c3a34c12fb9965f0a5ac7837bf2147d1f1d42aeb2a60da5b38ca4e320a7a42f",
+    "results/agent_feedback/same_state_v1/linux_dev_cohort_preflight.json": "47a6101b2eb04b62ad3207c9a04c3044406e27ffeda083a4a633c9ad8cdcc461",
+    "results/agent_feedback/same_state_v1/cpu_implementation_check.json": "c4293e47eff95d8c23be9b3d8141ac00c850ed9d7bf3d60fbb291591229baf44",
+    "results/agent_feedback/same_state_v1/orchestration_check.json": "5def9113d6955753d4226ad59445bad8e592b45e03a0a4d080eb5f2d00840439",
+    "results/agent_feedback/same_state_v1/probe_binding.json": "738a5e011a441759cb60d0115e19aa1758be5db17551f0aef828b1ea215eca3a",
+    "results/agent_feedback/same_state_v1/environment_gate_observation.json": "b8c02fda01aadff7b02ff64c7fa8c29babef7d3eb9d6d905f72414a6b1189fe4",
+    "results/agent_feedback/same_state_v1/process_identity_observation.json": "1e7ed70629257ef654c8b236a030893f50bd66f246cc7a2ecf80e5916c408258",
+    "results/agent_feedback/same_state_v1/blocked_audit.json": "81d3b5ed1642f961d87e574dd3f9e7d868138c2c960b6ac4f4cdbe2bba9f42cd",
+    "results/agent_feedback/same_state_v1/server_observation_20261104.json": "9da37e219e6e564dfc812c77f9a0de6f23c1ddf22b6e3ae50e986491f873be2b",
+    "artifacts/thesis_direction_review/radar_source_reaudit_20261104/summary.json": "fad63185569281c13d5eeedc709fffa79ff63b554142e23b72b7394a23acbca6",
+    "artifacts/thesis_direction_review/radar_sources_v1_reaudit_20261104/summary.json": "afaa3c7c3c7d8d13cfe64eb7da0b92a3dc8dd11635cdf80b81b702c93b1028a1",
+    "results/agent_feedback/same_state_v1/server_admin_readonly_observation_20261104.json": "969989c96ce0a1eb276b43774a9ea1320ab24b023f10d3dba25bbc26a0f3a09f"
+  },
+  "no_automatic_training": true,
+  "implementation": {
+    "cohort_selection_and_analysis_modules_added": true,
+    "tests_passed": 47,
+    "new_effect_estimate_obtained": false,
+    "orchestration_implemented": true,
+    "orchestration_gpu_validated": false,
+    "new_tests_total": 23
+  },
+  "blocking_audit": "results/agent_feedback/same_state_v1/blocked_audit.json",
+  "source_reaudit_20261104": {
+    "AI_reviewed_questions": 48,
+    "four_source_questions": 24,
+    "eight_source_sample_questions": 24,
+    "answer_changes_required": 0,
+    "evidence_metadata_revisions_applied": 2,
+    "human_review_completed": 0
+  },
+  "previous_resource_observation_20261018": {
     "gpu_utilization_percent": [
       100,
       100,
@@ -48,37 +123,5 @@
     "health_query_xml_empty": true,
     "health_query_stderr": "sh: 1: mod-pip: not found",
     "own_probe_job_started": false
-  },
-  "pending": [
-    "Confirm GPU ownership/availability and resolve anomalous health-query/runtime environment",
-    "Run the prepared bounded old-dev GPU resume probe and validate actual continuations",
-    "Freeze collection binding; collect fixed I trajectories on all 2400 new questions",
-    "Build and freeze eligible Linux state pairs; run all four existing A/C checkpoints once and analyze outcomes",
-    "Receive actual 24-question human source review; retain partial/uncertain responses honestly"
-  ],
-  "inputs_sha256": {
-    "results/agent_feedback/same_state_v1/pool_manifest.json": "81d6ffc88cb1f6400db0a307330eddad6d30d3bb800e619355805b4730fc5e84",
-    "results/agent_feedback/same_state_v1/dev_replay_preflight.json": "41793610aa174aff279c7c0504f484dea59a887bc61033eedc59a585c038cdf9",
-    "results/agent_feedback/same_state_v1/linux_dev_replay_preflight.json": "948eb19b93591daecab14b9d2282d09e9430e2c9e1cc97ee26db82f9dd9b3ec6",
-    "results/agent_feedback/same_state_v1/design_protocol.json": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
-    "results/agent_feedback/same_state_v1/linux_dev_token_preflight.json": "07e5aa0673015a0b34213ce7534757726a9f326dcce1bb17edc1ff6fc9b55fbc",
-    "results/agent_feedback/same_state_v1/cross_platform_check.json": "9c3a34c12fb9965f0a5ac7837bf2147d1f1d42aeb2a60da5b38ca4e320a7a42f",
-    "results/agent_feedback/same_state_v1/linux_dev_cohort_preflight.json": "47a6101b2eb04b62ad3207c9a04c3044406e27ffeda083a4a633c9ad8cdcc461",
-    "results/agent_feedback/same_state_v1/cpu_implementation_check.json": "c4293e47eff95d8c23be9b3d8141ac00c850ed9d7bf3d60fbb291591229baf44",
-    "results/agent_feedback/same_state_v1/orchestration_check.json": "5def9113d6955753d4226ad59445bad8e592b45e03a0a4d080eb5f2d00840439",
-    "results/agent_feedback/same_state_v1/probe_binding.json": "738a5e011a441759cb60d0115e19aa1758be5db17551f0aef828b1ea215eca3a",
-    "results/agent_feedback/same_state_v1/environment_gate_observation.json": "b8c02fda01aadff7b02ff64c7fa8c29babef7d3eb9d6d905f72414a6b1189fe4",
-    "results/agent_feedback/same_state_v1/process_identity_observation.json": "1e7ed70629257ef654c8b236a030893f50bd66f246cc7a2ecf80e5916c408258",
-    "results/agent_feedback/same_state_v1/blocked_audit.json": "81d3b5ed1642f961d87e574dd3f9e7d868138c2c960b6ac4f4cdbe2bba9f42cd"
-  },
-  "no_automatic_training": true,
-  "implementation": {
-    "cohort_selection_and_analysis_modules_added": true,
-    "tests_passed": 47,
-    "new_effect_estimate_obtained": false,
-    "orchestration_implemented": true,
-    "orchestration_gpu_validated": false,
-    "new_tests_total": 23
-  },
-  "blocking_audit": "results/agent_feedback/same_state_v1/blocked_audit.json"
+  }
 }

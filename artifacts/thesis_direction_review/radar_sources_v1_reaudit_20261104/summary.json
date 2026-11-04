@@ -1,0 +1,119 @@
+{
+  "audit_id": "radar_sources_v1_source_reaudit_20261104",
+  "reviewer": "AI",
+  "human_gold": false,
+  "human_verified": false,
+  "review_status": "AI_only_independent_source_reaudit",
+  "created_at_utc": "2026-11-04T06:33:04.666680+00:00",
+  "method_zh": "先仅用题目、公开源索引、归档PDF及定位文本独立作答，实际查看原PDF规格表版面后封存；再读reference和KB逐题比较。没有读取模型答案或评分。",
+  "counts": {
+    "questions_total": 24,
+    "questions_reviewed": 24,
+    "sources_reviewed": 4,
+    "evidence_pages_visually_inspected": 4,
+    "answer_labels_supported": 24,
+    "answer_label_errors": 0,
+    "question_intent_errors": 0,
+    "unanswerable_questions": 0,
+    "answerability_ambiguities": 0,
+    "reference_kb_semantic_mismatches": 0,
+    "pdf_page_or_character_span_errors": 0,
+    "evidence_locator_context_imprecisions": 1,
+    "required_metadata_revision_question_count": 1,
+    "source_wording_scope_caveats": 1,
+    "questions_with_optional_cross_column_evidence_presentation_notes": 6
+  },
+  "covered_question_ids": [
+    "source_zh_01",
+    "source_zh_02",
+    "source_zh_03",
+    "source_zh_04",
+    "source_zh_05",
+    "source_zh_06",
+    "source_zh_07",
+    "source_zh_08",
+    "source_zh_09",
+    "source_zh_10",
+    "source_zh_11",
+    "source_zh_12",
+    "source_zh_13",
+    "source_zh_14",
+    "source_zh_15",
+    "source_zh_16",
+    "source_zh_17",
+    "source_zh_18",
+    "source_zh_19",
+    "source_zh_20",
+    "source_zh_21",
+    "source_zh_22",
+    "source_zh_23",
+    "source_zh_24"
+  ],
+  "answer_label_revision_ids": [],
+  "question_revision_ids": [],
+  "evidence_page_or_span_revision_ids": [],
+  "evidence_context_revision_ids": [
+    "source_zh_24"
+  ],
+  "revision_reasons": [
+    {
+      "id": "source_zh_24",
+      "field": "kb.json.records[fact_id=j34tempS].citation.locator.table_context",
+      "reason_zh": "温度行值单元格跨两型号合并；定位文字应描述合并单元格与组件条件，不能称为独立型号列。答案及原证据区间保持。",
+      "applied": false
+    }
+  ],
+  "scope_caveat_ids": [
+    "source_zh_15"
+  ],
+  "scope_caveat_reason_zh": "仅保留厂商波束适用原说明，不推断每路或合计；现标签无须改动。",
+  "optional_evidence_presentation_ids": [
+    "source_zh_01",
+    "source_zh_02",
+    "source_zh_03",
+    "source_zh_04",
+    "source_zh_05",
+    "source_zh_06"
+  ],
+  "optional_evidence_presentation_reason_zh": "原提取文本混排相邻两栏，目标证据仍正确；可补充左栏表格坐标辅助阅读。",
+  "phase1_sealed_before_comparison": true,
+  "phase1_seal_sha256": "49c011ea0f177852099a2293d9f2ceb954c1e4fbc1d5176d1bbc9489d741a367",
+  "independent_answers_sha256": "9372a23b346e82af359bf0015b19c4ac9fc0f824015352ff1c9d42d736de6f13",
+  "comparison_sha256": "74ef8510a726f104fc884f3cf85bbc1cc59892c7168438430218bbd2c4b5e76b",
+  "input_sha256": {
+    "data/radar_sources_v1/questions.jsonl": "7ee2d27b2704a913d8bb2d857b9d548207d82a477d45a424e9bd259dec9d8288",
+    "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
+    "data/radar_sources_v1/pdf/furuno_wr2120.pdf": "587f95352c788b1514714f30180730ebb9302565433cc6ffb9f466e0f0f51bd7",
+    "data/radar_sources_v1/pdf/jrc_jma1030.pdf": "80679464227f9d8340578d425088c39353215a6705c5f165dac97c17b3f574be",
+    "data/radar_sources_v1/pdf/leonardo_meteor735c.pdf": "2658a83781684e36e94a552b212c458e8717e452530ca70c8721af732cfedb4d",
+    "data/radar_sources_v1/pdf/vaisala_wrm200.pdf": "2188ddd30f62ae11f40df29aca4d47aa0de6684a7080548dc333fe1d771256d0",
+    "data/radar_sources_v1/text/vaisala_wrm200.p02.txt": "2f0969529099d03190c898675125d26938ab27370610a9844b9aa00a299ea759",
+    "data/radar_sources_v1/text/vaisala_wrm200.p03.txt": "68df9204d1b41da1b5db951d16c08509ca6fd8be5ff188093e1081ade15d99a0",
+    "data/radar_sources_v1/text/leonardo_meteor735c.p02.txt": "457e4843b1e2bab7c11471f59bf533ed0ea1fa22030a35ce0eb4ae165f0d4d4f",
+    "data/radar_sources_v1/text/furuno_wr2120.p04.txt": "28df8c808a9ea63442f5526d29306f1ad394db94d8a8321c20bc3be374066d24",
+    "data/radar_sources_v1/text/jrc_jma1030.p06.txt": "a9c9db9f46e66c70455dd843f6ba9b0451646f4b4d60cccb4b1eb20b86dab0fa",
+    "data/radar_sources_v1/references.jsonl": "2f94be2e74107b5451bd731cbd17282fe16b491294af6d63bbe716f7d6cad985",
+    "data/radar_sources_v1/kb.json": "7ec463dcd8ed114b31da173d62317ea3faba3539f5dbf03f7d78739689b7aee5"
+  },
+  "integrity": {
+    "phase1_unchanged": true,
+    "original_input_hashes_unchanged": true,
+    "model_outputs_or_scores_read": false,
+    "network_used": false,
+    "original_data_modified": false,
+    "label_changes_made": false,
+    "gpu_started": false,
+    "commit_created": false
+  },
+  "private_artifacts": {
+    "independent_answers": "data/radar_sources_v1/source_reaudit_20261104/independent_answers.json",
+    "phase1_seal": "data/radar_sources_v1/source_reaudit_20261104/phase1_seal.json",
+    "comparison": "data/radar_sources_v1/source_reaudit_20261104/comparison.json"
+  },
+  "limitations_zh": [
+    "AI复核不构成人工金标，也不独立验证厂商实际设备参数。",
+    "只完整审核24题绑定的24条KB事实，不宣称完整审核其余KB记录。",
+    "封存为本地hash和时间记录，不是外部时间戳证明。"
+  ],
+  "contains_full_qa": false
+}

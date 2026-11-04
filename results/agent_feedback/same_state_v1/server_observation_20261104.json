@@ -1,0 +1,373 @@
+{
+  "schema": "radar_server_readonly_observation_v1",
+  "observed_at_utc": "2026-11-04T06:41:52.038184+00:00",
+  "user_id": 1001,
+  "hostname": "ubun",
+  "remote_mutations": false,
+  "admin_used": false,
+  "gpu_workload_started": false,
+  "processes": [
+    {
+      "pid": 1628885,
+      "directory_exists": true,
+      "status_error": "FileNotFoundError",
+      "exe_error": "FileNotFoundError",
+      "cwd_error": "FileNotFoundError",
+      "root_error": "FileNotFoundError",
+      "directory_entry_names": []
+    },
+    {
+      "pid": 2256203,
+      "directory_exists": true,
+      "status": [
+        "Name:\tsshd",
+        "State:\tS (sleeping)",
+        "Uid:\t0\t0\t0\t0",
+        "Gid:\t0\t0\t0\t0",
+        "Threads:\t20"
+      ],
+      "exe_error": "PermissionError",
+      "cwd_error": "PermissionError",
+      "root_error": "PermissionError",
+      "directory_entry_names": [
+        "arch_status",
+        "attr",
+        "autogroup",
+        "auxv",
+        "cgroup",
+        "clear_refs",
+        "cmdline",
+        "comm",
+        "coredump_filter",
+        "cpu_resctrl_groups",
+        "cpuset",
+        "cwd",
+        "environ",
+        "exe",
+        "fd",
+        "fdinfo",
+        "gid_map",
+        "io",
+        "ksm_merging_pages",
+        "ksm_stat",
+        "latency",
+        "limits",
+        "loginuid",
+        "map_files",
+        "maps",
+        "mem",
+        "mountinfo",
+        "mounts",
+        "mountstats",
+        "net",
+        "ns",
+        "numa_maps",
+        "oom_adj",
+        "oom_score",
+        "oom_score_adj",
+        "pagemap",
+        "patch_state",
+        "personality",
+        "projid_map",
+        "root",
+        "sched",
+        "schedstat",
+        "sessionid",
+        "setgroups",
+        "smaps",
+        "smaps_rollup",
+        "stack",
+        "stat",
+        "statm",
+        "status",
+        "syscall",
+        "task",
+        "timens_offsets",
+        "timers",
+        "timerslack_ns",
+        "uid_map",
+        "wchan"
+      ]
+    }
+  ],
+  "executables": [
+    {
+      "path": "/usr/bin/uptime",
+      "package_owners": [
+        "procps"
+      ],
+      "resolved": "/usr/bin/uptime",
+      "size": 1311768,
+      "uid": 0,
+      "sha256": "430337634977213389160c6b9287b0a10aac176ec1c7a74579f0331275a564f6",
+      "md5": "ac25f68cc25f5d382c1d6785ca06b3d9",
+      "first_16_bytes": "7f454c46020101030000000000000000"
+    },
+    {
+      "path": "/usr/bin/nvidia-smi",
+      "package_owners": [
+        "nvidia-utils-595"
+      ],
+      "resolved": "/usr/bin/nvidia-smi",
+      "size": 1043552,
+      "uid": 0,
+      "sha256": "0630fe8e764426202a60be6a6bb2c0e39f5218ffa024e997e0c9826823c05eed",
+      "md5": "0c62e33cb14feaeebee139b0e04c4da8",
+      "first_16_bytes": "7f454c46020101000000000000000000"
+    },
+    {
+      "path": "/usr/sbin/sshd",
+      "package_owners": [
+        "openssh-server"
+      ],
+      "resolved": "/usr/sbin/sshd",
+      "size": 921288,
+      "uid": 0,
+      "sha256": "07590f8ed30b1f37729f2d5336a8ee783e510ffa84611277eb64aadc34172d80",
+      "md5": "705063fc1ff7a4813fe1fd28ba14167f",
+      "first_16_bytes": "7f454c46020101000000000000000000"
+    },
+    {
+      "path": "/usr/sbin/python3",
+      "package_owners": [],
+      "resolved": "/usr/sbin/python3",
+      "size": 36332912,
+      "uid": 14,
+      "sha256": "58c22c40a808b861dba2f97b4bc39b3185cefde7e6dad66cf5d7b7d15dc61523",
+      "md5": "da2caafdcaa63528f5ac03de61e5c169",
+      "first_16_bytes": "7f454c46020101030000000000000000"
+    },
+    {
+      "path": "/usr/bin/python3.10",
+      "package_owners": [
+        "python3.10-minimal"
+      ],
+      "resolved": "/usr/bin/python3.10",
+      "size": 5941864,
+      "uid": 0,
+      "sha256": "a2f33a6e006989270f4340528eb61f8f97366e00a5d1b602ac8672ea44fc56ae",
+      "md5": "884a1eea07e1a63d0b076fd260547603",
+      "first_16_bytes": "7f454c46020101000000000000000000"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1",
+      "package_owners": [
+        "libnvidia-compute-595:amd64"
+      ],
+      "resolved": "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.595.99.02",
+      "size": 2621336,
+      "uid": 0,
+      "sha256": "770e9de75c14b07cce9718b214700b10e6d6866f7383101d6fe530352543b1de",
+      "md5": "d3659e807ec4a5c992a8dcc5d3e5a177",
+      "first_16_bytes": "7f454c46020101000000000000000000"
+    }
+  ],
+  "package_records": [
+    {
+      "path": "/usr/bin/uptime",
+      "package": "procps",
+      "manifest": "/var/lib/dpkg/info/procps.md5sums",
+      "recorded_md5": "03a7f9cd4a8c5c609cdeea794f2dec34",
+      "observed_md5": "ac25f68cc25f5d382c1d6785ca06b3d9",
+      "matches_installed_manifest": false
+    },
+    {
+      "path": "/usr/bin/nvidia-smi",
+      "package": "nvidia-utils-595",
+      "manifest": "/var/lib/dpkg/info/nvidia-utils-595.md5sums",
+      "recorded_md5": "cbd8a844f95ac445ed54be85037a8578",
+      "observed_md5": "0c62e33cb14feaeebee139b0e04c4da8",
+      "matches_installed_manifest": false
+    },
+    {
+      "path": "/usr/sbin/sshd",
+      "package": "openssh-server",
+      "manifest": "/var/lib/dpkg/info/openssh-server.md5sums",
+      "recorded_md5": "705063fc1ff7a4813fe1fd28ba14167f",
+      "observed_md5": "705063fc1ff7a4813fe1fd28ba14167f",
+      "matches_installed_manifest": true
+    },
+    {
+      "path": "/usr/bin/python3.10",
+      "package": "python3.10-minimal",
+      "manifest": "/var/lib/dpkg/info/python3.10-minimal.md5sums",
+      "recorded_md5": "884a1eea07e1a63d0b076fd260547603",
+      "observed_md5": "884a1eea07e1a63d0b076fd260547603",
+      "matches_installed_manifest": true
+    }
+  ],
+  "target_pid_mounts": [
+    "1237 26 0:27 / /proc/1628885 rw,nosuid,nodev shared:4 - tmpfs tmpfs rw,inode64"
+  ],
+  "global_preload_entries": [
+    "/usr/local/lib/libaudit.so"
+  ],
+  "global_preload_entry_exists": {
+    "/usr/local/lib/libaudit.so": false
+  },
+  "LD_PRELOAD_env_present": false,
+  "proc_loadavg": "329.81 324.42 320.69 331/3169 2269418",
+  "nvml_init_returncode": 0,
+  "direct_nvml": [
+    {
+      "index": 0,
+      "returncodes": [
+        0,
+        0,
+        0
+      ],
+      "gpu_utilization_percent": 100,
+      "used_MiB": 13982,
+      "process_query_returncode": 0,
+      "process_count": 2,
+      "compute_processes": [
+        {
+          "pid": 1628885,
+          "used_MiB": 6662
+        },
+        {
+          "pid": 2256203,
+          "used_MiB": 6662
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "returncodes": [
+        0,
+        0,
+        0
+      ],
+      "gpu_utilization_percent": 100,
+      "used_MiB": 13725,
+      "process_query_returncode": 0,
+      "process_count": 2,
+      "compute_processes": [
+        {
+          "pid": 1628885,
+          "used_MiB": 6662
+        },
+        {
+          "pid": 2256203,
+          "used_MiB": 6662
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "returncodes": [
+        0,
+        0,
+        0
+      ],
+      "gpu_utilization_percent": 100,
+      "used_MiB": 13725,
+      "process_query_returncode": 0,
+      "process_count": 2,
+      "compute_processes": [
+        {
+          "pid": 1628885,
+          "used_MiB": 6662
+        },
+        {
+          "pid": 2256203,
+          "used_MiB": 6662
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "returncodes": [
+        0,
+        0,
+        0
+      ],
+      "gpu_utilization_percent": 100,
+      "used_MiB": 13725,
+      "process_query_returncode": 0,
+      "process_count": 2,
+      "compute_processes": [
+        {
+          "pid": 1628885,
+          "used_MiB": 6662
+        },
+        {
+          "pid": 2256203,
+          "used_MiB": 6662
+        }
+      ]
+    }
+  ],
+  "nvml_mapped_files": [
+    "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.595.99.02"
+  ],
+  "nvidia_smi_health_query": {
+    "not_executed": "Executable has no matching installed-package checksum"
+  },
+  "nvml_actual_library_package_check": {
+    "path": "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.595.99.02",
+    "manifest": "/var/lib/dpkg/info/libnvidia-compute-595:amd64.md5sums",
+    "recorded_md5": "d3659e807ec4a5c992a8dcc5d3e5a177",
+    "observed_md5": "d3659e807ec4a5c992a8dcc5d3e5a177",
+    "matches": true
+  },
+  "driver_version": "NVRM version: NVIDIA UNIX x86_64 Kernel Module  595.99.02  Wed Aug 26 05:24:08 UTC 2026\nGCC version:  gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.3)",
+  "offline_string_indicators": [
+    {
+      "path": "/usr/bin/nvidia-smi",
+      "matched_literal_markers": [
+        "/proc/"
+      ],
+      "unknown_executable_run": false
+    },
+    {
+      "path": "/usr/bin/uptime",
+      "matched_literal_markers": [
+        "/proc/"
+      ],
+      "unknown_executable_run": false
+    },
+    {
+      "path": "/usr/sbin/python3",
+      "matched_literal_markers": [],
+      "unknown_executable_run": false
+    }
+  ],
+  "project_unfinished_jobs": [],
+  "same_state_directory_files": [
+    "design_protocol.json",
+    "dev_replay_preflight.json",
+    "linux_dev_replay_preflight.json",
+    "linux_dev_token_preflight.json",
+    "pool_manifest.json",
+    "probe_binding.json"
+  ],
+  "target": "authorized_gpu_server",
+  "assessment": {
+    "gpu_launch_eligible": false,
+    "confirmed_findings": [
+      "Both target PIDs are reported as compute users on all four GPUs by direct NVML calls.",
+      "PID 1628885 proc directory is covered by a tmpfs mount and is empty.",
+      "uptime and nvidia-smi differ from their installed-package checksum records.",
+      "The inspected system sshd, explicit Python3.10 and actual NVML library match installed-package checksum records.",
+      "The global preload configuration refers to a missing library."
+    ],
+    "interpretation": "The observations show process visibility masking and executable-integrity anomalies; unauthorized modification is a serious possibility. Actor, intent and the actual root process executable are not established by this syx-only check.",
+    "unknowns": [
+      "Owner/purpose and executable identity of PID 2256203 remain unconfirmed; syx cannot read its exe/cwd.",
+      "The reason nvidia-smi produces malformed health output is not traced further because its checksum differs.",
+      "Local package records are consistency evidence, not an independent trusted-system attestation."
+    ],
+    "actions_taken": "Read-only queries under syx only. No process termination, device reset, remount, system edit, package change, admin login or training.",
+    "next_requires_admin_confirmation": [
+      "Identify the two GPU processes and the tmpfs mount owner/purpose using a trusted administration environment.",
+      "If unrecognized, preserve evidence and research artifacts, then perform host security remediation or rebuild before new experiments.",
+      "Restore executable paths/tooling and obtain fresh idle/health observations before the original bounded probe."
+    ]
+  },
+  "evidence_files_sha256": {
+    "radar_readonly_observation_20261104.json": "981046b1445f2c2d08fa881b6a67d6729bf1f59fcc45e60b58b1b39c9e869102",
+    "radar_readonly_followup_20261104.json": "0f37761bc9a2f2cdc722942a8a82697e75c237b64855cf90169f6af3dc9ca837",
+    "local_probe_script": "c092e286003d6a8b092a532f3c214946d0248d2724b71f5055468a2413e7ce5b"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "radar_source_context_revision_v1",
+  "date": "2026-11-04",
+  "question_id": "source_zh_24",
+  "fact_id": "j34tempS",
+  "field": "kb.json.records[fact_id=j34tempS].citation.locator.table_context",
+  "old_context": "Specifications table; JMA-1034 model column; scanner/display are component conditions, not model columns",
+  "new_context": "Specifications table, Ambient conditions row; value cell spans JMA-1032 and JMA-1034; Operation temperature is paired with scanner/display component labels; scanner condition applies to JMA-1034.",
+  "reason": "原PDF温度值单元格跨两型号合并，并不存在本行独立的JMA-1034值列；现定位说明前半句不精确。末尾组件条件提醒正确。",
+  "reviewer": "AI",
+  "human_gold": false,
+  "actual_human_reviews": 0,
+  "answers_changed": 0,
+  "questions_changed": 0,
+  "historical_scores_changed": false,
+  "inputs_sha256": {
+    "data/radar_sources_v1/kb.json": "7ec463dcd8ed114b31da173d62317ea3faba3539f5dbf03f7d78739689b7aee5",
+    "data/radar_sources_v1/source_reaudit_20261104/comparison.json": "74ef8510a726f104fc884f3cf85bbc1cc59892c7168438430218bbd2c4b5e76b",
+    "artifacts/thesis_direction_review/radar_sources_v1_reaudit_20261104/summary.json": "afaa3c7c3c7d8d13cfe64eb7da0b92a3dc8dd11635cdf80b81b702c93b1028a1"
+  },
+  "corrected_artifact": "data/radar_sources_v1/source_reaudit_20261104/kb.corrected.json",
+  "corrected_sha256": "8fcc9829b120b4e06889d528ba20ec92537bcb0b348eebe166a6cc13b8ec8c54"
+}

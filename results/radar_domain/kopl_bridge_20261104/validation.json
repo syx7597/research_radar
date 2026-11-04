@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-04",
+  "tests_command": "python3 -m unittest tests.test_radar_kopl_record_bridge -q",
+  "tests_passed": 4,
+  "full_snapshot_chunk_hash_matches_frozen_selection": true,
+  "all_input_output_hashes_match": true,
+  "summary_sha256": "e2e45581ac00e4ac6d7c2f2430446681a30b523abe11793b41f57709188f3d9e",
+  "test_code_sha256": "da9a35e4d99ceb2048f9a737fb74d33231dd903cc106760dc4ea539578622ad6",
+  "new_gpu_model_calls": 0
+}

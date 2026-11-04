@@ -1,0 +1,64 @@
+{
+  "schema": "radar_server_admin_readonly_observation_v1",
+  "observed_at_utc": "2026-11-04T06:56:26.755847+00:00",
+  "effective_uid": 0,
+  "admin_used": true,
+  "scope": "Specified PID executable identity and static marker check only",
+  "remote_mutations": false,
+  "gpu_workload_started": false,
+  "processes": [
+    {
+      "pid": 2256203,
+      "directory_exists": true,
+      "status": [
+        "Name:\tsshd",
+        "State:\tS (sleeping)",
+        "Uid:\t0\t0\t0\t0",
+        "Gid:\t0\t0\t0\t0",
+        "Threads:\t20"
+      ],
+      "exe": "/tmp/sshd",
+      "cwd": "/tmp",
+      "executable_file": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755",
+        "size": 36332912,
+        "sha256": "58c22c40a808b861dba2f97b4bc39b3185cefde7e6dad66cf5d7b7d15dc61523",
+        "first_16_bytes": "7f454c46020101030000000000000000",
+        "static_marker_hits": [],
+        "executed_by_this_check": false,
+        "package_owners": []
+      }
+    },
+    {
+      "pid": 1628885,
+      "directory_exists": true,
+      "status_error": "FileNotFoundError",
+      "exe_error": "FileNotFoundError",
+      "cwd_error": "FileNotFoundError",
+      "executable_file_error": "FileNotFoundError"
+    }
+  ],
+  "target_mounts": [
+    "1237 26 0:27 / /proc/1628885 rw,nosuid,nodev shared:4 - tmpfs tmpfs rw,inode64"
+  ],
+  "not_read": [
+    "process command line",
+    "environment",
+    "credentials",
+    "keys",
+    "other business files"
+  ],
+  "authorized_scope": "User requested read-only investigation; parent delegated a bounded administrator identity check. No remediation authorized or performed.",
+  "sudo_package_checksum_guard_passed": true,
+  "derived_findings": {
+    "pid_2256203_executable_is_system_sshd": false,
+    "pid_2256203_executable_sha_matches_abnormal_python_path": true,
+    "comparison_source": "results/agent_feedback/same_state_v1/server_observation_20261104.json",
+    "comparison_path": "/usr/sbin/python3",
+    "comparison_sha256": "58c22c40a808b861dba2f97b4bc39b3185cefde7e6dad66cf5d7b7d15dc61523",
+    "software_family_identified_by_markers": false,
+    "pid_1628885_still_hidden_by_same_mount": true
+  }
+}
