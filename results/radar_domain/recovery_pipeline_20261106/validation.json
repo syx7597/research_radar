@@ -1,0 +1,19 @@
+{
+  "schema": "radar_domain_recovery_pipeline_validation_v1",
+  "date": "2026-11-06",
+  "recovery_tests": 11,
+  "interface_tests": 14,
+  "bridge_tests": 6,
+  "total_tests_passed": 31,
+  "test_command": "python3 -m unittest tests.test_radar_domain_recovery tests.test_radar_record_set_interface tests.test_radar_kopl_record_bridge -q",
+  "all_bound_files_match": true,
+  "actual_model_rollouts": 0,
+  "actual_model_recovery_pairs": 0,
+  "formal_training_samples": 0,
+  "hand_constructed_cpu_fixture_pairs": 14,
+  "successful_development_reference_trajectories": 7,
+  "all_pairs_complete_answer_and_target_action_counts_match": true,
+  "summary_sha256": "6e6db2409bd355d75c1df7bf5c35ff0f953fd4866ee0cbc596036d3742eae13d",
+  "test_sha256": "2d55e9a718e87ecfc4eecee2abaf2c7315a2674b5e003a9320d2df1b3231d4c1",
+  "gpu_model_calls": 0
+}

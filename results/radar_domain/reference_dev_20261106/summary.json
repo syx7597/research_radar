@@ -1,0 +1,142 @@
+{
+  "schema": "radar_reference_development_public_summary_v1",
+  "date": "2026-11-06",
+  "author": "AI",
+  "human_gold": false,
+  "development_only": true,
+  "historical_sources_exposed": true,
+  "not_training_split": true,
+  "independent_evaluation": false,
+  "counts": {
+    "tasks": 7,
+    "record_set_answers": 6,
+    "scalar_count_answers": 1,
+    "empty_record_set_answers": 1,
+    "zero_count_answers": 1,
+    "all_actions_successful": 57,
+    "source_readings_in_every_episode": 502,
+    "subject_nodes": 23,
+    "expected_record_checks_passed": 7
+  },
+  "task_coverage": [
+    {
+      "id": "RDR-REF-DEV-01",
+      "parent_candidate_id": "RDR-DEV-02",
+      "coverage": "complete",
+      "coverage_scope": "complete_source_record_requirement",
+      "terminal": "finish_records",
+      "returned_record_count": 5,
+      "calls": 9
+    },
+    {
+      "id": "RDR-REF-DEV-02",
+      "parent_candidate_id": "RDR-DEV-11",
+      "coverage": "subtask",
+      "coverage_scope": "all_protection_records_only",
+      "terminal": "finish_records",
+      "returned_record_count": 4,
+      "calls": 7
+    },
+    {
+      "id": "RDR-REF-DEV-03",
+      "parent_candidate_id": "RDR-DEV-11",
+      "coverage": "subtask",
+      "coverage_scope": "15A_selection_only",
+      "terminal": "finish_records",
+      "returned_record_count": 2,
+      "calls": 8
+    },
+    {
+      "id": "RDR-REF-DEV-04",
+      "parent_candidate_id": "RDR-DEV-11",
+      "coverage": "subtask",
+      "coverage_scope": "empty_set_boundary_variant",
+      "terminal": "finish_records",
+      "returned_record_count": 0,
+      "calls": 8
+    },
+    {
+      "id": "RDR-REF-DEV-05",
+      "parent_candidate_id": "RDR-DEV-11",
+      "coverage": "subtask",
+      "coverage_scope": "empty_set_count_boundary_variant",
+      "terminal": "finish",
+      "returned_record_count": 0,
+      "calls": 9
+    },
+    {
+      "id": "RDR-REF-DEV-06",
+      "parent_candidate_id": "RDR-DEV-01",
+      "coverage": "subtask",
+      "coverage_scope": "maximum_consumption_endpoint_filter_only",
+      "terminal": "finish_records",
+      "returned_record_count": 1,
+      "calls": 7
+    },
+    {
+      "id": "RDR-REF-DEV-07",
+      "parent_candidate_id": null,
+      "coverage": "complete",
+      "coverage_scope": "standalone_conditional_source_record_query",
+      "terminal": "finish_records",
+      "returned_record_count": 1,
+      "calls": 9
+    }
+  ],
+  "reference_path": "data/radar_domain_recovery_v1/reference_dev_20261106/references.jsonl",
+  "reference_schema": {
+    "exact_keys": [
+      "id",
+      "question",
+      "actions",
+      "answer"
+    ],
+    "action_exact_keys": [
+      "name",
+      "arguments"
+    ],
+    "answer": "complete episode.answer object from the actual finalization call; no fields rewritten"
+  },
+  "checks": {
+    "full_502_graph_used_every_time": true,
+    "no_answer_key_graph_pruning": true,
+    "source_expectations_sealed_before_execution": true,
+    "returned_record_ids_match_source_review": true,
+    "full_episode_answer_saved": true,
+    "source_and_code_hashes_verified": true,
+    "negative_reflectivity_numeric_filter_executed": true,
+    "empty_set_and_zero_count_terminal_executed": true
+  },
+  "limits_zh": [
+    "这是历史资料暴露后的开发参考，不是训练/验证/测试划分，也不是独立人类金标。",
+    "只执行成功参考轨迹；没有生成模型失败、没有读取模型分数、没有调用服务器或训练。",
+    "7题覆盖当前接口可返回的记录集合或计数；未宣称完成全部12个复杂候选。",
+    "空集和0只对应当前归档图中的匹配域；空集终值的sources为空，查询域依据保存在expectations和events。"
+  ],
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_readings_v1/selection.json": "af06dbc7e89d18d5633170ec7576d6b483f9377185d04c5bb4c135d8b4a38441",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "data/radar_sources_v2/curation_v1/weather.v2.json": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+    "data/radar_sources_v2/curation_v1/marine.v2.json": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+    "data/radar_sources_v2/curation_v1/raymarine.draft.json": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+    "data/radar_sources_v2/curation_v1/metek.v2.json": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909",
+    "experiments/radar_domain/record_set_interface.py": "d7cdfe1ce4830fa2dc577489c910fb78bfcc5520a74218e94f3fa32aa5648e48",
+    "experiments/radar_domain/kopl_record_bridge.py": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/condition_consistency/executor.py": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "external/kqa_pro_baselines/Program/executor_rule.py": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6",
+    "external/kqa_pro_baselines/utils/value_class.py": "83dcc227b5028dcc8835b68cc88ebc23d8a47c2c5b0259a5ce4adfd3451631a6",
+    "data/radar_domain_recovery_v1/development_task_candidates.json": "b53174f02e340e4e8e7a05df350198c5db97b0b28508681d1b8ca8d2f60649b3"
+  },
+  "private_outputs_sha256": {
+    "data/radar_domain_recovery_v1/reference_dev_20261106/references.jsonl": "e84fe2156a6d5c1e173fde4b14c385ad21d26b13823a270cf78248114beb9484",
+    "data/radar_domain_recovery_v1/reference_dev_20261106/expectations.json": "ca836a19e9be275ec0a96111ac7066b4ca471cce3c13bb2a793360e29ad6b2eb",
+    "data/radar_domain_recovery_v1/reference_dev_20261106/execution_events.json": "a9918b237b60958bbf5276e6dcf09bb23429a4bdde4530653580523914f843d9",
+    "data/radar_domain_recovery_v1/reference_dev_20261106/manifest.json": "24f18512b596f2fe9105850a039c439bf0d18885d25b66a25a68dfff5798ccf2"
+  },
+  "model_calls": 0,
+  "model_failures_generated": 0,
+  "server_accessed": false,
+  "training_started": false,
+  "commit_created": false
+}

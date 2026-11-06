@@ -6,10 +6,34 @@ import unittest
 
 from experiments.condition_consistency.executor import KoPLExecutor
 from experiments.radar_domain.kopl_record_bridge import (
-    numeric_projection, load_snapshot, build_graph, prototype_queries, run_program, reading_id)
+    numeric_projection, load_snapshot, build_graph, prototype_queries, run_program, reading_id, chain)
 
 
 class BridgeTests(unittest.TestCase):
+    def test_separated_signs_and_scientific_notation(self):
+        for text, expected in [("- 8 dBZ", -8), ("−\u00a08 dBZ", -8),
+                               ("+ 8 dBZ", 8), ("-1e-3 dBZ", -.001)]:
+            result, _ = numeric_projection({"value": {"form": "scalar", "text": text, "unit_raw": "dBZ"}})
+            self.assertEqual(result["number"], expected)
+        result, _ = numeric_projection({"value": {"form": "scalar", "text": "1 - 8 dBZ", "unit_raw": "dBZ"}})
+        self.assertIsNone(result)
+
+    def test_real_negative_reflectivity_remains_negative_in_executable_graph(self):
+        records, _, _ = load_snapshot()
+        original = next(r for r in records if r["record_id"] == "MRR-0047")
+        self.assertEqual(original["value"]["text"], "- 8 dBZ")
+        graph, mapping, _ = build_graph(records)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "kb.json"
+            path.write_text(json.dumps(graph))
+            program = chain([
+                ("Find", ["MRR-PRO"]), ("Relate", ["has specification", "forward"]),
+                ("FilterStr", ["attribute", "min. detectable radar reflectivity"]),
+                ("FilterNum", ["scalar_value", "0 dBZ", "<"]), ("Count", [])])
+            episode, selected = run_program(KoPLExecutor(path), program)
+            self.assertEqual(episode.prediction, "1")
+            self.assertEqual([mapping[e]["record"]["record_id"] for e in selected], ["MRR-0047"])
+
     def test_multivalue_or_unclear_units_do_not_become_single_numbers(self):
         for form, text, unit in [("range", "0 to 8 rpm", "rpm"), ("options", "2 or 4 kW", "kW"),
                                  ("correspondence", "4 kW + 4 kW", "kW"),

@@ -6,6 +6,7 @@ with explicit value-form keys; all original fields remain available losslessly.
 """
 from collections import Counter
 from copy import deepcopy
+import argparse
 from decimal import Decimal
 import hashlib
 import json
@@ -20,7 +21,7 @@ SELECTION = Path("artifacts/thesis_direction_review/radar_readings_v1/selection.
 CHUNKS = Path("data/radar_sources_v2/curation_v1/chunks.json")
 PRIVATE = Path("data/radar_domain_recovery_v1/kopl_bridge")
 PUBLIC = Path("results/radar_domain/kopl_bridge_20261104")
-NUMBER = re.compile(r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?")
+NUMBER = re.compile(r"(?:[+-]\s*)?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?")
 NUMERIC_KEYS = {"scalar": "scalar_value", "lower_bound": "lower_bound_value",
                 "upper_bound": "upper_bound_value"}
 # Exact source units, no unit conversion, lowercasing or mixed-unit guessing.
@@ -45,7 +46,9 @@ def numeric_projection(record):
     numbers = NUMBER.findall(text)
     if len(numbers) != 1:
         return None, "not_exactly_one_number"
-    decimal = Decimal(numbers[0])
+    # PDF-derived values can separate a sign from its digits, e.g. "- 8 dBZ".
+    # Preserve that source lexeme and normalize whitespace only for conversion.
+    decimal = Decimal(re.sub(r"\s+", "", numbers[0]))
     number = float(decimal)
     if not decimal.is_finite() or abs(number) == float("inf"):
         return None, "non_finite"
@@ -195,7 +198,13 @@ def write_new(path, value):
 
 
 def main():
-    if PRIVATE.exists() or PUBLIC.exists():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--private-dir", type=Path, default=PRIVATE)
+    parser.add_argument("--public-dir", type=Path, default=PUBLIC)
+    parser.add_argument("--date", default="2026-11-06")
+    args = parser.parse_args()
+    private, public = args.private_dir, args.public_dir
+    if private.exists() or public.exists():
         raise FileExistsError("Bridge output already exists")
     records, chunks, paths = load_snapshot()
     graph, sidecar, counts = build_graph(records)
@@ -204,10 +213,10 @@ def main():
         restored = json.loads(next(a["value"]["value"] for a in attrs if a["key"] == "source_record_json"))
         if restored != row:
             raise AssertionError("Source record did not round trip")
-    write_new(PRIVATE / "kb.json", graph)
-    write_new(PRIVATE / "source_records.json", sidecar)
-    write_new(PRIVATE / "source_chunks.json", chunks)
-    executor = KoPLExecutor(PRIVATE / "kb.json")
+    write_new(private / "kb.json", graph)
+    write_new(private / "source_records.json", sidecar)
+    write_new(private / "source_chunks.json", chunks)
+    executor = KoPLExecutor(private / "kb.json")
     prototypes = []
     for spec in prototype_queries():
         episode, selected = run_program(executor, spec["program"])
@@ -232,7 +241,7 @@ def main():
                   "source_chunks": sorted({sidecar[e]["record"]["citation"]["chunk_id"] for e in selected}),
                   "events": episode.events, "selected_source_records": [sidecar[e]["record"] for e in selected]}
         prototypes.append(record)
-    write_new(PRIVATE / "prototype_replays.json", prototypes)
+    write_new(private / "prototype_replays.json", prototypes)
     # Confirm actual original single-item answer behavior on a multi-item set.
     prefix = prototype_queries()[1]["program"][:-1]
     what = executor.execute(prefix + [{"function": "What", "inputs": [], "dependencies": [len(prefix)-1]}])
@@ -240,7 +249,7 @@ def main():
     paths += [Path(__file__).relative_to(Path.cwd()), Path("experiments/condition_consistency/executor.py"),
               Path("experiments/agent_feedback/environment.py"),
               Path("external/kqa_pro_baselines/Program/executor_rule.py")]
-    report = {"schema": "radar_kopl_record_bridge_cpu_v1", "date": "2026-11-04",
+    report = {"schema": "radar_kopl_record_bridge_cpu_v1", "date": args.date,
               "development_only": True, "human_gold": False, "gpu_model_calls": 0,
               "training_started": False, "source_readings": len(records),
               "reading_nodes": len(sidecar), "subject_nodes": len(graph["entities"]) - len(sidecar),
@@ -255,8 +264,8 @@ def main():
                                    "conclusion": "Original What/QueryAttr return the first entity/value, not an answer set."},
               "scope": "Two Count subquestions executed on full 502-reading graph. The twelve multi-record candidate tasks and end-to-end model improvement are not evaluated.",
               "inputs_sha256": {str(p): sha256(p) for p in paths},
-              "outputs_sha256": {str(p): sha256(p) for p in sorted(PRIVATE.glob("*.json"))}}
-    write_new(PUBLIC / "summary.json", report)
+              "outputs_sha256": {str(p): sha256(p) for p in sorted(private.glob("*.json"))}}
+    write_new(public / "summary.json", report)
     print(json.dumps({k: report[k] for k in ("source_readings", "subject_nodes", "numeric_projection_counts", "prototypes", "set_answer_probe")}, ensure_ascii=False, indent=2))
 
 

@@ -1,0 +1,221 @@
+{
+  "schema": "radar_kopl_record_bridge_cpu_v1",
+  "date": "2026-11-06",
+  "development_only": true,
+  "human_gold": false,
+  "gpu_model_calls": 0,
+  "training_started": false,
+  "source_readings": 502,
+  "reading_nodes": 502,
+  "subject_nodes": 23,
+  "all_source_records_roundtrip": true,
+  "gold_or_required_record_ids_in_graph_builder": false,
+  "numeric_projection_counts": {
+    "value_form_retained_as_text": 279,
+    "projected": 195,
+    "ambiguous_or_unregistered_unit": 24,
+    "not_exactly_one_number": 4
+  },
+  "non_projected_records": 307,
+  "numeric_semantics": "Exact-unit projection only; scalar and lower/upper bound endpoints have distinct keys; original value.form/text/unit and all source fields retained.",
+  "original_value_forms": {
+    "text": 96,
+    "range": 45,
+    "upper_bound": 60,
+    "lower_bound": 24,
+    "correspondence": 76,
+    "options": 52,
+    "scalar": 139,
+    "tolerance": 4,
+    "approximate": 6
+  },
+  "prototypes": [
+    {
+      "id": "bridge-dev-wrs-count",
+      "question": "WRS300资料中，最大系统耗电标示值严格低于4 kW的发射配置有多少个？",
+      "derived_from_development_task": "RDR-DEV-01",
+      "complete_original_task": false,
+      "program": [
+        {
+          "function": "Find",
+          "inputs": [
+            "WRS300"
+          ],
+          "dependencies": []
+        },
+        {
+          "function": "Relate",
+          "inputs": [
+            "has specification",
+            "forward"
+          ],
+          "dependencies": [
+            0
+          ]
+        },
+        {
+          "function": "FilterStr",
+          "inputs": [
+            "component",
+            "system"
+          ],
+          "dependencies": [
+            1
+          ]
+        },
+        {
+          "function": "FilterStr",
+          "inputs": [
+            "attribute",
+            "power_consumption"
+          ],
+          "dependencies": [
+            2
+          ]
+        },
+        {
+          "function": "FilterStr",
+          "inputs": [
+            "condition:quantity_role",
+            "maximum"
+          ],
+          "dependencies": [
+            3
+          ]
+        },
+        {
+          "function": "FilterNum",
+          "inputs": [
+            "upper_bound_value",
+            "4 kW",
+            "<"
+          ],
+          "dependencies": [
+            4
+          ]
+        },
+        {
+          "function": "Count",
+          "inputs": [],
+          "dependencies": [
+            5
+          ]
+        }
+      ],
+      "prediction": "1",
+      "calls": 8,
+      "selected_record_ids": [
+        "WX-0051"
+      ],
+      "source_chunks": [
+        "vaisala_wrs300_b212854en_e:p002"
+      ]
+    },
+    {
+      "id": "bridge-dev-cyclone-count",
+      "question": "Cyclone Pro资料列出的保护器件记录中，额定电流为15 A的电压—器件组合有多少个？",
+      "derived_from_development_task": "RDR-DEV-11",
+      "complete_original_task": false,
+      "program": [
+        {
+          "function": "Find",
+          "inputs": [
+            "Cyclone Pro"
+          ],
+          "dependencies": []
+        },
+        {
+          "function": "Relate",
+          "inputs": [
+            "has specification",
+            "forward"
+          ],
+          "dependencies": [
+            0
+          ]
+        },
+        {
+          "function": "FilterStr",
+          "inputs": [
+            "attribute",
+            "current_rating"
+          ],
+          "dependencies": [
+            1
+          ]
+        },
+        {
+          "function": "FilterNum",
+          "inputs": [
+            "scalar_value",
+            "15 A",
+            "="
+          ],
+          "dependencies": [
+            2
+          ]
+        },
+        {
+          "function": "Count",
+          "inputs": [],
+          "dependencies": [
+            3
+          ]
+        }
+      ],
+      "prediction": "2",
+      "calls": 6,
+      "selected_record_ids": [
+        "RAY-0051",
+        "RAY-0052"
+      ],
+      "source_chunks": [
+        "raymarine_spec_power_pro:html"
+      ]
+    }
+  ],
+  "set_answer_probe": {
+    "input_records": [
+      "RAY-0051",
+      "RAY-0052"
+    ],
+    "What": {
+      "valid": true,
+      "prediction": "RAY-0051",
+      "error": null,
+      "answers": [
+        "RAY-0051"
+      ],
+      "empty_result": false
+    },
+    "QueryAttr_record_id": {
+      "valid": true,
+      "prediction": "RAY-0051",
+      "error": null,
+      "answers": [
+        "RAY-0051"
+      ],
+      "empty_result": false
+    },
+    "conclusion": "Original What/QueryAttr return the first entity/value, not an answer set."
+  },
+  "scope": "Two Count subquestions executed on full 502-reading graph. The twelve multi-record candidate tasks and end-to-end model improvement are not evaluated.",
+  "inputs_sha256": {
+    "artifacts/thesis_direction_review/radar_readings_v1/selection.json": "af06dbc7e89d18d5633170ec7576d6b483f9377185d04c5bb4c135d8b4a38441",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "data/radar_sources_v2/curation_v1/weather.v2.json": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+    "data/radar_sources_v2/curation_v1/marine.v2.json": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+    "data/radar_sources_v2/curation_v1/raymarine.draft.json": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+    "data/radar_sources_v2/curation_v1/metek.v2.json": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909",
+    "experiments/radar_domain/kopl_record_bridge.py": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+    "experiments/condition_consistency/executor.py": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "external/kqa_pro_baselines/Program/executor_rule.py": "eca7bfdd6c4a8648de186e4922e0e4be09c9f64bb8aa1b066e5d542336e54dc6"
+  },
+  "outputs_sha256": {
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/kb.json": "1399519f30a1b5079899b67f309b5078468f3a7eb2099c36b94c3444fcba1200",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/prototype_replays.json": "49b1311236149efb621afeaa8a08a934e26ec899a17d39ded0b9bba582ebd775",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/source_chunks.json": "06cd50fa2443cb553080389e6f5a3ec9318a1a640f9ade39928b5f402c423f62",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/source_records.json": "2dc97ed23093b28cab1b32375bbf957fe514ae8db60f9979fcf09310e6a7c563"
+  }
+}

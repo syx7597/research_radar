@@ -1,0 +1,273 @@
+{
+  "schema": "radar_numeric_projection_review_summary_v1",
+  "date": "2026-11-06",
+  "reviewer": "AI",
+  "human_gold": false,
+  "development_only": true,
+  "historical_sources_exposed": true,
+  "reviewed_bridge": {
+    "path": "experiments/radar_domain/kopl_record_bridge.py",
+    "sha256": "941c96191e2a53b5df43abafcaa387740848b92fc93d63b0fd34e48c9f781c6f",
+    "excerpt_sha256": "5a6c9b4615262fac9aef4b18339877a3c64207d004e31ae555f1138fd5f0bb7f",
+    "snapshot_method": "Original numeric_projection function and its three constants extracted by AST; no executor or model/prototype code imported."
+  },
+  "counts": {
+    "source_records": 502,
+    "projection_statuses": {
+      "value_form_retained_as_text": 279,
+      "projected": 195,
+      "ambiguous_or_unregistered_unit": 24,
+      "not_exactly_one_number": 4
+    },
+    "projected_value_forms": {
+      "upper_bound": 52,
+      "lower_bound": 23,
+      "scalar": 120
+    },
+    "numeric_literal_and_unit_faithful": 194,
+    "hard_numeric_errors": 1,
+    "bound_endpoint_projections": 75,
+    "strict_bound_projections_without_structured_comparator": 24,
+    "non_strict_bound_endpoint_projections": 51,
+    "maximum_consumption_role_type_inconsistency": 2,
+    "persisted_projection_differences": 0,
+    "reviewed_one_token_non_scalar_examples": 34
+  },
+  "verdict_zh": "195个数值投影中，194个带符号数值、数量级和原单位与所审来源读法一致；MRR-0047存在确定的负号丢失。另列边界元数据和最大值角色编码问题，不能把这些与实际数值错误混作一类。",
+  "required_numeric_corrections": [
+    {
+      "record_id": "MRR-0047",
+      "kind": "lost_unary_minus_after_whitespace",
+      "current_projected_number": 8,
+      "source_supported_number": -8,
+      "unit_raw": "dBZ",
+      "source_chunk_id": "metek_mrr_pro_20240705:p002",
+      "source_location": "Parameter overview / Min. detectable radar reflectivity",
+      "source_conditions": [
+        "z=500 m",
+        "Δz=100 m",
+        "Δt=10 s"
+      ],
+      "reason_zh": "原文负号与数字之间有空格；现NUMBER.findall仅抓取8，导致符号反转。归档PDF版面已核实。",
+      "required_action_zh": "修复带空白的单目负号解析或安全拒绝；增加正负号及词法完整性校验。原资料和原记录本身无须改数值。"
+    }
+  ],
+  "required_numeric_correction_ids": [
+    "MRR-0047"
+  ],
+  "semantic_projection_revisions_before_broader_constraint_queries": [
+    {
+      "kind": "bound_endpoint_is_not_the_bound_predicate",
+      "affected_count": 75,
+      "strict_boundary_count": 24,
+      "strict_record_ids": [
+        "MRR-0042",
+        "RAY-0042",
+        "RAY-0055",
+        "RAY-0096",
+        "WX-0017",
+        "WX-0018",
+        "WX-0019",
+        "WX-0020",
+        "WX-0023",
+        "WX-0024",
+        "WX-0025",
+        "WX-0026",
+        "WX-0027",
+        "WX-0028",
+        "WX-0029",
+        "WX-0044",
+        "WX-0062",
+        "WX-0120",
+        "WX-0149",
+        "WX-0152",
+        "WX-0163",
+        "WX-0176",
+        "WX-0178",
+        "WX-0179"
+      ],
+      "reason_zh": "上下界key保留了方向，但数值投影只存端点，没有<与≤、>与≥。24条严格界限在投影层无法与同端点闭界限区分。原始value_text仍完整保存在图中，因此不是全图信息丢失，也不影响“比较标示端点”的既有语义。",
+      "action_zh": "对所有75条上下界补显式comparator/endpoint_inclusive与被约束量语义；接口须区分“端点比较”与“参数满足约束”。",
+      "boundary_examples_zh": [
+        "WX-0017的<2 dB与≤2 dB不能互换。",
+        "MRR-0042的>99%不支持把99%当成允许值。",
+        "负dB上界的比较方向不能按绝对值反转。"
+      ]
+    },
+    {
+      "kind": "maximum_power_consumption_role_encoded_in_two_forms",
+      "affected_record_ids": [
+        "RAY-0034",
+        "RAY-0047"
+      ],
+      "reason_zh": "RAY-0034/0047在原packet中form=scalar且maximum存于条件；WRS/JRC/Garmin最大耗电记录使用upper_bound。同一最大耗电查询若只取upper_bound_value会漏掉两条Raymarine读法。原数值和角色均仍在完整记录中。",
+      "action_zh": "保留原form，增加经来源支持的统一quantity_role/quantity_kind视图，或在查询层显式接受两种编码；不要仅按出现max字样批量改源记录。"
+    },
+    {
+      "kind": "relative_expression_not_absolute_scalar",
+      "affected_record_ids": [
+        "marine-0036"
+      ],
+      "reason_zh": "1%是对range in use的相对误差界限，不能把它解释成1个长度单位或无条件测量值。",
+      "action_zh": "如扩展物理约束运算，绑定reference_quantity及误差绝对值语义；只查询该百分比系数时现有端点可用。"
+    }
+  ],
+  "single_number_does_not_imply_scalar": {
+    "correctly_rejected_example_count": 34,
+    "categories": {
+      "categorical_or_identifier": [
+        "WX-0006",
+        "WX-0007",
+        "WX-0054",
+        "WX-0068",
+        "WX-0108",
+        "WX-0116",
+        "WX-0164",
+        "marine-0051",
+        "marine-0053",
+        "marine-0100",
+        "marine-0110",
+        "marine-0114",
+        "marine-0121",
+        "marine-0124",
+        "marine-0126",
+        "marine-0127",
+        "marine-0128",
+        "marine-0130",
+        "marine-0133",
+        "RAY-0026",
+        "MRR-0026"
+      ],
+      "approximate_not_exact_scalar": [
+        "WX-0053",
+        "WX-0148",
+        "MRR-0028",
+        "MRR-0051"
+      ],
+      "two_sided_tolerance_not_single_endpoint": [
+        "marine-0037"
+      ],
+      "typed_count_or_descriptor_tuple": [
+        "WX-0104",
+        "WX-0133",
+        "WX-0134",
+        "marine-0108",
+        "marine-0155",
+        "marine-0156",
+        "RAY-0024",
+        "MRR-0036"
+      ]
+    },
+    "reason_zh": "型号/IP等级/颜色代码等数字不是数量；约值不能伪装成精确值；Within ±1°是双侧容差；单数字的描述符配对、架构或保险丝类型也需要专门的类型表示。",
+    "contextual_existing_projection_ids": [
+      "marine-0036",
+      "WX-0096",
+      "WX-0161"
+    ],
+    "contextual_note_zh": "这些现有投影只可作为系数或角跨度数值使用，需带原参考量/continuous条件；不要求无条件删除数值字段。"
+  },
+  "conservative_non_projection_boundaries": [
+    {
+      "record_ids": [
+        "WX-0064"
+      ],
+      "reason_zh": "千位分隔的15,000当前拒绝，没有错误投为15；后续应明确解析为15000。"
+    },
+    {
+      "record_ids": [
+        "MRR-0018",
+        "MRR-0020"
+      ],
+      "reason_zh": "十进制逗号当前拒绝，没有错误投影；后续分别是40.1与24.23，应与千位分隔区分。"
+    },
+    {
+      "record_ids": [
+        "WX-0065"
+      ],
+      "reason_zh": "最小分辨率端点与±准确度是两个角色，不能仅按两个数字构造区间。"
+    },
+    {
+      "record_ids": [
+        "marine-0140",
+        "marine-0141"
+      ],
+      "reason_zh": "米与英尺+英寸是同一长度的两种视图，不是多条独立事实或离散选项。"
+    },
+    {
+      "record_ids": [
+        "MRR-0023"
+      ],
+      "reason_zh": "缺少原单位的计数可另建count_kind，不能自动补物理单位。"
+    }
+  ],
+  "unit_findings": {
+    "wrong_unit_or_scale_detected_in_current_195": 0,
+    "mixed_unit_quantities_projected": 0,
+    "raw_alias_examples": [
+      "W / Watts",
+      "° / degrees",
+      "ft / ft.",
+      "kg / Kg",
+      "s / seconds",
+      "VDC / V dc",
+      "kn / Knots"
+    ],
+    "interpretation_zh": "当前不做单位换算，原样单位导致同义单位不能直接互比属于既定覆盖边界，不是数量级计算错误。未来应在保留raw单位之外添加量纲与审阅过的canonical unit，不能全局大小写归一。",
+    "specific_guard_ids": [
+      "RAY-0036",
+      "WX-0085",
+      "WX-0087",
+      "WX-0089",
+      "WX-0074",
+      "WX-0076",
+      "MRR-0016",
+      "MRR-0025"
+    ],
+    "specific_guards_zh": [
+      "RAY-0036的Nm处于海里量程上下文，不能当作牛顿米转矩。",
+      "dB、dBi、dBm与dBz/dBZ表达不同参考量，不能合并为一种可互换单位。",
+      "相同W单位不使EiRP、发射功率、系统耗电和加热器功率成为同一属性。"
+    ]
+  },
+  "next_parser_recommendations_zh": [
+    "采用完整词法解析和来源限定格式：允许受控的单目符号空白，区分小数逗号/千位分隔，拒绝未解释的残留字符；使用Decimal保存原字面值。",
+    "把量纲、数量角色、严格/非严格界限、相对参考量与原值类型分别建模；判断时先约束主体、部件、属性和全部条件。",
+    "范围保存两端点及开闭性；准确度/容差另列，遇到源文不清楚时保留unknown，不凭词数猜测。",
+    "离散选项保存有来源支持的集合；成对值保存行内tuple与条件，不插值、不制造笛卡尔积。",
+    "混合单位若是同一量的多种视图，不扩充独立事实数量；保留来源舍入，转换层与raw层分开。",
+    "新增解析支持应由来源与类型边界驱动，并使用独立期望校验；不以模型分数决定放宽。"
+  ],
+  "verification": {
+    "all_502_source_records_and_spans_checked": true,
+    "all_195_projection_values_individually_reviewed_by_AI": true,
+    "independent_expected_literal_table_size": 195,
+    "persisted_projection_matches_reviewed_function": true,
+    "original_fields_remain_in_graph": true,
+    "source_or_bridge_modified": false,
+    "model_scores_read": false,
+    "model_outputs_read": false,
+    "new_sources_added": false,
+    "training_started": false
+  },
+  "limitations_zh": [
+    "这是AI开发审阅，不是人工金标或新的独立测试。",
+    "逐条判断针对冻结的195个现有投影；307条未投影记录保留拒绝理由，并针对代表性的真实边界给出建议，不声称已完成所有复杂类型解析。",
+    "所有来源条件仍必须由查询/后续类型层保留；仅有数值相等不建立跨装备物理等价性。"
+  ],
+  "input_hashes": {
+    "artifacts/thesis_direction_review/radar_readings_v1/selection.json": "af06dbc7e89d18d5633170ec7576d6b483f9377185d04c5bb4c135d8b4a38441",
+    "experiments/radar_domain/kopl_record_bridge.py": "941c96191e2a53b5df43abafcaa387740848b92fc93d63b0fd34e48c9f781c6f",
+    "data/radar_sources_v2/curation_v1/weather.v2.json": "b95fab70bf68199c1896adf679665bbed92a19c7d4a63642786743ed66013588",
+    "data/radar_sources_v2/curation_v1/marine.v2.json": "829174ea71af1875129778f83ca9e29cf11dee26d15e0542b78b054c48fbfa3d",
+    "data/radar_sources_v2/curation_v1/raymarine.draft.json": "bf44fddbdb1e514f655eed464595f4bdc81958e3b781586decb0816756c72f24",
+    "data/radar_sources_v2/curation_v1/metek.v2.json": "7f951cfa0efba9c18f3854d2420f44f057cd5b986f7a05dd8d665119b2139909",
+    "data/radar_sources_v2/curation_v1/chunks.json": "21d09465b73b9f184a387d3cadb1f686f8bc47659406e48017c1350c6a7138d0",
+    "data/radar_domain_recovery_v1/kopl_bridge/source_records.json": "b791647fd21d7626286c926d396dc2aaa98f0f5f5e5291ec8583447b36e927f3"
+  },
+  "private_artifact_hashes": {
+    "data/radar_domain_recovery_v1/numeric_review_20261106/record_review.json": "3982c1351d951c4b98760422ab6fea845c38fa1be4ebaf840e32b888cc87a3d2",
+    "data/radar_domain_recovery_v1/numeric_review_20261106/validate_review.py": "127a7bfa5f4de344e54ba79d4dd051e25364e121386867c3d392ab0fdd4a006e",
+    "data/radar_domain_recovery_v1/numeric_review_20261106/numeric_projection_excerpt.py": "5a6c9b4615262fac9aef4b18339877a3c64207d004e31ae555f1138fd5f0bb7f",
+    "data/radar_domain_recovery_v1/numeric_review_20261106/bridge_input_binding.json": "5cea192e6a23c3018a8d26a6c9a5aba156288bd9863d24d97ebb66b9383cd201"
+  }
+}

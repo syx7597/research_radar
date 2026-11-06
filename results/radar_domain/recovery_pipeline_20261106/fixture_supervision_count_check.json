@@ -1,0 +1,99 @@
+{
+  "schema": "radar_cpu_fixture_supervision_count_check_v1",
+  "date": "2026-11-06",
+  "fixture_only": true,
+  "formal_training_ready": false,
+  "pairs": 14,
+  "all_current_fixture_pairs_have_equal_supervised_tokens": true,
+  "checks": [
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-01:extra_handle",
+      "clean_tokens": 196,
+      "recovery_tokens": 196,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-01:rejected_action",
+      "clean_tokens": 196,
+      "recovery_tokens": 196,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-02:extra_handle",
+      "clean_tokens": 135,
+      "recovery_tokens": 135,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-02:rejected_action",
+      "clean_tokens": 135,
+      "recovery_tokens": 135,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-03:extra_handle",
+      "clean_tokens": 168,
+      "recovery_tokens": 168,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-03:rejected_action",
+      "clean_tokens": 168,
+      "recovery_tokens": 168,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-04:extra_handle",
+      "clean_tokens": 168,
+      "recovery_tokens": 168,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-04:rejected_action",
+      "clean_tokens": 168,
+      "recovery_tokens": 168,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-05:extra_handle",
+      "clean_tokens": 191,
+      "recovery_tokens": 191,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-05:rejected_action",
+      "clean_tokens": 191,
+      "recovery_tokens": 191,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-06:extra_handle",
+      "clean_tokens": 144,
+      "recovery_tokens": 144,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-06:rejected_action",
+      "clean_tokens": 144,
+      "recovery_tokens": 144,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-07:extra_handle",
+      "clean_tokens": 218,
+      "recovery_tokens": 218,
+      "equal": true
+    },
+    {
+      "id": "CPU-FIXTURE:RDR-REF-DEV-07:rejected_action",
+      "clean_tokens": 218,
+      "recovery_tokens": 218,
+      "equal": true
+    }
+  ],
+  "note": "Only the constructed development fixtures were checked; formal training corpus balancing remains a separate step.",
+  "inputs_sha256": {
+    "results/radar_domain/recovery_pipeline_20261106/token_preflight.json": "7f1ddea4666848525a380f8528bc48eade14efbf3269e87b5b41d72222249e1d",
+    "data/radar_domain_recovery_v1/recovery_cpu_fixtures_20261106/token_preflight_fixtures.jsonl": "b59630c4323560c70dcdf6fc4799ae9d4826d5e9adb87858829227b52527556d"
+  }
+}

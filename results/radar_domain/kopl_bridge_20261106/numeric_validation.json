@@ -1,0 +1,12 @@
+{
+  "mode": "check_current_read_only",
+  "reviewer": "AI",
+  "human_gold": false,
+  "bridge_sha256": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+  "source_records": 502,
+  "projected_count": 195,
+  "independently_reviewed_expected_values": 195,
+  "errors": [],
+  "passed": true,
+  "scope": "Signed numeric literals and raw units only. Boundary comparator, roles and dimensional semantics still require the separate semantic review."
+}

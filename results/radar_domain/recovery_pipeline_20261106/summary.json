@@ -1,0 +1,44 @@
+{
+  "schema": "radar_domain_recovery_cpu_validation_v1",
+  "date": "2026-11-06",
+  "development_only": true,
+  "human_gold": false,
+  "training_started": false,
+  "actual_model_rollouts": 0,
+  "actual_model_recovery_pairs": 0,
+  "successful_development_references": 7,
+  "hand_constructed_cpu_fixture_rollouts": 14,
+  "cpu_fixture_pairs_constructed": 14,
+  "fixture_kinds": {
+    "extra_handle": 7,
+    "rejected_action": 7
+  },
+  "answer_kinds": {
+    "records": 6,
+    "scalar": 1
+  },
+  "all_reference_and_fixture_replays_passed": true,
+  "all_pair_targets_semantically_equal": true,
+  "loss_mask": "Question/prefix/divergence/tool observations masked; only reference suffix assistant actions and Done supervised",
+  "tokenization_checked": false,
+  "supervised_token_budget_matched": false,
+  "gpu_model_calls": 0,
+  "production_gate": "Train split, question-only generation inputs, completed model-generated origin inventory, per-row provenance and exact model/code/KB hashes required",
+  "scope": "Seven source-derived reference traces and explicitly constructed CPU fixtures. This is not a trained domain model, real failure collection or a complete twelve-task evaluation.",
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v1/reference_dev_20261106/references.jsonl": "e84fe2156a6d5c1e173fde4b14c385ad21d26b13823a270cf78248114beb9484",
+    "experiments/radar_domain/recovery_cpu_validation.py": "3af0a8446fca727a919b9c33daa429772f505f0cf2f81a97800f7b6b520e068f",
+    "experiments/radar_domain/recovery_data.py": "c02aaf5c7fd83ed5c7b97b281a3a425ab3e06f1e48d4651cc1e26a62836cc14e",
+    "experiments/radar_domain/record_set_interface.py": "d7cdfe1ce4830fa2dc577489c910fb78bfcc5520a74218e94f3fa32aa5648e48",
+    "experiments/radar_domain/kopl_record_bridge.py": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/kb.json": "1399519f30a1b5079899b67f309b5078468f3a7eb2099c36b94c3444fcba1200",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/source_chunks.json": "06cd50fa2443cb553080389e6f5a3ec9318a1a640f9ade39928b5f402c423f62"
+  },
+  "outputs_sha256": {
+    "data/radar_domain_recovery_v1/recovery_cpu_fixtures_20261106/fixture.clean.jsonl": "1baaf43701d089df227f560929fe96ab13b71dc7ddc1e72aa4c343ff08775a39",
+    "data/radar_domain_recovery_v1/recovery_cpu_fixtures_20261106/fixture.rollouts.jsonl": "c7a7c8bf3d1e3c57410b3683069f5a0826096a94667df23cbc7acd3cdedb1d2c",
+    "data/radar_domain_recovery_v1/recovery_cpu_fixtures_20261106/fixture.audits.jsonl": "fc53ed9f9423e46e81be13903981723b9c82090386e1ab5ac9d0c3c360ac343f",
+    "data/radar_domain_recovery_v1/recovery_cpu_fixtures_20261106/fixture.recovery.jsonl": "906d4c98db273700b5a080d090b934a366069c1244bf1d6d8aab3ec490c7612e",
+    "data/radar_domain_recovery_v1/recovery_cpu_fixtures_20261106/success.reference.jsonl": "af01a103dc7f383bd1efae5791be94ed09ee44a4048b2f15fa15d300c733645c"
+  }
+}

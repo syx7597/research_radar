@@ -1,0 +1,41 @@
+{
+  "schema": "radar_local_preparation_status_v1",
+  "date": "2026-11-06",
+  "server_work_deferred_at_user_request": true,
+  "model_generation_performed": false,
+  "training_started": false,
+  "source_readings": 502,
+  "independently_checked_numeric_values": 195,
+  "numeric_projection_corrections": 1,
+  "development_references": 7,
+  "successful_reference_actions": 57,
+  "hand_constructed_fixture_pairs": 14,
+  "actual_model_rollouts": 0,
+  "formal_training_samples": 0,
+  "tests_passed": 31,
+  "tokenized_development_and_fixture_traces": 35,
+  "max_context_tokens": 3702,
+  "max_supervised_action_tokens": 34,
+  "all_token_budget_checks_passed": true,
+  "formal_training_ready": false,
+  "remaining_local_work": [
+    "Finalize task/answer contracts and full reference programs for required task types",
+    "Preserve strict inequality and quantity-role semantics when expanding beyond endpoint comparison",
+    "Prepare complete source manifests and group-isolated train/development/new-source evaluation data",
+    "Adapt graph loading and generation/packing to the registered formal training corpus"
+  ],
+  "future_model_work": [
+    "Generate real I_domain failures on the registered training split",
+    "Construct and token-balance matched A_domain/C_domain training data",
+    "Run paired training and fixed independent evaluation"
+  ],
+  "inputs_sha256": {
+    "results/radar_domain/kopl_bridge_20261106/correction.json": "306dae6e5e08c4a0ea0f0e3968fe7867eda0b81b71fb3b4f1a0c303067a352e5",
+    "results/radar_domain/domain_interface_20261106/summary.json": "6b0607ef384491c5b50e1c6f89bbbd078c55c3f2e7dccc5199c96f918e0ffc4a",
+    "results/radar_domain/reference_dev_20261106/summary.json": "20ba27dc43c468ac833f0907dbb73bded6f0e6ed6c4dac80fedd6fbc360c16ca",
+    "results/radar_domain/recovery_pipeline_20261106/summary.json": "6e6db2409bd355d75c1df7bf5c35ff0f953fd4866ee0cbc596036d3742eae13d",
+    "results/radar_domain/recovery_pipeline_20261106/validation.json": "acb5a855bbf979536752946dafdcb1ecf93285cd4e50eef6cb8bee00a487ad9f",
+    "results/radar_domain/recovery_pipeline_20261106/token_preflight.json": "7f1ddea4666848525a380f8528bc48eade14efbf3269e87b5b41d72222249e1d",
+    "results/radar_domain/recovery_pipeline_20261106/fixture_supervision_count_check.json": "e2c358a70d78b40c942f5a6e8c55a0481502844f08eb2090b5a30e4646b00238"
+  }
+}

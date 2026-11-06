@@ -1,7 +1,7 @@
 {
   "schema": "same_state_round_status_v1",
-  "updated_date": "2026-11-04",
-  "status": "blocked_server_integrity_and_occupied_compute",
+  "updated_date": "2026-11-06",
+  "status": "server_work_deferred_by_user",
   "human_review_completed": 0,
   "training_started": false,
   "gpu_model_calls": 0,
@@ -26,42 +26,22 @@
     "old_dev_gpu_probe_completed": false
   },
   "resource_observation": {
-    "observed_at_utc": "2026-11-04T06:41:52.038184+00:00",
-    "report": "results/agent_feedback/same_state_v1/server_observation_20261104.json",
-    "gpu_utilization_percent": [
-      100,
-      100,
-      100,
-      100
-    ],
-    "gpu_memory_MiB": [
-      13982,
-      13725,
-      13725,
-      13725
-    ],
-    "nvml_pids": [
-      1628885,
-      2256203
-    ],
-    "system_binary_integrity_mismatches": [
-      "/usr/bin/uptime",
-      "/usr/bin/nvidia-smi"
-    ],
-    "proc_directory_overlay_confirmed": "/proc/1628885",
-    "environment_issue_resolved": false,
-    "unfinished_project_gpu_jobs": 0,
-    "user_current_server_scope": "read-only investigation",
-    "new_gpu_workload_started": false,
-    "admin_readonly_report": "results/agent_feedback/same_state_v1/server_admin_readonly_observation_20261104.json",
-    "pid2256203_actual_executable": "/tmp/sshd",
-    "same_bytes_as_abnormal_python": true
+    "observed_date": "2026-11-06",
+    "ssh_endpoint_reachable": true,
+    "host_reinstallation_or_replacement_confirmed_by_user": true,
+    "new_host_key_confirmed_by_user": true,
+    "new_host_key_fingerprint": "SHA256:qFsJTH+6Te8R7Ks3S1l/l1lrmu7gAd/U8H4gHP6zA+c",
+    "previous_account_authentication": "rejected",
+    "new_host_commands_executed": 0,
+    "new_host_GPU_state_checked": false,
+    "new_host_system_integrity_checked": false,
+    "original_model_files_rechecked_after_reinstallation": false,
+    "user_instruction": "temporarily skip server"
   },
   "pending": [
-    "Restore a trusted runtime and confirm explicitly idle compute resources; preserve read-only scope until user authorizes system changes",
-    "Run the already prepared bounded old-dev GPU resume probe and validate continuations",
-    "Freeze collection binding and collect fixed I trajectories on all 2400 questions",
-    "Freeze eligible Linux states, evaluate the four existing A/C checkpoints and analyze all outcomes"
+    "When server work resumes: confirm access, runtime integrity, original checkpoint files and idle GPUs",
+    "Run prepared old-development resume probe under the verified experiment environment",
+    "Complete the fixed 2400-question collection and four-checkpoint same-state evaluation"
   ],
   "inputs_sha256": {
     "results/agent_feedback/same_state_v1/pool_manifest.json": "81d6ffc88cb1f6400db0a307330eddad6d30d3bb800e619355805b4730fc5e84",
@@ -123,5 +103,37 @@
     "health_query_xml_empty": true,
     "health_query_stderr": "sh: 1: mod-pip: not found",
     "own_probe_job_started": false
+  },
+  "historical_resource_observation_20261104": {
+    "observed_at_utc": "2026-11-04T06:41:52.038184+00:00",
+    "report": "results/agent_feedback/same_state_v1/server_observation_20261104.json",
+    "gpu_utilization_percent": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "gpu_memory_MiB": [
+      13982,
+      13725,
+      13725,
+      13725
+    ],
+    "nvml_pids": [
+      1628885,
+      2256203
+    ],
+    "system_binary_integrity_mismatches": [
+      "/usr/bin/uptime",
+      "/usr/bin/nvidia-smi"
+    ],
+    "proc_directory_overlay_confirmed": "/proc/1628885",
+    "environment_issue_resolved": false,
+    "unfinished_project_gpu_jobs": 0,
+    "user_current_server_scope": "read-only investigation",
+    "new_gpu_workload_started": false,
+    "admin_readonly_report": "results/agent_feedback/same_state_v1/server_admin_readonly_observation_20261104.json",
+    "pid2256203_actual_executable": "/tmp/sshd",
+    "same_bytes_as_abnormal_python": true
   }
 }

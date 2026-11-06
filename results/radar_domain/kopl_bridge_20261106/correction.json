@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-06",
+  "change": "Preserve source minus sign separated by whitespace",
+  "changed_record_ids": [
+    "MRR-0047"
+  ],
+  "old_numeric_value": 8,
+  "new_numeric_value": -8,
+  "unit": "dBZ",
+  "original_source_records_changed": 0,
+  "old_generated_graph_preserved": true,
+  "independent_numeric_values_checked": 195,
+  "all_numeric_values_passed": true,
+  "bridge_tests_passed": 6,
+  "GPU_model_calls": 0,
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v1/kopl_bridge/source_records.json": "b791647fd21d7626286c926d396dc2aaa98f0f5f5e5291ec8583447b36e927f3",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/source_records.json": "2dc97ed23093b28cab1b32375bbf957fe514ae8db60f9979fcf09310e6a7c563",
+    "experiments/radar_domain/kopl_record_bridge.py": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+    "tests/test_radar_kopl_record_bridge.py": "fc222cf4e2671b870e4213731f759c3d9c71d10abee4f21ac0d71e73b8c79ce7",
+    "artifacts/thesis_direction_review/radar_numeric_projection_review_20261106/summary.json": "51e5eab909a07b599e0652c67a8c31aa50c33661ccb52f198792cb948beeacc1"
+  }
+}

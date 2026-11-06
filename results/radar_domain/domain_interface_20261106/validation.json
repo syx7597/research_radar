@@ -1,0 +1,18 @@
+{
+  "schema": "radar_domain_interface_validation_v1",
+  "date": "2026-11-06",
+  "revision": "numeric_and_source_text_integrity_v2",
+  "interface_tests": 14,
+  "bridge_tests": 6,
+  "total_tests_passed": 20,
+  "test_command": "python3 -m unittest tests.test_radar_record_set_interface tests.test_radar_kopl_record_bridge -q",
+  "all_bound_inputs_outputs_match": true,
+  "graph_identical_to_corrected_bridge_20261106": true,
+  "legacy_wrong_sign_graph_rejected": true,
+  "numeric_type_unit_missing_duplicate_extra_checks_passed": true,
+  "source_text_tampering_outside_citation_spans_rejected": true,
+  "initial_revision_archive_verified": true,
+  "summary_sha256": "6b0607ef384491c5b50e1c6f89bbbd078c55c3f2e7dccc5199c96f918e0ffc4a",
+  "test_sha256": "c4637653d5b11643631a1c516303e1473f4d71f4feb3b5ab57bc955f37faf844",
+  "gpu_model_calls": 0
+}
