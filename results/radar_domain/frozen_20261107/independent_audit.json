@@ -1,0 +1,202 @@
+{
+  "schema": "radar_frozen_independent_ai_audit_v1",
+  "reviewer": "AI /root/radar_transfer_source_review",
+  "human_gold": false,
+  "date": "2026-11-07",
+  "status": "passed_with_authorized_scoring_revision_and_reporting_notes",
+  "review_scope": "Frozen split/catalog isolation, all 12 original real-development tasks, scoring invariants and recovery provenance/training gate. No real holdout answer content is quoted or stored.",
+  "reviewer_prior_involvement": [
+    "typed-source builder author",
+    "synthetic-source generator author"
+  ],
+  "independence_limit": "Separate final verification of freeze/recovery artifacts; not a blind human audit or an independent human gold review.",
+  "split_counts": {
+    "train": {
+      "questions": 576,
+      "source_records": 1728,
+      "catalog_families": 96,
+      "question_groups": 96,
+      "origins": {
+        "synthetic": 576
+      },
+      "training_allowed_rows": 576
+    },
+    "dev": {
+      "questions": 108,
+      "source_records": 790,
+      "catalog_families": 24,
+      "question_groups": 23,
+      "origins": {
+        "synthetic": 96,
+        "real_development": 12
+      },
+      "training_allowed_rows": 0
+    },
+    "holdout": {
+      "questions": 24,
+      "source_records": 156,
+      "catalog_families": 4,
+      "question_groups": 4,
+      "origins": {
+        "real_holdout": 24
+      },
+      "training_allowed_rows": 0
+    }
+  },
+  "pairwise_overlap_counts": [
+    {
+      "partitions": [
+        "train",
+        "dev"
+      ],
+      "question_ids": 0,
+      "families": 0,
+      "records": 0,
+      "subjects": 0,
+      "source_chunks": 0,
+      "question_groups": 0
+    },
+    {
+      "partitions": [
+        "train",
+        "holdout"
+      ],
+      "question_ids": 0,
+      "families": 0,
+      "records": 0,
+      "subjects": 0,
+      "source_chunks": 0,
+      "question_groups": 0
+    },
+    {
+      "partitions": [
+        "dev",
+        "holdout"
+      ],
+      "question_ids": 0,
+      "families": 0,
+      "records": 0,
+      "subjects": 0,
+      "source_chunks": 0,
+      "question_groups": 0
+    }
+  ],
+  "verified_bound_input_paths": 41,
+  "unexpected_hash_mismatches": [],
+  "full_source_catalogs_preserved_without_question_pruning": true,
+  "question_only_inputs_verified": true,
+  "answer_specs_value_free": true,
+  "train_catalog_entirely_explicit_synthetic_non_equipment_facts": true,
+  "dev_and_holdout_training_flags_false": true,
+  "real_development": {
+    "complete_original_tasks": 12,
+    "replayed_and_scored_correct": 12,
+    "all_original_answer_fields_verified": 12,
+    "original_questions_preserved": 12,
+    "max_calls": 18,
+    "real_catalog_family_count": 8,
+    "real_question_family_count": 7,
+    "catalog_families_without_real_dev_questions_count": 1
+  },
+  "recovery": {
+    "fixture_pairs": 24,
+    "fixture_kinds": {
+      "extra_handle": 12,
+      "rejected_action": 12
+    },
+    "all_fixture_provenance_explicit": true,
+    "all_fixture_training_eligibility_false": true,
+    "all_reference_answers_preserved": true,
+    "tool_shared_prefix_and_divergence_unsupervised": true,
+    "actual_model_rollouts_reported": 0,
+    "actual_model_recovery_pairs_reported": 0,
+    "admission_rejection_probes": [
+      {
+        "probe": "constructed_fixture",
+        "rejected": true
+      },
+      {
+        "probe": "dev_partition",
+        "rejected": true
+      },
+      {
+        "probe": "holdout_partition",
+        "rejected": true
+      },
+      {
+        "probe": "incomplete_generation",
+        "rejected": true
+      }
+    ],
+    "raw_pair_token_budget_flags": {
+      "False": 24
+    },
+    "token_packing_implementation_reviewed": true,
+    "token_counts_independently_recomputed": false
+  },
+  "scoring": {
+    "issue_found": "Typed options parent units were not normalized although numeric members were normalized, creating equivalent-unit false negatives.",
+    "resolution": "Authorized minimal scoring-only revision with original source archived; frozen data and manifest remain unchanged.",
+    "revision_report_path": "results/radar_domain/frozen_20261107/scoring_revision.json",
+    "tests_passed": 11,
+    "runtime_scoring_sha256": "2d4ee02fe69c551d32d6a947e6c77e55313be8d79f44a3e59cbd35fc5b732b35",
+    "frozen_scoring_sha256": "a321e83f17544bd5a55f91b00e0a5b924158726ba08dda4445a632dbd51acb91"
+  },
+  "reporting_notes": [
+    {
+      "kind": "catalog_vs_question_coverage",
+      "note": "The old real dev catalog contains 8 families; the 12 real dev questions cover 7. Do not describe 12-question coverage as 8 families."
+    },
+    {
+      "kind": "fixture_vs_packed_pair",
+      "note": "Stored raw fixture pairs retain token_budget_matched=false; the summary reports the separate balanced-packing CPU check. Raw fixtures are not training-admitted data."
+    },
+    {
+      "kind": "no_recovery_effect_claim",
+      "note": "There are no actual model-generated failure/recovery pairs or model experiments. CPU fixture acceptance demonstrates a contract, not measured model recovery improvement."
+    }
+  ],
+  "frozen_data_modified": false,
+  "authorized_code_change_only": "experiments/radar_domain/table_scoring.py and tests/test_radar_table_scoring.py; original scorer archived and revision manifest written by explicit coordinator request",
+  "generator_672_not_rerun": true,
+  "server_accessed": false,
+  "model_outputs_seen": false,
+  "model_or_training_started": false,
+  "holdout_answers_semantically_audited": false,
+  "audit_contains_real_holdout_answers": false,
+  "input_sha256": {
+    "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952",
+    "results/radar_domain/recovery_contract_20261107/summary.json": "7a8a0e7203587bf37459bf62bad3834442d8c2cf341fb91eea4f87dc7fb55ae1",
+    "experiments/radar_domain/table_scoring.py": "2d4ee02fe69c551d32d6a947e6c77e55313be8d79f44a3e59cbd35fc5b732b35",
+    "experiments/radar_domain/table_recovery_data.py": "cfe279408cdc725424cc3788a297abcd0cc08377e72dd290624f76bcef32e0eb",
+    "experiments/radar_domain/table_training_data.py": "1b865b1fb97f152f82d23ede979d24bc31fbe2d3a7e8ab732f2d4d446cd6d5b0",
+    "results/radar_domain/frozen_20261107/scoring_revision.json": "74dee70a778d42611e4dec43eb52fb293a9a45d10ddea58bfa8ba611eac80868"
+  },
+  "frozen_file_sha256_verified_unchanged": {
+    "data/radar_domain_recovery_v2/frozen_20261107/catalog_isolation_check.json": "b316b35edc3c5a647f41664031761813cdcde11bb9f7e8878ad0ef5e4416d0aa",
+    "data/radar_domain_recovery_v2/frozen_20261107/token_checks.jsonl": "091a4335b30e84bfbe6ac305cb48e1d724194e098156fca1ae8d803234b2a62b",
+    "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952",
+    "data/radar_domain_recovery_v2/frozen_20261107/task_contract.json": "f515b25d1f34c2ca0cefd65fb68e9151a9f2b5d7520028912300c5792a91c23f",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/metadata.jsonl": "59e1a3f34cf8c3db1e15a8e8664d0b22bcc0fcb1b339f46f19019a36d50e80c9",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/reference_provenance.json": "ee7f64892ec84ac15f03bba374dee81250fa458faf6f896080428096dca2146d",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/reference_replays.jsonl": "61aecf38d87004f98bfb4603762471e92f9256b62c328069db29999629855ee3",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/success_trajectories.jsonl": "abd361c537646ec6175c8f33c85abb26df2ce8e4a1f97a02cc95a543072daed7",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/questions.jsonl": "3bed6b8b14ed5bd31fc44de9c68f00411a95b21c8947340b19bbfbd0748efec5",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/catalog.json": "2bb76c2ab094ad73d7d4d583a6f98d2dfbc46a9b38aa1fb47b81bbe4daf9ea94",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/references.jsonl": "ff6cb70ab418459d72e2f188eb45c8d32e2ef2b31cc83425cbc7934f3d8ad5d0",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/metadata.jsonl": "885413e97e2838d2c2d5ae7e23b7b47fa790a28a436c64da64deb94e2534dfa0",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/reference_provenance.json": "a36c36468185e4d2e0d88613ac285390db8a5b0307faed7c31056edd96e0660e",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/reference_replays.jsonl": "a534aa71ac23d1f489a3caa7f845186408953bd0d9b8680027054fdc144ac14a",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/success_trajectories.jsonl": "6a345281b7bb589a62b0087931e2242766a3925b277340cca5277a1f48da7144",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/questions.jsonl": "abaf611201f75e06cc025a444fa7a5cf031191fd8cb0dce734c7fec23784b8a0",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/catalog.json": "889ed133ed9bbd52a1ed6635e9a21a3f5078f057163cde281b4733b32e9e9a03",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/references.jsonl": "6f36b6c96de0ba94ec59d246db160bf98bd27184958cdf4fc807fab483cfd5b3",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/metadata.jsonl": "c55907b00ed8732ba2a90b23b9313ab583902efd95e29938f15faddc319f7f0a",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/reference_provenance.json": "cba890eb78bc200e8cfa5998fadfddb47fc052f9c12df3102cee7c2b180acf93",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/reference_replays.jsonl": "fcbe1cdc897028a32afecd7ac9f379538cb54f0dd4ece12c9f74a9afda00e23d",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/success_trajectories.jsonl": "ca90c708f2943cfdd475cb491082095545b9ea8bcbb64026b6e81ac5ab6808c1",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/questions.jsonl": "56bf2aa197a0122ee19b2d821dc5b05217194622dd1e08f454e7a4af56437fb6",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/catalog.json": "14afa129f7349cc50c4a75925ba854fb0b47398e8078879b1b1ea1f9f13420b3",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/references.jsonl": "807931f528eb29a0a0cfc33ddfbbbac3ec60e6e974de090dc0e68c8dcce1f7a9"
+  }
+}

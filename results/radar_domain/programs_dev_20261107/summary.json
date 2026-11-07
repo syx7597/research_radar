@@ -1,0 +1,193 @@
+{
+  "schema": "radar_complete_development_programs_v1",
+  "date": "2026-11-07",
+  "development_only": true,
+  "human_gold": false,
+  "model_generated": false,
+  "complete_original_tasks": 12,
+  "complete_task_replays_passed": 12,
+  "complete_candidate_answer_comparisons_passed": 12,
+  "source_catalog_records": 502,
+  "max_calls": 18,
+  "gpu_model_calls": 0,
+  "training_started": false,
+  "runtime_reads_answer_data": false,
+  "reference_actions_manually_authored_from_question": true,
+  "source_evidence_preserved": true,
+  "all_model_arms_share_operations": true,
+  "cases": [
+    {
+      "id": "RDR-DEV-01",
+      "calls": 13,
+      "outputs": {
+        "selected": {
+          "kind": "table",
+          "rows": 1
+        },
+        "excluded": {
+          "kind": "table",
+          "rows": 1
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-02",
+      "calls": 9,
+      "outputs": {
+        "rows": {
+          "kind": "table",
+          "rows": 2
+        },
+        "recommended": {
+          "kind": "table",
+          "rows": 1
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-03",
+      "calls": 18,
+      "outputs": {
+        "selected": {
+          "kind": "table",
+          "rows": 2
+        },
+        "excluded": {
+          "kind": "table",
+          "rows": 1
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-04",
+      "calls": 9,
+      "outputs": {
+        "rows": {
+          "kind": "table",
+          "rows": 2
+        },
+        "same_distance_sensitivity_comparison_supported": {
+          "kind": "assessment",
+          "status": "established"
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-05",
+      "calls": 16,
+      "outputs": {
+        "selected": {
+          "kind": "table",
+          "rows": 1
+        },
+        "excluded": {
+          "kind": "table",
+          "rows": 2
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-06",
+      "calls": 11,
+      "outputs": {
+        "selected": {
+          "kind": "table",
+          "rows": 1
+        },
+        "excluded": {
+          "kind": "table",
+          "rows": 2
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-07",
+      "calls": 14,
+      "outputs": {
+        "selected": {
+          "kind": "table",
+          "rows": 2
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-08",
+      "calls": 5,
+      "outputs": {
+        "rows": {
+          "kind": "table",
+          "rows": 2
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-09",
+      "calls": 9,
+      "outputs": {
+        "candidates": {
+          "kind": "table",
+          "rows": 2
+        },
+        "selected": {
+          "kind": "table",
+          "rows": 0
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-10",
+      "calls": 5,
+      "outputs": {
+        "individual_parameters": {
+          "kind": "table",
+          "rows": 3
+        },
+        "joint_configuration": {
+          "kind": "assessment",
+          "status": "not_established"
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-11",
+      "calls": 5,
+      "outputs": {
+        "all_combinations": {
+          "kind": "table",
+          "rows": 4
+        },
+        "selected_15A": {
+          "kind": "table",
+          "rows": 2
+        }
+      }
+    },
+    {
+      "id": "RDR-DEV-12",
+      "calls": 8,
+      "outputs": {
+        "selected": {
+          "kind": "table",
+          "rows": 4
+        },
+        "selection_domain": {
+          "kind": "assessment",
+          "status": "established"
+        }
+      }
+    }
+  ],
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v2/typed_sources_20261107/typed_records.json": "df0f6d5bba6df2c540f545adee581c723941ac894827e9f984a1ea86edc6b558",
+    "data/radar_domain_recovery_v1/development_task_candidates.json": "b53174f02e340e4e8e7a05df350198c5db97b0b28508681d1b8ca8d2f60649b3",
+    "/Users/clear-water/Documents/vscodeprojecr/radaer_knowledge_research/experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182"
+  },
+  "outputs_sha256": {
+    "data/radar_domain_recovery_v2/programs_dev_20261107/answer_specs.json": "859735940dc4adeffa965500f541dea2b68fc2a9c01de8d44dd3b6b51b45a91f",
+    "data/radar_domain_recovery_v2/programs_dev_20261107/tool_contract.json": "5636beaacbe0858ed60729212a745acf6aea94588d03b0007bfcc5acb516149f",
+    "data/radar_domain_recovery_v2/programs_dev_20261107/reference_replays.jsonl": "fc71f8a7f250c1920ae0d983e6fce1d5aeb7d55d5cb1b31e01558bd8019a91be",
+    "data/radar_domain_recovery_v2/programs_dev_20261107/references.jsonl": "190d542acab315451acc61e1908e59fd026875159ed6c6641b6f63d833794b55",
+    "data/radar_domain_recovery_v2/programs_dev_20261107/independent_candidate_comparison.json": "784ce76064068600513efb1c134e7ae6dafac2ed9a45ff0764c49da3d7d3e19e"
+  },
+  "scope": "Full source-grounded development reference programs, not model prediction accuracy or a new held-out benchmark."
+}

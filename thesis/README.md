@@ -2,6 +2,10 @@
 
 ## 当前主线写作入口
 
+2026-11-07 已将域内组合查询的四项离线成果纳入论文，当前[PDF](current/build/main.pdf)为 **69页、30条参考文献**。新增第3.6节的576/108/24划分、第4.6节的类型表与温度规格恢复案例、第6.6节的708程序及24组恢复验证。第7章同步接续实验计划。五组证据导出检查通过，新增图表已实际查看；本轮没有新增模型训练或推理。详细交付见[本轮说明](../docs/RADAR_OFFLINE_COMPLETION_20261107.md)。
+
+下面各日期段落保留历史版本记录，当前PDF与[构建清单](current/manuscript_manifest.json)为最新版本。
+
 2026-10-23 已完成中英文摘要及七章全文重写，生成 **64 页、26 条参考文献**的新版 [PDF](current/build/main.pdf)。全文按“研究问题—方法构造—实验结果—领域分析”展开，新增总体技术路线图、完善训练设置与条件绑定编码说明，将实验适用范围集中到讨论部分。主要结果表与原实验汇总保持一致；近邻方法、真实训练样本、状态转移、GRPO 对照和雷达表示实验均已纳入。新稿的研究主线为：**恢复轨迹监督改善公开知识图谱问答，雷达应用研究接口适配与条件证据组织。**
 
 下面保留此前章节整合与实验材料说明，最新成稿以本节链接的 PDF 和 [current 源码](current/main.tex)为准。
@@ -11,7 +15,7 @@
 | 文件 | 用途与状态 |
 |---|---|
 | [current/build/main.pdf](current/build/main.pdf) | 本工作区生成的完整 PDF；编译目录不进入 Git，其他机器需从源稿重建 |
-| [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 七章总入口与构建脚本；先核对四组证据表，再调用已有编译器 |
+| [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 七章总入口与构建脚本；先核对五组证据表，再调用已有编译器 |
 | [current/00_abstract.tex](current/00_abstract.tex)、[current/01_introduction.tex](current/01_introduction.tex) | 中英文摘要、研究问题、贡献范围与技术路线 |
 | [current/02_background_related_work.tex](current/02_background_related_work.tex)、[current/07_conclusion.tex](current/07_conclusion.tex) | 相关方法比较、结论与局限 |
 | [current/references.bib](current/references.bib)、[current/literature_audit.json](current/literature_audit.json) | 26 条引用及原始文献、版本和核对范围 |

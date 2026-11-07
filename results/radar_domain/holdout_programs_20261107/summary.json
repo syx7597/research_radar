@@ -1,0 +1,62 @@
+{
+  "schema": "radar_holdout_program_public_summary_v1",
+  "created_at_utc": "2026-11-06T21:40:10.317500+00:00",
+  "reviewer": "AI",
+  "human_gold": false,
+  "allow_training": false,
+  "model_outputs_seen": false,
+  "pending_root_freeze": true,
+  "counts": {
+    "questions": 24,
+    "references": 24,
+    "full_programs_passed": 24,
+    "typed_catalog_records": 156,
+    "source_families": 4,
+    "independent_source_value_checks_passed": 43,
+    "calls": 106
+  },
+  "reference_schema": {
+    "exact_keys": [
+      "id",
+      "question",
+      "actions",
+      "answer"
+    ],
+    "action_keys": [
+      "name",
+      "arguments"
+    ],
+    "answer_schema": "radar_table_answer_v1"
+  },
+  "questions_schema": {
+    "exact_keys": [
+      "id",
+      "question"
+    ]
+  },
+  "original_questions_unchanged": true,
+  "gold_records_prune_catalog": false,
+  "task_specific_executor_functions": false,
+  "all_156_catalog_rows_available_every_episode": true,
+  "reference_answer_created_by_execution": true,
+  "rubric_derived_from_independent_source_reference_before_execution": true,
+  "model_calls": 0,
+  "training_started": false,
+  "server_accessed": false,
+  "commit_created": false,
+  "private_package": "data/radar_domain_recovery_v2/holdout_programs_20261107",
+  "private_output_hashes": {
+    "data/radar_domain_recovery_v2/holdout_programs_20261107/questions.jsonl": "d251cd641cb0043ce731ec5e73c9b08e215caa3ac3f6f16ffb661b26e5638ab2",
+    "data/radar_domain_recovery_v2/holdout_programs_20261107/references.jsonl": "1cddc185e5a3d9dc2677f1222675cfca0d165ff2c9dc22ca89059f1342a01c0d",
+    "data/radar_domain_recovery_v2/holdout_programs_20261107/rubric.json": "490d1b8e57c8ab7d6f8ed180685dba75dc91457c63829d600cd1ca6d24763c94",
+    "data/radar_domain_recovery_v2/holdout_programs_20261107/program_replays.json": "2a2098c8a7837df1b62fb065901ab0659444b9622ce49ef3a44aa11a441b6898",
+    "data/radar_domain_recovery_v2/holdout_programs_20261107/answer_specs.json": "af5b721ae676f7a94667bbfe3ef848d22a22c0dea229d73c1b1cc24005cf1d7b",
+    "data/radar_domain_recovery_v2/holdout_programs_20261107/manifest.json": "1369e66a2cd951c49bfb5aeafe88dc692840bad9c0e253ea4387eb25808ee822"
+  },
+  "source_revision_manifest_sha256": "11420f228263e1bfbb02a63bfa46ba2ce7f647c409156562ddcd05707c4c8bf8",
+  "notes_zh": [
+    "原作者包与hash完整保留，v2只做两项非阻塞审阅建议的元数据修订。",
+    "结果为真实table程序执行的完整命名值/条件表；区间匹配与跨记录电流对应通过共享算子完成。",
+    "仅完成离线参考编译与源事实核对，未运行模型或计算模型成绩；最终冻结由根agent执行。"
+  ]
+}

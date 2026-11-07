@@ -1,0 +1,51 @@
+{
+  "schema": "radar_development_case_public_v1",
+  "case_id": "RDR-DEV-08",
+  "kind": "complete_reference_program_not_model_prediction",
+  "question_summary": "Compare the two JMA-5200Mk2 component temperature specifications at minus 20 degrees Celsius.",
+  "rows": [
+    {
+      "component": "scanner",
+      "lower_celsius": -25.0,
+      "upper_celsius": 55.0,
+      "within_range_at_minus_20_celsius": true,
+      "source_ids": [
+        "marine-0098"
+      ]
+    },
+    {
+      "component": "processor, display and keyboard",
+      "lower_celsius": -15.0,
+      "upper_celsius": 55.0,
+      "within_range_at_minus_20_celsius": false,
+      "source_ids": [
+        "marine-0122"
+      ]
+    }
+  ],
+  "call_count": 5,
+  "operation_sequence": [
+    "Scan",
+    "Project",
+    "Derive",
+    "Assemble",
+    "finish"
+  ],
+  "source_reference": "source-v2-jrc-5200",
+  "reference_file": "data/radar_domain_recovery_v2/frozen_20261107/dev/references.jsonl",
+  "reference_file_sha256": "807931f528eb29a0a0cfc33ddfbbbac3ec60e6e974de090dc0e68c8dcce1f7a9",
+  "source_records": {
+    "marine-0098": {
+      "locator": "Scanners / Ambient condition; merged columns 1–6",
+      "citation": {
+        "chunk_id": "jrc_5200_catalog:p006"
+      }
+    },
+    "marine-0122": {
+      "locator": "Ambient condition (processor, display, keyboard)",
+      "citation": {
+        "chunk_id": "jrc_5200_catalog:p006"
+      }
+    }
+  }
+}

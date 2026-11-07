@@ -1,17 +1,18 @@
 {
   "schema": "thesis_literature_audit_v1",
-  "audit_date": "2026-10-18",
-  "reviewer": "AI /root/radar_revision_v2",
+  "audit_date": "2026-11-07",
+  "reviewer": "AI /root (new source metadata); prior per-entry reviewers/dates retained",
   "status": "bibliographic_metadata_and_selected_claims_checked",
   "human_review_completed": false,
   "scope": [
     "Thirteen selected primary method papers; the three 2026-10-18 additions and earlier ten checks have individually recorded dates and scope.",
     "Thirteen manufacturer bibliography entries checked against existing archived metadata: four prior-source entries plus nine entries representing eight new source families.",
-    "This is a bibliography and selected-claims audit, not a new equipment-fact review, independent human acceptance, systematic literature survey or experimental replication."
+    "This is a bibliography and selected-claims audit, not a new equipment-fact review, independent human acceptance, systematic literature survey or experimental replication.",
+    "Four additional official manufacturer archives checked on 2026-11-07; the earlier 26 entries retain their original review dates and scopes."
   ],
   "files_sha256": {
     "thesis/current/02_background_related_work.tex": "a8266042a6e7f00c94ee0dcb29df406de4beeb11224aa7c50bef539c25356e6a",
-    "thesis/current/references.bib": "0323957d2ab263cb4055c67315f8917e7ba130ac8860fe865acc4535cb8a4712"
+    "thesis/current/references.bib": "6c0ea1baea5e9b369ebcd2a756234f11669a04f37a9dc6c17b1d76e66077ee1b"
   },
   "local_metadata_inputs_sha256": {
     "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
@@ -33,7 +34,12 @@
     "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p01.txt": "6df98203aecc14abfa267335eabc2944c182f6a58beda3c9cf3fe677ab11b08e",
     "data/radar_sources_v2/weather/gamic_gmwr_25_ws.p02.txt": "7baf01a39b4e21384723f1e00d311ec6db6cb2d43bbf8117557cb5a3cc5148d5",
     "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p01.txt": "3b4e96d789611f323073425bd26cf145194b1e2556676ececa02dcc1dfdb41a2",
-    "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p02.txt": "a03791113c97723418a4bd852e9559d2f3c018cc6f25cffbc3d0e186ffaafa64"
+    "data/radar_sources_v2/weather/vaisala_wrs300_b212854en_e.p02.txt": "a03791113c97723418a4bd852e9559d2f3c018cc6f25cffbc3d0e186ffaafa64",
+    "data/radar_domain_recovery_v2/new_sources_20261107/furuno_drs4w/pages/page_001.txt": "e6797180c5e72b38194c700ea283ed412e978618385b022dc80bce197cf68b4b",
+    "data/radar_domain_recovery_v2/new_sources_20261107/ott_rls/pages/page_001.txt": "a8349dbdc87c90104efaa88fbebb339e332d906e6b3b2b9f0ae7bac0d558bb95",
+    "data/radar_domain_recovery_v2/new_sources_20261107/smartmicro_umrr11/pages/page_001.txt": "bcb40efe18d4b0119238349a4475bd7ac15d4b37c8f7702377bcd97c2774fb00",
+    "data/radar_domain_recovery_v2/new_sources_20261107/campbell_cs475a/pages/page_001.txt": "e4e1a42649c2cb69e88062afc03e0d5d951ffc4a57ccfb6b1c471602de7553ab",
+    "artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json": "a28660dda4aa62c609d4d2fca986a543d5d088567c4bb0d15174d0ba34e16026"
   },
   "academic_papers": [
     {
@@ -834,10 +840,122 @@
         "URL filenames alone do not establish whether a section belongs to Cyclone or Cyclone Pro."
       ],
       "human_verification": false
+    },
+    {
+      "citekey": "source-v3-furuno-drs4w",
+      "title": "1st WATCH Wireless Radar DRS4W: Operator's Manual",
+      "author_bibtex": "{FURUNO Electric}",
+      "year": 2022,
+      "verification_mode": "archived_original_front_matter_and_curation_metadata",
+      "accessed_date": "2026-11-07",
+      "primary_urls": [
+        "https://www.furuno.it/docs/OPERATOR_MANUAL/DRS4W_OME-D3.pdf"
+      ],
+      "source_ids": [
+        "furuno_drs4w"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "furuno_drs4w",
+          "path": "data/radar_domain_recovery_v2/new_sources_20261107/furuno_drs4w/original.bin",
+          "sha256": "a7849bf70d4a86a5a689b4338aac644c2c2715944448bba0486537839771913a"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json",
+        "data/radar_domain_recovery_v2/new_sources_20261107/furuno_drs4w/pages/page_001.txt"
+      ],
+      "version_note": "Manual OME-36360-D3, January 11 2022; specification E3636S01F / 211122",
+      "accessed_scope": "Archived front matter, source-index version metadata and exact original bytes; technical target pages independently reviewed in the holdout source audit.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v3-ott-rls",
+      "title": "Radar Level Sensor OTT RLS: Operating Instructions",
+      "author_bibtex": "{OTT HydroMet}",
+      "year": 2024,
+      "verification_mode": "archived_original_front_matter_and_curation_metadata",
+      "accessed_date": "2026-11-07",
+      "primary_urls": [
+        "https://cdn.hach.com/1XMCM0ZF/at/2vpm8jbwptkqqf5gqt67mw3/OTT_RLS_EN_6310900192.pdf"
+      ],
+      "source_ids": [
+        "ott_rls"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "ott_rls",
+          "path": "data/radar_domain_recovery_v2/new_sources_20261107/ott_rls/original.bin",
+          "sha256": "370f6388bf9c4521abe368f41a6ab9f26191b7e335947ae1e22b6f16572feda5"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json",
+        "data/radar_domain_recovery_v2/new_sources_20261107/ott_rls/pages/page_001.txt"
+      ],
+      "version_note": "Page2: Operating Instructions version04-0124, firmware V3.00.0, equipment manufactured as of August2018; final cover:63.109.001.B.E04-0724",
+      "accessed_scope": "Archived front matter, source-index version metadata and exact original bytes; technical target pages independently reviewed in the holdout source audit.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v3-smartmicro-umrr11",
+      "title": "UMRR-11 Type 45: Traffic Management Sensor Data Sheet",
+      "author_bibtex": "{s.m.s. smart microwave sensors GmbH}",
+      "year": 2026,
+      "verification_mode": "archived_original_front_matter_and_curation_metadata",
+      "accessed_date": "2026-11-07",
+      "primary_urls": [
+        "https://www.smartmicro.com/wp-content/uploads/2026/02/UMRR-11_Type_45_Traffic_Management_Datasheet.pdf"
+      ],
+      "source_ids": [
+        "smartmicro_umrr11"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "smartmicro_umrr11",
+          "path": "data/radar_domain_recovery_v2/new_sources_20261107/smartmicro_umrr11/original.bin",
+          "sha256": "1f41a6ec26313390cb2f66d916dfe47df1df8317d7bf883333d134d0b3902c15"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json",
+        "data/radar_domain_recovery_v2/new_sources_20261107/smartmicro_umrr11/pages/page_001.txt"
+      ],
+      "version_note": "June 2, 2026; 18-page UMRR-11 Type45 data sheet",
+      "accessed_scope": "Archived front matter, source-index version metadata and exact original bytes; technical target pages independently reviewed in the holdout source audit.",
+      "human_verification": false
+    },
+    {
+      "citekey": "source-v3-campbell-cs475a",
+      "title": "CS475A Radar Water Level Sensor: Instruction Manual",
+      "author_bibtex": "{Campbell Scientific}",
+      "year": 2021,
+      "verification_mode": "archived_original_front_matter_and_curation_metadata",
+      "accessed_date": "2026-11-07",
+      "primary_urls": [
+        "https://s.campbellsci.com/documents/us/manuals/cs475a.pdf"
+      ],
+      "source_ids": [
+        "campbell_cs475a"
+      ],
+      "archive_bindings": [
+        {
+          "source_id": "campbell_cs475a",
+          "path": "data/radar_domain_recovery_v2/new_sources_20261107/campbell_cs475a/original.bin",
+          "sha256": "8f29f0b8889958fd9b1385c8fbab3f9659c216401d8f3bb06441c663c05c28ce"
+        }
+      ],
+      "metadata_inputs": [
+        "artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json",
+        "data/radar_domain_recovery_v2/new_sources_20261107/campbell_cs475a/pages/page_001.txt"
+      ],
+      "version_note": "CS475A manual Revision 10/2021; PDF56 pages, printed pages7–9",
+      "accessed_scope": "Archived front matter, source-index version metadata and exact original bytes; technical target pages independently reviewed in the holdout source audit.",
+      "human_verification": false
     }
   ],
   "validation": {
-    "bib_entries": 26,
+    "bib_entries": 30,
     "chapter_citekeys_resolve": true,
     "chapter_chinese_character_count": 5391,
     "chapter_section_count": 7,
@@ -862,8 +980,8 @@
     "latex_compilation_performed_by_this_agent": false,
     "compilation_scope_note": "Static bibliography and chapter checks only; the parent agent owns main-document integration and compilation."
   },
-  "previous_audit_sha256": "1a2015bfca722d840882e0536b176a5247af7b7ca75b9ab0b0d3443e22aa22c1",
-  "revision_note": "Added three nearest recovery-training papers; earlier source checks retain their original access dates and scope.",
+  "previous_audit_sha256": "43778c0374fa6a16bf2b5d88be5a990592a39653b847e3cbbc65d74057659e60",
+  "revision_note": "Added four manufacturer documents for new-source evaluation preparation. No academic-paper re-audit or new model experiment.",
   "manuscript_revision_20261022": {
     "previous_audit_sha256": "6a7e6d78868d5bada2d32e0bf527a2b4a5f5007a498856ba622e32989c00ae8e",
     "change": "Reorganized the background chapter around task definitions, execution states, recovery supervision and domain evidence; retained the same 13 method references.",

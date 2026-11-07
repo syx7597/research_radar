@@ -1,0 +1,22 @@
+{
+  "schema": "synthetic_table_validation_v1",
+  "origin": "synthetic_generated_non_equipment_fact",
+  "human_gold": false,
+  "tests_run": 13,
+  "failures": 0,
+  "errors": 0,
+  "core_artifacts_reproduced": 125,
+  "executed_references": 672,
+  "oracle_mismatches": 0,
+  "tampered_typed_value_rejected_by_independent_oracle": true,
+  "question_only_inputs_separate_from_references": true,
+  "answer_specs_format_only": true,
+  "generator_no_real_or_holdout_data_reads_tested": true,
+  "manifest_sha256": "051d6125930f3fc26d0722cb7662fedb949f4944aadc5d5da7e7148af6141541",
+  "builder_sha256": "b3e39488a251bca07dc49afd2cc4a9bf5512a203da76d587fad04b691edfafe6",
+  "tests_sha256": "6c13ef21ad9be3e69a1eeadf5c70ad21812db890f966f65beabbafa39dd7e15b",
+  "commands": [
+    "cache/proposal_env/bin/python -m unittest tests.test_synthetic_table_data -q",
+    "cache/proposal_env/bin/python -m experiments.radar_domain.synthetic_table_data --check"
+  ]
+}

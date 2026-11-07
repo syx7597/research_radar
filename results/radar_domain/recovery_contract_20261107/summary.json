@@ -1,0 +1,290 @@
+{
+  "schema": "radar_table_recovery_contract_cpu_v1",
+  "date": "2026-11-07",
+  "complete_development_tasks": 12,
+  "fixture_pairs": 24,
+  "actual_model_rollouts": 0,
+  "actual_model_recovery_pairs": 0,
+  "training_started": false,
+  "all_reference_targets_preserved": true,
+  "all_supervised_token_budgets_matched": true,
+  "max_fixture_context_tokens": 8616,
+  "checks": [
+    {
+      "id": "RDR-DEV-01",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 13,
+      "calls_recovery": 14,
+      "context_clean": 5437,
+      "context_recovery": 5909,
+      "matched_supervised_tokens": 561,
+      "masked_clean": 0,
+      "masked_recovery": 1
+    },
+    {
+      "id": "RDR-DEV-01",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 13,
+      "calls_recovery": 14,
+      "context_clean": 5437,
+      "context_recovery": 5496,
+      "matched_supervised_tokens": 561,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-02",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 9,
+      "calls_recovery": 10,
+      "context_clean": 3234,
+      "context_recovery": 3713,
+      "matched_supervised_tokens": 361,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-02",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 9,
+      "calls_recovery": 10,
+      "context_clean": 3234,
+      "context_recovery": 3293,
+      "matched_supervised_tokens": 361,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-03",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 18,
+      "calls_recovery": 19,
+      "context_clean": 8228,
+      "context_recovery": 8616,
+      "matched_supervised_tokens": 818,
+      "masked_clean": 0,
+      "masked_recovery": 1
+    },
+    {
+      "id": "RDR-DEV-03",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 18,
+      "calls_recovery": 19,
+      "context_clean": 8228,
+      "context_recovery": 8287,
+      "matched_supervised_tokens": 818,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-04",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 9,
+      "calls_recovery": 10,
+      "context_clean": 3461,
+      "context_recovery": 4052,
+      "matched_supervised_tokens": 324,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-04",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 9,
+      "calls_recovery": 10,
+      "context_clean": 3461,
+      "context_recovery": 3520,
+      "matched_supervised_tokens": 324,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-05",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 16,
+      "calls_recovery": 17,
+      "context_clean": 6062,
+      "context_recovery": 6688,
+      "matched_supervised_tokens": 704,
+      "masked_clean": 0,
+      "masked_recovery": 1
+    },
+    {
+      "id": "RDR-DEV-05",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 16,
+      "calls_recovery": 17,
+      "context_clean": 6062,
+      "context_recovery": 6121,
+      "matched_supervised_tokens": 704,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-06",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 11,
+      "calls_recovery": 12,
+      "context_clean": 6656,
+      "context_recovery": 7205,
+      "matched_supervised_tokens": 521,
+      "masked_clean": 0,
+      "masked_recovery": 1
+    },
+    {
+      "id": "RDR-DEV-06",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 11,
+      "calls_recovery": 12,
+      "context_clean": 6656,
+      "context_recovery": 6715,
+      "matched_supervised_tokens": 521,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-07",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 14,
+      "calls_recovery": 15,
+      "context_clean": 5963,
+      "context_recovery": 6583,
+      "matched_supervised_tokens": 560,
+      "masked_clean": 0,
+      "masked_recovery": 1
+    },
+    {
+      "id": "RDR-DEV-07",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 14,
+      "calls_recovery": 15,
+      "context_clean": 5963,
+      "context_recovery": 6022,
+      "matched_supervised_tokens": 560,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-08",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 5,
+      "calls_recovery": 6,
+      "context_clean": 1925,
+      "context_recovery": 2510,
+      "matched_supervised_tokens": 145,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-08",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 5,
+      "calls_recovery": 6,
+      "context_clean": 1925,
+      "context_recovery": 1984,
+      "matched_supervised_tokens": 145,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-09",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 9,
+      "calls_recovery": 10,
+      "context_clean": 3646,
+      "context_recovery": 4312,
+      "matched_supervised_tokens": 353,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-09",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 9,
+      "calls_recovery": 10,
+      "context_clean": 3646,
+      "context_recovery": 3705,
+      "matched_supervised_tokens": 353,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-10",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 5,
+      "calls_recovery": 6,
+      "context_clean": 2330,
+      "context_recovery": 3091,
+      "matched_supervised_tokens": 210,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-10",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 5,
+      "calls_recovery": 6,
+      "context_clean": 2330,
+      "context_recovery": 2389,
+      "matched_supervised_tokens": 210,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-11",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 5,
+      "calls_recovery": 6,
+      "context_clean": 2038,
+      "context_recovery": 2614,
+      "matched_supervised_tokens": 162,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-11",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 5,
+      "calls_recovery": 6,
+      "context_clean": 2038,
+      "context_recovery": 2097,
+      "matched_supervised_tokens": 162,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-12",
+      "fixture_kind": "extra_handle",
+      "calls_clean": 8,
+      "calls_recovery": 9,
+      "context_clean": 4421,
+      "context_recovery": 5283,
+      "matched_supervised_tokens": 313,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    },
+    {
+      "id": "RDR-DEV-12",
+      "fixture_kind": "rejected_action",
+      "calls_clean": 8,
+      "calls_recovery": 9,
+      "context_clean": 4421,
+      "context_recovery": 4480,
+      "matched_supervised_tokens": 313,
+      "masked_clean": 0,
+      "masked_recovery": 0
+    }
+  ],
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/references.jsonl": "807931f528eb29a0a0cfc33ddfbbbac3ec60e6e974de090dc0e68c8dcce1f7a9",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/catalog.json": "14afa129f7349cc50c4a75925ba854fb0b47398e8078879b1b1ea1f9f13420b3",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "experiments/radar_domain/table_recovery_data.py": "cfe279408cdc725424cc3788a297abcd0cc08377e72dd290624f76bcef32e0eb",
+    "experiments/radar_domain/table_training_data.py": "1b865b1fb97f152f82d23ede979d24bc31fbe2d3a7e8ab732f2d4d446cd6d5b0",
+    "tests/test_table_recovery_data.py": "fa0856f4c3e13e9ea7719822d2b04d8210dd722bd3b248b5c15d1dd5465dbdb6"
+  },
+  "private_fixtures": {
+    "path": "data/radar_domain_recovery_v2/recovery_contract_20261107/fixture_pairs.json",
+    "sha256": "017800f664fcfbdb67c80fd9188cd46f5d4ee66c4605b52b65f1b1528b85ad63"
+  }
+}

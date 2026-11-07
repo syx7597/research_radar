@@ -1,0 +1,76 @@
+{
+  "schema": "radar_table_frozen_token_preflight_v1",
+  "date": "2026-11-07",
+  "reference_trajectories": 708,
+  "splits": {
+    "train": {
+      "questions": 576,
+      "max_context_tokens": 3362,
+      "max_action_tokens": 76,
+      "max_total_action_tokens": 362,
+      "total_supervised_tokens": 138883,
+      "origin_counts": {
+        "synthetic": 576
+      }
+    },
+    "dev": {
+      "questions": 108,
+      "max_context_tokens": 8228,
+      "max_action_tokens": 98,
+      "max_total_action_tokens": 867,
+      "total_supervised_tokens": 28887,
+      "origin_counts": {
+        "synthetic": 96,
+        "real_development": 12
+      }
+    },
+    "holdout": {
+      "questions": 24,
+      "max_context_tokens": 3693,
+      "max_action_tokens": 78,
+      "max_total_action_tokens": 298,
+      "total_supervised_tokens": 4402,
+      "origin_counts": {
+        "real_holdout": 24
+      }
+    }
+  },
+  "all_prefix_boundaries_checked": true,
+  "only_assistant_actions_supervised": true,
+  "maximum_context_tokens": 8228,
+  "maximum_single_action_tokens": 98,
+  "maximum_total_action_tokens": 867,
+  "registered_runtime_budget": {
+    "context_tokens": 16384,
+    "per_turn_generated_tokens": 192,
+    "total_generated_tokens": 2048,
+    "max_calls": 24
+  },
+  "budget_selection_rule": "Smallest registered context in 8192/16384/32768 and turn cap in 192/256/384/512 that fits all source-derived references, before any model run",
+  "tokenizer_files_sha256": {
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "versions": {
+    "transformers": "5.18.0",
+    "tokenizers": "0.23.2"
+  },
+  "model_weights_loaded": false,
+  "model_runs": 0,
+  "training_started": false,
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952",
+    "results/agent_feedback/clean_sft_v1/input_manifest.json": "8f9b29bce8f0d953a9e60b86305625640df3720331043d6e5e5b60a15450e3a8",
+    "/Users/clear-water/Documents/vscodeprojecr/radaer_knowledge_research/experiments/radar_domain/table_token_preflight.py": "8e9eb9be1d585c766d4372e676e4ca822015f52c44fc04ab3b3d1bf9e5379fe3",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "cache/qwen2.5-3b-tokenizer/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "cache/qwen2.5-3b-tokenizer/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/success_trajectories.jsonl": "6a345281b7bb589a62b0087931e2242766a3925b277340cca5277a1f48da7144",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/success_trajectories.jsonl": "ca90c708f2943cfdd475cb491082095545b9ea8bcbb64026b6e81ac5ab6808c1",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/success_trajectories.jsonl": "abd361c537646ec6175c8f33c85abb26df2ce8e4a1f97a02cc95a543072daed7"
+  },
+  "private_checks": {
+    "path": "data/radar_domain_recovery_v2/frozen_20261107/token_checks.jsonl",
+    "sha256": "091a4335b30e84bfbe6ac305cb48e1d724194e098156fca1ae8d803234b2a62b"
+  }
+}

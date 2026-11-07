@@ -1,0 +1,49 @@
+{
+  "schema": "radar_offline_work_completion_v1",
+  "date": "2026-11-07",
+  "status": "all_four_offline_work_items_completed",
+  "work_items": {
+    "task_and_answer_contract": "completed",
+    "source_isolated_dataset": "completed",
+    "complete_reference_recovery_token_preparation": "completed",
+    "thesis_integration_and_pdf_review": "completed"
+  },
+  "counts": {
+    "train": 576,
+    "dev": 108,
+    "real_holdout": 24,
+    "replayed_references": 708,
+    "complete_original_real_development_tasks": 12,
+    "constructed_cpu_recovery_pairs": 24,
+    "related_tests_passed": 56,
+    "thesis_pages": 69,
+    "bibliography_entries": 30
+  },
+  "initial_domain_sft_success_examples_available": 576,
+  "actual_model_failure_rollouts": 0,
+  "formal_model_recovery_training_pairs": 0,
+  "new_model_training_runs": 0,
+  "new_model_evaluation_runs": 0,
+  "server_accessed": false,
+  "sources_reviewed_by": "AI",
+  "human_review_completed": 0,
+  "remaining_experiments": [
+    "Previously frozen public same-state diagnostic",
+    "Domain initial SFT and actual train-failure collection",
+    "Paired A_domain/C_domain continuation and development selection",
+    "Fixed 24-question new-source model evaluation"
+  ],
+  "evidence_sha256": {
+    "results/radar_domain/frozen_20261107/summary.json": "2d7742f6df2336490ffa73a6c6248fcae937933351f62399a5522e8fb80e3c95",
+    "results/radar_domain/frozen_20261107/cpu_audit.json": "46ea34f9f777a6d1c31c802558f80bfa64e08292c02b89d45293983a803a2295",
+    "results/radar_domain/frozen_20261107/independent_audit.json": "f0fdfd4bf7ca14604c81b89a7bf382f3b7b96d69a746168ac197b411caf15215",
+    "results/radar_domain/frozen_20261107/scoring_revision.json": "74dee70a778d42611e4dec43eb52fb293a9a45d10ddea58bfa8ba611eac80868",
+    "results/radar_domain/frozen_20261107/software_checks.json": "0e0c5477a982f99dfbb79e7fdfbed5c6868725778bb3d358e403d1ea38c76bfd",
+    "results/radar_domain/frozen_20261107/token_preflight.json": "d500b7cf22207b168c69e87eb35300a6b8790d3ead1accf3494bf6722b52e371",
+    "results/radar_domain/recovery_contract_20261107/summary.json": "7a8a0e7203587bf37459bf62bad3834442d8c2cf341fb91eea4f87dc7fb55ae1",
+    "thesis/current/manuscript_manifest.json": "a6fe30b9c2932dbb0e60594fdc08d231d74843187cfa9ea5f5af4bf65de4f337",
+    "thesis/current/manuscript_review.json": "28f28ebb5898dc5a98b6358224856dcd21a5b5edc047a555dda8c46ad9d35cbc",
+    "thesis/current/offline_evidence_manifest.json": "fb02ef733bf0ae9081ac7c60a0efd3abe5f055462e3e49fa33e586b507be6d58",
+    "docs/RADAR_OFFLINE_COMPLETION_20261107.md": "6adc5b80165ed473fd12cf245790fa0e11d24e7b06516874a6c0df0b7fa4341d"
+  }
+}

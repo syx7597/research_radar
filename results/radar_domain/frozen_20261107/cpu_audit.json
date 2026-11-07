@@ -1,0 +1,46 @@
+{
+  "schema": "radar_frozen_table_cpu_audit_v1",
+  "status": "passed",
+  "date": "2026-11-07",
+  "manifest": {
+    "path": "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json",
+    "sha256": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952"
+  },
+  "auditor_code_sha256": "67f7c810c8dea74d13369a20aa71822fb79ad912cf276b66766164beaf2881af",
+  "verified_input_hashes": 37,
+  "scoring_revision": {
+    "path": "results/radar_domain/frozen_20261107/scoring_revision.json",
+    "sha256": "74dee70a778d42611e4dec43eb52fb293a9a45d10ddea58bfa8ba611eac80868"
+  },
+  "split_results": {
+    "train": {
+      "references": 576,
+      "source_records": 1728,
+      "source_families": 96,
+      "successful_calls": 3360
+    },
+    "dev": {
+      "references": 108,
+      "source_records": 790,
+      "source_families": 24,
+      "successful_calls": 682
+    },
+    "holdout": {
+      "references": 24,
+      "source_records": 156,
+      "source_families": 4,
+      "successful_calls": 106
+    }
+  },
+  "references_replayed": 708,
+  "source_group_overlap": 0,
+  "source_record_overlap": 0,
+  "source_subject_overlap": 0,
+  "question_overlap": 0,
+  "all_training_sources_synthetic": true,
+  "format_specs_contain_only_output_names_kinds_columns": true,
+  "reference_success_masks_verified": true,
+  "server_accessed": false,
+  "model_runs": 0,
+  "human_review": false
+}

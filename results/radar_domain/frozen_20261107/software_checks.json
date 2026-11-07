@@ -1,0 +1,40 @@
+{
+  "schema": "radar_offline_software_checks_v1",
+  "date": "2026-11-07",
+  "command": "python3 -m unittest tests.test_radar_table_program experiments.radar_domain.test_typed_sources tests.test_synthetic_table_data tests.test_table_recovery_data tests.test_radar_table_scoring",
+  "tests_run": 56,
+  "failures": 0,
+  "errors": 0,
+  "observed_exit_code": 0,
+  "test_file_sha256": {
+    "tests/test_radar_table_program.py": "2109787af18c8b67b6373729312db757a7a50709fdcdaddb425c0fb1fa8eff24",
+    "experiments/radar_domain/test_typed_sources.py": "6f83df9638d4e75ec42984e13f896c3c17456d6a2d32a13d0ef683f5f310940d",
+    "tests/test_synthetic_table_data.py": "6c13ef21ad9be3e69a1eeadf5c70ad21812db890f966f65beabbafa39dd7e15b",
+    "tests/test_table_recovery_data.py": "fa0856f4c3e13e9ea7719822d2b04d8210dd722bd3b248b5c15d1dd5465dbdb6",
+    "tests/test_radar_table_scoring.py": "a3df1c7c079e8a869bd778f2e9e27f60484d0dd99c150cc669c90fa10ad57e1a"
+  },
+  "implementation_sha256": {
+    "experiments/radar_domain/audit_frozen_table_data.py": "67f7c810c8dea74d13369a20aa71822fb79ad912cf276b66766164beaf2881af",
+    "experiments/radar_domain/synthetic_table_data.py": "b3e39488a251bca07dc49afd2cc4a9bf5512a203da76d587fad04b691edfafe6",
+    "experiments/radar_domain/table_token_preflight.py": "8e9eb9be1d585c766d4372e676e4ca822015f52c44fc04ab3b3d1bf9e5379fe3",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "experiments/radar_domain/table_recovery_data.py": "cfe279408cdc725424cc3788a297abcd0cc08377e72dd290624f76bcef32e0eb",
+    "experiments/radar_domain/table_scoring.py": "2d4ee02fe69c551d32d6a947e6c77e55313be8d79f44a3e59cbd35fc5b732b35",
+    "experiments/radar_domain/verify_table_recovery_preflight.py": "372ccdb104fc6bf13f378953223f9ce912e68ce1946f064446bf6829367c5114",
+    "experiments/radar_domain/table_training_data.py": "1b865b1fb97f152f82d23ede979d24bc31fbe2d3a7e8ab732f2d4d446cd6d5b0"
+  },
+  "extra_checks": {
+    "frozen_reference_replay": {
+      "path": "results/radar_domain/frozen_20261107/cpu_audit.json",
+      "sha256": "46ea34f9f777a6d1c31c802558f80bfa64e08292c02b89d45293983a803a2295"
+    },
+    "saved_recovery_and_actual_token_verification": {
+      "command": "HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 cache/domain_cpu_env/bin/python -m experiments.radar_domain.verify_table_recovery_preflight",
+      "observed_exit_code": 0,
+      "verified_fixture_pairs": 24,
+      "summary_sha256": "7a8a0e7203587bf37459bf62bad3834442d8c2cf341fb91eea4f87dc7fb55ae1"
+    }
+  },
+  "server_accessed": false,
+  "model_runs": 0
+}

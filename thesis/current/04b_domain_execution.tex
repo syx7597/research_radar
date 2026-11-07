@@ -1,0 +1,82 @@
+\section{面向雷达组合查询的执行与恢复适配}
+\label{sec:domain-execution}
+
+\subsection{带来源的类型表操作}
+
+本文将同一恢复构造方法接入雷达类型表环境。环境仍采用分步动作、只读工具和追加式结果句柄；中间值从实体集合扩展为带来源的表与判断对象。每个表格单元保存值及支撑记录，因而能够在筛选、连接和计算后继续追溯原始参数。表\ref{tab:domain-operations}给出操作集合。
+
+\begin{table}[htbp]
+\centering\small
+\caption{雷达组合查询的基本操作}
+\label{tab:domain-operations}
+\begin{tabular}{lp{10cm}}
+\toprule
+操作 & 语义 \\
+\midrule
+\texttt{Scan} & 按来源、主体、部件、属性及明确条件取得读法。\\
+\texttt{Expand} & 展开来源已声明的选项或对应行，保留原配对关系。\\
+\texttt{Project} & 从已有字段选取答案列，并传递每列来源。\\
+\texttt{Join} & 按显式相等键合并表格，拒绝冲突的非连接字段。\\
+\texttt{Filter} & 执行具有单位和边界语义的条件合取。\\
+\texttt{Derive} & 根据范围或比较表达式产生判断列，并保存实际判据。\\
+\texttt{Assess} & 计算值相等、离散定义域及联合配置支持情况。\\
+\texttt{Assemble} & 组装命名答案对象，由\texttt{finish}提交对应句柄。\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+工具观察提供结果规模、字段目录和有限行预览，完整中间表保存在执行器中。后续操作通过句柄访问完整表，因此预览长度与实际查询范围相互独立。终结观察返回答案摘要和哈希，评分器读取执行器保存的完整答案。这一设计在控制交互长度的同时，保持多行集合、限定条件与证据的完整性。
+
+量值计算遵守类型约束。兼容单位按预先声明的换算关系比较；将界限用于数值筛选时，动作需明确选择界限端点视图。近似值与容差保留各自语义，参数各自属于声明范围时，联合配置仍依据来源是否给出组合支持来判断。由此，工具反馈可以具体指出字段、依赖或单位上的问题，恢复目标则继续完成原查询。
+
+\subsection{完整开发实例与恢复衔接}
+
+以JMA-5200Mk2环境温度问题为例，资料分别给出扫描器以及处理器、显示器和键盘的范围\cite{source-v2-jrc-5200}。程序先取得两类部件的温度读法，再投影部件与范围，计算$-20\,^{\circ}\mathrm{C}$的包含关系，最后组装并提交答案。表\ref{tab:domain-temperature-case}展示实际参考程序结果，五次调用完成整个问题。
+
+\begin{table}[htbp]
+\centering\small
+\caption{按部件温度规格计算的开发实例}
+\label{tab:domain-temperature-case}
+\OfflineTemperatureCaseTable
+\end{table}
+
+若查询后额外执行一次有效操作，新结果占用一个句柄，原参考后缀的物理编号随之改变；若操作被拒绝，则记录错误观察而不新增句柄。恢复构造依据这两种实际状态重新映射后续依赖。图\ref{fig:domain-recovery-case}展示第一种情况：恢复组保留额外查询及其反馈，后缀仍使用原本正确的温度表，逐步形成与普通组相同的答案。
+
+\begin{figure}[htbp]
+\centering\small
+\fbox{\parbox{0.89\textwidth}{\centering
+共同前缀：\texttt{Scan}取得两类部件温度，保存为$h_0$}}
+\par\vspace{0.6em}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{普通后缀}\par\vspace{0.5em}
+\fbox{\parbox{0.90\linewidth}{\centering
+\texttt{Project}$(h_0)\to h_1$\\
+$\downarrow$\\
+\texttt{Derive}$(h_1)\to h_2$\\
+$\downarrow$\\
+\texttt{Assemble}$(h_2)\to h_3$\\
+$\downarrow$\\
+\texttt{finish}$(h_3)$}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{含额外查询的恢复后缀}\par\vspace{0.5em}
+\fbox{\parbox{0.90\linewidth}{\centering
+额外\texttt{Scan}$\to h_1$，保留反馈\\
+$\downarrow$\\
+\texttt{Project}$(h_0)\to h_2$\\
+$\downarrow$\\
+\texttt{Derive}$(h_2)\to h_3$\\
+$\downarrow$\\
+\texttt{Assemble}$(h_3)\to h_4$\\
+$\downarrow$\\
+\texttt{finish}$(h_4)$}}
+\end{minipage}
+\par\vspace{0.7em}
+两侧后缀执行同一计算；恢复组的额外动作与观察仅作为上下文。
+\caption{雷达开发实例中的依赖映射。右侧为CPU构造的接口验证轨迹。}
+\label{fig:domain-recovery-case}
+\end{figure}
+
+实现复核覆盖全部12道组合开发题，每题分别构造额外有效动作与被拒绝动作两种状态，共\OfflineRecoveryPairs{}组配对。全部配对完成后缀重放，保留原答案，并通过实际分词匹配两侧监督token数量。正式恢复训练将从域内初始模型的训练题自由轨迹采集失败，再执行同一前缀识别、依赖映射、重放和预算匹配流程。

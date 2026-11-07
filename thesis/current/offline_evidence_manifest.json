@@ -1,0 +1,30 @@
+{
+  "schema": "radar_offline_thesis_export_v1",
+  "date": "2026-11-07",
+  "rows": 47,
+  "sources_sha256": {
+    "results/radar_domain/frozen_20261107/summary.json": "2d7742f6df2336490ffa73a6c6248fcae937933351f62399a5522e8fb80e3c95",
+    "results/radar_domain/frozen_20261107/cpu_audit.json": "46ea34f9f777a6d1c31c802558f80bfa64e08292c02b89d45293983a803a2295",
+    "results/radar_domain/frozen_20261107/token_preflight.json": "d500b7cf22207b168c69e87eb35300a6b8790d3ead1accf3494bf6722b52e371",
+    "results/radar_domain/recovery_contract_20261107/summary.json": "7a8a0e7203587bf37459bf62bad3834442d8c2cf341fb91eea4f87dc7fb55ae1",
+    "artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json": "a28660dda4aa62c609d4d2fca986a543d5d088567c4bb0d15174d0ba34e16026",
+    "artifacts/thesis_direction_review/radar_new_sources_review_20261107/review_summary.safe.json": "852deece0ae4c746b22a3f7a0d164665a82176f09f3a577bf3387881401358b8",
+    "results/radar_domain/programs_dev_20261107/summary.json": "89bacafa0d6e8f8c5887eaa87cfff633a38ec43782a62f5288e1a12a4511ffc0",
+    "results/radar_domain/holdout_programs_20261107/summary.json": "7f62822471c4a012a62d865df558bab4e8e81b3fbdd36da0613409d0986c0f56",
+    "results/radar_domain/programs_dev_20261107/development_case.json": "2ae62cf10098101ebc32fed5a955d51ce5dbc2c3c243b2959beba19998f6cc3c",
+    "results/radar_domain/frozen_20261107/scoring_revision.json": "74dee70a778d42611e4dec43eb52fb293a9a45d10ddea58bfa8ba611eac80868"
+  },
+  "exporter_sha256": "883124fed14740d5d8d8bc7524f5262b859e711e7693d4d18e6440d64b0e2a0d",
+  "chapter_sha256": {
+    "thesis/current/03b_domain_task_data.tex": "7b58c3e8c343895b65623ff313ee667f20248a4bfd3ae3f7ec5acd3ae3317adb",
+    "thesis/current/04b_domain_execution.tex": "8c5d19b7c888b2d847bd554d9b64c141cf76dac8bfc2adfb844a28e7e165ecb9",
+    "thesis/current/06c_domain_preparation.tex": "9a8b7bed6b97bf31b5a7407f9365eb4db281c57b8851ad5875b371c132398532"
+  },
+  "outputs_sha256": {
+    "offline_tables.tex": "4f38bc34d4127bdfd7d4cfdd9897b5317c8ae8a10df31d12b2a7a9370ac97125",
+    "offline_results.csv": "7b2e6587128713875f75ee1eb15454c4846ca29dc3ffee75ae0a9d089ddaf685"
+  },
+  "source_access": "Only allowlisted public aggregate files; no private sources or holdout answers opened",
+  "evidence_type": "Source review and CPU execution/token verification",
+  "model_evaluation_runs": 0
+}

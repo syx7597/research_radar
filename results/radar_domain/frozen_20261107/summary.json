@@ -1,0 +1,59 @@
+{
+  "schema": "radar_offline_dataset_frozen_summary_v1",
+  "date": "2026-11-07",
+  "status": "frozen_before_model_runs",
+  "question_counts": {
+    "train": 576,
+    "dev": 108,
+    "holdout": 24
+  },
+  "source_record_counts": {
+    "train": 1728,
+    "dev": 790,
+    "holdout": 156
+  },
+  "source_family_counts": {
+    "train": 96,
+    "dev": 24,
+    "holdout": 4
+  },
+  "reference_execution": {
+    "train": {
+      "references": 576,
+      "successful_calls": 3360
+    },
+    "dev": {
+      "references": 108,
+      "successful_calls": 682
+    },
+    "holdout": {
+      "references": 24,
+      "successful_calls": 106
+    }
+  },
+  "all_original_reference_answers_preserved": true,
+  "family_overlap": 0,
+  "record_identity_overlap": 0,
+  "subject_overlap": 0,
+  "question_inputs_include": [
+    "original question",
+    "output names/kinds/columns only"
+  ],
+  "training_origin": "Explicit synthetic source instances, not equipment facts",
+  "real_development_questions": 12,
+  "synthetic_development_questions": 96,
+  "real_holdout_questions": 24,
+  "real_holdout_source_families": 4,
+  "AI_references": true,
+  "human_gold": false,
+  "model_runs": 0,
+  "training_started": false,
+  "freeze_manifest": {
+    "path": "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json",
+    "sha256": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952"
+  },
+  "task_contract": {
+    "path": "data/radar_domain_recovery_v2/frozen_20261107/task_contract.json",
+    "sha256": "f515b25d1f34c2ca0cefd65fb68e9151a9f2b5d7520028912300c5792a91c23f"
+  }
+}

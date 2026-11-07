@@ -1,0 +1,52 @@
+{
+  "schema": "synthetic_radar_table_data_summary_v1",
+  "origin": "synthetic_generated_non_equipment_fact",
+  "synthetic": true,
+  "equipment_fact": false,
+  "human_gold": false,
+  "counts_by_split": {
+    "train": {
+      "source_groups": 96,
+      "questions": 576,
+      "executed_success_references": 576,
+      "oracle_verified_references": 576,
+      "categories": {
+        "empty_result": 96,
+        "numeric_filter": 96,
+        "qualified_pair": 96,
+        "range_membership": 96,
+        "simple": 96,
+        "unknown_configuration": 96
+      },
+      "empty_answers": 144,
+      "unknown_joint_configuration_answers": 96
+    },
+    "synthetic_dev": {
+      "source_groups": 16,
+      "questions": 96,
+      "executed_success_references": 96,
+      "oracle_verified_references": 96,
+      "categories": {
+        "empty_result": 16,
+        "numeric_filter": 16,
+        "qualified_pair": 16,
+        "range_membership": 16,
+        "simple": 16,
+        "unknown_configuration": 16
+      },
+      "empty_answers": 24,
+      "unknown_joint_configuration_answers": 16
+    }
+  },
+  "total_groups": 112,
+  "total_source_records": 2016,
+  "oracle_mismatches": 0,
+  "all_references_executed": true,
+  "model_failures_fabricated": false,
+  "minimum_action_count": 4,
+  "maximum_action_count": 9,
+  "manifest_path": "data/radar_domain_recovery_v2/synthetic_20261107/full_manifest.json",
+  "manifest_sha256": "051d6125930f3fc26d0722cb7662fedb949f4944aadc5d5da7e7148af6141541",
+  "global_split_frozen": false,
+  "model_or_training_runs": 0
+}

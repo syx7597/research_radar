@@ -1,0 +1,176 @@
+{
+  "schema": "radar_new_sources_public_summary_v1",
+  "date": "2026-11-07",
+  "author": "AI",
+  "human_gold": false,
+  "purpose": "final_evaluation_candidates_pending_independent_review_and_root_freeze",
+  "allow_training": false,
+  "model_outputs_seen": false,
+  "counts": {
+    "families": 4,
+    "original_official_pdfs": 4,
+    "selected_complete_pages": 8,
+    "source_readings": 156,
+    "ledger_entries": 14,
+    "questions": 24,
+    "references": 24,
+    "questions_per_family": 6,
+    "model_calls": 0,
+    "training_runs": 0
+  },
+  "sources": [
+    {
+      "family_id": "furuno_drs4w",
+      "source_id": "furuno_drs4w",
+      "publisher": "FURUNO Electric / official Italian site",
+      "source_uri": "https://www.furuno.it/docs/OPERATOR_MANUAL/DRS4W_OME-D3.pdf",
+      "discovery_uri": "https://www.furuno.com/en/products/radar/drs4w/index.html",
+      "source_path": "data/radar_domain_recovery_v2/new_sources_20261107/furuno_drs4w/original.bin",
+      "source_sha256": "a7849bf70d4a86a5a689b4338aac644c2c2715944448bba0486537839771913a",
+      "source_version": "Manual OME-36360-D3, January 11 2022; specification E3636S01F / 211122",
+      "pages_one_based": [
+        29
+      ],
+      "bytes": 3586913,
+      "readings": 33,
+      "ledger_entries": 3,
+      "questions": 6,
+      "prior_exact_alias_matches": 0,
+      "family_grouping_note": "DRS4W wireless/magnetron radome family is distinct from previously exposed DRS6A/12A/25A-NXT open-array family; shared manufacturer/DRS prefix does not create a separate version count."
+    },
+    {
+      "family_id": "ott_rls",
+      "source_id": "ott_rls",
+      "publisher": "OTT HydroMet / manufacturer-linked CDN",
+      "source_uri": "https://cdn.hach.com/1XMCM0ZF/at/2vpm8jbwptkqqf5gqt67mw3/OTT_RLS_EN_6310900192.pdf",
+      "discovery_uri": "https://www.ott.com/products/6310900192s",
+      "source_path": "data/radar_domain_recovery_v2/new_sources_20261107/ott_rls/original.bin",
+      "source_sha256": "370f6388bf9c4521abe368f41a6ab9f26191b7e335947ae1e22b6f16572feda5",
+      "source_version": "Page2: Operating Instructions version04-0124, firmware V3.00.0, equipment manufactured as of August2018; final cover:63.109.001.B.E04-0724",
+      "pages_one_based": [
+        25,
+        26
+      ],
+      "bytes": 273414,
+      "readings": 50,
+      "ledger_entries": 3,
+      "questions": 6,
+      "prior_exact_alias_matches": 0,
+      "family_grouping_note": "OTT RLS hydrometric pulse-radar family; prior current-round families do not include OTT. Firmware/manual revisions remain one family."
+    },
+    {
+      "family_id": "smartmicro_umrr11",
+      "source_id": "smartmicro_umrr11",
+      "publisher": "smartmicro / s.m.s. smart microwave sensors GmbH",
+      "source_uri": "https://www.smartmicro.com/wp-content/uploads/2026/02/UMRR-11_Type_45_Traffic_Management_Datasheet.pdf",
+      "discovery_uri": "https://www.smartmicro.com/traffic-management/products/umrr-11/",
+      "source_path": "data/radar_domain_recovery_v2/new_sources_20261107/smartmicro_umrr11/original.bin",
+      "source_sha256": "1f41a6ec26313390cb2f66d916dfe47df1df8317d7bf883333d134d0b3902c15",
+      "source_version": "June 2, 2026; 18-page UMRR-11 Type45 data sheet",
+      "pages_one_based": [
+        10,
+        11
+      ],
+      "bytes": 680133,
+      "readings": 43,
+      "ledger_entries": 4,
+      "questions": 6,
+      "prior_exact_alias_matches": 0,
+      "family_grouping_note": "UMRR-11 broad traffic radar family; Type45 is one member, not an extra family per antenna variant."
+    },
+    {
+      "family_id": "campbell_cs475a",
+      "source_id": "campbell_cs475a",
+      "publisher": "Campbell Scientific",
+      "source_uri": "https://s.campbellsci.com/documents/us/manuals/cs475a.pdf",
+      "discovery_uri": "https://www.campbellsci.com/resources/documents/35474-cs475a-radar-water-level-sensor",
+      "source_path": "data/radar_domain_recovery_v2/new_sources_20261107/campbell_cs475a/original.bin",
+      "source_sha256": "8f29f0b8889958fd9b1385c8fbab3f9659c216401d8f3bb06441c663c05c28ce",
+      "source_version": "CS475A manual Revision 10/2021; PDF56 pages, printed pages7–9",
+      "pages_one_based": [
+        10,
+        11,
+        12
+      ],
+      "bytes": 2478311,
+      "readings": 30,
+      "ledger_entries": 4,
+      "questions": 6,
+      "prior_exact_alias_matches": 0,
+      "family_grouping_note": "CS475/CS476/CS477/CS475A broad radar level-sensor lineage screened together; only CS475A manual admitted as one family."
+    }
+  ],
+  "question_schema": {
+    "file": "questions.json",
+    "row_fields": [
+      "question_id",
+      "family_id",
+      "primary_type",
+      "question",
+      "question_sha256",
+      "source_chunk_ids"
+    ],
+    "contains_answers": false,
+    "contains_expected_ids": false
+  },
+  "reference_schema": {
+    "file": "references.json",
+    "row_fields": [
+      "question_id",
+      "reviewer",
+      "human_gold",
+      "required_record_ids",
+      "answer_zh",
+      "value_and_condition_requirements",
+      "source_support",
+      "source_scope_note_zh",
+      "scoring_note_zh",
+      "reference_grade"
+    ]
+  },
+  "history_screen": {
+    "declared_legacy_input_files": 318,
+    "selected_family_alias_hits": 0,
+    "known_source_hash_overlap": false,
+    "excluded_families_with_prior_lineage_signals": [
+      "Simrad HALO",
+      "Raymarine Quantum"
+    ],
+    "failed_current_official_pdf_attempts": 2,
+    "failure_family_replaced": "Hikvision DS-PR1",
+    "replacement_family": "Campbell CS475A",
+    "base_pretraining_exposure": "unknown",
+    "absence_is_not_global_lineage_proof": true
+  },
+  "ledger_topic_counts": {
+    "unresolved": 6,
+    "context_only": 7,
+    "resolved_by_visual_review": 1
+  },
+  "private_package": "data/radar_domain_recovery_v2/new_sources_20261107",
+  "private_outputs_sha256": {
+    "data/radar_domain_recovery_v2/new_sources_20261107/source_index.json": "ef0e0a896b78c9eb8c2646177ca2a59c3b5d2a9e817eaeec5c45c58d365b509e",
+    "data/radar_domain_recovery_v2/new_sources_20261107/chunks.json": "4234352b6a862c55c4404a3ea3686102601ff38bef3624d25e6b1de3a9a51c4f",
+    "data/radar_domain_recovery_v2/new_sources_20261107/readings.json": "644f566fd35b6c1575965eaafc277c9dd6403258162cac6f9a7d4d031bb16cda",
+    "data/radar_domain_recovery_v2/new_sources_20261107/questions.json": "9183471d14fbeec5078931c25df3de5610d48c741c6394e2d52e52f47c056b56",
+    "data/radar_domain_recovery_v2/new_sources_20261107/references.json": "2ffbfd525a3184c8a8a373be4b1ec71195946a710706942e952a4d419e6482e8",
+    "data/radar_domain_recovery_v2/new_sources_20261107/history_alias_screen.json": "580e339f940f329671d476b9c23c69b677e19a4dab713f823772e74b677e9420",
+    "data/radar_domain_recovery_v2/new_sources_20261107/discovery_and_failures.json": "f5715c54fe2f4de56ad3d3678ececbf95c37d45173b82a35ea99a8e022dfe044",
+    "data/radar_domain_recovery_v2/new_sources_20261107/manifest.json": "8f3928e02efd8d83172e8c662dd0325624cbe3259064977c2e516d2bd2881a36"
+  },
+  "status": "24 source-grounded AI drafts; references sealed without model execution; independent review and root split freeze pending",
+  "restrictions": {
+    "old_corpus_modified": false,
+    "server_accessed": false,
+    "model_outputs_seen": false,
+    "model_scores_seen": false,
+    "model_calls": 0,
+    "training_started": false,
+    "commit_created": false
+  },
+  "notes_zh": [
+    "原始官方PDF均已实际下载归档；不是只列候选URL。",
+    "公开摘要只含计数、来源身份/范围、schema与哈希，不含完整题目或答案。",
+    "未把同家族版本差异计作新家族；保留失败记录及已见元数据说明。"
+  ]
+}

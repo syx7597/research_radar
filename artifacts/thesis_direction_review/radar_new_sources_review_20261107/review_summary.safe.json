@@ -1,0 +1,62 @@
+{
+  "schema": "radar_new_sources_review_summary_v1",
+  "reviewer": "AI",
+  "human_gold": false,
+  "allow_training": false,
+  "reviewed_at_utc": "2026-11-06T19:10:19.377846+00:00",
+  "question_count": 24,
+  "family_count": 4,
+  "content_consistent_count": 24,
+  "source_localization_pass_count": 24,
+  "blocking_findings": 0,
+  "nonblocking_findings": 2,
+  "nonblocking_question_ids": [
+    "RQ3-DRW-02",
+    "RQ3-DRW-03"
+  ],
+  "nonblocking_categories": [
+    "scoring_scope_clarification",
+    "citation_header_completeness"
+  ],
+  "source_ambiguity_notes": 7,
+  "questions_with_ambiguous_target_answers": 0,
+  "source_pages_visually_inspected": 8,
+  "reading_records_mechanically_checked": 156,
+  "question_support_records_reviewed": 43,
+  "citation_spans_checked": 332,
+  "mechanical_errors": 0,
+  "seals": [
+    {
+      "family_id": "furuno_drs4w",
+      "seal_path": "data/radar_domain_recovery_v2/new_sources_review_20261107/furuno_drs4w/seal.json",
+      "seal_sha256": "64b303f499731a552cd4aaaff6ed77b7a517fb55205f48311dd2a80d9126e269",
+      "independent_answers_sha256": "9f548d010f554377ebde3a4e0487074b3fae34c8ca9f9cbce5555a01932e85b2"
+    },
+    {
+      "family_id": "ott_rls",
+      "seal_path": "data/radar_domain_recovery_v2/new_sources_review_20261107/ott_rls/seal.json",
+      "seal_sha256": "2e65dc277443b021e26faecb88e89a968ff5f435db847511cb0ea172ca57c6c9",
+      "independent_answers_sha256": "9883fc286c72d878c46d9d797747991f84f1ffbcff8b21fa758b72be8d54c8ba"
+    },
+    {
+      "family_id": "smartmicro_umrr11",
+      "seal_path": "data/radar_domain_recovery_v2/new_sources_review_20261107/smartmicro_umrr11/seal.json",
+      "seal_sha256": "0ae703245dec1ef8894eb55d6d6176e5553eec23573dfcaaffc4587998e83ddb",
+      "independent_answers_sha256": "f45c442455b41aa36e6cc5a5ddf854f20cd6fa1f584c474b26c2fa45aefad482"
+    },
+    {
+      "family_id": "campbell_cs475a",
+      "seal_path": "data/radar_domain_recovery_v2/new_sources_review_20261107/campbell_cs475a/seal.json",
+      "seal_sha256": "d87d445c5c6d38cfea4f5c391e5e088769365168b5236c2203781bf143ce5a8e",
+      "independent_answers_sha256": "796255be1e9d34f1f36ff8a97da60e17ef2bf952bbf4b70fd7db008b897060de"
+    }
+  ],
+  "limitations_zh": [
+    "AI独立核验，不是人工金标。",
+    "先读原件独立作答，再封存SHA，然后才打开references/readings；未读取模型输出或分数。",
+    "内容判断绑定归档原件版本及固定规格页；未从其他版本或外部网页修复原件歧义。",
+    "本核验不等于物理测量、产品认证核查或厂家纠错；单位歧义保留不猜。",
+    "所有答案和逐题报告仅供holdout核验；禁止作为训练材料。"
+  ],
+  "status": "completed_accept_all_24_with_two_nonblocking_documentation_recommendations"
+}

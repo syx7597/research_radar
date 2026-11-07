@@ -1,0 +1,31 @@
+{
+  "schema": "radar_table_scoring_revision_v1",
+  "reviewer": "AI",
+  "human_gold": false,
+  "date": "2026-11-07",
+  "path": "experiments/radar_domain/table_scoring.py",
+  "old_sha256": "a321e83f17544bd5a55f91b00e0a5b924158726ba08dda4445a632dbd51acb91",
+  "new_sha256": "2d4ee02fe69c551d32d6a947e6c77e55313be8d79f44a3e59cbd35fc5b732b35",
+  "archived_original": {
+    "path": "data/radar_domain_recovery_v2/scoring_revision_20261107/table_scoring.before.py",
+    "sha256": "a321e83f17544bd5a55f91b00e0a5b924158726ba08dda4445a632dbd51acb91"
+  },
+  "reason": "Normalize the parent unit of typed options as well as its typed numeric members, so equivalent declared scales/aliases do not create false negatives. Incompatible parent/member dimensions remain unequal.",
+  "change_scope": "One canonicalization branch extended to include kind=options; two regression tests added. Frozen source/reference/manifest bytes are unchanged.",
+  "model_outputs_seen": false,
+  "model_results_used_for_change": false,
+  "frozen_manifest_sha256": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952",
+  "test_evidence": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 cache/proposal_env/bin/python -m unittest tests.test_radar_table_scoring -v",
+    "tests_run": 11,
+    "failures": 0,
+    "errors": 0,
+    "test_path": "tests/test_radar_table_scoring.py",
+    "test_sha256": "a3df1c7c079e8a869bd778f2e9e27f60484d0dd99c150cc669c90fa10ad57e1a",
+    "regressions": [
+      "equivalent_options_parent_and_member_units_normalize",
+      "wrong_parent_or_member_unit_remains_incorrect",
+      "all_twelve_development_references_still_score_correctly"
+    ]
+  }
+}

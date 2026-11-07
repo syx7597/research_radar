@@ -1,0 +1,48 @@
+table,label,value,source,json_pointer
+split,合成训练,576,results/radar_domain/frozen_20261107/summary.json,/question_counts/train
+split,合成训练,96,results/radar_domain/frozen_20261107/summary.json,/source_family_counts/train
+split,合成训练,1728,results/radar_domain/frozen_20261107/summary.json,/source_record_counts/train
+split,开发,108,results/radar_domain/frozen_20261107/summary.json,/question_counts/dev
+split,开发,24,results/radar_domain/frozen_20261107/summary.json,/source_family_counts/dev
+split,开发,790,results/radar_domain/frozen_20261107/summary.json,/source_record_counts/dev
+split,新来源评价,24,results/radar_domain/frozen_20261107/summary.json,/question_counts/holdout
+split,新来源评价,4,results/radar_domain/frozen_20261107/summary.json,/source_family_counts/holdout
+split,新来源评价,156,results/radar_domain/frozen_20261107/summary.json,/source_record_counts/holdout
+sources,FURUNO DRS4W,[29],artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/0/pages_one_based
+sources,FURUNO DRS4W,33,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/0/readings
+sources,FURUNO DRS4W,6,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/0/questions
+sources,OTT RLS,"[25, 26]",artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/1/pages_one_based
+sources,OTT RLS,50,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/1/readings
+sources,OTT RLS,6,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/1/questions
+sources,smartmicro UMRR-11,"[10, 11]",artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/2/pages_one_based
+sources,smartmicro UMRR-11,43,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/2/readings
+sources,smartmicro UMRR-11,6,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/2/questions
+sources,Campbell CS475A,"[10, 11, 12]",artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/3/pages_one_based
+sources,Campbell CS475A,30,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/3/readings
+sources,Campbell CS475A,6,artifacts/thesis_direction_review/radar_new_sources_20261107/summary.json,/sources/3/questions
+checks,训练参考,576,results/radar_domain/frozen_20261107/cpu_audit.json,/split_results/train/references
+checks,训练参考,3360,results/radar_domain/frozen_20261107/cpu_audit.json,/split_results/train/successful_calls
+checks,开发参考,108,results/radar_domain/frozen_20261107/cpu_audit.json,/split_results/dev/references
+checks,开发参考,682,results/radar_domain/frozen_20261107/cpu_audit.json,/split_results/dev/successful_calls
+checks,评价参考,24,results/radar_domain/frozen_20261107/cpu_audit.json,/split_results/holdout/references
+checks,评价参考,106,results/radar_domain/frozen_20261107/cpu_audit.json,/split_results/holdout/successful_calls
+tokens,训练参考,3362,results/radar_domain/frozen_20261107/token_preflight.json,/splits/train/max_context_tokens
+tokens,训练参考,76,results/radar_domain/frozen_20261107/token_preflight.json,/splits/train/max_action_tokens
+tokens,训练参考,362,results/radar_domain/frozen_20261107/token_preflight.json,/splits/train/max_total_action_tokens
+tokens,开发参考,8228,results/radar_domain/frozen_20261107/token_preflight.json,/splits/dev/max_context_tokens
+tokens,开发参考,98,results/radar_domain/frozen_20261107/token_preflight.json,/splits/dev/max_action_tokens
+tokens,开发参考,867,results/radar_domain/frozen_20261107/token_preflight.json,/splits/dev/max_total_action_tokens
+tokens,评价参考,3693,results/radar_domain/frozen_20261107/token_preflight.json,/splits/holdout/max_context_tokens
+tokens,评价参考,78,results/radar_domain/frozen_20261107/token_preflight.json,/splits/holdout/max_action_tokens
+tokens,评价参考,298,results/radar_domain/frozen_20261107/token_preflight.json,/splits/holdout/max_total_action_tokens
+case,扫描器,-25.0,results/radar_domain/programs_dev_20261107/development_case.json,/rows/0/lower_celsius
+case,扫描器,55.0,results/radar_domain/programs_dev_20261107/development_case.json,/rows/0/upper_celsius
+case,扫描器,True,results/radar_domain/programs_dev_20261107/development_case.json,/rows/0/within_range_at_minus_20_celsius
+case,处理器、显示器与键盘,-15.0,results/radar_domain/programs_dev_20261107/development_case.json,/rows/1/lower_celsius
+case,处理器、显示器与键盘,55.0,results/radar_domain/programs_dev_20261107/development_case.json,/rows/1/upper_celsius
+case,处理器、显示器与键盘,False,results/radar_domain/programs_dev_20261107/development_case.json,/rows/1/within_range_at_minus_20_celsius
+macros,OfflineRecoveryPairs,24,results/radar_domain/recovery_contract_20261107/summary.json,/fixture_pairs
+macros,OfflineRecoveryContext,8616,results/radar_domain/recovery_contract_20261107/summary.json,/max_fixture_context_tokens
+macros,OfflineContextBudget,16384,results/radar_domain/frozen_20261107/token_preflight.json,/registered_runtime_budget/context_tokens
+macros,OfflineMaxContext,8228,results/radar_domain/frozen_20261107/token_preflight.json,/maximum_context_tokens
+macros,OfflineReviewedCitations,332,artifacts/thesis_direction_review/radar_new_sources_review_20261107/review_summary.safe.json,/citation_spans_checked
