@@ -1,0 +1,128 @@
+{
+  "schema": "radar_research_question_coverage_review_v1",
+  "date": "2026-11-07",
+  "reviewers": [
+    "AI /root",
+    "AI /root/thesis_mainline_check"
+  ],
+  "scope": "Reference action structure only; no model outputs, no new question authoring or dataset changes",
+  "status": "implementation_checks_passed_but_compositional_evaluation_coverage_needs_one_bounded_supplement",
+  "profiles": {
+    "train": {
+      "questions": 576,
+      "reference_call_histogram": {
+        "4": 96,
+        "5": 192,
+        "6": 192,
+        "9": 96
+      },
+      "operation_call_counts": {
+        "Scan": 672,
+        "Project": 864,
+        "Assemble": 576,
+        "finish": 576,
+        "Expand": 96,
+        "Filter": 288,
+        "Join": 96,
+        "Derive": 96,
+        "Assess": 96
+      },
+      "question_counts_using_operation": {
+        "Scan": 576,
+        "Expand": 96,
+        "Project": 576,
+        "Join": 96,
+        "Filter": 288,
+        "Derive": 96,
+        "Assess": 96,
+        "Assemble": 576
+      }
+    },
+    "dev": {
+      "questions": 108,
+      "reference_call_histogram": {
+        "4": 16,
+        "5": 35,
+        "6": 32,
+        "8": 1,
+        "9": 19,
+        "11": 1,
+        "13": 1,
+        "14": 1,
+        "16": 1,
+        "18": 1
+      },
+      "operation_call_counts": {
+        "Scan": 140,
+        "Project": 174,
+        "Assemble": 108,
+        "finish": 108,
+        "Expand": 23,
+        "Filter": 62,
+        "Join": 31,
+        "Derive": 17,
+        "Assess": 19
+      },
+      "question_counts_using_operation": {
+        "Scan": 108,
+        "Expand": 22,
+        "Project": 108,
+        "Join": 24,
+        "Filter": 56,
+        "Derive": 17,
+        "Assess": 19,
+        "Assemble": 108
+      }
+    },
+    "holdout": {
+      "questions": 24,
+      "reference_call_histogram": {
+        "4": 19,
+        "5": 1,
+        "6": 3,
+        "7": 1
+      },
+      "operation_call_counts": {
+        "Scan": 28,
+        "Project": 28,
+        "Assemble": 24,
+        "finish": 24,
+        "Filter": 1,
+        "Join": 1
+      },
+      "question_counts_using_operation": {
+        "Scan": 24,
+        "Expand": 0,
+        "Project": 24,
+        "Join": 1,
+        "Filter": 1,
+        "Derive": 0,
+        "Assess": 0,
+        "Assemble": 24
+      }
+    }
+  },
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v2/frozen_20261107/train/references.jsonl": "6f36b6c96de0ba94ec59d246db160bf98bd27184958cdf4fc807fab483cfd5b3",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/references.jsonl": "807931f528eb29a0a0cfc33ddfbbbac3ec60e6e974de090dc0e68c8dcce1f7a9",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/references.jsonl": "ff6cb70ab418459d72e2f188eb45c8d32e2ef2b31cc83425cbc7934f3d8ad5d0"
+  },
+  "finding": "19 of 24 real holdout references have four calls, including Assemble and finish; only one question uses Filter and one uses Join; Expand, Derive and Assess are absent. This set supports new-source lookup and conditional parameter reading but is insufficient on its own for a broad compositional-recovery claim.",
+  "interpretation": "Call count is an auxiliary descriptor; necessity of combining distinct source facts and making a source-supported operation is the task criterion. Scan itself may perform meaningful conditional selection.",
+  "decision": {
+    "preserve_frozen_24_questions": true,
+    "preserve_original_24_question_evaluation_contract": true,
+    "supplement": "Plan one separately reported compositional evaluation subset, target/up to 12 questions across the four new source families; source feasibility, semantic necessity and independent reference review precede construction and freeze.",
+    "supplement_status": "planned_not_authored_or_frozen",
+    "supplement_model_results_seen": false,
+    "tune_only_on_development": true,
+    "no_result_based_expansion": true,
+    "pending_core_experiments": [
+      "frozen_public_same_state_evaluation",
+      "domain_shared_initial_A_vs_C_paired_continuation_and_evaluation"
+    ]
+  },
+  "already_completed_offline_work_remains_valid": true,
+  "training_started": false,
+  "server_accessed": false
+}
