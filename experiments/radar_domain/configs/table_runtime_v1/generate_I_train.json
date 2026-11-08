@@ -1,0 +1,16 @@
+{
+  "schema": "radar_table_generation_config_v1",
+  "split_manifest": "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json",
+  "supplement_manifest": "data/radar_domain_recovery_v2/compositional_supplement_20261108/manifest.json",
+  "split": "train",
+  "base_model_dir": "models/qwen2.5-3b-instruct",
+  "adapter_dir": "data/radar_domain_recovery_v2/table_runs_v1/I/model",
+  "model_role": "I_domain",
+  "runtime_user": "syx",
+  "gpu_index": 0,
+  "seed": 20261003,
+  "max_gpu_hours": 1.0,
+  "ledger_path": "results/radar_domain/table_runtime_v1/gpu_budget.json",
+  "job_id": "domain_I_train_seed20261003",
+  "collector_training_result": "data/radar_domain_recovery_v2/table_runs_v1/I/run_result.json"
+}

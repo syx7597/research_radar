@@ -1,0 +1,118 @@
+{
+  "schema": "radar_table_runner_cpu_smoke_v1",
+  "date": "2026-11-08",
+  "status": "passed",
+  "origin": "scripted_reference_control",
+  "questions": 12,
+  "model_runs": 0,
+  "model_weights_loaded": false,
+  "server_accessed": false,
+  "training_eligible": false,
+  "reference_control_outputs_preserved": 12,
+  "full_token_accounting_recomputed": true,
+  "changed_observation_rejected": "Excluded",
+  "incomplete_denominator_rejected": true,
+  "cases": [
+    {
+      "id": "RDR-DEV-01",
+      "calls": 13,
+      "input_tokens": 44350,
+      "generated_tokens": 598,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-02",
+      "calls": 9,
+      "input_tokens": 18697,
+      "generated_tokens": 424,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-03",
+      "calls": 18,
+      "input_tokens": 84090,
+      "generated_tokens": 849,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-04",
+      "calls": 9,
+      "input_tokens": 21211,
+      "generated_tokens": 369,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-05",
+      "calls": 16,
+      "input_tokens": 58436,
+      "generated_tokens": 737,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-06",
+      "calls": 11,
+      "input_tokens": 44906,
+      "generated_tokens": 579,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-07",
+      "calls": 14,
+      "input_tokens": 49777,
+      "generated_tokens": 592,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-08",
+      "calls": 5,
+      "input_tokens": 6981,
+      "generated_tokens": 200,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-09",
+      "calls": 9,
+      "input_tokens": 22443,
+      "generated_tokens": 390,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-10",
+      "calls": 5,
+      "input_tokens": 8331,
+      "generated_tokens": 266,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-11",
+      "calls": 5,
+      "input_tokens": 7266,
+      "generated_tokens": 211,
+      "stop_reason": "finished"
+    },
+    {
+      "id": "RDR-DEV-12",
+      "calls": 8,
+      "input_tokens": 24191,
+      "generated_tokens": 358,
+      "stop_reason": "finished"
+    }
+  ],
+  "code_and_input_sha256": {
+    "/Users/clear-water/Documents/vscodeprojecr/radaer_knowledge_research/experiments/radar_domain/table_offline_smoke.py": "6ad77f4e5b0a30d11b6da920230d6838be0b5c652b819243a0d2a347d5370bae",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/references.jsonl": "807931f528eb29a0a0cfc33ddfbbbac3ec60e6e974de090dc0e68c8dcce1f7a9",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/metadata.jsonl": "c55907b00ed8732ba2a90b23b9313ab583902efd95e29938f15faddc319f7f0a",
+    "results/radar_domain/frozen_20261107/token_preflight.json": "d500b7cf22207b168c69e87eb35300a6b8790d3ead1accf3494bf6722b52e371",
+    "experiments/radar_domain/table_inference.py": "588664f6111d15153c1a5c1ef7a6b7b5a9f8109f5ff2e387486f851614e38067",
+    "experiments/radar_domain/table_evaluation.py": "a78664ae79773c2138adb7cb89581d474e296feb549acafb17efa82e70c7ef41",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "experiments/radar_domain/table_recovery_data.py": "cfe279408cdc725424cc3788a297abcd0cc08377e72dd290624f76bcef32e0eb",
+    "experiments/radar_domain/table_scoring.py": "2d4ee02fe69c551d32d6a947e6c77e55313be8d79f44a3e59cbd35fc5b732b35",
+    "experiments/radar_domain/table_runtime.py": "66b59d947a1d06a5d1f81ba6d2784c171bacbecfc0dc318aa6dd24f7e23cac95",
+    "experiments/radar_domain/table_runtime_executor.py": "6ade1c22ea2aaf86b21d1246fa33ac53a2e996c0f393299501e69c2dea16c9e8"
+  },
+  "private_controls": {
+    "path": "data/radar_domain_recovery_v2/runtime_readiness_20261108/reference_controls_v2.jsonl",
+    "sha256": "022c234c66079b79b8179d682729e8a572e9c9e1f46e0e5c681069658601f375"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "radar_table_train_config_v1",
+  "stage": "continuation",
+  "seed": 20261003,
+  "learning_rate": 5e-05,
+  "epochs": 1,
+  "batch_size": 1,
+  "accumulation": 8,
+  "max_context": 16384,
+  "max_gpu_hours": 1.0,
+  "runtime_user": "syx",
+  "ledger_path": "results/radar_domain/table_runtime_v1/gpu_budget.json",
+  "job_id": "domain_A_seed20261003",
+  "base_model_dir": "models/qwen2.5-3b-instruct",
+  "adapter_dir": "data/radar_domain_recovery_v2/table_runs_v1/I/model",
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": "all-linear"
+  },
+  "configuration_status": "proposal_requires_actual_runtime_binding"
+}

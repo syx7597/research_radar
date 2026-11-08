@@ -1,0 +1,49 @@
+{
+  "schema": "radar_table_cpu_runtime_integration_v1",
+  "date": "2026-11-08",
+  "status": "passed",
+  "origin": "scripted_cpu_fixtures_not_model_outputs",
+  "complete_development_questions_per_fixture_arm": 108,
+  "fixture_arms": 2,
+  "episodes_replayed_and_token_checked": 216,
+  "population_counts_per_arm": {
+    "synthetic_development": 96,
+    "real_development": 12
+  },
+  "all_scripted_success_failure_expectations_verified": true,
+  "paired_corrected_and_regressed_arithmetic_verified": true,
+  "normal_production_score_rejected_fixtures": true,
+  "recovery_training_admission_rejected_fixtures": true,
+  "actual_model_runs": 0,
+  "gpu_operations": 0,
+  "server_accessed": false,
+  "tokenizer_files_sha256": {
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "implementation_sha256": {
+    "experiments/radar_domain/table_inference.py": "588664f6111d15153c1a5c1ef7a6b7b5a9f8109f5ff2e387486f851614e38067",
+    "experiments/radar_domain/table_runtime.py": "66b59d947a1d06a5d1f81ba6d2784c171bacbecfc0dc318aa6dd24f7e23cac95",
+    "experiments/radar_domain/table_runtime_executor.py": "6ade1c22ea2aaf86b21d1246fa33ac53a2e996c0f393299501e69c2dea16c9e8",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "experiments/radar_domain/table_job_budget.py": "ddfebf8bab1c03fe672d1b4c0ee480e6ab3181deed1f99840b89cd821d494924"
+  },
+  "evaluation_code_sha256": "a78664ae79773c2138adb7cb89581d474e296feb549acafb17efa82e70c7ef41",
+  "fixture_script_sha256": "8ae6e8d88d58b00e12029f52a740131f31a0b3b4c984bd28b640c22d5609843a",
+  "private_manifest": {
+    "path": "data/radar_domain_recovery_v2/runtime_readiness_20261108/inference_fixture_final_v2/summary.json",
+    "sha256": "8a5800db8e98ce3f144c08fda3a97a8acd5cea0d4f9c185c6da14228d6838e62"
+  },
+  "unit_tests": {
+    "command": "python3 -m unittest tests.test_table_inference tests.test_table_evaluation tests.test_table_runtime_executor",
+    "tests_run": 27,
+    "failures": 0,
+    "errors": 0
+  },
+  "valid_reference_extension_regression": {
+    "path": "results/radar_domain/table_runtime_v1/runtime_extension.json",
+    "sha256": "b15fe1e9b9caa827b3e50acd338d751769bcc00713ace2a6b36b3c5e4035f68e",
+    "valid_references": 720
+  },
+  "gpu_validation_status": "not_run; CUDA probe, finite-logit model smoke and actual sampling remain pending hardware"
+}

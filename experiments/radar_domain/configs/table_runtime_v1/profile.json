@@ -1,0 +1,44 @@
+{
+  "schema": "radar_domain_runtime_profile_v1",
+  "date": "2026-11-08",
+  "status": "draft_for_verified_runtime_smoke",
+  "model_runs": 0,
+  "runtime_validated": false,
+  "training_recipe": {
+    "initial_epochs": 2,
+    "initial_learning_rate": 0.0001,
+    "continuation_epochs": 1,
+    "continuation_learning_rate": 5e-05,
+    "batch_size": 1,
+    "gradient_accumulation": 8,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "initial_and_first_pair_seed": 20261003
+  },
+  "configuration_notes": [
+    "Model paths must contain the registered local official files; no automatic download.",
+    "GPU indices are examples; select idle GPUs at preflight.",
+    "A/C share the same I, preparation, seed and recipe; differing job IDs are expected.",
+    "All probes and jobs share one fixed 8-GPU-hour ledger; per-job caps reserve remaining round allocation.",
+    "Freeze actual runtime evidence and pass model-level smoke before full run.",
+    "Only run original24 and supplement12 after development scheme/checkpoints are fixed; report separately."
+  ],
+  "next_domain_work_order": [
+    "I training",
+    "I dev diagnosis",
+    "I full train failure collection",
+    "paired continuation preparation",
+    "A/C training",
+    "A/C dev comparison",
+    "fixed basic24 and composition12 evaluation"
+  ],
+  "job_allocation_caps_gpu_hours": {
+    "initial_training": 2.0,
+    "failure_collection": 1.0,
+    "each_continuation_training": 1.0,
+    "each_development_or_final_generation": 0.25,
+    "each_cuda_preflight": 0.016666666666666666,
+    "shared_round_cap": 8.0
+  }
+}

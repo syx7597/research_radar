@@ -1,0 +1,80 @@
+{
+  "schema": "radar_table_runtime_readiness_v1",
+  "date": "2026-11-08",
+  "status": "local_runtime_chain_prepared_actual_gpu_validation_pending",
+  "user_server_state": "User reconfirmed unavailable; continue local preparation",
+  "work_completed": [
+    "initial successful training records replayed, tokenized and packed",
+    "real model failure admission and paired continuation corpus builder",
+    "explicit CUDA preflight and local-only LoRA training/inference entry points",
+    "whole-population replay scoring and paired analysis",
+    "versioned invalid-argument execution feedback adapter",
+    "shared 8-GPU-hour reservation and terminal-state ledger",
+    "local asset inventory and concrete draft configurations/runbook"
+  ],
+  "actual_cpu_evidence": {
+    "initial_training_records": 576,
+    "initial_input_tokens_per_pass": 1301215,
+    "initial_supervised_tokens_per_pass": 138883,
+    "initial_max_context": 3362,
+    "unit_tests_passed": 46,
+    "full_dev_fixture_episodes": 216,
+    "real_dev_reference_control_episodes": 12,
+    "unchanged_valid_reference_trajectories": 720
+  },
+  "actual_gpu_operations": 0,
+  "actual_model_training_runs": 0,
+  "actual_model_generation_runs": 0,
+  "actual_model_failure_pairs": 0,
+  "production_budget_ledger_created": false,
+  "source_and_question_sets_unchanged": true,
+  "server_accessed": false,
+  "model_weights_downloaded": false,
+  "current_preparation": {
+    "path": "data/radar_domain_recovery_v2/runtime_readiness_20261108/initial_v5/preparation.json",
+    "sha256": "1cdaeb6c0b62b5c9fc4e941b451fccf95c96079870a678389567f19f87d837db"
+  },
+  "model_resource_status": "Pinned base model and five original public I/A/C adapters not present locally; tokenizer and fixed data/state archives available",
+  "remaining": [
+    "Recover matching original model files and verify ordinary-account Linux/CUDA environment",
+    "Run actual GPU model smoke and validate optimizer/generation path",
+    "Execute frozen public same-state diagnostic and domain I/A/C model experiments"
+  ],
+  "evidence_sha256": {
+    "results/radar_domain/runtime_readiness_20261108/asset_inventory.json": "2993d4b009265091ab4eea94373ab85e2637445bb6751e520cdcceaa7f5e35e2",
+    "results/radar_domain/runtime_readiness_20261108/training_preparation.safe.json": "89b3fdd11d1d4070d4679c18f7b7f44271f64facf66e41027f033889316bc07a",
+    "results/radar_domain/runtime_readiness_20261108/inference_cpu_validation.json": "7fbf1d9e3eab1590c7e5c6c1b0f06ae831df93d4fc78675598ea89dac7cc0054",
+    "results/radar_domain/runtime_readiness_20261108/reference_control_smoke_v2.json": "8824489ca07c20c21326e3a4c5bf36446a23566de41b5666103761e7859f337d",
+    "results/radar_domain/runtime_readiness_20261108/runtime_code_review.json": "08cf2f62516dc41ebbb20394455dcc6e93d0a97d749f744fc9c912b40613967f",
+    "results/radar_domain/table_runtime_v1/runtime_extension.json": "b15fe1e9b9caa827b3e50acd338d751769bcc00713ace2a6b36b3c5e4035f68e",
+    "docs/RADAR_RUNTIME_READINESS_20261108.md": "a1ea734969b045654701012dac001e95bba772459bd95e008d6cce721f3019c5",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_A_dev.json": "f6cf7a49cc45b40b4cdf2864692c0b5d85e147d78af6a8b52e657555cd41c297",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_A_holdout.json": "330c50d88f8644ac2439ba15e8d2e4ae6c82568bc26fd90c6dd72a13c81631b9",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_A_supplement.json": "79d17a6aed133f354824fa995bb6c9d4602d58ad18a2021295fd046063bccbb9",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_C_dev.json": "c57fb9f58bde83e47c5a35b57da3e326e133db65e511c7ea5b02a5b27411ace2",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_C_holdout.json": "d715d26de67f8157750a8acef2e4f9b5d60661638b488be120c6d590afd2095d",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_C_supplement.json": "ccb942c98a1a5c3a63bb41d52bfce22d49f9a3f8446612ed216228b1dc393736",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_I_dev.json": "1c10fb094e40f7b809d9b28e438e9ef51ccf877d6381198e39108d760f83024b",
+    "experiments/radar_domain/configs/table_runtime_v1/generate_I_train.json": "938fdae575fed89e8640032a3409becdc1c295bdaba442e05bc8a01e2f8e9c5e",
+    "experiments/radar_domain/configs/table_runtime_v1/profile.json": "0695273a56fe371ef0bc1752d5f699472207180d13d94b35679f694e800e9fc1",
+    "experiments/radar_domain/configs/table_runtime_v1/train_A.json": "d3b9de11e9faabcf01776fa25e52d92bcdb86b9ddbd527d4a3fe0538473b1555",
+    "experiments/radar_domain/configs/table_runtime_v1/train_C.json": "b81099629bb2b675c93414701eb1d1473ac184c925102252d16706d213206277",
+    "experiments/radar_domain/configs/table_runtime_v1/train_I.json": "7ed6c06796f43c6e3236aa9602e1aca02b0335e1acf56ea965c97847fa9f1c1d"
+  },
+  "implementation_sha256": {
+    "experiments/radar_domain/table_training.py": "200d17edbbbb020a9f4bdf51e152dbd3d31e01e57b5f66866902fe80fba8a980",
+    "experiments/radar_domain/table_inference.py": "588664f6111d15153c1a5c1ef7a6b7b5a9f8109f5ff2e387486f851614e38067",
+    "experiments/radar_domain/table_evaluation.py": "a78664ae79773c2138adb7cb89581d474e296feb549acafb17efa82e70c7ef41",
+    "experiments/radar_domain/table_runtime.py": "66b59d947a1d06a5d1f81ba6d2784c171bacbecfc0dc318aa6dd24f7e23cac95",
+    "experiments/radar_domain/table_runtime_executor.py": "6ade1c22ea2aaf86b21d1246fa33ac53a2e996c0f393299501e69c2dea16c9e8",
+    "experiments/radar_domain/table_job_budget.py": "ddfebf8bab1c03fe672d1b4c0ee480e6ab3181deed1f99840b89cd821d494924",
+    "experiments/radar_domain/table_offline_smoke.py": "6ad77f4e5b0a30d11b6da920230d6838be0b5c652b819243a0d2a347d5370bae"
+  },
+  "tests_sha256": {
+    "tests/test_table_training.py": "7e490b01c136736c1cc11314961d8dac11de8fea864171a8e52dae01938daca5",
+    "tests/test_table_inference.py": "3f9cc6f1b1d779d1b2e77184bff55f99b5d3c3feff1ec18bc6ee52936cd94606",
+    "tests/test_table_evaluation.py": "ab6d15e5759830b9064bb88903473e784a040d750786214a41443505eca750ac",
+    "tests/test_table_runtime_executor.py": "3755322833600ec7ae61bcd563f07bba7d8494d3ec70dc21c0cbe455a68d243d",
+    "tests/test_table_job_budget.py": "7ffada9325762550bdc397a583420d6db87646dd50b3c8da26d0fdafb649c22c"
+  }
+}

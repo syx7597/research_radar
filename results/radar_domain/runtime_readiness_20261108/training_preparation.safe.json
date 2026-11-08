@@ -1,0 +1,80 @@
+{
+  "schema": "radar_table_training_readiness_summary_v1",
+  "date": "2026-11-08",
+  "status": "initial_success_corpus_prepared_and_verified_cpu_only",
+  "prepared_manifest": {
+    "path": "data/radar_domain_recovery_v2/runtime_readiness_20261108/initial_v5/preparation.json",
+    "sha256": "1cdaeb6c0b62b5c9fc4e941b451fccf95c96079870a678389567f19f87d837db"
+  },
+  "initial": {
+    "path": "data/radar_domain_recovery_v2/runtime_readiness_20261108/initial_v5/initial.jsonl",
+    "sha256": "4fac13886cfb4ad2887b3e7c65f716b22d5c904cdbc99f87d6bdccd3ce097667",
+    "records": 576,
+    "supervised_tokens": 138883,
+    "input_tokens": 1301215,
+    "max_context_tokens": 3362
+  },
+  "sequence_seed": 20261108,
+  "tokenizer": {
+    "directory": "cache/qwen2.5-3b-tokenizer",
+    "files_sha256": {
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "libraries": {
+      "transformers": "5.18.0",
+      "tokenizers": "0.23.2"
+    }
+  },
+  "code_sha256": {
+    "experiments/radar_domain/table_training.py": "200d17edbbbb020a9f4bdf51e152dbd3d31e01e57b5f66866902fe80fba8a980",
+    "experiments/radar_domain/table_runtime_executor.py": "6ade1c22ea2aaf86b21d1246fa33ac53a2e996c0f393299501e69c2dea16c9e8",
+    "tests/test_table_training.py": "7e490b01c136736c1cc11314961d8dac11de8fea864171a8e52dae01938daca5"
+  },
+  "tests": {
+    "command": "python3 -m unittest tests.test_table_training -v",
+    "tests_run": 13,
+    "failures": 0,
+    "errors": 0,
+    "verified": [
+      "no dev/holdout reference file reads by initial preparation",
+      "original split identity and synthetic train-only admission",
+      "CPU fixture rejection for failure collection",
+      "exact half ordinary/half paired-suffix target token budgets",
+      "untruncated inputs with tail-only target masking",
+      "paired data order and common ordinary material",
+      "shared actual I_domain training-result provenance",
+      "ordinary-account, one-pass continuation, common initial adapter and bounded config",
+      "paired settings shared across A/C except unique job_id",
+      "same-seed paired settings lock torch/peft/CUDA/Python and other training package versions",
+      "different continuation seeds register separate paired settings while retaining the same prepared data",
+      "fixed shared round-budget path; alternate ledgers rejected",
+      "invalid numeric and mapping-shape configuration errors become replayable actual tool feedback",
+      "hand-constructed error-feedback fixtures recover the reference target but remain training-ineligible",
+      "tampered error feedback is rejected by recovery replay"
+    ]
+  },
+  "configured_but_not_gpu_verified": [
+    "local-only Qwen+LoRA model loading",
+    "longest-training-example finite-loss forward/backward smoke without optimizer update",
+    "gradient clearing and seed reset after smoke",
+    "single-GPU sequential-sampling supervised-token accounting",
+    "shared hard allocation budget watchdog",
+    "actual checkpoint output and original-model hash revalidation"
+  ],
+  "model_weights_loaded": false,
+  "torch_imported_for_preparation": false,
+  "actual_training_runs": 0,
+  "actual_model_failure_rollouts": 0,
+  "formal_recovery_pairs": 0,
+  "server_accessed": false,
+  "configuration_status": "Proposed template only; package/CUDA versions are locked per paired seed at actual runtime. GPU forward/backward is not yet tested.",
+  "next_required": "Restore normal-account Linux CUDA runtime and local official base weights; perform explicit preflight/train. Continuation preparation requires actual initial training completion and complete train rollouts.",
+  "preparation_revision": 5,
+  "earlier_versions_preserved": true,
+  "packed_token_bytes_unchanged_across_revisions": true,
+  "revision_record": {
+    "path": "data/radar_domain_recovery_v2/runtime_readiness_20261108/initial_preparation_revisions.json",
+    "sha256": "eadfa506a2ea1f4539c3c5ae99b43de16960bc9a41ff7de8c37eec694198a3fa"
+  }
+}

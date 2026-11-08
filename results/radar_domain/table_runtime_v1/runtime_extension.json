@@ -1,0 +1,55 @@
+{
+  "schema": "radar_table_runtime_error_extension_v1",
+  "date": "2026-11-08",
+  "scope": "Runtime adapter for previously uncaught invalid model operation configurations",
+  "adapter": "experiments/radar_domain/table_runtime_executor.py",
+  "adapter_sha256": "6ade1c22ea2aaf86b21d1246fa33ac53a2e996c0f393299501e69c2dea16c9e8",
+  "frozen_executor_unchanged_sha256": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+  "normalization": {
+    "DecimalException": "ValueError: invalid_operation_configuration:<exception class>",
+    "AttributeError": "ValueError: invalid_operation_configuration:AttributeError",
+    "OverflowError": "ValueError: invalid_operation_configuration:OverflowError"
+  },
+  "infrastructure_exceptions_propagate": [
+    "OSError",
+    "MemoryError",
+    "RuntimeError"
+  ],
+  "frozen_sources_references_budgets_and_scoring_unchanged": true,
+  "valid_reference_regression": {
+    "train": {
+      "references": 576,
+      "calls": 3360,
+      "all_messages_events_answers_identical": true
+    },
+    "dev": {
+      "references": 108,
+      "calls": 682,
+      "all_messages_events_answers_identical": true
+    },
+    "holdout": {
+      "references": 24,
+      "calls": 106,
+      "all_messages_events_answers_identical": true
+    },
+    "supplement": {
+      "references": 12,
+      "calls": 99,
+      "all_messages_events_answers_identical": true
+    }
+  },
+  "total_valid_references": 720,
+  "invalid_parameter_tests": [
+    "nonnumeric filter value",
+    "wrong columns container type",
+    "wrong conditions container type",
+    "no new handle on rejected operation",
+    "continued execution and exact replay",
+    "recovery pair accepts actual rejected feedback",
+    "OSError/MemoryError/RuntimeError propagate"
+  ],
+  "model_runs": 0,
+  "cuda_probe_runs": 0,
+  "server_accessed": false,
+  "training_allowed_for_test_fixtures": false
+}

@@ -1,0 +1,241 @@
+{
+  "schema": "radar_table_runtime_independent_code_review_v1",
+  "date": "2026-11-08",
+  "reviewer": "AI /root/runtime_asset_inventory",
+  "reviewer_role": "Non-author read-only review of new runtime/training/inference/evaluation implementations; changes made by their authors/root",
+  "status": "identified_issues_resolved_cpu_checks_passed_gpu_validation_pending",
+  "scope": "Experimental fairness, source admission, labels/token budgets, complete denominators, account identity, runtime accounting, registered statistics. No old-model experiment rerun.",
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "blocking_interface",
+      "finding": "Paired evaluator requested pair_training_settings while training produced paired_settings, so formal A/C comparison would reject valid runs.",
+      "resolution": "Unified paired_settings binding; evaluator verifies referenced settings schema, preparation and training environment.",
+      "status": "resolved",
+      "code": [
+        "table_training.claim_paired_settings",
+        "table_evaluation.compare"
+      ]
+    },
+    {
+      "id": "R2",
+      "severity": "experimental_identity",
+      "finding": "Generation originally trusted a self-declared frozen manifest; a reduced or rewritten evaluation population could be accepted.",
+      "resolution": "Parent and supplement manifests must match the existing public frozen SHA identities before question/catalog loading. Complete ordered coverage is required again in offline scoring.",
+      "status": "resolved",
+      "code": [
+        "table_inference.load_partition",
+        "table_evaluation.score_manifest"
+      ],
+      "regression": "Self-declared reduced population rejected"
+    },
+    {
+      "id": "R3",
+      "severity": "checkpoint_identity",
+      "finding": "Adapter completion proof initially did not bind the base config/tokenizer used at generation to the base used during training.",
+      "resolution": "Generation verifies the actual base-directory identity against the training completion result; A/C comparison also matches generated base identity.",
+      "status": "resolved",
+      "code": [
+        "table_inference.collector_training_identity",
+        "table_runtime.directory_identity",
+        "table_evaluation.compare"
+      ]
+    },
+    {
+      "id": "R4",
+      "severity": "paired_fairness",
+      "finding": "Matching configured training settings alone did not ensure equal actual software versions, numerical settings and generation implementation.",
+      "resolution": "Same-seed paired settings lock actual training environment before second arm; run results record it. Comparator matches training environment, global steps, target tokens, sampled order, initial files, actual inference versions, dtype/attention, batch/seed/decoding and generation implementation SHA. Separate continuation seeds have separate settings bindings.",
+      "status": "resolved",
+      "code": [
+        "table_training.training_environment",
+        "table_training.claim_paired_settings",
+        "table_evaluation.compare"
+      ]
+    },
+    {
+      "id": "R5",
+      "severity": "account_identity",
+      "finding": "getpass.getuser could use LOGNAME/USER rather than the actual uid account, allowing ubuntu to be misidentified as syx.",
+      "resolution": "Use pwd.getpwuid(euid).pw_name, reject root/ubuntu and mismatched ordinary account, with environment-spoof regression.",
+      "status": "resolved",
+      "code": [
+        "table_runtime._user_check"
+      ]
+    },
+    {
+      "id": "R6",
+      "severity": "registered_statistics",
+      "finding": "Initial paired aggregator omitted the original24 task contract question-paired bootstrap, returning only exact counts.",
+      "resolution": "For holdout24, read the unchanged bound task contract and run 5000 paired-question bootstrap replicates with seed20261107. Composition12 remains a separate descriptive population.",
+      "status": "resolved",
+      "code": [
+        "table_evaluation.paired_bootstrap",
+        "table_evaluation.compare"
+      ]
+    },
+    {
+      "id": "R7",
+      "severity": "round_budget_scope",
+      "finding": "A per-ledger limit alone relied on callers choosing one common ledger; changing config paths could reset apparent round allowance.",
+      "resolution": "Production training config and runtime/generation entry points enforce the registered shared ledger through require_round_ledger. Temporary isolated ledgers remain available only to lower-level CPU unit tests.",
+      "status": "resolved",
+      "code": [
+        "table_job_budget.require_round_ledger",
+        "table_training.validate_config",
+        "table_runtime.preflight_inputs",
+        "table_runtime.validate_runtime_evidence",
+        "table_inference.generate"
+      ]
+    },
+    {
+      "id": "R8",
+      "severity": "runtime_model_failure_accounting",
+      "finding": "Frozen TableExecutor let Decimal InvalidOperation and AttributeError escape for malformed numeric/columns/conditions model JSON. Actual read-only reproduction showed calls=2 but only one recorded event, so a model mistake could abort the dataset run instead of becoming recoverable tool feedback.",
+      "resolution": "Versioned TableRuntimeExecutor delegates valid operations unchanged and normalizes only DecimalException, AttributeError and OverflowError into stable ValueError tool feedback. New inference, offline replay/scoring and training recovery construction all use and hash-bind the adapter; frozen executor and data remain unchanged.",
+      "status": "resolved",
+      "code": [
+        "table_runtime_executor.TableRuntimeExecutor.operate",
+        "table_inference implementation bindings",
+        "table_evaluation runtime adapter identity check",
+        "table_training RuntimeExecutor alias and CODE binding"
+      ],
+      "actual_checks": {
+        "malformed_cases": [
+          "Filter numeric value abc",
+          "Project columns list instead of mapping",
+          "Scan conditions list instead of mapping"
+        ],
+        "each_error_recorded_and_counted": true,
+        "error_allocates_new_handle": false,
+        "valid_operation_after_error_succeeds": true,
+        "calls_and_events_after_error_then_valid_step": 3,
+        "recovery_result_handle": 1,
+        "replayed_success_answer_matches": true,
+        "failed_rollout_recovery_pair_constructible": true,
+        "constructed_fixture_training_eligible": false,
+        "infrastructure_exceptions_preserved": [
+          "OSError",
+          "MemoryError",
+          "RuntimeError"
+        ],
+        "normalization_does_not_catch_base_Exception": true,
+        "complete_real_dev_reference_events_and_answers_unchanged": 12
+      }
+    },
+    {
+      "id": "R9",
+      "severity": "budget_terminal_consistency",
+      "finding": "Generation previously wrote completed before JobBudget finalization; a watchdog hard exit in that interval could leave a completed manifest with a timed_out allocation job.",
+      "resolution": "While inside JobBudget, generation now writes outputs_written_budget_finalization_pending. After the budget context exits, it checks the matching job is completed, binds its stable per-job digest, and only then writes completed. Formal scoring requires one matching completed job and the same digest; concurrent addition of other jobs does not invalidate an existing completed job.",
+      "status": "resolved",
+      "code": [
+        "table_inference.generate",
+        "table_evaluation.score_manifest"
+      ],
+      "checked_control_flow": [
+        "All model output and weight cleanup occur before JobBudget exit",
+        "The only success status assignment follows verified completed ledger job",
+        "Watchdog termination before context completion leaves a non-completed manifest",
+        "Formal scoring rejects a claimed success when ledger status or stable job digest differs"
+      ],
+      "cpu_regression": "test_completed_manifest_cannot_override_timed_out_gpu_ledger",
+      "additional_narrow_probes": [
+        {
+          "case": "timed_out",
+          "rejected": true
+        },
+        {
+          "case": "running",
+          "rejected": true
+        },
+        {
+          "case": "wrong_digest",
+          "rejected": true
+        },
+        {
+          "case": "duplicate_job",
+          "rejected": true
+        }
+      ]
+    }
+  ],
+  "unresolved_blocking_findings": [],
+  "checked_invariants": [
+    "Training preparation opens only the hash-bound576 synthetic train examples; dev/holdout/supplement cannot be relabelled into this partition.",
+    "Initial success trajectories are actually replayed, tokenized with the pinned tokenizer, and packed with assistant-only labels; reference/tool/input content is masked.",
+    "Formal recovery preparation requires a completed actual I_domain training result and full ordered model-generated train rollout manifest, then replays observations/answers and constructs the first reference divergence.",
+    "CPU fixture generators remain cpu_fixture and training_eligible=false; production scoring and recovery admission reject them.",
+    "Ordinary examples are byte-identical between A/C; paired suffixes match source IDs, sample order and supervised-token counts; exact component budgets use target masking without shortening input history.",
+    "A/C share their collecting I_domain model files and actual configuration; initial and continuation run identities are explicit.",
+    "Inference stops at context/call/generated-token budgets without input truncation; failures remain in complete split order; unexpected backend failures abort with partial artifacts rather than silently removing questions.",
+    "Offline scoring replays messages/events, checks submitted answer/handle, actual token IDs and full-history counts; synthetic/real dev and basic24/composition12 are separately grouped.",
+    "Runtime gate checks a real ordinary Linux uid, current device occupancy, current binding hashes and a recent CUDA tensor probe; actual model-forward or training forward/backward smoke happens inside the charged job.",
+    "Shared allocation ledger reserves concurrent budgets, charges loading/compute/model-saving wall time, rejects duplicate jobs and has an in-process hard timeout watchdog without touching foreign PIDs.",
+    "Model loading is local_files_only; CPU import/help and fixtures do not download weights or invoke GPU model code.",
+    "Malformed model operation configs produce counted, replayable tool errors without allocating a result handle; subsequent valid calls and recovery suffix construction continue. Only the three declared parameter-error exception families are normalized; infrastructure exceptions propagate.",
+    "Actual model generation success requires completed GPU allocation accounting and a bound stable per-job digest; timed_out/running/duplicate/digest-mismatched jobs cannot be scored as completed model results."
+  ],
+  "final_cpu_tests": {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "tests.test_table_training",
+      "tests.test_table_inference",
+      "tests.test_table_evaluation",
+      "tests.test_table_job_budget",
+      "tests.test_table_runtime_executor"
+    ],
+    "tests_run": 46,
+    "returncode": 0,
+    "output": "..............................................\n----------------------------------------------------------------------\nRan 46 tests in 0.470s\n\nOK\n",
+    "files_stable_during_test": true,
+    "scope": "Current five runtime modules including new budget-terminal regression; no model run."
+  },
+  "reviewed_files_sha256": {
+    "experiments/radar_domain/table_training.py": "200d17edbbbb020a9f4bdf51e152dbd3d31e01e57b5f66866902fe80fba8a980",
+    "experiments/radar_domain/table_runtime.py": "66b59d947a1d06a5d1f81ba6d2784c171bacbecfc0dc318aa6dd24f7e23cac95",
+    "experiments/radar_domain/table_inference.py": "588664f6111d15153c1a5c1ef7a6b7b5a9f8109f5ff2e387486f851614e38067",
+    "experiments/radar_domain/table_evaluation.py": "a78664ae79773c2138adb7cb89581d474e296feb549acafb17efa82e70c7ef41",
+    "experiments/radar_domain/table_job_budget.py": "ddfebf8bab1c03fe672d1b4c0ee480e6ab3181deed1f99840b89cd821d494924",
+    "experiments/radar_domain/table_training_data.py": "1b865b1fb97f152f82d23ede979d24bc31fbe2d3a7e8ab732f2d4d446cd6d5b0",
+    "experiments/radar_domain/table_recovery_data.py": "cfe279408cdc725424cc3788a297abcd0cc08377e72dd290624f76bcef32e0eb",
+    "tests/test_table_training.py": "7e490b01c136736c1cc11314961d8dac11de8fea864171a8e52dae01938daca5",
+    "tests/test_table_inference.py": "3f9cc6f1b1d779d1b2e77184bff55f99b5d3c3feff1ec18bc6ee52936cd94606",
+    "tests/test_table_evaluation.py": "ab6d15e5759830b9064bb88903473e784a040d750786214a41443505eca750ac",
+    "tests/test_table_job_budget.py": "7ffada9325762550bdc397a583420d6db87646dd50b3c8da26d0fdafb649c22c",
+    "experiments/radar_domain/table_runtime_executor.py": "6ade1c22ea2aaf86b21d1246fa33ac53a2e996c0f393299501e69c2dea16c9e8",
+    "tests/test_table_runtime_executor.py": "3755322833600ec7ae61bcd563f07bba7d8494d3ec70dc21c0cbe455a68d243d"
+  },
+  "original_24_statistics": {
+    "contract_path": "data/radar_domain_recovery_v2/frozen_20261107/task_contract.json",
+    "contract_sha256": "f515b25d1f34c2ca0cefd65fb68e9151a9f2b5d7520028912300c5792a91c23f",
+    "bootstrap_replicates": 5000,
+    "seed": 20261107,
+    "supplement_policy": "Separate exact paired and source-family counts; never pooled as new independent families"
+  },
+  "production_ledger": "results/radar_domain/table_runtime_v1/gpu_budget.json",
+  "gpu_validation": {
+    "actual_model_forward_executed_by_this_reviewer": false,
+    "training_backward_or_optimizer_executed": false,
+    "full_transformers_peft_training_path_validated": false,
+    "reason": "Local registered weights/adapters absent and local environments have no torch; actual Linux/CUDA runtime smoke is still required."
+  },
+  "server_accessed": false,
+  "weights_downloaded": false,
+  "model_results_generated": 0,
+  "old_files_modified": false,
+  "next_validation": "On restored ordinary-account Linux CUDA runtime, verify original assets, perform the registered current device/model smoke, then run explicit bounded jobs. CPU success is preparation evidence, not measured model performance.",
+  "review_revision": 3,
+  "previous_review": {
+    "path": "data/radar_domain_recovery_v2/runtime_readiness_20261108/review_snapshots/runtime_code_review.v2.json",
+    "sha256": "7a786662112a24b4baf18d4037259096d3ec38de90d0026176bc2406d4f08de4"
+  },
+  "revision_scope": "Append only the requested generation/job-budget terminal consistency review and refresh final hashes/test counts. Previous R1-R8 findings unchanged.",
+  "frozen_executor_identity": {
+    "path": "experiments/radar_domain/table_program.py",
+    "sha256": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "matches_original_frozen_manifest": true
+  }
+}
