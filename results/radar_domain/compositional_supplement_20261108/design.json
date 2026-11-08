@@ -1,0 +1,55 @@
+{
+  "schema": "radar_composition_supplement_design_v1",
+  "date": "2026-11-08",
+  "status": "registered_before_question_authoring_and_model_runs",
+  "question_cap": 12,
+  "target_per_family": 3,
+  "families": [
+    "furuno_drs4w",
+    "ott_rls",
+    "smartmicro_umrr11",
+    "campbell_cs475a"
+  ],
+  "source_scope": "Existing complete 156-record holdout catalog and its fixed eight original PDF pages; no new sources or training facts",
+  "purpose": "Source-supported compositional parameter queries as a separately reported targeted evaluation",
+  "admission": [
+    "A natural parameter/configuration decision with explicit source scope",
+    "At least two semantically necessary source facts, not duplicated presentations",
+    "At least one necessary computation beyond lookup/projection/assembly: explicit pairing, typed predicate, range check, or source-supported configuration assessment",
+    "A necessity witness explains how dropping a fact/constraint changes the returned information or decision; call count alone is not admission",
+    "No literal answer injection or record-ID selection in program",
+    "Independently answered from original pages before reference comparison; explicit AI identity",
+    "Full reference replay and source checks; complete frozen catalog and same runtime operations"
+  ],
+  "authoring_policy": "At most three submitted questions per family; source limitations may reduce count. Repairs clarify evidence/meaning, not model score. No replacement candidates after model outputs.",
+  "question_forms": "Comparison/filtering, configuration pairing, range/bound/combination-support judgments according to actual source content; quotas are not a requirement to invent an unsupported operation",
+  "source_review": "Non-author AI first reads question-only and archived original pages, saves/seals own answers, then reads author reference; uncertainty recorded",
+  "training_allowed": false,
+  "model_outputs_seen": false,
+  "model_runs": 0,
+  "server_accessed": false,
+  "evaluation": {
+    "original_24": "Unchanged task contract and independent primary report",
+    "supplement": "Separate fixed denominator; report all questions and source-family counts, paired C_domain minus A_domain, completion and cost",
+    "same_source_dependence": "Shares four families and source facts with original 24; not additional independent source families",
+    "tuning": "Only the existing development split",
+    "budgets": {
+      "context_tokens": 16384,
+      "max_calls": 24,
+      "per_turn_generated_tokens": 192,
+      "total_generated_tokens": 2048
+    },
+    "failed_reference_or_token_checks": "Resolve implementation/question ambiguity before freezing; retain failure records; no silent truncation"
+  },
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952",
+    "data/radar_domain_recovery_v2/frozen_20261107/task_contract.json": "f515b25d1f34c2ca0cefd65fb68e9151a9f2b5d7520028912300c5792a91c23f",
+    "data/radar_domain_recovery_v2/frozen_20261107/train/catalog.json": "889ed133ed9bbd52a1ed6635e9a21a3f5078f057163cde281b4733b32e9e9a03",
+    "data/radar_domain_recovery_v2/frozen_20261107/dev/catalog.json": "14afa129f7349cc50c4a75925ba854fb0b47398e8078879b1b1ea1f9f13420b3",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/catalog.json": "2bb76c2ab094ad73d7d4d583a6f98d2dfbc46a9b38aa1fb47b81bbe4daf9ea94",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/questions.jsonl": "3bed6b8b14ed5bd31fc44de9c68f00411a95b21c8947340b19bbfbd0748efec5",
+    "data/radar_domain_recovery_v2/frozen_20261107/holdout/references.jsonl": "ff6cb70ab418459d72e2f188eb45c8d32e2ef2b31cc83425cbc7934f3d8ad5d0",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "experiments/radar_domain/table_scoring.py": "2d4ee02fe69c551d32d6a947e6c77e55313be8d79f44a3e59cbd35fc5b732b35"
+  }
+}

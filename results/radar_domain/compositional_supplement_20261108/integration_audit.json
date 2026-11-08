@@ -1,0 +1,177 @@
+{
+  "schema": "radar_composition_integration_audit_v1",
+  "date": "2026-11-08",
+  "status": "passed",
+  "reviewer": "AI /root/composition_author_land",
+  "review_scope": "Read-only code/data integration and actual CPU reference replay; author of six land questions, not an independent semantic source reviewer. Source acceptance is inherited from separately sealed non-author review.",
+  "design_input_hashes_verified": 9,
+  "manifest_input_hashes_verified": 29,
+  "original_frozen_binding_files_verified": 19,
+  "original_counts_unchanged": {
+    "train": 576,
+    "dev": 108,
+    "holdout": 24
+  },
+  "source_catalog_records": 156,
+  "source_catalog_byte_identical_to_original_holdout": true,
+  "source_families": 4,
+  "new_source_families_added": 0,
+  "source_families_records_subjects_disjoint_from_train_and_dev": true,
+  "question_ids_disjoint_from_original_all_splits": true,
+  "question_count": 12,
+  "all_questions_independently_accepted": true,
+  "answer_specs_only_names_kinds_columns": true,
+  "all_questions_reference_replay_and_score_passed": true,
+  "all_saved_messages_events_and_calls_matched": true,
+  "reference_calls": 99,
+  "all_compositional_operations_on_final_dependency_path": true,
+  "dead_reference_steps": 0,
+  "training_allowed": false,
+  "training_admission_rejection_checks": [
+    {
+      "case": "supplement_manifest_as_train_split",
+      "rejected": true,
+      "reason": "Frozen split and completed model-generated training evidence required"
+    },
+    {
+      "case": "supplement_inputs_under_original_train_manifest",
+      "rejected": true,
+      "reason": "Generation and frozen training inputs differ"
+    }
+  ],
+  "pinned_tokenizer_full_rebuild_check": {
+    "command": "HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 cache/domain_cpu_env/bin/python -m experiments.radar_domain.freeze_compositional_supplement --check",
+    "exit_code": 0,
+    "frozen_files_compared": 8,
+    "status": "checked"
+  },
+  "profiles": [
+    {
+      "id": "RQC-DRW-01",
+      "calls": 6,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Expand",
+        "Filter"
+      ]
+    },
+    {
+      "id": "RQC-DRW-02",
+      "calls": 7,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Join"
+      ]
+    },
+    {
+      "id": "RQC-DRW-03",
+      "calls": 11,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Derive",
+        "Filter",
+        "Join"
+      ]
+    },
+    {
+      "id": "RQC-OTT-01",
+      "calls": 8,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Filter",
+        "Join"
+      ]
+    },
+    {
+      "id": "RQC-OTT-02",
+      "calls": 8,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Derive",
+        "Expand",
+        "Filter"
+      ]
+    },
+    {
+      "id": "RQC-OTT-03",
+      "calls": 8,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Derive",
+        "Expand",
+        "Filter"
+      ]
+    },
+    {
+      "id": "RQC-UMR-01",
+      "calls": 11,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Expand",
+        "Filter",
+        "Join"
+      ]
+    },
+    {
+      "id": "RQC-UMR-02",
+      "calls": 6,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Derive",
+        "Filter"
+      ]
+    },
+    {
+      "id": "RQC-UMR-03",
+      "calls": 5,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Assess"
+      ]
+    },
+    {
+      "id": "RQC-CS4-01",
+      "calls": 9,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Filter",
+        "Join"
+      ]
+    },
+    {
+      "id": "RQC-CS4-02",
+      "calls": 9,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Derive",
+        "Filter",
+        "Join"
+      ]
+    },
+    {
+      "id": "RQC-CS4-03",
+      "calls": 11,
+      "all_step_handles_on_final_dependency_path": true,
+      "compositional_operations_on_path": [
+        "Derive",
+        "Expand",
+        "Filter",
+        "Join"
+      ]
+    }
+  ],
+  "model_runs": 0,
+  "server_accessed": false,
+  "evidence_sha256": {
+    "results/radar_domain/compositional_supplement_20261108/design.json": "76408e74ecb034f59de80424d105dfd91deef8f6a46f04c2bf2531dd299ed796",
+    "results/radar_domain/compositional_supplement_20261108/source_review.safe.json": "6ab78e642548194c0212b7f46ed0f05bf3d38796432209c2ad90dcae7f84ed55",
+    "results/radar_domain/compositional_supplement_20261108/summary.json": "4cfb0ef3ab915f0f18395ece74f0d8dc5b0469ec1d3f3ca830629cd9dde42a2f",
+    "data/radar_domain_recovery_v2/compositional_supplement_20261108/manifest.json": "9de289cc375bb44d366697685f7e293ae8ba079b6f9244b5063164ef326d9bf0",
+    "data/radar_domain_recovery_v2/frozen_20261107/split_manifest.json": "c99481974f3906b4673a7d14bc58b8925be66362f5d905caf821b47d4f871952",
+    "experiments/radar_domain/freeze_compositional_supplement.py": "a36caae4396f67679e535eab6997cadaa040ccebe36335ececbedb4e2aae8db9"
+  },
+  "notes": [
+    "Call count is not a proof of semantic necessity; necessity decisions come from the source review.",
+    "Original24 and supplement share the same four source families and facts and are reported separately."
+  ]
+}

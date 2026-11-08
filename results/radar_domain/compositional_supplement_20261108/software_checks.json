@@ -1,0 +1,27 @@
+{
+  "schema": "composition_software_checks_v1",
+  "date": "2026-11-08",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "tests.test_compositional_supplement",
+    "tests.test_radar_table_program",
+    "tests.test_radar_table_scoring",
+    "tests.test_table_recovery_data"
+  ],
+  "exit_code": 0,
+  "tests_run": 31,
+  "failures": 0,
+  "errors": 0,
+  "output": "...............................\n----------------------------------------------------------------------\nRan 31 tests in 0.363s\n\nOK\n",
+  "files_sha256": {
+    "experiments/radar_domain/freeze_compositional_supplement.py": "a36caae4396f67679e535eab6997cadaa040ccebe36335ececbedb4e2aae8db9",
+    "tests/test_compositional_supplement.py": "5f5ff6b35045c323d3dae3cda6f3b10656ae3379ede714a12352d064c1debb5c",
+    "tests/test_radar_table_program.py": "2109787af18c8b67b6373729312db757a7a50709fdcdaddb425c0fb1fa8eff24",
+    "tests/test_radar_table_scoring.py": "a3df1c7c079e8a869bd778f2e9e27f60484d0dd99c150cc669c90fa10ad57e1a",
+    "tests/test_table_recovery_data.py": "fa0856f4c3e13e9ea7719822d2b04d8210dd722bd3b248b5c15d1dd5465dbdb6"
+  },
+  "model_runs": 0,
+  "server_accessed": false
+}

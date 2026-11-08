@@ -1,0 +1,32 @@
+table,label,value,source,json_pointer
+sources,FURUNO DRS4W,3,results/radar_domain/compositional_supplement_20261108/summary.json,/family_counts/furuno_drs4w
+sources,RQC-DRW-01,6,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/0/calls
+sources,RQC-DRW-02,7,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/1/calls
+sources,RQC-DRW-03,11,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/2/calls
+sources,OTT RLS,3,results/radar_domain/compositional_supplement_20261108/summary.json,/family_counts/ott_rls
+sources,RQC-OTT-01,8,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/3/calls
+sources,RQC-OTT-02,8,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/4/calls
+sources,RQC-OTT-03,8,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/5/calls
+sources,smartmicro UMRR-11,3,results/radar_domain/compositional_supplement_20261108/summary.json,/family_counts/smartmicro_umrr11
+sources,RQC-UMR-01,11,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/6/calls
+sources,RQC-UMR-02,6,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/7/calls
+sources,RQC-UMR-03,5,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/8/calls
+sources,Campbell CS475A,3,results/radar_domain/compositional_supplement_20261108/summary.json,/family_counts/campbell_cs475a
+sources,RQC-CS4-01,9,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/9/calls
+sources,RQC-CS4-02,9,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/10/calls
+sources,RQC-CS4-03,11,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/11/calls
+operations,Expand,0,results/radar_domain/frozen_20261107/task_coverage_review.json,/profiles/holdout/question_counts_using_operation/Expand
+operations,Expand,5,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/*/live_operations (question count)
+operations,Join,1,results/radar_domain/frozen_20261107/task_coverage_review.json,/profiles/holdout/question_counts_using_operation/Join
+operations,Join,7,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/*/live_operations (question count)
+operations,Filter,1,results/radar_domain/frozen_20261107/task_coverage_review.json,/profiles/holdout/question_counts_using_operation/Filter
+operations,Filter,10,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/*/live_operations (question count)
+operations,Derive,0,results/radar_domain/frozen_20261107/task_coverage_review.json,/profiles/holdout/question_counts_using_operation/Derive
+operations,Derive,6,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/*/live_operations (question count)
+operations,Assess,0,results/radar_domain/frozen_20261107/task_coverage_review.json,/profiles/holdout/question_counts_using_operation/Assess
+operations,Assess,1,results/radar_domain/compositional_supplement_20261108/summary.json,/question_profiles/*/live_operations (question count)
+macros,CompositionQuestionCount,12,results/radar_domain/compositional_supplement_20261108/summary.json,/question_count
+macros,CompositionCalls,99,results/radar_domain/compositional_supplement_20261108/summary.json,/reference_calls
+macros,CompositionMaxContext,7770,results/radar_domain/compositional_supplement_20261108/summary.json,/token_preflight/max_context_tokens
+macros,CompositionMaxAction,89,results/radar_domain/compositional_supplement_20261108/summary.json,/token_preflight/max_action_tokens
+macros,CompositionMaxTargets,608,results/radar_domain/compositional_supplement_20261108/summary.json,/token_preflight/max_total_action_tokens

@@ -1,0 +1,235 @@
+{
+  "schema": "radar_composition_supplement_public_v1",
+  "date": "2026-11-08",
+  "status": "frozen_before_model_runs",
+  "question_count": 12,
+  "family_counts": {
+    "furuno_drs4w": 3,
+    "ott_rls": 3,
+    "smartmicro_umrr11": 3,
+    "campbell_cs475a": 3
+  },
+  "source_catalog_records": 156,
+  "original_24_unchanged": true,
+  "training_questions_unchanged": 576,
+  "development_questions_unchanged": 108,
+  "reference_replays_passed": 12,
+  "reference_calls": 99,
+  "call_range": [
+    5,
+    11
+  ],
+  "operation_counts": {
+    "Scan": 19,
+    "Expand": 8,
+    "Project": 19,
+    "Filter": 14,
+    "Assemble": 12,
+    "finish": 12,
+    "Join": 7,
+    "Derive": 7,
+    "Assess": 1
+  },
+  "question_profiles": [
+    {
+      "id": "RQC-DRW-01",
+      "family_id": "furuno_drs4w",
+      "calls": 6,
+      "live_operations": [
+        "Assemble",
+        "Expand",
+        "Filter",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "cross_constraint_paired_selection"
+    },
+    {
+      "id": "RQC-DRW-02",
+      "family_id": "furuno_drs4w",
+      "calls": 7,
+      "live_operations": [
+        "Assemble",
+        "Join",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "cross_attribute_numeric_matching"
+    },
+    {
+      "id": "RQC-DRW-03",
+      "family_id": "furuno_drs4w",
+      "calls": 11,
+      "live_operations": [
+        "Assemble",
+        "Derive",
+        "Filter",
+        "Join",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "conditioned_environment_check"
+    },
+    {
+      "id": "RQC-OTT-01",
+      "family_id": "ott_rls",
+      "calls": 8,
+      "live_operations": [
+        "Assemble",
+        "Filter",
+        "Join",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "state_keyed_power_current_selection"
+    },
+    {
+      "id": "RQC-OTT-02",
+      "family_id": "ott_rls",
+      "calls": 8,
+      "live_operations": [
+        "Assemble",
+        "Derive",
+        "Expand",
+        "Filter",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "configuration_range_selection"
+    },
+    {
+      "id": "RQC-OTT-03",
+      "family_id": "ott_rls",
+      "calls": 8,
+      "live_operations": [
+        "Assemble",
+        "Derive",
+        "Expand",
+        "Filter",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "distance_accuracy_tolerance_selection"
+    },
+    {
+      "id": "RQC-UMR-01",
+      "family_id": "smartmicro_umrr11",
+      "calls": 11,
+      "live_operations": [
+        "Assemble",
+        "Expand",
+        "Filter",
+        "Join",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "paired_configuration_filter"
+    },
+    {
+      "id": "RQC-UMR-02",
+      "family_id": "smartmicro_umrr11",
+      "calls": 6,
+      "live_operations": [
+        "Assemble",
+        "Derive",
+        "Filter",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "two_plane_range_screen"
+    },
+    {
+      "id": "RQC-UMR-03",
+      "family_id": "smartmicro_umrr11",
+      "calls": 5,
+      "live_operations": [
+        "Assemble",
+        "Assess",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "coupled_domain_support"
+    },
+    {
+      "id": "RQC-CS4-01",
+      "family_id": "campbell_cs475a",
+      "calls": 9,
+      "live_operations": [
+        "Assemble",
+        "Filter",
+        "Join",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "mode_current_response_join"
+    },
+    {
+      "id": "RQC-CS4-02",
+      "family_id": "campbell_cs475a",
+      "calls": 9,
+      "live_operations": [
+        "Assemble",
+        "Derive",
+        "Filter",
+        "Join",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "storage_joint_range_screen"
+    },
+    {
+      "id": "RQC-CS4-03",
+      "family_id": "campbell_cs475a",
+      "calls": 11,
+      "live_operations": [
+        "Assemble",
+        "Derive",
+        "Expand",
+        "Filter",
+        "Join",
+        "Project",
+        "Scan"
+      ],
+      "task_type": "resolution_accuracy_distinction"
+    }
+  ],
+  "token_preflight": {
+    "references": 12,
+    "max_context_tokens": 7770,
+    "max_action_tokens": 89,
+    "max_total_action_tokens": 608,
+    "budget": {
+      "context_tokens": 16384,
+      "max_calls": 24,
+      "per_turn_generated_tokens": 192,
+      "total_generated_tokens": 2048
+    },
+    "versions": {
+      "transformers": "5.18.0",
+      "tokenizers": "0.23.2"
+    },
+    "no_truncation": true,
+    "tokenizer_files_sha256": {
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    }
+  },
+  "source_review_grade": "AI",
+  "training_allowed": false,
+  "model_runs": 0,
+  "server_accessed": false,
+  "admission_note": "Source reading counts are not independent fact counts; OTT-01 comprises two state fact groups with correlated power/current presentations and redundant classification predicates.",
+  "manifest": {
+    "path": "data/radar_domain_recovery_v2/compositional_supplement_20261108/manifest.json",
+    "sha256": "9de289cc375bb44d366697685f7e293ae8ba079b6f9244b5063164ef326d9bf0"
+  },
+  "design": {
+    "path": "results/radar_domain/compositional_supplement_20261108/design.json",
+    "sha256": "76408e74ecb034f59de80424d105dfd91deef8f6a46f04c2bf2531dd299ed796"
+  },
+  "independent_review": {
+    "path": "results/radar_domain/compositional_supplement_20261108/source_review.safe.json",
+    "sha256": "6ab78e642548194c0212b7f46ed0f05bf3d38796432209c2ad90dcae7f84ed55"
+  },
+  "code_sha256": "a36caae4396f67679e535eab6997cadaa040ccebe36335ececbedb4e2aae8db9"
+}

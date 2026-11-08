@@ -1,74 +1,57 @@
 {
   "schema": "radar_seven_chapter_manuscript_review_v1",
-  "review_date": "2026-11-07",
-  "status": "offline_domain_work_integrated_compiled_and_selected_pages_visually_reviewed_by_AI",
+  "review_date": "2026-11-08",
+  "status": "mainline_and_composition_evaluation_integrated_compiled_and_selected_pages_visually_reviewed_by_AI",
   "reviewer": "AI /root",
-  "previous_review_sha256": "b83c6bee344889a7c800fe467dbe1538c2728259ffa3a7b7a2e89c2919a6af57",
+  "previous_review_sha256": "28f28ebb5898dc5a98b6358224856dcd21a5b5edc047a555dda8c46ad9d35cbc",
+  "previous_manuscript_snapshot": "data/radar_domain_recovery_v2/manuscript_before_20261108/snapshot_manifest.json",
   "pdf": {
     "path": "thesis/current/build/main.pdf",
-    "sha256": "a3e519b5ae13e06340ccc8b5a64fd48e00e8c1b52daf86479a56419d059d380a",
-    "bytes": 735403
+    "sha256": "dbb61edb8de45291b2f5728d1cfd16b09cbdac618ede23d1e8fa006441ade7dd",
+    "bytes": 748752
   },
-  "build_manifest_sha256": "a6fe30b9c2932dbb0e60594fdc08d231d74843187cfa9ea5f5af4bf65de4f337",
+  "build_manifest_sha256": "3d6662d6148e1df93dff7a6cd86e55780db16d25584f672005d5deba78f1c1d7",
   "literature_audit_sha256": "8d6d2637416116a11347a728db237111223385c392c7ee32bb855dc9cb31b5eb",
-  "page_count": 69,
-  "pages_with_extractable_text": 69,
-  "text_extract_sha256": "2e3f48b041f6be919e2f95ffc2d230962b50d59e48b21de5e501503ffe592263",
-  "visual_tool": "macOS PDFKit; final rendered pages opened with view_image",
+  "page_count": 72,
+  "pages_with_extractable_text": 72,
+  "text_extract_sha256": "b35c7b18c5df0b9774ae16ca7288628c44375d44b69d9c0d03f3a78a69093180",
+  "visual_tool": "macOS PDFKit; final rendered PNGs opened directly using view_image",
   "visually_reviewed_physical_pages": [
     {
-      "page_one_based": 1,
-      "png_sha256": "3dadd50eceddffe6c4672da0ee8b119b978f744aa30e27a17dc003f39240f191",
+      "page_one_based": 16,
+      "png_sha256": "2b38ce2808cc4ea5dffb1ed9e30a3b26947e8a2ee8ebc690cb3032354b36b115",
       "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
+      "observation": "Route diagram, experiment matrix, source split/coverage tables, and revised conclusions readable within page margins."
     },
     {
-      "page_one_based": 30,
-      "png_sha256": "e372e5ad36e2c0862ab8226fac533def13b88678d7cf58b29c12b1407fe21597",
+      "page_one_based": 17,
+      "png_sha256": "0288e842a2852aec7737ab8038a2a0aa4e8c13e154392fe5c6e44d77fac8cb0b",
       "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
+      "observation": "Route diagram, experiment matrix, source split/coverage tables, and revised conclusions readable within page margins."
     },
     {
-      "page_one_based": 31,
-      "png_sha256": "9a9e894d488b3a428ba46a1e207c5f7b72e5b90ba432a113fd6053da7dfe367c",
+      "page_one_based": 32,
+      "png_sha256": "64a89baed66225e516ecc99d47c02edd49abb6b6d2b9fe1f3c8787a4e02b3aa9",
       "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
+      "observation": "Route diagram, experiment matrix, source split/coverage tables, and revised conclusions readable within page margins."
     },
     {
-      "page_one_based": 39,
-      "png_sha256": "de0b4fe111384865ca470b899511eeda0c2073e3331589a0326d7546073a4a1d",
+      "page_one_based": 33,
+      "png_sha256": "a4bbff53474a15924dab43e860fc5d4069183bf2893b43d57793cbf6151f1366",
       "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
+      "observation": "Route diagram, experiment matrix, source split/coverage tables, and revised conclusions readable within page margins."
     },
     {
-      "page_one_based": 40,
-      "png_sha256": "49067e62a61041a2f870caf533980f3ac37b7950f52210aa833f9a3d14328e6f",
+      "page_one_based": 64,
+      "png_sha256": "f0fc9b3601384f2f41431f1505331b958bbb83222f453764253d50d43ddaac3d",
       "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
+      "observation": "Route diagram, experiment matrix, source split/coverage tables, and revised conclusions readable within page margins."
     },
     {
-      "page_one_based": 61,
-      "png_sha256": "8173c0255bee47cbb05481b8aca09515128dd75cf4723a8661b1d93017712d3a",
+      "page_one_based": 67,
+      "png_sha256": "6c68f96ae8454d0865535a7d82fc0459aa49b021947e9cbb402a3c5567839db7",
       "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
-    },
-    {
-      "page_one_based": 66,
-      "png_sha256": "a72e43e4a12d301604462a12f5ea8d414d5bed6b2383d369d6336ebe7b314b7d",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
-    },
-    {
-      "page_one_based": 68,
-      "png_sha256": "36de2d3bfbc0c5c7c52042ae7c5c28f1520e6e3ea5ab4b4bc53f9a3fe2015efd",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
-    },
-    {
-      "page_one_based": 69,
-      "png_sha256": "461ec5ff3ced65a28a07c2fd5f644cafa8ddb47e878ca5ce1a9cf41bb86d63bc",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "Readable within margins; checked new source/split tables, method operations, temperature case, recovery diagram, CPU results and added references as applicable."
+      "observation": "Route diagram, experiment matrix, source split/coverage tables, and revised conclusions readable within page margins."
     }
   ],
   "overfull_box_warnings": 0,
@@ -76,19 +59,21 @@
   "bibliography_entries": 30,
   "revision": {
     "chapters": 7,
-    "new_sections": [
-      "3.6",
-      "4.6",
-      "6.6"
-    ],
+    "public_aggregate_exporters": 6,
+    "mainline_unified_across_intro_method_domain_conclusion": true,
     "existing_model_result_tables_unchanged": true,
-    "added_model_results": 0,
-    "new_evidence": "Source acquisition and independent AI review; full reference execution, source isolation, recovery fixtures and tokenizer checks",
-    "new_source_document_entries": 4,
-    "public_aggregate_exporters": 5
+    "new_model_results": 0,
+    "supplement_question_count": 12,
+    "original_24_preserved": true,
+    "new_sections": [
+      "1.5",
+      "3.6.3",
+      "6.6.4"
+    ],
+    "cross_review": "A separate AI author read the revised introduction and experiment matrix; root integrated the remaining chapter updates."
   },
   "human_gold": false,
   "human_review_completed": 0,
   "new_gpu_evaluation_completed": false,
-  "scope": "Selected-page layout review and all-page text extraction; generic review format."
+  "scope": "All-page text extraction and selected-page visual layout review; generic review format."
 }

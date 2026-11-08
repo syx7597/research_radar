@@ -1,0 +1,26 @@
+{
+  "schema": "radar_composition_thesis_export_v1",
+  "date": "2026-11-08",
+  "rows": 31,
+  "sources_sha256": {
+    "results/radar_domain/compositional_supplement_20261108/summary.json": "4cfb0ef3ab915f0f18395ece74f0d8dc5b0469ec1d3f3ca830629cd9dde42a2f",
+    "results/radar_domain/compositional_supplement_20261108/design.json": "76408e74ecb034f59de80424d105dfd91deef8f6a46f04c2bf2531dd299ed796",
+    "results/radar_domain/compositional_supplement_20261108/source_review.safe.json": "6ab78e642548194c0212b7f46ed0f05bf3d38796432209c2ad90dcae7f84ed55",
+    "results/radar_domain/compositional_supplement_20261108/experiment_matrix.json": "be9284541019a6ce3005d0d3cca1fd7917bb33eb6c8ac418627152ff49b2dfa0",
+    "results/radar_domain/frozen_20261107/task_coverage_review.json": "4243bfc3c74760aea5bd649a869e61eab95cceae8605820d1a81c5c674d6904f"
+  },
+  "exporter_sha256": "4e3b28be963b64039f653c89b70ad15df4435c24057ec7e7e3ae00433563f71f",
+  "chapter_sha256": {
+    "thesis/current/01_introduction.tex": "3433f86f4ffb1cd4a6cfd7416364d41b27cce58ca14c6adc0d5edf1b63a38a98",
+    "thesis/current/01b_experiment_matrix.tex": "d8db7181d5273d4327057624073522069c3be7550be68b5ae77a83c19e674c51",
+    "thesis/current/03c_composition_evaluation.tex": "ba08743cc1295df83c7c19d188ed86150dac7fa6c3f0595d93fab50666eb9a04",
+    "thesis/current/06d_composition_validation.tex": "63b09acb40dacf4833bb98145689badfcca6bb5a4dfb2a677c34edea7c92a6c6"
+  },
+  "outputs_sha256": {
+    "composition_tables.tex": "600a033780b9c9025b733d2d7fa7cf68498063ee062e86ab54964be1eb14903a",
+    "composition_results.csv": "3dbd3e2972f4a97d557af0f06a65fd41e4c99fd99d7313cc1b6a5cbf123be961"
+  },
+  "source_access": "Only allowlisted public summaries; full questions and source answers remain private",
+  "evidence_type": "Independent AI source review and deterministic reference/token checks",
+  "model_runs": 0
+}

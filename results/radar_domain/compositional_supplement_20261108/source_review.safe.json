@@ -1,0 +1,196 @@
+{
+  "schema": "radar_composition_source_review_safe_v1",
+  "status": "accepted_with_documented_qualifications",
+  "question_count": 12,
+  "source_family_count": 4,
+  "accepted_ids": [
+    "RQC-DRW-01",
+    "RQC-DRW-02",
+    "RQC-DRW-03",
+    "RQC-OTT-01",
+    "RQC-OTT-02",
+    "RQC-OTT-03",
+    "RQC-UMR-01",
+    "RQC-UMR-02",
+    "RQC-UMR-03",
+    "RQC-CS4-01",
+    "RQC-CS4-02",
+    "RQC-CS4-03"
+  ],
+  "rejected_ids": [],
+  "blocking_findings": [],
+  "reference_grade": "AI",
+  "independent_answers": {
+    "path": "data/radar_domain_recovery_v2/composition_review_20261108/independent_answers.json",
+    "sha256": "47c9ac62c3308ebd455c4155a922317797b475768f20bd192ef352ee98cb3bdf"
+  },
+  "seal": {
+    "path": "data/radar_domain_recovery_v2/composition_review_20261108/seal.json",
+    "sha256": "76cd6f2351e595400cfa405bf4cb044d27f16345080b0c616d72c380b8b50552"
+  },
+  "private_review": {
+    "path": "data/radar_domain_recovery_v2/composition_review_20261108/reference_comparison.json",
+    "sha256": "d7c765f7916949214f6625dc51732e355d4449fcfeaf5904015cacacdcc51aec"
+  },
+  "source_preparation": {
+    "path": "data/radar_domain_recovery_v2/composition_review_20261108/source_preparation.json",
+    "sha256": "6b2c2b841c8d6c9accd4ba14a2814ffa81c8bfcd9a1423dfac630b0bb83114cd"
+  },
+  "author_files_sha256": {
+    "data/radar_domain_recovery_v2/composition_authors_20261108/marine/questions.json": "a9c2e945ee353bf421d259f256270795ac7b047169cae4bbe40bf9fb55a9a329",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/marine/author_reference.json": "0b32a782cb25fae0b1f3e8e0fbc08b57a4dae0054c511d1ef04e68e9ff01d5d6",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/marine/author_seal.json": "35da783e75fd26bc9cda05789b0e165afe4e4d7ab994f4b4ee5d2d7e266ceaf4",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/marine/references.jsonl": "659ea9950125d614f006149aa8fd777525e8c83af1e66a7cf761201718b98f9e",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/marine/answer_specs.json": "a638e54e8f7977d89cb6893d8fb1cd526e5b048f43c4b6167c8ef730985ad888",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/marine/necessity_checks.json": "4728190da21ae5db14d8a6177d0b7a2e2babf9c44dcefe38cd2b0ac5c497978d",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/land/questions.json": "30adc8f23ee3266c30da5b5af2bd78a5ce79f6c56189a068b4f2a406441e90ef",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/land/author_reference.json": "8a0949406420b7ccb59ec48b2340e33fa99057672554d71c62f1e67c4386d909",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/land/author_seal.json": "19f26aaa0713766ecc028f3dd274d0474b25407f1b45e2c07dc4aa9eb019ed23",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/land/references.jsonl": "63f88a6dee3e176bd4d2459adee374346fc1293ecb5a5271cca3f166b60d3ca1",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/land/answer_specs.json": "3b4b19db4ad59cd25ba8b190076144ef1fe2ae8a3a97e0992dde521015e7cc26",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/land/necessity_checks.json": "93b1ce2e84165714eeef849fbcffea9a5cdb8e2727554a750584fe9bf484d3bc",
+    "data/radar_domain_recovery_v2/composition_authors_20261108/marine/revision.json": "dfbba9048ed2e0dc234f4d45957c001145b0a260d0bf26eba281b142e65701cd"
+  },
+  "reviewed_question_rows": [
+    {
+      "id": "RQC-DRW-01",
+      "family_id": "furuno_drs4w",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    },
+    {
+      "id": "RQC-DRW-02",
+      "family_id": "furuno_drs4w",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    },
+    {
+      "id": "RQC-DRW-03",
+      "family_id": "furuno_drs4w",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    },
+    {
+      "id": "RQC-OTT-01",
+      "family_id": "ott_rls",
+      "status": "accepted_with_qualification",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": [
+        "correlated_representations_not_independent_facts",
+        "redundant_predicates_disclosed",
+        "necessity_metadata_repaired_after_reference_disclosure"
+      ]
+    },
+    {
+      "id": "RQC-OTT-02",
+      "family_id": "ott_rls",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    },
+    {
+      "id": "RQC-OTT-03",
+      "family_id": "ott_rls",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    },
+    {
+      "id": "RQC-UMR-01",
+      "family_id": "smartmicro_umrr11",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": [
+        "redundant_predicates_disclosed_distinct_condition_facts_retained"
+      ]
+    },
+    {
+      "id": "RQC-UMR-02",
+      "family_id": "smartmicro_umrr11",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    },
+    {
+      "id": "RQC-UMR-03",
+      "family_id": "smartmicro_umrr11",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    },
+    {
+      "id": "RQC-CS4-01",
+      "family_id": "campbell_cs475a",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": [
+        "non_discriminating_conjunct_disclosed"
+      ]
+    },
+    {
+      "id": "RQC-CS4-02",
+      "family_id": "campbell_cs475a",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": [
+        "output_granularity_resolved_by_answer_spec"
+      ]
+    },
+    {
+      "id": "RQC-CS4-03",
+      "family_id": "campbell_cs475a",
+      "status": "accepted",
+      "content_consistent": true,
+      "compositional_necessity": true,
+      "source_support": true,
+      "issue_categories": []
+    }
+  ],
+  "review_provenance": {
+    "independent_non_author_AI": true,
+    "initial_answers_sealed_before_author_reference_read": true,
+    "original_answers_and_seal_preserved": true,
+    "metadata_revision_reviewed_after_reference_disclosure": true,
+    "question_and_answer_values_unchanged_by_revision": true,
+    "model_outputs_seen": false,
+    "server_accessed": false,
+    "training_performed": false
+  },
+  "conditional_acceptance": {
+    "RQC-OTT-01": {
+      "status": "condition_satisfied",
+      "categories": [
+        "two_distinct_state_fact_groups",
+        "correlated_presentations_not_counted_as_additional_independent_facts",
+        "predicate_independence_not_claimed"
+      ],
+      "revision_path": "data/radar_domain_recovery_v2/composition_authors_20261108/marine/revision.json",
+      "revision_sha256": "dfbba9048ed2e0dc234f4d45957c001145b0a260d0bf26eba281b142e65701cd"
+    }
+  }
+}

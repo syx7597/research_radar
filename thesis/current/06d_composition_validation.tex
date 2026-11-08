@@ -1,0 +1,17 @@
+\subsection{组合评价补充的执行与覆盖验证}
+\label{sec:composition-validation}
+
+在冻结的完整156条读法目录上，\CompositionQuestionCount{}道组合评价参考全部执行通过，合计\CompositionCalls{}次调用，每题5--11次。来源预期在程序编写前保存，核对覆盖完整量值、严格边界、工作模式、典型值限定及配置说明。对条件变化和必要信息移除进行的CPU检查进一步确认，程序结果由实际来源和查询条件共同决定。
+
+\begin{table}[htbp]
+\centering\small
+\caption{基础与组合评价参考中的操作覆盖（题数）}
+\label{tab:composition-operations}
+\CompositionOperationTable
+\end{table}
+
+表\ref{tab:composition-operations}统计各题提交结果依赖路径中的操作。基础题主要支持新资料参数读取，组合题增加跨记录连接、显式筛选、范围判断及来源支持判断。一次操作可对应多个条件，同一题也可包含多种操作，因而各列的覆盖数分别统计。题目语义必要性由原件审阅确定，依赖路径检查用于确认相关操作实际参与答案生成。
+
+实际分词检查得到最长完整上下文\CompositionMaxContext{} token、最大单步目标\CompositionMaxAction{} token、最大动作目标总量\CompositionMaxTargets{} token，全部符合既定16384上下文、192单步、2048总生成及24次调用预算。原24题、训练题和开发题的文件哈希保持一致。
+
+最终域内模型评价采用两张独立结果表：原24题报告新来源基础应用表现，组合12题报告指定组合任务表现。各表保留全部问题，分别列出普通组与恢复组的正确数、改正与退步、完成率、来源分组和成本；同来源题的关联通过家族计数呈现。上述数据与执行验证为模型对照提供固定任务，后续按第一章实验矩阵开展实际训练及自由运行评价。

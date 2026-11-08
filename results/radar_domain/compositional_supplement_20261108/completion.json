@@ -1,0 +1,46 @@
+{
+  "schema": "composition_and_thesis_alignment_completion_v1",
+  "date": "2026-11-08",
+  "status": "both_local_work_items_completed",
+  "work_items": {
+    "bounded_compositional_evaluation_supplement": "source_reviewed_executed_token_checked_and_frozen",
+    "thesis_mainline_and_experiment_matrix": "aligned_compiled_and_visually_checked"
+  },
+  "counts": {
+    "supplement_questions": 12,
+    "source_families_shared_with_original24": 4,
+    "reference_calls": 99,
+    "related_tests_passed": 31,
+    "thesis_pages": 72,
+    "references": 30
+  },
+  "original_training_development_and_24_evaluation_preserved": true,
+  "human_review_completed": 0,
+  "source_review_grade": "AI",
+  "server_accessed": false,
+  "training_runs": 0,
+  "model_evaluation_runs": 0,
+  "frozen_supplement": {
+    "path": "data/radar_domain_recovery_v2/compositional_supplement_20261108/manifest.json",
+    "sha256": "9de289cc375bb44d366697685f7e293ae8ba079b6f9244b5063164ef326d9bf0"
+  },
+  "next": [
+    "Runtime/checkpoint verification when server becomes available",
+    "Previously frozen public same-state evaluation",
+    "Domain I/A/C paired training and separate basic24/composition12 evaluation"
+  ],
+  "evidence_sha256": {
+    "results/radar_domain/compositional_supplement_20261108/design.json": "76408e74ecb034f59de80424d105dfd91deef8f6a46f04c2bf2531dd299ed796",
+    "results/radar_domain/compositional_supplement_20261108/source_review.safe.json": "6ab78e642548194c0212b7f46ed0f05bf3d38796432209c2ad90dcae7f84ed55",
+    "results/radar_domain/compositional_supplement_20261108/summary.json": "4cfb0ef3ab915f0f18395ece74f0d8dc5b0469ec1d3f3ca830629cd9dde42a2f",
+    "results/radar_domain/compositional_supplement_20261108/integration_audit.json": "1ee2b690f59fe822d98bd411e71b7c449c1b38cbb0e8448bbf5d40b8ed9be70c",
+    "results/radar_domain/compositional_supplement_20261108/experiment_matrix.json": "be9284541019a6ce3005d0d3cca1fd7917bb33eb6c8ac418627152ff49b2dfa0",
+    "results/radar_domain/compositional_supplement_20261108/software_checks.json": "b5068cc28ee8cdc6109c34436d15eefbf2cecee4fb7d09d0a28d5dc2c3e2ed35",
+    "docs/THESIS_MAINLINE_20261107.md": "7541c3bfa6398d15059e9a5c97c573947db8122c7af529157431eafb72b8467b",
+    "docs/RADAR_COMPOSITION_COMPLETION_20261108.md": "d3108e9663692dfc223be42003105919d04b2b1fbd1ab324fe21af7df9c4993a",
+    "thesis/current/composition_evidence_manifest.json": "3add8187914463c65f515323765e84acc626964d35fad18d26ccd7b94b35432c",
+    "thesis/current/manuscript_manifest.json": "3d6662d6148e1df93dff7a6cd86e55780db16d25584f672005d5deba78f1c1d7",
+    "thesis/current/manuscript_review.json": "108b80b5d1381ffbf528461d8aeb62fc8c56f98a99bcc8f980c31436b1a326ce",
+    "data/radar_domain_recovery_v2/manuscript_before_20261108/snapshot_manifest.json": "1b2376e79c67b89eb1a0817d07417b643b4aa13a56f91c065a2b0aac5f89e1a4"
+  }
+}

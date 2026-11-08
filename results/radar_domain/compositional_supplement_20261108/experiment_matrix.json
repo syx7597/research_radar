@@ -1,0 +1,172 @@
+{
+  "schema": "thesis_experiment_matrix_v1",
+  "date": "2026-11-08",
+  "main_method": "Recovery-trajectory supervised continuation using actual model-divergent history, dependency remapping, executable suffix and selective supervision",
+  "model_family": "Qwen2.5-3B-Instruct with LoRA",
+  "primary_comparison": "Matched ordinary continuation A vs recovery continuation C from one shared initial checkpoint",
+  "experiments": [
+    {
+      "id": "E1_public_effect",
+      "status": "completed",
+      "questions": 2000,
+      "data": "KQA Pro project-held-out partition",
+      "arms": [
+        "P",
+        "A_seed20261003",
+        "C_seed20261003",
+        "A_seed20261004",
+        "C_seed20261004"
+      ],
+      "primary": "Mean of paired C-minus-A correctness across the two continuation seeds",
+      "result": {
+        "A_mean_accuracy": 0.7875,
+        "C_mean_accuracy": 0.835,
+        "delta_percentage_points": 4.75
+      },
+      "claim": "Overall question-answer solving performance in this fixed setup"
+    },
+    {
+      "id": "E2_public_same_state",
+      "status": "protocol_frozen_inference_pending",
+      "pool_questions": 2400,
+      "evaluation_count": "All eligible replay-constructible actual states from the fixed collector; count determined before A/C inference",
+      "arms": [
+        "A_seed20261003",
+        "C_seed20261003",
+        "A_seed20261004",
+        "C_seed20261004"
+      ],
+      "conditions": [
+        "shared_successful_prefix",
+        "same_prefix_plus_actual_divergence"
+      ],
+      "primary": "Paired C-minus-A correctness under the divergent condition",
+      "secondary": "Difference between divergent and normal C-minus-A contrasts, completion, invalid calls and cost",
+      "training_required": false,
+      "gpu_hours_cap": 9.083333333333334,
+      "claim": "Performance from identical histories; positive divergent-minus-normal contrast supports history-specific adaptation"
+    },
+    {
+      "id": "E3_domain_representation",
+      "status": "completed",
+      "questions": 96,
+      "source_families": 8,
+      "arms": [
+        "raw",
+        "flat",
+        "bound"
+      ],
+      "main_comparison": [
+        "flat",
+        "bound"
+      ],
+      "result": {
+        "answer_correct": [
+          73,
+          80
+        ],
+        "binding_errors": [
+          17,
+          11
+        ],
+        "original_joint_correct": [
+          17,
+          52
+        ],
+        "posthoc_same_citation_resolver_joint_correct": [
+          55,
+          68
+        ]
+      },
+      "claim": "Effect of organizing the same semantic source records; distinct from recovery-training effect"
+    },
+    {
+      "id": "E4_domain_recovery",
+      "status": "initial_and_paired_training_pending",
+      "training_questions": 576,
+      "development_questions": 108,
+      "arms": [
+        "I_domain",
+        "A_domain",
+        "C_domain"
+      ],
+      "primary_comparison": [
+        "A_domain",
+        "C_domain"
+      ],
+      "controlled": [
+        "initial checkpoint",
+        "source catalog and tools",
+        "training questions",
+        "ordinary successful material",
+        "paired sample order",
+        "supervised-token budget",
+        "inference settings"
+      ],
+      "training_origin": "Explicit synthetic source instances; model-generated train failures only for recovery pairs",
+      "evaluation_parts": [
+        {
+          "name": "original_new_source_24",
+          "questions": 24,
+          "role": "Original fixed primary application evaluation; unchanged contract"
+        },
+        {
+          "name": "composition_supplement",
+          "question_cap": 12,
+          "role": "Separate targeted compositional application evaluation; shares source families with original24",
+          "status": "frozen_before_model_runs",
+          "questions": 12,
+          "manifest": {
+            "path": "data/radar_domain_recovery_v2/compositional_supplement_20261108/manifest.json",
+            "sha256": "9de289cc375bb44d366697685f7e293ae8ba079b6f9244b5063164ef326d9bf0"
+          }
+        }
+      ],
+      "primary_metric": "Complete structured answer correctness including typed values, conditions, pairing and source provenance",
+      "secondary_metrics": [
+        "submission/completion",
+        "well-formed output",
+        "paired corrected/regressed counts",
+        "per-family and task-type outcomes",
+        "tool calls",
+        "invalid calls",
+        "input/generated tokens",
+        "GPU time"
+      ],
+      "statistics": "Original24 follows its original frozen question-paired reporting; supplement reports exact complete counts and paired changes by source family separately; no pooling as independent sources",
+      "seed_replication": "Prioritize same-scheme paired continuation replication when development evidence warrants it; choose protocol before final evaluation",
+      "development_gpu_hours_cap": 8,
+      "runtime_budget": {
+        "context_tokens": 16384,
+        "max_calls": 24,
+        "per_turn_generated_tokens": 192,
+        "total_generated_tokens": 2048
+      },
+      "claim": "Increment of recovery supervision in source-constrained radar queries; determined by actual paired model results"
+    }
+  ],
+  "auxiliary_completed_experiments": [
+    "paired RL extension",
+    "error-message content masking",
+    "public state-transition and token-cost analysis",
+    "previous radar interface adaptation and source-answering diagnostics"
+  ],
+  "scope_control": {
+    "new_algorithm_branches": false,
+    "server_accessed_this_round": false,
+    "model_runs_this_round": 0,
+    "project_gpu_hours_cap": 72,
+    "previous_gpu_hours": 24.192471,
+    "domain_training_runtime_hyperparameters": "Bind exact training config and software/checkpoint identities after runtime smoke test, before production training; not yet an executed run"
+  },
+  "inputs_sha256": {
+    "results/agent_feedback/holdout_stage_decision_v1.json": "c29152b87ddf19c2b03fd1d6202134208aad4bb9419b364d30e08852c322794d",
+    "results/agent_feedback/same_state_v1/design_protocol.json": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
+    "results/agent_feedback/rl_stage_decision_v1.json": "f89a3d9bf832d07c5b160ad0cc9ae3134ccf9e70532948b221613c01bb7b9c1d",
+    "results/radar_domain/coverage_v2/semantic_summary.json": "76974b0ed9771efab8e2d86e02e2246fd5c15c530ab93093a6fcd4f75595072f",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json": "73604a0778cd3f814dec796e6ae8766cb1f8f1052a2e10cdf4ed5cedceb6df06",
+    "results/radar_domain/frozen_20261107/summary.json": "2d7742f6df2336490ffa73a6c6248fcae937933351f62399a5522e8fb80e3c95",
+    "results/radar_domain/compositional_supplement_20261108/design.json": "76408e74ecb034f59de80424d105dfd91deef8f6a46f04c2bf2531dd299ed796"
+  },
+  "preparation_status": "source_review_reference_execution_token_preflight_and_supplement_freeze_completed"
+}
