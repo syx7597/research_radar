@@ -1,0 +1,104 @@
+{
+  "schema": "thesis_proposal_submission_review_v1",
+  "review_date": "2026-11-10",
+  "reviewer": "AI /root",
+  "status": "reviewed_revised_and_8_page_pdf_checked",
+  "recommended_title": "基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用",
+  "title_unchanged": true,
+  "direction": "Execution-feedback recovery supervision for small-model executable knowledge QA, with conditional radar knowledge and domain paired evaluation",
+  "primary_method": "Recovery-trajectory SFT; actual divergent history, dependency remapping, executable suffix and selective supervision",
+  "existing_evidence": {
+    "public_heldout_questions": 2000,
+    "ordinary_mean_accuracy": 0.7875,
+    "recovery_mean_accuracy": 0.835,
+    "gain_percentage_points": 4.75,
+    "radar_representation_questions": 96,
+    "flat_bound_answer_correct": [
+      73,
+      80
+    ]
+  },
+  "pending_model_experiments": [
+    "public_same_state_diagnostic",
+    "radar_domain_shared_initial_paired_continuation_and_evaluation"
+  ],
+  "resource_condition": "Server unavailable at last user confirmation; original model files not located locally; environment and model identity restoration scheduled first",
+  "original_form_and_old_proposal_preserved": true,
+  "personal_fields_left_to_user": true,
+  "institutional_approval_asserted": false,
+  "source_metadata_checked": [
+    {
+      "title": "Agent-R",
+      "url": "https://arxiv.org/abs/2501.11425",
+      "date": "2026-11-10",
+      "scope": "official abstract, authors and training-data construction description"
+    },
+    {
+      "title": "STeP",
+      "url": "https://arxiv.org/abs/2505.20023",
+      "date": "2026-11-10",
+      "scope": "official abstract, authors, correction trajectories and partial masking"
+    },
+    {
+      "title": "OEC",
+      "url": "https://arxiv.org/abs/2512.14895",
+      "date": "2026-11-10",
+      "scope": "official abstract, authors and student-history/expert-continuation description"
+    }
+  ],
+  "inputs_sha256": {
+    "thesis/proposal/content_compact.json": "23aa0320e2cbcf9826b5f4824f1ad4998dd1bbb31c5271e5e9bc6133fd99595e",
+    "thesis/proposal/华东师范大学研究生学位论文开题报告登记表_精简版.docx": "4e929bc62de5edfdec6112e7ae751ccabbbded94711d756a6f931be4b2df2bac",
+    "docs/THESIS_MAINLINE_20261107.md": "7541c3bfa6398d15059e9a5c97c573947db8122c7af529157431eafb72b8467b",
+    "results/agent_feedback/holdout_stage_decision_v1.json": "c29152b87ddf19c2b03fd1d6202134208aad4bb9419b364d30e08852c322794d",
+    "results/radar_domain/coverage_v2/semantic_summary.json": "76974b0ed9771efab8e2d86e02e2246fd5c15c530ab93093a6fcd4f75595072f",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json": "73604a0778cd3f814dec796e6ae8766cb1f8f1052a2e10cdf4ed5cedceb6df06",
+    "results/radar_domain/frozen_20261107/summary.json": "2d7742f6df2336490ffa73a6c6248fcae937933351f62399a5522e8fb80e3c95",
+    "results/radar_domain/compositional_supplement_20261108/summary.json": "4cfb0ef3ab915f0f18395ece74f0d8dc5b0469ec1d3f3ca830629cd9dde42a2f",
+    "results/radar_domain/runtime_readiness_20261108/completion.json": "3fae0c2f1a30e9f80daaa823814668a0b6c5c47e7ec2d6daf9a71a0ca1e7d74a",
+    "docs/PROPOSAL_SUBMISSION_REVIEW_20261110.md": "3a959ece37d72d8a63abbdab7c5ef715faa0e41ca9c2178777d6ea61c37e19ef"
+  },
+  "deliverables_sha256": {
+    "thesis/proposal/review_20261110/content_submission.json": "f1334527e633e48a43ec8c0ad80f68b70c0affd5d715a3b0e4495665bceeb4d4",
+    "thesis/proposal/review_20261110/华东师范大学研究生学位论文开题报告登记表_提交修订稿.docx": "1e754d4ade97acd76843451be32dc6e88bdb66c492d7ba7baa4ff08c71639bab",
+    "thesis/proposal/review_20261110/华东师范大学研究生学位论文开题报告登记表_提交修订稿.pdf": "e34f86b43de51e54aaf440244a84c52ebaaa69f4cc74c693e876531f610c8b62",
+    "thesis/proposal/review_20261110/build_record.json": "32582dec8a7f9ed317ea1dd9c3aa735234c9961dc0023e8f682c2a967bc17d64"
+  },
+  "visual_pages": [
+    {
+      "page": 1,
+      "sha256": "47bfffcb052eb52c83979b318781e5df726f95b5690023216a527597290bebb7"
+    },
+    {
+      "page": 2,
+      "sha256": "0fe2eadc6df270516ebba302cd10896544e4637b8ec03e8d6cf5be6d684755e6"
+    },
+    {
+      "page": 3,
+      "sha256": "1c7bfac5c401188e053a90e0ae2fd1e966772e0b4a3d54a4a55024fbb3289ac1"
+    },
+    {
+      "page": 4,
+      "sha256": "33fd2c4473d992c700744badc00ea19aca0573d7c2caa5a597d3564f756ed11b"
+    },
+    {
+      "page": 5,
+      "sha256": "40e0b2b78bd3f2baf03d6f9f920ef9ead97308745c69504238aaba563bc77c61"
+    },
+    {
+      "page": 6,
+      "sha256": "15cfe90abd2eba5c4b3c5fe9ae64bd605f637cd088dbeee4c57e4812c70abf63"
+    },
+    {
+      "page": 7,
+      "sha256": "0ff2760ce2f4f33983929a78f9560b6152a44c7abd5befd33ab758e98d731162"
+    },
+    {
+      "page": 8,
+      "sha256": "a0b181a8ace8afcfc9e074f4ef97d02d67398a04e181ab73be5f9f37956d4606"
+    }
+  ],
+  "pdf_text_sha256": "c5530bee45a76782252273504d3e02267b5025e09d69cce37b1e4bc9e9c74d19",
+  "new_model_runs": 0,
+  "server_accessed": false
+}

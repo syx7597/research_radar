@@ -1,0 +1,84 @@
+{
+  "template": "华东师范大学研究生学位论文开题报告登记表.docx",
+  "template_sha256": "19cdf4beffc2e5e6c8a75c6b6352d6827ece632c1c2158115d521a0943b7068a",
+  "content": "thesis/proposal/review_20261110/content_submission.json",
+  "content_sha256": "f1334527e633e48a43ec8c0ad80f68b70c0affd5d715a3b0e4495665bceeb4d4",
+  "output": "thesis/proposal/review_20261110/华东师范大学研究生学位论文开题报告登记表_提交修订稿.docx",
+  "output_sha256": "1e754d4ade97acd76843451be32dc6e88bdb66c492d7ba7baa4ff08c71639bab",
+  "sections_filled": 7,
+  "references": 10,
+  "chinese_characters": 3105,
+  "personal_fields_unchanged": true,
+  "signature_area_unchanged": true,
+  "section_row_ranges": [
+    [
+      0,
+      16
+    ],
+    [
+      16,
+      22
+    ],
+    [
+      22,
+      32
+    ],
+    [
+      32,
+      35
+    ],
+    [
+      35,
+      42
+    ],
+    [
+      42,
+      49
+    ],
+    [
+      49,
+      54
+    ]
+  ],
+  "layout": "Original seven form sections with paragraph-sized continuation rows",
+  "section_headings_grouped_with_opening_paragraph": true,
+  "source_results": [
+    "results/agent_feedback/holdout_v1_analysis.json",
+    "results/agent_feedback/state_transitions_v1/summary.json",
+    "results/radar_domain/coverage_v2/semantic_summary.json",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json"
+  ],
+  "revision_date": "2026-11-10",
+  "pdf": {
+    "path": "thesis/proposal/review_20261110/华东师范大学研究生学位论文开题报告登记表_提交修订稿.pdf",
+    "sha256": "e34f86b43de51e54aaf440244a84c52ebaaa69f4cc74c693e876531f610c8b62",
+    "pages": 8,
+    "renderer": "Apple Pages 13.2"
+  },
+  "validation": {
+    "all_content_paragraphs_present_in_pdf": true,
+    "content_paragraphs_checked": 65,
+    "all_ten_references_cited": true,
+    "original_template_unchanged": true,
+    "previous_compact_docx_unchanged": true,
+    "personal_fields_unchanged": true,
+    "signature_area_unchanged": true,
+    "all_pdf_pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "body_font_points": 12,
+    "body_line_spacing_points": 20
+  },
+  "build_script_sha256": "48be773eedb86f5a9f43c17ce72075f84bc1b05278919b859a49180bbc29e73b",
+  "libraries": {
+    "python-docx": "1.2.0",
+    "lxml": "6.1.3"
+  }
+}
