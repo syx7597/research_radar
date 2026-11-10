@@ -1,0 +1,79 @@
+{
+  "template": "华东师范大学研究生学位论文开题报告登记表.docx",
+  "template_sha256": "19cdf4beffc2e5e6c8a75c6b6352d6827ece632c1c2158115d521a0943b7068a",
+  "content": "thesis/proposal/review_20261110_v2/content_submission.json",
+  "content_sha256": "42d9581b44707b3dad2481f0f1ee376a018fa75e5b807b417a6fb1fcbb661a44",
+  "output": "thesis/proposal/review_20261110_v2/华东师范大学研究生学位论文开题报告登记表_提交修订稿_v2.docx",
+  "output_sha256": "37a0cbc84c720d4ae48b694c764b7129c550a518efe24da85195a68b2ddf5194",
+  "sections_filled": 7,
+  "references": 10,
+  "chinese_characters": 3255,
+  "personal_fields_unchanged": true,
+  "signature_area_unchanged": true,
+  "section_row_ranges": [
+    [
+      0,
+      16
+    ],
+    [
+      16,
+      22
+    ],
+    [
+      22,
+      32
+    ],
+    [
+      32,
+      35
+    ],
+    [
+      35,
+      42
+    ],
+    [
+      42,
+      49
+    ],
+    [
+      49,
+      55
+    ]
+  ],
+  "layout": "Original seven form sections with paragraph-sized continuation rows",
+  "section_headings_grouped_with_opening_paragraph": true,
+  "source_results": [
+    "results/agent_feedback/holdout_v1_analysis.json",
+    "results/agent_feedback/state_transitions_v1/summary.json",
+    "results/radar_domain/coverage_v2/semantic_summary.json",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json"
+  ],
+  "revision_date": "2026-11-10",
+  "revision": "v2_clarification_after_external_review",
+  "pdf": {
+    "path": "thesis/proposal/review_20261110_v2/华东师范大学研究生学位论文开题报告登记表_提交修订稿_v2.pdf",
+    "sha256": "42450417802c6fb89cb1971aec22d89b3039f61ef481c75ceddc47091d80b99e",
+    "pages": 8,
+    "renderer": "Apple Pages 13.2"
+  },
+  "validation": {
+    "all_content_paragraphs_present_in_pdf": true,
+    "content_paragraphs_checked": 66,
+    "all_pdf_pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "personal_fields_unchanged": true,
+    "signature_area_unchanged": true,
+    "previous_submission_version_preserved": true,
+    "title_unchanged": true,
+    "no_new_experiment_arms_or_dataset_expansion": true
+  },
+  "build_script_sha256": "48be773eedb86f5a9f43c17ce72075f84bc1b05278919b859a49180bbc29e73b"
+}

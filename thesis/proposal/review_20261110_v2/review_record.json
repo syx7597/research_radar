@@ -1,0 +1,87 @@
+{
+  "schema": "proposal_external_feedback_adjudication_v1",
+  "date": "2026-11-10",
+  "status": "reviewed_and_bounded_clarifications_applied",
+  "reviewers": [
+    "AI /root",
+    "AI /root/proposal_feedback_method_check (read-only method and experiment review)",
+    "AI /root/proposal_feedback_scope_check (read-only scope and representation review)"
+  ],
+  "feedback_sha256": "3a566087e2e768cce58fe70d5c2c589161da1aecb270309c0ce35c74506bbffd",
+  "parent_content": {
+    "path": "thesis/proposal/review_20261110/content_submission.json",
+    "sha256": "f1334527e633e48a43ec8c0ad80f68b70c0affd5d715a3b0e4495665bceeb4d4"
+  },
+  "accepted": [
+    "construction assumptions and mapping invariant",
+    "actual matched A/C definition",
+    "same-state evaluation as principal recovery-behavior evidence",
+    "observable failure strata plus reviewed semantic cases",
+    "graph environment vs domain typed-table view",
+    "fixed-checkpoint bootstrap and separate continuation-seed reporting",
+    "shared four families and separate basic24/composition12 reports",
+    "source/entity/fact isolation description"
+  ],
+  "clarified_existing": [
+    "dependency/type/observation/final-answer checks already implemented",
+    "error-action handles are not reused as reference results",
+    "error-text masking already completed but not all-feedback ablation",
+    "template/operator sharing alone is not answer leakage"
+  ],
+  "deferred_not_committed": [
+    "unmapped suffix training arm",
+    "three-to-five new training seeds",
+    "80-to-120 question expansion",
+    "manufacturing/deployment/country graph expansion"
+  ],
+  "research_title_unchanged": true,
+  "core_method_unchanged": true,
+  "frozen_experimental_protocols_changed": false,
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "validation": {
+    "pages": 8,
+    "text_paragraphs_checked": 66,
+    "all_text_present": true,
+    "visual_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "personal_fields_unchanged": true,
+    "signature_area_unchanged": true
+  },
+  "evidence_sha256": {
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "results/agent_feedback/feedback_diagnostic_decision_v1.json": "10e6ad77bfed04e84395ee31c691f4ca6292480708640a3e0b24f91d4fdda69f",
+    "results/agent_feedback/holdout_stage_decision_v1.json": "c29152b87ddf19c2b03fd1d6202134208aad4bb9419b364d30e08852c322794d",
+    "experiments/radar_domain/table_recovery_data.py": "cfe279408cdc725424cc3788a297abcd0cc08377e72dd290624f76bcef32e0eb",
+    "experiments/radar_domain/kopl_record_bridge.py": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "results/radar_domain/frozen_20261107/independent_audit.json": "f0fdfd4bf7ca14604c81b89a7bf382f3b7b96d69a746168ac197b411caf15215",
+    "results/radar_domain/compositional_supplement_20261108/summary.json": "4cfb0ef3ab915f0f18395ece74f0d8dc5b0469ec1d3f3ca830629cd9dde42a2f",
+    "docs/PROPOSAL_EXTERNAL_REVIEW_RESPONSE_20261110.md": "86b470e7bba28b333d1f78802a2f2d9e0491152689c05f08d6b80ceb783b79a5"
+  },
+  "outputs_sha256": {
+    "thesis/proposal/review_20261110_v2/content_submission.json": "42d9581b44707b3dad2481f0f1ee376a018fa75e5b807b417a6fb1fcbb661a44",
+    "thesis/proposal/review_20261110_v2/build_record.json": "dd13e6473565ba05791fd4c79a36b2d01f566b87bb51b5e99ece808c1b44a48b",
+    "thesis/proposal/review_20261110_v2/华东师范大学研究生学位论文开题报告登记表_提交修订稿_v2.docx": "37a0cbc84c720d4ae48b694c764b7129c550a518efe24da85195a68b2ddf5194",
+    "thesis/proposal/review_20261110_v2/华东师范大学研究生学位论文开题报告登记表_提交修订稿_v2.pdf": "42450417802c6fb89cb1971aec22d89b3039f61ef481c75ceddc47091d80b99e"
+  },
+  "preview_sha256": {
+    "1": "47bfffcb052eb52c83979b318781e5df726f95b5690023216a527597290bebb7",
+    "2": "0fe2eadc6df270516ebba302cd10896544e4637b8ec03e8d6cf5be6d684755e6",
+    "3": "98cf14370d4963f81cace0918d6f33ba669e4f17765b08ab87b42f38285ef009",
+    "4": "8cd4e5a161f6b493a531a9c5a3d310c0463a52f45311f1f38efcb2a0832030b5",
+    "5": "811940f52ab11bc225355aacd423cb7c39e63b723a692863dcb3c69387e51052",
+    "6": "15cfe90abd2eba5c4b3c5fe9ae64bd605f637cd088dbeee4c57e4812c70abf63",
+    "7": "399144542aa9fc31467d3a05d64083325c861f11eca06268bf8fa206703b00e5",
+    "8": "a0b181a8ace8afcfc9e074f4ef97d02d67398a04e181ab73be5f9f37956d4606"
+  }
+}
