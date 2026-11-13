@@ -1,0 +1,266 @@
+{
+  "schema": "recovery_construction_diagnostic_v1",
+  "date": "2026-11-13",
+  "status": "completed",
+  "kind": "offline_reference_construction_diagnostic",
+  "new_model_runs": 0,
+  "training_allowed": false,
+  "server_accessed": false,
+  "fixed_training_pair_denominator": 418,
+  "compared": 414,
+  "unavailable": 4,
+  "unavailable_reasons": {
+    "retained_history_replay_mismatch": 4
+  },
+  "historical_replays": {
+    "recovery_matches": 414,
+    "clean_matches": 418,
+    "same_full_sequence_as_saved_recovery": 414
+  },
+  "arms": {
+    "direct": {
+      "denominator": 418,
+      "compared": 414,
+      "unavailable": 4,
+      "suffix_all_calls_execute": 65,
+      "submitted_answer": 121,
+      "reference_observations_match": 0,
+      "final_answer_correct": 9,
+      "full_gate_pass": 0,
+      "any_reference_dependency_mismatch": 414,
+      "any_step_dependency_mismatch": 348,
+      "finish_dependency_mismatch": 391,
+      "any_full_internal_result_mismatch": 336,
+      "invalid_suffix_calls": 505
+    },
+    "mapped_unfiltered": {
+      "denominator": 418,
+      "compared": 414,
+      "unavailable": 4,
+      "suffix_all_calls_execute": 414,
+      "submitted_answer": 414,
+      "reference_observations_match": 414,
+      "final_answer_correct": 414,
+      "full_gate_pass": 414,
+      "any_reference_dependency_mismatch": 0,
+      "any_step_dependency_mismatch": 0,
+      "finish_dependency_mismatch": 0,
+      "any_full_internal_result_mismatch": 0,
+      "invalid_suffix_calls": 0
+    }
+  },
+  "mapped_verified": {
+    "denominator": 418,
+    "accepted": 414,
+    "candidate_gate_rejections": 0,
+    "same_candidate_sequence_when_accepted": 414
+  },
+  "strata": {
+    "divergence_added_handle": {
+      "direct": {
+        "denominator": 414,
+        "compared": 414,
+        "unavailable": 0,
+        "suffix_all_calls_execute": 65,
+        "submitted_answer": 121,
+        "reference_observations_match": 0,
+        "final_answer_correct": 9,
+        "full_gate_pass": 0,
+        "any_reference_dependency_mismatch": 414,
+        "any_step_dependency_mismatch": 348,
+        "finish_dependency_mismatch": 391,
+        "any_full_internal_result_mismatch": 336,
+        "invalid_suffix_calls": 505
+      },
+      "mapped_unfiltered": {
+        "denominator": 414,
+        "compared": 414,
+        "unavailable": 0,
+        "suffix_all_calls_execute": 414,
+        "submitted_answer": 414,
+        "reference_observations_match": 414,
+        "final_answer_correct": 414,
+        "full_gate_pass": 414,
+        "any_reference_dependency_mismatch": 0,
+        "any_step_dependency_mismatch": 0,
+        "finish_dependency_mismatch": 0,
+        "any_full_internal_result_mismatch": 0,
+        "invalid_suffix_calls": 0
+      }
+    },
+    "divergence_no_handle": {
+      "direct": {
+        "denominator": 0,
+        "compared": 0,
+        "unavailable": 0,
+        "suffix_all_calls_execute": 0,
+        "submitted_answer": 0,
+        "reference_observations_match": 0,
+        "final_answer_correct": 0,
+        "full_gate_pass": 0,
+        "any_reference_dependency_mismatch": 0,
+        "any_step_dependency_mismatch": 0,
+        "finish_dependency_mismatch": 0,
+        "any_full_internal_result_mismatch": 0,
+        "invalid_suffix_calls": 0
+      },
+      "mapped_unfiltered": {
+        "denominator": 0,
+        "compared": 0,
+        "unavailable": 0,
+        "suffix_all_calls_execute": 0,
+        "submitted_answer": 0,
+        "reference_observations_match": 0,
+        "final_answer_correct": 0,
+        "full_gate_pass": 0,
+        "any_reference_dependency_mismatch": 0,
+        "any_step_dependency_mismatch": 0,
+        "finish_dependency_mismatch": 0,
+        "any_full_internal_result_mismatch": 0,
+        "invalid_suffix_calls": 0
+      }
+    }
+  },
+  "paired_outcomes": {
+    "mapped_correct_direct_incorrect": 405,
+    "both_answer_correct": 9,
+    "direct_answer_equal_despite_reference_dependency_mismatch": 9
+  },
+  "cases": [
+    {
+      "category": "mapped_correct_direct_incorrect",
+      "case_tag": "0025fff79881f4f0",
+      "shared_prefix_calls": 3,
+      "divergence_added_handle": true,
+      "direct_correct": false,
+      "mapped_correct": true,
+      "direct_suffix_functions": [
+        "FilterConcept",
+        "QueryAttr",
+        "finish"
+      ],
+      "direct_mismatched_reference_steps": [
+        4,
+        5
+      ]
+    },
+    {
+      "category": "mapped_correct_direct_incorrect",
+      "case_tag": "00f437b3f6bd855f",
+      "shared_prefix_calls": 1,
+      "divergence_added_handle": true,
+      "direct_correct": false,
+      "mapped_correct": true,
+      "direct_suffix_functions": [
+        "FilterStr",
+        "FilterConcept",
+        "What",
+        "finish"
+      ],
+      "direct_mismatched_reference_steps": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "category": "mapped_correct_direct_incorrect",
+      "case_tag": "01c645ddc5128330",
+      "shared_prefix_calls": 2,
+      "divergence_added_handle": true,
+      "direct_correct": false,
+      "mapped_correct": true,
+      "direct_suffix_functions": [
+        "FilterConcept",
+        "QueryAttr",
+        "VerifyYear",
+        "finish"
+      ],
+      "direct_mismatched_reference_steps": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "category": "same_answer_with_reference_dependency_mismatch",
+      "case_tag": "07abf6a8336b7aee",
+      "shared_prefix_calls": 1,
+      "divergence_added_handle": true,
+      "direct_correct": true,
+      "mapped_correct": true,
+      "direct_suffix_functions": [
+        "Relate",
+        "FilterConcept",
+        "Count",
+        "finish"
+      ],
+      "direct_mismatched_reference_steps": [
+        2,
+        3
+      ]
+    },
+    {
+      "category": "same_answer_with_reference_dependency_mismatch",
+      "case_tag": "0d7e2bf179755d37",
+      "shared_prefix_calls": 1,
+      "divergence_added_handle": true,
+      "direct_correct": true,
+      "mapped_correct": true,
+      "direct_suffix_functions": [
+        "Relate",
+        "FilterConcept",
+        "Relate",
+        "QFilterYear",
+        "FilterConcept",
+        "What",
+        "finish"
+      ],
+      "direct_mismatched_reference_steps": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "category": "same_answer_with_reference_dependency_mismatch",
+      "case_tag": "683046b827948f08",
+      "shared_prefix_calls": 2,
+      "divergence_added_handle": true,
+      "direct_correct": true,
+      "mapped_correct": true,
+      "direct_suffix_functions": [
+        "FilterConcept",
+        "Relate",
+        "FilterConcept",
+        "Count",
+        "finish"
+      ],
+      "direct_mismatched_reference_steps": [
+        3,
+        4
+      ]
+    }
+  ],
+  "interpretation": [
+    "Counts measure reference suffix construction on the historically admitted training sample, not a trained model or held-out question success rate.",
+    "Mapped-unfiltered executes tools and records observations; it differs from full construction only in whether consistency gates decide admission.",
+    "Equal final answers under differing dependency origins are reported separately; answer coincidence alone does not establish reference-path equivalence.",
+    "Saved histories are replayed locally; exact internal state equality is checked between current diagnostic arms, not asserted against unrecorded historical Linux internal states."
+  ],
+  "design": {
+    "path": "results/agent_feedback/construction_diagnostic_20261113/design.json",
+    "sha256": "c5431d26b2e3ff9e8daa4083351ee43ec09ba8895c62e160d68600a2c690f125"
+  },
+  "implementation_sha256": "918727a6e23a6d27d75ae34e8e1edc9cfcd40bc0c5cd728cb3058fe1e0be8a59",
+  "environment": {
+    "python": "3.12.8",
+    "platform": "macOS-14.3-arm64-arm-64bit",
+    "pythonhashseed": "20261003"
+  },
+  "private_outputs": {
+    "data/agent_feedback/construction_diagnostic_20261113/per_pair.jsonl": "c2810ebafcb9cf832cdd76671c014f726891b8ceffe36ee4afcbe902c02a33d5",
+    "data/agent_feedback/construction_diagnostic_20261113/cases.json": "aedfabd1908eb02d192e639e2668acbfa89997378363f007576fe0f435140ac8"
+  }
+}

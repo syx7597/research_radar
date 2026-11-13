@@ -1,0 +1,63 @@
+{
+  "schema": "recovery_construction_diagnostic_design_v1",
+  "date": "2026-11-13",
+  "status": "registered_before_new_comparison_execution",
+  "population": "All 418 historically accepted TRAIN pairs",
+  "fixed_denominator": 418,
+  "ordered_ids_sha256": "c6c428b08e0dd329bd307f04ea3297b9266de04d06fd88ef3dceb2b3cc77c1b5",
+  "max_calls": 24,
+  "same_start": "Replay exactly the saved shared prefix plus its real divergent action/observation in every arm",
+  "arms": {
+    "direct": "Append original reference suffix with unchanged dependency and finish-handle numbers; attempt its remaining fixed calls once, with no repair/retry",
+    "mapped_unfiltered": "Remap dependencies and finish handle, execute actual tools; measure reference consistency but do not use consistency to stop or filter this diagnostic candidate",
+    "mapped_verified": "Use the existing frozen continuation builder with dependency remapping, step observation checks and final reference-answer check"
+  },
+  "metrics": [
+    "prefix_and_historical_trace_replay_consistency",
+    "suffix_calls_all_execute",
+    "submitted_answer",
+    "reference_observations_match",
+    "reference_dependency_origins_match",
+    "final_answer_matches_reference",
+    "full_internal_result_exact_equality",
+    "mapped_candidate_full_gate_pass",
+    "candidate_sequence_identity"
+  ],
+  "direct_failure_policy": "Continue the remaining reference action list after rejected calls unless the episode terminates or exhausts its existing budget; record all rejections",
+  "observation_policy": "Normalize only returned handle identifiers for comparison; actual values, counts, result types and errors remain unchanged",
+  "internal_result_policy": "Exact canonical typed internal values/order; this is not an arbitrary semantic equivalence oracle",
+  "unavailable_policy": "Preserve all 418 rows; prefix/history/platform replay mismatches are separately counted and are not silently excluded",
+  "source_limit": "Uses saved historical pair histories and references; does not regenerate or re-audit all original 5000 model rollouts",
+  "case_selection": "Up to 3 cases per predeclared category, ascending SHA256('20261113|category|id'); selection is illustrative, all rows remain in aggregate",
+  "case_categories": [
+    "mapped_correct_direct_incorrect",
+    "same_answer_with_reference_dependency_mismatch",
+    "rejected_divergence_no_new_handle"
+  ],
+  "prior_knowledge": "All historical mapped pairs previously passed the construction gate; their prior success is known. Direct-concatenation outcomes have not been executed in this round.",
+  "interpretation": "Construction validity conditional on this historical training-pair sample; not model accuracy, learning benefit or a new held-out experiment",
+  "new_model_runs": 0,
+  "training_allowed": false,
+  "server_accessed": false,
+  "environment": {
+    "python": "3.12.8",
+    "platform": "macOS-14.3-arm64-arm-64bit",
+    "required_pythonhashseed": "20261003"
+  },
+  "inputs_sha256": {
+    "results/agent_feedback/recovery_pairs.json": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9",
+    "data/agent_feedback/train.gold.jsonl": "2c1d811e95c17a58000bff0aa601b5fa7e2d6337aab58685aebd86ff50f8896c",
+    "datasets/kqa_pro/kb.json": "04da7408320c5cb7023c44372cce32846d56d369d8865d2e61a18c3956661a7c",
+    "results/agent_feedback/split_manifest.json": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60",
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "experiments/agent_feedback/environment.py": "adb81075b2e0db337f06e9afeb78116e384bb18151d6d12aecbd6ab0f4594db2",
+    "experiments/agent_feedback/inference.py": "c16a656cb971b38c3edd723b970662b198b5805b697fa13fd05def1319fffa28",
+    "data/agent_feedback/recovery.recovery.jsonl": "291924523abce59dd5579a265c7574cdf8499af7487066594fe55f66e979df88",
+    "data/agent_feedback/recovery.clean.jsonl": "397f59576605643e3a360333d7dfa88f319f00b7e0c296e9f02f416c75355961",
+    "data/agent_feedback/recovery.audit.jsonl": "af439cd94d15a4d60ace3d4540796367f9ae35412bec1d20da34a7988b6881bd",
+    "experiments/agent_feedback/construction_diagnostic.py": "918727a6e23a6d27d75ae34e8e1edc9cfcd40bc0c5cd728cb3058fe1e0be8a59",
+    "tests/test_construction_diagnostic.py": "0f6d35eb9ff03e74fb6f2395c487c1a03c8d8cda7d8b56dfb971460127fc6616",
+    "experiments/agent_feedback/same_state.py": "94944a2a0f3e3f3a97fb89e554d26140408cfb67cd289dddc43d0fdc87940b5e",
+    "experiments/condition_consistency/executor.py": "63601ff84e5f3ffdf93e6810f95d38934ffa6cc5923a0b5a92a1775ecdc2f8fc"
+  }
+}

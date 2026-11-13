@@ -1,0 +1,22 @@
+{
+  "schema": "construction_replay_detail_summary_v1",
+  "date": "2026-11-13",
+  "records": 4,
+  "all_only_detail_field_differs": true,
+  "all_error_class": "UnboundLocalError",
+  "all_original_and_current_actions_rejected": true,
+  "all_new_handles": 0,
+  "retained_as_unavailable_in_main_result": true,
+  "replay_normalization_applied": false,
+  "saved_detail_form": "local variable 'v' referenced before assignment (one case uses v1)",
+  "local_detail_form": "cannot access local variable 'v' where it is not associated with a value (one case uses v1)",
+  "interpretation": "Observed exception-message wording difference in current Python 3.12 versus archived execution. Neither original feedback nor strict-replay criteria are changed.",
+  "python": "3.12.8",
+  "private_details": {
+    "path": "data/agent_feedback/construction_diagnostic_20261113/replay_detail/differences.json",
+    "sha256": "62ae1515587604807cc640d18d0b3e52b7335830f41d4c19db8115c24cf311f5"
+  },
+  "inspection_code_sha256": "3e6386aa7d955fa8df3d9e29a40feacb3eb02588abf2e3445d31f8f00ac3fbda",
+  "main_summary_sha256": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5",
+  "new_model_runs": 0
+}

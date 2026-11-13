@@ -1,0 +1,257 @@
+{
+  "schema": "radar_source_independent_ai_review_safe_summary_v1",
+  "review_date": "2026-11-13",
+  "reviewer_type": "AI",
+  "human_review_completed": false,
+  "sealed_before_reference_comparison": true,
+  "model_outputs_or_scores_read": false,
+  "scope": {
+    "question_count": 24,
+    "family_count": 8,
+    "source_chunk_count": 11,
+    "original_source_file_count": 10,
+    "complete_pdf_pages_visually_inspected": 9,
+    "raw_html_sections_table_inspected": 2,
+    "new_sources_added": 0
+  },
+  "counts": {
+    "semantic_agreement": 24,
+    "confirmed_reference_answer_errors": 0,
+    "unresolved_answer_disagreements": 0,
+    "retained_source_scope_ambiguities": 1,
+    "exact_citation_spans": 36,
+    "checked_citation_spans": 36
+  },
+  "v2_locator_revision": {
+    "question_id": "RQ2-RNG-07",
+    "verdict": "closed",
+    "hash_chain_valid": true,
+    "question_answer_semantics_unchanged": true,
+    "scope": "external_review_v2_and_corrected_author_sidecar"
+  },
+  "per_question_verdicts": [
+    {
+      "question_id": "RQ2-RNG-04",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-RNG-07",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "high"
+    },
+    {
+      "question_id": "RQ2-RNG-10",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "high"
+    },
+    {
+      "question_id": "RQ2-FUR-04",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-FUR-06",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-FUR-09",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-GMW-03",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-GMW-08",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "high"
+    },
+    {
+      "question_id": "RQ2-GMW-11",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-GAR-04",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-GAR-06",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "medium"
+    },
+    {
+      "question_id": "RQ2-GAR-09",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "medium"
+    },
+    {
+      "question_id": "RQ2-JRC-03",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-JRC-06",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-JRC-11",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "high"
+    },
+    {
+      "question_id": "RQ2-MRR-05",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-MRR-07",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-MRR-10",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-RAY-05",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-RAY-08",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-RAY-09",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "medium"
+    },
+    {
+      "question_id": "RQ2-WRS-03",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "medium"
+    },
+    {
+      "question_id": "RQ2-WRS-07",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "routine"
+    },
+    {
+      "question_id": "RQ2-WRS-11",
+      "verdict": "source_confirmed_reference_agrees",
+      "human_followup_priority": "medium"
+    }
+  ],
+  "retained_issue_ids": [
+    {
+      "id": "SOURCE-SCOPE-01",
+      "question_id": "RQ2-GMW-08",
+      "verdict": "literal_answer_confirmed_scope_not_expanded"
+    },
+    {
+      "id": "EVIDENCE-LAYOUT-01",
+      "question_ids": [
+        "RQ2-RNG-10",
+        "RQ2-JRC-11",
+        "RQ2-WRS-11"
+      ],
+      "verdict": "original_layout_required"
+    },
+    {
+      "id": "EVIDENCE-HTML-01",
+      "question_ids": [
+        "RQ2-RAY-05",
+        "RQ2-RAY-08",
+        "RQ2-RAY-09"
+      ],
+      "verdict": "raw_byte_hash_binding_confirmed"
+    }
+  ],
+  "human_review_priority_ids": [
+    {
+      "question_id": "RQ2-RNG-07",
+      "priority": "high",
+      "basis_code": "previous_model_column_locator_revision"
+    },
+    {
+      "question_id": "RQ2-RNG-10",
+      "priority": "high",
+      "basis_code": "nested_table_column_binding"
+    },
+    {
+      "question_id": "RQ2-JRC-11",
+      "priority": "high",
+      "basis_code": "merged_model_columns_and_pulse_pairing"
+    },
+    {
+      "question_id": "RQ2-GMW-08",
+      "priority": "high",
+      "basis_code": "source_angular_scope_ambiguity"
+    },
+    {
+      "question_id": "RQ2-GAR-06",
+      "priority": "medium",
+      "basis_code": "footnote_conjunction"
+    },
+    {
+      "question_id": "RQ2-GAR-09",
+      "priority": "medium",
+      "basis_code": "maximum_role_and_rubric_interpretation"
+    },
+    {
+      "question_id": "RQ2-RAY-09",
+      "priority": "medium",
+      "basis_code": "adjacent_table_rows"
+    },
+    {
+      "question_id": "RQ2-WRS-03",
+      "priority": "medium",
+      "basis_code": "paired_channel_options"
+    },
+    {
+      "question_id": "RQ2-WRS-11",
+      "priority": "medium",
+      "basis_code": "ordered_ratio_mapping"
+    }
+  ],
+  "files_sha256": {
+    "data/radar_sources_v2/independent_review_20261113/independent_answers.json": "bbd7711fcc31dcb884ed17c3b7594fec64ed688ff60b4c78b8b9296d82c10e43",
+    "data/radar_sources_v2/independent_review_20261113/seal.json": "d2accfb9dd10fa2486313d7a53219de14db8151f1932c8aee93691e75b10534c",
+    "data/radar_sources_v2/independent_review_20261113/comparison.json": "a304b93a271d6619d15027efeebe91ff3864e041a737f82e889dd220726d7a76",
+    "data/radar_sources_v2/independent_review_20261113/disputes_and_human_priorities.json": "5c008b6cbce28903469d38e57b222b7fb73ed2f32869e1cf4ef6b9f6c0a11318",
+    "data/radar_sources_v2/external_review_v2_20261104/questions.json": "1326331087c80da9228c71ad34466529fbe8ebb5b4b34ecd150be9a3d2d94cd4",
+    "data/radar_sources_v2/external_review_v2_20261104/source_index.json": "0ba98b26450b5c96c930f8ed597d03af814b3b7a4ab38979a5e51d496ce38726",
+    "data/radar_sources_v2/external_review_v2_20261104/references.json": "6fcd25ca889cc1d4cc03b1b8cde48b0d4c6db65e848811c4453fd622dca1fd60",
+    "data/radar_sources_v2/external_review_v2_20261104/revision_protocol.json": "7fd049173b73bb2c67f7625644bfa27c2531089ed2427692b8088cc90012b5bf",
+    "data/radar_sources_v2/external_review_v2_20261104/blank_responses.json": "9a5d6f4440fa881f1483f6a1f1212ea6a1f9334288be1a38c8518e9fb93f89a2",
+    "data/radar_sources_v2/external_review_v2_20261104/blank_responses.csv": "9066527a388996312e347b2b3d00653a253a6ce4747a21e639fafaacc80ff688"
+  },
+  "original_source_hashes": {
+    "data/radar_sources_v2/external_review_v2_20261104/sources/eec_ranger_x_band.pdf": "d8598b0e5d21678c7ddfd1321aae32d54599da9b9d6e2b7d2a8b83ee8a7f4036",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/furuno_nxt_usa_manual.pdf": "7cce6c83593d74f9b9eba4f0a7d8c470d0d13392c99db265c2c5bba5602ddf04",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/gamic_gmwr_25_ws.pdf": "38d4e2d64af204571043369ab39f8953cd94f386ef0a3982132347884f985612",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/garmin_fantom_manual.pdf": "5e7ec7a3d369239e749ae44616704ad2693589e0e82d0344f611b989cef04e36",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/jrc_5200_catalog.pdf": "f41aee676a1be8fdf5cd0da9152e6b241f903ffa412fdbf26c9b8d1e32428a61",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/metek_mrr_pro_20240705.pdf": "bc4eba55be07839370c738e5ec1682d9e1a81a4684a25ffb7c8f26206e499ab3",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/metek_mrr2_20230929.pdf": "7f12ce8baf7e9e7e5afebd0337ff1a9fe39cc2337981cddef5e866fb61d5e0e6",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/raymarine_spec_receiver.html.bin": "1545f164d3511f1bbf7e334935779b1485cac0afdbff74bb6e54b6fd8e255431",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/raymarine_spec_power_pro.html.bin": "51b143c945e6513075161d47c707debdf8fa55cebb612dc04738f51fbd121b97",
+    "data/radar_sources_v2/external_review_v2_20261104/sources/vaisala_wrs300_b212854en_e.pdf": "b68b68dc1335799b32bfb4ec2620d0f832c73a51fa369751cc461a609e4b48ca"
+  },
+  "limitations": [
+    "AI review, not human gold",
+    "Fixed archived sources only",
+    "Full-page source inspection supports table bindings; text offsets alone do not prove every binding",
+    "Existing questions, references, scores and human response templates were not modified"
+  ],
+  "content_policy": "Summary, IDs, verdicts and file hashes only; no full questions, answers or source excerpts."
+}

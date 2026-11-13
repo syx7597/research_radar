@@ -2,6 +2,8 @@
 
 ## 当前主线写作入口
 
+2026-11-13 已补入本地恢复构造诊断、图式与类型视图一致性、固定24题独立AI来源复核，以及同状态评价的正式定义。当前[PDF](current/build/main.pdf)为 **75页、30条参考文献**，七组证据导出检查通过。构造诊断固定418对，414可精确比较、4项环境提示措辞差异保留；所有新增结果均明确为CPU诊断或AI审阅。见[本轮成果](../docs/LOCAL_RESEARCH_RESULTS_20261113.md)和[答辩准备稿](../docs/THESIS_DEFENSE_GUIDE_20261113.md)。
+
 2026-11-08 已统一第一章的核心问题、技术路线与实验矩阵，并加入12题组合评价补充的数据和CPU验证。当前[PDF](current/build/main.pdf)为 **72页、30条参考文献**。新12题与原24题分开评价，四个来源家族共享；本轮无模型训练。六组证据导出及关键页面检查通过，详见[完成记录](../docs/RADAR_COMPOSITION_COMPLETION_20261108.md)。
 
 2026-11-07 已将域内组合查询的四项离线成果纳入论文，当前[PDF](current/build/main.pdf)为 **69页、30条参考文献**。新增第3.6节的576/108/24划分、第4.6节的类型表与温度规格恢复案例、第6.6节的708程序及24组恢复验证。第7章同步接续实验计划。五组证据导出检查通过，新增图表已实际查看；本轮没有新增模型训练或推理。详细交付见[本轮说明](../docs/RADAR_OFFLINE_COMPLETION_20261107.md)。
@@ -17,7 +19,7 @@
 | 文件 | 用途与状态 |
 |---|---|
 | [current/build/main.pdf](current/build/main.pdf) | 本工作区生成的完整 PDF；编译目录不进入 Git，其他机器需从源稿重建 |
-| [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 七章总入口与构建脚本；先核对六组证据表，再调用已有编译器 |
+| [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 七章总入口与构建脚本；先核对七组证据表，再调用已有编译器 |
 | [current/00_abstract.tex](current/00_abstract.tex)、[current/01_introduction.tex](current/01_introduction.tex) | 中英文摘要、研究问题、贡献范围与技术路线 |
 | [current/02_background_related_work.tex](current/02_background_related_work.tex)、[current/07_conclusion.tex](current/07_conclusion.tex) | 相关方法比较、结论与局限 |
 | [current/references.bib](current/references.bib)、[current/literature_audit.json](current/literature_audit.json) | 26 条引用及原始文献、版本和核对范围 |

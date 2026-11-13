@@ -16,7 +16,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
 ENTRY = HERE / "main.tex"
-EXPORTS = ("export_evidence.py", "data_export.py", "domain_export.py", "coverage_export.py", "offline_export.py", "composition_export.py")
+EXPORTS = ("export_evidence.py", "data_export.py", "domain_export.py", "coverage_export.py", "offline_export.py", "composition_export.py", "local_analysis_export.py")
 
 
 def sha(path):
@@ -60,7 +60,7 @@ def check_sources():
         raise ValueError(f"Duplicate bibliography key or missing citation: {sorted(citations-set(bibkeys))}")
     files.add(bib)
     files.add(HERE / "literature_audit.json")
-    for name in ("evidence_manifest.json", "data_evidence_manifest.json", "domain_evidence_manifest.json", "coverage_evidence_manifest.json", "offline_evidence_manifest.json", "composition_evidence_manifest.json"):
+    for name in ("evidence_manifest.json", "data_evidence_manifest.json", "domain_evidence_manifest.json", "coverage_evidence_manifest.json", "offline_evidence_manifest.json", "composition_evidence_manifest.json", "local_analysis_evidence_manifest.json"):
         files.add(HERE / name)
     return {"chapters": chapters, "numbered_chapters": len(chapters), "labels": len(labels),
             "cited_works": len(citations), "bibliography_entries": len(bibkeys),

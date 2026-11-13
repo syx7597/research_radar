@@ -1,0 +1,91 @@
+{
+  "schema": "recovery_construction_independent_audit_v1",
+  "date": "2026-11-13",
+  "reviewer": "AI /root/thesis_defense_pack",
+  "reviewer_role": "Independent from diagnostic author; re-executed original executor without calling author aggregation or diagnosis functions",
+  "status": "passed",
+  "fixed_denominator": 418,
+  "compared": 414,
+  "unavailable": 4,
+  "source_order_and_all_ids_preserved": true,
+  "design_inputs_hashes_verified": 14,
+  "strict_comparison_start_verified": 414,
+  "same_start_scope": "Identical complete current internal state and identical retained messages/events across direct/mapped arms; not a claim of historical Linux internal-state identity",
+  "historical_recovery_replay_matches": 414,
+  "historical_clean_replay_matches": 418,
+  "unavailable_detail": {
+    "rows": 4,
+    "same_error_type": "UnboundLocalError",
+    "only_differing_observation_field": "detail",
+    "new_handles": 0,
+    "all_four_preserved_without_assigning_comparison_results": true
+  },
+  "independently_recomputed_arms": {
+    "direct": {
+      "suffix_all_calls_execute": 65,
+      "submitted_answer": 121,
+      "reference_observations_match": 0,
+      "final_answer_correct": 9,
+      "full_gate_pass": 0,
+      "any_reference_dependency_mismatch": 414,
+      "any_step_dependency_mismatch": 348,
+      "finish_dependency_mismatch": 391,
+      "any_full_internal_result_mismatch": 336,
+      "invalid_suffix_calls": 505
+    },
+    "mapped_unfiltered": {
+      "suffix_all_calls_execute": 414,
+      "submitted_answer": 414,
+      "reference_observations_match": 414,
+      "final_answer_correct": 414,
+      "full_gate_pass": 414,
+      "any_reference_dependency_mismatch": 0,
+      "any_step_dependency_mismatch": 0,
+      "finish_dependency_mismatch": 0,
+      "any_full_internal_result_mismatch": 0,
+      "invalid_suffix_calls": 0
+    }
+  },
+  "mapped_verified_vs_unfiltered": {
+    "same_trace_and_candidate_sequence": 414,
+    "candidate_gate_rejections": 0
+  },
+  "answer_equality_with_mismatched_dependencies": {
+    "count": 9,
+    "dependency_mismatch": 9,
+    "full_gate_failed": 9,
+    "full_internal_mismatch": 5,
+    "all_calls_execute": 0
+  },
+  "interpretation_checks": {
+    "nine_equal_answers_not_counted_as_reference_path_equivalence": true,
+    "construction_counts_not_model_accuracy": true,
+    "unavailable_four_not_counted_as_failures_or_successes_of_either_arm": true,
+    "no_new_training_arms": true,
+    "no_new_model_runs": true
+  },
+  "code_review_notes": [
+    "Direct arm preserves original step dependencies and finish handle; mapped arm changes only dependency references while executing real tools.",
+    "Mapped-unfiltered still executes to obtain observations; verifier-only removal produced identical accepted traces on the 414 comparable historical pairs.",
+    "Final answer equality and full internal/result provenance are reported separately."
+  ],
+  "model_runs": 0,
+  "server_accessed": false,
+  "files_changed_by_audit": [
+    "results/agent_feedback/construction_diagnostic_20261113/independent_audit.json"
+  ],
+  "environment": {
+    "python": "3.12.8",
+    "pythonhashseed": "20261003"
+  },
+  "evidence_sha256": {
+    "results/agent_feedback/construction_diagnostic_20261113/design.json": "c5431d26b2e3ff9e8daa4083351ee43ec09ba8895c62e160d68600a2c690f125",
+    "results/agent_feedback/construction_diagnostic_20261113/summary.json": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5",
+    "data/agent_feedback/construction_diagnostic_20261113/per_pair.jsonl": "c2810ebafcb9cf832cdd76671c014f726891b8ceffe36ee4afcbe902c02a33d5",
+    "data/agent_feedback/construction_diagnostic_20261113/replay_detail/differences.json": "62ae1515587604807cc640d18d0b3e52b7335830f41d4c19db8115c24cf311f5"
+  },
+  "auditor_script": {
+    "path": "cache/construction_independent_audit_20261113.py",
+    "sha256": "2ed6a33cba4241e63b0dd26fecc9910b5f4c39058541563d59d7f3fbf4a32487"
+  }
+}

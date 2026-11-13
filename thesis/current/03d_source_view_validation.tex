@@ -1,0 +1,32 @@
+\subsection{图式投影与类型视图的一致性验证}
+\label{sec:dual-view-validation}
+
+同一来源读法分别生成图式投影和类型化查询视图，二者通过记录标识与出处对应。图式投影以主体节点连接规格读法节点，读法保留部件、属性、量值、条件和引用；类型视图在原始记录之外增加范围、选项和配对值等计算字段。图\ref{fig:source-dual-view}给出这两种表示的关联方式。
+
+\begin{figure}[htbp]
+\centering\small
+\fbox{\parbox{0.88\textwidth}{\centering 固定来源页与完整读法：主体、部件、参数、条件、量值及出处}}
+\par\vspace{0.6em}$\swarrow\qquad\qquad\searrow$\par\vspace{0.5em}
+\begin{minipage}[t]{0.46\textwidth}\centering
+\fbox{\parbox{0.90\linewidth}{\centering
+\textbf{图式投影}\\
+主体节点 $\longrightarrow$ 规格读法节点\\
+关系：\texttt{has specification}\\
+读法属性保存原值、条件与引用}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\textwidth}\centering
+\fbox{\parbox{0.90\linewidth}{\centering
+\textbf{类型化查询视图}\\
+主体、部件、属性与条件字段\\
+范围、界限、选项及配对量值\\
+原始记录与来源位置同时保留}}
+\end{minipage}
+\par\vspace{0.7em}
+通过稳定读法标识和原始出处对齐，分别用于关联访问与类型化组合运算。
+\caption{来源读法的图式投影与类型视图}
+\label{fig:source-dual-view}
+\end{figure}
+
+对已有502条完整读法开展CPU一致性核对，图中包含23个主体节点、502个读法节点和1016条主体到读法的关联。其中203条读法由多个主体共享，原始记录按一条保存。逐条还原图节点中的来源记录，与类型视图的原始字段及哈希比对，502条全部一致；856处引文切片与所指向的页文本匹配。
+
+进一步根据资料中实际出现的主体、来源家族、部件、属性及条件，形成\LocalViewQueries{}组去重合取查询。图路径采用实体定位、规格关系访问和字符串筛选，类型路径采用相同字段条件选择；两路选中读法均与独立的原始记录筛选结果一致。该检查验证原始知识及字段选择的一致对应，范围、容差和配对参数等运算能力由各自接口和任务另行检验。

@@ -1,0 +1,17 @@
+{
+  "schema": "radar_dual_view_design_v1",
+  "date": "2026-11-13",
+  "scope": "Existing complete 502-reading development source snapshot; source identity and source-field selection only",
+  "question_answers_or_model_outputs_used": false,
+  "expected_readings": 502,
+  "query_selection": "All unique source-derived subject/family/component/attribute/condition conjunctions",
+  "inputs_sha256": {
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/kb.json": "1399519f30a1b5079899b67f309b5078468f3a7eb2099c36b94c3444fcba1200",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/source_records.json": "2dc97ed23093b28cab1b32375bbf957fe514ae8db60f9979fcf09310e6a7c563",
+    "data/radar_domain_recovery_v1/kopl_bridge_20261106/source_chunks.json": "06cd50fa2443cb553080389e6f5a3ec9318a1a640f9ade39928b5f402c423f62",
+    "data/radar_domain_recovery_v2/typed_sources_20261107/typed_records.json": "df0f6d5bba6df2c540f545adee581c723941ac894827e9f984a1ea86edc6b558",
+    "experiments/radar_domain/kopl_record_bridge.py": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+    "experiments/radar_domain/table_program.py": "34d79819f5a9da14900da90879c12ba1f700650faaac091320aa32a42a77d182",
+    "/Users/clear-water/Documents/vscodeprojecr/radaer_knowledge_research/experiments/radar_domain/dual_view_audit.py": "952c3f2c1b56269324eb2694bd56d22fca2ca479d8169000a7acd9c5a374ce78"
+  }
+}

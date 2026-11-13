@@ -1,0 +1,26 @@
+{
+  "schema": "local_research_thesis_export_v1",
+  "date": "2026-11-13",
+  "sources_sha256": {
+    "results/agent_feedback/construction_diagnostic_20261113/summary.json": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5",
+    "results/agent_feedback/construction_diagnostic_20261113/design.json": "c5431d26b2e3ff9e8daa4083351ee43ec09ba8895c62e160d68600a2c690f125",
+    "results/agent_feedback/construction_diagnostic_20261113/replay_detail_summary.json": "cd755d8964f8aeaa598c18bac2523519c52e44d371d98abe21099a205da6b623",
+    "results/radar_domain/dual_view_audit_20261113/summary.json": "a68d4193e53dd0da6ab011348110aa81fb5af037d49ebda3f5519e7780f3d5da",
+    "artifacts/thesis_direction_review/radar_source_review_20261113/summary.safe.json": "1c06584b035942a7ea9bf66e84a26cd801edad07923502352fbd4798595ceb61"
+  },
+  "exporter_sha256": "d37e455ebc3712a7e580dc54a13afa4c1b6cefa5f79bf625a8877388b14dcf99",
+  "rows": 22,
+  "chapter_sha256": {
+    "thesis/current/03d_source_view_validation.tex": "0e9ba52de57d4d002846e6595705c5be70363805acad13e90b1c020beb963475",
+    "thesis/current/03e_fixed_source_review.tex": "c8713f8a60c9ef841c29fb6e2d0821a527f810db4bbd753a15322684b7034f25",
+    "thesis/current/05b_construction_diagnostic.tex": "dc74778de51b976a7183193628cac784f339146af98c71d5fb1c43e2ac721f65",
+    "thesis/current/05c_same_state_design.tex": "ea8961c02ad8227aa7a172d2252d77f158ce4de3444813d92e97446e050967ab"
+  },
+  "outputs_sha256": {
+    "local_analysis_tables.tex": "bd620574a25cac27e68f008e88bd23b8a5d386453c41b5deda81b92ca0fe2089",
+    "local_analysis_results.csv": "74deef5e663423b2ad2a1cbdb262ecbafc504a4f59ec56f77b549b3511be23ed"
+  },
+  "access": "Only allowlisted public aggregates; full sources, questions and per-pair histories stay private",
+  "new_model_evaluations": 0,
+  "review_type": "AI"
+}

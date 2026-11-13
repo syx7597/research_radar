@@ -84,7 +84,7 @@
   "outputs_sha256": {
     "data_results.csv": "2ee23572632cece2fd0261d130b4a518084de56dd5b61e8406e92fe6e9aea5a8",
     "data_tables.tex": "9b54be080441ae88f876c0a1b911ae497726555fcdc57861e8f6fa9311fed810",
-    "03_radar_data_construction.tex": "4d12e6d3b804431f19ab637ec95028ad84cfcb297a90966b100a5e79c62ac346",
+    "03_radar_data_construction.tex": "dc6e21ccff04f99e90dc9212303f37f7913d6654fedd2d6ee124351015a9ff66",
     "data_review.tex": "44123804a77151a5f138f510a817fb194ebb033df29d6f7c37840adfb5fec4b2",
     "data_export.py": "8b70eb2096e27a8e5f59f1327781f11c1ee6197d92de99a58d4f06f60cfab4b2"
   },

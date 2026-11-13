@@ -1,0 +1,40 @@
+{
+  "schema": "construction_diagnostic_validation_v1",
+  "date": "2026-11-13",
+  "status": "passed_with_four_strict_replay_unavailable_rows_retained",
+  "tests": {
+    "command": "python3 -m unittest tests.test_construction_diagnostic -v",
+    "tests_run": 5,
+    "failures": 0,
+    "errors": 0,
+    "test_sha256": "0f6d35eb9ff03e74fb6f2395c487c1a03c8d8cda7d8b56dfb971460127fc6616"
+  },
+  "commands": {
+    "register_once_before_run": "PYTHONHASHSEED=20261003 python3 -m experiments.agent_feedback.construction_diagnostic register",
+    "run_once": "PYTHONHASHSEED=20261003 python3 -m experiments.agent_feedback.construction_diagnostic run",
+    "deterministic_rebuild_check": "PYTHONHASHSEED=20261003 python3 -m experiments.agent_feedback.construction_diagnostic check",
+    "independent_saved_record_recount": "python3 -m experiments.agent_feedback.construction_diagnostic_audit",
+    "exception_detail_followup": "PYTHONPATH=. PYTHONHASHSEED=20261003 python3 data/agent_feedback/construction_diagnostic_20261113/replay_detail/inspect_error_details.py"
+  },
+  "execution_evidence": {
+    "run_completed": true,
+    "rebuild_check_identical": true,
+    "independently_recounted_saved_rows": 418,
+    "source_population": 418,
+    "compared_same_state_pairs": 414,
+    "retained_unavailable_rows": 4
+  },
+  "summary_sha256": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5",
+  "design_sha256": "c5431d26b2e3ff9e8daa4083351ee43ec09ba8895c62e160d68600a2c690f125",
+  "count_audit_sha256": "af354313c61aabe237390d5ba6ca5a67bd14774a113d5f4b460f97bdce6a28c5",
+  "replay_detail_summary_sha256": "cd755d8964f8aeaa598c18bac2523519c52e44d371d98abe21099a205da6b623",
+  "implementation_sha256": {
+    "experiments/agent_feedback/construction_diagnostic.py": "918727a6e23a6d27d75ae34e8e1edc9cfcd40bc0c5cd728cb3058fe1e0be8a59",
+    "experiments/agent_feedback/construction_diagnostic_audit.py": "a59099b3512cf5ab42a4bbeda76e59e95b1c66894178e925fcc91666bb92a329"
+  },
+  "meaning": "CPU construction integrity and reference-path consistency on a preselected historical training sample; no trained-model effect measured",
+  "server_accessed": false,
+  "model_runs": 0,
+  "training_started": false,
+  "frozen_inputs_changed": false
+}

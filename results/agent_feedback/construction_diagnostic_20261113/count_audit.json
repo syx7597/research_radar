@@ -1,0 +1,48 @@
+{
+  "schema": "construction_diagnostic_count_audit_v1",
+  "date": "2026-11-13",
+  "status": "passed",
+  "reviewer": "AI author using separately implemented read-only recount; not independent human review",
+  "denominator": 418,
+  "compared": 414,
+  "strict_replay_unavailable": 4,
+  "recounted_from_saved_actions_and_observations": {
+    "direct": {
+      "suffix_all_calls_execute": 65,
+      "submitted_answer": 121,
+      "reference_observations_match": 0,
+      "final_answer_correct": 9,
+      "full_gate_pass": 0,
+      "any_reference_dependency_mismatch": 414,
+      "any_step_dependency_mismatch": 348,
+      "finish_dependency_mismatch": 391,
+      "invalid_suffix_calls": 505
+    },
+    "mapped_unfiltered": {
+      "suffix_all_calls_execute": 414,
+      "submitted_answer": 414,
+      "reference_observations_match": 414,
+      "final_answer_correct": 414,
+      "full_gate_pass": 414,
+      "any_reference_dependency_mismatch": 0,
+      "any_step_dependency_mismatch": 0,
+      "finish_dependency_mismatch": 0,
+      "invalid_suffix_calls": 0
+    }
+  },
+  "mapped_unfiltered_and_full_identical_traces": 414,
+  "all_four_unavailable_only_exception_detail_wording_differs": true,
+  "posthoc_description_of_all_direct_answer_matches": {
+    "answers_matching": 9,
+    "all_calls_execute": 0,
+    "observations_all_match": 0,
+    "any_reference_dependency_mismatch": 9,
+    "any_full_internal_result_mismatch": 5
+  },
+  "code_sha256": "a59099b3512cf5ab42a4bbeda76e59e95b1c66894178e925fcc91666bb92a329",
+  "summary_sha256": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5",
+  "per_pair_sha256": "c2810ebafcb9cf832cdd76671c014f726891b8ceffe36ee4afcbe902c02a33d5",
+  "replay_detail_sha256": "62ae1515587604807cc640d18d0b3e52b7335830f41d4c19db8115c24cf311f5",
+  "new_model_runs": 0,
+  "original_data_changed": false
+}
