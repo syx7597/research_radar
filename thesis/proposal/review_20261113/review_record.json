@@ -1,0 +1,81 @@
+{
+  "schema": "proposal_v3_feedback_adjudication_v1",
+  "date": "2026-11-13",
+  "status": "bounded_final_text_revision_completed",
+  "reviewers": [
+    "AI /root",
+    "AI /root/proposal_v3_method_scope (read-only)",
+    "AI /root/proposal_v3_ablation_data (read-only)"
+  ],
+  "feedback_sha256": "f8b56f183094f7052276d1e589999ddc1adf083632bcbff63a10655e36c18e02",
+  "parent": {
+    "path": "thesis/proposal/review_20261110_v2/content_submission.json",
+    "sha256": "42d9581b44707b3dad2481f0f1ee376a018fa75e5b807b417a6fb1fcbb661a44"
+  },
+  "title": "基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用",
+  "title_changed": false,
+  "accepted_text_clarifications": [
+    "specific recovery objective",
+    "compressed existing mapping formalization and actual admission conditions",
+    "same-I frozen 2x2 state comparison",
+    "primary Delta_D and secondary Delta_N/interaction retained",
+    "same-source graph projection and typed view rationale",
+    "existing old-eight-source 24-item human check criteria and disagreement handling",
+    "focused literature distinction"
+  ],
+  "not_added": [
+    "undefined semantic-equivalence oracle",
+    "four new training arms",
+    "mandatory 80-120-question expansion",
+    "general side-effectful tool-agent positioning"
+  ],
+  "existing_design_findings": {
+    "method_formalization_already_in_chapter4": true,
+    "same_state_factorial_and_interaction_already_registered": true,
+    "frozen_primary_unchanged": true,
+    "verification_removal_may_leave_existing_418_targets_unchanged": true,
+    "human24_is_distinct_from_new_basic24": true
+  },
+  "research_scope_and_six_month_plan_unchanged": true,
+  "new_model_runs": 0,
+  "new_datasets": 0,
+  "frozen_code_or_protocol_changes": false,
+  "server_accessed": false,
+  "human_review_completion_added": 0,
+  "evidence_sha256": {
+    "thesis/current/04_execution_feedback_method.tex": "0f2d9a21857a732eb3b53ce114281307e3476db7117bec9e1b988e7047c4b8bb",
+    "results/agent_feedback/same_state_v1/design_protocol.json": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
+    "experiments/agent_feedback/same_state_analysis.py": "82f00c5d6fc800f26d22d0972b8d8b9327fb6bb54f077cfd70be0c780ab3f508",
+    "experiments/agent_feedback/same_state.py": "94944a2a0f3e3f3a97fb89e554d26140408cfb67cd289dddc43d0fdc87940b5e",
+    "experiments/agent_feedback/recovery.py": "a826f5e66a1219eec3253965fd1a2e5ff33527df62ac3ac6f50e3bc846a7ad9e",
+    "results/agent_feedback/recovery_pairs.json": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9",
+    "experiments/radar_domain/kopl_record_bridge.py": "679b73cb91b404302e2d7346054f7a7eb4bbdf35d7363c79a9939175dcf5f4ac",
+    "experiments/radar_domain/typed_sources.py": "91ac17ecad056460e42e8bcfd77e2f57d463209e04cc45c4d64c1af471e23890",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/external_review_protocol.json": "5e392c4b0ff9a804800ddea1f965695abfad3579c59e4edd9107004255a113b0",
+    "artifacts/thesis_direction_review/radar_external_review_v1/human_status_20261018.json": "f53251b57e1dbcbd6d128b70473dd0577c71c3f637af212ab4f7c8eef7de9ca8",
+    "docs/PROPOSAL_REVIEW_DECISIONS_20261113.md": "80be740341a547bb8b4d93404009d6ae6723feee7eb27b5c06ce981d7ac236a3"
+  },
+  "deliverables_sha256": {
+    "thesis/proposal/review_20261113/content_submission.json": "e3212840ed1c16ed8f8e68e66bdf82d5d8a2adb54b54f45981493f912fa6fe64",
+    "thesis/proposal/review_20261113/华东师范大学研究生学位论文开题报告登记表_提交完善稿_v3.docx": "511937a353294bb6d404a5604ccb88405b920a54afd962af67738c24ece1d967",
+    "thesis/proposal/review_20261113/华东师范大学研究生学位论文开题报告登记表_提交完善稿_v3.pdf": "ae968e92ca4335480b123877d858c1182abd65bce2f63bec2b6aee7249a91b17",
+    "thesis/proposal/review_20261113/build_record.json": "9fab9a69b6f4737981c50d3f07ae734bdd9e5a69efb6e3dd2f8f8cf1dd84211a"
+  },
+  "validation": {
+    "pages": 8,
+    "content_paragraphs_checked": 66,
+    "all_text_present": true,
+    "all_final_pages_visually_checked": true,
+    "personal_and_signature_fields_preserved": true
+  },
+  "final_preview_sha256": {
+    "1": "47bfffcb052eb52c83979b318781e5df726f95b5690023216a527597290bebb7",
+    "2": "84fdd87c5eab3b9dd7f977667f6f119169df3839e6010f47eddba1bd9f7c8455",
+    "3": "189f31ed20442c5f325d7d6fe8ebe0f9591f073bf448156f3865dcf428aa2ffd",
+    "4": "da4dcd3e28ab3faed40950be5117f6ab3c1e6edbe37730ec6370322c7edbacf8",
+    "5": "d5696b1b8d5bd72e53a97b21f92799f2115e8b51a69c060a2fee84a12be16912",
+    "6": "79e2852dbf8d7b223165abd75d56f7f4f0b3a7c1cf8443d7a19e875306eb7fd2",
+    "7": "7cf42c261f8e1356cf8c52faab85fcd0a36ae3ad716189bde44aab06475024c6",
+    "8": "1f75d51685f377d330e2675ec4792c2cf3fb313727580e7623e7670ee3ce046b"
+  }
+}
