@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-14",
+  "titles": {
+    "zh": "面向小模型可执行知识问答的依赖一致恢复监督",
+    "en": "Dependency-Consistent Recovery Supervision for Executable Knowledge Question Answering with Small Language Models"
+  },
+  "figure_captions": {
+    "zh": "离线恢复监督构造。参考程序用于训练目标生成，正式评价由模型自由执行。",
+    "en": "Offline recovery-supervision construction. Reference programs supply training targets; evaluation uses free-running model actions."
+  },
+  "article_type": "Empirical methods paper draft",
+  "language_relation": "Two language versions of the same study",
+  "authors": "Left blank for the researcher",
+  "new_model_runs": 0,
+  "base_commit": "60dccdf"
+}

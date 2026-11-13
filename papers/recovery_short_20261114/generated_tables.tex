@@ -1,0 +1,116 @@
+% Generated from one audited data file; no external-paper scores are compared.
+\newcommand{\RecoveryMainTableZH}{%
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+模型 & 正确数 & 准确率(\%) & C减A & 95\%区间 \\
+\midrule
+$P$ & 1523 & 76.15 & -- & -- \\
+$A_{1}$ & 1565 & 78.25 & -- & -- \\
+$C_{1}$ & 1658 & 82.90 & +4.65 & [3.10, 6.25] \\
+$A_{2}$ & 1585 & 79.25 & -- & -- \\
+$C_{2}$ & 1682 & 84.10 & +4.85 & [3.35, 6.40] \\
+A均值 & -- & 78.75 & -- & -- \\
+C均值 & -- & 83.50 & +4.75 & [3.53, 5.98] \\
+\bottomrule
+\end{tabular}%
+}
+
+\newcommand{\RecoveryCostTableZH}{%
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+模型 & 未完成 & 无效调用 & 输入(百万) & 生成(千) & 合计(百万) \\
+\midrule
+$A_{1}$ & 198 & 3725 & 20.502 & 350.172 & 20.853 \\
+$C_{1}$ & 80 & 1268 & 18.646 & 363.771 & 19.010 \\
+$A_{2}$ & 205 & 3845 & 20.412 & 328.276 & 20.740 \\
+$C_{2}$ & 91 & 1216 & 19.494 & 381.937 & 19.876 \\
+\bottomrule
+\end{tabular}%
+}
+
+\newcommand{\RecoveryConstructionTableZH}{%
+\begin{tabular}{@{}lrr@{}}
+\toprule
+构造指标 & 原编号拼接 & 依赖映射 \\
+\midrule
+后缀全部调用可执行 & 65 & 414 \\
+成功提交答案 & 121 & 414 \\
+答案与参考一致 & 9 & 414 \\
+全部参考观察一致 & 0 & 414 \\
+完整构造验收通过 & 0 & 414 \\
+\bottomrule
+\end{tabular}%
+}
+
+\newcommand{\RecoveryMainTableEN}{%
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+Model & Correct & Acc. (\%) & $C-A$ & 95\% CI \\
+\midrule
+$P$ & 1523 & 76.15 & -- & -- \\
+$A_{1}$ & 1565 & 78.25 & -- & -- \\
+$C_{1}$ & 1658 & 82.90 & +4.65 & [3.10, 6.25] \\
+$A_{2}$ & 1585 & 79.25 & -- & -- \\
+$C_{2}$ & 1682 & 84.10 & +4.85 & [3.35, 6.40] \\
+A mean & -- & 78.75 & -- & -- \\
+C mean & -- & 83.50 & +4.75 & [3.53, 5.98] \\
+\bottomrule
+\end{tabular}%
+}
+
+\newcommand{\RecoveryCostTableEN}{%
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Model & Unfinished & Invalid & Input (M) & Output (k) & Total (M) \\
+\midrule
+$A_{1}$ & 198 & 3725 & 20.502 & 350.172 & 20.853 \\
+$C_{1}$ & 80 & 1268 & 18.646 & 363.771 & 19.010 \\
+$A_{2}$ & 205 & 3845 & 20.412 & 328.276 & 20.740 \\
+$C_{2}$ & 91 & 1216 & 19.494 & 381.937 & 19.876 \\
+\bottomrule
+\end{tabular}%
+}
+
+\newcommand{\RecoveryConstructionTableEN}{%
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Construction check & Direct splice & Remapped \\
+\midrule
+All suffix calls execute & 65 & 414 \\
+Answer submitted & 121 & 414 \\
+Answer matches reference & 9 & 414 \\
+All reference observations match & 0 & 414 \\
+Full construction gate passes & 0 & 414 \\
+\bottomrule
+\end{tabular}%
+}
+
+\newcommand{\RecoveryRelatedTableZH}{%
+\begin{tabular}{@{}p{0.14\linewidth}p{0.37\linewidth}p{0.42\linewidth}@{}}
+\toprule
+方法 & 后续目标来源 & 构造与监督条件 \\
+\midrule
+DAgger & 策略访问状态上的专家动作 & 专家标注与迭代数据聚合 \\
+Agent-R & 搜索分支与模型指导修订 & MCTS评价与迭代自训练 \\
+STeP & 教师反思与纠正 & 保留学生历史，屏蔽错误步骤 \\
+OEC & 学生历史上的专家续写 & 环境筛选与续写部分监督 \\
+ReTerm & 失败终态与历史上的教师恢复 & 恢复SFT及进一步在线RL \\
+本文 & 已有参考程序的后缀 & 句柄映射、只读重放与后缀监督 \\
+\bottomrule
+\end{tabular}%
+}
+
+\newcommand{\RecoveryRelatedTableEN}{%
+\begin{tabular}{@{}p{0.14\linewidth}p{0.37\linewidth}p{0.42\linewidth}@{}}
+\toprule
+Method & Continuation source & Construction and supervision \\
+\midrule
+DAgger & Expert actions on visited states & Expert labeling and iterative aggregation \\
+Agent-R & Search branches and model-guided revision & MCTS outcomes and iterative self-training \\
+STeP & Teacher reflections and corrections & Student context with masked erroneous steps \\
+OEC & Expert continuation of student history & Environment filtering and continuation loss \\
+ReTerm & Teacher recovery from failed terminal histories & Recovery SFT followed by online recovery RL \\
+This work & Existing reference-program suffix & Handle remapping, read-only replay, suffix loss \\
+\bottomrule
+\end{tabular}%
+}

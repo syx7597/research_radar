@@ -1,0 +1,16 @@
+\begin{center}\small
+\fbox{\parbox{0.92\linewidth}{\centering 训练问题、参考程序与固定初始模型 I}}
+\par\vspace{0.3em}$\downarrow$\par\vspace{0.3em}
+\fbox{\parbox{0.92\linewidth}{\centering 真实失败轨迹：共同成功前缀与首次参考分歧}}
+\par\vspace{0.5em}
+\begin{minipage}[t]{0.46\linewidth}\centering
+\fbox{\parbox{0.90\linewidth}{\centering\textbf{普通续训 A}\\
+共同前缀\\$\downarrow$\\执行参考后缀}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\linewidth}\centering
+\fbox{\parbox{0.90\linewidth}{\centering\textbf{恢复续训 C}\\
+共同前缀＋真实分歧及反馈\\$\downarrow$\\依赖映射后执行参考后缀}}
+\end{minipage}
+\par\vspace{0.4em}$\downarrow$\par\vspace{0.3em}
+\fbox{\parbox{0.92\linewidth}{\centering 核验观察与答案；仅监督后缀助手动作\\两侧共享成功材料、问题顺序与监督 token 预算}}
+\end{center}

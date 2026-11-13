@@ -1,0 +1,119 @@
+{
+  "schema": "bilingual_recovery_paper_build_v1",
+  "date": "2026-11-14",
+  "status": "compiled_and_editable_exports_created",
+  "scope": "Standalone paper without radar content; two languages of the same study",
+  "language_checks": {
+    "zh": {
+      "cited_keys": [
+        "cao2022kqapro",
+        "chen2025step",
+        "hu2022lora",
+        "kumar2025score",
+        "lauffer2025oec",
+        "madaan2023selfrefine",
+        "qwen2024qwen25",
+        "ross2011dagger",
+        "shinn2023reflexion",
+        "xie2026reterm",
+        "yao2023react",
+        "yuan2025agentr",
+        "zhang2026fission"
+      ],
+      "sections": [
+        "引言",
+        "相关工作",
+        "依赖一致的恢复监督方法",
+        "实验设置",
+        "结果与分析",
+        "讨论与适用范围",
+        "结论"
+      ],
+      "body_sha256": "78b4b9893e34e6532b4a4f1a3655b36bf7459515f74e6648789b1438fe8b3994"
+    },
+    "en": {
+      "cited_keys": [
+        "cao2022kqapro",
+        "chen2025step",
+        "hu2022lora",
+        "kumar2025score",
+        "lauffer2025oec",
+        "madaan2023selfrefine",
+        "qwen2024qwen25",
+        "ross2011dagger",
+        "shinn2023reflexion",
+        "xie2026reterm",
+        "yao2023react",
+        "yuan2025agentr",
+        "zhang2026fission"
+      ],
+      "sections": [
+        "Introduction",
+        "Related Work",
+        "Dependency-Consistent Recovery Supervision",
+        "Experimental Protocol",
+        "Results and Analysis",
+        "Discussion and Scope",
+        "Conclusion"
+      ],
+      "body_sha256": "819cdc8756a3ef6546a5f232e83a744f3c11142407a82d3fdd7a3bc496b62563"
+    }
+  },
+  "engines": {
+    "tectonic": "Tectonic 0.17.0",
+    "pandoc": "pandoc 3.14"
+  },
+  "outputs": {
+    "zh": {
+      "files": {
+        "papers/recovery_short_20261114/recovery_supervision_zh.pdf": "41f9a49383a890a9131444eaa3a8b5349833bd63bcc460550978a6f022a27ff1",
+        "papers/recovery_short_20261114/recovery_supervision_zh.docx": "d6ffb38608fe7b9fd787a1d4e3440b858c46aaf2091ada90e3ed5593b9f5b536",
+        "papers/recovery_short_20261114/manuscript_zh.md": "7e7f58f46913f7f3a5cd48af3954f75f4029a29acabab3329867bcd83e7cfbdb"
+      },
+      "compile": {
+        "overfull_boxes": 0,
+        "unresolved_references_or_missing_glyphs": 0,
+        "log_sha256": "eedcb7ea60e1e3fe1c32feb71f7b879147b3c1f54b3ea5687104b2a3699c4609"
+      }
+    },
+    "en": {
+      "files": {
+        "papers/recovery_short_20261114/recovery_supervision_en.pdf": "620639e7df46c813bf2b7f929ee96bac606c1ae2e29afd63cfc38aa555d1ac66",
+        "papers/recovery_short_20261114/recovery_supervision_en.docx": "00cdfabebb5226d48768b04c3b05a9e24479889527188b5d9f6233a017a97b34",
+        "papers/recovery_short_20261114/manuscript_en.md": "11f6bd1bd84add6074b5fd688b2a1f52a82684d74dcd2ebd9bbd4666c711cc3f"
+      },
+      "compile": {
+        "overfull_boxes": 0,
+        "unresolved_references_or_missing_glyphs": 0,
+        "log_sha256": "0e9d785335bc84c4e9ddad1ba5f732eaa79ee6e1b48a5ac4f535079314251d81"
+      }
+    }
+  },
+  "source_sha256": {
+    "cache/paper_build_tools/ieee.csl": "b4c7619fc16c45a31e4cc3271eab94ffe83192d3b4c7fc729470a3b459448de3",
+    "papers/recovery_short_20261114/assets/word_style_en.docx": "16ce2d923f15545ceb8cd377b3028ba651eadc533174255b52572a1473246f6f",
+    "papers/recovery_short_20261114/assets/word_style_zh.docx": "16ce2d923f15545ceb8cd377b3028ba651eadc533174255b52572a1473246f6f",
+    "papers/recovery_short_20261114/build_paper.py": "ef7ebf1be258cf890c1cfeed03fcd8f305770309d37411ecf4d747253b64c621",
+    "papers/recovery_short_20261114/evidence_audit.json": "763318d2b0745f2a8bad0254f49d103ed9ffb833ab934ca818160a58c16ced9c",
+    "papers/recovery_short_20261114/export_tables.py": "f4ed4dfd2fda76e89a322dee88bad4d6525c1f8b6cf8f142891191d4827c7df4",
+    "papers/recovery_short_20261114/generated_tables.tex": "ad2819c26206fb3e4e428d777653c282e70872a00212672929e524760a4027f7",
+    "papers/recovery_short_20261114/literature_audit.json": "0aa31bb5b5c687cd835121ea3079dcb23d442d2a9e566192c114bc990038cffd",
+    "papers/recovery_short_20261114/manuscript_en.tex": "819cdc8756a3ef6546a5f232e83a744f3c11142407a82d3fdd7a3bc496b62563",
+    "papers/recovery_short_20261114/manuscript_zh.tex": "78b4b9893e34e6532b4a4f1a3655b36bf7459515f74e6648789b1438fe8b3994",
+    "papers/recovery_short_20261114/method_body_en.tex": "b6f26282aaab21aa42dbbe17c3e895b1db9cfc536fc8ab2f3f8a29a96de50edf",
+    "papers/recovery_short_20261114/method_body_zh.tex": "b7cd4f9c1a95ff7ecc38bf92d538d39c9a7fdb73215ab8d24ac68c3eae44f150",
+    "papers/recovery_short_20261114/method_diagram_en.tex": "cab9ac5d7eae8a01336fb40c532ee2b16eebc16cc7b54c247570a70ee3b93f28",
+    "papers/recovery_short_20261114/method_diagram_zh.tex": "2f5db5e27ff68e1e1cc2cdd20759116b61eef3982be20d84f435b6da6e19cf3e",
+    "papers/recovery_short_20261114/method_figure_en.tex": "6aecd654203939145ffcca828abeace8c6c1521e40f83ecef123d70af2ba7f80",
+    "papers/recovery_short_20261114/method_figure_zh.tex": "290bc562b0fc73dc4921eb7066fb44a53522e20382be4446c4293a0101baa149",
+    "papers/recovery_short_20261114/paper_en.tex": "1c5957624070dfd9787a98eeb4144cc6c26b88e06ceea5e5ad2c3e4bd2bc159f",
+    "papers/recovery_short_20261114/paper_metadata.json": "f105329f280de35cebd5109c961aca3bda73587f7021b5905976f0daa4f93a07",
+    "papers/recovery_short_20261114/paper_zh.tex": "934563faa6a5301dcf2480389f5a99103cdcba8bc005a986f97995fb72dc0be8",
+    "papers/recovery_short_20261114/references.bib": "3820387de537087701e587a78b19fe3744bbf5c648714f081f794d76948e3650",
+    "papers/recovery_short_20261114/render_diagram.swift": "e7248787983bbb517585b62ba2776fb835bc5e94c1c5785581e59995342f96df",
+    "papers/recovery_short_20261114/table_export_manifest.json": "d1bbbc288092699d6226be48a43a8d11b79724a0324a5d5ba6f483998f6f8a7c",
+    "papers/recovery_short_20261114/tables_data.json": "2202fed91bc4a6f1c9c52e832e584e38a040739163ad362bbf18defb5ba6504f"
+  },
+  "new_model_runs": 0,
+  "visual_and_language_review": "recorded separately"
+}

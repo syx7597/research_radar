@@ -1,0 +1,129 @@
+{
+  "schema": "recovery_short_paper_delivery_review_v1",
+  "date": "2026-11-14",
+  "status": "complete_bilingual_manuscripts_with_existing_evidence",
+  "reviewer": "AI /root with independent AI evidence/literature/English agents",
+  "human_review_claimed": false,
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "source_and_output_sha256_verified": true,
+  "independent_bilingual_checks_passed": 13,
+  "languages": {
+    "zh": {
+      "pdf_pages": 9,
+      "pdf_pages_with_text": 9,
+      "pdf_selected_pages_visually_inspected": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "docx_render_engine": "Apple Pages 13.2 PDF export",
+      "docx_render_pages": 9,
+      "docx_selected_render_pages_visually_inspected": [
+        3,
+        6
+      ],
+      "docx_structure": {
+        "tables": 4,
+        "native_math_nodes": 52,
+        "embedded_images": 1
+      },
+      "core_numbers_in_pdf_docx_and_word_render": "pass",
+      "reference_13_present_in_both_renders": true,
+      "application_domain_terms_absent_from_full_pdf_text": true,
+      "compile": {
+        "overfull_boxes": 0,
+        "unresolved_references_or_missing_glyphs": 0,
+        "log_sha256": "eedcb7ea60e1e3fe1c32feb71f7b879147b3c1f54b3ea5687104b2a3699c4609"
+      }
+    },
+    "en": {
+      "pdf_pages": 10,
+      "pdf_pages_with_text": 10,
+      "pdf_selected_pages_visually_inspected": [
+        1,
+        4,
+        6,
+        7,
+        10
+      ],
+      "docx_render_engine": "Apple Pages 13.2 PDF export",
+      "docx_render_pages": 9,
+      "docx_selected_render_pages_visually_inspected": [
+        4,
+        6
+      ],
+      "docx_structure": {
+        "tables": 4,
+        "native_math_nodes": 74,
+        "embedded_images": 1
+      },
+      "core_numbers_in_pdf_docx_and_word_render": "pass",
+      "reference_13_present_in_both_renders": true,
+      "application_domain_terms_absent_from_full_pdf_text": true,
+      "compile": {
+        "overfull_boxes": 0,
+        "unresolved_references_or_missing_glyphs": 0,
+        "log_sha256": "0e9d785335bc84c4e9ddad1ba5f732eaa79ee6e1b48a5ac4f535079314251d81"
+      }
+    }
+  },
+  "checks": [
+    "Shared numeric tables export check",
+    "Build and bilingual-review file identities",
+    "Native PDF compile: zero overfull boxes and unresolved references/missing glyphs",
+    "Full PDF text extraction and core-value presence",
+    "DOCX editable math, tables, image and Pages rendering",
+    "Selected-page visual review",
+    "No application-domain content in either paper"
+  ],
+  "known_export_notes": [
+    "Pandoc reports a zh locale translation fallback; Chinese captions and headings are explicitly supplied and visually checked.",
+    "PDF uses numbered sections; editable Word uses heading styles and explicit table/figure numbering.",
+    "PDF is the fixed-layout reading copy; Word pagination depends on the editor."
+  ],
+  "scientific_pending": "Registered same-state model evaluation has no new results; described as future analysis in both manuscripts.",
+  "artifacts_sha256": {
+    "papers/recovery_short_20261114/.gitignore": "020c2606e8ed484089c2083e0be438b9d0736bee1558a6b76af0d58bd23f69cf",
+    "papers/recovery_short_20261114/README.md": "8a4491d3aa95f62c0d8ddc7dd44566c4a5c2b559d43c54058a3a29f70f45a072",
+    "papers/recovery_short_20261114/assets/method_en.png": "e8de2740856305bfc19f4ab1eaa82593f9d4c3510887f0bc5913c2157b15193e",
+    "papers/recovery_short_20261114/assets/method_zh.png": "6253db6f4126fc9d542e35d3c5bc854524b73542d734e0790c6587d27f240b6d",
+    "papers/recovery_short_20261114/assets/word_style_en.docx": "16ce2d923f15545ceb8cd377b3028ba651eadc533174255b52572a1473246f6f",
+    "papers/recovery_short_20261114/assets/word_style_zh.docx": "16ce2d923f15545ceb8cd377b3028ba651eadc533174255b52572a1473246f6f",
+    "papers/recovery_short_20261114/bilingual_review.json": "b593c3fabef84b45a81619c4e6129673f61ea63ffbfda778b1077661de22297c",
+    "papers/recovery_short_20261114/build_manifest.json": "54bd52470c434c4f366bb8c1eb51317a0c2e4191123098d1986572e176ebb3e5",
+    "papers/recovery_short_20261114/build_paper.py": "ef7ebf1be258cf890c1cfeed03fcd8f305770309d37411ecf4d747253b64c621",
+    "papers/recovery_short_20261114/evidence_audit.json": "763318d2b0745f2a8bad0254f49d103ed9ffb833ab934ca818160a58c16ced9c",
+    "papers/recovery_short_20261114/evidence_notes.md": "515361f2f697fa38af089ebf79dc1ff54989cf5ba227a9d7a75024ee7106ce60",
+    "papers/recovery_short_20261114/export_tables.py": "f4ed4dfd2fda76e89a322dee88bad4d6525c1f8b6cf8f142891191d4827c7df4",
+    "papers/recovery_short_20261114/generated_tables.tex": "ad2819c26206fb3e4e428d777653c282e70872a00212672929e524760a4027f7",
+    "papers/recovery_short_20261114/literature_audit.json": "0aa31bb5b5c687cd835121ea3079dcb23d442d2a9e566192c114bc990038cffd",
+    "papers/recovery_short_20261114/literature_review.md": "08d4f45267d0d09acbdaba5673a1535ed9880c392d4681e3921600e92bfb12de",
+    "papers/recovery_short_20261114/manuscript_en.md": "11f6bd1bd84add6074b5fd688b2a1f52a82684d74dcd2ebd9bbd4666c711cc3f",
+    "papers/recovery_short_20261114/manuscript_en.tex": "819cdc8756a3ef6546a5f232e83a744f3c11142407a82d3fdd7a3bc496b62563",
+    "papers/recovery_short_20261114/manuscript_zh.md": "7e7f58f46913f7f3a5cd48af3954f75f4029a29acabab3329867bcd83e7cfbdb",
+    "papers/recovery_short_20261114/manuscript_zh.tex": "78b4b9893e34e6532b4a4f1a3655b36bf7459515f74e6648789b1438fe8b3994",
+    "papers/recovery_short_20261114/method_body_en.tex": "b6f26282aaab21aa42dbbe17c3e895b1db9cfc536fc8ab2f3f8a29a96de50edf",
+    "papers/recovery_short_20261114/method_body_zh.tex": "b7cd4f9c1a95ff7ecc38bf92d538d39c9a7fdb73215ab8d24ac68c3eae44f150",
+    "papers/recovery_short_20261114/method_diagram_en.tex": "cab9ac5d7eae8a01336fb40c532ee2b16eebc16cc7b54c247570a70ee3b93f28",
+    "papers/recovery_short_20261114/method_diagram_zh.tex": "2f5db5e27ff68e1e1cc2cdd20759116b61eef3982be20d84f435b6da6e19cf3e",
+    "papers/recovery_short_20261114/method_figure_en.tex": "6aecd654203939145ffcca828abeace8c6c1521e40f83ecef123d70af2ba7f80",
+    "papers/recovery_short_20261114/method_figure_zh.tex": "290bc562b0fc73dc4921eb7066fb44a53522e20382be4446c4293a0101baa149",
+    "papers/recovery_short_20261114/paper_en.tex": "1c5957624070dfd9787a98eeb4144cc6c26b88e06ceea5e5ad2c3e4bd2bc159f",
+    "papers/recovery_short_20261114/paper_metadata.json": "f105329f280de35cebd5109c961aca3bda73587f7021b5905976f0daa4f93a07",
+    "papers/recovery_short_20261114/paper_zh.tex": "934563faa6a5301dcf2480389f5a99103cdcba8bc005a986f97995fb72dc0be8",
+    "papers/recovery_short_20261114/recovery_supervision_en.docx": "00cdfabebb5226d48768b04c3b05a9e24479889527188b5d9f6233a017a97b34",
+    "papers/recovery_short_20261114/recovery_supervision_en.pdf": "620639e7df46c813bf2b7f929ee96bac606c1ae2e29afd63cfc38aa555d1ac66",
+    "papers/recovery_short_20261114/recovery_supervision_zh.docx": "d6ffb38608fe7b9fd787a1d4e3440b858c46aaf2091ada90e3ed5593b9f5b536",
+    "papers/recovery_short_20261114/recovery_supervision_zh.pdf": "41f9a49383a890a9131444eaa3a8b5349833bd63bcc460550978a6f022a27ff1",
+    "papers/recovery_short_20261114/references.bib": "3820387de537087701e587a78b19fe3744bbf5c648714f081f794d76948e3650",
+    "papers/recovery_short_20261114/render_diagram.swift": "e7248787983bbb517585b62ba2776fb835bc5e94c1c5785581e59995342f96df",
+    "papers/recovery_short_20261114/table_export_manifest.json": "d1bbbc288092699d6226be48a43a8d11b79724a0324a5d5ba6f483998f6f8a7c",
+    "papers/recovery_short_20261114/table_specs.json": "3cda77923cc4320c24e5efa80e75332ec4cf5cbcba9a872ee3065f2a94887bc5",
+    "papers/recovery_short_20261114/tables_data.json": "2202fed91bc4a6f1c9c52e832e584e38a040739163ad362bbf18defb5ba6504f"
+  }
+}

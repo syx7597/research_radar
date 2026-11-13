@@ -1,0 +1,157 @@
+{
+  "schema": "recovery_short_paper_bilingual_review_v1",
+  "date": "2026-11-14",
+  "reviewer": "AI /root/recovery_paper_evidence",
+  "status": "passed_after_reporting_clarifications",
+  "review_scope": "Read-only numerical, methodological and bilingual claim alignment; no new experiments or edits to manuscripts/results",
+  "reviewed_files_sha256": {
+    "papers/recovery_short_20261114/manuscript_zh.tex": "78b4b9893e34e6532b4a4f1a3655b36bf7459515f74e6648789b1438fe8b3994",
+    "papers/recovery_short_20261114/manuscript_en.tex": "819cdc8756a3ef6546a5f232e83a744f3c11142407a82d3fdd7a3bc496b62563",
+    "papers/recovery_short_20261114/generated_tables.tex": "ad2819c26206fb3e4e428d777653c282e70872a00212672929e524760a4027f7",
+    "papers/recovery_short_20261114/table_specs.json": "3cda77923cc4320c24e5efa80e75332ec4cf5cbcba9a872ee3065f2a94887bc5",
+    "papers/recovery_short_20261114/tables_data.json": "2202fed91bc4a6f1c9c52e832e584e38a040739163ad362bbf18defb5ba6504f",
+    "papers/recovery_short_20261114/method_figure_zh.tex": "290bc562b0fc73dc4921eb7066fb44a53522e20382be4446c4293a0101baa149",
+    "papers/recovery_short_20261114/method_figure_en.tex": "6aecd654203939145ffcca828abeace8c6c1521e40f83ecef123d70af2ba7f80"
+  },
+  "shared_source_table_sha256": "2202fed91bc4a6f1c9c52e832e584e38a040739163ad362bbf18defb5ba6504f",
+  "checks": [
+    {
+      "id": "B01",
+      "topic": "study identity",
+      "status": "pass",
+      "detail": "Same non-radar executable-KQA recovery-supervision study; same 7 sections, 10 subsections and 13 citation keys."
+    },
+    {
+      "id": "B02",
+      "topic": "training exposure",
+      "status": "pass",
+      "detail": "Both explain 5000-question training partition with4999 admitted demonstrations, I two epochs, P three epochs with273426 targets per epoch, and A/C one788534-target continuation pass."
+    },
+    {
+      "id": "B03",
+      "topic": "P comparator",
+      "status": "pass",
+      "detail": "Both describe P as execution-style and cost reference; the primary causal/control comparison is matched A/C, not P."
+    },
+    {
+      "id": "B04",
+      "topic": "split provenance",
+      "status": "pass_after_clarification",
+      "detail": "Both now distinguish inherited train/dev, exclusion of8500 historical groups for new holdout, and separate official-validation exact-group exclusion; project-held-out wording retained."
+    },
+    {
+      "id": "B05",
+      "topic": "paired statistics",
+      "status": "pass",
+      "detail": "Both report2 continuation seeds sharing I and corpus, same2000 question units, paired5000-resample CI conditional on checkpoints, +4.75pp [3.53,5.98]."
+    },
+    {
+      "id": "B06",
+      "topic": "cost units and error behavior",
+      "status": "pass",
+      "detail": "Both separate cumulative full-prefill input from generated tokens, give8.84/4.17% total reduction with generated-token increases and23.64/24.72xP; completed-wrong and regression possibilities retained."
+    },
+    {
+      "id": "B07",
+      "topic": "construction diagnostic",
+      "status": "pass",
+      "detail": "Both preserve418 total,414 comparable and4 exception-detail mismatches, give65 executed/121 submitted/9 answer matches for direct and414 for mapped, and state all414 comparable cases allocate an extra handle."
+    },
+    {
+      "id": "B08",
+      "topic": "construction versus model benefit",
+      "status": "pass",
+      "detail": "Both distinguish offline fixed-reference construction from trained-policy accuracy and mention historically admitted sample; mapped-unfiltered and verified candidates identical."
+    },
+    {
+      "id": "B09",
+      "topic": "same-state model result",
+      "status": "pass",
+      "detail": "Both explicitly state identical-normal/divergent-history model evaluation is prepared but not yet run; no fabricated four-cell accuracies."
+    },
+    {
+      "id": "B10",
+      "topic": "retained history",
+      "status": "pass_after_clarification",
+      "detail": "The retained history is a common successful prefix plus one actual divergence and its observation; Chinese wording was clarified to avoid implying the entire original failed rollout."
+    },
+    {
+      "id": "B11",
+      "topic": "mapping and loss",
+      "status": "pass",
+      "detail": "Both equations preserve function/literals and remap dependency handles; actual divergent result is not a reference counterpart; question/prefix/divergence/tools masked in paired records."
+    },
+    {
+      "id": "B12",
+      "topic": "feedback intervention",
+      "status": "pass_after_final_scope_clarification",
+      "detail": "Both describe inference-time generic-error-text substitution retaining successful observations and actual state, +0.2 to+0.4pp intervals containing zero, not an all-feedback ablation. Both now also record five generation divergences before first intervention, with the cause undetermined, matching the historical diagnostic audit."
+    },
+    {
+      "id": "B13",
+      "topic": "claim strength",
+      "status": "pass",
+      "detail": "Both scope claims to one3B backbone and deterministic read-only replayable query environments; neither asserts a universal recovery mechanism or new same-state result."
+    }
+  ],
+  "tables": [
+    {
+      "table": "RecoveryMainTable",
+      "rows": 7,
+      "compared_display_cells": 28,
+      "all_numeric_and_interval_entries_identical": true
+    },
+    {
+      "table": "RecoveryCostTable",
+      "rows": 4,
+      "compared_display_cells": 20,
+      "all_numeric_and_interval_entries_identical": true
+    },
+    {
+      "table": "RecoveryConstructionTable",
+      "rows": 5,
+      "compared_display_cells": 10,
+      "all_numeric_and_interval_entries_identical": true
+    }
+  ],
+  "cited_reference_keys": [
+    "cao2022kqapro",
+    "chen2025step",
+    "hu2022lora",
+    "kumar2025score",
+    "lauffer2025oec",
+    "madaan2023selfrefine",
+    "qwen2024qwen25",
+    "ross2011dagger",
+    "shinn2023reflexion",
+    "xie2026reterm",
+    "yao2023react",
+    "yuan2025agentr",
+    "zhang2026fission"
+  ],
+  "section_counts": {
+    "zh": 7,
+    "en": 7
+  },
+  "subsection_counts": {
+    "zh": 10,
+    "en": 10
+  },
+  "unresolved_blocking_findings": [],
+  "suggested_wording_changes_applied": [
+    "Separate historical-group exclusion from official-val exact-group exclusion",
+    "Describe CPU construction as separate/offline rather than independently sampled; clarify retained selected history",
+    "Retain the five pre-intervention divergences and unresolved cause in both feedback-diagnostic paragraphs"
+  ],
+  "not_assessed_in_this_review": [
+    "New related-paper factual claims beyond the separate literature audit",
+    "Word/PDF layout and bibliography rendering; parent owns build validation",
+    "Fresh execution of model or original10000 historical rollouts"
+  ],
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "original_data_or_code_changed": false,
+  "review_revision": 2,
+  "previous_review_sha256": "bc2d1b2fbc93acdc670664f29b5178ba864bb911394eac62286ee18da9ef7ec7",
+  "revision_scope": "Read the two added feedback-diagnostic sentences; update current manuscript/export hashes without repeating model-output file audits."
+}

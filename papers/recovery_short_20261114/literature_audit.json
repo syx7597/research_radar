@@ -1,0 +1,564 @@
+{
+  "schema": "recovery_short_literature_audit_v1",
+  "audit_date": "2026-11-14",
+  "reviewer": "AI subagent /root/recovery_paper_literature",
+  "human_review_completed": false,
+  "scope": [
+    "Thirteen main references and two screened candidates.",
+    "Primary-source metadata and selected method reading; per-entry fresh reading and prior audit reuse are explicit.",
+    "No independent human review, systematic review, peer-method reproduction or cross-paper numerical ranking."
+  ],
+  "source_policy": {
+    "primary_sources_used": [
+      "author preprints",
+      "official proceedings",
+      "author repositories"
+    ],
+    "secondary_aggregators_used_for_claims_or_venue_status": false,
+    "failed_access_notes": [
+      "Some OpenReview requests returned challenge pages; official proceeding PDFs or author preprints supplied the readable method text.",
+      "OEC official PMLR PDF link served application/octet-stream; the same official linked file was downloaded and extracted locally."
+    ],
+    "full_text_cache_publication": "Downloaded papers remain under ignored cache; only bibliographic metadata and short original summaries accompany the manuscript."
+  },
+  "project_positioning": {
+    "task": "Reference-program-guided recovery supervision for read-only deterministic executable KBQA with append-only handles.",
+    "shared_prior_art": [
+      "student-visited recovery contexts",
+      "failure/success trajectory composition",
+      "corrected-token-only or teacher-only loss",
+      "training on verified continuations"
+    ],
+    "specific_method_focus": [
+      "mapping reference dependencies to actual execution handles",
+      "deterministic suffix replay and acceptance",
+      "paired small-model continuation evaluation"
+    ],
+    "claims_not_made": [
+      "first recovery-training algorithm",
+      "unsupervised or expert-free training",
+      "DAgger theoretical guarantees",
+      "superiority over unreplicated neighbor methods",
+      "CPU construction success is learned-policy recovery success",
+      "first reference divergence is necessarily first semantic error"
+    ]
+  },
+  "main_references": [
+    {
+      "citekey": "cao2022kqapro",
+      "title": "{KQA Pro}: A Dataset with Explicit Compositional Programs for Complex Question Answering over Knowledge Base",
+      "bibliography_year": 2022,
+      "publication_status": "ACL 2022 official proceedings",
+      "primary_urls": [
+        "https://aclanthology.org/2022.acl-long.422/",
+        "https://aclanthology.org/2022.acl-long.422.pdf"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_metadata_check_with_explicit_prior_method_audit_reuse",
+      "fresh_reading_scope": [
+        "Official ACL metadata and abstract"
+      ],
+      "supported_method_claims": [
+        "KQA Pro supplies compositional executable program annotations."
+      ],
+      "scope_notes": [],
+      "local_cache": [],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_method_audit": {
+        "path": "thesis/current/literature_audit.json",
+        "checked_date": "2026-10-08",
+        "reading_scope": [
+          "Official metadata and abstract",
+          "Paper task description and KoPL function appendix, PDF page 15"
+        ],
+        "scope_notes": []
+      }
+    },
+    {
+      "citekey": "qwen2024qwen25",
+      "title": "{Qwen2.5} Technical Report",
+      "bibliography_year": 2024,
+      "publication_status": "Author technical report; arXiv version 1",
+      "primary_urls": [
+        "https://arxiv.org/abs/2412.15115v1",
+        "https://arxiv.org/html/2412.15115v1"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_metadata_check_with_explicit_prior_method_audit_reuse",
+      "fresh_reading_scope": [
+        "Author report version 1 metadata and abstract"
+      ],
+      "supported_method_claims": [
+        "Qwen2.5 is the model family used in the project."
+      ],
+      "scope_notes": [],
+      "local_cache": [],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_method_audit": {
+        "path": "thesis/current/literature_audit.json",
+        "checked_date": "2026-10-08",
+        "reading_scope": [
+          "Version 1 title/byline and abstract",
+          "Section 2 architecture/model-size table and post-training overview"
+        ],
+        "scope_notes": [
+          "Corporate author Qwen Team follows the report byline.",
+          "No general 128K-context claim is applied to the 3B model."
+        ]
+      }
+    },
+    {
+      "citekey": "hu2022lora",
+      "title": "{LoRA}: Low-Rank Adaptation of Large Language Models",
+      "bibliography_year": 2022,
+      "publication_status": "ICLR 2022; author preprint initially released in 2021",
+      "primary_urls": [
+        "https://openreview.net/forum?id=nZeVKeeFYf9",
+        "https://arxiv.org/abs/2106.09685",
+        "https://arxiv.org/pdf/2106.09685",
+        "https://github.com/microsoft/LoRA",
+        "https://openreview.net/pdf?id=nZeVKeeFYf9"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_metadata_check_with_explicit_prior_method_audit_reuse",
+      "fresh_reading_scope": [
+        "Author preprint metadata and abstract; author repository README; indexed official OpenReview PDF first-page publication label"
+      ],
+      "supported_method_claims": [
+        "LoRA freezes base weights and trains low-rank update matrices."
+      ],
+      "scope_notes": [
+        "OpenReview full-page access was challenged. ICLR 2022 publication label was available in the indexed official PDF; method evidence comes from the author preprint and repository, not a claimed successful full OpenReview read."
+      ],
+      "local_cache": [],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_method_audit": {
+        "path": "thesis/current/literature_audit.json",
+        "checked_date": "2026-10-08",
+        "reading_scope": [
+          "Author-preprint metadata and abstract",
+          "Section 4 low-rank update and scaling formulation"
+        ],
+        "scope_notes": [
+          "OpenReview full page was challenged during this audit; method details were read from the author preprint, not claimed as a successful full OpenReview-page read.",
+          "ICLR 2022 venue is recorded separately from the 2021 preprint year."
+        ]
+      }
+    },
+    {
+      "citekey": "ross2011dagger",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "bibliography_year": 2011,
+      "publication_status": "AISTATS 2011 official proceedings",
+      "primary_urls": [
+        "https://proceedings.mlr.press/v15/ross11a.html",
+        "https://proceedings.mlr.press/v15/ross11a/ross11a.pdf"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_metadata_check_with_explicit_prior_method_audit_reuse",
+      "fresh_reading_scope": [
+        "Official metadata; paper section 3 and data-aggregation procedure"
+      ],
+      "supported_method_claims": [
+        "DAgger collects expert labels at learner-visited states and iteratively aggregates training data."
+      ],
+      "scope_notes": [
+        "No DAgger regret bound is claimed for the project fixed-rollout construction."
+      ],
+      "local_cache": [],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_method_audit": {
+        "path": "thesis/current/literature_audit.json",
+        "checked_date": "2026-10-08",
+        "reading_scope": [
+          "Official metadata and abstract",
+          "Section 3 and Algorithm 3.1, PDF pages 3–4"
+        ],
+        "scope_notes": [
+          "Author name Drew Bagnell follows the official PMLR citation metadata.",
+          "No DAgger theoretical guarantee is transferred to the local fixed-rollout suffix-replay scheme."
+        ]
+      }
+    },
+    {
+      "citekey": "yao2023react",
+      "title": "{ReAct}: Synergizing Reasoning and Acting in Language Models",
+      "bibliography_year": 2023,
+      "publication_status": "ICLR 2023; arXiv version 3 identifies camera-ready version",
+      "primary_urls": [
+        "https://arxiv.org/abs/2210.03629v3",
+        "https://arxiv.org/pdf/2210.03629"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_metadata_check_with_explicit_prior_method_audit_reuse",
+      "fresh_reading_scope": [
+        "Author preprint version 3 metadata and abstract"
+      ],
+      "supported_method_claims": [
+        "ReAct interleaves reasoning, actions and observations."
+      ],
+      "scope_notes": [
+        "The original paper also discusses fine-tuning; it is not categorized as prompting-only."
+      ],
+      "local_cache": [],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_method_audit": {
+        "path": "thesis/current/literature_audit.json",
+        "checked_date": "2026-10-08",
+        "reading_scope": [
+          "ICLR 2023 conference-version metadata, abstract and introduction",
+          "Section 3.2 fine-tuning discussion, PDF page 5"
+        ],
+        "scope_notes": [
+          "ReAct is not described as exclusively a prompting method."
+        ]
+      }
+    },
+    {
+      "citekey": "shinn2023reflexion",
+      "title": "{Reflexion}: Language Agents with Verbal Reinforcement Learning",
+      "bibliography_year": 2023,
+      "publication_status": "NeurIPS 2023 official proceedings",
+      "primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_metadata_check_with_explicit_prior_method_audit_reuse",
+      "fresh_reading_scope": [
+        "Official proceedings metadata and abstract"
+      ],
+      "supported_method_claims": [
+        "Verbal reflection and episodic memory guide later attempts without core-policy weight updates."
+      ],
+      "scope_notes": [],
+      "local_cache": [],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_method_audit": {
+        "path": "thesis/current/literature_audit.json",
+        "checked_date": "2026-10-08",
+        "reading_scope": [
+          "Official proceedings metadata and abstract",
+          "Indexed paper introduction excerpt"
+        ],
+        "scope_notes": [
+          "No claim of a full-paper replication or complete experiment audit."
+        ]
+      }
+    },
+    {
+      "citekey": "madaan2023selfrefine",
+      "title": "{Self-Refine}: Iterative Refinement with Self-Feedback",
+      "bibliography_year": 2023,
+      "publication_status": "NeurIPS 2023 official proceedings",
+      "primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_metadata_check_with_explicit_prior_method_audit_reuse",
+      "fresh_reading_scope": [
+        "Official proceedings metadata and abstract"
+      ],
+      "supported_method_claims": [
+        "The same model generates an answer, feedback and a revision without additional parameter training in the core scheme."
+      ],
+      "scope_notes": [],
+      "local_cache": [],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_method_audit": {
+        "path": "thesis/current/literature_audit.json",
+        "checked_date": "2026-10-08",
+        "reading_scope": [
+          "Official proceedings metadata and abstract",
+          "Indexed paper introduction/method excerpt"
+        ],
+        "scope_notes": [
+          "No claim of a full-paper replication or complete experiment audit."
+        ]
+      }
+    },
+    {
+      "citekey": "yuan2025agentr",
+      "title": "Agent-R: Training Language Model Agents to Reflect via Iterative Self-Training",
+      "bibliography_year": 2025,
+      "publication_status": "arXiv preprint version 3; formal venue not confirmed",
+      "primary_urls": [
+        "https://arxiv.org/abs/2501.11425v3",
+        "https://arxiv.org/html/2501.11425v3",
+        "https://github.com/ByteDance-Seed/Agent-R"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_source_metadata_and_selected_method_reading",
+      "fresh_reading_scope": [
+        "Version metadata; sections 3.1–3.2"
+      ],
+      "supported_method_claims": [
+        "MCTS supplies successful and unsuccessful branches; selected transition positions and revision text form training trajectories.",
+        "The method iterates trajectory collection and self-training."
+      ],
+      "scope_notes": [
+        "Do not claim failure/success trajectory stitching itself as new in the present paper."
+      ],
+      "local_cache": [
+        {
+          "path": "cache/recovery_literature_20261114/agentr_v3.html",
+          "url": "https://arxiv.org/html/2501.11425v3",
+          "success": true,
+          "bytes": 579153,
+          "sha256": "c35562ab132e13d69155842ec63a2f4189fe8703822e5620df2592a154d2d7ed"
+        }
+      ],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false
+    },
+    {
+      "citekey": "chen2025step",
+      "title": "Training LLM-Based Agents with Synthetic Self-Reflected Trajectories and Partial Masking",
+      "bibliography_year": 2025,
+      "publication_status": "arXiv preprint version 1; formal venue not confirmed",
+      "primary_urls": [
+        "https://arxiv.org/abs/2505.20023v1",
+        "https://arxiv.org/html/2505.20023v1"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_source_metadata_and_selected_method_reading",
+      "fresh_reading_scope": [
+        "Version metadata; sections 3.2–3.4"
+      ],
+      "supported_method_claims": [
+        "A teacher reviews student actions and supplies reflections and corrected actions; successful corrected trajectories are retained.",
+        "Erroneous thought/action tokens are masked during training."
+      ],
+      "scope_notes": [
+        "No environment rollback claim is inferred from teacher correction.",
+        "Partial masking is established prior work."
+      ],
+      "local_cache": [
+        {
+          "path": "cache/recovery_literature_20261114/step_v1.html",
+          "url": "https://arxiv.org/html/2505.20023v1",
+          "success": true,
+          "bytes": 202973,
+          "sha256": "36cfb1716a7baf182b1f554ca0d56579429e17cf21354482a8af9890d6230b5b"
+        }
+      ],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false
+    },
+    {
+      "citekey": "lauffer2025oec",
+      "title": "Imitation Learning for Multi-turn LM Agents via On-policy Expert Corrections",
+      "bibliography_year": 2026,
+      "publication_status": "ICML 2026 official proceedings, PMLR 306:62884–62913",
+      "primary_urls": [
+        "https://proceedings.mlr.press/v306/lauffer26a.html",
+        "https://raw.githubusercontent.com/mlresearch/v306/main/assets/lauffer26a/lauffer26a.pdf",
+        "https://arxiv.org/html/2512.14895v1"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_source_metadata_and_selected_method_reading",
+      "fresh_reading_scope": [
+        "Official PMLR metadata; final PDF first page and sections 3.1–3.3; preprint method cross-check"
+      ],
+      "supported_method_claims": [
+        "A student rollout switches to a stronger expert at a sampled intermediate point; successful trajectories are retained using environment verification.",
+        "Loss is applied to expert tokens, while student and environment tokens are masked."
+      ],
+      "scope_notes": [
+        "The citekey retains 2025 for compatibility; bibliography metadata uses the official 2026 publication.",
+        "Claims follow the final paper rather than an aggregator conference label.",
+        "The method does not inherit DAgger no-regret guarantees merely by inspiration."
+      ],
+      "local_cache": [
+        {
+          "path": "cache/recovery_literature_20261114/oec_icml2026.pdf",
+          "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/lauffer26a/lauffer26a.pdf",
+          "success": true,
+          "bytes": 549698,
+          "sha256": "6106ea7ecf746942169298f2ec18c99b7844ab6d28c8ea519b2b299a8c63beca"
+        },
+        {
+          "path": "cache/recovery_literature_20261114/oec_v1.html",
+          "url": "https://arxiv.org/html/2512.14895v1",
+          "success": true,
+          "bytes": 1545486,
+          "sha256": "338981f652c8b06957c20ec3fa8585201b9917c2479485d4d24b8b44e5e4df11"
+        }
+      ],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false
+    },
+    {
+      "citekey": "kumar2025score",
+      "title": "Training Language Models to Self-Correct via Reinforcement Learning",
+      "bibliography_year": 2025,
+      "publication_status": "ICLR 2025 official proceedings",
+      "primary_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2025/file/871ac99fdc5282d0301934d23945ebaa-Paper-Conference.pdf",
+        "https://openreview.net/pdf?id=CjwERcAU7w",
+        "https://arxiv.org/html/2409.12917v1"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_source_metadata_and_selected_method_reading",
+      "fresh_reading_scope": [
+        "Official PDF publication header and author list; sections 5.1–5.3; preprint method cross-check"
+      ],
+      "supported_method_claims": [
+        "Two-stage online RL first trains a second attempt under a constrained first-attempt distribution, then jointly optimizes attempts with correction-progress reward shaping."
+      ],
+      "scope_notes": [
+        "The final paper uses RLOO; do not conflate final implementation details with an earlier preprint.",
+        "Its math/code response correction setting differs from explicit executable-handle remapping."
+      ],
+      "local_cache": [
+        {
+          "path": "cache/recovery_literature_20261114/score_iclr2025.pdf",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/871ac99fdc5282d0301934d23945ebaa-Paper-Conference.pdf",
+          "success": true,
+          "bytes": 621107,
+          "sha256": "64c9f1a83df829092e318edf0cb46e9f6820a008da22514b222575c372559db3"
+        }
+      ],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false
+    },
+    {
+      "citekey": "zhang2026fission",
+      "title": "Robust Tool Use via Fission-GRPO: Learning to Recover from Execution Errors",
+      "bibliography_year": 2026,
+      "publication_status": "ACL 2026 official proceedings, pages 40477–40491",
+      "primary_urls": [
+        "https://aclanthology.org/2026.acl-long.1880/",
+        "https://aclanthology.org/2026.acl-long.1880.pdf"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_source_metadata_and_selected_method_reading",
+      "fresh_reading_scope": [
+        "Official ACL metadata and PDF author list; section 3, especially 3.3.2–3.3.3"
+      ],
+      "supported_method_claims": [
+        "Failed tool executions create on-policy recovery groups with diagnostic feedback and corrective GRPO updates.",
+        "Semantic feedback is supplied by a fine-tuned Error Simulator; its construction uses training annotations."
+      ],
+      "scope_notes": [
+        "Do not characterize simulator-based supervision as annotation-free.",
+        "No project GRPO result is included in this short paper."
+      ],
+      "local_cache": [
+        {
+          "path": "cache/recovery_literature_20261114/fission_acl2026.pdf",
+          "url": "https://aclanthology.org/2026.acl-long.1880.pdf",
+          "success": true,
+          "bytes": 1014085,
+          "sha256": "ad829492edf209bcbe3c51957b7c6cc415014e07f44ad596751a84c3ea01bcc6"
+        }
+      ],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false
+    },
+    {
+      "citekey": "xie2026reterm",
+      "title": "ReTerm: Recovery Training for Self-Improving Terminal Agents",
+      "bibliography_year": 2026,
+      "publication_status": "arXiv preprint version 2 dated 2026-10-14; formal venue not confirmed",
+      "primary_urls": [
+        "https://arxiv.org/abs/2610.18484v2",
+        "https://arxiv.org/html/2610.18484v2",
+        "https://github.com/twothsnd/ReTerm"
+      ],
+      "checked_date": "2026-11-14",
+      "verification_mode": "fresh_primary_source_metadata_and_selected_method_reading",
+      "fresh_reading_scope": [
+        "Version metadata; sections 3.1–3.2"
+      ],
+      "supported_method_claims": [
+        "Failed terminal interaction histories and environment snapshots are restored for stronger-teacher recovery continuations.",
+        "Selected recovery continuations are trained with teacher-only token loss; an additional online recovery-branch GRPO method is provided."
+      ],
+      "scope_notes": [
+        "Real failed history plus suffix supervision is established prior art.",
+        "The project distinction is given-program handle mapping and deterministic replay in a read-only setting, not general terminal recovery."
+      ],
+      "local_cache": [
+        {
+          "path": "cache/recovery_literature_20261114/reterm_v2.html",
+          "url": "https://arxiv.org/html/2610.18484v2",
+          "success": true,
+          "bytes": 549597,
+          "sha256": "5d984d95581a5e435a6fa2a2aec4a38326f81c98a6e929a0f9e0629ee2b744a4"
+        }
+      ],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false
+    }
+  ],
+  "screened_candidates": [
+    {
+      "title": "PALADIN",
+      "arxiv_id": "2509.25238",
+      "version": "v1",
+      "status": "preprint; conference status not independently confirmed from an official accepted-paper record",
+      "primary_urls": [
+        "https://arxiv.org/abs/2509.25238",
+        "https://arxiv.org/html/2509.25238v1"
+      ],
+      "reading_scope": [
+        "Sections 2.2–2.4"
+      ],
+      "method_summary": "Injected tool-failure training with expert recovery annotations and inference-time exemplar retrieval.",
+      "comparison_implication": "Related recovery supervision; differs from naturally sampled reference divergence and existing program targets.",
+      "included_in_main_bib": false,
+      "scope_notes": [
+        "No performance numbers were reused. A conference copyright footer alone was not treated as acceptance proof."
+      ],
+      "local_cache": {
+        "path": "cache/recovery_literature_20261114/paladin_v1.html",
+        "url": "https://arxiv.org/html/2509.25238v1",
+        "success": true,
+        "bytes": 354828,
+        "sha256": "a26cfe6290da7e1361de9521a8a11a375cb4ee9448d926a281575aa9acf5cc9d"
+      }
+    },
+    {
+      "title": "Executable Prefix Values for Locating Agent Failures",
+      "arxiv_id": "2610.17633",
+      "version": "v1",
+      "status": "preprint dated 2026-10-13; formal venue not confirmed",
+      "primary_urls": [
+        "https://arxiv.org/abs/2610.17633",
+        "https://arxiv.org/html/2610.17633v1"
+      ],
+      "reading_scope": [
+        "Sections 3–4"
+      ],
+      "method_summary": "Reconstructs executable histories and resamples frozen-agent continuations to estimate success probability under remaining budget.",
+      "comparison_implication": "Diagnostic rather than recovery-target SFT; distinguishes textual discrepancy from causal failure or recoverability.",
+      "included_in_main_bib": false,
+      "scope_notes": [
+        "Supports retaining the operational term first reference divergence in the project."
+      ],
+      "local_cache": {
+        "path": "cache/recovery_literature_20261114/prefix_v1.html",
+        "url": "https://arxiv.org/html/2610.17633v1",
+        "success": true,
+        "bytes": 1457496,
+        "sha256": "dc7dfe1081aaaf0593d2889dd2da1f90b55d45ddcf12be2ccb29bc370874d5cd"
+      }
+    }
+  ],
+  "files_sha256": {
+    "papers/recovery_short_20261114/references.bib": "3820387de537087701e587a78b19fe3744bbf5c648714f081f794d76948e3650",
+    "papers/recovery_short_20261114/literature_review.md": "08d4f45267d0d09acbdaba5673a1535ed9880c392d4681e3921600e92bfb12de",
+    "thesis/current/literature_audit.json": "8d6d2637416116a11347a728db237111223385c392c7ee32bb855dc9cb31b5eb",
+    "thesis/current/references.bib": "6c0ea1baea5e9b369ebcd2a756234f11669a04f37a9dc6c17b1d76e66077ee1b",
+    "cache/recovery_literature_20261114/capture.json": "75f0683e2186f6cc25b7a5c6163d7e5a96f724a8b5f4b327b2fc7aa507c4d8c6"
+  }
+}

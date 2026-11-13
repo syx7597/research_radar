@@ -1,0 +1,19 @@
+\begin{figure}[htbp]
+\begin{center}\small
+\fbox{\parbox{0.92\linewidth}{\centering Training questions, reference programs, and fixed initial policy I}}
+\par\vspace{0.3em}$\downarrow$\par\vspace{0.3em}
+\fbox{\parbox{0.92\linewidth}{\centering Failed episodes: common successful prefix and first divergence}}
+\par\vspace{0.5em}
+\begin{minipage}[t]{0.46\linewidth}\centering
+\fbox{\parbox{0.90\linewidth}{\centering\textbf{Ordinary continuation A}\\
+Shared prefix\\$\downarrow$\\Execute reference suffix}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\linewidth}\centering
+\fbox{\parbox{0.90\linewidth}{\centering\textbf{Recovery continuation C}\\
+Shared prefix + actual divergence\\$\downarrow$\\Remap and execute reference suffix}}
+\end{minipage}
+\par\vspace{0.4em}$\downarrow$\par\vspace{0.3em}
+\fbox{\parbox{0.92\linewidth}{\centering Check observations and answers; supervise suffix actions only\\Shared successful material, question order, and target-token budget}}
+\end{center}
+\caption{Offline recovery-supervision construction. Reference programs supply training targets; evaluation uses free-running model actions.}\label{fig:method-en}
+\end{figure}

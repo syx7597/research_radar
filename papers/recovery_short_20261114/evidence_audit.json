@@ -1,0 +1,548 @@
+{
+  "schema": "recovery_short_paper_evidence_audit_v1",
+  "date": "2026-11-14",
+  "reviewer": "AI /root/recovery_paper_evidence",
+  "status": "public_aggregate_arithmetic_and_saved_file_identities_verified",
+  "source_scope": "Public JSON aggregates/manifests and existing method/experiment chapters; raw output files read only as bytes for SHA256, not parsed or republished.",
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "artifacts_changed": "Only this evidence package; original code/data/results unchanged",
+  "public_sources": {
+    "holdout": {
+      "path": "results/agent_feedback/holdout_v1_analysis.json",
+      "sha256": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2"
+    },
+    "holdout_summary": {
+      "path": "results/agent_feedback/holdout_v1_summary.json",
+      "sha256": "5951c5533124374c32d241d8aa7b661e172c4937067c789ee94d4fc24681edf7"
+    },
+    "holdout_generation": {
+      "path": "results/agent_feedback/holdout_v1_generation_complete.json",
+      "sha256": "2144d5aff896b115c42fc95f78e6b10fb55c9d4af77c315350766e91dc1bd858"
+    },
+    "holdout_audit": {
+      "path": "results/agent_feedback/holdout_v1_execution_audit.json",
+      "sha256": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68"
+    },
+    "holdout_protocol": {
+      "path": "results/agent_feedback/protocol_holdout_v1.json",
+      "sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1"
+    },
+    "split": {
+      "path": "results/agent_feedback/split_manifest.json",
+      "sha256": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60"
+    },
+    "pairs": {
+      "path": "results/agent_feedback/recovery_pairs.json",
+      "sha256": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9"
+    },
+    "continuation": {
+      "path": "results/agent_feedback/continuation_data.json",
+      "sha256": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487"
+    },
+    "token_audit": {
+      "path": "results/agent_feedback/continuation_token_audit.json",
+      "sha256": "27b338535ccdae85648d943d2110bd2248bdbbea7ce5226d062c4223704aa5a7"
+    },
+    "reference_replay": {
+      "path": "results/agent_feedback/gold_replay.json",
+      "sha256": "5661c1cbb8e3074604ea5c5b937f4f32431e03cb3b1e11a42fd894e10a3774c8"
+    },
+    "training_protocol": {
+      "path": "results/agent_feedback/protocol.json",
+      "sha256": "659ce71a37aff491ac42a58a73c73c420db43556acb55d6aa3b79b9c2b4fb99d"
+    },
+    "state": {
+      "path": "results/agent_feedback/state_transitions_v1/summary.json",
+      "sha256": "fcfceaad9acdac09e9f66b72258a5ca10ac40b015ad65d735266076a9762ee3c"
+    },
+    "rl": {
+      "path": "results/agent_feedback/rl_stage_decision_v1.json",
+      "sha256": "f89a3d9bf832d07c5b160ad0cc9ae3134ccf9e70532948b221613c01bb7b9c1d"
+    },
+    "feedback": {
+      "path": "results/agent_feedback/feedback_diagnostic_decision_v1.json",
+      "sha256": "10e6ad77bfed04e84395ee31c691f4ca6292480708640a3e0b24f91d4fdda69f"
+    },
+    "construction": {
+      "path": "results/agent_feedback/construction_diagnostic_20261113/summary.json",
+      "sha256": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5"
+    },
+    "construction_detail": {
+      "path": "results/agent_feedback/construction_diagnostic_20261113/replay_detail_summary.json",
+      "sha256": "cd755d8964f8aeaa598c18bac2523519c52e44d371d98abe21099a205da6b623"
+    },
+    "construction_audit": {
+      "path": "results/agent_feedback/construction_diagnostic_20261113/independent_audit.json",
+      "sha256": "52c8ab9a83f3d47dc2057fad9f540329f7cfd954125deb8ad3ef5305268394cc"
+    },
+    "same_state": {
+      "path": "results/agent_feedback/same_state_v1/design_protocol.json",
+      "sha256": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34"
+    },
+    "same_state_status": {
+      "path": "results/agent_feedback/same_state_v1/round_status.json",
+      "sha256": "bae5a21398f5cb6449ad40c15eee7f4e525f44a956a0fa01fc7bb67a6006b0d5"
+    },
+    "dev1": {
+      "path": "results/agent_feedback/recovery_vs_clean_dev.json",
+      "sha256": "a530c12843a6667cc7637a76364334e8a8126b1f4be54405137e22aa2845a0cb"
+    },
+    "dev2": {
+      "path": "results/agent_feedback/recovery_vs_clean_dev_seed20261004.json",
+      "sha256": "9d368b4d162c80489d69454cbd3987560632955ecafaf2765fd193c7b19ff8d1"
+    },
+    "train_I": {
+      "path": "results/agent_feedback/initial_sft_v1/input_manifest.json",
+      "sha256": "6550977af236efec0aa8555d878b7e553900af8791cfd8333875dc56b3844a3c"
+    },
+    "run_I": {
+      "path": "results/agent_feedback/initial_sft_v1/run_result.json",
+      "sha256": "d662f630c4ce61498a4aa5f2f664ff3469225c19e67b86da597b21f82724bae0"
+    },
+    "train_P": {
+      "path": "results/agent_feedback/program_sft_v1/input_manifest.json",
+      "sha256": "e641af22dcff41fbc5d999e1e624b25357bb91e024a9ca21d9d0d96a322206a7"
+    },
+    "run_P": {
+      "path": "results/agent_feedback/program_sft_v1/run_result.json",
+      "sha256": "0074520c629c0513f579e9ff02a39bfcfe38ffcdae1f259dc163d4f707ff23cf"
+    },
+    "train_A1": {
+      "path": "results/agent_feedback/clean_sft_v1/input_manifest.json",
+      "sha256": "8f9b29bce8f0d953a9e60b86305625640df3720331043d6e5e5b60a15450e3a8"
+    },
+    "run_A1": {
+      "path": "results/agent_feedback/clean_sft_v1/run_result.json",
+      "sha256": "87104dadb8edeffdd9597d851e544faa43ef482e2330b4d64b57208523e54f09"
+    },
+    "train_C1": {
+      "path": "results/agent_feedback/recovery_sft_v1/input_manifest.json",
+      "sha256": "b88191cc0564df2d14766bf88d33aa818452ed8370ceb3955415b0392388ea5d"
+    },
+    "run_C1": {
+      "path": "results/agent_feedback/recovery_sft_v1/run_result.json",
+      "sha256": "6151d714257d493ee6d5c221562a1233d6992784e78fceb548b443c83f622a00"
+    },
+    "train_A2": {
+      "path": "results/agent_feedback/clean_sft_seed20261004/input_manifest.json",
+      "sha256": "34196ce44e73893055131429473d886bb98b319b4f50eefb47693c1991b0b86d"
+    },
+    "run_A2": {
+      "path": "results/agent_feedback/clean_sft_seed20261004/run_result.json",
+      "sha256": "6ade3d957ddcee165ee9e3589206735d04893970134d4916bf49f60cf5ded434"
+    },
+    "train_C2": {
+      "path": "results/agent_feedback/recovery_sft_seed20261004/input_manifest.json",
+      "sha256": "7486b2781903da06b8e0b27ccc648196f84577cdec86d609276b9a2276cadbd4"
+    },
+    "run_C2": {
+      "path": "results/agent_feedback/recovery_sft_seed20261004/run_result.json",
+      "sha256": "a577b7b55ff26061d6509268affb4ad019caa8545a14bd03adc6ef25b4fef40b"
+    }
+  },
+  "arithmetic_checks": [
+    "accuracy counts vs denominators",
+    "finished+unfinished=N",
+    "input+generated=total tokens",
+    "paired outcome four cells sum to2000",
+    "corrected-regressed matches delta",
+    "state decomposition sums to net gain",
+    "actual target/input tokens equal per-pass count times epochs",
+    "A/C key training settings identical",
+    "token audit records matched order, reuse and supervision"
+  ],
+  "historical_execution_audit": {
+    "trajectories_or_programs": 10000,
+    "mismatches": 0,
+    "source": "results/agent_feedback/holdout_v1_execution_audit.json",
+    "new_replay_performed_this_audit": false
+  },
+  "byte_identity_checks": [
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/clean_holdout_v1.jsonl",
+      "exists": true,
+      "expected_sha256": "c1f010d1926d73373be248f50fcc2370821a250976b4fe4449b5864cfe4a0b39",
+      "actual_sha256": "c1f010d1926d73373be248f50fcc2370821a250976b4fe4449b5864cfe4a0b39",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/clean_holdout_v1.runtime.json",
+      "exists": true,
+      "expected_sha256": "feeaaf729a1aea331cba8c73b62d3880284e7fcd093a02ecf1e861a1af006a57",
+      "actual_sha256": "feeaaf729a1aea331cba8c73b62d3880284e7fcd093a02ecf1e861a1af006a57",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/jobs/clean_holdout_v1.json",
+      "exists": true,
+      "expected_sha256": "f50eacf938dcdc8308a40315c427dc8951926e4d6f455d592e0a5571b0da5bac",
+      "actual_sha256": "f50eacf938dcdc8308a40315c427dc8951926e4d6f455d592e0a5571b0da5bac",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/recovery_holdout_v1.jsonl",
+      "exists": true,
+      "expected_sha256": "6b08a46e8dd09c786ef1e7f4a5a791b69237a65472d5c8a91387c03ed397ab7e",
+      "actual_sha256": "6b08a46e8dd09c786ef1e7f4a5a791b69237a65472d5c8a91387c03ed397ab7e",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/recovery_holdout_v1.runtime.json",
+      "exists": true,
+      "expected_sha256": "1ff985f02219d155cfb78ec032c9af31ea47d358678ab453a6d5868b8c4657d2",
+      "actual_sha256": "1ff985f02219d155cfb78ec032c9af31ea47d358678ab453a6d5868b8c4657d2",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/jobs/recovery_holdout_v1.json",
+      "exists": true,
+      "expected_sha256": "0fc8e6d9630213f2a540119badb897bcd23a349d8a83caf27f7c02fde7fc4578",
+      "actual_sha256": "0fc8e6d9630213f2a540119badb897bcd23a349d8a83caf27f7c02fde7fc4578",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/clean_holdout_seed20261004.jsonl",
+      "exists": true,
+      "expected_sha256": "af4a6b161f2eb511d86eab4a5f06283c6a0c321b88302a31bbb26fd0438e2542",
+      "actual_sha256": "af4a6b161f2eb511d86eab4a5f06283c6a0c321b88302a31bbb26fd0438e2542",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/clean_holdout_seed20261004.runtime.json",
+      "exists": true,
+      "expected_sha256": "59877f49f68c2c4cac69176d279ad7c50f789fc4f169484a0ea76b33f75c8127",
+      "actual_sha256": "59877f49f68c2c4cac69176d279ad7c50f789fc4f169484a0ea76b33f75c8127",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/jobs/clean_holdout_seed20261004.json",
+      "exists": true,
+      "expected_sha256": "ab0d2822fdb3a63d244fa365baae9bd9ae369fb8d6e34632db59445558abdd3c",
+      "actual_sha256": "ab0d2822fdb3a63d244fa365baae9bd9ae369fb8d6e34632db59445558abdd3c",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/recovery_holdout_seed20261004.jsonl",
+      "exists": true,
+      "expected_sha256": "d3421f034bc7ee9b723e9c278a3354fec4e62ebf7ed501274ca635d6d4f37e37",
+      "actual_sha256": "d3421f034bc7ee9b723e9c278a3354fec4e62ebf7ed501274ca635d6d4f37e37",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/recovery_holdout_seed20261004.runtime.json",
+      "exists": true,
+      "expected_sha256": "fd2e9891bc8b2dda48958768942dcdee49d5f6a5fc10371dc60ab6c236956a9c",
+      "actual_sha256": "fd2e9891bc8b2dda48958768942dcdee49d5f6a5fc10371dc60ab6c236956a9c",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/jobs/recovery_holdout_seed20261004.json",
+      "exists": true,
+      "expected_sha256": "06bc8b84cb3173d2ec9ea37629de300b63ca64173a21b6580e3753ac90c45015",
+      "actual_sha256": "06bc8b84cb3173d2ec9ea37629de300b63ca64173a21b6580e3753ac90c45015",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/program_holdout_v1.jsonl",
+      "exists": true,
+      "expected_sha256": "f66db4d386c62208a560e15eb0a33821781fec087735a645e8fedc32e7ed2a70",
+      "actual_sha256": "f66db4d386c62208a560e15eb0a33821781fec087735a645e8fedc32e7ed2a70",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/program_holdout_v1.runtime.json",
+      "exists": true,
+      "expected_sha256": "52534242c8fe556d8d7a68dab7ca3d8c075904f038c81e263e3412c43e459620",
+      "actual_sha256": "52534242c8fe556d8d7a68dab7ca3d8c075904f038c81e263e3412c43e459620",
+      "match": true
+    },
+    {
+      "group": "generation",
+      "path": "results/agent_feedback/jobs/program_holdout_v1.json",
+      "exists": true,
+      "expected_sha256": "071460aa5bd851c50c5cbb7afa3d8bd90822a6e902259d8144d733c671317232",
+      "actual_sha256": "071460aa5bd851c50c5cbb7afa3d8bd90822a6e902259d8144d733c671317232",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/clean_holdout_v1.metrics.json",
+      "exists": true,
+      "expected_sha256": "18ea370cd41b30a52431b9818d15bed913918a57508b66b5f10768593a045d74",
+      "actual_sha256": "18ea370cd41b30a52431b9818d15bed913918a57508b66b5f10768593a045d74",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/clean_holdout_v1.scored.jsonl",
+      "exists": true,
+      "expected_sha256": "561d7e0a2b438e243230aa0789a455ecb3be9743108844152b64925f56ecba2d",
+      "actual_sha256": "561d7e0a2b438e243230aa0789a455ecb3be9743108844152b64925f56ecba2d",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/recovery_holdout_v1.metrics.json",
+      "exists": true,
+      "expected_sha256": "cb2f6d45aba5461edc05e42a8e73f280e72ce60be95eaaea943e7dac7762576f",
+      "actual_sha256": "cb2f6d45aba5461edc05e42a8e73f280e72ce60be95eaaea943e7dac7762576f",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/recovery_holdout_v1.scored.jsonl",
+      "exists": true,
+      "expected_sha256": "79623db643116d0c806760f496d8d0f7a8ed432c479421152cbba0aaa76f86aa",
+      "actual_sha256": "79623db643116d0c806760f496d8d0f7a8ed432c479421152cbba0aaa76f86aa",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/clean_holdout_seed20261004.metrics.json",
+      "exists": true,
+      "expected_sha256": "62d202988508e1ecaef34e9d4002ca0d0eaaaa25ce9be1854b9f60cd0100427a",
+      "actual_sha256": "62d202988508e1ecaef34e9d4002ca0d0eaaaa25ce9be1854b9f60cd0100427a",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/clean_holdout_seed20261004.scored.jsonl",
+      "exists": true,
+      "expected_sha256": "80aeb94f96213067d6cbe66dfb9e4b288a518d689ce15f2bb1e25be7d55f408f",
+      "actual_sha256": "80aeb94f96213067d6cbe66dfb9e4b288a518d689ce15f2bb1e25be7d55f408f",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/recovery_holdout_seed20261004.metrics.json",
+      "exists": true,
+      "expected_sha256": "87799aeb3d3d8bd67ffafbc89e58d87ac4cd7d9d04d05a9189646bcbb85af017",
+      "actual_sha256": "87799aeb3d3d8bd67ffafbc89e58d87ac4cd7d9d04d05a9189646bcbb85af017",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/recovery_holdout_seed20261004.scored.jsonl",
+      "exists": true,
+      "expected_sha256": "f0d55a944bfc78b6655c735dff1639dbbc2ab68871748d7328053628f20185de",
+      "actual_sha256": "f0d55a944bfc78b6655c735dff1639dbbc2ab68871748d7328053628f20185de",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/program_holdout_v1.metrics.json",
+      "exists": true,
+      "expected_sha256": "4da761384dbbbd3fe74ee0faa05f3900b677afb3213cb71064a05fde1a9023e0",
+      "actual_sha256": "4da761384dbbbd3fe74ee0faa05f3900b677afb3213cb71064a05fde1a9023e0",
+      "match": true
+    },
+    {
+      "group": "scoring",
+      "path": "results/agent_feedback/program_holdout_v1.scored.jsonl",
+      "exists": true,
+      "expected_sha256": "a2763b41ce8d20b476da516e2b6e48842bc65bcf47fbffb1921edba33b1154d4",
+      "actual_sha256": "a2763b41ce8d20b476da516e2b6e48842bc65bcf47fbffb1921edba33b1154d4",
+      "match": true
+    }
+  ],
+  "summary_chain_checks": [
+    {
+      "path": "results/agent_feedback/holdout_v1_analysis.json",
+      "expected_sha256": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+      "actual_sha256": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+      "match": true
+    },
+    {
+      "path": "results/agent_feedback/holdout_v1_execution_audit.json",
+      "expected_sha256": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68",
+      "actual_sha256": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68",
+      "match": true
+    },
+    {
+      "path": "results/agent_feedback/holdout_v1_generation_complete.json",
+      "expected_sha256": "2144d5aff896b115c42fc95f78e6b10fb55c9d4af77c315350766e91dc1bd858",
+      "actual_sha256": "2144d5aff896b115c42fc95f78e6b10fb55c9d4af77c315350766e91dc1bd858",
+      "match": true
+    },
+    {
+      "path": "results/agent_feedback/protocol_holdout_v1.json",
+      "expected_sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+      "actual_sha256": "f7d9be950e47c743f9783e7273b9dc9e6d661e77cf4980353d67e6634c9ff9d1",
+      "match": true
+    }
+  ],
+  "saved_result_files_checked": 25,
+  "saved_result_files_matching": 25,
+  "local_adapter_presence": [
+    {
+      "model": "I",
+      "path": "results/agent_feedback/initial_sft_v1/model/adapter_config.json",
+      "exists": false
+    },
+    {
+      "model": "I",
+      "path": "results/agent_feedback/initial_sft_v1/model/adapter_model.safetensors",
+      "exists": false
+    },
+    {
+      "model": "P",
+      "path": "results/agent_feedback/program_sft_v1/model/adapter_config.json",
+      "exists": false
+    },
+    {
+      "model": "P",
+      "path": "results/agent_feedback/program_sft_v1/model/adapter_model.safetensors",
+      "exists": false
+    },
+    {
+      "model": "A1",
+      "path": "results/agent_feedback/clean_sft_v1/model/adapter_config.json",
+      "exists": false
+    },
+    {
+      "model": "A1",
+      "path": "results/agent_feedback/clean_sft_v1/model/adapter_model.safetensors",
+      "exists": false
+    },
+    {
+      "model": "C1",
+      "path": "results/agent_feedback/recovery_sft_v1/model/adapter_config.json",
+      "exists": false
+    },
+    {
+      "model": "C1",
+      "path": "results/agent_feedback/recovery_sft_v1/model/adapter_model.safetensors",
+      "exists": false
+    },
+    {
+      "model": "A2",
+      "path": "results/agent_feedback/clean_sft_seed20261004/model/adapter_config.json",
+      "exists": false
+    },
+    {
+      "model": "A2",
+      "path": "results/agent_feedback/clean_sft_seed20261004/model/adapter_model.safetensors",
+      "exists": false
+    },
+    {
+      "model": "C2",
+      "path": "results/agent_feedback/recovery_sft_seed20261004/model/adapter_config.json",
+      "exists": false
+    },
+    {
+      "model": "C2",
+      "path": "results/agent_feedback/recovery_sft_seed20261004/model/adapter_model.safetensors",
+      "exists": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "E01",
+      "severity": "important_reporting",
+      "finding": "The 5000/500 train/dev sets reuse earlier fixed selections; only the newly selected 2000 holdout excludes all 8500 prior components.",
+      "source": "experiments/agent_feedback/prepare.py:40",
+      "action": "Describe a project-held-out partition, exact question/program deduplication, and inherited train/dev; not strict compositional generalization or official hidden test."
+    },
+    {
+      "id": "E02",
+      "severity": "important_reporting",
+      "finding": "P has 3 epochs with 820278 actual target tokens, while each stepwise model includes I training of1577068 targets plus788534 continuation targets. P is not an equal-target-budget causal baseline.",
+      "action": "Use A/C as the primary matched contrast; label P as a one-shot architecture/inference-cost reference."
+    },
+    {
+      "id": "E03",
+      "severity": "important_reporting",
+      "finding": "Two seeds are continuation seeds sharing one I and one corpus; 2000 repeated questions remain2000 statistical units.",
+      "action": "Report each seed; label bootstrap conditional on fixed checkpoints, not training variance."
+    },
+    {
+      "id": "E04",
+      "severity": "important_reporting",
+      "finding": "Input+generated token reductions are cumulative repeated full-prefill accounting; generated tokens increase and costs remain~24x P.",
+      "action": "Do not claim universal compute/latency improvement or overall cheap deployment."
+    },
+    {
+      "id": "E05",
+      "severity": "important_reporting",
+      "finding": "Same-state model continuation evaluation remains unrun.",
+      "action": "Do not claim the paper has established general semantic error recognition or measured new same-state recovery success."
+    },
+    {
+      "id": "E06",
+      "severity": "important_reporting",
+      "finding": "CPU construction diagnostic has fixed418 historical accepted pairs,414 exactly comparable,4 unavailable solely due old/new exception detail wording; all414 comparable cases add a handle.",
+      "action": "Keep both denominators and platform scope; call counts construction validity, not model accuracy. Do not generalize this main table to rejected no-handle cases."
+    },
+    {
+      "id": "E07",
+      "severity": "important_reporting",
+      "finding": "Mapped-unfiltered and mapped-verified produce identical414 candidate traces; gate rejects0 additionally.",
+      "action": "Do not present this as a neural ablation or an isolated learning gain of replay verification."
+    },
+    {
+      "id": "E08",
+      "severity": "important_reporting",
+      "finding": "The feedback probe masks only error/detail on rejected calls, not success observations or all feedback, and5 pre-intervention divergences remain unexplained.",
+      "action": "Describe the narrow intervention and inconclusive diagnostic; do not claim feedback is useless."
+    },
+    {
+      "id": "E09",
+      "severity": "reproducibility",
+      "finding": "Historical model reports and raw prediction/scoring bytes are preserved and hash-matching; adapters are absent locally.",
+      "action": "Separate verification of saved results from ability to regenerate them; no claim of new inference."
+    },
+    {
+      "id": "E10",
+      "severity": "formatting",
+      "finding": "Primary exactCI lower endpoint3.525 should display3.53 under decimal half-up rounding; binary floating-point formatting may give3.52.",
+      "action": "Reuse shared decimal-rounded display strings."
+    }
+  ],
+  "same_state_status": "server_work_deferred_by_user",
+  "same_state_status_source": "results/agent_feedback/same_state_v1/round_status.json",
+  "shared_tables": {
+    "path": "papers/recovery_short_20261114/tables_data.json",
+    "sha256": "2202fed91bc4a6f1c9c52e832e584e38a040739163ad362bbf18defb5ba6504f"
+  },
+  "implementation_evidence": {
+    "split_selection": {
+      "path": "experiments/agent_feedback/prepare.py",
+      "sha256": "bdac7d1e467018bdd7cd2f801f4c10ec4aa4e54d4667743608a955a69ab58ab7",
+      "relevant_lines": "26-48; train/dev inherited, newly shuffled remaining components used for holdout"
+    },
+    "training_recipe": {
+      "path": "experiments/agent_feedback/train_sft.py",
+      "sha256": "ea8259f783825f1e7733a8fb147f980a70d698766bb501d8ee9e3a26193c008e",
+      "relevant_lines": "185-244; LoRA, Trainer settings and actual token counters"
+    },
+    "warmup_semantics": {
+      "path": "cache/domain_cpu_env/lib/python3.12/site-packages/transformers/training_args.py",
+      "sha256": "1918f8798d4cb7b4838bac83812f91f69efd4d0b28f562d92958e08d5c624e79",
+      "version": "5.18.0",
+      "relevant_lines": "2122-2129; warmup_steps<1 means ceil(num_training_steps*warmup_steps)",
+      "scope": "Local installed implementation for the version recorded by the historical runs"
+    }
+  },
+  "source_cross_checks": {
+    "all_six_training_run_script_hashes_match_current_train_sft": true
+  },
+  "evidence_notes": {
+    "path": "papers/recovery_short_20261114/evidence_notes.md",
+    "sha256": "515361f2f697fa38af089ebf79dc1ff54989cf5ba227a9d7a75024ee7106ce60"
+  }
+}

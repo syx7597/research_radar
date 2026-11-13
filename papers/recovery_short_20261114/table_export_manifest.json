@@ -1,0 +1,11 @@
+{
+  "schema": "bilingual_recovery_table_export_v1",
+  "date": "2026-11-14",
+  "data_sha256": "2202fed91bc4a6f1c9c52e832e584e38a040739163ad362bbf18defb5ba6504f",
+  "code_sha256": "f4ed4dfd2fda76e89a322dee88bad4d6525c1f8b6cf8f142891191d4827c7df4",
+  "source_bindings_verified": 33,
+  "output_sha256": "ad2819c26206fb3e4e428d777653c282e70872a00212672929e524760a4027f7",
+  "both_languages_share_numeric_rows": true,
+  "rounding": "Decimal ROUND_HALF_UP; primary interval display fixed to audited 3.53/5.98",
+  "external_comparison": "Method/resource comparison only; no cross-paper score ranking"
+}
