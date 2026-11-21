@@ -1,0 +1,250 @@
+{
+  "schema": "springer_venue_audit_v1",
+  "checked_on": "2026-11-21",
+  "researcher": "AI /root/publication_springer_20261121",
+  "purpose": "Compare legitimate journal options for the existing recovery-supervision manuscript, targeting an acceptance decision before graduation in June 2027.",
+  "scope": "Primary publisher pages; selected article abstracts and publication histories. No editorial contact, submission, payment, manuscript editing, or new model experiments.",
+  "deadline_interpretation": {
+    "target": "2027-06",
+    "event": "acceptance decision",
+    "institutional_evidence_requirement": "awaiting author clarification",
+    "fee_budget": "awaiting author clarification"
+  },
+  "venues": [
+    {
+      "name": "Discover Computing",
+      "publisher": "Springer Nature",
+      "journal_id": "10791",
+      "homepage": "https://link.springer.com/journal/10791",
+      "aims_scope_url": "https://link.springer.com/journal/10791/aims-and-scope",
+      "scope_fit": "Artificial intelligence, machine learning and NLP are explicitly included; the current empirical recovery-training study fits this scope.",
+      "publication_model": "Fully open access",
+      "indexing_as_stated_by_publisher": [
+        "Science Citation Index Expanded (SCIE)",
+        "Scopus",
+        "DOAJ"
+      ],
+      "time_metric": {
+        "name": "Submission to first decision (median)",
+        "days": 22,
+        "source": "https://link.springer.com/journal/10791",
+        "not_equivalent_to": "time to acceptance or guaranteed external-review duration"
+      },
+      "fees": {
+        "current_discounted_apc_usd": 1520,
+        "discount_applies_if_accepted_on_or_before": "2026-12-31",
+        "currently_advertised_standard_usd": 2190,
+        "price_basis": "Published2027 fee schedule for planning; final applicable charge determined at acceptance, plus taxes.",
+        "planning_note": "Use the published2027 price-list amount of USD2390 plus applicable taxes for2027 planning, in preference to the current homepage standard USD2190. Reconfirm the journal fee at acceptance; the2026 discount does not establish the2027 fee.",
+        "sources": [
+          "https://link.springer.com/journal/10791",
+          "https://link.springer.com/journal/10791/how-to-publish-with-us",
+          "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/53793606/data/v3"
+        ],
+        "subscription_no_apc_option": false,
+        "published_2027_apc": {
+          "usd": 2390,
+          "eur": 1990,
+          "gbp": 1690,
+          "taxes": "plus applicable VAT/local taxes",
+          "source": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/53793606/data/v3",
+          "source_type": "Springer Nature published2027 fully-open-access price list",
+          "physical_page_one_based": 14,
+          "pdf_page_index_zero_based": 13,
+          "verification": "Parent agent verified the publisher PDF row; delegated audit updated from that confirmation."
+        },
+        "recommended_2027_budget_usd_before_tax": 2390
+      },
+      "article_type_recommendation": "Research",
+      "other_relevant_article_type": "Methodology",
+      "format": {
+        "source": "https://link.springer.com/journal/10791/submission-guidelines",
+        "abstract": "less than 250 words",
+        "files": "Word with embedded figures/tables and editable equations; or LaTeX with figures/tables in ZIP",
+        "template": "Springer Nature LaTeX template recommended; publisher template not stated as mandatory for Research",
+        "font": "consistent, minimum12pt; Helvetica or Arial recommended",
+        "headings": "maximum three levels",
+        "citations": "numbered square brackets, references numbered consecutively, full DOI links when available",
+        "figures": "embedded at appropriate places; vector fonts embedded; FigN filenames; captions in manuscript",
+        "cover_letter": "required; research context, importance and journal fit",
+        "page_limit": "No general Research page limit found on the inspected guideline page",
+        "required_preparation": [
+          "Funding statement",
+          "Data availability statement",
+          "Author contributions",
+          "Competing interests",
+          "Relevant ethics declarations"
+        ],
+        "review": "single-anonymous; ordinarily at least two relevant reviewers",
+        "review_emphasis": "Guidelines say reviewers assess accurate reporting and fundamental validity rather than research significance."
+      },
+      "policy": {
+        "url": "https://link.springer.com/brands/discover/policies",
+        "preprints": "Preprints may be cited; posting a preprint is not treated as prior journal publication; disclose posting details.",
+        "ai": "Interpretive or substantial writing assistance requires human oversight, verification and transparent disclosure; responsibility remains with human authors.",
+        "code": "Include code availability and an archived identifiable version where appropriate.",
+        "current_manuscript_implication": "AI involvement exceeds narrow language polishing; prepare an accurate statement for the authors to verify. Do not label missing weights or private outputs as publicly released."
+      },
+      "assessment": {
+        "priority": "Potential first choice if the author accepts the fee and its institutional eligibility",
+        "deadline": "A June2027 acceptance is possible, but first-decision statistics and selected histories cannot establish an individual probability.",
+        "scientific_positioning": "Dependency-consistent target construction plus controlled continuation-training evidence; modest, bounded empirical contribution.",
+        "publication_not_guaranteed": true
+      }
+    },
+    {
+      "name": "SN Computer Science",
+      "publisher": "Springer Nature",
+      "journal_id": "42979",
+      "homepage": "https://link.springer.com/journal/42979",
+      "scope_fit": "Broad computer science including AI, machine learning and information retrieval; original research is assessed from a sound-science perspective.",
+      "publication_model": "Hybrid",
+      "indexing_as_stated_by_publisher": [
+        "EI Compendex",
+        "Scopus",
+        "ACM Digital Library",
+        "DBLP"
+      ],
+      "scie_status": "SCIE was not listed on the inspected publisher indexing list; no SCIE claim is made.",
+      "time_metric": {
+        "name": "Submission to first decision (median)",
+        "days": 96,
+        "source": "https://link.springer.com/journal/42979",
+        "not_equivalent_to": "acceptance time"
+      },
+      "fees": {
+        "subscription_apc_usd": 0,
+        "current_optional_oa_apc_usd": 3290,
+        "price_basis": "OA charge at acceptance date; applicable taxes extra",
+        "homepage_says": "free submission; no color or page charges",
+        "sources": [
+          "https://link.springer.com/journal/42979",
+          "https://link.springer.com/journal/42979/how-to-publish-with-us"
+        ]
+      },
+      "article_type_recommendation": "Original Research",
+      "format": {
+        "source": "https://link.springer.com/journal/42979/submission-guidelines",
+        "abstract": "structured,150–250 words: Purpose,Methods,Results,Conclusion",
+        "keywords": "4–6",
+        "review": "single-blind, minimum two reviews",
+        "files": "editable Word or mathematical LaTeX; Springer Nature LaTeX template recommended",
+        "headings": "maximum three levels",
+        "citations": "numbered square brackets and consecutive reference numbering",
+        "declarations": "Statements and Declarations: funding, competing interests and applicable ethics, consent, data/code availability and contributions",
+        "author_information": "names, affiliations, corresponding email; ORCID when available",
+        "ai": "LLMs are not authors; material LLM use documented. Narrow copy editing exception excludes autonomous generative writing."
+      },
+      "assessment": {
+        "priority": "Budget-sensitive alternative when its indexing meets the author's requirement",
+        "deadline": "Current96-day first-decision median gives less revision/transfer buffer before June2027.",
+        "publication_not_guaranteed": true
+      }
+    }
+  ],
+  "publication_history_examples": [
+    {
+      "journal": "SN Computer Science",
+      "title": "A Multi-Agent Benchmarking Framework for Evaluating the Performance of Large Language Models in Logic Programming",
+      "url": "https://link.springer.com/article/10.1007/s42979-026-05242-8",
+      "received": "2026-05-29",
+      "accepted": "2026-07-15",
+      "published": "2026-07-30",
+      "received_to_accepted_days": 47
+    },
+    {
+      "journal": "SN Computer Science",
+      "title": "TRAVELER-X: A Benchmark for Temporal Reasoning over Implicit References in Large Language Models",
+      "url": "https://link.springer.com/article/10.1007/s42979-026-05411-9",
+      "received": "2026-06-22",
+      "accepted": "2026-10-05",
+      "published": "2026-11-18",
+      "received_to_accepted_days": 105
+    },
+    {
+      "journal": "SN Computer Science",
+      "title": "Context-Driven Question-Answering on Narrative Text Document Corpus",
+      "url": "https://link.springer.com/article/10.1007/s42979-026-04854-4",
+      "received": "2025-04-11",
+      "accepted": "2026-02-22",
+      "published": "2026-03-17",
+      "received_to_accepted_days": 317
+    },
+    {
+      "journal": "Discover Computing",
+      "title": "Evaluating retriever reranker pairings in RAG based on quality and efficiency trade-offs",
+      "url": "https://link.springer.com/article/10.1007/s10791-026-10156-3",
+      "received": "2026-02-24",
+      "accepted": "2026-05-04",
+      "published": "2026-05-09",
+      "received_to_accepted_days": 69
+    },
+    {
+      "journal": "Discover Computing",
+      "title": "Learning-based modality selection for efficient multimodal retrieval",
+      "url": "https://link.springer.com/article/10.1007/s10791-026-10733-6",
+      "received": "2026-07-13",
+      "accepted": "2026-10-08",
+      "published": "2026-10-21",
+      "received_to_accepted_days": 87
+    },
+    {
+      "journal": "Discover Computing",
+      "title": "Construction and empirical study of enterprise risk management knowledge service model integrating bi LSTM and dynamic knowledge graph",
+      "url": "https://link.springer.com/article/10.1007/s10791-026-10086-0",
+      "received": "2025-05-18",
+      "accepted": "2026-03-30",
+      "published": "2026-04-09",
+      "received_to_accepted_days": 316
+    }
+  ],
+  "history_sampling_note": "Purposive examples in adjacent NLP, LLM, QA, retrieval and knowledge-graph topics. No population median, acceptance rate or individual forecast inferred. Separate revised dates were not found on these inspected article-history sections.",
+  "manuscript_assessment": {
+    "based_on": [
+      "papers/recovery_short_20261114/manuscript_en.tex",
+      "papers/recovery_short_20261114/paper_en.tex",
+      "papers/recovery_short_20261114/evidence_notes.md"
+    ],
+    "strengths": [
+      "Executable target construction with actual training histories",
+      "Matched ordinary/recovery continuation comparison",
+      "Two conditional continuation seeds on2000 project-held-out questions",
+      "Paired effect estimation and explicit inference-cost accounting",
+      "Offline construction diagnostic with traceable aggregate evidence"
+    ],
+    "mandatory_before_actual_submission": [
+      "Author list, order, affiliations, corresponding author and human approval",
+      "Truthful funding, competing-interest and contribution declarations",
+      "Specific data/code availability statement aligned with actually released files",
+      "AI-use disclosure reflecting substantive assistance and human verification",
+      "Journal format, abstract and figure requirements"
+    ],
+    "scientific_recommendations": [
+      "Frame the result as the complete recovery-supervision recipe's end-to-end gain",
+      "Keep CPU target validity separate from learned-policy recovery accuracy",
+      "Prioritize the registered same-state model evaluation when original weights and compute become available",
+      "Avoid implying independent end-to-end seeds, equal compute with P, or superiority over unimplemented literature methods"
+    ],
+    "not_automatically_required": [
+      "A new RL method",
+      "New radar experiments for this standalone paper",
+      "Multiple new benchmarks solely for formatting compliance"
+    ],
+    "unresolved": "Original model adapters are not locally available; preserved predictions remain auditable. Actual same-state continuation results do not yet exist."
+  },
+  "actions": {
+    "new_model_runs": 0,
+    "manuscript_files_changed": false,
+    "editors_contacted": false,
+    "submitted": false,
+    "paid": false
+  },
+  "updates": [
+    {
+      "date": "2026-11-21",
+      "subject": "Discover Computing2027 APC",
+      "change": "Added publisher2027 price-list row: USD2390/EUR1990/GBP1690, physical page14. Preserved homepage current standard USD2190 as a distinct dated value.",
+      "source": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/53793606/data/v3"
+    }
+  ]
+}

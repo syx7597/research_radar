@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-21",
+  "title": "Dependency-consistent recovery supervision for executable knowledge question answering with small language models",
+  "short_title": "Dependency-consistent recovery supervision",
+  "keywords": [
+    "Knowledge graph question answering",
+    "Small language models",
+    "Recovery supervision",
+    "Dependency mapping",
+    "Execution feedback"
+  ],
+  "abstract_words_whitespace": 175,
+  "base_paper": "papers/recovery_short_20261114",
+  "source_manuscript_sha256": "819cdc8756a3ef6546a5f232e83a744f3c11142407a82d3fdd7a3bc496b62563",
+  "source_numeric_table_sha256": "2202fed91bc4a6f1c9c52e832e584e38a040739163ad362bbf18defb5ba6504f",
+  "new_model_runs": 0,
+  "radar_application_included": false,
+  "changes": [
+    "State-invariant explanation added",
+    "Acronyms expanded",
+    "Feedback-text diagnostic moved into discussion",
+    "Scope and future work concentrated in discussion",
+    "Vector figure redrawn",
+    "Venue-specific declarations and reproducibility inventory prepared"
+  ],
+  "author_information": "pending",
+  "funding_and_interests": "pending author confirmation",
+  "submitted": false,
+  "venue_choice": "provisional; institutional acceptance criteria and fee budget not yet supplied"
+}

@@ -1,0 +1,61 @@
+% English tables retain the audited numerical values.
+\newcommand{\RecoveryMainTableEN}{%
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+Model & Correct & Acc. (\%) & $C-A$ & 95\% CI \\
+\midrule
+$P$ & 1523 & 76.15 & -- & -- \\
+$A_{1}$ & 1565 & 78.25 & -- & -- \\
+$C_{1}$ & 1658 & 82.90 & +4.65 & [3.10, 6.25] \\
+$A_{2}$ & 1585 & 79.25 & -- & -- \\
+$C_{2}$ & 1682 & 84.10 & +4.85 & [3.35, 6.40] \\
+A mean & -- & 78.75 & -- & -- \\
+C mean & -- & 83.50 & +4.75 & [3.53, 5.98] \\
+\bottomrule
+\end{tabular}%
+}
+
+
+\newcommand{\RecoveryCostTableEN}{%
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Model & Unfinished & Invalid & Input (M) & Output (k) & Total (M) \\
+\midrule
+$A_{1}$ & 198 & 3725 & 20.502 & 350.172 & 20.853 \\
+$C_{1}$ & 80 & 1268 & 18.646 & 363.771 & 19.010 \\
+$A_{2}$ & 205 & 3845 & 20.412 & 328.276 & 20.740 \\
+$C_{2}$ & 91 & 1216 & 19.494 & 381.937 & 19.876 \\
+\bottomrule
+\end{tabular}%
+}
+
+
+\newcommand{\RecoveryConstructionTableEN}{%
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Construction check & Direct splice & Remapped \\
+\midrule
+All suffix calls execute & 65 & 414 \\
+Answer submitted & 121 & 414 \\
+Answer matches reference & 9 & 414 \\
+All reference observations match & 0 & 414 \\
+Full construction gate passes & 0 & 414 \\
+\bottomrule
+\end{tabular}%
+}
+
+
+\newcommand{\RecoveryRelatedTableEN}{%
+\begin{tabular}{@{}p{0.14\linewidth}p{0.37\linewidth}p{0.42\linewidth}@{}}
+\toprule
+Method & Continuation source & Construction and supervision \\
+\midrule
+DAgger & Expert actions on visited states & Expert labeling and iterative aggregation \\
+Agent-R & Search branches and model-guided revision & MCTS outcomes and iterative self-training \\
+STeP & Teacher reflections and corrections & Student context with masked erroneous steps \\
+OEC & Expert continuation of student history & Environment filtering and continuation loss \\
+ReTerm & Teacher recovery from failed terminal histories & Recovery SFT followed by online recovery RL \\
+This work & Existing reference-program suffix & Handle remapping, read-only replay, suffix loss \\
+\bottomrule
+\end{tabular}%
+}

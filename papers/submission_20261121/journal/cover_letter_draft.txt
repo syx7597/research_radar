@@ -1,0 +1,22 @@
+Draft cover letter — author and submission declarations require completion
+
+To the Editors of Discover Computing,
+
+Please consider "Dependency-consistent recovery supervision for executable knowledge question answering with small language models" as a Research article.
+
+The manuscript studies how reference programs can supply executable continuation targets after a small language model has produced a divergent query history. The method maps reference dependencies to the actual intermediate-result handles, validates the suffix by deterministic replay, and trains on the continuation while retaining the observed divergence as context.
+
+The empirical study uses Qwen2.5-3B-Instruct with paired ordinary and recovery continuation training. On 2,000 project-held-out KQA Pro questions, the average accuracy across two continuation seeds rises from 78.75% to 83.50%, with a question-paired 95% interval of [3.53, 5.98] percentage points for the gain. A separate construction diagnostic examines dependency consistency in 414 comparable historical training pairs. The paper provides a controlled study of the complete training scheme, its execution behavior, and its inference cost.
+
+The work addresses natural language processing, machine learning, and executable information access within the journal's scope. The methodological contribution is the use of explicit reference-program structure to construct and verify continuation targets for actual histories. All reported model outcomes come from completed experiments; identical-history continuation evaluation is discussed as future work.
+
+Earlier Chinese and English manuscript drafts and a related thesis draft have been archived in the project Git repository. These drafts describe overlapping work and should be disclosed to the editor as related versions. [Corresponding author: verify the current publication/preprint status and supply the relevant links.]
+
+[Before submission, confirm: all human authors approve this manuscript and its submission; the work is not under consideration elsewhere; funding, competing interests, author contributions, and data-access arrangements are accurate.]
+
+The manuscript contains a declaration of generative-AI assistance used during implementation, analysis-code development, literature exploration, drafting, and consistency checks. [Authors: verify the disclosure and complete final scientific review.]
+
+Sincerely,
+[Corresponding author's full name]
+[Affiliation]
+[Email and ORCID, if available]

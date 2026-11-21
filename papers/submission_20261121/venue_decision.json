@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-21",
+  "requested_acceptance_before": "2027-06 graduation",
+  "internal_planning_target": "2027-05-15",
+  "institutional_index_requirement": null,
+  "institutional_acceptance_document_requirement": null,
+  "apc_budget": null,
+  "preference_question_status": "asked asynchronously; no answer received as of drafting",
+  "provisional_journal": "Discover Computing",
+  "journal_article_type": "Research",
+  "journal_apc_2027_usd_excluding_taxes": 2390,
+  "conference_alternative": "IEA/AIE 2027",
+  "conference_deadline": "2026-12-15",
+  "conference_notification": "2027-03-10",
+  "final_venue_selected_by_author": false,
+  "submission_performed": false,
+  "messages_to_editors_or_organizers_sent": 0,
+  "fees_paid": 0,
+  "acceptance_guaranteed": false,
+  "study_scope": "Public executable KQA recovery supervision, no radar application",
+  "scientific_strengthening_priority": "Already planned same-state model evaluation when original checkpoints and compute are available",
+  "current_manuscript_evidence": "Completed end-to-end paired continuation study and offline construction diagnostic; no unrun result is reported",
+  "requirements_sources": [
+    "https://link.springer.com/journal/10791/submission-guidelines",
+    "https://link.springer.com/brands/discover/policies",
+    "https://www.i-somet.org/iea-aie2027/cfp.html",
+    "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/53793606/data/v3"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-21",
+  "target": "Discover Computing",
+  "article_type": "Research",
+  "status": "review_draft_author_fields_pending",
+  "format": "12-point Arial author manuscript, not publisher production template",
+  "abstract_words": 175,
+  "keywords": 5,
+  "heading_levels_max": 3,
+  "overfull_boxes": 0,
+  "unresolved_citations_or_glyphs": 0,
+  "new_model_runs": 0,
+  "submitted": false,
+  "sources_sha256": {
+    "papers/submission_20261121/manuscript_body_en.tex": "c0657c8ad2ddf9e9b39c1b1cebf5e844b1ad84bb2c9df3f2979dcf31a238f234",
+    "papers/submission_20261121/abstract_en.tex": "77dd6893b5b71281941157f533b3ee4e0b0daa42e5c4ef929ea6e20c9463cb6e",
+    "papers/submission_20261121/tables_en.tex": "f5da2fb9d17465f2d6ee94b8083d413df5b537ec705ce3f3f410b269b23025f1",
+    "papers/submission_20261121/declarations_journal.tex": "94ab7202440a8dda53175200cae4fa93d38b04a0d219a878423a8cf8b3715f00",
+    "papers/submission_20261121/build_journal.py": "d1ad2caf931bdbdfa178647bb6d089ae13fd58e4e5d1b4a4ad81657ccf851804"
+  },
+  "outputs_sha256": {
+    "manuscript.tex": "666295ec96c7529d470f6300a13f727fe9eae26665c78a5a24349024b1147098",
+    "discover_computing_review.pdf": "fbb1042c7dee87a626daaa422598cffa482250d5b58fc5d8f03640ba65f33f04",
+    "discover_computing_review.docx": "8bc48568d33f8b4fab79a0a3f79a72ba3bde749aa30e8a36c62e4f4b7a2ba281",
+    "discover_computing_sources.zip": "92e8597200f92dbbf2e2ecb6fcdd3678980abf6200e3cbe9d79708828630f9d1",
+    "references.bib": "26131bb48646a99cc415cc8ce4f770633cec3f91b1825ba4398eb965e230a684",
+    "Fig1.pdf": "c3a8c150616a44b2d7f15cb495c5516b8daf6a2a52ba0f74a79429234d6f9ff2",
+    "Fig1.eps": "22ed746a6a9bf2458e56a577d92a9a62fed26abf02aa45e5e768ca273d650945"
+  }
+}

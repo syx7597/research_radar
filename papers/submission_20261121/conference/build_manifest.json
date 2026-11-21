@@ -1,0 +1,44 @@
+{
+  "schema": "ieaaie_anonymous_build_v1",
+  "date": "2026-11-21",
+  "venue": "IEA/AIE 2027",
+  "status": "compiled_anonymous_backup_not_submitted",
+  "pages": 12,
+  "abstract_words_whitespace": 175,
+  "cited_references": 13,
+  "overfull_boxes": 0,
+  "unresolved_references_or_missing_glyphs": 0,
+  "metadata": {
+    "CreationDate": "2026-11-21 16:01:02 +0000",
+    "Producer": "xdvipdfmx (0.1)"
+  },
+  "identifying_string_scan": "passed",
+  "compression": [],
+  "source_sha256": {
+    "papers/submission_20261121/manuscript_body_en.tex": "c0657c8ad2ddf9e9b39c1b1cebf5e844b1ad84bb2c9df3f2979dcf31a238f234",
+    "papers/submission_20261121/abstract_en.tex": "77dd6893b5b71281941157f533b3ee4e0b0daa42e5c4ef929ea6e20c9463cb6e",
+    "papers/submission_20261121/tables_en.tex": "f5da2fb9d17465f2d6ee94b8083d413df5b537ec705ce3f3f410b269b23025f1",
+    "papers/submission_20261121/references.bib": "26131bb48646a99cc415cc8ce4f770633cec3f91b1825ba4398eb965e230a684",
+    "papers/submission_20261121/Fig1.pdf": "c3a8c150616a44b2d7f15cb495c5516b8daf6a2a52ba0f74a79429234d6f9ff2",
+    "papers/submission_20261121/paper_metadata.json": "debb29ed63ed84c1b4f1b71ff09719736669742e377f25f55ce656e68514214d",
+    "papers/submission_20261121/build_conference.py": "c509562505bc81ff7c6667dd2920a2919e1ccbd09c4abf64fd03710416e08125"
+  },
+  "output_sha256": {
+    "anonymous.tex": "7f92c8a6320f1e57d9883b037cea3554ff241b5533b34b10701c7b6d169eed2f",
+    "anonymous.bbl": "768ac03b84a1a892cef563d6585d7b51c898cc8099b82215446dc0c386dd8f97",
+    "references.bib": "26131bb48646a99cc415cc8ce4f770633cec3f91b1825ba4398eb965e230a684",
+    "Fig1.pdf": "c3a8c150616a44b2d7f15cb495c5516b8daf6a2a52ba0f74a79429234d6f9ff2",
+    "llncs.cls": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+    "splncs04.bst": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174",
+    "readme.txt": "d5a69ddfcd5d316877c301e9504c6302d1f1dc7b2c8f128d8066cdd0b0a7e21a",
+    "history.txt": "9a4a85d0e7ab49fa35c638fee5e4083ae2b5bd0f5a943113098dc2e86e62d261",
+    "DescriptionTexts.txt": "31666ccea9072ad9b6af59624f50e239e6d663cb952d894891ed1cff2efb7868",
+    "template_origin.json": "40022c739f21354210edaa99189d07d49fe03647c637e50444f7027cabcbf861",
+    "figure_alt_text.txt": "16b09b034a6df379f03da0a322926acfc03a652ee555fa43c8a545e6495f3fc0",
+    "anonymous.pdf": "0a4762cf70588197416967dede613f12037ec9f3ea35ef7425294ba3ea6ff966",
+    "anonymous_source.zip": "01ad63a2ca5a7cac0f17729a2b094b14fc1f784b7317e6aa317ee0846210ec2a"
+  },
+  "new_model_runs": 0,
+  "submitted": false,
+  "visual_review": "Parent agent owns page inspection"
+}

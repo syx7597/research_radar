@@ -1,0 +1,173 @@
+{
+  "schema": "alternative_journal_primary_source_audit_v1",
+  "date": "2026-11-21",
+  "reviewer": "AI /root/publication_access_peerj_20261121",
+  "target_acceptance_deadline": "2027-06 (graduation month; exact institutional cutoff unconfirmed)",
+  "manuscript_scope": "Dependency-consistent recovery supervision for executable KQA; Qwen2.5-3B+LoRA, one project-held-out benchmark, two continuation seeds sharing initialization, 4.75 percentage-point mean gain, offline construction diagnostic; same-state model evaluation remains pending.",
+  "primary_sources": [
+    {
+      "id": "access_apc",
+      "url": "https://ieeeaccess.ieee.org/about/article-processing-charges/",
+      "access": "official page read",
+      "facts": {
+        "apc_usd": 2160,
+        "local_tax_extra": true,
+        "fee_model": "gold open access",
+        "length": "No page limit; strongly recommend fewer than20 pages"
+      }
+    },
+    {
+      "id": "access_speed",
+      "url": "https://ieeeaccess.ieee.org/about/rapid-peer-review/",
+      "access": "official page read",
+      "facts": {
+        "submission_to_accept_reject": "4 weeks on average",
+        "submission_to_publication": "typically4–6 weeks; depends partly on author final-file turnaround",
+        "decision_model": "binary accept/reject",
+        "guaranteed": false
+      }
+    },
+    {
+      "id": "access_scope",
+      "url": "https://ieeeaccess.ieee.org/About/",
+      "access": "official page read",
+      "facts": {
+        "scope": "Original technically correct, clearly presented research across IEEE fields, including applied and multidisciplinary work",
+        "official_average_acceptance_rate": "20%"
+      }
+    },
+    {
+      "id": "access_submission",
+      "url": "https://ieeeaccess.ieee.org/authors/submission-guidelines/",
+      "access": "official page read",
+      "facts": {
+        "format": "Required IEEE Access double-column single-spaced template",
+        "files": "Word or LaTeX source plus identical-content PDF; each no more than40MB",
+        "author_biographies": "Required for all authors after references",
+        "keywords": "3–10",
+        "article_type": "Research Article fits current original empirical method study",
+        "length": "Recommend under20 pages; longer papers receive editorial scrutiny",
+        "abstract_word_limit": "Not directly confirmed from this page; do not treat generic IEEE limits as journal-specific verification"
+      }
+    },
+    {
+      "id": "access_preparing",
+      "url": "https://ieeeaccess.ieee.org/authors/preparing-your-article/",
+      "access": "official page read",
+      "facts": {
+        "ai_disclosure": "Acknowledgments must identify AI system, affected sections and extent for AI-generated content; editing-only disclosure recommended",
+        "data_code": "Supplemental code/data and repositories encouraged; the page does not establish a universal mandatory deposit requirement",
+        "preprints": "Permitted subject to IEEE version/citation rules",
+        "thesis_reuse": "Allowed when cited and not otherwise published",
+        "concurrent_submission": "Not permitted"
+      }
+    },
+    {
+      "id": "access_template",
+      "url": "https://ieeeaccess.ieee.org/wp-content/uploads/2026/05/ACCESS_latex_template_20260513-1-1.zip",
+      "access": "Official LaTeX download link resolved from preparing page; ZIP not downloaded or parsed in this audit",
+      "facts": {}
+    },
+    {
+      "id": "peerj_factsheet",
+      "url": "https://d2pdyyx74uypu5.cloudfront.net/docs/peerj-cs-journal-factsheet.pdf",
+      "access": "Official journal branded factsheet PDF text read; linked identity peerj.com/computer-science",
+      "facts": {
+        "scope": "AI, data science, software engineering, cybersecurity and human-computer interaction",
+        "first_decision": "32 days",
+        "first_decision_is_acceptance": false,
+        "peer_review": "One editor and at least two reviewers",
+        "indexing_as_reported_by_publisher": [
+          "Web of Science SCIE",
+          "Scopus",
+          "PubMed Central",
+          "DOAJ",
+          "dblp"
+        ],
+        "apc": "Not stated in factsheet"
+      }
+    }
+  ],
+  "journals": [
+    {
+      "name": "IEEE Access",
+      "fit": "Within broad scope; executable QA and training construction are plausible research-article subjects.",
+      "timeline_assessment": "The official turnaround permits a realistic attempt beforeJune2027, including time for revision or an alternative venue, but binary rejection and the reported acceptance rate make it unsuitable as a guaranteed fallback.",
+      "evidence_assessment": "Matched training and question-level uncertainty are strengths. A single backbone/benchmark and absent direct same-state recovery evaluation remain reviewer questions; formatting alone does not remove these.",
+      "recommended_role": "Fee-bearing rapid-review option if budget and school recognition are confirmed; not automatically the easiest first choice."
+    },
+    {
+      "name": "PeerJ Computer Science",
+      "fit": "Broad computing/AI scope supports an empirical methods study.",
+      "timeline_assessment": "Publisher factsheet first-decision32 days cannot be used as total acceptance duration. One official indexed article history below took125 days; individual outcomes vary.",
+      "recommended_role": "Secondary candidate pending current fee and author-policy verification.",
+      "not_verified": [
+        "Current APC and any no-fee option",
+        "Current detailed author instructions",
+        "Current AI-generation policy",
+        "Current mandatory data/code deposition requirements",
+        "Current journal-specific abstract and page limits"
+      ],
+      "access_notes": "Direct web access to homepage/pricing/instructions/policy returned403. curl fetched legitimate JavaScript application shells only. Public application bundle contains example/component metadata with prices but journal-specific binding was not established, so it is not used as fee evidence."
+    }
+  ],
+  "article_history_examples": [
+    {
+      "journal": "PeerJ Computer Science",
+      "title": "Pioneering agentic retrieval-augmented generation in software quality: a novel framework for code smell detection via dynamic retrieval",
+      "doi": "10.7717/peerj-cs.3642",
+      "source_url": "https://doi.org/10.7717/peerj-cs.3642",
+      "received": "2025-09-05",
+      "accepted": "2026-01-08",
+      "published": "2026-03-04",
+      "received_to_accepted_days": 125,
+      "source_access": "Official DOI-linked publisher page returned with dated metadata in web search result; direct reopen returned403.",
+      "use": "Single observed history, not a journal median or a prediction."
+    }
+  ],
+  "screened_history_candidates_not_strictly_official_verified": [
+    {
+      "journal": "IEEE Access",
+      "title": "Decoding the Mystery: How Can LLMs Turn Text Into Cypher in Complex Knowledge Graphs?",
+      "doi": "10.1109/ACCESS.2025.3567759",
+      "received": "2025-02-25",
+      "accepted": "2025-05-02",
+      "published": "2025-05-07",
+      "received_to_accepted_days": 66,
+      "observed_source": "Published-paper first-page text mirrored on ResearchGate; DOI/title corroborated by authors' CyVer repository.",
+      "mirror_url": "https://www.researchgate.net/publication/391545599_Decoding_the_Mystery_How_can_LLMs_Turn_Text_into_Cypher_in_Complex_Knowledge_Graphs",
+      "author_repository": "https://gitlab.com/netmode/CyVer",
+      "status": "Do not present as publisher-site history verification; IEEE DOI reopen unavailable."
+    },
+    {
+      "journal": "IEEE Access",
+      "title": "Reducing Hallucinations in Medical AI: A Knowledge Graph-Augmented Retrieval System for Evidence-Based Age-Related Macular Degeneration Information",
+      "doi": "10.1109/ACCESS.2025.3643370",
+      "received": "2025-10-19",
+      "accepted": "2025-12-07",
+      "published": "2025-12-11",
+      "received_to_accepted_days": 49,
+      "observed_source": "Published-paper first-page text mirrored on ResearchGate",
+      "mirror_url": "https://www.researchgate.net/publication/398606983_Reducing_Hallucinations_in_Medical_AI_A_Knowledge_Graph-Augmented_Retrieval_System_for_Evidence-Based_Age-Related_Macular_Degeneration_Information",
+      "status": "Do not present as publisher-site history verification; IEEE DOI reopen unavailable."
+    },
+    {
+      "journal": "PeerJ Computer Science",
+      "title": "Assessing the effectiveness of large language models for generating and estimating time complexity of code segments",
+      "doi": "10.7717/peerj-cs.3946",
+      "received": "2025-06-27",
+      "accepted": "2026-04-24",
+      "published": "2026-07-13",
+      "observed_source": "Published-paper front matter in ResearchGate search result",
+      "status": "Publisher page unavailable; not used to estimate typical duration."
+    }
+  ],
+  "excluded_secondary_claims": [
+    "Third-party PeerJ fee listings disagree ($1395 versus$2370); neither adopted as current verified APC.",
+    "Third-party review-time aggregations and anonymous review reports are not used as publisher guarantees.",
+    "No JCR/CAS quartile inferred from non-official ranking sites."
+  ],
+  "submission_actions": 0,
+  "editor_contacts": 0,
+  "manuscript_edits": 0
+}

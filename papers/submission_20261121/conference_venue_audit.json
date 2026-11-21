@@ -1,0 +1,129 @@
+{
+  "schema": "conference_venue_screening_v1",
+  "date": "2026-11-21",
+  "researcher": "AI /root/publication_conferences_20261121",
+  "objective": "Identify official 2027 conference options with submission still open and decision before June 2027; prepare information only.",
+  "scope": "Existing public-KQA recovery-supervision study; no radar application, new model experiment, submission or organiser contact.",
+  "selected_backup": "IEA/AIE 2027 regular paper",
+  "venues": [
+    {
+      "name": "IEA/AIE 2027",
+      "role": "Verified thematic and calendar fit; selected conference-format backup",
+      "official_cfp": "https://www.i-somet.org/iea-aie2027/cfp.html",
+      "registration_page": "https://www.i-somet.org/iea-aie2027/registration.html",
+      "submission_deadline": "2026-12-15",
+      "notification": "2027-03-10",
+      "paper_registration": "2027-04-10",
+      "camera_ready": "2027-04-15",
+      "event_dates": "2027-07-20 to 2027-07-22",
+      "location": "Naples, Italy",
+      "format": {
+        "language": "English",
+        "long_pages_including_references": 12,
+        "short_pages": 6,
+        "template": "Springer LNCS/LNAI LaTeX2e",
+        "review": "double blind; remove author-identifying information"
+      },
+      "publisher": "Springer LNCS/LNAI proceedings, per conference CFP",
+      "attendance": "At least one author must attend and present; CFP requests commitment before submission.",
+      "fee": {
+        "status": "Not published; registration page shows TBA",
+        "amount": null
+      },
+      "scope_fit": "Machine learning, NLP, knowledge representation, reasoning and intelligent systems are in scope.",
+      "evaluation": "Relevant to executable recovery-target construction and empirical small-model training. Acceptance depends on review; topic match does not establish novelty sufficiency.",
+      "concurrent_submission": "Conference CFP excludes work under review elsewhere.",
+      "deadline_interpretation": "The March notification precedes graduation; the event is in July and the proceedings publication date has not been verified. Institutional recognition of formal acceptance evidence must be confirmed; publication or indexing by June is not assumed.",
+      "proceedings_publication_date": null
+    },
+    {
+      "name": "ICIC 2027 — International Conference on Intelligent Computing",
+      "role": "Verified later calendar candidate; some operational details unresolved",
+      "official_home": "http://www.ic-icc.cn/2027/index.php",
+      "official_dates": "http://www.ic-icc.cn/2027/file/html/ICIC2027%20Important%20Dates.htm",
+      "official_registration_instructions": "http://www.ic-icc.cn/2027/file/html/ICIC2027_Registration_1.htm",
+      "access_method": "Official HTTP iframe documents read with urllib; web tool HTTPS upgrade failed. No credentials or TLS bypass used.",
+      "submission_deadline": "2027-03-15",
+      "rebuttal_notification": "2027-04-15",
+      "decision_notification": "2027-04-22",
+      "camera_ready": "2027-05-08",
+      "registration_conflict": {
+        "dates_page": "2027-05-08",
+        "registration_instructions": "2027-05-12",
+        "planning_rule": "Use earlier May 8 for planning; reconfirm official instructions before submission."
+      },
+      "event_dates": "2027-07-24 to 2027-07-28",
+      "location": "Jinan, Shandong, China",
+      "publisher_scope": "Official site assigns accepted and registered oral papers to Springer LNCS/LNAI/LNBI; posters go to a separate website.",
+      "format": {
+        "template_url": "http://www.ic-icc.cn/2027/file/Microsoft_Word_Proceedings_Templates.zip",
+        "camera_ready_instruction": "Official registration text requests its Word template and explicitly says not to use LaTeX.",
+        "page_limit": null,
+        "page_limit_status": "CFP page currently returns a database error; not verified."
+      },
+      "fee": {
+        "status": "Fee subpages return database errors; not verified",
+        "amount": null
+      },
+      "cautions": [
+        "Poster deadline and publication route differ from regular oral papers.",
+        "April decision can precede graduation; July proceedings may not.",
+        "No CCF classification or indexing guarantee independently asserted in this audit."
+      ]
+    },
+    {
+      "name": "IEEE ICAD 2027",
+      "role": "Additional calendar candidate; lower priority due travel and authorship wording requiring resolution",
+      "official_cfp": "https://ieee-icad.org/icad-call-for-papers/",
+      "official_registration": "https://ieee-icad.org/registration/",
+      "submission_deadline": "2027-01-15",
+      "notification": "2027-03-12",
+      "camera_ready": "2027-04-20",
+      "author_registration": "2027-05-04",
+      "event_dates": "2027-06-29 to 2027-06-30",
+      "location": "Boston/Medford, Massachusetts, USA",
+      "format": {
+        "oral_paper_pages_including_references": "6–8",
+        "template": "IEEE two-column PDF",
+        "poster": "1–2 page summary; non-archival"
+      },
+      "fees_usd_advance": {
+        "ieee_member": 525,
+        "ieee_student_member": 400,
+        "non_ieee_member": 625,
+        "non_ieee_student": 475
+      },
+      "fee_details": "Advance rates end May 3; registration covers one presenter and one paper. Travel and accommodation separate.",
+      "publication": "Accepted, registered and presented oral papers are submitted for IEEE Xplore inclusion subject to IEEE standards.",
+      "policy_note": "CFP states an expectation of 100% human authorship and links IEEE AI guidance; this wording should be resolved against actual AI-assisted drafting before selecting this venue.",
+      "website_inconsistency": "Final-paper page has a May 4, 2026 author-registration typo, whereas registration page states May 4, 2027."
+    }
+  ],
+  "screened_out": [
+    {
+      "name": "ICAART 2027 main track",
+      "reason": "Regular and second-stage full-paper deadlines expired by 2026-11-21; December 3 is for workshops/special sessions/abstracts, not main track.",
+      "source": "https://icaart.scitevents.org/CallforPapers.aspx?y=2027"
+    },
+    {
+      "name": "ICAART 2027 LAIS workshop",
+      "reason": "Still open but focuses resource-constrained AI services. Current study has matched training and token analyses, without edge deployment/efficiency evidence; less direct match.",
+      "source": "https://icaart.scitevents.org/Workshops.aspx"
+    },
+    {
+      "name": "KST 2027 regular papers",
+      "reason": "Final regular deadline November 20, 2026 has passed. Remaining extended-abstract poster route is not assumed to satisfy a full-paper publication goal.",
+      "source": "https://kst.buu.ac.th/2027/"
+    }
+  ],
+  "template_record": "cache/submission_20261121/lncs/download_record.json",
+  "planning_notes": [
+    "Conference notification dates provide a clearer decision calendar than journal first-decision medians; neither promises acceptance.",
+    "Publication, indexing and degree-recognised acceptance are different milestones.",
+    "Only one active submission at a time; backup manuscripts may be prepared locally.",
+    "No manuscript body or experimental results were edited by this agent."
+  ],
+  "new_model_runs": 0,
+  "submission_performed": false,
+  "organisers_contacted": false
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "publication_adaptation_delivery_v1",
+  "completed_date": "2026-11-22",
+  "sources_checked_date": "2026-11-21",
+  "status": "two_venue_review_drafts_prepared_not_submitted",
+  "pages": {
+    "journal": 13,
+    "conference": 12,
+    "word_render": 12
+  },
+  "references_each": 13,
+  "abstract_words": 175,
+  "keywords": 5,
+  "journal_body_font": "Arial 12pt",
+  "conference_template": "Official LLNCS v2.25; 12-page limit including references",
+  "author_information_and_declarations": "Pending human-author confirmation",
+  "journal_docx": {
+    "tables": 4,
+    "native_math_nodes": 78,
+    "images": 1
+  },
+  "numeric_tables_unchanged": true,
+  "original_bilingual_papers_preserved": true,
+  "cross_references_and_glyphs": "passed",
+  "overfull_boxes": 0,
+  "conference_identity_scan": "passed for known project identities in PDF and source archive",
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "submissions_sent": 0,
+  "editor_or_organizer_messages_sent": 0,
+  "fees_paid": 0,
+  "pending_inputs": [
+    "Institutional index and acceptance-evidence requirements",
+    "APC/registration/travel budget",
+    "Author identities, order, corresponding author and declarations",
+    "Data/model-access arrangements"
+  ],
+  "scientific_priority_when_compute_returns": "Registered same-state evaluation",
+  "visual_review": {
+    "journal_pdf_pages": [
+      1,
+      5,
+      7,
+      11
+    ],
+    "conference_pdf_pages": [
+      1,
+      5,
+      7,
+      8
+    ],
+    "journal_word_pages": [
+      5,
+      7
+    ]
+  },
+  "artifacts_sha256": {
+    "papers/submission_20261121/README.md": "666a119eb79b5421a49b0e8cd2d4292b9e50b2f2ddb78d990d47cb039e8f96f1",
+    "papers/submission_20261121/venue_decision.json": "c3050e43415ba98846810658fb0c72e1046f86c9e1ba1529b5f33f22f249de85",
+    "papers/submission_20261121/springer_venue_audit.json": "053c1449ee60b6b34802deb0014c4f4ec17fd6d747af86626e7c6cfdff7d2690",
+    "papers/submission_20261121/other_journals_audit.json": "979c74af28abc17ef46e4c53c0514b5a5cd7049d233a343ffe494efe1f577398",
+    "papers/submission_20261121/conference_venue_audit.json": "a5a7b75e4efcac299ab2111e3be32bfe22c9aacc1224b5b4d6b4f2d4edfc8e66",
+    "papers/submission_20261121/reproducibility_inventory.json": "f8f54ec77f4fd9a74a5443093a891b9e0451b8a6b60a716ea756e354ec8e3ba1",
+    "papers/submission_20261121/journal/build_record.json": "1c0d4daf31565d76fc57aee238aebac09e73fa701f6e73240e3be0a9e842c64f",
+    "papers/submission_20261121/conference/build_manifest.json": "331c88f959a0be3258885f5113ac9a6a6336f809f140eb088ff4cc4756471e29",
+    "papers/submission_20261121/journal/discover_computing_review.pdf": "fbb1042c7dee87a626daaa422598cffa482250d5b58fc5d8f03640ba65f33f04",
+    "papers/submission_20261121/journal/discover_computing_review.docx": "8bc48568d33f8b4fab79a0a3f79a72ba3bde749aa30e8a36c62e4f4b7a2ba281",
+    "papers/submission_20261121/journal/discover_computing_sources.zip": "92e8597200f92dbbf2e2ecb6fcdd3678980abf6200e3cbe9d79708828630f9d1",
+    "papers/submission_20261121/conference/anonymous.pdf": "0a4762cf70588197416967dede613f12037ec9f3ea35ef7425294ba3ea6ff966",
+    "papers/submission_20261121/conference/anonymous_source.zip": "01ad63a2ca5a7cac0f17729a2b094b14fc1f784b7317e6aa317ee0846210ec2a"
+  }
+}

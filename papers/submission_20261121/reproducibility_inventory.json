@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-21",
+  "study": "Dependency-consistent recovery supervision",
+  "code_repository": "https://github.com/syx7597/research_radar",
+  "experiment_code_reference_commit": "95f9180",
+  "backbone": "Qwen2.5-3B-Instruct",
+  "split": {
+    "official_origin": "KQA Pro training partition",
+    "train": 5000,
+    "development": 500,
+    "project_heldout": 2000,
+    "admitted_initial_demonstrations": 4999
+  },
+  "construction": {
+    "historically_admitted_pairs": 418,
+    "cpu_comparable_pairs": 414,
+    "cpu_unavailable_due_exception_detail": 4
+  },
+  "training": {
+    "initial_epochs": 2,
+    "initial_targets_per_epoch": 788534,
+    "continuation_epochs": 1,
+    "continuation_targets_each": 788534,
+    "ordinary_success_targets": 394267,
+    "paired_suffix_targets": 394267,
+    "continuation_records_each": 5772,
+    "distinct_questions_each": 2694,
+    "continuation_seeds": [
+      20261003,
+      20261004
+    ],
+    "shared_initial_model_and_corpus": true,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "learning_rate": 0.0001,
+    "microbatch": 2,
+    "gradient_accumulation": 8
+  },
+  "primary_result": {
+    "ordinary_mean_accuracy_percent": 78.75,
+    "recovery_mean_accuracy_percent": 83.5,
+    "gain_percentage_points": 4.75,
+    "question_bootstrap_95ci_percentage_points": [
+      3.53,
+      5.98
+    ]
+  },
+  "available_in_repository": [
+    "Experiment implementation",
+    "Split and training manifests",
+    "Aggregate metrics",
+    "Analysis and evidence-export scripts"
+  ],
+  "not_in_submission_package": [
+    "Full original KQA dataset",
+    "Per-question model output archives",
+    "Trained adapter weights"
+  ],
+  "access_arrangements_pending_author_confirmation": true,
+  "raw_data_not_republished": true,
+  "new_model_runs": 0,
+  "source_sha256": {
+    "results/agent_feedback/protocol.json": "659ce71a37aff491ac42a58a73c73c420db43556acb55d6aa3b79b9c2b4fb99d",
+    "results/agent_feedback/split_manifest.json": "0b13cebc19ad368dbe124ae3ba5c498666367f3c766bdf97755ab0dc7c79fc60",
+    "results/agent_feedback/recovery_pairs.json": "116cc17c931ff560a9a40718bf53244828eb8963e295874760148df9df5f50a9",
+    "results/agent_feedback/continuation_data.json": "0791fd6bcf9e7e59b87161ad226e198ca28740a6c4e66c5e9ea2cf47cab67487",
+    "results/agent_feedback/continuation_token_audit.json": "27b338535ccdae85648d943d2110bd2248bdbbea7ce5226d062c4223704aa5a7",
+    "results/agent_feedback/holdout_v1_analysis.json": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+    "results/agent_feedback/holdout_v1_execution_audit.json": "4f76da5806e31f589570d78cf034a98741fd1ae2925a81e73fa34ad35d336b68",
+    "results/agent_feedback/state_transitions_v1/summary.json": "fcfceaad9acdac09e9f66b72258a5ca10ac40b015ad65d735266076a9762ee3c",
+    "results/agent_feedback/construction_diagnostic_20261113/summary.json": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5"
+  }
+}
