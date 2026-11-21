@@ -1,0 +1,79 @@
+{
+  "template": "华东师范大学研究生学位论文开题报告登记表.docx",
+  "template_sha256": "19cdf4beffc2e5e6c8a75c6b6352d6827ece632c1c2158115d521a0943b7068a",
+  "content": "thesis/proposal/review_20261121/content_submission.json",
+  "content_sha256": "4a3c496d4ce0a8a6c1245808583e6c12c9609b62d6736a078ef1e3b1771fc50f",
+  "output": "thesis/proposal/review_20261121/华东师范大学研究生学位论文开题报告登记表_主线收束稿_v4.docx",
+  "output_sha256": "0df9f9c5abe8175cf6074d5bb32e63926ebbf68cb5ff6fdd9c3995d870e3c8e8",
+  "sections_filled": 7,
+  "references": 10,
+  "chinese_characters": 3009,
+  "personal_fields_unchanged": true,
+  "signature_area_unchanged": true,
+  "section_row_ranges": [
+    [
+      0,
+      16
+    ],
+    [
+      16,
+      21
+    ],
+    [
+      21,
+      31
+    ],
+    [
+      31,
+      34
+    ],
+    [
+      34,
+      40
+    ],
+    [
+      40,
+      48
+    ],
+    [
+      48,
+      54
+    ]
+  ],
+  "layout": "Original seven form sections with paragraph-sized continuation rows",
+  "section_headings_grouped_with_opening_paragraph": true,
+  "source_results": [
+    "results/agent_feedback/holdout_v1_analysis.json",
+    "results/agent_feedback/state_transitions_v1/summary.json",
+    "results/radar_domain/coverage_v2/semantic_summary.json",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json"
+  ],
+  "revision_date": "2026-11-21",
+  "revision": "v4_recovery_mainline_bounded_radar",
+  "pdf": {
+    "path": "thesis/proposal/review_20261121/华东师范大学研究生学位论文开题报告登记表_主线收束稿_v4.pdf",
+    "sha256": "fbefb3a7317d04a3ece1c9ecd0a387fa07775557f96d66d7f5f111f1a56e1e56",
+    "pages": 8,
+    "renderer": "Apple Pages 13.2"
+  },
+  "validation": {
+    "all_content_paragraphs_present_in_pdf": true,
+    "content_paragraphs_checked": 65,
+    "all_final_pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "personal_fields_unchanged": true,
+    "signature_area_unchanged": true,
+    "prior_v3_preserved": true,
+    "title_unchanged": true,
+    "new_experiment_arms": 0
+  },
+  "build_script_sha256": "48be773eedb86f5a9f43c17ce72075f84bc1b05278919b859a49180bbc29e73b"
+}

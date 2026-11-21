@@ -1,0 +1,137 @@
+{
+  "schema": "proposal_independent_scope_review_v1",
+  "date": "2026-11-21",
+  "reviewer": "AI /root/proposal_scope_review_20261121",
+  "status": "passed_after_four_wording_clarifications",
+  "reviewed_content": "thesis/proposal/review_20261121/content_submission.json",
+  "reviewed_content_sha256": "4a3c496d4ce0a8a6c1245808583e6c12c9609b62d6736a078ef1e3b1771fc50f",
+  "review_scope": "Seven proposal sections, mainline, numerical and methodological claims, bounded application scope and relative schedule; no layout review.",
+  "checks": [
+    {
+      "id": "P01",
+      "topic": "title_and_scope",
+      "status": "pass",
+      "detail": "Original title retained; recovery-supervision method is the main research thread; radar is one bounded application chapter."
+    },
+    {
+      "id": "P02",
+      "topic": "six_chapter_outline",
+      "status": "pass",
+      "detail": "Six chapters align method construction, public controlled evaluation, same-state analysis, radar application and conclusion; standalone radar construction chapter removed."
+    },
+    {
+      "id": "P03",
+      "topic": "single_method_contribution",
+      "status": "pass",
+      "detail": "Dependency-consistent recovery supervision is the main method; paired evaluation is research design/evidence; radar is application value, not a second algorithm claim."
+    },
+    {
+      "id": "P04",
+      "topic": "method_definition",
+      "status": "pass",
+      "detail": "Retains common successful prefix and first reference-divergent action/observation; maps reference dependencies; makes no semantic-error-label claim for the divergence or empty results."
+    },
+    {
+      "id": "P05",
+      "topic": "supervision_control",
+      "status": "pass",
+      "detail": "States shared initial model, successful material, logical suffix, question order and supervised-token budget; avoids asserting equal compute."
+    },
+    {
+      "id": "P06",
+      "topic": "public_effect",
+      "status": "pass",
+      "detail": "2000 project-held-out questions; two shared-initialization continuation seeds; 78.75% to 83.50%, +4.75pp, question-paired CI [3.53,5.98]; ordinary/recovery arms each 788534 supervised tokens."
+    },
+    {
+      "id": "P07",
+      "topic": "cost_metric",
+      "status": "pass",
+      "detail": "8.84% and 4.17% reductions explicitly refer to input-plus-generated totals for the two continuation seeds relative to ordinary stepwise controls."
+    },
+    {
+      "id": "P08",
+      "topic": "same_state_protocol",
+      "status": "pass",
+      "detail": "2400 is a candidate pool; matched N/D states and continuation budgets; divergent C-A is primary, normal contrast and difference-in-differences secondary; new evaluation remains planned."
+    },
+    {
+      "id": "P09",
+      "topic": "construction_diagnostic",
+      "status": "pass",
+      "detail": "418 historical admitted pairs, 414 exactly comparable, 4 environment-detail mismatches; direct65 and mapped414 all-call-executable counts correctly represent offline target construction."
+    },
+    {
+      "id": "P10",
+      "topic": "training_development_separation",
+      "status": "pass",
+      "detail": "576 training questions used to train I_domain; 108 development questions used for query-capability diagnosis; fixed24+12 evaluated separately."
+    },
+    {
+      "id": "P11",
+      "topic": "bounded_domain_and_reproduction",
+      "status": "pass",
+      "detail": "Reuses frozen domain materials and interfaces; a paired reproduction is conditional on worthwhile development signal; application conclusion follows measurements, not promised gain."
+    },
+    {
+      "id": "P12",
+      "topic": "domain_result_attribution",
+      "status": "pass",
+      "detail": "Historical73/80,17/11 and55/68 are attributed to flat/condition-bound evidence representation, not recovery training transfer."
+    },
+    {
+      "id": "P13",
+      "topic": "review_identity",
+      "status": "pass",
+      "detail": "Completed source reviews are identified as AI; future human spot review remains distinct and no human-completion claim is made."
+    },
+    {
+      "id": "P14",
+      "topic": "schedule_and_existing_evidence",
+      "status": "pass",
+      "detail": "Six-month plan is the existing relative stage plan without resetting submission deadline; environment/model verification precedes inference; old predictions and same-state preflight are distinguished."
+    },
+    {
+      "id": "P15",
+      "topic": "literature_alignment",
+      "status": "pass",
+      "detail": "OEC formal ICML2026 citation and ReTerm v2 metadata agree with locally verified short-paper references; no new web verification claimed in this review."
+    },
+    {
+      "id": "P16",
+      "topic": "writing",
+      "status": "pass",
+      "detail": "Results-oriented wording; scope conveyed through task/experiment definitions rather than repeated defensive prose; no unsupported guarantee of domain gain or graduation acceptance."
+    }
+  ],
+  "clarifications_applied": [
+    "Separate576-question training from108-question development diagnosis",
+    "Specify two-seed input-plus-generated token totals",
+    "Replace matched training resources with matched supervised-token budget",
+    "Use may cause for possible execution-history effects"
+  ],
+  "unresolved_blocking_findings": [],
+  "known_pending_research": [
+    "Actual same-state model evaluation",
+    "Finite radar-domain model experiment",
+    "Human source spot-check if represented as human evidence"
+  ],
+  "not_assessed": [
+    "DOCX/PDF layout, page count and personal-field preservation",
+    "Fresh model training or inference",
+    "Fresh reproduction of historical experiments",
+    "New online literature search"
+  ],
+  "inputs_sha256": {
+    "thesis/proposal/review_20261113/content_submission.json": "e3212840ed1c16ed8f8e68e66bdf82d5d8a2adb54b54f45981493f912fa6fe64",
+    "results/agent_feedback/holdout_v1_analysis.json": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+    "results/agent_feedback/same_state_v1/design_protocol.json": "1d50e6bfa01fbdb53fc66d1234ea61346886e32816f955066ba1f978af13ce34",
+    "results/agent_feedback/construction_diagnostic_20261113/summary.json": "c6e787ab5cf8c231847beb2e78d10a6235c84defe68e7ef89bd87c1b447ebda5",
+    "papers/recovery_short_20261114/README.md": "8a4491d3aa95f62c0d8ddc7dd44566c4a5c2b559d43c54058a3a29f70f45a072",
+    "papers/recovery_short_20261114/references.bib": "3820387de537087701e587a78b19fe3744bbf5c648714f081f794d76948e3650"
+  },
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "human_review_claimed": false,
+  "manuscript_edited_by_reviewer": false
+}

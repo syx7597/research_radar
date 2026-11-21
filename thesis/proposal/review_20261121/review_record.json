@@ -1,0 +1,64 @@
+{
+  "schema": "proposal_route_revision_review_v1",
+  "date": "2026-11-21",
+  "status": "completed",
+  "user_selected_path": "恢复方法为主，保留有限雷达应用",
+  "reviewers": [
+    "AI /root",
+    "AI /root/proposal_scope_review_20261121",
+    "AI /root/route_docs_update_20261121"
+  ],
+  "title": "基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用",
+  "title_changed": false,
+  "proposal_pages": 8,
+  "thesis_planned_chapters": 6,
+  "existing_compiled_thesis_chapters": 7,
+  "existing_compiled_thesis_pages": 75,
+  "changes": [
+    "Recovery supervision and public evidence prioritized",
+    "Radar resource construction consolidated into one bounded application chapter",
+    "Same-state model evaluation prioritized before domain training",
+    "Domain replication conditional on development evidence; bounded evaluation determines conclusion",
+    "Existing relative six-month schedule preserved",
+    "Historical route documents archived and current entry points synchronized"
+  ],
+  "frozen_experiment_protocols_changed": false,
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "human_source_reviews_added": 0,
+  "validation": {
+    "source_paragraphs_present_in_pdf": 65,
+    "all_eight_pages_visually_checked": true,
+    "independent_content_checks_passed": 16,
+    "personal_and_signature_fields_preserved": true,
+    "local_links_checked": 26,
+    "prior_v3_content_hash_verified": true
+  },
+  "artifacts_sha256": {
+    "thesis/proposal/review_20261121/content_submission.json": "4a3c496d4ce0a8a6c1245808583e6c12c9609b62d6736a078ef1e3b1771fc50f",
+    "thesis/proposal/review_20261121/build_record.json": "97f6fdaf3b0edc03f8d401688c0e65b0e41145276806507a42594db4b8de3a9f",
+    "thesis/proposal/review_20261121/independent_scope_review.json": "4bdf93cb9ff72807d909612308853900d8aa7e629189f53a56bb9d49daeca967",
+    "thesis/proposal/review_20261121/华东师范大学研究生学位论文开题报告登记表_主线收束稿_v4.docx": "0df9f9c5abe8175cf6074d5bb32e63926ebbf68cb5ff6fdd9c3995d870e3c8e8",
+    "thesis/proposal/review_20261121/华东师范大学研究生学位论文开题报告登记表_主线收束稿_v4.pdf": "fbefb3a7317d04a3ece1c9ecd0a387fa07775557f96d66d7f5f111f1a56e1e56",
+    "README.md": "923e9049ffcf28a74dd369e3b8419d9ec30028488fca1a76865def9162b7dc82",
+    "docs/CURRENT_STATUS.md": "924ad6a81d6732228135ab7d104d7aa478643499207fd38e7294f8d7ad0619dd",
+    "docs/ROADMAP.md": "26f162fa161dffd994acecd008e22e90a555469aa7c2a6c06209ad58a4e44d30",
+    "docs/THESIS_MAINLINE_20261107.md": "f70601b6e4f431476780fcd31db5bcb7eb41ba55fddd08603f531a57ab9a8292",
+    "docs/THESIS_ROUTE_REVIEW.md": "ee8237eb070edcc19e60575723f1bbdfacc97a554af10135018661f24bbac21b",
+    "thesis/README.md": "42a6b4972c9cbcd6960365071c85b7e5273495291bcec40c50a30965a45752e8",
+    "thesis/proposal/README.md": "9c385c8791377b433477515e9cb7d344118582245d4cc6c6ba74c6b80c334519",
+    "docs/archive/route_before_20261121_ROADMAP.md": "b30ebe57c76a728b6c5e6945e9eb2ec04b9e39236844943d4e5a83975935ce3a",
+    "docs/archive/route_before_20261121_THESIS_MAINLINE_20261107.md": "b04eab0ff0baa71d24445ae944619e830b9ae7ac288066588949435237fc1aa1",
+    "docs/archive/route_before_20261121_THESIS_ROUTE_REVIEW.md": "adffd5edfbf6d5b1789f06f499ce44b6986ae2ad2841cb53fbe243d44b51e1d0"
+  },
+  "preview_sha256": {
+    "1": "47bfffcb052eb52c83979b318781e5df726f95b5690023216a527597290bebb7",
+    "2": "efbc136ea608f652ab6176d9ff76e14043f99406a730c99cd5ae6c949f027d00",
+    "3": "2b680eee3410ffba5fabe04b1ba8dea5a1dafcdfbe767d2a7869c36e2340b387",
+    "4": "7cfda5daabde45b88d3345440a9d751b5aa7c0792154dd7fa3c7fdfc88150541",
+    "5": "43aab3d5eaba0f86f4ad300883d00ec776b3a1a9afcdc97edf241ea01be80d64",
+    "6": "8ea3d9524c20226cad2baba48f8a88d286335f3397b1732347678b3392054c35",
+    "7": "db9c8526cb8a87b8379c7a7ac967bfded4041a189b27c0faccb42f870e045507",
+    "8": "a0b181a8ace8afcfc9e074f4ef97d02d67398a04e181ab73be5f9f37956d4606"
+  }
+}
