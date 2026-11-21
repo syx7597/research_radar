@@ -1,0 +1,24 @@
+{
+  "schema": "thesis_reading_release_v1",
+  "date": "2026-11-21",
+  "title": "基于执行反馈的小模型知识图谱问答方法研究及雷达领域应用",
+  "pdf": "毕业论文_六章整合稿.pdf",
+  "pdf_sha256": "1017b077e620ce301242ae6a05003d4f140ff10ff52466e190ee6ad1b2201945",
+  "page_count": 56,
+  "chapters": [
+    "绪论",
+    "相关工作与任务定义",
+    "依赖一致的恢复监督方法",
+    "公开实验与恢复行为分析",
+    "雷达知识问答应用与适用性分析",
+    "总结与展望"
+  ],
+  "source_entry": "thesis/current/main.tex",
+  "source_build_manifest_sha256": "1299868b8951b68309339d769b818af051adde55dd785838f797dd9941544003",
+  "content_review_sha256": "1ebef627d930f06b9ecb92096706c6e9295823d6caf67e60e822f21a12677730",
+  "new_model_runs": 0,
+  "pending_experiments": [
+    "Fixed same-state continuation evaluation",
+    "Bounded radar-domain ordinary/recovery comparison"
+  ]
+}

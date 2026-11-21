@@ -1,18 +1,19 @@
 {
   "schema": "thesis_literature_audit_v1",
-  "audit_date": "2026-11-07",
-  "reviewer": "AI /root (new source metadata); prior per-entry reviewers/dates retained",
+  "audit_date": "2026-11-21",
+  "reviewer": "AI /root/thesis_writing_related_20261121; prior per-entry dates and scopes retained",
   "status": "bibliographic_metadata_and_selected_claims_checked",
   "human_review_completed": false,
   "scope": [
-    "Thirteen selected primary method papers; the three 2026-10-18 additions and earlier ten checks have individually recorded dates and scope.",
+    "Fourteen selected primary method papers. This revision refreshes OEC formal metadata, reads its cached official method sections and adds ReTerm; all other entries retain prior verification dates.",
     "Thirteen manufacturer bibliography entries checked against existing archived metadata: four prior-source entries plus nine entries representing eight new source families.",
     "This is a bibliography and selected-claims audit, not a new equipment-fact review, independent human acceptance, systematic literature survey or experimental replication.",
-    "Four additional official manufacturer archives checked on 2026-11-07; the earlier 26 entries retain their original review dates and scopes."
+    "Four additional official manufacturer archives checked on 2026-11-07; the earlier 26 entries retain their original review dates and scopes.",
+    "Writing guidance is recorded separately in writing_sources_20261121.json and is not added to the academic related-work bibliography."
   ],
   "files_sha256": {
-    "thesis/current/02_background_related_work.tex": "a8266042a6e7f00c94ee0dcb29df406de4beeb11224aa7c50bef539c25356e6a",
-    "thesis/current/references.bib": "6c0ea1baea5e9b369ebcd2a756234f11669a04f37a9dc6c17b1d76e66077ee1b"
+    "thesis/current/02_background_related_work.tex": "f232184117a571c7d8294ec514cdf0b96ef9c72610c7c16dc70fff54fd54bf66",
+    "thesis/current/references.bib": "f0794ea2409e29cffbdfe79ba0711bae3ddfb94cbc6e0f7698b87e22d76a5883"
   },
   "local_metadata_inputs_sha256": {
     "artifacts/thesis_direction_review/radar_sources_v1/source_index.json": "87eb223a6b84374261728254d96e658e761586b3987166c3846eb7bb6fcf66ce",
@@ -350,26 +351,65 @@
     {
       "citekey": "lauffer2025oec",
       "title": "Imitation Learning for Multi-turn LM Agents via On-policy Expert Corrections",
-      "authors_bibtex": "Lauffer, Niklas and Deng, Xiang and Kundurthy, Srivatsa and Kenstler, Brad and Da, Jeff",
-      "year": 2025,
-      "venue_or_institution": "arXiv",
-      "version_note": "Version 1",
+      "authors_bibtex": "Lauffer, Niklas and Deng, Xiang and Kundurthy, Srivatsa R and Kenstler, Brad and Da, Jeff",
+      "year": 2026,
+      "venue_or_institution": "Proceedings of the 43rd International Conference on Machine Learning, PMLR306:62884–62913",
+      "version_note": "Official ICML2026 version; legacy citekey retained for source compatibility",
       "primary_urls": [
-        "https://arxiv.org/abs/2512.14895v1",
-        "https://arxiv.org/html/2512.14895v1"
+        "https://proceedings.mlr.press/v306/lauffer26a.html",
+        "https://raw.githubusercontent.com/mlresearch/v306/main/assets/lauffer26a/lauffer26a.pdf"
       ],
-      "verification_mode": "new_web_primary_source_check",
-      "accessed_date": "2026-10-18",
+      "verification_mode": "fresh_official_web_metadata_and_reading_cached_official_method_sections",
+      "accessed_date": "2026-11-21",
       "accessed_scope": [
-        "Sections 3.1-3.3: random switching, expert-only masking, rejection and repetition filtering"
+        "Official proceedings metadata and abstract",
+        "Official PDF sections3.1–3.3, read from existing2026-11-14 PDF text cache"
       ],
       "claims_used_in_chapter": [
-        "Student history followed by expert continuation; only expert portion supervised."
+        "Student rollout followed by expert continuation at a random handoff",
+        "Environment and repetition filtering; expert-only target supervision"
       ],
       "limitations": [
         "Not experimentally reproduced; no cross-task performance ranking or proven cost advantage."
       ],
-      "cross_paper_score_comparison_used": false
+      "cross_paper_score_comparison_used": false,
+      "prior_audit_preserved_in_git": "ed49cf5:thesis/current/literature_audit.json",
+      "cached_method_sha256": {
+        "cache/recovery_literature_20261114/oec_icml2026.pdf": "6106ea7ecf746942169298f2ec18c99b7844ab6d28c8ea519b2b299a8c63beca",
+        "cache/recovery_literature_20261114/oec_icml2026.pdf.txt": "4b53fa90ff6ce115e3a741268bcff0d705f456d60c90fd771b1e0a77e8382e21"
+      }
+    },
+    {
+      "citekey": "xie2026reterm",
+      "title": "ReTerm: Recovery Training for Self-Improving Terminal Agents",
+      "authors_bibtex": "Xie, Wei and Feng, Kaituo and Fu, Shiming and Liu, Yong and Yue, Xiangyu and Zheng, Shuangjia",
+      "year": 2026,
+      "venue_or_institution": "arXiv",
+      "version_note": "Version2,14 October2026",
+      "primary_urls": [
+        "https://arxiv.org/abs/2610.18484v2",
+        "https://arxiv.org/html/2610.18484v2"
+      ],
+      "verification_mode": "fresh_primary_html_metadata_and_method_reading_with_prior_short_paper_check",
+      "accessed_date": "2026-11-21",
+      "accessed_scope": [
+        "Metadata and abstract",
+        "Sections3.1 and3.2: failed snapshots, teacher continuation/filtering, recovery-target supervision and online recovery branches"
+      ],
+      "claims_used_in_chapter": [
+        "Preserves failed terminal state and interaction history for teacher continuation",
+        "SFT loss is restricted to teacher recovery tokens",
+        "An additional online recovery-branch RL method is proposed"
+      ],
+      "cross_paper_score_comparison_used": false,
+      "experimental_replication_performed": false,
+      "prior_local_audit": {
+        "path": "papers/recovery_short_20261114/literature_audit.json",
+        "sha256": "0aa31bb5b5c687cd835121ea3079dcb23d442d2a9e566192c114bc990038cffd"
+      },
+      "limitations": [
+        "Preprint metadata retained; no accepted-venue claim."
+      ]
     }
   ],
   "manufacturer_archives": [
@@ -955,9 +995,9 @@
     }
   ],
   "validation": {
-    "bib_entries": 30,
+    "bib_entries": 31,
     "chapter_citekeys_resolve": true,
-    "chapter_chinese_character_count": 5391,
+    "chapter_chinese_character_count": 3657,
     "chapter_section_count": 7,
     "chapter_citekeys": [
       "cao2022kqapro",
@@ -971,6 +1011,7 @@
       "ross2011dagger",
       "shao2024deepseekmath",
       "shinn2023reflexion",
+      "xie2026reterm",
       "yao2023react",
       "yuan2025agentr"
     ],
@@ -978,10 +1019,11 @@
     "long_source_passages_republished": false,
     "new_experiment_run": false,
     "latex_compilation_performed_by_this_agent": false,
-    "compilation_scope_note": "Static bibliography and chapter checks only; the parent agent owns main-document integration and compilation."
+    "compilation_scope_note": "Static bibliography and chapter checks only; the parent agent owns main-document integration and compilation.",
+    "archive_hash_check_scope": "Manufacturer archive checks are inherited from their recorded prior verification dates; this editorial revision did not repeat them."
   },
-  "previous_audit_sha256": "43778c0374fa6a16bf2b5d88be5a990592a39653b847e3cbbc65d74057659e60",
-  "revision_note": "Added four manufacturer documents for new-source evaluation preparation. No academic-paper re-audit or new model experiment.",
+  "previous_audit_sha256": "8d6d2637416116a11347a728db237111223385c392c7ee32bb855dc9cb31b5eb",
+  "revision_note": "Reorganized chapter2 around executable task/state definitions and recovery-target sources; shortened application background; updated OEC to official ICML2026 and added ReTerm v2. No model experiment or equipment-fact revision.",
   "manuscript_revision_20261022": {
     "previous_audit_sha256": "6a7e6d78868d5bada2d32e0bf527a2b4a5f5007a498856ba622e32989c00ae8e",
     "change": "Reorganized the background chapter around task definitions, execution states, recovery supervision and domain evidence; retained the same 13 method references.",
@@ -989,5 +1031,14 @@
     "bibliography_unchanged": false,
     "bibliography_revision": "Editorial cleanup of audit-style notes only; authors, titles, years, identifiers, versions and source URLs retained.",
     "completed_date": "2026-10-23"
+  },
+  "manuscript_revision_20261121": {
+    "date": "2026-11-21",
+    "old_chapter_sha256": "a8266042a6e7f00c94ee0dcb29df406de4beeb11224aa7c50bef539c25356e6a",
+    "old_bibliography_sha256": "6c0ea1baea5e9b369ebcd2a756234f11669a04f37a9dc6c17b1d76e66077ee1b",
+    "new_academic_entries": 1,
+    "rewritten_chapter": "相关工作与任务定义",
+    "forbidden_contrast_phrases_found": 0,
+    "field_data_changed": false
   }
 }

@@ -11,10 +11,10 @@
   },
   "exporter_sha256": "4e3b28be963b64039f653c89b70ad15df4435c24057ec7e7e3ae00433563f71f",
   "chapter_sha256": {
-    "thesis/current/01_introduction.tex": "3433f86f4ffb1cd4a6cfd7416364d41b27cce58ca14c6adc0d5edf1b63a38a98",
-    "thesis/current/01b_experiment_matrix.tex": "d8db7181d5273d4327057624073522069c3be7550be68b5ae77a83c19e674c51",
-    "thesis/current/03c_composition_evaluation.tex": "ba08743cc1295df83c7c19d188ed86150dac7fa6c3f0595d93fab50666eb9a04",
-    "thesis/current/06d_composition_validation.tex": "63b09acb40dacf4833bb98145689badfcca6bb5a4dfb2a677c34edea7c92a6c6"
+    "thesis/current/01_introduction.tex": "6b45d38bf0464c4ddbfecc0bc5fd1c4535eec0873f36477841fe0803bd100f65",
+    "thesis/current/01b_experiment_matrix.tex": "a22ed893f0db0d7b904e1e239727859d829fca5eecd70580a19bdd5a84f5b676",
+    "thesis/current/03c_composition_evaluation.tex": "c9ab08d451cb1932fb35dd2b34e4895e5b270c91c4418700842c0e90ff26273f",
+    "thesis/current/06d_composition_validation.tex": "abde32ae639fddca3b3784b20ad2d7548c29694474c995dedcc6f73e3b98ed9b"
   },
   "outputs_sha256": {
     "composition_tables.tex": "600a033780b9c9025b733d2d7fa7cf68498063ee062e86ab54964be1eb14903a",

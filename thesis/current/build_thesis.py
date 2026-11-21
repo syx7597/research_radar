@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check public evidence and build the seven-chapter review manuscript.
+"""Check public evidence and build the six-chapter review manuscript.
 
 Uses an already available Tectonic or XeLaTeX installation; never installs tools,
 starts experiments, or reads private questions/source documents. Run from any cwd.
@@ -47,8 +47,8 @@ def check_sources():
         subprocess.run([sys.executable, str(HERE / exporter), "--check"], cwd=ROOT, check=True)
     files, text = scan_inputs(ENTRY)
     chapters = re.findall(r"\\chapter\{([^}]+)\}", text)
-    if len(chapters) != 7:
-        raise ValueError(f"Expected exactly seven numbered chapters, got {len(chapters)}")
+    if len(chapters) != 6:
+        raise ValueError(f"Expected exactly six numbered chapters, got {len(chapters)}")
     labels = re.findall(r"\\label\{([^}]+)\}", text)
     refs = re.findall(r"\\(?:ref|eqref)\{([^}]+)\}", text)
     if len(labels) != len(set(labels)) or set(refs) - set(labels):
@@ -110,7 +110,7 @@ def main():
                 or re.search(r"(?:Citation|Reference) .+ undefined", line) or line.startswith("Missing character:")]
     if blockers:
         raise ValueError("PDF has unresolved references or missing glyphs: " + " | ".join(blockers[:8]))
-    report = {"schema": "radar_seven_chapter_build_v1", "status": "compiled",
+    report = {"schema": "recovery_six_chapter_build_v2", "status": "compiled",
               **checked, "engine": version, "builder_sha256": sha(Path(__file__)),
               "pdf": {"path": str(pdf.relative_to(ROOT)), "sha256": sha(pdf), "bytes": pdf.stat().st_size},
               "final_log_sha256": sha(logfile),
@@ -120,7 +120,7 @@ def main():
                          "Compilation and source consistency do not establish factual validity or human gold.",
                          "Visual review is recorded separately; this compiler report alone is not visual approval."]}
     (HERE / "manuscript_manifest.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({"status": report["status"], "chapters": 7, "cited_works": checked["cited_works"], "pdf": report["pdf"],
+    print(json.dumps({"status": report["status"], "chapters": 6, "cited_works": checked["cited_works"], "pdf": report["pdf"],
                       "overfull_box_warnings": report["overfull_box_warnings"]}, ensure_ascii=False))
 
 

@@ -16,9 +16,9 @@
   },
   "exporter_sha256": "883124fed14740d5d8d8bc7524f5262b859e711e7693d4d18e6440d64b0e2a0d",
   "chapter_sha256": {
-    "thesis/current/03b_domain_task_data.tex": "6fe4b090bb2600839a0753bda2fc2228979d1d71842a302d778e22e22644a277",
-    "thesis/current/04b_domain_execution.tex": "8c5d19b7c888b2d847bd554d9b64c141cf76dac8bfc2adfb844a28e7e165ecb9",
-    "thesis/current/06c_domain_preparation.tex": "d4d1a879300495a1fde3631a5f13e4bd4e13050d0f26bc3a90970d6b189a4856"
+    "thesis/current/03b_domain_task_data.tex": "33444434c421bdfbfe4d968e789771ed352fcc0f81a064c60b6be64b4515874d",
+    "thesis/current/04b_domain_execution.tex": "9f852eaa42f2b584a6a52bc8dc56342cf23f426ca3ca978499c641393698f099",
+    "thesis/current/06c_domain_preparation.tex": "d1783b6fede8734d1d784ff239570d0dc26ec41d1a3ae3841103ae3eae25351d"
   },
   "outputs_sha256": {
     "offline_tables.tex": "4f38bc34d4127bdfd7d4cfdd9897b5317c8ae8a10df31d12b2a7a9370ac97125",

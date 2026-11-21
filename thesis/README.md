@@ -2,7 +2,9 @@
 
 ## 当前主线写作入口
 
-2026-11-21 用户确定“恢复方法为主，保留有限雷达应用”。[开题报告v4](proposal/README.md)与[后续路线](../docs/THESIS_ROUTE_REVIEW.md)已同步采用六章安排，原数据构建内容并入雷达应用章，公开恢复实验为研究主体。下方75页PDF是已编译的七章工作稿，保留作整合素材；本轮尚未重排其全文。下一次全文修订以新的六章计划为准。
+2026-11-21 已完成六章全文整合与成果叙述修订：[固定阅读版PDF](revisions/20261121/毕业论文_六章整合稿.pdf)为 **56页、31条参考文献**，正文源稿约2.7万汉字。恢复监督方法与公开实验构成主体，雷达知识构建及应用合并到第五章。中文摘要压缩为418个汉字，中英文内容对应；主要公式、算法、实例和结果表保留，范围说明集中讨论，两项待做模型评价分别列明。
+
+本次参考学校规范、学术写作指南及一篇硕士论文正文片段调整叙述，见[写作学习记录](current/writing_sources_20261121.json)。七组证据导出通过，编译无越界、缺字及未解析引用；内容和版面检查见[复核记录](current/manuscript_review.json)。[开题报告v4](proposal/README.md)和[后续计划](../docs/ROADMAP.md)保持同一主线。原七章PDF已在本地编译目录留存，历史源稿可由Git恢复。以下各日期段落为历史记录，最新阅读稿以上述固定版本为准。
 
 2026-11-13 已补入本地恢复构造诊断、图式与类型视图一致性、固定24题独立AI来源复核，以及同状态评价的正式定义。当前[PDF](current/build/main.pdf)为 **75页、30条参考文献**，七组证据导出检查通过。构造诊断固定418对，414可精确比较、4项环境提示措辞差异保留；所有新增结果均明确为CPU诊断或AI审阅。见[本轮成果](../docs/LOCAL_RESEARCH_RESULTS_20261113.md)和[答辩准备稿](../docs/THESIS_DEFENSE_GUIDE_20261113.md)。
 
@@ -21,13 +23,13 @@
 | 文件 | 用途与状态 |
 |---|---|
 | [current/build/main.pdf](current/build/main.pdf) | 本工作区生成的完整 PDF；编译目录不进入 Git，其他机器需从源稿重建 |
-| [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 七章总入口与构建脚本；先核对七组证据表，再调用已有编译器 |
+| [current/main.tex](current/main.tex)、[current/build_thesis.py](current/build_thesis.py) | 六章总入口与构建脚本；先核对七组证据表，再调用已有编译器 |
 | [current/00_abstract.tex](current/00_abstract.tex)、[current/01_introduction.tex](current/01_introduction.tex) | 中英文摘要、研究问题、贡献范围与技术路线 |
 | [current/02_background_related_work.tex](current/02_background_related_work.tex)、[current/07_conclusion.tex](current/07_conclusion.tex) | 相关方法比较、结论与局限 |
-| [current/references.bib](current/references.bib)、[current/literature_audit.json](current/literature_audit.json) | 26 条引用及原始文献、版本和核对范围 |
+| [current/references.bib](current/references.bib)、[current/literature_audit.json](current/literature_audit.json) | 31 条引用及原始文献、版本和核对范围 |
 | [current/manuscript_manifest.json](current/manuscript_manifest.json)、[current/manuscript_review.json](current/manuscript_review.json) | 源稿与 PDF 哈希、编译检查、抽样页面目视复核；不替代学术或人工事实审查 |
-| [current/03_radar_data_construction.tex](current/03_radar_data_construction.tex) | 数据构建章节：历史库存、旧开发读法、合成实例、新来源材料及表示、审阅、划分边界 |
-| [current/data_review.tex](current/data_review.tex) | 第三章独立 XeLaTeX 审阅入口 |
+| [current/03_radar_data_construction.tex](current/03_radar_data_construction.tex) | 原独立数据章的历史源文件；当前总稿中的相关材料已合并到应用章 |
+| [current/data_review.tex](current/data_review.tex) | 原独立数据章的历史 XeLaTeX 审阅入口 |
 | [current/data_export.py](current/data_export.py)、[current/data_tables.tex](current/data_tables.tex) | 从公开清单与审计汇总重建数据表，不访问私有原始资料或 QA |
 | [current/data_results.csv](current/data_results.csv)、[current/data_evidence_manifest.json](current/data_evidence_manifest.json) | 数据数量、来源字段及章节/实现哈希；库存数量不视为已核验事实数量 |
 | [current/04_execution_feedback_method.tex](current/04_execution_feedback_method.tex) | 方法章节：执行状态、句柄映射、流程图、构造伪代码、完整动作样本及匹配监督预算 |
@@ -37,7 +39,7 @@
 | [current/export_evidence.py](current/export_evidence.py) | 重建表格和清单；`--check` 检查数字及文件一致性 |
 | [current/review.tex](current/review.tex) | 两章的独立 XeLaTeX 审阅入口；需要 `ctexrep`、`amsmath`、`booktabs` 等常用包 |
 | [current/06_radar_application.tex](current/06_radar_application.tex) | 应用章节：来源表示、直接迁移诊断、共同接口适配、四来源六路线评价及失败边界 |
-| [current/domain_review.tex](current/domain_review.tex) | 第六章独立 XeLaTeX 审阅入口，含四份制造商资料的来源链接 |
+| [current/domain_review.tex](current/domain_review.tex) | 旧应用章独立审阅入口；当前整合稿请使用 main.tex 构建 |
 | [current/domain_export.py](current/domain_export.py) | 只读公开聚合与来源索引，重建应用章表格；不访问私有 QA 或运行训练 |
 | [current/domain_tables.tex](current/domain_tables.tex)、[current/domain_results.csv](current/domain_results.csv) | 六路线完整结果、成本、迁移前后及来源分组；CSV 记录来源字段和派生口径 |
 | [current/domain_evidence_manifest.json](current/domain_evidence_manifest.json) | 应用章输入、章节、导出结果的哈希绑定与适用边界 |

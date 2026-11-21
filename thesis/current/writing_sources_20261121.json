@@ -1,0 +1,180 @@
+{
+  "schema": "thesis_writing_sources_and_application_v1",
+  "date": "2026-11-21",
+  "reviewer": "AI /root/thesis_writing_related_20261121",
+  "purpose": "Learn and apply thesis argumentation and results-oriented scientific narration during local six-chapter integration.",
+  "reading_scope_note": "Official writing guidance and selected parts of one full master's thesis were read; this is a focused writing study.",
+  "sources": [
+    {
+      "id": "ecnu_format",
+      "title": "华东师范大学博士、硕士学位论文基本格式要求",
+      "institution": "华东师范大学研究生院",
+      "url": "https://yjsy.ecnu.edu.cn/10/67/c3602a69735/page.htm",
+      "publication_date": "2016-02-25",
+      "access_date": "2026-11-21",
+      "source_type": "official university writing requirements",
+      "read_scope": [
+        "基本结构",
+        "摘要及关键词",
+        "主体论述与结论",
+        "附录材料"
+      ],
+      "paraphrased_takeaway": "摘要突出研究目的、方法和成果；正文层次清楚、数据可靠并解释术语；结论综合核心观点；长原始材料可入附录。",
+      "use_in_revision": "指导摘要和六章结构；正文以研究问题及已完成发现组织，细节材料分层呈现。",
+      "scope_note": "作为已公开写作要求参考；本次不认证具体院系最新提交模板。"
+    },
+    {
+      "id": "ecnu_lecture",
+      "title": "电子科学系学位论文规范专题讲座",
+      "institution": "华东师范大学电子科学系",
+      "url": "https://es.ecnu.edu.cn/c8/54/c31576a510036/page.htm",
+      "publication_date": "2023-04-26",
+      "access_date": "2026-11-21",
+      "source_type": "official university teaching report",
+      "read_scope": [
+        "完整活动正文"
+      ],
+      "paraphrased_takeaway": "学位论文围绕中心思想组织，章节之间需要衔接，方法创新与基础工作的系统呈现共同构成论文。",
+      "use_in_revision": "恢复监督为中心，将领域资料并入应用章；章首交代所解决问题，章末接到下一研究环节。"
+    },
+    {
+      "id": "harvard_paragraph",
+      "title": "The Anatomy of a Body Paragraph",
+      "institution": "Harvard College Writing Center",
+      "url": "https://writingcenter.fas.harvard.edu/sites/g/files/omnuum451/files/writingcenter/files/anatomy_of_a_body_paragraph.pdf",
+      "access_date": "2026-11-21",
+      "source_type": "official academic writing guide",
+      "read_scope": [
+        "三页指导文本，重点为段落主张、证据与分析"
+      ],
+      "paraphrased_takeaway": "一段围绕一个主要观点，主题句提出该点，随后给证据并说明证据与论点的关系。",
+      "use_in_revision": "相关工作按监督来源分类，每段解释一种设计及其与本文问题的联系。",
+      "scope_note": "通用学术段落指导，技术内容与结论强度由本项目实际证据决定。"
+    },
+    {
+      "id": "manchester_results",
+      "title": "Academic Phrasebank: Reporting results",
+      "institution": "The University of Manchester",
+      "url": "https://www.phrasebank.manchester.ac.uk/reporting-results/",
+      "access_date": "2026-11-21",
+      "source_type": "official academic writing guide",
+      "read_scope": [
+        "开篇结果组织说明",
+        "图表定位及重点发现表达分类"
+      ],
+      "paraphrased_takeaway": "定量结果应系统呈现，用编号图表承载数值，再在正文指出与研究目标相关的变化；深入解释可在结果讨论中展开。",
+      "use_in_revision": "已向主编写agent同步‘比较对象—数值变化—研究含义’的结果段落顺序。"
+    },
+    {
+      "id": "manchester_discussion",
+      "title": "Academic Phrasebank: Discussing findings",
+      "institution": "The University of Manchester",
+      "url": "https://www.phrasebank.manchester.ac.uk/discussing-findings/",
+      "access_date": "2026-11-21",
+      "source_type": "official academic writing guide",
+      "read_scope": [
+        "开篇讨论结构说明",
+        "研究问题、发现、解释与意义的表达分类"
+      ],
+      "paraphrased_takeaway": "讨论围绕具体发现组织，把结果联系到问题和已有研究，并据证据提出解释。",
+      "use_in_revision": "将机制解释与范围说明集中到相应讨论位置，减少在每个结果后重复限定。"
+    },
+    {
+      "id": "kargus_master",
+      "title": "KarGus: A Scalable Knowledge Graph-Powered System for Multi-Document Query-Answering",
+      "author": "Martin Michaux",
+      "institution": "Delft University of Technology",
+      "degree": "Master of Science",
+      "year": 2024,
+      "url": "https://repository.tudelft.nl/file/File_a46318d2-796e-4674-8c97-3ba9b29332a4",
+      "access_date": "2026-11-21",
+      "source_type": "official university master's thesis full PDF",
+      "pdf_pages": 49,
+      "read_scope": [
+        "学位封面、摘要及目录",
+        "物理页28–29：路径分析、GNN结果、方法比较及讨论",
+        "物理页32、34–35：研究问题、结果讨论、后续工作与结论"
+      ],
+      "paraphrased_takeaway": "该稿通过方法对照与分项分析报告主要结果，并在结论中回到研究问题；效果较弱的探索保留具体结果，另行讨论。",
+      "use_in_revision": "借鉴研究问题与结果的对应关系、主结果和辅助探索的层级；保留本项目已完成RL和反馈诊断的真实结果。",
+      "scope_note": "仅作为叙述组织案例；未复现或采用该论文的实验结果、评价数据和因果解释。",
+      "local_cache": {
+        "pdf": "cache/thesis_writing_20261121/kargus_master_2024.pdf",
+        "text": "cache/thesis_writing_20261121/kargus_master_2024.txt",
+        "publish_full_text": false,
+        "pdf_sha256": "2047476356b7385b80155b685b91654434a1b5fa0d4f36febc9785899c32e104",
+        "text_sha256": "bc2b9a1ddabb66609502772480b104b6242006f5d5355b2f2f3413b898869202"
+      }
+    }
+  ],
+  "applied_rules": [
+    {
+      "id": "W1",
+      "rule": "以研究问题连接章节",
+      "sources": [
+        "ecnu_format",
+        "ecnu_lecture",
+        "kargus_master"
+      ],
+      "implementation": "第二章以程序、交互状态和恢复目标为线索，结尾引向第三章方法；领域知识作为应用基础。"
+    },
+    {
+      "id": "W2",
+      "rule": "一个段落发展一个论点",
+      "sources": [
+        "harvard_paragraph"
+      ],
+      "implementation": "方法近邻按状态来源、后续目标和学习信号依次解释，减少作者和技术名词的堆列。"
+    },
+    {
+      "id": "W3",
+      "rule": "成果用比较和数字支撑",
+      "sources": [
+        "manchester_results"
+      ],
+      "implementation": "向各章节编写agent同步先报告已完成结果，再给解释的顺序；未运行实验保持设计身份。"
+    },
+    {
+      "id": "W4",
+      "rule": "把结果解释连接到具体发现",
+      "sources": [
+        "manchester_discussion",
+        "kargus_master"
+      ],
+      "implementation": "用构造正确性、完整问答及应用适配三个证据层次组织分析，避免无依据地扩大机制结论。"
+    },
+    {
+      "id": "W5",
+      "rule": "主文保留必要技术深度",
+      "sources": [
+        "ecnu_format",
+        "ecnu_lecture"
+      ],
+      "implementation": "保留程序、LoRA、掩码损失与交互状态公式；缩减应用背景和重复实施说明，长材料可放附录。"
+    },
+    {
+      "id": "W6",
+      "rule": "采用直接、成果导向的叙述",
+      "sources": [
+        "ecnu_format",
+        "harvard_paragraph",
+        "user_explicit_instruction"
+      ],
+      "implementation": "清理反复的免责声明及否定转折句式；适用条件集中表达，客观区分完成结果与后续验证。"
+    }
+  ],
+  "modified_scope": [
+    "thesis/current/02_background_related_work.tex",
+    "thesis/current/references.bib",
+    "thesis/current/literature_audit.json"
+  ],
+  "full_manuscript_integration_owner": "AI /root",
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "human_review_claimed": false,
+  "modified_files_sha256": {
+    "thesis/current/02_background_related_work.tex": "f232184117a571c7d8294ec514cdf0b96ef9c72610c7c16dc70fff54fd54bf66",
+    "thesis/current/references.bib": "f0794ea2409e29cffbdfe79ba0711bae3ddfb94cbc6e0f7698b87e22d76a5883",
+    "thesis/current/literature_audit.json": "3c55dcf128a281e3fc67e12679f1ec625268892c4c04e431ed4b580218ba2835"
+  }
+}

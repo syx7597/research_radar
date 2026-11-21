@@ -11,10 +11,10 @@
   "exporter_sha256": "d37e455ebc3712a7e580dc54a13afa4c1b6cefa5f79bf625a8877388b14dcf99",
   "rows": 22,
   "chapter_sha256": {
-    "thesis/current/03d_source_view_validation.tex": "0e9ba52de57d4d002846e6595705c5be70363805acad13e90b1c020beb963475",
-    "thesis/current/03e_fixed_source_review.tex": "c8713f8a60c9ef841c29fb6e2d0821a527f810db4bbd753a15322684b7034f25",
-    "thesis/current/05b_construction_diagnostic.tex": "dc74778de51b976a7183193628cac784f339146af98c71d5fb1c43e2ac721f65",
-    "thesis/current/05c_same_state_design.tex": "ea8961c02ad8227aa7a172d2252d77f158ce4de3444813d92e97446e050967ab"
+    "thesis/current/03d_source_view_validation.tex": "249af72c858f2ed06ab8c3062443d82804001c64ce972880a85813abb3d19a0f",
+    "thesis/current/03e_fixed_source_review.tex": "10b719f6a53384dec99ad3eabbd11515af07644baeea9b166df8aded5534c384",
+    "thesis/current/05b_construction_diagnostic.tex": "436fb3e3bafd4c2e97186af1743385680cccbbe473f6f1f55c26c7cab3ee53d9",
+    "thesis/current/05c_same_state_design.tex": "73d52ef7be57d7f55b83368dbab0e769725509d430f319944b64435b6566708f"
   },
   "outputs_sha256": {
     "local_analysis_tables.tex": "bd620574a25cac27e68f008e88bd23b8a5d386453c41b5deda81b92ca0fe2089",

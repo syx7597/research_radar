@@ -1,91 +1,128 @@
 {
-  "schema": "radar_seven_chapter_manuscript_review_v1",
-  "review_date": "2026-11-13",
-  "status": "local_research_results_integrated_compiled_and_selected_pages_visually_reviewed_by_AI",
-  "reviewer": "AI /root",
-  "previous_review_sha256": "108b80b5d1381ffbf528461d8aeb62fc8c56f98a99bcc8f980c31436b1a326ce",
-  "previous_snapshot": "data/thesis_offline_20261113/manuscript_before/manifest.json",
+  "schema": "six_chapter_manuscript_review_v2",
+  "date": "2026-11-21",
+  "status": "compiled_content_reviewed_selected_pages_checked",
+  "baseline_commit": "ed49cf5",
+  "title_unchanged": true,
+  "reviewers": [
+    "AI /root",
+    "AI /root/thesis_recovery_chapters_20261121",
+    "AI /root/thesis_bounded_application_20261121",
+    "AI /root/thesis_writing_related_20261121"
+  ],
+  "review_scope": "Six-chapter substantive editing; numeric/claim cross-review; full PDF text and citation checks; selected-page visual inspection. English abstract subsequently condensed and layout checked by root.",
+  "previous_pdf_snapshot": "thesis/current/build/previous_20261113/main.pdf",
+  "previous_chapters": 7,
+  "previous_pages": 75,
+  "chapters": [
+    "绪论",
+    "相关工作与任务定义",
+    "依赖一致的恢复监督方法",
+    "公开实验与恢复行为分析",
+    "雷达知识问答应用与适用性分析",
+    "总结与展望"
+  ],
+  "page_count": 56,
+  "pages_with_extractable_text": 56,
+  "authored_tex_chinese_characters": 27529,
+  "chinese_abstract_characters": 418,
+  "tables": 28,
+  "figures": 4,
+  "cited_works": 31,
+  "writing_sources_record": "thesis/current/writing_sources_20261121.json",
+  "narrative_rules": [
+    "Purpose, method, results and significance in bilingual abstracts",
+    "Recovery method and public results lead the thesis",
+    "Paragraphs link design or finding with evidence and interpretation",
+    "Radar data and application integrated into a single chapter",
+    "Scope discussed in designated sections",
+    "Pending model experiments separately identified"
+  ],
+  "forbidden_contrast_markers_in_active_authored_tex": 0,
+  "forbidden_contrast_markers_in_full_pdf_text": 0,
+  "cross_references_resolved": true,
+  "overfull_box_warnings": 0,
+  "unresolved_references_or_missing_glyphs": 0,
+  "public_evidence_exports_checked": 7,
+  "seven_result_tables_and_csvs_unchanged": true,
+  "frozen_experimental_data_and_code_changed": false,
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "human_source_reviews_added": 0,
+  "pending_model_work": [
+    "Fixed same-state continuation evaluation",
+    "Bounded radar-domain ordinary/recovery comparison"
+  ],
   "pdf": {
     "path": "thesis/current/build/main.pdf",
-    "sha256": "7e5954e90e596664d05a1ce4ac8c95bcc37bf745600b260f629a23687f454ad5",
-    "bytes": 767024
+    "sha256": "1017b077e620ce301242ae6a05003d4f140ff10ff52466e190ee6ad1b2201945",
+    "bytes": 669728
   },
-  "build_manifest_sha256": "c03226f14314a379f211dbdfe4e497d0d432b31f02204384ec63937c1bb6d1df",
-  "literature_audit_sha256": "8d6d2637416116a11347a728db237111223385c392c7ee32bb855dc9cb31b5eb",
-  "page_count": 75,
-  "pages_with_extractable_text": 75,
-  "text_extract_sha256": "f11d834cc5e86065a9ef61d537557b5b581fe5127e76af2928b7320d93fb1d90",
-  "visual_tool": "macOS PDFKit and direct view_image of final PNGs",
+  "release_pdf": {
+    "path": "thesis/revisions/20261121/毕业论文_六章整合稿.pdf",
+    "sha256": "1017b077e620ce301242ae6a05003d4f140ff10ff52466e190ee6ad1b2201945"
+  },
+  "build_manifest_sha256": "1299868b8951b68309339d769b818af051adde55dd785838f797dd9941544003",
+  "writing_sources_sha256": "93647cebe132b520a2126a8a60aa282a763d6ab7a4a391233c571ced27783202",
+  "literature_audit_sha256": "3c55dcf128a281e3fc67e12679f1ec625268892c4c04e431ed4b580218ba2835",
+  "text_extract_sha256": "561b60d4c711098ddb0e6ab326cee5ce3d0ad778891b3b01f23c82988c241bf7",
   "visually_reviewed_physical_pages": [
     {
-      "page_one_based": 28,
-      "png_sha256": "50a4ba2ff0987e088a7dfcb75c9fcd540ac94f29c0edf6f8ec3a81333d8e9120",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "page_one_based": 2,
+      "png_sha256": "5c7db07dc5dad185ad0acb7781cbfbc5e2fc42c7ccc721bb62cf5443ce0616d9"
+    },
+    {
+      "page_one_based": 3,
+      "png_sha256": "3d0aa3cb0982635d5614140ae1b2b1ae54ca333db250f9548ee1befe5001b07c"
+    },
+    {
+      "page_one_based": 4,
+      "png_sha256": "4908bd11fdcc7adc24573093e275833dec0fa081b1e1460aa07b021b8e60610e"
+    },
+    {
+      "page_one_based": 12,
+      "png_sha256": "d40c0ae819a4041be6ce7e979895c2836b176381cb94074f57bcdddea2291168"
+    },
+    {
+      "page_one_based": 22,
+      "png_sha256": "875b233a4ac2f16c6b2e3a6203a59e24ca734355a96e27b02fae505f14aa7bbe"
+    },
+    {
+      "page_one_based": 23,
+      "png_sha256": "935d1332997b25363acc17ac71622241db51ccaf7e40ffebd890a59bd8abbf22"
     },
     {
       "page_one_based": 29,
-      "png_sha256": "475415f1279db2cd5f8b5a87845b3b2645a8b3f5d98f9d0a4865a771223d3fd0",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "png_sha256": "24f1a9adfce40594d0b40a01b3f0d6294da8c6e76021d21ce70ff42cc3fb1e53"
     },
     {
       "page_one_based": 33,
-      "png_sha256": "c9d8b51658ba3570a8b9243ab6d3fef2d0438a4b73bc443a15e53cde3f59b1c8",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "png_sha256": "e5b5176d753739a82daa88e5d17c12309e6cf8e99124b7261574de67d9bb3592"
     },
     {
-      "page_one_based": 34,
-      "png_sha256": "96a2cefb121b43fd8f18b7aeb64625aa93fad475279c9639832d8ea64f895458",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "page_one_based": 36,
+      "png_sha256": "6ba34b44a6ba3e2743793e96d7a7f113dd9f7cbe25441b0291b3004ba7d298fd"
     },
     {
-      "page_one_based": 52,
-      "png_sha256": "e2d2756d0af3b41b6c1cbd5d95c9399078aee16efe4cb21bd642414094458e34",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "page_one_based": 38,
+      "png_sha256": "98e05df26e55f55c81905b70b07a9cefc5f801198d189e0bc4071b58719698b3"
     },
     {
-      "page_one_based": 53,
-      "png_sha256": "64c4b0b70e88694e2b229f5098f591bfe2b54cffcc73949e551657fd9481cffc",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "page_one_based": 44,
+      "png_sha256": "f32e561ef08eb2d19d51301ae8f7e3327e0476eecca043267843fbe9878bbe99"
     },
     {
-      "page_one_based": 54,
-      "png_sha256": "1f99719629be0ea5aa76260ad831bd35e9fb4ae9920f03924b30335432d75891",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "page_one_based": 47,
+      "png_sha256": "0872a1bb1993c0142dba037967a35e243d657cf99d972841e00862398b3a0f15"
     },
     {
-      "page_one_based": 70,
-      "png_sha256": "8e1a77c33163cf7e158523b1422063286b12f4860d1a14ac6a2c0e3ff64e2658",
-      "review_mode": "Final rendering directly viewed",
-      "observation": "New evidence sections, source diagram, tables and formulas readable within margins."
+      "page_one_based": 50,
+      "png_sha256": "3c37606d95cbf46d1e88aae0cd30a3abd756577a5db196e8e8f429831f0617ab"
+    },
+    {
+      "page_one_based": 56,
+      "png_sha256": "86ba545b2b9da7c94cf04c13ca70eaa10c4184d31a58c526b59bae64a4fe6de2"
     }
   ],
-  "overfull_box_warnings": 0,
-  "unresolved_references_or_missing_glyphs": 0,
-  "bibliography_entries": 30,
-  "new_model_evaluation_completed": false,
-  "source_review_grade": "AI",
-  "actual_human_reviews_added": 0,
-  "revision": {
-    "new_sections": [
-      "3.3.5",
-      "3.7.1",
-      "5.7",
-      "5.8"
-    ],
-    "public_aggregate_exporters": 7,
-    "existing_model_result_tables_unchanged": true,
-    "construction_population": 418,
-    "strictly_comparable_pairs": 414,
-    "platform_detail_mismatch_pairs_retained": 4,
-    "independent_ai_source_review_questions": 24,
-    "source_view_query_checks": 1015
-  },
-  "scope": "All-page text extraction, selected-page visual review, generic manuscript layout."
+  "layout": "General review layout with school writing guidance; final institutional template adaptation remains separate."
 }
