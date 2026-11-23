@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-23",
+  "proposal_sync": "user7pagePDF adopted; source copied byte-for-byte; body text synchronized",
+  "proposal_record_sha256": "a404cd9ce68c27d0150d447b64080853f24cf1a8b7108bf64125e3db84e55a53",
+  "current_user_modified_v4_docx_preserved": true,
+  "deck_build_record_sha256": "9d52c728472e2a05e3fde733760c91b99cbaf1b44b828ec8c47928be98fe1720",
+  "old_deck_reuse_map_sha256": "53b7bf2ddb0fd94a74c1cc0c8bed60dbb4963d8a1433fd9ec5556f86abe08ce3",
+  "materials_ready": "5 radar slides plus1 public-method supplement",
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "external_messages_sent": 0,
+  "delegated_agents_this_turn": 0,
+  "author": "AI assistant with direct source and visual checks"
+}

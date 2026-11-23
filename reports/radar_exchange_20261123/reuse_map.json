@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-23",
+  "source_pptx_basename": "论文开题_图检索策略学习方法研究.pptx",
+  "source_sha256": "94ce865042d8b4e48e154bbc2b65d331f4cfa98e533a4fd5a3f5f2a1aacfd979",
+  "source_slides": 12,
+  "source_aspect": "4:3",
+  "user_confirmed_output": "5 radar slides plus 1 public-method supplement,4:3",
+  "reuse": [
+    {
+      "old_slides": [
+        2
+      ],
+      "new_slide": 1,
+      "use": "Question-to-executable-query concept; replace country/frequency example with technical-parameter scenarios"
+    },
+    {
+      "old_slides": [
+        8,
+        9
+      ],
+      "new_slide": 2,
+      "use": "Knowledge-construction flow and resource cards; current8/502/96 replace historical graph inventory"
+    },
+    {
+      "old_slides": [
+        9,
+        10
+      ],
+      "new_slide": 3,
+      "use": "Results framing; replace olddiagnostic numbers with96-question condition-representation comparison"
+    },
+    {
+      "old_slides": [
+        5,
+        6
+      ],
+      "new_slide": 4,
+      "use": "Executable query and intermediate results; use verifiedJRC temperature reference case"
+    },
+    {
+      "old_slides": [
+        11
+      ],
+      "new_slide": 5,
+      "use": "Bounded evaluation and discussion topics; use576/108/24+12 prepared data"
+    },
+    {
+      "old_slides": [
+        5,
+        7
+      ],
+      "new_slide": 6,
+      "use": "Training-loop idea reframed as recovery supervision; publicKQA effect kept separately"
+    }
+  ],
+  "not_reused": [
+    "RL reward decomposition as current main method",
+    "Old173human-review quality statistic",
+    "Oldtrain/dev/test split ascurrent source-independent test",
+    "MetaQA expansion and four-arm RL promises",
+    "Oldmodelandoracle results as current domain improvements"
+  ],
+  "presentation_claims": "Existing representation effects, reference execution validation, bounded planned domain evaluation; public recovery-training result only on supplement",
+  "new_model_runs": 0
+}

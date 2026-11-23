@@ -1,0 +1,4 @@
+/preview/
+/build/
+!*.pptx
+!*.pdf

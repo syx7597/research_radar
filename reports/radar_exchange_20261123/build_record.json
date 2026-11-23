@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-23",
+  "status": "completed_editable_deck_and_reviewed_pdf",
+  "file": "reports/radar_exchange_20261123/雷达技术资料知识组织与可追溯问答_研究交流_5加1页.pptx",
+  "pptx_sha256": "286b1d17252629f5ab4df1eec50e74924ec89662dc9403544ff457b4719e77c1",
+  "slides": 6,
+  "aspect": "4:3",
+  "editable_elements": "Native PowerPoint text, shapes, tables represented by editable text/rectangles, and bars; school branding is an unchanged image",
+  "sources_sha256": {
+    "results/radar_domain/coverage_v2/semantic_summary.json": "76974b0ed9771efab8e2d86e02e2246fd5c15c530ab93093a6fcd4f75595072f",
+    "results/radar_domain/coverage_v2_citation_sensitivity_v1/semantic_summary.json": "73604a0778cd3f814dec796e6ae8766cb1f8f1052a2e10cdf4ed5cedceb6df06",
+    "results/radar_domain/frozen_20261107/summary.json": "2d7742f6df2336490ffa73a6c6248fcae937933351f62399a5522e8fb80e3c95",
+    "results/radar_domain/compositional_supplement_20261108/summary.json": "4cfb0ef3ab915f0f18395ece74f0d8dc5b0469ec1d3f3ca830629cd9dde42a2f",
+    "results/radar_domain/programs_dev_20261107/development_case.json": "2ae62cf10098101ebc32fed5a955d51ce5dbc2c3c243b2959beba19998f6cc3c",
+    "results/agent_feedback/holdout_v1_analysis.json": "f135fe618b2de018958332fc5a1e1fe552ea50ab3377b5f2945a6f945f055ac2",
+    "artifacts/thesis_direction_review/radar_readings_v1/snapshot_audit.json": "a2603bf9e262f0e2ee7b3eb6fc7c6e08de292bf810d6db9977fa2e03a58fc42e"
+  },
+  "case_type": "complete_reference_program_not_model_prediction",
+  "new_model_runs": 0,
+  "server_accessed": false,
+  "human_evaluation_added": 0,
+  "source_branding_sha256": "8b0a0a15f31d5bc705d28950e17ae4feac1e9ba1e16ce9aa0024aa8e2501a498",
+  "builder_sha256": "88551c602b6efc7bc13245f0d7b54cfa022805a90c8ef075d2482487a9269b3a",
+  "content_sha256": "1ad923b024f60b2879e0861826907dd585f5edcf1d6512e8cd691452df8fc4c5",
+  "legacy_slides_reused_conceptually": [
+    2,
+    5,
+    6,
+    8,
+    9
+  ],
+  "legacy_claims_replaced": [
+    "RL as the main research route",
+    "Old full-graph counts as current evaluated resource size",
+    "Unverified human-review quality statistic (n=173)",
+    "Old diagnostic gains as current method results",
+    "MetaQA and four-arm RL experiment promises"
+  ],
+  "geometry_bounds_check": "passed",
+  "visual_review": {
+    "all_slides_checked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "renderer": "Synchronous CoreGraphics PDF page rasterization",
+    "text_items_checked_against_pptx_and_pdf": 108,
+    "missing_text_items": 0,
+    "editable_notes_pages": 6,
+    "forbidden_contrast_phrases": 0,
+    "original_user_files_unchanged": true,
+    "filled_personal_information_excluded_from_public_materials": true
+  },
+  "pdf": {
+    "path": "reports/radar_exchange_20261123/雷达技术资料知识组织与可追溯问答_研究交流_5加1页.pdf",
+    "sha256": "08342a525f8039c9d70e8b9e978defb5f5c1bf5b10ce47c828e1efd0776b4c0a",
+    "pages": 6,
+    "renderer": "macOS Quick Look layout and Chromium print"
+  },
+  "source_theme_sha256": "58b425efdd6be8051b7f4e7e1bc97a9a99f80eae7f37ef842877aa1ad7329809",
+  "exporter_sha256": "693838791d9bb0c0c2614103c35b4e0aecb005e7a1d9432f445940a002ece804",
+  "scope": "Technical-document knowledge organization, parameter conditions, traceable queries; existing measured results and reference execution distinguished",
+  "preview_sha256": {
+    "1": "9cb0afcda7fbfa02b0a3ba27925a2ab8a6d3ed60b647b62c00f9b1c5dc0b3994",
+    "2": "b058eb4838a21b783c1eff1ac518d5c6aec345341aa3ab50de4752d53a80a429",
+    "3": "c54c21ff249c2d3c1568ffec80df5bb8b74061e074a6e5637dcf66cb78c8fb58",
+    "4": "940922d7053d6bb309f4f4d3b6f9f2729cfd3f80a955a2eff6a0c3c5f9b5dad4",
+    "5": "5676a37f5b9f0b9ab601be55da6755b6fd0b6c2ad2bb559a3239e07e1a9c221a",
+    "6": "830dcfcc1b2af3d7035bd8a679ef7bca6efba73fa77f2c94ec4cbc9a35b9ed2d"
+  }
+}
